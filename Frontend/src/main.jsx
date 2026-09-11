@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { useState } from 'react'
+import './Stylesheet.css'
+import styles from './style.module.css'; 
 
 const listedefruits = [
   {id: 1, name:'pom'},
@@ -27,14 +29,21 @@ function Bonjour({name, age}) {
 }
 
 function Counter() {
-  // Destructuring the array returned by useState
   const [count, setCount] = useState(0);
-  
+
   return (
-    <button onClick={() => setCount(count + 1)}>
+    <button onClick={() => setCount(count + 1)} className={styles.button}>
       Count: {count}
     </button>
   );
+}
+
+function Input(){
+  return (<form>
+    <label> Input : 
+    <input type="text" />
+    </label>
+  </form>)
 }
 
 createRoot(document.getElementById('root')).render(
@@ -43,5 +52,6 @@ createRoot(document.getElementById('root')).render(
     <MaListe />
     <Bonjour name="bla" age={20} />
     <Counter />
+    <Input />
   </div>
 ) 
