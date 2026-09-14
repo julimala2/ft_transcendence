@@ -9,7 +9,7 @@
 ## 🔲 Fondations
 
 - [ ] Organiser le code en dossiers (`routes/`, `controllers/`, `prisma/`)
-- [ ] Choisir PostgreSQL ou MariaDB
+- [ ] Choisir PostgreSQL ou MariaDB --> avec Docker --> utiliser SQLite en attendant
 - [ ] Installer Prisma, connecter à la DB, générer le `schema.prisma`
 - [ ] Créer `.env` (secrets DB, etc.) + `.env.example` (exigé par le sujet)
 
@@ -19,11 +19,17 @@
 - [ ] Route `POST /api/login` (vérifier email + password avec `bcrypt.compare`)
 - [ ] Validation des inputs (email valide, password assez fort) → front ET back (exigé sujet)
 - [ ] Gestion de session/token pour rester connecté entre les requêtes
+- [ ] OAuth 2.0 (prévoir les champs dans la DB)
+
 
 ## 🔲 Schéma DB — reste à faire
 
 - [ ] Table Partie (multijoueur : relie users ↔ partie, + quel Theme)
 - [ ] Table Chat
+- [ ] Table Notifications
+- [ ] Table Achievement
+- [ ] Table Tournois
+
 
 ## 🔲 API (endpoints métier)
 
