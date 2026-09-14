@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Stylesheet.css'
 import styles from './style.module.css'; 
 
@@ -14,19 +14,22 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault();
     setSubmitted(true);
+    ApiSend({name});
   }
 
   return (
     <div>
         {submitted ? <>
-                    <Bonjour name={name || "toi"} /> 
-                    <Counter />
-                    </> 
-                    : 
-                    <>
-                    <p>Welcome!</p>
-                    <MyForm name={name} onChange={handleChange} onSubmit={handleSubmit}/>
-                    </>
+          <Bonjour name={name || "toi"} /> 
+          <Counter />
+          </> 
+          : 
+          <>
+          <p>Welcome!</p>
+          <GetRequest />
+          <PostRequest />
+          {/* <MyForm name={name} onChange={handleChange} onSubmit={handleSubmit}/> */}
+          </>
         }
     </div>
   );
@@ -59,6 +62,84 @@ function Counter() {
     
     </div>
   );
+}
+
+function GetRequest(){
+  const [msg, setMsg] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/api/getrequest')
+      .then(res => res.json())
+      .then(data => {
+        setMsg(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if(loading) return (
+    <>
+      <p>Get Query:</p>
+      <p>Loading...</p>
+    </>
+  )
+  if (error) return <p>Error : {error}</p>;
+
+  return (
+    <>
+    <p>Get Query:</p>
+    <ul style={{textAlign: "left"}}>
+      {msg.map (u => <li key={u.nom}>{u.nom} {u.age}</li>)}
+    </ul>
+    </>
+  )
+}
+
+function PostRequest(){
+  const [msg, setMsg] = useState([]);
+  const [loading,setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/api/postrequest', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+        id: 1,
+        message: "Bonjour je suis une post request",
+        test: "salut"
+      }),
+    })
+    .then (res=>res.json())
+    .then(data => {
+      setMsg(data);
+      setLoading(false)
+    });
+  }, []); // Tableau de dependances (sets how it updates [] = once, mais ya d'autres options)
+
+  if(loading) return (
+    <>
+      <p>Post Query:</p>
+      <p>Loading...</p>
+    </>
+  )
+
+  return(
+    <>
+    <p>Post Query:</p>
+    <ul>
+      {msg.map (u=> <li key={u.id}>[{u.message}] [{u.test}]</li>)}
+    </ul>
+    </>
+  )
+};
+
+function ApiSend({name}){
+  console.log("sending :", name);
 }
 
 export default App;
