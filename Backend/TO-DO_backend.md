@@ -8,17 +8,17 @@
 
 ## 🔲 Fondations
 
-- [ ] Organiser le code en dossiers (`routes/`, `controllers/`, `prisma/`)
+- [x] Organiser le code en dossiers (`routes/`, `controllers/`, `prisma/`)
 - [ ] Choisir PostgreSQL ou MariaDB --> avec Docker --> utiliser SQLite en attendant
 - [ ] Installer Prisma, connecter à la DB, générer le `schema.prisma`
-- [ ] Créer `.env` (secrets DB, etc.) + `.env.example` (exigé par le sujet)
+- [x] Créer `.env` (secrets DB, etc.) + `.env.example` (exigé par le sujet)
 
 ## 🔲 Authentification
 
 - [ ] Route `POST /api/signup` (créer un user, hash password, l'enregistrer en DB)
 - [ ] Route `POST /api/login` (vérifier email + password avec `bcrypt.compare`)
 - [ ] Validation des inputs (email valide, password assez fort) → front ET back (exigé sujet)
-- [ ] Gestion de session/token pour rester connecté entre les requêtes
+- [ ] Gestion de session/token pour rester connecté entre les requêtes : choisir entre JWT et session
 - [ ] OAuth 2.0 (prévoir les champs dans la DB)
 
 
@@ -26,8 +26,8 @@
 
 - [ ] Table Partie (multijoueur : relie users ↔ partie, + quel Theme)
 - [ ] Table Chat
-- [ ] Table Notifications
-- [ ] Table Achievement
+- [x] Table Notifications
+- [x] Table Achievement
 - [ ] Table Tournois
 
 
@@ -47,4 +47,4 @@
 ## 🔲 Sécurité (exigences du sujet, à ne pas oublier)
 
 - [ ] HTTPS pour toute connexion navigateur ↔ backend
-- [ ] Pas de mots de passe/secrets en clair dans le code (→ `.env`)
+- [x] Pas de mots de passe/secrets en clair dans le code (→ `.env`)
