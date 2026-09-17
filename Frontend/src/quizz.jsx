@@ -11,16 +11,44 @@ class Question{
     }
 }
 
+const DURATION = 5;
+
 function DisplayQuestion({question, onAnswered}){
     const [selectedIndex, setSelectedIndex] = useState(null);
+    const [timeLeft, setTimeLeft] = useState(DURATION);
     const isCorrect = selectedIndex === question.correctIndex;
+
+
+//Pas sur que c'est la proper way d'implementer un timer, a verifier
+  useEffect(() => {
+        if (selectedIndex !== null) return;
+
+        const intervalId = setInterval(() => {
+            setTimeLeft(t => t - 1);
+        }, 1000);
+    
+        return () => clearInterval(intervalId);
+
+    }, [selectedIndex]);
+
+
+    useEffect(() => {
+        if(timeLeft <= 0 && selectedIndex === null) {
+            setSelectedIndex(-1);
+            onAnswered(false);
+        }
+
+    }, [timeLeft, selectedIndex]);
+//Fin du timer
 
     const handleClick = (index) =>{
         if (selectedIndex !== null) return;
+
         setSelectedIndex(index);
         onAnswered(index === question.correctIndex);
     };
     
+
     //Est ce que c'est possib de modifier un style module plutot qu'override ? (DONE)
     const getButtonClass = (index) => { 
         if(selectedIndex === null) return styles.button;
@@ -44,6 +72,9 @@ function DisplayQuestion({question, onAnswered}){
                     </li>
                 ))}
             </ul>
+            <div>
+                {timeLeft}
+            </div>
         </>
     )
 }
@@ -66,6 +97,7 @@ function Quizz(){
     }
 
     function nextQuestion(){
+        setAnswered(false);
         setCurrentIndex(currentIndex + 1);
     }
 
@@ -83,7 +115,7 @@ function Quizz(){
                     question={questions[currentIndex]} 
                     onAnswered={handleAnswered}
                 />
-                {answered && <button onClick={nextQuestion}>Next</button>}
+                {answered && <button onClick={nextQuestion} className={styles.button}>Next</button>}
             </div>
         </>
     )
