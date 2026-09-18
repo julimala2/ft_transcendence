@@ -79,7 +79,7 @@ function DisplayQuestion({question, onAnswered}){
     )
 }
 
-function Quizz(){
+function Quizz({onMenu}){
     const [questions] = useState(
         [
             new Question("2+2=?",["3","2","4","12"],2),
@@ -102,8 +102,10 @@ function Quizz(){
     }
 
     if (currentIndex >= questions.length){
-        return (
+        return (<>
             <div>Fin! Mon score: {score}</div>
+            <button onClick={onMenu} className={styles.button}>Menu</button>
+        </>
         );
     }
 
