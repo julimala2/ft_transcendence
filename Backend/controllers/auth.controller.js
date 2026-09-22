@@ -5,17 +5,24 @@
 
 const authService = require('../services/auth.service');
 
+const COOKIE_OPTIONS = {
+    httpOnly: true,
+    secure: true,
+    sameSite: 'lax',
+    maxAge: 12 * 60 * 60 * 1000, // 12h, aligne sur l'expiration du JWT
+};
+
 async function register(req, res) {
     const { email, password, username, display_name } = req.body;
 
     try {
         const { user, token } = await authService.registerUser({ email, password, username, display_name });
+        res.cookie('token', token, COOKIE_OPTIONS);
         return res.status(201).json({
             id: user.id,
             email: user.email,
             username: user.username,
             display_name: user.display_name,
-            token,
         });
     }
     catch (err) {
@@ -35,12 +42,12 @@ async function login(req, res) {
 
     try {
         const { user, token } = await authService.login({ email, password });
-            return res.status(200).json({
+        res.cookie('token', token, COOKIE_OPTIONS);
+        return res.status(200).json({
             id: user.id,
             email: user.email,
             username: user.username,
             display_name: user.display_name,
-            token,
         });
     }
     catch (err) {
@@ -59,6 +66,7 @@ function me(req, res) {
 async function logout(req, res) {
     try {
         await authService.logout(req.user.id);
+        res.clearCookie('token', COOKIE_OPTIONS);
         return res.status(200).json({ message: 'Deconnecte' });
     }
     catch (err) {
