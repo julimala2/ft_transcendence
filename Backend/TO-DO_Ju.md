@@ -1,9 +1,6 @@
 Authentification
 OAuth
 
-    -inscription
-    -connexion
-    -hashage
-    -reinitialisation mdp
+Gestion des tokens
 
     -auth OAuth
