@@ -5,7 +5,7 @@
 
 const authService = require('../services/auth.service');
 
-async function signup(req, res) {
+async function register(req, res) {
     const { email, password, username, display_name } = req.body;
 
     try {
@@ -53,4 +53,15 @@ function me(req, res) {
     return res.status(200).json(req.user);
 }
 
-module.exports = { signup, login, me };
+async function logout(req, res) {
+    try {
+        await authService.logout(req.user.id);
+        return res.status(200).json({ message: 'Deconnecte' });
+    }
+    catch (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Erreur serveur' });
+    }
+}
+
+module.exports = { register, login, me, logout };

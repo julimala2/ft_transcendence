@@ -11,4 +11,11 @@ async function create({ email, password_hash, username, display_name }) {
     });
 }
 
-module.exports = { findByEmail, create };
+async function setOffline(userId) {
+    return prisma.user.update({
+        where: { id: userId },
+        data: { is_online: false, last_seen_at: new Date() },
+    });
+}
+
+module.exports = { findByEmail, create, setOffline };

@@ -1,8 +1,4 @@
-// TODO: validation plus poussée des inputs (format email, force du mot de passe...)
-// Pour l'instant, la vérification de base (présence des champs) est faite directement dans auth.controller.js
-// force du mot de passe a determiner
-
-function validateSignup(req, res, next) {
+function validateRegister(req, res, next) {
     const { email, password, username } = req.body;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/; // caracteres speciaux acceptes : ! @ # $ % ^ & * ( ) _ + - = [ ] { } ; ' : " \ | , . < > / ?
@@ -36,4 +32,4 @@ function validateLogin(req, res, next) {
     next();
 }
 
-module.exports = { validateSignup, validateLogin };
+module.exports = { validateRegister, validateLogin };

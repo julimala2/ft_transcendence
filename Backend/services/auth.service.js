@@ -53,4 +53,8 @@ async function login({ email, password }) {
     return { user, token };
 }
 
-module.exports = { registerUser, login };
+async function logout(userId) {
+    await userModel.setOffline(userId);
+}
+
+module.exports = { registerUser, login, logout };
