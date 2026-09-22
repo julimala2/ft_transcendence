@@ -4,6 +4,7 @@
 
 
 const authService = require('../services/auth.service');
+const oauthService = require('../services/oauth.service');
 
 const COOKIE_OPTIONS = {
     httpOnly: true,
@@ -75,4 +76,30 @@ async function logout(req, res) {
     }
 }
 
-module.exports = { register, login, me, logout };
+function oauthRedirect(req, res) {
+    const params = new URLSearchParams({
+        client_id: process.env.OAUTH_CLIENT_ID,
+        redirect_uri: process.env.OAUTH_REDIRECT_URI,
+        response_type: 'code',
+        scope: 'public',
+    });
+
+    return res.redirect(`https://api.intra.42.fr/oauth/authorize?${params.toString()}`);
+}
+
+async function oauthCallback(req, res) {
+    const { code } = req.query;
+
+    try {
+        const { user, token } = await oauthService.oauthLogin(code);
+        res.cookie('token', token, COOKIE_OPTIONS);
+        return res.redirect(process.env.FRONTEND_URL);
+    }
+    catch (err) {
+        console.error(err);
+        return res.redirect(`${process.env.FRONTEND_URL}/login?error=oauth`);
+    }
+
+}
+
+module.exports = { register, login, me, logout, oauthRedirect, oauthCallback };

@@ -20,4 +20,16 @@ model User {
   last_seen_at  DateTime?
   created_at    DateTime  @default(now())
   updated_at    DateTime  @updatedAt
+  oauthAccounts OAuthAccount[]
+}
+
+model OAuthAccount {
+  id                Int      @id @default(autoincrement())
+  user_id           Int
+  user              User     @relation(fields: [user_id], references: [id])
+  provider          String
+  provider_user_id  String
+  created_at        DateTime @default(now())
+
+  @@unique([provider, provider_user_id])
 }

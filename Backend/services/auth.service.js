@@ -1,15 +1,6 @@
 const bcrypt = require('bcrypt');
 const userModel = require('../models/user.model');
-const jwt = require('jsonwebtoken');
-
-
-function generateToken(user) {
-    return jwt.sign(
-        { id: user.id, email: user.email },
-        process.env.JWT_SECRET,
-        { expiresIn: '12h' }
-    );
-}
+const { generateToken } = require('../lib/token');
 
 async function registerUser({ email, password, username, display_name }) {
     const normalizedEmail = email.trim().toLowerCase();
@@ -40,7 +31,6 @@ async function registerUser({ email, password, username, display_name }) {
 
     return { user, token };
 }
-
 
 async function login({ email, password }) {
     const normalizedEmail = email.trim().toLowerCase();

@@ -12,5 +12,7 @@ router.post('/register', validateRegister, authController.register);
 router.post('/login', validateLogin, authController.login);
 router.get('/me', verifyToken, authController.me);
 router.post('/logout', verifyToken, authController.logout);
+router.get('/oauth/42', authController.oauthRedirect);
+router.get('/oauth/42/callback', authController.oauthCallback);
 
 module.exports = router;
