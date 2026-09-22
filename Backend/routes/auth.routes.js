@@ -4,8 +4,9 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/auth.controller');
 const { validateSignup } = require('../middlewares/validate.middleware');
+const { validateLogin } = require('../middlewares/validate.middleware');
 
 router.post('/signup', validateSignup, authController.signup);
-// router.post('/login', authController.login); // TODO: décommenter une fois login implémenté
+router.post('/login', validateLogin, authController.login); 
 
 module.exports = router;

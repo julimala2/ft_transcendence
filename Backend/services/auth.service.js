@@ -22,11 +22,21 @@ async function registerUser({ email, password, username, display_name }) {
 
 
 // TODO: brancher sur la route POST /login une fois prête
-// async function login(password, DbHashPass)
-// {
-//   const isValid = await bcrypt.compare(password, DbHashPass);//comparer le mdp tapé au hash stocké
-//   console.log(isValid ? 'Connexion réussie !' : 'Mot de passe incorrect.');
-//   return isValid;
-// }
+async function login({ email, password }) {
+    const user = await userModel.findByEmail(email);
+    if (!user) {
+        const err = new Error('Invalid credentials');
+        err.code = 'INVALID_CREDENTIALS';
+        throw err;
+    }
+    const isValid = await bcrypt.compare(password, user.password_hash);
+    if (!isValid) {
+        const err = new Error('Invalid credentials');
+        err.code = 'INVALID_CREDENTIALS';
+        throw err;
+    }
 
-module.exports = { registerUser };
+    return user;
+}
+
+module.exports = { registerUser, login };

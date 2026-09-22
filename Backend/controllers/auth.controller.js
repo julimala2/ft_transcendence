@@ -26,7 +26,25 @@ async function signup(req, res) {
     }
 }
 
-// TODO: implémenter une fois auth.service.js#login prêt
-// async function login(req, res) { ... }
+async function login(req, res) {
+    const { email, password } = req.body;
 
-module.exports = { signup };
+    try {
+        const user = await authService.login({ email, password });
+            return res.status(200).json({
+            id: user.id,
+            email: user.email,
+            username: user.username,
+            display_name: user.display_name,
+        });
+    }
+    catch (err) {
+        if (err.code === 'INVALID_CREDENTIALS') {
+            return res.status(401).json({ error: 'Email ou mot de passe invalide'});
+        }
+        console.error(err);
+        return res.status(500).json({ error: 'Erreur serveur' });
+    }
+}
+
+module.exports = { signup, login };
