@@ -8,18 +8,18 @@
 
 #### User
 
-| Champ         | Type / FK     | Notes       |
-|---------------|---------------|-------------|
-| id            |               | PK          |
-| nom           |               |             |
-| niveau        |               |             |
-| email         |               |             |
-| password_hash |               |             |
-| is_online     |               |             |
-| last_seen_at  |               |             |
-| display_name  |               |             |
-| avatar_url    |               |             |
-| created_at    |               |             |
+| Champ         | Type / FK        | Notes                            |
+|---------------|------------------|-----------------------------------|
+| id            | Int              | PK, autoincrement                |
+| username      | String, unique   | identifiant technique (login)    |
+| email         | String, unique   |                                   |
+| password_hash | String, nullable | null si compte 100% OAuth        |
+| display_name  | String           | pseudo public affiché en jeu     |
+| avatar_url    | String, nullable |                                   |
+| is_online     | Boolean          | default false                    |
+| last_seen_at  | DateTime, nullable |                                 |
+| created_at    | DateTime         | default now()                    |
+| updated_at    | DateTime         | mis à jour automatiquement       |
 
 #### User_stats
 
@@ -119,7 +119,7 @@
 
 | Champ         | Type / FK     | Notes       |
 |---------------|---------------|-------------|
-| user_ id      |               |           |
+| user_ id      |               |             |
 | achievement_id|               |             |
 | unlocked_at   |               |             |
 
@@ -130,8 +130,8 @@
 - [ ] Table **Chat** (messages liés à un User, et probablement une Partie)
 - [ ] Choisir PostgreSQL vs MariaDB 
 - [ ] schema.prisma
-- [ ] Table Notifications
-- [ ] Table Achievement
+- [x] Table Notifications
+- [x] Table Achievement
 - [ ] Table Tournois
-- [ ] Table utilisateurs bloques ? Dans amitie
+- [x] Table utilisateurs bloques ? Dans amitie
 

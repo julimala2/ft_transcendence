@@ -1,1 +1,23 @@
-// En attente : validation du schéma DB à 3, choix Postgres/MariaDB, puis `npx prisma init`
+// SQLite en attendant le choix définitif Postgres/MariaDB à 3 (cf TO-DO_backend.md)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  username      String    @unique
+  email         String    @unique
+  password_hash String?
+  display_name  String
+  avatar_url    String?
+  is_online     Boolean   @default(false)
+  last_seen_at  DateTime?
+  created_at    DateTime  @default(now())
+  updated_at    DateTime  @updatedAt
+}
