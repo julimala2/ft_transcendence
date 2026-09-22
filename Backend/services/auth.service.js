@@ -12,16 +12,25 @@ function generateToken(user) {
 }
 
 async function registerUser({ email, password, username, display_name }) {
-    const existing = await userModel.findByEmail(email);
-    if (existing) {
+    const normalizedEmail = email.trim().toLowerCase();
+
+    const existingEmail = await userModel.findByEmail(normalizedEmail);
+    if (existingEmail) {
         const err = new Error('Email already taken');
         err.code = 'EMAIL_TAKEN';
         throw err;
     }
 
+    const existingUsername = await userModel.findByUsername(username);
+    if (existingUsername) {
+        const err = new Error('Username already taken');
+        err.code = 'USERNAME_TAKEN';
+        throw err;
+    }
+
     const password_hash = await bcrypt.hash(password, 10);
     const user = await userModel.create({
-        email,
+        email: normalizedEmail,
         password_hash,
         username,
         display_name: display_name || username,
@@ -34,7 +43,8 @@ async function registerUser({ email, password, username, display_name }) {
 
 
 async function login({ email, password }) {
-    const user = await userModel.findByEmail(email);
+    const normalizedEmail = email.trim().toLowerCase();
+    const user = await userModel.findByEmail(normalizedEmail);
     if (!user) {
         const err = new Error('Invalid credentials');
         err.code = 'INVALID_CREDENTIALS';

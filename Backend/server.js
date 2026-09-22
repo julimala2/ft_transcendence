@@ -1,5 +1,9 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
+const https = require('https');
+const fs = require('fs');
 const authRoutes = require('./routes/auth.routes');
 const app = express();
 
@@ -35,6 +39,11 @@ app.post('/api/postrequest', async (req,res) => {
   res.json(fakeMsg);
 });
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+const options = {
+  key: fs.readFileSync(process.env.SSL_KEY_PATH),
+  cert: fs.readFileSync(process.env.SSL_CERT_PATH),
+};
+
+https.createServer(options, app).listen(process.env.PORT, () => {
+    console.log(`Server running on https://localhost:${process.env.PORT}`);
 });

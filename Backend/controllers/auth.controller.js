@@ -22,6 +22,9 @@ async function register(req, res) {
         if(err.code === 'EMAIL_TAKEN') {
             return res.status(409).json({ error: 'Email deja utilise' });
         }
+        if(err.code === 'USERNAME_TAKEN') {
+            return res.status(409).json({ error: 'Username deja utilise' });
+        }
         console.error(err);
         return res.status(500).json({ error: 'Erreur serveur' });
     }
