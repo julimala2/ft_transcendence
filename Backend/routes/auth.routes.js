@@ -5,8 +5,11 @@ const router = express.Router();
 const authController = require('../controllers/auth.controller');
 const { validateSignup } = require('../middlewares/validate.middleware');
 const { validateLogin } = require('../middlewares/validate.middleware');
+const { verifyToken } = require('../middlewares/auth.middleware');
+
 
 router.post('/signup', validateSignup, authController.signup);
-router.post('/login', validateLogin, authController.login); 
+router.post('/login', validateLogin, authController.login);
+router.get('/me', verifyToken, authController.me);
 
 module.exports = router;

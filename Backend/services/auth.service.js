@@ -1,6 +1,15 @@
 const bcrypt = require('bcrypt');
 const userModel = require('../models/user.model');
+const jwt = require('jsonwebtoken');
 
+
+function generateToken(user) {
+    return jwt.sign(
+        { id: user.id, email: user.email },
+        process.env.JWT_SECRET,
+        { expiresIn: '12h' }
+    );
+}
 
 async function registerUser({ email, password, username, display_name }) {
     const existing = await userModel.findByEmail(email);
@@ -17,11 +26,13 @@ async function registerUser({ email, password, username, display_name }) {
         username,
         display_name: display_name || username,
     });
-    return user;
+
+    const token = generateToken(user);
+
+    return { user, token };
 }
 
 
-// TODO: brancher sur la route POST /login une fois prête
 async function login({ email, password }) {
     const user = await userModel.findByEmail(email);
     if (!user) {
@@ -29,6 +40,7 @@ async function login({ email, password }) {
         err.code = 'INVALID_CREDENTIALS';
         throw err;
     }
+
     const isValid = await bcrypt.compare(password, user.password_hash);
     if (!isValid) {
         const err = new Error('Invalid credentials');
@@ -36,7 +48,9 @@ async function login({ email, password }) {
         throw err;
     }
 
-    return user;
+    const token = generateToken(user);
+
+    return { user, token };
 }
 
 module.exports = { registerUser, login };

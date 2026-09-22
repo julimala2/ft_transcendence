@@ -9,12 +9,13 @@ async function signup(req, res) {
     const { email, password, username, display_name } = req.body;
 
     try {
-        const user = await authService.registerUser({ email, password, username, display_name });
+        const { user, token } = await authService.registerUser({ email, password, username, display_name });
         return res.status(201).json({
             id: user.id,
             email: user.email,
             username: user.username,
             display_name: user.display_name,
+            token,
         });
     }
     catch (err) {
@@ -30,12 +31,13 @@ async function login(req, res) {
     const { email, password } = req.body;
 
     try {
-        const user = await authService.login({ email, password });
+        const { user, token } = await authService.login({ email, password });
             return res.status(200).json({
             id: user.id,
             email: user.email,
             username: user.username,
             display_name: user.display_name,
+            token,
         });
     }
     catch (err) {
@@ -47,4 +49,8 @@ async function login(req, res) {
     }
 }
 
-module.exports = { signup, login };
+function me(req, res) {
+    return res.status(200).json(req.user);
+}
+
+module.exports = { signup, login, me };
