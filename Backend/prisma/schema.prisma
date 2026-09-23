@@ -22,7 +22,7 @@ model User {
   created_at    DateTime  @default(now())
   updated_at    DateTime  @updatedAt
   oauthAccounts OAuthAccount[]
-  // attempts  QuizAttempt[] 
+  attempts  QuizAttempt[] 
 }
 
 model OAuthAccount {
@@ -36,75 +36,75 @@ model OAuthAccount {
   @@unique([provider, provider_user_id])
 }
 
-// model Quiz {
-//   id          Int      @id @default(autoincrement())
-//   title       String
-//   description String?
-//   createdAt   DateTime @default(now())
+model Quiz {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String?
+  createdAt   DateTime @default(now())
 
-//   questions   Question[]
-//   attempts    QuizAttempt[]
-// }
+  questions   Question[]
+  attempts    QuizAttempt[]
+}
 
-// model Category {
-//   id        Int      @id @default(autoincrement())
-//   name      String    @unique
+model Category {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
 
-//   questions Question[]
-// }
+  questions Question[]
+}
 
-// model Question {
-//   id         Int      @id @default(autoincrement())
-//   text       String
-//   difficulty Int      @default(1)
+model Question {
+  id         Int      @id @default(autoincrement())
+  text       String
+  difficulty Int      @default(1)
 
-//   quizId     Int
-//   quiz       Quiz      @relation(fields: [quizId], references: [id])
+  quizId     Int
+  quiz       Quiz      @relation(fields: [quizId], references: [id], onDelete: Cascade)
 
-//   categoryId Int
-//   category   Category  @relation(fields: [categoryId], references: [id])
+  categoryId Int
+  category   Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
 
-//   answers     Answer[]
-//   userAnswers   UserAnswer[]
-// }
+  answers     Answer[]
+  userAnswers   UserAnswer[]
+}
 
-// model Answer {
-//   id         Int      @id @default(autoincrement())
-//   text       String
-//   isCorrect  Boolean  @default(false)
+model Answer {
+  id         Int      @id @default(autoincrement())
+  text       String
+  isCorrect  Boolean  @default(false)
 
-//   questionId Int
-//   question   Question @relation(fields: [questionId], references: [id])
-//   userAnswers   UserAnswer[]
-// }
+  questionId Int
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  userAnswers   UserAnswer[]
+}
 
-// model QuizAttempt {
-//   id        Int      @id @default(autoincrement())
-//   score     Int      @default(0)
-//   startedAt DateTime @default(now())
-//   finishedAt DateTime?
+model QuizAttempt {
+  id        Int      @id @default(autoincrement())
+  score     Int      @default(0)
+  startedAt DateTime @default(now())
+  finishedAt DateTime?
 
-//   userId    Int
-//   user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-//   quizId    Int
-//   quiz      Quiz     @relation(fields: [quizId], references: [id])
+  quizId    Int
+  quiz      Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
 
-//   userAnswers   UserAnswer[]
-// }
+  userAnswers   UserAnswer[]
+}
 
-//  model UserAnswer {
-//    id         Int      @id @default(autoincrement())
-//    isCorrect  Boolean
-  
-//    attemptId  Int
-//    attempt    QuizAttempt @relation(fields: [attemptId], references: [id])
+model UserAnswer {
+  id         Int      @id @default(autoincrement())
+  isCorrect  Boolean
 
-//    questionId Int
-//    question   Question @relation(fields: [questionId], references: [id])
+  attemptId  Int
+  attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
 
-//    answerId   Int
-//    answer     Answer   @relation(fields: [answerId], references: [id])
+  questionId Int
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 
-//    @@unique([attemptId, questionId])
-//  }
+  answerId   Int
+  answer     Answer   @relation(fields: [answerId], references: [id], onDelete: Cascade)
+
+  @@unique([attemptId, questionId])
+}
