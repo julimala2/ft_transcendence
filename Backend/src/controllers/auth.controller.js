@@ -4,13 +4,7 @@
 
 const authService = require('../services/auth.service');
 const oauthService = require('../services/oauth.service');
-
-const COOKIE_OPTIONS = {
-    httpOnly: true,
-    secure: true,
-    sameSite: 'lax',
-    maxAge: 12 * 60 * 60 * 1000, // 12h, aligne sur l'expiration du JWT
-};
+const { COOKIE_OPTIONS } = require('../../lib/cookieOptions');
 
 async function register(req, res) {
     const { email, password, username, display_name } = req.body;

@@ -15,19 +15,19 @@
 
 ## 🔲 Authentification
 
-- [ ] Route `POST /api/signup` (créer un user, hash password, l'enregistrer en DB)
-- [ ] Route `POST /api/login` (vérifier email + password avec `bcrypt.compare`)
+- [x] Route `POST /api/signup` (créer un user, hash password, l'enregistrer en DB)
+- [x] Route `POST /api/login` (vérifier email + password avec `bcrypt.compare`)
 - [ ] Validation des inputs (email valide, password assez fort) → front ET back (exigé sujet)
-- [ ] Gestion de session/token pour rester connecté entre les requêtes : choisir entre JWT et session
-- [ ] OAuth 2.0 (prévoir les champs dans la DB)
+- [x] Gestion de session/token pour rester connecté entre les requêtes : choisir entre JWT et session
+- [x] OAuth 2.0 (prévoir les champs dans la DB)
 
 
 ## 🔲 Schéma DB — reste à faire
 
 - [ ] Table Partie (multijoueur : relie users ↔ partie, + quel Theme)
 - [ ] Table Chat
-- [x] Table Notifications
-- [x] Table Achievement
+- [ ] Table Notifications
+- [ ] Table Achievement
 - [ ] Table Tournois
 
 
@@ -46,5 +46,5 @@
 
 ## 🔲 Sécurité (exigences du sujet, à ne pas oublier)
 
-- [ ] HTTPS pour toute connexion navigateur ↔ backend
+- [x] HTTPS pour toute connexion navigateur ↔ backend
 - [x] Pas de mots de passe/secrets en clair dans le code (→ `.env`)

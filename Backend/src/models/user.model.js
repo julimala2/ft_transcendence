@@ -25,4 +25,15 @@ async function findById(id) {
     return prisma.user.findUnique({ where: { id }});
 }
 
-module.exports = { findByEmail, findByUsername, findById, create, setOffline };
+async function update(userId, data) {
+    return prisma.user.update({
+        where: { id: userId },
+        data,
+    });
+}
+
+async function remove(userId) {
+    return prisma.user.delete({ where: { id: userId } });
+}
+
+module.exports = { findByEmail, findByUsername, findById, create, setOffline, update, remove };

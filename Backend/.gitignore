@@ -2,3 +2,8 @@
 .env
 dev.db
 #certs/
+#uploads/
+
+#tests
+cookies.txt
+uploads/avatars
