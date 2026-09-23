@@ -1,4 +1,6 @@
+const bcrypt = require('bcrypt');
 const userModel = require('../models/user.model');
+const oauthAccountModel = require('../models/oauthAccount.model');
 const fs = require('fs');
 const path = require('path');
 
@@ -7,6 +9,15 @@ async function getProfile(userId) {
 }
 
 async function updateProfile(userId, data) {
+    if (data.email) {
+        const existing = await userModel.findByEmail(data.email);
+        if (existing && existing.id !== userId) {
+            const err = new Error('Email already taken');
+            err.code = 'EMAIL_TAKEN';
+            throw err;
+        }
+    }
+
     return userModel.update(userId, data);
 }
 
@@ -27,4 +38,46 @@ async function updateAvatar(userId, avatar_url) {
     return updatedUser;
 }
 
-module.exports = { getProfile, updateProfile, updateAvatar };
+async function changePassword(userId, currentPassword, newPassword) {
+    const user = await userModel.findById(userId);
+
+    if (user.password_hash) {
+        const isValid = await bcrypt.compare(currentPassword || '', user.password_hash);
+        if (!isValid) {
+            const err = new Error('Current password invalid');
+            err.code = 'INVALID_CURRENT_PASSWORD';
+            throw err;
+        }
+    }
+
+    const password_hash = await bcrypt.hash(newPassword, 10);
+    return userModel.update(userId, { password_hash });
+}
+
+async function deleteAccount(userId, password) {
+    const user = await userModel.findById(userId);
+
+    if (user.password_hash) {
+        const isValid = await bcrypt.compare(password || '', user.password_hash);
+        if (!isValid) {
+            const err = new Error('Password invalid');
+            err.code = 'INVALID_PASSWORD';
+            throw err;
+        }
+    }
+
+    if (user.avatar_url) {
+        const filename = user.avatar_url.split('/').pop();
+        const filePath = path.join('uploads/avatars', filename);
+        fs.unlink(filePath, (err) => {
+            if (err) {
+                console.error('Erreur suppression avatar:', err.message);
+            }
+        });
+    }
+
+    await oauthAccountModel.deleteByUserId(userId);
+    return userModel.remove(userId);
+}
+
+module.exports = { getProfile, updateProfile, updateAvatar, changePassword, deleteAccount };

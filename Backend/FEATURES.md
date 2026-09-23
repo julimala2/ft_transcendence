@@ -1,9 +1,6 @@
-Features : 
-
-
 9/22&23:
 
-* AUTH
+# AUTH
 
 - register
     Limits : 
@@ -13,17 +10,24 @@ Features :
 - logout
 
 
-* USER
+# USER
 
 - display own profile (with email) or other profile via /:id (id, username, display_name, avatar_url - without email)
-- update profile (display_name)
 - upload avatar
     Limits : type jpg or png, 2Mo max 
+- update 
+    * profile (display_name)
+    * password (checks if old password is correct then changes with new if regex ok)
+    * email
+    * avatar
 
 
 
 
-Front - a prevoir suite a l'auth + OAuth backend
+
+# Front 
+
+## a prevoir suite a l'auth + OAuth backend
 
     -formulaires register/login (email, password, username, display_name optionnel)
     -validation du mot de passe (8 car min, 1 maj, 1 min, 1 chiffre, 1 caractere special)

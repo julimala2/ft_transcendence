@@ -1,7 +1,7 @@
+const { emailRegex, passwordRegex } = require('../../lib/validationPatterns');
+
 function validateRegister(req, res, next) {
     const { email, password, username } = req.body;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/; // caracteres speciaux acceptes : ! @ # $ % ^ & * ( ) _ + - = [ ] { } ; ' : " \ | , . < > / ?
 
     if (!email || !emailRegex.test(email)) {
         return res.status(400).json({ error: 'Email invalide' });
@@ -32,4 +32,18 @@ function validateLogin(req, res, next) {
     next();
 }
 
-module.exports = { validateRegister, validateLogin };
+function validateChangePassword(req, res, next) {
+    const { current_password, new_password } = req.body;
+
+    if (!new_password || !passwordRegex.test(new_password)) {
+        return res.status(400).json({ error: 'Nouveau mot de passe trop faible (8 caracteres minimum, 1 majuscule, 1 minuscule, 1 chiffre, 1 caractere special)' });
+    }
+
+    if (current_password !== undefined && typeof current_password !== 'string') {
+        return res.status(400).json({ error: 'Mot de passe actuel invalide' });
+    }
+
+    next();
+}
+
+module.exports = { validateRegister, validateLogin, validateChangePassword };

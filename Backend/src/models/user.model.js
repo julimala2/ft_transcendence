@@ -32,4 +32,8 @@ async function update(userId, data) {
     });
 }
 
-module.exports = { findByEmail, findByUsername, findById, create, setOffline, update };
+async function remove(userId) {
+    return prisma.user.delete({ where: { id: userId } });
+}
+
+module.exports = { findByEmail, findByUsername, findById, create, setOffline, update, remove };
