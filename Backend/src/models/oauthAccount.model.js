@@ -17,8 +17,4 @@ async function create({ user_id, provider, provider_user_id }) {
     });
 }
 
-async function deleteByUserId(userId) {
-    return prisma.oAuthAccount.deleteMany({ where: { user_id: userId } });
-}
-
-module.exports = { findByProvider, create, deleteByUserId };
+module.exports = { findByProvider, create };

@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
 const userModel = require('../models/user.model');
-const oauthAccountModel = require('../models/oauthAccount.model');
 const fs = require('fs');
 const path = require('path');
 
@@ -76,7 +75,6 @@ async function deleteAccount(userId, password) {
         });
     }
 
-    await oauthAccountModel.deleteByUserId(userId);
     return userModel.remove(userId);
 }
 
