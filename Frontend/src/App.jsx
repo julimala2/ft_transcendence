@@ -1,12 +1,12 @@
 import { createRoot } from 'react-dom/client'
 import { useState, useEffect } from 'react'
-import './Stylesheet.css'
-import styles from './style.module.css'; 
-import Quizz from './Quizz.jsx'
-import MainMenu from './MainMenu.jsx';
-import Settings from './Settings.jsx'
+import './Styling/Stylesheet.css'
+import styles from './Styling/style.module.css'; 
+import Quizz from './Misc/Quizz.jsx'
+import MainMenu from './Misc/MainMenu.jsx';
+import Settings from './Misc/Settings.jsx'
 import BgImg from './Assets/background-blue.png'
-import Blank from './Blank.jsx';
+import Blank from './Misc/Blank.jsx';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState("menu"); // Current screen switch genre menu/quizz/settings/bref

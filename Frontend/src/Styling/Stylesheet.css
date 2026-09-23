@@ -1,6 +1,6 @@
 body{
     background-color : #3506b8;
-    background-image : url(./Assets/background-blue.png);
+    background-image : url(../Assets/background-blue.png);
     color: white;
     padding: 40px;
     font-family:'Courier New', Courier, monospace;

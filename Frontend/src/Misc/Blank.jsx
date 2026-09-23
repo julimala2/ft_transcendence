@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { useState, useEffect } from 'react'
-import './Stylesheet.css'
-import styles from './style.module.css'; 
+import '../Styling/Stylesheet.css'
+import styles from '../Styling/style.module.css'; 
 
 function Blank({onMenu}){
     return ( <>
