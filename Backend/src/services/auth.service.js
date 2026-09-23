@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const userModel = require('../models/user.model');
-const { generateToken } = require('../lib/token');
+const { generateToken } = require('../../lib/token');
 
 async function registerUser({ email, password, username, display_name }) {
     const normalizedEmail = email.trim().toLowerCase();

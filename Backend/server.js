@@ -5,7 +5,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const https = require('https');
 const fs = require('fs');
-const authRoutes = require('./routes/auth.routes');
+const authRoutes = require('./src/routes/auth.routes');
 const app = express();
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));

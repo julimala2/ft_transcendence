@@ -1,5 +1,3 @@
-// TODO: définir les routes POST /register et POST /login, appeler les fonctions de controllers/auth.controller.js
-
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/auth.controller');

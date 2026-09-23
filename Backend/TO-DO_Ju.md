@@ -3,11 +3,12 @@ Authentification avec OAuth
 
 auth OAuth
     -creer l'app sur l'intra avec un nom pour remplir l'env 
-    -proteger avec un parametre "state" --> cookie parser a ajouter
+    -proteger avec un parametre "state"
 
-
-
-
+Routes user 
+    -recuperer profil
+    -recuperer profil de quelqu\un d'autre 
+    -modifier pseudo etc
 
 
 Front - a prevoir suite a l'auth + OAuth backend

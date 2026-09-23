@@ -1,4 +1,4 @@
-const prisma = require('../lib/prisma');
+const prisma = require('../../lib/prisma');
 
 async function findByEmail(email) {
     return prisma.user.findUnique({ where: { email }});

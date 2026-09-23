@@ -1,6 +1,6 @@
 const userModel = require('../models/user.model');
 const oauthAccountModel = require('../models/oauthAccount.model');
-const { generateToken } = require('../lib/token');
+const { generateToken } = require('../../lib/token');
 
 async function exchangeCodeForToken(code) {
     const response = await fetch('https://api.intra.42.fr/oauth/token', {
