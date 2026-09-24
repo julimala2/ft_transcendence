@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 900;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.loginButton {
+  padding: 10px 16px;
+  background: #0004ff;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.loginButton:hover {
+  background: #0004ffcc;
+  transform: translateY(-1px);
+}

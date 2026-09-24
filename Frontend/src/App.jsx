@@ -1,40 +1,20 @@
-import { createRoot } from 'react-dom/client'
-import { useState, useEffect } from 'react'
-import './Styling/Stylesheet.css'
+import { Dropdown } from "./Navigation/Dropdown"
+import { Header } from "./Navigation/Header"
 import styles from './Styling/style.module.css'; 
-import Quizz from './Misc/Quizz.jsx'
-import MainMenu from './Misc/MainMenu.jsx';
-import Settings from './Misc/Settings.jsx'
-import BgImg from './Assets/background-blue.png'
-import Blank from './Misc/Blank.jsx';
 
-function App() {
-  const [currentScreen, setCurrentScreen] = useState("menu"); // Current screen switch genre menu/quizz/settings/bref
-  const [quizzSettings, setQuizzSettings] = useState({timerDuration: 5, numQuestions: 3}); //Quizz settings qui seront passes a la backend pour request les questions
-  
-  const goToSettings = () => setCurrentScreen("settings");
-  const goToMenu = () => setCurrentScreen("menu");
-  const goToBlank = () => setCurrentScreen("blank");
-
-  const startQuizz = (chosenQuizzSettings) =>{
-    setQuizzSettings(chosenQuizzSettings);
-    setCurrentScreen("quizz");
-  }
-
-  const finishQuizz = () => {
-    setCurrentScreen("menu");
-  }
-
-  switch (currentScreen) {
-    case "quizz":
-      return <Quizz onMenu={goToMenu}/>; //Todo : Modifier le quizz component pour qu'il prenne en params les settings voulus (et fasse la request backend etcetc)
-    case "settings":
-      return <Settings onMenu={goToMenu}/>;
-    case "blank":
-      return <Blank onMenu={goToMenu}/>
-    default:
-      return <MainMenu onPlay={startQuizz} onOnlinePlay={goToBlank} onSettings={goToSettings} onProfile={goToBlank}/>;
-  }
+function App(){
+    return(
+        <>
+        <Header/>
+        <div className={styles.body}>
+            <div className={styles.div} style={{marginTop:"50px",height:"50em",width:"75%"}}>
+                <h1>Bonjour je suis un titre</h1>
+                <p>Bonjour je suis un paragraphe</p>
+                <label>Bonjour je suis un label</label>
+            </div>
+        </div>
+        </>
+    );
 }
 
-export default App;
+export default App

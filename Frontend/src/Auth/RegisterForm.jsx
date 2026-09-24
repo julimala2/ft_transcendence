@@ -4,6 +4,32 @@ import { useAuth } from '../Context/AuthContext'
 import '../Styling/Stylesheet.css'
 import styles from '../Styling/style.module.css';
 
+export function validatePassword(password){
+    const specialCharsRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+    if(password.length < 8){
+        throw { error: 'Password must be 8 characters or more.'};
+    }
+    if(!/[A-Z]/.test(password)){
+        throw { error: 'Password must contain a uppercase letter.'};
+    }
+    if(!/[a-z]/.test(password)){
+        throw { error: 'Password must contain a lowercase letter.'}
+    }
+    if(!/[0-9]/.test(password)){
+        throw { error: 'Password must contain a number.'};
+    }
+    if(!specialCharsRegex.test(password)){
+        throw { error: 'Password must contain a special character.'}
+    }
+}
+
+function validateEmail(email){
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        throw { error: 'Invalid Email.' };
+    }    
+}
+
 export function RegisterForm() {
     const {register} = useAuth();
     const [email, setEmail] = useState('');
@@ -19,6 +45,8 @@ export function RegisterForm() {
         setIsSubmitting(true);
 
         try{
+            validateEmail(email);
+            validatePassword(password);
             await register(email,password,username);
         }
         catch(err){
@@ -31,8 +59,9 @@ export function RegisterForm() {
 
     return (
         <form onSubmit={handleSubmit}>
+            <label>Sign up</label>
             <div>
-                <label htmlFor='email'>Email</label>
+                <label htmlFor='email'>Email :</label>
                 <input
                     id="email"
                     type="email"
@@ -42,7 +71,7 @@ export function RegisterForm() {
                 />
             </div>
             <div>
-                <label htmlFor="username">Username</label>
+                <label htmlFor="username">Username :</label>
                 <input
                     id="username"
                     type="username"
@@ -52,7 +81,7 @@ export function RegisterForm() {
                 />
             </div>
             <div>
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Password :</label>
                 <input
                 id="password"
                 type="password"
@@ -64,8 +93,8 @@ export function RegisterForm() {
         
         {error && <p style = {{color:'red'}}>{error}</p>}
 
-        <button type="submit" disabled={isSubmitting} className={isSubmitting? 'styles.disabled':'styles.button'}>
-            {isSubmitting ? 'Signing in...' : 'Sign in'} 
+        <button type="submit" disabled={isSubmitting} className={isSubmitting ? styles.disabled : styles.button}>
+            {isSubmitting ? 'Signing up...' : 'Sign up'} 
         </button>
         
         </form>

@@ -9,7 +9,7 @@ export function AuthProvider ({children}) {
 
     async function refreshUser(){
         try{
-            const me = await apiFetch('api/auth/me');
+            const me = await apiFetch('/api/auth/me');
             setUser(me);
         }
         catch (err) {
@@ -31,13 +31,13 @@ export function AuthProvider ({children}) {
     }
 
     async function logout() {
-        await apiFetch('api/auth/logout', {method: 'POST'});
+        await apiFetch('/api/auth/logout', {method: 'POST'});
         setUser(null);
     }
 
     // TODO A verif quand on aura OAuth online
     function loginWithOAuth() {
-        window.location.href = '${import.meta.env.VITE_API_URL}/api/auth/oauth/42';
+        window.location.href = `${import.meta.env.VITE_API_URL}/api/auth/oauth/42`;
     }
 
     async function register(email,password,username) {
@@ -49,7 +49,17 @@ export function AuthProvider ({children}) {
         return data;
     }
 
-    const value = {user, loading, login, register, logout, loginWithOAuth, refreshUser};
+    async function changePassword(currentPassword,newPassword) {
+        return await apiFetch('/api/users/me/password', {
+            method: 'PATCH',
+            body: JSON.stringify({
+                current_password: currentPassword,
+                new_password: newPassword,
+            }),
+        });
+    }
+
+    const value = {user, loading, login, register, logout, loginWithOAuth, refreshUser, changePassword};
 
 
 return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
