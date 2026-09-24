@@ -22,6 +22,18 @@
     * avatar
 
 
+9/24
+# FRIENDS
+
+- friend request
+    * send
+    * accept
+    * decline --> if declined, can never be friends again (to keep?)
+
+- delete friend 
+- user's friends list
+- user's pending requests (recieved and sent)
+
 
 
 
