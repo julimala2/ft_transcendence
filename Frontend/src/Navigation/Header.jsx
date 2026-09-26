@@ -1,34 +1,21 @@
-// Navigation/Header.jsx
-import { useState, useEffect } from 'react';
-import { useAuth } from '../Context/AuthContext';
-import { Modal } from './Modal';
-import { Profile } from '../Profile/Profile';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../Api/auth';
 import styles from '../Styling/Header.module.css';
+import layoutStyles from '../Styling/Layout.module.css';
 
 export function Header() {
-  const { user } = useAuth();
-  const [authOpen, setAuthOpen] = useState(false);
+    const { user } = useAuth();
 
-  useEffect(() => {
-    if (user) setAuthOpen(false);
-  }, [user]);
-
-  return (
-    <>
-      <header className={styles.header}>
-        <div className={styles.brand}>LeQuizzDeLaMortQuiTue</div>
-
-        <button
-          className={styles.loginButton}
-          onClick={() => setAuthOpen(true)}
-        >
-          {user ? user.email : 'Log in'}
-        </button>
-      </header>
-
-      <Modal isOpen={authOpen} onClose={() => setAuthOpen(false)}>
-        <Profile />
-      </Modal>
-    </>
-  );
+    return (
+        <header className={styles.header}>
+            <Link to="/" className={`${styles.brand} ${layoutStyles.brandLink}`}>
+                LeQuizzDeLaMortQuiTue
+            </Link>
+            <nav className={layoutStyles.headerNav}>
+                <Link to={user ? '/profile' : '/login'} className={styles.loginButton}>
+                    {user ? user.display_name || user.email : 'Log in'}
+                </Link>
+            </nav>
+        </header>
+    );
 }

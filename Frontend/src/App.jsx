@@ -1,20 +1,28 @@
-import { Dropdown } from "./Navigation/Dropdown"
-import { Header } from "./Navigation/Header"
-import styles from './Styling/style.module.css'; 
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './Pages/Layout';
+import { HomePage } from './Pages/HomePage';
+import { QuizPage } from './Pages/QuizPage';
+import { SettingsPage } from './Pages/SettingsPage';
+import { LoginPage } from './Pages/LoginPage';
+import { ProfilePage } from './Pages/ProfilePage';
+import { FriendsPage } from './Pages/FriendsPage';
+import { NotFoundPage } from './Pages/NotFoundPage';
 
-function App(){
-    return(
-        <>
-        <Header/>
-        <div className={styles.body}>
-            <div className={styles.div} style={{marginTop:"50px",height:"50em",width:"75%"}}>
-                <h1>Bonjour je suis un titre</h1>
-                <p>Bonjour je suis un paragraphe</p>
-                <label>Bonjour je suis un label</label>
-            </div>
-        </div>
-        </>
+function App() {
+    return (
+        <Routes>
+            <Route element={<Layout />}>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/play" element={<QuizPage />} />
+                <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/users/:userId" element={<ProfilePage />} />
+                <Route path="/friends" element={<FriendsPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Route>
+        </Routes>
     );
 }
 
-export default App
+export default App;

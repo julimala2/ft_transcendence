@@ -1,21 +1,19 @@
-//Main dispatcher for profile widgette
+import { Navigate } from 'react-router-dom';
+import { useAuth } from '../Api/auth';
+import { MyProfile } from './MyProfile';
+import { PublicProfile } from './PublicProfile';
 
-import { useAuth } from "../Context/AuthContext";
-import { AuthWidget } from "../Auth/AuthWidget";
-import { MyProfile } from "./MyProfile";
-import { PublicProfile } from "./PublicProfile";
+export function Profile({ userId = null }) {
+    const { user, loading } = useAuth();
 
-export function Profile({userId = null}){
-    const {user, loading} = useAuth();
+    if (loading) return <p>Loading...</p>;
 
-    if(loading) return <p>Loading...</p>;
+    const lookingAtMe = !userId || (user && String(userId) === String(user.id));
 
-    const isMe =! userId || (user && String(userId) === String(user.id));
-
-    if(isMe){
-        if(!user) return <AuthWidget/>;
-        return <MyProfile/>;
+    if (lookingAtMe) {
+        if (!user) return <Navigate to="/login" replace />;
+        return <MyProfile />;
     }
 
-    return <PublicProfile userId={userId}/>;
+    return <PublicProfile userId={userId} />;
 }

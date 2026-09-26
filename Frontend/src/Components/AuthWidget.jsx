@@ -2,7 +2,7 @@
 //only use that (not loginForm/register etc...)
 
 import { useState } from "react";
-import { useAuth } from "../Context/AuthContext";
+import { useAuth } from "../Api/auth";
 import { LoginForm } from "./LoginForm";
 import { RegisterForm } from "./RegisterForm";
 import styles from "../Styling/style.module.css"

@@ -9,6 +9,7 @@
   justify-content: center;
   z-index: 1000;
   animation: fadeIn 0.2s ease;
+  min-width: 60%;
 }
 
 .modal-content {

@@ -1,0 +1,38 @@
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.menuNav {
+    background-color: darkblue;
+    padding: 20px;
+    border: 5px blue solid;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.menuLink {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.headerNav {
+    display: flex;
+    gap: 8px;
+}
+
+.brandLink {
+    color: inherit;
+    text-decoration: none;
+}

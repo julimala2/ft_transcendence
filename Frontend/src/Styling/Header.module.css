@@ -31,6 +31,8 @@
   font-family: inherit;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .loginButton:hover {

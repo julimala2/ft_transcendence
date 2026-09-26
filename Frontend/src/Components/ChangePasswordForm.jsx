@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAuth } from '../Context/AuthContext';
+import { useAuth } from '../Api/auth';
 import styles from '../Styling/style.module.css';
 import { validatePassword } from './RegisterForm';
 
@@ -29,7 +29,6 @@ export function ChangePasswordForm( {onDone} ){
         setError(null);
         setSuccess(false);
         setIsSubmitting(true);
-        console.debug("bonjour");
         try{
             validate();
             await changePassword(oldPassword,newPassword);
@@ -38,10 +37,9 @@ export function ChangePasswordForm( {onDone} ){
             setNewPassword('');
             setConfirmPassword('');
             setSuccess(true);
-            setTimeout(() => onDone?.(),5000);
+            setTimeout(() => onDone?.(), 5000);
         }
         catch(err){
-            console.error('CHANGE PWD ERROR:', err);  // DEBUG
             setError(err.error || 'Error');
         }
         finally{
