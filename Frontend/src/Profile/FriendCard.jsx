@@ -21,6 +21,7 @@ export function FriendCard({ friend, onClick }) {
                 {friend.display_name && friend.display_name !== friend.username && (
                     <span className={styles.displayName}>{friend.display_name}</span>
                 )}
+                
             </div>
         </li>
     );

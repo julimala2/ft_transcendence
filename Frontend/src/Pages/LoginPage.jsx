@@ -8,12 +8,12 @@ export function LoginPage() {
     const oauthError = searchParams.get('error') === 'oauth';
 
     if (loading) return <p>Loading...</p>;
-    if (user) return <Navigate to="/profile" replace />;
+    if (user) return <Navigate to="/" replace />;
 
     return (
         <div>
             {oauthError && (
-                <p style={{ color: 'salmon' }}>42 login failed. Try again or use email.</p>
+                <p style={{ color: 'red' }}>42 login failed. Try again or use email.</p>
             )}
             <AuthWidget />
         </div>

@@ -5,8 +5,8 @@ import styles from '../Styling/Layout.module.css';
 export function Layout() {
     return (
         <>
-            <Header />
             <main className={styles.main}>
+                <Header />
                 <Outlet />
             </main>
         </>

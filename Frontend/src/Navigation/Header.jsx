@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../Api/auth';
 import styles from '../Styling/Header.module.css';
 import layoutStyles from '../Styling/Layout.module.css';
+import { Avatar } from '../Components/Avatar';
 
 export function Header() {
     const { user } = useAuth();
@@ -12,7 +13,11 @@ export function Header() {
                 LeQuizzDeLaMortQuiTue
             </Link>
             <nav className={layoutStyles.headerNav}>
-                <Link to={user ? '/profile' : '/login'} className={styles.loginButton}>
+                <Link
+                    to={user ? '/profile' : '/login'}
+                    className={styles.loginButton}
+                >
+                    {user ? <Avatar src={user.avatar_url} username={user.display_name} size={40}/> : <Avatar/>}
                     {user ? user.display_name || user.email : 'Log in'}
                 </Link>
             </nav>
