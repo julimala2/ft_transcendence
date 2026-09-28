@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../Api/auth';
-import styles from '../Styling/style.module.css';
+import styles from '../Styling/Profile.module.css';
 import { validatePassword } from './RegisterForm';
 
 export function ChangePasswordForm( {onDone} ){

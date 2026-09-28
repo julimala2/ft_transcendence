@@ -58,7 +58,7 @@ export function FriendsList() {
         navigate(`/users/${friend.id}`);
     }
 
-    if (loading) return <p>Loading...</p>;
+    // if (loading) return <p>Loading...</p>;
     if (error) return <p className={styles.error}>{error}</p>;
 
     return ( <div className={styles.main}>

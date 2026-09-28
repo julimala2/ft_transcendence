@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useAuth } from "../Api/auth";
 import { LoginForm } from "./LoginForm";
 import { RegisterForm } from "./RegisterForm";
-import styles from "../Styling/style.module.css"
+import styles from "../Styling/Login.module.css"
 
 export function AuthWidget() {
     const {loginWithOAuth} = useAuth();
@@ -23,9 +23,9 @@ export function AuthWidget() {
     }
 
     return (
-        <div className={styles.div}>
+        <div className={styles.main}>
+            <div className={styles.card}>
             {renderForm()}
-            <div>
             {mode === 'login' ? 
                 (<button onClick={() => setMode('register')} className={styles.button}>
                     No account ? Sign up
@@ -35,12 +35,9 @@ export function AuthWidget() {
                     Existing user ? Log in
                 </button>
             )}
-            </div>
-            <div>
             <button onClick={() => loginWithOAuth()} className={styles.button42}>
                 Login with 42
             </button>
-
             </div>
         </div>
     );

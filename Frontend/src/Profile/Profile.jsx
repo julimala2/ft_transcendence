@@ -6,7 +6,7 @@ import { PublicProfile } from './PublicProfile';
 export function Profile({ userId = null }) {
     const { user, loading } = useAuth();
 
-    if (loading) return <p>Loading...</p>;
+    // if (loading) return <p>Loading...</p>;
 
     const lookingAtMe = !userId || (user && String(userId) === String(user.id));
 

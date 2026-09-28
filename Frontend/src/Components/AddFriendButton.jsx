@@ -26,6 +26,22 @@ export function AddFriendButton({userId,friendshipId,relationship,onChange}){
     }
 
     if (relationship ==='friends') {
-        return <button className={styles.friends} disabled>Friends</button>;
+        return <button className={styles.friends} disabled>Already friends 🤝</button>;
     }
+    else if (relationship ==='pending_sent') {
+        return <button disabled>Request Sent</button>
+    }
+
+    return (
+        <>
+            <button onClick={handleClick} disabled={loading}>
+                {loading
+                ? '...'
+                : relationship === 'pending_received'
+                ? 'Accept request'
+                : 'Add friend'}
+            </button>
+            {error && <p className={styles.error}>{error}</p>}
+        </>
+    );
 }

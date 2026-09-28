@@ -23,3 +23,10 @@ export function declineRequest(friendshipId) {
 export function removeFriend(friendshipId) {
     return apiFetch(`/api/friends/${friendshipId}`, { method: 'DELETE' });
 }
+
+export function sendFriendRequest(addresseeId) {
+    return apiFetch('/api/friends', {
+        method: 'POST',
+        body: JSON.stringify({ addressee_id: addresseeId }),
+    });
+}

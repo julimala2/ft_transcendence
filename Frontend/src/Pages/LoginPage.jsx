@@ -7,7 +7,7 @@ export function LoginPage() {
     const [searchParams] = useSearchParams();
     const oauthError = searchParams.get('error') === 'oauth';
 
-    if (loading) return <p>Loading...</p>;
+    // if (loading) return <p>Loading...</p>;
     if (user) return <Navigate to="/" replace />;
 
     return (

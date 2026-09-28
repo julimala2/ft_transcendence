@@ -38,7 +38,9 @@ export function MyProfile(){
         case 'password':
             return (
                 <div className={styles.main}>
-                    <ChangePasswordForm onDone={()=> setMode('view')}/>
+                    <div className={styles.card}>
+                        <ChangePasswordForm onDone={()=> setMode('view')}/>
+                    </div>
                 </div>
             )
         default:
