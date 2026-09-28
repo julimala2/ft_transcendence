@@ -1,27 +1,31 @@
 const friendService = require('../services/friends.service.js');
 
 async function sendRequest(req, res) {
+    const { username } = req.body;
+    let addresseeId = req.body.addressee_id;
 
-    const addressee_id = parseInt(req.body.addressee_id, 10);
-
-    if (isNaN(addressee_id)) {
-        return res.status(400).json({ error: 'addressee_id invalide' });
+    if (!username && addresseeId === undefined) {
+        return res.status(400).json({ error: 'username ou addressee_id requis' });
     }
 
-    if (addressee_id === req.user.id) {
-        return res.status(400).json({ error: 'Impossible de s\'ajouter soi-meme' });
+    if (!username) {
+        addresseeId = parseInt(addresseeId, 10);
+        if (isNaN(addresseeId)) {
+            return res.status(400).json({ error: 'addressee_id invalide' });
+        }
     }
 
     try {
-        const friendship = await friendService.sendRequest(req.user.id, addressee_id);
+        const friendship = await friendService.sendRequest(req.user.id, { username, addresseeId });
         return res.status(201).json(friendship);
     }
     catch (err) {
+        if (err.code === 'SELF_REQUEST') {
+            return res.status(400).json({ error: 'Impossible de s\'ajouter soi-meme' });
+        }
         if (err.code === 'ALREADY_EXISTS') {
             return res.status(409).json({ error: 'Demande deja existante ou vous etes deja amis' });
         }
-
-
         if (err.code === 'USER_NOT_FOUND') {
             return res.status(404).json({ error: 'Utilisateur introuvable' });
         }

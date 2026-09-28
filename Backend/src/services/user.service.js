@@ -7,6 +7,10 @@ async function getProfile(userId) {
     return userModel.findById(userId);
 }
 
+async function getProfileByUsername(username) {
+    return userModel.findByUsername(username);
+}
+
 async function updateProfile(userId, data) {
     if (data.email) {
         const existing = await userModel.findByEmail(data.email);
@@ -78,4 +82,4 @@ async function deleteAccount(userId, password) {
     return userModel.remove(userId);
 }
 
-module.exports = { getProfile, updateProfile, updateAvatar, changePassword, deleteAccount };
+module.exports = { getProfile, getProfileByUsername, updateProfile, updateAvatar, changePassword, deleteAccount };

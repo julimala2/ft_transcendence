@@ -10,6 +10,7 @@ router.patch('/me', verifyToken, userController.updateProfile);
 router.post('/me/avatar', verifyToken, uploadAvatar, handleUploadError, userController.uploadAvatar);
 router.patch('/me/password', verifyToken, validateChangePassword, userController.changePassword);
 router.delete('/me', verifyToken, userController.deleteAccount);
+router.get('/username/:username', verifyToken, userController.getProfileByUsername);
 router.get('/:id', verifyToken, userController.getPublicProfile); //a bien garder en derniere route pour pas interferer avec /me
 
 

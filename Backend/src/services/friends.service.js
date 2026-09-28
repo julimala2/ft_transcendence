@@ -1,19 +1,33 @@
 const userModel = require('../models/user.model');
 const friendModel = require('../models/friends.model');
 
-async function sendRequest(requesterId, addresseeId) {
-    const addressee = await userModel.findById(addresseeId);
+async function sendRequest(requesterId, { username, addresseeId }) {
+    let addressee;
+
+    if (username) {
+        addressee = await userModel.findByUsername(username);
+    }
+    else {
+        addressee = await userModel.findById(addresseeId);
+    }
+
     if (!addressee) {
         const err = new Error('User not found');
         err.code = 'USER_NOT_FOUND';
         throw err;
     }
 
-    const existing = await friendModel.findBetween(requesterId, addresseeId);
+    if (addressee.id === requesterId) {
+        const err = new Error('Cannot add yourself');
+        err.code = 'SELF_REQUEST';
+        throw err;
+    }
+
+    const existing = await friendModel.findBetween(requesterId, addressee.id);
 
     if (existing && existing.status === 'declined') {
         await friendModel.remove(existing.id);
-        return friendModel.create(requesterId, addresseeId);
+        return friendModel.create(requesterId, addressee.id);
     }
 
     if (existing) {
@@ -22,7 +36,7 @@ async function sendRequest(requesterId, addresseeId) {
         throw err;
     }
 
-    return friendModel.create(requesterId, addresseeId);
+    return friendModel.create(requesterId, addressee.id);
 }
 
 async function getFriendshipOrThrow(friendshipId) {
