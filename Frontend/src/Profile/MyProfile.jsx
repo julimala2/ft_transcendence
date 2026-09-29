@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../Api/auth";
 import { ChangePasswordForm } from "../Components/ChangePasswordForm";
-import styles from '../Styling/Profile.module.css'
 import { EditableField } from "../Components/EditableField";
 import { Avatar } from "../Components/Avatar";
 
@@ -49,9 +48,9 @@ export function MyProfile(){
                         <label>DisplayName :{user.display_name}</label>
                         {/* <label>Avatar url:{user.avatar_url}</label> */}
                         <section className="card">
-                            <button onClick={()=>setMode('edit')} className={styles.button}>Edit profile</button>
-                            <button onClick={()=>setMode('password')} className={styles.button}>Change password</button>
-                            <button onClick={()=>logout()} className={styles.button}>Log out</button>
+                            <button onClick={()=>setMode('edit')}>Edit profile</button>
+                            <button onClick={()=>setMode('password')}>Change password</button>
+                            <button onClick={()=>logout()}>Log out</button>
                         </section>
                     </section>
                 </div>

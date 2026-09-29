@@ -3,7 +3,6 @@ import { apiFetch } from '../Api/api';
 import { Avatar } from '../Components/Avatar';
 import { AddFriendButton } from '../Components/AddFriendButton';
 import { getFriends, getReceivedRequests, getSentRequests } from '../Api/friends';
-import styles from '../Styling/Profile.module.css'
 
 async function fetchRelationship(profile){
     const [friends,received,sent] = await Promise.all([
@@ -65,9 +64,9 @@ export function PublicProfile({ userId }) {
     if (!profile) return <p></p>;
 
     return (
-        <div className={styles.main}>
+        <div className="page">
 
-            <div className={styles.card}>
+            <div className="card">
                 <Avatar src={profile.avatar_url} username={profile.username} size={80} />
                 <p>Username: {profile.username}</p>
                 <p>Display name: {profile.display_name}</p>
