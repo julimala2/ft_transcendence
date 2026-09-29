@@ -28,6 +28,8 @@ model User {
   attempts  QuizAttempt[]
   sentFriendRequests     Friendship[] @relation("FriendshipRequester")
   receivedFriendRequests Friendship[] @relation("FriendshipAddressee")
+  blockedUsers   BlockedUser[] @relation("BlockedUserBlocker")
+  blockedByUsers BlockedUser[] @relation("BlockedUserBlocked")
 }
 
 model OAuthAccount {
@@ -52,6 +54,17 @@ model Friendship {
   updated_at   DateTime @updatedAt
 
   @@unique([requester_id, addressee_id])
+}
+
+model BlockedUser {
+  id         Int      @id @default(autoincrement())
+  blocker_id Int
+  blocker    User     @relation("BlockedUserBlocker", fields: [blocker_id], references: [id], onDelete: Cascade)
+  blocked_id Int
+  blocked    User     @relation("BlockedUserBlocked", fields: [blocked_id], references: [id], onDelete: Cascade)
+  created_at DateTime @default(now())
+
+  @@unique([blocker_id, blocked_id])
 }
 
 model Quiz {

@@ -12,6 +12,9 @@ const ERRORS = {
     REQUEST_NOT_PENDING: { status: 409, message: 'Cette demande n\'est plus en attente' },
     NOT_PARTICIPANT: { status: 403, message: 'Non autorise a supprimer cette amitie' },
     NOT_FRIENDS: { status: 409, message: 'Vous n\'etes pas amis' },
+    SELF_BLOCK: { status: 400, message: 'Impossible de se bloquer soi-meme' },
+    ALREADY_BLOCKED: { status: 409, message: 'Utilisateur deja bloque' },
+    NOT_BLOCKED: { status: 409, message: 'Utilisateur non bloque' },
 };
 
 function serviceError(code) {
