@@ -5,6 +5,7 @@
 const authService = require('../services/auth.service');
 const oauthService = require('../services/oauth.service');
 const { COOKIE_OPTIONS } = require('../../lib/cookieOptions');
+const { sendServiceError } = require('../../lib/errorHandling');
 
 async function register(req, res) {
     const { email, password, username, display_name } = req.body;
@@ -20,14 +21,7 @@ async function register(req, res) {
         });
     }
     catch (err) {
-        if(err.code === 'EMAIL_TAKEN') {
-            return res.status(409).json({ error: 'Email deja utilise' });
-        }
-        if(err.code === 'USERNAME_TAKEN') {
-            return res.status(409).json({ error: 'Username deja utilise' });
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 
@@ -45,11 +39,7 @@ async function login(req, res) {
         });
     }
     catch (err) {
-        if (err.code === 'INVALID_CREDENTIALS') {
-            return res.status(401).json({ error: 'Email ou mot de passe invalide'});
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 

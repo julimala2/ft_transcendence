@@ -1,6 +1,7 @@
 const userService = require('../services/user.service');
 const { COOKIE_OPTIONS } = require('../../lib/cookieOptions');
 const { emailRegex } = require('../../lib/validationPatterns');
+const { sendServiceError } = require('../../lib/errorHandling');
 
 async function getProfile(req, res) {
     try {
@@ -99,11 +100,7 @@ async function updateProfile(req, res) {
         });
     }
     catch (err) {
-        if (err.code === 'EMAIL_TAKEN') {
-            return res.status(409).json({ error: 'Email deja utilise' });
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 
@@ -138,11 +135,7 @@ async function changePassword(req, res) {
         return res.status(200).json({ message: 'Mot de passe mis a jour' });
     }
     catch (err) {
-        if (err.code === 'INVALID_CURRENT_PASSWORD') {
-            return res.status(401).json({ error: 'Mot de passe actuel incorrect' });
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 
@@ -155,11 +148,7 @@ async function deleteAccount(req, res) {
         return res.status(200).json({ message: 'Compte supprime' });
     }
     catch (err) {
-        if (err.code === 'INVALID_PASSWORD') {
-            return res.status(401).json({ error: 'Mot de passe incorrect' });
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 
