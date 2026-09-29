@@ -47,6 +47,29 @@ async function getPublicProfile(req, res) {
 }
 
 
+async function getProfileByUsername(req, res) {
+    const { username } = req.params;
+
+    try {
+        const user = await userService.getProfileByUsername(username);
+
+        if (!user) {
+            return res.status(404).json({ error: 'Utilisateur introuvable' });
+        }
+
+        return res.status(200).json({
+            id: user.id,
+            username: user.username,
+            display_name: user.display_name,
+            avatar_url: user.avatar_url,
+        });
+    }
+    catch (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Erreur serveur' });
+    }
+}
+
 async function updateProfile(req, res) {
     const { display_name, email } = req.body;
     const data = {};
@@ -140,4 +163,4 @@ async function deleteAccount(req, res) {
     }
 }
 
-module.exports = { getProfile, getPublicProfile, updateProfile, uploadAvatar, changePassword, deleteAccount };
+module.exports = { getProfile, getPublicProfile, getProfileByUsername, updateProfile, uploadAvatar, changePassword, deleteAccount };

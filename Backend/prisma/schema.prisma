@@ -1,5 +1,8 @@
 // SQLite en attendant le choix définitif Postgres/MariaDB à 3 (cf TO-DO_backend.md)
 // J ai mis en commentaire le debut des tables pour les quiz pour qu on puisse en parler plus tard
+// TODO migration Postgres : changer provider + url du datasource, repartir avec un historique
+// de migrations neuf (le SQL de prisma/migrations/*.sql est specifique a SQLite),
+// voir le TODO enum sur Friendship.status plus bas
 
 generator client {
   provider = "prisma-client-js"
@@ -22,7 +25,9 @@ model User {
   created_at    DateTime  @default(now())
   updated_at    DateTime  @updatedAt
   oauthAccounts OAuthAccount[]
-  attempts  QuizAttempt[] 
+  attempts  QuizAttempt[]
+  sentFriendRequests     Friendship[] @relation("FriendshipRequester")
+  receivedFriendRequests Friendship[] @relation("FriendshipAddressee")
 }
 
 model OAuthAccount {
@@ -34,6 +39,19 @@ model OAuthAccount {
   created_at        DateTime @default(now())
 
   @@unique([provider, provider_user_id])
+}
+
+model Friendship {
+  id           Int      @id @default(autoincrement())
+  requester_id Int
+  requester    User     @relation("FriendshipRequester", fields: [requester_id], references: [id], onDelete: Cascade)
+  addressee_id Int
+  addressee    User     @relation("FriendshipAddressee", fields: [addressee_id], references: [id], onDelete: Cascade)
+  status       String   @default("pending") // TODO: passer en enum (pending/accepted/declined) quand on migre vers Postgres, pas supporte par Prisma sur SQLite
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  @@unique([requester_id, addressee_id])
 }
 
 model Quiz {

@@ -7,6 +7,7 @@ const https = require('https');
 const fs = require('fs');
 const authRoutes = require('./src/routes/auth.routes');
 const userRoutes = require('./src/routes/user.routes');
+const friendRoutes = require('./src/routes/friends.routes');
 const app = express();
 const { WebSocketServer } = require('ws');
 const { authenticateUpgrade } = require('./websocket/auth');
@@ -19,6 +20,9 @@ app.use(cookieParser());
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/uploads', express.static('uploads'));
+app.use('/api/friends', friendRoutes);
+
+
 app.use(cors());
 app.use(express.json());
 
