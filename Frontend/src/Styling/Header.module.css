@@ -1,44 +1,76 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 128px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 64px;
-  background: rgba(0, 0, 0, 0);
-  z-index: 900;
-  font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+    height: var(--header-h);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: rgba(18, 16, 28, 0.72);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
 }
 
 .brand {
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+.brand:hover {
+    text-decoration: none;
+    color: var(--accent-hover);
+}
+
+.nav {
+    flex: none;
 }
 
 .loginButton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap:8px;
-  padding: 10px;
-  background: #464646;
-  color: white;
-  border: 1px solid rgb(169, 169, 169);
-  border-radius: 30px;
-  font-family: inherit;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  -webkit-box-shadow: 0px 0px 0px 0px #1B0092; 
-  box-shadow: 0px 0px 15px 5px #626262;
-  /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    padding: 5px 14px 5px 5px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
 }
 
 .loginButton:hover {
-  background: #1e1e1ecc;
-  transform: translateY(3px);
+    text-decoration: none;
+    background: var(--surface-2);
+    border-color: rgba(124, 92, 255, 0.45);
+}
+
+.loginText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 14px;
+    }
+    .brand {
+        font-size: 0.95rem;
+    }
+    .loginButton {
+        max-width: 140px;
+    }
 }

@@ -8,6 +8,7 @@ import { ProfilePage } from './Pages/ProfilePage';
 import { FriendsPage } from './Pages/FriendsPage';
 import { NotFoundPage } from './Pages/NotFoundPage';
 
+
 function App() {
     return (
         <Routes>

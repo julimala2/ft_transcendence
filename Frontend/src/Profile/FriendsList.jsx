@@ -1,18 +1,17 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { acceptRequest, declineRequest, getFriends, getReceivedRequests } from '../Api/friends';
+import { Link, useNavigate } from 'react-router-dom';
+import { acceptRequest, declineRequest, getFriends, getReceivedRequests, sendFriendNamedRequest } from '../Api/friends';
 import { FriendCard } from './FriendCard';
-import { Link } from 'react-router-dom';
-import layoutStyles from '../Styling/Layout.module.css'
 import styles from '../Styling/FriendsList.module.css';
-import mainstyle from '../Styling/style.module.css'
-import { MenuButton } from '../Components/NavButtons';
+import { UserSearch } from '../Components/UserSearch';
 
 export function FriendsList() {
     const [friends, setFriends] = useState([]);
-    const [requests,setRequests] = useState([]);
+    const [requests, setRequests] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [inviteTarget, setInviteTarget] = useState('');
+    const [inviteMessage, setInviteMessage] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -23,8 +22,8 @@ export function FriendsList() {
                 const data = await getFriends();
                 const requestData = await getReceivedRequests();
                 if (!cancelled) {
-                setFriends(data);
-                setRequests(requestData);
+                    setFriends(data);
+                    setRequests(requestData);
                 }
             } catch (err) {
                 if (!cancelled) setError(err.error || 'error receiving requests');
@@ -39,7 +38,7 @@ export function FriendsList() {
         };
     }, []);
 
-    async function handleRequestAction(friendshipId, action){
+    async function handleRequestAction(friendshipId, action) {
         try {
             if (action === 'accept') {
                 await acceptRequest(friendshipId);
@@ -58,48 +57,113 @@ export function FriendsList() {
         navigate(`/users/${friend.id}`);
     }
 
+    async function sendNamedInvite() {
+        const username = inviteTarget.trim();
+        if (!username) return;
+
+        try {
+            await sendFriendNamedRequest(username);
+            setInviteMessage({ type: 'success', text: `Invitation sent to ${username}` });
+            setInviteTarget('');
+        } catch (err) {
+            setInviteMessage({ type: 'error', text: err.error || 'error!' });
+        }
+    }
+
     // if (loading) return <p>Loading...</p>;
     if (error) return <p className={styles.error}>{error}</p>;
 
-    return ( <div className={styles.main}>
-        {/* Friends requests  */}
-        <div className={styles.container}>
-            {requests.length === 0 ? (
-                <p>No friend requests</p>
-            ):
-            (
-                <ul>
-                    {requests.map((r)=> (
-                        <li key={r.friendshipId}>
-                            <span>
-                                {r.username}
-                            <button onClick={()=> handleRequestAction(r.friendshipId,'accept')}>✅</button>
-                            <button onClick={()=> handleRequestAction(r.friendshipId,'decline')}>❌</button>
-                            </span>
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </div>
+    return (
+        <div className="page">
+            <header className={styles.header}>
+                <h1>Friends</h1>
+                <span className={styles.count}>
+                    {friends.length} {friends.length === 1 ? 'friend' : 'friends'}
+                </span>
+            </header>
 
-        {/* Friends list */}
-        <div className={styles.container}>
-            <h2>My friends</h2>
-            {friends.length === 0 ? (
-                <p className={styles.empty}>No friends yet</p>
-            ) : (
-                <ul className={styles.list}>
-                    {friends.map((f) => (
-                        <FriendCard
-                            key={f.friendshipId}
-                            friend={f}
-                            onClick={handleFriendClick}
-                        />
-                    ))}
-                </ul>
+            {/* User search */}
+            <section className="card">
+                <UserSearch onSelect={handleFriendClick} />
+            </section>
+
+            {/* Friend requests */}
+            {requests.length !== 0 && (
+                <section className="card">
+                    <h2 className={styles.cardTitle}>
+                        Requests <span className={styles.badge}>{requests.length}</span>
+                    </h2>
+                    <ul className="list">
+                        {requests.map((r) => (
+                            <li key={r.friendshipId} className={styles.request}>
+                                <div className={styles.avatar}>{r.username?.[0]}</div>
+                                <span className={styles.requestName}>{r.username}</span>
+                                <div className={styles.actions}>
+                                    <button
+                                        className={`${styles.iconBtn} ${styles.accept}`}
+                                        aria-label={`Accept ${r.username}`}
+                                        onClick={() => handleRequestAction(r.friendshipId, 'accept')}
+                                    >
+                                        ✓
+                                    </button>
+                                    <button
+                                        className={`${styles.iconBtn} ${styles.decline}`}
+                                        aria-label={`Decline ${r.username}`}
+                                        onClick={() => handleRequestAction(r.friendshipId, 'decline')}
+                                    >
+                                        ✕
+                                    </button>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
             )}
-        </div>
-        <MenuButton/>
+
+            {/* Friends list */}
+            <section className="card">
+                <h2 className={styles.cardTitle}>My friends</h2>
+                {friends.length === 0 ? (
+                    <p className="empty">No friends yet. Invite someone below to get started.</p>
+                ) : (
+                    <ul className="list">
+                        {friends.map((f) => (
+                            <FriendCard key={f.friendshipId} friend={f} onClick={handleFriendClick} />
+                        ))}
+                    </ul>
+                )}
+            </section>
+
+            {/* Invite by username */}
+            <section className="card">
+                <h2 className={styles.cardTitle}>Invite a friend</h2>
+                <div className={styles.inviteRow}>
+                    <input
+                        name="inviteInput"
+                        placeholder="Username"
+                        value={inviteTarget}
+                        onChange={(e) => setInviteTarget(e.target.value)}
+                        onKeyDown={(e) => e.key === 'Enter' && sendNamedInvite()}
+                    />
+                    <button
+                        onClick={sendNamedInvite}
+                        disabled={!inviteTarget.trim()}
+                    >
+                        Send invite
+                    </button>
+                </div>
+                {inviteMessage && (
+                    <p className={`alert ${inviteMessage.type === 'success' ? 'alert-success' : 'alert-error'}`}>
+                        {inviteMessage.text}
+                    </p>
+                )}
+            </section>
+
+            <div className={styles.footer}>
+                <Link to="/">
+                    <button>Menu</button>
+                </Link>
+            </div>
         </div>
     );
 }

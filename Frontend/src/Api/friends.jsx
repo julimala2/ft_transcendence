@@ -30,3 +30,14 @@ export function sendFriendRequest(addresseeId) {
         body: JSON.stringify({ addressee_id: addresseeId }),
     });
 }
+
+export function sendFriendNamedRequest(username) {
+    return apiFetch('/api/friends', {
+        method: 'POST',
+        body: JSON.stringify({username:username}),
+    });
+}
+
+export function searchUsers(query) {
+    return apiFetch(`/api/users/search?search=${encodeURIComponent(query)}`);
+}
