@@ -10,6 +10,9 @@ export function HomePage() {
         <div className={layoutStyles.menu}>
             <h1>LeQuizzDeLaMortQuiTue</h1>
             <nav className={layoutStyles.menuNav}>
+                <Link to="/game/1" className={`${styles.button} ${layoutStyles.menuLink}`}>
+                    Online
+                </Link>
                 <Link to="/play" className={`${styles.button} ${layoutStyles.menuLink}`}>
                     Play
                 </Link>

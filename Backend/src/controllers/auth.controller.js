@@ -42,6 +42,7 @@ async function login(req, res) {
             email: user.email,
             username: user.username,
             display_name: user.display_name,
+            token: token 
         });
     }
     catch (err) {

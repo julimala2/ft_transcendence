@@ -9,18 +9,25 @@ export function useGameSocket(roomId) {
   useEffect(() => {
     const token = localStorage.getItem('token');
 
+    console.log('🔍 Debug WebSocket:');
+    console.log('  Token:', token ? '✅ Trouvé' : '❌ Pas de token!');
+    console.log('  Room ID:', roomId);
+
     // Se connecter au serveur WebSocket (wss pour HTTPS)
-    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const wsUrl = `${protocol}//localhost:3000/ws`;
+    const protocol = 'wss:';
+    const wsUrl = `${protocol}//localhost:3000/ws?token=${encodeURIComponent(token || '')}`;
+    console.log('  URL:', wsUrl);
+
     const ws = new WebSocket(wsUrl);
     wsRef.current = ws;
 
     ws.onopen = () => {
-      console.log('WebSocket connecté');
+      console.log('✅ WebSocket connecté');
       setConnected(true);
 
       // Rejoindre la room spécifiée
       if (roomId) {
+        console.log(`📍 Tentative de rejoindre la room: ${roomId}`);
         ws.send(JSON.stringify({
           type: 'joinRoom',
           roomId: roomId
@@ -31,6 +38,7 @@ export function useGameSocket(roomId) {
     ws.onmessage = (event) => {
       try {
         const data = JSON.parse(event.data);
+        console.log('💬 Message reçu:', data);
 
         if (data.type === 'chat') {
           setMessages(prev => [...prev, {
@@ -50,12 +58,14 @@ export function useGameSocket(roomId) {
     };
 
     ws.onerror = (error) => {
-      console.error('WebSocket erreur:', error);
+      console.error('❌ WebSocket erreur:', error);
       setConnected(false);
     };
 
-    ws.onclose = () => {
-      console.log('WebSocket déconnecté');
+    ws.onclose = (event) => {
+      console.log('🔴 WebSocket déconnecté');
+      console.log('  Code:', event.code);
+      console.log('  Raison:', event.reason);
       setConnected(false);
     };
 

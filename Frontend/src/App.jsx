@@ -7,13 +7,14 @@ import { LoginPage } from './Pages/LoginPage';
 import { ProfilePage } from './Pages/ProfilePage';
 import { FriendsPage } from './Pages/FriendsPage';
 import { NotFoundPage } from './Pages/NotFoundPage';
-import { GameRoom } from './components/GameRoom';
+import { GameRoom } from './Components/GameRoom';
 
 function App() {
     return (
         <Routes>
             <Route element={<Layout />}>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/game/:roomId" element={<GameRoom />} />
                 <Route path="/play" element={<QuizPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
                 <Route path="/login" element={<LoginPage />} />

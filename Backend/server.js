@@ -23,15 +23,8 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/friends', friendRoutes);
 
 
-app.use(cors());
-app.use(express.json());
-
-// Data du mensonge
-const fakeUsers = [
-  { id: 1, nom: 'Pepito', age: 28 },
-  { id: 2, nom: 'Pascal', age: 34 },
-  { id: 3, nom: 'Prout', age: 22 },
-];
+//app.use(cors());          <--- Doublon avec ligne 16 ?
+//app.use(express.json());  <----|
 
 app.get('/', (req, res) => {
   res.send('Hello du backend!');
@@ -60,13 +53,13 @@ const options = {
 const server = https.createServer(options, app);
 
 const wss = new WebSocketServer({ noServer: true });
-
 server.on('upgrade', (req, socket, head) => //HANDSHAKE WebSocket
 {
   if (!req.url.startsWith('/ws')) {
     socket.destroy();
     return;
   }
+  
   const user = authenticateUpgrade(req);
   if (!user) {
     socket.write('HTTP/1.1 401 Unauthorized\r\n\r\n');
