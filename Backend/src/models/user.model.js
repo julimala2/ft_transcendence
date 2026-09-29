@@ -36,4 +36,19 @@ async function remove(userId) {
     return prisma.user.delete({ where: { id: userId } });
 }
 
-module.exports = { findByEmail, findByUsername, findById, create, setOffline, update, remove };
+async function search(query) {
+    return prisma.user.findMany({
+        where: {
+            username: { contains: query },
+        },
+        select: {
+            id: true,
+            username: true,
+            display_name: true,
+            avatar_url: true,
+        },
+        take: 10,
+    });
+}
+
+module.exports = { findByEmail, findByUsername, findById, create, setOffline, update, remove, search };

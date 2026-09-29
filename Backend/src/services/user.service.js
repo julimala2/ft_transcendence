@@ -12,6 +12,10 @@ async function getProfileByUsername(username) {
     return userModel.findByUsername(username);
 }
 
+async function searchUsers(query) {
+    return userModel.search(query);
+}
+
 async function updateProfile(userId, data) {
     if (data.email) {
         const existing = await userModel.findByEmail(data.email);

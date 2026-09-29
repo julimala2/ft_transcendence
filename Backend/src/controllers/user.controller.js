@@ -71,6 +71,23 @@ async function getProfileByUsername(req, res) {
     }
 }
 
+async function searchUsers(req, res) {
+    const { search } = req.query;
+
+    if (!search) {
+        return res.status(200).json([]);
+    }
+
+    try {
+        const users = await userService.searchUsers(search);
+        return res.status(200).json(users);
+    }
+    catch (err) {
+        return sendServiceError(res, err);
+    }
+}
+
+
 async function updateProfile(req, res) {
     const { display_name, email } = req.body;
     const data = {};
@@ -152,4 +169,4 @@ async function deleteAccount(req, res) {
     }
 }
 
-module.exports = { getProfile, getPublicProfile, getProfileByUsername, updateProfile, uploadAvatar, changePassword, deleteAccount };
+module.exports = { getProfile, getPublicProfile, getProfileByUsername, updateProfile, uploadAvatar, changePassword, deleteAccount, searchUsers };
