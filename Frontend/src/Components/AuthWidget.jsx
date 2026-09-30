@@ -23,19 +23,19 @@ export function AuthWidget() {
     }
 
     return (
-        <div className={styles.main}>
-            <div className={styles.card}>
+        <div className="page">
+            <div className="card">
             {renderForm()}
             {mode === 'login' ? 
-                (<button onClick={() => setMode('register')} className={styles.button}>
+                (<button onClick={() => setMode('register')}>
                     No account ? Sign up
                 </button>) 
                 :
-                (<button onClick={() => setMode('login')} className={styles.button}>
+                (<button onClick={() => setMode('login')}>
                     Existing user ? Log in
                 </button>
             )}
-            <button onClick={() => loginWithOAuth()} className={styles.button42}>
+            <button onClick={() => loginWithOAuth()}>
                 Login with 42
             </button>
             </div>

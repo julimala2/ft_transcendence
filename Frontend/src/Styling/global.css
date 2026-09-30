@@ -1,5 +1,5 @@
 :root {
-    --bg: #111220;
+    --bg: #090712;
     --surface: #191c30;
     --surface-2: #26223f;
     --border: rgba(255, 255, 255, 0.08);
@@ -75,6 +75,16 @@ a:hover { text-decoration: underline; }
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.25);
+}
+
+:where(label) {
+     padding: 4px 0px;
+    color: var(--text);
+    font: inherit;
+    font-size: large;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap-mode: nowrap;
 }
 
 input[type='search'] {
@@ -157,6 +167,10 @@ input[type='search'] {
     color: var(--text);
 }
 .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); }
+
+.loading {
+    color:rgb(88, 0, 104);
+}
 
 @media (max-width: 480px) {
     .page { padding-top: calc(var(--header-h) + 20px); }

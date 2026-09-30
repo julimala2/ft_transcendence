@@ -41,3 +41,4 @@ export function sendFriendNamedRequest(username) {
 export function searchUsers(query) {
     return apiFetch(`/api/users/search?search=${encodeURIComponent(query)}`);
 }
+

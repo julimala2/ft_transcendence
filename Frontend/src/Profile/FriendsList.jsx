@@ -4,9 +4,11 @@ import { acceptRequest, declineRequest, getFriends, getReceivedRequests, sendFri
 import { FriendCard } from './FriendCard';
 import styles from '../Styling/FriendsList.module.css';
 import { UserSearch } from '../Components/UserSearch';
+import { getBlockedUsers } from '../Api/blocks';
 
 export function FriendsList() {
     const [friends, setFriends] = useState([]);
+    const [blocked, setBlocked] = useState([]);
     const [requests, setRequests] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -21,9 +23,11 @@ export function FriendsList() {
             try {
                 const data = await getFriends();
                 const requestData = await getReceivedRequests();
+                const blockedData = await getBlockedUsers();
                 if (!cancelled) {
                     setFriends(data);
                     setRequests(requestData);
+                    setBlocked(blockedData);
                 }
             } catch (err) {
                 if (!cancelled) setError(err.error || 'error receiving requests');
@@ -70,7 +74,7 @@ export function FriendsList() {
         }
     }
 
-    // if (loading) return <p>Loading...</p>;
+    if (loading) return <div className='page'><section className='card'>Loading...</section></div>;
     if (error) return <p className={styles.error}>{error}</p>;
 
     return (
@@ -156,6 +160,21 @@ export function FriendsList() {
                     <p className={`alert ${inviteMessage.type === 'success' ? 'alert-success' : 'alert-error'}`}>
                         {inviteMessage.text}
                     </p>
+                )}
+            </section>
+
+            {/* Blocked users */}
+            <section className="card">
+                <h2 className={styles.cardTitle}>Blocked users</h2>
+                {blocked.length === 0 ? (
+                    <p className='empty'>No user blocked.</p>
+                ) :
+                (
+                    <ul className='list'>
+                        {blocked.map((b) => (
+                            <FriendCard key={b.id} friend={b} onClick={handleFriendClick}></FriendCard>
+                        ))}
+                    </ul>
                 )}
             </section>
 

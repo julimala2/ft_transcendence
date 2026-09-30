@@ -43,9 +43,9 @@ export function MyProfile(){
                 <div className="page">
                         <section className="card">
                         <Avatar src={user.avatar_url} username={user.display_name} size={60} />
-                        <label>Email :{user.email}</label>
-                        <label>Username :{user.username}</label>
-                        <label>DisplayName :{user.display_name}</label>
+                        <label>Email : {user.email}</label>
+                        <label>Username : {user.username}</label>
+                        <label>DisplayName : {user.display_name}</label>
                         {/* <label>Avatar url:{user.avatar_url}</label> */}
                         <section className="card">
                             <button onClick={()=>setMode('edit')}>Edit profile</button>

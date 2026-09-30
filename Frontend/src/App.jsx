@@ -7,6 +7,9 @@ import { LoginPage } from './Pages/LoginPage';
 import { ProfilePage } from './Pages/ProfilePage';
 import { FriendsPage } from './Pages/FriendsPage';
 import { NotFoundPage } from './Pages/NotFoundPage';
+import { QuizOfflinePage } from './Pages/QuizOfflinePage';
+import { MyQuizs } from './Pages/MyQuizs';
+import { GameRoom } from './Components/GameRoom';
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
                 <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/users/:userId" element={<ProfilePage />} />
                 <Route path="/friends" element={<FriendsPage />} />
+                <Route path="/quizoffline" element={<QuizOfflinePage />} />
+                <Route path="/myQuizs" element={<MyQuizs/>}/>
+                <Route path="/game/:roomId" element={<GameRoom />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Route>
         </Routes>
