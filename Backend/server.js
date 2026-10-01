@@ -24,28 +24,8 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/friends', friendRoutes);
 app.use('/api/blocks', blockRoutes);
 
-
-//app.use(cors());          <--- Doublon avec ligne 16 ?
-//app.use(express.json());  <----|
-
 app.get('/', (req, res) => {
   res.send('Hello du backend!');
-});
-
-app.get('/api/getrequest',async (req,res) => {
-  // const result = await pool.query('SELECT * FROM TEST');
-  console.log('Api Get request');
-  await new Promise(resolve => setTimeout(resolve, 1000)); //Timer pour simuler latence serveur
-  res.json(fakeUsers);
-});
-
-app.post('/api/postrequest', async (req,res) => {
-  console.log('API Post request :',req.body);
-  const fakeMsg = [
-    {id : 1, message: "Get request recue", test: "test"}
-  ]
-  await new Promise(resolve => setTimeout(resolve, 2000)); //Timer pour simuler latence serveur
-  res.json(fakeMsg);
 });
 
 const options = {

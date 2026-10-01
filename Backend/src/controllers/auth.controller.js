@@ -1,11 +1,8 @@
-//quelles erreurs d'authentification ? 
-//email deja utilise, autre ? 
-
-
 const authService = require('../services/auth.service');
 const oauthService = require('../services/oauth.service');
 const { COOKIE_OPTIONS } = require('../../lib/cookieOptions');
 const { sendServiceError } = require('../../lib/errorHandling');
+const crypto = require('crypto');
 
 async function register(req, res) {
     const { email, password, username, display_name } = req.body;
@@ -36,7 +33,6 @@ async function login(req, res) {
             email: user.email,
             username: user.username,
             display_name: user.display_name,
-            token: token 
         });
     }
     catch (err) {
@@ -61,6 +57,16 @@ async function logout(req, res) {
 }
 
 function oauthRedirect(req, res) {
+    const state = crypto.randomBytes(16).toString('hex');
+
+    res.cookie('oauth_state', state, {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',
+        maxAge: 5 * 60 * 1000,
+
+    })
+
     const params = new URLSearchParams({
         client_id: process.env.OAUTH_CLIENT_ID,
         redirect_uri: process.env.OAUTH_REDIRECT_URI,
@@ -72,7 +78,15 @@ function oauthRedirect(req, res) {
 }
 
 async function oauthCallback(req, res) {
-    const { code } = req.query;
+    const { code, state } = req.query;
+    const savedState = req.cookies.oauth_state;
+
+    res.clearCookie('oauth_state');
+
+    if (!state || state !== savedState) {
+        return res.redirect(`${process.env.FRONTEND_URL}/login?error=oauth_state`);
+    }
+
 
     try {
         const { user, token } = await oauthService.oauthLogin(code);
