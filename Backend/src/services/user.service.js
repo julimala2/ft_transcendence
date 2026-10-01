@@ -81,4 +81,4 @@ async function deleteAccount(userId, password) {
     return userModel.remove(userId);
 }
 
-module.exports = { getProfile, getProfileByUsername, updateProfile, updateAvatar, changePassword, deleteAccount };
+module.exports = { getProfile, getProfileByUsername, searchUsers, updateProfile, updateAvatar, changePassword, deleteAccount };
