@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 900;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.loginButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:8px;
+  padding: 10px;
+  background: #464646;
+  color: white;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 30px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 0px 0px #1B0092; 
+  box-shadow: 0px 0px 15px 5px #626262;
+  /* display: inline-block; */
+}
+
+.loginButton:hover {
+  background: #1e1e1ecc;
+  transform: translateY(3px);
+}

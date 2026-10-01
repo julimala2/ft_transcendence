@@ -40,9 +40,10 @@
 
 ## 🔲 Temps réel (WebSocket)
 
-- [ ] Connexion/déconnexion propre des joueurs
+- [x] Connexion/déconnexion propre des joueurs
+- [ ] Selections/creations des rooms
 - [ ] Diffusion des questions/réponses en live pendant une partie
-- [ ] Chat en temps réel
+- [x]  Chat en temps réel
 
 ## 🔲 Sécurité (exigences du sujet, à ne pas oublier)
 

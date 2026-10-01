@@ -17,3 +17,11 @@ curl -i -k -X POST https://localhost:3000/api/users/me/avatar \
 
 A la suite du login pour avoir le token dans cookies.txt
 
+## test Websocket
+lancer serveur 
+
+login => recuperer le token dans cookies.txt
+
+wscat -c "wss://localhost:5001/ws" \
+  --header "Cookie: token=NOTER LE TOKEN" \
+  --no-check

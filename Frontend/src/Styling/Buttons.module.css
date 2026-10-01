@@ -1,0 +1,13 @@
+.menu{
+    color: #fcfcfc;
+    background-color:grey;
+    padding: 15px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+}

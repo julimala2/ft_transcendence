@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    border:2px solid darkblue;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.card:hover {
+    background: #f0f0f5;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.username {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.displayName {
+    font-size: 0.85rem;
+    color: #888;
+}

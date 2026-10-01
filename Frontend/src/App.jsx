@@ -1,64 +1,30 @@
-import { createRoot } from 'react-dom/client'
-import { useState } from 'react'
-import './Stylesheet.css'
-import styles from './style.module.css'; 
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './Pages/Layout';
+import { HomePage } from './Pages/HomePage';
+import { QuizPage } from './Pages/QuizPage';
+import { SettingsPage } from './Pages/SettingsPage';
+import { LoginPage } from './Pages/LoginPage';
+import { ProfilePage } from './Pages/ProfilePage';
+import { FriendsPage } from './Pages/FriendsPage';
+import { NotFoundPage } from './Pages/NotFoundPage';
+import { GameRoom } from './Components/GameRoom';
 
 function App() {
-  const [name, setName] = useState("");
-  const [submitted,setSubmitted] = useState(false);
-
-  function handleChange(e) {
-    setName(e.target.value);
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    setSubmitted(true);
-  }
-
-  return (
-    <div>
-        {submitted ? <>
-                    <Bonjour name={name || "toi"} /> 
-                    <Counter />
-                    </> 
-                    : 
-                    <>
-                    <p>Welcome!</p>
-                    <MyForm name={name} onChange={handleChange} onSubmit={handleSubmit}/>
-                    </>
-        }
-    </div>
-  );
-}
-
-function MyForm({ name, onChange, onSubmit }) {
-  return (
-    <form onSubmit={onSubmit}>
-      <label>
-        vos papiers svp :
-        <input type="text" value={name} onChange={onChange} />
-      </label>
-    </form>
-  );
-}
-
-function Bonjour({name}) {
-  return  <p>Bonjour, {name} !</p>;
-}
-
-function Counter() {
-  let [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)} className={styles.button}>
-        le bouton
-      </button>
-    <p> Tu as click {(count) < 10 ? count : "trop de"} fois.</p>
-    
-    </div>
-  );
+    return (
+        <Routes>
+            <Route element={<Layout />}>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/game/:roomId" element={<GameRoom />} />
+                <Route path="/play" element={<QuizPage />} />
+                <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/users/:userId" element={<ProfilePage />} />
+                <Route path="/friends" element={<FriendsPage />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;

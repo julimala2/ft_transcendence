@@ -10,6 +10,9 @@ const userRoutes = require('./src/routes/user.routes');
 const friendRoutes = require('./src/routes/friends.routes');
 const blockRoutes = require('./src/routes/blocks.routes');
 const app = express();
+const { WebSocketServer } = require('ws');
+const { authenticateUpgrade } = require('./websocket/auth');
+const { handleConnection } = require('./websocket/gameSocket');
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());
@@ -22,13 +25,8 @@ app.use('/api/friends', friendRoutes);
 app.use('/api/blocks', blockRoutes);
 
 
-
-// Data du mensonge
-const fakeUsers = [
-  { id: 1, nom: 'Pepito', age: 28 },
-  { id: 2, nom: 'Pascal', age: 34 },
-  { id: 3, nom: 'Prout', age: 22 },
-];
+//app.use(cors());          <--- Doublon avec ligne 16 ?
+//app.use(express.json());  <----|
 
 app.get('/', (req, res) => {
   res.send('Hello du backend!');
@@ -54,7 +52,30 @@ const options = {
   key: fs.readFileSync(process.env.SSL_KEY_PATH),
   cert: fs.readFileSync(process.env.SSL_CERT_PATH),
 };
+const server = https.createServer(options, app);
 
-https.createServer(options, app).listen(process.env.PORT, () => {
-    console.log(`Server running on https://localhost:${process.env.PORT}`);
+const wss = new WebSocketServer({ noServer: true });
+server.on('upgrade', (req, socket, head) => //HANDSHAKE WebSocket
+{
+  if (!req.url.startsWith('/ws')) {
+    socket.destroy();
+    return;
+  }
+  
+  const user = authenticateUpgrade(req);
+  if (!user) {
+    socket.write('HTTP/1.1 401 Unauthorized\r\n\r\n');
+    socket.destroy();
+    return;
+  }
+  wss.handleUpgrade(req, socket, head, (ws) => {
+    ws.user = user; // Attache l'utilisateur authentifié à la connexion WebSocket
+    wss.emit('connection', ws, req);
+  });
+});
+
+wss.on('connection', handleConnection);
+
+server.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
