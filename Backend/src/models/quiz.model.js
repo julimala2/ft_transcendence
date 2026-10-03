@@ -1,4 +1,4 @@
-const prisma = require('../../lib/prisma');
+const prisma = require('../config/prismaClient');
 
 async function findAll() {
   return prisma.quiz.findMany({
