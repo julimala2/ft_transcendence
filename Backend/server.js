@@ -9,6 +9,8 @@ const authRoutes = require('./src/routes/auth.routes');
 const userRoutes = require('./src/routes/user.routes');
 const friendRoutes = require('./src/routes/friends.routes');
 const blockRoutes = require('./src/routes/blocks.routes');
+const quizRoutes = require('./src/routes/quiz.routes');
+const questionRoutes = require('./src/routes/question.routes');
 const app = express();
 const { WebSocketServer } = require('ws');
 const { authenticateUpgrade } = require('./websocket/auth');
@@ -23,6 +25,9 @@ app.use('/api/users', userRoutes);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/friends', friendRoutes);
 app.use('/api/blocks', blockRoutes);
+app.use('/api/quizzes', quizRoutes);
+app.use('/api/questions', questionRoutes);
+
 
 app.get('/', (req, res) => {
   res.send('Hello du backend!');
