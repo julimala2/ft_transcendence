@@ -19,22 +19,13 @@ async function getQuestionById(id) {
 }
 
 async function createQuestion(data) {
-  if (!Array.isArray(data.answers) || data.answers.length < 2) {
-    throw httpError(400, 'Une question doit avoir au moins 2 réponses');
+  if (!Array.isArray(data.answers) || data.answers.length < 4 || data.answers.length > 4) {
+    throw httpError(400, 'Une question doit avoir 4 réponses');
   }
   const hasCorrectAnswer = data.answers.some((a) => a.isCorrect === true);
   if (!hasCorrectAnswer) {
     throw httpError(400, 'Au moins une réponse doit être marquée correcte');
   }
-
-  const currentCount = await questionModel.countByQuiz(data.quizId);
-  if (currentCount >= MAX_QUESTIONS_PER_QUIZ) {
-    throw httpError(
-      400,
-      `Ce quiz a déjà ${MAX_QUESTIONS_PER_QUIZ} questions, impossible d'en ajouter une de plus`
-    );
-  }
-
   return questionModel.create(data);
 }
 
