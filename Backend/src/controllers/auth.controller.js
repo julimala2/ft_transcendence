@@ -72,6 +72,7 @@ function oauthRedirect(req, res) {
         redirect_uri: process.env.OAUTH_REDIRECT_URI,
         response_type: 'code',
         scope: 'public',
+        state,
     });
 
     return res.redirect(`https://api.intra.42.fr/oauth/authorize?${params.toString()}`);
