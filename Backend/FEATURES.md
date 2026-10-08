@@ -44,6 +44,10 @@
 - supprimer un quiz avec son id
 
 
+# QUIZZES
+-Pour les quiz, GET /api/quizzes donne la liste (avec le nombre de questions), GET /api/quizzes/:id donne un quiz complet avec ses questions et leurs propositions, et POST, PUT et DELETE sur /api/quizzes servent à créer, modifier et supprimer un quiz (le titre est obligatoire, la description est optionnelle).
+-Pour les questions, GET /api/questions donne toutes les questions, et on peut filtrer avec ?quizId=1 pour celles d'un quiz précis. GET /api/questions/:id donne une question, et POST, PUT et DELETE servent à la créer, la modifier et la supprimer.
+-Il me reste à tester toutes les routes, faire les routes Category, masquer isCorrect côté front avec une vérification des réponses côté serveur, puis les routes User et l'authentification, et enfin celles pour enregistrer les parties et les scores.
 
 # Front 
 
