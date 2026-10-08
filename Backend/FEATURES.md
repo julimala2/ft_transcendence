@@ -33,7 +33,15 @@
 - delete friend 
 - user's friends list
 - user's pending requests (recieved and sent)
+- block user
 
+# QUIZ
+
+- voir les quiz
+- voir un quiz avec son id
+- creer un quiz
+- modifier un quiz
+- supprimer un quiz avec son id
 
 
 
