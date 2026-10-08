@@ -22,12 +22,21 @@ async function fetchFortyTwoProfile(accessToken) {
     const response = await fetch('https://api.intra.42.fr/v2/me', {
         headers: { Authorization: `Bearer ${accessToken}` },
     });
-    return response.json();
+    const profile = await response.json();
+    return profile;
 }
 
 async function oauthLogin(code) {
     const accessToken = await exchangeCodeForToken(code);
     const profile = await fetchFortyTwoProfile(accessToken);
+
+    let avatar_url = null;
+
+    if (profile.image && profile.image.versions && profile.image.versions.medium) {
+        avatar_url = profile.image.versions.medium;
+    } else if (profile.image && profile.image.link) {
+        avatar_url = profile.image.link;
+    }
 
     let account = await oauthAccountModel.findByProvider('42', String(profile.id));
     let user;
@@ -42,6 +51,7 @@ async function oauthLogin(code) {
                 password_hash: null,
                 username: profile.login,
                 display_name: profile.displayname || profile.login,
+                avatar_url,
             });
         }
         await oauthAccountModel.create({
@@ -49,6 +59,10 @@ async function oauthLogin(code) {
             provider: '42',
             provider_user_id: String(profile.id),
         });
+    }
+
+    if (avatar_url && user.avatar_url !== avatar_url) {
+        user = await userModel.updateAvatar(user.id, avatar_url);
     }
 
     const token = generateToken(user);

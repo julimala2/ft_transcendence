@@ -8,9 +8,9 @@ async function findByUsername(username) {
     return prisma.user.findUnique({ where: { username }});
 }
 
-async function create({ email, password_hash, username, display_name }) {
+async function create({ email, password_hash, username, display_name, avatar_url }) {
     return prisma.user.create({
-        data: { email, password_hash, username, display_name },
+        data: { email, password_hash, username, display_name, avatar_url },
     });
 }
 
@@ -29,6 +29,13 @@ async function update(userId, data) {
     return prisma.user.update({
         where: { id: userId },
         data,
+    });
+}
+
+async function updateAvatar(id, avatar_url) {
+    return prisma.user.update({
+        where: { id },
+        data: { avatar_url },
     });
 }
 
@@ -51,4 +58,4 @@ async function search(query) {
     });
 }
 
-module.exports = { findByEmail, findByUsername, findById, create, setOffline, update, remove, search };
+module.exports = { findByEmail, findByUsername, findById, create, setOffline, update, updateAvatar, remove, search };
