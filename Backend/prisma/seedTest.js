@@ -1,8 +1,7 @@
-const { PrismaClient } = require("@prisma/client");
+const prisma = require('../lib/prisma');
 const fs = require("fs");
 const path = require("path");
 
-const prisma = new PrismaClient();
 
 async function seedQuiz(data) {
   console.log(`\nImport du quiz : ${data.quiz.title}`);
