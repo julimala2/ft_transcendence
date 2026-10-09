@@ -23,7 +23,7 @@
 ### Bugs / incohérences à corriger en priorité
 - [x] `joinRoom` ne quitte pas l'ancienne room : appeler `leaveRoom(ws)` au début de `joinRoom`
 - [x] `leaveRoom` ne remet pas `ws.currentRoom = null`
-- [ ] Le front écoute0 `userJoined` mais le serveur ne l'envoie jamais : broadcaster à l'arrivée d'un joueur (et `userLeft` au départ)
+- [ ] Le front écoute `userJoined` mais le serveur ne l'envoie jamais : broadcaster à l'arrivée d'un joueur (et `userLeft` au départ)
 - [ ] `chatHandler` : si le client n'est dans aucune room (`currentRoom === null`), ne rien faire explicitement
 - [ ] `gameSocket.js` : le `catch` affiche « pas du JSON » pour toute erreur, y compris un bug dans un handler → séparer `JSON.parse` de l'appel du handler
 - [ ] `quizGame.js` est incomplet : pas de `module.exports`, `revealAnswer` n'existe pas, `startGame` n'est appelée nulle part, le `catch` de `startGame` avale l'erreur sans rien dire
