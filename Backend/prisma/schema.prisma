@@ -67,224 +67,75 @@ model BlockedUser {
   @@unique([blocker_id, blocked_id])
 }
 
-
-// model Quiz {
-//   id          Int      @id @default(autoincrement())
-//   title       String
-//   description String?
-//   createdAt   DateTime @default(now())
-
-//   questions   Question[]
-//   attempts    QuizAttempt[]
-// }
-
-// model Category {
-//   id        Int      @id @default(autoincrement())
-//   name      String   @unique
-
-//   questions Question[]
-// }
-
-// model Question {
-//   id         Int      @id @default(autoincrement())
-//   text       String
-//   difficulty Int      @default(1)
-
-//   quizId     Int
-//   quiz       Quiz      @relation(fields: [quizId], references: [id], onDelete: Cascade)
-
-//   categoryId Int
-//   category   Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
-
-//   answers     Answer[]
-//   userAnswers   UserAnswer[]
-// } UserAnswer {
-//   id         Int      @id @default(autoincrement())
-//   isCorrect  Boolean
-
-//   attemptId  Int
-//   attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
-
-//   questionId Int
-//   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-//   answerId   Int
-//   answer     Answer   @relation(fields: [answerId], references: [id], onDelete: Cascade)
-
-//   @@unique([attemptId, questionId])
-// }
-
-
-// model Answer {
-//   id         Int      @id @default(autoincrement())
-//   text       String
-//   isCorrect  Boolean  @default(false)
-
-//   questionId Int
-//   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-//   userAnswers   UserAnswer[]
-// }
-
-// model QuizAttempt {
-//   id        Int      @id @default(autoincrement())
-//   score     Int      @default(0)
-//   startedAt DateTime @default(now())
-//   finishedAt DateTime?
-
-//   userId    Int
-//   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-//   quizId    Int
-//   quiz      Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
-
-//   userAnswers   UserAnswer[]
-// }
-
-// model UserAnswer {
-//   id         Int      @id @default(autoincrement())
-//   isCorrect  Boolean
-
-//   attemptId  Int
-//   attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
-
-//   questionId Int
-//   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-//   answerId   Int
-//   answer     Answer   @relation(fields: [answerId], references: [id], onDelete: Cascade)
-
-//   @@unique([attemptId, questionId])
-// }
-
-
-
-model Category {
-  id        Int     @id @default(autoincrement())
-  slug      String  @unique // ex : "entertainment-film", utile pour les URL et l'i18n
-  name      String  @unique // nom de référence (anglais)
-  opentdbId Int?    @unique // id de la catégorie chez OpenTDB, null pour nos catégories maison
-
-  questions    Question[]
-  translations CategoryTranslation[]
-}
-
-model CategoryTranslation {
-  id   Int    @id @default(autoincrement())
-  lang String // "fr", "es"...
-  name String
-
-  categoryId Int
-  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
-
-  @@unique([categoryId, lang])
-}
-
-model Question {
-  id         Int          @id @default(autoincrement())
-  text       String       // texte de référence (anglais)
-  type       String   @default("multiple") // "multiple" (4 choix) | "boolean" (vrai/faux)
-  difficulty String   // "easy" | "medium" | "hard"
-  source     String   @default("custom") // "opentdb" ou "custom"
-  sourceId   String?  // empreinte de la question d'origine, évite les doublons à l'import
-  createdAt  DateTime @default(now())
-
-  categoryId Int
-  category   Category @relation(fields: [categoryId], references: [id], onDelete: Restrict)
-
-  answers      Answer[]
-  translations QuestionTranslation[]
-  quizzes      QuizQuestion[]
-  userAnswers  UserAnswer[]
-
-  @@unique([source, sourceId])
-  @@index([categoryId, difficulty])
-}
-
-model QuestionTranslation {
-  id   Int    @id @default(autoincrement())
-  lang String
-  text String
-
-  questionId Int
-  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-  @@unique([questionId, lang])
-}
-
-model Answer {
-  id        Int     @id @default(autoincrement())
-  text      String  // texte de référence (anglais)
-  isCorrect Boolean @default(false)
-
-  questionId Int
-  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-
-  translations AnswerTranslation[]
-  userAnswers  UserAnswer[]
-}
-
-model AnswerTranslation {
-  id   Int    @id @default(autoincrement())
-  lang String
-  text String
-
-  answerId Int
-  answer   Answer @relation(fields: [answerId], references: [id], onDelete: Cascade)
-
-  @@unique([answerId, lang])
-}
-
-// Un Quiz = une liste ordonnée de questions piochées dans le stock
-// (quiz thématique préparé, ou tirage généré pour une partie).
 model Quiz {
   id          Int      @id @default(autoincrement())
   title       String
   description String?
   createdAt   DateTime @default(now())
 
-  questions QuizQuestion[]
-  attempts  QuizAttempt[]
+  questions   Question[]
+  attempts    QuizAttempt[]
 }
 
-// Table de liaison : une même question peut apparaître dans plusieurs quiz.
-model QuizQuestion {
+model Category {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+
+  questions Question[]
+}
+
+model Question {
+  id         Int      @id @default(autoincrement())
+  text       String
+  difficulty Int      @default(1)
+
   quizId     Int
-  quiz       Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  quiz       Quiz      @relation(fields: [quizId], references: [id], onDelete: Cascade)
+
+  categoryId Int
+  category   Category  @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  answers     Answer[]
+  userAnswers   UserAnswer[]
+}
+
+model Answer {
+  id         Int      @id @default(autoincrement())
+  text       String
+  isCorrect  Boolean  @default(false)
+
   questionId Int
   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
-  position   Int      // ordre de la question dans le quiz
-
-  @@id([quizId, questionId])
-  @@unique([quizId, position])
+  userAnswers   UserAnswer[]
 }
 
 model QuizAttempt {
-  id         Int       @id @default(autoincrement())
-  score      Int       @default(0)
-  startedAt  DateTime  @default(now())
+  id        Int      @id @default(autoincrement())
+  score     Int      @default(0)
+  startedAt DateTime @default(now())
   finishedAt DateTime?
 
-  userId Int
-  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  quizId Int
-  quiz   Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  quizId    Int
+  quiz      Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
 
-  userAnswers UserAnswer[]
+  userAnswers   UserAnswer[]
 }
 
 model UserAnswer {
-  id        Int     @id @default(autoincrement())
-  isCorrect Boolean
+  id         Int      @id @default(autoincrement())
+  isCorrect  Boolean
 
-  attemptId Int
-  attempt   QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  attemptId  Int
+  attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
 
   questionId Int
   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 
-  answerId Int? // null = le joueur n'a pas répondu à temps
-  answer   Answer? @relation(fields: [answerId], references: [id], onDelete: SetNull)
+  answerId   Int
+  answer     Answer   @relation(fields: [answerId], references: [id], onDelete: Cascade)
 
   @@unique([attemptId, questionId])
 }
