@@ -1,4 +1,4 @@
-const prisma = require('../config/prismaClient');
+const prisma = require('../../lib/prisma');
 
 async function findAll() {
   return prisma.category.findMany({
