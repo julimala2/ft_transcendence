@@ -27,6 +27,7 @@ app.use('/api/friends', friendRoutes);
 app.use('/api/blocks', blockRoutes);
 app.use('/api/quiz', quizRoutes);
 app.use('/api/questions', questionRoutes);
+app.use('/quiz-images', express.static('assets/quiz'));
 
 
 app.get('/', (req, res) => {

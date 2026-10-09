@@ -1,0 +1,477 @@
+{
+  "category": {
+    "slug": "geographie",
+    "name": "Géographie"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "geo-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oceanie"],
+      "text": "Quelle est la capitale de l'Australie ?",
+      "answers": [
+        { "text": "Sydney", "isCorrect": false },
+        { "text": "Melbourne", "isCorrect": false },
+        { "text": "Canberra", "isCorrect": true },
+        { "text": "Perth", "isCorrect": false }
+      ],
+      "explanation": "Canberra a été construite pour départager Sydney et Melbourne."
+    },
+    {
+      "ref": "geo-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["capitale", "afrique"],
+      "text": "Quelle est la capitale du Kenya ?",
+      "answers": [
+        { "text": "Mombasa", "isCorrect": false },
+        { "text": "Nairobi", "isCorrect": true },
+        { "text": "Kampala", "isCorrect": false },
+        { "text": "Addis-Abeba", "isCorrect": false }
+      ],
+      "explanation": "Nairobi est la capitale du Kenya depuis l'indépendance en 1963."
+    },
+    {
+      "ref": "geo-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bhoutan.webp",
+        "alt": "Drapeau avec un dragon blanc sur fond jaune et orange",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bhutan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bhoutan", "isCorrect": true },
+        { "text": "Népal", "isCorrect": false },
+        { "text": "Sri Lanka", "isCorrect": false },
+        { "text": "Tibet", "isCorrect": false }
+      ]
+    },
+    {
+      "ref": "geo-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "record"],
+      "text": "Quel est le plus grand océan du monde ?",
+      "answers": [
+        { "text": "Océan Atlantique", "isCorrect": false },
+        { "text": "Océan Indien", "isCorrect": false },
+        { "text": "Océan Arctique", "isCorrect": false },
+        { "text": "Océan Pacifique", "isCorrect": true }
+      ],
+      "explanation": "Le Pacifique couvre environ un tiers de la surface de la Terre, plus que toutes les terres émergées réunies."
+    },
+    {
+      "ref": "geo-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "afrique"],
+      "text": "Dans quel pays se trouve la ville de Marrakech ?",
+      "answers": [
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": true },
+        { "text": "Algérie", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": false }
+      ],
+      "explanation": "Marrakech, surnommée la « ville rouge », est l'une des quatre villes impériales du Maroc."
+    },
+    {
+      "ref": "geo-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["fleuve", "europe", "france"],
+      "text": "Quel fleuve traverse Paris ?",
+      "answers": [
+        { "text": "La Loire", "isCorrect": false },
+        { "text": "Le Rhône", "isCorrect": false },
+        { "text": "La Seine", "isCorrect": true },
+        { "text": "La Garonne", "isCorrect": false }
+      ],
+      "explanation": "La Seine traverse Paris sur environ 13 km avant de rejoindre la Manche au niveau du Havre."
+    },
+    {
+      "ref": "geo-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pays", "record"],
+      "text": "Quel est le plus grand pays du monde par superficie ?",
+      "answers": [
+        { "text": "Canada", "isCorrect": false },
+        { "text": "Chine", "isCorrect": false },
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "Russie", "isCorrect": true }
+      ],
+      "explanation": "Avec plus de 17 millions de km², la Russie est environ 1,7 fois plus grande que le Canada, deuxième du classement."
+    },
+    {
+      "ref": "geo-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["capitale", "asie"],
+      "text": "Quelle est la capitale du Japon ?",
+      "answers": [
+        { "text": "Kyoto", "isCorrect": false },
+        { "text": "Osaka", "isCorrect": false },
+        { "text": "Tokyo", "isCorrect": true },
+        { "text": "Hiroshima", "isCorrect": false }
+      ],
+      "explanation": "Tokyo est la capitale du Japon depuis 1868. Avant elle, c'était Kyoto."
+    },
+    {
+      "ref": "geo-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["continent", "afrique"],
+      "text": "Sur quel continent se trouve l'Égypte ?",
+      "answers": [
+        { "text": "Asie", "isCorrect": false },
+        { "text": "Afrique", "isCorrect": true },
+        { "text": "Europe", "isCorrect": false },
+        { "text": "Amérique du Sud", "isCorrect": false }
+      ],
+      "explanation": "L'Égypte est en Afrique, mais la péninsule du Sinaï, à l'est du canal de Suez, se trouve en Asie."
+    },
+    {
+      "ref": "geo-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pays", "surnom", "asie"],
+      "text": "Quel pays est surnommé le « pays du Soleil-Levant » ?",
+      "answers": [
+        { "text": "Chine", "isCorrect": false },
+        { "text": "Corée du Sud", "isCorrect": false },
+        { "text": "Japon", "isCorrect": true },
+        { "text": "Thaïlande", "isCorrect": false }
+      ],
+      "explanation": "En japonais, Nihon (le nom du Japon) signifie littéralement « origine du soleil »."
+    },
+    {
+      "ref": "geo-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "amerique"],
+      "text": "Quelle est la capitale du Canada ?",
+      "answers": [
+        { "text": "Toronto", "isCorrect": false },
+        { "text": "Vancouver", "isCorrect": false },
+        { "text": "Montréal", "isCorrect": false },
+        { "text": "Ottawa", "isCorrect": true }
+      ],
+      "explanation": "Ottawa a été choisie en 1857 par la reine Victoria, notamment pour sa position entre le Canada anglophone et le Canada francophone."
+    },
+    {
+      "ref": "geo-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["montagne", "record", "asie"],
+      "text": "Quel est le plus haut sommet du monde au-dessus du niveau de la mer ?",
+      "answers": [
+        { "text": "K2", "isCorrect": false },
+        { "text": "Mont Blanc", "isCorrect": false },
+        { "text": "Everest", "isCorrect": true },
+        { "text": "Kilimandjaro", "isCorrect": false }
+      ],
+      "explanation": "L'Everest culmine à 8 849 m, à la frontière entre le Népal et la Chine (Tibet)."
+    },
+    {
+      "ref": "geo-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["fleuve", "europe", "france", "record"],
+      "text": "Quel est le plus long fleuve de France ?",
+      "answers": [
+        { "text": "Le Rhône", "isCorrect": false },
+        { "text": "La Seine", "isCorrect": false },
+        { "text": "La Loire", "isCorrect": true },
+        { "text": "La Garonne", "isCorrect": false }
+      ],
+      "explanation": "La Loire mesure environ 1 000 km et coule entièrement en France, contrairement au Rhône qui prend sa source en Suisse."
+    },
+    {
+      "ref": "geo-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pays", "afrique", "record"],
+      "text": "Quel est le pays le plus peuplé d'Afrique ?",
+      "answers": [
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": false },
+        { "text": "République démocratique du Congo", "isCorrect": false },
+        { "text": "Nigeria", "isCorrect": true }
+      ],
+      "explanation": "Le Nigeria compte plus de 200 millions d'habitants, soit environ un Africain sur six."
+    },
+    {
+      "ref": "geo-015",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["capitale", "asie"],
+      "text": "Quelle est la capitale de la Mongolie ?",
+      "answers": [
+        { "text": "Astana", "isCorrect": false },
+        { "text": "Oulan-Bator", "isCorrect": true },
+        { "text": "Bichkek", "isCorrect": false },
+        { "text": "Tachkent", "isCorrect": false }
+      ],
+      "explanation": "Oulan-Bator est souvent citée comme la capitale la plus froide du monde."
+    },
+    {
+      "ref": "geo-016",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["detroit", "europe", "afrique"],
+      "text": "Quel détroit sépare l'Europe de l'Afrique ?",
+      "answers": [
+        { "text": "Le détroit du Bosphore", "isCorrect": false },
+        { "text": "Le détroit de Gibraltar", "isCorrect": true },
+        { "text": "Le détroit de Messine", "isCorrect": false },
+        { "text": "Le détroit d'Ormuz", "isCorrect": false }
+      ],
+      "explanation": "À son point le plus étroit, le détroit de Gibraltar ne mesure qu'environ 14 km."
+    },
+    {
+      "ref": "geo-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "record", "france"],
+      "text": "Quel pays possède le plus de fuseaux horaires ?",
+      "answers": [
+        { "text": "Russie", "isCorrect": false },
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "France", "isCorrect": true },
+        { "text": "Royaume-Uni", "isCorrect": false }
+      ],
+      "explanation": "Grâce à ses territoires d'outre-mer, de la Polynésie à La Réunion, la France s'étend sur 12 fuseaux horaires."
+    },
+    {
+      "ref": "geo-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["desert", "afrique", "record"],
+      "text": "Quel est le plus grand désert chaud du monde ?",
+      "answers": [
+        { "text": "Le désert de Gobi", "isCorrect": false },
+        { "text": "Le Kalahari", "isCorrect": false },
+        { "text": "Le désert d'Atacama", "isCorrect": false },
+        { "text": "Le Sahara", "isCorrect": true }
+      ],
+      "explanation": "Le Sahara couvre environ 9 millions de km². Le plus grand désert tout court est l'Antarctique, un désert froid."
+    },
+    {
+      "ref": "geo-019",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "amerique", "langue"],
+      "text": "Quel pays d'Amérique du Sud a le néerlandais pour langue officielle ?",
+      "answers": [
+        { "text": "Guyana", "isCorrect": false },
+        { "text": "Suriname", "isCorrect": true },
+        { "text": "Guyane", "isCorrect": false },
+        { "text": "Uruguay", "isCorrect": false }
+      ],
+      "explanation": "Le Suriname est une ancienne colonie néerlandaise, indépendante depuis 1975. Le Guyana parle anglais, et la Guyane est un territoire français."
+    },
+    {
+      "ref": "geo-020",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "europe", "asie"],
+      "text": "Quelle mer borde à la fois la Turquie et l'Ukraine ?",
+      "answers": [
+        { "text": "La mer Égée", "isCorrect": false },
+        { "text": "La mer Caspienne", "isCorrect": false },
+        { "text": "La mer Noire", "isCorrect": true },
+        { "text": "La mer Baltique", "isCorrect": false }
+      ],
+      "explanation": "La mer Noire est reliée à la Méditerranée par le Bosphore, qui traverse Istanbul."
+    },
+    {
+      "ref": "geo-021",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["fleuve", "europe", "capitale"],
+      "text": "Le Danube traverse quatre capitales européennes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le Danube traverse Vienne, Bratislava, Budapest et Belgrade."
+    },
+    {
+      "ref": "geo-022",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["pays", "europe", "amerique"],
+      "text": "Le Groenland fait partie du royaume de Danemark.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le Groenland est un territoire autonome du royaume de Danemark, bien que situé géographiquement en Amérique du Nord."
+    },
+    {
+      "ref": "geo-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "oceanie"],
+      "text": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "answers": [
+        { "text": "Auckland", "isCorrect": false },
+        { "text": "Christchurch", "isCorrect": false },
+        { "text": "Wellington", "isCorrect": true },
+        { "text": "Queenstown", "isCorrect": false }
+      ],
+      "explanation": "Wellington est la capitale, mais Auckland est la plus grande ville du pays."
+    },
+    {
+      "ref": "geo-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bresil.webp",
+        "alt": "Drapeau vert avec un losange jaune et un globe bleu étoilé portant une banderole",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg"
+        }
+      },
+      "answers": [
+        { "text": "Portugal", "isCorrect": false },
+        { "text": "Brésil", "isCorrect": true },
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Colombie", "isCorrect": false }
+      ],
+      "explanation": "Le globe porte la devise « Ordem e Progresso » et 27 étoiles, une par État fédéré et pour le district fédéral."
+    },
+     {
+      "ref": "geo-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nepal.webp",
+        "alt": "Drapeau formé de deux triangles superposés rouges bordés de bleu, avec une lune et un soleil blancs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Nepal.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bhoutan", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Népal", "isCorrect": true },
+        { "text": "Sri Lanka", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul drapeau national au monde qui n'est pas rectangulaire."
+    },
+    {
+      "ref": "geo-028",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "amerique"],
+      "text": "Dans quel pays se trouve ce site ?",
+      "image": {
+        "src": "geographie/machu-picchu.webp",
+        "alt": "Ruines d'une cité de pierre sur une crête, entourée de montagnes verdoyantes",
+        "credit": { 
+          "author": "Edie Kiszka",
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/ruines-en-pierre-de-machu-picchu-au-perou-rFESpq5MMTg" 
+        }
+      },
+      "answers": [
+        { "text": "Bolivie", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": true },
+        { "text": "Mexique", "isCorrect": false },
+        { "text": "Équateur", "isCorrect": false }
+      ],
+      "explanation": "Le Machu Picchu est une cité inca du XVe siècle, perchée à environ 2 400 m d'altitude dans les Andes."
+    },
+    {
+      "ref": "geo-029",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve ce site ?",
+      "image": {
+        "src": "geographie/petra.webp",
+        "alt": "Façade monumentale taillée dans une falaise de grès rose",
+        "credit": { 
+          "author": "Mauro Lima", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/un-grand-batiment-au-milieu-dun-desert-DKfYlImt-zY" }
+      },
+      "answers": [
+        { "text": "Égypte", "isCorrect": false },
+        { "text": "Syrie", "isCorrect": false },
+        { "text": "Jordanie", "isCorrect": true },
+        { "text": "Arabie saoudite", "isCorrect": false }
+      ],
+      "explanation": "Pétra a été taillée dans la roche par les Nabatéens, il y a plus de 2 000 ans."
+    },
+    {
+      "ref": "geo-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve ce temple ?",
+      "image": {
+        "src": "geographie/angkor-wat.webp",
+        "alt": "Grand temple de pierre surmonté de tours en forme de bouton de lotus, devant un bassin",
+        "credit": { 
+          "author": "James Wheeler", 
+          "license": "Unsplash",
+          "url": "https://unsplash.com/fr/photos/structure-en-beton-brun-WXqvglwd4hU" 
+        }
+      },
+      "answers": [
+        { "text": "Thaïlande", "isCorrect": false },
+        { "text": "Cambodge", "isCorrect": true },
+        { "text": "Laos", "isCorrect": false },
+        { "text": "Viêt Nam", "isCorrect": false }
+      ],
+      "explanation": "Angkor Wat est le plus grand monument religieux du monde, et il figure sur le drapeau du Cambodge."
+    },
+    {
+      "ref": "geo-031",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "afrique"],
+      "text": "Quel pays est entièrement enclavé dans l'Afrique du Sud ?",
+      "answers": [
+        { "text": "Eswatini", "isCorrect": false },
+        { "text": "Botswana", "isCorrect": false },
+        { "text": "Lesotho", "isCorrect": true },
+        { "text": "Namibie", "isCorrect": false }
+      ],
+      "explanation": "Avec Saint-Marin et le Vatican, le Lesotho est l'un des trois seuls pays entièrement entourés par un autre. L'Eswatini touche aussi le Mozambique."
+    },
+    {
+      "ref": "geo-032",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "asie"],
+      "text": "Où se trouve le point le plus bas des terres émergées ?",
+      "answers": [
+        { "text": "La vallée de la Mort", "isCorrect": false },
+        { "text": "Le lac Assal", "isCorrect": false },
+        { "text": "La mer Morte", "isCorrect": true },
+        { "text": "La dépression de Qattara", "isCorrect": false }
+      ],
+      "explanation": "Les rives de la mer Morte se situent à plus de 430 m sous le niveau de la mer, et ce niveau baisse encore chaque année."
+    }
+  ]
+}

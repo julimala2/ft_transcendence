@@ -2,38 +2,38 @@
 
 # AUTH
 
-- register
+- register [x]
     Limits : 
         email = string + @ + string + . + string
         password = upper + lower + number + special car (! @ # $ % ^ & * ( ) _ + - = [ ] { } ; ' : " \ | , . < > / ?)
-- login via email or oauth (need to set link with 42)
-- logout
+- login via email or oauth (need to set link with 42) [x]
+- logout [x]
 
 
 # USER
 
-- display own profile (with email) or other profile via /:id (id, username, display_name, avatar_url - without email)
+- display own profile (with email) or other profile via /:id (id, username, display_name, avatar_url - without email) [x]
 - upload avatar
     Limits : type jpg or png, 2Mo max 
 - update 
-    * profile (display_name)
-    * password (checks if old password is correct then changes with new if regex ok)
-    * email
+    * profile (display_name) [x]
+    * password (checks if old password is correct then changes with new if regex ok) [x]
+    * email [x]
     * avatar
 
 
 9/24
 # FRIENDS
 
-- friend request
-    * send
-    * accept
-    * decline --> if declined, can never be friends again (to keep?)
+- friend request [x]
+    * send [x]
+    * accept [x]
+    * decline --> if declined, can never be friends again (to keep?) [x]
 
-- delete friend 
-- user's friends list
-- user's pending requests (recieved and sent)
-- block user
+- delete friend [x]
+- user's friends list [x]
+- user's pending requests (sent?)
+- block user [x]
 
 # QUIZ
 
@@ -52,9 +52,5 @@
 # Front 
 
 ## a prevoir suite a l'auth + OAuth backend
-
-    -formulaires register/login (email, password, username, display_name optionnel)
     -ne pas stocker de token en localStorage : le cookie httpOnly est automatique, aucune gestion manuelle du token cote front necessaire
-    -bouton logout : POST /api/auth/logout (avec credentials: include), puis nettoyer l'etat front et rediriger
-    -variable d'env front (ex: VITE_API_URL) pour l'URL du backend, a ne jamais coder en dur
 
