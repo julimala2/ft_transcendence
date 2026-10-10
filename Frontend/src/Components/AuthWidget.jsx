@@ -2,7 +2,7 @@
 //only use that (not loginForm/register etc...)
 
 import { useState } from "react";
-import { useAuth } from "../Api/auth";
+import { useAuth } from "../Hooks/useAuth";
 import { LoginForm } from "./LoginForm";
 import { RegisterForm } from "./RegisterForm";
 import styles from "../Styling/Login.module.css"
@@ -23,7 +23,7 @@ export function AuthWidget() {
     }
 
     return (
-        <div className="page">
+        // <div className="page">
             <div className="card">
             {renderForm()}
             {mode === 'login' ? 
@@ -39,6 +39,6 @@ export function AuthWidget() {
                 Login with 42
             </button>
             </div>
-        </div>
+        // </div>
     );
 }

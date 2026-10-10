@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../Api/auth";
+import { useAuth } from "../Hooks/useAuth";
 import { ChangePasswordForm } from "../Components/ChangePasswordForm";
 import { EditableField } from "../Components/EditableField";
 import { Avatar } from "../Components/Avatar";
@@ -13,7 +13,7 @@ export function MyProfile(){
     switch (mode) {
         case 'edit':
             return (
-                <div className="page">
+                // <div className="page">
                     <section className="card">
                             <EditableField
                                 label="Email :"
@@ -32,7 +32,7 @@ export function MyProfile(){
                             ></EditableField>
                     <button onClick={()=>setMode('view')}>Cancel</button>
                     </section>
-                </div>
+                // </div>
             )
         case 'password':
             return (
@@ -40,7 +40,7 @@ export function MyProfile(){
             )
         default:
             return (
-                <div className="page">
+                // <div className="page">
                         <section className="card">
                         <Avatar src={user.avatar_url} username={user.display_name} size={60} />
                         <label>Email : {user.email}</label>
@@ -53,7 +53,7 @@ export function MyProfile(){
                             <button onClick={()=>logout()}>Log out</button>
                         </section>
                     </section>
-                </div>
+                // </div>
             )
     }
 }

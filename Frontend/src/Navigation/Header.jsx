@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
-import { useAuth } from '../Api/auth';
+import { Link, useLocation } from 'react-router-dom';
+import { useAuth } from '../Hooks/useAuth';
 import styles from '../Styling/Header.module.css';
 import { Avatar } from '../Components/Avatar';
 
 export function Header() {
     const { user } = useAuth();
+    const location  = useLocation();
 
     return (
         <header className={styles.header}>
@@ -12,7 +13,9 @@ export function Header() {
                 LeQuizzDeLaMortQuiTue
             </Link>
             <nav className={styles.nav}>
-                <Link to={user ? '/profile' : '/login'} className={styles.loginButton}>
+                <Link to={user ? '/account/profile' : '/login'} 
+                className={styles.loginButton} 
+                state={{backgroundLocation : location}}>
                     {user ? (
                         <Avatar src={user.avatar_url} username={user.display_name} size={45} />
                     ) : (

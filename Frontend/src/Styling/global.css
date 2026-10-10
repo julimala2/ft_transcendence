@@ -180,3 +180,31 @@ input[type='search'] {
 @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
 }
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  position: relative;
+  background: #290b33cc;
+  border-radius: 12px;
+  padding: 24px;
+  width: min(90vw, 75%);
+  min-height: 50%;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: 0;
+  font-size: 24px;
+  cursor: pointer;
+}

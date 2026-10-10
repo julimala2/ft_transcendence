@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAuth } from '../Api/auth';
+import { useAuth } from '../Hooks/useAuth';
 import { validatePassword } from './RegisterForm';
 
 export function ChangePasswordForm( {onDone} ){

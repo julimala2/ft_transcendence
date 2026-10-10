@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../Api/auth";
+import { useAuth } from "../Hooks/useAuth";
 import { AllQuizs } from "../Components/AllQuizs";
 import { CreateQuiz } from "../Api/quiz";
 

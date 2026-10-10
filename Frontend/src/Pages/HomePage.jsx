@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useAuth } from '../Api/auth';
+import { useAuth } from '../Hooks/useAuth';
 import styles from '../Styling/HomePage.module.css';
 
 export function HomePage() {
@@ -19,21 +19,18 @@ export function HomePage() {
                 </Link>
 
                 <nav className={styles.secondary}>
-                    {/* <Link to="/settings" className={styles.link}>
-                        Settings
-                    </Link> */}
                     {user && ( <>
-                        <Link to="/friends" className={styles.link}>
+                        {/* <Link to="/friends" className={styles.link}>
                             Friends
                         </Link>
                         <Link to="/myQuizs" className={styles.link}>
                             My Quizs
-                        </Link>
+                        </Link> */}
                         </>
                     )}
-                    <Link to={user ? '/profile' : '/login'} className={styles.link}>
+                    {/* <Link to={user ? '/profile' : '/login'} className={styles.link}>
                         {user ? ('Profile'):('Login')}
-                    </Link>
+                    </Link> */}
 
                 </nav>
             </div>

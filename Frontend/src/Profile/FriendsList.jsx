@@ -78,7 +78,7 @@ export function FriendsList() {
     if (error) return <p className={styles.error}>{error}</p>;
 
     return (
-        <div className="page">
+        <>
             <header className={styles.header}>
                 <h1>Friends</h1>
                 <span className={styles.count}>
@@ -183,6 +183,6 @@ export function FriendsList() {
                     <button>Menu</button>
                 </Link>
             </div>
-        </div>
+        </>
     );
 }

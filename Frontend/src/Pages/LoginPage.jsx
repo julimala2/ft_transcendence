@@ -1,5 +1,5 @@
 import { Navigate, useSearchParams } from 'react-router-dom';
-import { useAuth } from '../Api/auth';
+import { useAuth } from '../Hooks/useAuth';
 import { AuthWidget } from '../Components/AuthWidget';
 import styles from '../Styling/LoginPage.module.css';
 
