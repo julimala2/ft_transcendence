@@ -1,10 +1,8 @@
-//quelles erreurs d'authentification ? 
-//email deja utilise, autre ? 
-
-
 const authService = require('../services/auth.service');
 const oauthService = require('../services/oauth.service');
 const { COOKIE_OPTIONS } = require('../../lib/cookieOptions');
+const { sendServiceError } = require('../../lib/errorHandling');
+const crypto = require('crypto');
 
 async function register(req, res) {
     const { email, password, username, display_name } = req.body;
@@ -20,14 +18,7 @@ async function register(req, res) {
         });
     }
     catch (err) {
-        if(err.code === 'EMAIL_TAKEN') {
-            return res.status(409).json({ error: 'Email deja utilise' });
-        }
-        if(err.code === 'USERNAME_TAKEN') {
-            return res.status(409).json({ error: 'Username deja utilise' });
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 
@@ -42,15 +33,10 @@ async function login(req, res) {
             email: user.email,
             username: user.username,
             display_name: user.display_name,
-            token: token 
         });
     }
     catch (err) {
-        if (err.code === 'INVALID_CREDENTIALS') {
-            return res.status(401).json({ error: 'Email ou mot de passe invalide'});
-        }
-        console.error(err);
-        return res.status(500).json({ error: 'Erreur serveur' });
+        return sendServiceError(res, err);
     }
 }
 
@@ -71,18 +57,37 @@ async function logout(req, res) {
 }
 
 function oauthRedirect(req, res) {
+    const state = crypto.randomBytes(16).toString('hex');
+
+    res.cookie('oauth_state', state, {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',
+        maxAge: 5 * 60 * 1000,
+
+    })
+
     const params = new URLSearchParams({
         client_id: process.env.OAUTH_CLIENT_ID,
         redirect_uri: process.env.OAUTH_REDIRECT_URI,
         response_type: 'code',
         scope: 'public',
+        state,
     });
 
     return res.redirect(`https://api.intra.42.fr/oauth/authorize?${params.toString()}`);
 }
 
 async function oauthCallback(req, res) {
-    const { code } = req.query;
+    const { code, state } = req.query;
+    const savedState = req.cookies.oauth_state;
+
+    res.clearCookie('oauth_state');
+
+    if (!state || state !== savedState) {
+        return res.redirect(`${process.env.FRONTEND_URL}/login?error=oauth_state`);
+    }
+
 
     try {
         const { user, token } = await oauthService.oauthLogin(code);

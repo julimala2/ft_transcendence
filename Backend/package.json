@@ -22,6 +22,6 @@
     "ws": "^8.21.3"
   },
   "prisma": {
-    "seed": "node prisma/seedTest.js"
+    "seed": "node prisma/seedQuestions.js"
   }
 }

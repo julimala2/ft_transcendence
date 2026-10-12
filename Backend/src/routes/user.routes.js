@@ -11,6 +11,7 @@ router.post('/me/avatar', verifyToken, uploadAvatar, handleUploadError, userCont
 router.patch('/me/password', verifyToken, validateChangePassword, userController.changePassword);
 router.delete('/me', verifyToken, userController.deleteAccount);
 router.get('/username/:username', verifyToken, userController.getProfileByUsername);
+router.get('/search', verifyToken, userController.searchUsers);
 router.get('/:id', verifyToken, userController.getPublicProfile); //a bien garder en derniere route pour pas interferer avec /me
 
 

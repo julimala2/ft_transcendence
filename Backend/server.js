@@ -8,6 +8,10 @@ const fs = require('fs');
 const authRoutes = require('./src/routes/auth.routes');
 const userRoutes = require('./src/routes/user.routes');
 const friendRoutes = require('./src/routes/friends.routes');
+const blockRoutes = require('./src/routes/blocks.routes');
+const quizRoutes = require('./src/routes/quiz.routes');
+const questionRoutes = require('./src/routes/question.routes');
+const categoryRoutes = require('./src/routes/category.routes');
 const app = express();
 const { WebSocketServer } = require('ws');
 const { authenticateUpgrade } = require('./websocket/auth');
@@ -21,29 +25,15 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/friends', friendRoutes);
+app.use('/api/blocks', blockRoutes);
+app.use('/api/quiz', quizRoutes);
+app.use('/api/questions', questionRoutes);
+app.use('/api/categories', categoryRoutes);
+app.use('/quiz-images', express.static('assets/quiz'));
 
-
-//app.use(cors());          <--- Doublon avec ligne 16 ?
-//app.use(express.json());  <----|
 
 app.get('/', (req, res) => {
   res.send('Hello du backend!');
-});
-
-app.get('/api/getrequest',async (req,res) => {
-  // const result = await pool.query('SELECT * FROM TEST');
-  console.log('Api Get request');
-  await new Promise(resolve => setTimeout(resolve, 1000)); //Timer pour simuler latence serveur
-  res.json(fakeUsers);
-});
-
-app.post('/api/postrequest', async (req,res) => {
-  console.log('API Post request :',req.body);
-  const fakeMsg = [
-    {id : 1, message: "Get request recue", test: "test"}
-  ]
-  await new Promise(resolve => setTimeout(resolve, 2000)); //Timer pour simuler latence serveur
-  res.json(fakeMsg);
 });
 
 const options = {

@@ -1,5 +1,6 @@
 const userModel = require('../models/user.model');
 const friendModel = require('../models/friends.model');
+const { serviceError } = require('../../lib/errorHandling');
 
 async function sendRequest(requesterId, { username, addresseeId }) {
     let addressee;
@@ -12,15 +13,11 @@ async function sendRequest(requesterId, { username, addresseeId }) {
     }
 
     if (!addressee) {
-        const err = new Error('User not found');
-        err.code = 'USER_NOT_FOUND';
-        throw err;
+        throw serviceError('USER_NOT_FOUND');
     }
 
     if (addressee.id === requesterId) {
-        const err = new Error('Cannot add yourself');
-        err.code = 'SELF_REQUEST';
-        throw err;
+        throw serviceError('SELF_REQUEST');
     }
 
     const existing = await friendModel.findBetween(requesterId, addressee.id);
@@ -31,9 +28,7 @@ async function sendRequest(requesterId, { username, addresseeId }) {
     }
 
     if (existing) {
-        const err = new Error('Friendship already exists');
-        err.code = 'ALREADY_EXISTS';
-        throw err;
+        throw serviceError('ALREADY_EXISTS');
     }
 
     return friendModel.create(requesterId, addressee.id);
@@ -42,9 +37,7 @@ async function sendRequest(requesterId, { username, addresseeId }) {
 async function getFriendshipOrThrow(friendshipId) {
     const friendship = await friendModel.findById(friendshipId);
     if (!friendship) {
-        const err = new Error('Friendship not found');
-        err.code = 'NOT_FOUND';
-        throw err;
+        throw serviceError('NOT_FOUND');
     }
     return friendship;
 }
@@ -53,15 +46,11 @@ async function respondToRequest(friendshipId, userId, newStatus) {
     const friendship = await getFriendshipOrThrow(friendshipId);
 
     if (friendship.addressee_id !== userId) {
-        const err = new Error('Not authorized to respond to this request');
-        err.code = 'FORBIDDEN';
-        throw err;
+        throw serviceError('NOT_ADDRESSEE');
     }
 
     if (friendship.status !== 'pending') {
-        const err = new Error('Request is not pending');
-        err.code = 'INVALID_STATUS';
-        throw err;
+        throw serviceError('REQUEST_NOT_PENDING');
     }
 
     return friendModel.updateStatus(friendshipId, newStatus);
@@ -79,15 +68,11 @@ async function removeFriendship(friendshipId, userId) {
     const friendship = await getFriendshipOrThrow(friendshipId);
 
     if (friendship.addressee_id !== userId && friendship.requester_id !== userId) {
-        const err = new Error('Not authorized to remove friend');
-        err.code = 'FORBIDDEN';
-        throw err;
+        throw serviceError('NOT_PARTICIPANT');
     }
 
     if (friendship.status === 'declined') {
-        const err = new Error('Not friends');
-        err.code = 'INVALID_STATUS';
-        throw err;
+        throw serviceError('NOT_FRIENDS');
     }
 
     return friendModel.remove(friendshipId);

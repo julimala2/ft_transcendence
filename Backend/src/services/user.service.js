@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const userModel = require('../models/user.model');
 const fs = require('fs');
 const path = require('path');
+const { serviceError } = require('../../lib/errorHandling');
 
 async function getProfile(userId) {
     return userModel.findById(userId);
@@ -11,13 +12,15 @@ async function getProfileByUsername(username) {
     return userModel.findByUsername(username);
 }
 
+async function searchUsers(query) {
+    return userModel.search(query);
+}
+
 async function updateProfile(userId, data) {
     if (data.email) {
         const existing = await userModel.findByEmail(data.email);
         if (existing && existing.id !== userId) {
-            const err = new Error('Email already taken');
-            err.code = 'EMAIL_TAKEN';
-            throw err;
+            throw serviceError('EMAIL_TAKEN');
         }
     }
 
@@ -47,9 +50,7 @@ async function changePassword(userId, currentPassword, newPassword) {
     if (user.password_hash) {
         const isValid = await bcrypt.compare(currentPassword || '', user.password_hash);
         if (!isValid) {
-            const err = new Error('Current password invalid');
-            err.code = 'INVALID_CURRENT_PASSWORD';
-            throw err;
+            throw serviceError('INVALID_CURRENT_PASSWORD');
         }
     }
 
@@ -63,9 +64,7 @@ async function deleteAccount(userId, password) {
     if (user.password_hash) {
         const isValid = await bcrypt.compare(password || '', user.password_hash);
         if (!isValid) {
-            const err = new Error('Password invalid');
-            err.code = 'INVALID_PASSWORD';
-            throw err;
+            throw serviceError('INVALID_PASSWORD');
         }
     }
 
@@ -82,4 +81,4 @@ async function deleteAccount(userId, password) {
     return userModel.remove(userId);
 }
 
-module.exports = { getProfile, getProfileByUsername, updateProfile, updateAvatar, changePassword, deleteAccount };
+module.exports = { getProfile, getProfileByUsername, searchUsers, updateProfile, updateAvatar, changePassword, deleteAccount };

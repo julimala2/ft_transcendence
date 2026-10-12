@@ -36,6 +36,14 @@ async function updateQuiz(id, { title, description }) {
   return quizModel.update(id, { title: cleanTitle, description });
 }
 
+async function assertQuizIsPlayable(id) {
+  const quiz = await getQuizById(id);
+  if (quiz.questions.length === 0) {
+    throw httpError(400, 'Ce quiz n\'a aucune question, il n\'est pas jouable');
+  }
+  return quiz;
+}
+
 async function deleteQuiz(id) {
   await getQuizById(id);
   return quizModel.remove(id);
@@ -47,4 +55,5 @@ module.exports = {
   createQuiz,
   updateQuiz,
   deleteQuiz,
+  assertQuizIsPlayable,
 };

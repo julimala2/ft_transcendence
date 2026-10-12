@@ -1,6 +1,7 @@
 #node_modules/
 .env
 dev.db
+*.db-journal
 #certs/
 #uploads/
 
