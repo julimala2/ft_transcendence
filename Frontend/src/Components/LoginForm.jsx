@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAuth } from '../Api/auth'
+import { useAuth } from '../Hooks/useAuth'
 
 import '../Styling/Stylesheet.css'
 import styles from '../Styling/style.module.css';
@@ -29,8 +29,8 @@ export function LoginForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Log in</label>
+        <form onSubmit={handleSubmit} className='card'>
+            <h1>Log in</h1>
             <div>
                 <label htmlFor='email'>Email :</label>
                 <input
@@ -54,7 +54,7 @@ export function LoginForm() {
         
         {error && <p style = {{color:'red'}}>{error}</p>}
 
-        <button type="submit" disabled={isSubmitting} className={isSubmitting ? styles.disabled : styles.button}>
+        <button type="submit" disabled={isSubmitting}>
             {isSubmitting ? 'Logging in...' : 'Log in'} 
         </button>
         

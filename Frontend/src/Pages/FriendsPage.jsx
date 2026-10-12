@@ -1,5 +1,5 @@
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../Api/auth';
+import { useAuth } from '../Hooks/useAuth';
 import { FriendsList } from '../Profile/FriendsList';
 
 export function FriendsPage() {

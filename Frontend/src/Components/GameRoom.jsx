@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-import { useAuth } from '../Api/auth';
-import { useGameSocket } from '../hooks/useGameSocket';
+import { useAuth } from '../Hooks/useAuth';
+import { useGameSocket } from '../Hooks/useGameSocket';
 
 export function GameRoom({roomId: roomIdProp}) {
   const { user } = useAuth();
@@ -9,7 +9,6 @@ export function GameRoom({roomId: roomIdProp}) {
   const roomId = roomIdProp ?? roomIdParam;
   const { connected, messages, sendChat } = useGameSocket(roomId);
   const [inputText, setInputText] = useState('');
-  
   if (!user){
     return <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h2>Vous devez être connecté pour accéder à cette page.</h2>

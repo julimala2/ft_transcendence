@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "../Api/auth";
+import { useAuth } from "../Hooks/useAuth";
 import { ChangePasswordForm } from "../Components/ChangePasswordForm";
-import styles from '../Styling/Profile.module.css'
 import { EditableField } from "../Components/EditableField";
 import { Avatar } from "../Components/Avatar";
 
@@ -14,8 +13,8 @@ export function MyProfile(){
     switch (mode) {
         case 'edit':
             return (
-                <div className={styles.main}>
-                    <div className={styles.card}>
+                // <div className="page">
+                    <section className="card">
                             <EditableField
                                 label="Email :"
                                 value={user.email}
@@ -31,34 +30,30 @@ export function MyProfile(){
                                 validate={(v)=> v.length === 0 ? "Invalid display name" : null}
                                 onSave={(v) => updateProfile({display_name:v})}
                             ></EditableField>
-                    <button onClick={()=>setMode('view')} className={styles.button}>Cancel</button>
-                    </div>
-                </div>
+                    <button onClick={()=>setMode('view')}>Cancel</button>
+                    </section>
+                // </div>
             )
         case 'password':
             return (
-                <div className={styles.main}>
-                    <div className={styles.card}>
                         <ChangePasswordForm onDone={()=> setMode('view')}/>
-                    </div>
-                </div>
             )
         default:
             return (
-                <div className={styles.main}>
-                        <div className={styles.card}>
+                // <div className="page">
+                        <section className="card">
                         <Avatar src={user.avatar_url} username={user.display_name} size={60} />
-                        <label>Email :{user.email}</label>
-                        <label>Username :{user.username}</label>
-                        <label>DisplayName :{user.display_name}</label>
+                        <label>Email : {user.email}</label>
+                        <label>Username : {user.username}</label>
+                        <label>DisplayName : {user.display_name}</label>
                         {/* <label>Avatar url:{user.avatar_url}</label> */}
-                        <div>
-                            <button onClick={()=>setMode('edit')} className={styles.button}>Edit profile</button>
-                            <button onClick={()=>setMode('password')} className={styles.button}>Change password</button>
-                            <button onClick={()=>logout()} className={styles.button}>Log out</button>
-                        </div>
-                    </div>
-                </div>
+                        <section className="card">
+                            <button onClick={()=>setMode('edit')}>Edit profile</button>
+                            <button onClick={()=>setMode('password')}>Change password</button>
+                            <button onClick={()=>logout()}>Log out</button>
+                        </section>
+                    </section>
+                // </div>
             )
     }
 }
