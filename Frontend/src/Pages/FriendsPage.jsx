@@ -1,12 +1,11 @@
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../Hooks/useAuth';
-import { FriendsList } from '../Profile/FriendsList';
 
 export function FriendsPage() {
-    const { user, loading } = useAuth();
+    const { user } = useAuth();
 
-    // if (loading) return <p>Loading...</p>;
-    if (!user) return <Navigate to="/login" replace />;
-
-    return <FriendsList />;
+    if (!user) return <Navigate to="/account" replace />;
+    
+    // Redirige vers la modale Account avec l'onglet friends
+    return <Navigate to="/account/friends" replace />;
 }

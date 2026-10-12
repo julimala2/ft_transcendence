@@ -1,0 +1,31 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(1, 1, 1, 0.371);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: #252525;
+  border-radius: 12px;
+  /* padding: 24px; */
+  min-width: 800px;
+  height: 800px;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.modalClose {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: 0;
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.page {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.loading,
+.error,
+.empty {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+}
+
+.error {
+    color: rgb(255, 80, 80);
+}

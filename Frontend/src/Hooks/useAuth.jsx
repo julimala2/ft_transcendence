@@ -69,6 +69,24 @@ export function AuthProvider({ children }) {
         return updated;
     }
 
+    async function uploadAvatar(file) {
+        const formData = new FormData();
+        formData.append('avatar', file);
+
+        const updated = await apiFetch('/api/users/me/avatar', {
+            method: 'POST',
+            body: formData,
+        });
+        
+        // Si le backend retourne une URL relative, on la transforme en absolue
+        if (updated.avatar_url && !updated.avatar_url.startsWith('http')) {
+            updated.avatar_url = `${import.meta.env.VITE_API_URL}${updated.avatar_url}`;
+        }
+        
+        setUser(updated);
+        return updated;
+    }
+
     const value = {
         user,
         loading,
@@ -79,6 +97,7 @@ export function AuthProvider({ children }) {
         refreshUser,
         changePassword,
         updateProfile,
+        uploadAvatar,
     };
 
     return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

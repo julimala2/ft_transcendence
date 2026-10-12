@@ -13,9 +13,9 @@ export function Header() {
                 LeQuizzDeLaMortQuiTue
             </Link>
             <nav className={styles.nav}>
-                <Link to={user ? '/account/profile' : '/login'} 
+                <Link to='/account' 
                 className={styles.loginButton} 
-                state={{backgroundLocation : location}}>
+                state={{ backgroundLocation: location }}>
                     {user ? (
                         <Avatar src={user.avatar_url} username={user.display_name} size={45} />
                     ) : (

@@ -28,7 +28,6 @@ export function PublicProfile({ userId }) {
         };
     }, [userId]);
 
-    // TODO loading animation would be nice
     if (error) return <p>{error}</p>;
     if (!profile) return null;
 

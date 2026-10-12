@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { acceptRequest, declineRequest, getFriends, getReceivedRequests, sendFriendNamedRequest } from '../Api/friends';
-import { FriendCard } from './FriendCard';
-import styles from '../Styling/FriendsList.module.css';
+import styles from './Styling/Account.module.css';
 import { UserSearch } from '../Components/UserSearch';
 import { getBlockedUsers } from '../Api/blocks';
+import { Avatar } from '../Components/Avatar';
 
-export function FriendsList() {
+export function AccountFriends() {
     const [friends, setFriends] = useState([]);
     const [blocked, setBlocked] = useState([]);
     const [requests, setRequests] = useState([]);
@@ -67,31 +67,22 @@ export function FriendsList() {
 
         try {
             await sendFriendNamedRequest(username);
-            setInviteMessage({ type: 'success', text: `Invitation sent to ${username}` });
+            setInviteMessage({ type: 'success', text: `Invitation envoyee a ${username}` });
             setInviteTarget('');
         } catch (err) {
             setInviteMessage({ type: 'error', text: err.error || 'error!' });
         }
     }
 
-    if (loading) return <div className='page'><section className='card'>Loading...</section></div>;
+    if (loading) return <><section className='card'>Loading...</section></>;
     if (error) return <p className={styles.error}>{error}</p>;
 
     return (
         <>
-            <header className={styles.header}>
-                <h1>Friends</h1>
-                <span className={styles.count}>
-                    {friends.length} {friends.length === 1 ? 'friend' : 'friends'}
-                </span>
-            </header>
-
-            {/* User search */}
-            <section className="card">
+            <section>
                 <UserSearch onSelect={handleFriendClick} />
             </section>
 
-            {/* Friend requests */}
             {requests.length !== 0 && (
                 <section className="card">
                     <h2 className={styles.cardTitle}>
@@ -124,11 +115,10 @@ export function FriendsList() {
                 </section>
             )}
 
-            {/* Friends list */}
-            <section className="card">
-                <h2 className={styles.cardTitle}>My friends</h2>
+            <section>
+                <h2 className={styles.cardTitle}>Mes amis</h2>
                 {friends.length === 0 ? (
-                    <p className="empty">No friends yet. Invite someone below to get started.</p>
+                    <p className="empty">Pas d'amis (pour le moment !)</p>
                 ) : (
                     <ul className="list">
                         {friends.map((f) => (
@@ -138,51 +128,45 @@ export function FriendsList() {
                 )}
             </section>
 
-            {/* Invite by username */}
-            <section className="card">
-                <h2 className={styles.cardTitle}>Invite a friend</h2>
-                <div className={styles.inviteRow}>
-                    <input
-                        name="inviteInput"
-                        placeholder="Username"
-                        value={inviteTarget}
-                        onChange={(e) => setInviteTarget(e.target.value)}
-                        onKeyDown={(e) => e.key === 'Enter' && sendNamedInvite()}
-                    />
-                    <button
-                        onClick={sendNamedInvite}
-                        disabled={!inviteTarget.trim()}
-                    >
-                        Send invite
-                    </button>
-                </div>
-                {inviteMessage && (
-                    <p className={`alert ${inviteMessage.type === 'success' ? 'alert-success' : 'alert-error'}`}>
-                        {inviteMessage.text}
-                    </p>
-                )}
-            </section>
-
-            {/* Blocked users */}
-            <section className="card">
-                <h2 className={styles.cardTitle}>Blocked users</h2>
-                {blocked.length === 0 ? (
-                    <p className='empty'>No user blocked.</p>
-                ) :
+            <section>
+                {blocked.length !== 0 && 
                 (
-                    <ul className='list'>
-                        {blocked.map((b) => (
-                            <FriendCard key={b.id} friend={b} onClick={handleFriendClick}></FriendCard>
-                        ))}
-                    </ul>
+                    <>
+                        <h2 className={styles.cardTitle}>Bloques</h2>
+                        <ul className='list'>
+                            {blocked.map((b) => (
+                                <FriendCard key={b.id} friend={b} onClick={handleFriendClick}></FriendCard>
+                            ))}
+                        </ul>
+                    </>
                 )}
             </section>
-
-            <div className={styles.footer}>
-                <Link to="/">
-                    <button>Menu</button>
-                </Link>
-            </div>
         </>
+    );
+}
+
+export function FriendCard({ friend, onClick }) {
+    return (
+        <li
+            className={styles.card}
+            onClick={() => onClick(friend)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    onClick(friend);
+                }
+            }}
+        >
+            <Avatar src={friend.avatar_url} username={friend.username} size={40} />
+            <div className={styles.info}>
+                <span className={styles.username}>{friend.username}</span>
+                {friend.display_name && friend.display_name !== friend.username && (
+                    <span className={styles.displayName}>{friend.display_name}</span>
+                )}
+                
+            </div>
+        </li>
     );
 }
