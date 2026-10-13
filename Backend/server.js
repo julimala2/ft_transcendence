@@ -27,7 +27,7 @@ app.use('/api/users', userRoutes);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/friends', friendRoutes);
 app.use('/api/blocks', blockRoutes);
-app.use('/api/quiz', quizRoutes);
+app.use('/api/quizzes', quizRoutes);
 app.use('/api/questions', questionRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/attempts', attemptRoutes);

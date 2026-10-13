@@ -1,4 +1,4 @@
-const prisma = require('../config/prismaClient');
+const prisma = require('../../lib/prisma');
 const { PUBLIC_SELECT } = require('./question.model');
 
 function remainingQuestions(attemptId) {
