@@ -18,6 +18,10 @@ async function findByName(name) {
   return prisma.category.findUnique({ where: { name } });
 }
 
+async function findBySlug(slug) {
+  return prisma.category.findUnique({ where: { slug }});
+}
+
 async function create(data) {
   return prisma.category.create({ data });
 }
@@ -30,4 +34,4 @@ async function remove(id) {
   return prisma.category.delete({ where: { id } });
 }
 
-module.exports = { findAll, findById, findByName, create, update, remove };
+module.exports = { findAll, findById, findByName, findBySlug, create, update, remove };

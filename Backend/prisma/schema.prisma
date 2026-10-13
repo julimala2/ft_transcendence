@@ -88,6 +88,7 @@ model Category {
   name      String   @unique
 
   questions Question[]
+  attempts  QuizAttempt[]
 }
 
 model Question {
@@ -113,6 +114,7 @@ model Question {
   tags        Tag[]
   answers     Answer[]
   quizzes     QuizQuestion[]
+  attemptQuestions AttemptQuestion[]
   userAnswers UserAnswer[]
 
   @@index([categoryId, difficulty])
@@ -144,18 +146,42 @@ model Answer {
 }
 
 model QuizAttempt {
-  id        Int      @id @default(autoincrement())
-  score     Int      @default(0)
-  startedAt DateTime @default(now())
-  finishedAt DateTime?
+  id             Int      @id @default(autoincrement())
+  score          Int      @default(0)
+  totalQuestions Int      @default(0)
+  startedAt      DateTime @default(now())
+  finishedAt     DateTime?
 
   userId    Int
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  quizId    Int
-  quiz      Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  // Partie sur un quiz existant (null pour une partie générée)
+  quizId    Int?
+  quiz      Quiz?    @relation(fields: [quizId], references: [id], onDelete: SetNull)
 
-  userAnswers   UserAnswer[]
+  // Partie générée : le score est rattaché à ce thème, pas à un quiz
+  categoryId Int?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  tagId      Int?
+  tag        Tag?      @relation(fields: [tagId], references: [id], onDelete: SetNull)
+  difficulty Int?
+
+  questions   AttemptQuestion[]
+  userAnswers UserAnswer[]
+
+  @@index([userId])
+  @@index([categoryId, tagId, difficulty])
+}
+
+model AttemptQuestion {
+  attemptId  Int
+  attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  questionId Int
+  question   Question    @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  position   Int
+
+  @@id([attemptId, questionId])
+  @@unique([attemptId, position])
 }
 
 model UserAnswer {
@@ -190,5 +216,5 @@ model Tag {
   id        Int        @id @default(autoincrement())
   slug      String     @unique
   questions Question[]
+  attempts  QuizAttempt[]
 }
-

@@ -8,11 +8,7 @@ function sendError(res, err) {
 
 async function getAll(req, res) {
   try {
-    const filters = {
-      quizId: req.query.quizId ? Number(req.query.quizId) : undefined,
-      categoryId: req.query.categoryId ? Number(req.query.categoryId) : undefined,
-    };
-    const questions = await questionService.getAllQuestions(filters);
+    const questions = await questionService.getAllQuestions(req.filters);
     res.json(questions);
   } catch (err) {
     sendError(res, err);
@@ -30,7 +26,7 @@ async function getById(req, res) {
 
 async function create(req, res) {
   try {
-    const question = await questionService.createQuestion(req.body);
+    const question = await questionService.createQuestion(req.body, req.user.id);
     res.status(201).json(question);
   } catch (err) {
     sendError(res, err);
@@ -39,7 +35,7 @@ async function create(req, res) {
 
 async function update(req, res) {
   try {
-    const question = await questionService.updateQuestion(req.questionId, req.body);
+    const question = await questionService.updateQuestion(req.questionId, req.body, req.user.id);
     res.json(question);
   } catch (err) {
     sendError(res, err);
@@ -48,7 +44,7 @@ async function update(req, res) {
 
 async function remove(req, res) {
   try {
-    await questionService.deleteQuestion(req.questionId);
+    await questionService.deleteQuestion(req.questionId, req.user.id);
     res.status(204).send();
   } catch (err) {
     sendError(res, err);
