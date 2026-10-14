@@ -3,8 +3,10 @@ const router = express.Router();
 const blocksController = require('../controllers/blocks.controller');
 const { verifyToken } = require('../middlewares/auth.middleware');
 
-router.post('/', verifyToken, blocksController.blockUser);
-router.delete('/:userId', verifyToken, blocksController.deblockUser);
-router.get('/', verifyToken, blocksController.getBlockedUsers);
+router.use(verifyToken);
+
+router.post('/', blocksController.blockUser);
+router.delete('/:userId', blocksController.deblockUser);
+router.get('/', blocksController.getBlockedUsers);
 
 module.exports = router;
