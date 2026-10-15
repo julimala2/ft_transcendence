@@ -472,6 +472,956 @@
         { "text": "La dépression de Qattara", "isCorrect": false }
       ],
       "explanation": "Les rives de la mer Morte se situent à plus de 430 m sous le niveau de la mer, et ce niveau baisse encore chaque année."
+    },
+    {
+      "ref": "geo-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["capitale", "amerique"],
+      "text": "Quelle est la capitale de l'Argentine ?",
+      "answers": [
+        { "text": "Córdoba", "isCorrect": false },
+        { "text": "Rosario", "isCorrect": false },
+        { "text": "Buenos Aires", "isCorrect": true },
+        { "text": "Mendoza", "isCorrect": false }
+      ],
+      "explanation": "Buenos Aires est aussi la ville la plus peuplée d'Argentine, surnommée le « Paris de l'Amérique du Sud »."
+    },
+    {
+      "ref": "geo-034",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["fleuve", "amerique", "frontiere"],
+      "text": "Quel fleuve forme une grande partie de la frontière entre les États-Unis et le Mexique ?",
+      "answers": [
+        { "text": "Le Colorado", "isCorrect": false },
+        { "text": "Le Rio Grande", "isCorrect": true },
+        { "text": "Le Mississippi", "isCorrect": false },
+        { "text": "L'Arkansas", "isCorrect": false }
+      ],
+      "explanation": "Appelé Río Bravo au Mexique, il marque la frontière sur près de 2 000 km."
+    },
+    {
+      "ref": "geo-035",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["volcan", "montagne", "afrique"],
+      "text": "Le Kilimandjaro, plus haut sommet d'Afrique, est un volcan.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "C'est un volcan composé de trois cônes, dont le dernier a connu une activité significative il y a environ 150 000 ans."
+    },
+    {
+      "ref": "geo-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lac", "amerique", "record"],
+      "text": "Quel est le plus grand lac d'eau douce du monde en superficie ?",
+      "answers": [
+        { "text": "Lac Victoria", "isCorrect": false },
+        { "text": "Lac Baïkal", "isCorrect": false },
+        { "text": "Lac Supérieur", "isCorrect": true },
+        { "text": "Lac Tanganyika", "isCorrect": false }
+      ],
+      "explanation": "Le lac Supérieur, entre le Canada et les États-Unis, couvre environ 82 000 km². Le Baïkal, lui, détient le record de volume et de profondeur."
+    },
+    {
+      "ref": "geo-037",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["lac", "asie", "record"],
+      "text": "Le lac Baïkal, en Russie, est le lac le plus profond du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il atteint environ 1 642 m de profondeur et contient près de 20 % de l'eau douce liquide non gelée de la planète."
+    },
+    {
+      "ref": "geo-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ile", "record"],
+      "text": "Quelle est la plus grande île du monde ?",
+      "answers": [
+        { "text": "Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Bornéo", "isCorrect": false },
+        { "text": "Madagascar", "isCorrect": false },
+        { "text": "Groenland", "isCorrect": true }
+      ],
+      "explanation": "L'Australie, plus grande encore, est classée comme un continent plutôt qu'une île."
+    },
+    {
+      "ref": "geo-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ile", "ocean", "afrique"],
+      "text": "Dans quel océan se trouve l'île de Madagascar ?",
+      "answers": [
+        { "text": "Océan Atlantique", "isCorrect": false },
+        { "text": "Océan Indien", "isCorrect": true },
+        { "text": "Océan Pacifique", "isCorrect": false },
+        { "text": "Océan Arctique", "isCorrect": false }
+      ],
+      "explanation": "Madagascar est séparée du continent africain par le canal du Mozambique."
+    },
+    {
+      "ref": "geo-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["volcan", "europe"],
+      "text": "Dans quel pays se trouve le volcan Eyjafjallajökull, dont l'éruption en 2010 a paralysé une grande partie du trafic aérien européen ?",
+      "answers": [
+        { "text": "Norvège", "isCorrect": false },
+        { "text": "Islande", "isCorrect": true },
+        { "text": "Groenland", "isCorrect": false },
+        { "text": "Écosse", "isCorrect": false }
+      ],
+      "explanation": "Son nuage de cendres a entraîné la fermeture de l'espace aérien de nombreux pays européens pendant plusieurs jours."
+    },
+    {
+      "ref": "geo-041",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["frontiere", "record", "asie", "europe"],
+      "text": "La Russie et la Chine se partagent le record du plus grand nombre de frontières terrestres avec d'autres pays, soit 14 chacune.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les deux pays sont voisins de 14 États chacun, à égalité pour ce record."
+    },
+    {
+      "ref": "geo-042",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["capitale", "afrique"],
+      "text": "Quelle ville est la capitale administrative (siège de l'exécutif) de l'Afrique du Sud ?",
+      "answers": [
+        { "text": "Le Cap", "isCorrect": false },
+        { "text": "Johannesburg", "isCorrect": false },
+        { "text": "Pretoria", "isCorrect": true },
+        { "text": "Bloemfontein", "isCorrect": false }
+      ],
+      "explanation": "L'Afrique du Sud a trois capitales : Pretoria (exécutive), Le Cap (législative) et Bloemfontein (judiciaire)."
+    },
+    {
+      "ref": "geo-043",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["pays", "europe", "record"],
+      "text": "Le Vatican est le plus petit État souverain du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Avec environ 0,49 km², le Vatican est entièrement enclavé dans la ville de Rome."
+    },
+    {
+      "ref": "geo-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "asie", "record"],
+      "text": "Quelle agglomération est généralement considérée comme la plus peuplée du monde ?",
+      "answers": [
+        { "text": "Shanghai", "isCorrect": false },
+        { "text": "Delhi", "isCorrect": false },
+        { "text": "Tokyo", "isCorrect": true },
+        { "text": "São Paulo", "isCorrect": false }
+      ],
+      "explanation": "L'agglomération du Grand Tokyo compte plus de 35 millions d'habitants selon les estimations de l'ONU."
+    },
+    {
+      "ref": "geo-045",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["desert", "climat", "afrique"],
+      "text": "Le désert du Sahara se situe entièrement au nord de l'équateur.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le Sahara s'étend dans l'hémisphère nord ; l'équateur traverse l'Afrique bien plus au sud."
+    },
+    {
+      "ref": "geo-046",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["langue", "amerique"],
+      "text": "Quelle est la langue officielle du Brésil ?",
+      "answers": [
+        { "text": "Espagnol", "isCorrect": false },
+        { "text": "Portugais", "isCorrect": true },
+        { "text": "Français", "isCorrect": false },
+        { "text": "Italien", "isCorrect": false }
+      ],
+      "explanation": "Le Brésil est le seul grand pays lusophone d'Amérique du Sud, héritage de la colonisation portugaise."
+    },
+    {
+      "ref": "geo-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["continent", "record"],
+      "text": "Quel est le continent le plus peuplé du monde ?",
+      "answers": [
+        { "text": "Afrique", "isCorrect": false },
+        { "text": "Asie", "isCorrect": true },
+        { "text": "Europe", "isCorrect": false },
+        { "text": "Amérique", "isCorrect": false }
+      ],
+      "explanation": "L'Asie rassemble plus de la moitié de la population mondiale, avec la Chine et l'Inde en tête."
+    },
+    {
+      "ref": "geo-048",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "lac", "asie", "europe", "record"],
+      "text": "Quelle étendue d'eau salée, bordée notamment par la Russie et l'Iran, est en réalité le plus grand lac du monde ?",
+      "answers": [
+        { "text": "La mer d'Aral", "isCorrect": false },
+        { "text": "La mer Caspienne", "isCorrect": true },
+        { "text": "Le lac Victoria", "isCorrect": false },
+        { "text": "La mer Morte", "isCorrect": false }
+      ],
+      "explanation": "Sans accès à un océan, la mer Caspienne est classée comme un lac malgré sa taille et sa salinité."
+    },
+    {
+      "ref": "geo-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["detroit", "asie", "amerique"],
+      "text": "Quel détroit sépare l'Asie de l'Amérique du Nord ?",
+      "answers": [
+        { "text": "Le détroit de Magellan", "isCorrect": false },
+        { "text": "Le détroit de Béring", "isCorrect": true },
+        { "text": "Le détroit de Malacca", "isCorrect": false },
+        { "text": "Le détroit de Davis", "isCorrect": false }
+      ],
+      "explanation": "Large d'environ 82 km, il sépare la Russie (Sibérie) de l'Alaska."
+    },
+    {
+      "ref": "geo-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pays", "record", "asie"],
+      "text": "Quel est le pays le plus peuplé du monde depuis 2023 ?",
+      "answers": [
+        { "text": "Chine", "isCorrect": false },
+        { "text": "Inde", "isCorrect": true },
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "Indonésie", "isCorrect": false }
+      ],
+      "explanation": "Selon les estimations de l'ONU, l'Inde a dépassé la Chine en 2023 pour devenir le pays le plus peuplé du monde."
+    },
+    {
+      "ref": "geo-051",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["montagne", "amerique", "record"],
+      "text": "La cordillère des Andes est la plus longue chaîne de montagnes continentale du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle s'étend sur environ 7 000 km le long de la côte ouest de l'Amérique du Sud."
+    },
+    {
+      "ref": "geo-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "histoire", "asie", "europe"],
+      "text": "Quelle ville, ancienne capitale des empires byzantin et ottoman, a perdu son statut de capitale au profit d'Ankara ?",
+      "answers": [
+        { "text": "Izmir", "isCorrect": false },
+        { "text": "Istanbul", "isCorrect": true },
+        { "text": "Bursa", "isCorrect": false },
+        { "text": "Antalya", "isCorrect": false }
+      ],
+      "explanation": "Fondée sous le nom de Constantinople, la ville a cédé son rôle de capitale à Ankara en 1923, à la création de la République turque."
+    },
+    {
+      "ref": "geo-053",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pays", "europe", "asie"],
+      "text": "Quel pays s'étend à la fois sur l'Europe et l'Asie, de part et d'autre du détroit du Bosphore ?",
+      "answers": [
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Turquie", "isCorrect": true },
+        { "text": "Géorgie", "isCorrect": false },
+        { "text": "Arménie", "isCorrect": false }
+      ],
+      "explanation": "Sa plus grande ville, Istanbul, est elle-même partagée entre les deux continents."
+    },
+    {
+      "ref": "geo-054",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve la Grande Muraille ?",
+      "answers": [
+        { "text": "Mongolie", "isCorrect": false },
+        { "text": "Corée du Nord", "isCorrect": false },
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Vietnam", "isCorrect": false }
+      ],
+      "explanation": "Construite et agrandie sur plusieurs siècles, elle s'étend sur plusieurs milliers de kilomètres."
+    },
+    {
+      "ref": "geo-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "europe"],
+      "text": "Dans quel pays se trouve le Colisée ?",
+      "answers": [
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Espagne", "isCorrect": false },
+        { "text": "Turquie", "isCorrect": false }
+      ],
+      "explanation": "Construit au Ier siècle à Rome, cet amphithéâtre pouvait accueillir plusieurs dizaines de milliers de spectateurs."
+    },
+    {
+      "ref": "geo-056",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ville", "afrique"],
+      "text": "Dans quel pays se trouve la ville de Tombouctou, célèbre pour ses manuscrits anciens ?",
+      "answers": [
+        { "text": "Niger", "isCorrect": false },
+        { "text": "Mali", "isCorrect": true },
+        { "text": "Mauritanie", "isCorrect": false },
+        { "text": "Burkina Faso", "isCorrect": false }
+      ],
+      "explanation": "Tombouctou fut un grand centre intellectuel et commercial, à la croisée des routes du sel et de l'or."
+    },
+    {
+      "ref": "geo-057",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "record"],
+      "text": "Quel est le plus petit des cinq océans ?",
+      "answers": [
+        { "text": "Océan Indien", "isCorrect": false },
+        { "text": "Océan Austral", "isCorrect": false },
+        { "text": "Océan Arctique", "isCorrect": true },
+        { "text": "Océan Atlantique", "isCorrect": false }
+      ],
+      "explanation": "L'océan Arctique est aussi le plus froid, en grande partie recouvert de glace de mer."
+    },
+    {
+      "ref": "geo-058",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-inde.webp",
+        "alt": "Drapeau tricolore horizontal orange, blanc et vert, avec une roue bleue à 24 rayons au centre"
+      },
+      "answers": [
+        { "text": "Niger", "isCorrect": false },
+        { "text": "Inde", "isCorrect": true },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Côte d'Ivoire", "isCorrect": false }
+      ],
+      "explanation": "La roue bleue, appelée Ashoka Chakra, symbolise le mouvement perpétuel."
+    },
+    {
+      "ref": "geo-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-afrique-du-sud.webp",
+        "alt": "Drapeau aux six couleurs (noir, vert, jaune, blanc, rouge, bleu) agencées en forme de Y"
+      },
+      "answers": [
+        { "text": "Kenya", "isCorrect": false },
+        { "text": "Eswatini", "isCorrect": false },
+        { "text": "Afrique du Sud", "isCorrect": true },
+        { "text": "Lesotho", "isCorrect": false }
+      ],
+      "explanation": "Adopté en 1994, ce drapeau symbolise l'unité après la fin de l'apartheid."
+    },
+    {
+      "ref": "geo-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-mexique.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et rouge, avec un aigle dévorant un serpent au centre"
+      },
+      "answers": [
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Mexique", "isCorrect": true },
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Bulgarie", "isCorrect": false }
+      ],
+      "explanation": "L'aigle sur un nopal, dévorant un serpent, illustre un mythe fondateur aztèque."
+    },
+    {
+      "ref": "geo-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-norvege.webp",
+        "alt": "Drapeau rouge avec une croix bleue bordée de blanc, décalée vers la hampe"
+      },
+      "answers": [
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Islande", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": true },
+        { "text": "Royaume-Uni", "isCorrect": false }
+      ],
+      "explanation": "Les pays nordiques partagent ce motif de croix décalée, hérité du drapeau danois."
+    },
+    {
+      "ref": "geo-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve ce monument ?",
+      "image": {
+        "src": "geographie/taj-mahal.webp",
+        "alt": "Mausolée de marbre blanc surmonté d'un dôme, flanqué de quatre minarets et reflété dans un bassin"
+      },
+      "answers": [
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Inde", "isCorrect": true },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Iran", "isCorrect": false }
+      ],
+      "explanation": "Le Taj Mahal a été construit au XVIIe siècle par l'empereur moghol Shah Jahan en mémoire de son épouse."
+    },
+    {
+      "ref": "geo-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "amerique"],
+      "text": "Dans quel pays se trouve cette statue ?",
+      "image": {
+        "src": "geographie/christ-redempteur.webp",
+        "alt": "Statue monumentale d'un Christ aux bras ouverts, dominant une ville depuis un sommet"
+      },
+      "answers": [
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Brésil", "isCorrect": true },
+        { "text": "Portugal", "isCorrect": false },
+        { "text": "Chili", "isCorrect": false }
+      ],
+      "explanation": "Le Christ Rédempteur surplombe Rio de Janeiro depuis le sommet du Corcovado."
+    },
+    {
+      "ref": "geo-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "amerique"],
+      "text": "Dans quel pays se trouve cette statue ?",
+      "image": {
+        "src": "geographie/statue-liberte.webp",
+        "alt": "Statue en cuivre d'une femme drapée tenant une torche levée, sur une petite île"
+      },
+      "answers": [
+        { "text": "Canada", "isCorrect": false },
+        { "text": "France", "isCorrect": false },
+        { "text": "États-Unis", "isCorrect": true },
+        { "text": "Royaume-Uni", "isCorrect": false }
+      ],
+      "explanation": "Offerte par la France en 1886, elle se trouve sur Liberty Island, dans la baie de New York."
+    },
+    {
+      "ref": "geo-065",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "afrique"],
+      "text": "Dans quel pays se trouve ce site ?",
+      "image": {
+        "src": "geographie/pyramides-gizeh.webp",
+        "alt": "Trois grandes pyramides de pierre en plein désert, à proximité d'un sphinx"
+      },
+      "answers": [
+        { "text": "Soudan", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": true },
+        { "text": "Arabie saoudite", "isCorrect": false },
+        { "text": "Libye", "isCorrect": false }
+      ],
+      "explanation": "Les pyramides de Gizeh, près du Caire, sont la dernière des sept merveilles du monde antique encore debout."
+    },
+    {
+      "ref": "geo-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "europe"],
+      "text": "Dans quel pays se trouve ce site ?",
+      "image": {
+        "src": "geographie/stonehenge.webp",
+        "alt": "Cercle de grands mégalithes de pierre dressés dans une plaine herbeuse"
+      },
+      "answers": [
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Royaume-Uni", "isCorrect": true },
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "France", "isCorrect": false }
+      ],
+      "explanation": "Ce site mégalithique du sud de l'Angleterre daterait d'environ 2500 av. J.-C."
+    },
+    {
+      "ref": "geo-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "europe"],
+      "text": "Dans quel pays se trouve cette basilique ?",
+      "image": {
+        "src": "geographie/sagrada-familia.webp",
+        "alt": "Basilique aux hautes flèches sculptées et asymétriques, encore en construction"
+      },
+      "answers": [
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Portugal", "isCorrect": false },
+        { "text": "Espagne", "isCorrect": true },
+        { "text": "France", "isCorrect": false }
+      ],
+      "explanation": "Conçue par Antoni Gaudí à Barcelone, sa construction a débuté en 1882 et n'est toujours pas achevée."
+    },
+    {
+      "ref": "geo-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paysage", "oceanie"],
+      "text": "Dans quel pays se trouve ce monolithe ?",
+      "image": {
+        "src": "geographie/uluru.webp",
+        "alt": "Immense monolithe de grès rouge isolé au milieu d'une plaine désertique"
+      },
+      "answers": [
+        { "text": "Namibie", "isCorrect": false },
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "Australie", "isCorrect": true },
+        { "text": "Afrique du Sud", "isCorrect": false }
+      ],
+      "explanation": "Uluru (Ayers Rock) est un site sacré pour les Aborigènes Anangu, au cœur du désert australien."
+    },
+    {
+      "ref": "geo-069",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paysage", "amerique"],
+      "text": "Entre quels deux pays se trouvent ces chutes ?",
+      "image": {
+        "src": "geographie/chutes-niagara.webp",
+        "alt": "Chutes d'eau massives entourées de brume, bordées de falaises de chaque côté"
+      },
+      "answers": [
+        { "text": "Mexique et États-Unis", "isCorrect": false },
+        { "text": "Canada et États-Unis", "isCorrect": true },
+        { "text": "Canada et Groenland", "isCorrect": false },
+        { "text": "États-Unis et Cuba", "isCorrect": false }
+      ],
+      "explanation": "Les chutes du Niagara se situent à la frontière entre l'Ontario (Canada) et l'État de New York (États-Unis)."
+    },
+    {
+      "ref": "geo-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paysage", "europe"],
+      "text": "Dans quel pays se trouvent ces fjords ?",
+      "image": {
+        "src": "geographie/fjords-norvege.webp",
+        "alt": "Étroits bras de mer encaissés entre de hautes falaises, formés par l'érosion glaciaire"
+      },
+      "answers": [
+        { "text": "Islande", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": true },
+        { "text": "Écosse", "isCorrect": false },
+        { "text": "Groenland", "isCorrect": false }
+      ],
+      "explanation": "Le Geirangerfjord et le Sognefjord, parmi les plus célèbres, sont classés au patrimoine mondial de l'UNESCO."
+    },
+    {
+      "ref": "geo-071",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["capitale", "asie"],
+      "text": "Quelle est la capitale administrative du Sri Lanka, bien que Colombo en reste la capitale économique ?",
+      "answers": [
+        { "text": "Colombo", "isCorrect": false },
+        { "text": "Kandy", "isCorrect": false },
+        { "text": "Sri Jayawardenepura Kotte", "isCorrect": true },
+        { "text": "Galle", "isCorrect": false }
+      ],
+      "explanation": "Le Parlement sri-lankais siège à Sri Jayawardenepura Kotte, une banlieue de Colombo, depuis 1982."
+    },
+    {
+      "ref": "geo-072",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["capitale", "amerique"],
+      "text": "Quelle ville est la capitale constitutionnelle de la Bolivie, bien que La Paz soit le siège du gouvernement ?",
+      "answers": [
+        { "text": "La Paz", "isCorrect": false },
+        { "text": "Sucre", "isCorrect": true },
+        { "text": "Cochabamba", "isCorrect": false },
+        { "text": "Santa Cruz de la Sierra", "isCorrect": false }
+      ],
+      "explanation": "Sucre abrite le pouvoir judiciaire, tandis que l'exécutif et le législatif siègent à La Paz."
+    },
+    {
+      "ref": "geo-073",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["pays", "afrique", "histoire"],
+      "text": "L'Éthiopie est l'un des rares pays africains à n'avoir jamais été durablement colonisé par une puissance européenne.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Hormis une brève occupation italienne entre 1936 et 1941, l'Éthiopie a conservé son indépendance tout au long de la colonisation européenne."
+    },
+    {
+      "ref": "geo-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "afrique", "fleuve", "frontiere"],
+      "text": "Quel pays, presque entièrement façonné par le tracé d'un fleuve et enclavé dans un autre pays, a une forme très étroite et allongée ?",
+      "answers": [
+        { "text": "Gambie", "isCorrect": true },
+        { "text": "Togo", "isCorrect": false },
+        { "text": "Bénin", "isCorrect": false },
+        { "text": "Malawi", "isCorrect": false }
+      ],
+      "explanation": "La Gambie suit le cours du fleuve Gambie et est quasiment enclavée dans le Sénégal."
+    },
+    {
+      "ref": "geo-075",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean", "record"],
+      "text": "Quelle fosse océanique abrite le Challenger Deep, le point le plus profond des océans ?",
+      "answers": [
+        { "text": "La fosse des Mariannes", "isCorrect": true },
+        { "text": "La fosse du Pérou-Chili", "isCorrect": false },
+        { "text": "La fosse des Tonga", "isCorrect": false },
+        { "text": "La fosse des Kouriles", "isCorrect": false }
+      ],
+      "explanation": "Le Challenger Deep se situe à environ 10 900 m sous la surface, dans le Pacifique près des îles Mariannes."
+    },
+    {
+      "ref": "geo-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "oceanie", "record"],
+      "text": "Quel pays est le seul à s'étendre sur les quatre hémisphères (Nord, Sud, Est et Ouest) ?",
+      "answers": [
+        { "text": "Kiribati", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Équateur", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false }
+      ],
+      "explanation": "Les îles de Kiribati s'étendent de part et d'autre de l'équateur et de la ligne de changement de date."
+    },
+    {
+      "ref": "geo-077",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["fleuve", "europe", "record"],
+      "text": "Environ combien de pays le Danube traverse-t-il au cours de son parcours ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "15", "isCorrect": false }
+      ],
+      "explanation": "De l'Allemagne à l'Ukraine, le Danube traverse une dizaine de pays, plus que tout autre fleuve au monde."
+    },
+    {
+      "ref": "geo-078",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paysage", "amerique", "record"],
+      "text": "Dans quel pays se trouvent les chutes Angel, la plus haute chute d'eau du monde ?",
+      "answers": [
+        { "text": "Venezuela", "isCorrect": true },
+        { "text": "Brésil", "isCorrect": false },
+        { "text": "Guyana", "isCorrect": false },
+        { "text": "Colombie", "isCorrect": false }
+      ],
+      "explanation": "Avec une chute ininterrompue de 807 m, les chutes Angel se trouvent dans le parc national Canaima, au Venezuela."
+    },
+    {
+      "ref": "geo-079",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "asie", "record"],
+      "text": "Quel est le plus grand pays du monde sans aucun accès à la mer ?",
+      "answers": [
+        { "text": "Kazakhstan", "isCorrect": true },
+        { "text": "Mongolie", "isCorrect": false },
+        { "text": "Mali", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": false }
+      ],
+      "explanation": "Avec environ 2,7 millions de km², le Kazakhstan est largement le plus grand pays enclavé du monde."
+    },
+    {
+      "ref": "geo-080",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["pays", "europe", "asie", "record"],
+      "text": "Le Liechtenstein et l'Ouzbékistan sont les deux seuls pays du monde entièrement entourés par des pays eux-mêmes sans accès à la mer.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "On dit qu'ils sont « doublement enclavés » : pour atteindre la mer, il faut traverser au moins deux frontières."
+    },
+    {
+      "ref": "geo-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "afrique", "record"],
+      "text": "Quel est le plus petit pays d'Afrique par sa superficie terrestre ?",
+      "answers": [
+        { "text": "Seychelles", "isCorrect": true },
+        { "text": "Gambie", "isCorrect": false },
+        { "text": "Eswatini", "isCorrect": false },
+        { "text": "Cap-Vert", "isCorrect": false }
+      ],
+      "explanation": "L'archipel des Seychelles ne totalise qu'environ 455 km² de terres émergées."
+    },
+    {
+      "ref": "geo-082",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["capitale", "asie", "europe"],
+      "text": "Ankara, capitale de la Turquie, se trouve entièrement sur quel continent ?",
+      "answers": [
+        { "text": "Asie", "isCorrect": true },
+        { "text": "Europe", "isCorrect": false },
+        { "text": "À cheval sur les deux", "isCorrect": false },
+        { "text": "Afrique", "isCorrect": false }
+      ],
+      "explanation": "Contrairement à Istanbul, qui s'étend sur les deux rives du Bosphore, Ankara se situe entièrement en Anatolie, en Asie."
+    },
+    {
+      "ref": "geo-083",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["desert", "asie", "climat"],
+      "text": "Quel est le plus grand désert froid d'Asie ?",
+      "answers": [
+        { "text": "Désert de Gobi", "isCorrect": true },
+        { "text": "Désert du Taklamakan", "isCorrect": false },
+        { "text": "Désert du Thar", "isCorrect": false },
+        { "text": "Désert d'Arabie", "isCorrect": false }
+      ],
+      "explanation": "Situé entre la Chine et la Mongolie, le Gobi connaît des hivers très froids, contrairement aux déserts chauds comme le Sahara."
+    },
+    {
+      "ref": "geo-084",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["detroit", "afrique", "asie"],
+      "text": "Quel détroit relie la mer Rouge au golfe d'Aden, entre Djibouti et le Yémen ?",
+      "answers": [
+        { "text": "Détroit de Bab-el-Mandeb", "isCorrect": true },
+        { "text": "Détroit d'Ormuz", "isCorrect": false },
+        { "text": "Détroit de Malacca", "isCorrect": false },
+        { "text": "Canal de Suez", "isCorrect": false }
+      ],
+      "explanation": "Son nom signifie « porte des lamentations » en arabe, en référence à la dangerosité de sa navigation."
+    },
+    {
+      "ref": "geo-085",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["ocean", "record", "histoire"],
+      "text": "En 2021, le National Geographic a officiellement reconnu l'océan Austral comme un cinquième océan sur ses cartes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Cet océan entoure l'Antarctique et était auparavant intégré aux océans Atlantique, Pacifique et Indien sur les cartes de l'organisation."
+    },
+    {
+      "ref": "geo-086",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pays", "amerique", "record"],
+      "text": "Quel pays possède le plus long littoral du monde ?",
+      "answers": [
+        { "text": "Canada", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Australie", "isCorrect": false }
+      ],
+      "explanation": "Avec plus de 200 000 km de côtes, découpées par d'innombrables îles et fjords arctiques, le Canada devance largement tous les autres pays."
+    },
+    {
+      "ref": "geo-087",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["langue", "europe"],
+      "text": "Quelle langue, parlée dans le Pays basque, n'est apparentée à aucune autre langue connue (langue isolée) ?",
+      "answers": [
+        { "text": "Le basque", "isCorrect": true },
+        { "text": "Le breton", "isCorrect": false },
+        { "text": "Le catalan", "isCorrect": false },
+        { "text": "Le gaélique", "isCorrect": false }
+      ],
+      "explanation": "Contrairement aux autres langues européennes, le basque n'appartient à aucune famille linguistique connue."
+    },
+    {
+      "ref": "geo-088",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["montagne", "europe", "record"],
+      "text": "Quel est le point culminant d'Europe si l'on inclut le Caucase dans sa définition ?",
+      "answers": [
+        { "text": "Mont Blanc", "isCorrect": false },
+        { "text": "Mont Elbrouz", "isCorrect": true },
+        { "text": "Mont Olympe", "isCorrect": false },
+        { "text": "Gran Paradiso", "isCorrect": false }
+      ],
+      "explanation": "Culminant à 5 642 m en Russie, l'Elbrouz dépasse largement le Mont Blanc (4 809 m), généralement cité quand on exclut le Caucase."
+    },
+    {
+      "ref": "geo-089",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["capitale", "oceanie"],
+      "text": "La capitale de l'Australie est Sydney.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La capitale est Canberra. Sydney n'est « que » la ville la plus peuplée du pays."
+    },
+    {
+      "ref": "geo-090",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["ile", "asie"],
+      "text": "Le Japon est constitué d'une seule grande île.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'archipel japonais compte quatre îles principales (Honshu, Hokkaido, Kyushu, Shikoku) et plus de 6 800 îles au total."
+    },
+    {
+      "ref": "geo-091",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["mer", "asie"],
+      "text": "La mer Morte est reliée à l'océan et possède un débouché maritime.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est en réalité un lac salé totalement fermé, sans aucun exutoire, ce qui explique sa salinité extrême."
+    },
+    {
+      "ref": "geo-092",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["desert", "climat", "record"],
+      "text": "Le Sahara est le plus grand désert du monde, devant l'Antarctique.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'Antarctique, désert froid de très faibles précipitations, couvre environ 14 millions de km², bien plus que le Sahara (9,2 millions de km²)."
+    },
+    {
+      "ref": "geo-093",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["pays", "europe", "climat"],
+      "text": "L'équateur traverse la France métropolitaine.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'équateur ne passe pas par la France métropolitaine ; il traverse en revanche la Guyane, région française d'Amérique du Sud."
+    },
+    {
+      "ref": "geo-094",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["pays", "amerique", "record"],
+      "text": "Le Canada est le pays le plus vaste du monde par sa superficie.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La Russie, avec plus de 17 millions de km², reste le plus grand pays du monde. Le Canada arrive en deuxième position."
+    },
+    {
+      "ref": "geo-095",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["pays", "amerique", "europe"],
+      "text": "Le Groenland est un État indépendant, membre de l'Organisation des Nations unies.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le Groenland est un territoire autonome du royaume de Danemark et n'est pas membre de l'ONU en tant qu'État."
+    },
+    {
+      "ref": "geo-096",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["paysage", "oceanie"],
+      "text": "La Grande Barrière de corail se situe au large du Brésil.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle longe la côte du Queensland, en Australie, sur près de 2 300 km."
+    },
+    {
+      "ref": "geo-097",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["capitale", "amerique"],
+      "text": "Bogotá, la capitale de la Colombie, est une ville côtière en bord de mer.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Bogotá est perchée à environ 2 640 m d'altitude sur un plateau des Andes, loin de toute côte."
+    },
+    {
+      "ref": "geo-098",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["pays", "oceanie"],
+      "text": "La Nouvelle-Zélande se trouve au nord de l'Australie.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La Nouvelle-Zélande se situe au sud-est de l'Australie, séparée par la mer de Tasman."
+    },
+    {
+      "ref": "geo-099",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["montagne", "record"],
+      "text": "L'Everest est, de tous les sommets terrestres, le point le plus éloigné du centre de la Terre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "En raison du renflement équatorial de la Terre, c'est le volcan Chimborazo, en Équateur, qui détient ce record, bien que moins élevé en altitude."
     }
   ]
 }
