@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #d34a0f;
+    background: var(--accent);
     color: #fff;
     font-weight: 600;
     user-select: none;

@@ -1,8 +1,8 @@
-.friends{
-    color:white;
-    background-color: green;
+.friends {
+    color: var(--text);
+    background-color: var(--ok);
 }
 
-.error{
-    background-color:red;
+.error {
+    background-color: var(--danger);
 }

@@ -1,4 +1,5 @@
 :root {
+    /* Couleurs principales */
     --bg: #1f1f1f;
     --surface: #383838;
     --surface-2: #202020;
@@ -9,21 +10,50 @@
     --accent-hover: #927aff;
     --ok: #3ddba4;
     --danger: #ff5c7a;
+    --warning: #f57c00;
+    --info: #1976d2;
 
+    /* Rayons */
     --radius-sm: 12px;
     --radius-md: 14px;
     --radius-lg: 20px;
+    
+    /* Ombres */
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    /* Typographie */
     --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-
+    
+    /* Tailles */
     --header-h: 128px;
+    
+    /* Espacements */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    
     color-scheme: dark;
 }
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,22 +69,42 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
+/* ============================================
+   TYPOGRAPHIE
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     letter-spacing: -0.02em;
     line-height: 1.2;
+    font-weight: 700;
 }
 
-h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; }
-h2 { font-size: 1.05rem; font-weight: 700; }
+h1 { font-size: 2rem; letter-spacing: -0.03em; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
 
-p { margin: 0; }
+p {
+    margin: 0;
+}
 
 a {
     color: var(--accent-hover);
     text-decoration: none;
 }
-a:hover { text-decoration: underline; }
+
+a:hover {
+    text-decoration: underline;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+/* ============================================
+   FORMULAIRES
+   ============================================ */
 
 :where(input, textarea, select) {
     padding: 12px 14px;
@@ -63,27 +113,28 @@ a:hover { text-decoration: underline; }
     border-radius: var(--radius-sm);
     color: var(--text);
     font: inherit;
+    font-size: 1rem;
     transition: border-color 0.15s, box-shadow 0.15s;
+    width: 100%;
 }
 
-:where(input, textarea)::placeholder {
+:where(input:not([type]), textarea, select)::placeholder {
     color: var(--muted);
 }
 
-:where(input, textarea, select):focus {
+:where(input:not([type]), textarea, select):focus {
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.25);
 }
 
 :where(label) {
-     padding: 4px 0px;
+    display: block;
+    padding: var(--spacing-xs) 0;
     color: var(--text);
     font: inherit;
-    font-size: large;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-wrap-mode: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 input[type='search'] {
@@ -93,47 +144,115 @@ input[type='search'] {
     background-position: 14px center;
 }
 
+/* ============================================
+   BOUTONS
+   ============================================ */
+
 :where(button) {
     padding: 12px 18px;
     border: none;
     border-radius: var(--radius-sm);
-    /* background: var(--accent); */
     color: #fff;
     font: inherit;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.15s, transform 0.1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
-:where(button:hover) { background: var(--accent-hover); }
-:where(button:active) { transform: scale(0.97); }
-:where(button:disabled) { opacity: 0.45; cursor: not-allowed; }
+
+:where(button:hover:not(:disabled)) {
+    background: var(--accent-hover);
+}
+
+:where(button:active:not(:disabled)) {
+    transform: scale(0.97);
+}
+
+:where(button:disabled) {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
 
 :where(button, a, [role='button']):focus-visible {
     outline: 2px solid var(--accent-hover);
     outline-offset: 2px;
 }
 
+/* Variantes de boutons */
+.button {
+    background: var(--accent);
+}
+
+.btn-ghost {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text);
+}
+
+.btn-ghost:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.btn-primary {
+    background: var(--accent);
+}
+
+.btn-secondary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: var(--surface-2);
+    border-color: rgba(124, 92, 255, 0.45);
+}
+
+.textbutton {
+    background: none;
+    color: var(--text);
+    border: none;
+    padding: 8px 12px;
+}
+
+.textbutton:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   CONTAINER & LAYOUT
+   ============================================ */
+
 .page {
     min-height: 100dvh;
-    padding: calc(var(--header-h) + 32px) 16px 48px;
+    padding: calc(var(--header-h) + var(--spacing-xl)) var(--spacing-md) var(--spacing-xl);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
     width: 100%;
     max-width: 440px;
-    padding: 20px;
+    padding: var(--spacing-md);
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: var(--spacing-sm);
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
 }
+
+/* ============================================
+   LISTES
+   ============================================ */
 
 .list {
     list-style: none;
@@ -141,41 +260,119 @@ input[type='search'] {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--spacing-xs);
 }
 
+/* ============================================
+   FEEDBACK & ETATS
+   ============================================ */
+
 .empty {
-    padding: 18px 0;
+    padding: var(--spacing-lg) 0;
     text-align: center;
     color: var(--muted);
     font-size: 0.95rem;
 }
 
-.muted { color: var(--muted); }
+.loading {
+    color: var(--muted);
+}
 
+.error {
+    color: var(--danger);
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Alertes */
 .alert {
     padding: 10px 12px;
     border-radius: 10px;
     font-size: 0.9rem;
+    margin: var(--spacing-sm) 0;
 }
-.alert-success { background: rgba(61, 219, 164, 0.12); color: var(--ok); }
-.alert-error   { background: rgba(255, 92, 122, 0.12); color: var(--danger); }
 
-.btn-ghost {
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--text);
+.alert-success {
+    background: rgba(61, 219, 164, 0.12);
+    color: var(--ok);
 }
-.btn-ghost:hover { background: rgba(255, 255, 255, 0.12); }
 
-.loading {
-    color:rgb(104, 28, 0);
+.alert-error {
+    background: rgba(255, 92, 122, 0.12);
+    color: var(--danger);
 }
+
+.alert-warning {
+    background: rgba(245, 124, 0, 0.12);
+    color: var(--warning);
+}
+
+.alert-info {
+    background: rgba(25, 118, 210, 0.12);
+    color: var(--info);
+}
+
+/* Feedback pour les réponses */
+.correct {
+    background-color: var(--ok) !important;
+    color: white !important;
+    border-color: var(--ok) !important;
+}
+
+.wrong {
+    background-color: var(--danger) !important;
+    color: white !important;
+    border-color: var(--danger) !important;
+}
+
+.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ============================================
+   IMAGES
+   ============================================ */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+
+.summary {
+    padding: var(--spacing-sm) 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
 
 @media (max-width: 480px) {
-    .page { padding-top: calc(var(--header-h) + 20px); }
-    .card { padding: 16px; }
+    .page {
+        padding-top: calc(var(--header-h) + var(--spacing-md));
+        padding-left: var(--spacing-sm);
+        padding-right: var(--spacing-sm);
+    }
+    
+    .card {
+        padding: var(--spacing-sm);
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; }
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
 }

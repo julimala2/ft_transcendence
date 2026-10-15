@@ -1,20 +1,13 @@
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import { Layout } from './Pages/Layout';
 import { Header } from './Navigation/Header';
 import { HomePage } from './Pages/HomePage';
-import { QuizPage } from './Pages/QuizPage';
-import { QuizSelectionPage } from './Pages/QuizSelectionPage';
-import { SettingsPage } from './Pages/SettingsPage';
-import { ProfilePage } from './Pages/ProfilePage';
-import { FriendsPage } from './Pages/FriendsPage';
+import { QuizSelectionPage } from './Pages/quizs/QuizSelectionPage';
 import { NotFoundPage } from './Pages/NotFoundPage';
-import { QuizOfflinePage } from './Pages/QuizOfflinePage';
-import { MyQuizs } from './Pages/MyQuizs';
-import { GameRoom } from './Components/GameRoom';
 import { Modal } from './Account/Modal';
 import { AccountLayout } from './Account/AccountLayout';
 import { accountTabs } from './Account/AccountTabs';
-import { RequireAuth } from './Hooks/requireAuth';
+import { AttemptPage } from './Pages/quizs/AttemptPage';
+import { ResultsPage } from './Pages/quizs/ResultsPage';
 
 export default function App() {
     const location = useLocation();
@@ -27,12 +20,9 @@ export default function App() {
       <Header />
       <Routes location={background || location}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/play/:quizId?" element={<QuizPage />} />
+        <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
         <Route path="/quizzes" element={<QuizSelectionPage />} />
-        <Route path="/friends" element={<FriendsPage />} />
-        <Route path="/users/:userId" element={<ProfilePage />} />
-        {/* <Route path="/quizoffline" element={<QuizOfflinePage/>} /> */}
-        {/* <Route path="/myQuizs" element={<MyQuizs/>} /> */}
+        <Route path="/results/:attemptId" element={<ResultsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 

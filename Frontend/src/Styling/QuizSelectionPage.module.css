@@ -1,30 +1,96 @@
-.page {
-    padding: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.title {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
 }
 
-.loading,
-.error,
-.empty {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.1rem;
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.error {
-    color: rgb(255, 80, 80);
+.filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filterGroup label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.select {
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem;
+}
+
+.button {
+    padding: 12px 18px;
+    background: var(--accent);
+    border: none;
+    border-radius: var(--radius-sm);
+    color: white;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.button:hover:not(:disabled) {
+    background: var(--accent-hover);
+}
+
+.button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.card {
+    display: block;
+    padding: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    background-color: rgba(124, 92, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cardDescription {
+    margin: 8px 0 0 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.4;
 }
