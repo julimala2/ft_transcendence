@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { useAuth } from '../Api/auth';
-import styles from '../Styling/Profile.module.css';
+import { useAuth } from '../Hooks/useAuth';
 import { validatePassword } from './RegisterForm';
 
 export function ChangePasswordForm( {onDone} ){
@@ -48,61 +47,65 @@ export function ChangePasswordForm( {onDone} ){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Changing password</label>
+        <div className='page'>
+            <form onSubmit={handleSubmit} className='card'>
+                <label>Changing password</label>
 
-            <div>
-                <label htmlFor="oldPassword">Old password :</label>
-                <input
-                    id="oldPassword"
-                    type="password"
-                    value={oldPassword}
-                    onChange={(e) => setOldPassword(e.target.value)}
-                    required
-                />
-            </div>
+                <div>
+                    <label htmlFor="oldPassword">Old password :</label>
+                    <input
+                        id="oldPassword"
+                        type="password"
+                        value={oldPassword}
+                        onChange={(e) => setOldPassword(e.target.value)}
+                        required
+                        />
+                </div>
 
-            <div>
-                <label htmlFor="newPassword">New password :</label>
-                <input
-                    id="newPassword"
-                    type="password"
-                    value={newPassword}
-                    onChange={(e) => setNewPassword(e.target.value)}
-                    required
-                />
-            </div>
+                <div>
+                    <label htmlFor="newPassword">New password :</label>
+                    <input
+                        id="newPassword"
+                        type="password"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                        required
+                        />
+                </div>
 
-            <div>
-                <label htmlFor="confirmPassword">Confirm new password :</label>
-                <input
-                    id="confirmPassword"
-                    type="password"
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
-                    required
-                />
-            </div>
+                <div>
+                    <label htmlFor="confirmPassword">Confirm :</label>
+                    <input
+                        id="confirmPassword"
+                        type="password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        required
+                        />
+                </div>
 
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            {success && <p style={{ color: 'lightgreen' }}>Mot de passe changé ✓</p>}
+                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {success && <p style={{ color: 'lightgreen' }}>Mot de passe changé ✓</p>}
+                <section className='card'>
 
-            <button
-                type="submit"
-                disabled={isSubmitting}
-                className={isSubmitting ? styles.disabled : styles.button}
-            >
-                {isSubmitting ? 'Processing ...' : 'Confirm'}
-            </button>
+                <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className={isSubmitting ? "link" : "link"}
+                    >
+                    {isSubmitting ? 'Processing ...' : 'Confirm'}
+                </button>
 
-            <button
-                type="button"
-                onClick={onDone}
-                className={styles.button}
-                disabled={isSubmitting}
-            >
-                Cancel
-            </button>
-        </form>
+                <button
+                    type="button"
+                    onClick={onDone}
+                    
+                    disabled={isSubmitting}
+                    >
+                    Cancel
+                </button>
+                </section>
+            </form>
+        </div>
     );        
 }

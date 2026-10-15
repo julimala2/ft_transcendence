@@ -7,15 +7,9 @@ export function useGameSocket(roomId) {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-
-    console.log('🔍 Debug WebSocket:');
-    console.log('  Token:', token ? '✅ Trouvé' : '❌ Pas de token!');
     console.log('  Room ID:', roomId);
 
-    // Se connecter au serveur WebSocket (wss pour HTTPS)
-    const protocol = 'wss:';
-    const wsUrl = `${protocol}//localhost:3000/ws?token=${encodeURIComponent(token || '')}`;
+    const wsUrl = 'wss://localhost:3000/ws';
     console.log('  URL:', wsUrl);
 
     const ws = new WebSocket(wsUrl);

@@ -1,22 +1,26 @@
-import {useState} from 'react';
-import {sendFriendRequest,acceptRequest} from '../Api/friends';
-import styles from '../Styling/AddFriendButton.module.css'
+import { useState } from 'react';
+import { sendFriendRequest, acceptRequest, removeFriend } from '../Api/friends';
+import { useRelationship } from '../Hooks/useRelationship';
+import styles from '../Styling/AddFriendButton.module.css';
 
-export function AddFriendButton({userId,friendshipId,relationship,onChange}){
-    const [loading,setLoading] = useState(false);
-    const [error,setError] = useState(null);
+export function AddFriendButton() {
+    const { userId, relationship, friendshipId, isBlocked, loading: relLoading, update } = useRelationship();
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     async function handleClick() {
         setLoading(true);
         setError(null);
         try {
-            if (relationship === 'none'){
+            if (relationship === 'none') {
                 await sendFriendRequest(userId);
-                onChange?.('pending_sent');
-            }
-            else if (relationship === 'pending_received') {
+                update({ relationship: 'pending_sent' });
+            } else if (relationship === 'pending_received') {
                 await acceptRequest(friendshipId);
-                onChange?.('friends');
+                update({ relationship: 'friends' });
+            } else if (relationship === 'friends') {
+                await removeFriend(friendshipId);
+                update({ relationship: 'none', friendshipId: null });
             }
         } catch (err) {
             setError(err.error || 'error');
@@ -25,21 +29,29 @@ export function AddFriendButton({userId,friendshipId,relationship,onChange}){
         }
     }
 
-    if (relationship ==='friends') {
-        return <button className={styles.friends} disabled>Already friends 🤝</button>;
+    if (isBlocked) return null;
+
+    if (relLoading) return <button disabled>...</button>;
+
+    if (relationship === 'pending_sent') {
+        return <button disabled>Request Sent</button>;
     }
-    else if (relationship ==='pending_sent') {
-        return <button disabled>Request Sent</button>
-    }
+
+    const label =
+        relationship === 'friends'
+            ? 'Remove friend'
+            : relationship === 'pending_received'
+            ? 'Accept request'
+            : 'Add friend';
 
     return (
         <>
-            <button onClick={handleClick} disabled={loading}>
-                {loading
-                ? '...'
-                : relationship === 'pending_received'
-                ? 'Accept request'
-                : 'Add friend'}
+            <button
+                className={relationship === 'friends' ? styles.friends : undefined}
+                onClick={handleClick}
+                disabled={loading}
+            >
+                {loading ? '...' : label}
             </button>
             {error && <p className={styles.error}>{error}</p>}
         </>

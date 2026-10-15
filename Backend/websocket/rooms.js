@@ -15,6 +15,7 @@ function leaveRoom(ws) {
     rooms[roomId] = rooms[roomId].filter(w => w !== ws);
     if (rooms[roomId].length === 0) {
       delete rooms[roomId];
+      ws.currentRoom = null;
     }
     console.log(`${ws.user.email} a quitté la room ${roomId}`);
   }
