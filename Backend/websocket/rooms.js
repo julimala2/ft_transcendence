@@ -11,15 +11,22 @@ function joinRoom(roomId, ws) {
 
 function leaveRoom(ws) {
   const roomId = ws.currentRoom;
-  if (roomId && rooms[roomId]) {
+  if (roomId && rooms[roomId]) 
+  {
     rooms[roomId] = rooms[roomId].filter(w => w !== ws);
+    ws.currentRoom = null;
     if (rooms[roomId].length === 0) {
       delete rooms[roomId];
-      ws.currentRoom = null;
     }
-    console.log(`${ws.user.email} a quitté la room ${roomId}`);
+    else {
+      broadcast(roomId, {type: 'player_left', data: {
+        user: ws.username, userId: ws.userId }}, 
+        ws);
+    }
   }
+    console.log(`${ws.user.email} a quitté la room ${roomId}`);
 }
+
 
 function broadcast(roomId, data, except = null) {
   const room = rooms[roomId];

@@ -21,7 +21,7 @@
 
 ### Bugs / incohérences à corriger en priorité
 - [x] `joinRoom` ne quitte pas l'ancienne room : appeler `leaveRoom(ws)` au début de `joinRoom`
-- [ ] `rooms.js` `leaveRoom` : `ws.currentRoom = null` n'est exécuté **que si la room se vide** (dans le `if (length === 0)`) → le déplacer pour l'exécuter à chaque départ. *(case cochée à tort : si la room garde des joueurs, celui qui part garde son ancien `currentRoom`)*
+- [x] `rooms.js` `leaveRoom` : `ws.currentRoom = null` n'était exécuté **que si la room se vide** → sorti du `if (length === 0)`, maintenant exécuté à chaque départ
 - [ ] Le front écoute `userJoined` mais le serveur ne l'envoie jamais : broadcaster à l'arrivée d'un joueur (et `userLeft` au départ)
 - [ ] `chatHandler` : si le client n'est dans aucune room (`currentRoom === null`), ne rien faire explicitement
 - [ ] `gameSocket.js` : le `catch` affiche « pas du JSON » pour toute erreur, y compris un bug dans un handler → séparer `JSON.parse` de l'appel du handler
