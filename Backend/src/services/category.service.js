@@ -25,6 +25,12 @@ async function getCategoryById(id) {
   return category;
 }
 
+async function getCategoryTags(id, search) {
+  await getCategoryById(id);
+  const tags = await categoryModel.findTags(id, search);
+  return tags.map((tag) => ({ slug: tag.slug, questionCount: tag._count.questions }));
+}
+
 async function createCategory({ name }) {
   const cleanName = name.trim();
   if (cleanName.length === 0) {
@@ -79,6 +85,7 @@ async function deleteCategory(id) {
 module.exports = {
   getAllCategories,
   getCategoryById,
+  getCategoryTags,
   createCategory,
   updateCategory,
   deleteCategory,

@@ -24,6 +24,15 @@ async function getById(req, res) {
   }
 }
 
+async function getTags(req, res) {
+  try {
+    const tags = await categoryService.getCategoryTags(req.categoryId, req.search);
+    res.json(tags);
+  } catch (err) {
+    sendError(res, err);
+  }
+}
+
 async function create(req, res) {
   try {
     const category = await categoryService.createCategory(req.body);
@@ -51,4 +60,4 @@ async function remove(req, res) {
   }
 }
 
-module.exports = { getAll, getById, create, update, remove };
+module.exports = { getAll, getById, getTags, create, update, remove };
