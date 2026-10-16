@@ -1,9 +1,6 @@
-Authentification avec OAuth
-    -creer l'app sur l'intra avec un nom pour remplir l'env 
-    -proteger avec un parametre "state"
-
 Routes 
 - Achievements
+- Stats
 
 user 
     - a terme :
@@ -11,7 +8,6 @@ user
 
 quiz
 refaire le seed pour etre compatible avec nouveau quiz
-Ajouter les images dans les nouvelles questions geo
 
 
 🟠 À discuter avec Joris
