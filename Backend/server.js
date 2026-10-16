@@ -45,6 +45,7 @@ const options = {
 const server = https.createServer(options, app);
 
 const wss = new WebSocketServer({ noServer: true });
+
 server.on('upgrade', (req, socket, head) => //HANDSHAKE WebSocket
 {
   if (!req.url.startsWith('/ws')) {

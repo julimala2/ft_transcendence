@@ -11,22 +11,24 @@
 - [x] `rooms.js` : `joinRoom`, `leaveRoom`, `broadcast` (vérifie `readyState === 1`), `getRoomMembers`
 - [x] Handlers `joinRoom` et `chat`
 - [x] Nettoyage de la room à la déconnexion (`ws.on('close')`)
-- [x] Création de room + partie 1v1 dans une room (dernier commit)
 
 ### Frontend
 - [x] Hook `useGameSocket` : connexion `wss://`, `joinRoom` à l'ouverture, `send`, `sendChat`, fermeture au démontage
 - [x] Composant `GameRoom.jsx`
-- [x] Réception des messages `chat` et `userJoined`
+- [x] Réception des messages `chat` et `userJoined` (attention : `userJoined` est écouté mais jamais reçu, le serveur ne l'émet pas — cf. « À faire »)
 
 ## À faire
 
 ### Bugs / incohérences à corriger en priorité
 - [x] `joinRoom` ne quitte pas l'ancienne room : appeler `leaveRoom(ws)` au début de `joinRoom`
-- [x] `leaveRoom` ne remet pas `ws.currentRoom = null`
+- [ ] `rooms.js` `leaveRoom` : `ws.currentRoom = null` n'est exécuté **que si la room se vide** (dans le `if (length === 0)`) → le déplacer pour l'exécuter à chaque départ. *(case cochée à tort : si la room garde des joueurs, celui qui part garde son ancien `currentRoom`)*
 - [ ] Le front écoute `userJoined` mais le serveur ne l'envoie jamais : broadcaster à l'arrivée d'un joueur (et `userLeft` au départ)
 - [ ] `chatHandler` : si le client n'est dans aucune room (`currentRoom === null`), ne rien faire explicitement
 - [ ] `gameSocket.js` : le `catch` affiche « pas du JSON » pour toute erreur, y compris un bug dans un handler → séparer `JSON.parse` de l'appel du handler
-- [ ] `quizGame.js` est incomplet : pas de `module.exports`, `revealAnswer` n'existe pas, `startGame` n'est appelée nulle part, le `catch` de `startGame` avale l'erreur sans rien dire
+- [ ] `quizGame.js` est incomplet : pas de `module.exports` (donc `require('../quizGame')` dans `quizHandler.js` renvoie `{}` et `games` est toujours vide côté handler), `revealAnswer` n'existe pas dans ce fichier (définie dans `quizHandler.js`, non importée → `ReferenceError`), `startGame` n'est appelée nulle part, le `catch` de `startGame` avale l'erreur sans rien dire
+- [ ] `quizHandler.js` : `const { roomId } = ws.currentRoom` déstructure une string → `roomId` vaut toujours `undefined` → utiliser `const roomId = ws.currentRoom`
+- [ ] `quizHandler.js` (`answerQuestionHandler`) n'est pas enregistré dans la table `handlers` de `gameSocket.js` → aucun message de jeu n'est routé
+- [ ] Format des `type` incohérent : `quizGame.js` envoie `'question'` (minuscule), `quizHandler.js` envoie `'ERROR'`, `'PLAYER_ANSWERED'`, `'REVEAL_ANSWER'`, `'GAME_OVER'` (majuscules), le front écoute `userJoined`, `chat`… → uniformiser front/back (cf. « Décisions à prendre »)
 - [ ] `quizGame.js` : `member.userId` → vérifier que ça correspond bien à `ws.userId` (`members` sont des `ws`)
 - [ ] `quizGame.js` : `game.answered = new Map()` est réinitialisé après le `setTimeout`, à mettre avant `broadcast`
 
@@ -53,7 +55,7 @@
 
 ### Sécurité
 - [ ] Token passé dans l'URL (`?token=`) : il finit dans les logs et l'historique. Préférer le cookie `httpOnly` (nécessite le proxy Vite, cf. cookie `SameSite=Lax`) et supprimer le fallback quand c'est en place
-- [x] Le front lisait un token dans `localStorage` (toujours vide) : supprimé, le cookie `httpOnly` est utilisé
+- [ ] Doublon de hooks front : `GameRoom.jsx` importe `../Hooks/useGameSocket` (version qui lit `localStorage` + `?token=` dans l'URL) alors que la version corrigée sans token est dans `src/hooks/useGameSocket.js` et **n'est utilisée nulle part** (sur Linux la casse compte : `Hooks/` et `hooks/` sont deux dossiers distincts) → supprimer le dossier doublon, garder la version corrigée et corriger l'import de `GameRoom.jsx`. *(case précédemment cochée à tort)*
 - [ ] Une fois le cookie testé en WS, supprimer le fallback `tokenFromURL` dans `auth.js`
 - [ ] Ne jamais faire confiance à un `userId` reçu dans un message : toujours `ws.userId`
 - [ ] Retirer les `console.log` de debug (token, URL) avant le rendu
