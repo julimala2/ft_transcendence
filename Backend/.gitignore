@@ -1,4 +1,4 @@
-#node_modules/
+node_modules/
 .env
 dev.db
 *.db-journal
@@ -8,3 +8,7 @@ dev.db
 #tests
 cookies.txt
 uploads/avatars
+
+# générateur de silhouettes : environnement Python et données téléchargées
+scripts/silhouettes/.venv/
+scripts/silhouettes/data/
