@@ -819,7 +819,12 @@
       "text": "À quel pays appartient ce drapeau ?",
       "image": {
         "src": "geographie/drapeau-inde.webp",
-        "alt": "Drapeau tricolore horizontal orange, blanc et vert, avec une roue bleue à 24 rayons au centre"
+        "alt": "Drapeau tricolore horizontal orange, blanc et vert, avec une roue bleue à 24 rayons au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg"
+        }
       },
       "answers": [
         { "text": "Niger", "isCorrect": false },
@@ -837,7 +842,12 @@
       "text": "À quel pays appartient ce drapeau ?",
       "image": {
         "src": "geographie/drapeau-afrique-du-sud.webp",
-        "alt": "Drapeau aux six couleurs (noir, vert, jaune, blanc, rouge, bleu) agencées en forme de Y"
+        "alt": "Drapeau aux six couleurs (noir, vert, jaune, blanc, rouge, bleu) agencées en forme de Y",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa.svg"
+        }
       },
       "answers": [
         { "text": "Kenya", "isCorrect": false },
@@ -855,7 +865,12 @@
       "text": "À quel pays appartient ce drapeau ?",
       "image": {
         "src": "geographie/drapeau-mexique.webp",
-        "alt": "Drapeau tricolore vertical vert, blanc et rouge, avec un aigle dévorant un serpent au centre"
+        "alt": "Drapeau tricolore vertical vert, blanc et rouge, avec un aigle dévorant un serpent au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg"
+        }
       },
       "answers": [
         { "text": "Italie", "isCorrect": false },
@@ -873,7 +888,12 @@
       "text": "À quel pays appartient ce drapeau ?",
       "image": {
         "src": "geographie/drapeau-norvege.webp",
-        "alt": "Drapeau rouge avec une croix bleue bordée de blanc, décalée vers la hampe"
+        "alt": "Drapeau rouge avec une croix bleue bordée de blanc, décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg"
+        }
       },
       "answers": [
         { "text": "Danemark", "isCorrect": false },
@@ -891,7 +911,12 @@
       "text": "Dans quel pays se trouve ce monument ?",
       "image": {
         "src": "geographie/taj-mahal.webp",
-        "alt": "Mausolée de marbre blanc surmonté d'un dôme, flanqué de quatre minarets et reflété dans un bassin"
+        "alt": "Mausolée de marbre blanc surmonté d'un dôme, flanqué de quatre minarets et reflété dans un bassin",
+        "credit": { 
+          "author": "Rowan Heuvel", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/taj-mahal-a-agra-au-coucher-du-soleil-sAB4BWrQ4Y4" 
+        }
       },
       "answers": [
         { "text": "Pakistan", "isCorrect": false },
@@ -909,7 +934,12 @@
       "text": "Dans quel pays se trouve cette statue ?",
       "image": {
         "src": "geographie/christ-redempteur.webp",
-        "alt": "Statue monumentale d'un Christ aux bras ouverts, dominant une ville depuis un sommet"
+        "alt": "Statue monumentale d'un Christ aux bras ouverts, dominant une ville depuis un sommet",
+        "credit": { 
+          "author": "Fernando Santos", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/statue-blanche-de-la-liberte-sous-le-ciel-bleu-pendant-la-journee-0jcM54HBO4c" 
+        }
       },
       "answers": [
         { "text": "Argentine", "isCorrect": false },
@@ -927,7 +957,12 @@
       "text": "Dans quel pays se trouve cette statue ?",
       "image": {
         "src": "geographie/statue-liberte.webp",
-        "alt": "Statue en cuivre d'une femme drapée tenant une torche levée, sur une petite île"
+        "alt": "Statue en cuivre d'une femme drapée tenant une torche levée, sur une petite île",
+        "credit": { 
+        "author": "Pierpaolo Pellegrino", 
+        "license": "Unsplash", 
+        "url": "https://unsplash.com/fr/photos/la-statue-de-la-liberte-se-dresse-fierement-contre-un-ciel-nuageux-jUK75c5xNBE" 
+      }
       },
       "answers": [
         { "text": "Canada", "isCorrect": false },
@@ -945,7 +980,12 @@
       "text": "Dans quel pays se trouve ce site ?",
       "image": {
         "src": "geographie/pyramides-gizeh.webp",
-        "alt": "Trois grandes pyramides de pierre en plein désert, à proximité d'un sphinx"
+        "alt": "Trois grandes pyramides de pierre en plein désert, à proximité d'un sphinx",
+        "credit": { 
+          "author": "Moxin Wang", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/un-groupe-de-personnes-a-dos-de-chameau-devant-trois-pyramides-LqKS08FCehc" 
+        }
       },
       "answers": [
         { "text": "Soudan", "isCorrect": false },
@@ -963,7 +1003,12 @@
       "text": "Dans quel pays se trouve ce site ?",
       "image": {
         "src": "geographie/stonehenge.webp",
-        "alt": "Cercle de grands mégalithes de pierre dressés dans une plaine herbeuse"
+        "alt": "Cercle de grands mégalithes de pierre dressés dans une plaine herbeuse",
+        "credit": { 
+          "author": "Priyank V", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/une-grande-structure-en-pierre-au-milieu-dun-champ-yP8HHiF2okM" 
+        }
       },
       "answers": [
         { "text": "Irlande", "isCorrect": false },
@@ -981,7 +1026,12 @@
       "text": "Dans quel pays se trouve cette basilique ?",
       "image": {
         "src": "geographie/sagrada-familia.webp",
-        "alt": "Basilique aux hautes flèches sculptées et asymétriques, encore en construction"
+        "alt": "Basilique aux hautes flèches sculptées et asymétriques, encore en construction",
+        "credit": { 
+        "author": "URI MERON", 
+        "license": "Unsplash", 
+        "url": "https://unsplash.com/fr/photos/eglise-brune-pres-dun-plan-deau-53QeRlOgSuc" 
+      }
       },
       "answers": [
         { "text": "Italie", "isCorrect": false },
@@ -999,7 +1049,12 @@
       "text": "Dans quel pays se trouve ce monolithe ?",
       "image": {
         "src": "geographie/uluru.webp",
-        "alt": "Immense monolithe de grès rouge isolé au milieu d'une plaine désertique"
+        "alt": "Immense monolithe de grès rouge isolé au milieu d'une plaine désertique",
+        "credit": { 
+          "author": "Antoine Fabre", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/ayers-rock-australie--lNJOUphtOQ" 
+        }
       },
       "answers": [
         { "text": "Namibie", "isCorrect": false },
@@ -1017,7 +1072,12 @@
       "text": "Entre quels deux pays se trouvent ces chutes ?",
       "image": {
         "src": "geographie/chutes-niagara.webp",
-        "alt": "Chutes d'eau massives entourées de brume, bordées de falaises de chaque côté"
+        "alt": "Chutes d'eau massives entourées de brume, bordées de falaises de chaque côté",
+        "credit": { 
+          "author": "Rikin Katyal", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/cascades-sous-ciel-bleu-et-nuages-blancs-pendant-la-journee-Y2M2RpSOwyw" 
+        }
       },
       "answers": [
         { "text": "Mexique et États-Unis", "isCorrect": false },
@@ -1035,7 +1095,11 @@
       "text": "Dans quel pays se trouvent ces fjords ?",
       "image": {
         "src": "geographie/fjords-norvege.webp",
-        "alt": "Étroits bras de mer encaissés entre de hautes falaises, formés par l'érosion glaciaire"
+        "alt": "Étroits bras de mer encaissés entre de hautes falaises, formés par l'érosion glaciaire",
+        "credit": { 
+          "author": "Krisjanis Mezulis", 
+          "license": "Unsplash", 
+          "url": "https://unsplash.com/fr/photos/plan-deau-entre-les-montagnes-zSRqJsMcrAc" }
       },
       "answers": [
         { "text": "Islande", "isCorrect": false },
