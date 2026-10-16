@@ -1,4 +1,42 @@
 {
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 204,
+    "parDifficulte": { "1": 69, "2": 93, "3": 42 },
+    "parType": { "multiple": 182, "boolean": 22 },
+    "avecImage": 62,
+    "sansImage": 142,
+    "parTag": {
+      "asie": 57,
+      "drapeau": 50,
+      "europe": 50,
+      "record": 42,
+      "amerique": 41,
+      "afrique": 25,
+      "oceanie": 21,
+      "pays": 21,
+      "capitale": 20,
+      "ocean": 20,
+      "ville": 20,
+      "fleuve": 20,
+      "france": 20,
+      "mer": 20,
+      "monument": 20,
+      "montagne": 5,
+      "climat": 5,
+      "histoire": 5,
+      "paysage": 5,
+      "detroit": 4,
+      "desert": 4,
+      "frontiere": 4,
+      "langue": 3,
+      "lac": 3,
+      "ile": 3,
+      "continent": 2,
+      "volcan": 2,
+      "surnom": 1
+    }
+  },
   "category": {
     "slug": "geographie",
     "name": "Géographie"
@@ -1486,6 +1524,1891 @@
         { "text": "Faux", "isCorrect": true }
       ],
       "explanation": "En raison du renflement équatorial de la Terre, c'est le volcan Chimborazo, en Équateur, qui détient ce record, bien que moins élevé en altitude."
+    },
+    {
+      "ref": "geo-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-fidji.webp",
+        "alt": "Drapeau bleu clair orné du drapeau du Royaume-Uni en haut à gauche et d'un bouclier aux couleurs locales à droite",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Fiji.svg"
+        }
+      },
+      "answers": [
+        { "text": "Fidji", "isCorrect": true },
+        { "text": "Tuvalu", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Îles Salomon", "isCorrect": false }
+      ],
+      "explanation": "Le drapeau britannique en canton rappelle le passé colonial, le bouclier reprend des symboles locaux comme la canne à sucre et la colombe de paix."
+    },
+    {
+      "ref": "geo-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tonga.webp",
+        "alt": "Drapeau rouge avec un rectangle blanc en haut à gauche, orné d'une croix rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tonga.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tonga", "isCorrect": true },
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Géorgie", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": false }
+      ],
+      "explanation": "Adopté en 1875, ce drapeau est protégé par la constitution tongienne, qui interdit officiellement de le modifier."
+    },
+    {
+      "ref": "geo-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-samoa.webp",
+        "alt": "Drapeau rouge avec un rectangle bleu en haut à gauche portant cinq étoiles blanches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Samoa.svg"
+        }
+      },
+      "answers": [
+        { "text": "Samoa", "isCorrect": true },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Australie", "isCorrect": false },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false }
+      ],
+      "explanation": "Les cinq étoiles représentent la constellation de la Croix du Sud, visible dans l'hémisphère austral."
+    },
+    {
+      "ref": "geo-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-vanuatu.webp",
+        "alt": "Drapeau divisé en diagonale noir et vert, bordé de bandes jaunes, avec un emblème de défense de sanglier et de fougères",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Vanuatu.svg"
+        }
+      },
+      "answers": [
+        { "text": "Vanuatu", "isCorrect": true },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Îles Salomon", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false }
+      ],
+      "explanation": "Le sanglier et les feuilles de fougère sont des symboles traditionnels mélanésiens de prospérité."
+    },
+    {
+      "ref": "geo-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-palaos.webp",
+        "alt": "Drapeau bleu uni avec un grand disque jaune légèrement décalé vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Palau.svg"
+        }
+      },
+      "answers": [
+        { "text": "Palaos", "isCorrect": true },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Kazakhstan", "isCorrect": false }
+      ],
+      "explanation": "Le disque jaune représente la pleine lune, traditionnellement associée aux moments propices à la pêche et aux récoltes."
+    },
+    {
+      "ref": "geo-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tuvalu.webp",
+        "alt": "Drapeau bleu clair avec le drapeau du Royaume-Uni en haut à gauche et neuf étoiles jaunes dispersées",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tuvalu.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tuvalu", "isCorrect": true },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Îles Cook", "isCorrect": false },
+        { "text": "Niue", "isCorrect": false }
+      ],
+      "explanation": "Les neuf étoiles représentent les neuf îles principales de l'archipel."
+    },
+    {
+      "ref": "geo-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nauru.webp",
+        "alt": "Drapeau bleu traversé d'une fine bande horizontale jaune, avec une étoile blanche à douze branches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Nauru.svg"
+        }
+      },
+      "answers": [
+        { "text": "Nauru", "isCorrect": true },
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Kiribati", "isCorrect": false },
+        { "text": "Îles Marshall", "isCorrect": false }
+      ],
+      "explanation": "L'étoile symbolise les douze tribus originelles de l'île, et la bande jaune représente l'équateur, que Nauru chevauche presque."
+    },
+    {
+      "ref": "geo-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-papouasie-nouvelle-guinee.webp",
+        "alt": "Drapeau divisé en diagonale, rouge avec un oiseau de paradis jaune, et noir avec les étoiles de la Croix du Sud",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Papua_New_Guinea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": true },
+        { "text": "Vanuatu", "isCorrect": false },
+        { "text": "Îles Salomon", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false }
+      ],
+      "explanation": "L'oiseau de paradis est une espèce emblématique du pays, et les cinq étoiles représentent la Croix du Sud."
+    },
+    {
+      "ref": "geo-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-iles-salomon.webp",
+        "alt": "Drapeau coupé en diagonale par une bande jaune, bleu avec cinq étoiles blanches en haut, vert en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Solomon_Islands.svg"
+        }
+      },
+      "answers": [
+        { "text": "Îles Salomon", "isCorrect": true },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Vanuatu", "isCorrect": false },
+        { "text": "Kiribati", "isCorrect": false }
+      ],
+      "explanation": "Les cinq étoiles représentent les cinq principales provinces historiques de l'archipel."
+    },
+    {
+      "ref": "geo-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-iles-marshall.webp",
+        "alt": "Drapeau bleu avec deux bandes diagonales orange et blanche et une étoile blanche à vingt-quatre branches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Marshall_Islands.svg"
+        }
+      },
+      "answers": [
+        { "text": "Îles Marshall", "isCorrect": true },
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Nauru", "isCorrect": false },
+        { "text": "Kiribati", "isCorrect": false }
+      ],
+      "explanation": "Les 24 rayons de l'étoile représentent les 24 municipalités de l'archipel."
+    },
+    {
+      "ref": "geo-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-micronesie.webp",
+        "alt": "Drapeau bleu uni avec quatre étoiles blanches disposées en losange au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Federated_States_of_Micronesia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Micronésie", "isCorrect": true },
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Vanuatu", "isCorrect": false },
+        { "text": "Samoa", "isCorrect": false }
+      ],
+      "explanation": "Les quatre étoiles représentent les quatre États de la fédération : Chuuk, Kosrae, Pohnpei et Yap."
+    },
+    {
+      "ref": "geo-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-kiribati.webp",
+        "alt": "Drapeau avec un soleil levant rouge et jaune surmontant une frégate en vol, au-dessus de bandes ondulées bleues et blanches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kiribati.svg"
+        }
+      },
+      "answers": [
+        { "text": "Kiribati", "isCorrect": true },
+        { "text": "Tuvalu", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false }
+      ],
+      "explanation": "Le soleil levant symbolise la position du pays, à cheval sur l'équateur et la ligne de changement de date."
+    },
+    {
+      "ref": "geo-112",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-australie.webp",
+        "alt": "Drapeau bleu avec le drapeau du Royaume-Uni en haut à gauche, une grande étoile blanche à sept branches et la Croix du Sud",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Australie", "isCorrect": true },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Tuvalu", "isCorrect": false }
+      ],
+      "explanation": "L'étoile à sept branches sous le drapeau britannique représente les six États et les territoires fédéraux."
+    },
+    {
+      "ref": "geo-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-kenya.webp",
+        "alt": "Drapeau à bandes noire, rouge et verte séparées de fines lignes blanches, avec un bouclier maasaï et deux lances croisées au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kenya.svg"
+        }
+      },
+      "answers": [
+        { "text": "Kenya", "isCorrect": true },
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Soudan du Sud", "isCorrect": false }
+      ],
+      "explanation": "Le bouclier et les lances maasaï symbolisent la défense de la liberté retrouvée à l'indépendance, en 1963."
+    },
+    {
+      "ref": "geo-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-ghana.webp",
+        "alt": "Drapeau tricolore horizontal rouge, jaune et vert, avec une étoile noire à cinq branches au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ghana.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ghana", "isCorrect": true },
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Sénégal", "isCorrect": false },
+        { "text": "Mali", "isCorrect": false }
+      ],
+      "explanation": "Première colonie africaine à obtenir son indépendance en 1957, le Ghana a inspiré l'étoile noire adoptée depuis par plusieurs autres drapeaux africains."
+    },
+    {
+      "ref": "geo-115",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-chine.webp",
+        "alt": "Drapeau rouge avec une grande étoile jaune et quatre petites étoiles disposées en arc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_People%27s_Republic_of_China.svg"
+        }
+      },
+      "answers": [
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Viêt Nam", "isCorrect": false },
+        { "text": "Corée du Nord", "isCorrect": false },
+        { "text": "Angola", "isCorrect": false }
+      ],
+      "explanation": "L'étoile principale représente le Parti communiste chinois, et les quatre petites étoiles les classes sociales unies autour de lui."
+    },
+    {
+      "ref": "geo-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-coree-du-sud.webp",
+        "alt": "Drapeau blanc avec un symbole rouge et bleu en spirale au centre, entouré de quatre trigrammes noirs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Corée du Sud", "isCorrect": true },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Mongolie", "isCorrect": false },
+        { "text": "Taïwan", "isCorrect": false }
+      ],
+      "explanation": "Le symbole central, le taegeuk, illustre l'équilibre des forces opposées (yin et yang)."
+    },
+    {
+      "ref": "geo-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-thailande.webp",
+        "alt": "Drapeau à cinq bandes horizontales : rouge, blanche, bleue (large), blanche et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg"
+        }
+      },
+      "answers": [
+        { "text": "Thaïlande", "isCorrect": true },
+        { "text": "Costa Rica", "isCorrect": false },
+        { "text": "Luxembourg", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "La bande bleue centrale, ajoutée en 1917, représente la monarchie."
+    },
+    {
+      "ref": "geo-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-vietnam.webp",
+        "alt": "Drapeau rouge avec une grande étoile jaune à cinq branches au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Vietnam.svg"
+        }
+      },
+      "answers": [
+        { "text": "Viêt Nam", "isCorrect": true },
+        { "text": "Chine", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": false },
+        { "text": "Corée du Nord", "isCorrect": false }
+      ],
+      "explanation": "L'étoile symbolise les cinq classes sociales unies dans la lutte pour l'indépendance : ouvriers, paysans, soldats, intellectuels et commerçants."
+    },
+    {
+      "ref": "geo-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-indonesie.webp",
+        "alt": "Drapeau à deux bandes horizontales égales, rouge en haut et blanche en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Indonésie", "isCorrect": true },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Singapour", "isCorrect": false }
+      ],
+      "explanation": "Ce drapeau est quasiment identique à celui de Monaco, à ses proportions près."
+    },
+    {
+      "ref": "geo-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-liban.webp",
+        "alt": "Drapeau à deux bandes rouges horizontales encadrant une large bande blanche, où figure un cèdre vert au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Lebanon.svg"
+        }
+      },
+      "answers": [
+        { "text": "Liban", "isCorrect": true },
+        { "text": "Syrie", "isCorrect": false },
+        { "text": "Chypre", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": false }
+      ],
+      "explanation": "Le cèdre vert au centre est l'arbre national, mentionné dans l'Ancien Testament."
+    },
+    {
+      "ref": "geo-121",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-israel.webp",
+        "alt": "Drapeau blanc avec deux bandes bleues horizontales et une étoile de David bleue au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Israel.svg"
+        }
+      },
+      "answers": [
+        { "text": "Israël", "isCorrect": true },
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false }
+      ],
+      "explanation": "L'étoile et les bandes bleues s'inspirent du châle de prière juif traditionnel (talith)."
+    },
+    {
+      "ref": "geo-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-arabie-saoudite.webp",
+        "alt": "Drapeau vert avec une inscription blanche en calligraphie arabe au-dessus d'un sabre horizontal",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Arabie saoudite", "isCorrect": true },
+        { "text": "Émirats arabes unis", "isCorrect": false },
+        { "text": "Qatar", "isCorrect": false },
+        { "text": "Libye", "isCorrect": false }
+      ],
+      "explanation": "L'inscription est la chahada, la profession de foi musulmane, ce qui empêche de mettre ce drapeau en berne."
+    },
+    {
+      "ref": "geo-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-pakistan.webp",
+        "alt": "Drapeau majoritairement vert avec une bande blanche verticale côté hampe, un croissant et une étoile blancs au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Pakistan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pakistan", "isCorrect": true },
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Algérie", "isCorrect": false },
+        { "text": "Mauritanie", "isCorrect": false }
+      ],
+      "explanation": "Le croissant et l'étoile symbolisent le progrès et la lumière ; la bande blanche représente les minorités religieuses."
+    },
+    {
+      "ref": "geo-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["drapeau", "asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-singapour.webp",
+        "alt": "Drapeau à deux bandes horizontales rouge et blanche, avec un croissant blanc et cinq petites étoiles en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.svg"
+        }
+      },
+      "answers": [
+        { "text": "Singapour", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false }
+      ],
+      "explanation": "Le croissant et les cinq étoiles symbolisent une nation en progrès, animée par la démocratie, la paix, le progrès, la justice et l'égalité."
+    },
+    {
+      "ref": "geo-125",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-italie.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Italy.svg"
+        }
+      },
+      "answers": [
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Mexique", "isCorrect": false },
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": false }
+      ],
+      "explanation": "Inspiré du drapeau français, ce tricolore fut adopté par les légions napoléoniennes avant de devenir celui de l'Italie unifiée."
+    },
+    {
+      "ref": "geo-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-espagne.webp",
+        "alt": "Drapeau à trois bandes horizontales rouge, jaune (large) et rouge, avec un blason sur la partie jaune",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg"
+        }
+      },
+      "answers": [
+        { "text": "Espagne", "isCorrect": true },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": false }
+      ],
+      "explanation": "Le blason, présent uniquement sur la bande jaune, représente les anciens royaumes ayant formé l'Espagne."
+    },
+    {
+      "ref": "geo-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-allemagne.webp",
+        "alt": "Drapeau à trois bandes horizontales noire, rouge et or",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg"
+        }
+      },
+      "answers": [
+        { "text": "Allemagne", "isCorrect": true },
+        { "text": "Belgique", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false }
+      ],
+      "explanation": "Ces couleurs, popularisées lors des guerres napoléoniennes, sont devenues celles de la République de Weimar puis de l'Allemagne actuelle."
+    },
+    {
+      "ref": "geo-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-suisse.webp",
+        "alt": "Drapeau carré rouge avec une croix blanche au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Suisse", "isCorrect": true },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Géorgie", "isCorrect": false },
+        { "text": "Tonga", "isCorrect": false }
+      ],
+      "explanation": "C'est, avec celui du Vatican, l'un des deux seuls drapeaux nationaux carrés au monde."
+    },
+    {
+      "ref": "geo-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-grece.webp",
+        "alt": "Drapeau à neuf bandes horizontales bleues et blanches alternées, avec une croix blanche sur fond bleu en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg"
+        }
+      },
+      "answers": [
+        { "text": "Grèce", "isCorrect": true },
+        { "text": "Uruguay", "isCorrect": false },
+        { "text": "Israël", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false }
+      ],
+      "explanation": "Les neuf bandes représenteraient les neuf syllabes de la devise grecque « Eleftheria i thanatos » (la liberté ou la mort)."
+    },
+    {
+      "ref": "geo-130",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-irlande.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et orange",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ireland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Irlande", "isCorrect": true },
+        { "text": "Côte d'Ivoire", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Inde", "isCorrect": false }
+      ],
+      "explanation": "Le blanc central symbolise la paix entre les catholiques (vert) et les protestants (orange) d'Irlande."
+    },
+    {
+      "ref": "geo-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-islande.webp",
+        "alt": "Drapeau bleu avec une croix rouge bordée de blanc, décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Islande", "isCorrect": true },
+        { "text": "Norvège", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Royaume-Uni", "isCorrect": false }
+      ],
+      "explanation": "Les couleurs rappellent le paysage islandais : le rouge du feu volcanique, le blanc des glaciers et le bleu de l'océan."
+    },
+    {
+      "ref": "geo-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-pologne.webp",
+        "alt": "Drapeau à deux bandes horizontales égales, blanche en haut et rouge en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Poland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pologne", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Singapour", "isCorrect": false }
+      ],
+      "explanation": "Le blanc représenterait l'aigle blanc, emblème historique du pays, et le rouge le champ sur lequel il figure dans les armoiries."
+    },
+    {
+      "ref": "geo-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-portugal.webp",
+        "alt": "Drapeau divisé verticalement en vert et rouge, avec un blason armorié et une sphère armillaire dorée au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg"
+        }
+      },
+      "answers": [
+        { "text": "Portugal", "isCorrect": true },
+        { "text": "Angola", "isCorrect": false },
+        { "text": "Mozambique", "isCorrect": false },
+        { "text": "Cap-Vert", "isCorrect": false }
+      ],
+      "explanation": "La sphère armillaire rappelle l'âge des grandes découvertes maritimes portugaises."
+    },
+    {
+      "ref": "geo-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-canada.webp",
+        "alt": "Drapeau blanc avec deux bandes rouges verticales et une feuille d'érable rouge stylisée au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada.svg"
+        }
+      },
+      "answers": [
+        { "text": "Canada", "isCorrect": true },
+        { "text": "Pérou", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": false }
+      ],
+      "explanation": "La feuille d'érable est un symbole canadien depuis le XVIIIe siècle, officialisé sur le drapeau en 1965."
+    },
+    {
+      "ref": "geo-135",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-etats-unis.webp",
+        "alt": "Drapeau à treize bandes horizontales rouges et blanches alternées, avec un rectangle bleu étoilé en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg"
+        }
+      },
+      "answers": [
+        { "text": "États-Unis", "isCorrect": true },
+        { "text": "Libéria", "isCorrect": false },
+        { "text": "Malaisie", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false }
+      ],
+      "explanation": "Les treize bandes représentent les treize colonies fondatrices, et les étoiles les 50 États actuels."
+    },
+    {
+      "ref": "geo-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-cuba.webp",
+        "alt": "Drapeau à cinq bandes horizontales bleues et blanches alternées, avec un triangle rouge et une étoile blanche côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Cuba.svg"
+        }
+      },
+      "answers": [
+        { "text": "Cuba", "isCorrect": true },
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "Chili", "isCorrect": false },
+        { "text": "Panama", "isCorrect": false }
+      ],
+      "explanation": "Ce drapeau a servi de modèle à celui de Porto Rico, qui en inverse simplement les couleurs du triangle et des bandes."
+    },
+    {
+      "ref": "geo-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-jamaique.webp",
+        "alt": "Drapeau traversé de bandes diagonales dorées en croix de Saint-André, séparant des triangles verts et noirs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg"
+        }
+      },
+      "answers": [
+        { "text": "Jamaïque", "isCorrect": true },
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Afrique du Sud", "isCorrect": false },
+        { "text": "Eswatini", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul drapeau national au monde ne comportant ni rouge, ni blanc, ni bleu."
+    },
+    {
+      "ref": "geo-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-perou.webp",
+        "alt": "Drapeau tricolore vertical rouge, blanc et rouge, avec un blason armorié au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Peru.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pérou", "isCorrect": true },
+        { "text": "Canada", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Panama", "isCorrect": false }
+      ],
+      "explanation": "Selon la légende, les couleurs auraient été inspirées par un vol de flamants roses observé par le général San Martín."
+    },
+    {
+      "ref": "geo-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-chili.webp",
+        "alt": "Drapeau à deux bandes horizontales, blanche en haut et rouge en bas, avec un carré bleu et une étoile blanche en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Chile.svg"
+        }
+      },
+      "answers": [
+        { "text": "Chili", "isCorrect": true },
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Panama", "isCorrect": false }
+      ],
+      "explanation": "Surnommé « la Estrella Solitaria » (l'étoile solitaire), ce drapeau est très proche de celui du Texas, adopté plus tard."
+    },
+    {
+      "ref": "geo-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-colombie.webp",
+        "alt": "Drapeau à trois bandes horizontales jaune, bleue et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Colombia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Colombie", "isCorrect": true },
+        { "text": "Équateur", "isCorrect": false },
+        { "text": "Venezuela", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": false }
+      ],
+      "explanation": "Le Venezuela et l'Équateur partagent les mêmes couleurs, les trois pays étant issus de la Grande Colombie du XIXe siècle."
+    },
+    {
+      "ref": "geo-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-equateur.webp",
+        "alt": "Drapeau à trois bandes horizontales jaune, bleue et rouge, avec un blason orné d'un condor au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg"
+        }
+      },
+      "answers": [
+        { "text": "Équateur", "isCorrect": true },
+        { "text": "Colombie", "isCorrect": false },
+        { "text": "Venezuela", "isCorrect": false },
+        { "text": "Bolivie", "isCorrect": false }
+      ],
+      "explanation": "Le condor andin au centre du blason symbolise la puissance et la grandeur du pays."
+    },
+    {
+      "ref": "geo-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["drapeau", "amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-panama.webp",
+        "alt": "Drapeau divisé en quatre quartiers blancs, bleu et rouge, avec une étoile bleue et une étoile rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Panama.svg"
+        }
+      },
+      "answers": [
+        { "text": "Panama", "isCorrect": true },
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "République dominicaine", "isCorrect": false }
+      ],
+      "explanation": "Les étoiles bleue et rouge représenteraient la pureté et l'autorité de la loi, selon la symbolique officielle."
+    },
+    {
+      "ref": "geo-143",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["capitale", "amerique"],
+      "text": "Quelle est la capitale du Chili ?",
+      "answers": [
+        { "text": "Santiago", "isCorrect": true },
+        { "text": "Valparaíso", "isCorrect": false },
+        { "text": "Concepción", "isCorrect": false },
+        { "text": "Antofagasta", "isCorrect": false }
+      ],
+      "explanation": "Santiago concentre plus d'un tiers de la population chilienne."
+    },
+    {
+      "ref": "geo-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "asie"],
+      "text": "Quelle est la capitale du Viêt Nam ?",
+      "answers": [
+        { "text": "Hanoï", "isCorrect": true },
+        { "text": "Hô Chi Minh-Ville", "isCorrect": false },
+        { "text": "Da Nang", "isCorrect": false },
+        { "text": "Huế", "isCorrect": false }
+      ],
+      "explanation": "Hô Chi Minh-Ville (l'ancienne Saïgon) est la plus grande ville du pays, mais pas sa capitale."
+    },
+    {
+      "ref": "geo-145",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["capitale", "europe"],
+      "text": "Quelle est la capitale du Portugal ?",
+      "answers": [
+        { "text": "Lisbonne", "isCorrect": true },
+        { "text": "Porto", "isCorrect": false },
+        { "text": "Faro", "isCorrect": false },
+        { "text": "Coimbra", "isCorrect": false }
+      ],
+      "explanation": "Lisbonne est bâtie sur sept collines, au bord de l'estuaire du Tage."
+    },
+    {
+      "ref": "geo-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "afrique"],
+      "text": "Quelle est la capitale du Maroc ?",
+      "answers": [
+        { "text": "Rabat", "isCorrect": true },
+        { "text": "Casablanca", "isCorrect": false },
+        { "text": "Marrakech", "isCorrect": false },
+        { "text": "Fès", "isCorrect": false }
+      ],
+      "explanation": "Casablanca, bien plus peuplée, est le principal centre économique du pays, mais Rabat en est la capitale politique."
+    },
+    {
+      "ref": "geo-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "europe"],
+      "text": "Quelle est la capitale de la Lituanie ?",
+      "answers": [
+        { "text": "Vilnius", "isCorrect": true },
+        { "text": "Riga", "isCorrect": false },
+        { "text": "Tallinn", "isCorrect": false },
+        { "text": "Kaunas", "isCorrect": false }
+      ],
+      "explanation": "Vilnius, Riga et Tallinn sont les capitales respectives des trois pays baltes : Lituanie, Lettonie et Estonie."
+    },
+    {
+      "ref": "geo-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["capitale", "asie"],
+      "text": "Quelle ville est actuellement la capitale en exercice de l'Indonésie ?",
+      "answers": [
+        { "text": "Jakarta", "isCorrect": true },
+        { "text": "Surabaya", "isCorrect": false },
+        { "text": "Bandung", "isCorrect": false },
+        { "text": "Denpasar", "isCorrect": false }
+      ],
+      "explanation": "Un transfert de la capitale vers Nusantara, sur l'île de Bornéo, est engagé pour désengorger Jakarta et son delta très exposé aux inondations."
+    },
+    {
+      "ref": "geo-149",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "europe"],
+      "text": "Dans quel pays se trouve le Kremlin, siège historique du pouvoir politique ?",
+      "answers": [
+        { "text": "Russie", "isCorrect": true },
+        { "text": "Ukraine", "isCorrect": false },
+        { "text": "Biélorussie", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false }
+      ],
+      "explanation": "Le Kremlin de Moscou abrite depuis des siècles la résidence des tsars, puis du gouvernement soviétique et aujourd'hui du président russe."
+    },
+    {
+      "ref": "geo-150",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve la Cité interdite, ancien palais impérial ?",
+      "answers": [
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Corée du Sud", "isCorrect": false },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Mongolie", "isCorrect": false }
+      ],
+      "explanation": "Située au cœur de Pékin, elle a abrité les empereurs chinois pendant près de 500 ans."
+    },
+    {
+      "ref": "geo-151",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["monument", "amerique"],
+      "text": "Dans quel pays se trouve Tikal, cité maya engloutie par la jungle ?",
+      "answers": [
+        { "text": "Guatemala", "isCorrect": true },
+        { "text": "Mexique", "isCorrect": false },
+        { "text": "Belize", "isCorrect": false },
+        { "text": "Honduras", "isCorrect": false }
+      ],
+      "explanation": "Tikal fut l'une des plus grandes cités de la civilisation maya, abandonnée vers le Xe siècle."
+    },
+    {
+      "ref": "geo-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve le temple de Borobudur, plus grand temple bouddhiste du monde ?",
+      "answers": [
+        { "text": "Indonésie", "isCorrect": true },
+        { "text": "Thaïlande", "isCorrect": false },
+        { "text": "Birmanie", "isCorrect": false },
+        { "text": "Cambodge", "isCorrect": false }
+      ],
+      "explanation": "Construit au IXe siècle sur l'île de Java, il comporte plus de 2 600 panneaux de reliefs sculptés."
+    },
+    {
+      "ref": "geo-153",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve la Mosquée bleue (Sultan Ahmed) ?",
+      "answers": [
+        { "text": "Turquie", "isCorrect": true },
+        { "text": "Iran", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": false }
+      ],
+      "explanation": "Surnommée ainsi pour les carreaux de faïence bleue qui ornent son intérieur, elle fait face à Sainte-Sophie, à Istanbul."
+    },
+    {
+      "ref": "geo-154",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monument", "europe"],
+      "text": "Dans quel pays se trouve l'Alhambra, palais et forteresse mauresque ?",
+      "answers": [
+        { "text": "Espagne", "isCorrect": true },
+        { "text": "Maroc", "isCorrect": false },
+        { "text": "Portugal", "isCorrect": false },
+        { "text": "Tunisie", "isCorrect": false }
+      ],
+      "explanation": "Bâtie à Grenade par les dynasties musulmanes d'Al-Andalus, elle témoigne de huit siècles de présence arabo-musulmane en Espagne."
+    },
+    {
+      "ref": "geo-155",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monument", "europe"],
+      "text": "Dans quel pays se trouve la tour penchée de Pise ?",
+      "answers": [
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Espagne", "isCorrect": false },
+        { "text": "France", "isCorrect": false }
+      ],
+      "explanation": "Son inclinaison, due à un sol instable, s'est stabilisée après d'importants travaux de consolidation menés dans les années 1990."
+    },
+    {
+      "ref": "geo-156",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve le palais du Potala, ancienne résidence du dalaï-lama ?",
+      "answers": [
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Népal", "isCorrect": false },
+        { "text": "Inde", "isCorrect": false },
+        { "text": "Bhoutan", "isCorrect": false }
+      ],
+      "explanation": "Situé à Lhassa, dans la région autonome du Tibet, il est perché à plus de 3 700 m d'altitude."
+    },
+    {
+      "ref": "geo-157",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["monument", "asie"],
+      "text": "Dans quel pays se trouve Persépolis, ancienne capitale cérémonielle de l'Empire perse ?",
+      "answers": [
+        { "text": "Iran", "isCorrect": true },
+        { "text": "Irak", "isCorrect": false },
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Arabie saoudite", "isCorrect": false }
+      ],
+      "explanation": "Fondée par Darius Ier au VIe siècle av. J.-C., elle fut incendiée par Alexandre le Grand."
+    },
+    {
+      "ref": "geo-158",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "france", "fleuve"],
+      "text": "Quelle ville française, surnommée la Ville rose, est traversée par la Garonne ?",
+      "answers": [
+        { "text": "Toulouse", "isCorrect": true },
+        { "text": "Bordeaux", "isCorrect": false },
+        { "text": "Montauban", "isCorrect": false },
+        { "text": "Agen", "isCorrect": false }
+      ],
+      "explanation": "Toulouse doit son surnom à la couleur de la brique utilisée pour la plupart de ses façades."
+    },
+    {
+      "ref": "geo-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "france", "fleuve"],
+      "text": "Quelle ville, libérée par Jeanne d'Arc, est bâtie sur les rives de la Loire ?",
+      "answers": [
+        { "text": "Orléans", "isCorrect": true },
+        { "text": "Tours", "isCorrect": false },
+        { "text": "Blois", "isCorrect": false },
+        { "text": "Angers", "isCorrect": false }
+      ],
+      "explanation": "Le siège d'Orléans, en 1429, marque un tournant décisif de la guerre de Cent Ans."
+    },
+    {
+      "ref": "geo-160",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "france", "fleuve"],
+      "text": "Quelle ville française est née de la confluence du Rhône et de la Saône ?",
+      "answers": [
+        { "text": "Lyon", "isCorrect": true },
+        { "text": "Grenoble", "isCorrect": false },
+        { "text": "Valence", "isCorrect": false },
+        { "text": "Avignon", "isCorrect": false }
+      ],
+      "explanation": "Cette presqu'île entre les deux fleuves, la « Presqu'île », constitue le cœur historique de Lyon."
+    },
+    {
+      "ref": "geo-161",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "france", "fleuve", "mer"],
+      "text": "Quel port français, situé à l'embouchure de la Seine, est la deuxième place portuaire du pays ?",
+      "answers": [
+        { "text": "Le Havre", "isCorrect": true },
+        { "text": "Rouen", "isCorrect": false },
+        { "text": "Caen", "isCorrect": false },
+        { "text": "Dieppe", "isCorrect": false }
+      ],
+      "explanation": "Détruite à 80 % en 1944, la ville a été reconstruite par Auguste Perret, ce qui lui vaut d'être classée au patrimoine mondial de l'UNESCO."
+    },
+    {
+      "ref": "geo-162",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ville", "france", "fleuve"],
+      "text": "Quelle ville du Périgord, aux maisons à colombages, est traversée par la Dordogne ?",
+      "answers": [
+        { "text": "Bergerac", "isCorrect": true },
+        { "text": "Sarlat-la-Canéda", "isCorrect": false },
+        { "text": "Périgueux", "isCorrect": false },
+        { "text": "Brive-la-Gaillarde", "isCorrect": false }
+      ],
+      "explanation": "Bergerac a donné son nom à un cépage et à une appellation viticole réputée."
+    },
+    {
+      "ref": "geo-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "france", "fleuve", "europe"],
+      "text": "Quelle ville alsacienne, siège du Parlement européen, est traversée par l'Ill, affluent du Rhin ?",
+      "answers": [
+        { "text": "Strasbourg", "isCorrect": true },
+        { "text": "Mulhouse", "isCorrect": false },
+        { "text": "Colmar", "isCorrect": false },
+        { "text": "Metz", "isCorrect": false }
+      ],
+      "explanation": "Strasbourg accueille aussi le Conseil de l'Europe et la Cour européenne des droits de l'homme."
+    },
+    {
+      "ref": "geo-164",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "france", "fleuve", "mer"],
+      "text": "Quel grand port du sud-ouest, réputé pour son vin, est bâti sur les rives de la Garonne ?",
+      "answers": [
+        { "text": "Bordeaux", "isCorrect": true },
+        { "text": "Toulouse", "isCorrect": false },
+        { "text": "Bayonne", "isCorrect": false },
+        { "text": "Biarritz", "isCorrect": false }
+      ],
+      "explanation": "Le port de Bordeaux, surnommé le « Port de la Lune » pour la courbe que dessine le fleuve, est classé à l'UNESCO."
+    },
+    {
+      "ref": "geo-165",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "france", "fleuve", "mer"],
+      "text": "Quelle ville, ancien port de la traite négrière, se situe à l'estuaire de la Loire sur l'Atlantique ?",
+      "answers": [
+        { "text": "Nantes", "isCorrect": true },
+        { "text": "Saint-Nazaire", "isCorrect": false },
+        { "text": "La Baule", "isCorrect": false },
+        { "text": "Vannes", "isCorrect": false }
+      ],
+      "explanation": "Nantes fut longtemps la capitale historique du duché de Bretagne, avant de devenir officiellement partie des Pays de la Loire."
+    },
+    {
+      "ref": "geo-166",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "france", "mer"],
+      "text": "Quel grand port du Nord, sur la Manche, fait face à l'Angleterre par le détroit du Pas-de-Calais ?",
+      "answers": [
+        { "text": "Calais", "isCorrect": true },
+        { "text": "Dunkerque", "isCorrect": false },
+        { "text": "Boulogne-sur-Mer", "isCorrect": false },
+        { "text": "Le Touquet", "isCorrect": false }
+      ],
+      "explanation": "Depuis Calais, on peut apercevoir les falaises blanches de Douvres par temps clair, à environ 34 km."
+    },
+    {
+      "ref": "geo-167",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "france", "mer"],
+      "text": "Quelle ville, célèbre pour son vieux port et ses tours médiévales, se situe sur la côte atlantique de Charente-Maritime ?",
+      "answers": [
+        { "text": "La Rochelle", "isCorrect": true },
+        { "text": "Royan", "isCorrect": false },
+        { "text": "Rochefort", "isCorrect": false },
+        { "text": "Saintes", "isCorrect": false }
+      ],
+      "explanation": "Les tours Saint-Nicolas et de la Chaîne encadrent toujours l'entrée du vieux port."
+    },
+    {
+      "ref": "geo-168",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "france", "mer"],
+      "text": "Quelle est la plus grande ville et le principal port de la Méditerranée française ?",
+      "answers": [
+        { "text": "Marseille", "isCorrect": true },
+        { "text": "Nice", "isCorrect": false },
+        { "text": "Toulon", "isCorrect": false },
+        { "text": "Montpellier", "isCorrect": false }
+      ],
+      "explanation": "Fondée par des marins grecs vers 600 av. J.-C. sous le nom de Massalia, c'est la plus ancienne ville de France."
+    },
+    {
+      "ref": "geo-169",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "asie"],
+      "text": "Dans quel pays se trouve Dubaï, ville connue pour ses gratte-ciel futuristes ?",
+      "answers": [
+        { "text": "Émirats arabes unis", "isCorrect": true },
+        { "text": "Arabie saoudite", "isCorrect": false },
+        { "text": "Qatar", "isCorrect": false },
+        { "text": "Oman", "isCorrect": false }
+      ],
+      "explanation": "Dubaï abrite le Burj Khalifa, la plus haute tour du monde, qui dépasse 800 m."
+    },
+    {
+      "ref": "geo-170",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "europe"],
+      "text": "Dans quel pays se trouve Barcelone, célèbre pour l'architecture signée Gaudí ?",
+      "answers": [
+        { "text": "Espagne", "isCorrect": true },
+        { "text": "Portugal", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "France", "isCorrect": false }
+      ],
+      "explanation": "La Sagrada Familia, principale œuvre de Gaudí à Barcelone, est en construction depuis 1882."
+    },
+    {
+      "ref": "geo-171",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "europe"],
+      "text": "Dans quel pays se trouve Venise, ville construite sur une lagune et sillonnée de canaux ?",
+      "answers": [
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Croatie", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Slovénie", "isCorrect": false }
+      ],
+      "explanation": "Venise repose sur plus d'une centaine d'îlots reliés par environ 400 ponts."
+    },
+    {
+      "ref": "geo-172",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ville", "asie"],
+      "text": "Dans quel pays se trouve Shanghai, plus grande ville du pays par la population ?",
+      "answers": [
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Corée du Sud", "isCorrect": false },
+        { "text": "Taïwan", "isCorrect": false }
+      ],
+      "explanation": "Shanghai est aussi l'un des plus grands ports à conteneurs du monde."
+    },
+    {
+      "ref": "geo-173",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "asie"],
+      "text": "Dans quel pays se trouve Mumbai (Bombay), cœur de l'industrie cinématographique de Bollywood ?",
+      "answers": [
+        { "text": "Inde", "isCorrect": true },
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Sri Lanka", "isCorrect": false }
+      ],
+      "explanation": "Mumbai est aussi la capitale financière de l'Inde, où siège la principale Bourse du pays."
+    },
+    {
+      "ref": "geo-174",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ville", "europe"],
+      "text": "Dans quel pays se trouve Saint-Pétersbourg, ancienne capitale impériale surnommée la « Venise du Nord » ?",
+      "answers": [
+        { "text": "Russie", "isCorrect": true },
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Estonie", "isCorrect": false },
+        { "text": "Ukraine", "isCorrect": false }
+      ],
+      "explanation": "Fondée par Pierre le Grand en 1703, la ville a aussi porté les noms de Petrograd puis Léningrad au XXe siècle."
+    },
+    {
+      "ref": "geo-175",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["fleuve", "afrique", "record"],
+      "text": "Quel est le fleuve le plus long d'Afrique ?",
+      "answers": [
+        { "text": "Le Nil", "isCorrect": true },
+        { "text": "Le Congo", "isCorrect": false },
+        { "text": "Le Niger", "isCorrect": false },
+        { "text": "Le Zambèze", "isCorrect": false }
+      ],
+      "explanation": "Le Nil parcourt environ 6 650 km avant de se jeter dans la Méditerranée, en Égypte."
+    },
+    {
+      "ref": "geo-176",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["fleuve", "amerique", "record"],
+      "text": "Quel fleuve sud-américain est le plus volumineux du monde ?",
+      "answers": [
+        { "text": "L'Amazone", "isCorrect": true },
+        { "text": "L'Orénoque", "isCorrect": false },
+        { "text": "Le Paraná", "isCorrect": false },
+        { "text": "Le Magdalena", "isCorrect": false }
+      ],
+      "explanation": "L'Amazone déverse à lui seul environ 20 % de l'eau douce rejetée par les fleuves dans les océans."
+    },
+    {
+      "ref": "geo-177",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["fleuve", "asie"],
+      "text": "Quel fleuve chinois, deuxième plus long du pays, a donné son nom à la mer Jaune en raison des sédiments qu'il transporte ?",
+      "answers": [
+        { "text": "Le Huang He (fleuve Jaune)", "isCorrect": true },
+        { "text": "Le Yangtsé", "isCorrect": false },
+        { "text": "Le Mékong", "isCorrect": false },
+        { "text": "L'Amour", "isCorrect": false }
+      ],
+      "explanation": "Ses crues dévastatrices lui ont aussi valu le surnom de « Fleuve des douleurs »."
+    },
+    {
+      "ref": "geo-178",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["fleuve", "france"],
+      "text": "Quel fleuve, deuxième plus long de France, conflue avec la Garonne pour former l'estuaire de la Gironde ?",
+      "answers": [
+        { "text": "La Dordogne", "isCorrect": true },
+        { "text": "Le Lot", "isCorrect": false },
+        { "text": "Le Tarn", "isCorrect": false },
+        { "text": "La Vienne", "isCorrect": false }
+      ],
+      "explanation": "La Gironde, formée par cette confluence, est le plus grand estuaire d'Europe occidentale."
+    },
+    {
+      "ref": "geo-179",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["fleuve", "france", "europe"],
+      "text": "Quel fleuve, qui prend sa source en France, se jette dans la mer du Nord après avoir traversé la Belgique et les Pays-Bas ?",
+      "answers": [
+        { "text": "La Meuse", "isCorrect": true },
+        { "text": "La Moselle", "isCorrect": false },
+        { "text": "L'Escaut", "isCorrect": false },
+        { "text": "La Sambre", "isCorrect": false }
+      ],
+      "explanation": "La Meuse prend sa source sur le plateau de Langres, en Haute-Marne."
+    },
+    {
+      "ref": "geo-180",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["fleuve", "france", "europe", "frontiere"],
+      "text": "Quel fleuve marque une partie de la frontière entre la France et l'Allemagne, au niveau de Strasbourg ?",
+      "answers": [
+        { "text": "Le Rhin", "isCorrect": true },
+        { "text": "La Moselle", "isCorrect": false },
+        { "text": "La Sarre", "isCorrect": false },
+        { "text": "La Meuse", "isCorrect": false }
+      ],
+      "explanation": "Le Rhin prend sa source en Suisse et se jette dans la mer du Nord, aux Pays-Bas."
+    },
+    {
+      "ref": "geo-181",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mer", "france", "europe"],
+      "text": "Quelle mer baigne la Côte d'Azur, entre Marseille et la frontière italienne ?",
+      "answers": [
+        { "text": "La mer Méditerranée", "isCorrect": true },
+        { "text": "La mer Adriatique", "isCorrect": false },
+        { "text": "La mer Égée", "isCorrect": false },
+        { "text": "La mer Tyrrhénienne", "isCorrect": false }
+      ],
+      "explanation": "La Côte d'Azur doit une partie de sa renommée à la couleur intense de cette mer."
+    },
+    {
+      "ref": "geo-182",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "france", "europe"],
+      "text": "Dans quelle mer se situe l'île de Corse ?",
+      "answers": [
+        { "text": "La mer Méditerranée", "isCorrect": true },
+        { "text": "La mer Adriatique", "isCorrect": false },
+        { "text": "La mer Noire", "isCorrect": false },
+        { "text": "La mer Égée", "isCorrect": false }
+      ],
+      "explanation": "Plus précisément, la Corse est bordée par la mer Tyrrhénienne et la mer Ligure, deux bassins de la Méditerranée."
+    },
+    {
+      "ref": "geo-183",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mer", "france", "europe"],
+      "text": "Quelle mer borde la Bretagne et la Normandie, entre la France et l'Angleterre ?",
+      "answers": [
+        { "text": "La Manche", "isCorrect": true },
+        { "text": "La mer du Nord", "isCorrect": false },
+        { "text": "La mer d'Irlande", "isCorrect": false },
+        { "text": "La mer Celtique", "isCorrect": false }
+      ],
+      "explanation": "Le tunnel sous la Manche, ouvert en 1994, relie Calais à Folkestone sur près de 38 km."
+    },
+    {
+      "ref": "geo-184",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mer", "afrique", "asie"],
+      "text": "Quelle mer borde l'Arabie saoudite à l'ouest, séparant l'Afrique de la péninsule arabique ?",
+      "answers": [
+        { "text": "La mer Rouge", "isCorrect": true },
+        { "text": "Le golfe Persique", "isCorrect": false },
+        { "text": "La mer d'Oman", "isCorrect": false },
+        { "text": "La mer Méditerranée", "isCorrect": false }
+      ],
+      "explanation": "Son nom viendrait de la couleur rougeâtre que prennent parfois ses eaux lors de la prolifération d'algues."
+    },
+    {
+      "ref": "geo-185",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "europe"],
+      "text": "Quelle mer, bordée notamment par l'Estonie, la Lettonie, la Pologne et l'Allemagne, est presque entièrement fermée ?",
+      "answers": [
+        { "text": "La mer Baltique", "isCorrect": true },
+        { "text": "La mer du Nord", "isCorrect": false },
+        { "text": "La mer Noire", "isCorrect": false },
+        { "text": "La mer Adriatique", "isCorrect": false }
+      ],
+      "explanation": "C'est l'une des mers les moins salées du monde, en raison des nombreux fleuves qui s'y déversent."
+    },
+    {
+      "ref": "geo-186",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mer", "amerique"],
+      "text": "Quelle mer borde les côtes est du Mexique, de Cuba et de la plupart des Antilles ?",
+      "answers": [
+        { "text": "La mer des Caraïbes", "isCorrect": true },
+        { "text": "Le golfe du Mexique", "isCorrect": false },
+        { "text": "L'océan Atlantique", "isCorrect": false },
+        { "text": "La mer des Sargasses", "isCorrect": false }
+      ],
+      "explanation": "Elle doit son nom aux Caraïbes, un peuple amérindien qui l'habitait avant la colonisation européenne."
+    },
+    {
+      "ref": "geo-187",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "asie"],
+      "text": "Quelle mer sépare le Japon de la Corée et de l'extrême est de la Russie ?",
+      "answers": [
+        { "text": "La mer du Japon", "isCorrect": true },
+        { "text": "La mer de Chine orientale", "isCorrect": false },
+        { "text": "La mer Jaune", "isCorrect": false },
+        { "text": "La mer d'Okhotsk", "isCorrect": false }
+      ],
+      "explanation": "Son nom est contesté par la Corée du Sud, qui préfère l'appellation « mer de l'Est »."
+    },
+    {
+      "ref": "geo-188",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "europe", "asie"],
+      "text": "Quelle mer, entourée par la Grèce et la Turquie, relie la Méditerranée à la mer Noire via les Dardanelles ?",
+      "answers": [
+        { "text": "La mer Égée", "isCorrect": true },
+        { "text": "La mer Adriatique", "isCorrect": false },
+        { "text": "La mer Ionienne", "isCorrect": false },
+        { "text": "La mer Noire", "isCorrect": false }
+      ],
+      "explanation": "Elle compte plusieurs milliers d'îles, dont les Cyclades et les Dodécanèse."
+    },
+    {
+      "ref": "geo-189",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "europe"],
+      "text": "Quelle mer borde l'Italie à l'est, entre la péninsule italienne et les Balkans ?",
+      "answers": [
+        { "text": "La mer Adriatique", "isCorrect": true },
+        { "text": "La mer Tyrrhénienne", "isCorrect": false },
+        { "text": "La mer Ionienne", "isCorrect": false },
+        { "text": "La mer Égée", "isCorrect": false }
+      ],
+      "explanation": "Venise, bâtie sur sa lagune, doit toute son histoire maritime à cette mer."
+    },
+    {
+      "ref": "geo-190",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mer", "asie"],
+      "text": "Quelle mer, entre la Chine et la péninsule coréenne, doit son nom à la couleur que lui donnent les sédiments du fleuve Jaune ?",
+      "answers": [
+        { "text": "La mer Jaune", "isCorrect": true },
+        { "text": "La mer de Chine orientale", "isCorrect": false },
+        { "text": "La mer du Japon", "isCorrect": false },
+        { "text": "La mer de Chine méridionale", "isCorrect": false }
+      ],
+      "explanation": "Le fleuve Jaune et le fleuve Huai y déversent chaque année d'importantes quantités de limon."
+    },
+    {
+      "ref": "geo-191",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mer", "asie", "climat", "histoire"],
+      "text": "Quelle mer intérieure d'Asie centrale s'est considérablement asséchée depuis les années 1960 ?",
+      "answers": [
+        { "text": "La mer d'Aral", "isCorrect": true },
+        { "text": "La mer Caspienne", "isCorrect": false },
+        { "text": "Le lac Balkhach", "isCorrect": false },
+        { "text": "Le lac Baïkal", "isCorrect": false }
+      ],
+      "explanation": "Le détournement des fleuves Amou-Daria et Syr-Daria pour l'irrigation a réduit sa surface de plus de 80 %."
+    },
+    {
+      "ref": "geo-192",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "record"],
+      "text": "Quel est le deuxième plus grand océan du monde ?",
+      "answers": [
+        { "text": "L'océan Atlantique", "isCorrect": true },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Arctique", "isCorrect": false },
+        { "text": "L'océan Austral", "isCorrect": false }
+      ],
+      "explanation": "L'Atlantique couvre environ un cinquième de la surface terrestre, derrière le Pacifique."
+    },
+    {
+      "ref": "geo-193",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "amerique"],
+      "text": "Quel océan borde la côte est des États-Unis ?",
+      "answers": [
+        { "text": "L'océan Atlantique", "isCorrect": true },
+        { "text": "L'océan Pacifique", "isCorrect": false },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Arctique", "isCorrect": false }
+      ],
+      "explanation": "New York, Boston et Miami sont toutes des villes portuaires de la côte atlantique américaine."
+    },
+    {
+      "ref": "geo-194",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "amerique"],
+      "text": "Quel océan borde la côte ouest de l'Amérique du Sud ?",
+      "answers": [
+        { "text": "L'océan Pacifique", "isCorrect": true },
+        { "text": "L'océan Atlantique", "isCorrect": false },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Austral", "isCorrect": false }
+      ],
+      "explanation": "Le Chili et le Pérou s'étirent tout en longueur le long de cette côte pacifique."
+    },
+    {
+      "ref": "geo-195",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "asie"],
+      "text": "Quel océan borde l'Inde au sud ?",
+      "answers": [
+        { "text": "L'océan Indien", "isCorrect": true },
+        { "text": "L'océan Pacifique", "isCorrect": false },
+        { "text": "L'océan Atlantique", "isCorrect": false },
+        { "text": "L'océan Arctique", "isCorrect": false }
+      ],
+      "explanation": "L'océan Indien est le seul des grands océans à porter le nom d'un pays."
+    },
+    {
+      "ref": "geo-196",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "amerique"],
+      "text": "Dans quel océan se trouve l'archipel d'Hawaï ?",
+      "answers": [
+        { "text": "L'océan Pacifique", "isCorrect": true },
+        { "text": "L'océan Atlantique", "isCorrect": false },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Arctique", "isCorrect": false }
+      ],
+      "explanation": "Hawaï est né de l'activité d'un point chaud volcanique situé au fond du Pacifique."
+    },
+    {
+      "ref": "geo-197",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean", "afrique", "amerique"],
+      "text": "Quel océan sépare l'Afrique de l'Amérique ?",
+      "answers": [
+        { "text": "L'océan Atlantique", "isCorrect": true },
+        { "text": "L'océan Pacifique", "isCorrect": false },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Austral", "isCorrect": false }
+      ],
+      "explanation": "À son point le plus étroit, entre le Brésil et le Sénégal, l'Atlantique mesure environ 2 800 km."
+    },
+    {
+      "ref": "geo-198",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "asie"],
+      "text": "Dans quel océan se trouvent les Maldives ?",
+      "answers": [
+        { "text": "L'océan Indien", "isCorrect": true },
+        { "text": "L'océan Pacifique", "isCorrect": false },
+        { "text": "L'océan Atlantique", "isCorrect": false },
+        { "text": "La mer Méditerranée", "isCorrect": false }
+      ],
+      "explanation": "Cet archipel de près de 1 200 îles est l'un des pays les plus menacés par la montée des eaux."
+    },
+    {
+      "ref": "geo-199",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean", "amerique", "record"],
+      "text": "Quel courant marin froid remonte le long des côtes du Pérou et du Chili, dans l'océan Pacifique ?",
+      "answers": [
+        { "text": "Le courant de Humboldt", "isCorrect": true },
+        { "text": "Le Gulf Stream", "isCorrect": false },
+        { "text": "Le courant des Canaries", "isCorrect": false },
+        { "text": "Le courant du Labrador", "isCorrect": false }
+      ],
+      "explanation": "Ce courant, très riche en nutriments, fait des côtes péruviennes et chiliennes l'une des zones de pêche les plus productives du monde."
+    },
+    {
+      "ref": "geo-200",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "record"],
+      "text": "Quel océan entoure entièrement le continent Antarctique ?",
+      "answers": [
+        { "text": "L'océan Austral", "isCorrect": true },
+        { "text": "L'océan Arctique", "isCorrect": false },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Pacifique", "isCorrect": false }
+      ],
+      "explanation": "Aussi appelé océan Antarctique, il a été reconnu comme cinquième océan par plusieurs organisations cartographiques."
+    },
+    {
+      "ref": "geo-201",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "record"],
+      "text": "Environ quel pourcentage de la surface terrestre est recouvert par les océans ?",
+      "answers": [
+        { "text": "71 %", "isCorrect": true },
+        { "text": "50 %", "isCorrect": false },
+        { "text": "61 %", "isCorrect": false },
+        { "text": "81 %", "isCorrect": false }
+      ],
+      "explanation": "Les océans représentent plus des deux tiers de la surface de la planète."
+    },
+    {
+      "ref": "geo-202",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "amerique", "record"],
+      "text": "Quel canal artificiel relie l'océan Atlantique à l'océan Pacifique en traversant l'Amérique centrale ?",
+      "answers": [
+        { "text": "Le canal de Panama", "isCorrect": true },
+        { "text": "Le canal de Suez", "isCorrect": false },
+        { "text": "Le canal de Corinthe", "isCorrect": false },
+        { "text": "Le canal Kiel", "isCorrect": false }
+      ],
+      "explanation": "Ouvert en 1914, il permet d'éviter le contournement du cap Horn, à la pointe de l'Amérique du Sud."
+    },
+    {
+      "ref": "geo-203",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "detroit", "amerique", "record"],
+      "text": "Quel détroit relie l'océan Atlantique à l'océan Pacifique à l'extrémité sud de l'Amérique du Sud ?",
+      "answers": [
+        { "text": "Le détroit de Magellan", "isCorrect": true },
+        { "text": "Le canal de Panama", "isCorrect": false },
+        { "text": "Le détroit de Drake", "isCorrect": false },
+        { "text": "Le détroit de Beagle", "isCorrect": false }
+      ],
+      "explanation": "Magellan l'a découvert et traversé en 1520, lors de son expédition autour du monde."
+    },
+    {
+      "ref": "geo-204",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "afrique", "histoire"],
+      "text": "Quel cap, à la pointe sud de l'Afrique, marque traditionnellement la limite entre l'océan Atlantique et l'océan Indien ?",
+      "answers": [
+        { "text": "Le cap de Bonne-Espérance", "isCorrect": true },
+        { "text": "Le cap Horn", "isCorrect": false },
+        { "text": "Le cap Vert", "isCorrect": false },
+        { "text": "Le cap Nord", "isCorrect": false }
+      ],
+      "explanation": "Contourné pour la première fois par le navigateur portugais Bartolomeu Dias en 1488, il a ouvert la route maritime vers l'Inde."
+    },
+    {
+      "ref": "geo-205",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "record"],
+      "text": "Combien d'océans sont généralement reconnus dans la classification la plus courante (Pacifique, Atlantique, Indien, Arctique et Austral) ?",
+      "answers": [
+        { "text": "5", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Pendant longtemps, seuls quatre océans étaient reconnus avant que l'océan Austral ne s'ajoute à la liste dans de nombreuses classifications récentes."
+    },
+    {
+      "ref": "geo-206",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "oceanie", "record"],
+      "text": "Quel océan sépare l'Australie de l'Antarctique ?",
+      "answers": [
+        { "text": "L'océan Austral", "isCorrect": true },
+        { "text": "L'océan Pacifique", "isCorrect": false },
+        { "text": "L'océan Indien", "isCorrect": false },
+        { "text": "L'océan Atlantique", "isCorrect": false }
+      ],
+      "explanation": "Selon certaines classifications plus anciennes, cette zone est plutôt rattachée aux océans Pacifique et Indien."
     }
   ]
 }
