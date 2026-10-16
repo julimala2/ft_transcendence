@@ -1,9 +1,10 @@
-import { ProfilePage } from '../Pages/ProfilePage';
-import { FriendsPage } from '../Pages/FriendsPage';
-import { SettingsPage } from '../Pages/SettingsPage';
+import { AccountProfile } from './AccountProfile';
+import { AccountFriends } from './AccountFriends';
+import { AccountSettings } from './AccountSettings';
 
 export const accountTabs = [
-  { path: 'profile',  label: 'Profil',     element: <ProfilePage /> },
-  { path: 'friends',  label: 'Amis',       element: <FriendsPage /> },
-  { path: 'settings', label: 'Paramètres', element: <SettingsPage /> },
+  { path: 'profile',  label: 'Profil',     element: <AccountProfile /> },
+  { path: 'friends',  label: 'Amis',       element: <AccountFriends /> },
+  { path: 'settings', label: 'Paramètres', element: <AccountSettings /> },
+  { path: 'stats', label: 'Statistiques', element: <></>}
 ];

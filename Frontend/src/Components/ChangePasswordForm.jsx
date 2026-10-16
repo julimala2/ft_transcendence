@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../Hooks/useAuth';
-import { validatePassword } from './RegisterForm';
+import { validatePassword } from '../Account/AccountAuth';
 
 export function ChangePasswordForm( {onDone} ){
     const {changePassword } = useAuth();
