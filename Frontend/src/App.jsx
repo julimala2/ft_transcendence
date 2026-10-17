@@ -6,6 +6,7 @@ import { NotFoundPage } from './Pages/NotFoundPage';
 import { Modal } from './Account/Modal';
 import { AccountLayout } from './Account/AccountLayout';
 import { accountTabs } from './Account/AccountTabs';
+import { AccountPublic } from './Account/AccountPublic';
 import { AttemptPage } from './Quizs/Offline/AttemptPage';
 import { QuickStart } from './Quizs/Offline/QuickStart';
 import { CustomStart } from './Quizs/Offline/CustomStart';
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/play/offline/custom" element={<CustomStart />} />
         <Route path="/results/quick/:attemptId" element={<QuickResultsPage />} />
         <Route path="/results/custom/:attemptId" element={<CustomResultsPage />} />
+        <Route path="/users/:userId" element={<AccountPublic />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
