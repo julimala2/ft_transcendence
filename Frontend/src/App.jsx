@@ -2,13 +2,15 @@ import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Header } from './Navigation/Header';
 import { HomePage } from './Pages/HomePage';
 import { GamePage } from './Quizs/Online/GamePage';
-import { QuizSelectionPage } from './Quizs/Offline/QuizSelectionPage';
 import { NotFoundPage } from './Pages/NotFoundPage';
 import { Modal } from './Account/Modal';
 import { AccountLayout } from './Account/AccountLayout';
 import { accountTabs } from './Account/AccountTabs';
 import { AttemptPage } from './Quizs/Offline/AttemptPage';
-import { ResultsPage } from './Quizs/Offline/ResultsPage';
+import { QuickStart } from './Quizs/Offline/QuickStart';
+import { CustomStart } from './Quizs/Offline/CustomStart';
+import { QuickResultsPage } from './Quizs/Offline/QuickResultsPage';
+import { CustomResultsPage } from './Quizs/Offline/CustomResultsPage';
 
 export default function App() {
     const location = useLocation();
@@ -23,8 +25,10 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/game/:roomId" element={<GamePage />} />
         <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
-        <Route path="/play/offline" element={<QuizSelectionPage />} />
-        <Route path="/results/:attemptId" element={<ResultsPage />} />
+        <Route path="/play/offline/quick" element={<QuickStart />} />
+        <Route path="/play/offline/custom" element={<CustomStart />} />
+        <Route path="/results/quick/:attemptId" element={<QuickResultsPage />} />
+        <Route path="/results/custom/:attemptId" element={<CustomResultsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 

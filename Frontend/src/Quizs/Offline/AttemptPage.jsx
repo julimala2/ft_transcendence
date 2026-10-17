@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { getAttempt, submitAnswer } from "../../Api/quiz";
 import styles from "../../Styling/AttemptPage.module.css";
 
 
 export function AttemptPage() {
     const { attemptId } = useParams();
+    const [searchParams] = useSearchParams();
+    const mode = searchParams.get('mode');
     const navigate = useNavigate();
 
     const [attempt, setAttempt] = useState(null);
@@ -90,7 +92,13 @@ export function AttemptPage() {
     }
 
     function handleViewResults() {
-        navigate(`/results/${attempt.id}`);
+        if (mode === 'quick') {
+            navigate(`/results/quick/${attempt.id}`);
+        } else if (mode === 'custom') {
+            navigate(`/results/custom/${attempt.id}`);
+        } else {
+            navigate(`/results/quick/${attempt.id}`);
+        }
     }
 
     async function handleNextQuestion() {

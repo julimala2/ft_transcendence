@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
 import { getCategoryTags } from '../../Api/categories.jsx';
-import { QuizCard } from '../../Components/QuizCard.jsx';
 import styles from '../../Styling/QuizSelectionPage.module.css';
 
-export function QuizSelectionPage() {
+export function CustomStart() {
     //Data
     const [categories,setCategories] = useState([]);
     const [categoryTags, setCategoryTags] = useState([]);
@@ -115,7 +114,7 @@ export function QuizSelectionPage() {
         try {
             const attempt = await startCustomQuiz(requestBody);
             console.log("Quiz start :",attempt);
-            navigate(`/play/attempt/${attempt.id}`);
+            navigate(`/play/attempt/${attempt.id}?mode=custom`);
         } catch (err) {
             const errorMessage = err.error || err.message || "Erreur inconnue";
             if (errorMessage.includes("pas assez") || errorMessage.includes("questions") || errorMessage.includes("disponibles")) {
@@ -146,7 +145,7 @@ export function QuizSelectionPage() {
 
     return (
         <main className={`page`}>
-            <h1 className={styles.title}>Commencer un quizz :</h1>
+            <h1 className={styles.title}>Commencer un quizz custom</h1>
             
             <div className={styles.filters}>
                 <div className={styles.filterGroup}>
@@ -166,9 +165,9 @@ export function QuizSelectionPage() {
                     </div>
                 </div>
 
-                {selectedCategory && (
-                    <div className={styles.filterGroup}>
-                        <label>Tags :</label>
+                <div className={styles.filterGroup}>
+                    <label>Tags :</label>
+                    {selectedCategory ? (
                         <div className={styles.tagTiles}>
                             <div
                                 key="all"
@@ -192,103 +191,103 @@ export function QuizSelectionPage() {
                                 );
                             })}
                         </div>
+                    ) : (
+                        <p className={styles.availableInfo}>Sélectionnez une catégorie pour voir les tags</p>
+                    )}
+                </div>
+
+                <div className={styles.filterGroup}>
+                    <p className={styles.availableInfo}>
+                        Questions disponibles : {availableQuestions}
+                        {selectedTag === null ? selectedCategory ? " (tous tags)" : "" : ` (tag: ${categoryTags.find(t => (t.id === selectedTag) || (t.slug === selectedTag))?.name || categoryTags.find(t => (t.id === selectedTag) || (t.slug === selectedTag))?.slug || selectedTag})`}
+                    </p>
+                </div>
+                
+                <div className={styles.filterGroup}>
+                    <label>Difficulté :</label>
+                    <div className={styles.radioGroup}>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="difficulty"
+                                value={0}
+                                checked={difficulty === 0}
+                                onChange={() => setDifficulty(0)}
+                                disabled={!selectedCategory}
+                            />
+                            Aléatoire
+                        </label>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="difficulty"
+                                value={1}
+                                checked={difficulty === 1}
+                                onChange={() => setDifficulty(1)}
+                                disabled={!selectedCategory}
+                            />
+                            ⭐ Facile
+                        </label>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="difficulty"
+                                value={2}
+                                checked={difficulty === 2}
+                                onChange={() => setDifficulty(2)}
+                                disabled={!selectedCategory}
+                            />
+                            ⭐⭐ Moyenne
+                        </label>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="difficulty"
+                                value={3}
+                                checked={difficulty === 3}
+                                onChange={() => setDifficulty(3)}
+                                disabled={!selectedCategory}
+                            />
+                            ⭐⭐⭐ Difficile
+                        </label>
                     </div>
-                )}
+                </div>
 
-                {selectedCategory && selectedTag !== undefined && (
-                    <>
-                        <div className={styles.filterGroup}>
-                            <p className={styles.availableInfo}>
-                                Questions disponibles : {availableQuestions}
-                                {selectedTag === null ? " (tous tags)" : ` (tag: ${categoryTags.find(t => (t.id === selectedTag) || (t.slug === selectedTag))?.name || categoryTags.find(t => (t.id === selectedTag) || (t.slug === selectedTag))?.slug || selectedTag})`}
-                            </p>
+                <div className={styles.filterGroup}>
+                    <label>Nombre de questions: {questionCount}</label>
+                    <div className={styles.sliderContainer}>
+                        <div className={styles.sliderTicks}>
+                            <span>1</span>
+                            <span>25</span>
+                            <span>50</span>
                         </div>
-                        
-                        <div className={styles.filterGroup}>
-                            <label>Difficulté :</label>
-                            <div className={styles.radioGroup}>
-                                <label className={styles.radioLabel}>
-                                    <input
-                                        type="radio"
-                                        name="difficulty"
-                                        value={0}
-                                        checked={difficulty === 0}
-                                        onChange={() => setDifficulty(0)}
-                                    />
-                                    Aléatoire
-                                </label>
-                                <label className={styles.radioLabel}>
-                                    <input
-                                        type="radio"
-                                        name="difficulty"
-                                        value={1}
-                                        checked={difficulty === 1}
-                                        onChange={() => setDifficulty(1)}
-                                    />
-                                    ⭐ Facile
-                                </label>
-                                <label className={styles.radioLabel}>
-                                    <input
-                                        type="radio"
-                                        name="difficulty"
-                                        value={2}
-                                        checked={difficulty === 2}
-                                        onChange={() => setDifficulty(2)}
-                                    />
-                                    ⭐⭐ Moyenne
-                                </label>
-                                <label className={styles.radioLabel}>
-                                    <input
-                                        type="radio"
-                                        name="difficulty"
-                                        value={3}
-                                        checked={difficulty === 3}
-                                        onChange={() => setDifficulty(3)}
-                                    />
-                                    ⭐⭐⭐ Difficile
-                                </label>
-                            </div>
-                        </div>
+                        <input
+                            type="range"
+                            min={1}
+                            max={50}
+                            value={questionCount}
+                            onChange={(e) => setQuestionCount(Number(e.target.value))}
+                            className={styles.slider}
+                            disabled={!selectedCategory}
+                        />
+                    </div>
+                </div>
 
-                        <div className={styles.filterGroup}>
-                            <label>Nombre de questions: {questionCount}</label>
-                            <div className={styles.sliderContainer}>
-                                <div className={styles.sliderTicks}>
-                                    <span>1</span>
-                                    <span>25</span>
-                                    <span>50</span>
-                                    <span>75</span>
-                                    <span>100</span>
-                                </div>
-                                <input
-                                    type="range"
-                                    min={1}
-                                    max={100}
-                                    value={questionCount}
-                                    onChange={(e) => setQuestionCount(Number(e.target.value))}
-                                    className={styles.slider}
-                                />
-                            </div>
-                        </div>
-
-                        <button
-                            onClick={handleStartCustomQuiz}
-                            disabled={isStarting || questionCount > availableQuestions}
-                            className={styles.button}
-                            title={questionCount > availableQuestions ? `Seulement ${availableQuestions} questions disponibles` : ""}
-                        >
-                            {isStarting ? "Demarrage..." : "Démarrer le quiz"}
-                        </button>
-                        
-                        {questionCount > availableQuestions && (
-                            <p className={styles.warning}>
-                                ⚠️ Seules {availableQuestions} questions sont disponibles. Réduisez le nombre de questions.
-                            </p>
-                        )}
-                    </>
+                <button
+                    onClick={handleStartCustomQuiz}
+                    disabled={isStarting || !selectedCategory || questionCount > availableQuestions}
+                    className={styles.button}
+                    title={!selectedCategory ? "Sélectionnez une catégorie" : questionCount > availableQuestions ? `Seulement ${availableQuestions} questions disponibles` : ""}
+                >
+                    {isStarting ? "Demarrage..." : "Démarrer le quiz"}
+                </button>
+                
+                {questionCount > availableQuestions && selectedCategory && (
+                    <p className={styles.warning}>
+                        ⚠️ Seules {availableQuestions} questions sont disponibles. Réduisez le nombre de questions.
+                    </p>
                 )}
             </div>
-
 
         </main>
     );

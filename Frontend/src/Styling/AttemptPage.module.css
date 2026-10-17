@@ -1,9 +1,7 @@
 .main {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
+    padding-top: 12px;
 }
 
 .header {
