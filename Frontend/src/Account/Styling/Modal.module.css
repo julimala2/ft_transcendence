@@ -21,10 +21,13 @@
 
 .modalClose {
     position: absolute;
-    top: 8px;
-    right: 12px;
-    background: none;
-    border: 0;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    /* background: black; */
+    border: 1px solid gray;
+    border-radius: var(--radius-lg);
     font-size: 24px;
     cursor: pointer;
     color: var(--text);

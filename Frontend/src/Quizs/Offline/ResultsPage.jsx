@@ -55,8 +55,9 @@ export function ResultsPage() {
                 <p>Score: {attempt.score} / {attempt.total}</p>
             </div>
             <div>
-                <button onClick={() => navigate("/")}>Retour à l'accueil</button>
-                <button onClick={() => navigate("/quizzes")}>Rejouer</button>
+                <button onClick={() => navigate("/play/offline")} className="button">
+                    Refaire un quiz
+                </button>
             </div>
         </div>
     );

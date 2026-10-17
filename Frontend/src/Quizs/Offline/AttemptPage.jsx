@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getAttempt, submitAnswer } from "../../Api/quiz";
-import styles from "./AttemptPage.module.css";
+import styles from "../../Styling/AttemptPage.module.css";
 
 
 export function AttemptPage() {
@@ -14,6 +14,10 @@ export function AttemptPage() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [feedback, setFeedback] = useState(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [correctAnswerId, setCorrectAnswerId] = useState(null);
+    const [currentExplanation, setCurrentExplanation] = useState(null);
+    const [timeLeft, setTimeLeft] = useState(15);
+    const [isTimeout, setIsTimeout] = useState(false);
 
     useEffect(() => {
         async function loadAttempt() {
@@ -24,6 +28,9 @@ export function AttemptPage() {
                 setAttempt(data);
                 setFeedback(null);
                 setSelectedAnswer(null);
+                setCorrectAnswerId(null);
+                setTimeLeft(15);
+                setIsTimeout(false);
             } catch (err) {
                 setError(err.error || "Impossible de charger la partie");
             } finally {
@@ -33,36 +40,75 @@ export function AttemptPage() {
         loadAttempt();
     }, [attemptId]);
 
-    async function handleAnswerClick(answerId) {
+    // Timer de 15 secondes
+    useEffect(() => {
+        let timer;
+        if (attempt?.question && !feedback && !isSubmitting && timeLeft > 0) {
+            timer = setInterval(() => {
+                setTimeLeft(prev => {
+                    if (prev <= 1) {
+                        clearInterval(timer);
+                        setIsTimeout(true);
+                        handleAnswerClick(null);
+                        return 0;
+                    }
+                    return prev - 1;
+                });
+            }, 3000);
+        }
+        return () => clearInterval(timer);
+    }, [attempt?.question, feedback, isSubmitting, timeLeft]);
+
+    async function handleAnswerClick(answerId = null) {
         if (!attempt || feedback || isSubmitting) return;
 
         setIsSubmitting(true);
-        setSelectedAnswer(answerId);
+        if (answerId !== null) {
+            setSelectedAnswer(answerId);
+        }
 
         try {
-            const result = await submitAnswer(attempt.id, answerId);
-            setFeedback(result.isCorrect ? "correct" : "incorrect");
-
-            if (result.finished) {
-                setTimeout(() => {
-                    navigate(`/results/${attempt.id}`);
-                }, 1500);
+            let result;
+            if (answerId !== null) {
+                result = await submitAnswer(attempt.id, answerId);
             } else {
-                setTimeout(async () => {
-                    try {
-                        const nextAttempt = await getAttempt(Number(attemptId));
-                        setAttempt(nextAttempt);
-                        setFeedback(null);
-                        setSelectedAnswer(null);
-                        setIsSubmitting(false);
-                    } catch (err) {
-                        setError(err.error || "Erreur chargement question");
-                        setIsSubmitting(false);
-                    }
-                }, 1500);
+                result = { 
+                    isCorrect: false, 
+                    finished: false, 
+                    correctAnswerId: attempt.question.answers.find(a => a.isCorrect)?.id,
+                    explanation: attempt.question.explanation
+                };
             }
+            setFeedback(result.isCorrect ? "correct" : "incorrect");
+            setCorrectAnswerId(result.correctAnswerId);
+            setCurrentExplanation(result.explanation);
         } catch (err) {
             setError(err.error || "Erreur reponse");
+        } finally {
+            setIsSubmitting(false);
+        }
+    }
+
+    function handleViewResults() {
+        navigate(`/results/${attempt.id}`);
+    }
+
+    async function handleNextQuestion() {
+        if (!attempt || isSubmitting) return;
+
+        setIsSubmitting(true);
+        setFeedback(null);
+        setSelectedAnswer(null);
+        setCorrectAnswerId(null);
+        setTimeLeft(15);
+        setIsTimeout(false);
+
+        try {
+            const nextAttempt = await getAttempt(Number(attemptId));
+            setAttempt(nextAttempt);
+        } catch (err) {
+            setError(err.error || "Erreur chargement question");
+        } finally {
             setIsSubmitting(false);
         }
     }
@@ -129,13 +175,18 @@ export function AttemptPage() {
                     {attempt.question.text}
                 </h2>
 
+                {/* Timer */}
+                <div className={styles.timer}>
+                    Temps restant: {timeLeft}s
+                </div>
+
                 {/* Image de la question */}
                 {attempt.question.image && (
                     <div className={styles.questionImage}>
-                        <img 
-                            src={`/quiz-images/${attempt.question.image.src}`} 
-                            alt={attempt.question.image.alt || "Image de la question"}
-                        />
+                    <img
+                        src={`${import.meta.env.VITE_API_URL}/quiz-images/${attempt.question.image.src}`}
+                        alt={attempt.question.image.alt || "Image de la question"}
+                    />
                     </div>
                 )}
 
@@ -144,8 +195,8 @@ export function AttemptPage() {
                     {attempt.question.answers.map((answer) => {
                         const isSelected = selectedAnswer === answer.id;
                         const showFeedback = feedback !== null;
-                        const isCorrect = feedback === "correct" && answer.isCorrect;
-                        const isWrong = feedback === "incorrect" && isSelected;
+                        const isCorrectAnswer = showFeedback && answer.id === correctAnswerId;
+                        const isWrongSelection = feedback === "incorrect" && isSelected;
 
                         return (
                             <button
@@ -154,15 +205,15 @@ export function AttemptPage() {
                                 disabled={isSubmitting || feedback !== null}
                                 className={`${styles.answerButton}
                                     ${isSelected ? styles.selected : ""}
-                                    ${showFeedback && isCorrect ? styles.correct : ""}
-                                    ${showFeedback && isWrong ? styles.incorrect : ""}
+                                    ${isCorrectAnswer ? styles.feedbackCorrect : ""}
+                                    ${isWrongSelection ? styles.feedbackIncorrect : ""}
                                 `}
                             >
                                 {answer.text}
-                                {showFeedback && isCorrect && (
+                                {isCorrectAnswer && (
                                     <span className={styles.feedbackIcon}>✓</span>
                                 )}
-                                {showFeedback && isWrong && (
+                                {isWrongSelection && (
                                     <span className={styles.feedbackIcon}>✗</span>
                                 )}
                             </button>
@@ -176,16 +227,38 @@ export function AttemptPage() {
                         ${feedback === "correct" ? styles.feedbackCorrect : styles.feedbackIncorrect}
                     `}>
                         <p>
-                            {feedback === "correct" 
+                            {isTimeout ? "Temps écoulé !" : feedback === "correct" 
                                 ? "Bonne réponse ! ✓" 
                                 : "Mauvaise réponse ✗"}
                         </p>
-                        {attempt.question.explanation && (
+                        {currentExplanation && (
                             <p className={styles.explanation}>
-                                {attempt.question.explanation}
+                                {currentExplanation}
                             </p>
                         )}
                     </div>
+                )}
+
+                {/* Bouton Question suivante */}
+                {feedback && attempt.answered + 1 < attempt.total && (
+                    <button
+                        onClick={handleNextQuestion}
+                        disabled={isSubmitting}
+                        className={styles.button}
+                    >
+                        Question suivante
+                    </button>
+                )}
+
+                {/* Bouton Voir les résultats (dernière question) */}
+                {feedback && attempt.answered + 1 === attempt.total && (
+                    <button
+                        onClick={handleViewResults}
+                        disabled={isSubmitting}
+                        className={styles.button}
+                    >
+                        Voir les résultats
+                    </button>
                 )}
             </div>
         </div>

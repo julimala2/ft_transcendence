@@ -1,13 +1,14 @@
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Header } from './Navigation/Header';
 import { HomePage } from './Pages/HomePage';
-import { QuizSelectionPage } from './Pages/quizs/QuizSelectionPage';
+import { GamePage } from './Quizs/Online/GamePage';
+import { QuizSelectionPage } from './Quizs/Offline/QuizSelectionPage';
 import { NotFoundPage } from './Pages/NotFoundPage';
 import { Modal } from './Account/Modal';
 import { AccountLayout } from './Account/AccountLayout';
 import { accountTabs } from './Account/AccountTabs';
-import { AttemptPage } from './Pages/quizs/AttemptPage';
-import { ResultsPage } from './Pages/quizs/ResultsPage';
+import { AttemptPage } from './Quizs/Offline/AttemptPage';
+import { ResultsPage } from './Quizs/Offline/ResultsPage';
 
 export default function App() {
     const location = useLocation();
@@ -20,8 +21,9 @@ export default function App() {
       <Header />
       <Routes location={background || location}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/game/:roomId" element={<GamePage />} />
         <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
-        <Route path="/quizzes" element={<QuizSelectionPage />} />
+        <Route path="/play/offline" element={<QuizSelectionPage />} />
         <Route path="/results/:attemptId" element={<ResultsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
