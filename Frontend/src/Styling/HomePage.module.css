@@ -110,7 +110,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
 }
 
 .soloContainer button {
@@ -164,8 +164,8 @@
     justify-content: center;
     min-height: 70px;
     border-radius: 28px;
-    background: linear-gradient(135deg, #ffd166 0%, #ffec8b 100%);
-    color: #5a4d2b;
+    background: linear-gradient(135deg, #fca401 0%, #ffc15c 100%);
+    color: #f9f8f4;
     font-size: 1.75rem;
     font-weight: 700;
     width:100%;

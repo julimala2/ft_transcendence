@@ -12,6 +12,8 @@ import { QuickStart } from './Quizs/Offline/QuickStart';
 import { CustomStart } from './Quizs/Offline/CustomStart';
 import { QuickResultsPage } from './Quizs/Offline/QuickResultsPage';
 import { CustomResultsPage } from './Quizs/Offline/CustomResultsPage';
+import { EditQuiz } from './Quizs/Offline/EditQuiz';
+import TestPage from './Pages/TestPage';
 
 export default function App() {
     const location = useLocation();
@@ -31,7 +33,10 @@ export default function App() {
         <Route path="/results/quick/:attemptId" element={<QuickResultsPage />} />
         <Route path="/results/custom/:attemptId" element={<CustomResultsPage />} />
         <Route path="/users/:userId" element={<AccountPublic />} />
+        {/* <Route path="/quiz/newQuiz" element={<NewQuiz/>}/> */}
+        <Route path="/quiz/edit/:id?" element={<EditQuiz />}/>
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/test" element={<TestPage />} />
       </Routes>
 
       {background && (

@@ -3,7 +3,7 @@ import layoutStyles from '../Styling/Layout.module.css';
 
 export function NotFoundPage() {
     return (
-        <div className={layoutStyles.menu}>
+        <div className='page'>
             <h1>404</h1>
             <p>This page does not exist.</p>
             <Link to="/" className={layoutStyles.menuLink}>
