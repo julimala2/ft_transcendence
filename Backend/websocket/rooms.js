@@ -6,7 +6,10 @@ function joinRoom(roomId, ws) {
   }
   rooms[roomId].push(ws);
   ws.currentRoom = roomId;
-  console.log(`${ws.user.email} a rejoint la room ${roomId}`);
+  broadcast(roomId, {type: 'player_joined', data: {
+    user: ws.username, userId: ws.userId }}, 
+    ws);
+  ws.send(JSON.stringify({ type: 'joined_room', data: { roomId } }));
 }
 
 function leaveRoom(ws) {
@@ -24,7 +27,6 @@ function leaveRoom(ws) {
         ws);
     }
   }
-    console.log(`${ws.user.email} a quitté la room ${roomId}`);
 }
 
 

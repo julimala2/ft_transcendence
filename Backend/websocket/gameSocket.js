@@ -16,7 +16,6 @@ async function handleConnection(ws, req)
   ws.userId = ws.user.id;
   ws.currentRoom = null;
 
-  console.log('WebSocket connecté :', ws.username, ws.user);
 
   ws.on('message', (data) => {
     try {
