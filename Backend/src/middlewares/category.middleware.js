@@ -15,4 +15,15 @@ function validateCategoryBody(req, res, next) {
   next();
 }
 
-module.exports = { validateCategoryId, validateCategoryBody };
+function validateTagsQuery(req, res, next) {
+  const { search } = req.query;
+  if (search !== undefined) {
+    if (typeof search !== 'string' || search.length > 50) {
+      return res.status(400).json({ error: '"search" doit être un texte de 50 caractères maximum' });
+    }
+  }
+  req.search = search ? search.trim().toLowerCase() : undefined;
+  next();
+}
+
+module.exports = { validateCategoryId, validateCategoryBody, validateTagsQuery };

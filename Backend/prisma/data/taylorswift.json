@@ -1,0 +1,2339 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 165,
+    "parDifficulte": { "1": 55, "2": 55, "3": 55 },
+    "parType": { "multiple": 165, "boolean": 0 },
+    "avecImage": 0,
+    "sansImage": 165,
+    "parTag": {
+      "album": 52,
+      "paroles": 37,
+      "collaboration": 19,
+      "single": 16,
+      "tournee": 16,
+      "taylors-version": 15,
+      "date": 14,
+      "ecran": 11,
+      "record": 10,
+      "recompense": 5
+    }
+  },
+  "category": {
+    "slug": "taylor-swift",
+    "name": "Taylor Swift"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "ts-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Comment s'appelle le premier album de Taylor Swift ?",
+      "answers": [
+        { "text": "Speak Now", "isCorrect": false },
+        { "text": "Taylor Swift", "isCorrect": true },
+        { "text": "Debut", "isCorrect": false },
+        { "text": "Fearless", "isCorrect": false }
+      ],
+      "explanation": "Son premier album, sorti en 2006, porte simplement son nom."
+    },
+    {
+      "ref": "ts-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "De quel genre musical Taylor Swift est-elle issue ?",
+      "answers": [
+        { "text": "La country", "isCorrect": true },
+        { "text": "Le jazz", "isCorrect": false },
+        { "text": "Le rock", "isCorrect": false },
+        { "text": "Le R&B", "isCorrect": false }
+      ],
+      "explanation": "Elle a débuté à Nashville, capitale de la country, avant de passer à la pop."
+    },
+    {
+      "ref": "ts-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort l'album 1989 ?",
+      "answers": [
+        { "text": "2012", "isCorrect": false },
+        { "text": "2016", "isCorrect": false },
+        { "text": "1989", "isCorrect": false },
+        { "text": "2014", "isCorrect": true }
+      ],
+      "explanation": "Malgré son titre, l'album est sorti en octobre 2014."
+    },
+    {
+      "ref": "ts-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "À quoi fait référence le titre de l'album 1989 ?",
+      "answers": [
+        { "text": "L'année de naissance de Taylor", "isCorrect": true },
+        { "text": "L'année de la chute du mur de Berlin", "isCorrect": false },
+        { "text": "Le numéro de sa première maison", "isCorrect": false },
+        { "text": "L'année de sortie de son premier single", "isCorrect": false }
+      ],
+      "explanation": "Elle s'est inspirée de la pop de la fin des années 1980, l'époque où elle est née."
+    },
+    {
+      "ref": "ts-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album marque officiellement son passage de la country à la pop ?",
+      "answers": [
+        { "text": "1989", "isCorrect": true },
+        { "text": "Red", "isCorrect": false },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "Fearless", "isCorrect": false }
+      ],
+      "explanation": "Red mélangeait déjà les deux styles, mais 1989 est présenté comme son premier album entièrement pop."
+    },
+    {
+      "ref": "ts-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "Quel album surprise sort en juillet 2020, en pleine pandémie ?",
+      "answers": [
+        { "text": "Midnights", "isCorrect": false },
+        { "text": "folklore", "isCorrect": true },
+        { "text": "evermore", "isCorrect": false },
+        { "text": "Lover", "isCorrect": false }
+      ],
+      "explanation": "Taylor l'annonce la veille de sa sortie, sans aucune promotion préalable."
+    },
+    {
+      "ref": "ts-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "Quel album sort en décembre 2020, comme « album frère » de folklore ?",
+      "answers": [
+        { "text": "Midnights", "isCorrect": false },
+        { "text": "evermore", "isCorrect": true },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "reputation", "isCorrect": false }
+      ],
+      "explanation": "Moins de cinq mois après folklore, elle surprend une nouvelle fois ses fans."
+    },
+    {
+      "ref": "ts-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "Quel album sort en 2019 ?",
+      "answers": [
+        { "text": "Lover", "isCorrect": true },
+        { "text": "reputation", "isCorrect": false },
+        { "text": "1989", "isCorrect": false },
+        { "text": "folklore", "isCorrect": false }
+      ],
+      "explanation": "Lover suit reputation (2017) et précède folklore (2020)."
+    },
+    {
+      "ref": "ts-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "Quel album sort en 2017 ?",
+      "answers": [
+        { "text": "reputation", "isCorrect": true },
+        { "text": "Red", "isCorrect": false },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "1989", "isCorrect": false }
+      ],
+      "explanation": "Il arrive trois ans après 1989."
+    },
+    {
+      "ref": "ts-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort The Tortured Poets Department ?",
+      "answers": [
+        { "text": "2025", "isCorrect": false },
+        { "text": "2024", "isCorrect": true },
+        { "text": "2022", "isCorrect": false },
+        { "text": "2023", "isCorrect": false }
+      ],
+      "explanation": "Il sort en avril 2024, en plein Eras Tour."
+    },
+    {
+      "ref": "ts-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort The Life of a Showgirl ?",
+      "answers": [
+        { "text": "2026", "isCorrect": false },
+        { "text": "2025", "isCorrect": true },
+        { "text": "2024", "isCorrect": false },
+        { "text": "2023", "isCorrect": false }
+      ],
+      "explanation": "Il sort le 3 octobre 2025."
+    },
+    {
+      "ref": "ts-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album est sorti en version double, avec une seconde partie appelée « The Anthology » ?",
+      "answers": [
+        { "text": "Midnights", "isCorrect": false },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "The Tortured Poets Department", "isCorrect": true },
+        { "text": "folklore", "isCorrect": false }
+      ],
+      "explanation": "Deux heures après la sortie de l'album, Taylor dévoile quinze chansons de plus."
+    },
+    {
+      "ref": "ts-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel animal est le symbole de l'ère reputation ?",
+      "answers": [
+        { "text": "Le papillon", "isCorrect": false },
+        { "text": "Le chat", "isCorrect": false },
+        { "text": "Le serpent", "isCorrect": true },
+        { "text": "Le corbeau", "isCorrect": false }
+      ],
+      "explanation": "Taylor a repris le serpent, d'abord utilisé contre elle sur les réseaux sociaux, pour en faire l'emblème de l'album."
+    },
+    {
+      "ref": "ts-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Que désigne l'expression « easter eggs » chez les fans de Taylor Swift ?",
+      "answers": [
+        { "text": "Des indices cachés dans ses clips, ses tenues ou ses publications", "isCorrect": true },
+        { "text": "Des chansons bonus vendues à Pâques", "isCorrect": false },
+        { "text": "Des éditions limitées de ses albums", "isCorrect": false },
+        { "text": "Des concerts surprises", "isCorrect": false }
+      ],
+      "explanation": "Taylor sème régulièrement des indices sur ses prochains projets, que ses fans s'amusent à décrypter."
+    },
+    {
+      "ref": "ts-015",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Comment surnomme-t-on les fans de Taylor Swift ?",
+      "answers": [
+        { "text": "Les Swifters", "isCorrect": false },
+        { "text": "Les Taylorettes", "isCorrect": false },
+        { "text": "Les Swifties", "isCorrect": true },
+        { "text": "Les Tay-Tays", "isCorrect": false }
+      ],
+      "explanation": "Le mot est aujourd'hui entré dans plusieurs dictionnaires anglais."
+    },
+    {
+      "ref": "ts-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel est le chiffre porte-bonheur de Taylor Swift ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "22", "isCorrect": false },
+        { "text": "89", "isCorrect": false },
+        { "text": "13", "isCorrect": true }
+      ],
+      "explanation": "On le retrouve partout : elle le dessinait sur sa main en concert, et Midnights compte 13 titres."
+    },
+    {
+      "ref": "ts-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient Shake It Off, Blank Space et Style ?",
+      "answers": [
+        { "text": "reputation", "isCorrect": false },
+        { "text": "1989", "isCorrect": true },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "Red", "isCorrect": false }
+      ],
+      "explanation": "Ces trois titres font partie des plus grands succès de sa période pop."
+    },
+    {
+      "ref": "ts-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient Love Story et You Belong with Me ?",
+      "answers": [
+        { "text": "Red", "isCorrect": false },
+        { "text": "Taylor Swift", "isCorrect": false },
+        { "text": "Fearless", "isCorrect": true },
+        { "text": "Speak Now", "isCorrect": false }
+      ],
+      "explanation": "Fearless (2008) est l'album qui l'a fait connaître dans le monde entier."
+    },
+    {
+      "ref": "ts-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient cardigan et exile ?",
+      "answers": [
+        { "text": "evermore", "isCorrect": false },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "Midnights", "isCorrect": false },
+        { "text": "folklore", "isCorrect": true }
+      ],
+      "explanation": "exile est un duo avec le groupe Bon Iver."
+    },
+    {
+      "ref": "ts-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient Anti-Hero et Karma ?",
+      "answers": [
+        { "text": "The Tortured Poets Department", "isCorrect": false },
+        { "text": "Midnights", "isCorrect": true },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "reputation", "isCorrect": false }
+      ],
+      "explanation": "Midnights est sorti en octobre 2022."
+    },
+    {
+      "ref": "ts-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient We Are Never Ever Getting Back Together et 22 ?",
+      "answers": [
+        { "text": "Fearless", "isCorrect": false },
+        { "text": "1989", "isCorrect": false },
+        { "text": "Red", "isCorrect": true },
+        { "text": "Speak Now", "isCorrect": false }
+      ],
+      "explanation": "Red (2012) annonce déjà le virage pop qui suivra."
+    },
+    {
+      "ref": "ts-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient Look What You Made Me Do et Delicate ?",
+      "answers": [
+        { "text": "Lover", "isCorrect": false },
+        { "text": "reputation", "isCorrect": true },
+        { "text": "Midnights", "isCorrect": false },
+        { "text": "1989", "isCorrect": false }
+      ],
+      "explanation": "reputation est l'album le plus sombre et le plus électro de Taylor."
+    },
+    {
+      "ref": "ts-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album"],
+      "text": "Quel album contient Cruel Summer et The Man ?",
+      "answers": [
+        { "text": "Lover", "isCorrect": true },
+        { "text": "Midnights", "isCorrect": false },
+        { "text": "1989", "isCorrect": false },
+        { "text": "reputation", "isCorrect": false }
+      ],
+      "explanation": "Lover est son premier album dont elle possède les enregistrements originaux."
+    },
+    {
+      "ref": "ts-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le tout premier single de Taylor Swift ?",
+      "answers": [
+        { "text": "Love Story", "isCorrect": false },
+        { "text": "Teardrops on My Guitar", "isCorrect": false },
+        { "text": "Tim McGraw", "isCorrect": true },
+        { "text": "Our Song", "isCorrect": false }
+      ],
+      "explanation": "Il sort en 2006, quelques mois avant son premier album."
+    },
+    {
+      "ref": "ts-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "D'où vient le titre du single Tim McGraw ?",
+      "answers": [
+        { "text": "Du nom d'un chanteur de country", "isCorrect": true },
+        { "text": "D'une ville du Tennessee", "isCorrect": false },
+        { "text": "D'un personnage de film", "isCorrect": false },
+        { "text": "Du nom de son premier petit ami", "isCorrect": false }
+      ],
+      "explanation": "Dans la chanson, une jeune fille espère que son ancien amour pensera à elle en écoutant une chanson de Tim McGraw."
+    },
+    {
+      "ref": "ts-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le premier single de l'album 1989 ?",
+      "answers": [
+        { "text": "Bad Blood", "isCorrect": false },
+        { "text": "Style", "isCorrect": false },
+        { "text": "Blank Space", "isCorrect": false },
+        { "text": "Shake It Off", "isCorrect": true }
+      ],
+      "explanation": "Sorti en août 2014, il annonce le virage pop de l'album."
+    },
+    {
+      "ref": "ts-027",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le premier single de Midnights ?",
+      "answers": [
+        { "text": "Lavender Haze", "isCorrect": false },
+        { "text": "Bejeweled", "isCorrect": false },
+        { "text": "Anti-Hero", "isCorrect": true },
+        { "text": "Karma", "isCorrect": false }
+      ],
+      "explanation": "Il est resté plusieurs semaines numéro 1 aux États-Unis."
+    },
+    {
+      "ref": "ts-028",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le premier single de folklore ?",
+      "answers": [
+        { "text": "the 1", "isCorrect": false },
+        { "text": "cardigan", "isCorrect": true },
+        { "text": "exile", "isCorrect": false },
+        { "text": "august", "isCorrect": false }
+      ],
+      "explanation": "Il sort le même jour que l'album, accompagné d'un clip."
+    },
+    {
+      "ref": "ts-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le premier single de reputation ?",
+      "answers": [
+        { "text": "End Game", "isCorrect": false },
+        { "text": "Delicate", "isCorrect": false },
+        { "text": "...Ready for It?", "isCorrect": false },
+        { "text": "Look What You Made Me Do", "isCorrect": true }
+      ],
+      "explanation": "Il sort en août 2017, après plusieurs jours de silence total sur ses réseaux sociaux."
+    },
+    {
+      "ref": "ts-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le premier single de The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Down Bad", "isCorrect": false },
+        { "text": "Fortnight", "isCorrect": true },
+        { "text": "Florida!!!", "isCorrect": false },
+        { "text": "So Long, London", "isCorrect": false }
+      ],
+      "explanation": "Fortnight est un duo avec Post Malone."
+    },
+    {
+      "ref": "ts-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["single"],
+      "text": "Quel est le premier single de The Life of a Showgirl ?",
+      "answers": [
+        { "text": "Elizabeth Taylor", "isCorrect": false },
+        { "text": "The Fate of Ophelia", "isCorrect": true },
+        { "text": "Cancelled!", "isCorrect": false },
+        { "text": "Opalite", "isCorrect": false }
+      ],
+      "explanation": "Il sort en même temps que l'album, en octobre 2025."
+    },
+    {
+      "ref": "ts-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "De quelle histoire Love Story s'inspire-t-elle ?",
+      "answers": [
+        { "text": "La Belle et la Bête", "isCorrect": false },
+        { "text": "Roméo et Juliette", "isCorrect": true },
+        { "text": "Cendrillon", "isCorrect": false },
+        { "text": "Orgueil et Préjugés", "isCorrect": false }
+      ],
+      "explanation": "Contrairement à la pièce de Shakespeare, la chanson se termine bien."
+    },
+    {
+      "ref": "ts-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « It's me, hi, I'm the problem, it's me » ?",
+      "answers": [
+        { "text": "Blank Space", "isCorrect": false },
+        { "text": "Mastermind", "isCorrect": false },
+        { "text": "Karma", "isCorrect": false },
+        { "text": "Anti-Hero", "isCorrect": true }
+      ],
+      "explanation": "La chanson parle de ses propres défauts et de ses angoisses."
+    },
+    {
+      "ref": "ts-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « Got a long list of ex-lovers » ?",
+      "answers": [
+        { "text": "Style", "isCorrect": false },
+        { "text": "Bad Blood", "isCorrect": false },
+        { "text": "Blank Space", "isCorrect": true },
+        { "text": "Shake It Off", "isCorrect": false }
+      ],
+      "explanation": "Taylor y caricature l'image de croqueuse d'hommes que lui prêtait la presse."
+    },
+    {
+      "ref": "ts-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson entend-on « The old Taylor can't come to the phone right now » ?",
+      "answers": [
+        { "text": "Shake It Off", "isCorrect": false },
+        { "text": "...Ready for It?", "isCorrect": false },
+        { "text": "Anti-Hero", "isCorrect": false },
+        { "text": "Look What You Made Me Do", "isCorrect": true }
+      ],
+      "explanation": "La phrase annonce la nouvelle image, plus sombre, de l'ère reputation."
+    },
+    {
+      "ref": "ts-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « haters gonna hate » ?",
+      "answers": [
+        { "text": "Blank Space", "isCorrect": false },
+        { "text": "Shake It Off", "isCorrect": true },
+        { "text": "Bad Blood", "isCorrect": false },
+        { "text": "Mean", "isCorrect": false }
+      ],
+      "explanation": "Le message de la chanson : ignorer les critiques et continuer à danser."
+    },
+    {
+      "ref": "ts-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « She wears short skirts, I wear T-shirts » ?",
+      "answers": [
+        { "text": "Our Song", "isCorrect": false },
+        { "text": "Love Story", "isCorrect": false },
+        { "text": "You Belong with Me", "isCorrect": true },
+        { "text": "Fifteen", "isCorrect": false }
+      ],
+      "explanation": "Elle s'y compare à la petite amie du garçon qu'elle aime en secret."
+    },
+    {
+      "ref": "ts-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Complétez les paroles : « I don't know about you, but I'm feeling… »",
+      "answers": [
+        { "text": "23", "isCorrect": false },
+        { "text": "13", "isCorrect": false },
+        { "text": "21", "isCorrect": false },
+        { "text": "22", "isCorrect": true }
+      ],
+      "explanation": "La chanson 22 célèbre l'insouciance de cet âge."
+    },
+    {
+      "ref": "ts-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["collaboration"],
+      "text": "Avec quel chanteur Taylor interprète-t-elle Everything Has Changed ?",
+      "answers": [
+        { "text": "Harry Styles", "isCorrect": false },
+        { "text": "Shawn Mendes", "isCorrect": false },
+        { "text": "Niall Horan", "isCorrect": false },
+        { "text": "Ed Sheeran", "isCorrect": true }
+      ],
+      "explanation": "Ce duo figure sur l'album Red, en 2012."
+    },
+    {
+      "ref": "ts-040",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["collaboration"],
+      "text": "Avec quel artiste Taylor chante-t-elle Fortnight ?",
+      "answers": [
+        { "text": "The Weeknd", "isCorrect": false },
+        { "text": "Kendrick Lamar", "isCorrect": false },
+        { "text": "Post Malone", "isCorrect": true },
+        { "text": "Drake", "isCorrect": false }
+      ],
+      "explanation": "C'est le premier single de The Tortured Poets Department."
+    },
+    {
+      "ref": "ts-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["taylors-version"],
+      "text": "Pourquoi Taylor Swift a-t-elle réenregistré ses anciens albums ?",
+      "answers": [
+        { "text": "Parce que les bandes originales avaient été détruites", "isCorrect": false },
+        { "text": "Pour les sortir en vinyle", "isCorrect": false },
+        { "text": "Pour posséder les enregistrements originaux de ses chansons", "isCorrect": true },
+        { "text": "Pour les traduire dans d'autres langues", "isCorrect": false }
+      ],
+      "explanation": "Ses six premiers albums appartenaient à son ancien label, qui les a vendus en 2019 sans qu'elle puisse les racheter."
+    },
+    {
+      "ref": "ts-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["taylors-version"],
+      "text": "Quel album est le premier à sortir en « Taylor's Version » ?",
+      "answers": [
+        { "text": "Fearless", "isCorrect": true },
+        { "text": "Red", "isCorrect": false },
+        { "text": "Speak Now", "isCorrect": false },
+        { "text": "1989", "isCorrect": false }
+      ],
+      "explanation": "Fearless (Taylor's Version) sort en avril 2021."
+    },
+    {
+      "ref": "ts-043",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["taylors-version"],
+      "text": "Que désignent les chansons « From the Vault » des Taylor's Version ?",
+      "answers": [
+        { "text": "Des chansons écrites par ses fans", "isCorrect": false },
+        { "text": "Des chansons inédites écrites à l'époque de l'album original", "isCorrect": true },
+        { "text": "Des versions acoustiques", "isCorrect": false },
+        { "text": "Des remixes", "isCorrect": false }
+      ],
+      "explanation": "Elles n'avaient pas été retenues à l'époque, et Taylor les enregistre enfin."
+    },
+    {
+      "ref": "ts-044",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["taylors-version"],
+      "text": "Quelle chanson a été publiée dans une version de dix minutes ?",
+      "answers": [
+        { "text": "All Too Well", "isCorrect": true },
+        { "text": "Enchanted", "isCorrect": false },
+        { "text": "Love Story", "isCorrect": false },
+        { "text": "Champagne Problems", "isCorrect": false }
+      ],
+      "explanation": "Elle figure sur Red (Taylor's Version), en 2021."
+    },
+    {
+      "ref": "ts-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Comment s'appelle la tournée mondiale de 2023-2024 qui revisite toutes les périodes de sa carrière ?",
+      "answers": [
+        { "text": "The Midnights Tour", "isCorrect": false },
+        { "text": "The Eras Tour", "isCorrect": true },
+        { "text": "The Lover Tour", "isCorrect": false },
+        { "text": "The 1989 World Tour", "isCorrect": false }
+      ],
+      "explanation": "Chaque partie du concert est consacrée à un album différent."
+    },
+    {
+      "ref": "ts-046",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee", "record"],
+      "text": "Quel record bat le Eras Tour ?",
+      "answers": [
+        { "text": "C'est la tournée qui a visité le plus de pays", "isCorrect": false },
+        { "text": "C'est la tournée la plus longue de l'histoire", "isCorrect": false },
+        { "text": "C'est la tournée la plus lucrative de l'histoire", "isCorrect": true },
+        { "text": "C'est la première tournée diffusée en direct", "isCorrect": false }
+      ],
+      "explanation": "Elle a rapporté plus de deux milliards de dollars."
+    },
+    {
+      "ref": "ts-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee", "ecran"],
+      "text": "En quelle année sort au cinéma le film du Eras Tour ?",
+      "answers": [
+        { "text": "2022", "isCorrect": false },
+        { "text": "2023", "isCorrect": true },
+        { "text": "2025", "isCorrect": false },
+        { "text": "2024", "isCorrect": false }
+      ],
+      "explanation": "Il sort en octobre 2023, alors que la tournée est encore en cours."
+    },
+    {
+      "ref": "ts-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Dans quelle salle Taylor Swift a-t-elle joué le Eras Tour à Paris ?",
+      "answers": [
+        { "text": "La Paris La Défense Arena", "isCorrect": true },
+        { "text": "Le Stade de France", "isCorrect": false },
+        { "text": "Le Parc des Princes", "isCorrect": false },
+        { "text": "L'Accor Arena (Bercy)", "isCorrect": false }
+      ],
+      "explanation": "Elle y donne quatre concerts en mai 2024."
+    },
+    {
+      "ref": "ts-049",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Dans quelle autre ville française le Eras Tour s'est-il arrêté ?",
+      "answers": [
+        { "text": "Lyon", "isCorrect": true },
+        { "text": "Marseille", "isCorrect": false },
+        { "text": "Lille", "isCorrect": false },
+        { "text": "Bordeaux", "isCorrect": false }
+      ],
+      "explanation": "Taylor y donne deux concerts au Groupama Stadium, en juin 2024."
+    },
+    {
+      "ref": "ts-050",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recompense"],
+      "text": "Quel magazine a nommé Taylor Swift Personnalité de l'année 2023 ?",
+      "answers": [
+        { "text": "Billboard", "isCorrect": false },
+        { "text": "Time", "isCorrect": true },
+        { "text": "Vogue", "isCorrect": false },
+        { "text": "Rolling Stone", "isCorrect": false }
+      ],
+      "explanation": "C'est la première fois qu'une artiste est choisie pour sa seule activité artistique."
+    },
+    {
+      "ref": "ts-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort Fearless ?",
+      "answers": [
+        { "text": "2012", "isCorrect": false },
+        { "text": "2010", "isCorrect": false },
+        { "text": "2008", "isCorrect": true },
+        { "text": "2006", "isCorrect": false }
+      ],
+      "explanation": "Il sort en novembre 2008, deux ans après son premier album."
+    },
+    {
+      "ref": "ts-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort Red ?",
+      "answers": [
+        { "text": "2014", "isCorrect": false },
+        { "text": "2010", "isCorrect": false },
+        { "text": "2013", "isCorrect": false },
+        { "text": "2012", "isCorrect": true }
+      ],
+      "explanation": "Il sort en octobre 2012."
+    },
+    {
+      "ref": "ts-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort Midnights ?",
+      "answers": [
+        { "text": "2021", "isCorrect": false },
+        { "text": "2022", "isCorrect": true },
+        { "text": "2023", "isCorrect": false },
+        { "text": "2020", "isCorrect": false }
+      ],
+      "explanation": "Il sort en octobre 2022."
+    },
+    {
+      "ref": "ts-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort Speak Now ?",
+      "answers": [
+        { "text": "2008", "isCorrect": false },
+        { "text": "2012", "isCorrect": false },
+        { "text": "2010", "isCorrect": true },
+        { "text": "2011", "isCorrect": false }
+      ],
+      "explanation": "Il sort en octobre 2010."
+    },
+    {
+      "ref": "ts-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album", "date"],
+      "text": "En quelle année sort le premier album de Taylor Swift ?",
+      "answers": [
+        { "text": "2004", "isCorrect": false },
+        { "text": "2006", "isCorrect": true },
+        { "text": "2009", "isCorrect": false },
+        { "text": "2008", "isCorrect": false }
+      ],
+      "explanation": "Taylor a alors 16 ans."
+    },
+    {
+      "ref": "ts-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Combien d'albums studio originaux Taylor Swift a-t-elle sortis entre 2006 et 2025 ?",
+      "answers": [
+        { "text": "9", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "12", "isCorrect": true }
+      ],
+      "explanation": "De Taylor Swift (2006) à The Life of a Showgirl (2025), sans compter les Taylor's Version."
+    },
+    {
+      "ref": "ts-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel album Taylor a-t-elle écrit entièrement seule, sans aucun coauteur ?",
+      "answers": [
+        { "text": "Fearless", "isCorrect": false },
+        { "text": "1989", "isCorrect": false },
+        { "text": "Red", "isCorrect": false },
+        { "text": "Speak Now", "isCorrect": true }
+      ],
+      "explanation": "Elle voulait répondre à ceux qui doutaient qu'elle écrive vraiment ses chansons."
+    },
+    {
+      "ref": "ts-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel est le concept de l'album Midnights ?",
+      "answers": [
+        { "text": "Des histoires de nuits blanches", "isCorrect": true },
+        { "text": "Un voyage autour du monde", "isCorrect": false },
+        { "text": "Un concert enregistré à minuit", "isCorrect": false },
+        { "text": "Les saisons de l'année", "isCorrect": false }
+      ],
+      "explanation": "Taylor le présente comme les histoires de 13 nuits blanches réparties dans sa vie."
+    },
+    {
+      "ref": "ts-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Combien de chansons compte l'édition complète de The Tortured Poets Department (The Anthology) ?",
+      "answers": [
+        { "text": "40", "isCorrect": false },
+        { "text": "22", "isCorrect": false },
+        { "text": "13", "isCorrect": false },
+        { "text": "31", "isCorrect": true }
+      ],
+      "explanation": "L'album standard en compte 16, auxquelles s'ajoutent 15 chansons dévoilées deux heures plus tard."
+    },
+    {
+      "ref": "ts-060",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Qu'a fait Taylor sur ses réseaux sociaux juste avant d'annoncer reputation ?",
+      "answers": [
+        { "text": "Elle a publié une chanson par jour", "isCorrect": false },
+        { "text": "Elle a effacé toutes ses publications", "isCorrect": true },
+        { "text": "Elle a fermé ses comptes pendant un an", "isCorrect": false },
+        { "text": "Elle a changé de nom d'utilisateur", "isCorrect": false }
+      ],
+      "explanation": "Puis elle a publié de courtes vidéos d'un serpent, avant d'annoncer l'album."
+    },
+    {
+      "ref": "ts-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel album sort juste après Red ?",
+      "answers": [
+        { "text": "Lover", "isCorrect": false },
+        { "text": "reputation", "isCorrect": false },
+        { "text": "Speak Now", "isCorrect": false },
+        { "text": "1989", "isCorrect": true }
+      ],
+      "explanation": "Deux ans séparent Red (2012) et 1989 (2014)."
+    },
+    {
+      "ref": "ts-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quelle couleur est associée à l'album Speak Now ?",
+      "answers": [
+        { "text": "Le vert", "isCorrect": false },
+        { "text": "Le rouge", "isCorrect": false },
+        { "text": "Le violet", "isCorrect": true },
+        { "text": "Le doré", "isCorrect": false }
+      ],
+      "explanation": "Taylor porte une robe violette sur la pochette de l'album."
+    },
+    {
+      "ref": "ts-063",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel membre du groupe The National a coproduit folklore et evermore ?",
+      "answers": [
+        { "text": "Jack Antonoff", "isCorrect": false },
+        { "text": "Max Martin", "isCorrect": false },
+        { "text": "Aaron Dessner", "isCorrect": true },
+        { "text": "Justin Vernon", "isCorrect": false }
+      ],
+      "explanation": "Ils ont composé la plupart des chansons à distance, pendant le confinement. Justin Vernon est le chanteur de Bon Iver."
+    },
+    {
+      "ref": "ts-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel producteur suédois a coproduit de nombreux tubes de 1989, comme Shake It Off et Blank Space ?",
+      "answers": [
+        { "text": "Jack Antonoff", "isCorrect": false },
+        { "text": "Calvin Harris", "isCorrect": false },
+        { "text": "Max Martin", "isCorrect": true },
+        { "text": "Aaron Dessner", "isCorrect": false }
+      ],
+      "explanation": "Avec son partenaire Shellback, il a aussi travaillé sur Red, puis sur The Life of a Showgirl."
+    },
+    {
+      "ref": "ts-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quelle tradition entoure la cinquième chanson de chaque album de Taylor ?",
+      "answers": [
+        { "text": "C'est toujours le premier single", "isCorrect": false },
+        { "text": "C'est toujours la plus courte", "isCorrect": false },
+        { "text": "C'est toujours un duo", "isCorrect": false },
+        { "text": "C'est souvent la plus émotionnelle et la plus personnelle", "isCorrect": true }
+      ],
+      "explanation": "All Too Well, Dear John ou my tears ricochet sont toutes des « track 5 »."
+    },
+    {
+      "ref": "ts-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Lors de quelle cérémonie Taylor annonce-t-elle The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Les Brit Awards 2024", "isCorrect": false },
+        { "text": "Les Grammy Awards 2024", "isCorrect": true },
+        { "text": "Les MTV Video Music Awards 2023", "isCorrect": false },
+        { "text": "Les American Music Awards 2023", "isCorrect": false }
+      ],
+      "explanation": "Elle l'annonce sur scène, en recevant le Grammy du meilleur album pop vocal pour Midnights."
+    },
+    {
+      "ref": "ts-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["single"],
+      "text": "Quel est le premier single de Lover ?",
+      "answers": [
+        { "text": "You Need to Calm Down", "isCorrect": false },
+        { "text": "ME!", "isCorrect": true },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "The Man", "isCorrect": false }
+      ],
+      "explanation": "ME! est un duo avec Brendon Urie, du groupe Panic! at the Disco."
+    },
+    {
+      "ref": "ts-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["single"],
+      "text": "Quel est le premier single de Red ?",
+      "answers": [
+        { "text": "We Are Never Ever Getting Back Together", "isCorrect": true },
+        { "text": "I Knew You Were Trouble", "isCorrect": false },
+        { "text": "Red", "isCorrect": false },
+        { "text": "22", "isCorrect": false }
+      ],
+      "explanation": "Il devient son premier numéro 1 aux États-Unis."
+    },
+    {
+      "ref": "ts-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["single"],
+      "text": "Quel est le premier single de Fearless ?",
+      "answers": [
+        { "text": "Love Story", "isCorrect": true },
+        { "text": "White Horse", "isCorrect": false },
+        { "text": "You Belong with Me", "isCorrect": false },
+        { "text": "Fifteen", "isCorrect": false }
+      ],
+      "explanation": "Il sort en septembre 2008, deux mois avant l'album."
+    },
+    {
+      "ref": "ts-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["single"],
+      "text": "Quel est le premier single de Speak Now ?",
+      "answers": [
+        { "text": "Sparks Fly", "isCorrect": false },
+        { "text": "Back to December", "isCorrect": false },
+        { "text": "Mine", "isCorrect": true },
+        { "text": "Mean", "isCorrect": false }
+      ],
+      "explanation": "Il sort en août 2010."
+    },
+    {
+      "ref": "ts-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["single"],
+      "text": "Quel est le premier single de evermore ?",
+      "answers": [
+        { "text": "willow", "isCorrect": true },
+        { "text": "champagne problems", "isCorrect": false },
+        { "text": "no body, no crime", "isCorrect": false },
+        { "text": "gold rush", "isCorrect": false }
+      ],
+      "explanation": "Comme cardigan pour folklore, il sort le même jour que l'album."
+    },
+    {
+      "ref": "ts-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["single", "record"],
+      "text": "Quelle chanson de Lover devient numéro 1 aux États-Unis en 2023, quatre ans après sa sortie ?",
+      "answers": [
+        { "text": "Paper Rings", "isCorrect": false },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "The Man", "isCorrect": false },
+        { "text": "Cruel Summer", "isCorrect": true }
+      ],
+      "explanation": "Le Eras Tour a relancé la chanson, dont le public crie le pont (bridge) à chaque concert."
+    },
+    {
+      "ref": "ts-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "taylors-version"],
+      "text": "Quel record bat All Too Well (10 Minute Version) ?",
+      "answers": [
+        { "text": "La plus longue chanson à atteindre la première place aux États-Unis", "isCorrect": true },
+        { "text": "La chanson la plus écoutée en une journée", "isCorrect": false },
+        { "text": "La chanson la plus récompensée aux Grammy", "isCorrect": false },
+        { "text": "La chanson restée le plus longtemps numéro 1", "isCorrect": false }
+      ],
+      "explanation": "Avec ses dix minutes, elle détrône American Pie, de Don McLean."
+    },
+    {
+      "ref": "ts-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record"],
+      "text": "Quel exploit réalise Midnights à sa sortie, en 2022 ?",
+      "answers": [
+        { "text": "Ses chansons occupent les dix premières places du classement américain", "isCorrect": true },
+        { "text": "Il est entièrement écrit en une nuit", "isCorrect": false },
+        { "text": "Il est le premier album numéro 1 dans tous les pays", "isCorrect": false },
+        { "text": "Il est disque d'or en une heure", "isCorrect": false }
+      ],
+      "explanation": "C'est la première fois qu'un artiste occupe à lui seul tout le top 10 du Billboard Hot 100."
+    },
+    {
+      "ref": "ts-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Dans la chanson Karma, à quel animal le karma est-il comparé ?",
+      "answers": [
+        { "text": "Un chien", "isCorrect": false },
+        { "text": "Un oiseau", "isCorrect": false },
+        { "text": "Un serpent", "isCorrect": false },
+        { "text": "Un chat", "isCorrect": true }
+      ],
+      "explanation": "Un chat qui ronronne sur ses genoux, parce qu'il l'aime."
+    },
+    {
+      "ref": "ts-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « I love you, it's ruining my life » ?",
+      "answers": [
+        { "text": "Down Bad", "isCorrect": false },
+        { "text": "Cruel Summer", "isCorrect": false },
+        { "text": "Anti-Hero", "isCorrect": false },
+        { "text": "Fortnight", "isCorrect": true }
+      ],
+      "explanation": "C'est le premier single de The Tortured Poets Department."
+    },
+    {
+      "ref": "ts-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Quel objet, oublié chez la sœur d'un ancien amour, est au cœur de la chanson All Too Well ?",
+      "answers": [
+        { "text": "Une bague", "isCorrect": false },
+        { "text": "Une écharpe", "isCorrect": true },
+        { "text": "Une lettre", "isCorrect": false },
+        { "text": "Un pull", "isCorrect": false }
+      ],
+      "explanation": "Des années plus tard, le narrateur l'a toujours gardée."
+    },
+    {
+      "ref": "ts-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Quel acteur des années 1950 est cité dans la chanson Style ?",
+      "answers": [
+        { "text": "Elvis Presley", "isCorrect": false },
+        { "text": "Paul Newman", "isCorrect": false },
+        { "text": "James Dean", "isCorrect": true },
+        { "text": "Marlon Brando", "isCorrect": false }
+      ],
+      "explanation": "Taylor y évoque un regard à la James Dean, rêveur et rebelle."
+    },
+    {
+      "ref": "ts-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "À quelle pièce de Shakespeare fait référence The Fate of Ophelia ?",
+      "answers": [
+        { "text": "Macbeth", "isCorrect": false },
+        { "text": "Le Songe d'une nuit d'été", "isCorrect": false },
+        { "text": "Hamlet", "isCorrect": true },
+        { "text": "Roméo et Juliette", "isCorrect": false }
+      ],
+      "explanation": "Ophélie est le personnage d'Hamlet qui sombre dans la folie. Love Story, elle, s'inspirait déjà de Roméo et Juliette."
+    },
+    {
+      "ref": "ts-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "À qui s'adresse la chanson Mean ?",
+      "answers": [
+        { "text": "À un critique qui l'a malmenée", "isCorrect": true },
+        { "text": "À un professeur", "isCorrect": false },
+        { "text": "À son ancien label", "isCorrect": false },
+        { "text": "À une ancienne amie d'école", "isCorrect": false }
+      ],
+      "explanation": "Taylor y répond à quelqu'un qui critiquait sa voix. La chanson remporte deux Grammy en 2012."
+    },
+    {
+      "ref": "ts-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Quel rappeur figure sur la version single de Bad Blood ?",
+      "answers": [
+        { "text": "Kendrick Lamar", "isCorrect": true },
+        { "text": "Eminem", "isCorrect": false },
+        { "text": "Kanye West", "isCorrect": false },
+        { "text": "Drake", "isCorrect": false }
+      ],
+      "explanation": "Le clip, rempli d'invitées célèbres, remporte le Grammy du meilleur clip."
+    },
+    {
+      "ref": "ts-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Avec quel groupe Taylor chante-t-elle exile, sur folklore ?",
+      "answers": [
+        { "text": "Bon Iver", "isCorrect": true },
+        { "text": "HAIM", "isCorrect": false },
+        { "text": "The National", "isCorrect": false },
+        { "text": "Coldplay", "isCorrect": false }
+      ],
+      "explanation": "Bon Iver chante aussi sur la chanson-titre d'evermore."
+    },
+    {
+      "ref": "ts-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Avec quel groupe Taylor chante-t-elle no body, no crime ?",
+      "answers": [
+        { "text": "Florence + the Machine", "isCorrect": false },
+        { "text": "HAIM", "isCorrect": true },
+        { "text": "Paramore", "isCorrect": false },
+        { "text": "The Chicks", "isCorrect": false }
+      ],
+      "explanation": "HAIM est composé de trois sœurs, Este, Danielle et Alana Haim."
+    },
+    {
+      "ref": "ts-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Avec quelle chanteuse Taylor chante-t-elle Snow on the Beach, sur Midnights ?",
+      "answers": [
+        { "text": "Phoebe Bridgers", "isCorrect": false },
+        { "text": "Olivia Rodrigo", "isCorrect": false },
+        { "text": "Lana Del Rey", "isCorrect": true },
+        { "text": "Billie Eilish", "isCorrect": false }
+      ],
+      "explanation": "Lana Del Rey participe aussi à la composition de la chanson."
+    },
+    {
+      "ref": "ts-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Avec quel groupe Taylor chante-t-elle Florida!!!, sur The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Paramore", "isCorrect": false },
+        { "text": "HAIM", "isCorrect": false },
+        { "text": "Florence + the Machine", "isCorrect": true },
+        { "text": "Fall Out Boy", "isCorrect": false }
+      ],
+      "explanation": "Florence Welch et Taylor ont écrit la chanson ensemble."
+    },
+    {
+      "ref": "ts-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Quels artistes Taylor invite-t-elle sur End Game ?",
+      "answers": [
+        { "text": "Ed Sheeran et Future", "isCorrect": true },
+        { "text": "Future et The Weeknd", "isCorrect": false },
+        { "text": "Kendrick Lamar et Drake", "isCorrect": false },
+        { "text": "Post Malone et Ed Sheeran", "isCorrect": false }
+      ],
+      "explanation": "End Game est le troisième single de reputation."
+    },
+    {
+      "ref": "ts-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Quel chanteur, leader de Panic! at the Disco, chante sur ME! ?",
+      "answers": [
+        { "text": "Patrick Stump", "isCorrect": false },
+        { "text": "Gerard Way", "isCorrect": false },
+        { "text": "Brendon Urie", "isCorrect": true },
+        { "text": "Hayley Williams", "isCorrect": false }
+      ],
+      "explanation": "ME! est le premier single de Lover, en 2019."
+    },
+    {
+      "ref": "ts-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Quelle rappeuse figure sur la version remix de Karma ?",
+      "answers": [
+        { "text": "Cardi B", "isCorrect": false },
+        { "text": "Megan Thee Stallion", "isCorrect": false },
+        { "text": "Nicki Minaj", "isCorrect": false },
+        { "text": "Ice Spice", "isCorrect": true }
+      ],
+      "explanation": "Le remix sort en mai 2023."
+    },
+    {
+      "ref": "ts-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["collaboration"],
+      "text": "Quelle chanteuse figure sur la chanson-titre de The Life of a Showgirl ?",
+      "answers": [
+        { "text": "Gracie Abrams", "isCorrect": false },
+        { "text": "Sabrina Carpenter", "isCorrect": true },
+        { "text": "Billie Eilish", "isCorrect": false },
+        { "text": "Olivia Rodrigo", "isCorrect": false }
+      ],
+      "explanation": "Sabrina Carpenter avait fait la première partie du Eras Tour."
+    },
+    {
+      "ref": "ts-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecran"],
+      "text": "Pour quel film Taylor écrit-elle Safe & Sound ?",
+      "answers": [
+        { "text": "Hunger Games", "isCorrect": true },
+        { "text": "Twilight", "isCorrect": false },
+        { "text": "Divergente", "isCorrect": false },
+        { "text": "La La Land", "isCorrect": false }
+      ],
+      "explanation": "Ce duo avec The Civil Wars remporte un Grammy en 2013."
+    },
+    {
+      "ref": "ts-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecran"],
+      "text": "Comment s'appelle le documentaire Netflix consacré à Taylor Swift, sorti en 2020 ?",
+      "answers": [
+        { "text": "Miss Americana", "isCorrect": true },
+        { "text": "Reputation", "isCorrect": false },
+        { "text": "Folklore", "isCorrect": false },
+        { "text": "The Long Pond Studio Sessions", "isCorrect": false }
+      ],
+      "explanation": "Il suit plusieurs années de sa carrière, de reputation à Lover."
+    },
+    {
+      "ref": "ts-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecran"],
+      "text": "Qui réalise le court métrage All Too Well: The Short Film ?",
+      "answers": [
+        { "text": "Jack Antonoff", "isCorrect": false },
+        { "text": "Joseph Kahn", "isCorrect": false },
+        { "text": "Greta Gerwig", "isCorrect": false },
+        { "text": "Taylor Swift", "isCorrect": true }
+      ],
+      "explanation": "Il remporte le Grammy du meilleur clip en 2023."
+    },
+    {
+      "ref": "ts-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecran"],
+      "text": "Quel rôle Taylor joue-t-elle dans le clip de The Man ?",
+      "answers": [
+        { "text": "Une avocate", "isCorrect": false },
+        { "text": "Un homme d'affaires", "isCorrect": true },
+        { "text": "Une cheffe d'orchestre", "isCorrect": false },
+        { "text": "Une professeure", "isCorrect": false }
+      ],
+      "explanation": "Grâce au maquillage, elle se transforme en homme pour illustrer le double standard dont parle la chanson. C'est aussi le premier clip qu'elle réalise seule."
+    },
+    {
+      "ref": "ts-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Combien de concerts Taylor donne-t-elle à Paris pendant le Eras Tour ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": true }
+      ],
+      "explanation": "Quatre soirs de suite, du 9 au 12 mai 2024, à la Paris La Défense Arena."
+    },
+    {
+      "ref": "ts-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee", "paroles"],
+      "text": "Quelle chanson a inspiré la tradition des bracelets de l'amitié échangés pendant le Eras Tour ?",
+      "answers": [
+        { "text": "You're On Your Own, Kid", "isCorrect": true },
+        { "text": "Long Live", "isCorrect": false },
+        { "text": "22", "isCorrect": false },
+        { "text": "Fifteen", "isCorrect": false }
+      ],
+      "explanation": "Les paroles invitent à fabriquer des bracelets de l'amitié : les fans en ont échangé des millions."
+    },
+    {
+      "ref": "ts-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Comment se déroule le moment des « chansons surprises » du Eras Tour ?",
+      "answers": [
+        { "text": "Taylor chante des reprises d'autres artistes", "isCorrect": false },
+        { "text": "Taylor joue en acoustique, à la guitare et au piano, des chansons différentes chaque soir", "isCorrect": true },
+        { "text": "Des invités chantent à sa place", "isCorrect": false },
+        { "text": "Le public choisit les chansons en votant sur une application", "isCorrect": false }
+      ],
+      "explanation": "Elle a essayé de ne jamais répéter les mêmes chansons, ce qui l'a amenée à créer des mashups."
+    },
+    {
+      "ref": "ts-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Quelle chanson clôt chaque concert du Eras Tour ?",
+      "answers": [
+        { "text": "Anti-Hero", "isCorrect": false },
+        { "text": "Long Live", "isCorrect": false },
+        { "text": "Karma", "isCorrect": true },
+        { "text": "Shake It Off", "isCorrect": false }
+      ],
+      "explanation": "Le concert se termine sur l'ère Midnights, sous une pluie de confettis."
+    },
+    {
+      "ref": "ts-098",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recompense", "record"],
+      "text": "Combien de fois Taylor Swift a-t-elle remporté le Grammy de l'album de l'année ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Pour Fearless, 1989, folklore et Midnights. C'est un record pour un artiste."
+    },
+    {
+      "ref": "ts-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recompense"],
+      "text": "Quel album lui vaut son premier Grammy de l'album de l'année, en 2010 ?",
+      "answers": [
+        { "text": "Fearless", "isCorrect": true },
+        { "text": "Red", "isCorrect": false },
+        { "text": "Speak Now", "isCorrect": false },
+        { "text": "Taylor Swift", "isCorrect": false }
+      ],
+      "explanation": "Elle a alors 20 ans."
+    },
+    {
+      "ref": "ts-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["taylors-version"],
+      "text": "Qu'annonce Taylor Swift en mai 2025 au sujet de ses six premiers albums ?",
+      "answers": [
+        { "text": "Elle a racheté leurs enregistrements originaux", "isCorrect": true },
+        { "text": "Elle arrête les Taylor's Version", "isCorrect": false },
+        { "text": "Elle les retire des plateformes de streaming", "isCorrect": false },
+        { "text": "Elle les ressort en vinyle", "isCorrect": false }
+      ],
+      "explanation": "Elle possède désormais toute sa musique, originaux compris."
+    },
+    {
+      "ref": "ts-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle chanson clôt l'édition complète (The Anthology) de The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Clara Bow", "isCorrect": false },
+        { "text": "The Black Dog", "isCorrect": false },
+        { "text": "The Manuscript", "isCorrect": true },
+        { "text": "So Long, London", "isCorrect": false }
+      ],
+      "explanation": "L'album standard se termine sur Clara Bow (16e chanson). L'Anthology ajoute quinze titres et s'achève sur The Manuscript, 31e et dernière chanson, où Taylor relit une histoire passée comme on relit un manuscrit."
+    },
+    {
+      "ref": "ts-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Avec quelle autrice-compositrice Taylor a-t-elle coécrit une grande partie de son premier album ?",
+      "answers": [
+        { "text": "Kacey Musgraves", "isCorrect": false },
+        { "text": "Hillary Lindsey", "isCorrect": false },
+        { "text": "Shania Twain", "isCorrect": false },
+        { "text": "Liz Rose", "isCorrect": true }
+      ],
+      "explanation": "Liz Rose a aussi coécrit All Too Well, sur Red."
+    },
+    {
+      "ref": "ts-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle est la cinquième chanson de Red ?",
+      "answers": [
+        { "text": "Red", "isCorrect": false },
+        { "text": "All Too Well", "isCorrect": true },
+        { "text": "Treacherous", "isCorrect": false },
+        { "text": "I Almost Do", "isCorrect": false }
+      ],
+      "explanation": "C'est la plus célèbre de toutes ses « track 5 »."
+    },
+    {
+      "ref": "ts-104",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle est la cinquième chanson de folklore ?",
+      "answers": [
+        { "text": "my tears ricochet", "isCorrect": true },
+        { "text": "cardigan", "isCorrect": false },
+        { "text": "mirrorball", "isCorrect": false },
+        { "text": "the last great american dynasty", "isCorrect": false }
+      ],
+      "explanation": "Taylor l'a écrite seule, sans coauteur."
+    },
+    {
+      "ref": "ts-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle est la cinquième chanson de Midnights ?",
+      "answers": [
+        { "text": "Maroon", "isCorrect": false },
+        { "text": "Snow on the Beach", "isCorrect": false },
+        { "text": "You're On Your Own, Kid", "isCorrect": true },
+        { "text": "Anti-Hero", "isCorrect": false }
+      ],
+      "explanation": "C'est elle qui a inspiré la tradition des bracelets de l'amitié au Eras Tour."
+    },
+    {
+      "ref": "ts-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle est la cinquième chanson de The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Down Bad", "isCorrect": false },
+        { "text": "loml", "isCorrect": false },
+        { "text": "So Long, London", "isCorrect": true },
+        { "text": "Fortnight", "isCorrect": false }
+      ],
+      "explanation": "Elle s'ouvre sur des chœurs, avant de devenir une chanson d'adieu à une ville."
+    },
+    {
+      "ref": "ts-107",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle est la cinquième chanson de Speak Now ?",
+      "answers": [
+        { "text": "Enchanted", "isCorrect": false },
+        { "text": "Back to December", "isCorrect": false },
+        { "text": "Mine", "isCorrect": false },
+        { "text": "Dear John", "isCorrect": true }
+      ],
+      "explanation": "La chanson dépasse six minutes."
+    },
+    {
+      "ref": "ts-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle est la cinquième chanson de Lover ?",
+      "answers": [
+        { "text": "The Man", "isCorrect": false },
+        { "text": "The Archer", "isCorrect": true },
+        { "text": "Lover", "isCorrect": false },
+        { "text": "Cruel Summer", "isCorrect": false }
+      ],
+      "explanation": "Taylor l'a sortie en single promotionnel avant même l'album."
+    },
+    {
+      "ref": "ts-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Sous quel label Taylor sort-elle Lover, son premier album dont elle possède les enregistrements originaux ?",
+      "answers": [
+        { "text": "Atlantic Records", "isCorrect": false },
+        { "text": "Big Machine Records", "isCorrect": false },
+        { "text": "Columbia Records", "isCorrect": false },
+        { "text": "Republic Records", "isCorrect": true }
+      ],
+      "explanation": "Ses six premiers albums étaient sortis chez Big Machine Records."
+    },
+    {
+      "ref": "ts-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Lors de quelle cérémonie Taylor annonce-t-elle l'album Midnights ?",
+      "answers": [
+        { "text": "Les American Music Awards 2021", "isCorrect": false },
+        { "text": "Les Golden Globes 2022", "isCorrect": false },
+        { "text": "Les MTV Video Music Awards 2022", "isCorrect": true },
+        { "text": "Les Grammy Awards 2022", "isCorrect": false }
+      ],
+      "explanation": "Elle l'annonce en recevant le prix du clip de l'année pour All Too Well: The Short Film."
+    },
+    {
+      "ref": "ts-111",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Sur quel podcast Taylor dévoile-t-elle The Life of a Showgirl, en août 2025 ?",
+      "answers": [
+        { "text": "Call Her Daddy", "isCorrect": false },
+        { "text": "SmartLess", "isCorrect": false },
+        { "text": "New Heights", "isCorrect": true },
+        { "text": "The Joe Rogan Experience", "isCorrect": false }
+      ],
+      "explanation": "Ce podcast sur le football américain est animé par les frères Jason et Travis Kelce."
+    },
+    {
+      "ref": "ts-112",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Avec quels producteurs Taylor enregistre-t-elle The Life of a Showgirl ?",
+      "answers": [
+        { "text": "Jack Antonoff et Aaron Dessner", "isCorrect": false },
+        { "text": "Jack Antonoff et Max Martin", "isCorrect": false },
+        { "text": "Aaron Dessner et Justin Vernon", "isCorrect": false },
+        { "text": "Max Martin et Shellback", "isCorrect": true }
+      ],
+      "explanation": "Elle les retrouve pour la première fois depuis reputation."
+    },
+    {
+      "ref": "ts-113",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles", "album"],
+      "text": "Quelles chansons de folklore racontent un même triangle amoureux adolescent, vu par chacun des personnages ?",
+      "answers": [
+        { "text": "the 1, exile et seven", "isCorrect": false },
+        { "text": "mirrorball, illicit affairs et hoax", "isCorrect": false },
+        { "text": "cardigan, august et betty", "isCorrect": true },
+        { "text": "invisible string, peace et epiphany", "isCorrect": false }
+      ],
+      "explanation": "Taylor les surnomme la « trilogie du triangle amoureux adolescent » (teenage love triangle)."
+    },
+    {
+      "ref": "ts-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « I'm only seventeen, I don't know anything » ?",
+      "answers": [
+        { "text": "betty", "isCorrect": true },
+        { "text": "You're On Your Own, Kid", "isCorrect": false },
+        { "text": "seven", "isCorrect": false },
+        { "text": "Fifteen", "isCorrect": false }
+      ],
+      "explanation": "C'est James, l'un des trois personnages de la trilogie de folklore, qui parle."
+    },
+    {
+      "ref": "ts-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Quelle chanson de folklore contient les mots « when you are young they assume you know nothing » ?",
+      "answers": [
+        { "text": "the 1", "isCorrect": false },
+        { "text": "seven", "isCorrect": false },
+        { "text": "betty", "isCorrect": false },
+        { "text": "cardigan", "isCorrect": true }
+      ],
+      "explanation": "C'est le premier single de l'album."
+    },
+    {
+      "ref": "ts-116",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson entend-on « Ladies and gentlemen, will you please stand? » ?",
+      "answers": [
+        { "text": "Lover", "isCorrect": true },
+        { "text": "Paper Rings", "isCorrect": false },
+        { "text": "Love Story", "isCorrect": false },
+        { "text": "King of My Heart", "isCorrect": false }
+      ],
+      "explanation": "Dans ce pont (bridge), Taylor imagine des vœux de mariage."
+    },
+    {
+      "ref": "ts-117",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "De quelle femme, ancienne propriétaire de sa maison de Rhode Island, Taylor raconte-t-elle l'histoire dans the last great american dynasty ?",
+      "answers": [
+        { "text": "Clara Bow", "isCorrect": false },
+        { "text": "Dorothea", "isCorrect": false },
+        { "text": "Rebekah Harkness", "isCorrect": true },
+        { "text": "Marjorie Finlay", "isCorrect": false }
+      ],
+      "explanation": "Cette riche héritière choquait la bonne société de son époque. Taylor se compare à elle à la fin de la chanson."
+    },
+    {
+      "ref": "ts-118",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Quelle actrice du cinéma muet donne son nom à une chanson de The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Greta Garbo", "isCorrect": false },
+        { "text": "Clara Bow", "isCorrect": true },
+        { "text": "Marilyn Monroe", "isCorrect": false },
+        { "text": "Mary Pickford", "isCorrect": false }
+      ],
+      "explanation": "Une autre actrice légendaire, Elizabeth Taylor, donne son nom à une chanson de The Life of a Showgirl."
+    },
+    {
+      "ref": "ts-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson de The Tortured Poets Department Taylor raconte-t-elle sourire sur scène malgré la tristesse ?",
+      "answers": [
+        { "text": "Down Bad", "isCorrect": false },
+        { "text": "So Long, London", "isCorrect": false },
+        { "text": "I Can Do It With a Broken Heart", "isCorrect": true },
+        { "text": "The Black Dog", "isCorrect": false }
+      ],
+      "explanation": "La chanson évoque les concerts du Eras Tour qu'elle assurait coûte que coûte."
+    },
+    {
+      "ref": "ts-120",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Quel prénom revient dans la chanson Teardrops on My Guitar ?",
+      "answers": [
+        { "text": "Stephen", "isCorrect": false },
+        { "text": "Tim", "isCorrect": false },
+        { "text": "Drew", "isCorrect": true },
+        { "text": "John", "isCorrect": false }
+      ],
+      "explanation": "Le garçon dont la narratrice est secrètement amoureuse s'appelle Drew."
+    },
+    {
+      "ref": "ts-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["single"],
+      "text": "Pour quelle occasion Taylor a-t-elle écrit Our Song ?",
+      "answers": [
+        { "text": "Le mariage de sa cousine", "isCorrect": false },
+        { "text": "Un spectacle de talents à son lycée", "isCorrect": true },
+        { "text": "La fête de fin d'année de son école de musique", "isCorrect": false },
+        { "text": "Un concours de chant télévisé", "isCorrect": false }
+      ],
+      "explanation": "Elle l'a écrite vers 14 ans. La chanson devient ensuite un single de son premier album."
+    },
+    {
+      "ref": "ts-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["single"],
+      "text": "Quelle chanson des années 1990 Look What You Made Me Do reprend-elle en partie ?",
+      "answers": [
+        { "text": "I'm Too Sexy, de Right Said Fred", "isCorrect": true },
+        { "text": "Wannabe, des Spice Girls", "isCorrect": false },
+        { "text": "Smells Like Teen Spirit, de Nirvana", "isCorrect": false },
+        { "text": "...Baby One More Time, de Britney Spears", "isCorrect": false }
+      ],
+      "explanation": "Le rythme du refrain reprend celui de I'm Too Sexy : les membres de Right Said Fred sont crédités comme coauteurs."
+    },
+    {
+      "ref": "ts-123",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record"],
+      "text": "Quelle est la première chanson de Taylor à atteindre la première place aux États-Unis ?",
+      "answers": [
+        { "text": "You Belong with Me", "isCorrect": false },
+        { "text": "We Are Never Ever Getting Back Together", "isCorrect": true },
+        { "text": "Shake It Off", "isCorrect": false },
+        { "text": "Love Story", "isCorrect": false }
+      ],
+      "explanation": "Elle y arrive en 2012, six ans après ses débuts."
+    },
+    {
+      "ref": "ts-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record"],
+      "text": "Quel exploit Taylor réalise-t-elle quand Blank Space remplace Shake It Off à la première place aux États-Unis ?",
+      "answers": [
+        { "text": "Elle est la plus jeune artiste à avoir deux numéros 1", "isCorrect": false },
+        { "text": "Elle devient l'artiste la plus écoutée au monde", "isCorrect": false },
+        { "text": "Elle est la première femme à se succéder à elle-même au numéro 1", "isCorrect": true },
+        { "text": "Elle bat le record de semaines au numéro 1", "isCorrect": false }
+      ],
+      "explanation": "Cela se passe en novembre 2014."
+    },
+    {
+      "ref": "ts-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "taylors-version"],
+      "text": "Quelle chanson « From the Vault » de 1989 (Taylor's Version) entre directement à la première place aux États-Unis ?",
+      "answers": [
+        { "text": "Say Don't Go", "isCorrect": false },
+        { "text": "Suburban Legends", "isCorrect": false },
+        { "text": "Is It Over Now?", "isCorrect": true },
+        { "text": "Now That We Don't Talk", "isCorrect": false }
+      ],
+      "explanation": "Elle succède à All Too Well (10 Minute Version), elle aussi une chanson « From the Vault » arrivée en tête du classement."
+    },
+    {
+      "ref": "ts-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["taylors-version", "date"],
+      "text": "Pourquoi 1989 (Taylor's Version) sort-elle le 27 octobre 2023 ?",
+      "answers": [
+        { "text": "C'est le jour anniversaire de la sortie de l'album original", "isCorrect": true },
+        { "text": "C'est l'anniversaire de Taylor", "isCorrect": false },
+        { "text": "C'est le premier jour de la tournée européenne", "isCorrect": false },
+        { "text": "C'est la date de la remise des Grammy", "isCorrect": false }
+      ],
+      "explanation": "L'original était sorti le 27 octobre 2014, neuf ans plus tôt."
+    },
+    {
+      "ref": "ts-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["taylors-version", "date"],
+      "text": "Pourquoi Taylor annonce-t-elle 1989 (Taylor's Version) un 9 août ?",
+      "answers": [
+        { "text": "Écrite à l'américaine, la date (8/9) évoque 89", "isCorrect": true },
+        { "text": "C'était le jour de son premier concert", "isCorrect": false },
+        { "text": "C'est la date de sortie de Shake It Off", "isCorrect": false },
+        { "text": "C'est l'anniversaire de sa mère", "isCorrect": false }
+      ],
+      "explanation": "Elle l'annonce lors de son dernier concert à Los Angeles, en 2023."
+    },
+    {
+      "ref": "ts-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["taylors-version"],
+      "text": "Dans quelle ville Taylor annonce-t-elle Speak Now (Taylor's Version), en mai 2023 ?",
+      "answers": [
+        { "text": "Los Angeles", "isCorrect": false },
+        { "text": "Philadelphie", "isCorrect": false },
+        { "text": "New York", "isCorrect": false },
+        { "text": "Nashville", "isCorrect": true }
+      ],
+      "explanation": "Elle l'annonce sur scène, pendant le Eras Tour, dans la ville où elle a commencé sa carrière."
+    },
+    {
+      "ref": "ts-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration", "taylors-version"],
+      "text": "Quel groupe chante avec Taylor sur Electric Touch, chanson « From the Vault » de Speak Now ?",
+      "answers": [
+        { "text": "Fall Out Boy", "isCorrect": true },
+        { "text": "Panic! at the Disco", "isCorrect": false },
+        { "text": "Paramore", "isCorrect": false },
+        { "text": "My Chemical Romance", "isCorrect": false }
+      ],
+      "explanation": "Fall Out Boy fait partie des groupes qui inspiraient Taylor à l'époque de Speak Now."
+    },
+    {
+      "ref": "ts-130",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration", "taylors-version"],
+      "text": "Quelle chanteuse de Paramore chante avec Taylor sur Castles Crumbling ?",
+      "answers": [
+        { "text": "Avril Lavigne", "isCorrect": false },
+        { "text": "Florence Welch", "isCorrect": false },
+        { "text": "Hayley Williams", "isCorrect": true },
+        { "text": "Phoebe Bridgers", "isCorrect": false }
+      ],
+      "explanation": "Une autre chanson « From the Vault » de Speak Now (Taylor's Version)."
+    },
+    {
+      "ref": "ts-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration", "taylors-version"],
+      "text": "Quel chanteur de country figure sur I Bet You Think About Me, chanson « From the Vault » de Red ?",
+      "answers": [
+        { "text": "Keith Urban", "isCorrect": false },
+        { "text": "Tim McGraw", "isCorrect": false },
+        { "text": "Luke Bryan", "isCorrect": false },
+        { "text": "Chris Stapleton", "isCorrect": true }
+      ],
+      "explanation": "La chanson fait un clin d'œil appuyé aux racines country de Taylor."
+    },
+    {
+      "ref": "ts-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration", "taylors-version"],
+      "text": "Quelle chanteuse figure sur Nothing New, chanson « From the Vault » de Red ?",
+      "answers": [
+        { "text": "Lana Del Rey", "isCorrect": false },
+        { "text": "Maren Morris", "isCorrect": false },
+        { "text": "Phoebe Bridgers", "isCorrect": true },
+        { "text": "Gracie Abrams", "isCorrect": false }
+      ],
+      "explanation": "Phoebe Bridgers fera ensuite la première partie de plusieurs dates du Eras Tour."
+    },
+    {
+      "ref": "ts-133",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration", "taylors-version"],
+      "text": "Quelle chanteuse figure sur You All Over Me, chanson « From the Vault » de Fearless ?",
+      "answers": [
+        { "text": "Maren Morris", "isCorrect": true },
+        { "text": "Kacey Musgraves", "isCorrect": false },
+        { "text": "Miranda Lambert", "isCorrect": false },
+        { "text": "Carrie Underwood", "isCorrect": false }
+      ],
+      "explanation": "C'est l'une des toutes premières chansons « From the Vault » dévoilées."
+    },
+    {
+      "ref": "ts-134",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration"],
+      "text": "Quel groupe accompagne Taylor sur Soon You'll Get Better, sur Lover ?",
+      "answers": [
+        { "text": "Lady A", "isCorrect": false },
+        { "text": "The Chicks", "isCorrect": true },
+        { "text": "The Civil Wars", "isCorrect": false },
+        { "text": "HAIM", "isCorrect": false }
+      ],
+      "explanation": "Ce groupe de country s'appelait encore les Dixie Chicks lors de la sortie de l'album."
+    },
+    {
+      "ref": "ts-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration"],
+      "text": "Avec quel chanteur de Snow Patrol Taylor chante-t-elle The Last Time, sur Red ?",
+      "answers": [
+        { "text": "Gary Lightbody", "isCorrect": true },
+        { "text": "Chris Martin", "isCorrect": false },
+        { "text": "Ed Sheeran", "isCorrect": false },
+        { "text": "Justin Vernon", "isCorrect": false }
+      ],
+      "explanation": "Les deux artistes se répondent comme dans un dialogue."
+    },
+    {
+      "ref": "ts-136",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["collaboration"],
+      "text": "Avec quel groupe Taylor chante-t-elle coney island, sur evermore ?",
+      "answers": [
+        { "text": "Bon Iver", "isCorrect": false },
+        { "text": "The National", "isCorrect": true },
+        { "text": "Big Red Machine", "isCorrect": false },
+        { "text": "HAIM", "isCorrect": false }
+      ],
+      "explanation": "Aaron Dessner, coproducteur d'evermore, est membre du groupe."
+    },
+    {
+      "ref": "ts-137",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecran"],
+      "text": "Pour quel film Taylor écrit-elle la chanson Carolina, en 2022 ?",
+      "answers": [
+        { "text": "Barbie", "isCorrect": false },
+        { "text": "Là où chantent les écrevisses (Where the Crawdads Sing)", "isCorrect": true },
+        { "text": "Hunger Games", "isCorrect": false },
+        { "text": "Les Quatre Filles du docteur March", "isCorrect": false }
+      ],
+      "explanation": "Le film est adapté d'un roman à succès de Delia Owens."
+    },
+    {
+      "ref": "ts-138",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecran"],
+      "text": "Pour quel film musical Taylor coécrit-elle Beautiful Ghosts avec Andrew Lloyd Webber ?",
+      "answers": [
+        { "text": "Les Misérables", "isCorrect": false },
+        { "text": "Mamma Mia!", "isCorrect": false },
+        { "text": "Le Fantôme de l'Opéra", "isCorrect": false },
+        { "text": "Cats", "isCorrect": true }
+      ],
+      "explanation": "Elle joue aussi dans le film, sorti en 2019, le rôle de la chatte Bombalurina."
+    },
+    {
+      "ref": "ts-139",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecran"],
+      "text": "Pour quel film Taylor écrit-elle Today Was a Fairytale, en 2010 ?",
+      "answers": [
+        { "text": "Valentine's Day", "isCorrect": true },
+        { "text": "Twilight", "isCorrect": false },
+        { "text": "Hannah Montana, le film", "isCorrect": false },
+        { "text": "High School Musical 3", "isCorrect": false }
+      ],
+      "explanation": "Elle y fait aussi ses premiers pas d'actrice."
+    },
+    {
+      "ref": "ts-140",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecran"],
+      "text": "Sur quelle plateforme sort folklore: the long pond studio sessions ?",
+      "answers": [
+        { "text": "Amazon Prime Video", "isCorrect": false },
+        { "text": "Apple TV+", "isCorrect": false },
+        { "text": "Netflix", "isCorrect": false },
+        { "text": "Disney+", "isCorrect": true }
+      ],
+      "explanation": "Taylor y joue l'album en entier avec Aaron Dessner et Jack Antonoff, dans un studio installé dans une cabane."
+    },
+    {
+      "ref": "ts-141",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecran"],
+      "text": "Quelle actrice de Stranger Things joue dans All Too Well: The Short Film ?",
+      "answers": [
+        { "text": "Natalia Dyer", "isCorrect": false },
+        { "text": "Millie Bobby Brown", "isCorrect": false },
+        { "text": "Maya Hawke", "isCorrect": false },
+        { "text": "Sadie Sink", "isCorrect": true }
+      ],
+      "explanation": "Elle donne la réplique à Dylan O'Brien."
+    },
+    {
+      "ref": "ts-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecran", "recompense"],
+      "text": "Quel clip de Taylor remporte le Grammy du meilleur clip en 2016 ?",
+      "answers": [
+        { "text": "Bad Blood", "isCorrect": true },
+        { "text": "Shake It Off", "isCorrect": false },
+        { "text": "Blank Space", "isCorrect": false },
+        { "text": "Style", "isCorrect": false }
+      ],
+      "explanation": "Elle remporte le même prix en 2023 pour All Too Well: The Short Film."
+    },
+    {
+      "ref": "ts-143",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recompense", "record"],
+      "text": "Quel record Taylor bat-elle en 2010, en remportant le Grammy de l'album de l'année pour Fearless ?",
+      "answers": [
+        { "text": "Elle bat le record de Grammy en une seule soirée", "isCorrect": false },
+        { "text": "Elle devient la plus jeune lauréate de l'histoire de ce prix", "isCorrect": true },
+        { "text": "Elle devient la première artiste country à le gagner", "isCorrect": false },
+        { "text": "Elle le gagne pour un premier album", "isCorrect": false }
+      ],
+      "explanation": "Elle a 20 ans. Le record sera battu dix ans plus tard par Billie Eilish."
+    },
+    {
+      "ref": "ts-144",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Dans quelle ville commence le Eras Tour, en mars 2023 ?",
+      "answers": [
+        { "text": "Los Angeles", "isCorrect": false },
+        { "text": "Nashville", "isCorrect": false },
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "Glendale, en Arizona", "isCorrect": true }
+      ],
+      "explanation": "La tournée démarre au State Farm Stadium, près de Phoenix."
+    },
+    {
+      "ref": "ts-145",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Dans quelle ville se termine le Eras Tour, en décembre 2024 ?",
+      "answers": [
+        { "text": "New York", "isCorrect": false },
+        { "text": "Vancouver", "isCorrect": true },
+        { "text": "Miami", "isCorrect": false },
+        { "text": "Toronto", "isCorrect": false }
+      ],
+      "explanation": "Après près de deux ans et environ 150 concerts sur cinq continents."
+    },
+    {
+      "ref": "ts-146",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Dans quelle ville le Eras Tour présente-t-il pour la première fois sa partie consacrée à The Tortured Poets Department ?",
+      "answers": [
+        { "text": "Lyon", "isCorrect": false },
+        { "text": "Stockholm", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true }
+      ],
+      "explanation": "Le nouveau programme du concert est dévoilé le 9 mai 2024, à la Paris La Défense Arena."
+    },
+    {
+      "ref": "ts-147",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "record"],
+      "text": "Que se passe-t-il à Seattle lors des concerts du Eras Tour, en juillet 2023 ?",
+      "answers": [
+        { "text": "Taylor bat le record d'affluence d'un stade", "isCorrect": false },
+        { "text": "Le concert est interrompu par un orage", "isCorrect": false },
+        { "text": "Le public provoque une activité sismique mesurable", "isCorrect": true },
+        { "text": "Une coupure de courant touche toute la ville", "isCorrect": false }
+      ],
+      "explanation": "Les danses des fans ont provoqué l'équivalent d'un petit séisme, surnommé le « Swift Quake »."
+    },
+    {
+      "ref": "ts-148",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Quelle ère ouvre chaque concert du Eras Tour ?",
+      "answers": [
+        { "text": "Taylor Swift", "isCorrect": false },
+        { "text": "1989", "isCorrect": false },
+        { "text": "Fearless", "isCorrect": false },
+        { "text": "Lover", "isCorrect": true }
+      ],
+      "explanation": "Le concert commence par Miss Americana & the Heartbreak Prince, puis Cruel Summer."
+    },
+    {
+      "ref": "ts-149",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Quelle est la première tournée de Taylor Swift en tête d'affiche ?",
+      "answers": [
+        { "text": "Le Fearless Tour", "isCorrect": true },
+        { "text": "Le Speak Now World Tour", "isCorrect": false },
+        { "text": "Le Red Tour", "isCorrect": false },
+        { "text": "Le Taylor Swift Tour", "isCorrect": false }
+      ],
+      "explanation": "Elle démarre en 2009. Auparavant, Taylor faisait les premières parties d'autres artistes."
+    },
+    {
+      "ref": "ts-150",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Comment s'appelait la série de concerts prévue en 2020 pour l'album Lover, annulée à cause de la pandémie ?",
+      "answers": [
+        { "text": "Pride Fest", "isCorrect": false },
+        { "text": "Lover Fest", "isCorrect": true },
+        { "text": "Lover World Tour", "isCorrect": false },
+        { "text": "The Lover Tour", "isCorrect": false }
+      ],
+      "explanation": "Lover est ainsi le seul album de Taylor à ne jamais avoir eu sa propre tournée. Ses chansons ouvrent en revanche chaque concert du Eras Tour."
+    },
+    {
+      "ref": "ts-151",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor met-elle en garde contre le garçon qui dit « je t'aime » à une adolescente qui entre au lycée ?",
+      "answers": [
+        { "text": "You Belong with Me", "isCorrect": false },
+        { "text": "Our Song", "isCorrect": false },
+        { "text": "Fifteen", "isCorrect": true },
+        { "text": "22", "isCorrect": false }
+      ],
+      "explanation": "Elle y raconte, avec le recul, sa première année de lycée."
+    },
+    {
+      "ref": "ts-152",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Quelle chanson imagine comment sa carrière serait jugée si elle était un homme ?",
+      "answers": [
+        { "text": "Mean", "isCorrect": false },
+        { "text": "Shake It Off", "isCorrect": false },
+        { "text": "The Man", "isCorrect": true },
+        { "text": "Anti-Hero", "isCorrect": false }
+      ],
+      "explanation": "Le refrain se demande si elle irait plus vite en étant un homme."
+    },
+    {
+      "ref": "ts-153",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Quelle chanson de Lover s'en prend aux haters en ligne et à l'homophobie ?",
+      "answers": [
+        { "text": "ME!", "isCorrect": false },
+        { "text": "London Boy", "isCorrect": false },
+        { "text": "The Man", "isCorrect": false },
+        { "text": "You Need to Calm Down", "isCorrect": true }
+      ],
+      "explanation": "Son clip, rempli d'invités de la communauté LGBTQ+, remporte le prix du clip de l'année aux MTV Video Music Awards 2019."
+    },
+    {
+      "ref": "ts-154",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor glisse-t-elle un « Like, ever » parlé, comme dans une conversation ?",
+      "answers": [
+        { "text": "Shake It Off", "isCorrect": false },
+        { "text": "We Are Never Ever Getting Back Together", "isCorrect": true },
+        { "text": "I Knew You Were Trouble", "isCorrect": false },
+        { "text": "22", "isCorrect": false }
+      ],
+      "explanation": "C'est aussi son premier numéro 1 aux États-Unis, en 2012."
+    },
+    {
+      "ref": "ts-155",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « Nothing good starts in a getaway car » ?",
+      "answers": [
+        { "text": "Dress", "isCorrect": false },
+        { "text": "Delicate", "isCorrect": false },
+        { "text": "Don't Blame Me", "isCorrect": false },
+        { "text": "Getaway Car", "isCorrect": true }
+      ],
+      "explanation": "La chanson file la métaphore d'un braquage pour parler d'une histoire d'amour commencée dans la fuite."
+    },
+    {
+      "ref": "ts-156",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor se demande-t-elle « Is it cool that I said all that? » ?",
+      "answers": [
+        { "text": "Dress", "isCorrect": false },
+        { "text": "Delicate", "isCorrect": true },
+        { "text": "Gorgeous", "isCorrect": false },
+        { "text": "King of My Heart", "isCorrect": false }
+      ],
+      "explanation": "C'est la cinquième chanson de reputation : elle y doute de pouvoir plaire malgré sa mauvaise réputation."
+    },
+    {
+      "ref": "ts-157",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor demande-t-elle « Say you'll remember me » ?",
+      "answers": [
+        { "text": "Blank Space", "isCorrect": false },
+        { "text": "This Love", "isCorrect": false },
+        { "text": "Style", "isCorrect": false },
+        { "text": "Wildest Dreams", "isCorrect": true }
+      ],
+      "explanation": "Le clip est tourné comme un film hollywoodien des années 1950, dans la savane africaine."
+    },
+    {
+      "ref": "ts-158",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « You are the best thing that's ever been mine » ?",
+      "answers": [
+        { "text": "Sparks Fly", "isCorrect": false },
+        { "text": "Ours", "isCorrect": false },
+        { "text": "Mine", "isCorrect": true },
+        { "text": "Enchanted", "isCorrect": false }
+      ],
+      "explanation": "C'est le premier single de Speak Now, en 2010."
+    },
+    {
+      "ref": "ts-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Quelle chanson, qui ouvre l'album Midnights, commence par « Meet me at midnight » ?",
+      "answers": [
+        { "text": "Midnight Rain", "isCorrect": false },
+        { "text": "Anti-Hero", "isCorrect": false },
+        { "text": "Lavender Haze", "isCorrect": true },
+        { "text": "Maroon", "isCorrect": false }
+      ],
+      "explanation": "L'expression « lavender haze » désignait, dans les années 1950, l'état d'une personne amoureuse."
+    },
+    {
+      "ref": "ts-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["paroles"],
+      "text": "Quelle chanson de Speak Now est une excuse adressée à un ancien amour ?",
+      "answers": [
+        { "text": "Dear John", "isCorrect": false },
+        { "text": "Back to December", "isCorrect": true },
+        { "text": "The Story of Us", "isCorrect": false },
+        { "text": "Mean", "isCorrect": false }
+      ],
+      "explanation": "Une rareté : dans la plupart de ses chansons de rupture, c'est Taylor qui a été blessée."
+    },
+    {
+      "ref": "ts-161",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson d'evermore la narratrice refuse-t-elle une demande en mariage ?",
+      "answers": [
+        { "text": "gold rush", "isCorrect": false },
+        { "text": "champagne problems", "isCorrect": true },
+        { "text": "tolerate it", "isCorrect": false },
+        { "text": "'tis the damn season", "isCorrect": false }
+      ],
+      "explanation": "Elle refuse sans pouvoir expliquer pourquoi, sous le regard de toute la famille de son amoureux."
+    },
+    {
+      "ref": "ts-162",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson de folklore Taylor chante-t-elle « Please picture me in the trees » ?",
+      "answers": [
+        { "text": "the 1", "isCorrect": false },
+        { "text": "seven", "isCorrect": true },
+        { "text": "invisible string", "isCorrect": false },
+        { "text": "betty", "isCorrect": false }
+      ],
+      "explanation": "La chanson évoque une amitié d'enfance, quand elle avait sept ans."
+    },
+    {
+      "ref": "ts-163",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Quelle chanson de 1989 évoque un accident et « twenty stitches in a hospital room » ?",
+      "answers": [
+        { "text": "Wildest Dreams", "isCorrect": false },
+        { "text": "Out of the Woods", "isCorrect": true },
+        { "text": "Clean", "isCorrect": false },
+        { "text": "Style", "isCorrect": false }
+      ],
+      "explanation": "Le refrain répète sans fin la même question : « Are we out of the woods yet? »"
+    },
+    {
+      "ref": "ts-164",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans le pont (bridge) de quelle chanson Taylor décrit-elle quelqu'un « grinning like a devil » ?",
+      "answers": [
+        { "text": "Lover", "isCorrect": false },
+        { "text": "Paper Rings", "isCorrect": false },
+        { "text": "Getaway Car", "isCorrect": false },
+        { "text": "Cruel Summer", "isCorrect": true }
+      ],
+      "explanation": "Ce pont est l'un des moments les plus attendus du Eras Tour, où le public le crie avec elle."
+    },
+    {
+      "ref": "ts-165",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["paroles"],
+      "text": "Dans quelle chanson Taylor chante-t-elle « Wherever you stray, I follow » ?",
+      "answers": [
+        { "text": "gold rush", "isCorrect": false },
+        { "text": "willow", "isCorrect": true },
+        { "text": "evermore", "isCorrect": false },
+        { "text": "long story short", "isCorrect": false }
+      ],
+      "explanation": "C'est le premier single d'evermore, en 2020."
+    }
+  ]
+}
