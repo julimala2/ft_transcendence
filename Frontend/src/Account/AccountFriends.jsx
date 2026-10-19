@@ -74,7 +74,7 @@ export function AccountFriends() {
         }
     }
 
-    if (loading) return <><section className='card'>Loading...</section></>;
+    // if (loading) return <><section className='card'>Loading...</section></>;
     if (error) return <p className={styles.error}>{error}</p>;
 
     return (

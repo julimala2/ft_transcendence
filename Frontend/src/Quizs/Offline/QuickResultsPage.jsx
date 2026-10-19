@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getAttempt } from "../../Api/quiz";
 
 
-export function ResultsPage() {
+export function QuickResultsPage() {
     const { attemptId } = useParams();
     const navigate = useNavigate();
 
@@ -50,13 +50,14 @@ export function ResultsPage() {
 
     return (
         <div className="page">
-            <h1>Résultats</h1>
+            <h1>Résultats - Quiz rapide</h1>
             <div>
                 <p>Score: {attempt.score} / {attempt.total}</p>
             </div>
             <div>
-                <button onClick={() => navigate("/")}>Retour à l'accueil</button>
-                <button onClick={() => navigate("/quizzes")}>Rejouer</button>
+                <button onClick={() => navigate("/play/offline/quick")} className="button">
+                    Retour aux paramètres
+                </button>
             </div>
         </div>
     );
