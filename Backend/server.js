@@ -13,6 +13,7 @@ const quizRoutes = require('./src/routes/quiz.routes');
 const questionRoutes = require('./src/routes/question.routes');
 const categoryRoutes = require('./src/routes/category.routes');
 const attemptRoutes = require('./src/routes/attempt.routes');
+const statisticsRoutes = require('./src/routes/statistics.routes');
 const app = express();
 const { WebSocketServer } = require('ws');
 const { authenticateUpgrade } = require('./websocket/auth');
@@ -32,6 +33,7 @@ app.use('/api/questions', questionRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/attempts', attemptRoutes);
 app.use('/quiz-images', express.static('assets/quiz'));
+app.use('/api/statistics', statisticsRoutes);
 
 
 app.get('/', (req, res) => {

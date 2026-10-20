@@ -100,6 +100,78 @@ json
 
 - Pour un rechargement de page : renvoie la progression et la question en cours (question: null si la partie est terminée).
 
+## Statistiques : /api/statistics
+
+- Exige d’être connecté (cookie token, credentials: 'include'). Renvoie les stats de l’utilisateur connecté.
+
+### Deux modes de jeu, deux façons de compter
+
+| | Rush | Custom |
+|---|---|---|
+| Mesure | nombre de bonnes réponses (score) | score / totalQuestions en % |
+| Stat affichée | record (meilleur score) | moyenne des % |
+| Regroupement | catégorie + niveau | catégorie + niveau |
+| Abandon | score obtenu jusqu’à l’arrêt | les questions restantes comptent comme fausses |
+
+Seules les parties terminées (ou abandonnées) comptent, celles en cours sont ignorées. Les parties sur un quiz existant (quizId, sans catégorie) ne comptent pas.
+
+### GET /api/statistics [x]
+
+- Toutes catégories : GET /api/statistics
+- Une seule catégorie : GET /api/statistics?categoryId=1 (entier positif, sinon 400)
+
+Réponse 200 :
+
+json
+{
+  "categoryId": 1,
+  "rush": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 2, "record": 17, "played": 4 }
+  ],
+  "custom": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 1, "averagePercent": 72, "played": 6 }
+  ]
+}
+
+- categoryId vaut null sans filtre.
+- Une ligne par couple catégorie + niveau. difficulty peut être null si la partie a été lancée sans niveau.
+- played = nombre de parties comptées pour cette ligne.
+- Tableaux vides = aucune partie terminée : prévoir un état vide côté front.
+
+### GET /api/statistics/global [x]
+
+Pour comparer le joueur aux autres, par catégorie + niveau. Accepte aussi ?categoryId=1.
+
+- rush : moyenne des records des autres joueurs (le joueur connecté n’est pas compté).
+- custom : moyenne des % de toutes les parties de tous les joueurs (joueur connecté compris).
+
+Réponse 200 :
+
+json
+{
+  "categoryId": null,
+  "rush": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 2, "averageRecord": 14.5, "players": 8 }
+  ],
+  "custom": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 1, "averagePercent": 65, "played": 42 }
+  ]
+}
+
+- averageRecord est arrondi à 0,1 près, players = nombre de joueurs pris en compte.
+- Pour afficher la comparaison, associer chaque ligne de GET /api/statistics à la ligne de /global qui a le même categoryId + difficulty. S’il n’y en a pas, aucun autre joueur n’a encore joué ce couple.
+
+### GET /api/statistics/users/:id [x]
+
+Stats d’un autre joueur (profil, ami...). Même format que GET /api/statistics, accepte aussi ?categoryId=1.
+
+- 400 si l’id n’est pas un entier positif, 404 si l’utilisateur n’existe pas.
+
+### Prévu, pas encore disponible
+
+- Mode rush : POST /api/attempts ne permet pas encore de choisir le mode, toutes les parties sont en custom. Le tableau rush restera vide en attendant.
+- Abandon : pas encore de route pour abandonner une partie, donc aucune partie n’est comptée comme abandonnée.
+
 # Front 
 
 ## a prevoir suite a l'auth + OAuth backend

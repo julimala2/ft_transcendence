@@ -1,6 +1,7 @@
 Routes 
 - Achievements
 - Stats
+  cacher les stats d'utilisateurs bloqués
 
 user 
     - a terme :

@@ -152,7 +152,7 @@ model QuizAttempt {
   startedAt      DateTime @default(now())
   finishedAt     DateTime?
 
-  mode           String   @default("limite")
+  mode           String   @default("custom")
   status         String   @default("in_progress")
 
   userId    Int

@@ -106,7 +106,7 @@ async function recordAnswer({ attemptId, questionId, answerId, isCorrect }) {
 async function markFinished(attemptId) {
   return prisma.quizAttempt.update({
     where: { id: attemptId },
-    data: { finishedAt: new Date() },
+    data: { finishedAt: new Date(), status: 'finished' },
     select: { score: true, totalQuestions: true },
   });
 }
