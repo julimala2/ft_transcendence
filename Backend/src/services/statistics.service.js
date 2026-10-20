@@ -1,4 +1,5 @@
 const statsModel = require('../models/statistics.model');
+const blocksModel = require('../models/blocks.model');
 
 
 function formatRushRows(rushRows) {
@@ -87,7 +88,6 @@ async function findCategoryNames(categoryIds) {
   return names;
 }
 
-// Moyenne des records des joueurs, par catégorie + niveau
 function computeRushAverages(rushRows) {
   const groups = {};
 
@@ -125,7 +125,6 @@ function computeRushAverages(rushRows) {
   return result;
 }
 
-// Ajoute le nom de la catégorie à chaque ligne et construit la réponse commune
 async function buildResponse(categoryId, rush, custom) {
   const categoryIds = collectCategoryIds(rush, custom);
   const names = await findCategoryNames(categoryIds);
@@ -159,18 +158,20 @@ async function getUserStats(userId, categoryId) {
   return buildResponse(categoryId, rush, custom);
 }
 
-// Stats d'un autre joueur : null si l'utilisateur n'existe pas
-async function getOtherUserStats(userId, categoryId) {
+async function getOtherUserStats(currentUserId, userId, categoryId) {
   const exists = await statsModel.userExists(userId);
   if (!exists) {
+    return null;
+  }
+
+  const block = await blocksModel.findBetween(currentUserId, userId);
+  if (block) {
     return null;
   }
 
   return getUserStats(userId, categoryId);
 }
 
-// Rush : moyenne des records des autres joueurs (sans currentUserId)
-// Custom : moyenne des % de tous les joueurs
 async function getGlobalStats(currentUserId, categoryId) {
   const rushRows = await statsModel.findRushBestScores({ categoryId: categoryId, excludeUserId: currentUserId });
   const customRows = await statsModel.findCustomAttempts({ categoryId: categoryId });

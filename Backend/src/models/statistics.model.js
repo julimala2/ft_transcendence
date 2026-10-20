@@ -25,7 +25,6 @@ function statsWhere({ categoryId, tagId, mode, excludeUserId }) {
   return where;
 }
 
-// Record de chaque joueur par catégorie + niveau, sans le joueur excludeUserId
 async function findRushBestScores({ categoryId, tagId, excludeUserId }) {
   return prisma.quizAttempt.groupBy({
     by: ['userId', 'categoryId', 'difficulty'],

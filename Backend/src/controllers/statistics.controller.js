@@ -23,7 +23,7 @@ async function getUserStatistics(req, res) {
 
     const categoryId = req.statsCategoryId;
     try {
-        const stats = await statsService.getOtherUserStats(req.statsUserId, categoryId);
+        const stats = await statsService.getOtherUserStats(req.user.id, req.statsUserId, categoryId);
         if (!stats) {
             return res.status(404).json({ error: 'Utilisateur introuvable' });
         }

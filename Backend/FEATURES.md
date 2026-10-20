@@ -165,7 +165,8 @@ json
 
 Stats d’un autre joueur (profil, ami...). Même format que GET /api/statistics, accepte aussi ?categoryId=1.
 
-- 400 si l’id n’est pas un entier positif, 404 si l’utilisateur n’existe pas.
+- 400 si l’id n’est pas un entier positif.
+- 404 si l’utilisateur n’existe pas, ou s’il y a un blocage entre les deux joueurs (dans un sens ou dans l’autre). Même réponse dans les deux cas, pour ne pas révéler un blocage.
 
 ### Prévu, pas encore disponible
 
