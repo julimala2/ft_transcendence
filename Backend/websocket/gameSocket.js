@@ -2,10 +2,12 @@ const { getProfile } = require('../src/services/user.service');
 const { joinRoomHandler } = require('./handlers/joinRoomHandler');
 const { chatHandler } = require('./handlers/chatHandler');
 const { leaveRoom } = require('./rooms');
+const { startGame } = require('./quizGame');
 
 const handlers = {
   joinRoom: joinRoomHandler,
   chat: chatHandler,
+  startGame: startGame,
   leaveRoom: leaveRoom,
 };
 

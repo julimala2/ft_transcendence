@@ -25,6 +25,9 @@ export function useGameSocket(roomId) {
       console.log('✅ WebSocket connecté');
       setConnected(true);
 
+      // choix partie rapide / creer room / rejoindre room
+
+      
       // Rejoindre la room spécifiée
       if (roomId) {
         console.log(`📍 Tentative de rejoindre la room: ${roomId}`);
