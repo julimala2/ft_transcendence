@@ -33,4 +33,13 @@ async function answer(req, res) {
   }
 }
 
-module.exports = { start, getOne, answer };
+async function abandon(req, res) {
+  try {
+    const result = await attemptService.abandonAttempt(req.attemptId, req.user.id);
+    res.json(result);
+  } catch (err) {
+    sendError(res, err);
+  }
+}
+
+module.exports = { start, getOne, answer, abandon };

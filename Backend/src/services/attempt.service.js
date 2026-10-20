@@ -3,12 +3,20 @@ const quizModel = require('../models/quiz.model');
 const categoryModel = require('../models/category.model');
 const quizService = require('./quiz.service');
 
+const { STATUS } = attemptModel;
 const DEFAULT_QUESTION_COUNT = 20;
 
 function httpError(statusCode, message) {
   const error = new Error(message);
   error.statusCode = statusCode;
   return error;
+}
+
+function endedError(status) {
+  return httpError(
+    409,
+    status === STATUS.ABANDONED ? 'Cette partie a été abandonnée' : 'Cette partie est déjà terminée'
+  );
 }
 
 function shuffle(items) {
@@ -79,11 +87,13 @@ async function startAttempt(userId, params) {
     };
   }
 
+  await attemptModel.abandonInProgress(userId);
   const attempt = await attemptModel.createAttempt({ userId, ...links, questionIds });
   const current = await attemptModel.findCurrentPublic(attempt.id);
 
   return {
     id: attempt.id,
+    status: STATUS.IN_PROGRESS,
     total: attempt.totalQuestions,
     answered: 0,
     score: 0,
@@ -94,29 +104,30 @@ async function startAttempt(userId, params) {
 
 async function getAttempt(id, userId) {
   const attempt = await getOwnedAttempt(id, userId);
-  const finished = attempt.finishedAt !== null;
-  const current = finished ? null : await attemptModel.findCurrentPublic(id);
+  const inProgress = attempt.status === STATUS.IN_PROGRESS;
+  const current = inProgress ? await attemptModel.findCurrentPublic(id) : null;
 
   return {
     id: attempt.id,
+    status: attempt.status,
     total: attempt.totalQuestions,
     answered: attempt._count.userAnswers,
     score: attempt.score,
-    finished,
+    finished: attempt.status === STATUS.FINISHED,
     question: formatQuestion(current),
   };
 }
 
 async function answerAttempt(id, userId, answerId) {
   const attempt = await getOwnedAttempt(id, userId);
-  if (attempt.finishedAt) {
-    throw httpError(409, 'Cette partie est déjà terminée');
+  if (attempt.status !== STATUS.IN_PROGRESS) {
+    throw endedError(attempt.status);
   }
 
   const current = await attemptModel.findCurrentForVerdict(id);
   if (!current) {
     await attemptModel.markFinished(id);
-    throw httpError(409, 'Cette partie est déjà terminée');
+    throw endedError(STATUS.FINISHED);
   }
 
   const { question } = current;
@@ -149,6 +160,7 @@ async function answerAttempt(id, userId, answerId) {
     isCorrect: chosen.isCorrect,
     correctAnswerId: correct ? correct.id : null,
     explanation: question.explanation,
+    status: next ? STATUS.IN_PROGRESS : STATUS.FINISHED,
     answered: attempt._count.userAnswers + 1,
     score,
     total: attempt.totalQuestions,
@@ -157,4 +169,22 @@ async function answerAttempt(id, userId, answerId) {
   };
 }
 
-module.exports = { startAttempt, getAttempt, answerAttempt };
+async function abandonAttempt(id, userId) {
+  const attempt = await getOwnedAttempt(id, userId);
+  if (attempt.status === STATUS.FINISHED) {
+    throw endedError(STATUS.FINISHED);
+  }
+  if (attempt.status === STATUS.IN_PROGRESS) {
+    await attemptModel.markAbandoned(id);
+  }
+
+  return {
+    id: attempt.id,
+    status: STATUS.ABANDONED,
+    total: attempt.totalQuestions,
+    answered: attempt._count.userAnswers,
+    score: attempt.score,
+  };
+}
+
+module.exports = { startAttempt, getAttempt, answerAttempt, abandonAttempt };

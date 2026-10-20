@@ -14,5 +14,6 @@ router.use(verifyToken);
 router.post('/', validateStartBody, controller.start);
 router.get('/:id', validateAttemptId, controller.getOne);
 router.post('/:id/answers', validateAttemptId, validateAnswerBody, controller.answer);
+router.post('/:id/abandon', validateAttemptId, controller.abandon);
 
 module.exports = router;
