@@ -40,14 +40,6 @@ async function findCustomAttempts({ categoryId, tagId }) {
   });
 }
 
-async function userExists(userId) {
-  const user = await prisma.user.findUnique({
-    where: { id: userId },
-    select: { id: true },
-  });
-  return user !== null;
-}
-
 function userStatsWhere({ userId, categoryId, mode }) {
   const where = {
     userId: userId,
@@ -93,5 +85,4 @@ module.exports = {
   findCustomAttempts,
   findUserCustomAttempts,
   findUserRushRecords,
-  findCategoriesByIds,
-  userExists };
+  findCategoriesByIds };

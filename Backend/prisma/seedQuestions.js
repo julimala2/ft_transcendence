@@ -18,7 +18,6 @@ const TYPES = { multiple: 4, boolean: 2 }; // type -> nombre de réponses attend
 const DIFFICULTIES = [1, 2, 3];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
-// ---------- Vérification ----------
 
 function checkImage(image, where, errors) {
   if (typeof image !== "object" || image === null) {
@@ -130,7 +129,6 @@ function loadFiles() {
   return { files, categories, errors, refs };
 }
 
-// ---------- Écriture en base ----------
 
 async function upsertImage(tx, image) {
   if (!image) return null;
@@ -148,8 +146,6 @@ async function upsertImage(tx, image) {
   return saved.id;
 }
 
-// Compare les réponses en base avec celles du fichier, pour ne les recréer que si elles ont changé
-// (les recréer casserait le lien avec les réponses déjà données par les joueurs).
 function sameAnswers(existing, wanted) {
   if (existing.length !== wanted.length) return false;
   return existing.every(
@@ -248,7 +244,6 @@ async function main() {
     }
   }
 
-  // Questions de la banque présentes en base mais plus dans aucun fichier : on les signale sans les supprimer.
   // Comparaison faite en JS : un notIn avec plus de 999 refs dépasse la limite de paramètres de SQLite.
   const bankRefs = await prisma.question.findMany({
     where: { authorId: null, ref: { not: null } },

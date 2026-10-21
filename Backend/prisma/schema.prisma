@@ -13,33 +13,34 @@ datasource db {
 }
 
 model User {
-  id            Int       @id @default(autoincrement())
-  username      String    @unique
-  email         String    @unique
-  password_hash String?
-  display_name  String
-  avatar_url    String?
-  is_online     Boolean   @default(false)
-  last_seen_at  DateTime?
-  created_at    DateTime  @default(now())
-  updated_at    DateTime  @updatedAt
-  oauthAccounts OAuthAccount[]
-  attempts  QuizAttempt[]
-  sentFriendRequests     Friendship[] @relation("FriendshipRequester")
-  receivedFriendRequests Friendship[] @relation("FriendshipAddressee")
-  blockedUsers   BlockedUser[] @relation("BlockedUserBlocker")
-  blockedByUsers BlockedUser[] @relation("BlockedUserBlocked")
-  quizzes       Quiz[]    @relation("QuizOwner")
-  questions     Question[] @relation("QuestionAuthor")
+  id                     Int               @id @default(autoincrement())
+  username               String            @unique
+  email                  String            @unique
+  password_hash          String?
+  display_name           String
+  avatar_url             String?
+  is_online              Boolean           @default(false)
+  last_seen_at           DateTime?
+  created_at             DateTime          @default(now())
+  updated_at             DateTime          @updatedAt
+  oauthAccounts          OAuthAccount[]
+  attempts               QuizAttempt[]
+  sentFriendRequests     Friendship[]      @relation("FriendshipRequester")
+  receivedFriendRequests Friendship[]      @relation("FriendshipAddressee")
+  blockedUsers           BlockedUser[]     @relation("BlockedUserBlocker")
+  blockedByUsers         BlockedUser[]     @relation("BlockedUserBlocked")
+  quizzes                Quiz[]            @relation("QuizOwner")
+  questions              Question[]        @relation("QuestionAuthor")
+  achievements           UserAchievement[]
 }
 
 model OAuthAccount {
-  id                Int      @id @default(autoincrement())
-  user_id           Int
-  user              User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
-  provider          String
-  provider_user_id  String
-  created_at        DateTime @default(now())
+  id               Int      @id @default(autoincrement())
+  user_id          Int
+  user             User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  provider         String
+  provider_user_id String
+  created_at       DateTime @default(now())
 
   @@unique([provider, provider_user_id])
 }
@@ -74,48 +75,48 @@ model Quiz {
   description String?
   createdAt   DateTime @default(now())
 
-  ownerId     Int?
-  owner       User?    @relation("QuizOwner", fields: [ownerId], references: [id], onDelete: Cascade)
-  visibility  String   @default("public") // "public" | "friends" | "private"
+  ownerId    Int?
+  owner      User?  @relation("QuizOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  visibility String @default("public") // "public" | "friends" | "private"
 
-  questions   QuizQuestion[]
-  attempts    QuizAttempt[]
-}
-
-model Category {
-  id        Int      @id @default(autoincrement())
-  slug      String   @unique
-  name      String   @unique
-
-  questions Question[]
+  questions QuizQuestion[]
   attempts  QuizAttempt[]
 }
 
+model Category {
+  id   Int    @id @default(autoincrement())
+  slug String @unique
+  name String @unique
+
+  questions    Question[]
+  attempts     QuizAttempt[]
+  achievements Achievement[]
+}
+
 model Question {
-  id         Int      @id @default(autoincrement())
-  ref        String?  @unique              // "geo-001" pour la banque, null pour une question perso
-  type       String   @default("multiple") // "multiple" | "boolean"
-  difficulty Int      @default(1)          // 1 facile, 2 moyen, 3 difficile
-  text       String
+  id          Int      @id @default(autoincrement())
+  ref         String?  @unique // "geo-001" pour la banque, null pour une question perso
+  type        String   @default("multiple") // "multiple" | "boolean"
+  difficulty  Int      @default(1) // 1 facile, 2 moyen, 3 difficile
+  text        String
   explanation String?
-  isActive    Boolean @default(true)
+  isActive    Boolean  @default(true)
   createdAt   DateTime @default(now())
 
-
-  authorId   Int?
-  author     User?      @relation("QuestionAuthor", fields: [authorId], references: [id], onDelete: Cascade)
+  authorId Int?
+  author   User? @relation("QuestionAuthor", fields: [authorId], references: [id], onDelete: Cascade)
 
   categoryId Int?
-  category   Category?  @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: Restrict)
 
-  imageId     Int?
-  image       Image?   @relation(fields: [imageId], references: [id], onDelete: SetNull)
+  imageId Int?
+  image   Image? @relation(fields: [imageId], references: [id], onDelete: SetNull)
 
-  tags        Tag[]
-  answers     Answer[]
-  quizzes     QuizQuestion[]
+  tags             Tag[]
+  answers          Answer[]
+  quizzes          QuizQuestion[]
   attemptQuestions AttemptQuestion[]
-  userAnswers UserAnswer[]
+  userAnswers      UserAnswer[]
 
   @@index([categoryId, difficulty])
 }
@@ -132,35 +133,35 @@ model QuizQuestion {
 }
 
 model Answer {
-  id         Int      @id @default(autoincrement())
-  text       String?
-  isCorrect  Boolean  @default(false)
+  id        Int     @id @default(autoincrement())
+  text      String?
+  isCorrect Boolean @default(false)
 
   questionId Int
   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 
-  imageId     Int?
-  image       Image?       @relation(fields: [imageId], references: [id], onDelete: SetNull)
+  imageId Int?
+  image   Image? @relation(fields: [imageId], references: [id], onDelete: SetNull)
 
-  userAnswers   UserAnswer[]
+  userAnswers UserAnswer[]
 }
 
 model QuizAttempt {
-  id             Int      @id @default(autoincrement())
-  score          Int      @default(0)
-  totalQuestions Int      @default(0)
-  startedAt      DateTime @default(now())
+  id             Int       @id @default(autoincrement())
+  score          Int       @default(0)
+  totalQuestions Int       @default(0)
+  startedAt      DateTime  @default(now())
   finishedAt     DateTime?
 
-  mode           String   @default("custom")
-  status         String   @default("in_progress")
+  mode   String @default("custom")
+  status String @default("in_progress")
 
-  userId    Int
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId Int
+  user   User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   // Partie sur un quiz existant (null pour une partie générée)
-  quizId    Int?
-  quiz      Quiz?    @relation(fields: [quizId], references: [id], onDelete: SetNull)
+  quizId Int?
+  quiz   Quiz? @relation(fields: [quizId], references: [id], onDelete: SetNull)
 
   // Partie générée : le score est rattaché à ce thème, pas à un quiz
   categoryId Int?
@@ -169,8 +170,9 @@ model QuizAttempt {
   tag        Tag?      @relation(fields: [tagId], references: [id], onDelete: SetNull)
   difficulty Int?
 
-  questions   AttemptQuestion[]
-  userAnswers UserAnswer[]
+  questions    AttemptQuestion[]
+  userAnswers  UserAnswer[]
+  achievements UserAchievement[]
 
   @@index([userId])
   @@index([categoryId, tagId, difficulty])
@@ -189,36 +191,76 @@ model AttemptQuestion {
 }
 
 model UserAnswer {
-  id         Int      @id @default(autoincrement())
-  isCorrect  Boolean
+  id        Int     @id @default(autoincrement())
+  isCorrect Boolean
 
-  attemptId  Int
-  attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  attemptId Int
+  attempt   QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
 
   questionId Int
   question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
 
-  answerId   Int?
-  answer     Answer?   @relation(fields: [answerId], references: [id], onDelete: SetNull)
+  answerId Int?
+  answer   Answer? @relation(fields: [answerId], references: [id], onDelete: SetNull)
 
   @@unique([attemptId, questionId])
 }
 
 model Image {
-  id            Int        @id @default(autoincrement())
-  src           String     @unique
+  id            Int     @id @default(autoincrement())
+  src           String  @unique
   alt           String
   creditAuthor  String?
   creditLicense String?
   creditUrl     String?
 
-  questions     Question[]
-  answers       Answer[]
+  questions Question[]
+  answers   Answer[]
 }
 
 model Tag {
-  id        Int        @id @default(autoincrement())
-  slug      String     @unique
+  id        Int           @id @default(autoincrement())
+  slug      String        @unique
   questions Question[]
   attempts  QuizAttempt[]
+  achievements Achievement[]
+}
+
+model Achievement {
+  id          Int     @id @default(autoincrement())
+  slug        String  @unique // "hp-rush-25", sert de clé pour le seed
+  name        String // "Apprenti sorcier"
+  description String // "25 bonnes réponses ou plus en une partie rush Harry Potter"
+  icon        String? // fichier dans assets/achievements/
+
+  // Condition d'obtention, selon metric :
+  //   "rush_score"     : une partie rush avec score >= threshold
+  //   "perfect_game"   : une partie custom terminée avec score == totalQuestions et totalQuestions >= minQuestions
+  //   "games_finished" : au moins threshold parties custom terminées (cumul)
+  metric       String    @default("rush_score")
+  threshold    Int       @default(1)
+  minQuestions Int? // nombre minimum de questions dans la partie (anti-farming), null = pas de minimum
+  categoryId   Int? // null = badge valable quel que soit le thème
+  category     Category? @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  tagId        Int? // null = toute la catégorie
+  tag          Tag?      @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  difficulty   Int? // null = toutes difficultés (cas du rush)
+
+  users UserAchievement[]
+
+  @@index([metric, categoryId])
+}
+
+model UserAchievement {
+  userId        Int
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievementId Int
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+  unlockedAt    DateTime    @default(now())
+
+  // Partie qui a débloqué le badge (null si la partie a été supprimée)
+  attemptId Int?
+  attempt   QuizAttempt? @relation(fields: [attemptId], references: [id], onDelete: SetNull)
+
+  @@id([userId, achievementId])
 }

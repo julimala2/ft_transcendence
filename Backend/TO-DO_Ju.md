@@ -18,6 +18,7 @@ series (divertissment)
 
 Possibilite de signaler une question
 
+Rush mode Joris ? 
 
 
 Pourquoi mettre le timer dans le back : 

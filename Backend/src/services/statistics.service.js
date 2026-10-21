@@ -1,5 +1,6 @@
 const statsModel = require('../models/statistics.model');
 const blocksModel = require('../models/blocks.model');
+const userModel = require('../models/user.model');
 
 
 function formatRushRows(rushRows) {
@@ -159,7 +160,7 @@ async function getUserStats(userId, categoryId) {
 }
 
 async function getOtherUserStats(currentUserId, userId, categoryId) {
-  const exists = await statsModel.userExists(userId);
+  const exists = await userModel.userExists(userId);
   if (!exists) {
     return null;
   }

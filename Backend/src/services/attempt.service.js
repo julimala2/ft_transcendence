@@ -2,6 +2,7 @@ const attemptModel = require('../models/attempt.model');
 const quizModel = require('../models/quiz.model');
 const categoryModel = require('../models/category.model');
 const quizService = require('./quiz.service');
+const achievementsService = require('./achievements.service');
 
 const { STATUS } = attemptModel;
 const DEFAULT_QUESTION_COUNT = 20;
@@ -154,7 +155,11 @@ async function answerAttempt(id, userId, answerId) {
 
   const score = recorded[1].score;
   const next = await attemptModel.findCurrentPublic(id);
-  if (!next) await attemptModel.markFinished(id);
+  let newBadges = [];
+  if (!next) {
+    await attemptModel.markFinished(id);
+    newBadges = await achievementsService.checkAchievements(id);
+  }
 
   return {
     isCorrect: chosen.isCorrect,
@@ -166,6 +171,7 @@ async function answerAttempt(id, userId, answerId) {
     total: attempt.totalQuestions,
     finished: !next,
     next: formatQuestion(next),
+    newBadges,
   };
 }
 

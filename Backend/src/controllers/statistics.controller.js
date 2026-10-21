@@ -1,11 +1,5 @@
 const statsService = require('../services/statistics.service');
 
-
-//Rush	                                    //Custom
-//Comparé à	            moyenne des records des autres joueurs	    moyenne des % de tous les joueurs
-//Regroupement	        catégorie + niveau	                        catégorie + niveau
-
-
 async function getStatistics(req, res) {
 
     const categoryId = req.statsCategoryId;
@@ -48,4 +42,4 @@ async function getGlobalStatistics(req, res) {
     }
 }
 
-module.exports = {getStatistics, getUserStatistics, getGlobalStatistics};
+module.exports = { getStatistics, getUserStatistics, getGlobalStatistics };
