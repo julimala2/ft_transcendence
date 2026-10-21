@@ -11,8 +11,12 @@ user
         - voir is_online quand websockets
 
 quiz
-Geographie : departements en nb et silhouettes 
+musique
+cinema
+series (divertissment)
+42
 
+Possibilite de signaler une question
 
 
 

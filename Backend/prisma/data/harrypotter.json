@@ -7,7 +7,7 @@
     "avecImage": 0,
     "sansImage": 207,
     "parTag": {
-      "histoire": 63,
+      "recit": 63,
       "personnage": 52,
       "maison": 31,
       "sort": 31,
@@ -769,7 +769,7 @@
       "ref": "hp-055",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "D'où part le Poudlard Express (Hogwarts Express) ?",
       "answers": [
         { "text": "Du quai 7 ½ de la gare de Waterloo", "isCorrect": false },
@@ -783,7 +783,7 @@
       "ref": "hp-056",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Où dort Harry chez les Dursley, avant de recevoir sa lettre de Poudlard ?",
       "answers": [
         { "text": "Dans la cabane du jardin", "isCorrect": false },
@@ -797,7 +797,7 @@
       "ref": "hp-057",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel est le jour de l'anniversaire de Harry ?",
       "answers": [
         { "text": "Le 31 octobre", "isCorrect": false },
@@ -811,7 +811,7 @@
       "ref": "hp-058",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui a créé la pierre philosophale ?",
       "answers": [
         { "text": "Albus Dumbledore", "isCorrect": false },
@@ -825,7 +825,7 @@
       "ref": "hp-059",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel monstre se cache dans la Chambre des secrets ?",
       "answers": [
         { "text": "Un dragon", "isCorrect": false },
@@ -839,7 +839,7 @@
       "ref": "hp-060",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui ouvre la Chambre des secrets dans le tome 2 ?",
       "answers": [
         { "text": "Rubeus Hagrid", "isCorrect": false },
@@ -853,7 +853,7 @@
       "ref": "hp-061",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui a réellement trahi les parents de Harry auprès de Voldemort ?",
       "answers": [
         { "text": "Remus Lupin", "isCorrect": false },
@@ -867,7 +867,7 @@
       "ref": "hp-062",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel dragon Harry doit-il affronter lors de la première tâche du Tournoi des Trois Sorciers (Triwizard Tournament) ?",
       "answers": [
         { "text": "Le Magyar à pointes (Hungarian Horntail)", "isCorrect": true },
@@ -881,7 +881,7 @@
       "ref": "hp-063",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui tue Cedric Diggory, dans le cimetière, sur ordre de Voldemort ?",
       "answers": [
         { "text": "Barty Croupton Jr (Barty Crouch Jr)", "isCorrect": false },
@@ -895,7 +895,7 @@
       "ref": "hp-064",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Où se trouve le quartier général de l'Ordre du Phénix (the Order of the Phoenix) ?",
       "answers": [
         { "text": "Au 12, square Grimmaurd (Grimmauld Place)", "isCorrect": true },
@@ -909,7 +909,7 @@
       "ref": "hp-065",
       "type": "boolean",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Le Prince de sang-mêlé (Half-Blood Prince) est Severus Rogue (Severus Snape).",
       "answers": [
         { "text": "Vrai", "isCorrect": true },
@@ -921,7 +921,7 @@
       "ref": "hp-066",
       "type": "boolean",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Dumbledore est tué par Bellatrix Lestrange.",
       "answers": [
         { "text": "Vrai", "isCorrect": false },
@@ -933,7 +933,7 @@
       "ref": "hp-067",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Lequel de ces objets ne fait pas partie des Reliques de la Mort (the Deathly Hallows) ?",
       "answers": [
         { "text": "La Baguette de sureau (the Elder Wand)", "isCorrect": false },
@@ -947,7 +947,7 @@
       "ref": "hp-068",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire", "horcruxe"],
+      "tags": ["recit", "horcruxe"],
       "text": "Combien d'Horcruxes Voldemort a-t-il créés volontairement ?",
       "answers": [
         { "text": "6", "isCorrect": true },
@@ -961,7 +961,7 @@
       "ref": "hp-069",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire", "horcruxe"],
+      "tags": ["recit", "horcruxe"],
       "text": "Lequel de ces objets des fondateurs n'est pas devenu un Horcruxe ?",
       "answers": [
         { "text": "Le médaillon de Serpentard (Slytherin)", "isCorrect": false },
@@ -975,7 +975,7 @@
       "ref": "hp-070",
       "type": "boolean",
       "difficulty": 2,
-      "tags": ["histoire", "horcruxe"],
+      "tags": ["recit", "horcruxe"],
       "text": "Neville Londubat (Neville Longbottom) tue le serpent Nagini avec l'épée de Gryffondor (Gryffindor).",
       "answers": [
         { "text": "Vrai", "isCorrect": true },
@@ -987,7 +987,7 @@
       "ref": "hp-071",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui tue Bellatrix Lestrange pendant la bataille de Poudlard ?",
       "answers": [
         { "text": "Minerva McGonagall", "isCorrect": false },
@@ -1001,7 +1001,7 @@
       "ref": "hp-072",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Grâce à quel objet Dobby est-il libéré ?",
       "answers": [
         { "text": "Un chapeau", "isCorrect": false },
@@ -1015,7 +1015,7 @@
       "ref": "hp-073",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel ingrédient, appartenant à une autre personne, faut-il ajouter au Polynectar (Polyjuice Potion) pour en prendre l'apparence ?",
       "answers": [
         { "text": "Un cheveu", "isCorrect": true },
@@ -1029,7 +1029,7 @@
       "ref": "hp-074",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel est le surnom de la potion Felix Felicis ?",
       "answers": [
         { "text": "L'Amortentia", "isCorrect": false },
@@ -1043,7 +1043,7 @@
       "ref": "hp-075",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Comment s'appelle le deuxième fils de Harry, dans l'épilogue du tome 7 ?",
       "answers": [
         { "text": "James Sirius", "isCorrect": false },
@@ -1057,7 +1057,7 @@
       "ref": "hp-076",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Combien de joueurs compte une équipe de Quidditch ?",
       "answers": [
         { "text": "5", "isCorrect": false },
@@ -1071,7 +1071,7 @@
       "ref": "hp-077",
       "type": "boolean",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Attraper le Vif d'or (the Golden Snitch) rapporte 50 points.",
       "answers": [
         { "text": "Vrai", "isCorrect": false },
@@ -1385,7 +1385,7 @@
       "ref": "hp-100",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["maison", "histoire"],
+      "tags": ["maison", "recit"],
       "text": "Quelle maison remporte la Coupe des Quatre Maisons (the House Cup) à la fin du tome 1 ?",
       "answers": [
         { "text": "Poufsouffle (Hufflepuff)", "isCorrect": false },
@@ -1399,7 +1399,7 @@
       "ref": "hp-101",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["maison", "histoire"],
+      "tags": ["maison", "recit"],
       "text": "Combien de points Dumbledore accorde-t-il à Neville à la fin du tome 1, et qui donnent la victoire à Gryffondor (Gryffindor) ?",
       "answers": [
         { "text": "50", "isCorrect": false },
@@ -1427,7 +1427,7 @@
       "ref": "hp-103",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["maison", "histoire"],
+      "tags": ["maison", "recit"],
       "text": "Quel fondateur a construit la Chambre des secrets ?",
       "answers": [
         { "text": "Helga Poufsouffle (Helga Hufflepuff)", "isCorrect": false },
@@ -1897,7 +1897,7 @@
       "ref": "hp-137",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["horcruxe", "histoire"],
+      "tags": ["horcruxe", "recit"],
       "text": "Quelle Relique de la Mort (Deathly Hallow) est sertie dans la bague de Gaunt ?",
       "answers": [
         { "text": "La Cape d'invisibilité (the Invisibility Cloak)", "isCorrect": false },
@@ -2061,7 +2061,7 @@
       "ref": "hp-149",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Que montre le Miroir du Riséd (the Mirror of Erised) ?",
       "answers": [
         { "text": "Le désir le plus profond de celui qui s'y regarde", "isCorrect": true },
@@ -2075,7 +2075,7 @@
       "ref": "hp-150",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel est le nom du village de sorciers tout proche de Poudlard (Hogwarts) ?",
       "answers": [
         { "text": "Pré-au-Lard (Hogsmeade)", "isCorrect": true },
@@ -2089,7 +2089,7 @@
       "ref": "hp-151",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui tient la banque des sorciers, Gringotts ?",
       "answers": [
         { "text": "Des Détraqueurs (Dementors)", "isCorrect": false },
@@ -2103,7 +2103,7 @@
       "ref": "hp-152",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quelle prison des sorciers est gardée par les Détraqueurs (Dementors) ?",
       "answers": [
         { "text": "Gringotts", "isCorrect": false },
@@ -2117,7 +2117,7 @@
       "ref": "hp-153",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Comment s'appelle la maison de la famille Weasley ?",
       "answers": [
         { "text": "La Chaumière aux Coquillages (Shell Cottage)", "isCorrect": false },
@@ -2131,7 +2131,7 @@
       "ref": "hp-154",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel objet ayant appartenu à son père Harry reçoit-il anonymement à Noël, dans le tome 1 ?",
       "answers": [
         { "text": "Une cape d'invisibilité", "isCorrect": true },
@@ -2145,7 +2145,7 @@
       "ref": "hp-155",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel balai Sirius offre-t-il à Harry dans le tome 3 ?",
       "answers": [
         { "text": "Un Nimbus 2001", "isCorrect": false },
@@ -2159,7 +2159,7 @@
       "ref": "hp-156",
       "type": "boolean",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Harry est le plus jeune joueur de Quidditch d'une équipe de maison depuis un siècle.",
       "answers": [
         { "text": "Vrai", "isCorrect": true },
@@ -2171,7 +2171,7 @@
       "ref": "hp-157",
       "type": "boolean",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Le Tournoi des Trois Sorciers (Triwizard Tournament) se déroule dans le tome 5.",
       "answers": [
         { "text": "Vrai", "isCorrect": false },
@@ -2183,7 +2183,7 @@
       "ref": "hp-158",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["personnage", "histoire"],
+      "tags": ["personnage", "recit"],
       "text": "Avec quel jeune sorcier Albus Dumbledore se lie-t-il d'amitié l'été qui suit la fin de ses études, à Godric's Hollow ?",
       "answers": [
         { "text": "Horace Slughorn", "isCorrect": false },
@@ -2197,7 +2197,7 @@
       "ref": "hp-159",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["personnage", "histoire"],
+      "tags": ["personnage", "recit"],
       "text": "Grâce à qui Albus Dumbledore rencontre-t-il Gellert Grindelwald ?",
       "answers": [
         { "text": "Elphias Doge, son ami d'enfance", "isCorrect": false },
@@ -2211,7 +2211,7 @@
       "ref": "hp-160",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["personnage", "histoire", "citation"],
+      "tags": ["personnage", "recit", "citation"],
       "text": "Quelle devise Albus Dumbledore et Gellert Grindelwald adoptent-ils dans leur jeunesse ?",
       "answers": [
         { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": false },
@@ -2225,7 +2225,7 @@
       "ref": "hp-161",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["personnage", "histoire"],
+      "tags": ["personnage", "recit"],
       "text": "Comment meurt Ariana, la sœur d'Albus Dumbledore ?",
       "answers": [
         { "text": "D'une maladie, à Sainte-Mangouste (St Mungo's)", "isCorrect": false },
@@ -2239,7 +2239,7 @@
       "ref": "hp-162",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["personnage", "histoire"],
+      "tags": ["personnage", "recit"],
       "text": "Que fait Abelforth (Aberforth) à son frère Albus lors des funérailles d'Ariana ?",
       "answers": [
         { "text": "Il lui casse le nez", "isCorrect": true },
@@ -2281,7 +2281,7 @@
       "ref": "hp-165",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["personnage", "histoire"],
+      "tags": ["personnage", "recit"],
       "text": "Avec qui Harry va-t-il au bal de Noël (the Yule Ball) dans le tome 4 ?",
       "answers": [
         { "text": "Lavande Brown (Lavender Brown)", "isCorrect": false },
@@ -2323,7 +2323,7 @@
       "ref": "hp-168",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Pourquoi Harry se précipite-t-il au ministère de la Magie à la fin du tome 5 ?",
       "answers": [
         { "text": "Il doit passer son audience disciplinaire", "isCorrect": false },
@@ -2337,7 +2337,7 @@
       "ref": "hp-169",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel objet les Mangemorts (Death Eaters) cherchent-ils à récupérer au Département des mystères (the Department of Mysteries) ?",
       "answers": [
         { "text": "Une prophétie concernant Harry et Voldemort", "isCorrect": true },
@@ -2351,7 +2351,7 @@
       "ref": "hp-170",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui brise accidentellement la prophétie pendant la bataille du ministère de la Magie?",
       "answers": [
         { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false },
@@ -2365,7 +2365,7 @@
       "ref": "hp-171",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Comment meurt Sirius Black pendant la bataille du Département des mystères (the Department of Mysteries) ?",
       "answers": [
         { "text": "Tué par Voldemort d'un Avada Kedavra", "isCorrect": false },
@@ -2379,7 +2379,7 @@
       "ref": "hp-172",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel personnage voit Voldemort de ses propres yeux à la fin de la bataille au ministère de la Magie, et doit enfin reconnaître son retour ?",
       "answers": [
         { "text": "Dolores Ombrage (Umbridge)", "isCorrect": false },
@@ -2393,7 +2393,7 @@
       "ref": "hp-173",
       "type": "multiple",
       "difficulty": 1,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel âge faut-il avoir pour présenter sa candidature au Tournoi des Trois Sorciers (Triwizard Tournament) ?",
       "answers": [
         { "text": "15 ans", "isCorrect": false },
@@ -2407,7 +2407,7 @@
       "ref": "hp-174",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui a mis le nom de Harry dans la Coupe de feu (the Goblet of Fire) ?",
       "answers": [
         { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false },
@@ -2421,7 +2421,7 @@
       "ref": "hp-175",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quelle plante permet à Harry de respirer sous l'eau lors de la deuxième tâche ?",
       "answers": [
         { "text": "Le Tubercule de Bubon (Bubotuber)", "isCorrect": false },
@@ -2435,7 +2435,7 @@
       "ref": "hp-176",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qui Harry doit-il délivrer au fond du lac lors de la deuxième tâche ?",
       "answers": [
         { "text": "Hermione Granger", "isCorrect": false },
@@ -2449,7 +2449,7 @@
       "ref": "hp-177",
       "type": "multiple",
       "difficulty": 2,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Qu'est-ce qui transporte Harry et Cedric dans le cimetière, à la fin de la troisième tâche ?",
       "answers": [
         { "text": "Le Magicobus (the Knight Bus)", "isCorrect": false },
@@ -2715,7 +2715,7 @@
       "ref": "hp-196",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["citation", "histoire"],
+      "tags": ["citation", "recit"],
       "text": "Quelle inscription Harry découvre-t-il sur le Vif d'or que Dumbledore lui lègue ?",
       "answers": [
         { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": false },
@@ -2729,7 +2729,7 @@
       "ref": "hp-197",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["citation", "histoire"],
+      "tags": ["citation", "recit"],
       "text": "Quelle inscription est gravée sur la tombe de James et Lily Potter, à Godric's Hollow ?",
       "answers": [
         { "text": "« Pour le plus grand bien » (For the Greater Good)", "isCorrect": false },
@@ -2743,7 +2743,7 @@
       "ref": "hp-198",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["citation", "histoire"],
+      "tags": ["citation", "recit"],
       "text": "Qui prononce la prophétie qui annonce l'affrontement entre Harry et Voldemort ?",
       "answers": [
         { "text": "Sibylle Trelawney (Sybill Trelawney)", "isCorrect": true },
@@ -2757,7 +2757,7 @@
       "ref": "hp-199",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel est le numéro du coffre de Harry à Gringotts ?",
       "answers": [
         { "text": "687", "isCorrect": true },
@@ -2771,7 +2771,7 @@
       "ref": "hp-200",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Comment s'appelle le contrôleur du Magicobus (the Knight Bus) ?",
       "answers": [
         { "text": "Mondingus Fletcher (Mundungus Fletcher)", "isCorrect": false },
@@ -2785,7 +2785,7 @@
       "ref": "hp-201",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Comment Harry attrape-t-il le Vif d'or lors de son tout premier match de Quidditch ?",
       "answers": [
         { "text": "Il manque de l'avaler", "isCorrect": true },
@@ -2799,7 +2799,7 @@
       "ref": "hp-202",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quelle équipe remporte la finale de la Coupe du monde de Quidditch, dans le tome 4 ?",
       "answers": [
         { "text": "L'Angleterre", "isCorrect": false },
@@ -2813,7 +2813,7 @@
       "ref": "hp-203",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Où Harry enterre-t-il Dobby ?",
       "answers": [
         { "text": "Dans le parc de Poudlard (Hogwarts)", "isCorrect": false },
@@ -2827,7 +2827,7 @@
       "ref": "hp-204",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "De quel frère Peverell Harry descend-il ?",
       "answers": [
         { "text": "Antioche (Antioch)", "isCorrect": false },
@@ -2841,7 +2841,7 @@
       "ref": "hp-205",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Pourquoi la Baguette de sureau (the Elder Wand) obéit-elle à Harry, et pas à Voldemort ?",
       "answers": [
         { "text": "Harry a désarmé Drago, qui avait lui-même désarmé Dumbledore", "isCorrect": true },
@@ -2855,7 +2855,7 @@
       "ref": "hp-206",
       "type": "multiple",
       "difficulty": 3,
-      "tags": ["histoire"],
+      "tags": ["recit"],
       "text": "Quel objet Dumbledore lègue-t-il à Ron dans son testament ?",
       "answers": [
         { "text": "Le premier Vif d'or de Harry", "isCorrect": false },

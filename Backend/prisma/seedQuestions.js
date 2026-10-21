@@ -249,10 +249,12 @@ async function main() {
   }
 
   // Questions de la banque présentes en base mais plus dans aucun fichier : on les signale sans les supprimer.
-  const orphans = await prisma.question.findMany({
-    where: { authorId: null, ref: { notIn: [...refs.keys()] } },
+  // Comparaison faite en JS : un notIn avec plus de 999 refs dépasse la limite de paramètres de SQLite.
+  const bankRefs = await prisma.question.findMany({
+    where: { authorId: null, ref: { not: null } },
     select: { ref: true },
   });
+  const orphans = bankRefs.filter((q) => !refs.has(q.ref));
 
   console.log(`\nTerminé : ${created} question(s) créée(s), ${updated} mise(s) à jour.`);
   if (orphans.length > 0) {

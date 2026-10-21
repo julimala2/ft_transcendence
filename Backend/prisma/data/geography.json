@@ -1,24 +1,26 @@
 {
   "_stats": {
     "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
-    "total": 574,
-    "parDifficulte": { "1": 153, "2": 263, "3": 158 },
-    "parType": { "multiple": 544, "boolean": 30 },
-    "avecImage": 255,
-    "sansImage": 319,
+    "total": 767,
+    "parDifficulte": { "1": 166, "2": 340, "3": 261 },
+    "parType": { "multiple": 737, "boolean": 30 },
+    "avecImage": 347,
+    "sansImage": 420,
     "parTag": {
+      "france": 219,
+      "departement": 193,
       "drapeau": 193,
       "asie": 157,
       "europe": 149,
       "capitale": 135,
       "afrique": 134,
       "amerique": 93,
+      "carte": 92,
       "record": 52,
       "silhouette": 50,
       "ville": 35,
       "oceanie": 34,
       "fleuve": 27,
-      "france": 26,
       "pays": 22,
       "mer": 21,
       "monnaie": 20,
@@ -10311,6 +10313,3536 @@
         { "text": "Vanuatu", "isCorrect": false }
       ],
       "explanation": "La frontière ouest est une ligne droite qui coupe l'île de Nouvelle-Guinée en deux, avec l'Indonésie."
+    },
+    {
+      "ref": "geo-579",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 01 ?",
+      "answers": [
+        { "text": "Ain", "isCorrect": true },
+        { "text": "Allier", "isCorrect": false },
+        { "text": "Aisne", "isCorrect": false },
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Bourg-en-Bresse."
+    },
+    {
+      "ref": "geo-580",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Aisne » ?",
+      "answers": [
+        { "text": "01", "isCorrect": false },
+        { "text": "04", "isCorrect": false },
+        { "text": "02", "isCorrect": true },
+        { "text": "05", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Laon."
+    },
+    {
+      "ref": "geo-581",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 03 ?",
+      "answers": [
+        { "text": "Allier", "isCorrect": true },
+        { "text": "Alpes-Maritimes", "isCorrect": false },
+        { "text": "Aisne", "isCorrect": false },
+        { "text": "Ain", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Moulins."
+    },
+    {
+      "ref": "geo-582",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Alpes-de-Haute-Provence » ?",
+      "answers": [
+        { "text": "05", "isCorrect": false },
+        { "text": "07", "isCorrect": false },
+        { "text": "06", "isCorrect": false },
+        { "text": "04", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Digne-les-Bains."
+    },
+    {
+      "ref": "geo-583",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 05 ?",
+      "answers": [
+        { "text": "Hautes-Alpes", "isCorrect": true },
+        { "text": "Aisne", "isCorrect": false },
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Gap."
+    },
+    {
+      "ref": "geo-584",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Alpes-Maritimes » ?",
+      "answers": [
+        { "text": "07", "isCorrect": false },
+        { "text": "03", "isCorrect": false },
+        { "text": "05", "isCorrect": false },
+        { "text": "06", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Nice."
+    },
+    {
+      "ref": "geo-585",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 07 ?",
+      "answers": [
+        { "text": "Hautes-Alpes", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": true },
+        { "text": "Ardennes", "isCorrect": false },
+        { "text": "Aube", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Privas."
+    },
+    {
+      "ref": "geo-586",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Ardennes » ?",
+      "answers": [
+        { "text": "09", "isCorrect": false },
+        { "text": "07", "isCorrect": false },
+        { "text": "08", "isCorrect": true },
+        { "text": "06", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Charleville-Mézières."
+    },
+    {
+      "ref": "geo-587",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 09 ?",
+      "answers": [
+        { "text": "Aude", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": false },
+        { "text": "Aveyron", "isCorrect": false },
+        { "text": "Ariège", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Foix."
+    },
+    {
+      "ref": "geo-588",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Aube » ?",
+      "answers": [
+        { "text": "07", "isCorrect": false },
+        { "text": "11", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Troyes."
+    },
+    {
+      "ref": "geo-589",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 11 ?",
+      "answers": [
+        { "text": "Aveyron", "isCorrect": false },
+        { "text": "Ariège", "isCorrect": false },
+        { "text": "Aude", "isCorrect": true },
+        { "text": "Calvados", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Carcassonne."
+    },
+    {
+      "ref": "geo-590",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Aveyron » ?",
+      "answers": [
+        { "text": "09", "isCorrect": false },
+        { "text": "12", "isCorrect": true },
+        { "text": "14", "isCorrect": false },
+        { "text": "13", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Rodez."
+    },
+    {
+      "ref": "geo-591",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 13 ?",
+      "answers": [
+        { "text": "Bouches-du-Rhône", "isCorrect": true },
+        { "text": "Charente", "isCorrect": false },
+        { "text": "Aude", "isCorrect": false },
+        { "text": "Aube", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Marseille. Marseille est la deuxième ville de France par sa population."
+    },
+    {
+      "ref": "geo-592",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Calvados » ?",
+      "answers": [
+        { "text": "15", "isCorrect": false },
+        { "text": "16", "isCorrect": false },
+        { "text": "13", "isCorrect": false },
+        { "text": "14", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Caen."
+    },
+    {
+      "ref": "geo-593",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 15 ?",
+      "answers": [
+        { "text": "Bouches-du-Rhône", "isCorrect": false },
+        { "text": "Charente-Maritime", "isCorrect": false },
+        { "text": "Cantal", "isCorrect": true },
+        { "text": "Charente", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Aurillac."
+    },
+    {
+      "ref": "geo-594",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Charente » ?",
+      "answers": [
+        { "text": "14", "isCorrect": false },
+        { "text": "17", "isCorrect": false },
+        { "text": "16", "isCorrect": true },
+        { "text": "15", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Angoulême."
+    },
+    {
+      "ref": "geo-595",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 17 ?",
+      "answers": [
+        { "text": "Charente-Maritime", "isCorrect": true },
+        { "text": "Calvados", "isCorrect": false },
+        { "text": "Corrèze", "isCorrect": false },
+        { "text": "Cantal", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est La Rochelle."
+    },
+    {
+      "ref": "geo-596",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Cher » ?",
+      "answers": [
+        { "text": "18", "isCorrect": true },
+        { "text": "2B", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "2A", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Bourges."
+    },
+    {
+      "ref": "geo-597",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 19 ?",
+      "answers": [
+        { "text": "Corse-du-Sud", "isCorrect": false },
+        { "text": "Haute-Corse", "isCorrect": false },
+        { "text": "Cher", "isCorrect": false },
+        { "text": "Corrèze", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Tulle."
+    },
+    {
+      "ref": "geo-598",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Corse-du-Sud » ?",
+      "answers": [
+        { "text": "20", "isCorrect": false },
+        { "text": "2A", "isCorrect": true },
+        { "text": "19", "isCorrect": false },
+        { "text": "2B", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Ajaccio. La Corse portait le numéro 20 jusqu'à sa division en deux départements, en 1976."
+    },
+    {
+      "ref": "geo-599",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 2B ?",
+      "answers": [
+        { "text": "Haute-Corse", "isCorrect": true },
+        { "text": "Corse-du-Sud", "isCorrect": false },
+        { "text": "Corrèze", "isCorrect": false },
+        { "text": "Côtes-d'Armor", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Bastia. La Corse portait le numéro 20 jusqu'à sa division en deux départements, en 1976."
+    },
+    {
+      "ref": "geo-600",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Côte-d'Or » ?",
+      "answers": [
+        { "text": "21", "isCorrect": true },
+        { "text": "24", "isCorrect": false },
+        { "text": "2B", "isCorrect": false },
+        { "text": "19", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Dijon."
+    },
+    {
+      "ref": "geo-601",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 22 ?",
+      "answers": [
+        { "text": "Dordogne", "isCorrect": false },
+        { "text": "Côtes-d'Armor", "isCorrect": true },
+        { "text": "Corse-du-Sud", "isCorrect": false },
+        { "text": "Creuse", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Saint-Brieuc."
+    },
+    {
+      "ref": "geo-602",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Creuse » ?",
+      "answers": [
+        { "text": "23", "isCorrect": true },
+        { "text": "24", "isCorrect": false },
+        { "text": "2B", "isCorrect": false },
+        { "text": "21", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Guéret."
+    },
+    {
+      "ref": "geo-603",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 24 ?",
+      "answers": [
+        { "text": "Dordogne", "isCorrect": true },
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Côte-d'Or", "isCorrect": false },
+        { "text": "Côtes-d'Armor", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Périgueux."
+    },
+    {
+      "ref": "geo-604",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Doubs » ?",
+      "answers": [
+        { "text": "23", "isCorrect": false },
+        { "text": "25", "isCorrect": true },
+        { "text": "26", "isCorrect": false },
+        { "text": "27", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Besançon."
+    },
+    {
+      "ref": "geo-605",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 26 ?",
+      "answers": [
+        { "text": "Finistère", "isCorrect": false },
+        { "text": "Dordogne", "isCorrect": false },
+        { "text": "Drôme", "isCorrect": true },
+        { "text": "Eure-et-Loir", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Valence."
+    },
+    {
+      "ref": "geo-606",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Eure » ?",
+      "answers": [
+        { "text": "30", "isCorrect": false },
+        { "text": "24", "isCorrect": false },
+        { "text": "27", "isCorrect": true },
+        { "text": "29", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Évreux."
+    },
+    {
+      "ref": "geo-607",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 28 ?",
+      "answers": [
+        { "text": "Drôme", "isCorrect": false },
+        { "text": "Haute-Garonne", "isCorrect": false },
+        { "text": "Eure-et-Loir", "isCorrect": true },
+        { "text": "Eure", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Chartres."
+    },
+    {
+      "ref": "geo-608",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Finistère » ?",
+      "answers": [
+        { "text": "28", "isCorrect": false },
+        { "text": "31", "isCorrect": false },
+        { "text": "29", "isCorrect": true },
+        { "text": "30", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Quimper."
+    },
+    {
+      "ref": "geo-609",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 30 ?",
+      "answers": [
+        { "text": "Gard", "isCorrect": true },
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Eure-et-Loir", "isCorrect": false },
+        { "text": "Gironde", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Nîmes."
+    },
+    {
+      "ref": "geo-610",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Haute-Garonne » ?",
+      "answers": [
+        { "text": "32", "isCorrect": false },
+        { "text": "33", "isCorrect": false },
+        { "text": "34", "isCorrect": false },
+        { "text": "31", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Toulouse."
+    },
+    {
+      "ref": "geo-611",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 32 ?",
+      "answers": [
+        { "text": "Finistère", "isCorrect": false },
+        { "text": "Gers", "isCorrect": true },
+        { "text": "Hérault", "isCorrect": false },
+        { "text": "Haute-Garonne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Auch."
+    },
+    {
+      "ref": "geo-612",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Gironde » ?",
+      "answers": [
+        { "text": "36", "isCorrect": false },
+        { "text": "33", "isCorrect": true },
+        { "text": "30", "isCorrect": false },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Bordeaux. C'est le plus grand département de France métropolitaine."
+    },
+    {
+      "ref": "geo-613",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 34 ?",
+      "answers": [
+        { "text": "Indre-et-Loire", "isCorrect": false },
+        { "text": "Gironde", "isCorrect": false },
+        { "text": "Hérault", "isCorrect": true },
+        { "text": "Ille-et-Vilaine", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Montpellier."
+    },
+    {
+      "ref": "geo-614",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Ille-et-Vilaine » ?",
+      "answers": [
+        { "text": "35", "isCorrect": true },
+        { "text": "33", "isCorrect": false },
+        { "text": "36", "isCorrect": false },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Rennes."
+    },
+    {
+      "ref": "geo-615",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 36 ?",
+      "answers": [
+        { "text": "Jura", "isCorrect": false },
+        { "text": "Hérault", "isCorrect": false },
+        { "text": "Isère", "isCorrect": false },
+        { "text": "Indre", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Châteauroux."
+    },
+    {
+      "ref": "geo-616",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Indre-et-Loire » ?",
+      "answers": [
+        { "text": "39", "isCorrect": false },
+        { "text": "37", "isCorrect": true },
+        { "text": "36", "isCorrect": false },
+        { "text": "34", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Tours."
+    },
+    {
+      "ref": "geo-617",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 38 ?",
+      "answers": [
+        { "text": "Isère", "isCorrect": true },
+        { "text": "Loir-et-Cher", "isCorrect": false },
+        { "text": "Indre", "isCorrect": false },
+        { "text": "Ille-et-Vilaine", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Grenoble."
+    },
+    {
+      "ref": "geo-618",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Jura » ?",
+      "answers": [
+        { "text": "39", "isCorrect": true },
+        { "text": "37", "isCorrect": false },
+        { "text": "41", "isCorrect": false },
+        { "text": "36", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Lons-le-Saunier."
+    },
+    {
+      "ref": "geo-619",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 40 ?",
+      "answers": [
+        { "text": "Landes", "isCorrect": true },
+        { "text": "Isère", "isCorrect": false },
+        { "text": "Loire", "isCorrect": false },
+        { "text": "Indre-et-Loire", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Mont-de-Marsan."
+    },
+    {
+      "ref": "geo-620",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Loir-et-Cher » ?",
+      "answers": [
+        { "text": "40", "isCorrect": false },
+        { "text": "41", "isCorrect": true },
+        { "text": "39", "isCorrect": false },
+        { "text": "44", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Blois."
+    },
+    {
+      "ref": "geo-621",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 42 ?",
+      "answers": [
+        { "text": "Loire-Atlantique", "isCorrect": false },
+        { "text": "Loire", "isCorrect": true },
+        { "text": "Loiret", "isCorrect": false },
+        { "text": "Landes", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Saint-Étienne."
+    },
+    {
+      "ref": "geo-622",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Haute-Loire » ?",
+      "answers": [
+        { "text": "43", "isCorrect": true },
+        { "text": "46", "isCorrect": false },
+        { "text": "45", "isCorrect": false },
+        { "text": "40", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Le Puy-en-Velay."
+    },
+    {
+      "ref": "geo-623",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 44 ?",
+      "answers": [
+        { "text": "Loire-Atlantique", "isCorrect": true },
+        { "text": "Loir-et-Cher", "isCorrect": false },
+        { "text": "Haute-Loire", "isCorrect": false },
+        { "text": "Loire", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Nantes."
+    },
+    {
+      "ref": "geo-624",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Loiret » ?",
+      "answers": [
+        { "text": "47", "isCorrect": false },
+        { "text": "46", "isCorrect": false },
+        { "text": "43", "isCorrect": false },
+        { "text": "45", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Orléans."
+    },
+    {
+      "ref": "geo-625",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 46 ?",
+      "answers": [
+        { "text": "Lot", "isCorrect": true },
+        { "text": "Lozère", "isCorrect": false },
+        { "text": "Haute-Loire", "isCorrect": false },
+        { "text": "Lot-et-Garonne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Cahors."
+    },
+    {
+      "ref": "geo-626",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Lot-et-Garonne » ?",
+      "answers": [
+        { "text": "46", "isCorrect": false },
+        { "text": "48", "isCorrect": false },
+        { "text": "47", "isCorrect": true },
+        { "text": "50", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Agen."
+    },
+    {
+      "ref": "geo-627",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 48 ?",
+      "answers": [
+        { "text": "Maine-et-Loire", "isCorrect": false },
+        { "text": "Lozère", "isCorrect": true },
+        { "text": "Loiret", "isCorrect": false },
+        { "text": "Marne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Mende."
+    },
+    {
+      "ref": "geo-628",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Maine-et-Loire » ?",
+      "answers": [
+        { "text": "48", "isCorrect": false },
+        { "text": "51", "isCorrect": false },
+        { "text": "52", "isCorrect": false },
+        { "text": "49", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Angers."
+    },
+    {
+      "ref": "geo-629",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 50 ?",
+      "answers": [
+        { "text": "Manche", "isCorrect": true },
+        { "text": "Lozère", "isCorrect": false },
+        { "text": "Mayenne", "isCorrect": false },
+        { "text": "Lot-et-Garonne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Saint-Lô."
+    },
+    {
+      "ref": "geo-630",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Marne » ?",
+      "answers": [
+        { "text": "48", "isCorrect": false },
+        { "text": "53", "isCorrect": false },
+        { "text": "51", "isCorrect": true },
+        { "text": "52", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Châlons-en-Champagne."
+    },
+    {
+      "ref": "geo-631",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 52 ?",
+      "answers": [
+        { "text": "Mayenne", "isCorrect": false },
+        { "text": "Haute-Marne", "isCorrect": true },
+        { "text": "Manche", "isCorrect": false },
+        { "text": "Marne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Chaumont."
+    },
+    {
+      "ref": "geo-632",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Mayenne » ?",
+      "answers": [
+        { "text": "54", "isCorrect": false },
+        { "text": "53", "isCorrect": true },
+        { "text": "56", "isCorrect": false },
+        { "text": "50", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Laval."
+    },
+    {
+      "ref": "geo-633",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 54 ?",
+      "answers": [
+        { "text": "Marne", "isCorrect": false },
+        { "text": "Morbihan", "isCorrect": false },
+        { "text": "Moselle", "isCorrect": false },
+        { "text": "Meurthe-et-Moselle", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Nancy."
+    },
+    {
+      "ref": "geo-634",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Meuse » ?",
+      "answers": [
+        { "text": "55", "isCorrect": true },
+        { "text": "53", "isCorrect": false },
+        { "text": "52", "isCorrect": false },
+        { "text": "56", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Bar-le-Duc."
+    },
+    {
+      "ref": "geo-635",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 56 ?",
+      "answers": [
+        { "text": "Moselle", "isCorrect": false },
+        { "text": "Nièvre", "isCorrect": false },
+        { "text": "Morbihan", "isCorrect": true },
+        { "text": "Meurthe-et-Moselle", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Vannes."
+    },
+    {
+      "ref": "geo-636",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Moselle » ?",
+      "answers": [
+        { "text": "59", "isCorrect": false },
+        { "text": "60", "isCorrect": false },
+        { "text": "57", "isCorrect": true },
+        { "text": "56", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Metz."
+    },
+    {
+      "ref": "geo-637",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 58 ?",
+      "answers": [
+        { "text": "Orne", "isCorrect": false },
+        { "text": "Nièvre", "isCorrect": true },
+        { "text": "Moselle", "isCorrect": false },
+        { "text": "Nord", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Nevers."
+    },
+    {
+      "ref": "geo-638",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Nord » ?",
+      "answers": [
+        { "text": "59", "isCorrect": true },
+        { "text": "57", "isCorrect": false },
+        { "text": "56", "isCorrect": false },
+        { "text": "58", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Lille."
+    },
+    {
+      "ref": "geo-639",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 60 ?",
+      "answers": [
+        { "text": "Oise", "isCorrect": true },
+        { "text": "Moselle", "isCorrect": false },
+        { "text": "Nièvre", "isCorrect": false },
+        { "text": "Pas-de-Calais", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Beauvais."
+    },
+    {
+      "ref": "geo-640",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Orne » ?",
+      "answers": [
+        { "text": "64", "isCorrect": false },
+        { "text": "59", "isCorrect": false },
+        { "text": "60", "isCorrect": false },
+        { "text": "61", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Alençon."
+    },
+    {
+      "ref": "geo-641",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 62 ?",
+      "answers": [
+        { "text": "Orne", "isCorrect": false },
+        { "text": "Puy-de-Dôme", "isCorrect": false },
+        { "text": "Pas-de-Calais", "isCorrect": true },
+        { "text": "Hautes-Pyrénées", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Arras."
+    },
+    {
+      "ref": "geo-642",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Puy-de-Dôme » ?",
+      "answers": [
+        { "text": "62", "isCorrect": false },
+        { "text": "65", "isCorrect": false },
+        { "text": "66", "isCorrect": false },
+        { "text": "63", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Clermont-Ferrand."
+    },
+    {
+      "ref": "geo-643",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 64 ?",
+      "answers": [
+        { "text": "Pas-de-Calais", "isCorrect": false },
+        { "text": "Bas-Rhin", "isCorrect": false },
+        { "text": "Pyrénées-Atlantiques", "isCorrect": true },
+        { "text": "Hautes-Pyrénées", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Pau."
+    },
+    {
+      "ref": "geo-644",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Hautes-Pyrénées » ?",
+      "answers": [
+        { "text": "65", "isCorrect": true },
+        { "text": "66", "isCorrect": false },
+        { "text": "62", "isCorrect": false },
+        { "text": "63", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Tarbes."
+    },
+    {
+      "ref": "geo-645",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 66 ?",
+      "answers": [
+        { "text": "Rhône", "isCorrect": false },
+        { "text": "Haut-Rhin", "isCorrect": false },
+        { "text": "Pyrénées-Orientales", "isCorrect": true },
+        { "text": "Puy-de-Dôme", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Perpignan."
+    },
+    {
+      "ref": "geo-646",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Bas-Rhin » ?",
+      "answers": [
+        { "text": "65", "isCorrect": false },
+        { "text": "69", "isCorrect": false },
+        { "text": "67", "isCorrect": true },
+        { "text": "70", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Strasbourg. Depuis 2021, le Bas-Rhin et le Haut-Rhin forment ensemble la Collectivité européenne d'Alsace, mais gardent leurs numéros."
+    },
+    {
+      "ref": "geo-647",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 68 ?",
+      "answers": [
+        { "text": "Haut-Rhin", "isCorrect": true },
+        { "text": "Hautes-Pyrénées", "isCorrect": false },
+        { "text": "Haute-Saône", "isCorrect": false },
+        { "text": "Pyrénées-Orientales", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Colmar. Depuis 2021, le Bas-Rhin et le Haut-Rhin forment ensemble la Collectivité européenne d'Alsace, mais gardent leurs numéros. La préfecture est Colmar, et non Mulhouse, pourtant plus peuplée."
+    },
+    {
+      "ref": "geo-648",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Rhône » ?",
+      "answers": [
+        { "text": "66", "isCorrect": false },
+        { "text": "69", "isCorrect": true },
+        { "text": "71", "isCorrect": false },
+        { "text": "70", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Lyon. Depuis 2015, la Métropole de Lyon est une collectivité distincte du département, mais le numéro 69 reste le même."
+    },
+    {
+      "ref": "geo-649",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 70 ?",
+      "answers": [
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Haute-Saône", "isCorrect": true },
+        { "text": "Sarthe", "isCorrect": false },
+        { "text": "Rhône", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Vesoul."
+    },
+    {
+      "ref": "geo-650",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Saône-et-Loire » ?",
+      "answers": [
+        { "text": "73", "isCorrect": false },
+        { "text": "68", "isCorrect": false },
+        { "text": "71", "isCorrect": true },
+        { "text": "74", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Mâcon."
+    },
+    {
+      "ref": "geo-651",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 72 ?",
+      "answers": [
+        { "text": "Savoie", "isCorrect": false },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Sarthe", "isCorrect": true },
+        { "text": "Paris", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Le Mans."
+    },
+    {
+      "ref": "geo-652",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Savoie » ?",
+      "answers": [
+        { "text": "76", "isCorrect": false },
+        { "text": "74", "isCorrect": false },
+        { "text": "73", "isCorrect": true },
+        { "text": "75", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Chambéry."
+    },
+    {
+      "ref": "geo-653",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 74 ?",
+      "answers": [
+        { "text": "Haute-Savoie", "isCorrect": true },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Seine-et-Marne", "isCorrect": false },
+        { "text": "Sarthe", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Annecy."
+    },
+    {
+      "ref": "geo-654",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Paris » ?",
+      "answers": [
+        { "text": "75", "isCorrect": true },
+        { "text": "73", "isCorrect": false },
+        { "text": "74", "isCorrect": false },
+        { "text": "72", "isCorrect": false }
+      ],
+      "explanation": "Paris est sa propre préfecture. Paris est à la fois une commune et un département."
+    },
+    {
+      "ref": "geo-655",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 76 ?",
+      "answers": [
+        { "text": "Seine-Maritime", "isCorrect": true },
+        { "text": "Yvelines", "isCorrect": false },
+        { "text": "Haute-Savoie", "isCorrect": false },
+        { "text": "Savoie", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Rouen."
+    },
+    {
+      "ref": "geo-656",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Seine-et-Marne » ?",
+      "answers": [
+        { "text": "77", "isCorrect": true },
+        { "text": "75", "isCorrect": false },
+        { "text": "76", "isCorrect": false },
+        { "text": "74", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Melun."
+    },
+    {
+      "ref": "geo-657",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 78 ?",
+      "answers": [
+        { "text": "Yvelines", "isCorrect": true },
+        { "text": "Deux-Sèvres", "isCorrect": false },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Tarn", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Versailles."
+    },
+    {
+      "ref": "geo-658",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Deux-Sèvres » ?",
+      "answers": [
+        { "text": "82", "isCorrect": false },
+        { "text": "78", "isCorrect": false },
+        { "text": "79", "isCorrect": true },
+        { "text": "77", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Niort."
+    },
+    {
+      "ref": "geo-659",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 80 ?",
+      "answers": [
+        { "text": "Deux-Sèvres", "isCorrect": false },
+        { "text": "Tarn", "isCorrect": false },
+        { "text": "Var", "isCorrect": false },
+        { "text": "Somme", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Amiens."
+    },
+    {
+      "ref": "geo-660",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Tarn » ?",
+      "answers": [
+        { "text": "79", "isCorrect": false },
+        { "text": "82", "isCorrect": false },
+        { "text": "83", "isCorrect": false },
+        { "text": "81", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Albi."
+    },
+    {
+      "ref": "geo-661",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 82 ?",
+      "answers": [
+        { "text": "Tarn", "isCorrect": false },
+        { "text": "Var", "isCorrect": false },
+        { "text": "Tarn-et-Garonne", "isCorrect": true },
+        { "text": "Vendée", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Montauban."
+    },
+    {
+      "ref": "geo-662",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Var » ?",
+      "answers": [
+        { "text": "82", "isCorrect": false },
+        { "text": "83", "isCorrect": true },
+        { "text": "84", "isCorrect": false },
+        { "text": "80", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Toulon. La préfecture est Toulon depuis 1974 ; c'était auparavant Draguignan."
+    },
+    {
+      "ref": "geo-663",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 84 ?",
+      "answers": [
+        { "text": "Var", "isCorrect": false },
+        { "text": "Haute-Vienne", "isCorrect": false },
+        { "text": "Vaucluse", "isCorrect": true },
+        { "text": "Tarn", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Avignon."
+    },
+    {
+      "ref": "geo-664",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Vendée » ?",
+      "answers": [
+        { "text": "82", "isCorrect": false },
+        { "text": "86", "isCorrect": false },
+        { "text": "88", "isCorrect": false },
+        { "text": "85", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est La Roche-sur-Yon."
+    },
+    {
+      "ref": "geo-665",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 86 ?",
+      "answers": [
+        { "text": "Haute-Vienne", "isCorrect": false },
+        { "text": "Vendée", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": true },
+        { "text": "Vaucluse", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Poitiers."
+    },
+    {
+      "ref": "geo-666",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Haute-Vienne » ?",
+      "answers": [
+        { "text": "89", "isCorrect": false },
+        { "text": "88", "isCorrect": false },
+        { "text": "87", "isCorrect": true },
+        { "text": "84", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Limoges."
+    },
+    {
+      "ref": "geo-667",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 88 ?",
+      "answers": [
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Essonne", "isCorrect": false },
+        { "text": "Vosges", "isCorrect": true },
+        { "text": "Haute-Vienne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Épinal."
+    },
+    {
+      "ref": "geo-668",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Yonne » ?",
+      "answers": [
+        { "text": "91", "isCorrect": false },
+        { "text": "88", "isCorrect": false },
+        { "text": "86", "isCorrect": false },
+        { "text": "89", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Auxerre."
+    },
+    {
+      "ref": "geo-669",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 90 ?",
+      "answers": [
+        { "text": "Essonne", "isCorrect": false },
+        { "text": "Territoire de Belfort", "isCorrect": true },
+        { "text": "Seine-Saint-Denis", "isCorrect": false },
+        { "text": "Hauts-de-Seine", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Belfort. C'est le plus petit département de France, hors Paris et petite couronne."
+    },
+    {
+      "ref": "geo-670",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Essonne » ?",
+      "answers": [
+        { "text": "91", "isCorrect": true },
+        { "text": "89", "isCorrect": false },
+        { "text": "88", "isCorrect": false },
+        { "text": "93", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Évry-Courcouronnes. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
+    },
+    {
+      "ref": "geo-671",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 92 ?",
+      "answers": [
+        { "text": "Val-de-Marne", "isCorrect": false },
+        { "text": "Hauts-de-Seine", "isCorrect": true },
+        { "text": "Territoire de Belfort", "isCorrect": false },
+        { "text": "Seine-Saint-Denis", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Nanterre. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
+    },
+    {
+      "ref": "geo-672",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Seine-Saint-Denis » ?",
+      "answers": [
+        { "text": "94", "isCorrect": false },
+        { "text": "92", "isCorrect": false },
+        { "text": "91", "isCorrect": false },
+        { "text": "93", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Bobigny. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
+    },
+    {
+      "ref": "geo-673",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 94 ?",
+      "answers": [
+        { "text": "Hauts-de-Seine", "isCorrect": false },
+        { "text": "Seine-Saint-Denis", "isCorrect": false },
+        { "text": "Val-de-Marne", "isCorrect": true },
+        { "text": "Essonne", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Créteil. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
+    },
+    {
+      "ref": "geo-674",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Val-d'Oise » ?",
+      "answers": [
+        { "text": "93", "isCorrect": false },
+        { "text": "92", "isCorrect": false },
+        { "text": "95", "isCorrect": true },
+        { "text": "94", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Cergy. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
+    },
+    {
+      "ref": "geo-675",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 971 ?",
+      "answers": [
+        { "text": "Martinique", "isCorrect": false },
+        { "text": "Guyane", "isCorrect": false },
+        { "text": "Guadeloupe", "isCorrect": true },
+        { "text": "La Réunion", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Basse-Terre."
+    },
+    {
+      "ref": "geo-676",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « Martinique » ?",
+      "answers": [
+        { "text": "972", "isCorrect": true },
+        { "text": "974", "isCorrect": false },
+        { "text": "976", "isCorrect": false },
+        { "text": "971", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Fort-de-France."
+    },
+    {
+      "ref": "geo-677",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 973 ?",
+      "answers": [
+        { "text": "Mayotte", "isCorrect": false },
+        { "text": "Guadeloupe", "isCorrect": false },
+        { "text": "Guyane", "isCorrect": true },
+        { "text": "La Réunion", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Cayenne. C'est le plus grand département français, presque aussi vaste que le Portugal."
+    },
+    {
+      "ref": "geo-678",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["departement", "france"],
+      "text": "Quel est le numéro du département « La Réunion » ?",
+      "answers": [
+        { "text": "972", "isCorrect": false },
+        { "text": "973", "isCorrect": false },
+        { "text": "974", "isCorrect": true },
+        { "text": "971", "isCorrect": false }
+      ],
+      "explanation": "Sa préfecture est Saint-Denis."
+    },
+    {
+      "ref": "geo-679",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france"],
+      "text": "Quel département porte le numéro 976 ?",
+      "answers": [
+        { "text": "Martinique", "isCorrect": false },
+        { "text": "La Réunion", "isCorrect": false },
+        { "text": "Guyane", "isCorrect": false },
+        { "text": "Mayotte", "isCorrect": true }
+      ],
+      "explanation": "Sa préfecture est Mamoudzou. Mayotte est devenue le 101e département français en 2011. Il n'existe pas de département 975."
+    },
+    {
+      "ref": "geo-680",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-01.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Jura", "isCorrect": false },
+        { "text": "Ain", "isCorrect": true },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Rhône", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°01. Sa préfecture est Bourg-en-Bresse."
+    },
+    {
+      "ref": "geo-681",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-02.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aisne", "isCorrect": true },
+        { "text": "Somme", "isCorrect": false },
+        { "text": "Ardennes", "isCorrect": false },
+        { "text": "Marne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°02. Sa préfecture est Laon."
+    },
+    {
+      "ref": "geo-682",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-03.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Cher", "isCorrect": false },
+        { "text": "Allier", "isCorrect": true },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Loire", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°03. Sa préfecture est Moulins."
+    },
+    {
+      "ref": "geo-683",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-04.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": true },
+        { "text": "Bouches-du-Rhône", "isCorrect": false },
+        { "text": "Hautes-Alpes", "isCorrect": false },
+        { "text": "Vaucluse", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°04. Sa préfecture est Digne-les-Bains."
+    },
+    {
+      "ref": "geo-684",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-05.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Hautes-Alpes", "isCorrect": true },
+        { "text": "Isère", "isCorrect": false },
+        { "text": "Savoie", "isCorrect": false },
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°05. Sa préfecture est Gap."
+    },
+    {
+      "ref": "geo-685",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-06.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Var", "isCorrect": false },
+        { "text": "Hautes-Alpes", "isCorrect": false },
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": false },
+        { "text": "Alpes-Maritimes", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°06. Sa préfecture est Nice."
+    },
+    {
+      "ref": "geo-686",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-07.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Isère", "isCorrect": false },
+        { "text": "Loire", "isCorrect": false },
+        { "text": "Drôme", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°07. Sa préfecture est Privas."
+    },
+    {
+      "ref": "geo-687",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-08.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aisne", "isCorrect": false },
+        { "text": "Meuse", "isCorrect": false },
+        { "text": "Marne", "isCorrect": false },
+        { "text": "Ardennes", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°08. Sa préfecture est Charleville-Mézières."
+    },
+    {
+      "ref": "geo-688",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-09.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aude", "isCorrect": false },
+        { "text": "Ariège", "isCorrect": true },
+        { "text": "Haute-Garonne", "isCorrect": false },
+        { "text": "Pyrénées-Orientales", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°09. Sa préfecture est Foix."
+    },
+    {
+      "ref": "geo-689",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-10.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aube", "isCorrect": true },
+        { "text": "Marne", "isCorrect": false },
+        { "text": "Yonne", "isCorrect": false },
+        { "text": "Côte-d'Or", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°10. Sa préfecture est Troyes."
+    },
+    {
+      "ref": "geo-690",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-11.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Ariège", "isCorrect": false },
+        { "text": "Aude", "isCorrect": true },
+        { "text": "Tarn", "isCorrect": false },
+        { "text": "Pyrénées-Orientales", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°11. Sa préfecture est Carcassonne."
+    },
+    {
+      "ref": "geo-691",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-12.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Cantal", "isCorrect": false },
+        { "text": "Tarn-et-Garonne", "isCorrect": false },
+        { "text": "Tarn", "isCorrect": false },
+        { "text": "Aveyron", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°12. Sa préfecture est Rodez."
+    },
+    {
+      "ref": "geo-692",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-13.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Bouches-du-Rhône", "isCorrect": true },
+        { "text": "Var", "isCorrect": false },
+        { "text": "Vaucluse", "isCorrect": false },
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°13. Sa préfecture est Marseille. Marseille est la deuxième ville de France par sa population."
+    },
+    {
+      "ref": "geo-693",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-14.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Orne", "isCorrect": false },
+        { "text": "Manche", "isCorrect": false },
+        { "text": "Calvados", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°14. Sa préfecture est Caen."
+    },
+    {
+      "ref": "geo-694",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-15.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Puy-de-Dôme", "isCorrect": false },
+        { "text": "Lot", "isCorrect": false },
+        { "text": "Aveyron", "isCorrect": false },
+        { "text": "Cantal", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°15. Sa préfecture est Aurillac."
+    },
+    {
+      "ref": "geo-695",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-16.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Dordogne", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Charente", "isCorrect": true },
+        { "text": "Deux-Sèvres", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°16. Sa préfecture est Angoulême."
+    },
+    {
+      "ref": "geo-696",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-17.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Charente-Maritime", "isCorrect": true },
+        { "text": "Gironde", "isCorrect": false },
+        { "text": "Charente", "isCorrect": false },
+        { "text": "Dordogne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°17. Sa préfecture est La Rochelle."
+    },
+    {
+      "ref": "geo-697",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-18.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Cher", "isCorrect": true },
+        { "text": "Nièvre", "isCorrect": false },
+        { "text": "Allier", "isCorrect": false },
+        { "text": "Loir-et-Cher", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°18. Sa préfecture est Bourges."
+    },
+    {
+      "ref": "geo-698",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-19.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Dordogne", "isCorrect": false },
+        { "text": "Creuse", "isCorrect": false },
+        { "text": "Corrèze", "isCorrect": true },
+        { "text": "Lot", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°19. Sa préfecture est Tulle."
+    },
+    {
+      "ref": "geo-699",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-2a.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Alpes-Maritimes", "isCorrect": false },
+        { "text": "Haute-Corse", "isCorrect": false },
+        { "text": "Var", "isCorrect": false },
+        { "text": "Corse-du-Sud", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°2A. Sa préfecture est Ajaccio. La Corse portait le numéro 20 jusqu'à sa division en deux départements, en 1976."
+    },
+    {
+      "ref": "geo-700",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-2b.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Var", "isCorrect": false },
+        { "text": "Corse-du-Sud", "isCorrect": false },
+        { "text": "Haute-Corse", "isCorrect": true },
+        { "text": "Alpes-Maritimes", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°2B. Sa préfecture est Bastia. La Corse portait le numéro 20 jusqu'à sa division en deux départements, en 1976."
+    },
+    {
+      "ref": "geo-701",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-21.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Côte-d'Or", "isCorrect": true },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Haute-Saône", "isCorrect": false },
+        { "text": "Aube", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°21. Sa préfecture est Dijon."
+    },
+    {
+      "ref": "geo-702",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-22.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Côtes-d'Armor", "isCorrect": true },
+        { "text": "Finistère", "isCorrect": false },
+        { "text": "Ille-et-Vilaine", "isCorrect": false },
+        { "text": "Morbihan", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°22. Sa préfecture est Saint-Brieuc."
+    },
+    {
+      "ref": "geo-703",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-23.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haute-Vienne", "isCorrect": false },
+        { "text": "Allier", "isCorrect": false },
+        { "text": "Corrèze", "isCorrect": false },
+        { "text": "Creuse", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°23. Sa préfecture est Guéret."
+    },
+    {
+      "ref": "geo-704",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-24.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Lot-et-Garonne", "isCorrect": false },
+        { "text": "Dordogne", "isCorrect": true },
+        { "text": "Haute-Vienne", "isCorrect": false },
+        { "text": "Lot", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°24. Sa préfecture est Périgueux."
+    },
+    {
+      "ref": "geo-705",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-25.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Jura", "isCorrect": false },
+        { "text": "Doubs", "isCorrect": true },
+        { "text": "Haute-Saône", "isCorrect": false },
+        { "text": "Territoire de Belfort", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°25. Sa préfecture est Besançon."
+    },
+    {
+      "ref": "geo-706",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-26.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Hautes-Alpes", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": false },
+        { "text": "Vaucluse", "isCorrect": false },
+        { "text": "Drôme", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°26. Sa préfecture est Valence."
+    },
+    {
+      "ref": "geo-707",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-27.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Val-d'Oise", "isCorrect": false },
+        { "text": "Oise", "isCorrect": false },
+        { "text": "Yvelines", "isCorrect": false },
+        { "text": "Eure", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°27. Sa préfecture est Évreux."
+    },
+    {
+      "ref": "geo-708",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-28.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Eure-et-Loir", "isCorrect": true },
+        { "text": "Essonne", "isCorrect": false },
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Loir-et-Cher", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°28. Sa préfecture est Chartres."
+    },
+    {
+      "ref": "geo-709",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-29.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Côtes-d'Armor", "isCorrect": false },
+        { "text": "Gers", "isCorrect": false },
+        { "text": "Morbihan", "isCorrect": false },
+        { "text": "Finistère", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°29. Sa préfecture est Quimper."
+    },
+    {
+      "ref": "geo-710",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-30.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Gard", "isCorrect": true },
+        { "text": "Vaucluse", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": false },
+        { "text": "Bouches-du-Rhône", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°30. Sa préfecture est Nîmes."
+    },
+    {
+      "ref": "geo-711",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-31.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Tarn-et-Garonne", "isCorrect": false },
+        { "text": "Gers", "isCorrect": false },
+        { "text": "Haute-Garonne", "isCorrect": true },
+        { "text": "Hautes-Pyrénées", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°31. Sa préfecture est Toulouse."
+    },
+    {
+      "ref": "geo-712",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-32.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haute-Garonne", "isCorrect": false },
+        { "text": "Gers", "isCorrect": true },
+        { "text": "Lot-et-Garonne", "isCorrect": false },
+        { "text": "Tarn-et-Garonne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°32. Sa préfecture est Auch."
+    },
+    {
+      "ref": "geo-713",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-33.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Charente-Maritime", "isCorrect": false },
+        { "text": "Gironde", "isCorrect": true },
+        { "text": "Landes", "isCorrect": false },
+        { "text": "Dordogne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°33. Sa préfecture est Bordeaux. C'est le plus grand département de France métropolitaine."
+    },
+    {
+      "ref": "geo-714",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-34.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aude", "isCorrect": false },
+        { "text": "Tarn", "isCorrect": false },
+        { "text": "Hérault", "isCorrect": true },
+        { "text": "Aveyron", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°34. Sa préfecture est Montpellier."
+    },
+    {
+      "ref": "geo-715",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-35.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Maine-et-Loire", "isCorrect": false },
+        { "text": "Manche", "isCorrect": false },
+        { "text": "Ille-et-Vilaine", "isCorrect": true },
+        { "text": "Loire-Atlantique", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°35. Sa préfecture est Rennes."
+    },
+    {
+      "ref": "geo-716",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-36.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Indre-et-Loire", "isCorrect": false },
+        { "text": "Haute-Vienne", "isCorrect": false },
+        { "text": "Indre", "isCorrect": true },
+        { "text": "Creuse", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°36. Sa préfecture est Châteauroux."
+    },
+    {
+      "ref": "geo-717",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-37.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Sarthe", "isCorrect": false },
+        { "text": "Indre-et-Loire", "isCorrect": true },
+        { "text": "Indre", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°37. Sa préfecture est Tours."
+    },
+    {
+      "ref": "geo-718",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-38.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Hautes-Alpes", "isCorrect": false },
+        { "text": "Loire", "isCorrect": false },
+        { "text": "Isère", "isCorrect": true },
+        { "text": "Savoie", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°38. Sa préfecture est Grenoble."
+    },
+    {
+      "ref": "geo-719",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-39.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haute-Saône", "isCorrect": false },
+        { "text": "Ain", "isCorrect": false },
+        { "text": "Jura", "isCorrect": true },
+        { "text": "Doubs", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°39. Sa préfecture est Lons-le-Saunier."
+    },
+    {
+      "ref": "geo-720",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-40.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Lot-et-Garonne", "isCorrect": false },
+        { "text": "Pyrénées-Atlantiques", "isCorrect": false },
+        { "text": "Gironde", "isCorrect": false },
+        { "text": "Landes", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°40. Sa préfecture est Mont-de-Marsan."
+    },
+    {
+      "ref": "geo-721",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-41.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Loiret", "isCorrect": false },
+        { "text": "Loir-et-Cher", "isCorrect": true },
+        { "text": "Indre-et-Loire", "isCorrect": false },
+        { "text": "Eure-et-Loir", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°41. Sa préfecture est Blois."
+    },
+    {
+      "ref": "geo-722",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-42.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Isère", "isCorrect": false },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Ardèche", "isCorrect": false },
+        { "text": "Loire", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°42. Sa préfecture est Saint-Étienne."
+    },
+    {
+      "ref": "geo-723",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-43.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Loire", "isCorrect": false },
+        { "text": "Puy-de-Dôme", "isCorrect": false },
+        { "text": "Cantal", "isCorrect": false },
+        { "text": "Haute-Loire", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°43. Sa préfecture est Le Puy-en-Velay."
+    },
+    {
+      "ref": "geo-724",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-44.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Maine-et-Loire", "isCorrect": false },
+        { "text": "Loire-Atlantique", "isCorrect": true },
+        { "text": "Ille-et-Vilaine", "isCorrect": false },
+        { "text": "Morbihan", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°44. Sa préfecture est Nantes."
+    },
+    {
+      "ref": "geo-725",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-45.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Essonne", "isCorrect": false },
+        { "text": "Nièvre", "isCorrect": false },
+        { "text": "Yonne", "isCorrect": false },
+        { "text": "Loiret", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°45. Sa préfecture est Orléans."
+    },
+    {
+      "ref": "geo-726",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-46.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Lot", "isCorrect": true },
+        { "text": "Tarn-et-Garonne", "isCorrect": false },
+        { "text": "Cantal", "isCorrect": false },
+        { "text": "Aveyron", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°46. Sa préfecture est Cahors."
+    },
+    {
+      "ref": "geo-727",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-47.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Dordogne", "isCorrect": false },
+        { "text": "Lot-et-Garonne", "isCorrect": true },
+        { "text": "Lot", "isCorrect": false },
+        { "text": "Gironde", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°47. Sa préfecture est Agen."
+    },
+    {
+      "ref": "geo-728",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-48.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Gard", "isCorrect": false },
+        { "text": "Aveyron", "isCorrect": false },
+        { "text": "Haute-Loire", "isCorrect": false },
+        { "text": "Lozère", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°48. Sa préfecture est Mende."
+    },
+    {
+      "ref": "geo-729",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-49.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Indre-et-Loire", "isCorrect": false },
+        { "text": "Maine-et-Loire", "isCorrect": true },
+        { "text": "Vendée", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°49. Sa préfecture est Angers."
+    },
+    {
+      "ref": "geo-730",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-50.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Manche", "isCorrect": true },
+        { "text": "Mayenne", "isCorrect": false },
+        { "text": "Calvados", "isCorrect": false },
+        { "text": "Ille-et-Vilaine", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°50. Sa préfecture est Saint-Lô."
+    },
+    {
+      "ref": "geo-731",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-51.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Meuse", "isCorrect": false },
+        { "text": "Marne", "isCorrect": true },
+        { "text": "Ardennes", "isCorrect": false },
+        { "text": "Aube", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°51. Sa préfecture est Châlons-en-Champagne."
+    },
+    {
+      "ref": "geo-732",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-52.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Côte-d'Or", "isCorrect": false },
+        { "text": "Haute-Marne", "isCorrect": true },
+        { "text": "Vosges", "isCorrect": false },
+        { "text": "Meuse", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°52. Sa préfecture est Chaumont."
+    },
+    {
+      "ref": "geo-733",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-53.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Mayenne", "isCorrect": true },
+        { "text": "Sarthe", "isCorrect": false },
+        { "text": "Orne", "isCorrect": false },
+        { "text": "Ille-et-Vilaine", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°53. Sa préfecture est Laval."
+    },
+    {
+      "ref": "geo-734",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-54.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Vosges", "isCorrect": false },
+        { "text": "Meuse", "isCorrect": false },
+        { "text": "Meurthe-et-Moselle", "isCorrect": true },
+        { "text": "Bas-Rhin", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°54. Sa préfecture est Nancy."
+    },
+    {
+      "ref": "geo-735",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-55.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Vosges", "isCorrect": false },
+        { "text": "Haute-Marne", "isCorrect": false },
+        { "text": "Meurthe-et-Moselle", "isCorrect": false },
+        { "text": "Meuse", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°55. Sa préfecture est Bar-le-Duc."
+    },
+    {
+      "ref": "geo-736",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-56.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Morbihan", "isCorrect": true },
+        { "text": "Ille-et-Vilaine", "isCorrect": false },
+        { "text": "Côtes-d'Armor", "isCorrect": false },
+        { "text": "Finistère", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°56. Sa préfecture est Vannes."
+    },
+    {
+      "ref": "geo-737",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-57.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Meurthe-et-Moselle", "isCorrect": false },
+        { "text": "Moselle", "isCorrect": true },
+        { "text": "Bas-Rhin", "isCorrect": false },
+        { "text": "Vosges", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°57. Sa préfecture est Metz."
+    },
+    {
+      "ref": "geo-738",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-58.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Cher", "isCorrect": false },
+        { "text": "Yonne", "isCorrect": false },
+        { "text": "Nièvre", "isCorrect": true },
+        { "text": "Saône-et-Loire", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°58. Sa préfecture est Nevers."
+    },
+    {
+      "ref": "geo-739",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-59.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aisne", "isCorrect": false },
+        { "text": "Nord", "isCorrect": true },
+        { "text": "Somme", "isCorrect": false },
+        { "text": "Pas-de-Calais", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°59. Sa préfecture est Lille."
+    },
+    {
+      "ref": "geo-740",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-60.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Oise", "isCorrect": true },
+        { "text": "Somme", "isCorrect": false },
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Aisne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°60. Sa préfecture est Beauvais."
+    },
+    {
+      "ref": "geo-741",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-61.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Eure-et-Loir", "isCorrect": false },
+        { "text": "Orne", "isCorrect": true },
+        { "text": "Mayenne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°61. Sa préfecture est Alençon."
+    },
+    {
+      "ref": "geo-742",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-62.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Pas-de-Calais", "isCorrect": true },
+        { "text": "Puy-de-Dôme", "isCorrect": false },
+        { "text": "Nord", "isCorrect": false },
+        { "text": "Somme", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°62. Sa préfecture est Arras."
+    },
+    {
+      "ref": "geo-743",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-63.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Corrèze", "isCorrect": false },
+        { "text": "Puy-de-Dôme", "isCorrect": true },
+        { "text": "Allier", "isCorrect": false },
+        { "text": "Loire", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°63. Sa préfecture est Clermont-Ferrand."
+    },
+    {
+      "ref": "geo-744",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-64.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Hautes-Pyrénées", "isCorrect": false },
+        { "text": "Gers", "isCorrect": false },
+        { "text": "Landes", "isCorrect": false },
+        { "text": "Pyrénées-Atlantiques", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°64. Sa préfecture est Pau."
+    },
+    {
+      "ref": "geo-745",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-65.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haute-Garonne", "isCorrect": false },
+        { "text": "Hautes-Pyrénées", "isCorrect": true },
+        { "text": "Gers", "isCorrect": false },
+        { "text": "Pyrénées-Atlantiques", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°65. Sa préfecture est Tarbes."
+    },
+    {
+      "ref": "geo-746",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-66.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Ariège", "isCorrect": false },
+        { "text": "Puy-de-Dôme", "isCorrect": false },
+        { "text": "Pyrénées-Orientales", "isCorrect": true },
+        { "text": "Aude", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°66. Sa préfecture est Perpignan."
+    },
+    {
+      "ref": "geo-747",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-67.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Meurthe-et-Moselle", "isCorrect": false },
+        { "text": "Haut-Rhin", "isCorrect": false },
+        { "text": "Bas-Rhin", "isCorrect": true },
+        { "text": "Vosges", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°67. Sa préfecture est Strasbourg. Depuis 2021, le Bas-Rhin et le Haut-Rhin forment ensemble la Collectivité européenne d'Alsace, mais gardent leurs numéros."
+    },
+    {
+      "ref": "geo-748",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-68.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Territoire de Belfort", "isCorrect": false },
+        { "text": "Vosges", "isCorrect": false },
+        { "text": "Bas-Rhin", "isCorrect": false },
+        { "text": "Haut-Rhin", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°68. Sa préfecture est Colmar. Depuis 2021, le Bas-Rhin et le Haut-Rhin forment ensemble la Collectivité européenne d'Alsace, mais gardent leurs numéros. La préfecture est Colmar, et non Mulhouse, pourtant plus peuplée."
+    },
+    {
+      "ref": "geo-749",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-69.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Ain", "isCorrect": false },
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Rhône", "isCorrect": true },
+        { "text": "Isère", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°69. Sa préfecture est Lyon. Depuis 2015, la Métropole de Lyon est une collectivité distincte du département, mais le numéro 69 reste le même."
+    },
+    {
+      "ref": "geo-750",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-70.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Doubs", "isCorrect": false },
+        { "text": "Haute-Saône", "isCorrect": true },
+        { "text": "Haute-Marne", "isCorrect": false },
+        { "text": "Vosges", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°70. Sa préfecture est Vesoul."
+    },
+    {
+      "ref": "geo-751",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-71.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Ain", "isCorrect": false },
+        { "text": "Côte-d'Or", "isCorrect": false },
+        { "text": "Saône-et-Loire", "isCorrect": true },
+        { "text": "Jura", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°71. Sa préfecture est Mâcon."
+    },
+    {
+      "ref": "geo-752",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-72.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Sarthe", "isCorrect": true },
+        { "text": "Maine-et-Loire", "isCorrect": false },
+        { "text": "Orne", "isCorrect": false },
+        { "text": "Eure-et-Loir", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°72. Sa préfecture est Le Mans."
+    },
+    {
+      "ref": "geo-753",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-73.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Savoie", "isCorrect": true },
+        { "text": "Ain", "isCorrect": false },
+        { "text": "Haute-Savoie", "isCorrect": false },
+        { "text": "Hautes-Alpes", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°73. Sa préfecture est Chambéry."
+    },
+    {
+      "ref": "geo-754",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-74.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Saône-et-Loire", "isCorrect": false },
+        { "text": "Ain", "isCorrect": false },
+        { "text": "Haute-Savoie", "isCorrect": true },
+        { "text": "Savoie", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°74. Sa préfecture est Annecy."
+    },
+    {
+      "ref": "geo-755",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-76.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Oise", "isCorrect": false },
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Seine-Maritime", "isCorrect": true },
+        { "text": "Somme", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°76. Sa préfecture est Rouen."
+    },
+    {
+      "ref": "geo-756",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-77.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Seine-et-Marne", "isCorrect": true },
+        { "text": "Essonne", "isCorrect": false },
+        { "text": "Seine-Saint-Denis", "isCorrect": false },
+        { "text": "Loiret", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°77. Sa préfecture est Melun."
+    },
+    {
+      "ref": "geo-757",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-78.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Val-d'Oise", "isCorrect": false },
+        { "text": "Yvelines", "isCorrect": true },
+        { "text": "Eure-et-Loir", "isCorrect": false },
+        { "text": "Eure", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°78. Sa préfecture est Versailles."
+    },
+    {
+      "ref": "geo-758",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-79.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Deux-Sèvres", "isCorrect": true },
+        { "text": "Charente", "isCorrect": false },
+        { "text": "Maine-et-Loire", "isCorrect": false },
+        { "text": "Charente-Maritime", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°79. Sa préfecture est Niort."
+    },
+    {
+      "ref": "geo-759",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-80.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Aisne", "isCorrect": false },
+        { "text": "Somme", "isCorrect": true },
+        { "text": "Nord", "isCorrect": false },
+        { "text": "Seine-Maritime", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°80. Sa préfecture est Amiens."
+    },
+    {
+      "ref": "geo-760",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-81.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haute-Garonne", "isCorrect": false },
+        { "text": "Tarn", "isCorrect": true },
+        { "text": "Aveyron", "isCorrect": false },
+        { "text": "Aude", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°81. Sa préfecture est Albi."
+    },
+    {
+      "ref": "geo-761",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-82.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Lot-et-Garonne", "isCorrect": false },
+        { "text": "Gers", "isCorrect": false },
+        { "text": "Tarn-et-Garonne", "isCorrect": true },
+        { "text": "Aveyron", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°82. Sa préfecture est Montauban."
+    },
+    {
+      "ref": "geo-762",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-83.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Var", "isCorrect": true },
+        { "text": "Alpes-Maritimes", "isCorrect": false },
+        { "text": "Alpes-de-Haute-Provence", "isCorrect": false },
+        { "text": "Vaucluse", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°83. Sa préfecture est Toulon. La préfecture est Toulon depuis 1974 ; c'était auparavant Draguignan."
+    },
+    {
+      "ref": "geo-763",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-84.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Gard", "isCorrect": false },
+        { "text": "Drôme", "isCorrect": false },
+        { "text": "Vaucluse", "isCorrect": true },
+        { "text": "Ardèche", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°84. Sa préfecture est Avignon."
+    },
+    {
+      "ref": "geo-764",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-85.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Vendée", "isCorrect": true },
+        { "text": "Maine-et-Loire", "isCorrect": false },
+        { "text": "Charente-Maritime", "isCorrect": false },
+        { "text": "Loire-Atlantique", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°85. Sa préfecture est La Roche-sur-Yon."
+    },
+    {
+      "ref": "geo-765",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-86.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Indre", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": true },
+        { "text": "Haute-Vienne", "isCorrect": false },
+        { "text": "Maine-et-Loire", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°86. Sa préfecture est Poitiers."
+    },
+    {
+      "ref": "geo-766",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-87.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haute-Vienne", "isCorrect": true },
+        { "text": "Corrèze", "isCorrect": false },
+        { "text": "Charente", "isCorrect": false },
+        { "text": "Indre", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°87. Sa préfecture est Limoges."
+    },
+    {
+      "ref": "geo-767",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-88.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Moselle", "isCorrect": false },
+        { "text": "Meurthe-et-Moselle", "isCorrect": false },
+        { "text": "Bas-Rhin", "isCorrect": false },
+        { "text": "Vosges", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°88. Sa préfecture est Épinal."
+    },
+    {
+      "ref": "geo-768",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-89.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Loiret", "isCorrect": false },
+        { "text": "Aube", "isCorrect": false },
+        { "text": "Nièvre", "isCorrect": false },
+        { "text": "Yonne", "isCorrect": true }
+      ],
+      "explanation": "C'est le département n°89. Sa préfecture est Auxerre."
+    },
+    {
+      "ref": "geo-769",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-90.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Territoire de Belfort", "isCorrect": true },
+        { "text": "Doubs", "isCorrect": false },
+        { "text": "Haut-Rhin", "isCorrect": false },
+        { "text": "Haute-Saône", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°90. Sa préfecture est Belfort. C'est le plus petit département de France, hors Paris et petite couronne."
+    },
+    {
+      "ref": "geo-770",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-91.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Loiret", "isCorrect": false },
+        { "text": "Val-de-Marne", "isCorrect": false },
+        { "text": "Essonne", "isCorrect": true },
+        { "text": "Seine-et-Marne", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°91. Sa préfecture est Évry-Courcouronnes. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
+    },
+    {
+      "ref": "geo-771",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["departement", "france", "carte"],
+      "text": "Quel département est mis en évidence sur cette carte ?",
+      "image": {
+        "src": "geographie/carte-departement-95.webp",
+        "alt": "Carte de France sur laquelle un département est mis en évidence",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Val-d'Oise", "isCorrect": true },
+        { "text": "Oise", "isCorrect": false },
+        { "text": "Eure", "isCorrect": false },
+        { "text": "Seine-Saint-Denis", "isCorrect": false }
+      ],
+      "explanation": "C'est le département n°95. Sa préfecture est Cergy. Il fait partie des départements créés en 1968 lors du redécoupage de la région parisienne."
     }
   ]
 }
