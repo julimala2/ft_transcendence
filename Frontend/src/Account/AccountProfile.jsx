@@ -5,6 +5,7 @@ import { EditableField } from "../Components/EditableField";
 import { Avatar } from "../Components/Avatar";
 import styles from "./Styling/Account.module.css";
 import { AvatarUploader } from "../Components/AvatarUploader.jsx";
+import { StyledButton } from "../Components/Buttons.jsx";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -55,9 +56,9 @@ export function AccountProfile(){
             <div className={styles.spacer}/>
             {/* <label>Avatar url:{user.avatar_url}</label> */}
             <section className={styles.bottom_bar}>
-                <button onClick={()=>setMode('edit')}>Edit profile</button>
-                <button onClick={()=>setMode('password')}>Change password</button>
-                <button onClick={()=>logout()}>Log out</button>
+                <StyledButton onClick={()=>setMode('edit')}>Edit profile</StyledButton>
+                <StyledButton onClick={()=>setMode('password')}>Change password</StyledButton>
+                <StyledButton onClick={()=>logout()} variant="danger">Log out</StyledButton>
             </section>
             </>
         )

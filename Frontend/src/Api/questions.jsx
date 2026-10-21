@@ -59,6 +59,7 @@ export function createQuestion(questionData) {
  * @param {number} id - ID de la question
  * @param {Object} updateData - Champs à mettre à jour
  * @param {string} [updateData.text] - Nouveau texte
+ * @param {Array} [updateData.answers] - Nouvelles réponses
  * @param {number} [updateData.difficulty] - Nouvelle difficulté
  * @param {string} [updateData.explanation] - Nouvelle explication
  * @param {number} [updateData.categoryId] - Nouvelle catégorie

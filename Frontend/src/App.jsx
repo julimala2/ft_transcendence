@@ -12,8 +12,9 @@ import { QuickStart } from './Quizs/Offline/QuickStart';
 import { CustomStart } from './Quizs/Offline/CustomStart';
 import { QuickResultsPage } from './Quizs/Offline/QuickResultsPage';
 import { CustomResultsPage } from './Quizs/Offline/CustomResultsPage';
-import { EditQuiz } from './Quizs/Offline/EditQuiz';
-import TestPage from './Pages/TestPage';
+import { QuizCreation } from './Pages/QuizCreation';
+import { QuizEdit } from './Quizs/Edit/QuizEdit';
+import { MainContainer } from './Components/Components';
 
 export default function App() {
     const location = useLocation();
@@ -23,21 +24,22 @@ export default function App() {
 
   return (
     <>
-      <Header />
-      <Routes location={background || location}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/game/:roomId" element={<GamePage />} />
-        <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
-        <Route path="/play/offline/quick" element={<QuickStart />} />
-        <Route path="/play/offline/custom" element={<CustomStart />} />
-        <Route path="/results/quick/:attemptId" element={<QuickResultsPage />} />
-        <Route path="/results/custom/:attemptId" element={<CustomResultsPage />} />
-        <Route path="/users/:userId" element={<AccountPublic />} />
-        {/* <Route path="/quiz/newQuiz" element={<NewQuiz/>}/> */}
-        <Route path="/quiz/edit/:id?" element={<EditQuiz />}/>
-        <Route path="*" element={<NotFoundPage />} />
-        <Route path="/test" element={<TestPage />} />
-      </Routes>
+      <Header/>
+      <MainContainer>
+        <Routes location={background || location}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/game/:roomId" element={<GamePage />} />
+          <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
+          <Route path="/play/offline/quick" element={<QuickStart />} />
+          <Route path="/play/offline/custom" element={<CustomStart />} />
+          <Route path="/results/quick/:attemptId" element={<QuickResultsPage />} />
+          <Route path="/results/custom/:attemptId" element={<CustomResultsPage />} />
+          <Route path="/users/:userId" element={<AccountPublic />} />
+          <Route path="/quiz/create" element={<QuizCreation />} />
+          <Route path="/quiz/edit/:id?" element={<QuizEdit />}/>
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </MainContainer>
 
       {background && (
         <Routes>

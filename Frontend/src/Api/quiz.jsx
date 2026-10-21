@@ -74,25 +74,10 @@ export function deleteQuiz(id) {
     return apiFetch(`/api/quizzes/${id}`, { method: 'DELETE' });
 }
 
-
-// ============================================
-// QUIZ QUESTION ROUTES (Gestion des questions dans un quiz)
-// ============================================
-
-/**
- * Marche pas !!
- * Récupère toutes les questions d'un quiz
- * @param {number} quizId - ID du quiz
- * @returns {Promise<Array>} Liste des questions du quiz
- */
-export function getQuizQuestions(quizId) {
-    return apiFetch(`/api/quizzes/${quizId}/questions`, { method: 'GET' });
-}
-
 /**
  * Ajoute une question existante à un quiz
  * @param {number} quizId - ID du quiz
- * @param {number} questionId - ID de la question à ajouter
+ * @param {number} questionId - ID de la question
  * @returns {Promise<Object>} Quiz mis à jour
  */
 export function addQuestionToQuiz(quizId, questionId) {
@@ -101,19 +86,6 @@ export function addQuestionToQuiz(quizId, questionId) {
         body: JSON.stringify({ questionId }),
     });
 }
-
-/**
- * Retire une question d'un quiz
- * @param {number} quizId - ID du quiz
- * @param {number} questionId - ID de la question à retirer
- * @returns {Promise<void>}
- */
-export function removeQuestionFromQuiz(quizId, questionId) {
-    return apiFetch(`/api/quizzes/${quizId}/questions/${questionId}`, {
-        method: 'DELETE',
-    });
-}
-
 
 // ============================================
 // ATTEMPT ROUTES (Tentatives de quiz)

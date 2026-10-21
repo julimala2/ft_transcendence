@@ -4,6 +4,8 @@ import { apiFetch } from '../Api/api';
 import { getFriends, getReceivedRequests, getSentRequests, sendFriendRequest, removeFriend, acceptRequest, declineRequest } from '../Api/friends';
 import { getBlockedUsers, blockUser, unblockUser } from '../Api/blocks';
 import { Avatar } from '../Components/Avatar';
+import { StyledButton } from '../Components/Buttons';
+import { MainContainer } from '../Components/Components';
 
 export function AccountPublic() {
     const { userId } = useParams();
@@ -221,7 +223,7 @@ export function AccountPublic() {
     }
 
     return (
-        <div className="page">
+        <MainContainer>
             <h1>Profil de {profile.username}</h1>
             
             {/* Basic info */}
@@ -250,44 +252,44 @@ export function AccountPublic() {
                 {isBlocked ? (
                     <>
                         <p>Utilisateur bloqué</p>
-                        <button onClick={handleUnblock} disabled={actionLoading}>
+                        <StyledButton onClick={handleUnblock} disabled={actionLoading}>
                             {actionLoading ? '...' : 'Dé bloquer'}
-                        </button>
+                        </StyledButton>
                     </>
                 ) : (
                     <>
                         {relationship === 'friends' && (
-                            <button onClick={handleRemoveFriend} disabled={actionLoading}>
+                            <StyledButton onClick={handleRemoveFriend} disabled={actionLoading}>
                                 {actionLoading ? '...' : 'Retirer des amis'}
-                            </button>
+                            </StyledButton>
                         )}
                         
                         {relationship === 'pending_sent' && (
-                            <button disabled>
+                            <StyledButton disabled>
                                 Demande d'ami envoyée
-                            </button>
+                            </StyledButton>
                         )}
                         
                         {relationship === 'pending_received' && (
                             <>
-                                <button onClick={handleAcceptRequest} disabled={actionLoading}>
+                                <StyledButton onClick={handleAcceptRequest} disabled={actionLoading}>
                                     {actionLoading ? '...' : 'Accepter la demande'}
-                                </button>
-                                <button onClick={handleDeclineRequest} disabled={actionLoading}>
+                                </StyledButton>
+                                <StyledButton onClick={handleDeclineRequest} disabled={actionLoading}>
                                     {actionLoading ? '...' : 'Refuser la demande'}
-                                </button>
+                                </StyledButton>
                             </>
                         )}
                         
                         {relationship === 'none' && (
-                            <button onClick={handleAddFriend} disabled={actionLoading}>
+                            <StyledButton onClick={handleAddFriend} disabled={actionLoading}>
                                 {actionLoading ? '...' : 'Ajouter en ami'}
-                            </button>
+                            </StyledButton>
                         )}
                         
-                        <button onClick={handleBlock} disabled={actionLoading || isBlocked}>
+                        <StyledButton onClick={handleBlock} disabled={actionLoading || isBlocked}>
                             {actionLoading ? '...' : 'Bloquer'}
-                        </button>
+                        </StyledButton>
                     </>
                 )}
             </div>
@@ -299,9 +301,9 @@ export function AccountPublic() {
                 <p>Taux de réussite: {profile.successRate || 0}%</p>
             </div>
 
-            <button onClick={() => navigate(-1)}>
+            <StyledButton onClick={() => navigate(-1)}>
                 Retour
-            </button>
-        </div>
+            </StyledButton>
+        </MainContainer>
     );
 }

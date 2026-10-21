@@ -3,7 +3,7 @@
 alwaysApply: true
 
 ## Objectif
-Ce projet est une application web full‑stack visant à fournir un tableau de bord interactif avec authentification, gestion des données en temps réel et API REST.
+This project is a quizz webapp with Quiz games, creations, friend system, account system.
 
 ## Stack
 - **Front‑end** : React + TailwindCSS, Vite, TypeScript.
@@ -13,59 +13,15 @@ Ce projet est une application web full‑stack visant à fournir un tableau de b
 
 ## Structure des dossiers
 ```
-backend/          # API REST et logique métier
-  ├─ src/
-  │   ├─ routes/          # fichiers de routes
-  │   ├─ controllers/     # gestionnaires de requêtes
-  │   ├─ services/        # logique métier
-  │   ├─ models/          # schémas Prisma
-  │   └─ utils/           # utilitaires
-  └─ tests/            # tests unitaires
-
-frontend/         # SPA React
   ├─ src/
   │   ├─ components/   # composants UI
   │   ├─ pages/        # pages de l’application
   │   ├─ hooks/        # hooks personnalisés
   │   ├─ api/          # wrappers API
   │   └─ styles/       # Tailwind configuration
-  └─ public/
+  └─ tmp/ # backend example files
 
-websocket/        # serveur Socket.IO
-  └─ src/
 
 .continue/        # fichiers d’automatisation
   └─ rules/
-```
-
-## Routes principales (backend)
-- `GET /api/users` – Liste des utilisateurs (authentifié).
-- `POST /api/auth/login` – Authentification.
-- `POST /api/auth/register` – Inscription.
-- `GET /api/data` – Récupération des données principales.
-- `POST /api/data` – Ajout d’une entrée.
-
-## Commandes de lancement
-```bash
-# Installation des dépendances
-npm ci
-
-# Lancement du backend
-npm run dev:backend
-
-# Lancement du frontend
-npm run dev:frontend
-
-# Lancement du serveur WebSocket
-npm run dev:socket
-
-# Tests
-npm test
-```
-
-## Lancer en mode de production
-```bash
-npm run build:backend
-npm run build:frontend
-# déployer les deux builds
 ```

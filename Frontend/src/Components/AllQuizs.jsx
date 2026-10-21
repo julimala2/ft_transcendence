@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getAllQuizs, getQuizById } from "../Api/quiz";
 
 export function AllQuizs(){
@@ -11,7 +11,7 @@ export function AllQuizs(){
         
         async function load() {
             try{
-                const data = await getAllQuizs();
+                const data = await getAllQuizs({mine: true});
                 if(!cancelled) {
                     setQuizs(data);
                 }
@@ -32,11 +32,17 @@ export function AllQuizs(){
 
     return (
         <div className="card">
+            <h2 className="text-xl font-bold mb-4">Mes Quizs</h2>
             <ul className="list">
                 {quizs.map ((q) => (
                     <li key={q.id} className="card">- {q.title}</li>
                 ))}
             </ul>
+            <div className="mt-4">
+                <a href="/quiz/create" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Créer un nouveau quiz
+                </a>
+            </div>
         </div>
     )
 }

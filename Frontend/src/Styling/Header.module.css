@@ -1,5 +1,6 @@
 .header {
     position: fixed;
+    min-width: 100px;
     inset: 0 0 auto 0;
     z-index: 100;
     height: var(--header-h);

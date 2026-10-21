@@ -9,5 +9,5 @@ export const accountTabs = [
   { path: 'friends',  label: 'Amis',       element: <AccountFriends /> },
   { path: 'settings', label: 'Paramètres', element: <AccountSettings /> },
   { path: 'stats', label: 'Statistiques', element: <AccountStats />},
-  { path: 'Mes quizs', label: 'Mes quizs', element: <AccountMyQuizs/>}
+  { path: 'myQuizs', label: 'Mes quizs', element: <AccountMyQuizs/>}
 ];

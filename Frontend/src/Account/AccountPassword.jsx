@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useAuth } from '../Hooks/useAuth';
 import { validatePassword } from './AccountAuth';
 import styles from './Styling/Account.module.css';
+import { StyledButton } from '../Components/Buttons';
 
 export function ChangePasswordForm( {onDone} ){
     const {changePassword } = useAuth();
@@ -89,22 +90,13 @@ export function ChangePasswordForm( {onDone} ){
                 <div className={styles.spacer}/>
                 <section className={styles.bottom_bar}>
 
-                <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className={isSubmitting ? "link" : "link"}
-                    >
-                    {isSubmitting ? 'Processing ...' : 'Confirm'}
-                </button>
+                <StyledButton type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? 'Processing ...' : 'Confirm'}
+                </StyledButton>
 
-                <button
-                    type="button"
-                    onClick={onDone}
-                    
-                    disabled={isSubmitting}
-                    >
+                <StyledButton type="button" variant="secondary" onClick={onDone} disabled={isSubmitting}>
                     Cancel
-                </button>
+                </StyledButton>
                 </section>
             </form>
     );        
