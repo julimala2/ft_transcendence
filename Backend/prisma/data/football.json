@@ -1,0 +1,4143 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 300,
+    "parDifficulte": { "1": 98, "2": 108, "3": 94 },
+    "parType": { "multiple": 257, "boolean": 43 },
+    "avecImage": 0,
+    "sansImage": 300,
+    "parTag": {
+      "club": 104,
+      "coupe-du-monde": 64,
+      "legende": 60,
+      "record": 56,
+      "equipe-de-france": 50,
+      "regle": 38,
+      "ligue-des-champions": 32,
+      "euro": 24,
+      "ballon-d-or": 23,
+      "derby": 21
+    }
+  },
+  "category": {
+    "slug": "football",
+    "name": "Football"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "foot-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Quel pays a remporté la Coupe du monde 2018 ?",
+      "answers": [
+        { "text": "La France", "isCorrect": true },
+        { "text": "La Belgique", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "La Croatie", "isCorrect": false }
+      ],
+      "explanation": "La France bat la Croatie 4-2 en finale à Moscou et décroche sa deuxième étoile, vingt ans après 1998."
+    },
+    {
+      "ref": "foot-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la Coupe du monde 2022 au Qatar ?",
+      "answers": [
+        { "text": "Le Maroc", "isCorrect": false },
+        { "text": "La Croatie", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": true },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "Après un match fou terminé à 3-3, l'Argentine de Lionel Messi bat la France aux tirs au but (4-2)."
+    },
+    {
+      "ref": "foot-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Dans quel pays s'est déroulée la Coupe du monde 1998 ?",
+      "answers": [
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "La France", "isCorrect": true },
+        { "text": "Les États-Unis", "isCorrect": false }
+      ],
+      "explanation": "La France organise et remporte sa première Coupe du monde, avec une finale au Stade de France."
+    },
+    {
+      "ref": "foot-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde", "equipe-de-france", "legende"],
+      "text": "Qui a marqué deux buts de la tête en finale de la Coupe du monde 1998 ?",
+      "answers": [
+        { "text": "Zinédine Zidane", "isCorrect": true },
+        { "text": "Emmanuel Petit", "isCorrect": false },
+        { "text": "Lilian Thuram", "isCorrect": false },
+        { "text": "Thierry Henry", "isCorrect": false }
+      ],
+      "explanation": "Zidane marque deux têtes sur corner contre le Brésil, Emmanuel Petit ajoute le troisième but (3-0)."
+    },
+    {
+      "ref": "foot-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Quel joueur a réussi un triplé en finale de la Coupe du monde 2022 ?",
+      "answers": [
+        { "text": "Lionel Messi", "isCorrect": false },
+        { "text": "Olivier Giroud", "isCorrect": false },
+        { "text": "Ángel Di María", "isCorrect": false },
+        { "text": "Kylian Mbappé", "isCorrect": true }
+      ],
+      "explanation": "Mbappé marque trois fois contre l'Argentine, mais la France s'incline aux tirs au but."
+    },
+    {
+      "ref": "foot-006",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Avant Kylian Mbappé en 2022, quel est le seul joueur à avoir réussi un triplé en finale de Coupe du monde ?",
+      "answers": [
+        { "text": "Gerd Müller", "isCorrect": false },
+        { "text": "Ronaldo", "isCorrect": false },
+        { "text": "Geoff Hurst", "isCorrect": true },
+        { "text": "Pelé", "isCorrect": false }
+      ],
+      "explanation": "L'Anglais Geoff Hurst marque trois buts lors de la finale 1966 contre la RFA (4-2), à Wembley."
+    },
+    {
+      "ref": "foot-007",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "equipe-de-france", "record"],
+      "text": "Combien de buts le Français Just Fontaine a-t-il marqués lors de la Coupe du monde 1958 ?",
+      "answers": [
+        { "text": "15", "isCorrect": false },
+        { "text": "11", "isCorrect": false },
+        { "text": "13", "isCorrect": true },
+        { "text": "9", "isCorrect": false }
+      ],
+      "explanation": "Ses 13 buts en une seule édition, en Suède, constituent un record historique."
+    },
+    {
+      "ref": "foot-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Quel Allemand a marqué 16 buts en phases finales de Coupe du monde, entre 2002 et 2014 ?",
+      "answers": [
+        { "text": "Gerd Müller", "isCorrect": false },
+        { "text": "Thomas Müller", "isCorrect": false },
+        { "text": "Miroslav Klose", "isCorrect": true },
+        { "text": "Jürgen Klinsmann", "isCorrect": false }
+      ],
+      "explanation": "Klose bat en 2014 le record du Brésilien Ronaldo (15 buts), lors du fameux 7-1 contre le Brésil."
+    },
+    {
+      "ref": "foot-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a organisé et remporté la toute première Coupe du monde, en 1930 ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "La France", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "L'Uruguay", "isCorrect": true }
+      ],
+      "explanation": "L'Uruguay bat l'Argentine 4-2 en finale à Montevideo."
+    },
+    {
+      "ref": "foot-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel Français est à l'origine de la création de la Coupe du monde ?",
+      "answers": [
+        { "text": "Gabriel Hanot", "isCorrect": false },
+        { "text": "Pierre de Coubertin", "isCorrect": false },
+        { "text": "Henri Delaunay", "isCorrect": false },
+        { "text": "Jules Rimet", "isCorrect": true }
+      ],
+      "explanation": "Jules Rimet, président de la FIFA de 1921 à 1954, lance la Coupe du monde en 1930. Henri Delaunay est à l'origine de l'Euro."
+    },
+    {
+      "ref": "foot-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quels pays ont organisé ensemble la Coupe du monde 2026 ?",
+      "answers": [
+        { "text": "Le Canada et les États-Unis", "isCorrect": false },
+        { "text": "Les États-Unis seuls", "isCorrect": false },
+        { "text": "Le Mexique et les États-Unis", "isCorrect": false },
+        { "text": "Les États-Unis, le Canada et le Mexique", "isCorrect": true }
+      ],
+      "explanation": "C'est la première Coupe du monde organisée par trois pays."
+    },
+    {
+      "ref": "foot-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Combien d'équipes participent à la phase finale de la Coupe du monde depuis l'édition 2026 ?",
+      "answers": [
+        { "text": "48", "isCorrect": true },
+        { "text": "40", "isCorrect": false },
+        { "text": "32", "isCorrect": false },
+        { "text": "64", "isCorrect": false }
+      ],
+      "explanation": "La compétition est passée de 32 à 48 équipes en 2026."
+    },
+    {
+      "ref": "foot-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la Coupe du monde 2010 en Afrique du Sud ?",
+      "answers": [
+        { "text": "Les Pays-Bas", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "L'Uruguay", "isCorrect": false }
+      ],
+      "explanation": "L'Espagne bat les Pays-Bas 1-0 après prolongation, grâce à un but d'Andrés Iniesta."
+    },
+    {
+      "ref": "foot-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Quel score l'Allemagne a-t-elle infligé au Brésil en demi-finale de la Coupe du monde 2014 ?",
+      "answers": [
+        { "text": "5-0", "isCorrect": false },
+        { "text": "4-1", "isCorrect": false },
+        { "text": "7-1", "isCorrect": true },
+        { "text": "6-2", "isCorrect": false }
+      ],
+      "explanation": "Une humiliation historique pour le Brésil, à domicile, à Belo Horizonte."
+    },
+    {
+      "ref": "foot-015",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la Coupe du monde 2014 au Brésil ?",
+      "answers": [
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Mario Götze marque le seul but de la finale contre l'Argentine, en prolongation, au Maracanã."
+    },
+    {
+      "ref": "foot-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Quel est le premier pays africain à avoir atteint les demi-finales d'une Coupe du monde ?",
+      "answers": [
+        { "text": "Le Cameroun", "isCorrect": false },
+        { "text": "Le Ghana", "isCorrect": false },
+        { "text": "Le Maroc", "isCorrect": true },
+        { "text": "Le Sénégal", "isCorrect": false }
+      ],
+      "explanation": "Le Maroc atteint le dernier carré en 2022 au Qatar avant d'être éliminé par la France. Le Cameroun (1990), le Sénégal (2002) et le Ghana (2010) s'étaient arrêtés en quarts."
+    },
+    {
+      "ref": "foot-017",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Lors de la finale de 2006, quel joueur italien Zinédine Zidane a-t-il frappé d'un coup de tête ?",
+      "answers": [
+        { "text": "Marco Materazzi", "isCorrect": true },
+        { "text": "Andrea Pirlo", "isCorrect": false },
+        { "text": "Fabio Cannavaro", "isCorrect": false },
+        { "text": "Gennaro Gattuso", "isCorrect": false }
+      ],
+      "explanation": "Zidane est expulsé pour ce geste lors du dernier match de sa carrière. L'Italie gagne ensuite aux tirs au but."
+    },
+    {
+      "ref": "foot-018",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la Coupe du monde 2006 en Allemagne ?",
+      "answers": [
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": true },
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "L'Italie bat la France aux tirs au but (5-3) après un match nul 1-1."
+    },
+    {
+      "ref": "foot-019",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "legende", "record"],
+      "text": "Quel joueur est le seul à avoir remporté trois Coupes du monde ?",
+      "answers": [
+        { "text": "Franz Beckenbauer", "isCorrect": false },
+        { "text": "Pelé", "isCorrect": true },
+        { "text": "Diego Maradona", "isCorrect": false },
+        { "text": "Cafu", "isCorrect": false }
+      ],
+      "explanation": "Pelé est champion du monde avec le Brésil en 1958, 1962 et 1970. Cafu en a gagné deux (1994, 2002)."
+    },
+    {
+      "ref": "foot-020",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "legende"],
+      "text": "Contre quelle équipe Diego Maradona a-t-il marqué le but de « la main de Dieu », en 1986 ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "La RFA", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true },
+        { "text": "La Belgique", "isCorrect": false }
+      ],
+      "explanation": "En quart de finale, il marque de la main, puis inscrit quelques minutes plus tard le « but du siècle » après un slalom depuis son camp."
+    },
+    {
+      "ref": "foot-021",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde"],
+      "text": "Quelle équipe a battu la grande Hongrie en finale de la Coupe du monde 1954, lors du « miracle de Berne » ?",
+      "answers": [
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "La RFA (Allemagne de l'Ouest)", "isCorrect": true },
+        { "text": "L'Autriche", "isCorrect": false },
+        { "text": "L'Uruguay", "isCorrect": false }
+      ],
+      "explanation": "La RFA bat 3-2 une Hongrie invaincue depuis quatre ans, qui l'avait écrasée 8-3 au premier tour."
+    },
+    {
+      "ref": "foot-022",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde"],
+      "text": "Comment s'appelait le trophée remis au vainqueur de la Coupe du monde jusqu'en 1970 ?",
+      "answers": [
+        { "text": "La Victoire ailée", "isCorrect": false },
+        { "text": "La coupe Henri-Delaunay", "isCorrect": false },
+        { "text": "La coupe des Nations", "isCorrect": false },
+        { "text": "La coupe Jules-Rimet", "isCorrect": true }
+      ],
+      "explanation": "Le Brésil la garde définitivement après sa troisième victoire, en 1970. Elle a été volée en 1983 et jamais retrouvée."
+    },
+    {
+      "ref": "foot-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Quel pays est le seul à avoir participé à toutes les phases finales de la Coupe du monde ?",
+      "answers": [
+        { "text": "Le Brésil", "isCorrect": true },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Le Brésil n'a manqué aucune édition depuis 1930. L'Italie, par exemple, a manqué les éditions 2018 et 2022."
+    },
+    {
+      "ref": "foot-024",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel gardien a été élu meilleur gardien (Gant d'or) de la Coupe du monde 2022 ?",
+      "answers": [
+        { "text": "Hugo Lloris", "isCorrect": false },
+        { "text": "Emiliano Martínez", "isCorrect": true },
+        { "text": "Dominik Livaković", "isCorrect": false },
+        { "text": "Yassine Bounou", "isCorrect": false }
+      ],
+      "explanation": "Le gardien argentin a été décisif, notamment lors des séances de tirs au but."
+    },
+    {
+      "ref": "foot-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "legende"],
+      "text": "Quel joueur a été élu meilleur joueur de la Coupe du monde 2022 ?",
+      "answers": [
+        { "text": "Luka Modrić", "isCorrect": false },
+        { "text": "Kylian Mbappé", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": true }
+      ],
+      "explanation": "Messi reçoit le Ballon d'or de la compétition, comme en 2014. Mbappé termine meilleur buteur avec 8 buts."
+    },
+    {
+      "ref": "foot-026",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel joueur a été élu meilleur joueur de la Coupe du monde 2018 ?",
+      "answers": [
+        { "text": "Antoine Griezmann", "isCorrect": false },
+        { "text": "Kylian Mbappé", "isCorrect": false },
+        { "text": "Eden Hazard", "isCorrect": false },
+        { "text": "Luka Modrić", "isCorrect": true }
+      ],
+      "explanation": "Le meneur croate a emmené son pays jusqu'en finale."
+    },
+    {
+      "ref": "foot-027",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "La Coupe du monde masculine a lieu tous les quatre ans.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle a lieu tous les quatre ans depuis 1930, sauf en 1942 et 1946 à cause de la Seconde Guerre mondiale."
+    },
+    {
+      "ref": "foot-028",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "La Coupe du monde 2022 s'est jouée en juin et juillet, comme les éditions précédentes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "À cause de la chaleur au Qatar, elle s'est jouée en novembre et décembre, une première."
+    },
+    {
+      "ref": "foot-029",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde"],
+      "text": "Le « Maracanazo » désigne la défaite du Brésil contre l'Uruguay, à domicile, lors de la Coupe du monde 1950.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "L'Uruguay gagne 2-1 au Maracanã devant environ 200 000 spectateurs et remporte le titre."
+    },
+    {
+      "ref": "foot-030",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "L'Angleterre a remporté deux fois la Coupe du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'Angleterre n'a gagné qu'une seule Coupe du monde, en 1966, à domicile."
+    },
+    {
+      "ref": "foot-031",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "regle"],
+      "text": "Lors de quelle Coupe du monde les cartons jaunes et rouges ont-ils été utilisés pour la première fois ?",
+      "answers": [
+        { "text": "1966", "isCorrect": false },
+        { "text": "1958", "isCorrect": false },
+        { "text": "1970", "isCorrect": true },
+        { "text": "1982", "isCorrect": false }
+      ],
+      "explanation": "L'arbitre anglais Ken Aston les imagine après la Coupe du monde 1966, en s'inspirant des feux de circulation."
+    },
+    {
+      "ref": "foot-032",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Quel joueur a marqué le but le plus rapide de l'histoire de la Coupe du monde, après 11 secondes en 2002 ?",
+      "answers": [
+        { "text": "Hakan Şükür", "isCorrect": true },
+        { "text": "Vahid Hashemian", "isCorrect": false },
+        { "text": "Bryan Robson", "isCorrect": false },
+        { "text": "Clint Dempsey", "isCorrect": false }
+      ],
+      "explanation": "L'attaquant turc marque contre la Corée du Sud lors du match pour la troisième place."
+    },
+    {
+      "ref": "foot-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions", "record"],
+      "text": "Quel club a remporté le plus de Coupes des clubs champions et de Ligues des champions ?",
+      "answers": [
+        { "text": "L'AC Milan", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": false },
+        { "text": "Le Bayern Munich", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": true }
+      ],
+      "explanation": "Le Real Madrid comptait 15 titres à l'issue de la saison 2024-2025, loin devant l'AC Milan (7)."
+    },
+    {
+      "ref": "foot-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club français a remporté la Ligue des champions en 1993 ?",
+      "answers": [
+        { "text": "L'AS Monaco", "isCorrect": false },
+        { "text": "Les Girondins de Bordeaux", "isCorrect": false },
+        { "text": "Le Paris Saint-Germain", "isCorrect": false },
+        { "text": "L'Olympique de Marseille", "isCorrect": true }
+      ],
+      "explanation": "L'OM bat l'AC Milan 1-0 à Munich. C'est le premier club français à remporter la compétition."
+    },
+    {
+      "ref": "foot-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club a remporté la Ligue des champions 2024-2025 ?",
+      "answers": [
+        { "text": "L'Inter Milan", "isCorrect": false },
+        { "text": "Le Paris Saint-Germain", "isCorrect": true },
+        { "text": "Le FC Barcelone", "isCorrect": false },
+        { "text": "Arsenal", "isCorrect": false }
+      ],
+      "explanation": "Le PSG remporte sa première Ligue des champions en battant l'Inter Milan à Munich, le 31 mai 2025."
+    },
+    {
+      "ref": "foot-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "record"],
+      "text": "Sur quel score le PSG a-t-il battu l'Inter Milan en finale de la Ligue des champions 2025 ?",
+      "answers": [
+        { "text": "5-0", "isCorrect": true },
+        { "text": "3-1", "isCorrect": false },
+        { "text": "2-0", "isCorrect": false },
+        { "text": "4-2", "isCorrect": false }
+      ],
+      "explanation": "C'est le plus large écart de l'histoire pour une finale de la compétition."
+    },
+    {
+      "ref": "foot-037",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions"],
+      "text": "Qui a marqué le but de la victoire de l'OM en finale de la Ligue des champions 1993 ?",
+      "answers": [
+        { "text": "Basile Boli", "isCorrect": true },
+        { "text": "Didier Deschamps", "isCorrect": false },
+        { "text": "Rudi Völler", "isCorrect": false },
+        { "text": "Alen Bokšić", "isCorrect": false }
+      ],
+      "explanation": "Le défenseur marque de la tête sur un corner d'Abedi Pelé, juste avant la mi-temps."
+    },
+    {
+      "ref": "foot-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "record", "legende"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire de la Ligue des champions ?",
+      "answers": [
+        { "text": "Karim Benzema", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": true },
+        { "text": "Robert Lewandowski", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": false }
+      ],
+      "explanation": "Cristiano Ronaldo a marqué 140 buts dans la compétition, devant Lionel Messi (129)."
+    },
+    {
+      "ref": "foot-039",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions"],
+      "text": "L'hymne de la Ligue des champions est adapté d'une œuvre de quel compositeur ?",
+      "answers": [
+        { "text": "Vivaldi", "isCorrect": false },
+        { "text": "Beethoven", "isCorrect": false },
+        { "text": "Haendel", "isCorrect": true },
+        { "text": "Mozart", "isCorrect": false }
+      ],
+      "explanation": "Il s'inspire de « Zadok the Priest », écrit par Haendel pour le couronnement du roi George II en 1727."
+    },
+    {
+      "ref": "foot-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions"],
+      "text": "En quelle année la Coupe des clubs champions européens est-elle devenue la « Ligue des champions » ?",
+      "answers": [
+        { "text": "1985", "isCorrect": false },
+        { "text": "1996", "isCorrect": false },
+        { "text": "1992", "isCorrect": true },
+        { "text": "2000", "isCorrect": false }
+      ],
+      "explanation": "La formule change pour la saison 1992-1993, que l'OM remporte justement."
+    },
+    {
+      "ref": "foot-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club anglais a remporté la finale d'Istanbul en 2005, après avoir été mené 3-0 à la mi-temps ?",
+      "answers": [
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Manchester United", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": true },
+        { "text": "Arsenal", "isCorrect": false }
+      ],
+      "explanation": "Liverpool revient à 3-3 contre l'AC Milan en six minutes, puis gagne aux tirs au but."
+    },
+    {
+      "ref": "foot-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "record"],
+      "text": "Quel club a remporté la Ligue des champions trois fois de suite, de 2016 à 2018 ?",
+      "answers": [
+        { "text": "Le FC Barcelone", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": true },
+        { "text": "Le Bayern Munich", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": false }
+      ],
+      "explanation": "Un exploit inédit depuis la création de la Ligue des champions en 1992."
+    },
+    {
+      "ref": "foot-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "legende"],
+      "text": "Quel entraîneur a mené le Real Madrid à trois Ligues des champions consécutives, de 2016 à 2018 ?",
+      "answers": [
+        { "text": "José Mourinho", "isCorrect": false },
+        { "text": "Carlo Ancelotti", "isCorrect": false },
+        { "text": "Vicente del Bosque", "isCorrect": false },
+        { "text": "Zinédine Zidane", "isCorrect": true }
+      ],
+      "explanation": "Zidane avait déjà gagné la compétition comme joueur avec le Real, en 2002."
+    },
+    {
+      "ref": "foot-044",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "record"],
+      "text": "Quel entraîneur a remporté le plus de Ligues des champions ?",
+      "answers": [
+        { "text": "Pep Guardiola", "isCorrect": false },
+        { "text": "Zinédine Zidane", "isCorrect": false },
+        { "text": "Carlo Ancelotti", "isCorrect": true },
+        { "text": "Bob Paisley", "isCorrect": false }
+      ],
+      "explanation": "Ancelotti en a gagné cinq : deux avec l'AC Milan (2003, 2007) et trois avec le Real Madrid (2014, 2022, 2024)."
+    },
+    {
+      "ref": "foot-045",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club a remporté sa première Ligue des champions en 2023, en battant l'Inter Milan ?",
+      "answers": [
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Le Paris Saint-Germain", "isCorrect": false },
+        { "text": "Manchester City", "isCorrect": true },
+        { "text": "Arsenal", "isCorrect": false }
+      ],
+      "explanation": "Rodri marque le seul but de la finale à Istanbul. City réalise le triplé championnat, coupe et Ligue des champions."
+    },
+    {
+      "ref": "foot-046",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions"],
+      "text": "Quel club a remporté la toute première Coupe des clubs champions, en 1956 ?",
+      "answers": [
+        { "text": "L'Inter Milan", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": true },
+        { "text": "Benfica", "isCorrect": false },
+        { "text": "L'AC Milan", "isCorrect": false }
+      ],
+      "explanation": "Le Real remporte les cinq premières éditions, de 1956 à 1960."
+    },
+    {
+      "ref": "foot-047",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club français a disputé la toute première finale de la Coupe des clubs champions, en 1956 ?",
+      "answers": [
+        { "text": "L'OGC Nice", "isCorrect": false },
+        { "text": "L'Olympique de Marseille", "isCorrect": false },
+        { "text": "Le Stade de Reims", "isCorrect": true },
+        { "text": "L'AS Saint-Étienne", "isCorrect": false }
+      ],
+      "explanation": "Reims perd 4-3 contre le Real Madrid au Parc des Princes, puis encore contre le Real en finale 1959."
+    },
+    {
+      "ref": "foot-048",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Contre quel club l'AS Saint-Étienne a-t-elle perdu la finale de 1976, celle des célèbres « poteaux carrés » ?",
+      "answers": [
+        { "text": "L'Ajax Amsterdam", "isCorrect": false },
+        { "text": "Leeds United", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": false },
+        { "text": "Le Bayern Munich", "isCorrect": true }
+      ],
+      "explanation": "Les Verts touchent deux fois les poteaux, alors carrés, et perdent 1-0 à Glasgow."
+    },
+    {
+      "ref": "foot-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "legende"],
+      "text": "Quel club néerlandais a remporté trois Coupes des clubs champions de suite, de 1971 à 1973, avec Johan Cruyff ?",
+      "answers": [
+        { "text": "L'AZ Alkmaar", "isCorrect": false },
+        { "text": "Le Feyenoord Rotterdam", "isCorrect": false },
+        { "text": "L'Ajax Amsterdam", "isCorrect": true },
+        { "text": "Le PSV Eindhoven", "isCorrect": false }
+      ],
+      "explanation": "L'Ajax incarne alors le « football total », où chaque joueur peut occuper tous les postes."
+    },
+    {
+      "ref": "foot-050",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Le PSG a perdu la finale de la Ligue des champions 2020 contre le Bayern Munich.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "À Lisbonne, à huis clos à cause du Covid, le Bayern gagne 1-0 sur un but de Kingsley Coman, formé au PSG."
+    },
+    {
+      "ref": "foot-051",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "record"],
+      "text": "Le Bayern Munich a remporté la Ligue des champions 2020 en gagnant tous ses matchs.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Onze matchs, onze victoires, dont un 8-2 contre le FC Barcelone en quart de finale : une première dans l'histoire de la compétition."
+    },
+    {
+      "ref": "foot-052",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "L'Olympique de Marseille a remporté deux fois la Ligue des champions.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'OM l'a remportée une seule fois, en 1993. Il avait perdu la finale de 1991 contre l'Étoile rouge de Belgrade."
+    },
+    {
+      "ref": "foot-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club a été victime de la « remontada » du FC Barcelone en 2017 ?",
+      "answers": [
+        { "text": "Le Paris Saint-Germain", "isCorrect": true },
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "L'AS Monaco", "isCorrect": false },
+        { "text": "Arsenal", "isCorrect": false }
+      ],
+      "explanation": "Battu 4-0 à l'aller, le Barça gagne 6-1 au retour et se qualifie grâce à trois buts dans les dernières minutes."
+    },
+    {
+      "ref": "foot-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions"],
+      "text": "Quel club a battu le Borussia Dortmund en finale de la Ligue des champions 2024 ?",
+      "answers": [
+        { "text": "Le Real Madrid", "isCorrect": true },
+        { "text": "L'Inter Milan", "isCorrect": false },
+        { "text": "Manchester City", "isCorrect": false },
+        { "text": "Le Bayern Munich", "isCorrect": false }
+      ],
+      "explanation": "Le Real gagne 2-0 à Wembley et remporte son quinzième titre."
+    },
+    {
+      "ref": "foot-055",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Contre quel club l'AS Monaco a-t-elle perdu la finale de la Ligue des champions 2004 ?",
+      "answers": [
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Le FC Porto", "isCorrect": true },
+        { "text": "Le Deportivo La Corogne", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": false }
+      ],
+      "explanation": "Le Porto de José Mourinho gagne 3-0 à Gelsenkirchen. Monaco avait éliminé le Real Madrid et Chelsea."
+    },
+    {
+      "ref": "foot-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions"],
+      "text": "Quel est le surnom du trophée de la Ligue des champions, à cause de la forme de ses anses ?",
+      "answers": [
+        { "text": "La « coupe ailée »", "isCorrect": false },
+        { "text": "La « coupe au long cou »", "isCorrect": false },
+        { "text": "Le « Saladier »", "isCorrect": false },
+        { "text": "La « coupe aux grandes oreilles »", "isCorrect": true }
+      ],
+      "explanation": "Ses deux immenses anses lui valent ce surnom. Le « Saladier » est celui de la Coupe Davis, en tennis."
+    },
+    {
+      "ref": "foot-057",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "legende"],
+      "text": "Lionel Messi a remporté la Ligue des champions avec le PSG.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Messi a gagné ses quatre Ligues des champions avec le FC Barcelone (2006, 2009, 2011, 2015). Au PSG (2021-2023), il ne l'a pas remportée."
+    },
+    {
+      "ref": "foot-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "legende"],
+      "text": "Combien de Ligues des champions Lionel Messi a-t-il remportées ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Toutes avec le FC Barcelone : 2006, 2009, 2011 et 2015."
+    },
+    {
+      "ref": "foot-059",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "record"],
+      "text": "Le Bayern Munich est le seul club allemand à avoir remporté la Ligue des champions.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Hambourg (1983) et le Borussia Dortmund (1997) l'ont aussi remportée."
+    },
+    {
+      "ref": "foot-060",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ligue-des-champions", "legende", "record"],
+      "text": "Quel joueur est le seul à avoir remporté la Ligue des champions avec trois clubs différents ?",
+      "answers": [
+        { "text": "Zlatan Ibrahimović", "isCorrect": false },
+        { "text": "Clarence Seedorf", "isCorrect": true },
+        { "text": "Samuel Eto'o", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": false }
+      ],
+      "explanation": "Le Néerlandais l'a gagnée avec l'Ajax (1995), le Real Madrid (1998) et l'AC Milan (2003, 2007)."
+    },
+    {
+      "ref": "foot-061",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "legende"],
+      "text": "Zlatan Ibrahimović a remporté la Ligue des champions au cours de sa carrière.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Malgré des passages à l'Ajax, la Juventus, l'Inter, le Barça, l'AC Milan et le PSG, c'est le grand trophée qui manque à son palmarès."
+    },
+    {
+      "ref": "foot-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel pays se joue la Liga ?",
+      "answers": [
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "L'Italie", "isCorrect": false }
+      ],
+      "explanation": "La Liga est le championnat d'Espagne, dominé historiquement par le Real Madrid et le FC Barcelone."
+    },
+    {
+      "ref": "foot-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel pays se joue la Serie A ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": true },
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": false }
+      ],
+      "explanation": "Le championnat d'Italie est le terrain de jeu de la Juventus, de l'Inter et de l'AC Milan."
+    },
+    {
+      "ref": "foot-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club français est surnommé « les Verts » ?",
+      "answers": [
+        { "text": "L'AS Saint-Étienne", "isCorrect": true },
+        { "text": "L'OGC Nice", "isCorrect": false },
+        { "text": "L'Olympique lyonnais", "isCorrect": false },
+        { "text": "Le FC Nantes", "isCorrect": false }
+      ],
+      "explanation": "Le surnom vient de la couleur de son maillot. Les Verts ont fait vibrer la France dans les années 1970."
+    },
+    {
+      "ref": "foot-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté le plus de titres de champion de France ?",
+      "answers": [
+        { "text": "L'AS Saint-Étienne", "isCorrect": false },
+        { "text": "Le Paris Saint-Germain", "isCorrect": true },
+        { "text": "Le FC Nantes", "isCorrect": false },
+        { "text": "L'Olympique de Marseille", "isCorrect": false }
+      ],
+      "explanation": "Le PSG a dépassé en 2022 les 10 titres de Saint-Étienne, qui détenait le record depuis 1981."
+    },
+    {
+      "ref": "foot-066",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Avant d'être dépassé par le PSG, quel club détenait le record de titres de champion de France, avec 10 titres ?",
+      "answers": [
+        { "text": "L'AS Saint-Étienne", "isCorrect": true },
+        { "text": "Le FC Nantes", "isCorrect": false },
+        { "text": "L'Olympique de Marseille", "isCorrect": false },
+        { "text": "L'AS Monaco", "isCorrect": false }
+      ],
+      "explanation": "Saint-Étienne a gagné son dixième titre en 1981."
+    },
+    {
+      "ref": "foot-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "record"],
+      "text": "Combien de titres de champion de France consécutifs l'Olympique lyonnais a-t-il remportés de 2002 à 2008 ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "Un record en France, avec des joueurs comme Juninho, Karim Benzema et Grégory Coupet."
+    },
+    {
+      "ref": "foot-068",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel est le surnom du club londonien d'Arsenal ?",
+      "answers": [
+        { "text": "Les Spurs", "isCorrect": false },
+        { "text": "Les Gunners", "isCorrect": true },
+        { "text": "Les Blues", "isCorrect": false },
+        { "text": "Les Reds", "isCorrect": false }
+      ],
+      "explanation": "« Les Canonniers » : le club a été fondé en 1886 par des ouvriers d'une fabrique d'armes. Les Reds sont Liverpool, les Blues Chelsea, les Spurs Tottenham."
+    },
+    {
+      "ref": "foot-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Quel club anglais est surnommé « les Red Devils » ?",
+      "answers": [
+        { "text": "Manchester United", "isCorrect": true },
+        { "text": "Liverpool", "isCorrect": false },
+        { "text": "Nottingham Forest", "isCorrect": false },
+        { "text": "Arsenal", "isCorrect": false }
+      ],
+      "explanation": "Les « Diables rouges » ont un diable sur leur blason. Liverpool est surnommé « les Reds »."
+    },
+    {
+      "ref": "foot-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté la Premier League 2003-2004 sans perdre un seul match ?",
+      "answers": [
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": false },
+        { "text": "Arsenal", "isCorrect": true },
+        { "text": "Manchester United", "isCorrect": false }
+      ],
+      "explanation": "Les « Invincibles » d'Arsène Wenger, avec Thierry Henry et Patrick Vieira : 26 victoires et 12 nuls."
+    },
+    {
+      "ref": "foot-071",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel est le stade historique du FC Barcelone ?",
+      "answers": [
+        { "text": "Le Santiago-Bernabéu", "isCorrect": false },
+        { "text": "Le Metropolitano", "isCorrect": false },
+        { "text": "Le Mestalla", "isCorrect": false },
+        { "text": "Le Camp Nou", "isCorrect": true }
+      ],
+      "explanation": "Le Camp Nou, inauguré en 1957, est le plus grand stade d'Europe. Le Bernabéu est celui du Real Madrid."
+    },
+    {
+      "ref": "foot-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel stade joue le Real Madrid ?",
+      "answers": [
+        { "text": "Le Camp Nou", "isCorrect": false },
+        { "text": "Le Santiago-Bernabéu", "isCorrect": true },
+        { "text": "Le Metropolitano", "isCorrect": false },
+        { "text": "Le Vicente-Calderón", "isCorrect": false }
+      ],
+      "explanation": "Il porte le nom d'un ancien président du club. Le Metropolitano est le stade de l'Atlético de Madrid."
+    },
+    {
+      "ref": "foot-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté la Premier League 2015-2016, alors que les bookmakers le donnaient à 5 000 contre 1 ?",
+      "answers": [
+        { "text": "West Ham", "isCorrect": false },
+        { "text": "Tottenham", "isCorrect": false },
+        { "text": "Leicester City", "isCorrect": true },
+        { "text": "Everton", "isCorrect": false }
+      ],
+      "explanation": "Le conte de fées de Claudio Ranieri, avec Jamie Vardy, Riyad Mahrez et N'Golo Kanté."
+    },
+    {
+      "ref": "foot-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "equipe-de-france"],
+      "text": "Quel joueur français faisait partie de l'équipe de Leicester championne d'Angleterre en 2016 ?",
+      "answers": [
+        { "text": "N'Golo Kanté", "isCorrect": true },
+        { "text": "Dimitri Payet", "isCorrect": false },
+        { "text": "Morgan Schneiderlin", "isCorrect": false },
+        { "text": "Olivier Giroud", "isCorrect": false }
+      ],
+      "explanation": "Révélé à Caen, Kanté est ensuite champion d'Angleterre avec Chelsea en 2017, puis champion du monde en 2018."
+    },
+    {
+      "ref": "foot-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté 11 titres de champion d'Allemagne consécutifs, de 2013 à 2023 ?",
+      "answers": [
+        { "text": "Le Bayer Leverkusen", "isCorrect": false },
+        { "text": "Le Bayern Munich", "isCorrect": true },
+        { "text": "Schalke 04", "isCorrect": false },
+        { "text": "Le Borussia Dortmund", "isCorrect": false }
+      ],
+      "explanation": "Une série unique dans les grands championnats européens."
+    },
+    {
+      "ref": "foot-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "record"],
+      "text": "Quel club a mis fin à la série du Bayern en remportant la Bundesliga 2023-2024 sans perdre un match ?",
+      "answers": [
+        { "text": "Le RB Leipzig", "isCorrect": false },
+        { "text": "Le Bayer Leverkusen", "isCorrect": true },
+        { "text": "Le VfB Stuttgart", "isCorrect": false },
+        { "text": "Le Borussia Dortmund", "isCorrect": false }
+      ],
+      "explanation": "Entraîné par Xabi Alonso, Leverkusen remporte le premier titre de son histoire, invaincu."
+    },
+    {
+      "ref": "foot-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Quel club italien est surnommé « la Vieille Dame » ?",
+      "answers": [
+        { "text": "L'AS Roma", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": true },
+        { "text": "L'AC Milan", "isCorrect": false },
+        { "text": "L'Inter Milan", "isCorrect": false }
+      ],
+      "explanation": "La « Vecchia Signora », fondée en 1897 à Turin, est le club le plus titré d'Italie."
+    },
+    {
+      "ref": "foot-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "derby"],
+      "text": "Quels clubs se partagent le stade San Siro, à Milan ?",
+      "answers": [
+        { "text": "Le Genoa et la Sampdoria", "isCorrect": false },
+        { "text": "La Juventus et le Torino", "isCorrect": false },
+        { "text": "L'AS Roma et la Lazio", "isCorrect": false },
+        { "text": "L'AC Milan et l'Inter Milan", "isCorrect": true }
+      ],
+      "explanation": "Les deux rivaux milanais y jouent leurs matchs à domicile. Rome et Gênes ont aussi des stades partagés."
+    },
+    {
+      "ref": "foot-079",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club joue au stade Vélodrome ?",
+      "answers": [
+        { "text": "L'Olympique de Marseille", "isCorrect": true },
+        { "text": "L'Olympique lyonnais", "isCorrect": false },
+        { "text": "Montpellier HSC", "isCorrect": false },
+        { "text": "L'OGC Nice", "isCorrect": false }
+      ],
+      "explanation": "Le Vélodrome, inauguré en 1937, est le plus grand stade de club en France."
+    },
+    {
+      "ref": "foot-080",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Quel est le club le plus titré du championnat du Portugal ?",
+      "answers": [
+        { "text": "Braga", "isCorrect": false },
+        { "text": "Le FC Porto", "isCorrect": false },
+        { "text": "Benfica", "isCorrect": true },
+        { "text": "Le Sporting CP", "isCorrect": false }
+      ],
+      "explanation": "Le club lisboète devance le FC Porto et le Sporting au nombre de titres."
+    },
+    {
+      "ref": "foot-081",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel pays joue le Celtic Glasgow ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "Le pays de Galles", "isCorrect": false }
+      ],
+      "explanation": "Le Celtic a été le premier club britannique à remporter la Coupe des clubs champions, en 1967."
+    },
+    {
+      "ref": "foot-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Quel club français est surnommé « les Canaris » ?",
+      "answers": [
+        { "text": "Le RC Lens", "isCorrect": false },
+        { "text": "Le Stade rennais", "isCorrect": false },
+        { "text": "Le FC Sochaux", "isCorrect": false },
+        { "text": "Le FC Nantes", "isCorrect": true }
+      ],
+      "explanation": "Le surnom vient de son maillot jaune."
+    },
+    {
+      "ref": "foot-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Quel club français est surnommé « les Sang et Or » ?",
+      "answers": [
+        { "text": "Le RC Strasbourg", "isCorrect": false },
+        { "text": "Le Stade rennais", "isCorrect": false },
+        { "text": "L'AS Monaco", "isCorrect": false },
+        { "text": "Le RC Lens", "isCorrect": true }
+      ],
+      "explanation": "Le surnom vient de ses couleurs, rouge et jaune. Le club est très lié à l'histoire minière du Nord."
+    },
+    {
+      "ref": "foot-084",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club"],
+      "text": "Quel club a remporté la première édition de la Premier League, en 1992-1993 ?",
+      "answers": [
+        { "text": "Leeds United", "isCorrect": false },
+        { "text": "Blackburn Rovers", "isCorrect": false },
+        { "text": "Manchester United", "isCorrect": true },
+        { "text": "Arsenal", "isCorrect": false }
+      ],
+      "explanation": "Le championnat d'Angleterre prend alors le nom de Premier League, et United remporte son premier titre depuis 1967."
+    },
+    {
+      "ref": "foot-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club", "legende"],
+      "text": "Quel entraîneur a dirigé Manchester United de 1986 à 2013 ?",
+      "answers": [
+        { "text": "Alex Ferguson", "isCorrect": true },
+        { "text": "Arsène Wenger", "isCorrect": false },
+        { "text": "Bobby Robson", "isCorrect": false },
+        { "text": "Matt Busby", "isCorrect": false }
+      ],
+      "explanation": "En 27 ans, l'Écossais a remporté 13 championnats et 2 Ligues des champions."
+    },
+    {
+      "ref": "foot-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Quel entraîneur français a dirigé Arsenal pendant 22 ans ?",
+      "answers": [
+        { "text": "Gérard Houllier", "isCorrect": false },
+        { "text": "Rudi Garcia", "isCorrect": false },
+        { "text": "Claude Puel", "isCorrect": false },
+        { "text": "Arsène Wenger", "isCorrect": true }
+      ],
+      "explanation": "De 1996 à 2018, avec trois titres de champion, dont celui des « Invincibles » en 2004."
+    },
+    {
+      "ref": "foot-087",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["club"],
+      "text": "Le Real Madrid et le FC Barcelone sont les deux seuls clubs à n'avoir jamais été relégués de la Liga.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'Athletic Bilbao, qui ne recrute que des joueurs basques, n'a jamais été relégué non plus."
+    },
+    {
+      "ref": "foot-088",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "La Ligue 1 se joue à 18 clubs depuis la saison 2023-2024.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le championnat est passé de 20 à 18 clubs, avec donc 34 journées au lieu de 38."
+    },
+    {
+      "ref": "foot-089",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Combien de clubs composent la Premier League anglaise ?",
+      "answers": [
+        { "text": "22", "isCorrect": false },
+        { "text": "24", "isCorrect": false },
+        { "text": "18", "isCorrect": false },
+        { "text": "20", "isCorrect": true }
+      ],
+      "explanation": "Chaque club joue 38 matchs. Les trois derniers sont relégués."
+    },
+    {
+      "ref": "foot-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté le plus de titres de champion d'Espagne ?",
+      "answers": [
+        { "text": "L'Athletic Bilbao", "isCorrect": false },
+        { "text": "Le FC Barcelone", "isCorrect": false },
+        { "text": "L'Atlético de Madrid", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": true }
+      ],
+      "explanation": "Le Real devance le FC Barcelone au nombre de titres de Liga."
+    },
+    {
+      "ref": "foot-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté le plus de titres de champion d'Italie ?",
+      "answers": [
+        { "text": "Le Torino", "isCorrect": false },
+        { "text": "L'Inter Milan", "isCorrect": false },
+        { "text": "L'AC Milan", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": true }
+      ],
+      "explanation": "La Juventus compte 36 titres, dont neuf consécutifs de 2012 à 2020."
+    },
+    {
+      "ref": "foot-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club"],
+      "text": "En quelle année le Paris Saint-Germain a-t-il été fondé ?",
+      "answers": [
+        { "text": "1950", "isCorrect": false },
+        { "text": "1965", "isCorrect": false },
+        { "text": "1982", "isCorrect": false },
+        { "text": "1970", "isCorrect": true }
+      ],
+      "explanation": "Le club naît en 1970 de la fusion du Paris FC et du Stade saint-germanois."
+    },
+    {
+      "ref": "foot-093",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "La Coupe de France est ouverte aux clubs amateurs, qui peuvent y affronter des clubs professionnels.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Des milliers de clubs s'y inscrivent chaque saison, ce qui donne parfois de grands exploits de « petits poucets »."
+    },
+    {
+      "ref": "foot-094",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Quel club amateur de quatrième division a atteint la finale de la Coupe de France en 2000 ?",
+      "answers": [
+        { "text": "Calais", "isCorrect": true },
+        { "text": "Quevilly", "isCorrect": false },
+        { "text": "Chambly", "isCorrect": false },
+        { "text": "Les Herbiers", "isCorrect": false }
+      ],
+      "explanation": "Les Calaisiens s'inclinent 2-1 contre Nantes, sur un penalty en fin de match."
+    },
+    {
+      "ref": "foot-095",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Quel club a remporté le plus de Coupes de France ?",
+      "answers": [
+        { "text": "Le Paris Saint-Germain", "isCorrect": true },
+        { "text": "Lille", "isCorrect": false },
+        { "text": "L'AS Saint-Étienne", "isCorrect": false },
+        { "text": "L'Olympique de Marseille", "isCorrect": false }
+      ],
+      "explanation": "Le PSG a largement dépassé l'OM, qui en compte 10."
+    },
+    {
+      "ref": "foot-096",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club"],
+      "text": "Quel club a remporté la première Coupe du monde des clubs à 32 équipes, en 2025 aux États-Unis ?",
+      "answers": [
+        { "text": "Le Paris Saint-Germain", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": false },
+        { "text": "Le Bayern Munich", "isCorrect": false },
+        { "text": "Chelsea", "isCorrect": true }
+      ],
+      "explanation": "Chelsea bat le PSG 3-0 en finale, avec un doublé de Cole Palmer."
+    },
+    {
+      "ref": "foot-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ballon-d-or", "record", "legende"],
+      "text": "Quel joueur a remporté le plus de Ballons d'or ?",
+      "answers": [
+        { "text": "Michel Platini", "isCorrect": false },
+        { "text": "Johan Cruyff", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": true }
+      ],
+      "explanation": "Messi en a gagné huit (2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023), Cristiano Ronaldo cinq."
+    },
+    {
+      "ref": "foot-098",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or", "equipe-de-france"],
+      "text": "Quel Français a remporté le Ballon d'or 2022 ?",
+      "answers": [
+        { "text": "N'Golo Kanté", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": false },
+        { "text": "Karim Benzema", "isCorrect": true },
+        { "text": "Kylian Mbappé", "isCorrect": false }
+      ],
+      "explanation": "Benzema est récompensé après une saison exceptionnelle avec le Real Madrid. C'était le premier Français depuis Zidane en 1998."
+    },
+    {
+      "ref": "foot-099",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ballon-d-or", "equipe-de-france"],
+      "text": "Quel joueur a remporté le Ballon d'or 2025 ?",
+      "answers": [
+        { "text": "Lamine Yamal", "isCorrect": false },
+        { "text": "Ousmane Dembélé", "isCorrect": true },
+        { "text": "Vitinha", "isCorrect": false },
+        { "text": "Mohamed Salah", "isCorrect": false }
+      ],
+      "explanation": "Le Français est récompensé après la première Ligue des champions du PSG, devant Lamine Yamal et Vitinha."
+    },
+    {
+      "ref": "foot-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or"],
+      "text": "Quel Espagnol a remporté le Ballon d'or 2024 ?",
+      "answers": [
+        { "text": "Pedri", "isCorrect": false },
+        { "text": "Rodri", "isCorrect": true },
+        { "text": "Lamine Yamal", "isCorrect": false },
+        { "text": "Dani Carvajal", "isCorrect": false }
+      ],
+      "explanation": "Le milieu de Manchester City a aussi remporté l'Euro 2024 avec l'Espagne."
+    },
+    {
+      "ref": "foot-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or", "equipe-de-france", "legende"],
+      "text": "Quel Français a remporté trois Ballons d'or consécutifs, en 1983, 1984 et 1985 ?",
+      "answers": [
+        { "text": "Michel Platini", "isCorrect": true },
+        { "text": "Raymond Kopa", "isCorrect": false },
+        { "text": "Zinédine Zidane", "isCorrect": false },
+        { "text": "Jean-Pierre Papin", "isCorrect": false }
+      ],
+      "explanation": "Il joue alors à la Juventus. Il remporte aussi l'Euro 1984 avec la France."
+    },
+    {
+      "ref": "foot-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or", "equipe-de-france"],
+      "text": "Quel est le premier Français à avoir remporté le Ballon d'or, en 1958 ?",
+      "answers": [
+        { "text": "Raymond Kopa", "isCorrect": true },
+        { "text": "Just Fontaine", "isCorrect": false },
+        { "text": "Michel Platini", "isCorrect": false },
+        { "text": "Jean-Pierre Papin", "isCorrect": false }
+      ],
+      "explanation": "Kopa jouait alors au Real Madrid. Le trophée Kopa, qui récompense le meilleur jeune, porte son nom."
+    },
+    {
+      "ref": "foot-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or", "equipe-de-france"],
+      "text": "Quel Français a remporté le Ballon d'or 1991, alors qu'il jouait à l'OM ?",
+      "answers": [
+        { "text": "Basile Boli", "isCorrect": false },
+        { "text": "Chris Waddle", "isCorrect": false },
+        { "text": "Éric Cantona", "isCorrect": false },
+        { "text": "Jean-Pierre Papin", "isCorrect": true }
+      ],
+      "explanation": "« JPP », célèbre pour ses volées, les « papinades », est cinq fois meilleur buteur de D1."
+    },
+    {
+      "ref": "foot-104",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ballon-d-or", "equipe-de-france"],
+      "text": "En quelle année Zinédine Zidane a-t-il remporté le Ballon d'or ?",
+      "answers": [
+        { "text": "1998", "isCorrect": true },
+        { "text": "1996", "isCorrect": false },
+        { "text": "2000", "isCorrect": false },
+        { "text": "2006", "isCorrect": false }
+      ],
+      "explanation": "L'année de son doublé en finale de la Coupe du monde."
+    },
+    {
+      "ref": "foot-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or"],
+      "text": "Quel magazine français a créé le Ballon d'or en 1956 ?",
+      "answers": [
+        { "text": "Onze Mondial", "isCorrect": false },
+        { "text": "France Football", "isCorrect": true },
+        { "text": "Paris Match", "isCorrect": false },
+        { "text": "L'Équipe", "isCorrect": false }
+      ],
+      "explanation": "L'idée vient du journaliste Gabriel Hanot, qui a aussi inspiré la création de la Coupe des clubs champions."
+    },
+    {
+      "ref": "foot-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or", "legende", "record"],
+      "text": "Quel est le seul gardien de but à avoir remporté le Ballon d'or ?",
+      "answers": [
+        { "text": "Oliver Kahn", "isCorrect": false },
+        { "text": "Gianluigi Buffon", "isCorrect": false },
+        { "text": "Lev Yachine", "isCorrect": true },
+        { "text": "Manuel Neuer", "isCorrect": false }
+      ],
+      "explanation": "Le Soviétique, surnommé « l'Araignée noire », le remporte en 1963."
+    },
+    {
+      "ref": "foot-107",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or"],
+      "text": "Quel trophée de la cérémonie du Ballon d'or récompense le meilleur gardien ?",
+      "answers": [
+        { "text": "Le trophée Kopa", "isCorrect": false },
+        { "text": "Le trophée Yachine", "isCorrect": true },
+        { "text": "Le trophée Gerd-Müller", "isCorrect": false },
+        { "text": "Le trophée Johan-Cruyff", "isCorrect": false }
+      ],
+      "explanation": "Le trophée Kopa récompense le meilleur jeune, le Gerd-Müller le meilleur buteur et le Johan-Cruyff le meilleur entraîneur."
+    },
+    {
+      "ref": "foot-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or"],
+      "text": "Que récompense le trophée Kopa, remis lors de la cérémonie du Ballon d'or ?",
+      "answers": [
+        { "text": "Le meilleur gardien", "isCorrect": false },
+        { "text": "Le meilleur buteur", "isCorrect": false },
+        { "text": "Le meilleur joueur de moins de 21 ans", "isCorrect": true },
+        { "text": "Le meilleur entraîneur", "isCorrect": false }
+      ],
+      "explanation": "Créé en 2018, il a été remporté par Kylian Mbappé dès sa première édition."
+    },
+    {
+      "ref": "foot-109",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["ballon-d-or", "legende"],
+      "text": "Cristiano Ronaldo a remporté plus de Ballons d'or que Lionel Messi.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Cristiano Ronaldo en a remporté cinq, Lionel Messi huit."
+    },
+    {
+      "ref": "foot-110",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["ballon-d-or"],
+      "text": "Le Ballon d'or n'a pas été décerné en 2020.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "France Football l'a annulé à cause de la pandémie de Covid-19, qui avait interrompu de nombreux championnats."
+    },
+    {
+      "ref": "foot-111",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["ballon-d-or"],
+      "text": "Avant 1995, le Ballon d'or était réservé aux joueurs européens.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "C'est pour cela que Pelé et Maradona ne l'ont jamais reçu pendant leur carrière. Le Libérien George Weah est le premier non-Européen récompensé, en 1995."
+    },
+    {
+      "ref": "foot-112",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or", "legende"],
+      "text": "Quel est le premier joueur africain à avoir remporté le Ballon d'or ?",
+      "answers": [
+        { "text": "Didier Drogba", "isCorrect": false },
+        { "text": "Roger Milla", "isCorrect": false },
+        { "text": "George Weah", "isCorrect": true },
+        { "text": "Samuel Eto'o", "isCorrect": false }
+      ],
+      "explanation": "Le Libérien, passé par Monaco et le PSG, le remporte en 1995 avec l'AC Milan. Il est devenu plus tard président du Liberia."
+    },
+    {
+      "ref": "foot-113",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or", "coupe-du-monde"],
+      "text": "Qui a remporté le Ballon d'or 2006, l'année du titre mondial italien ?",
+      "answers": [
+        { "text": "Thierry Henry", "isCorrect": false },
+        { "text": "Fabio Cannavaro", "isCorrect": true },
+        { "text": "Gianluigi Buffon", "isCorrect": false },
+        { "text": "Andrea Pirlo", "isCorrect": false }
+      ],
+      "explanation": "Le capitaine italien est l'un des rares défenseurs récompensés."
+    },
+    {
+      "ref": "foot-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or"],
+      "text": "Quel Brésilien a remporté le Ballon d'or 2007 ?",
+      "answers": [
+        { "text": "Ronaldo", "isCorrect": false },
+        { "text": "Rivaldo", "isCorrect": false },
+        { "text": "Kaká", "isCorrect": true },
+        { "text": "Ronaldinho", "isCorrect": false }
+      ],
+      "explanation": "Le milieu de l'AC Milan venait de remporter la Ligue des champions. Ronaldinho l'avait gagné en 2005."
+    },
+    {
+      "ref": "foot-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or"],
+      "text": "Quel joueur a remporté le Ballon d'or 2018, interrompant dix ans de domination de Messi et Ronaldo ?",
+      "answers": [
+        { "text": "Luka Modrić", "isCorrect": true },
+        { "text": "Kylian Mbappé", "isCorrect": false },
+        { "text": "Mohamed Salah", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": false }
+      ],
+      "explanation": "Le Croate venait de gagner la Ligue des champions avec le Real Madrid et d'atteindre la finale de la Coupe du monde."
+    },
+    {
+      "ref": "foot-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "legende"],
+      "text": "Quel joueur détient le record de sélections en équipe nationale masculine ?",
+      "answers": [
+        { "text": "Bader Al-Mutawa", "isCorrect": false },
+        { "text": "Sergio Ramos", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": true }
+      ],
+      "explanation": "Le Portugais a dépassé en 2023 le Koweïtien Bader Al-Mutawa. Il est le premier à dépasser les 200 sélections."
+    },
+    {
+      "ref": "foot-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "legende"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire des matchs internationaux masculins ?",
+      "answers": [
+        { "text": "Ali Daei", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": true },
+        { "text": "Pelé", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": false }
+      ],
+      "explanation": "Il a dépassé en 2021 l'Iranien Ali Daei, qui détenait le record avec 109 buts."
+    },
+    {
+      "ref": "foot-118",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "legende"],
+      "text": "Quel joueur a marqué 91 buts sur la seule année 2012, record sur une année civile ?",
+      "answers": [
+        { "text": "Pelé", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": true },
+        { "text": "Gerd Müller", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": false }
+      ],
+      "explanation": "Il bat le record de Gerd Müller, qui avait marqué 85 buts en 1972."
+    },
+    {
+      "ref": "foot-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "club"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire du championnat de France ?",
+      "answers": [
+        { "text": "Delio Onnis", "isCorrect": true },
+        { "text": "Jean-Pierre Papin", "isCorrect": false },
+        { "text": "Bernard Lacombe", "isCorrect": false },
+        { "text": "Kylian Mbappé", "isCorrect": false }
+      ],
+      "explanation": "L'Argentin a marqué 299 buts en D1 entre 1971 et 1986, notamment avec Monaco."
+    },
+    {
+      "ref": "foot-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record"],
+      "text": "Quel joueur a été transféré pour 222 millions d'euros en 2017, record historique ?",
+      "answers": [
+        { "text": "João Félix", "isCorrect": false },
+        { "text": "Philippe Coutinho", "isCorrect": false },
+        { "text": "Neymar", "isCorrect": true },
+        { "text": "Kylian Mbappé", "isCorrect": false }
+      ],
+      "explanation": "Le PSG paie sa clause libératoire au FC Barcelone. Mbappé arrive à Paris quelques semaines plus tard pour 180 millions."
+    },
+    {
+      "ref": "foot-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "coupe-du-monde"],
+      "text": "Quel score l'Australie a-t-elle infligé aux Samoa américaines en 2001, record pour un match international ?",
+      "answers": [
+        { "text": "31-0", "isCorrect": true },
+        { "text": "17-0", "isCorrect": false },
+        { "text": "22-0", "isCorrect": false },
+        { "text": "13-0", "isCorrect": false }
+      ],
+      "explanation": "Lors des éliminatoires de la Coupe du monde 2002, l'Australien Archie Thompson marque à lui seul 13 buts."
+    },
+    {
+      "ref": "foot-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "club"],
+      "text": "Quel club a été le premier à remporter six trophées sur une même année civile, en 2009 ?",
+      "answers": [
+        { "text": "Le Real Madrid", "isCorrect": false },
+        { "text": "Le Bayern Munich", "isCorrect": false },
+        { "text": "Le FC Barcelone", "isCorrect": true },
+        { "text": "L'Inter Milan", "isCorrect": false }
+      ],
+      "explanation": "Le Barça de Guardiola gagne Liga, Coupe du Roi, Ligue des champions, Supercoupes d'Espagne et d'Europe et Coupe du monde des clubs."
+    },
+    {
+      "ref": "foot-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "club"],
+      "text": "Combien de buts Erling Haaland a-t-il marqués lors de sa première saison de Premier League, en 2022-2023, record du championnat ?",
+      "answers": [
+        { "text": "36", "isCorrect": true },
+        { "text": "30", "isCorrect": false },
+        { "text": "40", "isCorrect": false },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "Il bat le record de 34 buts que détenaient Alan Shearer et Andy Cole."
+    },
+    {
+      "ref": "foot-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "legende"],
+      "text": "Quel gardien italien a pris sa retraite en 2023, à 45 ans, après plus de 25 ans de carrière ?",
+      "answers": [
+        { "text": "Gianluigi Donnarumma", "isCorrect": false },
+        { "text": "Dino Zoff", "isCorrect": false },
+        { "text": "Gianluigi Buffon", "isCorrect": true },
+        { "text": "Walter Zenga", "isCorrect": false }
+      ],
+      "explanation": "Champion du monde 2006, il a joué presque toute sa carrière à la Juventus, avec un passage au PSG."
+    },
+    {
+      "ref": "foot-125",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["record", "legende"],
+      "text": "Pelé a marqué plus de 1 000 buts au cours de sa carrière, en comptant les matchs amicaux.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "On lui attribue plus de 1 200 buts, dont une grande partie en matchs amicaux. Il marque son millième but en 1969."
+    },
+    {
+      "ref": "foot-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "club", "legende"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire de la Liga ?",
+      "answers": [
+        { "text": "Cristiano Ronaldo", "isCorrect": false },
+        { "text": "Telmo Zarra", "isCorrect": false },
+        { "text": "Hugo Sánchez", "isCorrect": false },
+        { "text": "Lionel Messi", "isCorrect": true }
+      ],
+      "explanation": "Messi a marqué 474 buts en Liga avec le FC Barcelone, loin devant Cristiano Ronaldo (311)."
+    },
+    {
+      "ref": "foot-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "club"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire de la Premier League ?",
+      "answers": [
+        { "text": "Thierry Henry", "isCorrect": false },
+        { "text": "Alan Shearer", "isCorrect": true },
+        { "text": "Wayne Rooney", "isCorrect": false },
+        { "text": "Harry Kane", "isCorrect": false }
+      ],
+      "explanation": "L'Anglais a marqué 260 buts, avec Blackburn et Newcastle."
+    },
+    {
+      "ref": "foot-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "Quel est le surnom de l'équipe de France masculine ?",
+      "answers": [
+        { "text": "Les Gaulois", "isCorrect": false },
+        { "text": "Les Coqs", "isCorrect": false },
+        { "text": "Les Rouges", "isCorrect": false },
+        { "text": "Les Bleus", "isCorrect": true }
+      ],
+      "explanation": "Le surnom vient de la couleur du maillot. L'équipe féminine est surnommée « les Bleues »."
+    },
+    {
+      "ref": "foot-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Qui était le sélectionneur de l'équipe de France championne du monde en 1998 ?",
+      "answers": [
+        { "text": "Michel Hidalgo", "isCorrect": false },
+        { "text": "Gérard Houllier", "isCorrect": false },
+        { "text": "Aimé Jacquet", "isCorrect": true },
+        { "text": "Roger Lemerre", "isCorrect": false }
+      ],
+      "explanation": "Très critiqué avant la compétition, il est devenu un héros après la victoire. Roger Lemerre lui a succédé et a gagné l'Euro 2000."
+    },
+    {
+      "ref": "foot-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "coupe-du-monde", "legende"],
+      "text": "Quel homme a remporté la Coupe du monde avec la France comme joueur, en 1998, puis comme sélectionneur, en 2018 ?",
+      "answers": [
+        { "text": "Didier Deschamps", "isCorrect": true },
+        { "text": "Zinédine Zidane", "isCorrect": false },
+        { "text": "Aimé Jacquet", "isCorrect": false },
+        { "text": "Laurent Blanc", "isCorrect": false }
+      ],
+      "explanation": "Capitaine en 1998, sélectionneur en 2018 : seuls le Brésilien Mário Zagallo et l'Allemand Franz Beckenbauer l'avaient fait avant lui."
+    },
+    {
+      "ref": "foot-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "record"],
+      "text": "Quel joueur est devenu en 2022 le meilleur buteur de l'histoire de l'équipe de France, en dépassant Thierry Henry ?",
+      "answers": [
+        { "text": "Olivier Giroud", "isCorrect": true },
+        { "text": "Michel Platini", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": false },
+        { "text": "Karim Benzema", "isCorrect": false }
+      ],
+      "explanation": "Giroud marque son 52e but contre la Pologne, en huitième de finale de la Coupe du monde 2022."
+    },
+    {
+      "ref": "foot-132",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "euro"],
+      "text": "En quelle année la France a-t-elle remporté son deuxième Euro ?",
+      "answers": [
+        { "text": "1996", "isCorrect": false },
+        { "text": "2016", "isCorrect": false },
+        { "text": "2000", "isCorrect": true },
+        { "text": "2004", "isCorrect": false }
+      ],
+      "explanation": "Après 1984, la France gagne l'Euro 2000 contre l'Italie et devient la première équipe championne du monde puis championne d'Europe dans la foulée."
+    },
+    {
+      "ref": "foot-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "euro"],
+      "text": "Qui a marqué le « but en or » qui a offert l'Euro 2000 à la France ?",
+      "answers": [
+        { "text": "Robert Pirès", "isCorrect": false },
+        { "text": "David Trezeguet", "isCorrect": true },
+        { "text": "Thierry Henry", "isCorrect": false },
+        { "text": "Sylvain Wiltord", "isCorrect": false }
+      ],
+      "explanation": "Wiltord égalise à la dernière minute, puis Trezeguet marque en prolongation d'une reprise du gauche."
+    },
+    {
+      "ref": "foot-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "euro"],
+      "text": "Contre quel pays la France a-t-elle perdu la finale de l'Euro 2016, à domicile ?",
+      "answers": [
+        { "text": "Le Portugal", "isCorrect": true },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": false }
+      ],
+      "explanation": "Le Portugal gagne 1-0 après prolongation, malgré la sortie sur blessure de Cristiano Ronaldo."
+    },
+    {
+      "ref": "foot-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["euro"],
+      "text": "Qui a marqué le but de la victoire du Portugal en finale de l'Euro 2016 ?",
+      "answers": [
+        { "text": "Renato Sanches", "isCorrect": false },
+        { "text": "Nani", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": false },
+        { "text": "Éder", "isCorrect": true }
+      ],
+      "explanation": "Entré en jeu, l'attaquant frappe de loin à la 109e minute, au Stade de France."
+    },
+    {
+      "ref": "foot-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "euro"],
+      "text": "Quel joueur a terminé meilleur buteur de l'Euro 2016, avec 6 buts ?",
+      "answers": [
+        { "text": "Olivier Giroud", "isCorrect": false },
+        { "text": "Dimitri Payet", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": true },
+        { "text": "Cristiano Ronaldo", "isCorrect": false }
+      ],
+      "explanation": "Griezmann est aussi élu meilleur joueur de la compétition."
+    },
+    {
+      "ref": "foot-137",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "Dans quel stade l'équipe de France joue-t-elle le plus souvent à domicile ?",
+      "answers": [
+        { "text": "Le stade Vélodrome", "isCorrect": false },
+        { "text": "Le Stade de France", "isCorrect": true },
+        { "text": "Le Groupama Stadium", "isCorrect": false },
+        { "text": "Le Parc des Princes", "isCorrect": false }
+      ],
+      "explanation": "Le Stade de France, à Saint-Denis, a été construit pour la Coupe du monde 1998."
+    },
+    {
+      "ref": "foot-138",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Contre quel pays la France a-t-elle joué la célèbre demi-finale de Séville, en 1982 ?",
+      "answers": [
+        { "text": "La RFA", "isCorrect": true },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "La Pologne", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false }
+      ],
+      "explanation": "Après un match nul 3-3, la France perd aux tirs au but. C'est la première séance de tirs au but de l'histoire de la Coupe du monde."
+    },
+    {
+      "ref": "foot-139",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel joueur français a été violemment percuté par le gardien allemand Harald Schumacher à Séville, en 1982 ?",
+      "answers": [
+        { "text": "Marius Trésor", "isCorrect": false },
+        { "text": "Alain Giresse", "isCorrect": false },
+        { "text": "Michel Platini", "isCorrect": false },
+        { "text": "Patrick Battiston", "isCorrect": true }
+      ],
+      "explanation": "Battiston perd connaissance et plusieurs dents. L'arbitre ne siffle même pas faute."
+    },
+    {
+      "ref": "foot-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france"],
+      "text": "Où se trouve le centre national d'entraînement de l'équipe de France ?",
+      "answers": [
+        { "text": "À Saint-Germain-en-Laye", "isCorrect": false },
+        { "text": "À Vichy", "isCorrect": false },
+        { "text": "À Clairefontaine", "isCorrect": true },
+        { "text": "À Marcoussis", "isCorrect": false }
+      ],
+      "explanation": "Le centre de Clairefontaine, dans les Yvelines, a ouvert en 1988. Marcoussis est celui de l'équipe de France de rugby."
+    },
+    {
+      "ref": "foot-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "record"],
+      "text": "Quel joueur détient le record de sélections en équipe de France ?",
+      "answers": [
+        { "text": "Lilian Thuram", "isCorrect": false },
+        { "text": "Thierry Henry", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": false },
+        { "text": "Hugo Lloris", "isCorrect": true }
+      ],
+      "explanation": "Le gardien a joué 145 matchs avec les Bleus, de 2008 à 2022, devant Lilian Thuram (142)."
+    },
+    {
+      "ref": "foot-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel défenseur a marqué ses deux seuls buts en équipe de France lors de la demi-finale 1998 contre la Croatie ?",
+      "answers": [
+        { "text": "Bixente Lizarazu", "isCorrect": false },
+        { "text": "Laurent Blanc", "isCorrect": false },
+        { "text": "Lilian Thuram", "isCorrect": true },
+        { "text": "Marcel Desailly", "isCorrect": false }
+      ],
+      "explanation": "Ses deux buts permettent à la France de gagner 2-1 et d'atteindre sa première finale de Coupe du monde."
+    },
+    {
+      "ref": "foot-143",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel joueur a marqué le premier « but en or » de l'histoire de la Coupe du monde, en 1998 contre le Paraguay ?",
+      "answers": [
+        { "text": "David Trezeguet", "isCorrect": false },
+        { "text": "Zinédine Zidane", "isCorrect": false },
+        { "text": "Laurent Blanc", "isCorrect": true },
+        { "text": "Youri Djorkaeff", "isCorrect": false }
+      ],
+      "explanation": "En huitième de finale, à Lens, Blanc libère la France à la 114e minute."
+    },
+    {
+      "ref": "foot-144",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "La France a été championne du monde en 1998 et en 2018.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 1998 contre le Brésil (3-0), en 2018 contre la Croatie (4-2)."
+    },
+    {
+      "ref": "foot-145",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "La France, tenante du titre, a été éliminée dès le premier tour de la Coupe du monde 2002.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Sans Zidane, blessé pour les deux premiers matchs, les Bleus terminent derniers de leur groupe sans marquer le moindre but."
+    },
+    {
+      "ref": "foot-146",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Zinédine Zidane a été expulsé lors de la finale de la Coupe du monde 1998.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été expulsé lors de la finale 2006, pour un coup de tête sur Marco Materazzi. En 1998, il a marqué deux buts."
+    },
+    {
+      "ref": "foot-147",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["equipe-de-france", "coupe-du-monde", "record"],
+      "text": "Le tout premier but de l'histoire de la Coupe du monde a été marqué par un Français, en 1930.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Lucien Laurent marque contre le Mexique, le 13 juillet 1930, en Uruguay."
+    },
+    {
+      "ref": "foot-148",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "Quel animal figure sur le maillot de l'équipe de France ?",
+      "answers": [
+        { "text": "Un coq", "isCorrect": true },
+        { "text": "Un aigle", "isCorrect": false },
+        { "text": "Un lion", "isCorrect": false },
+        { "text": "Un loup", "isCorrect": false }
+      ],
+      "explanation": "Le coq gaulois est l'emblème de la Fédération française de football."
+    },
+    {
+      "ref": "foot-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel gardien était le capitaine de la France championne du monde en 2018 ?",
+      "answers": [
+        { "text": "Alphonse Areola", "isCorrect": false },
+        { "text": "Steve Mandanda", "isCorrect": false },
+        { "text": "Hugo Lloris", "isCorrect": true },
+        { "text": "Fabien Barthez", "isCorrect": false }
+      ],
+      "explanation": "Lloris a soulevé le trophée à Moscou, vingt ans après Didier Deschamps."
+    },
+    {
+      "ref": "foot-150",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-de-france"],
+      "text": "Quelle compétition la France a-t-elle remportée en 2021, en battant l'Espagne en finale ?",
+      "answers": [
+        { "text": "La Coupe des confédérations", "isCorrect": false },
+        { "text": "Les Jeux olympiques", "isCorrect": false },
+        { "text": "L'Euro", "isCorrect": false },
+        { "text": "La Ligue des nations", "isCorrect": true }
+      ],
+      "explanation": "Les Bleus gagnent 2-1 à Milan, grâce à Karim Benzema et Kylian Mbappé."
+    },
+    {
+      "ref": "foot-151",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel Français a été élu meilleur jeune joueur de la Coupe du monde 2018 ?",
+      "answers": [
+        { "text": "Raphaël Varane", "isCorrect": false },
+        { "text": "Lucas Hernandez", "isCorrect": false },
+        { "text": "Benjamin Pavard", "isCorrect": false },
+        { "text": "Kylian Mbappé", "isCorrect": true }
+      ],
+      "explanation": "À 19 ans, il marque quatre buts, dont un en finale, et devient le plus jeune buteur en finale depuis Pelé en 1958."
+    },
+    {
+      "ref": "foot-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-de-france", "club"],
+      "text": "Dans quel club Kylian Mbappé a-t-il commencé sa carrière professionnelle ?",
+      "answers": [
+        { "text": "Le Paris Saint-Germain", "isCorrect": false },
+        { "text": "L'AS Bondy", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": false },
+        { "text": "L'AS Monaco", "isCorrect": true }
+      ],
+      "explanation": "Formé à l'AS Bondy puis à Monaco, il est champion de France avec Monaco en 2017, avant de rejoindre le PSG."
+    },
+    {
+      "ref": "foot-153",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "club"],
+      "text": "Kylian Mbappé a rejoint le FC Barcelone en 2024.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a rejoint le Real Madrid en 2024, après sept saisons au PSG."
+    },
+    {
+      "ref": "foot-154",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-de-france", "euro", "record"],
+      "text": "Combien de buts Michel Platini a-t-il marqués lors de l'Euro 1984, remporté par la France ?",
+      "answers": [
+        { "text": "9", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "En cinq matchs seulement, dont deux triplés : un record pour une seule édition de l'Euro."
+    },
+    {
+      "ref": "foot-155",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de joueurs composent une équipe sur le terrain, gardien compris ?",
+      "answers": [
+        { "text": "11", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Un match ne peut pas continuer si une équipe a moins de 7 joueurs."
+    },
+    {
+      "ref": "foot-156",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de temps dure un match de football, hors temps additionnel ?",
+      "answers": [
+        { "text": "90 minutes", "isCorrect": true },
+        { "text": "100 minutes", "isCorrect": false },
+        { "text": "120 minutes", "isCorrect": false },
+        { "text": "80 minutes", "isCorrect": false }
+      ],
+      "explanation": "Deux mi-temps de 45 minutes, séparées par une pause de 15 minutes."
+    },
+    {
+      "ref": "foot-157",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que signifie un carton rouge ?",
+      "answers": [
+        { "text": "Un penalty", "isCorrect": false },
+        { "text": "Un simple avertissement", "isCorrect": false },
+        { "text": "L'expulsion du joueur", "isCorrect": true },
+        { "text": "Un changement de joueur", "isCorrect": false }
+      ],
+      "explanation": "Le joueur doit quitter le terrain et ne peut pas être remplacé : son équipe joue à dix."
+    },
+    {
+      "ref": "foot-158",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de cartons jaunes un joueur peut-il recevoir dans un match avant d'être expulsé ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": true },
+        { "text": "4", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "Deux cartons jaunes dans le même match valent un carton rouge."
+    },
+    {
+      "ref": "foot-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "À quelle distance du but se trouve le point de penalty ?",
+      "answers": [
+        { "text": "12 mètres", "isCorrect": false },
+        { "text": "16,5 mètres", "isCorrect": false },
+        { "text": "9,15 mètres", "isCorrect": false },
+        { "text": "11 mètres", "isCorrect": true }
+      ],
+      "explanation": "11 mètres, soit 12 yards : les règles du football ont été écrites en Angleterre."
+    },
+    {
+      "ref": "foot-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "À quelle distance minimale du ballon les adversaires doivent-ils se placer lors d'un coup franc ?",
+      "answers": [
+        { "text": "5 mètres", "isCorrect": false },
+        { "text": "11 mètres", "isCorrect": false },
+        { "text": "9,15 mètres", "isCorrect": true },
+        { "text": "7 mètres", "isCorrect": false }
+      ],
+      "explanation": "9,15 mètres, soit 10 yards. L'arbitre trace parfois cette distance avec une bombe de mousse."
+    },
+    {
+      "ref": "foot-161",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que désigne l'abréviation VAR ?",
+      "answers": [
+        { "text": "Le temps additionnel", "isCorrect": false },
+        { "text": "L'assistance vidéo à l'arbitrage", "isCorrect": true },
+        { "text": "Le classement FIFA", "isCorrect": false },
+        { "text": "Le contrôle antidopage", "isCorrect": false }
+      ],
+      "explanation": "Video Assistant Referee : des arbitres revoient les images des actions décisives (buts, penaltys, cartons rouges)."
+    },
+    {
+      "ref": "foot-162",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Un joueur peut être signalé hors-jeu directement sur une rentrée de touche.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il n'y a pas de hors-jeu sur une rentrée de touche, ni sur un corner ou un coup de pied de but."
+    },
+    {
+      "ref": "foot-163",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Il n'y a pas de hors-jeu sur un coup de pied de but.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Comme sur une rentrée de touche ou un corner, un joueur ne peut pas être hors-jeu en recevant directement le ballon."
+    },
+    {
+      "ref": "foot-164",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Un but peut être marqué directement sur un coup franc indirect.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Sur un coup franc indirect, le ballon doit toucher un autre joueur avant d'entrer dans le but. L'arbitre le signale en levant le bras."
+    },
+    {
+      "ref": "foot-165",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Le gardien n'a pas le droit de prendre à la main une passe volontaire du pied d'un coéquipier.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Cette règle de la passe en retrait date de 1992. Sinon, l'arbitre accorde un coup franc indirect."
+    },
+    {
+      "ref": "foot-166",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de remplacements une équipe peut-elle faire au maximum dans un match officiel ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Autorisés pendant le Covid, les cinq changements sont devenus la règle en 2022. Le nombre de changements a longtemps été limité à 3."
+    },
+    {
+      "ref": "foot-167",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quel organisme fixe les règles du football, appelées les « Lois du jeu » ?",
+      "answers": [
+        { "text": "L'UEFA", "isCorrect": false },
+        { "text": "La FFF", "isCorrect": false },
+        { "text": "L'IFAB", "isCorrect": true },
+        { "text": "La FIFA", "isCorrect": false }
+      ],
+      "explanation": "L'International Football Association Board, créé en 1886, réunit la FIFA et les quatre fédérations britanniques."
+    },
+    {
+      "ref": "foot-168",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de Lois du jeu le football compte-t-il ?",
+      "answers": [
+        { "text": "11", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "17", "isCorrect": true },
+        { "text": "22", "isCorrect": false }
+      ],
+      "explanation": "De la loi 1 (le terrain) à la loi 17 (le corner)."
+    },
+    {
+      "ref": "foot-169",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelle est la profondeur de la surface de réparation, depuis la ligne de but ?",
+      "answers": [
+        { "text": "16,5 mètres", "isCorrect": true },
+        { "text": "11 mètres", "isCorrect": false },
+        { "text": "9,15 mètres", "isCorrect": false },
+        { "text": "20 mètres", "isCorrect": false }
+      ],
+      "explanation": "16,5 mètres, soit 18 yards. C'est dans cette zone qu'une faute entraîne un penalty."
+    },
+    {
+      "ref": "foot-170",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de temps dure la prolongation, en cas d'égalité dans un match à élimination directe ?",
+      "answers": [
+        { "text": "2 fois 10 minutes", "isCorrect": false },
+        { "text": "2 fois 20 minutes", "isCorrect": false },
+        { "text": "2 fois 5 minutes", "isCorrect": false },
+        { "text": "2 fois 15 minutes", "isCorrect": true }
+      ],
+      "explanation": "Si l'égalité persiste après la prolongation, on passe aux tirs au but."
+    },
+    {
+      "ref": "foot-171",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de tirs au but chaque équipe tire-t-elle avant une éventuelle « mort subite » ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": true }
+      ],
+      "explanation": "Si l'égalité persiste après cinq tirs chacune, les équipes tirent une fois chacune jusqu'à ce que l'une rate et l'autre marque."
+    },
+    {
+      "ref": "foot-172",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel joueur a le droit de toucher le ballon avec les mains, dans sa surface de réparation ?",
+      "answers": [
+        { "text": "Le gardien de but", "isCorrect": true },
+        { "text": "Le libéro", "isCorrect": false },
+        { "text": "Le capitaine", "isCorrect": false },
+        { "text": "L'arrière latéral", "isCorrect": false }
+      ],
+      "explanation": "En dehors de sa surface, le gardien est un joueur comme les autres."
+    },
+    {
+      "ref": "foot-173",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que désigne un « coup du chapeau » ?",
+      "answers": [
+        { "text": "Un but marqué de la tête", "isCorrect": false },
+        { "text": "Un dribble par-dessus la tête de l'adversaire", "isCorrect": false },
+        { "text": "Trois buts marqués en trois minutes", "isCorrect": false },
+        { "text": "Trois buts marqués par le même joueur dans un match", "isCorrect": true }
+      ],
+      "explanation": "On parle aussi de triplé. Le dribble par-dessus la tête s'appelle un « coup du sombrero »."
+    },
+    {
+      "ref": "foot-174",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "euro"],
+      "text": "Que désigne une « Panenka » ?",
+      "answers": [
+        { "text": "Un coup franc enroulé", "isCorrect": false },
+        { "text": "Un penalty tiré en douceur, en lob, au centre du but", "isCorrect": true },
+        { "text": "Un retourné acrobatique", "isCorrect": false },
+        { "text": "Un tacle glissé", "isCorrect": false }
+      ],
+      "explanation": "Le Tchécoslovaque Antonín Panenka l'invente en finale de l'Euro 1976, pour battre la RFA aux tirs au but."
+    },
+    {
+      "ref": "foot-175",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Au moment de la passe, combien d'adversaires, gardien compris, doivent au minimum se trouver au niveau ou entre l'attaquant et la ligne de but pour qu'il ne soit pas hors-jeu ?",
+      "answers": [
+        { "text": "2", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "0", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "L'attaquant doit être au niveau ou en retrait de l'avant-dernier adversaire. Le dernier est souvent le gardien."
+    },
+    {
+      "ref": "foot-176",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un match de football professionnel dure 80 minutes, hors temps additionnel.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il dure 90 minutes : deux mi-temps de 45 minutes. C'est au rugby que le match dure 80 minutes."
+    },
+    {
+      "ref": "foot-177",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Un joueur ne peut pas être hors-jeu dans sa propre moitié de terrain.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le hors-jeu ne concerne que la moitié de terrain adverse."
+    },
+    {
+      "ref": "foot-178",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelles sont les dimensions d'un but de football ?",
+      "answers": [
+        { "text": "7 m de large et 2,50 m de haut", "isCorrect": false },
+        { "text": "7,32 m de large et 2,44 m de haut", "isCorrect": true },
+        { "text": "6,50 m de large et 2,20 m de haut", "isCorrect": false },
+        { "text": "8 m de large et 2,40 m de haut", "isCorrect": false }
+      ],
+      "explanation": "Soit 8 yards sur 8 pieds : une nouvelle trace des origines anglaises du football."
+    },
+    {
+      "ref": "foot-179",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on la remise en jeu effectuée à la main, quand le ballon sort sur le côté du terrain ?",
+      "answers": [
+        { "text": "Un coup d'envoi", "isCorrect": false },
+        { "text": "Un dégagement", "isCorrect": false },
+        { "text": "Une rentrée de touche", "isCorrect": true },
+        { "text": "Un corner", "isCorrect": false }
+      ],
+      "explanation": "Le joueur doit lancer le ballon à deux mains, par-dessus la tête, les deux pieds au sol."
+    },
+    {
+      "ref": "foot-180",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Depuis 2019, si le ballon touche l'arbitre puis entre directement dans le but, le but est refusé.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "L'arbitre arrête le jeu et fait une balle à terre, comme lorsque le ballon le touche et change d'équipe en possession."
+    },
+    {
+      "ref": "foot-181",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["derby", "club"],
+      "text": "Comment s'appelle le match entre le Real Madrid et le FC Barcelone ?",
+      "answers": [
+        { "text": "La Copa", "isCorrect": false },
+        { "text": "Le Superclásico", "isCorrect": false },
+        { "text": "Le Derbi", "isCorrect": false },
+        { "text": "Le Clásico", "isCorrect": true }
+      ],
+      "explanation": "C'est l'un des matchs les plus regardés au monde, avec une forte dimension politique entre Madrid et la Catalogne."
+    },
+    {
+      "ref": "foot-182",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans « le Classique », grand match du championnat de France ?",
+      "answers": [
+        { "text": "L'OL et l'ASSE", "isCorrect": false },
+        { "text": "Nice et Monaco", "isCorrect": false },
+        { "text": "Le PSG et l'OM", "isCorrect": true },
+        { "text": "Lens et Lille", "isCorrect": false }
+      ],
+      "explanation": "La rivalité entre Paris et Marseille s'est installée à la fin des années 1980."
+    },
+    {
+      "ref": "foot-183",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Quel club est le grand rival de l'Olympique lyonnais, avec qui il dispute « le Derby » ?",
+      "answers": [
+        { "text": "L'AS Saint-Étienne", "isCorrect": true },
+        { "text": "L'Olympique de Marseille", "isCorrect": false },
+        { "text": "L'OGC Nice", "isCorrect": false },
+        { "text": "Grenoble Foot", "isCorrect": false }
+      ],
+      "explanation": "Moins de 60 km séparent les deux villes. Ce derby est l'un des plus chauds de France."
+    },
+    {
+      "ref": "foot-184",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le derby du Nord ?",
+      "answers": [
+        { "text": "Lens et Amiens", "isCorrect": false },
+        { "text": "Lens et Lille", "isCorrect": true },
+        { "text": "Lille et Valenciennes", "isCorrect": false },
+        { "text": "Lille et Dunkerque", "isCorrect": false }
+      ],
+      "explanation": "Une rivalité historique entre deux villes séparées d'une trentaine de kilomètres."
+    },
+    {
+      "ref": "foot-185",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby"],
+      "text": "Quels clubs argentins s'affrontent dans le « Superclásico » ?",
+      "answers": [
+        { "text": "Boca Juniors et San Lorenzo", "isCorrect": false },
+        { "text": "Boca Juniors et River Plate", "isCorrect": true },
+        { "text": "River Plate et Racing Club", "isCorrect": false },
+        { "text": "Racing Club et Independiente", "isCorrect": false }
+      ],
+      "explanation": "Les deux géants de Buenos Aires. Racing et Independiente disputent le « Clásico d'Avellaneda »."
+    },
+    {
+      "ref": "foot-186",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le « derby della Madonnina » ?",
+      "answers": [
+        { "text": "La Juventus et le Torino", "isCorrect": false },
+        { "text": "L'AC Milan et l'Inter Milan", "isCorrect": true },
+        { "text": "L'AS Roma et la Lazio", "isCorrect": false },
+        { "text": "Naples et la Juventus", "isCorrect": false }
+      ],
+      "explanation": "Il doit son nom à la statue de la Vierge Marie qui domine la cathédrale de Milan."
+    },
+    {
+      "ref": "foot-187",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le « derby della Capitale » ?",
+      "answers": [
+        { "text": "L'AS Roma et la Lazio", "isCorrect": true },
+        { "text": "Naples et l'AS Roma", "isCorrect": false },
+        { "text": "La Lazio et la Juventus", "isCorrect": false },
+        { "text": "L'AC Milan et l'Inter Milan", "isCorrect": false }
+      ],
+      "explanation": "Les deux clubs romains partagent le Stadio Olimpico."
+    },
+    {
+      "ref": "foot-188",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs écossais s'affrontent dans l'« Old Firm » ?",
+      "answers": [
+        { "text": "Le Celtic et Aberdeen", "isCorrect": false },
+        { "text": "Le Celtic et les Rangers", "isCorrect": true },
+        { "text": "Aberdeen et Dundee", "isCorrect": false },
+        { "text": "Hearts et Hibernian", "isCorrect": false }
+      ],
+      "explanation": "Les deux clubs de Glasgow dominent le football écossais depuis plus d'un siècle."
+    },
+    {
+      "ref": "foot-189",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le derby du Merseyside ?",
+      "answers": [
+        { "text": "Liverpool et Manchester United", "isCorrect": false },
+        { "text": "Everton et Tranmere", "isCorrect": false },
+        { "text": "Liverpool et Everton", "isCorrect": true },
+        { "text": "Liverpool et Leeds", "isCorrect": false }
+      ],
+      "explanation": "Les deux stades, Anfield et Goodison Park, ne sont séparés que par un parc. Liverpool-Manchester United est une autre grande rivalité, mais pas un derby de ville."
+    },
+    {
+      "ref": "foot-190",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["derby", "club"],
+      "text": "Le derby de Manchester oppose Manchester United à Manchester City.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "City a longtemps vécu dans l'ombre de United, avant de dominer l'Angleterre depuis les années 2010."
+    },
+    {
+      "ref": "foot-191",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le derby du nord de Londres ?",
+      "answers": [
+        { "text": "Tottenham et West Ham", "isCorrect": false },
+        { "text": "Chelsea et Fulham", "isCorrect": false },
+        { "text": "Arsenal et Chelsea", "isCorrect": false },
+        { "text": "Arsenal et Tottenham", "isCorrect": true }
+      ],
+      "explanation": "Une rivalité née en 1913, quand Arsenal a déménagé dans le nord de Londres, près de Tottenham."
+    },
+    {
+      "ref": "foot-192",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Quel club affronte le Real Madrid dans le derby madrilène ?",
+      "answers": [
+        { "text": "L'Atlético de Madrid", "isCorrect": true },
+        { "text": "Leganés", "isCorrect": false },
+        { "text": "Le Rayo Vallecano", "isCorrect": false },
+        { "text": "Getafe", "isCorrect": false }
+      ],
+      "explanation": "Les « Colchoneros » (les matelassiers), surnommés ainsi à cause de leurs rayures rouges et blanches."
+    },
+    {
+      "ref": "foot-193",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs allemands s'affrontent dans « der Klassiker » ?",
+      "answers": [
+        { "text": "Le Bayern Munich et le Borussia Dortmund", "isCorrect": true },
+        { "text": "Le Bayern Munich et Schalke 04", "isCorrect": false },
+        { "text": "Le Borussia Dortmund et Schalke 04", "isCorrect": false },
+        { "text": "Le Bayern Munich et le TSV 1860 Munich", "isCorrect": false }
+      ],
+      "explanation": "Le choc des deux clubs les plus titrés de ces dernières décennies. Dortmund contre Schalke est le « Revierderby »."
+    },
+    {
+      "ref": "foot-194",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs allemands s'affrontent dans le « Revierderby », le derby de la Ruhr ?",
+      "answers": [
+        { "text": "Le Bayer Leverkusen et le FC Cologne", "isCorrect": false },
+        { "text": "Le Borussia Dortmund et Schalke 04", "isCorrect": true },
+        { "text": "Le Bayern Munich et le Borussia Dortmund", "isCorrect": false },
+        { "text": "Le Hambourg SV et le Werder Brême", "isCorrect": false }
+      ],
+      "explanation": "Deux villes minières voisines du bassin de la Ruhr. Leverkusen-Cologne est le derby rhénan."
+    },
+    {
+      "ref": "foot-195",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le derby de la Côte d'Azur ?",
+      "answers": [
+        { "text": "L'AS Monaco et le SC Toulon", "isCorrect": false },
+        { "text": "L'OGC Nice et l'OM", "isCorrect": false },
+        { "text": "L'OGC Nice et l'AS Cannes", "isCorrect": false },
+        { "text": "L'OGC Nice et l'AS Monaco", "isCorrect": true }
+      ],
+      "explanation": "Moins de 20 km séparent les deux stades."
+    },
+    {
+      "ref": "foot-196",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby"],
+      "text": "Quel derby est surnommé le « derby intercontinental », car les deux stades sont sur deux continents différents ?",
+      "answers": [
+        { "text": "Galatasaray – Fenerbahçe", "isCorrect": true },
+        { "text": "Olympiakos – Panathinaïkos", "isCorrect": false },
+        { "text": "Benfica – Sporting", "isCorrect": false },
+        { "text": "Ajax – Feyenoord", "isCorrect": false }
+      ],
+      "explanation": "À Istanbul, Galatasaray joue sur la rive européenne et Fenerbahçe sur la rive asiatique du Bosphore."
+    },
+    {
+      "ref": "foot-197",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quels clubs s'affrontent dans le « Klassieker » néerlandais ?",
+      "answers": [
+        { "text": "L'Ajax Amsterdam et le PSV Eindhoven", "isCorrect": false },
+        { "text": "L'AZ Alkmaar et l'Ajax Amsterdam", "isCorrect": false },
+        { "text": "L'Ajax Amsterdam et le Feyenoord Rotterdam", "isCorrect": true },
+        { "text": "Le PSV Eindhoven et le Feyenoord Rotterdam", "isCorrect": false }
+      ],
+      "explanation": "Une rivalité entre la capitale et le grand port, entre deux styles de jeu et deux villes."
+    },
+    {
+      "ref": "foot-198",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["derby", "club"],
+      "text": "Quel club est le grand rival lisboète du Benfica ?",
+      "answers": [
+        { "text": "Le Sporting CP", "isCorrect": true },
+        { "text": "Le FC Porto", "isCorrect": false },
+        { "text": "Boavista", "isCorrect": false },
+        { "text": "Belenenses", "isCorrect": false }
+      ],
+      "explanation": "Les deux clubs de Lisbonne s'affrontent dans le « derby de Lisbonne ». Porto et Boavista sont des clubs de Porto."
+    },
+    {
+      "ref": "foot-199",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["derby", "club"],
+      "text": "Le « Classique » PSG–OM existe depuis les années 1930.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le PSG n'a été fondé qu'en 1970. La rivalité s'est surtout développée à partir de la fin des années 1980."
+    },
+    {
+      "ref": "foot-200",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["derby"],
+      "text": "Le Superclásico argentin oppose le Racing Club à Independiente.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il oppose Boca Juniors à River Plate. Racing et Independiente disputent le « Clásico d'Avellaneda »."
+    },
+    {
+      "ref": "foot-201",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "Quel joueur brésilien était surnommé « le Roi » ?",
+      "answers": [
+        { "text": "Garrincha", "isCorrect": false },
+        { "text": "Pelé", "isCorrect": true },
+        { "text": "Zico", "isCorrect": false },
+        { "text": "Ronaldo", "isCorrect": false }
+      ],
+      "explanation": "Edson Arantes do Nascimento, triple champion du monde, est mort en 2022."
+    },
+    {
+      "ref": "foot-202",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "De quel pays était Diego Maradona ?",
+      "answers": [
+        { "text": "L'Uruguay", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": true },
+        { "text": "L'Espagne", "isCorrect": false }
+      ],
+      "explanation": "Champion du monde en 1986, il est considéré comme l'un des plus grands joueurs de l'histoire."
+    },
+    {
+      "ref": "foot-203",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende", "club"],
+      "text": "Dans quel club italien Diego Maradona est-il devenu une idole, au point que le stade porte son nom ?",
+      "answers": [
+        { "text": "L'AS Roma", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": false },
+        { "text": "Naples", "isCorrect": true },
+        { "text": "L'AC Milan", "isCorrect": false }
+      ],
+      "explanation": "Il offre à Naples ses deux premiers titres de champion d'Italie (1987, 1990). Le stade s'appelle désormais Stadio Diego Armando Maradona."
+    },
+    {
+      "ref": "foot-204",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende"],
+      "text": "De quel pays était Johan Cruyff ?",
+      "answers": [
+        { "text": "La Belgique", "isCorrect": false },
+        { "text": "Le Danemark", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": true }
+      ],
+      "explanation": "Triple Ballon d'or, il a marqué l'histoire de l'Ajax et du FC Barcelone, comme joueur puis comme entraîneur."
+    },
+    {
+      "ref": "foot-205",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende"],
+      "text": "Quel Allemand était surnommé « le Kaiser » ?",
+      "answers": [
+        { "text": "Gerd Müller", "isCorrect": false },
+        { "text": "Lothar Matthäus", "isCorrect": false },
+        { "text": "Karl-Heinz Rummenigge", "isCorrect": false },
+        { "text": "Franz Beckenbauer", "isCorrect": true }
+      ],
+      "explanation": "Défenseur élégant, il a été champion du monde comme joueur (1974) puis comme sélectionneur (1990)."
+    },
+    {
+      "ref": "foot-206",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende"],
+      "text": "Quel attaquant brésilien était surnommé « le Phénomène » ?",
+      "answers": [
+        { "text": "Rivaldo", "isCorrect": false },
+        { "text": "Ronaldo", "isCorrect": true },
+        { "text": "Ronaldinho", "isCorrect": false },
+        { "text": "Romário", "isCorrect": false }
+      ],
+      "explanation": "Ronaldo Nazário, double champion du monde (1994, 2002) et double Ballon d'or (1997, 2002)."
+    },
+    {
+      "ref": "foot-207",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende", "club"],
+      "text": "Quel club anglais a fait d'Éric Cantona une légende, au point qu'il y est surnommé « King Eric » ?",
+      "answers": [
+        { "text": "Manchester United", "isCorrect": true },
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Arsenal", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": false }
+      ],
+      "explanation": "Arrivé en 1992, il remporte quatre championnats en cinq saisons, col relevé."
+    },
+    {
+      "ref": "foot-208",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende", "club", "record"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire d'Arsenal ?",
+      "answers": [
+        { "text": "Thierry Henry", "isCorrect": true },
+        { "text": "Robin van Persie", "isCorrect": false },
+        { "text": "Ian Wright", "isCorrect": false },
+        { "text": "Dennis Bergkamp", "isCorrect": false }
+      ],
+      "explanation": "Henry a marqué 228 buts pour les Gunners. Une statue lui rend hommage devant l'Emirates Stadium."
+    },
+    {
+      "ref": "foot-209",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende", "club"],
+      "text": "Quel club américain Lionel Messi a-t-il rejoint en 2023 ?",
+      "answers": [
+        { "text": "Le New York City FC", "isCorrect": false },
+        { "text": "Le LA Galaxy", "isCorrect": false },
+        { "text": "L'Inter Miami", "isCorrect": true },
+        { "text": "Le Los Angeles FC", "isCorrect": false }
+      ],
+      "explanation": "Après deux saisons au PSG, il rejoint le club présidé par David Beckham."
+    },
+    {
+      "ref": "foot-210",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende", "club"],
+      "text": "Quel club saoudien Cristiano Ronaldo a-t-il rejoint en 2023 ?",
+      "answers": [
+        { "text": "Al-Hilal", "isCorrect": false },
+        { "text": "Al-Ahli", "isCorrect": false },
+        { "text": "Al-Nassr", "isCorrect": true },
+        { "text": "Al-Ittihad", "isCorrect": false }
+      ],
+      "explanation": "Il quitte Manchester United fin 2022 et rejoint le club de Riyad."
+    },
+    {
+      "ref": "foot-211",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende"],
+      "text": "Quel est le vrai prénom du footballeur brésilien Kaká ?",
+      "answers": [
+        { "text": "Ricardo", "isCorrect": true },
+        { "text": "Eduardo", "isCorrect": false },
+        { "text": "Marcelo", "isCorrect": false },
+        { "text": "Carlos", "isCorrect": false }
+      ],
+      "explanation": "Ricardo Izecson dos Santos Leite : « Kaká » vient de la façon dont son petit frère prononçait son prénom."
+    },
+    {
+      "ref": "foot-212",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende", "club"],
+      "text": "Dans quel club Lionel Messi a-t-il passé l'essentiel de sa carrière ?",
+      "answers": [
+        { "text": "Le Real Madrid", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": false },
+        { "text": "Manchester City", "isCorrect": false },
+        { "text": "Le FC Barcelone", "isCorrect": true }
+      ],
+      "explanation": "Arrivé à 13 ans, il y reste jusqu'en 2021 et devient le meilleur buteur de l'histoire du club."
+    },
+    {
+      "ref": "foot-213",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende", "club"],
+      "text": "Quel défenseur italien a joué toute sa carrière à l'AC Milan, de 1985 à 2009 ?",
+      "answers": [
+        { "text": "Alessandro Nesta", "isCorrect": false },
+        { "text": "Fabio Cannavaro", "isCorrect": false },
+        { "text": "Paolo Maldini", "isCorrect": true },
+        { "text": "Giorgio Chiellini", "isCorrect": false }
+      ],
+      "explanation": "Il a gagné cinq Coupes des clubs champions et Ligues des champions avec Milan, où son père Cesare jouait déjà."
+    },
+    {
+      "ref": "foot-214",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende", "club", "record"],
+      "text": "Quel club Zinédine Zidane a-t-il rejoint en 2001, pour un transfert record à l'époque ?",
+      "answers": [
+        { "text": "Le Real Madrid", "isCorrect": true },
+        { "text": "Manchester United", "isCorrect": false },
+        { "text": "Le FC Barcelone", "isCorrect": false },
+        { "text": "L'AC Milan", "isCorrect": false }
+      ],
+      "explanation": "La Juventus le vend pour environ 75 millions d'euros. Il marque une volée légendaire en finale de la Ligue des champions 2002."
+    },
+    {
+      "ref": "foot-215",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende", "club"],
+      "text": "Dans quel club Zinédine Zidane a-t-il commencé sa carrière professionnelle ?",
+      "answers": [
+        { "text": "L'AS Cannes", "isCorrect": true },
+        { "text": "L'Olympique de Marseille", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": false },
+        { "text": "Les Girondins de Bordeaux", "isCorrect": false }
+      ],
+      "explanation": "Il débute à Cannes en 1989, puis passe par Bordeaux avant de rejoindre la Juventus en 1996."
+    },
+    {
+      "ref": "foot-216",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["legende", "coupe-du-monde"],
+      "text": "Diego Maradona a remporté la Coupe du monde 1986 en tant que capitaine de l'Argentine.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il marque cinq buts et en fait marquer cinq autres pendant le tournoi, au Mexique."
+    },
+    {
+      "ref": "foot-217",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["legende", "coupe-du-monde"],
+      "text": "Johan Cruyff a remporté la Coupe du monde avec les Pays-Bas.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Les Pays-Bas perdent la finale 1974 contre la RFA. Cruyff refuse de jouer celle de 1978, que son pays perd aussi."
+    },
+    {
+      "ref": "foot-218",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende", "club", "equipe-de-france"],
+      "text": "Dans quel club Antoine Griezmann a-t-il commencé sa carrière professionnelle ?",
+      "answers": [
+        { "text": "La Real Sociedad", "isCorrect": true },
+        { "text": "L'Atlético de Madrid", "isCorrect": false },
+        { "text": "Les Girondins de Bordeaux", "isCorrect": false },
+        { "text": "L'Olympique lyonnais", "isCorrect": false }
+      ],
+      "explanation": "Refusé par plusieurs centres de formation français car jugé trop petit, il est repéré à 13 ans par le club basque."
+    },
+    {
+      "ref": "foot-219",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["euro"],
+      "text": "Quel pays a remporté l'Euro 2024 en Allemagne ?",
+      "answers": [
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true }
+      ],
+      "explanation": "L'Espagne bat l'Angleterre 2-1 en finale à Berlin, après avoir gagné tous ses matchs."
+    },
+    {
+      "ref": "foot-220",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro"],
+      "text": "Quel pays a remporté l'Euro 2020, joué en 2021 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": true },
+        { "text": "Le Danemark", "isCorrect": false }
+      ],
+      "explanation": "L'Italie bat l'Angleterre aux tirs au but, à Wembley. Le tournoi avait été repoussé d'un an à cause du Covid."
+    },
+    {
+      "ref": "foot-221",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro"],
+      "text": "Quel pays a créé la surprise en remportant l'Euro 2004 au Portugal ?",
+      "answers": [
+        { "text": "La Grèce", "isCorrect": true },
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": false },
+        { "text": "La République tchèque", "isCorrect": false }
+      ],
+      "explanation": "La Grèce bat le Portugal en match d'ouverture, puis à nouveau en finale (1-0)."
+    },
+    {
+      "ref": "foot-222",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["euro"],
+      "text": "Quel pays a remporté l'Euro 1992 alors qu'il n'était pas qualifié au départ ?",
+      "answers": [
+        { "text": "La Suède", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "Le Danemark", "isCorrect": true },
+        { "text": "Les Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "Repêché à la place de la Yougoslavie, exclue à cause de la guerre, le Danemark bat l'Allemagne en finale."
+    },
+    {
+      "ref": "foot-223",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["euro"],
+      "text": "Comment s'appelle le trophée remis au vainqueur de l'Euro ?",
+      "answers": [
+        { "text": "La coupe Jules-Rimet", "isCorrect": false },
+        { "text": "La coupe des Nations", "isCorrect": false },
+        { "text": "La Victoire ailée", "isCorrect": false },
+        { "text": "La coupe Henri-Delaunay", "isCorrect": true }
+      ],
+      "explanation": "Il porte le nom du Français Henri Delaunay, à l'origine de la compétition."
+    },
+    {
+      "ref": "foot-224",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro"],
+      "text": "Quels pays organiseront l'Euro 2028 ?",
+      "answers": [
+        { "text": "L'Italie et la Turquie", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Espagne et le Portugal", "isCorrect": false },
+        { "text": "Le Royaume-Uni et l'Irlande", "isCorrect": true }
+      ],
+      "explanation": "L'Angleterre, l'Écosse, le pays de Galles, l'Irlande du Nord et l'Irlande. L'Italie et la Turquie organiseront l'Euro 2032."
+    },
+    {
+      "ref": "foot-225",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro"],
+      "text": "Quel Espagnol a été élu meilleur jeune joueur de l'Euro 2024, à seulement 17 ans ?",
+      "answers": [
+        { "text": "Lamine Yamal", "isCorrect": true },
+        { "text": "Pedri", "isCorrect": false },
+        { "text": "Nico Williams", "isCorrect": false },
+        { "text": "Gavi", "isCorrect": false }
+      ],
+      "explanation": "Il devient aussi le plus jeune buteur de l'histoire de l'Euro, avec une frappe superbe contre la France en demi-finale."
+    },
+    {
+      "ref": "foot-226",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["euro", "equipe-de-france"],
+      "text": "L'Euro 2016 s'est déroulé en France.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La France perd la finale au Stade de France contre le Portugal."
+    },
+    {
+      "ref": "foot-227",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["euro"],
+      "text": "L'Euro 2020 a été organisé dans un seul pays, l'Angleterre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Pour les 60 ans de la compétition, il s'est joué dans 11 villes de 11 pays différents. Seules les demi-finales et la finale ont eu lieu à Londres."
+    },
+    {
+      "ref": "foot-228",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["euro"],
+      "text": "Quel pays a remporté le premier Euro, en 1960 ?",
+      "answers": [
+        { "text": "La Yougoslavie", "isCorrect": false },
+        { "text": "L'URSS", "isCorrect": true },
+        { "text": "L'Espagne", "isCorrect": false },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "La phase finale a lieu en France. L'URSS bat la Yougoslavie en finale au Parc des Princes."
+    },
+    {
+      "ref": "foot-229",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["euro", "record", "legende"],
+      "text": "Quel joueur est le meilleur buteur de l'histoire de l'Euro ?",
+      "answers": [
+        { "text": "Antoine Griezmann", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": true },
+        { "text": "Michel Platini", "isCorrect": false },
+        { "text": "Alan Shearer", "isCorrect": false }
+      ],
+      "explanation": "Il a marqué 14 buts en phases finales, de 2004 à 2021, devant Michel Platini (9)."
+    },
+    {
+      "ref": "foot-230",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro"],
+      "text": "Combien d'équipes participent à la phase finale de l'Euro depuis 2016 ?",
+      "answers": [
+        { "text": "24", "isCorrect": true },
+        { "text": "20", "isCorrect": false },
+        { "text": "16", "isCorrect": false },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "Le tournoi est passé de 16 à 24 équipes pour l'Euro 2016, en France."
+    },
+    {
+      "ref": "foot-231",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro", "record"],
+      "text": "Quel pays a remporté le plus d'Euros ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true }
+      ],
+      "explanation": "L'Espagne en compte quatre (1964, 2008, 2012, 2024), l'Allemagne trois, la France et l'Italie deux."
+    },
+    {
+      "ref": "foot-232",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "De quelle couleur est le carton d'avertissement ?",
+      "answers": [
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false },
+        { "text": "Jaune", "isCorrect": true }
+      ],
+      "explanation": "Le carton jaune avertit, le carton rouge expulse."
+    },
+    {
+      "ref": "foot-233",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Qui dirige le match et fait respecter les règles sur le terrain ?",
+      "answers": [
+        { "text": "L'entraîneur", "isCorrect": false },
+        { "text": "Le délégué du match", "isCorrect": false },
+        { "text": "L'arbitre", "isCorrect": true },
+        { "text": "Le capitaine", "isCorrect": false }
+      ],
+      "explanation": "Il est aidé de deux arbitres assistants le long des lignes, d'un quatrième arbitre et, souvent, de l'arbitrage vidéo."
+    },
+    {
+      "ref": "foot-234",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le coup de pied tiré depuis le coin du terrain ?",
+      "answers": [
+        { "text": "Un corner", "isCorrect": true },
+        { "text": "Un penalty", "isCorrect": false },
+        { "text": "Une rentrée de touche", "isCorrect": false },
+        { "text": "Un coup franc", "isCorrect": false }
+      ],
+      "explanation": "Il est accordé quand un défenseur est le dernier à toucher le ballon avant qu'il sorte derrière sa ligne de but."
+    },
+    {
+      "ref": "foot-235",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment commence un match de football ?",
+      "answers": [
+        { "text": "Par un penalty", "isCorrect": false },
+        { "text": "Par un coup d'envoi au centre du terrain", "isCorrect": true },
+        { "text": "Par un corner", "isCorrect": false },
+        { "text": "Par une rentrée de touche", "isCorrect": false }
+      ],
+      "explanation": "Le coup d'envoi a aussi lieu au début de la seconde mi-temps et après chaque but."
+    },
+    {
+      "ref": "foot-236",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « but contre son camp » ?",
+      "answers": [
+        { "text": "Un but marqué en prolongation", "isCorrect": false },
+        { "text": "Un but refusé par l'arbitre", "isCorrect": false },
+        { "text": "Un but marqué par un joueur dans son propre but", "isCorrect": true },
+        { "text": "Un but marqué sur penalty", "isCorrect": false }
+      ],
+      "explanation": "Le but est accordé à l'équipe adverse."
+    },
+    {
+      "ref": "foot-237",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un joueur expulsé ne peut pas être remplacé.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Son équipe doit finir le match avec un joueur de moins."
+    },
+    {
+      "ref": "foot-238",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Le gardien de but peut prendre le ballon à la main n'importe où sur le terrain.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il ne peut le faire que dans sa propre surface de réparation."
+    },
+    {
+      "ref": "foot-239",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment s'appellent les minutes ajoutées par l'arbitre à la fin de chaque mi-temps ?",
+      "answers": [
+        { "text": "Le temps additionnel", "isCorrect": true },
+        { "text": "La mi-temps", "isCorrect": false },
+        { "text": "Le temps mort", "isCorrect": false },
+        { "text": "La prolongation", "isCorrect": false }
+      ],
+      "explanation": "Il compense le temps perdu à cause des blessures, des changements ou des vérifications vidéo."
+    },
+    {
+      "ref": "foot-240",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de temps dure la pause de la mi-temps ?",
+      "answers": [
+        { "text": "15 minutes", "isCorrect": true },
+        { "text": "10 minutes", "isCorrect": false },
+        { "text": "5 minutes", "isCorrect": false },
+        { "text": "30 minutes", "isCorrect": false }
+      ],
+      "explanation": "Les joueurs rentrent aux vestiaires et l'entraîneur peut ajuster sa tactique."
+    },
+    {
+      "ref": "foot-241",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle", "club"],
+      "text": "Un match de championnat peut se terminer sur un match nul.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Une victoire rapporte 3 points, un match nul 1 point, une défaite 0. La prolongation et les tirs au but ne concernent que les matchs à élimination directe."
+    },
+    {
+      "ref": "foot-242",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel stade joue le Paris Saint-Germain ?",
+      "answers": [
+        { "text": "Le stade Vélodrome", "isCorrect": false },
+        { "text": "Le Parc des Princes", "isCorrect": true },
+        { "text": "Le Stade de France", "isCorrect": false },
+        { "text": "Le stade Charléty", "isCorrect": false }
+      ],
+      "explanation": "Le PSG y joue depuis 1974, dans le 16e arrondissement de Paris."
+    },
+    {
+      "ref": "foot-243",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club joue au Groupama Stadium, près de Lyon ?",
+      "answers": [
+        { "text": "L'AS Saint-Étienne", "isCorrect": false },
+        { "text": "L'Olympique lyonnais", "isCorrect": true },
+        { "text": "L'Olympique de Marseille", "isCorrect": false },
+        { "text": "Le FC Nantes", "isCorrect": false }
+      ],
+      "explanation": "Le stade, à Décines-Charpieu, a remplacé le stade de Gerland en 2016."
+    },
+    {
+      "ref": "foot-244",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club anglais joue à Anfield ?",
+      "answers": [
+        { "text": "Everton", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": true },
+        { "text": "Arsenal", "isCorrect": false },
+        { "text": "Manchester United", "isCorrect": false }
+      ],
+      "explanation": "Avant chaque match, les supporters y chantent « You'll Never Walk Alone »."
+    },
+    {
+      "ref": "foot-245",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club joue à Old Trafford, surnommé « le théâtre des rêves » ?",
+      "answers": [
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Manchester United", "isCorrect": true },
+        { "text": "Liverpool", "isCorrect": false },
+        { "text": "Manchester City", "isCorrect": false }
+      ],
+      "explanation": "Manchester City joue à l'Etihad Stadium, de l'autre côté de la ville."
+    },
+    {
+      "ref": "foot-246",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "De quelle couleur est le maillot domicile du Real Madrid ?",
+      "answers": [
+        { "text": "Noir et blanc", "isCorrect": false },
+        { "text": "Bleu et rouge", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Blanc", "isCorrect": true }
+      ],
+      "explanation": "Le Real joue tout en blanc, d'où son surnom de « Merengues »."
+    },
+    {
+      "ref": "foot-247",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quelles sont les couleurs du FC Barcelone ?",
+      "answers": [
+        { "text": "Vert et blanc", "isCorrect": false },
+        { "text": "Jaune et noir", "isCorrect": false },
+        { "text": "Rouge et blanc", "isCorrect": false },
+        { "text": "Bleu et grenat", "isCorrect": true }
+      ],
+      "explanation": "On parle du « Barça blaugrana », de blau (bleu) et grana (grenat) en catalan."
+    },
+    {
+      "ref": "foot-248",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club de Turin joue en noir et blanc ?",
+      "answers": [
+        { "text": "L'Inter Milan", "isCorrect": false },
+        { "text": "Le Torino", "isCorrect": false },
+        { "text": "La Juventus", "isCorrect": true },
+        { "text": "L'AC Milan", "isCorrect": false }
+      ],
+      "explanation": "Les rayures noires et blanches lui valent le surnom de « Bianconeri ». Le Torino, l'autre club de Turin, joue en grenat."
+    },
+    {
+      "ref": "foot-249",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel pays se joue la Bundesliga ?",
+      "answers": [
+        { "text": "Les Pays-Bas", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "La Suisse", "isCorrect": false },
+        { "text": "La Belgique", "isCorrect": false }
+      ],
+      "explanation": "Le championnat d'Allemagne compte 18 clubs."
+    },
+    {
+      "ref": "foot-250",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel pays se joue la Premier League ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false }
+      ],
+      "explanation": "Créée en 1992, c'est le championnat le plus regardé au monde. Des clubs gallois comme Cardiff ou Swansea y ont aussi joué."
+    },
+    {
+      "ref": "foot-251",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club anglais est surnommé « les Reds » ?",
+      "answers": [
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": true },
+        { "text": "Everton", "isCorrect": false },
+        { "text": "Tottenham", "isCorrect": false }
+      ],
+      "explanation": "Le surnom vient de son maillot rouge. Chelsea joue en bleu, Tottenham en blanc et Everton en bleu."
+    },
+    {
+      "ref": "foot-252",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel club français est surnommé « les Girondins » ?",
+      "answers": [
+        { "text": "Bordeaux", "isCorrect": true },
+        { "text": "Lens", "isCorrect": false },
+        { "text": "Nantes", "isCorrect": false },
+        { "text": "Toulouse", "isCorrect": false }
+      ],
+      "explanation": "Le nom vient du département de la Gironde. Le club a été six fois champion de France."
+    },
+    {
+      "ref": "foot-253",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Quel est le surnom des joueurs de l'Olympique de Marseille ?",
+      "answers": [
+        { "text": "Les Dogues", "isCorrect": false },
+        { "text": "Les Gones", "isCorrect": false },
+        { "text": "Les Phocéens", "isCorrect": true },
+        { "text": "Les Aiglons", "isCorrect": false }
+      ],
+      "explanation": "Marseille a été fondée par des Grecs venus de Phocée, vers 600 av. J.-C. Les Gones sont les Lyonnais, les Dogues les Lillois, les Aiglons les Niçois."
+    },
+    {
+      "ref": "foot-254",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["club"],
+      "text": "Dans quel pays joue le Bayern Munich ?",
+      "answers": [
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "Les Pays-Bas", "isCorrect": false },
+        { "text": "La Suisse", "isCorrect": false },
+        { "text": "L'Autriche", "isCorrect": false }
+      ],
+      "explanation": "Munich est la capitale de la Bavière, dans le sud de l'Allemagne."
+    },
+    {
+      "ref": "foot-255",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Combien d'équipes participaient à la Coupe du monde de 1998 à 2022 ?",
+      "answers": [
+        { "text": "16", "isCorrect": false },
+        { "text": "32", "isCorrect": true },
+        { "text": "24", "isCorrect": false },
+        { "text": "48", "isCorrect": false }
+      ],
+      "explanation": "La compétition est passée de 24 à 32 équipes en 1998, puis à 48 en 2026."
+    },
+    {
+      "ref": "foot-256",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a organisé la Coupe du monde 2022 ?",
+      "answers": [
+        { "text": "L'Arabie saoudite", "isCorrect": false },
+        { "text": "Le Qatar", "isCorrect": true },
+        { "text": "La Russie", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false }
+      ],
+      "explanation": "C'était la première Coupe du monde organisée dans un pays arabe."
+    },
+    {
+      "ref": "foot-257",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a organisé la Coupe du monde 2018 ?",
+      "answers": [
+        { "text": "La Russie", "isCorrect": true },
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "Le Qatar", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false }
+      ],
+      "explanation": "La finale, remportée par la France, a eu lieu au stade Loujniki de Moscou."
+    },
+    {
+      "ref": "foot-258",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a organisé la Coupe du monde 2014 ?",
+      "answers": [
+        { "text": "Le Mexique", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": true }
+      ],
+      "explanation": "Le Brésil y a subi sa célèbre défaite 7-1 contre l'Allemagne."
+    },
+    {
+      "ref": "foot-259",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a organisé la Coupe du monde 2010 ?",
+      "answers": [
+        { "text": "Le Nigeria", "isCorrect": false },
+        { "text": "Le Maroc", "isCorrect": false },
+        { "text": "L'Égypte", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": true }
+      ],
+      "explanation": "C'était la première Coupe du monde en Afrique, célèbre pour le son des vuvuzelas."
+    },
+    {
+      "ref": "foot-260",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Entre 1958 et 2002, le Brésil a remporté cinq Coupes du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 1958, 1962, 1970, 1994 et 2002."
+    },
+    {
+      "ref": "foot-261",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "L'Allemagne n'a jamais remporté la Coupe du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle l'a remportée quatre fois : en 1954, 1974 et 1990 (sous le nom de RFA), puis en 2014."
+    },
+    {
+      "ref": "foot-262",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "De quelle couleur est le maillot domicile de l'équipe de France ?",
+      "answers": [
+        { "text": "Bleu", "isCorrect": true },
+        { "text": "Vert", "isCorrect": false },
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": false }
+      ],
+      "explanation": "D'où le surnom de « Bleus ». Le maillot extérieur est souvent blanc."
+    },
+    {
+      "ref": "foot-263",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "legende"],
+      "text": "Quel joueur des Bleus est surnommé « Zizou » ?",
+      "answers": [
+        { "text": "Bixente Lizarazu", "isCorrect": false },
+        { "text": "Thierry Henry", "isCorrect": false },
+        { "text": "Zinédine Zidane", "isCorrect": true },
+        { "text": "Youri Djorkaeff", "isCorrect": false }
+      ],
+      "explanation": "Champion du monde 1998 et champion d'Europe 2000, il a aussi été un grand entraîneur du Real Madrid."
+    },
+    {
+      "ref": "foot-264",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "Quel joueur français est surnommé « Grizou » ?",
+      "answers": [
+        { "text": "Paul Pogba", "isCorrect": false },
+        { "text": "Olivier Giroud", "isCorrect": false },
+        { "text": "Blaise Matuidi", "isCorrect": false },
+        { "text": "Antoine Griezmann", "isCorrect": true }
+      ],
+      "explanation": "Champion du monde 2018, il a fait l'essentiel de sa carrière en Espagne, à la Real Sociedad et à l'Atlético de Madrid."
+    },
+    {
+      "ref": "foot-265",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel milieu français a marqué d'une frappe du gauche en finale de la Coupe du monde 2018 ?",
+      "answers": [
+        { "text": "Paul Pogba", "isCorrect": true },
+        { "text": "N'Golo Kanté", "isCorrect": false },
+        { "text": "Corentin Tolisso", "isCorrect": false },
+        { "text": "Blaise Matuidi", "isCorrect": false }
+      ],
+      "explanation": "Il marque le troisième but des Bleus contre la Croatie, qui s'imposent 4-2."
+    },
+    {
+      "ref": "foot-266",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Contre quel pays la France a-t-elle gagné la finale de la Coupe du monde 1998 ?",
+      "answers": [
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": true },
+        { "text": "La Croatie", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false }
+      ],
+      "explanation": "La France gagne 3-0 au Stade de France, le 12 juillet 1998."
+    },
+    {
+      "ref": "foot-267",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Contre quel pays la France a-t-elle gagné la finale de la Coupe du monde 2018 ?",
+      "answers": [
+        { "text": "La Croatie", "isCorrect": true },
+        { "text": "L'Argentine", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "La Belgique", "isCorrect": false }
+      ],
+      "explanation": "La France gagne 4-2 à Moscou. Elle avait battu la Belgique en demi-finale."
+    },
+    {
+      "ref": "foot-268",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france", "coupe-du-monde"],
+      "text": "Quel gardien français a remporté la Coupe du monde 1998 ?",
+      "answers": [
+        { "text": "Fabien Barthez", "isCorrect": true },
+        { "text": "Hugo Lloris", "isCorrect": false },
+        { "text": "Lionel Charbonnier", "isCorrect": false },
+        { "text": "Bernard Lama", "isCorrect": false }
+      ],
+      "explanation": "Avant chaque match, Laurent Blanc embrassait son crâne chauve pour porter chance."
+    },
+    {
+      "ref": "foot-269",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "Quel joueur portugais est surnommé « CR7 » ?",
+      "answers": [
+        { "text": "Nani", "isCorrect": false },
+        { "text": "Bernardo Silva", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": true },
+        { "text": "Luís Figo", "isCorrect": false }
+      ],
+      "explanation": "Ses initiales et son numéro de maillot, le 7, sont devenus une marque mondiale."
+    },
+    {
+      "ref": "foot-270",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "De quel pays est Lionel Messi ?",
+      "answers": [
+        { "text": "L'Espagne", "isCorrect": false },
+        { "text": "Le Brésil", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": true },
+        { "text": "L'Uruguay", "isCorrect": false }
+      ],
+      "explanation": "Né à Rosario, il part à 13 ans au FC Barcelone, qui accepte de payer son traitement pour un problème de croissance."
+    },
+    {
+      "ref": "foot-271",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende", "club"],
+      "text": "Quel attaquant norvégien a rejoint Manchester City en 2022 ?",
+      "answers": [
+        { "text": "Martin Ødegaard", "isCorrect": false },
+        { "text": "Joshua King", "isCorrect": false },
+        { "text": "Erling Haaland", "isCorrect": true },
+        { "text": "Alexander Sørloth", "isCorrect": false }
+      ],
+      "explanation": "Arrivé du Borussia Dortmund, il bat dès sa première saison le record de buts en Premier League."
+    },
+    {
+      "ref": "foot-272",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "De quel pays est Mohamed Salah ?",
+      "answers": [
+        { "text": "L'Algérie", "isCorrect": false },
+        { "text": "L'Égypte", "isCorrect": true },
+        { "text": "Le Maroc", "isCorrect": false },
+        { "text": "La Tunisie", "isCorrect": false }
+      ],
+      "explanation": "L'attaquant de Liverpool est surnommé « le Pharaon »."
+    },
+    {
+      "ref": "foot-273",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "De quel pays est Luka Modrić ?",
+      "answers": [
+        { "text": "La Slovénie", "isCorrect": false },
+        { "text": "La Croatie", "isCorrect": true },
+        { "text": "La Bosnie-Herzégovine", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": false }
+      ],
+      "explanation": "Il a mené la Croatie jusqu'en finale de la Coupe du monde 2018."
+    },
+    {
+      "ref": "foot-274",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "De quel pays est Robert Lewandowski ?",
+      "answers": [
+        { "text": "La République tchèque", "isCorrect": false },
+        { "text": "La Pologne", "isCorrect": true },
+        { "text": "La Russie", "isCorrect": false },
+        { "text": "L'Ukraine", "isCorrect": false }
+      ],
+      "explanation": "Il est le meilleur buteur de l'histoire de la sélection polonaise."
+    },
+    {
+      "ref": "foot-275",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["legende"],
+      "text": "De quel pays est Kevin De Bruyne ?",
+      "answers": [
+        { "text": "La Suisse", "isCorrect": false },
+        { "text": "La Belgique", "isCorrect": true },
+        { "text": "Le Danemark", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "Le meneur de jeu a remporté de nombreux titres avec Manchester City."
+    },
+    {
+      "ref": "foot-276",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Le PSG n'a jamais remporté la Ligue des champions.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le PSG l'a remportée en 2025, en battant l'Inter Milan 5-0 en finale à Munich."
+    },
+    {
+      "ref": "foot-277",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ballon-d-or", "legende"],
+      "text": "Quel joueur portugais a remporté cinq Ballons d'or ?",
+      "answers": [
+        { "text": "Luís Figo", "isCorrect": false },
+        { "text": "Eusébio", "isCorrect": false },
+        { "text": "Deco", "isCorrect": false },
+        { "text": "Cristiano Ronaldo", "isCorrect": true }
+      ],
+      "explanation": "En 2008, 2013, 2014, 2016 et 2017. Figo et Eusébio en ont remporté un chacun."
+    },
+    {
+      "ref": "foot-278",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["euro"],
+      "text": "Tous les combien d'années l'Euro a-t-il lieu ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "Il a lieu tous les quatre ans, en alternance avec la Coupe du monde."
+    },
+    {
+      "ref": "foot-279",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["euro", "equipe-de-france"],
+      "text": "Quel pays a remporté l'Euro 1984, organisé à domicile ?",
+      "answers": [
+        { "text": "La RFA", "isCorrect": false },
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "La France", "isCorrect": true },
+        { "text": "L'Espagne", "isCorrect": false }
+      ],
+      "explanation": "Les Bleus de Michel Platini battent l'Espagne 2-0 en finale au Parc des Princes. C'est le premier grand titre de la France."
+    },
+    {
+      "ref": "foot-280",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Quel club joue au stade Geoffroy-Guichard, surnommé « le Chaudron » ?",
+      "answers": [
+        { "text": "Montpellier HSC", "isCorrect": false },
+        { "text": "L'Olympique lyonnais", "isCorrect": false },
+        { "text": "L'OGC Nice", "isCorrect": false },
+        { "text": "L'AS Saint-Étienne", "isCorrect": true }
+      ],
+      "explanation": "Son ambiance bouillante lui vaut ce surnom depuis les grandes épopées européennes des années 1970."
+    },
+    {
+      "ref": "foot-281",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays organisera la Coupe du monde 2030 avec le Portugal et le Maroc ?",
+      "answers": [
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "L'Algérie", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true }
+      ],
+      "explanation": "Pour fêter le centenaire de la compétition, trois matchs auront aussi lieu en Uruguay, en Argentine et au Paraguay."
+    },
+    {
+      "ref": "foot-282",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["club"],
+      "text": "Comment s'appelle la deuxième coupe d'Europe des clubs, derrière la Ligue des champions ?",
+      "answers": [
+        { "text": "La Ligue Europa", "isCorrect": true },
+        { "text": "La Coupe du monde des clubs", "isCorrect": false },
+        { "text": "La Supercoupe d'Europe", "isCorrect": false },
+        { "text": "La Ligue des nations", "isCorrect": false }
+      ],
+      "explanation": "Elle s'appelait la Coupe UEFA jusqu'en 2009. Une troisième coupe, la Ligue Conférence, a été créée en 2021."
+    },
+    {
+      "ref": "foot-283",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club anglais a remporté la Ligue des champions 2019, en battant Tottenham en finale ?",
+      "answers": [
+        { "text": "Arsenal", "isCorrect": false },
+        { "text": "Manchester City", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": true },
+        { "text": "Chelsea", "isCorrect": false }
+      ],
+      "explanation": "Liverpool gagne 2-0 à Madrid, avec Mohamed Salah et Virgil van Dijk."
+    },
+    {
+      "ref": "foot-284",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ligue-des-champions", "club"],
+      "text": "Quel club a remporté la Ligue des champions 2021, en battant Manchester City en finale ?",
+      "answers": [
+        { "text": "Liverpool", "isCorrect": false },
+        { "text": "Le Real Madrid", "isCorrect": false },
+        { "text": "Chelsea", "isCorrect": true },
+        { "text": "Le Paris Saint-Germain", "isCorrect": false }
+      ],
+      "explanation": "Kai Havertz marque le seul but de la finale, à Porto."
+    },
+    {
+      "ref": "foot-285",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ballon-d-or"],
+      "text": "Quel Portugais a remporté le Ballon d'or 2000 ?",
+      "answers": [
+        { "text": "Deco", "isCorrect": false },
+        { "text": "Eusébio", "isCorrect": false },
+        { "text": "Rui Costa", "isCorrect": false },
+        { "text": "Luís Figo", "isCorrect": true }
+      ],
+      "explanation": "La même année, il passe du FC Barcelone au Real Madrid, un transfert vécu comme une trahison à Barcelone."
+    },
+    {
+      "ref": "foot-286",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["euro", "record"],
+      "text": "Quel pays est le seul à avoir remporté deux Euros consécutifs, en 2008 et 2012 ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "Le Portugal", "isCorrect": false }
+      ],
+      "explanation": "Entre les deux, elle remporte aussi la Coupe du monde 2010 : trois titres majeurs d'affilée."
+    },
+    {
+      "ref": "foot-287",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["legende"],
+      "text": "Quel prix de la FIFA récompense le plus beau but de l'année ?",
+      "answers": [
+        { "text": "Le Soulier d'or", "isCorrect": false },
+        { "text": "Le prix Pelé", "isCorrect": false },
+        { "text": "Le Ballon d'or", "isCorrect": false },
+        { "text": "Le prix Puskás", "isCorrect": true }
+      ],
+      "explanation": "Créé en 2009, il porte le nom de la légende hongroise Ferenc Puskás."
+    },
+    {
+      "ref": "foot-288",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Comment s'appelait la mascotte de la Coupe du monde 1998 ?",
+      "answers": [
+        { "text": "Fuleco", "isCorrect": false },
+        { "text": "Zakumi", "isCorrect": false },
+        { "text": "Footix", "isCorrect": true },
+        { "text": "Zabivaka", "isCorrect": false }
+      ],
+      "explanation": "Un coq bleu. Zakumi, Fuleco et Zabivaka sont les mascottes de 2010, 2014 et 2018."
+    },
+    {
+      "ref": "foot-289",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or", "legende"],
+      "text": "Quel Néerlandais a remporté trois Ballons d'or, en 1988, 1989 et 1992 ?",
+      "answers": [
+        { "text": "Marco van Basten", "isCorrect": true },
+        { "text": "Frank Rijkaard", "isCorrect": false },
+        { "text": "Ruud Gullit", "isCorrect": false },
+        { "text": "Johan Cruyff", "isCorrect": false }
+      ],
+      "explanation": "L'attaquant de l'AC Milan a dû arrêter sa carrière à 28 ans à cause d'une blessure à la cheville. Cruyff en a gagné trois aussi, mais dans les années 1970."
+    },
+    {
+      "ref": "foot-290",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ballon-d-or", "coupe-du-monde"],
+      "text": "Quel Allemand a remporté le Ballon d'or 1990, l'année du titre mondial de la RFA ?",
+      "answers": [
+        { "text": "Lothar Matthäus", "isCorrect": true },
+        { "text": "Andreas Brehme", "isCorrect": false },
+        { "text": "Rudi Völler", "isCorrect": false },
+        { "text": "Jürgen Klinsmann", "isCorrect": false }
+      ],
+      "explanation": "Le capitaine de la RFA jouait alors à l'Inter Milan."
+    },
+    {
+      "ref": "foot-291",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Combien de matchs de championnat consécutifs Arsenal a-t-il joués sans perdre, entre 2003 et 2004 ?",
+      "answers": [
+        { "text": "38", "isCorrect": false },
+        { "text": "42", "isCorrect": false },
+        { "text": "49", "isCorrect": true },
+        { "text": "52", "isCorrect": false }
+      ],
+      "explanation": "La série s'arrête en octobre 2004, à Old Trafford, contre Manchester United."
+    },
+    {
+      "ref": "foot-292",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "club", "legende"],
+      "text": "Combien de buts Lionel Messi a-t-il marqués en Liga lors de la saison 2011-2012, record du championnat ?",
+      "answers": [
+        { "text": "46", "isCorrect": false },
+        { "text": "50", "isCorrect": true },
+        { "text": "55", "isCorrect": false },
+        { "text": "42", "isCorrect": false }
+      ],
+      "explanation": "Il bat le record établi un an plus tôt par Cristiano Ronaldo (40 buts)."
+    },
+    {
+      "ref": "foot-293",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["euro", "legende"],
+      "text": "Quel pays a remporté l'Euro 1988, grâce notamment à une volée célèbre de Marco van Basten en finale ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": true },
+        { "text": "L'URSS", "isCorrect": false },
+        { "text": "La RFA", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul grand titre de l'histoire des Pays-Bas. Ils battent l'URSS 2-0 en finale."
+    },
+    {
+      "ref": "foot-294",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Lors d'un penalty, le gardien doit garder ses deux pieds sur la ligne de but jusqu'au tir.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Depuis 2019, il suffit qu'il garde au moins une partie d'un pied sur la ligne, ou au niveau de celle-ci."
+    },
+    {
+      "ref": "foot-295",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende", "club"],
+      "text": "Quel attaquant hongrois, star du Real Madrid, était surnommé « le Major galopant » ?",
+      "answers": [
+        { "text": "Ferenc Puskás", "isCorrect": true },
+        { "text": "Nándor Hidegkuti", "isCorrect": false },
+        { "text": "Alfredo Di Stéfano", "isCorrect": false },
+        { "text": "Sándor Kocsis", "isCorrect": false }
+      ],
+      "explanation": "Il marque quatre buts lors de la finale de la Coupe des clubs champions 1960 (7-3 contre Francfort)."
+    },
+    {
+      "ref": "foot-296",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende"],
+      "text": "Quel attaquant portugais était surnommé « la Panthère noire » ?",
+      "answers": [
+        { "text": "Eusébio", "isCorrect": true },
+        { "text": "Mário Coluna", "isCorrect": false },
+        { "text": "Rui Costa", "isCorrect": false },
+        { "text": "Luís Figo", "isCorrect": false }
+      ],
+      "explanation": "Ballon d'or 1965, il est meilleur buteur de la Coupe du monde 1966 avec 9 buts."
+    },
+    {
+      "ref": "foot-297",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["legende", "coupe-du-monde"],
+      "text": "Quel ailier brésilien, double champion du monde, était surnommé « l'Ange aux jambes tordues » ?",
+      "answers": [
+        { "text": "Zico", "isCorrect": false },
+        { "text": "Sócrates", "isCorrect": false },
+        { "text": "Jairzinho", "isCorrect": false },
+        { "text": "Garrincha", "isCorrect": true }
+      ],
+      "explanation": "Malgré des jambes arquées depuis l'enfance, il était un dribbleur redoutable. Il est champion du monde en 1958 et 1962."
+    },
+    {
+      "ref": "foot-298",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record", "legende"],
+      "text": "Quel joueur camerounais a marqué un but en Coupe du monde à 42 ans, en 1994 ?",
+      "answers": [
+        { "text": "Samuel Eto'o", "isCorrect": false },
+        { "text": "Roger Milla", "isCorrect": true },
+        { "text": "Patrick Mboma", "isCorrect": false },
+        { "text": "Rigobert Song", "isCorrect": false }
+      ],
+      "explanation": "Il devient le plus vieux buteur de l'histoire de la Coupe du monde, contre la Russie. En 1990, ses danses près du poteau de corner avaient fait le tour du monde."
+    },
+    {
+      "ref": "foot-299",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club"],
+      "text": "Quel club a remporté la Ligue Europa 2025, en battant Manchester United en finale ?",
+      "answers": [
+        { "text": "L'Athletic Bilbao", "isCorrect": false },
+        { "text": "Chelsea", "isCorrect": false },
+        { "text": "Tottenham", "isCorrect": true },
+        { "text": "La Lazio", "isCorrect": false }
+      ],
+      "explanation": "Tottenham gagne 1-0 à Bilbao et remporte son premier trophée depuis 2008."
+    },
+    {
+      "ref": "foot-300",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["club", "record"],
+      "text": "Quel est le seul club français à avoir remporté la Coupe des vainqueurs de coupe ?",
+      "answers": [
+        { "text": "L'AS Monaco", "isCorrect": false },
+        { "text": "L'Olympique de Marseille", "isCorrect": false },
+        { "text": "Le Paris Saint-Germain", "isCorrect": true },
+        { "text": "Les Girondins de Bordeaux", "isCorrect": false }
+      ],
+      "explanation": "Le PSG la remporte en 1996 contre le Rapid de Vienne. Cette compétition a disparu en 1999."
+    }
+  ]
+}

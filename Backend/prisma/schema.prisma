@@ -91,6 +91,19 @@ model Category {
   questions    Question[]
   attempts     QuizAttempt[]
   achievements Achievement[]
+  themes       Theme[]
+}
+
+// Regroupement des catégories pour l'affichage (Musique > Taylor Swift).
+// Une catégorie peut être dans plusieurs thèmes. Rempli par le seed (prisma/themes.json).
+// On joue toujours une catégorie : parties, stats et badges ne dépendent pas des thèmes.
+model Theme {
+  id       Int    @id @default(autoincrement())
+  slug     String @unique // "musique", sert de clé pour le seed
+  name     String @unique // "Musique"
+  position Int    @default(0) // ordre d'affichage
+
+  categories Category[]
 }
 
 model Question {

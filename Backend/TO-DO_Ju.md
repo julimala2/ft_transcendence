@@ -1,22 +1,21 @@
 Routes 
-- Achievements
-
-Badges : 
-- Rush : > 25 / > 50 / > 100
-- Custom : 
-
+- themes
 
 user 
     - a terme :
         - voir is_online quand websockets
 
 quiz
+
 musique
 cinema
-series (divertissment)
+series
 42
+sport : basket, formule 1, motogp, JO
 
 Possibilite de signaler une question
+
+Classements / leaderboard
 
 Rush mode Joris ? 
 

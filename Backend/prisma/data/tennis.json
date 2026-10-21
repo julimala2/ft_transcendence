@@ -1,0 +1,3468 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 251,
+    "parDifficulte": { "1": 84, "2": 100, "3": 67 },
+    "parType": { "multiple": 214, "boolean": 37 },
+    "avecImage": 0,
+    "sansImage": 251,
+    "parTag": {
+      "grand-chelem": 86,
+      "joueur": 83,
+      "joueuse": 55,
+      "regle": 49,
+      "roland-garros": 43,
+      "record": 40,
+      "histoire": 32,
+      "competition": 29,
+      "france": 28
+    }
+  },
+  "category": {
+    "slug": "tennis",
+    "name": "Tennis"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "ten-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros", "grand-chelem"],
+      "text": "Sur quelle surface se joue Roland-Garros ?",
+      "answers": [
+        { "text": "Le dur", "isCorrect": false },
+        { "text": "Le gazon", "isCorrect": false },
+        { "text": "La terre battue", "isCorrect": true },
+        { "text": "La moquette", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul tournoi du Grand Chelem sur terre battue, une surface lente qui favorise les longs échanges."
+    },
+    {
+      "ref": "ten-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros"],
+      "text": "Dans quelle ville se joue le tournoi de Roland-Garros ?",
+      "answers": [
+        { "text": "Lyon", "isCorrect": false },
+        { "text": "Marseille", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true },
+        { "text": "Nice", "isCorrect": false }
+      ],
+      "explanation": "Le stade se trouve porte d'Auteuil, dans le 16e arrondissement, en bordure du bois de Boulogne."
+    },
+    {
+      "ref": "ten-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros", "joueur", "record"],
+      "text": "Quel joueur a remporté Roland-Garros 14 fois ?",
+      "answers": [
+        { "text": "Björn Borg", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": true }
+      ],
+      "explanation": "Entre 2005 et 2022 : un record qu'aucun joueur n'a jamais approché dans un même tournoi du Grand Chelem."
+    },
+    {
+      "ref": "ten-004",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "histoire"],
+      "text": "Qui était Roland Garros, qui a donné son nom au tournoi ?",
+      "answers": [
+        { "text": "Un président de la Fédération", "isCorrect": false },
+        { "text": "Un architecte", "isCorrect": false },
+        { "text": "Un aviateur", "isCorrect": true },
+        { "text": "Un joueur de tennis", "isCorrect": false }
+      ],
+      "explanation": "Pionnier de l'aviation, il est mort en combat aérien en 1918, pendant la Première Guerre mondiale."
+    },
+    {
+      "ref": "ten-005",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "histoire"],
+      "text": "Quel exploit l'aviateur Roland Garros a-t-il réalisé en 1913 ?",
+      "answers": [
+        { "text": "La première traversée de la Méditerranée en avion", "isCorrect": true },
+        { "text": "Le premier vol de nuit", "isCorrect": false },
+        { "text": "La première traversée de la Manche en avion", "isCorrect": false },
+        { "text": "Le premier tour du monde en avion", "isCorrect": false }
+      ],
+      "explanation": "Il relie Fréjus à Bizerte, en Tunisie, en un peu moins de 8 heures. La Manche avait été traversée par Louis Blériot en 1909."
+    },
+    {
+      "ref": "ten-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "histoire", "france", "competition"],
+      "text": "Pour quelle compétition le stade Roland-Garros a-t-il été construit, en 1928 ?",
+      "answers": [
+        { "text": "La Coupe Davis", "isCorrect": true },
+        { "text": "Le Masters", "isCorrect": false },
+        { "text": "Les Jeux olympiques", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": false }
+      ],
+      "explanation": "Les Mousquetaires venaient de gagner la Coupe Davis 1927 aux États-Unis : la France devait accueillir et défendre le trophée l'année suivante."
+    },
+    {
+      "ref": "ten-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros"],
+      "text": "Comment s'appelle le court central de Roland-Garros ?",
+      "answers": [
+        { "text": "Le court Suzanne-Lenglen", "isCorrect": false },
+        { "text": "Le court Simonne-Mathieu", "isCorrect": false },
+        { "text": "La Rod Laver Arena", "isCorrect": false },
+        { "text": "Le court Philippe-Chatrier", "isCorrect": true }
+      ],
+      "explanation": "Il porte le nom d'un ancien président de la Fédération française de tennis. La Rod Laver Arena est le court central de l'Open d'Australie."
+    },
+    {
+      "ref": "ten-008",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros"],
+      "text": "Quel court de Roland-Garros est entouré de serres botaniques ?",
+      "answers": [
+        { "text": "Le court Philippe-Chatrier", "isCorrect": false },
+        { "text": "Le court n°14", "isCorrect": false },
+        { "text": "Le court Suzanne-Lenglen", "isCorrect": false },
+        { "text": "Le court Simonne-Mathieu", "isCorrect": true }
+      ],
+      "explanation": "Inauguré en 2019, il est construit dans le jardin des serres d'Auteuil, à moitié enterré pour préserver le site."
+    },
+    {
+      "ref": "ten-009",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros"],
+      "text": "Depuis quelle année le court Philippe-Chatrier est-il équipé d'un toit rétractable ?",
+      "answers": [
+        { "text": "2024", "isCorrect": false },
+        { "text": "2010", "isCorrect": false },
+        { "text": "2015", "isCorrect": false },
+        { "text": "2020", "isCorrect": true }
+      ],
+      "explanation": "Il a été inauguré lors de l'édition 2020, décalée à l'automne à cause du Covid."
+    },
+    {
+      "ref": "ten-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "france", "joueur"],
+      "text": "Quel Français a remporté Roland-Garros en 1983 ?",
+      "answers": [
+        { "text": "Guy Forget", "isCorrect": false },
+        { "text": "Yannick Noah", "isCorrect": true },
+        { "text": "Gaël Monfils", "isCorrect": false },
+        { "text": "Henri Leconte", "isCorrect": false }
+      ],
+      "explanation": "Il bat le Suédois Mats Wilander en finale et tombe dans les bras de son père, Zacharie, sur le court."
+    },
+    {
+      "ref": "ten-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "france", "joueuse"],
+      "text": "Quelle Française a remporté Roland-Garros en 2000 ?",
+      "answers": [
+        { "text": "Marion Bartoli", "isCorrect": false },
+        { "text": "Mary Pierce", "isCorrect": true },
+        { "text": "Nathalie Tauziat", "isCorrect": false },
+        { "text": "Amélie Mauresmo", "isCorrect": false }
+      ],
+      "explanation": "Elle bat l'Espagnole Conchita Martínez en finale. Elle remporte aussi le double avec Martina Hingis."
+    },
+    {
+      "ref": "ten-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueuse"],
+      "text": "Quelle joueuse polonaise a remporté Roland-Garros en 2020, 2022, 2023 et 2024 ?",
+      "answers": [
+        { "text": "Iga Świątek", "isCorrect": true },
+        { "text": "Aryna Sabalenka", "isCorrect": false },
+        { "text": "Coco Gauff", "isCorrect": false },
+        { "text": "Agnieszka Radwańska", "isCorrect": false }
+      ],
+      "explanation": "Elle remporte son premier titre en 2020 à 19 ans, sans perdre un set."
+    },
+    {
+      "ref": "ten-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueuse"],
+      "text": "Quelle joueuse a remporté Roland-Garros en 2025 ?",
+      "answers": [
+        { "text": "Coco Gauff", "isCorrect": true },
+        { "text": "Jasmine Paolini", "isCorrect": false },
+        { "text": "Iga Świątek", "isCorrect": false },
+        { "text": "Aryna Sabalenka", "isCorrect": false }
+      ],
+      "explanation": "L'Américaine bat Aryna Sabalenka en trois sets, deux ans après son titre à l'US Open."
+    },
+    {
+      "ref": "ten-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Quel joueur a remporté Roland-Garros 2025 en battant Jannik Sinner, après avoir sauvé trois balles de match ?",
+      "answers": [
+        { "text": "Alexander Zverev", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": true },
+        { "text": "Casper Ruud", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": false }
+      ],
+      "explanation": "L'Espagnol s'impose en cinq sets, après un super jeu décisif dans la dernière manche."
+    },
+    {
+      "ref": "ten-015",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "record"],
+      "text": "Combien de temps a duré la finale de Roland-Garros 2025 entre Alcaraz et Sinner, la plus longue de l'histoire du tournoi ?",
+      "answers": [
+        { "text": "3 h 58", "isCorrect": false },
+        { "text": "6 h 11", "isCorrect": false },
+        { "text": "5 h 29", "isCorrect": true },
+        { "text": "4 h 12", "isCorrect": false }
+      ],
+      "explanation": "Elle bat le record de 1982 entre Mats Wilander et Guillermo Vilas (4 h 42)."
+    },
+    {
+      "ref": "ten-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros"],
+      "text": "À quelle période de l'année se joue Roland-Garros ?",
+      "answers": [
+        { "text": "En janvier", "isCorrect": false },
+        { "text": "En septembre", "isCorrect": false },
+        { "text": "Fin mai et début juin", "isCorrect": true },
+        { "text": "En juillet", "isCorrect": false }
+      ],
+      "explanation": "C'est le deuxième tournoi du Grand Chelem de la saison, après l'Open d'Australie."
+    },
+    {
+      "ref": "ten-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Contre quel joueur Rafael Nadal a-t-il perdu pour la première fois à Roland-Garros, en 2009 ?",
+      "answers": [
+        { "text": "Robin Söderling", "isCorrect": true },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Juan Martín del Potro", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": false }
+      ],
+      "explanation": "Le Suédois l'élimine en huitième de finale. Federer en profite pour remporter son seul Roland-Garros."
+    },
+    {
+      "ref": "ten-018",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueur"],
+      "text": "En quelle année Roger Federer a-t-il remporté son unique Roland-Garros ?",
+      "answers": [
+        { "text": "2009", "isCorrect": true },
+        { "text": "2011", "isCorrect": false },
+        { "text": "2006", "isCorrect": false },
+        { "text": "2005", "isCorrect": false }
+      ],
+      "explanation": "Il bat Robin Söderling en finale et complète sa collection des quatre tournois du Grand Chelem."
+    },
+    {
+      "ref": "ten-019",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "joueur", "record"],
+      "text": "Combien de matchs Rafael Nadal a-t-il perdus à Roland-Garros sur toute sa carrière ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "112 victoires pour 4 défaites : contre Söderling (2009), Djokovic (2015 et 2021) et Zverev (2024)."
+    },
+    {
+      "ref": "ten-020",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["roland-garros", "histoire"],
+      "text": "Roland-Garros a été le premier tournoi du Grand Chelem ouvert aux joueurs professionnels, en 1968.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "L'édition de mai 1968 inaugure l'ère Open, qui met fin à la séparation entre amateurs et professionnels."
+    },
+    {
+      "ref": "ten-021",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["roland-garros"],
+      "text": "Roland-Garros se joue sur gazon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il se joue sur terre battue. C'est Wimbledon qui se joue sur gazon."
+    },
+    {
+      "ref": "ten-022",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["roland-garros", "histoire"],
+      "text": "Le tournoi de Roland-Garros a toujours été ouvert aux joueurs étrangers.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Jusqu'en 1924, les Championnats de France étaient réservés aux membres de clubs français. Ils s'ouvrent aux étrangers en 1925."
+    },
+    {
+      "ref": "ten-023",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "joueuse", "record"],
+      "text": "Quelle joueuse a remporté Roland-Garros sept fois, record féminin ?",
+      "answers": [
+        { "text": "Chris Evert", "isCorrect": true },
+        { "text": "Steffi Graf", "isCorrect": false },
+        { "text": "Justine Henin", "isCorrect": false },
+        { "text": "Monica Seles", "isCorrect": false }
+      ],
+      "explanation": "L'Américaine le remporte entre 1974 et 1986. Steffi Graf l'a gagné six fois."
+    },
+    {
+      "ref": "ten-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueuse"],
+      "text": "Quelle Belge a remporté Roland-Garros quatre fois, dont trois fois de suite de 2005 à 2007 ?",
+      "answers": [
+        { "text": "Sabine Appelmans", "isCorrect": false },
+        { "text": "Kim Clijsters", "isCorrect": false },
+        { "text": "Elise Mertens", "isCorrect": false },
+        { "text": "Justine Henin", "isCorrect": true }
+      ],
+      "explanation": "Célèbre pour son revers à une main, elle l'avait aussi gagné en 2003."
+    },
+    {
+      "ref": "ten-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros", "joueur"],
+      "text": "De quel pays est Rafael Nadal ?",
+      "answers": [
+        { "text": "L'Argentine", "isCorrect": false },
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "L'Italie", "isCorrect": false }
+      ],
+      "explanation": "Né à Manacor, sur l'île de Majorque, il a pris sa retraite en 2024."
+    },
+    {
+      "ref": "ten-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros"],
+      "text": "Comment s'appelle le trophée remis au vainqueur du simple messieurs de Roland-Garros ?",
+      "answers": [
+        { "text": "Le Saladier d'argent", "isCorrect": false },
+        { "text": "La coupe Davis", "isCorrect": false },
+        { "text": "La coupe Suzanne-Lenglen", "isCorrect": false },
+        { "text": "La coupe des Mousquetaires", "isCorrect": true }
+      ],
+      "explanation": "Il rend hommage aux quatre Mousquetaires, vainqueurs de la Coupe Davis dans les années 1920-1930."
+    },
+    {
+      "ref": "ten-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "joueuse"],
+      "text": "Comment s'appelle le trophée remis à la gagnante du simple dames de Roland-Garros ?",
+      "answers": [
+        { "text": "La coupe Simonne-Mathieu", "isCorrect": false },
+        { "text": "La coupe Suzanne-Lenglen", "isCorrect": true },
+        { "text": "La coupe des Mousquetaires", "isCorrect": false },
+        { "text": "Le plat de Vénus Rosewater", "isCorrect": false }
+      ],
+      "explanation": "Il porte le nom de la grande championne française des années 1920. Le plat Venus Rosewater est remis à la gagnante de Wimbledon."
+    },
+    {
+      "ref": "ten-028",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "france", "joueur"],
+      "text": "Quel Français a atteint la finale de Roland-Garros en 1988 ?",
+      "answers": [
+        { "text": "Yannick Noah", "isCorrect": false },
+        { "text": "Henri Leconte", "isCorrect": true },
+        { "text": "Guy Forget", "isCorrect": false },
+        { "text": "Cédric Pioline", "isCorrect": false }
+      ],
+      "explanation": "Il perd contre le Suédois Mats Wilander, cinq ans après la victoire de Yannick Noah contre ce même Wilander."
+    },
+    {
+      "ref": "ten-029",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Une statue de Rafael Nadal a été installée dans l'enceinte de Roland-Garros.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle a été inaugurée en 2021, en hommage à ses records sur la terre battue parisienne."
+    },
+    {
+      "ref": "ten-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Quel joueur a remporté Roland-Garros en 2024 ?",
+      "answers": [
+        { "text": "Alexander Zverev", "isCorrect": false },
+        { "text": "Jannik Sinner", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": true }
+      ],
+      "explanation": "Il bat Alexander Zverev en cinq sets en finale et remporte son premier titre à Paris."
+    },
+    {
+      "ref": "ten-031",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Quel Suédois a remporté Roland-Garros six fois entre 1974 et 1981 ?",
+      "answers": [
+        { "text": "Mats Wilander", "isCorrect": false },
+        { "text": "Björn Borg", "isCorrect": true },
+        { "text": "Stefan Edberg", "isCorrect": false },
+        { "text": "Thomas Enqvist", "isCorrect": false }
+      ],
+      "explanation": "Le Suédois, surnommé « Ice Borg » pour son calme, était le roi de la terre battue avant Nadal."
+    },
+    {
+      "ref": "ten-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros"],
+      "text": "De quelle couleur est la terre battue de Roland-Garros ?",
+      "answers": [
+        { "text": "Grise", "isCorrect": false },
+        { "text": "Verte", "isCorrect": false },
+        { "text": "Bleue", "isCorrect": false },
+        { "text": "Ocre-orangé", "isCorrect": true }
+      ],
+      "explanation": "Une fine couche de brique pilée recouvre plusieurs couches de calcaire et de mâchefer."
+    },
+    {
+      "ref": "ten-033",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "competition"],
+      "text": "Où s'est déroulé le tournoi de tennis des Jeux olympiques de Paris 2024 ?",
+      "answers": [
+        { "text": "Au Stade de France", "isCorrect": false },
+        { "text": "À Roland-Garros", "isCorrect": true },
+        { "text": "À Bercy", "isCorrect": false },
+        { "text": "À Versailles", "isCorrect": false }
+      ],
+      "explanation": "Novak Djokovic y remporte l'or en battant Carlos Alcaraz en finale."
+    },
+    {
+      "ref": "ten-034",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["roland-garros", "france", "joueuse", "histoire"],
+      "text": "Quel court de Roland-Garros porte le nom d'une Française double vainqueure du tournoi (1938, 1939) et résistante pendant la Seconde Guerre mondiale ?",
+      "answers": [
+        { "text": "Le court Simonne-Mathieu", "isCorrect": true },
+        { "text": "Le court n°1", "isCorrect": false },
+        { "text": "Le court Suzanne-Lenglen", "isCorrect": false },
+        { "text": "Le court Philippe-Chatrier", "isCorrect": false }
+      ],
+      "explanation": "Simonne Mathieu rejoint la France libre à Londres et y crée le Corps des volontaires françaises."
+    },
+    {
+      "ref": "ten-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["roland-garros", "joueuse"],
+      "text": "Quelle joueuse chinoise a remporté Roland-Garros en 2011, premier titre du Grand Chelem en simple pour un joueur asiatique ?",
+      "answers": [
+        { "text": "Li Na", "isCorrect": true },
+        { "text": "Zheng Qinwen", "isCorrect": false },
+        { "text": "Peng Shuai", "isCorrect": false },
+        { "text": "Zheng Jie", "isCorrect": false }
+      ],
+      "explanation": "Elle bat l'Italienne Francesca Schiavone en finale. Elle remporte aussi l'Open d'Australie 2014."
+    },
+    {
+      "ref": "ten-036",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["roland-garros"],
+      "text": "Le court Suzanne-Lenglen est le court central de Roland-Garros.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est le deuxième plus grand court. Le court central est le court Philippe-Chatrier."
+    },
+    {
+      "ref": "ten-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Combien de tournois composent le Grand Chelem ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "L'Open d'Australie, Roland-Garros, Wimbledon et l'US Open."
+    },
+    {
+      "ref": "ten-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Quel tournoi du Grand Chelem se joue sur gazon ?",
+      "answers": [
+        { "text": "L'Open d'Australie", "isCorrect": false },
+        { "text": "L'US Open", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": true },
+        { "text": "Roland-Garros", "isCorrect": false }
+      ],
+      "explanation": "Le gazon est une surface rapide, où la balle rebondit bas."
+    },
+    {
+      "ref": "ten-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Dans quelle ville se joue l'US Open ?",
+      "answers": [
+        { "text": "Miami", "isCorrect": false },
+        { "text": "New York", "isCorrect": true },
+        { "text": "Washington", "isCorrect": false },
+        { "text": "Los Angeles", "isCorrect": false }
+      ],
+      "explanation": "Il se joue à Flushing Meadows, dans le quartier du Queens."
+    },
+    {
+      "ref": "ten-040",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Dans quelle ville se joue l'Open d'Australie ?",
+      "answers": [
+        { "text": "Melbourne", "isCorrect": true },
+        { "text": "Brisbane", "isCorrect": false },
+        { "text": "Sydney", "isCorrect": false },
+        { "text": "Perth", "isCorrect": false }
+      ],
+      "explanation": "Il se joue au Melbourne Park depuis 1988."
+    },
+    {
+      "ref": "ten-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Dans quelle ville se joue le tournoi de Wimbledon ?",
+      "answers": [
+        { "text": "Birmingham", "isCorrect": false },
+        { "text": "Manchester", "isCorrect": false },
+        { "text": "Édimbourg", "isCorrect": false },
+        { "text": "Londres", "isCorrect": true }
+      ],
+      "explanation": "Wimbledon est un quartier du sud-ouest de Londres."
+    },
+    {
+      "ref": "ten-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Quel tournoi du Grand Chelem ouvre la saison, en janvier ?",
+      "answers": [
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "L'US Open", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": true }
+      ],
+      "explanation": "Suivent Roland-Garros (mai-juin), Wimbledon (juillet) et l'US Open (fin août-septembre)."
+    },
+    {
+      "ref": "ten-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "roland-garros"],
+      "text": "Roland-Garros est le combien-ième tournoi du Grand Chelem de la saison ?",
+      "answers": [
+        { "text": "Le quatrième", "isCorrect": false },
+        { "text": "Le premier", "isCorrect": false },
+        { "text": "Le deuxième", "isCorrect": true },
+        { "text": "Le troisième", "isCorrect": false }
+      ],
+      "explanation": "Il se joue après l'Open d'Australie et avant Wimbledon."
+    },
+    {
+      "ref": "ten-044",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem", "regle"],
+      "text": "Quelle couleur de tenue est obligatoire pour les joueurs à Wimbledon ?",
+      "answers": [
+        { "text": "Aucune, la tenue est libre", "isCorrect": false },
+        { "text": "Le vert", "isCorrect": false },
+        { "text": "Le blanc", "isCorrect": true },
+        { "text": "Le noir", "isCorrect": false }
+      ],
+      "explanation": "La règle est très stricte : même les sous-vêtements visibles doivent être blancs."
+    },
+    {
+      "ref": "ten-045",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "Quel fruit est traditionnellement dégusté par les spectateurs de Wimbledon ?",
+      "answers": [
+        { "text": "Les pommes", "isCorrect": false },
+        { "text": "Les fraises à la crème", "isCorrect": true },
+        { "text": "Les cerises", "isCorrect": false },
+        { "text": "Les framboises", "isCorrect": false }
+      ],
+      "explanation": "Des dizaines de milliers de portions sont vendues chaque année pendant le tournoi."
+    },
+    {
+      "ref": "ten-046",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Sur quelle surface se joue l'US Open ?",
+      "answers": [
+        { "text": "La terre battue", "isCorrect": false },
+        { "text": "La moquette", "isCorrect": false },
+        { "text": "Le dur", "isCorrect": true },
+        { "text": "Le gazon", "isCorrect": false }
+      ],
+      "explanation": "Une surface en résine sur béton, rapide et régulière."
+    },
+    {
+      "ref": "ten-047",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "Sur quelle surface se joue l'Open d'Australie ?",
+      "answers": [
+        { "text": "Le gazon", "isCorrect": false },
+        { "text": "La moquette", "isCorrect": false },
+        { "text": "Le dur", "isCorrect": true },
+        { "text": "La terre battue", "isCorrect": false }
+      ],
+      "explanation": "Il s'est longtemps joué sur gazon, avant de passer au dur en 1988."
+    },
+    {
+      "ref": "ten-048",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "histoire"],
+      "text": "Jusqu'en quelle année l'Open d'Australie s'est-il joué sur gazon ?",
+      "answers": [
+        { "text": "1995", "isCorrect": false },
+        { "text": "1977", "isCorrect": false },
+        { "text": "1970", "isCorrect": false },
+        { "text": "1987", "isCorrect": true }
+      ],
+      "explanation": "En 1988, il déménage au Melbourne Park et passe sur une surface dure."
+    },
+    {
+      "ref": "ten-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "histoire"],
+      "text": "Sur quelle surface s'est joué l'US Open de 1975 à 1977 ?",
+      "answers": [
+        { "text": "Le gazon", "isCorrect": false },
+        { "text": "Le dur", "isCorrect": false },
+        { "text": "La terre battue", "isCorrect": true },
+        { "text": "La moquette", "isCorrect": false }
+      ],
+      "explanation": "Après le gazon et avant le dur, l'US Open a connu trois éditions sur terre battue."
+    },
+    {
+      "ref": "ten-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "Comment s'appelle le court central de l'Open d'Australie ?",
+      "answers": [
+        { "text": "Le Centre Court", "isCorrect": false },
+        { "text": "Le Arthur Ashe Stadium", "isCorrect": false },
+        { "text": "La Rod Laver Arena", "isCorrect": true },
+        { "text": "La Margaret Court Arena", "isCorrect": false }
+      ],
+      "explanation": "Elle porte le nom du seul joueur à avoir réalisé deux fois le Grand Chelem."
+    },
+    {
+      "ref": "ten-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "histoire"],
+      "text": "Comment s'appelle le court central de l'US Open, le plus grand stade de tennis du monde ?",
+      "answers": [
+        { "text": "Le Arthur Ashe Stadium", "isCorrect": true },
+        { "text": "Le Centre Court", "isCorrect": false },
+        { "text": "Le Louis Armstrong Stadium", "isCorrect": false },
+        { "text": "La Rod Laver Arena", "isCorrect": false }
+      ],
+      "explanation": "Il compte environ 23 000 places et porte le nom du premier joueur noir vainqueur de l'US Open et de Wimbledon."
+    },
+    {
+      "ref": "ten-052",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "histoire"],
+      "text": "Quel est le plus ancien tournoi de tennis du monde, créé en 1877 ?",
+      "answers": [
+        { "text": "Wimbledon", "isCorrect": true },
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": false },
+        { "text": "L'US Open", "isCorrect": false }
+      ],
+      "explanation": "L'US Open naît en 1881, Roland-Garros en 1891 et l'Open d'Australie en 1905."
+    },
+    {
+      "ref": "ten-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "record"],
+      "text": "Que signifie « réaliser le Grand Chelem » au tennis ?",
+      "answers": [
+        { "text": "Gagner les quatre tournois du Grand Chelem la même année", "isCorrect": true },
+        { "text": "Gagner un tournoi sans perdre un set", "isCorrect": false },
+        { "text": "Gagner quatre titres du Grand Chelem dans sa carrière", "isCorrect": false },
+        { "text": "Gagner le simple et le double d'un même tournoi", "isCorrect": false }
+      ],
+      "explanation": "C'est l'exploit le plus rare du tennis. Gagner les quatre tournois sur plusieurs années s'appelle un « Grand Chelem en carrière »."
+    },
+    {
+      "ref": "ten-054",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "joueur", "record"],
+      "text": "Quel joueur a réalisé deux fois le Grand Chelem sur une même année, en 1962 et en 1969 ?",
+      "answers": [
+        { "text": "Roy Emerson", "isCorrect": false },
+        { "text": "Rod Laver", "isCorrect": true },
+        { "text": "Ken Rosewall", "isCorrect": false },
+        { "text": "Don Budge", "isCorrect": false }
+      ],
+      "explanation": "L'Australien est le seul joueur à l'avoir fait deux fois, la seconde fois dans l'ère Open."
+    },
+    {
+      "ref": "ten-055",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "joueur", "record", "histoire"],
+      "text": "Quel Américain a réalisé le premier Grand Chelem de l'histoire, en 1938 ?",
+      "answers": [
+        { "text": "Don Budge", "isCorrect": true },
+        { "text": "Fred Perry", "isCorrect": false },
+        { "text": "Bill Tilden", "isCorrect": false },
+        { "text": "Jack Kramer", "isCorrect": false }
+      ],
+      "explanation": "Il remporte les quatre tournois en 1938, avant de passer professionnel."
+    },
+    {
+      "ref": "ten-056",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "joueuse", "record"],
+      "text": "Quelle joueuse a réalisé le « Grand Chelem doré » en 1988, en ajoutant l'or olympique aux quatre tournois du Grand Chelem ?",
+      "answers": [
+        { "text": "Serena Williams", "isCorrect": false },
+        { "text": "Steffi Graf", "isCorrect": true },
+        { "text": "Monica Seles", "isCorrect": false },
+        { "text": "Martina Navratilova", "isCorrect": false }
+      ],
+      "explanation": "L'Allemande remporte les quatre tournois du Grand Chelem et le tournoi olympique de Séoul la même année : un exploit unique."
+    },
+    {
+      "ref": "ten-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "Comment s'appelle le court principal de Wimbledon ?",
+      "answers": [
+        { "text": "Le Centre Court", "isCorrect": true },
+        { "text": "Le court Philippe-Chatrier", "isCorrect": false },
+        { "text": "Le court n°1", "isCorrect": false },
+        { "text": "La Rod Laver Arena", "isCorrect": false }
+      ],
+      "explanation": "Il est équipé d'un toit rétractable depuis 2009."
+    },
+    {
+      "ref": "ten-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem"],
+      "text": "Quel club organise le tournoi de Wimbledon ?",
+      "answers": [
+        { "text": "L'All England Lawn Tennis and Croquet Club", "isCorrect": true },
+        { "text": "Le Queen's Club", "isCorrect": false },
+        { "text": "Le Marylebone Cricket Club", "isCorrect": false },
+        { "text": "Le Royal Tennis Club", "isCorrect": false }
+      ],
+      "explanation": "Fondé en 1868 pour le croquet, il a ajouté le tennis sur gazon en 1875."
+    },
+    {
+      "ref": "ten-059",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "regle"],
+      "text": "Depuis 2022, comment se termine le dernier set d'un match du Grand Chelem quand le score atteint 6-6 ?",
+      "answers": [
+        { "text": "Par un super jeu décisif en 10 points", "isCorrect": true },
+        { "text": "On joue jusqu'à avoir deux jeux d'écart", "isCorrect": false },
+        { "text": "Par un tirage au sort", "isCorrect": false },
+        { "text": "Par un jeu décisif classique en 7 points", "isCorrect": false }
+      ],
+      "explanation": "Les quatre tournois ont adopté la même règle. Avant, chacun avait la sienne, et certains matchs duraient des heures."
+    },
+    {
+      "ref": "ten-060",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Wimbledon se joue sur terre battue.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Wimbledon se joue sur gazon, depuis sa création en 1877."
+    },
+    {
+      "ref": "ten-061",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "histoire"],
+      "text": "Jusqu'en 2022, le « Middle Sunday » de Wimbledon était traditionnellement un jour sans match.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le dimanche du milieu du tournoi servait à reposer le gazon. Des matchs y sont programmés depuis 2022."
+    },
+    {
+      "ref": "ten-062",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "L'Open d'Australie se joue en plein été austral.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En janvier, c'est l'été dans l'hémisphère Sud : les joueurs doivent parfois supporter plus de 40 °C."
+    },
+    {
+      "ref": "ten-063",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a remporté l'Open d'Australie 2025 ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": false },
+        { "text": "Jannik Sinner", "isCorrect": true },
+        { "text": "Alexander Zverev", "isCorrect": false }
+      ],
+      "explanation": "L'Italien conserve son titre en battant Alexander Zverev en finale."
+    },
+    {
+      "ref": "ten-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueuse"],
+      "text": "Quelle joueuse a remporté l'Open d'Australie 2025 ?",
+      "answers": [
+        { "text": "Aryna Sabalenka", "isCorrect": false },
+        { "text": "Coco Gauff", "isCorrect": false },
+        { "text": "Madison Keys", "isCorrect": true },
+        { "text": "Iga Świątek", "isCorrect": false }
+      ],
+      "explanation": "L'Américaine, 29 ans, remporte son premier titre du Grand Chelem en battant Aryna Sabalenka."
+    },
+    {
+      "ref": "ten-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueuse"],
+      "text": "Quelle joueuse a remporté Wimbledon en 2025 ?",
+      "answers": [
+        { "text": "Aryna Sabalenka", "isCorrect": false },
+        { "text": "Iga Świątek", "isCorrect": true },
+        { "text": "Coco Gauff", "isCorrect": false },
+        { "text": "Amanda Anisimova", "isCorrect": false }
+      ],
+      "explanation": "La Polonaise remporte son premier titre sur gazon en battant Amanda Anisimova en finale."
+    },
+    {
+      "ref": "ten-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a remporté Wimbledon en 2025 ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": false },
+        { "text": "Taylor Fritz", "isCorrect": false },
+        { "text": "Jannik Sinner", "isCorrect": true }
+      ],
+      "explanation": "Il prend sa revanche sur Carlos Alcaraz, qui l'avait battu en finale de Roland-Garros un mois plus tôt."
+    },
+    {
+      "ref": "ten-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a remporté l'US Open 2025 ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": true },
+        { "text": "Jannik Sinner", "isCorrect": false },
+        { "text": "Félix Auger-Aliassime", "isCorrect": false }
+      ],
+      "explanation": "Il bat Jannik Sinner en finale, leur troisième finale de Grand Chelem de l'année."
+    },
+    {
+      "ref": "ten-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueuse"],
+      "text": "Quelle joueuse a remporté l'US Open 2025 ?",
+      "answers": [
+        { "text": "Amanda Anisimova", "isCorrect": false },
+        { "text": "Aryna Sabalenka", "isCorrect": true },
+        { "text": "Jessica Pegula", "isCorrect": false },
+        { "text": "Naomi Osaka", "isCorrect": false }
+      ],
+      "explanation": "La Biélorusse conserve son titre de 2024 en battant Amanda Anisimova."
+    },
+    {
+      "ref": "ten-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "joueuse", "record"],
+      "text": "Sur quel score Iga Świątek a-t-elle remporté la finale de Wimbledon 2025 ?",
+      "answers": [
+        { "text": "6-2, 6-1", "isCorrect": false },
+        { "text": "7-5, 6-4", "isCorrect": false },
+        { "text": "6-1, 6-0", "isCorrect": false },
+        { "text": "6-0, 6-0", "isCorrect": true }
+      ],
+      "explanation": "C'était la première finale dames de Wimbledon sans le moindre jeu perdu depuis 1911."
+    },
+    {
+      "ref": "ten-070",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["grand-chelem", "roland-garros"],
+      "text": "Roland-Garros fait partie des tournois du Grand Chelem.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Avec l'Open d'Australie, Wimbledon et l'US Open."
+    },
+    {
+      "ref": "ten-071",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "L'US Open se joue sur terre battue depuis 1978.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Depuis 1978, il se joue sur dur, à Flushing Meadows. La terre battue n'a été utilisée que de 1975 à 1977."
+    },
+    {
+      "ref": "ten-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a remporté l'US Open 2024 ?",
+      "answers": [
+        { "text": "Taylor Fritz", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": false },
+        { "text": "Jannik Sinner", "isCorrect": true }
+      ],
+      "explanation": "Il bat l'Américain Taylor Fritz en finale."
+    },
+    {
+      "ref": "ten-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a battu Novak Djokovic en finale de Wimbledon en 2023 puis en 2024 ?",
+      "answers": [
+        { "text": "Jannik Sinner", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": true },
+        { "text": "Daniil Medvedev", "isCorrect": false },
+        { "text": "Alexander Zverev", "isCorrect": false }
+      ],
+      "explanation": "En 2023, il met fin à une série de quatre titres consécutifs de Djokovic à Wimbledon."
+    },
+    {
+      "ref": "ten-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a remporté l'US Open 2023, son 24e titre du Grand Chelem ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": true },
+        { "text": "Jannik Sinner", "isCorrect": false },
+        { "text": "Daniil Medvedev", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": false }
+      ],
+      "explanation": "Il prend sa revanche sur Daniil Medvedev, qui l'avait battu en finale deux ans plus tôt."
+    },
+    {
+      "ref": "ten-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem", "joueuse"],
+      "text": "Quelle joueuse a remporté l'US Open 2024 ?",
+      "answers": [
+        { "text": "Aryna Sabalenka", "isCorrect": true },
+        { "text": "Iga Świątek", "isCorrect": false },
+        { "text": "Coco Gauff", "isCorrect": false },
+        { "text": "Jessica Pegula", "isCorrect": false }
+      ],
+      "explanation": "Elle bat l'Américaine Jessica Pegula en finale, un an après l'avoir perdue contre Coco Gauff."
+    },
+    {
+      "ref": "ten-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["grand-chelem", "joueur"],
+      "text": "Quel joueur a remporté son premier titre du Grand Chelem à l'Open d'Australie 2024, en revenant de deux sets à zéro en finale ?",
+      "answers": [
+        { "text": "Daniil Medvedev", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": false },
+        { "text": "Alexander Zverev", "isCorrect": false },
+        { "text": "Jannik Sinner", "isCorrect": true }
+      ],
+      "explanation": "Il bat Daniil Medvedev en cinq sets et devient le premier Italien à gagner l'Open d'Australie."
+    },
+    {
+      "ref": "ten-077",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Roger Federer ?",
+      "answers": [
+        { "text": "La Suède", "isCorrect": false },
+        { "text": "La Suisse", "isCorrect": true },
+        { "text": "L'Autriche", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false }
+      ],
+      "explanation": "Né à Bâle en 1981, il a remporté 20 titres du Grand Chelem."
+    },
+    {
+      "ref": "ten-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Novak Djokovic ?",
+      "answers": [
+        { "text": "La Bosnie-Herzégovine", "isCorrect": false },
+        { "text": "La Slovénie", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": true },
+        { "text": "La Croatie", "isCorrect": false }
+      ],
+      "explanation": "Né à Belgrade en 1987, il a appris le tennis dans les montagnes de Kopaonik."
+    },
+    {
+      "ref": "ten-079",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Carlos Alcaraz ?",
+      "answers": [
+        { "text": "Le Mexique", "isCorrect": false },
+        { "text": "Le Portugal", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Né en 2003 à El Palmar, près de Murcie."
+    },
+    {
+      "ref": "ten-080",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Jannik Sinner ?",
+      "answers": [
+        { "text": "L'Autriche", "isCorrect": false },
+        { "text": "La Suisse", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": true }
+      ],
+      "explanation": "Il vient du Haut-Adige, une région italienne germanophone, et a d'abord été un bon skieur."
+    },
+    {
+      "ref": "ten-081",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quels joueurs formaient le « Big Three » du tennis masculin ?",
+      "answers": [
+        { "text": "Federer, Djokovic et Wawrinka", "isCorrect": false },
+        { "text": "Federer, Nadal et Murray", "isCorrect": false },
+        { "text": "Nadal, Djokovic et Murray", "isCorrect": false },
+        { "text": "Federer, Nadal et Djokovic", "isCorrect": true }
+      ],
+      "explanation": "Ensemble, ils ont remporté plus de 60 titres du Grand Chelem entre 2003 et 2023."
+    },
+    {
+      "ref": "ten-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem", "histoire"],
+      "text": "Quel joueur a remporté Wimbledon en 2013, premier Britannique vainqueur depuis 1936 ?",
+      "answers": [
+        { "text": "Andy Murray", "isCorrect": true },
+        { "text": "Tim Henman", "isCorrect": false },
+        { "text": "Greg Rusedski", "isCorrect": false },
+        { "text": "Cameron Norrie", "isCorrect": false }
+      ],
+      "explanation": "L'Écossais bat Novak Djokovic en finale et met fin à 77 ans d'attente."
+    },
+    {
+      "ref": "ten-083",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "grand-chelem", "histoire"],
+      "text": "Avant Andy Murray en 2013, qui était le dernier Britannique vainqueur de Wimbledon, en 1936 ?",
+      "answers": [
+        { "text": "Bunny Austin", "isCorrect": false },
+        { "text": "Tim Henman", "isCorrect": false },
+        { "text": "Arthur Gore", "isCorrect": false },
+        { "text": "Fred Perry", "isCorrect": true }
+      ],
+      "explanation": "Triple vainqueur de Wimbledon, il a aussi donné son nom à une célèbre marque de vêtements à la couronne de laurier."
+    },
+    {
+      "ref": "ten-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel joueur suisse, autre que Federer, a remporté trois titres du Grand Chelem ?",
+      "answers": [
+        { "text": "Marc Rosset", "isCorrect": false },
+        { "text": "Jakob Hlasek", "isCorrect": false },
+        { "text": "Dominic Stricker", "isCorrect": false },
+        { "text": "Stan Wawrinka", "isCorrect": true }
+      ],
+      "explanation": "L'Open d'Australie 2014, Roland-Garros 2015 et l'US Open 2016, avec un revers à une main redoutable."
+    },
+    {
+      "ref": "ten-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "En quelle année Roger Federer a-t-il pris sa retraite ?",
+      "answers": [
+        { "text": "2020", "isCorrect": false },
+        { "text": "2024", "isCorrect": false },
+        { "text": "2022", "isCorrect": true },
+        { "text": "2019", "isCorrect": false }
+      ],
+      "explanation": "Il joue son dernier match en double avec Rafael Nadal, lors de la Laver Cup à Londres. Les deux rivaux pleurent côte à côte."
+    },
+    {
+      "ref": "ten-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "competition"],
+      "text": "En quelle année Rafael Nadal a-t-il pris sa retraite ?",
+      "answers": [
+        { "text": "2023", "isCorrect": false },
+        { "text": "2025", "isCorrect": false },
+        { "text": "2022", "isCorrect": false },
+        { "text": "2024", "isCorrect": true }
+      ],
+      "explanation": "Il joue son dernier match en Coupe Davis, à Malaga, en novembre 2024."
+    },
+    {
+      "ref": "ten-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Avec quelle main Rafael Nadal joue-t-il au tennis, alors qu'il est droitier dans la vie ?",
+      "answers": [
+        { "text": "Les deux, selon les coups", "isCorrect": false },
+        { "text": "La droite", "isCorrect": false },
+        { "text": "La gauche", "isCorrect": true },
+        { "text": "La droite au service, la gauche en coup droit", "isCorrect": false }
+      ],
+      "explanation": "C'est son oncle et entraîneur Toni qui l'aurait encouragé à jouer en gaucher, pour gêner ses adversaires."
+    },
+    {
+      "ref": "ten-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel joueur américain était célèbre pour ses colères contre les arbitres, notamment son « You cannot be serious! » ?",
+      "answers": [
+        { "text": "Jimmy Connors", "isCorrect": false },
+        { "text": "John McEnroe", "isCorrect": true },
+        { "text": "Pete Sampras", "isCorrect": false },
+        { "text": "Andre Agassi", "isCorrect": false }
+      ],
+      "explanation": "Génie du service-volée, il a remporté sept titres du Grand Chelem."
+    },
+    {
+      "ref": "ten-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Qui a battu John McEnroe en finale de Wimbledon 1980, lors d'un match resté légendaire ?",
+      "answers": [
+        { "text": "Jimmy Connors", "isCorrect": false },
+        { "text": "Guillermo Vilas", "isCorrect": false },
+        { "text": "Björn Borg", "isCorrect": true },
+        { "text": "Ivan Lendl", "isCorrect": false }
+      ],
+      "explanation": "Le jeu décisif du quatrième set, gagné 18-16 par McEnroe, est l'un des plus célèbres de l'histoire. Borg gagne quand même au cinquième set."
+    },
+    {
+      "ref": "ten-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Combien de fois Pete Sampras a-t-il remporté Wimbledon ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Entre 1993 et 2000. Il n'a en revanche jamais gagné Roland-Garros."
+    },
+    {
+      "ref": "ten-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "joueuse"],
+      "text": "Quelle championne Andre Agassi a-t-il épousée en 2001 ?",
+      "answers": [
+        { "text": "Martina Hingis", "isCorrect": false },
+        { "text": "Steffi Graf", "isCorrect": true },
+        { "text": "Monica Seles", "isCorrect": false },
+        { "text": "Chris Evert", "isCorrect": false }
+      ],
+      "explanation": "Les deux anciens n°1 mondiaux vivent à Las Vegas avec leurs deux enfants."
+    },
+    {
+      "ref": "ten-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Quel joueur argentin a battu Roger Federer en finale de l'US Open 2009 ?",
+      "answers": [
+        { "text": "Guillermo Coria", "isCorrect": false },
+        { "text": "Juan Martín del Potro", "isCorrect": true },
+        { "text": "Gastón Gaudio", "isCorrect": false },
+        { "text": "David Nalbandian", "isCorrect": false }
+      ],
+      "explanation": "À 20 ans, il remporte son seul titre du Grand Chelem."
+    },
+    {
+      "ref": "ten-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Quel joueur a battu Novak Djokovic en finale de l'US Open 2021, l'empêchant de réaliser le Grand Chelem ?",
+      "answers": [
+        { "text": "Alexander Zverev", "isCorrect": false },
+        { "text": "Dominic Thiem", "isCorrect": false },
+        { "text": "Daniil Medvedev", "isCorrect": true },
+        { "text": "Stefanos Tsitsipas", "isCorrect": false }
+      ],
+      "explanation": "Djokovic avait gagné les trois premiers tournois du Grand Chelem de l'année."
+    },
+    {
+      "ref": "ten-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "record"],
+      "text": "À quel âge Carlos Alcaraz est-il devenu le plus jeune n°1 mondial de l'histoire, en 2022 ?",
+      "answers": [
+        { "text": "17 ans", "isCorrect": false },
+        { "text": "22 ans", "isCorrect": false },
+        { "text": "21 ans", "isCorrect": false },
+        { "text": "19 ans", "isCorrect": true }
+      ],
+      "explanation": "Il atteint la première place après sa victoire à l'US Open 2022."
+    },
+    {
+      "ref": "ten-095",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "competition"],
+      "text": "Novak Djokovic a remporté la médaille d'or olympique en simple aux Jeux de Paris 2024.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il bat Carlos Alcaraz en finale à Roland-Garros et décroche enfin l'or, à 37 ans."
+    },
+    {
+      "ref": "ten-096",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["joueur", "competition"],
+      "text": "Roger Federer a remporté la médaille d'or olympique en simple.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a gagné l'argent en simple en 2012 et l'or en double en 2008, avec Stan Wawrinka."
+    },
+    {
+      "ref": "ten-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur était surnommé « le Taureau de Manacor » ?",
+      "answers": [
+        { "text": "Carlos Moyà", "isCorrect": false },
+        { "text": "David Ferrer", "isCorrect": false },
+        { "text": "Carlos Alcaraz", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": true }
+      ],
+      "explanation": "Un surnom qui évoque sa puissance physique et sa ville natale, sur l'île de Majorque."
+    },
+    {
+      "ref": "ten-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "grand-chelem", "record"],
+      "text": "Quel joueur allemand a remporté Wimbledon à 17 ans, en 1985 ?",
+      "answers": [
+        { "text": "Boris Becker", "isCorrect": true },
+        { "text": "Michael Stich", "isCorrect": false },
+        { "text": "Tommy Haas", "isCorrect": false },
+        { "text": "Michael Chang", "isCorrect": false }
+      ],
+      "explanation": "Il reste le plus jeune vainqueur du simple messieurs de Wimbledon."
+    },
+    {
+      "ref": "ten-099",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "roland-garros", "record"],
+      "text": "Quel Américain a remporté Roland-Garros 1989 à 17 ans, plus jeune vainqueur d'un tournoi du Grand Chelem chez les hommes ?",
+      "answers": [
+        { "text": "Andre Agassi", "isCorrect": false },
+        { "text": "Michael Chang", "isCorrect": true },
+        { "text": "Pete Sampras", "isCorrect": false },
+        { "text": "Jim Courier", "isCorrect": false }
+      ],
+      "explanation": "En huitième de finale, il bat Ivan Lendl en servant à la cuillère, épuisé par les crampes."
+    },
+    {
+      "ref": "ten-100",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Rafael Nadal n'a jamais remporté Wimbledon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il l'a remporté en 2008 et en 2010."
+    },
+    {
+      "ref": "ten-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Contre qui Rafael Nadal a-t-il gagné la finale de Wimbledon 2008, souvent citée comme le plus grand match de l'histoire ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Andy Murray", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": true },
+        { "text": "Tomáš Berdych", "isCorrect": false }
+      ],
+      "explanation": "Près de cinq heures de jeu, deux interruptions pour la pluie, et une fin dans la quasi-obscurité."
+    },
+    {
+      "ref": "ten-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "grand-chelem", "histoire"],
+      "text": "Quel Américain a été le premier joueur noir à remporter Wimbledon, en 1975 ?",
+      "answers": [
+        { "text": "Yannick Noah", "isCorrect": false },
+        { "text": "Arthur Ashe", "isCorrect": true },
+        { "text": "James Blake", "isCorrect": false },
+        { "text": "MaliVai Washington", "isCorrect": false }
+      ],
+      "explanation": "Militant contre l'apartheid, il donne aujourd'hui son nom au court central de l'US Open."
+    },
+    {
+      "ref": "ten-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Combien de titres du Grand Chelem Roger Federer a-t-il remportés ?",
+      "answers": [
+        { "text": "20", "isCorrect": true },
+        { "text": "18", "isCorrect": false },
+        { "text": "24", "isCorrect": false },
+        { "text": "22", "isCorrect": false }
+      ],
+      "explanation": "Dont 8 Wimbledon, 6 Open d'Australie, 5 US Open et 1 Roland-Garros."
+    },
+    {
+      "ref": "ten-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Combien de titres du Grand Chelem Rafael Nadal a-t-il remportés ?",
+      "answers": [
+        { "text": "22", "isCorrect": true },
+        { "text": "21", "isCorrect": false },
+        { "text": "20", "isCorrect": false },
+        { "text": "24", "isCorrect": false }
+      ],
+      "explanation": "Dont 14 Roland-Garros, 4 US Open, 2 Wimbledon et 2 Open d'Australie."
+    },
+    {
+      "ref": "ten-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "record"],
+      "text": "Quel joueur a terminé le plus grand nombre de saisons à la place de n°1 mondial ?",
+      "answers": [
+        { "text": "Pete Sampras", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true }
+      ],
+      "explanation": "Il a fini huit saisons en tête du classement, devant Pete Sampras (six)."
+    },
+    {
+      "ref": "ten-106",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur était célèbre pour aligner soigneusement ses bouteilles d'eau au changement de côté ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Andy Murray", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": true },
+        { "text": "Roger Federer", "isCorrect": false }
+      ],
+      "explanation": "L'un de ses nombreux rituels, avec la façon de remettre son short et ses cheveux avant chaque service."
+    },
+    {
+      "ref": "ten-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "grand-chelem"],
+      "text": "Quel geste Novak Djokovic fait-il après ses victoires à Wimbledon ?",
+      "answers": [
+        { "text": "Il lance sa raquette dans le public", "isCorrect": false },
+        { "text": "Il mange un brin de gazon", "isCorrect": true },
+        { "text": "Il embrasse le filet", "isCorrect": false },
+        { "text": "Il se roule dans l'herbe", "isCorrect": false }
+      ],
+      "explanation": "Une tradition qu'il a commencée lors de son premier titre, en 2011."
+    },
+    {
+      "ref": "ten-108",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "roland-garros"],
+      "text": "Andy Murray a remporté Roland-Garros.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a atteint la finale en 2016, perdue contre Novak Djokovic. Ses trois titres du Grand Chelem sont l'US Open 2012 et Wimbledon 2013 et 2016."
+    },
+    {
+      "ref": "ten-109",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["joueur", "competition"],
+      "text": "Roger Federer a remporté la Coupe Davis avec la Suisse.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 2014, avec Stan Wawrinka, en battant la France en finale à Lille."
+    },
+    {
+      "ref": "ten-110",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "france"],
+      "text": "Quelle entreprise française fabrique les raquettes de Rafael Nadal ?",
+      "answers": [
+        { "text": "Wilson", "isCorrect": false },
+        { "text": "Yonex", "isCorrect": false },
+        { "text": "Head", "isCorrect": false },
+        { "text": "Babolat", "isCorrect": true }
+      ],
+      "explanation": "La marque lyonnaise, créée en 1875, fabriquait d'abord des cordages en boyau naturel."
+    },
+    {
+      "ref": "ten-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Lequel de ces joueurs n'a jamais été n°1 mondial ?",
+      "answers": [
+        { "text": "Daniil Medvedev", "isCorrect": false },
+        { "text": "Stan Wawrinka", "isCorrect": true },
+        { "text": "Andy Murray", "isCorrect": false },
+        { "text": "Jannik Sinner", "isCorrect": false }
+      ],
+      "explanation": "Malgré trois titres du Grand Chelem, Wawrinka n'est pas monté plus haut que la 3e place."
+    },
+    {
+      "ref": "ten-112",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "Comment s'appelle la sœur de Serena Williams, elle aussi grande championne ?",
+      "answers": [
+        { "text": "Valerie", "isCorrect": false },
+        { "text": "Victoria", "isCorrect": false },
+        { "text": "Vanessa", "isCorrect": false },
+        { "text": "Venus", "isCorrect": true }
+      ],
+      "explanation": "Venus a remporté sept titres du Grand Chelem, dont cinq Wimbledon."
+    },
+    {
+      "ref": "ten-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "record"],
+      "text": "Combien de titres du Grand Chelem en simple Serena Williams a-t-elle remportés ?",
+      "answers": [
+        { "text": "23", "isCorrect": true },
+        { "text": "24", "isCorrect": false },
+        { "text": "22", "isCorrect": false },
+        { "text": "20", "isCorrect": false }
+      ],
+      "explanation": "Un record dans l'ère Open, de 1999 à 2017."
+    },
+    {
+      "ref": "ten-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "record"],
+      "text": "Quelle joueuse détient le record absolu de titres du Grand Chelem en simple, avec 24 victoires ?",
+      "answers": [
+        { "text": "Steffi Graf", "isCorrect": false },
+        { "text": "Martina Navratilova", "isCorrect": false },
+        { "text": "Serena Williams", "isCorrect": false },
+        { "text": "Margaret Court", "isCorrect": true }
+      ],
+      "explanation": "L'Australienne, dont une partie des titres date d'avant l'ère Open. Une arène de Melbourne porte son nom."
+    },
+    {
+      "ref": "ten-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "grand-chelem", "record"],
+      "text": "Combien de fois Martina Navratilova a-t-elle remporté Wimbledon en simple ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "9", "isCorrect": true },
+        { "text": "8", "isCorrect": false },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "Un record, dont six titres consécutifs de 1982 à 1987."
+    },
+    {
+      "ref": "ten-116",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "De quel pays est Steffi Graf ?",
+      "answers": [
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "L'Autriche", "isCorrect": false },
+        { "text": "La Suisse", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "Elle a remporté 22 titres du Grand Chelem entre 1987 et 1999."
+    },
+    {
+      "ref": "ten-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "france", "grand-chelem"],
+      "text": "Quelle Française a remporté l'Open d'Australie et Wimbledon en 2006 ?",
+      "answers": [
+        { "text": "Amélie Mauresmo", "isCorrect": true },
+        { "text": "Mary Pierce", "isCorrect": false },
+        { "text": "Caroline Garcia", "isCorrect": false },
+        { "text": "Marion Bartoli", "isCorrect": false }
+      ],
+      "explanation": "Elle a aussi été n°1 mondiale en 2004. Elle est devenue plus tard directrice du tournoi de Roland-Garros."
+    },
+    {
+      "ref": "ten-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "france", "grand-chelem"],
+      "text": "Quelle Française a remporté Wimbledon en 2013 ?",
+      "answers": [
+        { "text": "Kristina Mladenovic", "isCorrect": false },
+        { "text": "Amélie Mauresmo", "isCorrect": false },
+        { "text": "Marion Bartoli", "isCorrect": true },
+        { "text": "Mary Pierce", "isCorrect": false }
+      ],
+      "explanation": "Elle remporte le tournoi sans perdre un set, avec un style atypique : coup droit et revers à deux mains."
+    },
+    {
+      "ref": "ten-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "france", "histoire"],
+      "text": "Quelle Française, surnommée « la Divine », a dominé le tennis féminin dans les années 1920 ?",
+      "answers": [
+        { "text": "Simonne Mathieu", "isCorrect": false },
+        { "text": "Françoise Dürr", "isCorrect": false },
+        { "text": "Suzanne Lenglen", "isCorrect": true },
+        { "text": "Gail Chanfreau", "isCorrect": false }
+      ],
+      "explanation": "Première star internationale du tennis, elle choquait en jouant en jupe courte et bras nus."
+    },
+    {
+      "ref": "ten-120",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "Pour quel pays joue Naomi Osaka ?",
+      "answers": [
+        { "text": "La Corée du Sud", "isCorrect": false },
+        { "text": "La Chine", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": true },
+        { "text": "Les États-Unis", "isCorrect": false }
+      ],
+      "explanation": "Née au Japon et élevée aux États-Unis, elle a remporté quatre titres du Grand Chelem."
+    },
+    {
+      "ref": "ten-121",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "De quel pays est Aryna Sabalenka ?",
+      "answers": [
+        { "text": "La Russie", "isCorrect": false },
+        { "text": "La Pologne", "isCorrect": false },
+        { "text": "La Biélorussie", "isCorrect": true },
+        { "text": "L'Ukraine", "isCorrect": false }
+      ],
+      "explanation": "Elle est réputée pour la puissance de ses frappes."
+    },
+    {
+      "ref": "ten-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "record"],
+      "text": "Quelle joueuse est devenue n°1 mondiale à 16 ans, en 1997, plus jeune de l'histoire ?",
+      "answers": [
+        { "text": "Monica Seles", "isCorrect": false },
+        { "text": "Tracy Austin", "isCorrect": false },
+        { "text": "Martina Hingis", "isCorrect": true },
+        { "text": "Jennifer Capriati", "isCorrect": false }
+      ],
+      "explanation": "La Suissesse, prénommée en hommage à Martina Navratilova, remporte cette année-là trois tournois du Grand Chelem."
+    },
+    {
+      "ref": "ten-123",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse"],
+      "text": "Quelle joueuse a été poignardée par un spectateur en plein match, en 1993 à Hambourg ?",
+      "answers": [
+        { "text": "Gabriela Sabatini", "isCorrect": false },
+        { "text": "Martina Hingis", "isCorrect": false },
+        { "text": "Steffi Graf", "isCorrect": false },
+        { "text": "Monica Seles", "isCorrect": true }
+      ],
+      "explanation": "Alors n°1 mondiale, elle est éloignée des courts pendant plus de deux ans."
+    },
+    {
+      "ref": "ten-124",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "histoire"],
+      "text": "Quelle joueuse a battu Bobby Riggs lors de la « Bataille des sexes », en 1973 ?",
+      "answers": [
+        { "text": "Margaret Court", "isCorrect": false },
+        { "text": "Billie Jean King", "isCorrect": true },
+        { "text": "Chris Evert", "isCorrect": false },
+        { "text": "Martina Navratilova", "isCorrect": false }
+      ],
+      "explanation": "Riggs, ancien champion de 55 ans, avait battu Margaret Court quelques mois plus tôt. Le match est suivi par 90 millions de téléspectateurs."
+    },
+    {
+      "ref": "ten-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "histoire"],
+      "text": "Quelle organisation Billie Jean King a-t-elle fondée en 1973 pour défendre les joueuses ?",
+      "answers": [
+        { "text": "L'ITF", "isCorrect": false },
+        { "text": "L'ATP", "isCorrect": false },
+        { "text": "La Fédération américaine", "isCorrect": false },
+        { "text": "La WTA", "isCorrect": true }
+      ],
+      "explanation": "La Women's Tennis Association obtient la même dotation pour les hommes et les femmes à l'US Open dès 1973."
+    },
+    {
+      "ref": "ten-126",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueuse", "competition"],
+      "text": "La Fed Cup, compétition féminine par équipes nationales, a été renommée Billie Jean King Cup en 2020.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "C'est la première grande compétition mondiale, tous sports confondus, à porter le nom d'une femme."
+    },
+    {
+      "ref": "ten-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "grand-chelem", "record"],
+      "text": "Quelle joueuse britannique a remporté l'US Open 2021 en partant des qualifications ?",
+      "answers": [
+        { "text": "Leylah Fernandez", "isCorrect": false },
+        { "text": "Emma Raducanu", "isCorrect": true },
+        { "text": "Katie Boulter", "isCorrect": false },
+        { "text": "Johanna Konta", "isCorrect": false }
+      ],
+      "explanation": "À 18 ans, elle gagne dix matchs sans perdre un set : un exploit inédit dans l'histoire du tennis."
+    },
+    {
+      "ref": "ten-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse"],
+      "text": "Quelle joueuse australienne a pris sa retraite en 2022 alors qu'elle était n°1 mondiale ?",
+      "answers": [
+        { "text": "Ashleigh Barty", "isCorrect": true },
+        { "text": "Ajla Tomljanović", "isCorrect": false },
+        { "text": "Samantha Stosur", "isCorrect": false },
+        { "text": "Daria Saville", "isCorrect": false }
+      ],
+      "explanation": "Elle venait de remporter l'Open d'Australie, à 25 ans. Elle avait aussi joué au cricket professionnel."
+    },
+    {
+      "ref": "ten-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Quelle joueuse a remporté Wimbledon en 2024 ?",
+      "answers": [
+        { "text": "Barbora Krejčíková", "isCorrect": true },
+        { "text": "Iga Świątek", "isCorrect": false },
+        { "text": "Elena Rybakina", "isCorrect": false },
+        { "text": "Jasmine Paolini", "isCorrect": false }
+      ],
+      "explanation": "La Tchèque bat l'Italienne Jasmine Paolini en finale."
+    },
+    {
+      "ref": "ten-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Quelle joueuse a remporté l'US Open 2023, à 19 ans ?",
+      "answers": [
+        { "text": "Jessica Pegula", "isCorrect": false },
+        { "text": "Aryna Sabalenka", "isCorrect": false },
+        { "text": "Iga Świątek", "isCorrect": false },
+        { "text": "Coco Gauff", "isCorrect": true }
+      ],
+      "explanation": "L'Américaine remporte son premier titre du Grand Chelem devant son public."
+    },
+    {
+      "ref": "ten-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Quelle joueuse a remporté l'Open d'Australie en 2023 et en 2024 ?",
+      "answers": [
+        { "text": "Elena Rybakina", "isCorrect": false },
+        { "text": "Iga Świątek", "isCorrect": false },
+        { "text": "Aryna Sabalenka", "isCorrect": true },
+        { "text": "Zheng Qinwen", "isCorrect": false }
+      ],
+      "explanation": "Elle bat Elena Rybakina en 2023, puis Zheng Qinwen en 2024."
+    },
+    {
+      "ref": "ten-132",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "Venus et Serena Williams sont sœurs.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Entraînées par leur père, elles ont aussi remporté ensemble 14 titres du Grand Chelem en double."
+    },
+    {
+      "ref": "ten-133",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Serena Williams a réalisé le Grand Chelem sur une même année civile.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle a gagné quatre tournois du Grand Chelem d'affilée, mais à cheval sur deux saisons (2002-2003 puis 2014-2015) : on parle de « Serena Slam »."
+    },
+    {
+      "ref": "ten-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse"],
+      "text": "Quelle joueuse fut la grande rivale de Martina Navratilova dans les années 1970 et 1980 ?",
+      "answers": [
+        { "text": "Monica Seles", "isCorrect": false },
+        { "text": "Chris Evert", "isCorrect": true },
+        { "text": "Tracy Austin", "isCorrect": false },
+        { "text": "Steffi Graf", "isCorrect": false }
+      ],
+      "explanation": "Elles se sont affrontées 80 fois, dont 14 fois en finale du Grand Chelem."
+    },
+    {
+      "ref": "ten-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Pour quel pays joue Elena Rybakina, gagnante de Wimbledon 2022 ?",
+      "answers": [
+        { "text": "Le Kazakhstan", "isCorrect": true },
+        { "text": "La Russie", "isCorrect": false },
+        { "text": "L'Ouzbékistan", "isCorrect": false },
+        { "text": "L'Ukraine", "isCorrect": false }
+      ],
+      "explanation": "Née à Moscou, elle a choisi de représenter le Kazakhstan en 2018."
+    },
+    {
+      "ref": "ten-136",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "grand-chelem", "record"],
+      "text": "Combien de titres du Grand Chelem en simple Steffi Graf a-t-elle remportés ?",
+      "answers": [
+        { "text": "18", "isCorrect": false },
+        { "text": "24", "isCorrect": false },
+        { "text": "20", "isCorrect": false },
+        { "text": "22", "isCorrect": true }
+      ],
+      "explanation": "Dont 7 Wimbledon et 6 Roland-Garros, entre 1987 et 1999."
+    },
+    {
+      "ref": "ten-137",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "De quel pays est Iga Świątek ?",
+      "answers": [
+        { "text": "L'Ukraine", "isCorrect": false },
+        { "text": "La Slovaquie", "isCorrect": false },
+        { "text": "La Pologne", "isCorrect": true },
+        { "text": "La République tchèque", "isCorrect": false }
+      ],
+      "explanation": "Elle est la première joueuse polonaise à avoir remporté un tournoi du Grand Chelem en simple."
+    },
+    {
+      "ref": "ten-138",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "france", "competition"],
+      "text": "Quelle Française a remporté le Masters de fin de saison (WTA Finals) en 2022 ?",
+      "answers": [
+        { "text": "Alizé Cornet", "isCorrect": false },
+        { "text": "Caroline Garcia", "isCorrect": true },
+        { "text": "Océane Dodin", "isCorrect": false },
+        { "text": "Kristina Mladenovic", "isCorrect": false }
+      ],
+      "explanation": "Elle bat la Biélorusse Aryna Sabalenka en finale, au Texas."
+    },
+    {
+      "ref": "ten-139",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "De quel pays est Coco Gauff ?",
+      "answers": [
+        { "text": "Le Royaume-Uni", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": false }
+      ],
+      "explanation": "Elle s'est révélée à 15 ans en battant Venus Williams à Wimbledon 2019."
+    },
+    {
+      "ref": "ten-140",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Quelle joueuse non classée tête de série a remporté Wimbledon en 2023 ?",
+      "answers": [
+        { "text": "Barbora Krejčíková", "isCorrect": false },
+        { "text": "Ons Jabeur", "isCorrect": false },
+        { "text": "Markéta Vondroušová", "isCorrect": true },
+        { "text": "Elena Rybakina", "isCorrect": false }
+      ],
+      "explanation": "La Tchèque bat Ons Jabeur en finale. Elle est la première joueuse non tête de série à gagner Wimbledon dans l'ère Open."
+    },
+    {
+      "ref": "ten-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Quelle joueuse tunisienne a atteint trois finales du Grand Chelem en 2022 et 2023 ?",
+      "answers": [
+        { "text": "Selima Sfar", "isCorrect": false },
+        { "text": "Mayar Sherif", "isCorrect": false },
+        { "text": "Ons Jabeur", "isCorrect": true },
+        { "text": "Ines Ibbou", "isCorrect": false }
+      ],
+      "explanation": "Wimbledon 2022, l'US Open 2022 et Wimbledon 2023 : elle est la première joueuse arabe et africaine à atteindre une finale du Grand Chelem."
+    },
+    {
+      "ref": "ten-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueuse", "grand-chelem", "record"],
+      "text": "Quelle joueuse a remporté l'Open d'Australie 2017 alors qu'elle était enceinte ?",
+      "answers": [
+        { "text": "Angelique Kerber", "isCorrect": false },
+        { "text": "Garbiñe Muguruza", "isCorrect": false },
+        { "text": "Serena Williams", "isCorrect": true },
+        { "text": "Venus Williams", "isCorrect": false }
+      ],
+      "explanation": "Enceinte d'environ deux mois, elle bat sa sœur Venus en finale. C'est son 23e et dernier titre du Grand Chelem."
+    },
+    {
+      "ref": "ten-143",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "joueur", "grand-chelem"],
+      "text": "Quel joueur a remporté le plus de titres du Grand Chelem en simple messieurs ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": true },
+        { "text": "Pete Sampras", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": false }
+      ],
+      "explanation": "Il a dépassé Rafael Nadal (22) et Roger Federer (20) et a atteint 24 titres en 2023."
+    },
+    {
+      "ref": "ten-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur", "grand-chelem"],
+      "text": "Quel joueur a remporté l'Open d'Australie au moins dix fois ?",
+      "answers": [
+        { "text": "Andre Agassi", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": false }
+      ],
+      "explanation": "Son tournoi fétiche : il y a gagné son premier titre du Grand Chelem, en 2008."
+    },
+    {
+      "ref": "ten-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "grand-chelem", "france"],
+      "text": "Combien de temps a duré le match entre John Isner et le Français Nicolas Mahut à Wimbledon 2010, le plus long de l'histoire ?",
+      "answers": [
+        { "text": "14 h 20", "isCorrect": false },
+        { "text": "8 h 11", "isCorrect": false },
+        { "text": "6 h 33", "isCorrect": false },
+        { "text": "11 h 05", "isCorrect": true }
+      ],
+      "explanation": "Joué sur trois jours, il a fait exploser le tableau d'affichage, bloqué à 47-47."
+    },
+    {
+      "ref": "ten-146",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "grand-chelem", "france"],
+      "text": "Sur quel score s'est terminé le cinquième set du match Isner-Mahut, à Wimbledon 2010 ?",
+      "answers": [
+        { "text": "99-97", "isCorrect": false },
+        { "text": "25-23", "isCorrect": false },
+        { "text": "42-40", "isCorrect": false },
+        { "text": "70-68", "isCorrect": true }
+      ],
+      "explanation": "Ce match, puis d'autres marathons, ont poussé les tournois du Grand Chelem à introduire un jeu décisif dans le dernier set."
+    },
+    {
+      "ref": "ten-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur détient le record de semaines passées à la place de n°1 mondial ?",
+      "answers": [
+        { "text": "Jimmy Connors", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true },
+        { "text": "Pete Sampras", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false }
+      ],
+      "explanation": "Plus de 400 semaines, loin devant Roger Federer (310)."
+    },
+    {
+      "ref": "ten-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueuse"],
+      "text": "Quelle joueuse détient le record de semaines passées à la place de n°1 mondiale ?",
+      "answers": [
+        { "text": "Serena Williams", "isCorrect": false },
+        { "text": "Chris Evert", "isCorrect": false },
+        { "text": "Martina Navratilova", "isCorrect": false },
+        { "text": "Steffi Graf", "isCorrect": true }
+      ],
+      "explanation": "377 semaines, devant Martina Navratilova (332) et Serena Williams (319)."
+    },
+    {
+      "ref": "ten-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur", "grand-chelem"],
+      "text": "Combien de fois Roger Federer a-t-il remporté Wimbledon ?",
+      "answers": [
+        { "text": "9", "isCorrect": false },
+        { "text": "8", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Entre 2003 et 2017. Son dernier titre, à presque 36 ans, il le gagne sans perdre un set."
+    },
+    {
+      "ref": "ten-150",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Combien de victoires consécutives sur terre battue Rafael Nadal a-t-il enchaînées entre 2005 et 2007 ?",
+      "answers": [
+        { "text": "50", "isCorrect": false },
+        { "text": "64", "isCorrect": false },
+        { "text": "81", "isCorrect": true },
+        { "text": "102", "isCorrect": false }
+      ],
+      "explanation": "La série s'arrête à Hambourg, contre Roger Federer."
+    },
+    {
+      "ref": "ten-151",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueuse"],
+      "text": "Quelle joueuse détient le record de tournois remportés en simple, avec 167 titres ?",
+      "answers": [
+        { "text": "Serena Williams", "isCorrect": false },
+        { "text": "Chris Evert", "isCorrect": false },
+        { "text": "Martina Navratilova", "isCorrect": true },
+        { "text": "Steffi Graf", "isCorrect": false }
+      ],
+      "explanation": "Chris Evert la suit avec 157 titres."
+    },
+    {
+      "ref": "ten-152",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur détient le record de tournois remportés en simple chez les hommes dans l'ère Open, avec 109 titres ?",
+      "answers": [
+        { "text": "Jimmy Connors", "isCorrect": true },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Ivan Lendl", "isCorrect": false }
+      ],
+      "explanation": "L'Américain a joué jusqu'à 43 ans. Roger Federer le suit avec 103 titres."
+    },
+    {
+      "ref": "ten-153",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur", "competition"],
+      "text": "En gagnant l'or olympique en 2024, quel joueur a complété son « Grand Chelem doré » en carrière ?",
+      "answers": [
+        { "text": "Carlos Alcaraz", "isCorrect": false },
+        { "text": "Andy Murray", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true }
+      ],
+      "explanation": "Les quatre tournois du Grand Chelem et l'or olympique : seuls Andre Agassi, Rafael Nadal et lui l'ont fait chez les hommes."
+    },
+    {
+      "ref": "ten-154",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Combien de semaines consécutives Roger Federer est-il resté n°1 mondial, record ?",
+      "answers": [
+        { "text": "237", "isCorrect": true },
+        { "text": "200", "isCorrect": false },
+        { "text": "310", "isCorrect": false },
+        { "text": "160", "isCorrect": false }
+      ],
+      "explanation": "De février 2004 à août 2008. 310 est son nombre total de semaines à la première place."
+    },
+    {
+      "ref": "ten-155",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur", "competition"],
+      "text": "Quel joueur a remporté le plus de Masters de fin de saison (ATP Finals) ?",
+      "answers": [
+        { "text": "Ivan Lendl", "isCorrect": false },
+        { "text": "Pete Sampras", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true }
+      ],
+      "explanation": "Il en a remporté sept, un de plus que Roger Federer."
+    },
+    {
+      "ref": "ten-156",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur", "competition"],
+      "text": "Quel joueur a remporté le plus de tournois Masters 1000 ?",
+      "answers": [
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Andy Murray", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true }
+      ],
+      "explanation": "Il en a gagné 40, devant Rafael Nadal (36)."
+    },
+    {
+      "ref": "ten-157",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur", "competition"],
+      "text": "Quel joueur a remporté deux médailles d'or olympiques en simple, en 2012 et 2016 ?",
+      "answers": [
+        { "text": "Novak Djokovic", "isCorrect": false },
+        { "text": "Andy Murray", "isCorrect": true },
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Roger Federer", "isCorrect": false }
+      ],
+      "explanation": "Il est le seul joueur à avoir gagné deux fois le tournoi olympique en simple."
+    },
+    {
+      "ref": "ten-158",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur", "competition"],
+      "text": "Quel tournoi Masters 1000 Rafael Nadal a-t-il remporté onze fois, dont huit fois de suite ?",
+      "answers": [
+        { "text": "Madrid", "isCorrect": false },
+        { "text": "Indian Wells", "isCorrect": false },
+        { "text": "Monte-Carlo", "isCorrect": true },
+        { "text": "Rome", "isCorrect": false }
+      ],
+      "explanation": "De 2005 à 2012, puis de 2016 à 2018. Il a aussi gagné dix fois à Rome."
+    },
+    {
+      "ref": "ten-159",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["record", "joueur", "grand-chelem"],
+      "text": "Novak Djokovic a remporté au moins une fois chacun des quatre tournois du Grand Chelem.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il les a même tous gagnés au moins trois fois."
+    },
+    {
+      "ref": "ten-160",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["record", "joueur", "grand-chelem"],
+      "text": "Rafael Nadal a remporté l'Open d'Australie plus souvent que Roland-Garros.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a remporté l'Open d'Australie deux fois (2009, 2022) et Roland-Garros quatorze fois."
+    },
+    {
+      "ref": "ten-161",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au tennis, quel score vient après 15 et 30 ?",
+      "answers": [
+        { "text": "50", "isCorrect": false },
+        { "text": "35", "isCorrect": false },
+        { "text": "40", "isCorrect": true },
+        { "text": "45", "isCorrect": false }
+      ],
+      "explanation": "Les points se comptent 15, 30, 40, puis jeu."
+    },
+    {
+      "ref": "ten-162",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Comment dit-on « zéro » en anglais au tennis ?",
+      "answers": [
+        { "text": "Zero", "isCorrect": false },
+        { "text": "Love", "isCorrect": true },
+        { "text": "Nought", "isCorrect": false },
+        { "text": "Nil", "isCorrect": false }
+      ],
+      "explanation": "Une explication souvent avancée : le mot viendrait du français « l'œuf », dont la forme rappelle un zéro."
+    },
+    {
+      "ref": "ten-163",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « ace » ?",
+      "answers": [
+        { "text": "Un service gagnant que l'adversaire ne touche pas", "isCorrect": true },
+        { "text": "Un lob gagnant", "isCorrect": false },
+        { "text": "Deux fautes de service de suite", "isCorrect": false },
+        { "text": "Une volée gagnante", "isCorrect": false }
+      ],
+      "explanation": "Les grands serveurs en réussissent parfois plus de 30 dans un seul match."
+    },
+    {
+      "ref": "ten-164",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il quand un joueur commet une double faute au service ?",
+      "answers": [
+        { "text": "Il perd le point", "isCorrect": true },
+        { "text": "Il perd le jeu", "isCorrect": false },
+        { "text": "Il rejoue le point", "isCorrect": false },
+        { "text": "Il perd un service seulement", "isCorrect": false }
+      ],
+      "explanation": "Le serveur a droit à deux essais. S'il rate les deux, il perd le point."
+    },
+    {
+      "ref": "ten-165",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle", "grand-chelem"],
+      "text": "Combien de sets faut-il gagner pour remporter un match masculin du Grand Chelem ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "Les matchs se jouent au meilleur des cinq sets chez les hommes, au meilleur des trois chez les femmes."
+    },
+    {
+      "ref": "ten-166",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de jeux faut-il gagner au minimum pour remporter un set ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "6", "isCorrect": true }
+      ],
+      "explanation": "Il faut 6 jeux avec deux jeux d'écart. À 6-5, on joue un jeu de plus, et à 6-6, un jeu décisif."
+    },
+    {
+      "ref": "ten-167",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il quand un set arrive à 6 jeux partout ?",
+      "answers": [
+        { "text": "On tire au sort le vainqueur", "isCorrect": false },
+        { "text": "Le set est déclaré nul", "isCorrect": false },
+        { "text": "On joue un jeu décisif", "isCorrect": true },
+        { "text": "On recommence le set", "isCorrect": false }
+      ],
+      "explanation": "Le jeu décisif, ou « tie-break », se gagne en 7 points avec deux points d'écart."
+    },
+    {
+      "ref": "ten-168",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "En combien de points se joue un jeu décisif classique ?",
+      "answers": [
+        { "text": "10, avec un point d'écart", "isCorrect": false },
+        { "text": "5, avec deux points d'écart", "isCorrect": false },
+        { "text": "11, sans écart obligatoire", "isCorrect": false },
+        { "text": "7, avec deux points d'écart", "isCorrect": true }
+      ],
+      "explanation": "Le super jeu décisif, utilisé dans certains cas, se joue en 10 points."
+    },
+    {
+      "ref": "ten-169",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le score de 40 partout ?",
+      "answers": [
+        { "text": "Égalité", "isCorrect": true },
+        { "text": "Jeu blanc", "isCorrect": false },
+        { "text": "Balle de break", "isCorrect": false },
+        { "text": "Avantage", "isCorrect": false }
+      ],
+      "explanation": "À égalité, il faut gagner deux points de suite pour remporter le jeu."
+    },
+    {
+      "ref": "ten-170",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Au service, que se passe-t-il si la balle touche le filet puis tombe dans le bon carré ?",
+      "answers": [
+        { "text": "On rejoue le service", "isCorrect": true },
+        { "text": "C'est une double faute", "isCorrect": false },
+        { "text": "Le point est perdu", "isCorrect": false },
+        { "text": "Le point est gagné", "isCorrect": false }
+      ],
+      "explanation": "C'est un « let » : le serveur rejoue ce service, sans pénalité."
+    },
+    {
+      "ref": "ten-171",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'une « faute de pied » ?",
+      "answers": [
+        { "text": "Le serveur touche la ligne de fond avec le pied avant de frapper", "isCorrect": true },
+        { "text": "Un joueur frappe la balle avec le pied", "isCorrect": false },
+        { "text": "Le relanceur bouge pendant le service", "isCorrect": false },
+        { "text": "Un joueur marche sur le filet", "isCorrect": false }
+      ],
+      "explanation": "Le service compte alors comme une faute."
+    },
+    {
+      "ref": "ten-172",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de fois la balle peut-elle rebondir au sol avant d'être renvoyée ?",
+      "answers": [
+        { "text": "Deux fois", "isCorrect": false },
+        { "text": "Jamais", "isCorrect": false },
+        { "text": "Une fois au maximum", "isCorrect": true },
+        { "text": "Autant de fois que nécessaire", "isCorrect": false }
+      ],
+      "explanation": "On peut aussi la frapper avant le rebond : c'est une volée."
+    },
+    {
+      "ref": "ten-173",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que signifie « faire un break » ?",
+      "answers": [
+        { "text": "Gagner un jeu sur le service de l'adversaire", "isCorrect": true },
+        { "text": "Gagner son propre jeu de service", "isCorrect": false },
+        { "text": "Demander une pause", "isCorrect": false },
+        { "text": "Gagner un set 6-0", "isCorrect": false }
+      ],
+      "explanation": "C'est souvent décisif, car le serveur a l'avantage."
+    },
+    {
+      "ref": "ten-174",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Au tennis, on surnomme « bagel » un set gagné 6-0.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "À cause de la forme du zéro, qui rappelle ce petit pain rond. Un match gagné 6-0, 6-0 est un « double bagel »."
+    },
+    {
+      "ref": "ten-175",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "histoire"],
+      "text": "Selon l'explication la plus répandue, d'où viendrait le comptage des points 15, 30, 40 ?",
+      "answers": [
+        { "text": "Du nombre de pas entre la ligne et le filet", "isCorrect": false },
+        { "text": "Du prix d'un billet d'entrée", "isCorrect": false },
+        { "text": "Des quarts d'heure d'une horloge", "isCorrect": true },
+        { "text": "De la monnaie anglaise", "isCorrect": false }
+      ],
+      "explanation": "On aurait déplacé une aiguille d'un quart d'heure à chaque point. 45 serait devenu 40, plus simple à prononcer."
+    },
+    {
+      "ref": "ten-176",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "histoire"],
+      "text": "De quel jeu français le tennis est-il issu ?",
+      "answers": [
+        { "text": "Le jeu de paume", "isCorrect": true },
+        { "text": "Le badminton", "isCorrect": false },
+        { "text": "La pelote basque", "isCorrect": false },
+        { "text": "Le croquet", "isCorrect": false }
+      ],
+      "explanation": "On frappait d'abord la balle avec la paume de la main, avant d'utiliser des raquettes."
+    },
+    {
+      "ref": "ten-177",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "histoire"],
+      "text": "D'où viendrait le mot « tennis » ?",
+      "answers": [
+        { "text": "Du latin « tenere », tenir", "isCorrect": false },
+        { "text": "Du français « tenez ! »", "isCorrect": true },
+        { "text": "De l'anglais « ten », dix", "isCorrect": false },
+        { "text": "De l'allemand « Tenne », grange", "isCorrect": false }
+      ],
+      "explanation": "Les joueurs de jeu de paume criaient « tenez ! » au moment de servir. Les Anglais en ont fait « tennis »."
+    },
+    {
+      "ref": "ten-178",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "histoire"],
+      "text": "Quel Britannique a déposé les règles du « lawn tennis » (tennis sur gazon) en 1874 ?",
+      "answers": [
+        { "text": "William Webb Ellis", "isCorrect": false },
+        { "text": "Arthur Wellesley", "isCorrect": false },
+        { "text": "James Naismith", "isCorrect": false },
+        { "text": "Walter Clopton Wingfield", "isCorrect": true }
+      ],
+      "explanation": "Ce major de l'armée le vendait en coffret. Webb Ellis est associé au rugby, Naismith au basket-ball."
+    },
+    {
+      "ref": "ten-179",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Comment s'appelle le système électronique qui vérifie si la balle est bonne ou faute ?",
+      "answers": [
+        { "text": "La VAR", "isCorrect": false },
+        { "text": "La photo-finish", "isCorrect": false },
+        { "text": "Le Cyclope", "isCorrect": false },
+        { "text": "Le Hawk-Eye", "isCorrect": true }
+      ],
+      "explanation": "« L'œil de faucon » reconstitue la trajectoire de la balle grâce à plusieurs caméras. Le Cyclope était une machine qui contrôlait la ligne de service à Wimbledon dans les années 1980."
+    },
+    {
+      "ref": "ten-180",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle", "grand-chelem"],
+      "text": "Wimbledon a remplacé ses juges de ligne par un arbitrage électronique en 2025.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Après 148 ans de tradition, les juges de ligne ont disparu des courts du All England Club."
+    },
+    {
+      "ref": "ten-181",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelle est la hauteur du filet en son centre ?",
+      "answers": [
+        { "text": "91,4 cm", "isCorrect": true },
+        { "text": "1,07 m", "isCorrect": false },
+        { "text": "1 m", "isCorrect": false },
+        { "text": "80 cm", "isCorrect": false }
+      ],
+      "explanation": "Soit 3 pieds. Il est un peu plus haut aux poteaux : 1,07 m."
+    },
+    {
+      "ref": "ten-182",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "grand-chelem", "histoire"],
+      "text": "De quelle couleur étaient les balles utilisées à Wimbledon avant 1986 ?",
+      "answers": [
+        { "text": "Blanches", "isCorrect": true },
+        { "text": "Orange", "isCorrect": false },
+        { "text": "Rouges", "isCorrect": false },
+        { "text": "Jaunes", "isCorrect": false }
+      ],
+      "explanation": "Les balles jaunes, plus visibles à la télévision, sont apparues dans les années 1970, mais Wimbledon ne les a adoptées qu'en 1986."
+    },
+    {
+      "ref": "ten-183",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au tennis, un joueur a droit à trois services pour chaque point.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a droit à deux services : s'il rate les deux, c'est une double faute."
+    },
+    {
+      "ref": "ten-184",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "En double, les couloirs latéraux font partie du terrain.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le terrain de double est plus large : 10,97 m contre 8,23 m en simple."
+    },
+    {
+      "ref": "ten-185",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un joueur peut frapper la balle avant qu'elle ne rebondisse : c'est une volée.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La volée se joue généralement près du filet."
+    },
+    {
+      "ref": "ten-186",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel coup consiste à faire passer la balle au-dessus d'un adversaire monté au filet ?",
+      "answers": [
+        { "text": "Le lob", "isCorrect": true },
+        { "text": "L'amortie", "isCorrect": false },
+        { "text": "Le revers", "isCorrect": false },
+        { "text": "Le smash", "isCorrect": false }
+      ],
+      "explanation": "La balle monte haut et retombe derrière l'adversaire."
+    },
+    {
+      "ref": "ten-187",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel coup est frappé au-dessus de la tête, avec puissance, souvent pour finir le point ?",
+      "answers": [
+        { "text": "L'amortie", "isCorrect": false },
+        { "text": "Le lob", "isCorrect": false },
+        { "text": "Le smash", "isCorrect": true },
+        { "text": "Le slice", "isCorrect": false }
+      ],
+      "explanation": "Le smash répond souvent à un lob trop court."
+    },
+    {
+      "ref": "ten-188",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que désigne une « amortie » ?",
+      "answers": [
+        { "text": "Une balle très haute", "isCorrect": false },
+        { "text": "Une balle frappée avec beaucoup d'effet lifté", "isCorrect": false },
+        { "text": "Un service très puissant", "isCorrect": false },
+        { "text": "Une balle courte qui rebondit juste derrière le filet", "isCorrect": true }
+      ],
+      "explanation": "Elle surprend l'adversaire resté au fond du court."
+    },
+    {
+      "ref": "ten-189",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "grand-chelem"],
+      "text": "De 2019 à 2021, à quel score du dernier set Wimbledon faisait-il jouer un jeu décisif ?",
+      "answers": [
+        { "text": "8-8", "isCorrect": false },
+        { "text": "10-10", "isCorrect": false },
+        { "text": "6-6", "isCorrect": false },
+        { "text": "12-12", "isCorrect": true }
+      ],
+      "explanation": "Une règle adoptée après des matchs interminables, avant l'harmonisation à 6-6 dans tous les tournois du Grand Chelem en 2022."
+    },
+    {
+      "ref": "ten-190",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "histoire"],
+      "text": "Que signifie « Open » dans l'expression « ère Open », qui commence en 1968 ?",
+      "answers": [
+        { "text": "Les tournois s'ouvrent aux femmes", "isCorrect": false },
+        { "text": "Les tournois s'ouvrent aux étrangers", "isCorrect": false },
+        { "text": "Les tournois se jouent en plein air", "isCorrect": false },
+        { "text": "Les tournois s'ouvrent aux joueurs professionnels", "isCorrect": true }
+      ],
+      "explanation": "Avant 1968, les grands tournois étaient réservés aux amateurs. Les meilleurs joueurs, passés pros, en étaient exclus."
+    },
+    {
+      "ref": "ten-191",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de secondes un joueur a-t-il au maximum entre deux points, sur le circuit professionnel ?",
+      "answers": [
+        { "text": "60", "isCorrect": false },
+        { "text": "25", "isCorrect": true },
+        { "text": "15", "isCorrect": false },
+        { "text": "40", "isCorrect": false }
+      ],
+      "explanation": "Un chronomètre, le « shot clock », s'affiche sur le court. En cas de dépassement, l'arbitre donne un avertissement."
+    },
+    {
+      "ref": "ten-192",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de joueurs y a-t-il sur le court lors d'un match de double ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Deux contre deux. Il existe aussi le double mixte, avec un homme et une femme dans chaque équipe."
+    },
+    {
+      "ref": "ten-193",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Un joueur peut toucher le filet avec sa raquette pendant l'échange sans perdre le point.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Toucher le filet pendant que la balle est en jeu fait perdre le point."
+    },
+    {
+      "ref": "ten-194",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Une balle qui touche la ligne est considérée comme bonne.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les lignes font partie du terrain : une balle qui les touche, même légèrement, est bonne."
+    },
+    {
+      "ref": "ten-195",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Le tennis est né aux États-Unis.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le tennis moderne est né en Angleterre dans les années 1870, en s'inspirant du jeu de paume français."
+    },
+    {
+      "ref": "ten-196",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition", "histoire"],
+      "text": "Comment surnommait-on les quatre Français vainqueurs de la Coupe Davis de 1927 à 1932 ?",
+      "answers": [
+        { "text": "Les Invincibles", "isCorrect": false },
+        { "text": "Les Bleus", "isCorrect": false },
+        { "text": "Les Mousquetaires", "isCorrect": true },
+        { "text": "Les Quatre As", "isCorrect": false }
+      ],
+      "explanation": "Jean Borotra, Jacques Brugnon, Henri Cochet et René Lacoste remportent six Coupes Davis de suite."
+    },
+    {
+      "ref": "ten-197",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Lequel de ces joueurs ne faisait pas partie des Mousquetaires ?",
+      "answers": [
+        { "text": "Yannick Noah", "isCorrect": true },
+        { "text": "René Lacoste", "isCorrect": false },
+        { "text": "Jean Borotra", "isCorrect": false },
+        { "text": "Henri Cochet", "isCorrect": false }
+      ],
+      "explanation": "Le quatrième Mousquetaire était Jacques Brugnon. Yannick Noah a gagné Roland-Garros en 1983."
+    },
+    {
+      "ref": "ten-198",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quelle marque de vêtements a été fondée par le Mousquetaire René Lacoste ?",
+      "answers": [
+        { "text": "Lacoste", "isCorrect": true },
+        { "text": "Rossignol", "isCorrect": false },
+        { "text": "Le Coq sportif", "isCorrect": false },
+        { "text": "Babolat", "isCorrect": false }
+      ],
+      "explanation": "Surnommé « le Crocodile », il crée en 1933 un polo brodé de ce petit animal."
+    },
+    {
+      "ref": "ten-199",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "En quelle année la France a-t-elle remporté la Coupe Davis à Lille, en battant la Belgique ?",
+      "answers": [
+        { "text": "1991", "isCorrect": false },
+        { "text": "2010", "isCorrect": false },
+        { "text": "2001", "isCorrect": false },
+        { "text": "2017", "isCorrect": true }
+      ],
+      "explanation": "Lucas Pouille remporte le dernier match. Yannick Noah était capitaine de l'équipe."
+    },
+    {
+      "ref": "ten-200",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "Qui était le capitaine de l'équipe de France victorieuse de la Coupe Davis en 1991 ?",
+      "answers": [
+        { "text": "Guy Forget", "isCorrect": false },
+        { "text": "Arnaud Clément", "isCorrect": false },
+        { "text": "Henri Leconte", "isCorrect": false },
+        { "text": "Yannick Noah", "isCorrect": true }
+      ],
+      "explanation": "Il l'a été aussi en 1996 et en 2017. En 1991, l'équipe danse sur « Saga Africa » après la victoire."
+    },
+    {
+      "ref": "ten-201",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "competition"],
+      "text": "Contre quel pays la France a-t-elle remporté la Coupe Davis 1991, à Lyon ?",
+      "answers": [
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "La Suède", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true }
+      ],
+      "explanation": "Guy Forget et Henri Leconte battent l'équipe d'Andre Agassi et Pete Sampras."
+    },
+    {
+      "ref": "ten-202",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "joueur"],
+      "text": "Quel joueur français, célèbre pour son jeu spectaculaire et ses glissades, est surnommé « La Monf » ?",
+      "answers": [
+        { "text": "Gaël Monfils", "isCorrect": true },
+        { "text": "Gilles Simon", "isCorrect": false },
+        { "text": "Jo-Wilfried Tsonga", "isCorrect": false },
+        { "text": "Richard Gasquet", "isCorrect": false }
+      ],
+      "explanation": "Il est l'un des joueurs les plus populaires du circuit, pour son jeu acrobatique."
+    },
+    {
+      "ref": "ten-203",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur", "grand-chelem"],
+      "text": "En 2008, Jo-Wilfried Tsonga a atteint la finale de quel tournoi du Grand Chelem ?",
+      "answers": [
+        { "text": "L'Open d'Australie", "isCorrect": true },
+        { "text": "L'US Open", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": false },
+        { "text": "Roland-Garros", "isCorrect": false }
+      ],
+      "explanation": "Il bat Rafael Nadal en demi-finale, puis perd contre Novak Djokovic."
+    },
+    {
+      "ref": "ten-204",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "joueur"],
+      "text": "Lequel de ces joueurs ne faisait pas partie des « nouveaux Mousquetaires » des années 2000-2010 ?",
+      "answers": [
+        { "text": "Jo-Wilfried Tsonga", "isCorrect": false },
+        { "text": "Richard Gasquet", "isCorrect": false },
+        { "text": "Arthur Fils", "isCorrect": true },
+        { "text": "Gilles Simon", "isCorrect": false }
+      ],
+      "explanation": "Le quatuor était formé de Tsonga, Gasquet, Simon et Monfils. Arthur Fils fait partie de la génération suivante."
+    },
+    {
+      "ref": "ten-205",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["france", "joueuse", "roland-garros"],
+      "text": "Amélie Mauresmo a remporté Roland-Garros.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle a remporté l'Open d'Australie et Wimbledon en 2006, mais jamais Roland-Garros."
+    },
+    {
+      "ref": "ten-206",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["france", "joueuse", "histoire"],
+      "text": "Suzanne Lenglen a remporté Wimbledon six fois.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "De 1919 à 1923, puis en 1925. Elle ne perd qu'un seul match de 1919 à sa retraite, en 1926."
+    },
+    {
+      "ref": "ten-207",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "competition"],
+      "text": "Dans quelle salle se joue le Masters 1000 de Paris depuis 2025 ?",
+      "answers": [
+        { "text": "Bercy (Accor Arena)", "isCorrect": false },
+        { "text": "Le Stade de France", "isCorrect": false },
+        { "text": "La Paris La Défense Arena", "isCorrect": true },
+        { "text": "Le Zénith", "isCorrect": false }
+      ],
+      "explanation": "Le tournoi a quitté Bercy, où il se jouait depuis 1986, pour une salle plus grande à Nanterre."
+    },
+    {
+      "ref": "ten-208",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "joueuse", "grand-chelem"],
+      "text": "Quel tournoi du Grand Chelem Mary Pierce a-t-elle remporté en 1995 ?",
+      "answers": [
+        { "text": "Wimbledon", "isCorrect": false },
+        { "text": "L'US Open", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": true },
+        { "text": "Roland-Garros", "isCorrect": false }
+      ],
+      "explanation": "Elle remporte ensuite Roland-Garros en 2000."
+    },
+    {
+      "ref": "ten-209",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur", "record"],
+      "text": "Quel est le meilleur classement atteint par Jo-Wilfried Tsonga ?",
+      "answers": [
+        { "text": "5e mondial", "isCorrect": true },
+        { "text": "1er mondial", "isCorrect": false },
+        { "text": "10e mondial", "isCorrect": false },
+        { "text": "3e mondial", "isCorrect": false }
+      ],
+      "explanation": "Il atteint la 5e place en 2012. Il a gagné 18 tournois, dont deux Masters 1000 (Paris 2008, Toronto 2014)."
+    },
+    {
+      "ref": "ten-210",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["competition"],
+      "text": "Quelle compétition oppose des équipes nationales masculines de tennis ?",
+      "answers": [
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "La Billie Jean King Cup", "isCorrect": false },
+        { "text": "La Coupe Davis", "isCorrect": true },
+        { "text": "La Laver Cup", "isCorrect": false }
+      ],
+      "explanation": "Créée en 1900, c'est la plus ancienne compétition internationale par équipes."
+    },
+    {
+      "ref": "ten-211",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Quel est le surnom du trophée de la Coupe Davis ?",
+      "answers": [
+        { "text": "La coupe aux grandes oreilles", "isCorrect": false },
+        { "text": "Le Saladier d'argent", "isCorrect": true },
+        { "text": "Le plat de Vénus", "isCorrect": false },
+        { "text": "La coupe des Mousquetaires", "isCorrect": false }
+      ],
+      "explanation": "Un grand saladier en argent massif, offert par l'Américain Dwight Davis en 1900."
+    },
+    {
+      "ref": "ten-212",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Quel pays a remporté la Coupe Davis en 2023 et en 2024 ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": true },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": false }
+      ],
+      "explanation": "Emmenée par Jannik Sinner, l'Italie retrouve un titre qu'elle n'avait plus gagné depuis 1976."
+    },
+    {
+      "ref": "ten-213",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition", "joueur"],
+      "text": "Quelle compétition, créée par Roger Federer en 2017, oppose l'Europe au reste du monde ?",
+      "answers": [
+        { "text": "La Hopman Cup", "isCorrect": false },
+        { "text": "L'ATP Cup", "isCorrect": false },
+        { "text": "La Coupe Davis", "isCorrect": false },
+        { "text": "La Laver Cup", "isCorrect": true }
+      ],
+      "explanation": "Elle porte le nom de Rod Laver. Federer y a joué son dernier match, en 2022."
+    },
+    {
+      "ref": "ten-214",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Combien de joueurs participent au Masters de fin de saison (ATP Finals) ?",
+      "answers": [
+        { "text": "16", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "32", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "Les huit meilleurs joueurs de la saison, répartis en deux poules de quatre."
+    },
+    {
+      "ref": "ten-215",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition"],
+      "text": "Dans quelle ville se jouent les ATP Finals depuis 2021 ?",
+      "answers": [
+        { "text": "Milan", "isCorrect": false },
+        { "text": "Rome", "isCorrect": false },
+        { "text": "Turin", "isCorrect": true },
+        { "text": "Londres", "isCorrect": false }
+      ],
+      "explanation": "Le tournoi s'est joué à Londres de 2009 à 2020, à l'O2 Arena."
+    },
+    {
+      "ref": "ten-216",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Que désigne un tournoi « Masters 1000 » ?",
+      "answers": [
+        { "text": "Un tournoi avec 1 000 joueurs", "isCorrect": false },
+        { "text": "Un tournoi réservé aux anciens joueurs", "isCorrect": false },
+        { "text": "Un tournoi doté de 1 000 euros", "isCorrect": false },
+        { "text": "La catégorie de tournois juste en dessous du Grand Chelem", "isCorrect": true }
+      ],
+      "explanation": "Le vainqueur gagne 1 000 points au classement mondial. Il y en a neuf, dont celui de Paris."
+    },
+    {
+      "ref": "ten-217",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition", "histoire"],
+      "text": "En quelle année le tennis est-il revenu aux Jeux olympiques, après 64 ans d'absence ?",
+      "answers": [
+        { "text": "1988", "isCorrect": true },
+        { "text": "1996", "isCorrect": false },
+        { "text": "1984", "isCorrect": false },
+        { "text": "1976", "isCorrect": false }
+      ],
+      "explanation": "Absent depuis 1924, il revient aux Jeux de Séoul. Steffi Graf y remporte l'or."
+    },
+    {
+      "ref": "ten-218",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition", "histoire"],
+      "text": "Quelle compétition féminine par équipes nationales s'appelait la Fed Cup jusqu'en 2020 ?",
+      "answers": [
+        { "text": "La Billie Jean King Cup", "isCorrect": true },
+        { "text": "La Hopman Cup", "isCorrect": false },
+        { "text": "La WTA Cup", "isCorrect": false },
+        { "text": "La coupe Suzanne-Lenglen", "isCorrect": false }
+      ],
+      "explanation": "Créée en 1963, elle est l'équivalent féminin de la Coupe Davis."
+    },
+    {
+      "ref": "ten-219",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Quel tournoi du Grand Chelem se joue en juillet ?",
+      "answers": [
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": true },
+        { "text": "L'US Open", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": false }
+      ],
+      "explanation": "Il commence fin juin et se termine mi-juillet, juste après la saison sur terre battue."
+    },
+    {
+      "ref": "ten-220",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Quel tournoi du Grand Chelem termine la saison, fin août et début septembre ?",
+      "answers": [
+        { "text": "L'US Open", "isCorrect": true },
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": false }
+      ],
+      "explanation": "Il se joue à New York, souvent en soirée sous les projecteurs."
+    },
+    {
+      "ref": "ten-221",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "Quel tournoi du Grand Chelem se joue à Flushing Meadows ?",
+      "answers": [
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "L'US Open", "isCorrect": true },
+        { "text": "Wimbledon", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": false }
+      ],
+      "explanation": "Flushing Meadows est un grand parc du quartier du Queens, à New York."
+    },
+    {
+      "ref": "ten-222",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["grand-chelem"],
+      "text": "L'US Open se joue à New York.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il se joue à Flushing Meadows, dans le Queens."
+    },
+    {
+      "ref": "ten-223",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["grand-chelem"],
+      "text": "Quel autre tournoi du Grand Chelem se joue, comme l'US Open, sur dur ?",
+      "answers": [
+        { "text": "Roland-Garros", "isCorrect": false },
+        { "text": "Aucun", "isCorrect": false },
+        { "text": "Wimbledon", "isCorrect": false },
+        { "text": "L'Open d'Australie", "isCorrect": true }
+      ],
+      "explanation": "Roland-Garros se joue sur terre battue et Wimbledon sur gazon."
+    },
+    {
+      "ref": "ten-224",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le joueur qui met la balle en jeu au début du point ?",
+      "answers": [
+        { "text": "Le relanceur", "isCorrect": false },
+        { "text": "Le ramasseur", "isCorrect": false },
+        { "text": "L'arbitre", "isCorrect": false },
+        { "text": "Le serveur", "isCorrect": true }
+      ],
+      "explanation": "Le joueur qui reçoit le service s'appelle le relanceur."
+    },
+    {
+      "ref": "ten-225",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on les jeunes qui récupèrent les balles pendant un match ?",
+      "answers": [
+        { "text": "Les ramasseurs de balles", "isCorrect": true },
+        { "text": "Les caddies", "isCorrect": false },
+        { "text": "Les juges de ligne", "isCorrect": false },
+        { "text": "Les coachs", "isCorrect": false }
+      ],
+      "explanation": "À Roland-Garros, ils sont sélectionnés parmi des milliers de candidats."
+    },
+    {
+      "ref": "ten-226",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Qui dirige le match et annonce le score, assis sur une chaise haute ?",
+      "answers": [
+        { "text": "L'arbitre de chaise", "isCorrect": true },
+        { "text": "Le capitaine", "isCorrect": false },
+        { "text": "Le superviseur", "isCorrect": false },
+        { "text": "Le juge de ligne", "isCorrect": false }
+      ],
+      "explanation": "Il est perché sur sa chaise pour bien voir tout le court."
+    },
+    {
+      "ref": "ten-227",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le point qui peut permettre à un joueur de gagner le match ?",
+      "answers": [
+        { "text": "Une balle de break", "isCorrect": false },
+        { "text": "Une balle neuve", "isCorrect": false },
+        { "text": "Une balle de set", "isCorrect": false },
+        { "text": "Une balle de match", "isCorrect": true }
+      ],
+      "explanation": "Sauver une balle de match, c'est gagner ce point pour rester en vie."
+    },
+    {
+      "ref": "ten-228",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "À égalité (40-40), un joueur gagne le point suivant. Comment dit-on ?",
+      "answers": [
+        { "text": "Il a gagné le jeu", "isCorrect": false },
+        { "text": "Il a une balle de set", "isCorrect": false },
+        { "text": "Il a fait un break", "isCorrect": false },
+        { "text": "Il a l'avantage", "isCorrect": true }
+      ],
+      "explanation": "S'il gagne aussi le point suivant, il remporte le jeu. S'il le perd, on revient à égalité."
+    },
+    {
+      "ref": "ten-229",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment s'appelle le coup frappé du côté opposé à la main qui tient la raquette ?",
+      "answers": [
+        { "text": "Le revers", "isCorrect": true },
+        { "text": "Le coup droit", "isCorrect": false },
+        { "text": "Le service", "isCorrect": false },
+        { "text": "La volée", "isCorrect": false }
+      ],
+      "explanation": "Il peut se jouer à une ou à deux mains."
+    },
+    {
+      "ref": "ten-230",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « jeu blanc » ?",
+      "answers": [
+        { "text": "Un jeu gagné sans perdre un seul point", "isCorrect": true },
+        { "text": "Un jeu déclaré nul", "isCorrect": false },
+        { "text": "Un jeu joué en tenue blanche", "isCorrect": false },
+        { "text": "Un jeu sans service", "isCorrect": false }
+      ],
+      "explanation": "Le score passe directement de 40-0 à jeu."
+    },
+    {
+      "ref": "ten-231",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un match de tennis peut se terminer sur un match nul.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il y a toujours un vainqueur : les sets se terminent au besoin par un jeu décisif."
+    },
+    {
+      "ref": "ten-232",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Le serveur doit envoyer la balle en diagonale, dans le carré de service adverse.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il sert alternativement depuis la droite et la gauche de la ligne de fond."
+    },
+    {
+      "ref": "ten-233",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Dans un jeu, les points se comptent 1, 2, 3, puis jeu.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils se comptent 15, 30, 40, puis jeu."
+    },
+    {
+      "ref": "ten-234",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qui sépare les deux moitiés du court ?",
+      "answers": [
+        { "text": "Un muret", "isCorrect": false },
+        { "text": "Une corde", "isCorrect": false },
+        { "text": "Le filet", "isCorrect": true },
+        { "text": "Une simple ligne", "isCorrect": false }
+      ],
+      "explanation": "Il mesure 91,4 cm de haut en son centre."
+    },
+    {
+      "ref": "ten-235",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment dit-on d'une balle qui tombe en dehors des limites du terrain ?",
+      "answers": [
+        { "text": "C'est un let", "isCorrect": false },
+        { "text": "C'est un ace", "isCorrect": false },
+        { "text": "Elle est faute (« out »)", "isCorrect": true },
+        { "text": "C'est une volée", "isCorrect": false }
+      ],
+      "explanation": "Le juge de ligne, ou le système électronique, l'annonce aussitôt."
+    },
+    {
+      "ref": "ten-236",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "De quelle couleur sont généralement les balles de tennis ?",
+      "answers": [
+        { "text": "Verte", "isCorrect": false },
+        { "text": "Orange", "isCorrect": false },
+        { "text": "Jaune", "isCorrect": true },
+        { "text": "Blanche", "isCorrect": false }
+      ],
+      "explanation": "Le jaune fluo, plus visible à la télévision, s'est imposé à partir des années 1970."
+    },
+    {
+      "ref": "ten-237",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse"],
+      "text": "De quel pays sont les sœurs Venus et Serena Williams ?",
+      "answers": [
+        { "text": "Le Canada", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Le Royaume-Uni", "isCorrect": false }
+      ],
+      "explanation": "Elles ont grandi à Compton, près de Los Angeles."
+    },
+    {
+      "ref": "ten-238",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["joueuse", "grand-chelem"],
+      "text": "Serena Williams n'a jamais remporté Wimbledon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle l'a remporté sept fois, entre 2002 et 2016."
+    },
+    {
+      "ref": "ten-239",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Andy Murray ?",
+      "answers": [
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Le Royaume-Uni", "isCorrect": true }
+      ],
+      "explanation": "Il est écossais, né à Glasgow en 1987."
+    },
+    {
+      "ref": "ten-240",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur est surnommé « Nole » ?",
+      "answers": [
+        { "text": "Andy Murray", "isCorrect": false },
+        { "text": "Novak Djokovic", "isCorrect": true },
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Daniil Medvedev", "isCorrect": false }
+      ],
+      "explanation": "C'est le diminutif serbe de son prénom."
+    },
+    {
+      "ref": "ten-241",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Novak Djokovic est croate.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il est serbe, né à Belgrade."
+    },
+    {
+      "ref": "ten-242",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur suisse est surnommé « le Maestro » ?",
+      "answers": [
+        { "text": "Roger Federer", "isCorrect": true },
+        { "text": "Stan Wawrinka", "isCorrect": false },
+        { "text": "Dominic Thiem", "isCorrect": false },
+        { "text": "Marc Rosset", "isCorrect": false }
+      ],
+      "explanation": "Pour l'élégance et la facilité de son jeu."
+    },
+    {
+      "ref": "ten-243",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur est surnommé « Carlitos » ?",
+      "answers": [
+        { "text": "Carlos Alcaraz", "isCorrect": true },
+        { "text": "Carlos Moyà", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Pablo Carreño Busta", "isCorrect": false }
+      ],
+      "explanation": "Le jeune Espagnol a remporté son premier titre du Grand Chelem à 19 ans, à l'US Open 2022."
+    },
+    {
+      "ref": "ten-244",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur", "record"],
+      "text": "Qui a remporté le plus de titres du Grand Chelem entre Roger Federer et Rafael Nadal ?",
+      "answers": [
+        { "text": "Ils en ont autant", "isCorrect": false },
+        { "text": "Rafael Nadal", "isCorrect": true },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Aucun des deux n'en a remporté", "isCorrect": false }
+      ],
+      "explanation": "Nadal en compte 22, Federer 20."
+    },
+    {
+      "ref": "ten-245",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur", "france"],
+      "text": "Lequel de ces joueurs est français ?",
+      "answers": [
+        { "text": "Rafael Nadal", "isCorrect": false },
+        { "text": "Gaël Monfils", "isCorrect": true },
+        { "text": "Roger Federer", "isCorrect": false },
+        { "text": "Andy Murray", "isCorrect": false }
+      ],
+      "explanation": "Né à Paris en 1986, il a été 6e mondial."
+    },
+    {
+      "ref": "ten-246",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueuse", "france"],
+      "text": "Laquelle de ces joueuses est française ?",
+      "answers": [
+        { "text": "Serena Williams", "isCorrect": false },
+        { "text": "Steffi Graf", "isCorrect": false },
+        { "text": "Iga Świątek", "isCorrect": false },
+        { "text": "Amélie Mauresmo", "isCorrect": true }
+      ],
+      "explanation": "Elle a été la première Française n°1 mondiale, en 2004."
+    },
+    {
+      "ref": "ten-247",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Quel surnom a-t-on donné à Rafael Nadal pour sa domination sur terre battue ?",
+      "answers": [
+        { "text": "Le roi de la terre battue", "isCorrect": true },
+        { "text": "Le maître du dur", "isCorrect": false },
+        { "text": "Le prince du gazon", "isCorrect": false },
+        { "text": "L'empereur des salles", "isCorrect": false }
+      ],
+      "explanation": "Avec 14 titres à Roland-Garros, il est le plus grand joueur de l'histoire sur cette surface."
+    },
+    {
+      "ref": "ten-248",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["roland-garros", "joueur"],
+      "text": "Rafael Nadal a remporté Roland-Garros plus de dix fois.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il l'a remporté quatorze fois, entre 2005 et 2022."
+    },
+    {
+      "ref": "ten-249",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["competition"],
+      "text": "Quel organisme gère le circuit et le classement des joueurs professionnels masculins ?",
+      "answers": [
+        { "text": "L'UEFA", "isCorrect": false },
+        { "text": "La FIFA", "isCorrect": false },
+        { "text": "L'ATP", "isCorrect": true },
+        { "text": "La WTA", "isCorrect": false }
+      ],
+      "explanation": "L'Association of Tennis Professionals a été créée en 1972."
+    },
+    {
+      "ref": "ten-250",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["competition", "joueuse"],
+      "text": "Quel organisme gère le circuit et le classement des joueuses professionnelles ?",
+      "answers": [
+        { "text": "La FFT", "isCorrect": false },
+        { "text": "L'ITF", "isCorrect": false },
+        { "text": "La WTA", "isCorrect": true },
+        { "text": "L'ATP", "isCorrect": false }
+      ],
+      "explanation": "La Women's Tennis Association a été fondée en 1973 par Billie Jean King."
+    },
+    {
+      "ref": "ten-251",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Dans quel pays le tennis moderne est-il né, dans les années 1870 ?",
+      "answers": [
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true }
+      ],
+      "explanation": "Il s'inspire du jeu de paume français, mais ses règles modernes ont été fixées en Angleterre."
+    }
+  ]
+}
