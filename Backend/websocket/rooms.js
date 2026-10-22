@@ -6,10 +6,10 @@ function joinRoom(roomId, ws) {
   }
   rooms[roomId].push(ws);
   ws.currentRoom = roomId;
-  broadcast(roomId, {type: 'player_joined', data: {
-    user: ws.username, userId: ws.userId }}, 
+  broadcast(roomId, {type: 'joined_room', data: {
+    user: ws.username}}, 
     ws);
-  ws.send(JSON.stringify({ type: 'joined_room', data: { roomId } }));
+  ws.send(JSON.stringify({ type: 'joined_room', data: { user: ws.username } }));
 }
 
 function leaveRoom(ws) {

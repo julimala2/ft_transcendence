@@ -1,8 +1,8 @@
-const { getProfile } = require('../src/services/user.service');
-const { joinRoomHandler } = require('./handlers/joinRoomHandler');
-const { chatHandler } = require('./handlers/chatHandler');
-const { leaveRoom } = require('./rooms');
-const { startGame } = require('./quizGame');
+const { getProfile } = require('../../src/services/user.service');
+const { joinRoomHandler } = require('./joinRoomHandler');
+const { chatHandler } = require('./chatHandler');
+const { leaveRoom } = require('../rooms');
+const { startGame } = require('../quizGame');
 
 const handlers = {
   joinRoom: joinRoomHandler,

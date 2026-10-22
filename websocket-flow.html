@@ -121,6 +121,7 @@
     transition: border-color .3s, box-shadow .3s;
   }
   .file-card small { display: block; color: var(--muted); font-family: inherit; }
+  .file-card .todo { color: var(--warn); }
   .lane-front .file-card.hot { border-color: var(--front); box-shadow: 0 0 0 1px rgba(88,166,255,.35); }
   .lane-back .file-card.hot { border-color: var(--back); box-shadow: 0 0 0 1px rgba(63,185,80,.35); }
 
@@ -135,6 +136,8 @@
   .phase-header::before, .phase-header::after {
     content: ''; flex: 1; height: 1px; background: var(--border);
   }
+  .phase-header.branch { color: var(--warn); }
+  .phase-header.branch::before, .phase-header.branch::after { background: rgba(210,153,34,.35); }
   .step {
     position: relative;
     margin: 14px 0;
@@ -413,7 +416,7 @@
 <body>
 
 <header>
-  <h1>Echange WebSocket <span>&mdash; ft_transcendence / GameRoom</span></h1>
+  <h1>Echange WebSocket <span>&mdash; ft_transcendence / Flux Online</span></h1>
   <div class="view-toggle">
     <button id="viewTimeline" class="active">Timeline</button>
     <button id="viewProtocol">Protocole</button>
@@ -437,9 +440,11 @@
     <div class="lane lane-front">
       <h2>Frontend :5173</h2>
       <div class="cards">
+        <div class="file-card" id="f-home">HomePage.jsx<small>bouton Online</small></div>
+        <div class="file-card" id="f-menu">OnlineMenu.jsx<small class="todo">a creer : 3 boutons</small></div>
         <div class="file-card" id="f-gameroom">GameRoom.jsx<small>chat + input + statut</small></div>
         <div class="file-card" id="f-hook">useGameSocket.js<small>ws.onopen / onmessage</small></div>
-        <div class="file-card" id="f-local">localStorage<small>token JWT</small></div>
+        <div class="file-card" id="f-cookie">cookie 'token'<small>JWT httpOnly, pose au login</small></div>
       </div>
     </div>
 
@@ -452,6 +457,7 @@
         <div class="file-card" id="b-auth">websocket/auth.js<small>authenticateUpgrade</small></div>
         <div class="file-card" id="b-gamesocket">websocket/gameSocket.js<small>routeur de messages</small></div>
         <div class="file-card" id="b-handlers">websocket/handlers/*<small>joinRoom, chat, answer</small></div>
+        <div class="file-card" id="b-match">websocket/matchmaking.js<small class="todo">a creer : queue par theme</small></div>
         <div class="file-card" id="b-rooms">websocket/rooms.js<small>rooms + broadcast</small></div>
         <div class="file-card" id="b-quiz">websocket/quizGame.js<small>partie en cours</small></div>
       </div>
@@ -462,6 +468,7 @@
     <h3>Connexion</h3>
     <div class="state-row"><span><span class="status-dot" id="connDot"></span>WebSocket</span><span class="val" id="connLabel">fermee</span></div>
     <div class="state-row"><span>Room courante</span><span class="val" id="roomLabel">-</span></div>
+    <div class="state-row"><span>Matchmaking</span><span class="val" id="queueLabel">-</span></div>
     <div class="state-row"><span>Phase partie</span><span class="phase-badge" id="phaseLabel">idle</span></div>
 
     <h3>Membres de la room</h3>
@@ -474,18 +481,19 @@
 
 <section id="protocolView">
   <div class="proto-intro">
-    <strong>Catalogue complet du protocole de la WebSocket <code>/ws</code>.</strong>
+    <strong>Catalogue complet du protocole de la WebSocket <code>/ws</code.</strong>
     Chaque carte montre un exemple reel d'un type de message : ce que le front envoie,
     ce que le back renvoie, et a qui (l'emetteur lui-meme, les autres membres, ou toute la room).
-    Contexte : room <code>game-42</code>, joueurs <code>bob</code> (userId 1, emetteur) et
-    <code>alice</code> (userId 2), quiz <code>7</code> (Geographie), question <code>101</code>
-    dont la bonne reponse est l'option <code>401</code> (Maputo).
+    Contexte : joueurs <code>bob</code> (userId 1) et <code>alice</code> (userId 2).
+    Partie rapide : room <code>mm-8f3k</code> (generee par le matchmaking), theme Geographie, quiz <code>7</code>.
+    Room custom : code <code>K7P2QA</code>, nom <code>Soiree Quiz</code>.
+    Question <code>101</code> dont la bonne reponse est l'option <code>401</code> (Maputo).
   </div>
   <div class="proto-grid" id="protoGrid"></div>
 </section>
 
 <div class="console-wrap">
-  <div class="console-head"><span>Console (cote serveur)</span><span>game-42</span></div>
+  <div class="console-head"><span>Console (cote serveur)</span><span>/ws</span></div>
   <div id="log"></div>
 </div>
 
@@ -493,24 +501,28 @@
 (function () {
   'use strict';
 
-  // ------- definition de l'echange (basee sur le code reel du repo) -------
+  // ------- definition de l'echange -------
+  // Flux : bouton Online -> upgrade auth -> fenetre 3 boutons
+  //        1) Partie rapide  -> choix du theme -> matchmaking -> partie 1v1
+  //        2) Creer une room   (code genere par le serveur + nom libre)
+  //        3) Rejoindre une room (par code)
   var steps = [
-    { phase: 'Connexion' },
-    { dir: 'front', files: ['f-gameroom', 'f-hook'],
-      title: 'GameRoom.jsx monte, useGameSocket(roomId) se lance',
-      payload: "const token = localStorage.getItem('token');\nconst wsUrl = 'wss://localhost:3010/ws?token=' + token;",
-      note: 'Le hook lit le JWT dans localStorage. Attention : le code actuel vise le port 3000 (le front Vite) alors que le backend ecoute sur 3010.' },
-    { dir: 'c2s', files: ['f-local', 'b-server'],
-      title: 'Requete HTTP Upgrade vers /ws',
-      payload: "GET /ws?token=eyJhbGciOiJIUzI1NiJ9... HTTP/1.1\nHost: localhost:3010\nUpgrade: websocket\nConnection: Upgrade\nSec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==",
-      note: 'Ceci est encore du HTTP. Le handshake ne devient une WebSocket qu\'apres la reponse 101.',
+    { phase: 'Connexion : bouton Online' },
+    { dir: 'front', files: ['f-home', 'f-menu'],
+      title: 'HomePage.jsx : clic sur le bouton "Online"',
+      payload: "<Link to=\"/game/online\" className={styles.playOnline}>Online</Link>\n// -> OnlineMenu.jsx se monte -> useGameSocket()  // sans roomId",
+      note: 'Aujourd\'hui le lien est dur (/game/1) et useGameSocket(roomId) envoie joinRoom tout seul. Nouveau flux : la WebSocket s\'ouvre d\'abord, le choix de la room vient ensuite. Bug actuel du hook : il vise le port 3000 (front Vite) alors que le backend ecoute sur 3010.' },
+    { dir: 'c2s', files: ['f-cookie', 'b-server'],
+      title: 'Requete HTTP Upgrade vers /ws : le navigateur joint le cookie',
+      payload: "GET /ws HTTP/1.1\nHost: localhost:3010\nCookie: token=eyJhbGciOiJIUzI1NiJ9...   <-- ajoute automatiquement\nUpgrade: websocket\nConnection: Upgrade\nSec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==",
+      note: 'Le front n\'envoie rien lui-meme : new WebSocket("wss://localhost:3010/ws") declenche une requete HTTP normale, et le navigateur attache le cookie token (httpOnly, pose au login, sameSite:none). Le ?token= de l\'ancien useGameSocket est du code mort : le fallback tokenFromURL est commente cote back.',
       state: { conn: 'connecting' } },
     { dir: 'back', files: ['b-auth'],
       title: 'server.js: upgrade -> authenticateUpgrade(req)',
-      payload: "parseCookies(req.headers.cookie)   // cookie 'token'\ntokenFromURL(req.url)              // sinon ?token=\nverifyToken(token)                 // jwt.verify -> { id, username }",
-      note: 'Si le token manque ou est invalide : socket.write("401") et destruction du socket. Pas de connexion anonyme.' },
+      payload: "parseCookies(req.headers.cookie)   // cookie 'token'\n// tokenFromURL(req.url)     // fallback ?token= : COMMENTE\nverifyToken(token)                 // jwt.verify -> { id, username }",
+      note: 'Si le cookie manque ou si le JWT est invalide : socket.write("401") et destruction du socket. Pas de connexion anonyme. Le cookie etant httpOnly, le front ne peut pas le lire : il ne peut pas non plus le voler via XSS.' },
     { dir: 'back', files: ['b-gamesocket'],
-      title: 'handleConnection(ws, req) : le ws est enriched',
+      title: 'handleConnection(ws, req) : le ws est enrichi',
       payload: "ws.user    = { id, ... }        // venu du JWT\nws.username = profile.username   // getProfile(ws.user.id)\nws.userId    = ws.user.id\nws.currentRoom = null",
       note: 'Chaque connexion WebSocket porte desormais l\'identite du joueur. ws.currentRoom suivra sa room.' },
     { dir: 's2c', files: ['f-hook', 'b-server'],
@@ -518,72 +530,53 @@
       payload: "HTTP/1.1 101 Switching Protocols\nUpgrade: websocket\nSec-WebSocket-Accept: s3pPLMBiTxaQ9kYGzzhZRbK+xOo=",
       note: 'Cote front : ws.onopen se declenche, setConnected(true), la LED passe au vert.',
       state: { conn: 'on' } },
-    { dir: 'front', files: ['f-hook'],
-      title: 'ws.onopen : le front envoie joinRoom automatiquement',
-      payload: "ws.send(JSON.stringify({ type: 'joinRoom', roomId: 'game-42' }))",
-      note: 'Envoye des l\'ouverture : le joueur rejoint la room de la partie en cours.' },
 
-    { phase: 'Room' },
-    { dir: 'c2s', files: ['b-gamesocket'],
-      title: '{ type: "joinRoom", roomId: "game-42" }',
-      payload: '{ "type": "joinRoom", "roomId": "game-42" }',
-      note: 'gameSocket.js fait JSON.parse(data) puis handlers["joinRoom"](ws, message).' },
-    { dir: 'back', files: ['b-handlers', 'b-rooms'],
-      title: 'joinRoomHandler -> rooms.leaveRoom(ws) puis rooms.joinRoom()',
-      payload: "rooms.leaveRoom(ws)          // securite : quitter une ancienne room\nrooms.joinRoom('game-42', ws)",
-      note: 'joinRoomHandler recupere aussi message.gameType mais ne l\'utilise pas encore (dangling expression).' },
-    { dir: 'back', files: ['b-rooms'],
-      title: 'rooms.js : la room enregistre le socket',
-      payload: "rooms['game-42'] = [wsBob]\nws.currentRoom = 'game-42'",
-      note: 'Une room = un simple tableau de sockets en memoire. Pas de persistance.',
-      state: { room: 'game-42', addMember: 'bob' } },
-    { dir: 's2c', files: ['b-rooms'],
-      title: 'Broadcast aux autres : player_joined',
-      payload: '{ "type": "player_joined", "data": { "user": "bob", "userId": 1 } }',
-      note: 'Le front ecoute "userJoined" dans useGameSocket.js : ce nom n\'existe plus cote back. Le message passe donc inapercu.',
-      warn: true },
-    { dir: 's2c', files: ['f-hook'],
-      title: 'Acknowledgement au joueur : joined_room',
-      payload: '{ "type": "joined_room", "data": { "roomId": "game-42" } }',
-      note: 'Envoye uniquement au socket qui vient de rejoindre (ws.send direct).' },
-    { dir: 'back', files: ['b-rooms'],
-      title: 'alice ouvre la meme room a son tour',
-      payload: "rooms['game-42'] = [wsBob, wsAlice]",
-      note: 'Meme parcours pour alice : joinRoom puis broadcast.',
-      state: { addMember: 'alice' } },
-    { dir: 's2c', files: ['f-hook'],
-      title: 'bob recoit : player_joined (alice)',
-      payload: '{ "type": "player_joined", "data": { "user": "alice", "userId": 2 } }',
-      note: 'C\'est le hook "users" du front qui devrait s\'en servir pour afficher les presents.' },
+    { phase: 'Fenetre Online : trois boutons', branch: true },
+    { dir: 'info', files: ['f-menu'],
+      title: 'ws.onopen : la fenetre Online apparait avec trois choix',
+      payload: "[ 1 ] Partie rapide      -> choix du theme -> matchmaking -> 1v1\n[ 2 ] Creer une room      -> nom libre, code genere par le serveur\n[ 3 ] Rejoindre une room -> saisie du code de la room",
+      note: 'Plus de joinRoom automatique dans ws.onopen : on n\'a pas encore de room. Chaque bouton lance un des trois flux detailles ci-dessous.' },
 
-    { phase: 'Chat' },
-    { dir: 'c2s', files: ['f-gameroom'],
-      title: 'bob tape "Salut tout le monde !" et clique Envoyer',
-      payload: '{ "type": "chat", "text": "Salut tout le monde !" }',
-      note: 'GameRoom.jsx -> sendChat(text) -> useGameSocket.send(). Le champ est vide apres envoi.' },
-    { dir: 'back', files: ['b-handlers', 'b-rooms'],
-      title: 'chatHandler -> broadcast(ws.currentRoom, ...)',
-      payload: "broadcast('game-42', {\n  type: 'chat',\n  user: ws.username,      // 'bob'\n  text: message.text\n})",
-      note: 'Le serveur ajoute le username : le front ne peut pas se faire passer pour quelqu\'un d\'autre.' },
-    { dir: 's2c', files: ['f-hook'],
-      title: 'Toute la room recoit le message de chat',
-      payload: '{ "type": "chat", "user": "bob", "text": "Salut tout le monde !" }',
-      note: 'useGameSocket pousse dans messages[], le chat s\'affiche. C\'est le seul type reellement branche cote front.' },
+    { phase: 'Partie rapide : choix du theme', branch: true },
+    { dir: 'front', files: ['f-menu'],
+      title: 'Bob clique "Partie rapide" : ecran de choix du theme',
+      payload: "GET /api/quizzes            // ou categories dediees\nthemes: [ Geographie, Histoire, Cinema, Sport ]\n-> Bob selectionne \"Geographie\"",
+      note: 'Le "theme" peut correspondre a un quiz unique (quizId) ou a une categorie de quizzes : le back doit trancher le modele de donnees avant d\'implementer le matchmaking.' },
+    { dir: 'c2s', files: ['f-hook'],
+      title: '{ type: "quickMatch", theme: "geographie" }',
+      payload: '{ "type": "quickMatch", "theme": "geographie" }',
+      note: 'Message a ajouter : cote front (clic sur le theme) et cote back (handlers.quickMatch dans gameSocket.js + nouveau module matchmaking.js).' },
+    { dir: 'back', files: ['b-match'],
+      title: 'matchmaking.js : Bob entre dans la file du theme',
+      payload: "queues['geographie'] = [wsBob]\nws.send({ type: 'matchmaking', data: { status: 'searching', theme: 'geographie' } })",
+      note: 'File en memoire, une par theme. Tant que personne d\'autre n\'attend, Bob reste sur l\'ecran de recherche.',
+      state: { queue: '1/2 - geographie' } },
 
-    { phase: 'Partie quiz' },
-    { dir: 'info', warn: true,
-      title: 'Point bloquant : rien ne declenche startGame aujourd\'hui',
-      payload: "gameSocket.js : handlers = { joinRoom, chat, leaveRoom }\n// pas de handlers['startGame'], pas de handlers['answer']",
-      note: 'La suite du schema montre le flux prevu. Il manque le branchement : handlers.startGame et handlers.answer dans gameSocket.js.',
-      files: ['b-gamesocket'] },
-    { dir: 'c2s', files: ['f-gameroom'],
-      title: '(a brancher) bob lance la partie',
-      payload: '{ "type": "startGame", "quizId": 7 }',
-      note: 'Message a ajouter cote front (bouton "Lancer la partie") et cote back (handler qui appelle quizGame.startGame).' },
+    { phase: 'Partie rapide : matchmaking', branch: true },
+    { dir: 'front', files: ['f-menu'],
+      title: 'Front : "Recherche d\'un adversaire..."',
+      payload: "// etats de l'ecran\nsearching -> match_found -> redirection GameRoom(roomId)",
+      note: 'Un bouton retour doit pouvoir annuler la recherche : { type: "cancelMatchmaking" }, sinon Bob reste bloque dans la file.' },
+    { dir: 'c2s', files: ['f-hook'],
+      title: 'Alice choisit le meme theme : quickMatch',
+      payload: '{ "type": "quickMatch", "theme": "geographie" }',
+      note: 'Cote serveur, Alice arrive dans la meme file : queues[\'geographie\'] = [wsBob, wsAlice].' },
+    { dir: 'back', files: ['b-match', 'b-rooms'],
+      title: 'File complete : le serveur cree la room du match',
+      payload: "roomId = 'mm-8f3k'   // code court genere, personne ne le tape\nrooms.joinRoom(roomId, wsBob)\nrooms.joinRoom(roomId, wsAlice)\nqueues['geographie'] = []",
+      note: 'La room de matchmaking n\'a pas besoin de nom : un id interne suffit. Les deux sockets sont places dans la room par le serveur.',
+      state: { addMembers: ['bob', 'alice'], room: 'mm-8f3k', queue: '2/2 - match !' } },
+    { dir: 's2c', files: ['f-hook'],
+      title: 'match_found diffuse aux deux joueurs',
+      payload: '{\n  "type": "match_found",\n  "data": {\n    "roomId": "mm-8f3k",\n    "opponent": "alice",\n    "quizId": 7\n  }\n}',
+      note: 'Le front redirige vers GameRoom(roomId). Pas besoin d\'envoyer joinRoom : le serveur a deja place les sockets.',
+      state: { queue: '-' } },
+
+    { phase: 'Partie 1v1 (le quiz)' },
     { dir: 'back', files: ['b-quiz'],
-      title: 'quizGame.startGame("game-42", 7)',
-      payload: "const quiz = await quizService.getQuizById(7)  // questions + answers\nscores = { 1: 0, 2: 0 }     // un score par membre\ngames['game-42'] = {\n  questions, currentQuestionIndex: 0,\n  scores, answered: new Map(),\n  phase: 'playing', timer: null\n}",
-      note: 'L\'etat de la partie vit en memoire serveur, par roomId. getQuizById doit inclure questions.answers sinon sendQuestion plantera.',
+      title: 'startGame automatique avec le quiz du theme',
+      payload: "startGame('mm-8f3k', 7)    // quiz Geographie\nconst quiz = await quizService.getQuizById(7)\nscores = { 1: 0, 2: 0 }\ngames['mm-8f3k'] = { questions, currentQuestionIndex: 0,\n                     scores, answered: new Map(), phase: 'playing' }",
+      note: 'En partie rapide, pas de bouton "Lancer" : le serveur demarre la partie des le match_found. getQuizById doit inclure questions.answers sinon sendQuestion plantera.',
       state: { phase: 'playing', startGame: true } },
     { dir: 's2c', files: ['f-hook'],
       title: 'Question 1 diffusee a toute la room',
@@ -594,12 +587,12 @@
       payload: "game.timer = setTimeout(() => revealAnswer(roomId), 15000)\ngame.answered = new Map()   // reset des reponses",
       note: 'Si personne ne repond, revealAnswer tombera quand meme a l\'expiration.' },
     { dir: 'c2s', files: ['f-gameroom'], warn: true,
-      title: 'bob repond (message non branche pour le moment)',
+      title: 'Bob repond (message a brancher)',
       payload: '{ "type": "answer", "questionId": 101, "answer": 401 }',
-      note: 'handlers["answer"] n\'existe pas : le serveur log "Type de message inconnu". Le schema montre le comportement une fois branche.' },
+      note: 'answerQuestionHandler existe dans handlers/quizHandler.js mais n\'est pas enregistre dans le routeur : le serveur log "Type de message inconnu". Il manque handlers.answer = answerQuestionHandler.' },
     { dir: 'back', files: ['b-handlers', 'b-quiz'],
       title: 'answerQuestionHandler : verification cote serveur',
-      payload: "const game = games[ws.currentRoom]   // ATTENTION : bug actuel,\n                                     // destructuring d'une string -> undefined\nif (game.answered.has(ws.userId)) return  // anti double-réponse\ncorrect = answers.find(a => a.isCorrect)   // id 401\nscores[1] += 1                             // bob : bonne réponse",
+      payload: "const game = games[ws.currentRoom]   // 'mm-8f3k'\nif (game.answered.has(ws.userId)) return  // anti double-reponse\ncorrect = answers.find(a => a.isCorrect)   // id 401\nscores[1] += 1                             // bob : bonne reponse",
       note: 'La bonne reponse ne quitte jamais le serveur : il ne renvoie que isCorrect.',
       state: { score: { user: 'bob', value: 1 } } },
     { dir: 's2c', files: ['f-hook'],
@@ -607,7 +600,7 @@
       payload: '{\n  "type": "PLAYER_ANSWERED",\n  "data": {\n    "user": "bob", "questionId": 101,\n    "answer": 401, "isCorrect": true,\n    "scores": { "1": 1, "2": 0 }\n  }\n}',
       note: 'Permet au front d\'afficher "bob a repondu" et un classement live.' },
     { dir: 'c2s', files: ['f-gameroom'],
-      title: 'alice repond a son tour',
+      title: 'Alice repond a son tour',
       payload: '{ "type": "answer", "questionId": 101, "answer": 403 }',
       note: 'answer 403 (Nairobi) est faux : scores[2] reste a 0.' },
     { dir: 'back', files: ['b-quiz'],
@@ -627,28 +620,85 @@
     { dir: 's2c', files: ['f-hook'],
       title: 'GAME_OVER : scores finaux',
       payload: '{\n  "type": "GAME_OVER",\n  "data": { "finalScores": { "1": 12, "2": 9 } }\n}',
-      note: 'Dernier message de la partie, games[roomId] est supprime. A brancher cote front pour afficher le podium.',
+      note: 'Dernier message de la partie, games[roomId] est supprime. La room mm-8f3k est supprimee aussi si elle se vide.',
       state: { phase: 'over' } },
+
+    { phase: 'Fenetre Online : les deux autres boutons', branch: true },
+    { dir: 'info', files: ['f-menu'],
+      title: 'Retour a la fenetre Online : creation / rejoindre une room',
+      payload: "[ 2 ] Creer une room      -> Bob cree, obtient un code a partager\n[ 3 ] Rejoindre une room -> Alice entre le code",
+      note: 'Les deux options partagent la meme mecanique : le serveur genere un code court, le createur donne un nom libre.',
+      state: { reset: true } },
+
+    { phase: 'Option 2 : Creer une room', branch: true },
+    { dir: 'info', files: ['b-rooms'],
+      title: 'Nom ou id de room ? Decision : code serveur + nom libre',
+      payload: "roomId = 'K7P2QA'      // code court genere par le serveur, unique\nname   = 'Soiree Quiz' // choisi par le createur, affichage uniquement\n-> on REJOINT par le code, jamais par le nom",
+      note: 'Rejoindre par nom exigerait des noms uniques et une recherche : source de collisions. Le code court (5-6 caracteres) est simple a taper et a partager.' },
+    { dir: 'front', files: ['f-menu'],
+      title: 'Bob clique "Creer une room" : champ nom (optionnel)',
+      payload: 'createRoom(name: "Soiree Quiz")\n// puis ws.send(JSON.stringify({ type: "createRoom", name }))',
+      note: 'Le nom peut etre vide : le front affichera alors juste le code.' },
+    { dir: 'c2s', files: ['f-hook'],
+      title: '{ type: "createRoom", name: "Soiree Quiz" }',
+      payload: '{ "type": "createRoom", "name": "Soiree Quiz" }',
+      note: 'Message a ajouter : handlers.createRoom dans gameSocket.js (generer le code, placer le createur, stocker le nom).' },
+    { dir: 'back', files: ['b-rooms'],
+      title: 'Le serveur genere le code et place le createur',
+      payload: "roomId = generateRoomId()     // 'K7P2QA'\nrooms['K7P2QA'] = [wsBob]\nroomMeta['K7P2QA'] = { name: 'Soiree Quiz', hostId: 1 }\nwsBob.currentRoom = 'K7P2QA'",
+      note: 'Le code doit etre verifie unique parmi les rooms existantes avant d\'etre renvoye.',
+      state: { room: 'K7P2QA', addMember: 'bob' } },
+    { dir: 's2c', files: ['f-hook'],
+      title: 'room_created : le front affiche le code a partager',
+      payload: '{\n  "type": "room_created",\n  "data": { "roomId": "K7P2QA", "name": "Soiree Quiz" }\n}',
+      note: 'Bob partage le code hors application (Discord, message...) ou pendant la partie via le chat.' },
+
+    { phase: 'Option 3 : Rejoindre une room', branch: true },
+    { dir: 'front', files: ['f-menu'],
+      title: 'Alice clique "Rejoindre une room" : champ de saisie du code',
+      payload: 'joinRoom(code: "K7P2QA")\n// puis ws.send(JSON.stringify({ type: "joinRoom", roomId: code.toUpperCase() }))',
+      note: 'Le front normalise la saisie (majuscules, espaces) avant l\'envoi : le code est insensible a la casse.' },
+    { dir: 'c2s', files: ['f-hook'], warn: true,
+      title: '{ type: "joinRoom", roomId: "K7P2QA" }',
+      payload: '{ "type": "joinRoom", "roomId": "K7P2QA" }',
+      note: 'Le message joinRoom existe deja, mais aucune validation : room inexistante, pleine, ou partie deja lancee -> il faut renvoyer un ERROR au lieu de creer une room vide.' },
+    { dir: 'back', files: ['b-handlers', 'b-rooms'],
+      title: 'joinRoomHandler -> leaveRoom puis joinRoom',
+      payload: "rooms.leaveRoom(ws)        // securite : quitter une ancienne room\nif (!rooms['K7P2QA']) -> ERROR 'room inconnue'   // a ajouter\nrooms.joinRoom('K7P2QA', wsAlice)",
+      note: 'joinRoomHandler recupere message.gameType mais ne l\'utilise pas (dangling expression).',
+      state: { addMember: 'alice' } },
+    { dir: 's2c', files: ['f-hook'],
+      title: 'Alice : joined_room ; Bob : player_joined',
+      payload: "-> wsAlice : { \"type\": \"joined_room\", \"data\": { \"roomId\": \"K7P2QA\" } }\n-> wsBob   : { \"type\": \"player_joined\", \"data\": { \"user\": \"alice\", \"userId\": 2 } }",
+      note: 'Attention : le front ecoute encore "userJoined" alors que le back envoie "player_joined" : le message passe inapercu. Le hook doit etre aligne.' },
+    { dir: 'c2s', files: ['f-menu'], warn: true,
+      title: 'Bob (l\'hote) choisit le theme et lance la partie',
+      payload: '{ "type": "startGame", "quizId": 7 }',
+      note: 'Bug de signature actuel : handlers.startGame = startGame, appele handler(ws, message) -> startGame recoit (ws, message) au lieu de (roomId, quizId). A corriger avant tout test.' },
+    { dir: 'info', files: ['b-quiz'],
+      title: 'Deroulement identique a la phase "Partie 1v1"',
+      payload: 'question -> answer -> PLAYER_ANSWERED -> REVEAL_ANSWER -> ... -> GAME_OVER',
+      note: 'La room custom ajoute seulement le choix du quiz par l\'hote avant le meme cycle. GAME_OVER laisse la room ouverte pour le chat et une revanche.' },
 
     { phase: 'Deconnexion' },
     { dir: 'front', files: ['f-hook'],
-      title: 'bob quitte la page : ws.close()',
+      title: 'Bob quitte la page : ws.close()',
       payload: "// cleanup du useEffect\nif (ws.readyState === 1) ws.close();",
-      note: 'Se declenche aussi quand React demonte GameRoom (navigation) ou a la fermeture de l\'onglet.' },
+      note: 'Se declenche aussi quand React demonte OnlineMenu/GameRoom (navigation) ou a la fermeture de l\'onglet.' },
     { dir: 'back', files: ['b-rooms'],
       title: 'ws.on("close") -> leaveRoom(ws)',
-      payload: "rooms['game-42'] = rooms['game-42'].filter(w => w !== wsBob)\n// si la room se vide : delete rooms['game-42']",
+      payload: "rooms['K7P2QA'] = rooms['K7P2QA'].filter(w => w !== wsBob)\n// si la room se vide : delete rooms['K7P2QA']",
       note: 'Nettoyage memoire : une room vide disparait.',
       state: { removeMember: 'bob' } },
     { dir: 's2c', files: ['f-hook'],
-      title: 'alice est prevenue : player_left',
+      title: 'Alice est prevenue : player_left',
       payload: '{ "type": "player_left", "data": { "user": "bob", "userId": 1 } }',
       note: 'Le front peut retirer bob de la liste des presents. Dernier echange du cycle de vie.',
       state: { conn: 'off', room: null } }
   ];
 
   // ------- etat simule -------
-  var state = { conn: 'off', room: null, members: [], phase: 'idle', scores: {} };
+  var state = { conn: 'off', room: null, queue: '-', members: [], phase: 'idle', scores: {} };
   var current = -1;   // -1 = rien n'a commence
   var playing = false;
   var timerId = null;
@@ -662,7 +712,8 @@
   for (var i = 0; i < steps.length; i++) {
     var s = steps[i];
     if (s.phase) {
-      html += '<div class="phase-header">' + s.phase + '</div>';
+      var branchClass = s.branch ? ' branch' : '';
+      html += '<div class="phase-header' + branchClass + '">' + s.phase + '</div>';
       continue;
     }
     var dirClass = s.dir === 'c2s' ? 'c2s' : s.dir === 's2c' ? 's2c' :
@@ -694,10 +745,24 @@
     if (!p) return;
     if (p.conn) state.conn = p.conn;
     if (p.room !== undefined) state.room = p.room;
+    if (p.queue !== undefined) state.queue = p.queue;
     if (p.phase) state.phase = p.phase;
+    if (p.reset) {
+      state.members = [];
+      state.room = null;
+      state.queue = '-';
+      state.phase = 'idle';
+      state.scores = {};
+    }
     if (p.addMember) {
       state.members.push(p.addMember);
       state.scores[p.addMember] = 0;
+    }
+    if (p.addMembers) {
+      p.addMembers.forEach(function (m) {
+        state.members.push(m);
+        state.scores[m] = 0;
+      });
     }
     if (p.removeMember) {
       state.members = state.members.filter(function (m) { return m !== p.removeMember; });
@@ -714,6 +779,7 @@
     label.textContent = state.conn === 'on' ? 'ouverte' : state.conn === 'connecting' ? 'handshake...' : 'fermee';
 
     document.getElementById('roomLabel').textContent = state.room || '-';
+    document.getElementById('queueLabel').textContent = state.queue;
 
     var badge = document.getElementById('phaseLabel');
     badge.textContent = state.phase;
@@ -773,13 +839,14 @@
     }
 
     // etat : on rejoue les patches depuis le debut (deterministe)
-    state = { conn: 'off', room: null, members: [], phase: 'idle', scores: {} };
+    state = { conn: 'off', room: null, queue: '-', members: [], phase: 'idle', scores: {} };
     for (var j = 0; j <= current; j++) {
       if (steps[j].state) applyPatch(steps[j].state);
     }
 
     // cartes laterales activees
-    ['f-gameroom', 'f-hook', 'f-local', 'b-server', 'b-auth', 'b-gamesocket', 'b-handlers', 'b-rooms', 'b-quiz']
+    ['f-home', 'f-menu', 'f-gameroom', 'f-hook', 'f-cookie',
+     'b-server', 'b-auth', 'b-gamesocket', 'b-handlers', 'b-match', 'b-rooms', 'b-quiz']
       .forEach(function (id) { document.getElementById(id).classList.remove('hot'); });
     if (current >= 0) {
       var active = steps[current];
@@ -844,21 +911,67 @@
   // ------- vue Protocole : catalogue des messages -------
   var protocol = [
     {
-      name: 'joinRoom', kind: 'cmd', wired: true,
+      name: 'quickMatch', kind: 'cmd', wired: false, badge: 'A BRANCHER',
+      handler: 'a creer : handlers.quickMatch -> matchmaking.js (queue par theme)',
+      send: {
+        label: 'envoye par le front (bouton "Partie rapide" + theme choisi)',
+        json: { type: 'quickMatch', theme: 'geographie' }
+      },
+      returns: [
+        { to: 'a l\'emetteur, tout de suite (ack de mise en file)', json: {
+          type: 'matchmaking', data: { status: 'searching', theme: 'geographie' }
+        } },
+        { to: 'aux deux joueurs quand la file atteint 2', json: {
+          type: 'match_found',
+          data: { roomId: 'mm-8f3k', opponent: 'alice', quizId: 7 }
+        } }
+      ],
+      note: 'File en memoire, une par theme. Le serveur cree la room et y place les deux sockets : le front n\'envoie pas de joinRoom apres match_found. Prevoir cancelMatchmaking si le joueur fait retour.'
+    },
+    {
+      name: 'cancelMatchmaking', kind: 'cmd', wired: false, badge: 'A BRANCHER',
+      handler: 'a creer : handlers.cancelMatchmaking -> retrait de la queue',
+      send: {
+        label: 'envoye par le front (bouton retour pendant la recherche)',
+        json: { type: 'cancelMatchmaking' }
+      },
+      returns: [
+        { to: 'a l\'emetteur (ack)', json: { type: 'matchmaking', data: { status: 'cancelled' } } }
+      ],
+      note: 'Sans ce message, un joueur qui ferme l\'ecran de recherche reste dans la file et sera matche plus tard avec un socket fantome.'
+    },
+    {
+      name: 'createRoom', kind: 'cmd', wired: false, badge: 'A BRANCHER',
+      handler: 'a creer : handlers.createRoom -> generateRoomId() + rooms.joinRoom',
+      send: {
+        label: 'envoye par le front (bouton "Creer une room")',
+        json: { type: 'createRoom', name: 'Soiree Quiz' }
+      },
+      returns: [
+        { to: 'a l\'emetteur (createur)', json: {
+          type: 'room_created',
+          data: { roomId: 'K7P2QA', name: 'Soiree Quiz' }
+        } }
+      ],
+      note: 'Le serveur genere le code (5-6 caracteres, unique), le nom est libre et purement affiche. On rejoint par le code, jamais par le nom.'
+    },
+    {
+      name: 'joinRoom', kind: 'cmd', wired: true, badge: 'VALIDATION A AJOUTER',
       handler: 'gameSocket.js -> handlers/joinRoomHandler.js',
       send: {
-        label: 'envoye par le front (tous les joueurs)',
+        label: 'envoye par le front (bouton "Rejoindre une room", code saisi)',
         json: {
           type: 'joinRoom',
-          roomId: 'game-42',
+          roomId: 'K7P2QA',
           gameType: 'quiz'
         }
       },
       returns: [
-        { to: 'a l\'emetteur (ws.send)', json: { type: 'joined_room', data: { roomId: 'game-42' } } },
-        { to: 'aux autres membres (broadcast, sauf emetteur)', json: { type: 'player_joined', data: { user: 'alice', userId: 2 } } }
+        { to: 'a l\'emetteur (ws.send)', json: { type: 'joined_room', data: { roomId: 'K7P2QA' } } },
+        { to: 'aux autres membres (broadcast, sauf emetteur)', json: { type: 'player_joined', data: { user: 'alice', userId: 2 } } },
+        { to: 'a l\'emetteur si room inconnue (a ajouter)', json: { type: 'ERROR', message: 'Room inconnue ou pleine.' } }
       ],
-      note: 'joinRoomHandler appelle leaveRoom avant (changement de room possible). Attention : gameType est recupere mais jamais utilise (dangling expression).'
+      note: 'joinRoomHandler appelle leaveRoom avant (changement de room possible). Aujourd\'hui une roomId inconnue cree une room vide au lieu de renvoyer une erreur : a corriger. gameType est recupere mais jamais utilise (dangling expression).'
     },
     {
       name: 'chat', kind: 'cmd', wired: true,
@@ -885,10 +998,10 @@
       note: 'Egalement appele automatiquement sur ws.on("close") (fermeture d\'onglet, navigation React, deconnexion). Si la room se vide, elle est supprimee.'
     },
     {
-      name: 'startGame', kind: 'cmd', wired: false,
-      handler: 'a brancher : handlers.startGame -> quizGame.startGame(roomId, quizId)',
+      name: 'startGame', kind: 'cmd', wired: true, badge: 'SIGNATURE BUG',
+      handler: 'gameSocket.js -> handlers.startGame = quizGame.startGame',
       send: {
-        label: 'a ajouter cote front (bouton "Lancer la partie")',
+        label: 'envoye par le front (hote d\'une room custom) ou lance par le serveur (partie rapide)',
         json: { type: 'startGame', quizId: 7 }
       },
       returns: [
@@ -907,11 +1020,11 @@
           timeLeft: 15
         } }
       ],
-      note: 'Aucun message ne declenche startGame aujourd\'hui : handlers n\'a que joinRoom / chat / leaveRoom. getQuizById doit inclure questions.answers sinon sendQuestion plantera.'
+      note: 'Bug actuel : le routeur appelle handler(ws, message), donc startGame recoit (ws, message) au lieu de (roomId, quizId). Il faut un wrapper : startGame(ws.currentRoom, message.quizId). getQuizById doit inclure questions.answers sinon sendQuestion plantera.'
     },
     {
-      name: 'answer', kind: 'cmd', wired: false,
-      handler: 'a brancher : handlers.answer -> handlers/quizHandler.answerQuestionHandler',
+      name: 'answer', kind: 'cmd', wired: false, badge: 'A BRANCHER',
+      handler: 'a enregistrer : handlers.answer = handlers/quizHandler.answerQuestionHandler',
       send: {
         label: 'a ajouter cote front (clic sur une option)',
         json: { type: 'answer', questionId: 101, answer: 401 }
@@ -927,9 +1040,9 @@
             scores: { 1: 1, 2: 0 }
           }
         } },
-        { to: 'a l\'emetteur seulement, en cas de probleme', json: { type: 'ERROR', message: 'Tu as deja repondu a cette question !' } }
+        { to: 'a l\'emetteur seulement, en cas de probleme', json: { type: 'ERROR', message: 'Tu as déjà répondu à cette question !' } }
       ],
-      note: 'Bug actuel dans quizHandler.js : const { roomId } = ws.currentRoom destructure une string -> undefined. Il faut const roomId = ws.currentRoom. La bonne reponse ne quitte jamais le serveur : seul isCorrect est renvoye.'
+      note: 'Le handler existe dans quizHandler.js mais n\'est pas dans le routeur : ajouter handlers.answer. La bonne reponse ne quitte jamais le serveur : seul isCorrect est renvoye.'
     },
     {
       name: 'question', kind: 'push', wired: true,
@@ -989,13 +1102,13 @@
         type: 'GAME_OVER',
         data: { finalScores: { 1: 12, 2: 9 } }
       },
-      note: 'Dernier message de la partie : games[roomId] est supprime, la room elle-meme reste ouverte pour le chat.'
+      note: 'Dernier message de la partie : games[roomId] est supprime, la room elle-meme reste ouverte pour le chat et une revanche.'
     },
     {
       name: 'ERROR', kind: 'push', wired: true,
       handler: 'pousse par le serveur a l\'emetteur seulement',
       trigger: 'declencheur : question invalide / deja repondu / type inconnu',
-      payload: { type: 'ERROR', message: 'Question invalide ou game terminee.' },
+      payload: { type: 'ERROR', message: 'Question invalide ou game terminée.' },
       note: 'Type en MAJUSCULES, champ "message" sans enrobage "data". Cote back, un type inconnu ne renvoie rien du tout (juste un log serveur).'
     }
   ];
@@ -1015,8 +1128,8 @@
       html += '<span class="proto-name">' + p.name + '</span>';
       html += '<span class="proto-tag ' + (p.kind === 'push' ? 'tag-dir' : 'tag-ok') + '">' +
               (p.kind === 'push' ? 'BACK PUSH' : 'FRONT RQT') + '</span>';
-      if (!p.wired) {
-        html += '<span class="proto-tag tag-warn">A BRANCHER</span>';
+      if (p.badge) {
+        html += '<span class="proto-tag tag-warn">' + escapeHtml(p.badge) + '</span>';
       }
       html += '</div>';
       html += '<div class="proto-handler">' + escapeHtml(p.handler) + '</div>';

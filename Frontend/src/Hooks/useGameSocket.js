@@ -51,9 +51,13 @@ export function useGameSocket(roomId) {
           }]);
         }
 
-        if (data.type === 'userJoined') {
-          console.log(`${data.user} a rejoint la room`);
-          setUsers(prev => [...new Set([...prev, data.user])]);
+        if (data.type === 'joined_room') {
+          console.log(`${data.data.user} a rejoint la room`);
+          setUsers(prev => [...new Set([...prev, data.data.user])]);
+          setMessages(prev => [...prev, {
+            text: data.data.user + ' a rejoint room',
+            timestamp: new Date()
+          }]);
         }
       } catch (error) {
         console.error('Erreur parsing message:', error);
