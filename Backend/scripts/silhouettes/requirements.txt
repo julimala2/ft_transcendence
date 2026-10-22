@@ -1,0 +1,5 @@
+geopandas==1.2.0
+matplotlib==3.11.2
+pillow==12.3.0
+pyproj==3.8.0
+shapely==2.2.0

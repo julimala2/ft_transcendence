@@ -1,0 +1,3585 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 260,
+    "parDifficulte": { "1": 74, "2": 102, "3": 84 },
+    "parType": { "multiple": 218, "boolean": 42 },
+    "avecImage": 0,
+    "sansImage": 260,
+    "parTag": {
+      "regle": 58,
+      "equipe-nationale": 54,
+      "coupe-du-monde": 43,
+      "top-14": 39,
+      "joueur": 37,
+      "equipe-de-france": 35,
+      "six-nations": 34,
+      "histoire": 31,
+      "tournee": 26,
+      "record": 23
+    }
+  },
+  "category": {
+    "slug": "rugby",
+    "name": "Rugby"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "rug-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la Coupe du monde de rugby 2023 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": true },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "Les Springboks battent les All Blacks 12-11 en finale, au Stade de France."
+    },
+    {
+      "ref": "rug-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Quel pays a organisé la Coupe du monde de rugby 2023 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "La France", "isCorrect": true },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false }
+      ],
+      "explanation": "Le Japon l'avait organisée en 2019, l'Angleterre en 2015 et la Nouvelle-Zélande en 2011."
+    },
+    {
+      "ref": "rug-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde", "histoire"],
+      "text": "Comment s'appelle le trophée remis au vainqueur de la Coupe du monde de rugby ?",
+      "answers": [
+        { "text": "La coupe de Calcutta", "isCorrect": false },
+        { "text": "La coupe Webb-Ellis", "isCorrect": true },
+        { "text": "Le bouclier de Brennus", "isCorrect": false },
+        { "text": "La coupe Bledisloe", "isCorrect": false }
+      ],
+      "explanation": "Elle porte le nom de William Webb Ellis, l'élève qui aurait inventé le rugby."
+    },
+    {
+      "ref": "rug-004",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record", "equipe-nationale"],
+      "text": "Combien de Coupes du monde l'Afrique du Sud a-t-elle remportées ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "En 1995, 2007, 2019 et 2023 : c'est le record."
+    },
+    {
+      "ref": "rug-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "histoire"],
+      "text": "Quel président a remis la Coupe du monde 1995 au capitaine sud-africain François Pienaar ?",
+      "answers": [
+        { "text": "Thabo Mbeki", "isCorrect": false },
+        { "text": "Frederik de Klerk", "isCorrect": false },
+        { "text": "Jacob Zuma", "isCorrect": false },
+        { "text": "Nelson Mandela", "isCorrect": true }
+      ],
+      "explanation": "Vêtu du maillot des Springboks, longtemps symbole de l'apartheid, Mandela en fait un moment de réconciliation nationale."
+    },
+    {
+      "ref": "rug-006",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "joueur"],
+      "text": "Qui a marqué le drop de la victoire sud-africaine en finale de la Coupe du monde 1995 ?",
+      "answers": [
+        { "text": "Joel Stransky", "isCorrect": true },
+        { "text": "Chester Williams", "isCorrect": false },
+        { "text": "François Pienaar", "isCorrect": false },
+        { "text": "Joost van der Westhuizen", "isCorrect": false }
+      ],
+      "explanation": "Son drop en prolongation donne la victoire 15-12 contre la Nouvelle-Zélande."
+    },
+    {
+      "ref": "rug-007",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "histoire"],
+      "text": "Quel film de Clint Eastwood raconte la Coupe du monde 1995 et le rôle de Nelson Mandela ?",
+      "answers": [
+        { "text": "Invictus", "isCorrect": true },
+        { "text": "Sully", "isCorrect": false },
+        { "text": "Million Dollar Baby", "isCorrect": false },
+        { "text": "Gran Torino", "isCorrect": false }
+      ],
+      "explanation": "Sorti en 2009, avec Morgan Freeman dans le rôle de Mandela et Matt Damon dans celui de François Pienaar."
+    },
+    {
+      "ref": "rug-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la première Coupe du monde de rugby, en 1987 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": true },
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false }
+      ],
+      "explanation": "Coorganisée avec l'Australie, elle se termine par une victoire des All Blacks contre la France en finale."
+    },
+    {
+      "ref": "rug-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Combien de finales de Coupe du monde la France a-t-elle disputées ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "En 1987, 1999 et 2011, toutes perdues : contre la Nouvelle-Zélande, l'Australie, puis de nouveau la Nouvelle-Zélande."
+    },
+    {
+      "ref": "rug-010",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Sur quel score la France a-t-elle perdu la finale de la Coupe du monde 2011 contre la Nouvelle-Zélande ?",
+      "answers": [
+        { "text": "12-11", "isCorrect": false },
+        { "text": "15-12", "isCorrect": false },
+        { "text": "20-17", "isCorrect": false },
+        { "text": "8-7", "isCorrect": true }
+      ],
+      "explanation": "À l'Eden Park d'Auckland, les Bleus de Thierry Dusautoir passent tout près de l'exploit."
+    },
+    {
+      "ref": "rug-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Quelle équipe la France a-t-elle battue lors de la demi-finale légendaire de la Coupe du monde 1999 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": true },
+        { "text": "L'Australie", "isCorrect": false }
+      ],
+      "explanation": "Menés 24-10, les Bleus l'emportent 43-31 à Twickenham, avant de perdre la finale contre l'Australie."
+    },
+    {
+      "ref": "rug-012",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Dans quelle ville la France a-t-elle éliminé la Nouvelle-Zélande en quart de finale de la Coupe du monde 2007 ?",
+      "answers": [
+        { "text": "Marseille", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Cardiff", "isCorrect": true }
+      ],
+      "explanation": "Au Millennium Stadium, la France gagne 20-18 alors qu'elle organisait le tournoi."
+    },
+    {
+      "ref": "rug-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "joueur"],
+      "text": "Quel joueur a donné le titre mondial à l'Angleterre en 2003, sur un drop en prolongation ?",
+      "answers": [
+        { "text": "Jason Robinson", "isCorrect": false },
+        { "text": "Jonny Wilkinson", "isCorrect": true },
+        { "text": "Lawrence Dallaglio", "isCorrect": false },
+        { "text": "Martin Johnson", "isCorrect": false }
+      ],
+      "explanation": "À 26 secondes de la fin de la prolongation, il passe un drop du pied droit, son mauvais pied, contre l'Australie (20-17)."
+    },
+    {
+      "ref": "rug-014",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-nationale"],
+      "text": "L'Angleterre est la seule nation de l'hémisphère Nord à avoir remporté la Coupe du monde de rugby.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 2003, en Australie. Tous les autres titres sont revenus à l'Afrique du Sud, à la Nouvelle-Zélande et à l'Australie."
+    },
+    {
+      "ref": "rug-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays organise la Coupe du monde de rugby 2027 ?",
+      "answers": [
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": true },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false }
+      ],
+      "explanation": "C'est la troisième fois après 1987 (avec la Nouvelle-Zélande) et 2003."
+    },
+    {
+      "ref": "rug-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays organisera la Coupe du monde de rugby 2031 ?",
+      "answers": [
+        { "text": "Les États-Unis", "isCorrect": true },
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": false }
+      ],
+      "explanation": "Ce sera la première Coupe du monde de rugby à XV en Amérique du Nord."
+    },
+    {
+      "ref": "rug-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a organisé la Coupe du monde de rugby 2019 ?",
+      "answers": [
+        { "text": "Les Fidji", "isCorrect": false },
+        { "text": "La Corée du Sud", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": true },
+        { "text": "La Chine", "isCorrect": false }
+      ],
+      "explanation": "C'était la première Coupe du monde organisée en Asie."
+    },
+    {
+      "ref": "rug-018",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "equipe-nationale"],
+      "text": "En 2015, quelle équipe le Japon a-t-il battue lors du « miracle de Brighton » ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Les Samoa", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": true }
+      ],
+      "explanation": "Le Japon gagne 34-32 sur un essai à la dernière minute : l'une des plus grandes surprises de l'histoire du rugby."
+    },
+    {
+      "ref": "rug-019",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Quel pays a remporté la Coupe du monde de rugby 2015, en Angleterre ?",
+      "answers": [
+        { "text": "L'Afrique du Sud", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": true },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Le pays de Galles", "isCorrect": false }
+      ],
+      "explanation": "Les All Blacks battent l'Australie en finale à Twickenham."
+    },
+    {
+      "ref": "rug-020",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "La Nouvelle-Zélande est la première équipe à avoir conservé son titre de championne du monde, en 2011 puis en 2015.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "L'Afrique du Sud l'a imitée en 2019 et 2023."
+    },
+    {
+      "ref": "rug-021",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record", "joueur"],
+      "text": "Quel joueur a marqué le plus de points de l'histoire de la Coupe du monde ?",
+      "answers": [
+        { "text": "Gavin Hastings", "isCorrect": false },
+        { "text": "Owen Farrell", "isCorrect": false },
+        { "text": "Jonny Wilkinson", "isCorrect": true },
+        { "text": "Dan Carter", "isCorrect": false }
+      ],
+      "explanation": "L'Anglais a inscrit 277 points en quatre Coupes du monde, de 1999 à 2011."
+    },
+    {
+      "ref": "rug-022",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record", "joueur"],
+      "text": "Quels joueurs partagent le record d'essais en Coupe du monde, avec 15 essais chacun ?",
+      "answers": [
+        { "text": "Jonah Lomu et Bryan Habana", "isCorrect": true },
+        { "text": "Doug Howlett et Shane Williams", "isCorrect": false },
+        { "text": "Dan Carter et Bryan Habana", "isCorrect": false },
+        { "text": "Jonah Lomu et David Campese", "isCorrect": false }
+      ],
+      "explanation": "Le Néo-Zélandais Lomu les marque en deux éditions (1995, 1999), le Sud-Africain Habana en trois (2007, 2011, 2015)."
+    },
+    {
+      "ref": "rug-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "joueur"],
+      "text": "Quel ailier néo-zélandais a marqué quatre essais contre l'Angleterre en demi-finale de la Coupe du monde 1995 ?",
+      "answers": [
+        { "text": "Jonah Lomu", "isCorrect": true },
+        { "text": "Christian Cullen", "isCorrect": false },
+        { "text": "Jeff Wilson", "isCorrect": false },
+        { "text": "Doug Howlett", "isCorrect": false }
+      ],
+      "explanation": "Avec ses 1,96 m et 120 kg, il écrase notamment Mike Catt sur son passage : la naissance d'une légende."
+    },
+    {
+      "ref": "rug-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Quelle équipe a éliminé la France en quart de finale de sa Coupe du monde, en 2023 ?",
+      "answers": [
+        { "text": "L'Afrique du Sud", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": false }
+      ],
+      "explanation": "Les Springboks gagnent 29-28 au Stade de France, puis remportent le titre."
+    },
+    {
+      "ref": "rug-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Combien d'équipes ont participé à la Coupe du monde de rugby 2023 ?",
+      "answers": [
+        { "text": "16", "isCorrect": false },
+        { "text": "20", "isCorrect": true },
+        { "text": "24", "isCorrect": false },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "Réparties en quatre poules de cinq. La compétition passe à 24 équipes en 2027."
+    },
+    {
+      "ref": "rug-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "Combien d'équipes participeront à la Coupe du monde de rugby 2027 ?",
+      "answers": [
+        { "text": "16", "isCorrect": false },
+        { "text": "20", "isCorrect": false },
+        { "text": "24", "isCorrect": true },
+        { "text": "32", "isCorrect": false }
+      ],
+      "explanation": "Un format élargi, avec six poules de quatre et des huitièmes de finale."
+    },
+    {
+      "ref": "rug-027",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coupe-du-monde"],
+      "text": "Tous les combien d'années a lieu la Coupe du monde de rugby ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "Elle a lieu tous les quatre ans depuis 1987."
+    },
+    {
+      "ref": "rug-028",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "histoire", "equipe-nationale"],
+      "text": "L'Afrique du Sud n'a pas participé aux Coupes du monde 1987 et 1991.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle était exclue des compétitions internationales à cause de l'apartheid. Sa première participation, en 1995, se termine par un titre."
+    },
+    {
+      "ref": "rug-029",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-nationale"],
+      "text": "Quel pays a remporté la Coupe du monde 1999, en battant la France en finale ?",
+      "answers": [
+        { "text": "L'Australie", "isCorrect": true },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": false }
+      ],
+      "explanation": "C'est le deuxième titre des Wallabies, après celui de 1991."
+    },
+    {
+      "ref": "rug-030",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "Sur quel score la Nouvelle-Zélande a-t-elle battu le Japon lors de la Coupe du monde 1995 ?",
+      "answers": [
+        { "text": "98-0", "isCorrect": false },
+        { "text": "145-17", "isCorrect": true },
+        { "text": "72-6", "isCorrect": false },
+        { "text": "101-3", "isCorrect": false }
+      ],
+      "explanation": "21 essais marqués, dont 6 par Marc Ellis : un record de points pour une équipe en Coupe du monde."
+    },
+    {
+      "ref": "rug-031",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "La France a déjà remporté la Coupe du monde de rugby.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle a disputé trois finales (1987, 1999, 2011) et les a toutes perdues."
+    },
+    {
+      "ref": "rug-032",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "La France a battu la Nouvelle-Zélande lors du match d'ouverture de sa Coupe du monde, en 2023.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Victoire 27-13 au Stade de France. C'était la première défaite des All Blacks en phase de poules d'une Coupe du monde."
+    },
+    {
+      "ref": "rug-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations"],
+      "text": "Combien d'équipes participent au Tournoi des Six Nations ?",
+      "answers": [
+        { "text": "6", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "L'Angleterre, l'Écosse, la France, l'Irlande, l'Italie et le pays de Galles."
+    },
+    {
+      "ref": "rug-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations"],
+      "text": "Quelle équipe ne participe pas au Tournoi des Six Nations ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": true },
+        { "text": "Le pays de Galles", "isCorrect": false }
+      ],
+      "explanation": "Le Tournoi réunit six nations européennes. L'Afrique du Sud dispute le Rugby Championship."
+    },
+    {
+      "ref": "rug-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "histoire"],
+      "text": "Quelle équipe a rejoint le Tournoi en 2000, qui devient alors le Tournoi des Six Nations ?",
+      "answers": [
+        { "text": "L'Italie", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "La Géorgie", "isCorrect": false }
+      ],
+      "explanation": "Avant, c'était le Tournoi des Cinq Nations."
+    },
+    {
+      "ref": "rug-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations"],
+      "text": "Que signifie « réaliser le Grand Chelem » dans le Tournoi des Six Nations ?",
+      "answers": [
+        { "text": "Gagner tous ses matchs", "isCorrect": true },
+        { "text": "Marquer un essai dans chaque match", "isCorrect": false },
+        { "text": "Gagner le Tournoi", "isCorrect": false },
+        { "text": "Ne perdre aucun match à domicile", "isCorrect": false }
+      ],
+      "explanation": "Il faut battre les cinq autres équipes la même année."
+    },
+    {
+      "ref": "rug-037",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations"],
+      "text": "Dans le Tournoi des Six Nations, qui reçoit la « cuillère de bois » ?",
+      "answers": [
+        { "text": "Le meilleur marqueur", "isCorrect": false },
+        { "text": "L'équipe qui marque le plus d'essais", "isCorrect": false },
+        { "text": "Le meilleur joueur du Tournoi", "isCorrect": false },
+        { "text": "L'équipe qui perd tous ses matchs", "isCorrect": true }
+      ],
+      "explanation": "Une récompense symbolique et peu enviée, que l'Italie a souvent « remportée »."
+    },
+    {
+      "ref": "rug-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations"],
+      "text": "Quelles équipes peuvent remporter la Triple Couronne ?",
+      "answers": [
+        { "text": "L'Angleterre, l'Écosse, l'Irlande et le pays de Galles", "isCorrect": true },
+        { "text": "Toutes les équipes du Tournoi", "isCorrect": false },
+        { "text": "Seulement la France et l'Italie", "isCorrect": false },
+        { "text": "Seulement les trois premiers du classement", "isCorrect": false }
+      ],
+      "explanation": "Elle récompense l'équipe des îles britanniques et d'Irlande qui bat les trois autres."
+    },
+    {
+      "ref": "rug-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations"],
+      "text": "Quel trophée est en jeu lors des matchs entre l'Angleterre et l'Écosse ?",
+      "answers": [
+        { "text": "La coupe de Calcutta", "isCorrect": true },
+        { "text": "La coupe Bledisloe", "isCorrect": false },
+        { "text": "Le trophée Garibaldi", "isCorrect": false },
+        { "text": "Le trophée Millennium", "isCorrect": false }
+      ],
+      "explanation": "Disputée depuis 1879, elle a été fabriquée en Inde avec les roupies d'argent d'un club de Calcutta dissous."
+    },
+    {
+      "ref": "rug-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Quel trophée est en jeu lors des matchs entre la France et l'Italie ?",
+      "answers": [
+        { "text": "Le trophée Giuseppe-Garibaldi", "isCorrect": true },
+        { "text": "Le trophée de l'Auld Alliance", "isCorrect": false },
+        { "text": "Le trophée Millennium", "isCorrect": false },
+        { "text": "La coupe de Calcutta", "isCorrect": false }
+      ],
+      "explanation": "Il rend hommage au héros de l'unité italienne, qui a aussi combattu pour la France en 1870."
+    },
+    {
+      "ref": "rug-041",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Quel trophée est en jeu lors des matchs entre la France et l'Écosse ?",
+      "answers": [
+        { "text": "Le trophée de l'Auld Alliance", "isCorrect": true },
+        { "text": "La coupe de Calcutta", "isCorrect": false },
+        { "text": "La coupe du Centenaire", "isCorrect": false },
+        { "text": "Le trophée Giuseppe-Garibaldi", "isCorrect": false }
+      ],
+      "explanation": "Créé en 2018, il rappelle la « Vieille Alliance » entre la France et l'Écosse, nouée en 1295."
+    },
+    {
+      "ref": "rug-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Quelle équipe a remporté le Tournoi des Six Nations 2025 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "La France", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false }
+      ],
+      "explanation": "Les Bleus s'imposent en battant l'Écosse lors de la dernière journée, au Stade de France."
+    },
+    {
+      "ref": "rug-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Sous la direction de quel sélectionneur la France a-t-elle réalisé le Grand Chelem en 2022 ?",
+      "answers": [
+        { "text": "Bernard Laporte", "isCorrect": false },
+        { "text": "Fabien Galthié", "isCorrect": true },
+        { "text": "Guy Novès", "isCorrect": false },
+        { "text": "Philippe Saint-André", "isCorrect": false }
+      ],
+      "explanation": "Avec Antoine Dupont comme capitaine, les Bleus gagnent leurs cinq matchs, une première depuis 2010."
+    },
+    {
+      "ref": "rug-044",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Contre quelle équipe la France a-t-elle conclu son Grand Chelem 2022, au Stade de France ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true },
+        { "text": "Le pays de Galles", "isCorrect": false }
+      ],
+      "explanation": "Victoire 25-13 lors du « Crunch », le dernier jour du Tournoi."
+    },
+    {
+      "ref": "rug-045",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations"],
+      "text": "Quelle équipe a réalisé le Grand Chelem dans le Tournoi des Six Nations 2023 ?",
+      "answers": [
+        { "text": "Le pays de Galles", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": true },
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "Elle le conclut à Dublin contre l'Angleterre, le week-end de la Saint-Patrick."
+    },
+    {
+      "ref": "rug-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Dans quel stade l'Irlande joue-t-elle ses matchs du Tournoi ?",
+      "answers": [
+        { "text": "Twickenham", "isCorrect": false },
+        { "text": "Le Principality Stadium", "isCorrect": false },
+        { "text": "Murrayfield", "isCorrect": false },
+        { "text": "L'Aviva Stadium", "isCorrect": true }
+      ],
+      "explanation": "Situé à Dublin, il a remplacé l'ancien stade de Lansdowne Road."
+    },
+    {
+      "ref": "rug-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Dans quel stade l'Angleterre joue-t-elle ses matchs à domicile ?",
+      "answers": [
+        { "text": "Wembley", "isCorrect": false },
+        { "text": "Twickenham", "isCorrect": true },
+        { "text": "Murrayfield", "isCorrect": false },
+        { "text": "Old Trafford", "isCorrect": false }
+      ],
+      "explanation": "Situé dans le sud-ouest de Londres, c'est le plus grand stade de rugby du monde, avec 82 000 places."
+    },
+    {
+      "ref": "rug-048",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Dans quel stade l'Écosse joue-t-elle ses matchs à domicile ?",
+      "answers": [
+        { "text": "L'Aviva Stadium", "isCorrect": false },
+        { "text": "Murrayfield", "isCorrect": true },
+        { "text": "Hampden Park", "isCorrect": false },
+        { "text": "Twickenham", "isCorrect": false }
+      ],
+      "explanation": "Il se trouve à Édimbourg. Hampden Park, à Glasgow, est le stade de l'équipe d'Écosse de football."
+    },
+    {
+      "ref": "rug-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Dans quelle ville se trouve le Principality Stadium, où joue le pays de Galles ?",
+      "answers": [
+        { "text": "Newport", "isCorrect": false },
+        { "text": "Cardiff", "isCorrect": true },
+        { "text": "Swansea", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false }
+      ],
+      "explanation": "Construit pour la Coupe du monde 1999 sous le nom de Millennium Stadium, il est situé en plein centre-ville."
+    },
+    {
+      "ref": "rug-050",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Dans quel stade l'Italie joue-t-elle ses matchs du Tournoi ?",
+      "answers": [
+        { "text": "Le Stadio Flaminio", "isCorrect": false },
+        { "text": "Le Juventus Stadium", "isCorrect": false },
+        { "text": "Le Stadio Olimpico", "isCorrect": true },
+        { "text": "Le San Siro", "isCorrect": false }
+      ],
+      "explanation": "À Rome, depuis 2012. Elle jouait auparavant au Stadio Flaminio, plus petit."
+    },
+    {
+      "ref": "rug-051",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations"],
+      "text": "À quelle période de l'année se joue le Tournoi des Six Nations ?",
+      "answers": [
+        { "text": "En février et mars", "isCorrect": true },
+        { "text": "En septembre", "isCorrect": false },
+        { "text": "En novembre", "isCorrect": false },
+        { "text": "En juin et juillet", "isCorrect": false }
+      ],
+      "explanation": "Cinq journées réparties sur environ sept semaines."
+    },
+    {
+      "ref": "rug-052",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "L'Italie a déjà remporté le Tournoi des Six Nations.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Depuis son arrivée en 2000, l'Italie a surtout terminé à la dernière place, même si ses résultats progressent."
+    },
+    {
+      "ref": "rug-053",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["six-nations", "histoire"],
+      "text": "Avant l'arrivée de l'Italie en 2000, la compétition s'appelait le Tournoi des Cinq Nations.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le Tournoi s'est appelé ainsi de 1910, avec l'arrivée de la France, jusqu'en 1999."
+    },
+    {
+      "ref": "rug-054",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-de-france", "histoire"],
+      "text": "Pourquoi la France a-t-elle été exclue du Tournoi des Cinq Nations dans les années 1930 ?",
+      "answers": [
+        { "text": "Elle n'avait pas de stade assez grand", "isCorrect": false },
+        { "text": "Ses joueurs avaient agressé un arbitre", "isCorrect": false },
+        { "text": "Elle avait refusé de jouer à Londres", "isCorrect": false },
+        { "text": "Elle était soupçonnée de payer ses joueurs, alors que le rugby devait rester amateur", "isCorrect": true }
+      ],
+      "explanation": "Exclue en 1931, la France ne retrouve le Tournoi qu'en 1947, après la guerre."
+    },
+    {
+      "ref": "rug-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Comment surnomme-t-on le match entre la France et l'Angleterre ?",
+      "answers": [
+        { "text": "Le Crunch", "isCorrect": true },
+        { "text": "Le Clásico", "isCorrect": false },
+        { "text": "Le Classique", "isCorrect": false },
+        { "text": "La Revanche", "isCorrect": false }
+      ],
+      "explanation": "Un mot anglais qui évoque le craquement et le moment décisif : c'est le grand classique du Tournoi."
+    },
+    {
+      "ref": "rug-056",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "regle"],
+      "text": "Combien de points rapporte une victoire dans le Tournoi des Six Nations, sans compter les bonus ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true }
+      ],
+      "explanation": "Un point de bonus récompense les équipes qui marquent au moins quatre essais ou qui perdent de sept points ou moins."
+    },
+    {
+      "ref": "rug-057",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["six-nations", "regle"],
+      "text": "Une équipe qui réalise le Grand Chelem reçoit trois points de bonus supplémentaires.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ce bonus garantit qu'une équipe invaincue termine toujours première, même si une autre a accumulé plus de bonus."
+    },
+    {
+      "ref": "rug-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations"],
+      "text": "Quel trophée est en jeu lors des matchs entre l'Angleterre et l'Irlande ?",
+      "answers": [
+        { "text": "Le trophée Millennium", "isCorrect": true },
+        { "text": "Le trophée de l'Auld Alliance", "isCorrect": false },
+        { "text": "La coupe du Centenaire", "isCorrect": false },
+        { "text": "La coupe de Calcutta", "isCorrect": false }
+      ],
+      "explanation": "Il a été créé en 1988 pour le millénaire de la ville de Dublin."
+    },
+    {
+      "ref": "rug-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Quelle équipe a reçu le plus souvent la « cuillère de bois » depuis 2000 ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "Le pays de Galles", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false }
+      ],
+      "explanation": "L'Italie a souvent fini dernière, avec de nombreuses saisons sans victoire."
+    },
+    {
+      "ref": "rug-060",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Quel pays a réalisé le Grand Chelem dans le Tournoi 2019 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "Le pays de Galles", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "Sous la direction de Warren Gatland, son troisième Grand Chelem comme sélectionneur gallois."
+    },
+    {
+      "ref": "rug-061",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "equipe-de-france"],
+      "text": "Quelle équipe a battu la France 26-25 lors du Tournoi 2025, sa seule défaite de l'édition ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "Le pays de Galles", "isCorrect": false }
+      ],
+      "explanation": "À Twickenham, sur un essai d'Elliot Daly en fin de match. La France remporte quand même le Tournoi."
+    },
+    {
+      "ref": "rug-062",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "record", "joueur"],
+      "text": "Quel joueur est le meilleur marqueur d'essais de l'histoire du Tournoi des Six Nations ?",
+      "answers": [
+        { "text": "Shane Williams", "isCorrect": false },
+        { "text": "Jonah Lomu", "isCorrect": false },
+        { "text": "Brian O'Driscoll", "isCorrect": true },
+        { "text": "Vincent Clerc", "isCorrect": false }
+      ],
+      "explanation": "Le centre irlandais a marqué 26 essais dans le Tournoi, entre 2000 et 2014."
+    },
+    {
+      "ref": "rug-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["six-nations", "record"],
+      "text": "En quelle année la France a-t-elle rejoint le Tournoi, qui devient alors le Tournoi des Cinq Nations ?",
+      "answers": [
+        { "text": "2000", "isCorrect": false },
+        { "text": "1910", "isCorrect": true },
+        { "text": "1883", "isCorrect": false },
+        { "text": "1947", "isCorrect": false }
+      ],
+      "explanation": "Les quatre nations britanniques et irlandaises le disputaient seules depuis 1883."
+    },
+    {
+      "ref": "rug-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14"],
+      "text": "Combien de clubs composent le Top 14 ?",
+      "answers": [
+        { "text": "12", "isCorrect": false },
+        { "text": "16", "isCorrect": false },
+        { "text": "20", "isCorrect": false },
+        { "text": "14", "isCorrect": true }
+      ],
+      "explanation": "D'où son nom. Le dernier est relégué en Pro D2."
+    },
+    {
+      "ref": "rug-065",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14", "histoire"],
+      "text": "Quel trophée est remis au champion de France de rugby ?",
+      "answers": [
+        { "text": "Le bouclier de Brennus", "isCorrect": true },
+        { "text": "La coupe Webb-Ellis", "isCorrect": false },
+        { "text": "Le Saladier d'argent", "isCorrect": false },
+        { "text": "La coupe de Calcutta", "isCorrect": false }
+      ],
+      "explanation": "Ce bouclier, remis depuis 1892, porte le nom du graveur qui l'a réalisé, Charles Brennus."
+    },
+    {
+      "ref": "rug-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14", "record"],
+      "text": "Quel club a remporté le plus de titres de champion de France de rugby ?",
+      "answers": [
+        { "text": "Le Stade toulousain", "isCorrect": true },
+        { "text": "Le RC Toulon", "isCorrect": false },
+        { "text": "L'AS Béziers", "isCorrect": false },
+        { "text": "Le Stade français", "isCorrect": false }
+      ],
+      "explanation": "Toulouse a largement dépassé les 20 titres. Béziers, deuxième, en compte 11."
+    },
+    {
+      "ref": "rug-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Contre quel club le Stade toulousain a-t-il remporté la finale du Top 14 2025, après prolongation ?",
+      "answers": [
+        { "text": "L'Union Bordeaux-Bègles", "isCorrect": true },
+        { "text": "Le RC Toulon", "isCorrect": false },
+        { "text": "Le Racing 92", "isCorrect": false },
+        { "text": "Le Stade rochelais", "isCorrect": false }
+      ],
+      "explanation": "Victoire 39-33, un an après avoir battu le même adversaire en finale."
+    },
+    {
+      "ref": "rug-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quel club a remporté la Coupe d'Europe (Champions Cup) en 2025 ?",
+      "answers": [
+        { "text": "Le Stade toulousain", "isCorrect": false },
+        { "text": "Northampton", "isCorrect": false },
+        { "text": "Le Leinster", "isCorrect": false },
+        { "text": "L'Union Bordeaux-Bègles", "isCorrect": true }
+      ],
+      "explanation": "Les Bordelais remportent le premier titre de leur histoire en battant Northampton en finale."
+    },
+    {
+      "ref": "rug-069",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14"],
+      "text": "Quelles sont les couleurs du Stade toulousain ?",
+      "answers": [
+        { "text": "Rouge et noir", "isCorrect": true },
+        { "text": "Bleu et blanc", "isCorrect": false },
+        { "text": "Rose et noir", "isCorrect": false },
+        { "text": "Jaune et bleu", "isCorrect": false }
+      ],
+      "explanation": "Le rouge et noir est si célèbre que les supporters chantent « Rouge et noir » à chaque match."
+    },
+    {
+      "ref": "rug-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quels clubs s'affrontent dans le derby basque ?",
+      "answers": [
+        { "text": "L'Aviron bayonnais et le Biarritz olympique", "isCorrect": true },
+        { "text": "Le Biarritz olympique et le Stade montois", "isCorrect": false },
+        { "text": "La Section paloise et l'UBB", "isCorrect": false },
+        { "text": "L'Aviron bayonnais et la Section paloise", "isCorrect": false }
+      ],
+      "explanation": "Les deux villes ne sont séparées que de quelques kilomètres."
+    },
+    {
+      "ref": "rug-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Dans quel stade joue le RC Toulon ?",
+      "answers": [
+        { "text": "Le stade Mayol", "isCorrect": true },
+        { "text": "Le stade Marcel-Michelin", "isCorrect": false },
+        { "text": "Le stade Jean-Dauger", "isCorrect": false },
+        { "text": "Le stade Ernest-Wallon", "isCorrect": false }
+      ],
+      "explanation": "Il se trouve en plein centre-ville, face au port militaire."
+    },
+    {
+      "ref": "rug-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quel club joue au stade Marcel-Michelin ?",
+      "answers": [
+        { "text": "L'ASM Clermont Auvergne", "isCorrect": true },
+        { "text": "Le CA Brive", "isCorrect": false },
+        { "text": "Le Stade toulousain", "isCorrect": false },
+        { "text": "Le Castres olympique", "isCorrect": false }
+      ],
+      "explanation": "Le stade porte le nom d'un membre de la famille Michelin, l'entreprise de pneus à l'origine du club."
+    },
+    {
+      "ref": "rug-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Dans quel stade joue le Stade toulousain ?",
+      "answers": [
+        { "text": "Le stade Marcel-Deflandre", "isCorrect": false },
+        { "text": "Le stade Ernest-Wallon", "isCorrect": true },
+        { "text": "Le stade Mayol", "isCorrect": false },
+        { "text": "Le Stadium de Toulouse", "isCorrect": false }
+      ],
+      "explanation": "Pour les grands matchs, le club joue aussi au Stadium, le grand stade de la ville."
+    },
+    {
+      "ref": "rug-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14", "record"],
+      "text": "Quel club a remporté trois Coupes d'Europe consécutives, de 2013 à 2015 ?",
+      "answers": [
+        { "text": "Les Saracens", "isCorrect": false },
+        { "text": "Le Leinster", "isCorrect": false },
+        { "text": "Le RC Toulon", "isCorrect": true },
+        { "text": "Le Stade toulousain", "isCorrect": false }
+      ],
+      "explanation": "Avec des stars comme Jonny Wilkinson, Matt Giteau ou Bakkies Botha."
+    },
+    {
+      "ref": "rug-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quel club parisien est célèbre pour ses maillots roses ?",
+      "answers": [
+        { "text": "Le Paris FC", "isCorrect": false },
+        { "text": "Le Stade français Paris", "isCorrect": true },
+        { "text": "Le Racing 92", "isCorrect": false },
+        { "text": "Le PUC", "isCorrect": false }
+      ],
+      "explanation": "Une idée de son ancien président Max Guazzini, qui a aussi lancé le calendrier des « Dieux du Stade »."
+    },
+    {
+      "ref": "rug-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14"],
+      "text": "Dans quelle salle couverte joue le Racing 92 ?",
+      "answers": [
+        { "text": "La Paris La Défense Arena", "isCorrect": true },
+        { "text": "Le Parc des Princes", "isCorrect": false },
+        { "text": "Le stade Jean-Bouin", "isCorrect": false },
+        { "text": "Le Stade de France", "isCorrect": false }
+      ],
+      "explanation": "Inaugurée en 2017 à Nanterre, elle peut accueillir 30 000 spectateurs pour le rugby."
+    },
+    {
+      "ref": "rug-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quel club a remporté la Coupe d'Europe en 2022 et en 2023 ?",
+      "answers": [
+        { "text": "Le Stade toulousain", "isCorrect": false },
+        { "text": "Le Leinster", "isCorrect": false },
+        { "text": "Le Stade rochelais", "isCorrect": true },
+        { "text": "Le Racing 92", "isCorrect": false }
+      ],
+      "explanation": "Les Rochelais battent les Irlandais du Leinster lors des deux finales."
+    },
+    {
+      "ref": "rug-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14", "record"],
+      "text": "Quel club a remporté le plus de Coupes d'Europe ?",
+      "answers": [
+        { "text": "Le Stade toulousain", "isCorrect": true },
+        { "text": "Le Leinster", "isCorrect": false },
+        { "text": "Le RC Toulon", "isCorrect": false },
+        { "text": "Les Saracens", "isCorrect": false }
+      ],
+      "explanation": "Toulouse l'a remportée six fois, de 1996 (première édition) à 2024."
+    },
+    {
+      "ref": "rug-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Dans quel stade se joue habituellement la finale du Top 14 ?",
+      "answers": [
+        { "text": "Le Vélodrome", "isCorrect": false },
+        { "text": "Le Stadium de Toulouse", "isCorrect": false },
+        { "text": "Le Parc des Princes", "isCorrect": false },
+        { "text": "Le Stade de France", "isCorrect": true }
+      ],
+      "explanation": "La finale s'y joue presque chaque année depuis 1998, devant environ 80 000 spectateurs."
+    },
+    {
+      "ref": "rug-080",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14", "histoire"],
+      "text": "Quel surnom donne-t-on au bouclier de Brennus ?",
+      "answers": [
+        { "text": "Le « bout de bois »", "isCorrect": true },
+        { "text": "La « casserole »", "isCorrect": false },
+        { "text": "Le « saladier »", "isCorrect": false },
+        { "text": "La « planche »", "isCorrect": false }
+      ],
+      "explanation": "Une plaque de cuivre est fixée sur un panneau en bois, d'où ce surnom affectueux."
+    },
+    {
+      "ref": "rug-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14", "histoire"],
+      "text": "Quel personnage célèbre a arbitré la première finale du championnat de France de rugby, en 1892 ?",
+      "answers": [
+        { "text": "Jules Rimet", "isCorrect": false },
+        { "text": "Georges Clemenceau", "isCorrect": false },
+        { "text": "Pierre de Coubertin", "isCorrect": true },
+        { "text": "Gustave Eiffel", "isCorrect": false }
+      ],
+      "explanation": "Le futur fondateur des Jeux olympiques modernes était un grand passionné de rugby."
+    },
+    {
+      "ref": "rug-082",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14"],
+      "text": "Comment s'appelle la deuxième division du rugby professionnel français ?",
+      "answers": [
+        { "text": "La Pro D2", "isCorrect": true },
+        { "text": "Le Top 16", "isCorrect": false },
+        { "text": "La Ligue 2", "isCorrect": false },
+        { "text": "La Fédérale 1", "isCorrect": false }
+      ],
+      "explanation": "Son champion monte directement en Top 14."
+    },
+    {
+      "ref": "rug-083",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "En Top 14, les deux premiers de la saison régulière sont directement qualifiés pour les demi-finales.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les équipes classées de la 3e à la 6e place jouent des matchs de barrage pour les rejoindre."
+    },
+    {
+      "ref": "rug-084",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["top-14"],
+      "text": "Le dernier du Top 14 joue un match de barrage pour tenter de se maintenir.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le 14e est relégué directement. C'est le 13e qui joue un barrage contre le finaliste de Pro D2."
+    },
+    {
+      "ref": "rug-085",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14"],
+      "text": "Quel club a créé la surprise en remportant le Top 14 en 2018, contre Montpellier ?",
+      "answers": [
+        { "text": "Le Stade rochelais", "isCorrect": false },
+        { "text": "Le Castres olympique", "isCorrect": true },
+        { "text": "L'ASM Clermont Auvergne", "isCorrect": false },
+        { "text": "Le RC Toulon", "isCorrect": false }
+      ],
+      "explanation": "Qualifié à la 6e place, Castres gagne 29-13 en finale."
+    },
+    {
+      "ref": "rug-086",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14"],
+      "text": "Quel club a remporté son premier titre de champion de France en 2022, contre Castres ?",
+      "answers": [
+        { "text": "La Rochelle", "isCorrect": false },
+        { "text": "Montpellier", "isCorrect": true },
+        { "text": "Lyon", "isCorrect": false },
+        { "text": "Bordeaux-Bègles", "isCorrect": false }
+      ],
+      "explanation": "Une victoire nette 29-10 en finale."
+    },
+    {
+      "ref": "rug-087",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14", "record"],
+      "text": "Sur quel score le Stade toulousain a-t-il battu Bordeaux-Bègles en finale du Top 14 2024 ?",
+      "answers": [
+        { "text": "33-20", "isCorrect": false },
+        { "text": "59-3", "isCorrect": true },
+        { "text": "18-8", "isCorrect": false },
+        { "text": "29-26", "isCorrect": false }
+      ],
+      "explanation": "Le plus large écart de l'histoire pour une finale du championnat de France."
+    },
+    {
+      "ref": "rug-088",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14", "joueur", "equipe-de-france"],
+      "text": "Dans quel club joue Antoine Dupont ?",
+      "answers": [
+        { "text": "Le Racing 92", "isCorrect": false },
+        { "text": "Le RC Toulon", "isCorrect": false },
+        { "text": "Le Stade rochelais", "isCorrect": false },
+        { "text": "Le Stade toulousain", "isCorrect": true }
+      ],
+      "explanation": "Formé à Auch puis passé par Castres, il a rejoint Toulouse en 2017."
+    },
+    {
+      "ref": "rug-089",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14"],
+      "text": "Quel club joue au stade Jean-Dauger ?",
+      "answers": [
+        { "text": "La Section paloise", "isCorrect": false },
+        { "text": "Le Stade montois", "isCorrect": false },
+        { "text": "Le Biarritz olympique", "isCorrect": false },
+        { "text": "L'Aviron bayonnais", "isCorrect": true }
+      ],
+      "explanation": "Ce stade, au bord de la Nive, est célèbre pour son ambiance et sa banda."
+    },
+    {
+      "ref": "rug-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quel club catalan joue en sang et or ?",
+      "answers": [
+        { "text": "L'AS Béziers", "isCorrect": false },
+        { "text": "Le FC Grenoble", "isCorrect": false },
+        { "text": "L'USA Perpignan", "isCorrect": true },
+        { "text": "Le RC Narbonne", "isCorrect": false }
+      ],
+      "explanation": "Les couleurs reprennent celles du drapeau catalan."
+    },
+    {
+      "ref": "rug-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["top-14"],
+      "text": "Quel président du RC Toulon, éditeur de bandes dessinées, a recruté de nombreuses stars mondiales à partir de 2006 ?",
+      "answers": [
+        { "text": "Max Guazzini", "isCorrect": false },
+        { "text": "Mohed Altrad", "isCorrect": false },
+        { "text": "Mourad Boudjellal", "isCorrect": true },
+        { "text": "Jacky Lorenzetti", "isCorrect": false }
+      ],
+      "explanation": "Il fait remonter le club et remporte trois Coupes d'Europe. Altrad est président de Montpellier, Lorenzetti du Racing 92."
+    },
+    {
+      "ref": "rug-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14"],
+      "text": "Quelles sont les couleurs de l'ASM Clermont Auvergne ?",
+      "answers": [
+        { "text": "Vert et blanc", "isCorrect": false },
+        { "text": "Jaune et bleu", "isCorrect": true },
+        { "text": "Bleu et blanc", "isCorrect": false },
+        { "text": "Rouge et noir", "isCorrect": false }
+      ],
+      "explanation": "Ses supporters sont surnommés « les Jaunards »."
+    },
+    {
+      "ref": "rug-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14", "joueur"],
+      "text": "Quel ouvreur anglais champion du monde 2003 a terminé sa carrière au RC Toulon ?",
+      "answers": [
+        { "text": "Toby Flood", "isCorrect": false },
+        { "text": "Charlie Hodgson", "isCorrect": false },
+        { "text": "Owen Farrell", "isCorrect": false },
+        { "text": "Jonny Wilkinson", "isCorrect": true }
+      ],
+      "explanation": "Il y joue de 2009 à 2014 et remporte deux Coupes d'Europe et un titre de champion de France."
+    },
+    {
+      "ref": "rug-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["top-14", "joueur"],
+      "text": "Quel All Black, considéré comme l'un des meilleurs ouvreurs de l'histoire, a joué au Racing 92 de 2015 à 2018 ?",
+      "answers": [
+        { "text": "Beauden Barrett", "isCorrect": false },
+        { "text": "Aaron Smith", "isCorrect": false },
+        { "text": "Richie McCaw", "isCorrect": false },
+        { "text": "Dan Carter", "isCorrect": true }
+      ],
+      "explanation": "Il remporte le titre de champion de France dès sa première saison, en 2016."
+    },
+    {
+      "ref": "rug-095",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe de Nouvelle-Zélande ?",
+      "answers": [
+        { "text": "Les Springboks", "isCorrect": false },
+        { "text": "Les Wallabies", "isCorrect": false },
+        { "text": "Les All Blacks", "isCorrect": true },
+        { "text": "Les Pumas", "isCorrect": false }
+      ],
+      "explanation": "Le surnom vient de leur tenue entièrement noire."
+    },
+    {
+      "ref": "rug-096",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe d'Afrique du Sud ?",
+      "answers": [
+        { "text": "Les Lions", "isCorrect": false },
+        { "text": "Les Wallabies", "isCorrect": false },
+        { "text": "Les Springboks", "isCorrect": true },
+        { "text": "Les All Blacks", "isCorrect": false }
+      ],
+      "explanation": "Le springbok est une antilope d'Afrique australe."
+    },
+    {
+      "ref": "rug-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe d'Australie ?",
+      "answers": [
+        { "text": "Les Wallabies", "isCorrect": true },
+        { "text": "Les Kangourous", "isCorrect": false },
+        { "text": "Les Kiwis", "isCorrect": false },
+        { "text": "Les Springboks", "isCorrect": false }
+      ],
+      "explanation": "Le wallaby est un petit marsupial proche du kangourou. Les « Kangourous » sont l'équipe australienne de rugby à XIII."
+    },
+    {
+      "ref": "rug-098",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe d'Argentine ?",
+      "answers": [
+        { "text": "Los Jaguares", "isCorrect": false },
+        { "text": "Los Cóndores", "isCorrect": false },
+        { "text": "Los Toros", "isCorrect": false },
+        { "text": "Los Pumas", "isCorrect": true }
+      ],
+      "explanation": "Les Jaguares étaient une franchise argentine de Super Rugby."
+    },
+    {
+      "ref": "rug-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe des Fidji ?",
+      "answers": [
+        { "text": "Les Brave Blossoms", "isCorrect": false },
+        { "text": "Les Flying Fijians", "isCorrect": true },
+        { "text": "Les Pumas", "isCorrect": false },
+        { "text": "Les Lelos", "isCorrect": false }
+      ],
+      "explanation": "Les « Fidjiens volants », célèbres pour leur jeu de mouvement spectaculaire."
+    },
+    {
+      "ref": "rug-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe d'Italie ?",
+      "answers": [
+        { "text": "Les Azzurri", "isCorrect": true },
+        { "text": "Les Bianconeri", "isCorrect": false },
+        { "text": "Les Leoni", "isCorrect": false },
+        { "text": "Les Rossi", "isCorrect": false }
+      ],
+      "explanation": "Comme en football, le surnom vient de leur maillot bleu."
+    },
+    {
+      "ref": "rug-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe du Japon ?",
+      "answers": [
+        { "text": "Les Flying Fijians", "isCorrect": false },
+        { "text": "Les Brave Blossoms", "isCorrect": true },
+        { "text": "Les Lelos", "isCorrect": false },
+        { "text": "Les Samouraïs", "isCorrect": false }
+      ],
+      "explanation": "Les « Fleurs courageuses », en référence à la fleur de cerisier, l'emblème de l'équipe."
+    },
+    {
+      "ref": "rug-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "Quel est le surnom de l'équipe de Géorgie ?",
+      "answers": [
+        { "text": "Les Lelos", "isCorrect": true },
+        { "text": "Les Manu", "isCorrect": false },
+        { "text": "Les Azzurri", "isCorrect": false },
+        { "text": "Les Brave Blossoms", "isCorrect": false }
+      ],
+      "explanation": "Le nom vient d'un jeu de ballon traditionnel géorgien, le lelo burti."
+    },
+    {
+      "ref": "rug-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "Quelle équipe est surnommée « Manu Samoa » ?",
+      "answers": [
+        { "text": "Les Fidji", "isCorrect": false },
+        { "text": "Les Tonga", "isCorrect": false },
+        { "text": "Les Samoa", "isCorrect": true },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false }
+      ],
+      "explanation": "Manu était le nom d'un célèbre guerrier samoan."
+    },
+    {
+      "ref": "rug-104",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale", "equipe-de-france"],
+      "text": "Pourquoi appelle-t-on l'équipe de France de rugby « le XV de France » ?",
+      "answers": [
+        { "text": "Parce qu'une équipe de rugby compte 15 joueurs", "isCorrect": true },
+        { "text": "Parce qu'elle a gagné 15 Tournois", "isCorrect": false },
+        { "text": "Parce qu'elle a été créée en 1915", "isCorrect": false },
+        { "text": "Parce que son premier match a eu lieu le 15 du mois", "isCorrect": false }
+      ],
+      "explanation": "On parle aussi du XV de la Rose pour l'Angleterre, ou du XV du Chardon pour l'Écosse."
+    },
+    {
+      "ref": "rug-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Quel emblème figure sur le maillot de l'équipe d'Angleterre ?",
+      "answers": [
+        { "text": "Un trèfle", "isCorrect": false },
+        { "text": "Un lion", "isCorrect": false },
+        { "text": "Une rose rouge", "isCorrect": true },
+        { "text": "Un chardon", "isCorrect": false }
+      ],
+      "explanation": "D'où son surnom de « XV de la Rose »."
+    },
+    {
+      "ref": "rug-106",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Quel emblème figure sur le maillot de l'équipe d'Irlande ?",
+      "answers": [
+        { "text": "Un chardon", "isCorrect": false },
+        { "text": "Une harpe", "isCorrect": false },
+        { "text": "Une rose", "isCorrect": false },
+        { "text": "Un trèfle", "isCorrect": true }
+      ],
+      "explanation": "Le trèfle, ou shamrock, est le symbole de l'Irlande et de saint Patrick."
+    },
+    {
+      "ref": "rug-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale"],
+      "text": "Quel emblème figure sur le maillot de l'équipe d'Écosse ?",
+      "answers": [
+        { "text": "Une rose", "isCorrect": false },
+        { "text": "Un chardon", "isCorrect": true },
+        { "text": "Un poireau", "isCorrect": false },
+        { "text": "Un trèfle", "isCorrect": false }
+      ],
+      "explanation": "D'où son surnom de « XV du Chardon »."
+    },
+    {
+      "ref": "rug-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "Quel emblème figure sur le maillot de l'équipe du pays de Galles ?",
+      "answers": [
+        { "text": "Une jonquille", "isCorrect": false },
+        { "text": "Un dragon", "isCorrect": false },
+        { "text": "Trois plumes", "isCorrect": true },
+        { "text": "Un poireau", "isCorrect": false }
+      ],
+      "explanation": "Ce sont les plumes du prince de Galles. Le dragon rouge figure sur le drapeau gallois."
+    },
+    {
+      "ref": "rug-109",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale", "histoire"],
+      "text": "Comment s'appelle la danse maorie exécutée par les All Blacks avant leurs matchs ?",
+      "answers": [
+        { "text": "Le sipi tau", "isCorrect": false },
+        { "text": "Le cibi", "isCorrect": false },
+        { "text": "Le haka", "isCorrect": true },
+        { "text": "La siva tau", "isCorrect": false }
+      ],
+      "explanation": "La siva tau est la danse des Samoa, le cibi celle des Fidji et le sipi tau celle des Tonga."
+    },
+    {
+      "ref": "rug-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "Comment s'appelle la danse d'avant-match de l'équipe des Fidji ?",
+      "answers": [
+        { "text": "Le sipi tau", "isCorrect": false },
+        { "text": "La siva tau", "isCorrect": false },
+        { "text": "Le cibi", "isCorrect": true },
+        { "text": "Le haka", "isCorrect": false }
+      ],
+      "explanation": "À l'origine, une danse de guerre fidjienne, exécutée avant ou après les batailles."
+    },
+    {
+      "ref": "rug-111",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale", "histoire"],
+      "text": "Quel haka, créé en 2005, est parfois exécuté par les All Blacks à la place du « Ka Mate » ?",
+      "answers": [
+        { "text": "Le Tama Tu", "isCorrect": false },
+        { "text": "Le Te Rauparaha", "isCorrect": false },
+        { "text": "Le Kapa o Pango", "isCorrect": true },
+        { "text": "Le Ka Ora", "isCorrect": false }
+      ],
+      "explanation": "« L'équipe en noir » : il a été écrit spécialement pour les All Blacks."
+    },
+    {
+      "ref": "rug-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale"],
+      "text": "Quel animal est le springbok, emblème de l'équipe d'Afrique du Sud ?",
+      "answers": [
+        { "text": "Un zèbre", "isCorrect": false },
+        { "text": "Un buffle", "isCorrect": false },
+        { "text": "Une antilope", "isCorrect": true },
+        { "text": "Un lion", "isCorrect": false }
+      ],
+      "explanation": "Une antilope capable de bonds spectaculaires, d'où son nom en afrikaans : « bouc sauteur »."
+    },
+    {
+      "ref": "rug-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale"],
+      "text": "Quel animal est le wallaby, emblème de l'équipe d'Australie ?",
+      "answers": [
+        { "text": "Un petit ours", "isCorrect": false },
+        { "text": "Un oiseau coureur", "isCorrect": false },
+        { "text": "Un chien sauvage", "isCorrect": false },
+        { "text": "Un petit marsupial proche du kangourou", "isCorrect": true }
+      ],
+      "explanation": "Le chien sauvage d'Australie est le dingo, l'oiseau coureur l'émeu."
+    },
+    {
+      "ref": "rug-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "Quel animal figure en réalité sur l'emblème de l'équipe d'Argentine, surnommée les Pumas ?",
+      "answers": [
+        { "text": "Un jaguar", "isCorrect": true },
+        { "text": "Un condor", "isCorrect": false },
+        { "text": "Un puma", "isCorrect": false },
+        { "text": "Un lion", "isCorrect": false }
+      ],
+      "explanation": "Un journaliste sud-africain aurait confondu les deux animaux en 1965, et le surnom est resté."
+    },
+    {
+      "ref": "rug-115",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["equipe-nationale"],
+      "text": "L'équipe d'Irlande de rugby représente à la fois la République d'Irlande et l'Irlande du Nord.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Contrairement au football, le rugby irlandais n'a jamais été divisé. L'équipe a même un hymne spécial, « Ireland's Call »."
+    },
+    {
+      "ref": "rug-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale", "tournee"],
+      "text": "Quelle équipe réunit des joueurs d'Angleterre, d'Écosse, d'Irlande et du pays de Galles ?",
+      "answers": [
+        { "text": "Les Highlanders", "isCorrect": false },
+        { "text": "Les Lions britanniques et irlandais", "isCorrect": true },
+        { "text": "Les Barbarians", "isCorrect": false },
+        { "text": "Les Saxons", "isCorrect": false }
+      ],
+      "explanation": "Les Lions partent en tournée tous les quatre ans, en Afrique du Sud, en Nouvelle-Zélande ou en Australie."
+    },
+    {
+      "ref": "rug-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["equipe-nationale", "histoire"],
+      "text": "Quelle équipe sans pays ni stade invite des joueurs du monde entier pour des matchs de prestige ?",
+      "answers": [
+        { "text": "Les World XV", "isCorrect": false },
+        { "text": "Les Pacific Islanders", "isCorrect": false },
+        { "text": "Les Barbarians", "isCorrect": true },
+        { "text": "Les Lions", "isCorrect": false }
+      ],
+      "explanation": "Créés en 1890, ils jouent en maillot noir et blanc, mais chaque joueur garde les chaussettes de son club."
+    },
+    {
+      "ref": "rug-118",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "De quelle couleur est le maillot de l'équipe d'Irlande ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Bleu", "isCorrect": false },
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Vert", "isCorrect": true }
+      ],
+      "explanation": "Le vert, couleur de l'Irlande, avec le trèfle sur la poitrine."
+    },
+    {
+      "ref": "rug-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["equipe-nationale", "tournee", "record"],
+      "text": "En 2020, quelle équipe a battu les All Blacks pour la première fois de son histoire ?",
+      "answers": [
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": true },
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "Les Fidji", "isCorrect": false }
+      ],
+      "explanation": "Les Pumas gagnent 25-15 à Sydney, lors du Tri-Nations. L'Écosse n'a encore jamais battu les All Blacks."
+    },
+    {
+      "ref": "rug-120",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel demi de mêlée français a été élu meilleur joueur du monde en 2021 ?",
+      "answers": [
+        { "text": "Baptiste Serin", "isCorrect": false },
+        { "text": "Romain Ntamack", "isCorrect": false },
+        { "text": "Morgan Parra", "isCorrect": false },
+        { "text": "Antoine Dupont", "isCorrect": true }
+      ],
+      "explanation": "Il devient le troisième Français à recevoir ce titre, après Fabien Galthié (2002) et Thierry Dusautoir (2011)."
+    },
+    {
+      "ref": "rug-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Avec quelle équipe Antoine Dupont a-t-il remporté la médaille d'or aux Jeux olympiques de Paris 2024 ?",
+      "answers": [
+        { "text": "Le Stade toulousain", "isCorrect": false },
+        { "text": "L'équipe de France de rugby à 7", "isCorrect": true },
+        { "text": "Les Barbarians français", "isCorrect": false },
+        { "text": "L'équipe de France de rugby à XV", "isCorrect": false }
+      ],
+      "explanation": "Il avait mis le XV de France entre parenthèses pour préparer les Jeux. La France bat les Fidji en finale."
+    },
+    {
+      "ref": "rug-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "coupe-du-monde", "record"],
+      "text": "Quel troisième ligne néo-zélandais a soulevé la Coupe du monde comme capitaine en 2011 et en 2015 ?",
+      "answers": [
+        { "text": "Sean Fitzpatrick", "isCorrect": false },
+        { "text": "Richie McCaw", "isCorrect": true },
+        { "text": "Dan Carter", "isCorrect": false },
+        { "text": "Kieran Read", "isCorrect": false }
+      ],
+      "explanation": "Il est le joueur qui a été le plus souvent capitaine en test-match : 110 fois."
+    },
+    {
+      "ref": "rug-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "record"],
+      "text": "Quel ouvreur néo-zélandais détient le record de points marqués en test-match ?",
+      "answers": [
+        { "text": "Jonny Wilkinson", "isCorrect": false },
+        { "text": "Owen Farrell", "isCorrect": false },
+        { "text": "Johnny Sexton", "isCorrect": false },
+        { "text": "Dan Carter", "isCorrect": true }
+      ],
+      "explanation": "Il a inscrit 1 598 points avec les All Blacks, entre 2003 et 2015."
+    },
+    {
+      "ref": "rug-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel joueur français, barbu et chevelu, était surnommé « l'Homme des cavernes » ?",
+      "answers": [
+        { "text": "Fabien Pelous", "isCorrect": false },
+        { "text": "Raphaël Ibañez", "isCorrect": false },
+        { "text": "Vincent Clerc", "isCorrect": false },
+        { "text": "Sébastien Chabal", "isCorrect": true }
+      ],
+      "explanation": "Ses plaquages dévastateurs et son look en ont fait une star en France comme en Angleterre."
+    },
+    {
+      "ref": "rug-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel arrière français, né au Venezuela, est une légende de Biarritz et du XV de France ?",
+      "answers": [
+        { "text": "Jean-Luc Sadourny", "isCorrect": false },
+        { "text": "Pierre Villepreux", "isCorrect": false },
+        { "text": "Serge Blanco", "isCorrect": true },
+        { "text": "Clément Poitrenaud", "isCorrect": false }
+      ],
+      "explanation": "Célèbre pour ses relances depuis son propre camp, il a joué 93 matchs avec les Bleus."
+    },
+    {
+      "ref": "rug-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel capitaine du XV de France était surnommé « Casque d'or » ?",
+      "answers": [
+        { "text": "Fabien Pelous", "isCorrect": false },
+        { "text": "Serge Blanco", "isCorrect": false },
+        { "text": "Jean-Pierre Rives", "isCorrect": true },
+        { "text": "Philippe Sella", "isCorrect": false }
+      ],
+      "explanation": "Le troisième ligne aux cheveux blonds, souvent ensanglanté, est aussi devenu sculpteur."
+    },
+    {
+      "ref": "rug-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "coupe-du-monde"],
+      "text": "Qui a été le premier capitaine noir de l'Afrique du Sud, champion du monde en 2019 et 2023 ?",
+      "answers": [
+        { "text": "Eben Etzebeth", "isCorrect": false },
+        { "text": "Bryan Habana", "isCorrect": false },
+        { "text": "Siya Kolisi", "isCorrect": true },
+        { "text": "Handré Pollard", "isCorrect": false }
+      ],
+      "explanation": "Né dans un township pauvre, il est devenu un symbole de la nation arc-en-ciel."
+    },
+    {
+      "ref": "rug-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Quel ouvreur irlandais a été élu meilleur joueur du monde en 2018 ?",
+      "answers": [
+        { "text": "Brian O'Driscoll", "isCorrect": false },
+        { "text": "Johnny Sexton", "isCorrect": true },
+        { "text": "Conor Murray", "isCorrect": false },
+        { "text": "Ronan O'Gara", "isCorrect": false }
+      ],
+      "explanation": "Il a mené l'Irlande au Grand Chelem en 2018 et en 2023, avant de prendre sa retraite."
+    },
+    {
+      "ref": "rug-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "coupe-du-monde"],
+      "text": "Qui était le capitaine de l'Angleterre championne du monde en 2003 ?",
+      "answers": [
+        { "text": "Will Carling", "isCorrect": false },
+        { "text": "Jonny Wilkinson", "isCorrect": false },
+        { "text": "Martin Johnson", "isCorrect": true },
+        { "text": "Lawrence Dallaglio", "isCorrect": false }
+      ],
+      "explanation": "Le deuxième ligne a ensuite été sélectionneur de l'Angleterre."
+    },
+    {
+      "ref": "rug-130",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel capitaine du XV de France a été élu meilleur joueur du monde en 2011 ?",
+      "answers": [
+        { "text": "Imanol Harinordoquy", "isCorrect": false },
+        { "text": "Dimitri Yachvili", "isCorrect": false },
+        { "text": "Morgan Parra", "isCorrect": false },
+        { "text": "Thierry Dusautoir", "isCorrect": true }
+      ],
+      "explanation": "Il marque l'essai français en finale de la Coupe du monde 2011, perdue 8-7."
+    },
+    {
+      "ref": "rug-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "histoire"],
+      "text": "Quel demi de mêlée gallois a marqué l'un des essais les plus célèbres de l'histoire, avec les Barbarians contre les All Blacks en 1973 ?",
+      "answers": [
+        { "text": "J.P.R. Williams", "isCorrect": false },
+        { "text": "Gareth Edwards", "isCorrect": true },
+        { "text": "Phil Bennett", "isCorrect": false },
+        { "text": "Shane Williams", "isCorrect": false }
+      ],
+      "explanation": "Une action lancée depuis l'en-but des Barbarians et conclue après une série de passes, au Cardiff Arms Park."
+    },
+    {
+      "ref": "rug-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Quel ailier australien était célèbre pour son « pas de l'oie » ?",
+      "answers": [
+        { "text": "Joe Roff", "isCorrect": false },
+        { "text": "David Campese", "isCorrect": true },
+        { "text": "Lote Tuqiri", "isCorrect": false },
+        { "text": "Drew Mitchell", "isCorrect": false }
+      ],
+      "explanation": "Cette foulée ralentie surprenait les défenseurs. Il a été élu meilleur joueur de la Coupe du monde 1991."
+    },
+    {
+      "ref": "rug-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "coupe-du-monde"],
+      "text": "Quel All Black, double champion du monde, a aussi joué au rugby à XIII et été champion de boxe ?",
+      "answers": [
+        { "text": "Jonah Lomu", "isCorrect": false },
+        { "text": "Sonny Bill Williams", "isCorrect": true },
+        { "text": "Julian Savea", "isCorrect": false },
+        { "text": "Ma'a Nonu", "isCorrect": false }
+      ],
+      "explanation": "Il remporte les Coupes du monde 2011 et 2015, et dispute même les Jeux olympiques 2016 en rugby à 7."
+    },
+    {
+      "ref": "rug-134",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "record"],
+      "text": "Quel joueur gallois détient le record de sélections internationales, avec 170 matchs dont 12 avec les Lions ?",
+      "answers": [
+        { "text": "Sergio Parisse", "isCorrect": false },
+        { "text": "Richie McCaw", "isCorrect": false },
+        { "text": "Brian O'Driscoll", "isCorrect": false },
+        { "text": "Alun Wyn Jones", "isCorrect": true }
+      ],
+      "explanation": "Le deuxième ligne a joué de 2006 à 2023."
+    },
+    {
+      "ref": "rug-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "top-14", "coupe-du-monde"],
+      "text": "Quel troisième ligne italien, légende du Stade français, a disputé cinq Coupes du monde ?",
+      "answers": [
+        { "text": "Martín Castrogiovanni", "isCorrect": false },
+        { "text": "Alessandro Troncon", "isCorrect": false },
+        { "text": "Sergio Parisse", "isCorrect": true },
+        { "text": "Mauro Bergamasco", "isCorrect": false }
+      ],
+      "explanation": "De 2003 à 2019, il a été pendant des années le visage du rugby italien."
+    },
+    {
+      "ref": "rug-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Contre quel animal le Sud-Africain Bryan Habana a-t-il fait une course de vitesse en 2007 ?",
+      "answers": [
+        { "text": "Un guépard", "isCorrect": true },
+        { "text": "Un springbok", "isCorrect": false },
+        { "text": "Un cheval", "isCorrect": false },
+        { "text": "Une autruche", "isCorrect": false }
+      ],
+      "explanation": "Une course organisée pour une campagne de protection des guépards. L'animal a gagné, malgré une avance donnée à Habana."
+    },
+    {
+      "ref": "rug-137",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays était Jonah Lomu ?",
+      "answers": [
+        { "text": "Les Tonga", "isCorrect": false },
+        { "text": "Les Fidji", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": true }
+      ],
+      "explanation": "D'origine tongienne, il est mort en 2015, à 40 ans, des suites d'une maladie des reins."
+    },
+    {
+      "ref": "rug-138",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "À quel poste joue Antoine Dupont avec le XV de France ?",
+      "answers": [
+        { "text": "Demi de mêlée", "isCorrect": true },
+        { "text": "Ouvreur", "isCorrect": false },
+        { "text": "Pilier", "isCorrect": false },
+        { "text": "Arrière", "isCorrect": false }
+      ],
+      "explanation": "Il porte le numéro 9 et fait le lien entre les avants et les arrières."
+    },
+    {
+      "ref": "rug-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel joueur français a été élu meilleur joueur du monde en 2002, avant de devenir sélectionneur des Bleus ?",
+      "answers": [
+        { "text": "Fabien Pelous", "isCorrect": false },
+        { "text": "Fabien Galthié", "isCorrect": true },
+        { "text": "Raphaël Ibañez", "isCorrect": false },
+        { "text": "Thomas Castaignède", "isCorrect": false }
+      ],
+      "explanation": "Demi de mêlée, il devient sélectionneur du XV de France en 2020."
+    },
+    {
+      "ref": "rug-140",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Antoine Dupont a été capitaine du XV de France.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il est devenu capitaine en 2021 et a mené les Bleus au Grand Chelem 2022."
+    },
+    {
+      "ref": "rug-141",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["joueur", "coupe-du-monde"],
+      "text": "Jonah Lomu a remporté la Coupe du monde avec la Nouvelle-Zélande.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Malgré ses 15 essais en Coupe du monde, il a perdu la finale 1995 et la demi-finale 1999."
+    },
+    {
+      "ref": "rug-142",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur", "equipe-de-france"],
+      "text": "Quel est le prénom de Ntamack, ouvreur du XV de France et du Stade toulousain ?",
+      "answers": [
+        { "text": "Thomas", "isCorrect": false },
+        { "text": "Antoine", "isCorrect": false },
+        { "text": "Matthieu", "isCorrect": false },
+        { "text": "Romain", "isCorrect": true }
+      ],
+      "explanation": "Il est le fils d'Émile Ntamack, ancien ailier du XV de France et du Stade toulousain."
+    },
+    {
+      "ref": "rug-143",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "six-nations"],
+      "text": "Quelle équipe a réalisé le plus de Grands Chelems dans l'histoire du Tournoi ?",
+      "answers": [
+        { "text": "Le pays de Galles", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true },
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": false }
+      ],
+      "explanation": "L'Angleterre en compte 13, devant le pays de Galles (12)."
+    },
+    {
+      "ref": "rug-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "top-14"],
+      "text": "Quel club a remporté le championnat de France en 2023 et en 2024, puis encore en 2025 ?",
+      "answers": [
+        { "text": "L'Union Bordeaux-Bègles", "isCorrect": false },
+        { "text": "Le Racing 92", "isCorrect": false },
+        { "text": "Le Stade rochelais", "isCorrect": false },
+        { "text": "Le Stade toulousain", "isCorrect": true }
+      ],
+      "explanation": "Un triplé qui renforce encore son record de titres."
+    },
+    {
+      "ref": "rug-145",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "coupe-du-monde"],
+      "text": "Combien d'essais Will Jordan a-t-il marqués lors de la Coupe du monde 2023, record égalé sur une seule édition ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "Il égale le record de Jonah Lomu (1999), Bryan Habana (2007) et Julian Savea (2015)."
+    },
+    {
+      "ref": "rug-146",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de joueurs composent une équipe de rugby à XV sur le terrain ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "15", "isCorrect": true },
+        { "text": "11", "isCorrect": false },
+        { "text": "13", "isCorrect": false }
+      ],
+      "explanation": "Huit avants et sept arrières. Le rugby à XIII se joue à 13, le rugby à 7 à 7."
+    },
+    {
+      "ref": "rug-147",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quelle est la forme d'un ballon de rugby ?",
+      "answers": [
+        { "text": "Ronde", "isCorrect": false },
+        { "text": "Plate", "isCorrect": false },
+        { "text": "Carrée", "isCorrect": false },
+        { "text": "Ovale", "isCorrect": true }
+      ],
+      "explanation": "D'où le surnom du rugby : le « ballon ovale »."
+    },
+    {
+      "ref": "rug-148",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte un essai ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "L'essai est marqué en aplatissant le ballon dans l'en-but adverse."
+    },
+    {
+      "ref": "rug-149",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte une transformation réussie, après un essai ?",
+      "answers": [
+        { "text": "2", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Le coup de pied doit passer entre les poteaux, au-dessus de la barre."
+    },
+    {
+      "ref": "rug-150",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte une pénalité réussie ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Le buteur tente de passer le ballon entre les poteaux, au-dessus de la barre."
+    },
+    {
+      "ref": "rug-151",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte un drop, un coup de pied tiré après un rebond du ballon au sol ?",
+      "answers": [
+        { "text": "3", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "Il se tente pendant le jeu, souvent pour faire la différence en fin de match."
+    },
+    {
+      "ref": "rug-152",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de temps dure un match de rugby à XV, hors arrêts de jeu ?",
+      "answers": [
+        { "text": "80 minutes", "isCorrect": true },
+        { "text": "70 minutes", "isCorrect": false },
+        { "text": "60 minutes", "isCorrect": false },
+        { "text": "90 minutes", "isCorrect": false }
+      ],
+      "explanation": "Deux mi-temps de 40 minutes."
+    },
+    {
+      "ref": "rug-153",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au rugby, on n'a pas le droit de faire une passe vers l'avant à la main.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les passes doivent aller vers l'arrière ou sur le côté. Pour avancer, il faut courir ou taper au pied."
+    },
+    {
+      "ref": "rug-154",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on la faute commise quand le ballon est lâché ou passé vers l'avant ?",
+      "answers": [
+        { "text": "Un hors-jeu", "isCorrect": false },
+        { "text": "Un en-avant", "isCorrect": true },
+        { "text": "Un renvoi", "isCorrect": false },
+        { "text": "Un arrière", "isCorrect": false }
+      ],
+      "explanation": "L'arbitre siffle alors une mêlée pour l'équipe adverse."
+    },
+    {
+      "ref": "rug-155",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de joueurs de chaque équipe forment une mêlée ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "Les huit avants : trois en première ligne, deux en deuxième ligne et trois en troisième ligne."
+    },
+    {
+      "ref": "rug-156",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on la remise en jeu quand le ballon sort sur le côté du terrain ?",
+      "answers": [
+        { "text": "Le renvoi", "isCorrect": false },
+        { "text": "La mêlée", "isCorrect": false },
+        { "text": "Le coup franc", "isCorrect": false },
+        { "text": "La touche", "isCorrect": true }
+      ],
+      "explanation": "Le talonneur lance le ballon entre deux alignements de joueurs, qui sautent pour l'attraper."
+    },
+    {
+      "ref": "rug-157",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il quand un joueur reçoit un carton jaune ?",
+      "answers": [
+        { "text": "Il reçoit un simple avertissement", "isCorrect": false },
+        { "text": "Il est exclu pendant 10 minutes", "isCorrect": true },
+        { "text": "Il est exclu jusqu'à la fin du match", "isCorrect": false },
+        { "text": "Son équipe perd 3 points", "isCorrect": false }
+      ],
+      "explanation": "Son équipe joue à 14 pendant ce temps."
+    },
+    {
+      "ref": "rug-158",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte un essai de pénalité ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Il est accordé quand une faute adverse empêche un essai probable. Il n'y a pas de transformation à tenter."
+    },
+    {
+      "ref": "rug-159",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le regroupement de joueurs debout autour d'un ballon posé au sol ?",
+      "answers": [
+        { "text": "Une touche", "isCorrect": false },
+        { "text": "Un maul", "isCorrect": false },
+        { "text": "Un ruck", "isCorrect": true },
+        { "text": "Une mêlée", "isCorrect": false }
+      ],
+      "explanation": "Les joueurs poussent pour libérer le ballon avec les pieds, sans le toucher avec les mains."
+    },
+    {
+      "ref": "rug-160",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le regroupement de joueurs debout autour du porteur du ballon ?",
+      "answers": [
+        { "text": "Un maul", "isCorrect": true },
+        { "text": "Un en-avant", "isCorrect": false },
+        { "text": "Un ruck", "isCorrect": false },
+        { "text": "Une mêlée", "isCorrect": false }
+      ],
+      "explanation": "Le maul avance souvent après une touche, porté par les avants."
+    },
+    {
+      "ref": "rug-161",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "top-14"],
+      "text": "En Top 14, comment obtient-on un bonus offensif ?",
+      "answers": [
+        { "text": "En gagnant avec trois essais de plus que l'adversaire", "isCorrect": true },
+        { "text": "En marquant au moins quatre essais", "isCorrect": false },
+        { "text": "En marquant le premier essai du match", "isCorrect": false },
+        { "text": "En gagnant de plus de 20 points", "isCorrect": false }
+      ],
+      "explanation": "Le Tournoi des Six Nations utilise une autre règle : au moins quatre essais."
+    },
+    {
+      "ref": "rug-162",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "top-14"],
+      "text": "En Top 14, quand une équipe obtient-elle un bonus défensif ?",
+      "answers": [
+        { "text": "Quand elle perd de 10 points ou moins", "isCorrect": false },
+        { "text": "Quand elle n'encaisse aucun essai", "isCorrect": false },
+        { "text": "Quand elle marque au moins un essai", "isCorrect": false },
+        { "text": "Quand elle perd de 5 points ou moins", "isCorrect": true }
+      ],
+      "explanation": "Ce point récompense une défaite serrée."
+    },
+    {
+      "ref": "rug-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Comment s'appelle l'arbitrage vidéo au rugby ?",
+      "answers": [
+        { "text": "Le Hawk-Eye", "isCorrect": false },
+        { "text": "La goal-line technology", "isCorrect": false },
+        { "text": "La VAR", "isCorrect": false },
+        { "text": "Le TMO", "isCorrect": true }
+      ],
+      "explanation": "Le « Television Match Official » vérifie les essais et les fautes graves."
+    },
+    {
+      "ref": "rug-164",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quel numéro porte traditionnellement le demi de mêlée ?",
+      "answers": [
+        { "text": "10", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "9", "isCorrect": true }
+      ],
+      "explanation": "Le 10 est le demi d'ouverture, le 15 l'arrière."
+    },
+    {
+      "ref": "rug-165",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quel numéro porte traditionnellement le demi d'ouverture ?",
+      "answers": [
+        { "text": "12", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "9", "isCorrect": false }
+      ],
+      "explanation": "L'ouvreur dirige le jeu des arrières et tape souvent les coups de pied."
+    },
+    {
+      "ref": "rug-166",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quel numéro porte traditionnellement l'arrière ?",
+      "answers": [
+        { "text": "14", "isCorrect": false },
+        { "text": "15", "isCorrect": true },
+        { "text": "8", "isCorrect": false },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "Il est le dernier rempart de la défense et contre-attaque sur les coups de pied adverses."
+    },
+    {
+      "ref": "rug-167",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quels numéros portent les piliers ?",
+      "answers": [
+        { "text": "2 et 4", "isCorrect": false },
+        { "text": "6 et 7", "isCorrect": false },
+        { "text": "4 et 5", "isCorrect": false },
+        { "text": "1 et 3", "isCorrect": true }
+      ],
+      "explanation": "Ils encadrent le talonneur, numéro 2, en première ligne de la mêlée."
+    },
+    {
+      "ref": "rug-168",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "À quel poste joue le numéro 2, au centre de la première ligne de mêlée ?",
+      "answers": [
+        { "text": "Deuxième ligne", "isCorrect": false },
+        { "text": "Pilier", "isCorrect": false },
+        { "text": "Troisième ligne", "isCorrect": false },
+        { "text": "Talonneur", "isCorrect": true }
+      ],
+      "explanation": "Il « talonne » le ballon en mêlée et lance en touche."
+    },
+    {
+      "ref": "rug-169",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de remplaçants une équipe peut-elle inscrire sur la feuille de match lors d'un test-match ?",
+      "answers": [
+        { "text": "8", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "23 joueurs au total. Les remplacements sont définitifs, sauf pour un saignement ou une commotion."
+    },
+    {
+      "ref": "rug-170",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Un essai est accordé si le ballon franchit la ligne d'en-but en l'air, sans être aplati.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le ballon doit être aplati au sol dans l'en-but, la ligne comprise."
+    },
+    {
+      "ref": "rug-171",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "La transformation se tente dans l'axe de l'endroit où l'essai a été marqué.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "C'est pourquoi les joueurs essaient d'aplatir le plus près possible des poteaux."
+    },
+    {
+      "ref": "rug-172",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de temps dure une mi-temps de rugby à 7 ?",
+      "answers": [
+        { "text": "10 minutes", "isCorrect": false },
+        { "text": "7 minutes", "isCorrect": true },
+        { "text": "15 minutes", "isCorrect": false },
+        { "text": "40 minutes", "isCorrect": false }
+      ],
+      "explanation": "Les matchs sont courts, ce qui permet de jouer plusieurs matchs par jour lors des tournois."
+    },
+    {
+      "ref": "rug-173",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que permet la règle du « 50-22 », introduite en 2021 ?",
+      "answers": [
+        { "text": "De jouer à 22 pendant 50 minutes", "isCorrect": false },
+        { "text": "De tenter une pénalité depuis 50 mètres", "isCorrect": false },
+        { "text": "De gagner 5 points bonus", "isCorrect": false },
+        { "text": "De récupérer le lancer en touche après un coup de pied depuis son camp qui sort dans les 22 mètres adverses", "isCorrect": true }
+      ],
+      "explanation": "Le ballon doit rebondir avant de sortir. Cette règle pousse les défenses à se replier."
+    },
+    {
+      "ref": "rug-174",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Selon les règles, seul le capitaine peut discuter des décisions avec l'arbitre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le respect de l'arbitre est une valeur forte du rugby : les autres joueurs ne doivent pas contester."
+    },
+    {
+      "ref": "rug-175",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quel joueur lance le ballon en touche dans la plupart des équipes ?",
+      "answers": [
+        { "text": "Le pilier", "isCorrect": false },
+        { "text": "L'ouvreur", "isCorrect": false },
+        { "text": "Le talonneur", "isCorrect": true },
+        { "text": "Le demi de mêlée", "isCorrect": false }
+      ],
+      "explanation": "Il doit lancer bien droit entre les deux alignements."
+    },
+    {
+      "ref": "rug-176",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au rugby, on peut marquer des points avec le pied.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Pénalités, drops et transformations se marquent au pied."
+    },
+    {
+      "ref": "rug-177",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Selon la légende, quel élève aurait inventé le rugby en 1823 en courant avec le ballon dans les mains ?",
+      "answers": [
+        { "text": "Walter Wingfield", "isCorrect": false },
+        { "text": "Thomas Arnold", "isCorrect": false },
+        { "text": "James Naismith", "isCorrect": false },
+        { "text": "William Webb Ellis", "isCorrect": true }
+      ],
+      "explanation": "Il jouait alors au football à l'école de Rugby. L'histoire est sans doute enjolivée, mais le trophée de la Coupe du monde porte son nom."
+    },
+    {
+      "ref": "rug-178",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "D'où vient le nom « rugby » ?",
+      "answers": [
+        { "text": "D'une école de la ville de Rugby, en Angleterre", "isCorrect": true },
+        { "text": "Du nom de son inventeur", "isCorrect": false },
+        { "text": "D'un mot gallois signifiant « ovale »", "isCorrect": false },
+        { "text": "D'un mot latin signifiant « lutte »", "isCorrect": false }
+      ],
+      "explanation": "La Rugby School, où le jeu s'est développé au XIXe siècle."
+    },
+    {
+      "ref": "rug-179",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Pourquoi le rugby à XIII s'est-il séparé du rugby à XV en 1895 ?",
+      "answers": [
+        { "text": "Pour interdire les mêlées", "isCorrect": false },
+        { "text": "À cause d'un désaccord sur la forme du ballon", "isCorrect": false },
+        { "text": "À cause d'un désaccord sur l'indemnisation des joueurs pour leurs heures de travail perdues", "isCorrect": true },
+        { "text": "Pour pouvoir jouer sur des terrains plus petits", "isCorrect": false }
+      ],
+      "explanation": "Les clubs ouvriers du nord de l'Angleterre voulaient payer leurs joueurs. La séparation a donné naissance au rugby à XIII."
+    },
+    {
+      "ref": "rug-180",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "En quelle année le rugby à XV est-il devenu officiellement professionnel ?",
+      "answers": [
+        { "text": "1971", "isCorrect": false },
+        { "text": "1987", "isCorrect": false },
+        { "text": "1995", "isCorrect": true },
+        { "text": "2000", "isCorrect": false }
+      ],
+      "explanation": "Juste après la Coupe du monde 1995, l'International Rugby Board met fin à l'amateurisme."
+    },
+    {
+      "ref": "rug-181",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel pays est le dernier champion olympique de rugby à XV, en 1924 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "La France", "isCorrect": false },
+        { "text": "La Roumanie", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true }
+      ],
+      "explanation": "Ils battent la France en finale à Paris. Le rugby à XV a ensuite disparu des Jeux olympiques."
+    },
+    {
+      "ref": "rug-182",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Depuis quels Jeux olympiques le rugby à 7 est-il au programme ?",
+      "answers": [
+        { "text": "Rio 2016", "isCorrect": true },
+        { "text": "Tokyo 2021", "isCorrect": false },
+        { "text": "Londres 2012", "isCorrect": false },
+        { "text": "Pékin 2008", "isCorrect": false }
+      ],
+      "explanation": "Le rugby revient alors aux Jeux, 92 ans après le dernier tournoi de rugby à XV."
+    },
+    {
+      "ref": "rug-183",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "equipe-nationale"],
+      "text": "Quel pays a remporté les deux premiers tournois olympiques de rugby à 7, en 2016 et 2021 ?",
+      "answers": [
+        { "text": "La Grande-Bretagne", "isCorrect": false },
+        { "text": "Les Fidji", "isCorrect": true },
+        { "text": "L'Afrique du Sud", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false }
+      ],
+      "explanation": "Ces médailles d'or sont les premières de l'histoire olympique fidjienne. Les Fidji perdent la finale de 2024 contre la France."
+    },
+    {
+      "ref": "rug-184",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "regle"],
+      "text": "Combien de points valait un essai avant 1992 ?",
+      "answers": [
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Il valait 4 points depuis 1971. Il passe à 5 points pour être mieux récompensé que les coups de pied."
+    },
+    {
+      "ref": "rug-185",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "regle"],
+      "text": "À l'origine, un essai ne rapportait aucun point : il donnait seulement le droit de tenter un coup de pied au but.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "D'où son nom : « essayer » de marquer. Ce n'est qu'à partir des années 1880 que l'essai rapporte des points."
+    },
+    {
+      "ref": "rug-186",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "equipe-nationale"],
+      "text": "Quel a été le tout premier match international de rugby, en 1871 ?",
+      "answers": [
+        { "text": "Irlande – pays de Galles", "isCorrect": false },
+        { "text": "Écosse – Angleterre", "isCorrect": true },
+        { "text": "Nouvelle-Zélande – Australie", "isCorrect": false },
+        { "text": "France – Angleterre", "isCorrect": false }
+      ],
+      "explanation": "Joué à Édimbourg, il est remporté par l'Écosse."
+    },
+    {
+      "ref": "rug-187",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "equipe-nationale"],
+      "text": "Quel chef maori aurait composé le haka « Ka Mate », vers 1820 ?",
+      "answers": [
+        { "text": "Te Kooti", "isCorrect": false },
+        { "text": "Tāwhiao", "isCorrect": false },
+        { "text": "Hone Heke", "isCorrect": false },
+        { "text": "Te Rauparaha", "isCorrect": true }
+      ],
+      "explanation": "Il l'aurait composé pour célébrer le fait d'avoir échappé à ses ennemis."
+    },
+    {
+      "ref": "rug-188",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Que désigne la « troisième mi-temps » au rugby ?",
+      "answers": [
+        { "text": "L'entraînement du lendemain", "isCorrect": false },
+        { "text": "La prolongation", "isCorrect": false },
+        { "text": "Le moment de convivialité entre joueurs après le match", "isCorrect": true },
+        { "text": "L'analyse vidéo du match", "isCorrect": false }
+      ],
+      "explanation": "Une tradition très ancrée : les deux équipes se retrouvent ensemble après le match."
+    },
+    {
+      "ref": "rug-189",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "top-14"],
+      "text": "Quelle ville abrite le plus ancien club de rugby de France, fondé en 1872 ?",
+      "answers": [
+        { "text": "Toulouse", "isCorrect": false },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Le Havre", "isCorrect": true },
+        { "text": "Bordeaux", "isCorrect": false }
+      ],
+      "explanation": "Le Havre Athletic Club, fondé par des Britanniques. Le rugby s'est ensuite surtout développé dans le Sud-Ouest."
+    },
+    {
+      "ref": "rug-190",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Avec quoi étaient fabriqués les premiers ballons de rugby ?",
+      "answers": [
+        { "text": "Du liège", "isCorrect": false },
+        { "text": "De la toile de jute", "isCorrect": false },
+        { "text": "Une vessie de porc recouverte de cuir", "isCorrect": true },
+        { "text": "Du caoutchouc", "isCorrect": false }
+      ],
+      "explanation": "La forme ovale viendrait de celle de la vessie. Les ballons modernes sont en matière synthétique."
+    },
+    {
+      "ref": "rug-191",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "En quel mois ont lieu les tournées d'automne ?",
+      "answers": [
+        { "text": "En novembre", "isCorrect": true },
+        { "text": "En août", "isCorrect": false },
+        { "text": "En février", "isCorrect": false },
+        { "text": "En juin", "isCorrect": false }
+      ],
+      "explanation": "Les équipes de l'hémisphère Sud viennent alors jouer en Europe."
+    },
+    {
+      "ref": "rug-192",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Lors des tournées d'automne, contre quelles équipes jouent principalement les nations européennes ?",
+      "answers": [
+        { "text": "Des clubs professionnels", "isCorrect": false },
+        { "text": "Des sélections de jeunes", "isCorrect": false },
+        { "text": "Les autres équipes du Tournoi", "isCorrect": false },
+        { "text": "Les équipes de l'hémisphère Sud", "isCorrect": true }
+      ],
+      "explanation": "Nouvelle-Zélande, Afrique du Sud, Australie, Argentine, mais aussi Japon ou Fidji."
+    },
+    {
+      "ref": "rug-193",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee", "equipe-nationale"],
+      "text": "Quelles équipes disputent le Rugby Championship ?",
+      "answers": [
+        { "text": "Les six équipes du Tournoi", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande, l'Australie, le Japon et les Samoa", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande, l'Afrique du Sud, l'Australie et les Fidji", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande, l'Afrique du Sud, l'Australie et l'Argentine", "isCorrect": true }
+      ],
+      "explanation": "C'est l'équivalent du Tournoi des Six Nations pour l'hémisphère Sud."
+    },
+    {
+      "ref": "rug-194",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee", "equipe-nationale", "histoire"],
+      "text": "Quelle équipe a rejoint le Tri-Nations en 2012, qui devient alors le Rugby Championship ?",
+      "answers": [
+        { "text": "L'Argentine", "isCorrect": true },
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "Les Fidji", "isCorrect": false },
+        { "text": "Les Samoa", "isCorrect": false }
+      ],
+      "explanation": "Le Tri-Nations réunissait depuis 1996 la Nouvelle-Zélande, l'Afrique du Sud et l'Australie."
+    },
+    {
+      "ref": "rug-195",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee", "equipe-nationale"],
+      "text": "Quel trophée est en jeu lors des matchs entre la Nouvelle-Zélande et l'Australie ?",
+      "answers": [
+        { "text": "La Freedom Cup", "isCorrect": false },
+        { "text": "La coupe Bledisloe", "isCorrect": true },
+        { "text": "Le trophée Millennium", "isCorrect": false },
+        { "text": "La coupe de Calcutta", "isCorrect": false }
+      ],
+      "explanation": "Disputée depuis les années 1930, elle porte le nom d'un gouverneur général de Nouvelle-Zélande."
+    },
+    {
+      "ref": "rug-196",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-nationale"],
+      "text": "Quel trophée est en jeu lors des matchs entre la Nouvelle-Zélande et l'Afrique du Sud ?",
+      "answers": [
+        { "text": "La coupe Bledisloe", "isCorrect": false },
+        { "text": "La Freedom Cup", "isCorrect": true },
+        { "text": "Le trophée Mandela", "isCorrect": false },
+        { "text": "La coupe Webb-Ellis", "isCorrect": false }
+      ],
+      "explanation": "Créée en 2004, elle célèbre les dix ans de la démocratie en Afrique du Sud."
+    },
+    {
+      "ref": "rug-197",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Quel pays les Lions britanniques et irlandais ont-ils affronté lors de leur tournée 2025 ?",
+      "answers": [
+        { "text": "L'Australie", "isCorrect": true },
+        { "text": "L'Afrique du Sud", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Les Lions remportent la série de tests contre les Wallabies."
+    },
+    {
+      "ref": "rug-198",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Quel pays a battu les Lions britanniques et irlandais lors de leur tournée 2021 ?",
+      "answers": [
+        { "text": "L'Afrique du Sud", "isCorrect": true },
+        { "text": "L'Argentine", "isCorrect": false },
+        { "text": "La Nouvelle-Zélande", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false }
+      ],
+      "explanation": "Les Springboks remportent la série 2-1, dans des stades vides à cause du Covid."
+    },
+    {
+      "ref": "rug-199",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-de-france"],
+      "text": "Sur quel score la France a-t-elle battu la Nouvelle-Zélande au Stade de France, en novembre 2021 ?",
+      "answers": [
+        { "text": "27-13", "isCorrect": false },
+        { "text": "33-30", "isCorrect": false },
+        { "text": "20-18", "isCorrect": false },
+        { "text": "40-25", "isCorrect": true }
+      ],
+      "explanation": "Une victoire historique, la plus large de la France contre les All Blacks."
+    },
+    {
+      "ref": "rug-200",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee"],
+      "text": "Comment s'appellent officiellement les tests de novembre en Europe depuis 2021 ?",
+      "answers": [
+        { "text": "Les Autumn Nations Series", "isCorrect": true },
+        { "text": "La Coupe d'automne", "isCorrect": false },
+        { "text": "Les Test Series", "isCorrect": false },
+        { "text": "La Ligue des nations", "isCorrect": false }
+      ],
+      "explanation": "En 2020, à cause du Covid, une compétition spéciale avait été organisée : l'Autumn Nations Cup."
+    },
+    {
+      "ref": "rug-201",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "En quels mois les équipes européennes partent-elles en tournée d'été dans l'hémisphère Sud ?",
+      "answers": [
+        { "text": "En juin et juillet", "isCorrect": true },
+        { "text": "En septembre", "isCorrect": false },
+        { "text": "En novembre", "isCorrect": false },
+        { "text": "En février", "isCorrect": false }
+      ],
+      "explanation": "C'est l'hiver dans l'hémisphère Sud, donc la saison de rugby."
+    },
+    {
+      "ref": "rug-202",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Que désigne un « test-match » ?",
+      "answers": [
+        { "text": "Un match de présaison", "isCorrect": false },
+        { "text": "Un match officiel entre deux équipes nationales", "isCorrect": true },
+        { "text": "Un match amical entre clubs", "isCorrect": false },
+        { "text": "Un match d'entraînement", "isCorrect": false }
+      ],
+      "explanation": "Les joueurs y gagnent une « sélection » (ou une « cape »)."
+    },
+    {
+      "ref": "rug-203",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Les Lions britanniques et irlandais partent en tournée tous les quatre ans.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ils alternent entre l'Afrique du Sud, la Nouvelle-Zélande et l'Australie."
+    },
+    {
+      "ref": "rug-204",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-de-france"],
+      "text": "La France n'a jamais battu les All Blacks en Nouvelle-Zélande.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle les a battus en 1979, puis deux fois en 1994, lors d'une série remportée 2-0."
+    },
+    {
+      "ref": "rug-205",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-de-france"],
+      "text": "Quel jour la France a-t-elle battu la Nouvelle-Zélande pour la première fois en Nouvelle-Zélande, en 1979 ?",
+      "answers": [
+        { "text": "Le 25 décembre", "isCorrect": false },
+        { "text": "Le 11 novembre", "isCorrect": false },
+        { "text": "Le 14 juillet", "isCorrect": true },
+        { "text": "Le 1er janvier", "isCorrect": false }
+      ],
+      "explanation": "Victoire 24-19 à l'Eden Park d'Auckland, le jour de la fête nationale."
+    },
+    {
+      "ref": "rug-206",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-de-france"],
+      "text": "Quel joueur a conclu « l'essai du bout du monde » contre la Nouvelle-Zélande à Auckland, en 1994 ?",
+      "answers": [
+        { "text": "Serge Blanco", "isCorrect": false },
+        { "text": "Philippe Saint-André", "isCorrect": false },
+        { "text": "Jean-Luc Sadourny", "isCorrect": true },
+        { "text": "Émile Ntamack", "isCorrect": false }
+      ],
+      "explanation": "Lancé par Philippe Saint-André depuis son camp, l'essai traverse tout le terrain et offre la victoire à la France."
+    },
+    {
+      "ref": "rug-207",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Combien de tests compte une série des Lions britanniques et irlandais ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": true }
+      ],
+      "explanation": "Les Lions jouent aussi des matchs contre des franchises locales entre les tests."
+    },
+    {
+      "ref": "rug-208",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-nationale"],
+      "text": "Quel pays a remporté le Rugby Championship 2024 ?",
+      "answers": [
+        { "text": "La Nouvelle-Zélande", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": true },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Les Springboks remportent leur premier titre dans la compétition depuis 2019."
+    },
+    {
+      "ref": "rug-209",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-nationale"],
+      "text": "Dans quelle ville l'Irlande a-t-elle battu la Nouvelle-Zélande pour la première fois, en 2016 ?",
+      "answers": [
+        { "text": "Dublin", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Chicago", "isCorrect": true },
+        { "text": "Wellington", "isCorrect": false }
+      ],
+      "explanation": "Après 111 ans d'attente, l'Irlande gagne 40-29 au Soldier Field."
+    },
+    {
+      "ref": "rug-210",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["tournee", "equipe-nationale"],
+      "text": "En 2022, l'Irlande a remporté une série de tests en Nouvelle-Zélande.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle gagne la série 2-1, une première pour une équipe européenne depuis la France en 1994."
+    },
+    {
+      "ref": "rug-211",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Comment appelle-t-on une sélection en équipe nationale, au rugby ?",
+      "answers": [
+        { "text": "Un maillot", "isCorrect": false },
+        { "text": "Une cape", "isCorrect": true },
+        { "text": "Un chapeau", "isCorrect": false },
+        { "text": "Une étoile", "isCorrect": false }
+      ],
+      "explanation": "Au XIXe siècle, les joueurs britanniques recevaient une casquette (« cap ») à chaque sélection."
+    },
+    {
+      "ref": "rug-212",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Les tournées d'automne se jouent en Europe.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les équipes de l'hémisphère Sud viennent y affronter les nations européennes."
+    },
+    {
+      "ref": "rug-213",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un essai rapporte 3 points.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il rapporte 5 points. Ce sont les pénalités et les drops qui en rapportent 3."
+    },
+    {
+      "ref": "rug-214",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un match de rugby à XV dure 90 minutes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il dure 80 minutes : deux mi-temps de 40 minutes. C'est au football qu'un match dure 90 minutes."
+    },
+    {
+      "ref": "rug-215",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au rugby à XV, chaque équipe compte 11 joueurs sur le terrain.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Chaque équipe compte 15 joueurs, d'où le nom de rugby à XV."
+    },
+    {
+      "ref": "rug-216",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Les All Blacks jouent en maillot blanc.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils jouent tout en noir, d'où leur surnom."
+    },
+    {
+      "ref": "rug-217",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["top-14"],
+      "text": "Le Top 14 compte 16 clubs.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il compte 14 clubs, d'où son nom."
+    },
+    {
+      "ref": "rug-218",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "Les All Blacks exécutent un haka avant leurs matchs.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Cette danse maorie est exécutée face à l'adversaire, juste avant le coup d'envoi."
+    },
+    {
+      "ref": "rug-219",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Le rugby est né en France.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il est né en Angleterre, dans l'école de la ville de Rugby, au XIXe siècle."
+    },
+    {
+      "ref": "rug-220",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["six-nations"],
+      "text": "L'Afrique du Sud participe au Tournoi des Six Nations.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le Tournoi réunit six nations européennes. L'Afrique du Sud dispute le Rugby Championship."
+    },
+    {
+      "ref": "rug-221",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde"],
+      "text": "La Coupe du monde de rugby 2023 s'est déroulée en Angleterre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle s'est déroulée en France. L'Angleterre l'avait organisée en 2015."
+    },
+    {
+      "ref": "rug-222",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "record"],
+      "text": "Dan Carter a joué toute sa carrière en Nouvelle-Zélande.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a aussi joué à Perpignan en 2009, au Racing 92 de 2015 à 2018, puis au Japon."
+    },
+    {
+      "ref": "rug-223",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["top-14", "record"],
+      "text": "Le Stade français est le club le plus titré du championnat de France.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le club le plus titré est le Stade toulousain, loin devant tous les autres."
+    },
+    {
+      "ref": "rug-224",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "La Nouvelle-Zélande a remporté plus de Coupes du monde que l'Afrique du Sud.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La Nouvelle-Zélande en a remporté trois (1987, 2011, 2015), l'Afrique du Sud quatre."
+    },
+    {
+      "ref": "rug-225",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Le rugby à XV est revenu aux Jeux olympiques en 2016.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est le rugby à 7 qui est entré au programme olympique en 2016. Le rugby à XV n'est plus olympique depuis 1924."
+    },
+    {
+      "ref": "rug-226",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["tournee"],
+      "text": "Le Rugby Championship se joue en Europe.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il oppose les quatre grandes nations de l'hémisphère Sud : Nouvelle-Zélande, Afrique du Sud, Australie et Argentine."
+    },
+    {
+      "ref": "rug-227",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "record"],
+      "text": "Jonny Wilkinson est le joueur qui a marqué le plus de points en test-match.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le record appartient à Dan Carter, avec 1 598 points. Wilkinson détient en revanche le record de points en Coupe du monde."
+    },
+    {
+      "ref": "rug-228",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "record"],
+      "text": "L'Afrique du Sud a remporté deux Coupes du monde consécutives, en 2019 et 2023.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle rejoint la Nouvelle-Zélande (2011, 2015) parmi les équipes ayant conservé leur titre."
+    },
+    {
+      "ref": "rug-229",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "Quel animal est l'emblème du XV de France ?",
+      "answers": [
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "Le coq", "isCorrect": true },
+        { "text": "L'aigle", "isCorrect": false },
+        { "text": "Le loup", "isCorrect": false }
+      ],
+      "explanation": "Le coq gaulois figure sur le maillot des Bleus."
+    },
+    {
+      "ref": "rug-230",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-de-france"],
+      "text": "Dans quel stade le XV de France joue-t-il la plupart de ses matchs à domicile ?",
+      "answers": [
+        { "text": "Le stade Vélodrome", "isCorrect": false },
+        { "text": "Le Parc des Princes", "isCorrect": false },
+        { "text": "Le stade Mayol", "isCorrect": false },
+        { "text": "Le Stade de France", "isCorrect": true }
+      ],
+      "explanation": "Depuis son ouverture en 1998. Les Bleus jouaient auparavant au Parc des Princes."
+    },
+    {
+      "ref": "rug-231",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on l'action de marquer en aplatissant le ballon dans l'en-but adverse ?",
+      "answers": [
+        { "text": "Un drop", "isCorrect": false },
+        { "text": "Un essai", "isCorrect": true },
+        { "text": "Un touchdown", "isCorrect": false },
+        { "text": "Un but", "isCorrect": false }
+      ],
+      "explanation": "Le touchdown est l'équivalent au football américain."
+    },
+    {
+      "ref": "rug-232",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quelle forme ont les poteaux de rugby ?",
+      "answers": [
+        { "text": "Un carré", "isCorrect": false },
+        { "text": "Un H", "isCorrect": true },
+        { "text": "Un U", "isCorrect": false },
+        { "text": "Un cercle", "isCorrect": false }
+      ],
+      "explanation": "Le ballon doit passer entre les deux montants, au-dessus de la barre transversale."
+    },
+    {
+      "ref": "rug-233",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coupe-du-monde", "equipe-de-france"],
+      "text": "Quelle Coupe du monde de rugby la France a-t-elle organisée avant celle de 2023 ?",
+      "answers": [
+        { "text": "Celle de 2011", "isCorrect": false },
+        { "text": "Celle de 2007", "isCorrect": true },
+        { "text": "Celle de 2015", "isCorrect": false },
+        { "text": "Celle de 1995", "isCorrect": false }
+      ],
+      "explanation": "La France l'a organisée en 2007, avec quelques matchs au pays de Galles et en Écosse."
+    },
+    {
+      "ref": "rug-234",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["top-14"],
+      "text": "Quel club de Top 14 représente la Gironde ?",
+      "answers": [
+        { "text": "L'Union Bordeaux-Bègles", "isCorrect": true },
+        { "text": "Le Stade rochelais", "isCorrect": false },
+        { "text": "La Section paloise", "isCorrect": false },
+        { "text": "Le Stade toulousain", "isCorrect": false }
+      ],
+      "explanation": "L'UBB joue au stade Chaban-Delmas, à Bordeaux."
+    },
+    {
+      "ref": "rug-235",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "De quelles couleurs est le maillot de l'Afrique du Sud ?",
+      "answers": [
+        { "text": "Bleu et blanc", "isCorrect": false },
+        { "text": "Vert et or", "isCorrect": true },
+        { "text": "Rouge et jaune", "isCorrect": false },
+        { "text": "Noir et blanc", "isCorrect": false }
+      ],
+      "explanation": "Le vert et l'or sont les couleurs traditionnelles du sport sud-africain."
+    },
+    {
+      "ref": "rug-236",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "De quelle couleur est le maillot de l'équipe d'Angleterre ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Blanc", "isCorrect": true },
+        { "text": "Bleu", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false }
+      ],
+      "explanation": "Avec la rose rouge sur la poitrine."
+    },
+    {
+      "ref": "rug-237",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["equipe-nationale"],
+      "text": "De quelle couleur est le maillot de l'équipe du pays de Galles ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": true },
+        { "text": "Jaune", "isCorrect": false },
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false }
+      ],
+      "explanation": "Comme le dragon du drapeau gallois."
+    },
+    {
+      "ref": "rug-238",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Siya Kolisi ?",
+      "answers": [
+        { "text": "Les Fidji", "isCorrect": false },
+        { "text": "La Namibie", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": true },
+        { "text": "Le Zimbabwe", "isCorrect": false }
+      ],
+      "explanation": "Il est né en 1991 à Zwide, un township de Port Elizabeth."
+    },
+    {
+      "ref": "rug-239",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Jonny Wilkinson ?",
+      "answers": [
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true },
+        { "text": "Le pays de Galles", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false }
+      ],
+      "explanation": "Champion du monde 2003, il a aussi joué cinq saisons à Toulon."
+    },
+    {
+      "ref": "rug-240",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays est Richie McCaw ?",
+      "answers": [
+        { "text": "La Nouvelle-Zélande", "isCorrect": true },
+        { "text": "Les Samoa", "isCorrect": false },
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "L'Afrique du Sud", "isCorrect": false }
+      ],
+      "explanation": "Il a joué 148 matchs avec les All Blacks."
+    },
+    {
+      "ref": "rug-241",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["six-nations", "equipe-nationale"],
+      "text": "Dans quel pays se trouve le stade de Murrayfield ?",
+      "answers": [
+        { "text": "Le pays de Galles", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": true },
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": false }
+      ],
+      "explanation": "Il se trouve à Édimbourg, la capitale écossaise."
+    },
+    {
+      "ref": "rug-242",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["tournee"],
+      "text": "Dans quel hémisphère se trouvent la Nouvelle-Zélande, l'Afrique du Sud et l'Australie ?",
+      "answers": [
+        { "text": "Sur l'équateur", "isCorrect": false },
+        { "text": "L'hémisphère Nord", "isCorrect": false },
+        { "text": "Ça dépend de la saison", "isCorrect": false },
+        { "text": "L'hémisphère Sud", "isCorrect": true }
+      ],
+      "explanation": "Leurs saisons sont inversées par rapport à l'Europe : c'est l'hiver chez eux en juin et juillet."
+    },
+    {
+      "ref": "rug-243",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que doit faire un joueur plaqué qui se retrouve au sol avec le ballon ?",
+      "answers": [
+        { "text": "Se relever avec le ballon", "isCorrect": false },
+        { "text": "Attendre le coup de sifflet de l'arbitre", "isCorrect": false },
+        { "text": "Le garder contre lui", "isCorrect": false },
+        { "text": "Le lâcher ou le passer immédiatement", "isCorrect": true }
+      ],
+      "explanation": "Sinon, l'arbitre siffle une pénalité pour « maintien du ballon »."
+    },
+    {
+      "ref": "rug-244",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "À quel poste joue le numéro 8 ?",
+      "answers": [
+        { "text": "Pilier", "isCorrect": false },
+        { "text": "Deuxième ligne", "isCorrect": false },
+        { "text": "Troisième ligne centre", "isCorrect": true },
+        { "text": "Arrière", "isCorrect": false }
+      ],
+      "explanation": "Il se place à l'arrière de la mêlée et peut ramasser le ballon pour attaquer."
+    },
+    {
+      "ref": "rug-245",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Après une pénalité tapée en touche, quelle équipe effectue le lancer ?",
+      "answers": [
+        { "text": "Aucune, l'arbitre relance le jeu", "isCorrect": false },
+        { "text": "Celle désignée par tirage au sort", "isCorrect": false },
+        { "text": "L'équipe qui a commis la faute", "isCorrect": false },
+        { "text": "L'équipe qui a obtenu la pénalité", "isCorrect": true }
+      ],
+      "explanation": "C'est un gros avantage : l'équipe gagne du terrain au pied et garde le ballon."
+    },
+    {
+      "ref": "rug-246",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que fait l'arbitre quand il « laisse l'avantage » ?",
+      "answers": [
+        { "text": "Il accorde un essai de pénalité", "isCorrect": false },
+        { "text": "Il laisse jouer, car l'équipe victime de la faute peut en tirer profit", "isCorrect": true },
+        { "text": "Il arrête le match pour quelques minutes", "isCorrect": false },
+        { "text": "Il donne un point de bonus", "isCorrect": false }
+      ],
+      "explanation": "Si l'avantage ne donne rien, il revient à la faute et la sanctionne."
+    },
+    {
+      "ref": "rug-247",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Après un essai, quelle équipe effectue le coup d'envoi pour relancer le jeu ?",
+      "answers": [
+        { "text": "Toujours l'équipe qui recevait", "isCorrect": false },
+        { "text": "Celle désignée par tirage au sort", "isCorrect": false },
+        { "text": "L'équipe qui a encaissé l'essai", "isCorrect": true },
+        { "text": "L'équipe qui a marqué l'essai", "isCorrect": false }
+      ],
+      "explanation": "L'équipe qui vient d'encaisser des points récupère ainsi l'initiative du renvoi."
+    },
+    {
+      "ref": "rug-248",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Au-dessus de quelle partie du corps un plaquage est-il interdit ?",
+      "answers": [
+        { "text": "Les genoux", "isCorrect": false },
+        { "text": "La ligne des épaules", "isCorrect": true },
+        { "text": "La taille", "isCorrect": false },
+        { "text": "Le nombril", "isCorrect": false }
+      ],
+      "explanation": "Un plaquage à la tête ou au cou est sévèrement sanctionné, souvent par un carton rouge."
+    },
+    {
+      "ref": "rug-249",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que désigne une « chandelle » au rugby ?",
+      "answers": [
+        { "text": "Un joueur debout immobile en touche", "isCorrect": false },
+        { "text": "Une passe très longue", "isCorrect": false },
+        { "text": "Un coup de pied très haut pour aller récupérer le ballon", "isCorrect": true },
+        { "text": "Un essai marqué en plongeant", "isCorrect": false }
+      ],
+      "explanation": "Les joueurs courent sous le ballon pour le récupérer ou mettre la pression sur le receveur."
+    },
+    {
+      "ref": "rug-250",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il quand un défenseur, dans ses 22 mètres, attrape de volée un coup de pied adverse en criant « marque » ?",
+      "answers": [
+        { "text": "Il marque 3 points", "isCorrect": false },
+        { "text": "Il obtient un coup franc", "isCorrect": true },
+        { "text": "Il doit taper directement en touche", "isCorrect": false },
+        { "text": "L'arbitre accorde une mêlée à l'adversaire", "isCorrect": false }
+      ],
+      "explanation": "On appelle ce geste « faire une marque » ou « arrêt de volée »."
+    },
+    {
+      "ref": "rug-251",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de joueurs doit compter au minimum un alignement en touche ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "2", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "L'équipe qui lance choisit le nombre de joueurs, et l'adversaire ne peut pas en aligner davantage."
+    },
+    {
+      "ref": "rug-252",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on la zone derrière la ligne de but, où l'on marque les essais ?",
+      "answers": [
+        { "text": "Les 22 mètres", "isCorrect": false },
+        { "text": "La zone de touche", "isCorrect": false },
+        { "text": "Le rond central", "isCorrect": false },
+        { "text": "L'en-but", "isCorrect": true }
+      ],
+      "explanation": "Le ballon doit y être aplati pour que l'essai soit accordé."
+    },
+    {
+      "ref": "rug-253",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelle est la longueur maximale d'un terrain de rugby entre les deux lignes de but ?",
+      "answers": [
+        { "text": "90 mètres", "isCorrect": false },
+        { "text": "100 mètres", "isCorrect": true },
+        { "text": "110 mètres", "isCorrect": false },
+        { "text": "120 mètres", "isCorrect": false }
+      ],
+      "explanation": "Il faut y ajouter les deux en-buts, qui mesurent chacun jusqu'à 22 mètres de profondeur."
+    },
+    {
+      "ref": "rug-254",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un joueur peut plaquer un adversaire qui n'a pas le ballon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est interdit : seul le porteur du ballon peut être plaqué. L'arbitre siffle une pénalité."
+    },
+    {
+      "ref": "rug-255",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Après un en-avant, l'arbitre ordonne une mêlée.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La mêlée est accordée à l'équipe qui n'a pas commis la faute."
+    },
+    {
+      "ref": "rug-256",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "En touche, les joueurs peuvent être soulevés par leurs coéquipiers pour attraper le ballon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Cette technique, longtemps interdite, est autorisée depuis la fin des années 1990."
+    },
+    {
+      "ref": "rug-257",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qui introduit le ballon dans la mêlée ?",
+      "answers": [
+        { "text": "Le pilier", "isCorrect": false },
+        { "text": "Le talonneur", "isCorrect": false },
+        { "text": "Le demi de mêlée", "isCorrect": true },
+        { "text": "L'arbitre", "isCorrect": false }
+      ],
+      "explanation": "Il le glisse dans le tunnel formé entre les deux premières lignes, d'où le nom de son poste."
+    },
+    {
+      "ref": "rug-258",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelle est la principale différence entre une pénalité et un coup franc ?",
+      "answers": [
+        { "text": "Sur un coup franc, on ne peut pas tenter de marquer en tapant entre les poteaux", "isCorrect": true },
+        { "text": "Un coup franc se joue à la main uniquement", "isCorrect": false },
+        { "text": "Un coup franc rapporte plus de points", "isCorrect": false },
+        { "text": "Une pénalité ne peut pas être tapée en touche", "isCorrect": false }
+      ],
+      "explanation": "Le coup franc sanctionne des fautes plus légères, comme un nombre de joueurs incorrect en touche."
+    },
+    {
+      "ref": "rug-259",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment s'appelle le coup de pied qui lance le match et chaque mi-temps ?",
+      "answers": [
+        { "text": "Le coup d'envoi", "isCorrect": true },
+        { "text": "La transformation", "isCorrect": false },
+        { "text": "La chandelle", "isCorrect": false },
+        { "text": "Le drop", "isCorrect": false }
+      ],
+      "explanation": "Il est tapé depuis le centre du terrain et doit parcourir au moins 10 mètres."
+    },
+    {
+      "ref": "rug-260",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il quand un joueur est suspecté de commotion cérébrale pendant un match ?",
+      "answers": [
+        { "text": "Son équipe joue à 14 jusqu'à son retour", "isCorrect": false },
+        { "text": "Il sort passer un protocole médical et peut être remplacé temporairement", "isCorrect": true },
+        { "text": "Il continue à jouer jusqu'à la mi-temps", "isCorrect": false },
+        { "text": "Le match est arrêté définitivement", "isCorrect": false }
+      ],
+      "explanation": "Si le test est positif, il ne revient pas sur le terrain. Ce protocole protège la santé des joueurs."
+    }
+  ]
+}

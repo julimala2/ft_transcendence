@@ -1,0 +1,3425 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 249,
+    "parDifficulte": { "1": 72, "2": 105, "3": 72 },
+    "parType": { "multiple": 205, "boolean": 44 },
+    "avecImage": 0,
+    "sansImage": 249,
+    "parTag": {
+      "joueur": 88,
+      "regle": 49,
+      "nba": 44,
+      "competition": 38,
+      "franchise": 37,
+      "france": 30,
+      "histoire": 30,
+      "record": 29
+    }
+  },
+  "category": {
+    "slug": "basket",
+    "name": "Basket"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "bas-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "Combien de franchises compte la NBA ?",
+      "answers": [
+        { "text": "32", "isCorrect": false },
+        { "text": "24", "isCorrect": false },
+        { "text": "28", "isCorrect": false },
+        { "text": "30", "isCorrect": true }
+      ],
+      "explanation": "29 franchises aux États-Unis et une au Canada, les Toronto Raptors."
+    },
+    {
+      "ref": "bas-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "En combien de conférences sont réparties les équipes NBA ?",
+      "answers": [
+        { "text": "2 : Est et Ouest", "isCorrect": true },
+        { "text": "Aucune, il n'y a qu'un seul classement", "isCorrect": false },
+        { "text": "4, une par fuseau horaire", "isCorrect": false },
+        { "text": "3 : Nord, Centre et Sud", "isCorrect": false }
+      ],
+      "explanation": "Chaque conférence compte 15 équipes, réparties en trois divisions."
+    },
+    {
+      "ref": "bas-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba", "competition"],
+      "text": "Quelle franchise a remporté le titre NBA 2025 ?",
+      "answers": [
+        { "text": "Le Thunder d'Oklahoma City", "isCorrect": true },
+        { "text": "Les Celtics de Boston", "isCorrect": false },
+        { "text": "Les Pacers de l'Indiana", "isCorrect": false },
+        { "text": "Les Nuggets de Denver", "isCorrect": false }
+      ],
+      "explanation": "Le Thunder bat les Pacers 4-3 en finale, avec Shai Gilgeous-Alexander élu MVP des Finales."
+    },
+    {
+      "ref": "bas-004",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Quelle franchise a remporté le titre NBA 2024 ?",
+      "answers": [
+        { "text": "Les Lakers de Los Angeles", "isCorrect": false },
+        { "text": "Les Nuggets de Denver", "isCorrect": false },
+        { "text": "Les Celtics de Boston", "isCorrect": true },
+        { "text": "Les Mavericks de Dallas", "isCorrect": false }
+      ],
+      "explanation": "Les Celtics battent les Mavericks de Luka Dončić 4-1 et remportent leur 18e titre."
+    },
+    {
+      "ref": "bas-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba", "joueur"],
+      "text": "Quelle franchise a remporté son premier titre NBA en 2023, emmenée par Nikola Jokić ?",
+      "answers": [
+        { "text": "Le Heat de Miami", "isCorrect": false },
+        { "text": "Les Suns de Phoenix", "isCorrect": false },
+        { "text": "Les Nuggets de Denver", "isCorrect": true },
+        { "text": "Les Bucks de Milwaukee", "isCorrect": false }
+      ],
+      "explanation": "Les Nuggets battent le Heat 4-1, et Jokić est élu MVP des Finales."
+    },
+    {
+      "ref": "bas-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba", "record"],
+      "text": "Quelle franchise comptait le plus de titres NBA à l'issue de la saison 2024-2025 ?",
+      "answers": [
+        { "text": "Les Warriors de Golden State", "isCorrect": false },
+        { "text": "Les Lakers de Los Angeles", "isCorrect": false },
+        { "text": "Les Bulls de Chicago", "isCorrect": false },
+        { "text": "Les Celtics de Boston", "isCorrect": true }
+      ],
+      "explanation": "Les Celtics en comptaient 18, juste devant les Lakers (17)."
+    },
+    {
+      "ref": "bas-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "Comment s'appelle le trophée remis au champion NBA ?",
+      "answers": [
+        { "text": "Le trophée Lombardi", "isCorrect": false },
+        { "text": "Le trophée Larry O'Brien", "isCorrect": true },
+        { "text": "La coupe Stanley", "isCorrect": false },
+        { "text": "Le trophée Naismith", "isCorrect": false }
+      ],
+      "explanation": "Il porte le nom d'un ancien commissaire de la ligue. La coupe Stanley est le trophée du hockey, le Lombardi celui du football américain."
+    },
+    {
+      "ref": "bas-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Quel trophée est remis au meilleur joueur des Finales NBA depuis 2009 ?",
+      "answers": [
+        { "text": "Le trophée Magic Johnson", "isCorrect": false },
+        { "text": "Le trophée Michael Jordan", "isCorrect": false },
+        { "text": "Le trophée Larry Bird", "isCorrect": false },
+        { "text": "Le trophée Bill Russell", "isCorrect": true }
+      ],
+      "explanation": "Il rend hommage au pivot des Celtics, onze fois champion."
+    },
+    {
+      "ref": "bas-009",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["nba"],
+      "text": "Quel nom porte le trophée de MVP de la saison régulière depuis 2023 ?",
+      "answers": [
+        { "text": "Le trophée Kareem Abdul-Jabbar", "isCorrect": false },
+        { "text": "Le trophée Bill Russell", "isCorrect": false },
+        { "text": "Le trophée Michael Jordan", "isCorrect": true },
+        { "text": "Le trophée Maurice Podoloff", "isCorrect": false }
+      ],
+      "explanation": "Il s'appelait auparavant trophée Maurice Podoloff, du nom du premier commissaire de la NBA."
+    },
+    {
+      "ref": "bas-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "En combien de matchs gagnants se jouent les séries de playoffs NBA ?",
+      "answers": [
+        { "text": "3 victoires (au meilleur des 5 matchs)", "isCorrect": false },
+        { "text": "4 victoires (au meilleur des 7 matchs)", "isCorrect": true },
+        { "text": "2 victoires (au meilleur des 3 matchs)", "isCorrect": false },
+        { "text": "Un seul match", "isCorrect": false }
+      ],
+      "explanation": "La première équipe à 4 victoires se qualifie, y compris en finale."
+    },
+    {
+      "ref": "bas-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "À quoi sert le « play-in tournament » en NBA ?",
+      "answers": [
+        { "text": "À désigner le premier choix de la draft", "isCorrect": false },
+        { "text": "À attribuer les dernières places de playoffs entre les équipes classées de la 7e à la 10e place", "isCorrect": true },
+        { "text": "À sélectionner les joueurs du All-Star Game", "isCorrect": false },
+        { "text": "À départager les équipes à égalité en finale", "isCorrect": false }
+      ],
+      "explanation": "Créé en 2020, il donne une chance aux équipes juste derrière les six premières de chaque conférence."
+    },
+    {
+      "ref": "bas-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "Comment s'appelle la cérémonie annuelle où les franchises NBA choisissent les nouveaux joueurs ?",
+      "answers": [
+        { "text": "La loterie des stars", "isCorrect": false },
+        { "text": "Le mercato", "isCorrect": false },
+        { "text": "Le combine", "isCorrect": false },
+        { "text": "La draft", "isCorrect": true }
+      ],
+      "explanation": "Les équipes les moins bien classées ont le plus de chances d'obtenir les premiers choix, grâce à une loterie."
+    },
+    {
+      "ref": "bas-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "Comment s'appelle le match de gala qui réunit les meilleurs joueurs NBA à la mi-saison ?",
+      "answers": [
+        { "text": "Le Classic Game", "isCorrect": false },
+        { "text": "Le Final Four", "isCorrect": false },
+        { "text": "Le All-Star Game", "isCorrect": true },
+        { "text": "Le Super Bowl", "isCorrect": false }
+      ],
+      "explanation": "Il s'accompagne d'un concours de dunks et d'un concours de tirs à trois points."
+    },
+    {
+      "ref": "bas-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba", "competition"],
+      "text": "Comment s'appelle le tournoi disputé en début de saison NBA depuis 2023 ?",
+      "answers": [
+        { "text": "La Coupe des conférences", "isCorrect": false },
+        { "text": "La NBA Cup", "isCorrect": true },
+        { "text": "La Coupe Naismith", "isCorrect": false },
+        { "text": "Le Trophée de novembre", "isCorrect": false }
+      ],
+      "explanation": "Appelée d'abord « In-Season Tournament », elle a été remportée par les Lakers en 2023, puis par les Bucks en 2024."
+    },
+    {
+      "ref": "bas-015",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["nba", "histoire"],
+      "text": "En quelle année la NBA a-t-elle été fondée, sous le nom de BAA ?",
+      "answers": [
+        { "text": "1936", "isCorrect": false },
+        { "text": "1967", "isCorrect": false },
+        { "text": "1891", "isCorrect": false },
+        { "text": "1946", "isCorrect": true }
+      ],
+      "explanation": "La Basketball Association of America devient la NBA en 1949, après sa fusion avec une ligue rivale, la NBL."
+    },
+    {
+      "ref": "bas-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["nba", "histoire"],
+      "text": "Avec quelle ligue rivale la NBA a-t-elle fusionné en 1976 ?",
+      "answers": [
+        { "text": "La WNBA", "isCorrect": false },
+        { "text": "La NCAA", "isCorrect": false },
+        { "text": "L'ABA", "isCorrect": true },
+        { "text": "L'Euroleague", "isCorrect": false }
+      ],
+      "explanation": "Quatre équipes de l'ABA, dont les Spurs et les Nuggets, rejoignent alors la NBA. L'ABA avait popularisé le tir à trois points."
+    },
+    {
+      "ref": "bas-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["nba", "regle", "histoire"],
+      "text": "En quelle année la ligne à trois points a-t-elle été introduite en NBA ?",
+      "answers": [
+        { "text": "1979", "isCorrect": true },
+        { "text": "1946", "isCorrect": false },
+        { "text": "1992", "isCorrect": false },
+        { "text": "1967", "isCorrect": false }
+      ],
+      "explanation": "Elle existait déjà en ABA. Aujourd'hui, les tirs à trois points représentent une grande partie des tentatives."
+    },
+    {
+      "ref": "bas-018",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["nba", "franchise"],
+      "text": "Une seule franchise NBA est située hors des États-Unis.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les Toronto Raptors, au Canada, champions NBA en 2019."
+    },
+    {
+      "ref": "bas-019",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Combien de matchs de saison régulière chaque équipe NBA dispute-t-elle ?",
+      "answers": [
+        { "text": "60", "isCorrect": false },
+        { "text": "72", "isCorrect": false },
+        { "text": "100", "isCorrect": false },
+        { "text": "82", "isCorrect": true }
+      ],
+      "explanation": "41 à domicile et 41 à l'extérieur, d'octobre à avril."
+    },
+    {
+      "ref": "bas-020",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba", "joueur"],
+      "text": "Quel joueur a été élu MVP de la saison et MVP des Finales en 2025 ?",
+      "answers": [
+        { "text": "Jayson Tatum", "isCorrect": false },
+        { "text": "Nikola Jokić", "isCorrect": false },
+        { "text": "Giannis Antetokounmpo", "isCorrect": false },
+        { "text": "Shai Gilgeous-Alexander", "isCorrect": true }
+      ],
+      "explanation": "Le meneur canadien d'Oklahoma City réalise une saison historique."
+    },
+    {
+      "ref": "bas-021",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["nba", "joueur"],
+      "text": "Quel joueur a été élu MVP des Finales 2024 avec les Celtics ?",
+      "answers": [
+        { "text": "Jaylen Brown", "isCorrect": true },
+        { "text": "Jrue Holiday", "isCorrect": false },
+        { "text": "Jayson Tatum", "isCorrect": false },
+        { "text": "Kristaps Porziņģis", "isCorrect": false }
+      ],
+      "explanation": "Il est préféré à son coéquipier Jayson Tatum, pourtant considéré comme le leader de l'équipe."
+    },
+    {
+      "ref": "bas-022",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["nba", "joueur"],
+      "text": "Quel joueur a été le premier choix de la draft NBA 2025 ?",
+      "answers": [
+        { "text": "Victor Wembanyama", "isCorrect": false },
+        { "text": "Zaccharie Risacher", "isCorrect": false },
+        { "text": "Bronny James", "isCorrect": false },
+        { "text": "Cooper Flagg", "isCorrect": true }
+      ],
+      "explanation": "L'ailier de l'université de Duke est choisi par les Dallas Mavericks."
+    },
+    {
+      "ref": "bas-023",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["nba", "joueur"],
+      "text": "En février 2025, les Dallas Mavericks ont échangé Luka Dončić aux Los Angeles Lakers.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Un échange totalement inattendu, contre Anthony Davis, qui a stupéfié le monde du basket."
+    },
+    {
+      "ref": "bas-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Combien d'équipes de chaque conférence se qualifient pour les playoffs NBA ?",
+      "answers": [
+        { "text": "10", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "Les six premières directement, puis deux autres via le play-in."
+    },
+    {
+      "ref": "bas-025",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "La saison régulière NBA se joue de juillet à septembre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle se joue d'octobre à avril. Les playoffs et les Finales ont lieu en mai et juin."
+    },
+    {
+      "ref": "bas-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Comment appelle-t-on un joueur qui n'a pas été choisi lors de la draft ?",
+      "answers": [
+        { "text": "Un « undrafted »", "isCorrect": true },
+        { "text": "Un sixième homme", "isCorrect": false },
+        { "text": "Un rookie", "isCorrect": false },
+        { "text": "Un free agent all-star", "isCorrect": false }
+      ],
+      "explanation": "Certains font quand même de grandes carrières, comme Ben Wallace ou Fred VanVleet."
+    },
+    {
+      "ref": "bas-027",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "Comment appelle-t-on un joueur dans sa première saison NBA ?",
+      "answers": [
+        { "text": "Un MVP", "isCorrect": false },
+        { "text": "Un rookie", "isCorrect": true },
+        { "text": "Un sophomore", "isCorrect": false },
+        { "text": "Un vétéran", "isCorrect": false }
+      ],
+      "explanation": "Le meilleur d'entre eux reçoit le titre de « Rookie of the Year ». Le sophomore est en deuxième saison."
+    },
+    {
+      "ref": "bas-028",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Que récompense le titre de « sixième homme de l'année » en NBA ?",
+      "answers": [
+        { "text": "Le meilleur joueur qui commence les matchs sur le banc", "isCorrect": true },
+        { "text": "Le meilleur jeune joueur", "isCorrect": false },
+        { "text": "Le joueur le plus fair-play", "isCorrect": false },
+        { "text": "Le meilleur défenseur", "isCorrect": false }
+      ],
+      "explanation": "Un rôle clé : apporter de l'énergie et des points en sortie de banc."
+    },
+    {
+      "ref": "bas-029",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Que récompense le titre de « DPOY » en NBA ?",
+      "answers": [
+        { "text": "Le meilleur passeur", "isCorrect": false },
+        { "text": "Le meilleur dunkeur", "isCorrect": false },
+        { "text": "Le joueur le plus progressé", "isCorrect": false },
+        { "text": "Le meilleur défenseur de la saison", "isCorrect": true }
+      ],
+      "explanation": "Defensive Player of the Year : le Français Rudy Gobert l'a remporté quatre fois."
+    },
+    {
+      "ref": "bas-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Celtics ?",
+      "answers": [
+        { "text": "Chicago", "isCorrect": false },
+        { "text": "Boston", "isCorrect": true },
+        { "text": "New York", "isCorrect": false },
+        { "text": "Philadelphie", "isCorrect": false }
+      ],
+      "explanation": "Leur couleur est le vert, en hommage à la forte communauté irlandaise de Boston."
+    },
+    {
+      "ref": "bas-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Bulls ?",
+      "answers": [
+        { "text": "Milwaukee", "isCorrect": false },
+        { "text": "Cleveland", "isCorrect": false },
+        { "text": "Détroit", "isCorrect": false },
+        { "text": "Chicago", "isCorrect": true }
+      ],
+      "explanation": "La franchise de Michael Jordan, six fois championne dans les années 1990."
+    },
+    {
+      "ref": "bas-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Lakers ?",
+      "answers": [
+        { "text": "San Diego", "isCorrect": false },
+        { "text": "San Francisco", "isCorrect": false },
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "Los Angeles", "isCorrect": true }
+      ],
+      "explanation": "Une autre franchise joue à Los Angeles : les Clippers."
+    },
+    {
+      "ref": "bas-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Knicks ?",
+      "answers": [
+        { "text": "New York", "isCorrect": true },
+        { "text": "Philadelphie", "isCorrect": false },
+        { "text": "Washington", "isCorrect": false },
+        { "text": "Boston", "isCorrect": false }
+      ],
+      "explanation": "Ils jouent au Madison Square Garden, la salle la plus célèbre du monde."
+    },
+    {
+      "ref": "bas-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Spurs, la franchise de Tony Parker et Victor Wembanyama ?",
+      "answers": [
+        { "text": "Houston", "isCorrect": false },
+        { "text": "Dallas", "isCorrect": false },
+        { "text": "Austin", "isCorrect": false },
+        { "text": "San Antonio", "isCorrect": true }
+      ],
+      "explanation": "Le Texas compte trois franchises : les Spurs, les Mavericks (Dallas) et les Rockets (Houston)."
+    },
+    {
+      "ref": "bas-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quelle est la seule franchise NBA canadienne ?",
+      "answers": [
+        { "text": "Les Montréal Royals", "isCorrect": false },
+        { "text": "Les Toronto Raptors", "isCorrect": true },
+        { "text": "Les Vancouver Grizzlies", "isCorrect": false },
+        { "text": "Les Ottawa Senators", "isCorrect": false }
+      ],
+      "explanation": "Les Grizzlies ont joué à Vancouver de 1995 à 2001, avant de partir à Memphis."
+    },
+    {
+      "ref": "bas-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quelles sont les couleurs des Lakers ?",
+      "answers": [
+        { "text": "Violet et or", "isCorrect": true },
+        { "text": "Vert et blanc", "isCorrect": false },
+        { "text": "Bleu et orange", "isCorrect": false },
+        { "text": "Rouge et noir", "isCorrect": false }
+      ],
+      "explanation": "Le « Purple and Gold » est l'un des maillots les plus célèbres du sport."
+    },
+    {
+      "ref": "bas-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "De quelle couleur est le maillot des Celtics ?",
+      "answers": [
+        { "text": "Violet", "isCorrect": false },
+        { "text": "Vert", "isCorrect": true },
+        { "text": "Bleu", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": false }
+      ],
+      "explanation": "Leur mascotte est un lutin irlandais, le « leprechaun »."
+    },
+    {
+      "ref": "bas-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Pourquoi l'équipe de Los Angeles s'appelle-t-elle les « Lakers », alors qu'il y a peu de lacs dans la région ?",
+      "answers": [
+        { "text": "Le nom a été tiré au sort", "isCorrect": false },
+        { "text": "C'est le nom de son premier propriétaire", "isCorrect": false },
+        { "text": "Le nom vient d'un lac artificiel près de la salle", "isCorrect": false },
+        { "text": "La franchise a été créée à Minneapolis, dans le Minnesota, surnommé « le pays aux 10 000 lacs »", "isCorrect": true }
+      ],
+      "explanation": "Elle déménage à Los Angeles en 1960 et garde son nom."
+    },
+    {
+      "ref": "bas-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Pourquoi la franchise de Salt Lake City s'appelle-t-elle le « Jazz » ?",
+      "answers": [
+        { "text": "C'est la musique préférée de son fondateur", "isCorrect": false },
+        { "text": "Le nom vient d'une marque de voiture", "isCorrect": false },
+        { "text": "Elle a été créée à La Nouvelle-Orléans, berceau du jazz", "isCorrect": true },
+        { "text": "Un concours a été organisé dans l'Utah", "isCorrect": false }
+      ],
+      "explanation": "Elle déménage dans l'Utah en 1979 et garde son nom, qui y semble un peu décalé."
+    },
+    {
+      "ref": "bas-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouaient les SuperSonics, devenus le Thunder d'Oklahoma City en 2008 ?",
+      "answers": [
+        { "text": "Kansas City", "isCorrect": false },
+        { "text": "Portland", "isCorrect": false },
+        { "text": "Vancouver", "isCorrect": false },
+        { "text": "Seattle", "isCorrect": true }
+      ],
+      "explanation": "Le départ des Sonics reste une blessure pour les fans de Seattle."
+    },
+    {
+      "ref": "bas-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quel quartier de New York jouent les Nets depuis 2012 ?",
+      "answers": [
+        { "text": "Le Bronx", "isCorrect": false },
+        { "text": "Queens", "isCorrect": false },
+        { "text": "Manhattan", "isCorrect": false },
+        { "text": "Brooklyn", "isCorrect": true }
+      ],
+      "explanation": "Ils jouaient auparavant dans le New Jersey."
+    },
+    {
+      "ref": "bas-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quelle région représentent les Warriors de Golden State ?",
+      "answers": [
+        { "text": "La Floride", "isCorrect": false },
+        { "text": "Le Nevada", "isCorrect": false },
+        { "text": "La baie de San Francisco", "isCorrect": true },
+        { "text": "Le Texas", "isCorrect": false }
+      ],
+      "explanation": "Ils jouent au Chase Center, à San Francisco. « Golden State » est le surnom de la Californie, en souvenir de la ruée vers l'or."
+    },
+    {
+      "ref": "bas-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent le Heat ?",
+      "answers": [
+        { "text": "Orlando", "isCorrect": false },
+        { "text": "Houston", "isCorrect": false },
+        { "text": "Phoenix", "isCorrect": false },
+        { "text": "Miami", "isCorrect": true }
+      ],
+      "explanation": "Le Heat a remporté trois titres, dont deux avec LeBron James (2012, 2013)."
+    },
+    {
+      "ref": "bas-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quelle salle jouent les Knicks de New York ?",
+      "answers": [
+        { "text": "Le Barclays Center", "isCorrect": false },
+        { "text": "Le Staples Center", "isCorrect": false },
+        { "text": "Le Madison Square Garden", "isCorrect": true },
+        { "text": "Le TD Garden", "isCorrect": false }
+      ],
+      "explanation": "Surnommée « la Mecque du basket », elle accueille aussi des concerts et des combats de boxe."
+    },
+    {
+      "ref": "bas-045",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Dans quelle salle jouent les Bulls de Chicago ?",
+      "answers": [
+        { "text": "Le TD Garden", "isCorrect": false },
+        { "text": "Le United Center", "isCorrect": true },
+        { "text": "La Crypto.com Arena", "isCorrect": false },
+        { "text": "Le Madison Square Garden", "isCorrect": false }
+      ],
+      "explanation": "Une statue de Michael Jordan accueille les visiteurs à l'entrée."
+    },
+    {
+      "ref": "bas-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Bucks ?",
+      "answers": [
+        { "text": "Milwaukee", "isCorrect": true },
+        { "text": "Detroit", "isCorrect": false },
+        { "text": "Minneapolis", "isCorrect": false },
+        { "text": "Indianapolis", "isCorrect": false }
+      ],
+      "explanation": "Champions en 2021 grâce à Giannis Antetokounmpo."
+    },
+    {
+      "ref": "bas-047",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quel État jouent les Pacers ?",
+      "answers": [
+        { "text": "L'Indiana", "isCorrect": true },
+        { "text": "Le Michigan", "isCorrect": false },
+        { "text": "Le Kentucky", "isCorrect": false },
+        { "text": "L'Ohio", "isCorrect": false }
+      ],
+      "explanation": "Ils jouent à Indianapolis, une ville très attachée au basket."
+    },
+    {
+      "ref": "bas-048",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouaient les Grizzlies avant de s'installer à Memphis en 2001 ?",
+      "answers": [
+        { "text": "Seattle", "isCorrect": false },
+        { "text": "Toronto", "isCorrect": false },
+        { "text": "Nashville", "isCorrect": false },
+        { "text": "Vancouver", "isCorrect": true }
+      ],
+      "explanation": "Ils faisaient partie, avec Toronto, des deux franchises canadiennes créées en 1995."
+    },
+    {
+      "ref": "bas-049",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel animal est le symbole des Chicago Bulls ?",
+      "answers": [
+        { "text": "Un aigle", "isCorrect": false },
+        { "text": "Un taureau", "isCorrect": true },
+        { "text": "Un loup", "isCorrect": false },
+        { "text": "Un ours", "isCorrect": false }
+      ],
+      "explanation": "Le logo rouge et noir est l'un des plus vendus au monde, en partie grâce à Michael Jordan."
+    },
+    {
+      "ref": "bas-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quelle franchise joue à Philadelphie ?",
+      "answers": [
+        { "text": "Les Pistons", "isCorrect": false },
+        { "text": "Les 76ers", "isCorrect": true },
+        { "text": "Les Celtics", "isCorrect": false },
+        { "text": "Les Wizards", "isCorrect": false }
+      ],
+      "explanation": "Le nom fait référence à 1776, l'année de la Déclaration d'indépendance, signée à Philadelphie."
+    },
+    {
+      "ref": "bas-051",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Quelle franchise joue à Detroit, la ville de l'industrie automobile ?",
+      "answers": [
+        { "text": "Les Pacers", "isCorrect": false },
+        { "text": "Les Pistons", "isCorrect": true },
+        { "text": "Les Cavaliers", "isCorrect": false },
+        { "text": "Les Bucks", "isCorrect": false }
+      ],
+      "explanation": "Le nom rappelle les pistons des moteurs. La franchise a été championne en 1989, 1990 et 2004."
+    },
+    {
+      "ref": "bas-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quelle franchise joue à Cleveland ?",
+      "answers": [
+        { "text": "Les Magic", "isCorrect": false },
+        { "text": "Les Cavaliers", "isCorrect": true },
+        { "text": "Les Hawks", "isCorrect": false },
+        { "text": "Les Pistons", "isCorrect": false }
+      ],
+      "explanation": "Ils remportent leur seul titre en 2016, avec LeBron James, natif de la région."
+    },
+    {
+      "ref": "bas-053",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Les Clippers et les Lakers jouent dans la même ville.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les deux franchises sont à Los Angeles. Les Clippers ont inauguré leur propre salle, l'Intuit Dome, en 2024."
+    },
+    {
+      "ref": "bas-054",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Les Chicago Bulls jouent à New York.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils jouent à Chicago. Les franchises new-yorkaises sont les Knicks et les Nets."
+    },
+    {
+      "ref": "bas-055",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Les Spurs de San Antonio n'ont jamais été champions NBA.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils ont gagné cinq titres : 1999, 2003, 2005, 2007 et 2014, avec Tim Duncan, Tony Parker et Manu Ginóbili."
+    },
+    {
+      "ref": "bas-056",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville jouent les Trail Blazers ?",
+      "answers": [
+        { "text": "Denver", "isCorrect": false },
+        { "text": "Salt Lake City", "isCorrect": false },
+        { "text": "Seattle", "isCorrect": false },
+        { "text": "Portland", "isCorrect": true }
+      ],
+      "explanation": "Champions en 1977, ils sont la seule franchise des quatre grands sports américains dans l'Oregon."
+    },
+    {
+      "ref": "bas-057",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel numéro portait Michael Jordan aux Chicago Bulls ?",
+      "answers": [
+        { "text": "23", "isCorrect": true },
+        { "text": "32", "isCorrect": false },
+        { "text": "33", "isCorrect": false },
+        { "text": "24", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi porté le 45 après son premier retour, et une fois le 12, après le vol de son maillot."
+    },
+    {
+      "ref": "bas-058",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Dans quelle franchise Michael Jordan a-t-il remporté ses six titres ?",
+      "answers": [
+        { "text": "Les Chicago Bulls", "isCorrect": true },
+        { "text": "Les Boston Celtics", "isCorrect": false },
+        { "text": "Les Los Angeles Lakers", "isCorrect": false },
+        { "text": "Les Washington Wizards", "isCorrect": false }
+      ],
+      "explanation": "Deux triplés : 1991-1993 et 1996-1998. Il termine sa carrière aux Wizards."
+    },
+    {
+      "ref": "bas-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel sport Michael Jordan a-t-il pratiqué en professionnel lors de sa première retraite, en 1994 ?",
+      "answers": [
+        { "text": "Le baseball", "isCorrect": true },
+        { "text": "Le golf", "isCorrect": false },
+        { "text": "Le football américain", "isCorrect": false },
+        { "text": "Le tennis", "isCorrect": false }
+      ],
+      "explanation": "Il joue en ligue mineure, avant de revenir aux Bulls en 1995 avec un simple fax : « I'm back »."
+    },
+    {
+      "ref": "bas-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel était le surnom de Kobe Bryant ?",
+      "answers": [
+        { "text": "King James", "isCorrect": false },
+        { "text": "The Answer", "isCorrect": false },
+        { "text": "Air", "isCorrect": false },
+        { "text": "Black Mamba", "isCorrect": true }
+      ],
+      "explanation": "Il incarne la « Mamba Mentality », une obsession du travail et de la gagne."
+    },
+    {
+      "ref": "bas-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quels numéros Kobe Bryant a-t-il portés aux Lakers, tous deux retirés par la franchise ?",
+      "answers": [
+        { "text": "Le 23 et le 32", "isCorrect": false },
+        { "text": "Le 3 et le 30", "isCorrect": false },
+        { "text": "Le 33 et le 34", "isCorrect": false },
+        { "text": "Le 8 et le 24", "isCorrect": true }
+      ],
+      "explanation": "Il a joué toute sa carrière aux Lakers, de 1996 à 2016, et remporté cinq titres."
+    },
+    {
+      "ref": "bas-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Dans quelles circonstances Kobe Bryant est-il mort, en janvier 2020 ?",
+      "answers": [
+        { "text": "Dans un accident de voiture", "isCorrect": false },
+        { "text": "D'une crise cardiaque", "isCorrect": false },
+        { "text": "Dans un accident d'avion de ligne", "isCorrect": false },
+        { "text": "Dans un accident d'hélicoptère", "isCorrect": true }
+      ],
+      "explanation": "Sa fille Gianna et sept autres personnes ont aussi perdu la vie."
+    },
+    {
+      "ref": "bas-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel est le surnom de LeBron James ?",
+      "answers": [
+        { "text": "The Beard", "isCorrect": false },
+        { "text": "The Mailman", "isCorrect": false },
+        { "text": "Black Mamba", "isCorrect": false },
+        { "text": "King James", "isCorrect": true }
+      ],
+      "explanation": "Surnommé « The Chosen One » (l'Élu) dès le lycée, il est devenu le « roi »."
+    },
+    {
+      "ref": "bas-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Avec combien de franchises différentes LeBron James a-t-il remporté un titre NBA ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "Le Heat (2012, 2013), les Cavaliers (2016) et les Lakers (2020)."
+    },
+    {
+      "ref": "bas-065",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur", "record"],
+      "text": "LeBron James et son fils Bronny ont joué ensemble dans la même équipe NBA.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 2024, aux Lakers : une première dans l'histoire de la ligue."
+    },
+    {
+      "ref": "bas-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Pour quelle franchise Stephen Curry a-t-il joué toute sa carrière ?",
+      "answers": [
+        { "text": "Les Houston Rockets", "isCorrect": false },
+        { "text": "Les Charlotte Hornets", "isCorrect": false },
+        { "text": "Les Los Angeles Lakers", "isCorrect": false },
+        { "text": "Les Warriors de Golden State", "isCorrect": true }
+      ],
+      "explanation": "Avec quatre titres (2015, 2017, 2018, 2022), il a révolutionné le jeu grâce au tir à trois points."
+    },
+    {
+      "ref": "bas-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quels deux joueurs ont incarné la grande rivalité Lakers-Celtics des années 1980 ?",
+      "answers": [
+        { "text": "Michael Jordan et Isiah Thomas", "isCorrect": false },
+        { "text": "Kobe Bryant et Paul Pierce", "isCorrect": false },
+        { "text": "Magic Johnson et Larry Bird", "isCorrect": true },
+        { "text": "Kareem Abdul-Jabbar et Bill Russell", "isCorrect": false }
+      ],
+      "explanation": "Ils se sont affrontés dès la finale universitaire de 1979, puis trois fois en Finales NBA."
+    },
+    {
+      "ref": "bas-068",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel pivot géant était surnommé « Shaq » ?",
+      "answers": [
+        { "text": "Kareem Abdul-Jabbar", "isCorrect": false },
+        { "text": "Hakeem Olajuwon", "isCorrect": false },
+        { "text": "Shaquille O'Neal", "isCorrect": true },
+        { "text": "Yao Ming", "isCorrect": false }
+      ],
+      "explanation": "Ses dunks étaient si puissants qu'il a cassé plusieurs panneaux en début de carrière."
+    },
+    {
+      "ref": "bas-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "De quel pays vient Dirk Nowitzki, champion NBA avec Dallas en 2011 ?",
+      "answers": [
+        { "text": "L'Autriche", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "La Suède", "isCorrect": false },
+        { "text": "Les Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "Il a joué toute sa carrière aux Mavericks et a popularisé un tir en reculant sur une jambe."
+    },
+    {
+      "ref": "bas-070",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel est le surnom de Giannis Antetokounmpo ?",
+      "answers": [
+        { "text": "The Joker", "isCorrect": false },
+        { "text": "The Beard", "isCorrect": false },
+        { "text": "The Process", "isCorrect": false },
+        { "text": "The Greek Freak", "isCorrect": true }
+      ],
+      "explanation": "Le « phénomène grec », né à Athènes de parents nigérians, champion avec Milwaukee en 2021."
+    },
+    {
+      "ref": "bas-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "De quel pays vient Nikola Jokić ?",
+      "answers": [
+        { "text": "La Slovénie", "isCorrect": false },
+        { "text": "La Croatie", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": true },
+        { "text": "La Grèce", "isCorrect": false }
+      ],
+      "explanation": "Choisi en 41e position de la draft 2014, il est devenu triple MVP. Il est aussi passionné de courses de chevaux."
+    },
+    {
+      "ref": "bas-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Combien de titres NBA Tim Duncan a-t-il remportés avec les Spurs ?",
+      "answers": [
+        { "text": "5", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "En 1999, 2003, 2005, 2007 et 2014. Il était nageur avant qu'un ouragan ne détruise la piscine de son île."
+    },
+    {
+      "ref": "bas-073",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "D'où vient Tim Duncan ?",
+      "answers": [
+        { "text": "Des îles Vierges des États-Unis", "isCorrect": true },
+        { "text": "Des Bahamas", "isCorrect": false },
+        { "text": "De Porto Rico", "isCorrect": false },
+        { "text": "De la Jamaïque", "isCorrect": false }
+      ],
+      "explanation": "Il devait être nageur olympique, mais l'ouragan Hugo a détruit la seule piscine olympique de l'île en 1989."
+    },
+    {
+      "ref": "bas-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel était le tir signature de Kareem Abdul-Jabbar ?",
+      "answers": [
+        { "text": "Le « fadeaway » sur une jambe", "isCorrect": false },
+        { "text": "Le « skyhook », un bras roulé", "isCorrect": true },
+        { "text": "Le « floater »", "isCorrect": false },
+        { "text": "Le tir à trois points en pas de recul", "isCorrect": false }
+      ],
+      "explanation": "Un tir en crochet, bras tendu au-dessus de la tête, presque impossible à contrer."
+    },
+    {
+      "ref": "bas-075",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Quel meneur était célèbre pour ses « crossovers » et son surnom « The Answer » ?",
+      "answers": [
+        { "text": "Allen Iverson", "isCorrect": true },
+        { "text": "Chris Paul", "isCorrect": false },
+        { "text": "Kyrie Irving", "isCorrect": false },
+        { "text": "Tony Parker", "isCorrect": false }
+      ],
+      "explanation": "Il a été élu MVP en 2001 avec les 76ers, malgré sa petite taille (1,83 m)."
+    },
+    {
+      "ref": "bas-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel joueur, célèbre pour ses rebonds et ses cheveux colorés, a gagné trois titres avec les Bulls de Jordan ?",
+      "answers": [
+        { "text": "Dennis Rodman", "isCorrect": true },
+        { "text": "Steve Kerr", "isCorrect": false },
+        { "text": "Scottie Pippen", "isCorrect": false },
+        { "text": "Toni Kukoč", "isCorrect": false }
+      ],
+      "explanation": "Il a été sept fois de suite meilleur rebondeur de la ligue."
+    },
+    {
+      "ref": "bas-077",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays venait le pivot Yao Ming, star des Houston Rockets ?",
+      "answers": [
+        { "text": "La Chine", "isCorrect": true },
+        { "text": "Taïwan", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "La Corée du Sud", "isCorrect": false }
+      ],
+      "explanation": "Avec ses 2,29 m, il a rendu la NBA immensément populaire en Chine."
+    },
+    {
+      "ref": "bas-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "De quel pays vient Luka Dončić ?",
+      "answers": [
+        { "text": "La Slovénie", "isCorrect": true },
+        { "text": "La Croatie", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": false },
+        { "text": "La Slovaquie", "isCorrect": false }
+      ],
+      "explanation": "Champion d'Europe avec la Slovénie en 2017, à 18 ans, il a commencé sa carrière au Real Madrid."
+    },
+    {
+      "ref": "bas-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "De quel pays vient Shai Gilgeous-Alexander ?",
+      "answers": [
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": true },
+        { "text": "La Jamaïque", "isCorrect": false }
+      ],
+      "explanation": "Le meneur du Thunder a mené le Canada au bronze mondial en 2023."
+    },
+    {
+      "ref": "bas-080",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Quel meneur canadien a été élu deux fois MVP, en 2005 et 2006 ?",
+      "answers": [
+        { "text": "Jamal Murray", "isCorrect": false },
+        { "text": "Andrew Wiggins", "isCorrect": false },
+        { "text": "Shai Gilgeous-Alexander", "isCorrect": false },
+        { "text": "Steve Nash", "isCorrect": true }
+      ],
+      "explanation": "Il jouait alors aux Phoenix Suns, avec un jeu rapide et spectaculaire."
+    },
+    {
+      "ref": "bas-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Quel pivot nigérian, surnommé « The Dream », a remporté deux titres avec Houston en 1994 et 1995 ?",
+      "answers": [
+        { "text": "Patrick Ewing", "isCorrect": false },
+        { "text": "Hakeem Olajuwon", "isCorrect": true },
+        { "text": "Manute Bol", "isCorrect": false },
+        { "text": "Dikembe Mutombo", "isCorrect": false }
+      ],
+      "explanation": "Il est célèbre pour son « Dream Shake », une feinte de pivot dévastatrice."
+    },
+    {
+      "ref": "bas-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel joueur argentin a remporté quatre titres avec les Spurs et l'or olympique en 2004 ?",
+      "answers": [
+        { "text": "Manu Ginóbili", "isCorrect": true },
+        { "text": "Andrés Nocioni", "isCorrect": false },
+        { "text": "Facundo Campazzo", "isCorrect": false },
+        { "text": "Luis Scola", "isCorrect": false }
+      ],
+      "explanation": "Il a rendu célèbre le « Euro step », un déplacement en deux temps pour éviter les défenseurs."
+    },
+    {
+      "ref": "bas-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Quel ailier a remporté deux titres avec les Warriors, en 2017 et 2018, et a été élu MVP des Finales ces deux années ?",
+      "answers": [
+        { "text": "Draymond Green", "isCorrect": false },
+        { "text": "Andre Iguodala", "isCorrect": false },
+        { "text": "Klay Thompson", "isCorrect": false },
+        { "text": "Kevin Durant", "isCorrect": true }
+      ],
+      "explanation": "Il avait rejoint Golden State en 2016, juste après avoir perdu contre eux en finale de conférence avec Oklahoma City."
+    },
+    {
+      "ref": "bas-084",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel était le coéquipier principal de Michael Jordan lors des six titres des Bulls ?",
+      "answers": [
+        { "text": "Steve Kerr", "isCorrect": false },
+        { "text": "Dennis Rodman", "isCorrect": false },
+        { "text": "Scottie Pippen", "isCorrect": true },
+        { "text": "Horace Grant", "isCorrect": false }
+      ],
+      "explanation": "Ailier défensif exceptionnel, il était présent lors des deux triplés."
+    },
+    {
+      "ref": "bas-085",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Michael Jordan a fini sa carrière aux Chicago Bulls.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il l'a finie aux Washington Wizards, de 2001 à 2003, après sa deuxième retraite."
+    },
+    {
+      "ref": "bas-086",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["joueur"],
+      "text": "Kobe Bryant a joué toute sa carrière aux Los Angeles Lakers.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Vingt saisons, de 1996 à 2016, un record pour une même franchise à l'époque."
+    },
+    {
+      "ref": "bas-087",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Larry Bird a joué pour les Los Angeles Lakers.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a joué toute sa carrière aux Boston Celtics, les grands rivaux des Lakers de Magic Johnson."
+    },
+    {
+      "ref": "bas-088",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Combien de titres de MVP de la saison Nikola Jokić a-t-il remportés entre 2021 et 2024 ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "Un exploit pour un joueur choisi en 41e position de la draft, pendant une publicité à la télévision."
+    },
+    {
+      "ref": "bas-089",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur est surnommé « Chef Curry » ?",
+      "answers": [
+        { "text": "Seth Curry", "isCorrect": false },
+        { "text": "Stephen Curry", "isCorrect": true },
+        { "text": "Damian Lillard", "isCorrect": false },
+        { "text": "Chris Paul", "isCorrect": false }
+      ],
+      "explanation": "Son frère Seth joue aussi en NBA, et son père Dell y a fait carrière."
+    },
+    {
+      "ref": "bas-090",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "joueur"],
+      "text": "Combien de points Wilt Chamberlain a-t-il marqués lors d'un seul match, en 1962 ?",
+      "answers": [
+        { "text": "73", "isCorrect": false },
+        { "text": "100", "isCorrect": true },
+        { "text": "81", "isCorrect": false },
+        { "text": "92", "isCorrect": false }
+      ],
+      "explanation": "Un record jamais égalé, contre les Knicks. Il n'existe aucune vidéo du match."
+    },
+    {
+      "ref": "bas-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Combien de points Kobe Bryant a-t-il marqués contre les Raptors en 2006, deuxième meilleure performance de l'histoire ?",
+      "answers": [
+        { "text": "81", "isCorrect": true },
+        { "text": "70", "isCorrect": false },
+        { "text": "100", "isCorrect": false },
+        { "text": "73", "isCorrect": false }
+      ],
+      "explanation": "Seul Wilt Chamberlain a fait mieux, avec 100 points en 1962."
+    },
+    {
+      "ref": "bas-092",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur a dépassé Kareem Abdul-Jabbar en 2023 pour devenir le meilleur marqueur de l'histoire de la NBA ?",
+      "answers": [
+        { "text": "Kobe Bryant", "isCorrect": false },
+        { "text": "Michael Jordan", "isCorrect": false },
+        { "text": "Kevin Durant", "isCorrect": false },
+        { "text": "LeBron James", "isCorrect": true }
+      ],
+      "explanation": "Le record de Kareem tenait depuis 1984. En 2024, LeBron devient le premier à franchir les 40 000 points."
+    },
+    {
+      "ref": "bas-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur a remporté onze titres NBA, record absolu ?",
+      "answers": [
+        { "text": "Robert Horry", "isCorrect": false },
+        { "text": "Bill Russell", "isCorrect": true },
+        { "text": "Michael Jordan", "isCorrect": false },
+        { "text": "Kareem Abdul-Jabbar", "isCorrect": false }
+      ],
+      "explanation": "Le pivot des Celtics a gagné onze titres en treize saisons, entre 1957 et 1969."
+    },
+    {
+      "ref": "bas-094",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "franchise"],
+      "text": "Combien de titres NBA consécutifs les Celtics ont-ils remportés entre 1959 et 1966 ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "La plus longue série de titres de l'histoire des sports professionnels américains."
+    },
+    {
+      "ref": "bas-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "franchise"],
+      "text": "Quel bilan record les Warriors ont-ils réalisé en saison régulière 2015-2016 ?",
+      "answers": [
+        { "text": "70 victoires et 12 défaites", "isCorrect": false },
+        { "text": "75 victoires et 7 défaites", "isCorrect": false },
+        { "text": "72 victoires et 10 défaites", "isCorrect": false },
+        { "text": "73 victoires et 9 défaites", "isCorrect": true }
+      ],
+      "explanation": "Ils battent le record des Bulls de 1996 (72-10), mais perdent ensuite la finale contre Cleveland."
+    },
+    {
+      "ref": "bas-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur a marqué le plus de paniers à trois points de l'histoire de la NBA ?",
+      "answers": [
+        { "text": "Klay Thompson", "isCorrect": false },
+        { "text": "James Harden", "isCorrect": false },
+        { "text": "Stephen Curry", "isCorrect": true },
+        { "text": "Ray Allen", "isCorrect": false }
+      ],
+      "explanation": "Il a dépassé Ray Allen en 2021 et continue d'allonger son record."
+    },
+    {
+      "ref": "bas-097",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Quelle moyenne de points par match Wilt Chamberlain a-t-il réalisée sur la saison 1961-1962 ?",
+      "answers": [
+        { "text": "37,1", "isCorrect": false },
+        { "text": "44,8", "isCorrect": false },
+        { "text": "55,2", "isCorrect": false },
+        { "text": "50,4", "isCorrect": true }
+      ],
+      "explanation": "Une moyenne incroyable, jamais approchée depuis. La meilleure de Michael Jordan est de 37,1."
+    },
+    {
+      "ref": "bas-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur détient le record de passes décisives en carrière NBA ?",
+      "answers": [
+        { "text": "Chris Paul", "isCorrect": false },
+        { "text": "John Stockton", "isCorrect": true },
+        { "text": "Jason Kidd", "isCorrect": false },
+        { "text": "Magic Johnson", "isCorrect": false }
+      ],
+      "explanation": "Le meneur du Jazz a aussi le record d'interceptions, avec Karl Malone comme partenaire favori."
+    },
+    {
+      "ref": "bas-099",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur a remporté le plus de titres de MVP de la saison, avec six récompenses ?",
+      "answers": [
+        { "text": "Kareem Abdul-Jabbar", "isCorrect": true },
+        { "text": "Bill Russell", "isCorrect": false },
+        { "text": "Michael Jordan", "isCorrect": false },
+        { "text": "LeBron James", "isCorrect": false }
+      ],
+      "explanation": "Jordan et Russell en ont remporté cinq, LeBron James quatre."
+    },
+    {
+      "ref": "bas-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Combien de titres de meilleur marqueur de la saison Michael Jordan a-t-il remportés ?",
+      "answers": [
+        { "text": "10", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Un record, dont sept consécutifs de 1987 à 1993."
+    },
+    {
+      "ref": "bas-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "En 2021, quel joueur a dépassé Oscar Robertson pour devenir le recordman des triple-doubles en carrière ?",
+      "answers": [
+        { "text": "Nikola Jokić", "isCorrect": false },
+        { "text": "Russell Westbrook", "isCorrect": true },
+        { "text": "LeBron James", "isCorrect": false },
+        { "text": "Magic Johnson", "isCorrect": false }
+      ],
+      "explanation": "Oscar Robertson détenait le record depuis les années 1970."
+    },
+    {
+      "ref": "bas-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Combien de points Klay Thompson a-t-il marqués en un seul quart-temps, en 2015, record NBA ?",
+      "answers": [
+        { "text": "41", "isCorrect": false },
+        { "text": "37", "isCorrect": true },
+        { "text": "33", "isCorrect": false },
+        { "text": "28", "isCorrect": false }
+      ],
+      "explanation": "Il réussit 13 tirs sur 13, dont 9 à trois points, contre Sacramento."
+    },
+    {
+      "ref": "bas-103",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Michael Jordan a été élu MVP des Finales lors de chacun de ses six titres.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Six finales, six titres, six trophées de MVP des Finales : un parcours parfait."
+    },
+    {
+      "ref": "bas-104",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["record", "franchise"],
+      "text": "Les Chicago Bulls de 1995-1996 ont terminé la saison régulière avec 72 victoires et 10 défaites.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Un record qui a tenu jusqu'aux Warriors de 2015-2016 (73-9)."
+    },
+    {
+      "ref": "bas-105",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["record", "joueur"],
+      "text": "Wilt Chamberlain a marqué 100 points dans un match de playoffs.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il les a marqués en saison régulière, le 2 mars 1962, contre les New York Knicks."
+    },
+    {
+      "ref": "bas-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Combien de rebonds Wilt Chamberlain a-t-il pris lors d'un seul match, en 1960, record NBA ?",
+      "answers": [
+        { "text": "55", "isCorrect": true },
+        { "text": "42", "isCorrect": false },
+        { "text": "61", "isCorrect": false },
+        { "text": "35", "isCorrect": false }
+      ],
+      "explanation": "Face à Bill Russell, son grand rival."
+    },
+    {
+      "ref": "bas-107",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "LeBron James est le premier joueur de l'histoire de la NBA à avoir dépassé les 40 000 points en carrière.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il franchit ce cap en mars 2024, à 39 ans."
+    },
+    {
+      "ref": "bas-108",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de joueurs de chaque équipe sont sur le terrain au basket ?",
+      "answers": [
+        { "text": "5", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "Les remplacements sont illimités et peuvent se faire à chaque arrêt de jeu."
+    },
+    {
+      "ref": "bas-109",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte un panier marqué derrière la ligne à trois points ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": true }
+      ],
+      "explanation": "Un panier marqué à l'intérieur de la ligne rapporte 2 points."
+    },
+    {
+      "ref": "bas-110",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points rapporte un lancer franc réussi ?",
+      "answers": [
+        { "text": "0,5", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "1", "isCorrect": true }
+      ],
+      "explanation": "Les lancers francs sont tirés après certaines fautes, sans défenseur."
+    },
+    {
+      "ref": "bas-111",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "À quelle hauteur se trouve le cercle du panier ?",
+      "answers": [
+        { "text": "2,80 mètres", "isCorrect": false },
+        { "text": "3,05 mètres", "isCorrect": true },
+        { "text": "2,50 mètres", "isCorrect": false },
+        { "text": "3,50 mètres", "isCorrect": false }
+      ],
+      "explanation": "Soit 10 pieds, la hauteur choisie par l'inventeur du basket en 1891."
+    },
+    {
+      "ref": "bas-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "nba"],
+      "text": "Combien de temps dure un quart-temps en NBA ?",
+      "answers": [
+        { "text": "15 minutes", "isCorrect": false },
+        { "text": "10 minutes", "isCorrect": false },
+        { "text": "20 minutes", "isCorrect": false },
+        { "text": "12 minutes", "isCorrect": true }
+      ],
+      "explanation": "Soit 48 minutes par match. Dans les compétitions FIBA, comme en Europe, un quart-temps dure 10 minutes."
+    },
+    {
+      "ref": "bas-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de temps dure un quart-temps dans les compétitions FIBA, comme en Europe ou aux Jeux olympiques ?",
+      "answers": [
+        { "text": "10 minutes", "isCorrect": true },
+        { "text": "8 minutes", "isCorrect": false },
+        { "text": "12 minutes", "isCorrect": false },
+        { "text": "15 minutes", "isCorrect": false }
+      ],
+      "explanation": "Soit 40 minutes par match, contre 48 en NBA."
+    },
+    {
+      "ref": "bas-114",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "De combien de secondes une équipe dispose-t-elle pour tirer ?",
+      "answers": [
+        { "text": "14", "isCorrect": false },
+        { "text": "30", "isCorrect": false },
+        { "text": "24", "isCorrect": true },
+        { "text": "45", "isCorrect": false }
+      ],
+      "explanation": "Si le ballon ne touche pas le cercle avant la fin du chronomètre, l'équipe perd la possession."
+    },
+    {
+      "ref": "bas-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de temps dure une prolongation en cas d'égalité ?",
+      "answers": [
+        { "text": "3 minutes", "isCorrect": false },
+        { "text": "12 minutes", "isCorrect": false },
+        { "text": "5 minutes", "isCorrect": true },
+        { "text": "10 minutes", "isCorrect": false }
+      ],
+      "explanation": "On joue autant de prolongations que nécessaire, il n'y a pas de match nul."
+    },
+    {
+      "ref": "bas-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "nba"],
+      "text": "Combien de fautes personnelles un joueur NBA peut-il commettre avant d'être exclu du match ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "6", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Dans les compétitions FIBA, la limite est de 5 fautes."
+    },
+    {
+      "ref": "bas-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de fautes personnelles entraînent l'exclusion d'un joueur dans les compétitions FIBA ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "En NBA, où les matchs sont plus longs, la limite est de 6 fautes."
+    },
+    {
+      "ref": "bas-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de temps une équipe a-t-elle pour faire passer le ballon dans la moitié de terrain adverse ?",
+      "answers": [
+        { "text": "5 secondes", "isCorrect": false },
+        { "text": "24 secondes", "isCorrect": false },
+        { "text": "8 secondes", "isCorrect": true },
+        { "text": "10 secondes", "isCorrect": false }
+      ],
+      "explanation": "Sinon, l'arbitre siffle une violation et le ballon revient à l'adversaire."
+    },
+    {
+      "ref": "bas-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de temps un attaquant peut-il rester dans la raquette adverse ?",
+      "answers": [
+        { "text": "3 secondes", "isCorrect": true },
+        { "text": "10 secondes", "isCorrect": false },
+        { "text": "5 secondes", "isCorrect": false },
+        { "text": "8 secondes", "isCorrect": false }
+      ],
+      "explanation": "La règle des trois secondes empêche les grands joueurs de rester collés au panier."
+    },
+    {
+      "ref": "bas-120",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on la faute commise quand un joueur fait trop de pas avec le ballon sans dribbler ?",
+      "answers": [
+        { "text": "Le marcher", "isCorrect": true },
+        { "text": "La faute technique", "isCorrect": false },
+        { "text": "Le retour en zone", "isCorrect": false },
+        { "text": "La reprise de dribble", "isCorrect": false }
+      ],
+      "explanation": "En anglais, on parle de « travelling »."
+    },
+    {
+      "ref": "bas-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'une « reprise de dribble » ?",
+      "answers": [
+        { "text": "Dribbler avec les deux mains en même temps", "isCorrect": false },
+        { "text": "Recommencer à dribbler après avoir arrêté son dribble", "isCorrect": true },
+        { "text": "Dribbler plus de 24 secondes", "isCorrect": false },
+        { "text": "Dribbler derrière son dos", "isCorrect": false }
+      ],
+      "explanation": "Une fois le dribble arrêté, le joueur doit passer ou tirer."
+    },
+    {
+      "ref": "bas-122",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le fait d'écraser le ballon dans le panier en s'accrochant au cercle ?",
+      "answers": [
+        { "text": "Un dunk", "isCorrect": true },
+        { "text": "Un floater", "isCorrect": false },
+        { "text": "Un alley-oop", "isCorrect": false },
+        { "text": "Un lay-up", "isCorrect": false }
+      ],
+      "explanation": "En français, on dit aussi « smash »."
+    },
+    {
+      "ref": "bas-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « alley-oop » ?",
+      "answers": [
+        { "text": "Un contre sur la planche", "isCorrect": false },
+        { "text": "Un tir à trois points en reculant", "isCorrect": false },
+        { "text": "Un dribble entre les jambes", "isCorrect": false },
+        { "text": "Une passe en l'air reprise par un coéquipier qui marque directement, souvent en dunk", "isCorrect": true }
+      ],
+      "explanation": "Une action spectaculaire qui demande une grande coordination."
+    },
+    {
+      "ref": "bas-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le fait de récupérer le ballon après un tir manqué ?",
+      "answers": [
+        { "text": "Une passe décisive", "isCorrect": false },
+        { "text": "Un rebond", "isCorrect": true },
+        { "text": "Un contre", "isCorrect": false },
+        { "text": "Une interception", "isCorrect": false }
+      ],
+      "explanation": "On distingue les rebonds offensifs (sur son propre tir) et défensifs."
+    },
+    {
+      "ref": "bas-125",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le geste qui consiste à dévier un tir adverse avec la main ?",
+      "answers": [
+        { "text": "Un écran", "isCorrect": false },
+        { "text": "Un rebond", "isCorrect": false },
+        { "text": "Un contre", "isCorrect": true },
+        { "text": "Une feinte", "isCorrect": false }
+      ],
+      "explanation": "En anglais, on parle de « block »."
+    },
+    {
+      "ref": "bas-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « triple-double » ?",
+      "answers": [
+        { "text": "Gagner trois matchs en trois jours", "isCorrect": false },
+        { "text": "Atteindre au moins 10 dans trois catégories statistiques, par exemple points, rebonds et passes", "isCorrect": true },
+        { "text": "Réussir trois dunks dans un match", "isCorrect": false },
+        { "text": "Marquer trois tirs à trois points de suite", "isCorrect": false }
+      ],
+      "explanation": "Une performance qui montre un joueur complet. Russell Westbrook et Nikola Jokić en sont les spécialistes."
+    },
+    {
+      "ref": "bas-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que désigne un « buzzer beater » ?",
+      "answers": [
+        { "text": "Un joueur qui conteste les arbitres", "isCorrect": false },
+        { "text": "Un temps mort demandé à la dernière seconde", "isCorrect": false },
+        { "text": "Un panier marqué juste avant la sonnerie de fin de période", "isCorrect": true },
+        { "text": "Une faute commise en fin de match", "isCorrect": false }
+      ],
+      "explanation": "Si le ballon a quitté la main du tireur avant la sonnerie, le panier compte."
+    },
+    {
+      "ref": "bas-128",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « and-one » ?",
+      "answers": [
+        { "text": "Une faute sur un tir à trois points raté", "isCorrect": false },
+        { "text": "Un panier marqué malgré une faute, suivi d'un lancer franc bonus", "isCorrect": true },
+        { "text": "Un lancer franc raté", "isCorrect": false },
+        { "text": "Une passe décisive pour un dunk", "isCorrect": false }
+      ],
+      "explanation": "Le joueur peut ainsi transformer un panier à 2 points en action à 3 points."
+    },
+    {
+      "ref": "bas-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il quand un défenseur touche le ballon dans sa trajectoire descendante vers le panier ?",
+      "answers": [
+        { "text": "On procède à un entre-deux", "isCorrect": false },
+        { "text": "L'attaque obtient deux lancers francs", "isCorrect": false },
+        { "text": "Le panier est accordé à l'attaque", "isCorrect": true },
+        { "text": "Le contre est valable", "isCorrect": false }
+      ],
+      "explanation": "C'est le « goaltending », ou interférence : on ne peut pas contrer un ballon qui redescend vers le cercle."
+    },
+    {
+      "ref": "bas-130",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de secondes sont remises au chronomètre des tirs après un rebond offensif ?",
+      "answers": [
+        { "text": "14", "isCorrect": true },
+        { "text": "24", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "20", "isCorrect": false }
+      ],
+      "explanation": "Une règle adoptée par la FIBA puis par la NBA pour accélérer le jeu."
+    },
+    {
+      "ref": "bas-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "À quelle distance du panier se trouve la ligne à trois points dans les compétitions FIBA ?",
+      "answers": [
+        { "text": "6,25 mètres", "isCorrect": false },
+        { "text": "7,24 mètres", "isCorrect": false },
+        { "text": "6,75 mètres", "isCorrect": true },
+        { "text": "8 mètres", "isCorrect": false }
+      ],
+      "explanation": "En NBA, elle est plus éloignée : 7,24 mètres au sommet de l'arc."
+    },
+    {
+      "ref": "bas-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "nba"],
+      "text": "À quelle distance du panier se trouve la ligne à trois points en NBA, au sommet de l'arc ?",
+      "answers": [
+        { "text": "8,10 mètres", "isCorrect": false },
+        { "text": "6,75 mètres", "isCorrect": false },
+        { "text": "6,25 mètres", "isCorrect": false },
+        { "text": "7,24 mètres", "isCorrect": true }
+      ],
+      "explanation": "Soit 23 pieds et 9 pouces. Dans les coins, elle est un peu plus proche : 6,70 mètres."
+    },
+    {
+      "ref": "bas-133",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment commence un match de basket ?",
+      "answers": [
+        { "text": "Par un lancer franc", "isCorrect": false },
+        { "text": "Par un entre-deux au centre du terrain", "isCorrect": true },
+        { "text": "Par un tirage au sort", "isCorrect": false },
+        { "text": "Par une remise en jeu derrière la ligne de fond", "isCorrect": false }
+      ],
+      "explanation": "L'arbitre lance le ballon en l'air entre deux joueurs, qui sautent pour le taper vers un coéquipier."
+    },
+    {
+      "ref": "bas-134",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au basket, un match peut se terminer sur un match nul.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "En cas d'égalité, on joue des prolongations de 5 minutes jusqu'à ce qu'une équipe gagne."
+    },
+    {
+      "ref": "bas-135",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au basket, on peut courir avec le ballon sans dribbler.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il faut dribbler pour se déplacer. Sinon, c'est un marcher."
+    },
+    {
+      "ref": "bas-136",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Une fois dans la moitié de terrain adverse, une équipe ne peut pas ramener le ballon dans sa propre moitié.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "C'est la règle du « retour en zone ». L'arbitre redonne alors le ballon à l'adversaire."
+    },
+    {
+      "ref": "bas-137",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Un panier marqué depuis la ligne des lancers francs, pendant le jeu, vaut 1 point.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Pendant le jeu, un panier marqué à l'intérieur de la ligne à trois points vaut 2 points. Seuls les lancers francs valent 1 point."
+    },
+    {
+      "ref": "bas-138",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Un joueur peut toucher le cercle après un dunk sans être sanctionné.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "S'accrocher brièvement au cercle après un dunk est autorisé. Rester suspendu sans raison peut valoir une faute technique."
+    },
+    {
+      "ref": "bas-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que sanctionne une « faute technique » ?",
+      "answers": [
+        { "text": "Un comportement antisportif, comme contester violemment une décision de l'arbitre", "isCorrect": true },
+        { "text": "Un contact physique pendant un tir", "isCorrect": false },
+        { "text": "Une passe en dehors du terrain", "isCorrect": false },
+        { "text": "Un marcher", "isCorrect": false }
+      ],
+      "explanation": "Elle donne un lancer franc à l'adversaire. Deux fautes techniques entraînent l'exclusion."
+    },
+    {
+      "ref": "bas-140",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel est le nom de la zone rectangulaire peinte sous chaque panier ?",
+      "answers": [
+        { "text": "Le rond central", "isCorrect": false },
+        { "text": "La zone de rebond", "isCorrect": false },
+        { "text": "La raquette", "isCorrect": true },
+        { "text": "Le cercle", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle aussi la « peinture »."
+    },
+    {
+      "ref": "bas-141",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment s'appelle le tir le plus simple, en course, près du panier, en déposant le ballon ?",
+      "answers": [
+        { "text": "Le hook", "isCorrect": false },
+        { "text": "Le fadeaway", "isCorrect": false },
+        { "text": "Le dunk", "isCorrect": false },
+        { "text": "Le lay-up", "isCorrect": true }
+      ],
+      "explanation": "En français, on parle aussi de « double pas »."
+    },
+    {
+      "ref": "bas-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quel est le poste du joueur numéro 1, qui organise le jeu de son équipe ?",
+      "answers": [
+        { "text": "Pivot", "isCorrect": false },
+        { "text": "Ailier fort", "isCorrect": false },
+        { "text": "Meneur", "isCorrect": true },
+        { "text": "Arrière", "isCorrect": false }
+      ],
+      "explanation": "Les postes vont de 1 (meneur) à 5 (pivot) : 2 arrière, 3 ailier, 4 ailier fort."
+    },
+    {
+      "ref": "bas-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quel est le poste du joueur numéro 5, souvent le plus grand de l'équipe ?",
+      "answers": [
+        { "text": "Meneur", "isCorrect": false },
+        { "text": "Arrière", "isCorrect": false },
+        { "text": "Pivot", "isCorrect": true },
+        { "text": "Ailier", "isCorrect": false }
+      ],
+      "explanation": "Il joue près du panier, au rebond et en défense."
+    },
+    {
+      "ref": "bas-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'un « écran » au basket ?",
+      "answers": [
+        { "text": "Un joueur qui se place immobile pour bloquer le défenseur d'un coéquipier", "isCorrect": true },
+        { "text": "Une passe par-dessus la défense", "isCorrect": false },
+        { "text": "Une faute volontaire", "isCorrect": false },
+        { "text": "Un tableau d'affichage géant", "isCorrect": false }
+      ],
+      "explanation": "Associé à un déplacement vers le panier, il forme le « pick and roll », l'action la plus utilisée du basket."
+    },
+    {
+      "ref": "bas-145",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "competition"],
+      "text": "Combien de joueurs par équipe sont sur le terrain en basket 3x3, discipline olympique depuis 2021 ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": true }
+      ],
+      "explanation": "Il se joue sur un demi-terrain, avec un seul panier. Un panier vaut 1 point, ou 2 points derrière l'arc."
+    },
+    {
+      "ref": "bas-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Qui a inventé le basket-ball, en 1891 ?",
+      "answers": [
+        { "text": "James Naismith", "isCorrect": true },
+        { "text": "Walter Wingfield", "isCorrect": false },
+        { "text": "William Webb Ellis", "isCorrect": false },
+        { "text": "Abner Doubleday", "isCorrect": false }
+      ],
+      "explanation": "Professeur d'éducation physique, il cherchait un sport d'intérieur pour l'hiver. Webb Ellis est associé au rugby."
+    },
+    {
+      "ref": "bas-147",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "De quel pays était originaire James Naismith, l'inventeur du basket ?",
+      "answers": [
+        { "text": "Le Canada", "isCorrect": true },
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": false }
+      ],
+      "explanation": "Il a inventé le jeu à Springfield, dans le Massachusetts, où il enseignait."
+    },
+    {
+      "ref": "bas-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Que servaient de paniers lors des premiers matchs de basket, en 1891 ?",
+      "answers": [
+        { "text": "Des cerceaux en bois", "isCorrect": false },
+        { "text": "Des paniers à pêches", "isCorrect": true },
+        { "text": "Des seaux", "isCorrect": false },
+        { "text": "Des filets de pêche", "isCorrect": false }
+      ],
+      "explanation": "Ils n'étaient pas percés : il fallait récupérer le ballon avec une échelle après chaque panier."
+    },
+    {
+      "ref": "bas-149",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Dans quelle ville américaine le basket a-t-il été inventé ?",
+      "answers": [
+        { "text": "Springfield", "isCorrect": true },
+        { "text": "Chicago", "isCorrect": false },
+        { "text": "New York", "isCorrect": false },
+        { "text": "Boston", "isCorrect": false }
+      ],
+      "explanation": "Le Hall of Fame du basket y est installé."
+    },
+    {
+      "ref": "bas-150",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "competition"],
+      "text": "Lors de quels Jeux olympiques le basket est-il devenu un sport olympique officiel ?",
+      "answers": [
+        { "text": "Paris 1924", "isCorrect": false },
+        { "text": "Londres 1948", "isCorrect": false },
+        { "text": "Berlin 1936", "isCorrect": true },
+        { "text": "Rome 1960", "isCorrect": false }
+      ],
+      "explanation": "James Naismith assiste au tournoi, remporté par les États-Unis, sur un terrain en terre battue."
+    },
+    {
+      "ref": "bas-151",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "competition"],
+      "text": "Quel surnom a reçu l'équipe des États-Unis aux Jeux olympiques de Barcelone 1992 ?",
+      "answers": [
+        { "text": "La Dream Team", "isCorrect": true },
+        { "text": "La Golden Team", "isCorrect": false },
+        { "text": "Les All Stars", "isCorrect": false },
+        { "text": "La Super Team", "isCorrect": false }
+      ],
+      "explanation": "Pour la première fois, des joueurs NBA comme Jordan, Magic Johnson et Larry Bird participent aux Jeux."
+    },
+    {
+      "ref": "bas-152",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quelle célèbre équipe américaine d'exhibition mélange basket et numéros comiques depuis 1926 ?",
+      "answers": [
+        { "text": "Les Rucker Park Kings", "isCorrect": false },
+        { "text": "Les Washington Generals", "isCorrect": false },
+        { "text": "Les And1 Mixtape", "isCorrect": false },
+        { "text": "Les Harlem Globetrotters", "isCorrect": true }
+      ],
+      "explanation": "Les Washington Generals étaient leurs adversaires attitrés, programmés pour perdre."
+    },
+    {
+      "ref": "bas-153",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "En quelle année les joueurs NBA ont-ils été autorisés à participer aux Jeux olympiques pour la première fois ?",
+      "answers": [
+        { "text": "1976", "isCorrect": false },
+        { "text": "2000", "isCorrect": false },
+        { "text": "1984", "isCorrect": false },
+        { "text": "1992", "isCorrect": true }
+      ],
+      "explanation": "Avant, seuls les amateurs pouvaient jouer, ce qui avantageait les pays de l'Est, où les joueurs n'étaient pas officiellement professionnels."
+    },
+    {
+      "ref": "bas-154",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "competition"],
+      "text": "Quelle équipe a battu les États-Unis en finale olympique en 1972, dans un match aux dernières secondes très contestées ?",
+      "answers": [
+        { "text": "La Yougoslavie", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "L'URSS", "isCorrect": true }
+      ],
+      "explanation": "Les dernières secondes ont été rejouées plusieurs fois. Les Américains ont refusé leurs médailles d'argent."
+    },
+    {
+      "ref": "bas-155",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Le basket a été inventé aux États-Unis.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 1891, à Springfield, dans le Massachusetts, par le Canadien James Naismith."
+    },
+    {
+      "ref": "bas-156",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Le basket a été inventé au début du XXe siècle, en 1920.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été inventé en décembre 1891, à la fin du XIXe siècle."
+    },
+    {
+      "ref": "bas-157",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Combien de joueurs par équipe comptaient les tout premiers matchs de basket en 1891 ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "9", "isCorrect": true },
+        { "text": "11", "isCorrect": false },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "James Naismith avait 18 élèves : il a formé deux équipes de neuf. Le jeu à cinq s'impose quelques années plus tard."
+    },
+    {
+      "ref": "bas-158",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Au début du basket, on ne pouvait pas dribbler : le ballon se déplaçait uniquement par des passes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le dribble est apparu quelques années après l'invention du jeu, comme un moyen de se dégager."
+    },
+    {
+      "ref": "bas-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "joueur"],
+      "text": "Quel film de 1996 réunit Michael Jordan et les personnages des Looney Tunes ?",
+      "answers": [
+        { "text": "Coach Carter", "isCorrect": false },
+        { "text": "He Got Game", "isCorrect": false },
+        { "text": "Space Jam", "isCorrect": true },
+        { "text": "Les Blancs ne savent pas sauter", "isCorrect": false }
+      ],
+      "explanation": "Une suite est sortie en 2021, avec LeBron James."
+    },
+    {
+      "ref": "bas-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "joueur"],
+      "text": "Comment s'appelle la série documentaire de 2020 consacrée à Michael Jordan et aux Bulls des années 1990 ?",
+      "answers": [
+        { "text": "Air", "isCorrect": false },
+        { "text": "The Last Dance", "isCorrect": true },
+        { "text": "Hoop Dreams", "isCorrect": false },
+        { "text": "The Last Shot", "isCorrect": false }
+      ],
+      "explanation": "Elle suit la dernière saison du titre, en 1997-1998, avec des images inédites."
+    },
+    {
+      "ref": "bas-161",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "joueur"],
+      "text": "Quel joueur français a été le premier choix de la draft NBA 2023 ?",
+      "answers": [
+        { "text": "Zaccharie Risacher", "isCorrect": false },
+        { "text": "Bilal Coulibaly", "isCorrect": false },
+        { "text": "Rudy Gobert", "isCorrect": false },
+        { "text": "Victor Wembanyama", "isCorrect": true }
+      ],
+      "explanation": "Choisi par les San Antonio Spurs, il est élu meilleur rookie de la saison à l'unanimité en 2024."
+    },
+    {
+      "ref": "bas-162",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Avec quel club français Victor Wembanyama a-t-il joué juste avant de rejoindre la NBA ?",
+      "answers": [
+        { "text": "Les Metropolitans 92 (Boulogne-Levallois)", "isCorrect": true },
+        { "text": "Nanterre 92", "isCorrect": false },
+        { "text": "L'ASVEL", "isCorrect": false },
+        { "text": "L'AS Monaco", "isCorrect": false }
+      ],
+      "explanation": "Formé à Nanterre, il passe par l'ASVEL avant de briller avec les Metropolitans en 2022-2023."
+    },
+    {
+      "ref": "bas-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Quel Français a été le premier choix de la draft NBA 2024 ?",
+      "answers": [
+        { "text": "Zaccharie Risacher", "isCorrect": true },
+        { "text": "Alexandre Sarr", "isCorrect": false },
+        { "text": "Victor Wembanyama", "isCorrect": false },
+        { "text": "Tidjane Salaün", "isCorrect": false }
+      ],
+      "explanation": "Choisi par les Atlanta Hawks. Alexandre Sarr est pris juste après : deux Français aux deux premières places, une première."
+    },
+    {
+      "ref": "bas-164",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "joueur"],
+      "text": "Quel meneur français a remporté quatre titres NBA avec les San Antonio Spurs ?",
+      "answers": [
+        { "text": "Nicolas Batum", "isCorrect": false },
+        { "text": "Evan Fournier", "isCorrect": false },
+        { "text": "Boris Diaw", "isCorrect": false },
+        { "text": "Tony Parker", "isCorrect": true }
+      ],
+      "explanation": "En 2003, 2005, 2007 et 2014. Il est élu MVP des Finales 2007, une première pour un Européen."
+    },
+    {
+      "ref": "bas-165",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur", "record"],
+      "text": "Combien de fois Rudy Gobert a-t-il été élu meilleur défenseur de la saison NBA ?",
+      "answers": [
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "En 2018, 2019, 2021 et 2024 : un record qu'il partage avec Dikembe Mutombo et Ben Wallace."
+    },
+    {
+      "ref": "bas-166",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Quel joueur français a remporté le titre NBA avec les Spurs en 2014, aux côtés de Tony Parker ?",
+      "answers": [
+        { "text": "Nicolas Batum", "isCorrect": false },
+        { "text": "Ronny Turiaf", "isCorrect": false },
+        { "text": "Mickaël Piétrus", "isCorrect": false },
+        { "text": "Boris Diaw", "isCorrect": true }
+      ],
+      "explanation": "Polyvalent et excellent passeur, il est l'un des artisans du jeu collectif des Spurs."
+    },
+    {
+      "ref": "bas-167",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "Quel titre l'équipe de France a-t-elle remporté en 2013, avec Tony Parker ?",
+      "answers": [
+        { "text": "La Coupe des nations", "isCorrect": false },
+        { "text": "Les Jeux olympiques", "isCorrect": false },
+        { "text": "La Coupe du monde", "isCorrect": false },
+        { "text": "Le championnat d'Europe (EuroBasket)", "isCorrect": true }
+      ],
+      "explanation": "C'est le premier grand titre de l'histoire du basket français masculin."
+    },
+    {
+      "ref": "bas-168",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "Quelle médaille l'équipe de France a-t-elle remportée aux Jeux olympiques de Paris 2024 ?",
+      "answers": [
+        { "text": "Le bronze", "isCorrect": false },
+        { "text": "L'or", "isCorrect": false },
+        { "text": "L'argent", "isCorrect": true },
+        { "text": "Aucune", "isCorrect": false }
+      ],
+      "explanation": "Les Bleus s'inclinent 98-87 en finale contre les États-Unis, à Bercy."
+    },
+    {
+      "ref": "bas-169",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "Quelle médaille l'équipe de France a-t-elle remportée aux Jeux olympiques de Tokyo, en 2021 ?",
+      "answers": [
+        { "text": "Le bronze", "isCorrect": false },
+        { "text": "L'or", "isCorrect": false },
+        { "text": "Aucune", "isCorrect": false },
+        { "text": "L'argent", "isCorrect": true }
+      ],
+      "explanation": "Comme trois ans plus tard à Paris, elle perd la finale contre les États-Unis."
+    },
+    {
+      "ref": "bas-170",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "competition"],
+      "text": "Quelle équipe la France a-t-elle battue en quart de finale de la Coupe du monde 2019, à la surprise générale ?",
+      "answers": [
+        { "text": "La Serbie", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Une victoire 89-79 qui met fin à une longue série d'invincibilité américaine. La France termine troisième."
+    },
+    {
+      "ref": "bas-171",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france"],
+      "text": "Comment s'appelle le championnat de France de basket de première division depuis 2023 ?",
+      "answers": [
+        { "text": "La Jeep Élite", "isCorrect": false },
+        { "text": "La Betclic Élite", "isCorrect": true },
+        { "text": "La Ligue 1 Basket", "isCorrect": false },
+        { "text": "La Pro A", "isCorrect": false }
+      ],
+      "explanation": "Il s'est appelé Pro A, puis Jeep Élite, avant de prendre ce nom."
+    },
+    {
+      "ref": "bas-172",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "record"],
+      "text": "Quel club a remporté le plus de titres de champion de France de basket ?",
+      "answers": [
+        { "text": "Pau-Orthez", "isCorrect": false },
+        { "text": "Limoges CSP", "isCorrect": false },
+        { "text": "L'ASVEL Lyon-Villeurbanne", "isCorrect": true },
+        { "text": "L'AS Monaco", "isCorrect": false }
+      ],
+      "explanation": "Le club villeurbannais, présidé par Tony Parker depuis 2014, devance Limoges."
+    },
+    {
+      "ref": "bas-173",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "Quel club français a remporté l'Euroleague en 1993, seul titre d'un club français dans cette compétition ?",
+      "answers": [
+        { "text": "L'AS Monaco", "isCorrect": false },
+        { "text": "Limoges CSP", "isCorrect": true },
+        { "text": "Pau-Orthez", "isCorrect": false },
+        { "text": "L'ASVEL", "isCorrect": false }
+      ],
+      "explanation": "Il bat le Benetton Trévise en finale, à Athènes, sous la direction de Božidar Maljković."
+    },
+    {
+      "ref": "bas-174",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "competition"],
+      "text": "Quel club français a disputé la finale de l'Euroleague en 2025 ?",
+      "answers": [
+        { "text": "L'ASVEL", "isCorrect": false },
+        { "text": "Limoges CSP", "isCorrect": false },
+        { "text": "L'AS Monaco", "isCorrect": true },
+        { "text": "Paris Basketball", "isCorrect": false }
+      ],
+      "explanation": "Monaco s'incline contre le Fenerbahçe Istanbul, à Abu Dhabi."
+    },
+    {
+      "ref": "bas-175",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "joueur"],
+      "text": "Quel pivot français est surnommé « The Stifle Tower », un jeu de mots avec la tour Eiffel ?",
+      "answers": [
+        { "text": "Victor Wembanyama", "isCorrect": false },
+        { "text": "Vincent Poirier", "isCorrect": false },
+        { "text": "Rudy Gobert", "isCorrect": true },
+        { "text": "Joakim Noah", "isCorrect": false }
+      ],
+      "explanation": "« Stifle » signifie étouffer : un clin d'œil à sa défense qui étouffe les attaquants. Il a été formé à Cholet."
+    },
+    {
+      "ref": "bas-176",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "joueur"],
+      "text": "Dans quelle franchise NBA joue Victor Wembanyama ?",
+      "answers": [
+        { "text": "Les Atlanta Hawks", "isCorrect": false },
+        { "text": "Les Utah Jazz", "isCorrect": false },
+        { "text": "Les Washington Wizards", "isCorrect": false },
+        { "text": "Les San Antonio Spurs", "isCorrect": true }
+      ],
+      "explanation": "Il a été choisi en premier par les Spurs lors de la draft 2023."
+    },
+    {
+      "ref": "bas-177",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Quel surnom les fans américains ont-ils donné à Victor Wembanyama ?",
+      "answers": [
+        { "text": "Big Vic", "isCorrect": false },
+        { "text": "The Tower", "isCorrect": false },
+        { "text": "Wemby", "isCorrect": true },
+        { "text": "Le Martien", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle aussi « l'Alien » en raison de sa taille (2,24 m) et de ses capacités hors normes."
+    },
+    {
+      "ref": "bas-178",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Tony Parker a été élu MVP des Finales NBA.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 2007, contre Cleveland : il est le premier joueur européen à recevoir ce trophée."
+    },
+    {
+      "ref": "bas-179",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["france", "competition"],
+      "text": "L'équipe de France masculine a déjà été championne du monde de basket.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Son meilleur résultat en Coupe du monde est une médaille de bronze, en 2014 et en 2019."
+    },
+    {
+      "ref": "bas-180",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["france", "joueur"],
+      "text": "Victor Wembanyama mesure plus de 2,10 mètres.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il mesure environ 2,24 mètres, avec une envergure de près de 2,40 mètres."
+    },
+    {
+      "ref": "bas-181",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "joueur"],
+      "text": "Quel joueur, fils d'un ancien vainqueur de Roland-Garros, a été élu meilleur défenseur NBA en 2014 ?",
+      "answers": [
+        { "text": "Ian Mahinmi", "isCorrect": false },
+        { "text": "Rudy Gobert", "isCorrect": false },
+        { "text": "Boris Diaw", "isCorrect": false },
+        { "text": "Joakim Noah", "isCorrect": true }
+      ],
+      "explanation": "Le fils de Yannick Noah jouait alors aux Chicago Bulls."
+    },
+    {
+      "ref": "bas-182",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "competition"],
+      "text": "Combien de médailles olympiques l'équipe de France masculine de basket a-t-elle remportées à l'issue des Jeux de Paris 2024 ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "L'argent en 1948, 2000, 2021 et 2024."
+    },
+    {
+      "ref": "bas-183",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Quel Français a été élu meilleur rookie (Rookie of the Year) de la saison NBA 2023-2024 ?",
+      "answers": [
+        { "text": "Rudy Gobert", "isCorrect": false },
+        { "text": "Victor Wembanyama", "isCorrect": true },
+        { "text": "Bilal Coulibaly", "isCorrect": false },
+        { "text": "Zaccharie Risacher", "isCorrect": false }
+      ],
+      "explanation": "Élu à l'unanimité, il termine aussi deuxième du vote de meilleur défenseur de la saison."
+    },
+    {
+      "ref": "bas-184",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "competition"],
+      "text": "Dans quelle salle s'est jouée la finale olympique de basket à Paris 2024 ?",
+      "answers": [
+        { "text": "La Paris La Défense Arena", "isCorrect": false },
+        { "text": "L'Arena Bercy", "isCorrect": true },
+        { "text": "Le Stade de France", "isCorrect": false },
+        { "text": "Le Stade Pierre-Mauroy", "isCorrect": false }
+      ],
+      "explanation": "La phase de poules s'était jouée à Lille, au stade Pierre-Mauroy, transformé en salle."
+    },
+    {
+      "ref": "bas-185",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["competition"],
+      "text": "Quel pays a remporté la médaille d'or olympique en basket à Paris 2024 ?",
+      "answers": [
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true }
+      ],
+      "explanation": "Emmenés par LeBron James, Stephen Curry et Kevin Durant, ils battent la France en finale."
+    },
+    {
+      "ref": "bas-186",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition", "record"],
+      "text": "Combien de médailles d'or olympiques consécutives les États-Unis ont-ils remportées de 2008 à 2024 ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "Pékin 2008, Londres 2012, Rio 2016, Tokyo 2021 et Paris 2024."
+    },
+    {
+      "ref": "bas-187",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition"],
+      "text": "Quel pays a remporté l'or olympique en 2004, en battant les États-Unis en demi-finale ?",
+      "answers": [
+        { "text": "La Lituanie", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": true },
+        { "text": "L'Italie", "isCorrect": false }
+      ],
+      "explanation": "La « génération dorée » de Manu Ginóbili. Les Américains se contentent du bronze."
+    },
+    {
+      "ref": "bas-188",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Quel pays a remporté la Coupe du monde de basket 2023 ?",
+      "answers": [
+        { "text": "Le Canada", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": false }
+      ],
+      "explanation": "Elle bat la Serbie en finale à Manille, sans perdre un seul match du tournoi."
+    },
+    {
+      "ref": "bas-189",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition"],
+      "text": "Quel pays a remporté la Coupe du monde de basket 2019 en Chine ?",
+      "answers": [
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Argentine", "isCorrect": false }
+      ],
+      "explanation": "Son deuxième titre mondial, après 2006. La France termine troisième."
+    },
+    {
+      "ref": "bas-190",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Comment s'appelle la compétition européenne de clubs la plus prestigieuse en basket ?",
+      "answers": [
+        { "text": "La Coupe d'Europe des nations", "isCorrect": false },
+        { "text": "La Eurocup", "isCorrect": false },
+        { "text": "L'Euroleague", "isCorrect": true },
+        { "text": "La Ligue des champions", "isCorrect": false }
+      ],
+      "explanation": "Elle réunit les meilleurs clubs européens, comme le Real Madrid, le Fenerbahçe ou l'Olympiakos."
+    },
+    {
+      "ref": "bas-191",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition", "record"],
+      "text": "Quel club a remporté le plus de titres d'Euroleague ?",
+      "answers": [
+        { "text": "Le Real Madrid", "isCorrect": true },
+        { "text": "Le Maccabi Tel-Aviv", "isCorrect": false },
+        { "text": "Le CSKA Moscou", "isCorrect": false },
+        { "text": "Le Panathinaïkos", "isCorrect": false }
+      ],
+      "explanation": "Le club madrilène en a remporté plus de dix, loin devant le CSKA Moscou."
+    },
+    {
+      "ref": "bas-192",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Comment s'appelle le week-end final de l'Euroleague, avec les demi-finales et la finale ?",
+      "answers": [
+        { "text": "Les Final Series", "isCorrect": false },
+        { "text": "Le Final Four", "isCorrect": true },
+        { "text": "Le Last Dance", "isCorrect": false },
+        { "text": "Le Super Week-end", "isCorrect": false }
+      ],
+      "explanation": "Les quatre derniers clubs se retrouvent dans une même ville, sur un week-end."
+    },
+    {
+      "ref": "bas-193",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Comment surnomme-t-on le grand tournoi final du championnat universitaire américain, en mars ?",
+      "answers": [
+        { "text": "World Series", "isCorrect": false },
+        { "text": "Super Bowl", "isCorrect": false },
+        { "text": "March Madness", "isCorrect": true },
+        { "text": "Spring Break", "isCorrect": false }
+      ],
+      "explanation": "La « folie de mars » réunit 68 équipes universitaires, pour un tournoi à élimination directe très suivi."
+    },
+    {
+      "ref": "bas-194",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition"],
+      "text": "Quel pays a remporté l'EuroBasket 2025 ?",
+      "answers": [
+        { "text": "La Serbie", "isCorrect": false },
+        { "text": "L'Allemagne", "isCorrect": true },
+        { "text": "La France", "isCorrect": false },
+        { "text": "La Turquie", "isCorrect": false }
+      ],
+      "explanation": "Championne du monde en 2023, l'Allemagne bat la Turquie en finale à Riga."
+    },
+    {
+      "ref": "bas-195",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition"],
+      "text": "Quelle sélection a remporté le bronze à la Coupe du monde 2023, la première médaille de son histoire ?",
+      "answers": [
+        { "text": "La Lettonie", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": true },
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "La Lituanie", "isCorrect": false }
+      ],
+      "explanation": "Le Canada de Shai Gilgeous-Alexander bat les États-Unis dans le match pour la troisième place."
+    },
+    {
+      "ref": "bas-196",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["competition"],
+      "text": "Quel organisme gère le basket international, comme la Coupe du monde et les règles olympiques ?",
+      "answers": [
+        { "text": "La NBA", "isCorrect": false },
+        { "text": "L'UEFA", "isCorrect": false },
+        { "text": "La FIBA", "isCorrect": true },
+        { "text": "La FIFA", "isCorrect": false }
+      ],
+      "explanation": "La Fédération internationale de basket-ball a été fondée en 1932, à Genève."
+    },
+    {
+      "ref": "bas-197",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "Les États-Unis ont toujours remporté la Coupe du monde de basket.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils ont perdu de nombreuses éditions. Récemment, l'Espagne (2019) et l'Allemagne (2023) ont été sacrées."
+    },
+    {
+      "ref": "bas-198",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["competition"],
+      "text": "Le basket est un sport olympique.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Depuis les Jeux de Berlin 1936. Le basket 3x3 l'est aussi depuis 2021."
+    },
+    {
+      "ref": "bas-199",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition", "joueur"],
+      "text": "Quel joueur a été élu meilleur joueur du tournoi olympique de Paris 2024 ?",
+      "answers": [
+        { "text": "LeBron James", "isCorrect": true },
+        { "text": "Stephen Curry", "isCorrect": false },
+        { "text": "Nikola Jokić", "isCorrect": false },
+        { "text": "Victor Wembanyama", "isCorrect": false }
+      ],
+      "explanation": "À 39 ans, il remporte sa troisième médaille d'or olympique."
+    },
+    {
+      "ref": "bas-200",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition", "joueur"],
+      "text": "Quel joueur a marqué quatre tirs à trois points dans les dernières minutes de la finale olympique 2024 contre la France ?",
+      "answers": [
+        { "text": "Stephen Curry", "isCorrect": true },
+        { "text": "Kevin Durant", "isCorrect": false },
+        { "text": "Devin Booker", "isCorrect": false },
+        { "text": "LeBron James", "isCorrect": false }
+      ],
+      "explanation": "Ses tirs, dont un dernier très lointain, ont scellé la victoire américaine. Il en avait aussi enchaîné en demi-finale contre la Serbie."
+    },
+    {
+      "ref": "bas-201",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de quarts-temps compte un match de basket ?",
+      "answers": [
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "Avec une mi-temps plus longue entre le deuxième et le troisième quart-temps."
+    },
+    {
+      "ref": "bas-202",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on une passe qui permet directement à un coéquipier de marquer ?",
+      "answers": [
+        { "text": "Une passe décisive", "isCorrect": true },
+        { "text": "Un rebond", "isCorrect": false },
+        { "text": "Une interception", "isCorrect": false },
+        { "text": "Un écran", "isCorrect": false }
+      ],
+      "explanation": "En anglais, on parle d'« assist »."
+    },
+    {
+      "ref": "bas-203",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Comment appelle-t-on le fait de voler le ballon à l'adversaire pendant une passe ou un dribble ?",
+      "answers": [
+        { "text": "Un contre", "isCorrect": false },
+        { "text": "Un marcher", "isCorrect": false },
+        { "text": "Un rebond", "isCorrect": false },
+        { "text": "Une interception", "isCorrect": true }
+      ],
+      "explanation": "En anglais, on parle de « steal »."
+    },
+    {
+      "ref": "bas-204",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Au basket, les remplacements de joueurs sont illimités.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Un joueur peut sortir et rentrer autant de fois que l'entraîneur le souhaite, lors des arrêts de jeu."
+    },
+    {
+      "ref": "bas-205",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Un panier marqué derrière la ligne à trois points vaut 2 points.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il vaut 3 points. À l'intérieur de la ligne, un panier vaut 2 points."
+    },
+    {
+      "ref": "bas-206",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Le cercle du panier se trouve à 3,05 mètres du sol.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Soit 10 pieds, comme lors de l'invention du jeu en 1891."
+    },
+    {
+      "ref": "bas-207",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "Que signifie le sigle NBA ?",
+      "answers": [
+        { "text": "National Basketball Association", "isCorrect": true },
+        { "text": "New Basketball Alliance", "isCorrect": false },
+        { "text": "North Basketball Association", "isCorrect": false },
+        { "text": "National Basketball America", "isCorrect": false }
+      ],
+      "explanation": "C'est la ligue professionnelle nord-américaine, considérée comme la meilleure du monde."
+    },
+    {
+      "ref": "bas-208",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["nba"],
+      "text": "La NBA est la ligue professionnelle de basket nord-américaine.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle réunit 30 franchises, 29 aux États-Unis et une au Canada."
+    },
+    {
+      "ref": "bas-209",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "LeBron James a joué toute sa carrière aux Chicago Bulls.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a joué aux Cleveland Cavaliers, au Miami Heat, puis aux Los Angeles Lakers."
+    },
+    {
+      "ref": "bas-210",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Les Celtics jouent à Boston.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ils jouent au TD Garden, en vert, la couleur des Irlandais de Boston."
+    },
+    {
+      "ref": "bas-211",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "De quel pays vient Giannis Antetokounmpo ?",
+      "answers": [
+        { "text": "La Turquie", "isCorrect": false },
+        { "text": "Chypre", "isCorrect": false },
+        { "text": "L'Italie", "isCorrect": false },
+        { "text": "La Grèce", "isCorrect": true }
+      ],
+      "explanation": "Né à Athènes de parents nigérians, il vendait des objets dans la rue avec ses frères avant de devenir une star."
+    },
+    {
+      "ref": "bas-212",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["joueur"],
+      "text": "Quel joueur a remporté six titres NBA et est souvent considéré comme le meilleur joueur de l'histoire ?",
+      "answers": [
+        { "text": "Shaquille O'Neal", "isCorrect": false },
+        { "text": "Kevin Durant", "isCorrect": false },
+        { "text": "Stephen Curry", "isCorrect": false },
+        { "text": "Michael Jordan", "isCorrect": true }
+      ],
+      "explanation": "Le débat avec LeBron James anime régulièrement les fans de basket."
+    },
+    {
+      "ref": "bas-213",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france"],
+      "text": "Comment surnomme-t-on l'équipe de France de basket ?",
+      "answers": [
+        { "text": "Les Bleus", "isCorrect": true },
+        { "text": "Les Coqs", "isCorrect": false },
+        { "text": "Les Tricolores du parquet", "isCorrect": false },
+        { "text": "Les Gaulois", "isCorrect": false }
+      ],
+      "explanation": "Comme dans la plupart des sports collectifs français."
+    },
+    {
+      "ref": "bas-214",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["france", "joueur"],
+      "text": "Tony Parker a joué en NBA.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il a joué de 2001 à 2019, surtout aux San Antonio Spurs, avec quatre titres à la clé."
+    },
+    {
+      "ref": "bas-215",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["france", "joueur"],
+      "text": "Rudy Gobert a été élu MVP de la saison NBA.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été élu quatre fois meilleur défenseur, mais jamais MVP de la saison."
+    },
+    {
+      "ref": "bas-216",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Quelle est la forme du ballon de basket ?",
+      "answers": [
+        { "text": "Ronde", "isCorrect": true },
+        { "text": "Plate", "isCorrect": false },
+        { "text": "Carrée", "isCorrect": false },
+        { "text": "Ovale", "isCorrect": false }
+      ],
+      "explanation": "Il est orange, avec des lignes noires, et se joue taille 7 pour les hommes."
+    },
+    {
+      "ref": "bas-217",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Les premiers ballons de basket étaient des ballons de football.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "James Naismith a utilisé un ballon de football en 1891. Le ballon spécifique est apparu quelques années plus tard."
+    },
+    {
+      "ref": "bas-218",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["competition"],
+      "text": "La finale olympique de basket des Jeux de Paris 2024 s'est jouée à Lille.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle s'est jouée à l'Arena Bercy, à Paris. Lille a accueilli la phase de poules."
+    },
+    {
+      "ref": "bas-219",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["nba"],
+      "text": "Les Finales NBA se jouent en un seul match, comme le Super Bowl.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elles se jouent au meilleur des sept matchs : il faut quatre victoires pour être champion."
+    },
+    {
+      "ref": "bas-220",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["franchise", "histoire"],
+      "text": "Les Lakers ont toujours joué à Los Angeles.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La franchise a été créée à Minneapolis, où elle a gagné cinq titres, avant de déménager en 1960."
+    },
+    {
+      "ref": "bas-221",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Michael Jordan est le meilleur marqueur de l'histoire de la NBA.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le record appartient à LeBron James. Jordan a la meilleure moyenne de points par match en carrière."
+    },
+    {
+      "ref": "bas-222",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle", "nba"],
+      "text": "En NBA, un joueur est exclu du match après sa cinquième faute personnelle.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "En NBA, l'exclusion intervient à la sixième faute. C'est à la cinquième dans les compétitions FIBA."
+    },
+    {
+      "ref": "bas-223",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "James Naismith, l'inventeur du basket, était américain.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il était canadien, né en Ontario. Il a inventé le jeu aux États-Unis, à Springfield."
+    },
+    {
+      "ref": "bas-224",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["competition", "france"],
+      "text": "La France a battu les États-Unis en finale des Jeux olympiques de Paris 2024.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Les États-Unis ont gagné 98-87. La France a remporté la médaille d'argent."
+    },
+    {
+      "ref": "bas-225",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "competition"],
+      "text": "Le tournoi olympique de basket de Berlin 1936 s'est joué en plein air.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Sur des terrains en terre battue et en sable. La finale s'est jouée sous la pluie, dans la boue."
+    },
+    {
+      "ref": "bas-226",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "competition"],
+      "text": "En quelle année la FIBA, fédération internationale de basket, a-t-elle été fondée ?",
+      "answers": [
+        { "text": "1946", "isCorrect": false },
+        { "text": "1891", "isCorrect": false },
+        { "text": "1932", "isCorrect": true },
+        { "text": "1960", "isCorrect": false }
+      ],
+      "explanation": "Elle a été fondée à Genève par huit pays, dont l'Italie et la Suisse."
+    },
+    {
+      "ref": "bas-227",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel était le métier de James Naismith quand il a inventé le basket ?",
+      "answers": [
+        { "text": "Charpentier", "isCorrect": false },
+        { "text": "Journaliste sportif", "isCorrect": false },
+        { "text": "Médecin", "isCorrect": false },
+        { "text": "Professeur d'éducation physique", "isCorrect": true }
+      ],
+      "explanation": "Il cherchait un jeu d'intérieur pour occuper ses élèves pendant l'hiver."
+    },
+    {
+      "ref": "bas-228",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "nba"],
+      "text": "Quel joueur a été le premier Afro-Américain choisi lors d'une draft NBA, en 1950 ?",
+      "answers": [
+        { "text": "Bill Russell", "isCorrect": false },
+        { "text": "Chuck Cooper", "isCorrect": true },
+        { "text": "Nat Clifton", "isCorrect": false },
+        { "text": "Earl Lloyd", "isCorrect": false }
+      ],
+      "explanation": "Choisi par les Celtics. La même année, Earl Lloyd devient le premier à jouer un match et Nat Clifton le premier à signer un contrat."
+    },
+    {
+      "ref": "bas-229",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "nba", "joueur"],
+      "text": "Qui est devenu en 1966 le premier entraîneur afro-américain de la NBA, tout en continuant à jouer ?",
+      "answers": [
+        { "text": "Bill Russell", "isCorrect": true },
+        { "text": "Elgin Baylor", "isCorrect": false },
+        { "text": "Oscar Robertson", "isCorrect": false },
+        { "text": "Wilt Chamberlain", "isCorrect": false }
+      ],
+      "explanation": "Joueur-entraîneur des Celtics, il remporte encore deux titres dans ce double rôle."
+    },
+    {
+      "ref": "bas-230",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel terrain de Harlem, à New York, est le lieu le plus célèbre du basket de rue ?",
+      "answers": [
+        { "text": "Central Park", "isCorrect": false },
+        { "text": "Rucker Park", "isCorrect": true },
+        { "text": "Venice Beach", "isCorrect": false },
+        { "text": "Flushing Meadows", "isCorrect": false }
+      ],
+      "explanation": "Des stars NBA comme Kobe Bryant ou Kevin Durant y ont joué des matchs d'été mémorables."
+    },
+    {
+      "ref": "bas-231",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "regle", "nba"],
+      "text": "En quelle année le chronomètre des 24 secondes a-t-il été introduit en NBA ?",
+      "answers": [
+        { "text": "1967", "isCorrect": false },
+        { "text": "1979", "isCorrect": false },
+        { "text": "1946", "isCorrect": false },
+        { "text": "1954", "isCorrect": true }
+      ],
+      "explanation": "Avant, les équipes en tête gardaient le ballon sans tirer. Le jeu est devenu beaucoup plus rapide."
+    },
+    {
+      "ref": "bas-232",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "nba"],
+      "text": "Quel joueur a disputé le célèbre « Flu Game », malade, lors des Finales 1997 ?",
+      "answers": [
+        { "text": "Karl Malone", "isCorrect": false },
+        { "text": "John Stockton", "isCorrect": false },
+        { "text": "Scottie Pippen", "isCorrect": false },
+        { "text": "Michael Jordan", "isCorrect": true }
+      ],
+      "explanation": "Malgré la fièvre, il marque 38 points contre le Jazz et s'effondre dans les bras de Pippen à la fin du match."
+    },
+    {
+      "ref": "bas-233",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "nba"],
+      "text": "Quel joueur du Heat a égalisé à trois points dans les dernières secondes du match 6 des Finales 2013, privant les Spurs du titre ?",
+      "answers": [
+        { "text": "LeBron James", "isCorrect": false },
+        { "text": "Chris Bosh", "isCorrect": false },
+        { "text": "Ray Allen", "isCorrect": true },
+        { "text": "Dwyane Wade", "isCorrect": false }
+      ],
+      "explanation": "Un tir en reculant dans le coin, après un rebond offensif de Chris Bosh. Miami gagne ensuite le match 7."
+    },
+    {
+      "ref": "bas-234",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "nba"],
+      "text": "Quel joueur a réalisé le célèbre contre « The Block » sur Andre Iguodala, lors du match 7 des Finales 2016 ?",
+      "answers": [
+        { "text": "Kevin Love", "isCorrect": false },
+        { "text": "LeBron James", "isCorrect": true },
+        { "text": "Tristan Thompson", "isCorrect": false },
+        { "text": "Kyrie Irving", "isCorrect": false }
+      ],
+      "explanation": "Un contre en pleine course qui empêche les Warriors de prendre l'avantage dans les dernières minutes."
+    },
+    {
+      "ref": "bas-235",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "nba"],
+      "text": "Quel joueur des Cavaliers a marqué le tir décisif à trois points lors du match 7 des Finales 2016 ?",
+      "answers": [
+        { "text": "LeBron James", "isCorrect": false },
+        { "text": "Kyrie Irving", "isCorrect": true },
+        { "text": "Kevin Love", "isCorrect": false },
+        { "text": "J.R. Smith", "isCorrect": false }
+      ],
+      "explanation": "À moins d'une minute de la fin, face à Stephen Curry."
+    },
+    {
+      "ref": "bas-236",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["nba", "record"],
+      "text": "Quelle équipe est la seule à avoir remporté les Finales NBA après avoir été menée 3 victoires à 1 ?",
+      "answers": [
+        { "text": "Les Cleveland Cavaliers, en 2016", "isCorrect": true },
+        { "text": "Les Miami Heat, en 2013", "isCorrect": false },
+        { "text": "Les Golden State Warriors, en 2015", "isCorrect": false },
+        { "text": "Les Boston Celtics, en 2008", "isCorrect": false }
+      ],
+      "explanation": "Face aux Warriors, auteurs du record de 73 victoires en saison régulière."
+    },
+    {
+      "ref": "bas-237",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur"],
+      "text": "Quel ailier fort du Utah Jazz était surnommé « The Mailman » (le facteur) ?",
+      "answers": [
+        { "text": "Tim Duncan", "isCorrect": false },
+        { "text": "Karl Malone", "isCorrect": true },
+        { "text": "Charles Barkley", "isCorrect": false },
+        { "text": "John Stockton", "isCorrect": false }
+      ],
+      "explanation": "Parce qu'il « livrait » toujours, match après match. Il est le troisième meilleur marqueur de l'histoire."
+    },
+    {
+      "ref": "bas-238",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "histoire"],
+      "text": "Quelle annonce Magic Johnson a-t-il faite en 1991, qui a bouleversé le monde du sport ?",
+      "answers": [
+        { "text": "Il passait au baseball", "isCorrect": false },
+        { "text": "Il rachetait les Lakers", "isCorrect": false },
+        { "text": "Il entrait en politique", "isCorrect": false },
+        { "text": "Il était séropositif au VIH", "isCorrect": true }
+      ],
+      "explanation": "Il met fin à sa carrière, puis revient pour les Jeux de 1992 et contribue à changer le regard sur la maladie."
+    },
+    {
+      "ref": "bas-239",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["joueur", "competition"],
+      "text": "Quel meneur des Pistons « Bad Boys », double champion NBA, n'a pas été retenu dans la Dream Team de 1992 ?",
+      "answers": [
+        { "text": "Isiah Thomas", "isCorrect": true },
+        { "text": "Bill Laimbeer", "isCorrect": false },
+        { "text": "Dennis Rodman", "isCorrect": false },
+        { "text": "Joe Dumars", "isCorrect": false }
+      ],
+      "explanation": "Sa rivalité avec Michael Jordan aurait pesé dans cette absence très commentée."
+    },
+    {
+      "ref": "bas-240",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur détient le record de contres en carrière NBA ?",
+      "answers": [
+        { "text": "Hakeem Olajuwon", "isCorrect": true },
+        { "text": "Shaquille O'Neal", "isCorrect": false },
+        { "text": "Kareem Abdul-Jabbar", "isCorrect": false },
+        { "text": "Dikembe Mutombo", "isCorrect": false }
+      ],
+      "explanation": "Le pivot nigérian en a réalisé plus de 3 800, devant Dikembe Mutombo."
+    },
+    {
+      "ref": "bas-241",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "joueur"],
+      "text": "Quel joueur détient le record de rebonds en carrière NBA ?",
+      "answers": [
+        { "text": "Kareem Abdul-Jabbar", "isCorrect": false },
+        { "text": "Bill Russell", "isCorrect": false },
+        { "text": "Dennis Rodman", "isCorrect": false },
+        { "text": "Wilt Chamberlain", "isCorrect": true }
+      ],
+      "explanation": "Plus de 23 000 rebonds, juste devant son grand rival Bill Russell."
+    },
+    {
+      "ref": "bas-242",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "franchise"],
+      "text": "Quel est le score du match le plus prolifique de l'histoire de la NBA, en 1983 ?",
+      "answers": [
+        { "text": "201-198", "isCorrect": false },
+        { "text": "186-184", "isCorrect": true },
+        { "text": "173-139", "isCorrect": false },
+        { "text": "162-158", "isCorrect": false }
+      ],
+      "explanation": "Detroit bat Denver après trois prolongations."
+    },
+    {
+      "ref": "bas-243",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["competition", "france"],
+      "text": "Quelle équipe a battu la France en finale olympique en 2000, à Sydney ?",
+      "answers": [
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Les États-Unis", "isCorrect": true },
+        { "text": "La Lituanie", "isCorrect": false },
+        { "text": "La Yougoslavie", "isCorrect": false }
+      ],
+      "explanation": "La France décroche l'argent, sa première médaille olympique depuis 1948."
+    },
+    {
+      "ref": "bas-244",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["competition", "france"],
+      "text": "Quelle équipe a battu la France en finale de l'EuroBasket 2022 ?",
+      "answers": [
+        { "text": "L'Allemagne", "isCorrect": false },
+        { "text": "L'Espagne", "isCorrect": true },
+        { "text": "La Pologne", "isCorrect": false },
+        { "text": "La Serbie", "isCorrect": false }
+      ],
+      "explanation": "Victoire espagnole 88-76 à Berlin. La France prend l'argent."
+    },
+    {
+      "ref": "bas-245",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise", "joueur"],
+      "text": "Quelle franchise a choisi LeBron James en premier lors de la draft 2003 ?",
+      "answers": [
+        { "text": "Les Los Angeles Lakers", "isCorrect": false },
+        { "text": "Les Cleveland Cavaliers", "isCorrect": true },
+        { "text": "Les Miami Heat", "isCorrect": false },
+        { "text": "Les Chicago Bulls", "isCorrect": false }
+      ],
+      "explanation": "Le joueur de l'Ohio, originaire d'Akron, est recruté par l'équipe de sa région."
+    },
+    {
+      "ref": "bas-246",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise", "joueur"],
+      "text": "Quelle franchise a choisi Kobe Bryant lors de la draft 1996, avant de l'échanger immédiatement aux Lakers ?",
+      "answers": [
+        { "text": "Les Charlotte Hornets", "isCorrect": true },
+        { "text": "Les Toronto Raptors", "isCorrect": false },
+        { "text": "Les Philadelphia 76ers", "isCorrect": false },
+        { "text": "Les New Jersey Nets", "isCorrect": false }
+      ],
+      "explanation": "Les Lakers avaient tout prévu : Kobe ne voulait jouer qu'à Los Angeles."
+    },
+    {
+      "ref": "bas-247",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Quel nom portaient les Charlotte Hornets de 2004 à 2014 ?",
+      "answers": [
+        { "text": "Les Bobcats", "isCorrect": true },
+        { "text": "Les Wildcats", "isCorrect": false },
+        { "text": "Les Pelicans", "isCorrect": false },
+        { "text": "Les Panthers", "isCorrect": false }
+      ],
+      "explanation": "Le nom Hornets, d'abord parti à La Nouvelle-Orléans (devenus Pelicans), est revenu à Charlotte en 2014."
+    },
+    {
+      "ref": "bas-248",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de joueurs au maximum peuvent figurer sur la feuille de match d'une équipe en compétition FIBA ?",
+      "answers": [
+        { "text": "15", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "12", "isCorrect": true },
+        { "text": "13", "isCorrect": false }
+      ],
+      "explanation": "Cinq titulaires et sept remplaçants."
+    },
+    {
+      "ref": "bas-249",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Dans quelle zone, sous le panier, un défenseur ne peut-il pas provoquer de passage en force ?",
+      "answers": [
+        { "text": "La zone des lancers francs", "isCorrect": false },
+        { "text": "Le demi-cercle de non-charge", "isCorrect": true },
+        { "text": "La raquette entière", "isCorrect": false },
+        { "text": "Le rond central", "isCorrect": false }
+      ],
+      "explanation": "Un défenseur placé dans ce demi-cercle ne peut pas obtenir de faute offensive en se faisant percuter."
+    }
+  ]
+}

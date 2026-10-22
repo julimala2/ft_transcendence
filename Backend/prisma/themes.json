@@ -1,0 +1,14 @@
+{
+  "_note": "Thèmes d'affichage, lus par seedThemes.js. 'categories' contient des slugs de catégories (elles doivent exister, donc seedQuestions.js tourne avant). Une catégorie peut apparaître dans plusieurs thèmes. Un thème sans catégorie est enregistré mais ne doit pas être affiché par le front.",
+  "themes": [
+    { "slug": "histoire",    "name": "Histoire",    "position": 1, "categories": ["histoire"] },
+    { "slug": "geographie",  "name": "Géographie",  "position": 2, "categories": ["geographie"] },
+    { "slug": "litterature", "name": "Littérature", "position": 3, "categories": ["litterature", "harry-potter"] },
+    { "slug": "arts",        "name": "Arts",        "position": 4, "categories": [] },
+    { "slug": "musique",     "name": "Musique",     "position": 5, "categories": ["taylor-swift"] },
+    { "slug": "cinema",      "name": "Cinéma",      "position": 6, "categories": [] },
+    { "slug": "series-tv",   "name": "Séries TV",   "position": 7, "categories": [] },
+    { "slug": "jeux-video",  "name": "Jeux vidéo",  "position": 8, "categories": [] },
+    { "slug": "sport",       "name": "Sport",       "position": 9, "categories": ["football", "tennis", "rugby", "basket"] }
+  ]
+}

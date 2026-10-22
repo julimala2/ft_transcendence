@@ -1,0 +1,2883 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 207,
+    "parDifficulte": { "1": 56, "2": 97, "3": 54 },
+    "parType": { "multiple": 187, "boolean": 20 },
+    "avecImage": 0,
+    "sansImage": 207,
+    "parTag": {
+      "recit": 63,
+      "personnage": 52,
+      "maison": 31,
+      "sort": 31,
+      "citation": 27,
+      "horcruxe": 23
+    }
+  },
+  "category": {
+    "slug": "harry-potter",
+    "name": "Harry Potter"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "hp-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Qui est le parrain de Harry ?",
+      "answers": [
+        { "text": "Arthur Weasley", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": true },
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Rubeus Hagrid", "isCorrect": false }
+      ],
+      "explanation": "Sirius était le meilleur ami de James Potter, le père de Harry."
+    },
+    {
+      "ref": "hp-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le vrai nom de Voldemort ?",
+      "answers": [
+        { "text": "Salazar Jedusor (Salazar Riddle)", "isCorrect": false },
+        { "text": "Gellert Grindelwald", "isCorrect": false },
+        { "text": "Tom Gaunt", "isCorrect": false },
+        { "text": "Tom Elvis Jedusor (Tom Marvolo Riddle)", "isCorrect": true }
+      ],
+      "explanation": "En français, les lettres de « Tom Elvis Jedusor » forment « Je suis Voldemort » ; en anglais, « Tom Marvolo Riddle » donne « I am Lord Voldemort »."
+    },
+    {
+      "ref": "hp-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le métier des parents d'Hermione ?",
+      "answers": [
+        { "text": "Professeurs", "isCorrect": false },
+        { "text": "Médecins", "isCorrect": false },
+        { "text": "Dentistes", "isCorrect": true },
+        { "text": "Avocats", "isCorrect": false }
+      ],
+      "explanation": "Les parents d'Hermione sont des Moldus (Muggles) : elle est la première sorcière de sa famille."
+    },
+    {
+      "ref": "hp-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelles créatures Ron redoute-t-il par-dessus tout ?",
+      "answers": [
+        { "text": "Les serpents", "isCorrect": false },
+        { "text": "Les Détraqueurs (Dementors)", "isCorrect": false },
+        { "text": "Les dragons", "isCorrect": false },
+        { "text": "Les araignées", "isCorrect": true }
+      ],
+      "explanation": "Sa peur remonte à l'enfance, quand Fred a transformé son ours en peluche en grosse araignée."
+    },
+    {
+      "ref": "hp-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le chat d'Hermione ?",
+      "answers": [
+        { "text": "Pattenrond (Crookshanks)", "isCorrect": true },
+        { "text": "Hedwige (Hedwig)", "isCorrect": false },
+        { "text": "Croûtard (Scabbers)", "isCorrect": false },
+        { "text": "Miss Teigne (Mrs Norris)", "isCorrect": false }
+      ],
+      "explanation": "Hermione l'achète au Chemin de Traverse (Diagon Alley) dans le tome 3, et il se méfie aussitôt du rat de Ron."
+    },
+    {
+      "ref": "hp-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le chien à trois têtes de Hagrid ?",
+      "answers": [
+        { "text": "Crockdur (Fang)", "isCorrect": false },
+        { "text": "Norbert (Norbert)", "isCorrect": false },
+        { "text": "Touffu (Fluffy)", "isCorrect": true },
+        { "text": "Aragog (Aragog)", "isCorrect": false }
+      ],
+      "explanation": "Il garde la trappe qui mène à la pierre philosophale, et il s'endort dès qu'on lui joue de la musique."
+    },
+    {
+      "ref": "hp-007",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel elfe de maison sert la famille Black ?",
+      "answers": [
+        { "text": "Kreattur (Kreacher)", "isCorrect": true },
+        { "text": "Dobby", "isCorrect": false },
+        { "text": "Winky", "isCorrect": false },
+        { "text": "Hokey", "isCorrect": false }
+      ],
+      "explanation": "Kreattur vit au 12, square Grimmaurd (Grimmauld Place), la maison des Black."
+    },
+    {
+      "ref": "hp-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel professeur cache Voldemort à l'arrière de sa tête, sous son turban ?",
+      "answers": [
+        { "text": "Le professeur Rogue (Snape)", "isCorrect": false },
+        { "text": "Le professeur Flitwick", "isCorrect": false },
+        { "text": "Le professeur Quirrell", "isCorrect": true },
+        { "text": "Le professeur Lockhart", "isCorrect": false }
+      ],
+      "explanation": "C'est le professeur de Défense contre les forces du Mal du premier tome."
+    },
+    {
+      "ref": "hp-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle professeure, toujours vêtue de rose, impose ses décrets d'éducation à Poudlard (Hogwarts) ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Pomona Chourave (Pomona Sprout)", "isCorrect": false },
+        { "text": "Dolores Ombrage (Umbridge)", "isCorrect": true },
+        { "text": "Sibylle Trelawney (Sybill Trelawney)", "isCorrect": false }
+      ],
+      "explanation": "Envoyée par le ministère de la Magie dans le tome 5, elle devient même Grande Inquisitrice de Poudlard."
+    },
+    {
+      "ref": "hp-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel professeur perd la mémoire après que son sort d'Amnésie se retourne contre lui ?",
+      "answers": [
+        { "text": "Quirinus Quirrell", "isCorrect": false },
+        { "text": "Gilderoy Lockhart", "isCorrect": true },
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Horace Slughorn", "isCorrect": false }
+      ],
+      "explanation": "Il voulait effacer la mémoire de Harry et Ron avec la baguette cassée de Ron. Le sort a rebondi sur lui."
+    },
+    {
+      "ref": "hp-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel fantôme hante les toilettes des filles du premier étage ?",
+      "answers": [
+        { "text": "La Dame grise (the Grey Lady)", "isCorrect": false },
+        { "text": "Mimi Geignarde (Moaning Myrtle)", "isCorrect": true },
+        { "text": "Nick Quasi-Sans-Tête (Nearly Headless Nick)", "isCorrect": false },
+        { "text": "Peeves", "isCorrect": false }
+      ],
+      "explanation": "Mimi a été tuée par le Basilic lors de la première ouverture de la Chambre des secrets, il y a cinquante ans."
+    },
+    {
+      "ref": "hp-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "De quelle école vient Fleur Delacour ?",
+      "answers": [
+        { "text": "Beauxbâtons", "isCorrect": true },
+        { "text": "Poudlard (Hogwarts)", "isCorrect": false },
+        { "text": "Ilvermorny", "isCorrect": false },
+        { "text": "Durmstrang", "isCorrect": false }
+      ],
+      "explanation": "Elle est la championne de Beauxbâtons lors du Tournoi des Trois Sorciers (Triwizard Tournament)."
+    },
+    {
+      "ref": "hp-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui se cache derrière le surnom de Patmol (Padfoot) ?",
+      "answers": [
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Peter Pettigrow (Peter Pettigrew)", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": true },
+        { "text": "James Potter", "isCorrect": false }
+      ],
+      "explanation": "Sirius se transforme en gros chien noir. Lunard (Moony), Queudver (Wormtail) et Cornedrue (Prongs) désignent Lupin, Pettigrow et James Potter."
+    },
+    {
+      "ref": "hp-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle est la forme du Patronus d'Hermione ?",
+      "answers": [
+        { "text": "Une loutre", "isCorrect": true },
+        { "text": "Un hibou", "isCorrect": false },
+        { "text": "Un lièvre", "isCorrect": false },
+        { "text": "Un chat", "isCorrect": false }
+      ],
+      "explanation": "Le Patronus de Harry est un cerf, comme l'animagus de son père, et celui de Rogue une biche, comme celui de Lily."
+    },
+    {
+      "ref": "hp-015",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Hermione Granger est issue d'une famille de sorciers.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ses deux parents sont des Moldus (Muggles), dentistes de leur état."
+    },
+    {
+      "ref": "hp-016",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Remus Lupin est un vampire.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Lupin est un loup-garou (werewolf), mordu par Fenrir Greyback quand il était enfant."
+    },
+    {
+      "ref": "hp-017",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Croûtard (Scabbers), le rat de Ron, était en réalité Peter Pettigrow (Peter Pettigrew).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Animagus, Pettigrow s'est caché douze ans sous cette forme après avoir trahi les Potter."
+    },
+    {
+      "ref": "hp-018",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Peeves est un esprit frappeur (poltergeist) qui sème le désordre à Poudlard (Hogwarts).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Peeves apparaît dans tous les livres, mais il a été coupé des films."
+    },
+    {
+      "ref": "hp-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Quel animal représente la maison Poufsouffle (Hufflepuff) ?",
+      "answers": [
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "L'aigle", "isCorrect": false },
+        { "text": "Le serpent", "isCorrect": false },
+        { "text": "Le blaireau", "isCorrect": true }
+      ],
+      "explanation": "Gryffondor (Gryffindor) a le lion, Serpentard (Slytherin) le serpent et Serdaigle (Ravenclaw) l'aigle."
+    },
+    {
+      "ref": "hp-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Qui a fondé la maison Serdaigle (Ravenclaw) ?",
+      "answers": [
+        { "text": "Rowena Serdaigle (Rowena Ravenclaw)", "isCorrect": true },
+        { "text": "Salazar Serpentard (Salazar Slytherin)", "isCorrect": false },
+        { "text": "Helga Poufsouffle (Helga Hufflepuff)", "isCorrect": false },
+        { "text": "Godric Gryffondor (Godric Gryffindor)", "isCorrect": false }
+      ],
+      "explanation": "Les quatre maisons portent le nom des quatre fondateurs de Poudlard (Hogwarts)."
+    },
+    {
+      "ref": "hp-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Dans les livres, quelles sont les couleurs de la maison Serdaigle (Ravenclaw) ?",
+      "answers": [
+        { "text": "Jaune et noir", "isCorrect": false },
+        { "text": "Vert et argent", "isCorrect": false },
+        { "text": "Bleu et bronze", "isCorrect": true },
+        { "text": "Bleu et argent", "isCorrect": false }
+      ],
+      "explanation": "Les films ont choisi le bleu et l'argent, mais les livres parlent bien de bleu et de bronze."
+    },
+    {
+      "ref": "hp-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Quel fantôme est celui de la maison Gryffondor (Gryffindor) ?",
+      "answers": [
+        { "text": "Le Moine Gras (the Fat Friar)", "isCorrect": false },
+        { "text": "Le Baron Sanglant (the Bloody Baron)", "isCorrect": false },
+        { "text": "Nick Quasi-Sans-Tête (Nearly Headless Nick)", "isCorrect": true },
+        { "text": "La Dame grise (the Grey Lady)", "isCorrect": false }
+      ],
+      "explanation": "Il a été mal décapité : sa tête ne tient plus qu'à un petit bout de peau."
+    },
+    {
+      "ref": "hp-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Quel fantôme est celui de la maison Serpentard (Slytherin) ?",
+      "answers": [
+        { "text": "Nick Quasi-Sans-Tête (Nearly Headless Nick)", "isCorrect": false },
+        { "text": "Le Baron Sanglant (the Bloody Baron)", "isCorrect": true },
+        { "text": "La Dame grise (the Grey Lady)", "isCorrect": false },
+        { "text": "Le Moine Gras (the Fat Friar)", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des seuls à pouvoir faire obéir Peeves."
+    },
+    {
+      "ref": "hp-024",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison"],
+      "text": "Qui était la Dame grise (the Grey Lady), fantôme de Serdaigle (Ravenclaw), de son vivant ?",
+      "answers": [
+        { "text": "Rowena Serdaigle (Rowena Ravenclaw)", "isCorrect": false },
+        { "text": "Ariana Dumbledore", "isCorrect": false },
+        { "text": "Mimi Geignarde (Moaning Myrtle)", "isCorrect": false },
+        { "text": "Helena Serdaigle (Helena Ravenclaw)", "isCorrect": true }
+      ],
+      "explanation": "Fille de la fondatrice, elle avait volé le diadème de sa mère. Elle révèle à Harry où il est caché dans le tome 7."
+    },
+    {
+      "ref": "hp-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Qui dirige la maison Gryffondor (Gryffindor) ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": true },
+        { "text": "Filius Flitwick", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": false },
+        { "text": "Pomona Chourave (Pomona Sprout)", "isCorrect": false }
+      ],
+      "explanation": "Rogue dirige Serpentard (Slytherin), Flitwick Serdaigle (Ravenclaw) et Chourave Poufsouffle (Hufflepuff)."
+    },
+    {
+      "ref": "hp-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Qui dirige la maison Poufsouffle (Hufflepuff) ?",
+      "answers": [
+        { "text": "Pomona Chourave (Pomona Sprout)", "isCorrect": true },
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Horace Slughorn", "isCorrect": false },
+        { "text": "Filius Flitwick", "isCorrect": false }
+      ],
+      "explanation": "Elle enseigne la Botanique (Herbology), dans les serres de Poudlard."
+    },
+    {
+      "ref": "hp-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison"],
+      "text": "Que faut-il faire pour entrer dans la salle commune de Serdaigle (Ravenclaw) ?",
+      "answers": [
+        { "text": "Résoudre une énigme", "isCorrect": true },
+        { "text": "Donner un mot de passe à un portrait", "isCorrect": false },
+        { "text": "Prononcer le nom du fondateur", "isCorrect": false },
+        { "text": "Toquer sur un tonneau selon un rythme précis", "isCorrect": false }
+      ],
+      "explanation": "Le heurtoir en forme d'aigle pose une question : il n'y a pas de mot de passe, il faut savoir raisonner."
+    },
+    {
+      "ref": "hp-028",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Où se trouve la salle commune de Serpentard (Slytherin) ?",
+      "answers": [
+        { "text": "En haut d'une tour", "isCorrect": false },
+        { "text": "Dans les cachots", "isCorrect": true },
+        { "text": "Derrière une tapisserie du septième étage", "isCorrect": false },
+        { "text": "Près des serres", "isCorrect": false }
+      ],
+      "explanation": "Harry et Ron y entrent dans le tome 2, déguisés en Crabbe et Goyle grâce au Polynectar (Polyjuice Potion)."
+    },
+    {
+      "ref": "hp-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Dans quelle maison est Luna Lovegood ?",
+      "answers": [
+        { "text": "Serpentard (Slytherin)", "isCorrect": false },
+        { "text": "Poufsouffle (Hufflepuff)", "isCorrect": false },
+        { "text": "Serdaigle (Ravenclaw)", "isCorrect": true },
+        { "text": "Gryffondor (Gryffindor)", "isCorrect": false }
+      ],
+      "explanation": "Ses camarades la surnomment « Loufoca » (Loony)."
+    },
+    {
+      "ref": "hp-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Dans quelle maison est Cedric Diggory ?",
+      "answers": [
+        { "text": "Gryffondor (Gryffindor)", "isCorrect": false },
+        { "text": "Poufsouffle (Hufflepuff)", "isCorrect": true },
+        { "text": "Serdaigle (Ravenclaw)", "isCorrect": false },
+        { "text": "Serpentard (Slytherin)", "isCorrect": false }
+      ],
+      "explanation": "Il est l'attrapeur et le capitaine de l'équipe de Quidditch de Poufsouffle."
+    },
+    {
+      "ref": "hp-031",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Le Choixpeau magique (the Sorting Hat) a envisagé d'envoyer Harry à Serpentard (Slytherin).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Harry répète « Pas Serpentard » et le Choixpeau finit par l'envoyer à Gryffondor (Gryffindor)."
+    },
+    {
+      "ref": "hp-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort permet de désarmer un adversaire ?",
+      "answers": [
+        { "text": "Expelliarmus", "isCorrect": true },
+        { "text": "Alohomora", "isCorrect": false },
+        { "text": "Stupéfix (Stupefy)", "isCorrect": false },
+        { "text": "Accio", "isCorrect": false }
+      ],
+      "explanation": "C'est le sort fétiche de Harry : il l'utilise même lors de son dernier duel contre Voldemort."
+    },
+    {
+      "ref": "hp-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort fait apparaître de la lumière au bout de la baguette ?",
+      "answers": [
+        { "text": "Accio", "isCorrect": false },
+        { "text": "Nox", "isCorrect": false },
+        { "text": "Lumos", "isCorrect": true },
+        { "text": "Incendio", "isCorrect": false }
+      ],
+      "explanation": "« Nox » l'éteint."
+    },
+    {
+      "ref": "hp-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort repousse les Détraqueurs (Dementors) ?",
+      "answers": [
+        { "text": "Protego", "isCorrect": false },
+        { "text": "Expelliarmus", "isCorrect": false },
+        { "text": "Expecto Patronum", "isCorrect": true },
+        { "text": "Riddikulus", "isCorrect": false }
+      ],
+      "explanation": "Lupin l'enseigne à Harry dans le tome 3. Il faut se concentrer sur un souvenir très heureux."
+    },
+    {
+      "ref": "hp-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort ouvre les portes verrouillées ?",
+      "answers": [
+        { "text": "Accio", "isCorrect": false },
+        { "text": "Reparo", "isCorrect": false },
+        { "text": "Alohomora", "isCorrect": true },
+        { "text": "Lumos", "isCorrect": false }
+      ],
+      "explanation": "Hermione l'utilise dès le tome 1 pour ouvrir la porte du couloir interdit du troisième étage."
+    },
+    {
+      "ref": "hp-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort fait léviter les objets, appris au premier cours de sortilèges ?",
+      "answers": [
+        { "text": "Levicorpus", "isCorrect": false },
+        { "text": "Wingardium Leviosa", "isCorrect": true },
+        { "text": "Locomotor", "isCorrect": false },
+        { "text": "Accio", "isCorrect": false }
+      ],
+      "explanation": "Ron l'utilise pour assommer le troll avec sa propre massue."
+    },
+    {
+      "ref": "hp-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort Harry utilise-t-il pour attirer son balai face au dragon, lors de la première tâche du Tournoi ?",
+      "answers": [
+        { "text": "Lumos", "isCorrect": false },
+        { "text": "Expelliarmus", "isCorrect": false },
+        { "text": "Alohomora", "isCorrect": false },
+        { "text": "Accio", "isCorrect": true }
+      ],
+      "explanation": "Hermione l'a aidé à travailler ce sortilège d'Attraction (Summoning Charm) pendant des jours."
+    },
+    {
+      "ref": "hp-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort Hermione utilise-t-elle pour immobiliser Neville dans le tome 1 ?",
+      "answers": [
+        { "text": "Impero (Imperio)", "isCorrect": false },
+        { "text": "Stupéfix (Stupefy)", "isCorrect": false },
+        { "text": "Oubliettes (Obliviate)", "isCorrect": false },
+        { "text": "Petrificus Totalus", "isCorrect": true }
+      ],
+      "explanation": "Neville voulait empêcher le trio de sortir la nuit pour aller chercher la pierre philosophale."
+    },
+    {
+      "ref": "hp-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort transforme un Épouvantard (Boggart) en quelque chose de ridicule ?",
+      "answers": [
+        { "text": "Expecto Patronum", "isCorrect": false },
+        { "text": "Riddikulus", "isCorrect": true },
+        { "text": "Finite Incantatem", "isCorrect": false },
+        { "text": "Oubliettes (Obliviate)", "isCorrect": false }
+      ],
+      "explanation": "Neville déguise ainsi l'Épouvantard de Rogue avec les vêtements de sa grand-mère."
+    },
+    {
+      "ref": "hp-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort, inventé par le Prince de sang-mêlé (Half-Blood Prince), Harry utilise-t-il contre Drago Malefoy (Draco Malfoy) ?",
+      "answers": [
+        { "text": "Levicorpus", "isCorrect": false },
+        { "text": "Assurdiato (Muffliato)", "isCorrect": false },
+        { "text": "Endoloris (Crucio)", "isCorrect": false },
+        { "text": "Sectumsempra", "isCorrect": true }
+      ],
+      "explanation": "Harry l'avait trouvé dans le manuel annoté du Prince, sans savoir ce qu'il faisait. Drago est grièvement blessé."
+    },
+    {
+      "ref": "hp-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sortilège impardonnable provoque une douleur insupportable ?",
+      "answers": [
+        { "text": "Sectumsempra", "isCorrect": false },
+        { "text": "Avada Kedavra", "isCorrect": false },
+        { "text": "Impero (Imperio)", "isCorrect": false },
+        { "text": "Endoloris (Crucio)", "isCorrect": true }
+      ],
+      "explanation": "C'est avec ce sortilège que Bellatrix Lestrange a fait perdre la raison aux parents de Neville."
+    },
+    {
+      "ref": "hp-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort efface la mémoire ?",
+      "answers": [
+        { "text": "Silencio", "isCorrect": false },
+        { "text": "Oubliettes (Obliviate)", "isCorrect": true },
+        { "text": "Assurdiato (Muffliato)", "isCorrect": false },
+        { "text": "Legilimens", "isCorrect": false }
+      ],
+      "explanation": "Hermione l'utilise sur ses propres parents dans le tome 7, pour les protéger."
+    },
+    {
+      "ref": "hp-043",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort fait apparaître la Marque des Ténèbres (Dark Mark) dans le ciel ?",
+      "answers": [
+        { "text": "Serpensortia", "isCorrect": false },
+        { "text": "Endoloris (Crucio)", "isCorrect": false },
+        { "text": "Avada Kedavra", "isCorrect": false },
+        { "text": "Morsmordre", "isCorrect": true }
+      ],
+      "explanation": "Elle apparaît dans le tome 4, après la finale de la Coupe du monde de Quidditch."
+    },
+    {
+      "ref": "hp-044",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Il existe quatre sortilèges impardonnables (Unforgivable Curses).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il y en a trois : Avada Kedavra, Endoloris (Crucio) et Impero (Imperio)."
+    },
+    {
+      "ref": "hp-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation"],
+      "text": "Quelle phrase fait apparaître la Carte du Maraudeur (the Marauder's Map) ?",
+      "answers": [
+        { "text": "« Sesame ouvre-toi » (Open Sesame)", "isCorrect": false },
+        { "text": "« Je jure solennellement que mes intentions sont mauvaises » (I solemnly swear that I am up to no good)", "isCorrect": true },
+        { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": false },
+        { "text": "« Vigilance constante » (Constant vigilance)", "isCorrect": false }
+      ],
+      "explanation": "« Méfait accompli » sert, à l'inverse, à effacer la carte."
+    },
+    {
+      "ref": "hp-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Quelle formule efface la Carte du Maraudeur (the Marauder's Map) ?",
+      "answers": [
+        { "text": "« Je jure solennellement que mes intentions sont mauvaises » (I solemnly swear that I am up to no good)", "isCorrect": false },
+        { "text": "« Nox »", "isCorrect": false },
+        { "text": "« Finite Incantatem »", "isCorrect": false },
+        { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": true }
+      ],
+      "explanation": "La carte a été créée par Lunard (Moony), Queudver (Wormtail), Patmol (Padfoot) et Cornedrue (Prongs)."
+    },
+    {
+      "ref": "hp-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation"],
+      "text": "Qui annonce à Harry : « Harry, tu es un sorcier » (Harry — yer a wizard) ?",
+      "answers": [
+        { "text": "Rubeus Hagrid", "isCorrect": true },
+        { "text": "Albus Dumbledore", "isCorrect": false },
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Vernon Dursley", "isCorrect": false }
+      ],
+      "explanation": "Hagrid vient le chercher sur l'île où les Dursley se sont réfugiés, le soir de ses onze ans."
+    },
+    {
+      "ref": "hp-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation"],
+      "text": "Qui s'écrie : « Dobby est un elfe libre ! » (Dobby is a free elf!) ?",
+      "answers": [
+        { "text": "Winky", "isCorrect": false },
+        { "text": "Kreattur (Kreacher)", "isCorrect": false },
+        { "text": "Dobby", "isCorrect": true },
+        { "text": "Hagrid", "isCorrect": false }
+      ],
+      "explanation": "Harry l'a libéré dans le tome 2 en piégeant Lucius Malefoy (Lucius Malfoy), qui lui a tendu une chaussette."
+    },
+    {
+      "ref": "hp-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit : « Ce sont nos choix, Harry, qui montrent ce que nous sommes vraiment, beaucoup plus que nos aptitudes » (It is our choices, Harry, that show what we truly are, far more than our abilities) ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": false },
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": true }
+      ],
+      "explanation": "Il le dit à la fin du tome 2, quand Harry s'inquiète de ressembler à Voldemort."
+    },
+    {
+      "ref": "hp-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "« Après tout ce temps ? » demande Dumbledore. Qui lui répond « Toujours » (Always) ?",
+      "answers": [
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": true },
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Horace Slughorn", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": false }
+      ],
+      "explanation": "Rogue parle de son amour pour Lily, la mère de Harry, dans le souvenir que Harry découvre dans le tome 7."
+    },
+    {
+      "ref": "hp-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit : « Pour un esprit équilibré, la mort n'est qu'une grande aventure de plus » (To the well-organised mind, death is but the next great adventure) ?",
+      "answers": [
+        { "text": "Nicolas Flamel", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": true },
+        { "text": "Le Choixpeau (the Sorting Hat)", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": false }
+      ],
+      "explanation": "Il parle de Nicolas Flamel, qui accepte de mourir après la destruction de la pierre philosophale."
+    },
+    {
+      "ref": "hp-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Quel personnage répète sans cesse : « Vigilance constante ! » (Constant vigilance!) ?",
+      "answers": [
+        { "text": "Alastor Maugrey, dit Fol Œil (Mad-Eye Moody)", "isCorrect": true },
+        { "text": "Kingsley Shacklebolt", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": false },
+        { "text": "Nymphadora Tonks", "isCorrect": false }
+      ],
+      "explanation": "Ironie du sort : dans le tome 4, le Maugrey qui enseigne à Poudlard est un imposteur, Barty Croupton Jr (Barty Crouch Jr)."
+    },
+    {
+      "ref": "hp-053",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation"],
+      "text": "Qui dit : « Il n'y a ni bien ni mal, il n'y a que le pouvoir et ceux qui sont trop faibles pour le rechercher » (There is no good and evil, there is only power, and those too weak to seek it) ?",
+      "answers": [
+        { "text": "Gellert Grindelwald", "isCorrect": false },
+        { "text": "Voldemort", "isCorrect": false },
+        { "text": "Le professeur Quirrell", "isCorrect": true },
+        { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false }
+      ],
+      "explanation": "Quirrell répète les paroles que Voldemort lui a enseignées, face à Harry, à la fin du tome 1."
+    },
+    {
+      "ref": "hp-054",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation"],
+      "text": "Qui dit à Harry : « Prenez donc un biscuit, Potter » (Have a biscuit, Potter) ?",
+      "answers": [
+        { "text": "Dolores Ombrage (Umbridge)", "isCorrect": false },
+        { "text": "Minerva McGonagall", "isCorrect": true },
+        { "text": "Molly Weasley", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": false }
+      ],
+      "explanation": "Pendant l'entretien d'orientation du tome 5, devant Ombrage qui la provoque."
+    },
+    {
+      "ref": "hp-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "D'où part le Poudlard Express (Hogwarts Express) ?",
+      "answers": [
+        { "text": "Du quai 7 ½ de la gare de Waterloo", "isCorrect": false },
+        { "text": "Du quai 9 ¾ de la gare de Paddington", "isCorrect": false },
+        { "text": "Du quai 9 ¾ de la gare de King's Cross", "isCorrect": true },
+        { "text": "Du Chemin de Traverse (Diagon Alley)", "isCorrect": false }
+      ],
+      "explanation": "Pour y accéder, il faut traverser la barrière entre les quais 9 et 10."
+    },
+    {
+      "ref": "hp-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Où dort Harry chez les Dursley, avant de recevoir sa lettre de Poudlard ?",
+      "answers": [
+        { "text": "Dans la cabane du jardin", "isCorrect": false },
+        { "text": "Dans le placard sous l'escalier", "isCorrect": true },
+        { "text": "Dans la cave", "isCorrect": false },
+        { "text": "Dans le grenier", "isCorrect": false }
+      ],
+      "explanation": "La lettre de Poudlard est d'ailleurs adressée au « Placard sous l'escalier, 4, Privet Drive »."
+    },
+    {
+      "ref": "hp-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel est le jour de l'anniversaire de Harry ?",
+      "answers": [
+        { "text": "Le 31 octobre", "isCorrect": false },
+        { "text": "Le 1er septembre", "isCorrect": false },
+        { "text": "Le 1er août", "isCorrect": false },
+        { "text": "Le 31 juillet", "isCorrect": true }
+      ],
+      "explanation": "Le 31 octobre est la nuit où ses parents ont été tués, et le 1er septembre le jour de la rentrée à Poudlard."
+    },
+    {
+      "ref": "hp-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qui a créé la pierre philosophale ?",
+      "answers": [
+        { "text": "Albus Dumbledore", "isCorrect": false },
+        { "text": "Nicolas Flamel", "isCorrect": true },
+        { "text": "Salazar Serpentard (Salazar Slytherin)", "isCorrect": false },
+        { "text": "Ollivander", "isCorrect": false }
+      ],
+      "explanation": "Flamel, alchimiste et ami de Dumbledore, avait plus de 600 ans grâce à elle."
+    },
+    {
+      "ref": "hp-059",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Quel monstre se cache dans la Chambre des secrets ?",
+      "answers": [
+        { "text": "Un dragon", "isCorrect": false },
+        { "text": "Une Acromantula", "isCorrect": false },
+        { "text": "Un Basilic (Basilisk)", "isCorrect": true },
+        { "text": "Un Détraqueur (Dementor)", "isCorrect": false }
+      ],
+      "explanation": "Son regard tue. Ses victimes n'ont été que pétrifiées, car elles l'ont vu indirectement : dans un reflet, à travers un fantôme…"
+    },
+    {
+      "ref": "hp-060",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qui ouvre la Chambre des secrets dans le tome 2 ?",
+      "answers": [
+        { "text": "Rubeus Hagrid", "isCorrect": false },
+        { "text": "Drago Malefoy (Draco Malfoy)", "isCorrect": false },
+        { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false },
+        { "text": "Ginny Weasley", "isCorrect": true }
+      ],
+      "explanation": "Elle est sous l'emprise du journal intime de Tom Jedusor (Tom Riddle), glissé dans ses affaires par Lucius Malefoy."
+    },
+    {
+      "ref": "hp-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qui a réellement trahi les parents de Harry auprès de Voldemort ?",
+      "answers": [
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": false },
+        { "text": "Peter Pettigrow (Peter Pettigrew)", "isCorrect": true }
+      ],
+      "explanation": "Sirius a été accusé à tort et enfermé douze ans à Azkaban."
+    },
+    {
+      "ref": "hp-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel dragon Harry doit-il affronter lors de la première tâche du Tournoi des Trois Sorciers (Triwizard Tournament) ?",
+      "answers": [
+        { "text": "Le Magyar à pointes (Hungarian Horntail)", "isCorrect": true },
+        { "text": "Le Vert gallois (Common Welsh Green)", "isCorrect": false },
+        { "text": "Le Suédois à museau court (Swedish Short-Snout)", "isCorrect": false },
+        { "text": "Le Boutefeu chinois (Chinese Fireball)", "isCorrect": false }
+      ],
+      "explanation": "C'est le plus dangereux des quatre dragons, et Harry l'a tiré au sort."
+    },
+    {
+      "ref": "hp-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Qui tue Cedric Diggory, dans le cimetière, sur ordre de Voldemort ?",
+      "answers": [
+        { "text": "Barty Croupton Jr (Barty Crouch Jr)", "isCorrect": false },
+        { "text": "Peter Pettigrow (Peter Pettigrew)", "isCorrect": true },
+        { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false },
+        { "text": "Bellatrix Lestrange", "isCorrect": false }
+      ],
+      "explanation": "Voldemort lui ordonne simplement de « tuer l'autre » (Kill the spare)."
+    },
+    {
+      "ref": "hp-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Où se trouve le quartier général de l'Ordre du Phénix (the Order of the Phoenix) ?",
+      "answers": [
+        { "text": "Au 12, square Grimmaurd (Grimmauld Place)", "isCorrect": true },
+        { "text": "À Pré-au-Lard (Hogsmeade)", "isCorrect": false },
+        { "text": "Au 4, Privet Drive", "isCorrect": false },
+        { "text": "Au Terrier (the Burrow)", "isCorrect": false }
+      ],
+      "explanation": "C'est la maison de famille de Sirius Black, cachée par un sortilège de Fidelitas (Fidelius Charm)."
+    },
+    {
+      "ref": "hp-065",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Le Prince de sang-mêlé (Half-Blood Prince) est Severus Rogue (Severus Snape).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le surnom vient de sa mère, Eileen Prince, une sorcière qui a épousé un Moldu."
+    },
+    {
+      "ref": "hp-066",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Dumbledore est tué par Bellatrix Lestrange.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il est tué par Rogue, au sommet de la tour d'Astronomie, à la fin du tome 6."
+    },
+    {
+      "ref": "hp-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Lequel de ces objets ne fait pas partie des Reliques de la Mort (the Deathly Hallows) ?",
+      "answers": [
+        { "text": "La Baguette de sureau (the Elder Wand)", "isCorrect": false },
+        { "text": "Le Retourneur de Temps (Time-Turner)", "isCorrect": true },
+        { "text": "La Cape d'invisibilité (the Invisibility Cloak)", "isCorrect": false },
+        { "text": "La Pierre de résurrection (the Resurrection Stone)", "isCorrect": false }
+      ],
+      "explanation": "Le Retourneur de Temps est l'objet qu'Hermione utilise dans le tome 3 pour suivre plusieurs cours en même temps."
+    },
+    {
+      "ref": "hp-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit", "horcruxe"],
+      "text": "Combien d'Horcruxes Voldemort a-t-il créés volontairement ?",
+      "answers": [
+        { "text": "6", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Il voulait diviser son âme en sept, en comptant la part restée en lui. Harry est devenu, sans que Voldemort le sache, un Horcruxe de plus."
+    },
+    {
+      "ref": "hp-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit", "horcruxe"],
+      "text": "Lequel de ces objets des fondateurs n'est pas devenu un Horcruxe ?",
+      "answers": [
+        { "text": "Le médaillon de Serpentard (Slytherin)", "isCorrect": false },
+        { "text": "Le diadème de Serdaigle (Ravenclaw)", "isCorrect": false },
+        { "text": "L'épée de Gryffondor (Gryffindor)", "isCorrect": true },
+        { "text": "La coupe de Poufsouffle (Hufflepuff)", "isCorrect": false }
+      ],
+      "explanation": "L'épée sert au contraire à détruire plusieurs Horcruxes, car elle est imprégnée du venin du Basilic."
+    },
+    {
+      "ref": "hp-070",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["recit", "horcruxe"],
+      "text": "Neville Londubat (Neville Longbottom) tue le serpent Nagini avec l'épée de Gryffondor (Gryffindor).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il sort l'épée du Choixpeau (the Sorting Hat) pendant la bataille de Poudlard."
+    },
+    {
+      "ref": "hp-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qui tue Bellatrix Lestrange pendant la bataille de Poudlard ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": false },
+        { "text": "Molly Weasley", "isCorrect": true },
+        { "text": "Harry Potter", "isCorrect": false }
+      ],
+      "explanation": "Molly l'affronte pour protéger sa fille Ginny."
+    },
+    {
+      "ref": "hp-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Grâce à quel objet Dobby est-il libéré ?",
+      "answers": [
+        { "text": "Un chapeau", "isCorrect": false },
+        { "text": "Un gant", "isCorrect": false },
+        { "text": "Une chaussette", "isCorrect": true },
+        { "text": "Une écharpe", "isCorrect": false }
+      ],
+      "explanation": "Un elfe de maison est libéré quand son maître lui donne un vêtement. Harry glisse sa chaussette dans le journal de Tom Jedusor (Tom Riddle), que Lucius Malefoy rend à Dobby."
+    },
+    {
+      "ref": "hp-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel ingrédient, appartenant à une autre personne, faut-il ajouter au Polynectar (Polyjuice Potion) pour en prendre l'apparence ?",
+      "answers": [
+        { "text": "Un cheveu", "isCorrect": true },
+        { "text": "Un ongle", "isCorrect": false },
+        { "text": "Une larme", "isCorrect": false },
+        { "text": "Une goutte de sang", "isCorrect": false }
+      ],
+      "explanation": "Dans le tome 2, Harry et Ron se transforment ainsi en Crabbe et Goyle."
+    },
+    {
+      "ref": "hp-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel est le surnom de la potion Felix Felicis ?",
+      "answers": [
+        { "text": "L'Amortentia", "isCorrect": false },
+        { "text": "Le philtre de Paix (Draught of Peace)", "isCorrect": false },
+        { "text": "Le Veritaserum", "isCorrect": false },
+        { "text": "La chance liquide (liquid luck)", "isCorrect": true }
+      ],
+      "explanation": "Harry la gagne au premier cours de Slughorn, dans le tome 6, et la donne plus tard à Ron, Hermione et Ginny."
+    },
+    {
+      "ref": "hp-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Comment s'appelle le deuxième fils de Harry, dans l'épilogue du tome 7 ?",
+      "answers": [
+        { "text": "James Sirius", "isCorrect": false },
+        { "text": "Remus Arthur", "isCorrect": false },
+        { "text": "Albus Severus", "isCorrect": true },
+        { "text": "Fred George", "isCorrect": false }
+      ],
+      "explanation": "Harry a trois enfants : James Sirius, Albus Severus et Lily Luna."
+    },
+    {
+      "ref": "hp-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Combien de joueurs compte une équipe de Quidditch ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "Trois Poursuiveurs (Chasers), deux Batteurs (Beaters), un Gardien (Keeper) et un Attrapeur (Seeker)."
+    },
+    {
+      "ref": "hp-077",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Attraper le Vif d'or (the Golden Snitch) rapporte 50 points.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il rapporte 150 points et met fin au match."
+    },
+    {
+      "ref": "hp-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le rôle d'Argus Rusard (Argus Filch) à Poudlard (Hogwarts) ?",
+      "answers": [
+        { "text": "Concierge", "isCorrect": true },
+        { "text": "Bibliothécaire", "isCorrect": false },
+        { "text": "Professeur de Potions", "isCorrect": false },
+        { "text": "Garde-chasse", "isCorrect": false }
+      ],
+      "explanation": "Rusard est un Cracmol (Squib) : né de parents sorciers, il n'a aucun pouvoir magique. Sa chatte s'appelle Miss Teigne (Mrs Norris)."
+    },
+    {
+      "ref": "hp-079",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la chouette de Harry ?",
+      "answers": [
+        { "text": "Hedwige (Hedwig)", "isCorrect": true },
+        { "text": "Coquecigrue (Pigwidgeon)", "isCorrect": false },
+        { "text": "Errol", "isCorrect": false },
+        { "text": "Hermès (Hermes)", "isCorrect": false }
+      ],
+      "explanation": "Hagrid la lui offre pour ses onze ans. Coquecigrue est le hibou de Ron, Errol celui des Weasley et Hermès celui de Percy."
+    },
+    {
+      "ref": "hp-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le frère d'Albus Dumbledore ?",
+      "answers": [
+        { "text": "Abelforth (Aberforth)", "isCorrect": true },
+        { "text": "Elphias", "isCorrect": false },
+        { "text": "Ariana", "isCorrect": false },
+        { "text": "Gellert", "isCorrect": false }
+      ],
+      "explanation": "Abelforth tient le pub La Tête de Sanglier (the Hog's Head), à Pré-au-Lard (Hogsmeade). Ariana était leur sœur."
+    },
+    {
+      "ref": "hp-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel centaure devient professeur de Divination dans le tome 5 ?",
+      "answers": [
+        { "text": "Firenze", "isCorrect": true },
+        { "text": "Magorian", "isCorrect": false },
+        { "text": "Ronan", "isCorrect": false },
+        { "text": "Bane", "isCorrect": false }
+      ],
+      "explanation": "Les autres centaures de la Forêt interdite (the Forbidden Forest) le bannissent pour avoir accepté de servir les humains."
+    },
+    {
+      "ref": "hp-082",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle l'hippogriffe que Hagrid présente à ses élèves dans le tome 3 ?",
+      "answers": [
+        { "text": "Norbert", "isCorrect": false },
+        { "text": "Touffu (Fluffy)", "isCorrect": false },
+        { "text": "Aragog", "isCorrect": false },
+        { "text": "Buck (Buckbeak)", "isCorrect": true }
+      ],
+      "explanation": "Après avoir blessé Drago Malefoy (Draco Malfoy), il est condamné à mort, puis sauvé par Harry et Hermione grâce au Retourneur de Temps (Time-Turner)."
+    },
+    {
+      "ref": "hp-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel don particulier possède Nymphadora Tonks ?",
+      "answers": [
+        { "text": "Elle voit l'avenir", "isCorrect": false },
+        { "text": "Elle se transforme en animal", "isCorrect": false },
+        { "text": "Elle parle aux serpents", "isCorrect": false },
+        { "text": "Elle change d'apparence à volonté", "isCorrect": true }
+      ],
+      "explanation": "Tonks est une Métamorphomage (Metamorphmagus). Elle déteste son prénom et préfère qu'on l'appelle par son nom de famille."
+    },
+    {
+      "ref": "hp-084",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel don Harry partage-t-il avec Voldemort, révélé dans le tome 2 ?",
+      "answers": [
+        { "text": "Il vole sans balai", "isCorrect": false },
+        { "text": "Il lit dans les pensées", "isCorrect": false },
+        { "text": "Il se rend invisible", "isCorrect": false },
+        { "text": "Il parle aux serpents", "isCorrect": true }
+      ],
+      "explanation": "Ce don s'appelle le Fourchelang (Parseltongue). C'était aussi celui de Salazar Serpentard (Salazar Slytherin)."
+    },
+    {
+      "ref": "hp-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel journal dirige Xenophilius Lovegood, le père de Luna ?",
+      "answers": [
+        { "text": "Le Mensuel de la Métamorphose (Transfiguration Today)", "isCorrect": false },
+        { "text": "Sorcière Hebdo (Witch Weekly)", "isCorrect": false },
+        { "text": "La Gazette du sorcier (the Daily Prophet)", "isCorrect": false },
+        { "text": "Le Chicaneur (The Quibbler)", "isCorrect": true }
+      ],
+      "explanation": "Dans le tome 5, c'est Le Chicaneur qui publie l'interview où Harry raconte le retour de Voldemort."
+    },
+    {
+      "ref": "hp-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui dirige l'école de Durmstrang lors du Tournoi des Trois Sorciers (Triwizard Tournament) ?",
+      "answers": [
+        { "text": "Ludo Verpey (Ludo Bagman)", "isCorrect": false },
+        { "text": "Olympe Maxime", "isCorrect": false },
+        { "text": "Igor Karkaroff", "isCorrect": true },
+        { "text": "Barty Croupton (Barty Crouch)", "isCorrect": false }
+      ],
+      "explanation": "Karkaroff est un ancien Mangemort (Death Eater). Olympe Maxime dirige Beauxbâtons."
+    },
+    {
+      "ref": "hp-087",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel lien unit Pétunia Dursley à Harry ?",
+      "answers": [
+        { "text": "C'est sa marraine", "isCorrect": false },
+        { "text": "C'est une cousine de son père", "isCorrect": false },
+        { "text": "C'est la sœur de son père", "isCorrect": false },
+        { "text": "C'est la sœur de sa mère", "isCorrect": true }
+      ],
+      "explanation": "Pétunia a toujours jalousé sa sœur Lily, qui était une sorcière."
+    },
+    {
+      "ref": "hp-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui est le ministre de la Magie au début de la saga ?",
+      "answers": [
+        { "text": "Cornelius Fudge", "isCorrect": true },
+        { "text": "Barty Croupton (Barty Crouch)", "isCorrect": false },
+        { "text": "Kingsley Shacklebolt", "isCorrect": false },
+        { "text": "Rufus Scrimgeour", "isCorrect": false }
+      ],
+      "explanation": "Fudge refuse d'admettre le retour de Voldemort. Scrimgeour le remplace dans le tome 6."
+    },
+    {
+      "ref": "hp-089",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Hagrid a été renvoyé de Poudlard (Hogwarts) quand il était élève.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Tom Jedusor (Tom Riddle) l'avait accusé d'avoir ouvert la Chambre des secrets. Sa baguette a été brisée."
+    },
+    {
+      "ref": "hp-090",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Neville Londubat (Neville Longbottom) est un Cracmol (Squib).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Sa famille l'a longtemps cru, car ses pouvoirs se sont manifestés tard. Mais Neville est bien un sorcier."
+    },
+    {
+      "ref": "hp-091",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Hermione a fondé la S.A.L.E. (S.P.E.W.) pour défendre les droits des elfes de maison.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La Société d'aide à la libération des elfes (Society for the Promotion of Elfish Welfare), dans le tome 4, n'a pas eu beaucoup de succès."
+    },
+    {
+      "ref": "hp-092",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Quel portrait garde l'entrée de la salle commune de Gryffondor (Gryffindor) ?",
+      "answers": [
+        { "text": "La Dame grise (the Grey Lady)", "isCorrect": false },
+        { "text": "La Grosse Dame (the Fat Lady)", "isCorrect": true },
+        { "text": "Le chevalier du Catogan (Sir Cadogan)", "isCorrect": false },
+        { "text": "Phineas Nigellus", "isCorrect": false }
+      ],
+      "explanation": "Dans le tome 3, Sirius lacère son tableau et le chevalier du Catogan la remplace pendant un temps."
+    },
+    {
+      "ref": "hp-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Quel fantôme est celui de la maison Poufsouffle (Hufflepuff) ?",
+      "answers": [
+        { "text": "Nick Quasi-Sans-Tête (Nearly Headless Nick)", "isCorrect": false },
+        { "text": "Le Moine Gras (the Fat Friar)", "isCorrect": true },
+        { "text": "Le Baron Sanglant (the Bloody Baron)", "isCorrect": false },
+        { "text": "La Dame grise (the Grey Lady)", "isCorrect": false }
+      ],
+      "explanation": "Il est connu pour sa bonne humeur et sa tendance à pardonner à tout le monde, même à Peeves."
+    },
+    {
+      "ref": "hp-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Qui dirige la maison Serdaigle (Ravenclaw) ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": false },
+        { "text": "Pomona Chourave (Pomona Sprout)", "isCorrect": false },
+        { "text": "Filius Flitwick", "isCorrect": true }
+      ],
+      "explanation": "Flitwick enseigne les Sortilèges (Charms). Il est tout petit et doit monter sur une pile de livres pour voir ses élèves."
+    },
+    {
+      "ref": "hp-095",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Quelles sont les couleurs de la maison Gryffondor (Gryffindor) ?",
+      "answers": [
+        { "text": "Rouge et or", "isCorrect": true },
+        { "text": "Jaune et noir", "isCorrect": false },
+        { "text": "Vert et argent", "isCorrect": false },
+        { "text": "Bleu et bronze", "isCorrect": false }
+      ],
+      "explanation": "Le vert et l'argent sont les couleurs de Serpentard (Slytherin), le bleu et le bronze celles de Serdaigle (Ravenclaw), et le jaune et le noir celles de Poufsouffle (Hufflepuff)."
+    },
+    {
+      "ref": "hp-096",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Quelles sont les couleurs de la maison Serpentard (Slytherin) ?",
+      "answers": [
+        { "text": "Bleu et bronze", "isCorrect": false },
+        { "text": "Rouge et or", "isCorrect": false },
+        { "text": "Vert et argent", "isCorrect": true },
+        { "text": "Jaune et noir", "isCorrect": false }
+      ],
+      "explanation": "Ces couleurs rappellent le serpent, emblème de la maison."
+    },
+    {
+      "ref": "hp-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Selon le Choixpeau magique (the Sorting Hat), quelles qualités distinguent les élèves de Poufsouffle (Hufflepuff) ?",
+      "answers": [
+        { "text": "L'intelligence et le savoir", "isCorrect": false },
+        { "text": "La ruse et l'ambition", "isCorrect": false },
+        { "text": "Le courage et l'audace", "isCorrect": false },
+        { "text": "La loyauté, la patience et le goût du travail", "isCorrect": true }
+      ],
+      "explanation": "Le courage est la marque de Gryffondor (Gryffindor), l'intelligence celle de Serdaigle (Ravenclaw) et la ruse celle de Serpentard (Slytherin)."
+    },
+    {
+      "ref": "hp-098",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Quelle maison valorise avant tout la ruse et l'ambition ?",
+      "answers": [
+        { "text": "Poufsouffle (Hufflepuff)", "isCorrect": false },
+        { "text": "Gryffondor (Gryffindor)", "isCorrect": false },
+        { "text": "Serdaigle (Ravenclaw)", "isCorrect": false },
+        { "text": "Serpentard (Slytherin)", "isCorrect": true }
+      ],
+      "explanation": "Selon le Choixpeau (the Sorting Hat), les Serpentard sont prêts à tout pour parvenir à leurs fins."
+    },
+    {
+      "ref": "hp-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison"],
+      "text": "Dans quelle maison est Cho Chang ?",
+      "answers": [
+        { "text": "Serdaigle (Ravenclaw)", "isCorrect": true },
+        { "text": "Poufsouffle (Hufflepuff)", "isCorrect": false },
+        { "text": "Serpentard (Slytherin)", "isCorrect": false },
+        { "text": "Gryffondor (Gryffindor)", "isCorrect": false }
+      ],
+      "explanation": "Elle est l'attrapeuse de l'équipe de Quidditch de Serdaigle."
+    },
+    {
+      "ref": "hp-100",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["maison", "recit"],
+      "text": "Quelle maison remporte la Coupe des Quatre Maisons (the House Cup) à la fin du tome 1 ?",
+      "answers": [
+        { "text": "Poufsouffle (Hufflepuff)", "isCorrect": false },
+        { "text": "Serdaigle (Ravenclaw)", "isCorrect": false },
+        { "text": "Serpentard (Slytherin)", "isCorrect": false },
+        { "text": "Gryffondor (Gryffindor)", "isCorrect": true }
+      ],
+      "explanation": "Serpentard menait, mais Dumbledore accorde des points de dernière minute à Harry, Ron, Hermione et Neville."
+    },
+    {
+      "ref": "hp-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison", "recit"],
+      "text": "Combien de points Dumbledore accorde-t-il à Neville à la fin du tome 1, et qui donnent la victoire à Gryffondor (Gryffindor) ?",
+      "answers": [
+        { "text": "50", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "100", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Il les lui accorde pour avoir eu le courage de tenir tête à ses amis."
+    },
+    {
+      "ref": "hp-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison", "personnage"],
+      "text": "Quel élève de Gryffondor (Gryffindor) a noté les mots de passe sur un papier, ce qui a permis à Sirius d'entrer dans le dortoir dans le tome 3 ?",
+      "answers": [
+        { "text": "Seamus Finnigan", "isCorrect": false },
+        { "text": "Dean Thomas", "isCorrect": false },
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": true },
+        { "text": "Ron Weasley", "isCorrect": false }
+      ],
+      "explanation": "Le chevalier du Catogan (Sir Cadogan) changeait si souvent de mot de passe que Neville n'arrivait plus à les retenir."
+    },
+    {
+      "ref": "hp-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["maison", "recit"],
+      "text": "Quel fondateur a construit la Chambre des secrets ?",
+      "answers": [
+        { "text": "Helga Poufsouffle (Helga Hufflepuff)", "isCorrect": false },
+        { "text": "Rowena Serdaigle (Rowena Ravenclaw)", "isCorrect": false },
+        { "text": "Godric Gryffondor (Godric Gryffindor)", "isCorrect": false },
+        { "text": "Salazar Serpentard (Salazar Slytherin)", "isCorrect": true }
+      ],
+      "explanation": "Il voulait que son héritier puisse un jour libérer le monstre qu'elle abritait, pour chasser de l'école les élèves nés de parents moldus."
+    },
+    {
+      "ref": "hp-104",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["maison"],
+      "text": "Le Choixpeau magique (the Sorting Hat) répartit les élèves selon les résultats d'un examen d'entrée.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le Choixpeau est posé sur la tête de chaque élève et lit dans son esprit pour choisir sa maison."
+    },
+    {
+      "ref": "hp-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "Quel sort répare un objet cassé ?",
+      "answers": [
+        { "text": "Reparo", "isCorrect": true },
+        { "text": "Alohomora", "isCorrect": false },
+        { "text": "Accio", "isCorrect": false },
+        { "text": "Finite Incantatem", "isCorrect": false }
+      ],
+      "explanation": "Un sort de réparation ne fonctionne pas sur tout : la baguette brisée de Harry, dans le tome 7, ne peut pas être réparée ainsi."
+    },
+    {
+      "ref": "hp-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort assomme un adversaire ?",
+      "answers": [
+        { "text": "Rictusempra", "isCorrect": false },
+        { "text": "Stupéfix (Stupefy)", "isCorrect": true },
+        { "text": "Lumos", "isCorrect": false },
+        { "text": "Expelliarmus", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des sorts que Harry enseigne à l'Armée de Dumbledore (Dumbledore's Army) dans le tome 5."
+    },
+    {
+      "ref": "hp-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort crée un bouclier qui renvoie les sortilèges ?",
+      "answers": [
+        { "text": "Silencio", "isCorrect": false },
+        { "text": "Expelliarmus", "isCorrect": false },
+        { "text": "Protego", "isCorrect": true },
+        { "text": "Reducto", "isCorrect": false }
+      ],
+      "explanation": "Harry l'apprend en vue de la troisième tâche du Tournoi des Trois Sorciers (Triwizard Tournament), dans le tome 4."
+    },
+    {
+      "ref": "hp-108",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort suspend une personne en l'air par la cheville ?",
+      "answers": [
+        { "text": "Petrificus Totalus", "isCorrect": false },
+        { "text": "Mobilicorpus", "isCorrect": false },
+        { "text": "Wingardium Leviosa", "isCorrect": false },
+        { "text": "Levicorpus", "isCorrect": true }
+      ],
+      "explanation": "Harry le découvre dans le manuel du Prince de sang-mêlé (Half-Blood Prince). James Potter l'avait utilisé contre Rogue, adolescent."
+    },
+    {
+      "ref": "hp-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort produit un bourdonnement dans les oreilles des personnes alentour pour qu'elles n'entendent pas une conversation ?",
+      "answers": [
+        { "text": "Assurdiato (Muffliato)", "isCorrect": true },
+        { "text": "Silencio", "isCorrect": false },
+        { "text": "Sonorus", "isCorrect": false },
+        { "text": "Oubliettes (Obliviate)", "isCorrect": false }
+      ],
+      "explanation": "Encore une invention du Prince de sang-mêlé (Half-Blood Prince), que Harry utilise souvent dans le tome 6."
+    },
+    {
+      "ref": "hp-110",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort fait jaillir de l'eau de la baguette ?",
+      "answers": [
+        { "text": "Aguamenti", "isCorrect": true },
+        { "text": "Accio", "isCorrect": false },
+        { "text": "Incendio", "isCorrect": false },
+        { "text": "Lumos", "isCorrect": false }
+      ],
+      "explanation": "Dans la caverne du tome 6, Harry l'utilise pour donner à boire à Dumbledore, mais l'eau disparaît aussitôt."
+    },
+    {
+      "ref": "hp-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort Drago Malefoy (Draco Malfoy) utilise-t-il pour faire apparaître un serpent au club de duel, dans le tome 2 ?",
+      "answers": [
+        { "text": "Rictusempra", "isCorrect": false },
+        { "text": "Morsmordre", "isCorrect": false },
+        { "text": "Serpensortia", "isCorrect": true },
+        { "text": "Accio", "isCorrect": false }
+      ],
+      "explanation": "C'est en parlant à ce serpent que Harry révèle à toute l'école qu'il parle le Fourchelang (Parseltongue)."
+    },
+    {
+      "ref": "hp-112",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort Harry lance-t-il contre Drago au club de duel, et qui le fait se tordre de rire ?",
+      "answers": [
+        { "text": "Rictusempra", "isCorrect": true },
+        { "text": "Stupéfix (Stupefy)", "isCorrect": false },
+        { "text": "Tarentallegra", "isCorrect": false },
+        { "text": "Levicorpus", "isCorrect": false }
+      ],
+      "explanation": "Drago répond avec Tarentallegra, qui fait danser les jambes de Harry de façon incontrôlable."
+    },
+    {
+      "ref": "hp-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sortilège impardonnable permet de contrôler entièrement une personne ?",
+      "answers": [
+        { "text": "Legilimens", "isCorrect": false },
+        { "text": "Avada Kedavra", "isCorrect": false },
+        { "text": "Endoloris (Crucio)", "isCorrect": false },
+        { "text": "Impero (Imperio)", "isCorrect": true }
+      ],
+      "explanation": "Dans le tome 4, le faux Maugrey l'utilise sur ses élèves pour leur apprendre à y résister. Harry y parvient."
+    },
+    {
+      "ref": "hp-114",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sort"],
+      "text": "De quelle couleur est l'éclair du sortilège de la Mort (Avada Kedavra) ?",
+      "answers": [
+        { "text": "Vert", "isCorrect": true },
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Bleu", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul souvenir que Harry garde de la nuit où ses parents ont été tués."
+    },
+    {
+      "ref": "hp-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quelle discipline Rogue enseigne-t-il à Harry pour lui apprendre à fermer son esprit à Voldemort ?",
+      "answers": [
+        { "text": "La métamorphose", "isCorrect": false },
+        { "text": "La légilimancie (Legilimency)", "isCorrect": false },
+        { "text": "L'occlumancie (Occlumency)", "isCorrect": true },
+        { "text": "La divination", "isCorrect": false }
+      ],
+      "explanation": "La légilimancie, au contraire, permet de lire dans l'esprit des autres."
+    },
+    {
+      "ref": "hp-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Quel sort met fin aux effets d'un autre sortilège ?",
+      "answers": [
+        { "text": "Oubliettes (Obliviate)", "isCorrect": false },
+        { "text": "Finite Incantatem", "isCorrect": true },
+        { "text": "Protego", "isCorrect": false },
+        { "text": "Expelliarmus", "isCorrect": false }
+      ],
+      "explanation": "Rogue l'utilise au club de duel pour arrêter le chaos provoqué par les élèves."
+    },
+    {
+      "ref": "hp-117",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Harry a appris à faire apparaître un Patronus à l'âge de 13 ans.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Lupin le lui enseigne dans le tome 3, un sort très avancé pour un élève de troisième année."
+    },
+    {
+      "ref": "hp-118",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["sort"],
+      "text": "Le sortilège du Patronus permet de tuer un Détraqueur (Dementor).",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il ne fait que repousser les Détraqueurs. Rien ne permet de les tuer."
+    },
+    {
+      "ref": "hp-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui se plaint : « Pourquoi des araignées ? Pourquoi pas des papillons ? » (Why spiders? Why couldn't it be 'follow the butterflies'?) ?",
+      "answers": [
+        { "text": "Rubeus Hagrid", "isCorrect": false },
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": false },
+        { "text": "Ron Weasley", "isCorrect": true },
+        { "text": "Harry Potter", "isCorrect": false }
+      ],
+      "explanation": "Hagrid a conseillé de « suivre les araignées » pour découvrir la vérité sur la Chambre des secrets : un cauchemar pour Ron."
+    },
+    {
+      "ref": "hp-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit à Harry, devant le Miroir du Riséd (the Mirror of Erised) : « Il ne faut pas vivre dans ses rêves en oubliant de vivre » (It does not do to dwell on dreams and forget to live) ?",
+      "answers": [
+        { "text": "Ron Weasley", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": true },
+        { "text": "Rubeus Hagrid", "isCorrect": false },
+        { "text": "Minerva McGonagall", "isCorrect": false }
+      ],
+      "explanation": "Dumbledore fait ensuite déplacer le miroir, pour que Harry ne passe plus ses nuits à contempler ses parents."
+    },
+    {
+      "ref": "hp-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit : « Moi ? Des livres ! De l'intelligence ! Il y a des choses plus importantes : l'amitié et le courage » (Books! And cleverness! There are more important things — friendship and bravery) ?",
+      "answers": [
+        { "text": "Luna Lovegood", "isCorrect": false },
+        { "text": "Ron Weasley", "isCorrect": false },
+        { "text": "Ginny Weasley", "isCorrect": false },
+        { "text": "Hermione Granger", "isCorrect": true }
+      ],
+      "explanation": "Elle le dit à Harry au moment de le laisser affronter seul la dernière épreuve qui protège la pierre philosophale."
+    },
+    {
+      "ref": "hp-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Quel professeur promet à ses élèves de leur apprendre à « mettre en bouteille la gloire » et même à « enfermer la mort » (bottle fame, brew glory, even stopper death) ?",
+      "answers": [
+        { "text": "Albus Dumbledore", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": true },
+        { "text": "Gilderoy Lockhart", "isCorrect": false },
+        { "text": "Horace Slughorn", "isCorrect": false }
+      ],
+      "explanation": "C'est le discours de Rogue lors du tout premier cours de Potions de Harry."
+    },
+    {
+      "ref": "hp-123",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation"],
+      "text": "Qui dit : « Les choses que nous perdons finissent toujours par revenir, mais pas toujours de la façon dont on s'y attend » (Things we lose have a way of coming back to us in the end, if not always in the way we expect) ?",
+      "answers": [
+        { "text": "Hermione Granger", "isCorrect": false },
+        { "text": "Luna Lovegood", "isCorrect": true },
+        { "text": "Albus Dumbledore", "isCorrect": false },
+        { "text": "Molly Weasley", "isCorrect": false }
+      ],
+      "explanation": "Luna le dit à Harry à la fin du tome 5, alors que ses affaires ont été cachées par d'autres élèves."
+    },
+    {
+      "ref": "hp-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation"],
+      "text": "Qui dit : « Si tu veux savoir ce que vaut un homme, regarde comment il traite ses inférieurs, pas ses égaux » (If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals) ?",
+      "answers": [
+        { "text": "Albus Dumbledore", "isCorrect": false },
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Arthur Weasley", "isCorrect": false },
+        { "text": "Sirius Black", "isCorrect": true }
+      ],
+      "explanation": "Sirius parle de Barty Croupton (Barty Crouch), qui a renvoyé son elfe Winky sans pitié."
+    },
+    {
+      "ref": "hp-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit : « Bien sûr que ça se passe dans ta tête, Harry, mais pourquoi diable faudrait-il en conclure que ce n'est pas réel ? » (Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?) ?",
+      "answers": [
+        { "text": "Hermione Granger", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": true },
+        { "text": "Sirius Black", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": false }
+      ],
+      "explanation": "Dans le tome 7, à King's Cross, dans un lieu entre la vie et la mort."
+    },
+    {
+      "ref": "hp-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit : « Ne plains pas les morts, Harry. Plains plutôt les vivants et surtout ceux qui vivent sans amour » (Do not pity the dead, Harry. Pity the living, and, above all, those who live without love) ?",
+      "answers": [
+        { "text": "Remus Lupin", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": true },
+        { "text": "Sirius Black", "isCorrect": false },
+        { "text": "Lily Potter", "isCorrect": false }
+      ],
+      "explanation": "Également dans la scène de King's Cross du tome 7."
+    },
+    {
+      "ref": "hp-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation"],
+      "text": "Qui lance à Peeves : « Mène-lui la vie dure de notre part, Peeves » (Give her hell from us, Peeves) ?",
+      "answers": [
+        { "text": "Ron Weasley", "isCorrect": false },
+        { "text": "Lee Jordan", "isCorrect": false },
+        { "text": "Fred Weasley", "isCorrect": true },
+        { "text": "Ginny Weasley", "isCorrect": false }
+      ],
+      "explanation": "Fred et George quittent Poudlard sur leurs balais pour échapper à Ombrage (Umbridge), dans le tome 5. Peeves, pour la seule fois, obéit à un élève."
+    },
+    {
+      "ref": "hp-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation"],
+      "text": "Quelle phrase Hagrid répète-t-il chaque fois qu'il en a trop dit ?",
+      "answers": [
+        { "text": "« Vigilance constante » (Constant vigilance)", "isCorrect": false },
+        { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": false },
+        { "text": "« J'aurais pas dû dire ça » (I shouldn't have said that)", "isCorrect": true },
+        { "text": "« Par la barbe de Merlin » (Merlin's beard)", "isCorrect": false }
+      ],
+      "explanation": "Hagrid laisse ainsi échapper des secrets à plusieurs reprises, comme le nom de Nicolas Flamel."
+    },
+    {
+      "ref": "hp-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui s'écrie « Crache des limaces, Malefoy ! » (Eat slugs, Malfoy!), avant que son sort ne se retourne contre lui ?",
+      "answers": [
+        { "text": "Ron Weasley", "isCorrect": true },
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": false },
+        { "text": "Harry Potter", "isCorrect": false },
+        { "text": "Fred Weasley", "isCorrect": false }
+      ],
+      "explanation": "Avec sa baguette cassée, le sort rebondit et c'est Ron qui crache des limaces pendant des heures."
+    },
+    {
+      "ref": "hp-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation"],
+      "text": "Qui dit : « Ceux qui demandent de l'aide à Poudlard en recevront toujours » (Help will always be given at Hogwarts to those who ask for it) ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Rubeus Hagrid", "isCorrect": false },
+        { "text": "Le Choixpeau (the Sorting Hat)", "isCorrect": false },
+        { "text": "Albus Dumbledore", "isCorrect": true }
+      ],
+      "explanation": "Il le dit dans le tome 2, avant de quitter l'école. Harry s'en souvient dans la Chambre des secrets, et Fumseck (Fawkes) vient à son secours."
+    },
+    {
+      "ref": "hp-131",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["horcruxe"],
+      "text": "Qu'est-ce qu'un Horcruxe ?",
+      "answers": [
+        { "text": "Un objet dans lequel un sorcier cache un fragment de son âme", "isCorrect": true },
+        { "text": "Un sortilège de protection", "isCorrect": false },
+        { "text": "Une baguette ensorcelée", "isCorrect": false },
+        { "text": "Une potion qui rend immortel", "isCorrect": false }
+      ],
+      "explanation": "Tant qu'un Horcruxe existe, son créateur ne peut pas vraiment mourir."
+    },
+    {
+      "ref": "hp-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Que faut-il commettre pour fragmenter son âme et créer un Horcruxe ?",
+      "answers": [
+        { "text": "Un meurtre", "isCorrect": true },
+        { "text": "Une trahison", "isCorrect": false },
+        { "text": "Un serment inviolable", "isCorrect": false },
+        { "text": "Un vol", "isCorrect": false }
+      ],
+      "explanation": "Le meurtre déchire l'âme, et un sortilège permet d'enfermer le fragment arraché dans un objet."
+    },
+    {
+      "ref": "hp-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "De quel professeur Harry doit-il obtenir un souvenir sur les Horcruxes, dans le tome 6 ?",
+      "answers": [
+        { "text": "Minerva McGonagall", "isCorrect": false },
+        { "text": "Severus Rogue (Severus Snape)", "isCorrect": false },
+        { "text": "Filius Flitwick", "isCorrect": false },
+        { "text": "Horace Slughorn", "isCorrect": true }
+      ],
+      "explanation": "Le jeune Tom Jedusor (Tom Riddle) avait interrogé Slughorn sur les Horcruxes. Harry boit du Felix Felicis pour obtenir le vrai souvenir."
+    },
+    {
+      "ref": "hp-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["horcruxe"],
+      "text": "Quel Horcruxe Harry détruit-il dans le tome 2, sans savoir encore ce que c'est ?",
+      "answers": [
+        { "text": "La coupe de Poufsouffle (Hufflepuff's cup)", "isCorrect": false },
+        { "text": "La bague de Gaunt (Gaunt's ring)", "isCorrect": false },
+        { "text": "Le médaillon de Serpentard (Slytherin's locket)", "isCorrect": false },
+        { "text": "Le journal intime de Tom Jedusor (Tom Riddle)", "isCorrect": true }
+      ],
+      "explanation": "C'est grâce à ce journal que Dumbledore commence à soupçonner l'existence des Horcruxes."
+    },
+    {
+      "ref": "hp-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Avec quoi Harry détruit-il le journal de Tom Jedusor (Tom Riddle) ?",
+      "answers": [
+        { "text": "Un crochet de Basilic (basilisk fang)", "isCorrect": true },
+        { "text": "Le Feudeymon (Fiendfyre)", "isCorrect": false },
+        { "text": "L'épée de Gryffondor (Gryffindor)", "isCorrect": false },
+        { "text": "Le sortilège de la Mort", "isCorrect": false }
+      ],
+      "explanation": "Le venin de Basilic fait partie des rares substances capables de détruire un Horcruxe."
+    },
+    {
+      "ref": "hp-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Quel Horcruxe Dumbledore détruit-il, au prix d'une main noircie par une malédiction ?",
+      "answers": [
+        { "text": "La bague de Gaunt (Gaunt's ring)", "isCorrect": true },
+        { "text": "Le journal de Tom Jedusor (Tom Riddle)", "isCorrect": false },
+        { "text": "Le diadème de Serdaigle (Ravenclaw's diadem)", "isCorrect": false },
+        { "text": "Le médaillon de Serpentard (Slytherin's locket)", "isCorrect": false }
+      ],
+      "explanation": "Il l'avait passée à son doigt, et la malédiction l'aurait tué en un an sans l'intervention de Rogue."
+    },
+    {
+      "ref": "hp-137",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["horcruxe", "recit"],
+      "text": "Quelle Relique de la Mort (Deathly Hallow) est sertie dans la bague de Gaunt ?",
+      "answers": [
+        { "text": "La Cape d'invisibilité (the Invisibility Cloak)", "isCorrect": false },
+        { "text": "La Pierre de résurrection (the Resurrection Stone)", "isCorrect": true },
+        { "text": "La Baguette de sureau (the Elder Wand)", "isCorrect": false },
+        { "text": "Aucune", "isCorrect": false }
+      ],
+      "explanation": "Dumbledore la cache ensuite dans le premier Vif d'or (Golden Snitch) attrapé par Harry, qu'il lui lègue."
+    },
+    {
+      "ref": "hp-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Où Voldemort a-t-il caché le médaillon de Serpentard (Slytherin's locket) ?",
+      "answers": [
+        { "text": "Dans la maison des Gaunt", "isCorrect": false },
+        { "text": "Dans un coffre de Gringotts", "isCorrect": false },
+        { "text": "Dans une caverne au bord de la mer", "isCorrect": true },
+        { "text": "À Poudlard (Hogwarts)", "isCorrect": false }
+      ],
+      "explanation": "Il est plongé au fond d'un bassin rempli d'une potion, sur une île entourée d'Inferi."
+    },
+    {
+      "ref": "hp-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Qui se cache derrière les initiales R.A.B. ?",
+      "answers": [
+        { "text": "Remus Archibald Black", "isCorrect": false },
+        { "text": "Regulus Arcturus Black", "isCorrect": true },
+        { "text": "Rubeus Albus Bones", "isCorrect": false },
+        { "text": "Rodolphus Antonin Bellatrix", "isCorrect": false }
+      ],
+      "explanation": "Le frère de Sirius, ancien Mangemort (Death Eater), avait découvert le secret de Voldemort et volé le vrai médaillon."
+    },
+    {
+      "ref": "hp-140",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["horcruxe"],
+      "text": "Kreattur (Kreacher) a accompagné Regulus Black dans la caverne où était caché le médaillon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Regulus lui a ordonné de rentrer avec le médaillon et de le détruire, mais Kreattur n'y est jamais parvenu."
+    },
+    {
+      "ref": "hp-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Qui détruit le médaillon de Serpentard (Slytherin's locket) ?",
+      "answers": [
+        { "text": "Hermione Granger", "isCorrect": false },
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": false },
+        { "text": "Harry Potter", "isCorrect": false },
+        { "text": "Ron Weasley", "isCorrect": true }
+      ],
+      "explanation": "Avec l'épée de Gryffondor (Gryffindor), après avoir affronté les visions que le médaillon fait naître dans son esprit."
+    },
+    {
+      "ref": "hp-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Où la coupe de Poufsouffle (Hufflepuff's cup) est-elle cachée ?",
+      "answers": [
+        { "text": "Dans la Salle sur demande (the Room of Requirement)", "isCorrect": false },
+        { "text": "Au 12, square Grimmaurd (Grimmauld Place)", "isCorrect": false },
+        { "text": "Dans le coffre des Lestrange, à Gringotts", "isCorrect": true },
+        { "text": "Dans une caverne au bord de la mer", "isCorrect": false }
+      ],
+      "explanation": "Le trio s'y introduit dans le tome 7 et s'enfuit à dos de dragon."
+    },
+    {
+      "ref": "hp-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Qui détruit la coupe de Poufsouffle (Hufflepuff's cup) ?",
+      "answers": [
+        { "text": "Ron Weasley", "isCorrect": false },
+        { "text": "Hermione Granger", "isCorrect": true },
+        { "text": "Ginny Weasley", "isCorrect": false },
+        { "text": "Harry Potter", "isCorrect": false }
+      ],
+      "explanation": "Avec un crochet de Basilic, que Ron et elle sont allés chercher dans la Chambre des secrets."
+    },
+    {
+      "ref": "hp-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Où le diadème de Serdaigle (Ravenclaw's diadem) est-il caché ?",
+      "answers": [
+        { "text": "Dans la Chambre des secrets", "isCorrect": false },
+        { "text": "Dans le bureau de Dumbledore", "isCorrect": false },
+        { "text": "Dans la Salle sur demande (the Room of Requirement)", "isCorrect": true },
+        { "text": "Dans la tour de Serdaigle (Ravenclaw)", "isCorrect": false }
+      ],
+      "explanation": "Voldemort l'y avait caché en croyant être le seul à connaître cette salle."
+    },
+    {
+      "ref": "hp-145",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["horcruxe"],
+      "text": "Qu'est-ce qui détruit le diadème de Serdaigle (Ravenclaw's diadem) ?",
+      "answers": [
+        { "text": "Le sortilège de la Mort", "isCorrect": false },
+        { "text": "Le Feudeymon (Fiendfyre)", "isCorrect": true },
+        { "text": "L'épée de Gryffondor (Gryffindor)", "isCorrect": false },
+        { "text": "Un crochet de Basilic (basilisk fang)", "isCorrect": false }
+      ],
+      "explanation": "Ce feu maudit est lancé par Crabbe, qui ne parvient pas à le contrôler, dans la Salle sur demande."
+    },
+    {
+      "ref": "hp-146",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Le diadème de Serdaigle (Ravenclaw's diadem) était caché dans la Chambre des secrets.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il était caché dans la Salle sur demande (the Room of Requirement)."
+    },
+    {
+      "ref": "hp-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["horcruxe"],
+      "text": "Lequel de ces moyens ne peut pas détruire un Horcruxe ?",
+      "answers": [
+        { "text": "Le sortilège Expelliarmus", "isCorrect": true },
+        { "text": "Le Feudeymon (Fiendfyre)", "isCorrect": false },
+        { "text": "L'épée de Gryffondor (Gryffindor)", "isCorrect": false },
+        { "text": "Un crochet de Basilic (basilisk fang)", "isCorrect": false }
+      ],
+      "explanation": "Seuls des moyens d'une puissance destructrice exceptionnelle peuvent en venir à bout."
+    },
+    {
+      "ref": "hp-148",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["horcruxe"],
+      "text": "Qu'est-ce qui détruit le fragment d'âme de Voldemort logé en Harry ?",
+      "answers": [
+        { "text": "Le sortilège de la Mort lancé par Voldemort lui-même", "isCorrect": true },
+        { "text": "Un crochet de Basilic (basilisk fang)", "isCorrect": false },
+        { "text": "L'épée de Gryffondor (Gryffindor)", "isCorrect": false },
+        { "text": "Le Feudeymon (Fiendfyre)", "isCorrect": false }
+      ],
+      "explanation": "Dans la Forêt interdite (the Forbidden Forest), Harry se laisse frapper sans se défendre : seul le fragment de Voldemort est détruit."
+    },
+    {
+      "ref": "hp-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Que montre le Miroir du Riséd (the Mirror of Erised) ?",
+      "answers": [
+        { "text": "Le désir le plus profond de celui qui s'y regarde", "isCorrect": true },
+        { "text": "La personne qu'on aime le plus", "isCorrect": false },
+        { "text": "Le passé", "isCorrect": false },
+        { "text": "L'avenir", "isCorrect": false }
+      ],
+      "explanation": "Harry y voit sa famille. Ron s'y voit préfet en chef et capitaine de Quidditch. Riséd est « désir » écrit à l'envers, comme Erised pour « desire »."
+    },
+    {
+      "ref": "hp-150",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Quel est le nom du village de sorciers tout proche de Poudlard (Hogwarts) ?",
+      "answers": [
+        { "text": "Pré-au-Lard (Hogsmeade)", "isCorrect": true },
+        { "text": "Loutry Ste Chaspoule (Ottery St Catchpole)", "isCorrect": false },
+        { "text": "Little Whinging", "isCorrect": false },
+        { "text": "Godric's Hollow", "isCorrect": false }
+      ],
+      "explanation": "À partir de la troisième année, les élèves peuvent s'y rendre certains week-ends."
+    },
+    {
+      "ref": "hp-151",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Qui tient la banque des sorciers, Gringotts ?",
+      "answers": [
+        { "text": "Des Détraqueurs (Dementors)", "isCorrect": false },
+        { "text": "Des elfes de maison", "isCorrect": false },
+        { "text": "Des centaures", "isCorrect": false },
+        { "text": "Des gobelins", "isCorrect": true }
+      ],
+      "explanation": "Selon Hagrid, c'est l'endroit le plus sûr du monde après Poudlard."
+    },
+    {
+      "ref": "hp-152",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Quelle prison des sorciers est gardée par les Détraqueurs (Dementors) ?",
+      "answers": [
+        { "text": "Gringotts", "isCorrect": false },
+        { "text": "Sainte-Mangouste (St Mungo's)", "isCorrect": false },
+        { "text": "Azkaban", "isCorrect": true },
+        { "text": "Nurmengard", "isCorrect": false }
+      ],
+      "explanation": "Nurmengard est la prison que Grindelwald avait fait construire, et où il a fini enfermé."
+    },
+    {
+      "ref": "hp-153",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Comment s'appelle la maison de la famille Weasley ?",
+      "answers": [
+        { "text": "La Chaumière aux Coquillages (Shell Cottage)", "isCorrect": false },
+        { "text": "La Tête de Sanglier (the Hog's Head)", "isCorrect": false },
+        { "text": "Le Terrier (the Burrow)", "isCorrect": true },
+        { "text": "Le square Grimmaurd (Grimmauld Place)", "isCorrect": false }
+      ],
+      "explanation": "Une maison biscornue, qui ne tient debout que grâce à la magie."
+    },
+    {
+      "ref": "hp-154",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Quel objet ayant appartenu à son père Harry reçoit-il anonymement à Noël, dans le tome 1 ?",
+      "answers": [
+        { "text": "Une cape d'invisibilité", "isCorrect": true },
+        { "text": "Une carte de Poudlard", "isCorrect": false },
+        { "text": "Un Vif d'or", "isCorrect": false },
+        { "text": "Une baguette", "isCorrect": false }
+      ],
+      "explanation": "C'est Dumbledore qui la lui envoie. On apprend dans le tome 7 que c'est l'une des Reliques de la Mort (the Deathly Hallows)."
+    },
+    {
+      "ref": "hp-155",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel balai Sirius offre-t-il à Harry dans le tome 3 ?",
+      "answers": [
+        { "text": "Un Nimbus 2001", "isCorrect": false },
+        { "text": "Un Nimbus 2000", "isCorrect": false },
+        { "text": "Un Brossdur (Cleansweep)", "isCorrect": false },
+        { "text": "Un Éclair de feu (Firebolt)", "isCorrect": true }
+      ],
+      "explanation": "Son Nimbus 2000 a été détruit par le Saule cogneur (the Whomping Willow) pendant un match."
+    },
+    {
+      "ref": "hp-156",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Harry est le plus jeune joueur de Quidditch d'une équipe de maison depuis un siècle.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "McGonagall le repère dès son premier cours de vol et le fait entrer dans l'équipe de Gryffondor (Gryffindor) comme attrapeur."
+    },
+    {
+      "ref": "hp-157",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Le Tournoi des Trois Sorciers (Triwizard Tournament) se déroule dans le tome 5.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il se déroule dans le tome 4, Harry Potter et la Coupe de feu (the Goblet of Fire)."
+    },
+    {
+      "ref": "hp-158",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "recit"],
+      "text": "Avec quel jeune sorcier Albus Dumbledore se lie-t-il d'amitié l'été qui suit la fin de ses études, à Godric's Hollow ?",
+      "answers": [
+        { "text": "Horace Slughorn", "isCorrect": false },
+        { "text": "Gellert Grindelwald", "isCorrect": true },
+        { "text": "Elphias Doge", "isCorrect": false },
+        { "text": "Nicolas Flamel", "isCorrect": false }
+      ],
+      "explanation": "Ensemble, ils rêvent d'un monde où les sorciers domineraient les Moldus (Muggles). Dumbledore finira par le vaincre en duel, en 1945."
+    },
+    {
+      "ref": "hp-159",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage", "recit"],
+      "text": "Grâce à qui Albus Dumbledore rencontre-t-il Gellert Grindelwald ?",
+      "answers": [
+        { "text": "Elphias Doge, son ami d'enfance", "isCorrect": false },
+        { "text": "Abelforth (Aberforth), son frère", "isCorrect": false },
+        { "text": "Bathilda Tourdesac (Bathilda Bagshot), sa grand-tante", "isCorrect": true },
+        { "text": "Rita Skeeter, une journaliste", "isCorrect": false }
+      ],
+      "explanation": "Historienne de la magie et voisine des Dumbledore, elle accueille son petit-neveu chez elle à Godric's Hollow."
+    },
+    {
+      "ref": "hp-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "recit", "citation"],
+      "text": "Quelle devise Albus Dumbledore et Gellert Grindelwald adoptent-ils dans leur jeunesse ?",
+      "answers": [
+        { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": false },
+        { "text": "« Toujours pur » (Toujours Pur)", "isCorrect": false },
+        { "text": "« Pour le plus grand bien » (For the Greater Good)", "isCorrect": true },
+        { "text": "« La magie est puissance » (Magic is Might)", "isCorrect": false }
+      ],
+      "explanation": "Grindelwald la fera graver plus tard à l'entrée de sa prison, Nurmengard. « Toujours pur » est la devise de la famille Black."
+    },
+    {
+      "ref": "hp-161",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage", "recit"],
+      "text": "Comment meurt Ariana, la sœur d'Albus Dumbledore ?",
+      "answers": [
+        { "text": "D'une maladie, à Sainte-Mangouste (St Mungo's)", "isCorrect": false },
+        { "text": "Mordue par un loup-garou", "isCorrect": false },
+        { "text": "Tuée par Voldemort", "isCorrect": false },
+        { "text": "Pendant un duel entre Albus, Abelforth (Aberforth) et Grindelwald", "isCorrect": true }
+      ],
+      "explanation": "Personne n'a jamais su lequel des trois avait lancé le sort qui l'a tuée. Grindelwald s'enfuit aussitôt après."
+    },
+    {
+      "ref": "hp-162",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage", "recit"],
+      "text": "Que fait Abelforth (Aberforth) à son frère Albus lors des funérailles d'Ariana ?",
+      "answers": [
+        { "text": "Il lui casse le nez", "isCorrect": true },
+        { "text": "Il lui jette un sortilège d'Amnésie", "isCorrect": false },
+        { "text": "Il le provoque en duel", "isCorrect": false },
+        { "text": "Il lui vole sa baguette", "isCorrect": false }
+      ],
+      "explanation": "Abelforth tenait Albus pour responsable de la mort de leur sœur. Ce qui expliquerait le nez tordu de Dumbledore, décrit dès le tome 1."
+    },
+    {
+      "ref": "hp-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel élève de Gryffondor (Gryffindor), d'origine irlandaise, met le feu à sa plume lors du premier cours de Sortilèges ?",
+      "answers": [
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": false },
+        { "text": "Dean Thomas", "isCorrect": false },
+        { "text": "Lee Jordan", "isCorrect": false },
+        { "text": "Seamus Finnigan", "isCorrect": true }
+      ],
+      "explanation": "Il s'impatiente de ne pas réussir à faire léviter sa plume, et finit par l'enflammer."
+    },
+    {
+      "ref": "hp-164",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle élève sort avec Ron dans le tome 6 et le surnomme « Ron-Ron » (Won-Won) ?",
+      "answers": [
+        { "text": "Cho Chang", "isCorrect": false },
+        { "text": "Lavande Brown (Lavender Brown)", "isCorrect": true },
+        { "text": "Parvati Patil", "isCorrect": false },
+        { "text": "Romilda Vane", "isCorrect": false }
+      ],
+      "explanation": "Hermione, jalouse, invite Cormac McLaggen à la fête de Slughorn pour se venger."
+    },
+    {
+      "ref": "hp-165",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "recit"],
+      "text": "Avec qui Harry va-t-il au bal de Noël (the Yule Ball) dans le tome 4 ?",
+      "answers": [
+        { "text": "Lavande Brown (Lavender Brown)", "isCorrect": false },
+        { "text": "Cho Chang", "isCorrect": false },
+        { "text": "Parvati Patil", "isCorrect": true },
+        { "text": "Hermione Granger", "isCorrect": false }
+      ],
+      "explanation": "Cho avait déjà accepté l'invitation de Cedric. Ron y va avec Padma, la sœur jumelle de Parvati, qui est à Serdaigle (Ravenclaw)."
+    },
+    {
+      "ref": "hp-166",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel élève de Poufsouffle (Hufflepuff) est pétrifié dans le tome 2 après avoir vu le Basilic à travers Nick Quasi-Sans-Tête (Nearly Headless Nick) ?",
+      "answers": [
+        { "text": "Ernie Macmillan", "isCorrect": false },
+        { "text": "Zacharias Smith", "isCorrect": false },
+        { "text": "Colin Crivey (Colin Creevey)", "isCorrect": false },
+        { "text": "Justin Finch-Fletchley", "isCorrect": true }
+      ],
+      "explanation": "Colin Crivey, lui, voit le Basilic à travers l'objectif de son appareil photo."
+    },
+    {
+      "ref": "hp-167",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui commente les matchs de Quidditch à Poudlard (Hogwarts) ?",
+      "answers": [
+        { "text": "Olivier Dubois (Oliver Wood)", "isCorrect": false },
+        { "text": "Lee Jordan", "isCorrect": true },
+        { "text": "Percy Weasley", "isCorrect": false },
+        { "text": "Seamus Finnigan", "isCorrect": false }
+      ],
+      "explanation": "Ce grand ami de Fred et George a bien du mal à rester neutre quand Gryffondor (Gryffindor) joue, au grand dam de McGonagall."
+    },
+    {
+      "ref": "hp-168",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Pourquoi Harry se précipite-t-il au ministère de la Magie à la fin du tome 5 ?",
+      "answers": [
+        { "text": "Il doit passer son audience disciplinaire", "isCorrect": false },
+        { "text": "Il croit avoir vu Sirius torturé par Voldemort", "isCorrect": true },
+        { "text": "Dumbledore l'y a convoqué", "isCorrect": false },
+        { "text": "Il veut récupérer l'épée de Gryffondor (Gryffindor)", "isCorrect": false }
+      ],
+      "explanation": "Voldemort lui a envoyé une fausse vision pour l'attirer au Département des mystères (the Department of Mysteries)."
+    },
+    {
+      "ref": "hp-169",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel objet les Mangemorts (Death Eaters) cherchent-ils à récupérer au Département des mystères (the Department of Mysteries) ?",
+      "answers": [
+        { "text": "Une prophétie concernant Harry et Voldemort", "isCorrect": true },
+        { "text": "Un Retourneur de Temps (Time-Turner)", "isCorrect": false },
+        { "text": "La Baguette de sureau (the Elder Wand)", "isCorrect": false },
+        { "text": "La pierre philosophale", "isCorrect": false }
+      ],
+      "explanation": "Seules les personnes concernées par une prophétie peuvent la prendre sur son étagère : il fallait donc que Harry vienne en personne."
+    },
+    {
+      "ref": "hp-170",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Qui brise accidentellement la prophétie pendant la bataille du ministère de la Magie?",
+      "answers": [
+        { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false },
+        { "text": "Neville Londubat (Neville Longbottom)", "isCorrect": true },
+        { "text": "Bellatrix Lestrange", "isCorrect": false },
+        { "text": "Harry Potter", "isCorrect": false }
+      ],
+      "explanation": "La sphère tombe de sa poche alors que ses jambes, ensorcelées, dansent sans contrôle. Personne n'entend la prophétie, mais Dumbledore en révèle le contenu à Harry."
+    },
+    {
+      "ref": "hp-171",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Comment meurt Sirius Black pendant la bataille du Département des mystères (the Department of Mysteries) ?",
+      "answers": [
+        { "text": "Tué par Voldemort d'un Avada Kedavra", "isCorrect": false },
+        { "text": "Frappé par un sort de Bellatrix, il bascule derrière le voile d'une arcade", "isCorrect": true },
+        { "text": "Poignardé par Peter Pettigrow (Peter Pettigrew)", "isCorrect": false },
+        { "text": "Mordu par le serpent Nagini", "isCorrect": false }
+      ],
+      "explanation": "Bellatrix est sa cousine. Le voile mystérieux de l'arcade sépare le monde des vivants de celui des morts."
+    },
+    {
+      "ref": "hp-172",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quel personnage voit Voldemort de ses propres yeux à la fin de la bataille au ministère de la Magie, et doit enfin reconnaître son retour ?",
+      "answers": [
+        { "text": "Dolores Ombrage (Umbridge)", "isCorrect": false },
+        { "text": "Rufus Scrimgeour", "isCorrect": false },
+        { "text": "Cornelius Fudge", "isCorrect": true },
+        { "text": "Percy Weasley", "isCorrect": false }
+      ],
+      "explanation": "Après un an à traiter Harry et Dumbledore de menteurs, le ministre arrive dans l'atrium juste à temps pour voir Voldemort s'enfuir."
+    },
+    {
+      "ref": "hp-173",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["recit"],
+      "text": "Quel âge faut-il avoir pour présenter sa candidature au Tournoi des Trois Sorciers (Triwizard Tournament) ?",
+      "answers": [
+        { "text": "15 ans", "isCorrect": false },
+        { "text": "16 ans", "isCorrect": false },
+        { "text": "17 ans", "isCorrect": true },
+        { "text": "18 ans", "isCorrect": false }
+      ],
+      "explanation": "Dumbledore trace une Limite d'âge (Age Line) autour de la Coupe de feu. Fred et George tentent de la franchir avec une potion de vieillissement et se retrouvent avec de longues barbes blanches."
+    },
+    {
+      "ref": "hp-174",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qui a mis le nom de Harry dans la Coupe de feu (the Goblet of Fire) ?",
+      "answers": [
+        { "text": "Lucius Malefoy (Lucius Malfoy)", "isCorrect": false },
+        { "text": "Barty Croupton Jr (Barty Crouch Jr), déguisé en Maugrey Fol Œil (Mad-Eye Moody)", "isCorrect": true },
+        { "text": "Ludo Verpey (Ludo Bagman)", "isCorrect": false },
+        { "text": "Igor Karkaroff", "isCorrect": false }
+      ],
+      "explanation": "Il l'a inscrit au nom d'une quatrième école imaginaire, pour que la Coupe le choisisse forcément."
+    },
+    {
+      "ref": "hp-175",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Quelle plante permet à Harry de respirer sous l'eau lors de la deuxième tâche ?",
+      "answers": [
+        { "text": "Le Tubercule de Bubon (Bubotuber)", "isCorrect": false },
+        { "text": "La Mandragore (Mandrake)", "isCorrect": false },
+        { "text": "La Branchiflore (Gillyweed)", "isCorrect": true },
+        { "text": "Le Filet du Diable (Devil's Snare)", "isCorrect": false }
+      ],
+      "explanation": "C'est Dobby qui la lui apporte, au dernier moment. Il lui pousse des branchies et des palmes."
+    },
+    {
+      "ref": "hp-176",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qui Harry doit-il délivrer au fond du lac lors de la deuxième tâche ?",
+      "answers": [
+        { "text": "Hermione Granger", "isCorrect": false },
+        { "text": "Ron Weasley", "isCorrect": true },
+        { "text": "Ginny Weasley", "isCorrect": false },
+        { "text": "Cho Chang", "isCorrect": false }
+      ],
+      "explanation": "Chaque champion doit sauver la personne qui lui manquerait le plus : Hermione pour Krum, Cho pour Cedric, et Gabrielle, sa petite sœur, pour Fleur."
+    },
+    {
+      "ref": "hp-177",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["recit"],
+      "text": "Qu'est-ce qui transporte Harry et Cedric dans le cimetière, à la fin de la troisième tâche ?",
+      "answers": [
+        { "text": "Le Magicobus (the Knight Bus)", "isCorrect": false },
+        { "text": "Une cheminée reliée au réseau de Cheminette (the Floo Network)", "isCorrect": false },
+        { "text": "La Coupe des Trois Sorciers, transformée en Portoloin (Portkey)", "isCorrect": true },
+        { "text": "Un sortilège de transplanage (Apparition)", "isCorrect": false }
+      ],
+      "explanation": "Barty Croupton Jr avait ensorcelé la Coupe placée au centre du labyrinthe pour livrer Harry à Voldemort."
+    },
+    {
+      "ref": "hp-178",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel est le deuxième prénom d'Hermione ?",
+      "answers": [
+        { "text": "Ann", "isCorrect": false },
+        { "text": "Rose", "isCorrect": false },
+        { "text": "Lily", "isCorrect": false },
+        { "text": "Jean", "isCorrect": true }
+      ],
+      "explanation": "On l'apprend dans le tome 7, à la lecture du testament de Dumbledore : « Hermione Jean Granger ». Rose est le prénom de sa fille."
+    },
+    {
+      "ref": "hp-179",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel est le deuxième prénom de Ron ?",
+      "answers": [
+        { "text": "Bilius", "isCorrect": true },
+        { "text": "Fabian", "isCorrect": false },
+        { "text": "Arthur", "isCorrect": false },
+        { "text": "Septimus", "isCorrect": false }
+      ],
+      "explanation": "Lui aussi est révélé par le testament de Dumbledore : « Ronald Bilius Weasley »."
+    },
+    {
+      "ref": "hp-180",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Lequel de ces prénoms ne fait pas partie du nom complet de Dumbledore ?",
+      "answers": [
+        { "text": "Brian", "isCorrect": false },
+        { "text": "Perceval (Percival)", "isCorrect": false },
+        { "text": "Wulfric", "isCorrect": false },
+        { "text": "Aurelius", "isCorrect": true }
+      ],
+      "explanation": "Son nom complet, écrit sur la lettre d'admission de Harry, est Albus Perceval Wulfric Brian Dumbledore."
+    },
+    {
+      "ref": "hp-181",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Qu'y a-t-il sur le chapeau de la grand-mère de Neville ?",
+      "answers": [
+        { "text": "Un hibou empaillé", "isCorrect": false },
+        { "text": "Un serpent en argent", "isCorrect": false },
+        { "text": "Une plume de phénix", "isCorrect": false },
+        { "text": "Un vautour empaillé", "isCorrect": true }
+      ],
+      "explanation": "Quand l'Épouvantard (Boggart) prend l'apparence de Rogue, Neville l'affuble des vêtements de sa grand-mère, vautour compris."
+    },
+    {
+      "ref": "hp-182",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Qui est la mère de Voldemort ?",
+      "answers": [
+        { "text": "Kendra Dumbledore", "isCorrect": false },
+        { "text": "Eileen Prince", "isCorrect": false },
+        { "text": "Ariana Dumbledore", "isCorrect": false },
+        { "text": "Mérope Gaunt (Merope Gaunt)", "isCorrect": true }
+      ],
+      "explanation": "Descendante de Salazar Serpentard (Salazar Slytherin), elle épouse un Moldu (Muggle), Tom Jedusor (Tom Riddle), probablement à l'aide d'un philtre d'amour, et meurt peu après la naissance de son fils."
+    },
+    {
+      "ref": "hp-183",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Dans quel pays Charlie Weasley étudie-t-il les dragons ?",
+      "answers": [
+        { "text": "L'Égypte", "isCorrect": false },
+        { "text": "L'Albanie", "isCorrect": false },
+        { "text": "La Hongrie", "isCorrect": false },
+        { "text": "La Roumanie", "isCorrect": true }
+      ],
+      "explanation": "C'est Bill, l'aîné, qui travaille en Égypte comme briseur de sorts (curse-breaker) pour Gringotts."
+    },
+    {
+      "ref": "hp-184",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Sous quelle forme d'Animagus Rita Skeeter espionne-t-elle Poudlard (Hogwarts) ?",
+      "answers": [
+        { "text": "Un scarabée", "isCorrect": true },
+        { "text": "Une mouche", "isCorrect": false },
+        { "text": "Un rat", "isCorrect": false },
+        { "text": "Une araignée", "isCorrect": false }
+      ],
+      "explanation": "Hermione la démasque dans le tome 4 et l'enferme dans un bocal : Rita n'est pas déclarée au ministère."
+    },
+    {
+      "ref": "hp-185",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment meurt Peter Pettigrow (Peter Pettigrew) ?",
+      "answers": [
+        { "text": "Tué par Sirius en duel", "isCorrect": false },
+        { "text": "Embrassé par un Détraqueur (Dementor)", "isCorrect": false },
+        { "text": "Étranglé par la main d'argent que Voldemort lui a donnée", "isCorrect": true },
+        { "text": "Dévoré par Nagini", "isCorrect": false }
+      ],
+      "explanation": "Au manoir des Malefoy (Malfoy Manor), il hésite un instant à tuer Harry, qui lui a sauvé la vie. La main le punit de cette hésitation."
+    },
+    {
+      "ref": "hp-186",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le demi-frère géant de Hagrid ?",
+      "answers": [
+        { "text": "Golgomath", "isCorrect": false },
+        { "text": "Graup (Grawp)", "isCorrect": true },
+        { "text": "Karkus", "isCorrect": false },
+        { "text": "Aragog", "isCorrect": false }
+      ],
+      "explanation": "Hagrid l'a ramené de sa mission chez les géants, dans le tome 5, et le cache dans la Forêt interdite (the Forbidden Forest)."
+    },
+    {
+      "ref": "hp-187",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison"],
+      "text": "Quel est le premier mot de passe de la salle commune de Gryffondor (Gryffindor) que Harry entend, en première année ?",
+      "answers": [
+        { "text": "Balivernes (Balderdash)", "isCorrect": false },
+        { "text": "Fortuna Major", "isCorrect": false },
+        { "text": "Caput Draconis", "isCorrect": true },
+        { "text": "Mimbulus mimbletonia", "isCorrect": false }
+      ],
+      "explanation": "C'est Percy qui le donne aux nouveaux élèves. Fortuna Major est utilisé dans le tome 3, Balivernes dans le tome 4 et Mimbulus mimbletonia dans le tome 5."
+    },
+    {
+      "ref": "hp-188",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison", "horcruxe"],
+      "text": "Quelle riche sorcière, descendante de Helga Poufsouffle (Helga Hufflepuff), possédait la coupe de Poufsouffle avant que Voldemort ne la tue ?",
+      "answers": [
+        { "text": "Bathilda Tourdesac (Bathilda Bagshot)", "isCorrect": false },
+        { "text": "Mafalda Hopkrik (Mafalda Hopkirk)", "isCorrect": false },
+        { "text": "Hepzibah Smith", "isCorrect": true },
+        { "text": "Augusta Londubat (Augusta Longbottom)", "isCorrect": false }
+      ],
+      "explanation": "Tom Jedusor (Tom Riddle) l'a empoisonnée et a fait accuser son elfe de maison, Hokey. Elle possédait aussi le médaillon de Serpentard (Slytherin)."
+    },
+    {
+      "ref": "hp-189",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison"],
+      "text": "Quelle famille descend directement de Salazar Serpentard (Salazar Slytherin) ?",
+      "answers": [
+        { "text": "Les Gaunt", "isCorrect": true },
+        { "text": "Les Black", "isCorrect": false },
+        { "text": "Les Malefoy (Malfoy)", "isCorrect": false },
+        { "text": "Les Lestrange", "isCorrect": false }
+      ],
+      "explanation": "Cette famille ruinée se vantait de sa lignée. Voldemort en descend par sa mère, Mérope Gaunt."
+    },
+    {
+      "ref": "hp-190",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["maison"],
+      "text": "À quel fondateur le Choixpeau magique (the Sorting Hat) appartenait-il à l'origine ?",
+      "answers": [
+        { "text": "Godric Gryffondor (Godric Gryffindor)", "isCorrect": true },
+        { "text": "Helga Poufsouffle (Helga Hufflepuff)", "isCorrect": false },
+        { "text": "Salazar Serpentard (Salazar Slytherin)", "isCorrect": false },
+        { "text": "Rowena Serdaigle (Rowena Ravenclaw)", "isCorrect": false }
+      ],
+      "explanation": "Selon sa propre chanson, Gryffondor l'a ôté de sa tête pour qu'il répartisse les élèves après la disparition des fondateurs."
+    },
+    {
+      "ref": "hp-191",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort Slughorn utilise-t-il pour dégager la gorge d'un élève qui s'étouffe pendant un dîner ?",
+      "answers": [
+        { "text": "Reparo", "isCorrect": false },
+        { "text": "Episkey", "isCorrect": false },
+        { "text": "Anapneo", "isCorrect": true },
+        { "text": "Aguamenti", "isCorrect": false }
+      ],
+      "explanation": "Marcus Belby avait avalé un morceau de faisan de travers lors d'un dîner du Club de Slug (the Slug Club), dans le tome 6."
+    },
+    {
+      "ref": "hp-192",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort Tonks utilise-t-elle pour réparer le nez cassé de Harry, dans le Poudlard Express (Hogwarts Express) ?",
+      "answers": [
+        { "text": "Anapneo", "isCorrect": false },
+        { "text": "Episkey", "isCorrect": true },
+        { "text": "Reparo", "isCorrect": false },
+        { "text": "Ferula", "isCorrect": false }
+      ],
+      "explanation": "Drago Malefoy (Draco Malfoy) l'avait frappé au visage d'un coup de pied, alors qu'il était immobilisé sous sa cape d'invisibilité."
+    },
+    {
+      "ref": "hp-193",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort révèle le dernier sortilège lancé par une baguette ?",
+      "answers": [
+        { "text": "Prior Incantato", "isCorrect": true },
+        { "text": "Priori Incantatem", "isCorrect": false },
+        { "text": "Finite Incantatem", "isCorrect": false },
+        { "text": "Homenum Revelio", "isCorrect": false }
+      ],
+      "explanation": "Amos Diggory l'utilise sur la baguette de Harry après la Coupe du monde de Quidditch. Priori Incantatem est le phénomène qui se produit quand les baguettes de Harry et Voldemort se connectent, dans le cimetière."
+    },
+    {
+      "ref": "hp-194",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sort"],
+      "text": "Quel sort Hermione lance-t-elle discrètement sur Cormac McLaggen pour que Ron devienne gardien (Keeper) de l'équipe de Quidditch ?",
+      "answers": [
+        { "text": "Silencio", "isCorrect": false },
+        { "text": "Oubliettes (Obliviate)", "isCorrect": false },
+        { "text": "Confundo", "isCorrect": true },
+        { "text": "Impero (Imperio)", "isCorrect": false }
+      ],
+      "explanation": "Elle l'avoue à Harry plus tard : McLaggen avait raté son dernier arrêt de très peu."
+    },
+    {
+      "ref": "hp-195",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation", "maison"],
+      "text": "Quelle devise est associée au diadème de Rowena Serdaigle (Rowena Ravenclaw) ?",
+      "answers": [
+        { "text": "« Pour le plus grand bien » (For the Greater Good)", "isCorrect": false },
+        { "text": "« Je m'ouvre au terme » (I open at the close)", "isCorrect": false },
+        { "text": "« Toujours pur » (Toujours Pur)", "isCorrect": false },
+        { "text": "« Une intelligence sans limite est le plus grand trésor de l'homme » (Wit beyond measure is man's greatest treasure)", "isCorrect": true }
+      ],
+      "explanation": "Luna montre à Harry la statue de Rowena Serdaigle, coiffée d'une copie du diadème où la devise est gravée."
+    },
+    {
+      "ref": "hp-196",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation", "recit"],
+      "text": "Quelle inscription Harry découvre-t-il sur le Vif d'or que Dumbledore lui lègue ?",
+      "answers": [
+        { "text": "« Méfait accompli » (Mischief managed)", "isCorrect": false },
+        { "text": "« Pour le plus grand bien » (For the Greater Good)", "isCorrect": false },
+        { "text": "« Toujours » (Always)", "isCorrect": false },
+        { "text": "« Je m'ouvre au terme » (I open at the close)", "isCorrect": true }
+      ],
+      "explanation": "Le Vif d'or ne s'ouvre qu'au moment où Harry marche vers la mort, et révèle la Pierre de résurrection."
+    },
+    {
+      "ref": "hp-197",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation", "recit"],
+      "text": "Quelle inscription est gravée sur la tombe de James et Lily Potter, à Godric's Hollow ?",
+      "answers": [
+        { "text": "« Pour le plus grand bien » (For the Greater Good)", "isCorrect": false },
+        { "text": "« Je m'ouvre au terme » (I open at the close)", "isCorrect": false },
+        { "text": "« Le dernier ennemi qui sera détruit, c'est la mort » (The last enemy that shall be destroyed is death)", "isCorrect": true },
+        { "text": "« Là où est ton trésor, là aussi sera ton cœur » (Where your treasure is, there will your heart be also)", "isCorrect": false }
+      ],
+      "explanation": "La phrase sur le trésor est gravée sur la tombe de Kendra et Ariana Dumbledore, dans le même cimetière."
+    },
+    {
+      "ref": "hp-198",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation", "recit"],
+      "text": "Qui prononce la prophétie qui annonce l'affrontement entre Harry et Voldemort ?",
+      "answers": [
+        { "text": "Sibylle Trelawney (Sybill Trelawney)", "isCorrect": true },
+        { "text": "Albus Dumbledore", "isCorrect": false },
+        { "text": "Cassandra Trelawney", "isCorrect": false },
+        { "text": "Firenze", "isCorrect": false }
+      ],
+      "explanation": "Elle la prononce en transe devant Dumbledore, à La Tête de Sanglier (the Hog's Head). Rogue en entend le début et le rapporte à Voldemort. Cassandra est son arrière-arrière-grand-mère, voyante elle aussi."
+    },
+    {
+      "ref": "hp-199",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Quel est le numéro du coffre de Harry à Gringotts ?",
+      "answers": [
+        { "text": "687", "isCorrect": true },
+        { "text": "394", "isCorrect": false },
+        { "text": "711", "isCorrect": false },
+        { "text": "713", "isCorrect": false }
+      ],
+      "explanation": "Le coffre 713 est celui où Hagrid récupère la pierre philosophale, le même jour."
+    },
+    {
+      "ref": "hp-200",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Comment s'appelle le contrôleur du Magicobus (the Knight Bus) ?",
+      "answers": [
+        { "text": "Mondingus Fletcher (Mundungus Fletcher)", "isCorrect": false },
+        { "text": "Stan Rocade (Stan Shunpike)", "isCorrect": true },
+        { "text": "Tom", "isCorrect": false },
+        { "text": "Ernie Danlmur (Ernie Prang)", "isCorrect": false }
+      ],
+      "explanation": "Ernie Danlmur en est le chauffeur, et Tom tient le Chaudron Baveur (the Leaky Cauldron)."
+    },
+    {
+      "ref": "hp-201",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Comment Harry attrape-t-il le Vif d'or lors de son tout premier match de Quidditch ?",
+      "answers": [
+        { "text": "Il manque de l'avaler", "isCorrect": true },
+        { "text": "Il le fait tomber avec un sort", "isCorrect": false },
+        { "text": "Il l'attrape entre deux doigts", "isCorrect": false },
+        { "text": "Il le coince sous son bras", "isCorrect": false }
+      ],
+      "explanation": "Son balai, ensorcelé, avait failli le désarçonner pendant le match."
+    },
+    {
+      "ref": "hp-202",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Quelle équipe remporte la finale de la Coupe du monde de Quidditch, dans le tome 4 ?",
+      "answers": [
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": true },
+        { "text": "La Bulgarie", "isCorrect": false },
+        { "text": "La France", "isCorrect": false }
+      ],
+      "explanation": "Viktor Krum attrape le Vif d'or pour la Bulgarie, mais son équipe a trop de retard : l'Irlande gagne 170 à 160."
+    },
+    {
+      "ref": "hp-203",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Où Harry enterre-t-il Dobby ?",
+      "answers": [
+        { "text": "Dans le parc de Poudlard (Hogwarts)", "isCorrect": false },
+        { "text": "Dans le jardin de la Chaumière aux Coquillages (Shell Cottage)", "isCorrect": true },
+        { "text": "Au Terrier (the Burrow)", "isCorrect": false },
+        { "text": "À Godric's Hollow", "isCorrect": false }
+      ],
+      "explanation": "Il creuse la tombe à la main, sans magie, puis grave sur la pierre : « Ici repose Dobby, un elfe libre »."
+    },
+    {
+      "ref": "hp-204",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "De quel frère Peverell Harry descend-il ?",
+      "answers": [
+        { "text": "Antioche (Antioch)", "isCorrect": false },
+        { "text": "Ignotus", "isCorrect": true },
+        { "text": "Godric", "isCorrect": false },
+        { "text": "Cadmus", "isCorrect": false }
+      ],
+      "explanation": "Dans Le Conte des trois frères, Antioche reçoit la Baguette de sureau, Cadmus la Pierre de résurrection et Ignotus la Cape d'invisibilité, transmise jusqu'à Harry."
+    },
+    {
+      "ref": "hp-205",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Pourquoi la Baguette de sureau (the Elder Wand) obéit-elle à Harry, et pas à Voldemort ?",
+      "answers": [
+        { "text": "Harry a désarmé Drago, qui avait lui-même désarmé Dumbledore", "isCorrect": true },
+        { "text": "Dumbledore la lui a léguée", "isCorrect": false },
+        { "text": "Rogue a tué Dumbledore", "isCorrect": false },
+        { "text": "Harry l'a trouvée en premier", "isCorrect": false }
+      ],
+      "explanation": "Voldemort croyait que tuer Rogue ferait de lui le maître de la baguette, mais la baguette n'avait jamais appartenu à Rogue."
+    },
+    {
+      "ref": "hp-206",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["recit"],
+      "text": "Quel objet Dumbledore lègue-t-il à Ron dans son testament ?",
+      "answers": [
+        { "text": "Le premier Vif d'or de Harry", "isCorrect": false },
+        { "text": "Les Contes de Beedle le Barde (The Tales of Beedle the Bard)", "isCorrect": false },
+        { "text": "Le Déluminateur (the Deluminator)", "isCorrect": true },
+        { "text": "L'épée de Gryffondor (Gryffindor)", "isCorrect": false }
+      ],
+      "explanation": "Harry reçoit le Vif d'or et Hermione Les Contes de Beedle le Barde. L'épée, léguée à Harry, est retenue par le ministère."
+    },
+    {
+      "ref": "hp-207",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["horcruxe"],
+      "text": "Qui porte le médaillon de Serpentard (Slytherin's locket) autour du cou au ministère, dans le tome 7 ?",
+      "answers": [
+        { "text": "Mondingus Fletcher (Mundungus Fletcher)", "isCorrect": false },
+        { "text": "Dolores Ombrage (Umbridge)", "isCorrect": true },
+        { "text": "Bellatrix Lestrange", "isCorrect": false },
+        { "text": "Kreattur (Kreacher)", "isCorrect": false }
+      ],
+      "explanation": "Mondingus l'avait volé au square Grimmaurd (Grimmauld Place) et le lui avait cédé pour éviter une amende. Ombrage prétend que c'est un bijou de famille."
+    }
+  ]
+}

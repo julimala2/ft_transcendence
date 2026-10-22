@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    background: var(--surface-2, #26223f);
+    border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+    border-radius: 14px;
+    color: var(--text, #f2f0fa);
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.card:hover {
+    background: rgba(124, 92, 255, 0.14);
+    border-color: rgba(124, 92, 255, 0.45);
+}
+
+.card:active {
+    transform: scale(0.985);
+}
+
+.card:focus-visible {
+    outline: 2px solid var(--accent-hover, #927aff);
+    outline-offset: 2px;
+}
+
+.card::after {
+    content: '';
+    flex: none;
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    border-top: 2px solid var(--muted, #9b97b5);
+    border-right: 2px solid var(--muted, #9b97b5);
+    transform: rotate(45deg);
+    transition: transform 0.15s, border-color 0.15s;
+}
+
+.card:hover::after {
+    border-color: var(--text, #f2f0fa);
+    transform: translateX(2px) rotate(45deg);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.username {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.displayName {
+    font-size: 0.85rem;
+    color: var(--muted, #9b97b5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .card::after {
+        transition: none;
+    }
+}
