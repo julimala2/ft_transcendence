@@ -16,7 +16,7 @@ const attemptRoutes = require('./src/routes/attempt.routes');
 const app = express();
 const { WebSocketServer } = require('ws');
 const { authenticateUpgrade } = require('./websocket/services/auth');
-const { handleConnection } = require('./websocket/connectionHandler');
+const { handleConnection } = require('./websocket/handlers/connectionHandler');
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());

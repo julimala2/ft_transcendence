@@ -2,13 +2,14 @@ const { getProfile } = require('../../src/services/user.service');
 const { joinRoomHandler } = require('./joinRoomHandler');
 const { chatHandler } = require('./chatHandler');
 const { leaveRoom } = require('../rooms');
-const { startGame } = require('../quizGame');
+const { quizHandler } = require('./quizHandler');
 
 const handlers = {
+  startGame: quizHandler,
+  createRoom: createRoom,
   joinRoom: joinRoomHandler,
-  chat: chatHandler,
-  startGame: startGame,
   leaveRoom: leaveRoom,
+  chat: chatHandler,
 };
 
 async function handleConnection(ws, req) 

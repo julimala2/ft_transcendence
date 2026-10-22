@@ -57,7 +57,7 @@ function revealAnswer(roomId) {
   const correctAnswer = currentQuestion.answers.find(a => a.isCorrect);
 
   broadcast(roomId, {
-    type: 'REVEAL_ANSWER',
+    type: 'revealAnswer',
     data: {
       questionId: currentQuestion.id,
       correctAnswer: correctAnswer ? correctAnswer.id : null,
@@ -70,7 +70,7 @@ function revealAnswer(roomId) {
 
     if (game.currentQuestionIndex >= game.questions.length) {
       broadcast(roomId, {
-        type: 'GAME_OVER',
+        type: 'gameOver',
         data: {
           finalScores: game.scores
         }

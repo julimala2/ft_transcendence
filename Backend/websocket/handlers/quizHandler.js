@@ -1,7 +1,7 @@
 const { broadcast, getRoomMembers} = require('../rooms');
 const { games } = require('../quizGame'); 
 
-async function answerQuestionHandler(ws, message) {
+async function quizHandler(ws, message) {
   const roomId = ws.currentRoom;
   const { questionId, answer } = message;
   const game = games[roomId];
@@ -58,5 +58,5 @@ async function answerQuestionHandler(ws, message) {
 
 
 
-module.exports = { answerQuestionHandler };
+module.exports = { quizHandler };
 
