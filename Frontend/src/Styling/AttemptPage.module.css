@@ -1,0 +1,148 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.progress {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.score {
+    color: var(--ok);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.questionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.question {
+    color: var(--text);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.questionImage {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: var(--radius-md);
+}
+
+.questionImage img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: var(--radius-md);
+    object-fit: contain;
+}
+
+.answersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.answerButton {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    font-size: 1.1rem;
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.answerButton:hover:not(:disabled) {
+    background: var(--surface-2);
+    border-color: var(--accent);
+}
+
+.selected {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.feedbackIcon {
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.feedback {
+    padding: 20px;
+    border-radius: var(--radius-sm);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedback p {
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.feedbackCorrect {
+    background-color: rgba(61, 219, 164, 0.12);
+    color: var(--ok);
+    border: 1px solid var(--ok);
+}
+
+.feedbackIncorrect {
+    background-color: rgba(255, 92, 122, 0.12);
+    color: var(--danger);
+    border: 1px solid var(--danger);
+}
+
+.explanation {
+    font-size: 0.95rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.title {
+    color: var(--text);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.score {
+    color: var(--ok);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 24px 0;
+}
+
+.error {
+    color: var(--danger);
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.loading {
+    color: var(--muted);
+    text-align: center;
+}

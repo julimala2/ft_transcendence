@@ -1,36 +1,36 @@
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import { Layout } from './Pages/Layout';
 import { Header } from './Navigation/Header';
 import { HomePage } from './Pages/HomePage';
-import { QuizPage } from './Pages/QuizPage';
-import { SettingsPage } from './Pages/SettingsPage';
-import { LoginPage } from './Pages/LoginPage';
-import { ProfilePage } from './Pages/ProfilePage';
-import { FriendsPage } from './Pages/FriendsPage';
+import { GamePage } from './Quizs/Online/GamePage';
 import { NotFoundPage } from './Pages/NotFoundPage';
-import { QuizOfflinePage } from './Pages/QuizOfflinePage';
-import { MyQuizs } from './Pages/MyQuizs';
-import { GameRoom } from './Components/GameRoom';
-import { Modal } from './Components/Modal';
+import { Modal } from './Account/Modal';
 import { AccountLayout } from './Account/AccountLayout';
 import { accountTabs } from './Account/AccountTabs';
+import { AccountPublic } from './Account/AccountPublic';
+import { AttemptPage } from './Quizs/Offline/AttemptPage';
+import { QuickStart } from './Quizs/Offline/QuickStart';
+import { CustomStart } from './Quizs/Offline/CustomStart';
+import { QuickResultsPage } from './Quizs/Offline/QuickResultsPage';
+import { CustomResultsPage } from './Quizs/Offline/CustomResultsPage';
 
 export default function App() {
     const location = useLocation();
     const background =
-    location.state?.backgroundLocation ??
-    (location.pathname.startsWith('/account') ? { pathname: '/' } : null);
+      location.state?.backgroundLocation ??
+      (location.pathname.startsWith('/account') ? { pathname: '/' } : null);
 
   return (
     <>
       <Header />
-
       <Routes location={background || location}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/play" element={<QuizPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        {/* <Route path="/quizoffline" element={<QuizOfflinePage/>} /> */}
-        {/* <Route path="/myQuizs" element={<MyQuizs/>} /> */}
+        <Route path="/game/:roomId" element={<GamePage />} />
+        <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
+        <Route path="/play/offline/quick" element={<QuickStart />} />
+        <Route path="/play/offline/custom" element={<CustomStart />} />
+        <Route path="/results/quick/:attemptId" element={<QuickResultsPage />} />
+        <Route path="/results/custom/:attemptId" element={<CustomResultsPage />} />
+        <Route path="/users/:userId" element={<AccountPublic />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 

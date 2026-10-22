@@ -19,8 +19,8 @@ const themesRoutes = require('./src/routes/themes.routes');
 
 const app = express();
 const { WebSocketServer } = require('ws');
-const { authenticateUpgrade } = require('./websocket/auth');
-const { handleConnection } = require('./websocket/gameSocket');
+const { authenticateUpgrade } = require('./websocket/services/auth');
+const { handleConnection } = require('./websocket/connectionHandler');
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());
@@ -51,9 +51,12 @@ const options = {
 };
 const server = https.createServer(options, app);
 
+/**************************
+ * WebSocket server setup *
+ * ************************/
 const wss = new WebSocketServer({ noServer: true });
-server.on('upgrade', (req, socket, head) => //HANDSHAKE WebSocket
-{
+
+server.on('upgrade', (req, socket, head) => {
   if (!req.url.startsWith('/ws')) {
     socket.destroy();
     return;
@@ -66,7 +69,7 @@ server.on('upgrade', (req, socket, head) => //HANDSHAKE WebSocket
     return;
   }
   wss.handleUpgrade(req, socket, head, (ws) => {
-    ws.user = user; // Attache l'utilisateur authentifié à la connexion WebSocket
+    ws.user = user; 
     wss.emit('connection', ws, req);
   });
 });

@@ -2,7 +2,7 @@ const { broadcast, getRoomMembers} = require('../rooms');
 const { games } = require('../quizGame'); 
 
 async function answerQuestionHandler(ws, message) {
-  const { roomId } = ws.currentRoom;
+  const roomId = ws.currentRoom;
   const { questionId, answer } = message;
   const game = games[roomId];
 
@@ -56,40 +56,7 @@ async function answerQuestionHandler(ws, message) {
 
 }
 
-function revealAnswer(roomId) {
-  const game = games[roomId];
 
-  if (!game) 
-    return;
-
-  const currentQuestion = game.questions[game.currentQuestionIndex];
-  const correctAnswer = currentQuestion.answers.find(a => a.isCorrect);
-
-  broadcast(roomId, {
-    type: 'REVEAL_ANSWER',
-    data: {
-      questionId: currentQuestion.id,
-      correctAnswer: correctAnswer ? correctAnswer.id : null,
-      scores: game.scores
-    }
-  });
-
-  setTimeout(() => {
-    game.currentQuestionIndex += 1;
-
-    if (game.currentQuestionIndex >= game.questions.length) {
-      broadcast(roomId, {
-        type: 'GAME_OVER',
-        data: {
-          finalScores: game.scores
-        }
-      });
-      delete games[roomId];
-    } else {
-      sendQuestion(roomId); 
-    }
-  }, 3000);
-}
 
 module.exports = { answerQuestionHandler };
 

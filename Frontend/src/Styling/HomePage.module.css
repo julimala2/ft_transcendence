@@ -105,9 +105,108 @@
     transform: scale(0.97);
 }
 
+.soloContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.soloContainer button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 140px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #fca401 0%, #ffc15c 100%);
+    color: #f9f8fd;
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    box-shadow: 0 16px 40px rgba(124, 92, 255, 0.45);
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: none;
+    cursor: pointer;
+}
+
+.soloContainer button:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 20px 50px rgba(124, 92, 255, 0.6);
+}
+
+.soloContainer button:active {
+    transform: scale(0.98);
+}
+
+.soloSubmenu {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.soloSubmenuExpanded {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in;
+}
+
+.soloOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #ffd166 0%, #ffec8b 100%);
+    color: #5a4d2b;
+    font-size: 1.75rem;
+    font-weight: 700;
+    width:100%;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(124, 92, 255, 0.35);
+    transition: transform 0.15s, box-shadow 0.15s, opacity 0.3s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.soloSubmenuExpanded .soloOption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.soloOption:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(124, 92, 255, 0.5);
+}
+
+.soloOption:active {
+    transform: scale(0.98);
+}
+
 @media (max-width: 480px) {
     .play {
         min-height: 120px;
         font-size: 2rem;
+    }
+    
+    .soloContainer button {
+        min-height: 120px;
+        font-size: 2rem;
+    }
+    
+    .soloOption {
+        min-height: 60px;
+        font-size: 1.5rem;
     }
 }

@@ -1,11 +1,13 @@
-const { getProfile } = require('../src/services/user.service');
-const { joinRoomHandler } = require('./handlers/joinRoomHandler');
-const { chatHandler } = require('./handlers/chatHandler');
-const { leaveRoom } = require('./rooms');
+const { getProfile } = require('../../src/services/user.service');
+const { joinRoomHandler } = require('./joinRoomHandler');
+const { chatHandler } = require('./chatHandler');
+const { leaveRoom } = require('../rooms');
+const { startGame } = require('../quizGame');
 
 const handlers = {
   joinRoom: joinRoomHandler,
   chat: chatHandler,
+  startGame: startGame,
   leaveRoom: leaveRoom,
 };
 
@@ -16,7 +18,6 @@ async function handleConnection(ws, req)
   ws.userId = ws.user.id;
   ws.currentRoom = null;
 
-  console.log('WebSocket connecté :', ws.username, ws.user);
 
   ws.on('message', (data) => {
     try {

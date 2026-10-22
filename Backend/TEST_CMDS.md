@@ -2,7 +2,7 @@
 
 curl -i -k -X POST https://localhost:3000/api/auth/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"test@test.com","password":"Password1!"}' \
+  -d '{"email":"test@test.com","password":"Test1234."}' \
   -c cookies.txt
 
 ## acces DB
@@ -22,6 +22,11 @@ lancer serveur
 
 login => recuperer le token dans cookies.txt
 
-wscat -c "wss://localhost:5001/ws" \
+wscat -c "wss://localhost:3000/ws" \
   --header "Cookie: token=NOTER LE TOKEN" \
   --no-check
+Exemple de message JSON :
+  {"type":"joinRoom","roomId":"salle-1","gameType":"quiz"}
+  {"type":"chat","text":"yo"}
+  {"type":"leaveRoom"}
+  {"type":"chat","user":"test","text":"yo"}

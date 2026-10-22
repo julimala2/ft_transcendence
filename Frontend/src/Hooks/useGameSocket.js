@@ -25,6 +25,9 @@ export function useGameSocket(roomId) {
       console.log('✅ WebSocket connecté');
       setConnected(true);
 
+      // choix partie rapide / creer room / rejoindre room
+
+      
       // Rejoindre la room spécifiée
       if (roomId) {
         console.log(`📍 Tentative de rejoindre la room: ${roomId}`);
@@ -48,9 +51,13 @@ export function useGameSocket(roomId) {
           }]);
         }
 
-        if (data.type === 'userJoined') {
-          console.log(`${data.user} a rejoint la room`);
-          setUsers(prev => [...new Set([...prev, data.user])]);
+        if (data.type === 'joined_room') {
+          console.log(`${data.data.user} a rejoint la room`);
+          setUsers(prev => [...new Set([...prev, data.data.user])]);
+          setMessages(prev => [...prev, {
+            text: data.data.user + ' a rejoint room',
+            timestamp: new Date()
+          }]);
         }
       } catch (error) {
         console.error('Erreur parsing message:', error);
