@@ -20,7 +20,7 @@ export const PageContainer = ({ children }) => {
 
 //Container for vertical lists
 export const ListContainer = ({ children }) => {
-  return <ul className="flex flex-col p-2 items-center gap-2">{children}</ul>;
+  return <ul className="flex flex-col p-2 w-full items-center gap-2">{children}</ul>;
 };
 
 //Container for list entries, stuff like that (flex horizontal full width)
