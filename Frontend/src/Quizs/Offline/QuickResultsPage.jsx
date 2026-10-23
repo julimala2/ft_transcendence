@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getAttempt } from "../../Api/quiz";
+import { StyledButton } from "../../Components/Buttons";
 
 
 export function QuickResultsPage() {
@@ -34,7 +35,7 @@ export function QuickResultsPage() {
         return (
             <div>
                 <p>{error}</p>
-                <button onClick={() => navigate("/")}>Retour à l'accueil</button>
+                <StyledButton onClick={() => navigate("/")}>Retour à l'accueil</StyledButton>
             </div>
         );
     }
@@ -43,7 +44,7 @@ export function QuickResultsPage() {
         return (
             <div>
                 <p>Résultats introuvables</p>
-                <button onClick={() => navigate("/")}>Retour à l'accueil</button>
+                <StyledButton onClick={() => navigate("/")}>Retour à l'accueil</StyledButton>
             </div>
         );
     }
@@ -55,9 +56,9 @@ export function QuickResultsPage() {
                 <p>Score: {attempt.score} / {attempt.total}</p>
             </div>
             <div>
-                <button onClick={() => navigate("/play/offline/quick")} className="button">
+                <StyledButton onClick={() => navigate("/play/offline/quick")} className="button">
                     Retour aux paramètres
-                </button>
+                </StyledButton>
             </div>
         </div>
     );

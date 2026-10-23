@@ -1,4 +1,4 @@
-import { apiFetch } from "./api";
+import { apiFetch } from './api';
 
 // ============================================
 // QUESTION ROUTES
@@ -15,15 +15,19 @@ import { apiFetch } from "./api";
  * @returns {Promise<Array>} Liste des questions
  */
 export function getAllQuestions(filters = {}) {
-    const params = new URLSearchParams();
-    if (filters.categoryId !== undefined) params.append('categoryId', filters.categoryId);
-    if (filters.difficulty !== undefined) params.append('difficulty', filters.difficulty);
-    if (filters.tag !== undefined) params.append('tag', filters.tag);
-    if (filters.limit !== undefined) params.append('limit', filters.limit);
-    if (filters.offset !== undefined) params.append('offset', filters.offset);
-    
-    const queryString = params.toString();
-    return apiFetch(`/api/questions${queryString ? '?' + queryString : ''}`, { method: 'GET' });
+  const params = new URLSearchParams();
+  if (filters.categoryId !== undefined)
+    params.append('categoryId', filters.categoryId);
+  if (filters.difficulty !== undefined)
+    params.append('difficulty', filters.difficulty);
+  if (filters.tag !== undefined) params.append('tag', filters.tag);
+  if (filters.limit !== undefined) params.append('limit', filters.limit);
+  if (filters.offset !== undefined) params.append('offset', filters.offset);
+
+  const queryString = params.toString();
+  return apiFetch(`/api/questions${queryString ? '?' + queryString : ''}`, {
+    method: 'GET',
+  });
 }
 
 /**
@@ -32,7 +36,7 @@ export function getAllQuestions(filters = {}) {
  * @returns {Promise<Object>} Question détaillée
  */
 export function getQuestionById(id) {
-    return apiFetch(`/api/questions/${id}`, { method: 'GET' });
+  return apiFetch(`/api/questions/${id}`, { method: 'GET' });
 }
 
 /**
@@ -48,10 +52,10 @@ export function getQuestionById(id) {
  * @returns {Promise<Object>} Question créée
  */
 export function createQuestion(questionData) {
-    return apiFetch('/api/questions', {
-        method: 'POST',
-        body: JSON.stringify(questionData),
-    });
+  return apiFetch('/api/questions', {
+    method: 'POST',
+    body: JSON.stringify(questionData),
+  });
 }
 
 /**
@@ -67,17 +71,20 @@ export function createQuestion(questionData) {
  * @returns {Promise<Object>} Question mise à jour
  */
 export function updateQuestion(id, updateData) {
-    const body = {};
-    if (updateData.text !== undefined) body.text = updateData.text;
-    if (updateData.difficulty !== undefined) body.difficulty = updateData.difficulty;
-    if (updateData.explanation !== undefined) body.explanation = updateData.explanation;
-    if (updateData.categoryId !== undefined) body.categoryId = updateData.categoryId;
-    if (updateData.tags !== undefined) body.tags = updateData.tags;
-    
-    return apiFetch(`/api/questions/${id}`, {
-        method: 'PATCH',
-        body: JSON.stringify(body),
-    });
+  const body = {};
+  if (updateData.text !== undefined) body.text = updateData.text;
+  if (updateData.difficulty !== undefined)
+    body.difficulty = updateData.difficulty;
+  if (updateData.explanation !== undefined)
+    body.explanation = updateData.explanation;
+  if (updateData.categoryId !== undefined)
+    body.categoryId = updateData.categoryId;
+  if (updateData.tags !== undefined) body.tags = updateData.tags;
+
+  return apiFetch(`/api/questions/${id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(body),
+  });
 }
 
 /**
@@ -86,5 +93,5 @@ export function updateQuestion(id, updateData) {
  * @returns {Promise<void>}
  */
 export function deleteQuestion(id) {
-    return apiFetch(`/api/questions/${id}`, { method: 'DELETE' });
+  return apiFetch(`/api/questions/${id}`, { method: 'DELETE' });
 }

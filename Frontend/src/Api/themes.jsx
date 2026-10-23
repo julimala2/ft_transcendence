@@ -1,4 +1,4 @@
-import { apiFetch } from "./api";
+import { apiFetch } from './api';
 
 // ============================================
 // THEME ROUTES
@@ -9,7 +9,7 @@ import { apiFetch } from "./api";
  * @returns {Promise<Array>} Liste des thèmes
  */
 export function getAllThemes() {
-    return apiFetch('/api/themes', { method: 'GET' });
+  return apiFetch('/api/themes', { method: 'GET' });
 }
 
 /**
@@ -18,7 +18,7 @@ export function getAllThemes() {
  * @returns {Promise<Object>} Thème détaillé
  */
 export function getThemeById(id) {
-    return apiFetch(`/api/themes/${id}`, { method: 'GET' });
+  return apiFetch(`/api/themes/${id}`, { method: 'GET' });
 }
 
 /**
@@ -27,7 +27,7 @@ export function getThemeById(id) {
  * @returns {Promise<Object>} Thème détaillé
  */
 export function getThemeBySlug(slug) {
-    return apiFetch(`/api/themes/slug/${slug}`, { method: 'GET' });
+  return apiFetch(`/api/themes/slug/${slug}`, { method: 'GET' });
 }
 
 /**
@@ -36,5 +36,5 @@ export function getThemeBySlug(slug) {
  * @returns {Promise<Object>} Thème détaillé
  */
 export function getThemeByName(name) {
-    return apiFetch(`/api/themes/name/${name}`, { method: 'GET' });
+  return apiFetch(`/api/themes/name/${name}`, { method: 'GET' });
 }

@@ -1,0 +1,8 @@
+node_modules/
+.continue/
+.tmp/
+.vite/
+dist/
+build/
+.env
+*.min.js

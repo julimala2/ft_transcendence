@@ -1,77 +1,79 @@
 .header {
-    position: fixed;
-    min-width: 100px;
-    inset: 0 0 auto 0;
-    z-index: 100;
-    height: var(--header-h);
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    background: rgba(14, 11, 30, 0.72);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--border);
+  position: fixed;
+  min-width: 100px;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  height: var(--header-h);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(14, 11, 30, 0.72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
 }
 
 .brand {
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: var(--text);
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    text-decoration: none;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .brand:hover {
-    text-decoration: none;
-    color: var(--accent-hover);
+  text-decoration: none;
+  color: var(--accent-hover);
 }
 
 .nav {
-    flex: none;
+  flex: none;
 }
 
 .loginButton {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    max-width: 300px;
-    padding: 5px 14px 5px 5px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    color: var(--text);
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: background 0.15s, border-color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+  padding: 5px 14px 5px 5px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
 }
 
 .loginButton:hover {
-    text-decoration: none;
-    background: var(--surface-2);
-    border-color: rgba(124, 92, 255, 0.45);
+  text-decoration: none;
+  background: var(--surface-2);
+  border-color: rgba(124, 92, 255, 0.45);
 }
 
 .loginText {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (max-width: 480px) {
-    .header {
-        padding: 0 14px;
-    }
-    .brand {
-        font-size: 0.95rem;
-    }
-    .loginButton {
-        max-width: 140px;
-    }
+  .header {
+    padding: 0 14px;
+  }
+  .brand {
+    font-size: 0.95rem;
+  }
+  .loginButton {
+    max-width: 140px;
+  }
 }

@@ -17,7 +17,7 @@ export function AccountLayout() {
   return (
     <div className={styles.account}>
       <nav className={styles.tabs}>
-        {accountTabs.map((tab) => (
+        {accountTabs.map(tab => (
           <NavLink
             key={tab.path}
             to={tab.path}

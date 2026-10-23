@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "preview": "vite preview",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,md}",
+    "lint:check": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "format:check": "prettier --check src/**/*.{js,jsx,ts,tsx,json,css,md}"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -17,10 +20,23 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.5",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
+    "@typescript-eslint/eslint-plugin": "^8.72.0",
+    "@typescript-eslint/parser": "^8.72.0",
     "@vitejs/plugin-react": "^6.1.0",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
     "oxlint": "^1.79.0",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
     "vite": "^8.3.0"
   }
 }

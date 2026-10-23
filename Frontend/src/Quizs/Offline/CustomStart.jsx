@@ -256,7 +256,7 @@ export function CustomStart() {
                                 onChange={() => setQuestionCount(10)}
                                 disabled={!selectedCategory}
                                 />
-                            Court (10)
+                            Court ⏱️ (10)
                         </label>
                         <label className={styles.radioLabel}>
                             <input
@@ -267,7 +267,7 @@ export function CustomStart() {
                                 onChange={() => setQuestionCount(25)}
                                 disabled={!selectedCategory}
                                 />
-                            Moyen (25)
+                            Moyen ⏱️⏱️ (25)
                         </label>
                         <label className={styles.radioLabel}>
                             <input
@@ -277,7 +277,7 @@ export function CustomStart() {
                                 onChange={() => setQuestionCount(50)}
                                 disabled={!selectedCategory}
                                 />
-                            Long (50)
+                            Long ⏱️⏱️⏱️ (50)
                         </label>
                     </div>
                 </div>
