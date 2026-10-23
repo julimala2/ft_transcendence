@@ -1,41 +1,41 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100dvh;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .menuNav {
-    background-color: var(--surface-2);
-    padding: 20px;
-    border: 1px solid var(--accent);
-    border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  background-color: var(--surface-2);
+  padding: 20px;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .menuLink {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
 }
 
 .headerNav {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .brandLink {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }

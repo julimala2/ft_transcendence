@@ -1,16 +1,16 @@
 .avatar,
 .fallback {
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .fallback {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--accent);
-    color: #fff;
-    font-weight: 600;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  user-select: none;
 }

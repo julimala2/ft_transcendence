@@ -1,7 +1,8 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { useAuth } from '../Hooks/useAuth';
+
 import { AccountAuth } from './AccountAuth';
 import { accountTabs } from './AccountTabs';
+import { useAuth } from '../Hooks/useAuth';
 import styles from './Styling/Account.module.css';
 
 export function AccountLayout() {
@@ -17,7 +18,7 @@ export function AccountLayout() {
   return (
     <div className={styles.account}>
       <nav className={styles.tabs}>
-        {accountTabs.map((tab) => (
+        {accountTabs.map(tab => (
           <NavLink
             key={tab.path}
             to={tab.path}

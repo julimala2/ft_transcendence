@@ -31,24 +31,29 @@ export function useGameSocket(roomId) {
       // Rejoindre la room spécifiée
       if (roomId) {
         console.log(`📍 Tentative de rejoindre la room: ${roomId}`);
-        ws.send(JSON.stringify({
-          type: 'joinRoom',
-          roomId: roomId
-        }));
+        ws.send(
+          JSON.stringify({
+            type: 'joinRoom',
+            roomId: roomId,
+          })
+        );
       }
     };
 
-    ws.onmessage = (event) => {
+    ws.onmessage = event => {
       try {
         const data = JSON.parse(event.data);
         console.log('💬 Message reçu:', data);
 
         if (data.type === 'chat') {
-          setMessages(prev => [...prev, {
-            user: data.user,
-            text: data.text,
-            timestamp: new Date()
-          }]);
+          setMessages(prev => [
+            ...prev,
+            {
+              user: data.user,
+              text: data.text,
+              timestamp: new Date(),
+            },
+          ]);
         }
 
         if (data.type === 'joined_room') {
@@ -64,12 +69,12 @@ export function useGameSocket(roomId) {
       }
     };
 
-    ws.onerror = (error) => {
+    ws.onerror = error => {
       console.error('❌ WebSocket erreur:', error);
       setConnected(false);
     };
 
-    ws.onclose = (event) => {
+    ws.onclose = event => {
       console.log('🔴 WebSocket déconnecté');
       console.log('  Code:', event.code);
       console.log('  Raison:', event.reason);
@@ -83,7 +88,7 @@ export function useGameSocket(roomId) {
     };
   }, [roomId]);
 
-  const send = (message) => {
+  const send = message => {
     if (wsRef.current && wsRef.current.readyState === 1) {
       wsRef.current.send(JSON.stringify(message));
     } else {
@@ -91,10 +96,10 @@ export function useGameSocket(roomId) {
     }
   };
 
-  const sendChat = (text) => {
+  const sendChat = text => {
     send({
       type: 'chat',
-      text: text
+      text: text,
     });
   };
 
@@ -103,6 +108,6 @@ export function useGameSocket(roomId) {
     messages,
     users,
     send,
-    sendChat
+    sendChat,
   };
 }

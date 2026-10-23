@@ -1,7 +1,7 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
 }
 
 .categoryTile {
@@ -19,210 +19,213 @@
 }
 
 .categoryTiles {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.tagTile{
-    padding : 10px;
-    border-radius: 5px;
-    background-color: #2e2727;
+.tagTile {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2e2727;
 }
 
-.tagTiles{
-    display: flex;
-    flex-wrap: wrap;
-    gap : 5px;
-    justify-content: center;
+.tagTiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
 }
 
 .tileSelected {
-  background: #4CAF50;
+  background: #4caf50;
   color: white;
   font-weight: bold;
 }
 
 .filters {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .filterGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
 }
 
 .filterGroup label {
-    font-size: 1rem;
-    font-weight: 600;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .select {
-    padding: 12px 14px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    color: var(--text);
-    font: inherit;
-    font-size: 1rem;
+  padding: 12px 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
 }
 
 .button {
-    padding: 12px 18px;
-    background: var(--accent);
-    border: none;
-    border-radius: var(--radius-sm);
-    color: white;
-    font: inherit;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.15s, transform 0.1s;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
+  padding: 12px 18px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: white;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    transform 0.1s;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .button:hover:not(:disabled) {
-    background: var(--accent-hover);
+  background: var(--accent-hover);
 }
 
 .button:disabled {
-    opacity: 0.45;
-    cursor: not-allowed;
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .card {
-    display: block;
-    padding: 16px;
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    color: var(--text);
-    transition: all 0.2s ease;
+  display: block;
+  padding: 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
 }
 
 .card:hover {
-    background-color: rgba(124, 92, 255, 0.1);
-    transform: translateY(-2px);
+  background-color: rgba(124, 92, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .cardTitle {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .cardDescription {
-    margin: 8px 0 0 0;
-    font-size: 0.9rem;
-    color: var(--muted);
-    line-height: 1.4;
+  margin: 8px 0 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.4;
 }
 
 .radioGroup {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .radioLabel {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 10px 15px;
-    cursor: pointer;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
 }
 
 .radioLabel:hover {
-    background: var(--surface-2);
+  background: var(--surface-2);
 }
 
-.radioLabel input[type="radio"] {
-    accent-color: var(--accent);
-    cursor: pointer;
+.radioLabel input[type='radio'] {
+  accent-color: var(--accent);
+  cursor: pointer;
 }
 
 .sliderContainer {
-    position: relative;
-    width: 100%;
-    margin: 10px 0;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .sliderTicks {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .sliderTicks span {
-    font-size: 0.75rem;
-    color: var(--muted);
-    position: relative;
-    transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--muted);
+  position: relative;
+  transform: translateX(-50%);
 }
 
 .slider {
-    width: 100%;
-    height: 8px;
-    border-radius: 4px;
-    background: var(--border);
-    outline: none;
-    -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--border);
+  outline: none;
+  -webkit-appearance: none;
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--accent);
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--accent);
-    cursor: pointer;
-    border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: none;
 }
 
 .sliderContainer {
-    position: relative;
-    width: 100%;
-    margin: 10px 0;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .sliderTicks {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .sliderTicks span {
-    font-size: 0.75rem;
-    color: var(--muted);
-    transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--muted);
+  transform: translateX(-50%);
 }
