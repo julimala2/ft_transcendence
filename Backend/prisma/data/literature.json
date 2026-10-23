@@ -1,0 +1,2099 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 134,
+    "parDifficulte": { "1": 31, "2": 68, "3": 35 },
+    "parType": { "multiple": 114, "boolean": 20 },
+    "avecImage": 25,
+    "sansImage": 109,
+    "parTag": {
+      "roman": 63,
+      "xixe-siecle": 42,
+      "xxe-siecle": 28,
+      "etranger": 26,
+      "poesie": 24,
+      "theatre": 23,
+      "personnage": 18,
+      "xviie-siecle": 17,
+      "portrait": 16,
+      "citation": 14,
+      "xviiie-siecle": 11,
+      "conte": 10,
+      "illustration": 9,
+      "moyen-age": 6,
+      "essai": 5,
+      "renaissance": 5,
+      "antiquite": 4,
+      "xxie-siecle": 1
+    }
+  },
+  "category": {
+    "slug": "litterature",
+    "name": "Classiques"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "lit-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["moyen-age", "personnage"],
+      "text": "Quel animal rusé est le héros du Roman de Renart ?",
+      "answers": [
+        { "text": "Un chat", "isCorrect": false },
+        { "text": "Un loup", "isCorrect": false },
+        { "text": "Un corbeau", "isCorrect": false },
+        { "text": "Un renard", "isCorrect": true }
+      ],
+      "explanation": "Le succès du livre est tel que le prénom Renart a remplacé l'ancien mot « goupil » pour désigner l'animal. Son ennemi, le loup, s'appelle Isengrin."
+    },
+    {
+      "ref": "lit-002",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["moyen-age", "poesie", "personnage"],
+      "text": "Quel héros de chanson de geste meurt à Roncevaux, en sonnant du cor ?",
+      "answers": [
+        { "text": "Tristan", "isCorrect": false },
+        { "text": "Perceval", "isCorrect": false },
+        { "text": "Roland", "isCorrect": true },
+        { "text": "Lancelot", "isCorrect": false }
+      ],
+      "explanation": "La Chanson de Roland, vers 1100, raconte la mort du neveu de Charlemagne lors d'une embuscade dans les Pyrénées."
+    },
+    {
+      "ref": "lit-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["moyen-age", "roman"],
+      "text": "Quel auteur du XIIe siècle a écrit les romans de chevalerie Lancelot et Perceval ?",
+      "answers": [
+        { "text": "Chrétien de Troyes", "isCorrect": true },
+        { "text": "François Villon", "isCorrect": false },
+        { "text": "Marie de France", "isCorrect": false },
+        { "text": "Rabelais", "isCorrect": false }
+      ],
+      "explanation": "Il a donné une grande place aux chevaliers de la Table ronde et à la quête du Graal."
+    },
+    {
+      "ref": "lit-004",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["moyen-age", "poesie"],
+      "text": "Quel poète du XVe siècle écrit la Ballade des pendus ?",
+      "answers": [
+        { "text": "François Villon", "isCorrect": true },
+        { "text": "Du Bellay", "isCorrect": false },
+        { "text": "Ronsard", "isCorrect": false },
+        { "text": "Charles d'Orléans", "isCorrect": false }
+      ],
+      "explanation": "Villon l'aurait écrite en attendant d'être pendu, avant que sa peine soit commuée en bannissement."
+    },
+    {
+      "ref": "lit-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["renaissance", "roman", "personnage"],
+      "text": "Quels géants sont les héros des livres de Rabelais ?",
+      "answers": [
+        { "text": "Gargantua et Pantagruel", "isCorrect": true },
+        { "text": "Tristan et Iseut", "isCorrect": false },
+        { "text": "Don Quichotte et Sancho Panza", "isCorrect": false },
+        { "text": "Gulliver et Lilliput", "isCorrect": false }
+      ],
+      "explanation": "Le mot « gargantuesque », qui désigne un repas énorme, vient de Gargantua."
+    },
+    {
+      "ref": "lit-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["renaissance", "poesie", "citation"],
+      "text": "Quel poète écrit « Mignonne, allons voir si la rose… » ?",
+      "answers": [
+        { "text": "François Villon", "isCorrect": false },
+        { "text": "Clément Marot", "isCorrect": false },
+        { "text": "Joachim du Bellay", "isCorrect": false },
+        { "text": "Pierre de Ronsard", "isCorrect": true }
+      ],
+      "explanation": "Ce poème invite une jeune femme à profiter de sa jeunesse, aussi brève que la vie d'une rose."
+    },
+    {
+      "ref": "lit-007",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["renaissance", "poesie", "citation"],
+      "text": "Quel poète écrit « Heureux qui, comme Ulysse, a fait un beau voyage » ?",
+      "answers": [
+        { "text": "Pierre de Ronsard", "isCorrect": false },
+        { "text": "Joachim du Bellay", "isCorrect": true },
+        { "text": "Malherbe", "isCorrect": false },
+        { "text": "Clément Marot", "isCorrect": false }
+      ],
+      "explanation": "Dans Les Regrets (1558), il exprime sa nostalgie de son Anjou natal pendant son séjour à Rome."
+    },
+    {
+      "ref": "lit-008",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["renaissance", "essai"],
+      "text": "Quel auteur invente le genre de l'essai, avec ses Essais publiés en 1580 ?",
+      "answers": [
+        { "text": "Rabelais", "isCorrect": false },
+        { "text": "Pascal", "isCorrect": false },
+        { "text": "Descartes", "isCorrect": false },
+        { "text": "Montaigne", "isCorrect": true }
+      ],
+      "explanation": "Il y prend pour sujet sa propre personne : « Je suis moi-même la matière de mon livre »."
+    },
+    {
+      "ref": "lit-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xviie-siecle", "theatre"],
+      "text": "Qui a écrit Le Malade imaginaire ?",
+      "answers": [
+        { "text": "Molière", "isCorrect": true },
+        { "text": "Corneille", "isCorrect": false },
+        { "text": "Marivaux", "isCorrect": false },
+        { "text": "Racine", "isCorrect": false }
+      ],
+      "explanation": "C'est sa dernière pièce, en 1673."
+    },
+    {
+      "ref": "lit-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xviie-siecle", "poesie"],
+      "text": "Qui a écrit les Fables, dont Le Corbeau et le Renard ?",
+      "answers": [
+        { "text": "Boileau", "isCorrect": false },
+        { "text": "Jean de La Fontaine", "isCorrect": true },
+        { "text": "Ésope", "isCorrect": false },
+        { "text": "Charles Perrault", "isCorrect": false }
+      ],
+      "explanation": "Ésope, fabuliste grec de l'Antiquité, fait partie de ses principales sources d'inspiration."
+    },
+    {
+      "ref": "lit-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xviie-siecle", "conte"],
+      "text": "Qui a écrit Le Petit Chaperon rouge, Cendrillon et La Belle au bois dormant ?",
+      "answers": [
+        { "text": "Charles Perrault", "isCorrect": true },
+        { "text": "Jean de La Fontaine", "isCorrect": false },
+        { "text": "Hans Christian Andersen", "isCorrect": false },
+        { "text": "Les frères Grimm", "isCorrect": false }
+      ],
+      "explanation": "Ses Contes paraissent en 1697. Les frères Grimm en publieront d'autres versions plus d'un siècle plus tard."
+    },
+    {
+      "ref": "lit-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre", "citation"],
+      "text": "De quelle pièce vient la réplique « Rodrigue, as-tu du cœur ? » ?",
+      "answers": [
+        { "text": "Horace, de Corneille", "isCorrect": false },
+        { "text": "Andromaque, de Racine", "isCorrect": false },
+        { "text": "Phèdre, de Racine", "isCorrect": false },
+        { "text": "Le Cid, de Corneille", "isCorrect": true }
+      ],
+      "explanation": "Don Diègue demande à son fils de le venger, quitte à tuer le père de la femme qu'il aime."
+    },
+    {
+      "ref": "lit-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre"],
+      "text": "Qui a écrit Phèdre et Andromaque ?",
+      "answers": [
+        { "text": "Molière", "isCorrect": false },
+        { "text": "Jean Racine", "isCorrect": true },
+        { "text": "Pierre Corneille", "isCorrect": false },
+        { "text": "Marivaux", "isCorrect": false }
+      ],
+      "explanation": "Racine est le grand auteur de la tragédie classique, souvent inspirée de la mythologie grecque."
+    },
+    {
+      "ref": "lit-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre", "personnage"],
+      "text": "Comment s'appelle le personnage principal de L'Avare, de Molière ?",
+      "answers": [
+        { "text": "Harpagon", "isCorrect": true },
+        { "text": "Argan", "isCorrect": false },
+        { "text": "Tartuffe", "isCorrect": false },
+        { "text": "Alceste", "isCorrect": false }
+      ],
+      "explanation": "Argan est le malade imaginaire, et Alceste le misanthrope. Le nom d'Harpagon est devenu synonyme d'avare."
+    },
+    {
+      "ref": "lit-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre"],
+      "text": "Quelle pièce de Molière, qui met en scène un faux dévot, est interdite pendant plusieurs années ?",
+      "answers": [
+        { "text": "Tartuffe", "isCorrect": true },
+        { "text": "Les Femmes savantes", "isCorrect": false },
+        { "text": "Le Misanthrope", "isCorrect": false },
+        { "text": "Dom Juan", "isCorrect": false }
+      ],
+      "explanation": "Les religieux la jugent scandaleuse. Molière se bat cinq ans pour pouvoir la jouer librement, en 1669."
+    },
+    {
+      "ref": "lit-016",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre"],
+      "text": "Quelle règle du théâtre classique impose une seule action, en un seul lieu, en une seule journée ?",
+      "answers": [
+        { "text": "La règle de vraisemblance", "isCorrect": false },
+        { "text": "La règle de bienséance", "isCorrect": false },
+        { "text": "La règle des trois unités", "isCorrect": true },
+        { "text": "La catharsis", "isCorrect": false }
+      ],
+      "explanation": "Boileau la résume dans son Art poétique, en 1674."
+    },
+    {
+      "ref": "lit-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xviie-siecle", "roman"],
+      "text": "Quel roman de Madame de La Fayette, publié en 1678, est souvent considéré comme le premier roman psychologique français ?",
+      "answers": [
+        { "text": "Les Liaisons dangereuses", "isCorrect": false },
+        { "text": "La Princesse de Clèves", "isCorrect": true },
+        { "text": "Manon Lescaut", "isCorrect": false },
+        { "text": "La Nouvelle Héloïse", "isCorrect": false }
+      ],
+      "explanation": "L'héroïne y renonce à l'homme qu'elle aime, par fidélité à son mari puis par prudence."
+    },
+    {
+      "ref": "lit-018",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xviie-siecle", "essai", "citation"],
+      "text": "Quel auteur écrit que l'homme n'est qu'« un roseau pensant » ?",
+      "answers": [
+        { "text": "La Rochefoucauld", "isCorrect": false },
+        { "text": "Blaise Pascal", "isCorrect": true },
+        { "text": "René Descartes", "isCorrect": false },
+        { "text": "Montaigne", "isCorrect": false }
+      ],
+      "explanation": "Dans les Pensées, publiées après sa mort, en 1670 : l'homme est fragile, mais sa grandeur vient de sa pensée."
+    },
+    {
+      "ref": "lit-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xviiie-siecle", "conte"],
+      "text": "Qui a écrit Candide ?",
+      "answers": [
+        { "text": "Voltaire", "isCorrect": true },
+        { "text": "Jean-Jacques Rousseau", "isCorrect": false },
+        { "text": "Montesquieu", "isCorrect": false },
+        { "text": "Denis Diderot", "isCorrect": false }
+      ],
+      "explanation": "Ce conte philosophique de 1759 se moque de l'optimisme et de l'idée que « tout est au mieux »."
+    },
+    {
+      "ref": "lit-020",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviiie-siecle", "conte", "citation"],
+      "text": "Quelle phrase conclut Candide ?",
+      "answers": [
+        { "text": "« Il faut cultiver notre jardin »", "isCorrect": true },
+        { "text": "« Je pense, donc je suis »", "isCorrect": false },
+        { "text": "« Tout est au mieux dans le meilleur des mondes »", "isCorrect": false },
+        { "text": "« Le cœur a ses raisons que la raison ne connaît point »", "isCorrect": false }
+      ],
+      "explanation": "Après ses mésaventures, Candide choisit le travail concret plutôt que les grandes théories. « Le cœur a ses raisons… » est de Pascal, et « Je pense, donc je suis » de Descartes."
+    },
+    {
+      "ref": "lit-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviiie-siecle", "essai"],
+      "text": "Qui dirige l'Encyclopédie, publiée à partir de 1751 ?",
+      "answers": [
+        { "text": "Diderot et d'Alembert", "isCorrect": true },
+        { "text": "Montesquieu et Voltaire", "isCorrect": false },
+        { "text": "Rousseau et Diderot", "isCorrect": false },
+        { "text": "Voltaire et Rousseau", "isCorrect": false }
+      ],
+      "explanation": "Ce grand ouvrage veut rassembler toutes les connaissances de l'époque. Il est plusieurs fois interdit."
+    },
+    {
+      "ref": "lit-022",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviiie-siecle", "theatre"],
+      "text": "Qui a écrit Le Mariage de Figaro ?",
+      "answers": [
+        { "text": "Beaumarchais", "isCorrect": true },
+        { "text": "Molière", "isCorrect": false },
+        { "text": "Marivaux", "isCorrect": false },
+        { "text": "Voltaire", "isCorrect": false }
+      ],
+      "explanation": "La pièce, qui critique les privilèges de la noblesse, est jouée en 1784, cinq ans avant la Révolution."
+    },
+    {
+      "ref": "lit-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviiie-siecle", "essai"],
+      "text": "Quel auteur écrit Du contrat social et Les Confessions ?",
+      "answers": [
+        { "text": "Jean-Jacques Rousseau", "isCorrect": true },
+        { "text": "Montesquieu", "isCorrect": false },
+        { "text": "Diderot", "isCorrect": false },
+        { "text": "Voltaire", "isCorrect": false }
+      ],
+      "explanation": "Les Confessions sont l'une des premières grandes autobiographies de la littérature française."
+    },
+    {
+      "ref": "lit-024",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xviiie-siecle", "roman"],
+      "text": "Quel roman par lettres de Choderlos de Laclos met en scène Valmont et la marquise de Merteuil ?",
+      "answers": [
+        { "text": "La Nouvelle Héloïse", "isCorrect": false },
+        { "text": "Manon Lescaut", "isCorrect": false },
+        { "text": "Les Lettres persanes", "isCorrect": false },
+        { "text": "Les Liaisons dangereuses", "isCorrect": true }
+      ],
+      "explanation": "Publié en 1782, il fait scandale pour sa description de la manipulation et de la séduction."
+    },
+    {
+      "ref": "lit-025",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xviiie-siecle", "roman"],
+      "text": "Dans quel roman par lettres de Montesquieu deux voyageurs persans découvrent-ils la France ?",
+      "answers": [
+        { "text": "Jacques le Fataliste", "isCorrect": false },
+        { "text": "Les Lettres persanes", "isCorrect": true },
+        { "text": "Candide", "isCorrect": false },
+        { "text": "Les Liaisons dangereuses", "isCorrect": false }
+      ],
+      "explanation": "Publié en 1721, ce regard faussement naïf permet de critiquer la société française."
+    },
+    {
+      "ref": "lit-026",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xviiie-siecle", "theatre"],
+      "text": "Quel auteur de théâtre a donné son nom au « marivaudage » ?",
+      "answers": [
+        { "text": "Musset", "isCorrect": false },
+        { "text": "Beaumarchais", "isCorrect": false },
+        { "text": "Molière", "isCorrect": false },
+        { "text": "Marivaux", "isCorrect": true }
+      ],
+      "explanation": "Le mot désigne un badinage amoureux plein de finesse, comme dans ses comédies, dont Le Jeu de l'amour et du hasard."
+    },
+    {
+      "ref": "lit-027",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Qui a écrit Les Misérables ?",
+      "answers": [
+        { "text": "Alexandre Dumas", "isCorrect": false },
+        { "text": "Honoré de Balzac", "isCorrect": false },
+        { "text": "Émile Zola", "isCorrect": false },
+        { "text": "Victor Hugo", "isCorrect": true }
+      ],
+      "explanation": "Le roman paraît en 1862, pendant l'exil de Hugo à Guernesey."
+    },
+    {
+      "ref": "lit-028",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "Quel ancien forçat est le héros des Misérables ?",
+      "answers": [
+        { "text": "Marius", "isCorrect": false },
+        { "text": "Javert", "isCorrect": false },
+        { "text": "Jean Valjean", "isCorrect": true },
+        { "text": "Thénardier", "isCorrect": false }
+      ],
+      "explanation": "Condamné au bagne pour avoir volé un pain, il est poursuivi toute sa vie par l'inspecteur Javert."
+    },
+    {
+      "ref": "lit-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Qui a écrit Les Trois Mousquetaires ?",
+      "answers": [
+        { "text": "Jules Verne", "isCorrect": false },
+        { "text": "Honoré de Balzac", "isCorrect": false },
+        { "text": "Victor Hugo", "isCorrect": false },
+        { "text": "Alexandre Dumas", "isCorrect": true }
+      ],
+      "explanation": "Dumas écrit aussi Le Comte de Monte-Cristo."
+    },
+    {
+      "ref": "lit-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Qui a écrit Vingt Mille Lieues sous les mers ?",
+      "answers": [
+        { "text": "H. G. Wells", "isCorrect": false },
+        { "text": "Jules Verne", "isCorrect": true },
+        { "text": "Victor Hugo", "isCorrect": false },
+        { "text": "Alexandre Dumas", "isCorrect": false }
+      ],
+      "explanation": "Le roman paraît en 1869-1870. Jules Verne a imaginé de nombreuses inventions avant qu'elles n'existent."
+    },
+    {
+      "ref": "lit-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "Quel roman de Victor Hugo a pour héros Quasimodo, le sonneur de cloches ?",
+      "answers": [
+        { "text": "Les Travailleurs de la mer", "isCorrect": false },
+        { "text": "Quatrevingt-treize", "isCorrect": false },
+        { "text": "Notre-Dame de Paris", "isCorrect": true },
+        { "text": "Les Misérables", "isCorrect": false }
+      ],
+      "explanation": "Le succès du roman, en 1831, a contribué à la restauration de la cathédrale."
+    },
+    {
+      "ref": "lit-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Qui a écrit Madame Bovary ?",
+      "answers": [
+        { "text": "Guy de Maupassant", "isCorrect": false },
+        { "text": "Stendhal", "isCorrect": false },
+        { "text": "Émile Zola", "isCorrect": false },
+        { "text": "Gustave Flaubert", "isCorrect": true }
+      ],
+      "explanation": "Le roman vaut à Flaubert un procès pour atteinte aux bonnes mœurs, en 1857. Il est acquitté."
+    },
+    {
+      "ref": "lit-033",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "Comment s'appelle le capitaine du Nautilus, dans Vingt Mille Lieues sous les mers ?",
+      "answers": [
+        { "text": "Le capitaine Achab", "isCorrect": false },
+        { "text": "Le capitaine Crochet", "isCorrect": false },
+        { "text": "Le capitaine Nemo", "isCorrect": true },
+        { "text": "Le capitaine Haddock", "isCorrect": false }
+      ],
+      "explanation": "« Nemo » signifie « personne » en latin. Achab est le capitaine de Moby Dick."
+    },
+    {
+      "ref": "lit-034",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Sous quel titre Balzac réunit-il ses romans, dont Le Père Goriot et Eugénie Grandet ?",
+      "answers": [
+        { "text": "La Comédie humaine", "isCorrect": true },
+        { "text": "À la recherche du temps perdu", "isCorrect": false },
+        { "text": "Les Rougon-Macquart", "isCorrect": false },
+        { "text": "Les Thibault", "isCorrect": false }
+      ],
+      "explanation": "Près de 90 romans et nouvelles, où certains personnages reviennent d'un livre à l'autre."
+    },
+    {
+      "ref": "lit-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Quel cycle de vingt romans Zola consacre-t-il à une famille sous le Second Empire ?",
+      "answers": [
+        { "text": "Les Rougon-Macquart", "isCorrect": true },
+        { "text": "La Comédie humaine", "isCorrect": false },
+        { "text": "Les Hommes de bonne volonté", "isCorrect": false },
+        { "text": "Les Thibault", "isCorrect": false }
+      ],
+      "explanation": "Zola veut montrer l'influence de l'hérédité et du milieu social. Il est le chef de file du naturalisme."
+    },
+    {
+      "ref": "lit-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Quel roman de Zola raconte la vie et la grève des mineurs du Nord ?",
+      "answers": [
+        { "text": "L'Assommoir", "isCorrect": false },
+        { "text": "Nana", "isCorrect": false },
+        { "text": "Germinal", "isCorrect": true },
+        { "text": "La Bête humaine", "isCorrect": false }
+      ],
+      "explanation": "Pour l'écrire, Zola est allé lui-même observer les mines et les corons."
+    },
+    {
+      "ref": "lit-037",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Qui a écrit Le Rouge et le Noir ?",
+      "answers": [
+        { "text": "Gustave Flaubert", "isCorrect": false },
+        { "text": "Stendhal", "isCorrect": true },
+        { "text": "Alfred de Musset", "isCorrect": false },
+        { "text": "Honoré de Balzac", "isCorrect": false }
+      ],
+      "explanation": "Stendhal est un pseudonyme : il s'appelait Henri Beyle."
+    },
+    {
+      "ref": "lit-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie"],
+      "text": "Quel recueil de poèmes, publié en 1857, vaut à son auteur une condamnation pour outrage aux bonnes mœurs ?",
+      "answers": [
+        { "text": "Poèmes saturniens, de Verlaine", "isCorrect": false },
+        { "text": "Les Fleurs du mal, de Baudelaire", "isCorrect": true },
+        { "text": "Les Contemplations, de Victor Hugo", "isCorrect": false },
+        { "text": "Alcools, d'Apollinaire", "isCorrect": false }
+      ],
+      "explanation": "Six poèmes sont censurés. La condamnation n'est annulée qu'en 1949."
+    },
+    {
+      "ref": "lit-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie"],
+      "text": "Quel poète écrit Le Dormeur du val ?",
+      "answers": [
+        { "text": "Paul Verlaine", "isCorrect": false },
+        { "text": "Arthur Rimbaud", "isCorrect": true },
+        { "text": "Charles Baudelaire", "isCorrect": false },
+        { "text": "Victor Hugo", "isCorrect": false }
+      ],
+      "explanation": "Ce sonnet de 1870 décrit un jeune soldat endormi dans la nature… qui est en réalité mort."
+    },
+    {
+      "ref": "lit-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie", "citation"],
+      "text": "Quel poète écrit « Demain, dès l'aube, à l'heure où blanchit la campagne » ?",
+      "answers": [
+        { "text": "Victor Hugo", "isCorrect": true },
+        { "text": "Alfred de Musset", "isCorrect": false },
+        { "text": "Alfred de Vigny", "isCorrect": false },
+        { "text": "Alphonse de Lamartine", "isCorrect": false }
+      ],
+      "explanation": "Dans Les Contemplations, il marche vers la tombe de sa fille Léopoldine, noyée en 1843."
+    },
+    {
+      "ref": "lit-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Qui a écrit Bel-Ami et la nouvelle Le Horla ?",
+      "answers": [
+        { "text": "Émile Zola", "isCorrect": false },
+        { "text": "Alphonse Daudet", "isCorrect": false },
+        { "text": "Guy de Maupassant", "isCorrect": true },
+        { "text": "Gustave Flaubert", "isCorrect": false }
+      ],
+      "explanation": "Flaubert était son mentor et l'a aidé à ses débuts."
+    },
+    {
+      "ref": "lit-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "Quel est le vrai nom du comte de Monte-Cristo ?",
+      "answers": [
+        { "text": "Danglars", "isCorrect": false },
+        { "text": "Fernand Mondego", "isCorrect": false },
+        { "text": "L'abbé Faria", "isCorrect": false },
+        { "text": "Edmond Dantès", "isCorrect": true }
+      ],
+      "explanation": "Emprisonné à tort au château d'If, il s'évade et se venge de ceux qui l'ont trahi. L'abbé Faria est son compagnon de cellule."
+    },
+    {
+      "ref": "lit-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "theatre"],
+      "text": "Qui a écrit Cyrano de Bergerac, en 1897 ?",
+      "answers": [
+        { "text": "Victor Hugo", "isCorrect": false },
+        { "text": "Edmond Rostand", "isCorrect": true },
+        { "text": "Georges Feydeau", "isCorrect": false },
+        { "text": "Alfred de Musset", "isCorrect": false }
+      ],
+      "explanation": "La pièce triomphe dès sa première. Cyrano, au long nez, écrit pour un autre des lettres d'amour à Roxane."
+    },
+    {
+      "ref": "lit-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "conte"],
+      "text": "Qui a écrit les Lettres de mon moulin ?",
+      "answers": [
+        { "text": "Marcel Pagnol", "isCorrect": false },
+        { "text": "Frédéric Mistral", "isCorrect": false },
+        { "text": "Jean Giono", "isCorrect": false },
+        { "text": "Alphonse Daudet", "isCorrect": true }
+      ],
+      "explanation": "Ce recueil contient La Chèvre de monsieur Seguin. Le moulin de Fontvieille, en Provence, se visite encore."
+    },
+    {
+      "ref": "lit-045",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "Quel est le héros du Rouge et le Noir ?",
+      "answers": [
+        { "text": "Julien Sorel", "isCorrect": true },
+        { "text": "Eugène de Rastignac", "isCorrect": false },
+        { "text": "Frédéric Moreau", "isCorrect": false },
+        { "text": "Fabrice del Dongo", "isCorrect": false }
+      ],
+      "explanation": "Fabrice est le héros de La Chartreuse de Parme, Rastignac celui du Père Goriot, et Frédéric Moreau celui de L'Éducation sentimentale."
+    },
+    {
+      "ref": "lit-046",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "theatre"],
+      "text": "Quelle pièce de Victor Hugo provoque, en 1830, une « bataille » entre classiques et romantiques ?",
+      "answers": [
+        { "text": "Chatterton", "isCorrect": false },
+        { "text": "Lorenzaccio", "isCorrect": false },
+        { "text": "Ruy Blas", "isCorrect": false },
+        { "text": "Hernani", "isCorrect": true }
+      ],
+      "explanation": "Les jeunes romantiques viennent applaudir la pièce à chaque représentation, contre les défenseurs du théâtre classique."
+    },
+    {
+      "ref": "lit-047",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "poesie", "citation"],
+      "text": "Quel poète écrit « Les sanglots longs des violons de l'automne », vers diffusés par la BBC pour annoncer le débarquement ?",
+      "answers": [
+        { "text": "Guillaume Apollinaire", "isCorrect": false },
+        { "text": "Arthur Rimbaud", "isCorrect": false },
+        { "text": "Paul Verlaine", "isCorrect": true },
+        { "text": "Charles Baudelaire", "isCorrect": false }
+      ],
+      "explanation": "Ces vers de Chanson d'automne servaient de message codé à la Résistance, au début de juin 1944."
+    },
+    {
+      "ref": "lit-048",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Quel roman de Zola raconte l'essor d'un grand magasin parisien ?",
+      "answers": [
+        { "text": "Le Ventre de Paris", "isCorrect": false },
+        { "text": "Au Bonheur des Dames", "isCorrect": true },
+        { "text": "La Curée", "isCorrect": false },
+        { "text": "L'Assommoir", "isCorrect": false }
+      ],
+      "explanation": "Zola s'est inspiré du Bon Marché, l'un des premiers grands magasins de Paris."
+    },
+    {
+      "ref": "lit-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "poesie", "citation"],
+      "text": "Quel poète écrit « Ô temps, suspends ton vol » ?",
+      "answers": [
+        { "text": "Alphonse de Lamartine", "isCorrect": true },
+        { "text": "Victor Hugo", "isCorrect": false },
+        { "text": "Alfred de Vigny", "isCorrect": false },
+        { "text": "Gérard de Nerval", "isCorrect": false }
+      ],
+      "explanation": "C'est un vers du Lac, l'un des poèmes les plus célèbres du romantisme, publié en 1820."
+    },
+    {
+      "ref": "lit-050",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xxe-siecle", "conte"],
+      "text": "Qui a écrit Le Petit Prince ?",
+      "answers": [
+        { "text": "Antoine de Saint-Exupéry", "isCorrect": true },
+        { "text": "Jules Verne", "isCorrect": false },
+        { "text": "Marcel Pagnol", "isCorrect": false },
+        { "text": "Albert Camus", "isCorrect": false }
+      ],
+      "explanation": "Pilote d'avion, il a lui-même illustré le livre, paru en 1943."
+    },
+    {
+      "ref": "lit-051",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Qui a écrit L'Étranger, en 1942 ?",
+      "answers": [
+        { "text": "André Gide", "isCorrect": false },
+        { "text": "Jean-Paul Sartre", "isCorrect": false },
+        { "text": "André Malraux", "isCorrect": false },
+        { "text": "Albert Camus", "isCorrect": true }
+      ],
+      "explanation": "Camus reçoit le prix Nobel de littérature en 1957, à 44 ans."
+    },
+    {
+      "ref": "lit-052",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Quel gâteau, trempé dans du thé, fait ressurgir les souvenirs d'enfance du narrateur chez Marcel Proust ?",
+      "answers": [
+        { "text": "Une madeleine", "isCorrect": true },
+        { "text": "Un éclair", "isCorrect": false },
+        { "text": "Un macaron", "isCorrect": false },
+        { "text": "Un croissant", "isCorrect": false }
+      ],
+      "explanation": "La « madeleine de Proust » désigne aujourd'hui tout ce qui fait remonter un souvenir."
+    },
+    {
+      "ref": "lit-053",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xxe-siecle"],
+      "text": "Quel est le prix littéraire français le plus célèbre, décerné chaque automne depuis 1903 ?",
+      "answers": [
+        { "text": "Le prix Femina", "isCorrect": false },
+        { "text": "Le prix Renaudot", "isCorrect": false },
+        { "text": "Le prix Goncourt", "isCorrect": true },
+        { "text": "Le prix Nobel", "isCorrect": false }
+      ],
+      "explanation": "Le lauréat ne reçoit qu'un chèque symbolique de 10 euros, mais le prix fait vendre des centaines de milliers d'exemplaires."
+    },
+    {
+      "ref": "lit-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "conte", "citation"],
+      "text": "Qui dit au Petit Prince : « On ne voit bien qu'avec le cœur. L'essentiel est invisible pour les yeux » ?",
+      "answers": [
+        { "text": "L'aviateur", "isCorrect": false },
+        { "text": "La rose", "isCorrect": false },
+        { "text": "Le renard", "isCorrect": true },
+        { "text": "Le serpent", "isCorrect": false }
+      ],
+      "explanation": "Le renard lui apprend aussi ce que veut dire « apprivoiser »."
+    },
+    {
+      "ref": "lit-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "roman", "citation"],
+      "text": "Quel roman commence par « Aujourd'hui, maman est morte » ?",
+      "answers": [
+        { "text": "Un barrage contre le Pacifique, de Marguerite Duras", "isCorrect": false },
+        { "text": "La Nausée, de Jean-Paul Sartre", "isCorrect": false },
+        { "text": "L'Étranger, d'Albert Camus", "isCorrect": true },
+        { "text": "La Peste, d'Albert Camus", "isCorrect": false }
+      ],
+      "explanation": "Le narrateur, Meursault, frappe le lecteur par son indifférence apparente."
+    },
+    {
+      "ref": "lit-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "roman", "citation"],
+      "text": "Quel roman de Marcel Proust commence par « Longtemps, je me suis couché de bonne heure » ?",
+      "answers": [
+        { "text": "Voyage au bout de la nuit", "isCorrect": false },
+        { "text": "Les Faux-Monnayeurs", "isCorrect": false },
+        { "text": "Le Grand Meaulnes", "isCorrect": false },
+        { "text": "À la recherche du temps perdu", "isCorrect": true }
+      ],
+      "explanation": "Ce roman en sept tomes est l'un des plus longs de la littérature."
+    },
+    {
+      "ref": "lit-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "theatre"],
+      "text": "Dans quelle pièce de Samuel Beckett deux personnages attendent-ils quelqu'un qui ne vient jamais ?",
+      "answers": [
+        { "text": "La Cantatrice chauve", "isCorrect": false },
+        { "text": "Fin de partie", "isCorrect": false },
+        { "text": "En attendant Godot", "isCorrect": true },
+        { "text": "Huis clos", "isCorrect": false }
+      ],
+      "explanation": "Vladimir et Estragon attendent ce mystérieux Godot. La pièce est emblématique du théâtre de l'absurde."
+    },
+    {
+      "ref": "lit-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "theatre", "citation"],
+      "text": "Quelle pièce de Jean-Paul Sartre contient la réplique « L'enfer, c'est les autres » ?",
+      "answers": [
+        { "text": "Huis clos", "isCorrect": true },
+        { "text": "La Nausée", "isCorrect": false },
+        { "text": "Les Mains sales", "isCorrect": false },
+        { "text": "Les Mouches", "isCorrect": false }
+      ],
+      "explanation": "Trois morts sont enfermés ensemble pour l'éternité : ils deviennent les bourreaux les uns des autres."
+    },
+    {
+      "ref": "lit-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Quel roman d'Albert Camus, publié en 1947, raconte une épidémie à Oran ?",
+      "answers": [
+        { "text": "Le Premier Homme", "isCorrect": false },
+        { "text": "La Peste", "isCorrect": true },
+        { "text": "La Chute", "isCorrect": false },
+        { "text": "L'Étranger", "isCorrect": false }
+      ],
+      "explanation": "On y lit souvent une allégorie de l'Occupation et de la résistance au nazisme."
+    },
+    {
+      "ref": "lit-060",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "poesie", "citation"],
+      "text": "Quel poète écrit « Sous le pont Mirabeau coule la Seine » ?",
+      "answers": [
+        { "text": "Guillaume Apollinaire", "isCorrect": true },
+        { "text": "Louis Aragon", "isCorrect": false },
+        { "text": "Jacques Prévert", "isCorrect": false },
+        { "text": "Paul Éluard", "isCorrect": false }
+      ],
+      "explanation": "Le Pont Mirabeau fait partie du recueil Alcools, publié en 1913, presque sans ponctuation."
+    },
+    {
+      "ref": "lit-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "poesie"],
+      "text": "Quel poète écrit le recueil Paroles, qui contient Barbara et Le Cancre ?",
+      "answers": [
+        { "text": "Paul Éluard", "isCorrect": false },
+        { "text": "Jacques Prévert", "isCorrect": true },
+        { "text": "Guillaume Apollinaire", "isCorrect": false },
+        { "text": "Robert Desnos", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi écrit des chansons, comme Les Feuilles mortes, et des scénarios de films."
+    },
+    {
+      "ref": "lit-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "essai"],
+      "text": "Quelle autrice écrit Le Deuxième Sexe, en 1949 ?",
+      "answers": [
+        { "text": "Colette", "isCorrect": false },
+        { "text": "Simone Veil", "isCorrect": false },
+        { "text": "Simone de Beauvoir", "isCorrect": true },
+        { "text": "Marguerite Duras", "isCorrect": false }
+      ],
+      "explanation": "On y lit : « On ne naît pas femme : on le devient ». Le livre est un texte fondateur du féminisme."
+    },
+    {
+      "ref": "lit-063",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Qui a écrit La Gloire de mon père, souvenir d'enfance en Provence ?",
+      "answers": [
+        { "text": "Alphonse Daudet", "isCorrect": false },
+        { "text": "Jean Giono", "isCorrect": false },
+        { "text": "Marcel Proust", "isCorrect": false },
+        { "text": "Marcel Pagnol", "isCorrect": true }
+      ],
+      "explanation": "Il est suivi du Château de ma mère, et tous deux ont été adaptés au cinéma."
+    },
+    {
+      "ref": "lit-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxie-siecle"],
+      "text": "Quelle écrivaine française reçoit le prix Nobel de littérature en 2022 ?",
+      "answers": [
+        { "text": "Annie Ernaux", "isCorrect": true },
+        { "text": "Amélie Nothomb", "isCorrect": false },
+        { "text": "Marguerite Duras", "isCorrect": false },
+        { "text": "Leïla Slimani", "isCorrect": false }
+      ],
+      "explanation": "Elle est la première Française à recevoir ce prix. Son œuvre mêle souvenirs personnels et histoire sociale."
+    },
+    {
+      "ref": "lit-065",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "theatre"],
+      "text": "Quelle pièce de Jean Anouilh, jouée à Paris en 1944, reprend le mythe de la fille d'Œdipe ?",
+      "answers": [
+        { "text": "Médée", "isCorrect": false },
+        { "text": "Électre", "isCorrect": false },
+        { "text": "Iphigénie", "isCorrect": false },
+        { "text": "Antigone", "isCorrect": true }
+      ],
+      "explanation": "Antigone désobéit au roi Créon pour enterrer son frère. La pièce est jouée sous l'Occupation."
+    },
+    {
+      "ref": "lit-066",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "poesie"],
+      "text": "Quel poète écrit Liberté (« j'écris ton nom »), dont des exemplaires sont largués par la RAF au-dessus de la France occupée, en 1942 ?",
+      "answers": [
+        { "text": "René Char", "isCorrect": false },
+        { "text": "Robert Desnos", "isCorrect": false },
+        { "text": "Louis Aragon", "isCorrect": false },
+        { "text": "Paul Éluard", "isCorrect": true }
+      ],
+      "explanation": "Le poème énumère tous les endroits où le poète écrit un nom, qui n'est révélé qu'au dernier vers."
+    },
+    {
+      "ref": "lit-067",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle"],
+      "text": "Quel écrivain refuse le prix Nobel de littérature, en 1964 ?",
+      "answers": [
+        { "text": "Louis-Ferdinand Céline", "isCorrect": false },
+        { "text": "Albert Camus", "isCorrect": false },
+        { "text": "André Malraux", "isCorrect": false },
+        { "text": "Jean-Paul Sartre", "isCorrect": true }
+      ],
+      "explanation": "Il refusait toutes les distinctions officielles, pour rester un écrivain libre."
+    },
+    {
+      "ref": "lit-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Quel roman de Marguerite Yourcenar prend la forme des mémoires d'un empereur romain ?",
+      "answers": [
+        { "text": "Alexis", "isCorrect": false },
+        { "text": "L'Œuvre au noir", "isCorrect": false },
+        { "text": "Le Coup de grâce", "isCorrect": false },
+        { "text": "Mémoires d'Hadrien", "isCorrect": true }
+      ],
+      "explanation": "En 1980, Marguerite Yourcenar devient la première femme élue à l'Académie française."
+    },
+    {
+      "ref": "lit-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Quelle romancière remporte le prix Goncourt en 1984 avec L'Amant ?",
+      "answers": [
+        { "text": "Marguerite Duras", "isCorrect": true },
+        { "text": "Simone de Beauvoir", "isCorrect": false },
+        { "text": "Françoise Sagan", "isCorrect": false },
+        { "text": "Annie Ernaux", "isCorrect": false }
+      ],
+      "explanation": "Le roman s'inspire de sa jeunesse en Indochine."
+    },
+    {
+      "ref": "lit-070",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "roman", "personnage"],
+      "text": "Quel roman de Raymond Queneau suit une fillette qui rêve de prendre le métro à Paris ?",
+      "answers": [
+        { "text": "Le Petit Nicolas", "isCorrect": false },
+        { "text": "Zazie dans le métro", "isCorrect": true },
+        { "text": "Les Exercices de style", "isCorrect": false },
+        { "text": "La Vie devant soi", "isCorrect": false }
+      ],
+      "explanation": "Malheureusement pour Zazie, le métro est en grève. Le livre joue beaucoup avec la langue parlée."
+    },
+    {
+      "ref": "lit-071",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Quelle romancière publie Bonjour tristesse à seulement 18 ans, en 1954 ?",
+      "answers": [
+        { "text": "Colette", "isCorrect": false },
+        { "text": "Simone de Beauvoir", "isCorrect": false },
+        { "text": "Françoise Sagan", "isCorrect": true },
+        { "text": "Marguerite Duras", "isCorrect": false }
+      ],
+      "explanation": "Le livre est un énorme succès et fait d'elle une célébrité du jour au lendemain."
+    },
+    {
+      "ref": "lit-072",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "theatre"],
+      "text": "Dans quelle pièce d'Eugène Ionesco les habitants d'une ville se transforment-ils peu à peu en animaux ?",
+      "answers": [
+        { "text": "Les Chaises", "isCorrect": false },
+        { "text": "Rhinocéros", "isCorrect": true },
+        { "text": "Le roi se meurt", "isCorrect": false },
+        { "text": "La Cantatrice chauve", "isCorrect": false }
+      ],
+      "explanation": "Créée en 1959, la pièce dénonce la contagion des idéologies totalitaires."
+    },
+    {
+      "ref": "lit-073",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "antiquite", "poesie"],
+      "text": "À quel poète grec attribue-t-on l'Iliade et l'Odyssée ?",
+      "answers": [
+        { "text": "Homère", "isCorrect": true },
+        { "text": "Virgile", "isCorrect": false },
+        { "text": "Sophocle", "isCorrect": false },
+        { "text": "Platon", "isCorrect": false }
+      ],
+      "explanation": "On ne sait presque rien de lui, et certains doutent même de son existence. Virgile est un poète latin, auteur de l'Énéide."
+    },
+    {
+      "ref": "lit-074",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "antiquite", "personnage"],
+      "text": "Quel héros de l'Odyssée met dix ans à rentrer chez lui, à Ithaque, après la guerre de Troie ?",
+      "answers": [
+        { "text": "Hector", "isCorrect": false },
+        { "text": "Achille", "isCorrect": false },
+        { "text": "Ulysse", "isCorrect": true },
+        { "text": "Énée", "isCorrect": false }
+      ],
+      "explanation": "Sa femme, Pénélope, l'attend en repoussant ses prétendants."
+    },
+    {
+      "ref": "lit-075",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "theatre"],
+      "text": "Qui a écrit Roméo et Juliette et Hamlet ?",
+      "answers": [
+        { "text": "Christopher Marlowe", "isCorrect": false },
+        { "text": "Oscar Wilde", "isCorrect": false },
+        { "text": "Charles Dickens", "isCorrect": false },
+        { "text": "William Shakespeare", "isCorrect": true }
+      ],
+      "explanation": "Ces deux pièces datent de la fin du XVIe et du tout début du XVIIe siècle."
+    },
+    {
+      "ref": "lit-076",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "roman", "personnage"],
+      "text": "Quel chevalier imaginé par Cervantès se bat contre des moulins à vent, qu'il prend pour des géants ?",
+      "answers": [
+        { "text": "Le Cid", "isCorrect": false },
+        { "text": "Lancelot", "isCorrect": false },
+        { "text": "Ivanhoé", "isCorrect": false },
+        { "text": "Don Quichotte", "isCorrect": true }
+      ],
+      "explanation": "Le roman paraît en 1605. Son fidèle écuyer s'appelle Sancho Panza."
+    },
+    {
+      "ref": "lit-077",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "theatre", "citation"],
+      "text": "De quelle pièce vient la réplique « Être ou ne pas être, telle est la question » ?",
+      "answers": [
+        { "text": "Othello", "isCorrect": false },
+        { "text": "Le Roi Lear", "isCorrect": false },
+        { "text": "Hamlet", "isCorrect": true },
+        { "text": "Macbeth", "isCorrect": false }
+      ],
+      "explanation": "Le prince Hamlet hésite entre agir et renoncer, après la mort de son père."
+    },
+    {
+      "ref": "lit-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "roman"],
+      "text": "Qui a écrit 1984, où « Big Brother vous regarde » ?",
+      "answers": [
+        { "text": "Ray Bradbury", "isCorrect": false },
+        { "text": "Aldous Huxley", "isCorrect": false },
+        { "text": "George Orwell", "isCorrect": true },
+        { "text": "H. G. Wells", "isCorrect": false }
+      ],
+      "explanation": "Publié en 1949, le roman décrit une société totalitaire qui surveille tout. Huxley a écrit Le Meilleur des mondes."
+    },
+    {
+      "ref": "lit-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Qui a écrit Orgueil et Préjugés ?",
+      "answers": [
+        { "text": "Mary Shelley", "isCorrect": false },
+        { "text": "Virginia Woolf", "isCorrect": false },
+        { "text": "Jane Austen", "isCorrect": true },
+        { "text": "Charlotte Brontë", "isCorrect": false }
+      ],
+      "explanation": "Publié en 1813, il raconte l'histoire d'Elizabeth Bennet et de Mr Darcy."
+    },
+    {
+      "ref": "lit-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Quel écrivain russe écrit Guerre et Paix ?",
+      "answers": [
+        { "text": "Fiodor Dostoïevski", "isCorrect": false },
+        { "text": "Anton Tchekhov", "isCorrect": false },
+        { "text": "Alexandre Pouchkine", "isCorrect": false },
+        { "text": "Léon Tolstoï", "isCorrect": true }
+      ],
+      "explanation": "Ce roman immense se déroule pendant les guerres napoléoniennes. Tolstoï a aussi écrit Anna Karénine."
+    },
+    {
+      "ref": "lit-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Qui a écrit Crime et Châtiment ?",
+      "answers": [
+        { "text": "Nicolas Gogol", "isCorrect": false },
+        { "text": "Léon Tolstoï", "isCorrect": false },
+        { "text": "Ivan Tourgueniev", "isCorrect": false },
+        { "text": "Fiodor Dostoïevski", "isCorrect": true }
+      ],
+      "explanation": "Un étudiant pauvre, Raskolnikov, commet un meurtre et est rongé par la culpabilité."
+    },
+    {
+      "ref": "lit-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Quel roman d'Herman Melville raconte la chasse à une baleine blanche ?",
+      "answers": [
+        { "text": "Robinson Crusoé", "isCorrect": false },
+        { "text": "L'Île au trésor", "isCorrect": false },
+        { "text": "Vingt Mille Lieues sous les mers", "isCorrect": false },
+        { "text": "Moby Dick", "isCorrect": true }
+      ],
+      "explanation": "Le capitaine Achab veut se venger de la baleine qui lui a arraché une jambe."
+    },
+    {
+      "ref": "lit-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman", "personnage"],
+      "text": "Dans quel livre de Franz Kafka Gregor Samsa se réveille-t-il transformé en insecte ?",
+      "answers": [
+        { "text": "La Métamorphose", "isCorrect": true },
+        { "text": "Le Château", "isCorrect": false },
+        { "text": "L'Amérique", "isCorrect": false },
+        { "text": "Le Procès", "isCorrect": false }
+      ],
+      "explanation": "Le mot « kafkaïen » désigne aujourd'hui une situation absurde et oppressante."
+    },
+    {
+      "ref": "lit-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "moyen-age", "poesie"],
+      "text": "Quel poète italien écrit La Divine Comédie, qui commence par une descente aux Enfers ?",
+      "answers": [
+        { "text": "Machiavel", "isCorrect": false },
+        { "text": "Dante", "isCorrect": true },
+        { "text": "Boccace", "isCorrect": false },
+        { "text": "Pétrarque", "isCorrect": false }
+      ],
+      "explanation": "Il y parcourt l'Enfer, le Purgatoire et le Paradis. L'œuvre, écrite au début du XIVe siècle, a contribué à fixer la langue italienne."
+    },
+    {
+      "ref": "lit-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Qui a écrit Les Aventures de Tom Sawyer ?",
+      "answers": [
+        { "text": "Robert Louis Stevenson", "isCorrect": false },
+        { "text": "Charles Dickens", "isCorrect": false },
+        { "text": "Mark Twain", "isCorrect": true },
+        { "text": "Jack London", "isCorrect": false }
+      ],
+      "explanation": "Son ami Huckleberry Finn a droit à son propre roman, quelques années plus tard."
+    },
+    {
+      "ref": "lit-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Quelle romancière anglaise crée le personnage de Frankenstein, en 1818 ?",
+      "answers": [
+        { "text": "Mary Shelley", "isCorrect": true },
+        { "text": "Agatha Christie", "isCorrect": false },
+        { "text": "Jane Austen", "isCorrect": false },
+        { "text": "Emily Brontë", "isCorrect": false }
+      ],
+      "explanation": "Elle n'a que 20 ans. Frankenstein est le nom du savant, pas celui de la créature, qui n'a pas de nom."
+    },
+    {
+      "ref": "lit-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman"],
+      "text": "Quel romancier anglais écrit Oliver Twist et Un chant de Noël ?",
+      "answers": [
+        { "text": "Thomas Hardy", "isCorrect": false },
+        { "text": "Oscar Wilde", "isCorrect": false },
+        { "text": "William Shakespeare", "isCorrect": false },
+        { "text": "Charles Dickens", "isCorrect": true }
+      ],
+      "explanation": "Ses romans dénoncent la misère de l'Angleterre industrielle, notamment celle des enfants."
+    },
+    {
+      "ref": "lit-088",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["etranger", "roman"],
+      "text": "Quel roman de Gabriel García Márquez raconte l'histoire de la famille Buendía, dans le village de Macondo ?",
+      "answers": [
+        { "text": "Cent ans de solitude", "isCorrect": true },
+        { "text": "L'Amour aux temps du choléra", "isCorrect": false },
+        { "text": "Le Vieux qui lisait des romans d'amour", "isCorrect": false },
+        { "text": "La Maison aux esprits", "isCorrect": false }
+      ],
+      "explanation": "Ce roman de 1967 est l'œuvre majeure du réalisme magique. La Maison aux esprits est d'Isabel Allende."
+    },
+    {
+      "ref": "lit-089",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["etranger", "roman"],
+      "text": "Qui a écrit Robinson Crusoé, en 1719 ?",
+      "answers": [
+        { "text": "Daniel Defoe", "isCorrect": true },
+        { "text": "Robert Louis Stevenson", "isCorrect": false },
+        { "text": "Jonathan Swift", "isCorrect": false },
+        { "text": "Walter Scott", "isCorrect": false }
+      ],
+      "explanation": "Jonathan Swift est l'auteur des Voyages de Gulliver, et Stevenson celui de L'Île au trésor."
+    },
+    {
+      "ref": "lit-090",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Jules Verne est l'auteur du Tour du monde en quatre-vingts jours.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Phileas Fogg parie qu'il fera le tour du monde en 80 jours. Le roman paraît en 1872."
+    },
+    {
+      "ref": "lit-091",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["etranger", "antiquite", "personnage"],
+      "text": "Dans l'Odyssée, Ulysse aveugle le cyclope Polyphème.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il lui dit s'appeler « Personne » : quand le cyclope appelle à l'aide, il crie que « Personne » l'attaque."
+    },
+    {
+      "ref": "lit-092",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre"],
+      "text": "Molière est mort quelques heures après une représentation du Malade imaginaire.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 1673, pris d'un malaise sur scène en jouant le rôle du malade, il meurt chez lui le soir même."
+    },
+    {
+      "ref": "lit-093",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie"],
+      "text": "Arthur Rimbaud a cessé d'écrire de la poésie vers l'âge de 20 ans.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il part ensuite voyager et faire du commerce, jusqu'en Afrique de l'Est. Il meurt en 1891, à 37 ans."
+    },
+    {
+      "ref": "lit-094",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Romain Gary a reçu deux fois le prix Goncourt, la seconde fois sous le pseudonyme d'Émile Ajar.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le règlement interdit de recevoir deux fois le prix : la supercherie n'est révélée qu'après sa mort, en 1980."
+    },
+    {
+      "ref": "lit-095",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman"],
+      "text": "Une partie des Misérables se déroule pendant l'insurrection de juin 1832, à Paris.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "C'est sur une barricade de cette insurrection que meurt le jeune Gavroche."
+    },
+    {
+      "ref": "lit-096",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xixe-siecle"],
+      "text": "Victor Hugo est enterré au Panthéon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 1885, des centaines de milliers de personnes suivent ses funérailles nationales."
+    },
+    {
+      "ref": "lit-097",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["xviie-siecle", "poesie"],
+      "text": "La Fontaine s'est inspiré du fabuliste grec Ésope pour écrire ses Fables.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le Corbeau et le Renard ou La Cigale et la Fourmi existaient déjà chez Ésope, plus de 2 000 ans plus tôt."
+    },
+    {
+      "ref": "lit-098",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "conte"],
+      "text": "Le Petit Prince est l'un des livres les plus traduits au monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il a été traduit dans plusieurs centaines de langues et de dialectes."
+    },
+    {
+      "ref": "lit-099",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["xviiie-siecle"],
+      "text": "« Voltaire » est un pseudonyme.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il s'appelait en réalité François-Marie Arouet."
+    },
+    {
+      "ref": "lit-100",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["xxe-siecle", "conte"],
+      "text": "Le Petit Prince vient de la planète Mars.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il vient d'une toute petite planète, l'astéroïde B 612."
+    },
+    {
+      "ref": "lit-101",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["xviie-siecle", "theatre"],
+      "text": "Molière est l'auteur du Cid.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le Cid est une tragi-comédie de Pierre Corneille, jouée en 1637."
+    },
+    {
+      "ref": "lit-102",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["etranger", "roman", "personnage"],
+      "text": "Sherlock Holmes a été créé par Agatha Christie.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été créé par Arthur Conan Doyle, en 1887. Agatha Christie a créé Hercule Poirot."
+    },
+    {
+      "ref": "lit-103",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "D'Artagnan est l'un des trois mousquetaires.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Les trois mousquetaires sont Athos, Porthos et Aramis. D'Artagnan, le héros, rêve de les rejoindre."
+    },
+    {
+      "ref": "lit-104",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "personnage"],
+      "text": "Emma Bovary est l'héroïne d'un roman de Balzac.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle est l'héroïne de Madame Bovary, de Gustave Flaubert."
+    },
+    {
+      "ref": "lit-105",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["etranger", "theatre"],
+      "text": "Roméo et Juliette se termine par le mariage heureux des deux amants.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est une tragédie : les deux amants meurent, à cause d'un terrible malentendu. Ils s'étaient mariés en secret au milieu de la pièce."
+    },
+    {
+      "ref": "lit-106",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie"],
+      "text": "Les Fleurs du mal sont l'œuvre de Paul Verlaine.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elles sont l'œuvre de Charles Baudelaire, en 1857."
+    },
+    {
+      "ref": "lit-107",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "roman"],
+      "text": "Marcel Proust a reçu le prix Nobel de littérature.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a reçu le prix Goncourt en 1919, pour À l'ombre des jeunes filles en fleurs, mais jamais le prix Nobel."
+    },
+    {
+      "ref": "lit-108",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["xviiie-siecle", "conte"],
+      "text": "Candide a été publié sous le nom de Voltaire.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le livre paraît anonymement, en 1759, présenté comme traduit de l'allemand d'un certain « docteur Ralph ». Voltaire nie longtemps en être l'auteur."
+    },
+    {
+      "ref": "lit-109",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["xxe-siecle", "theatre"],
+      "text": "En attendant Godot a d'abord été écrit en anglais.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "L'Irlandais Samuel Beckett l'a écrit en français, puis l'a lui-même traduit en anglais."
+    },
+    {
+      "ref": "lit-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["antiquite", "etranger", "poesie", "portrait"],
+      "text": "Quel poète de la Grèce antique, traditionnellement représenté aveugle, ce buste représente-t-il ?",
+      "image": {
+        "src": "litterature/buste-homere.webp",
+        "alt": "Buste en marbre d'un vieil homme barbu aux yeux clos, le front ceint d'un bandeau",
+        "credit": {
+          "author": "Unknown",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Homer_bust_louvre_front.JPG"
+        }
+      },
+      "answers": [
+        { "text": "Platon", "isCorrect": false },
+        { "text": "Socrate", "isCorrect": false },
+        { "text": "Sophocle", "isCorrect": false },
+        { "text": "Homère", "isCorrect": true }
+      ],
+      "explanation": "Ce type de buste, sculpté bien après sa mort, l'imagine en vieillard aveugle, selon la tradition."
+    },
+    {
+      "ref": "lit-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "theatre", "portrait"],
+      "text": "Quel dramaturge est représenté sur ce portrait ?",
+      "image": {
+        "src": "litterature/portrait-shakespeare.webp",
+        "alt": "Portrait d'un homme au front dégarni, à la barbe courte, portant une boucle d'oreille dorée et un col blanc",
+        "credit": {
+          "author": "attributed to John Taylor",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:William_Shakespeare_by_John_Taylor,_edited.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Miguel de Cervantès", "isCorrect": false },
+        { "text": "Christopher Marlowe", "isCorrect": false },
+        { "text": "Molière", "isCorrect": false },
+        { "text": "William Shakespeare", "isCorrect": true }
+      ],
+      "explanation": "Ce « portrait Chandos » est l'un des rares qui pourraient avoir été peints de son vivant."
+    },
+    {
+      "ref": "lit-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre", "portrait"],
+      "text": "Quel dramaturge est représenté sur ce portrait de Nicolas Mignard ?",
+      "image": {
+        "src": "litterature/portrait-moliere.webp",
+        "alt": "Portrait d'un homme à la moustache fine et aux longs cheveux bruns, couronné de laurier, en costume antique",
+        "credit": {
+          "author": "Nicolas Mignard",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Moli%C3%A8re_-_Nicolas_Mignard_(1658).jpg"
+        }
+      },
+      "answers": [
+        { "text": "Pierre Corneille", "isCorrect": false },
+        { "text": "Molière", "isCorrect": true },
+        { "text": "Jean de La Fontaine", "isCorrect": false },
+        { "text": "Jean Racine", "isCorrect": false }
+      ],
+      "explanation": "Il y est peint dans le rôle de César, dans La Mort de Pompée de Corneille : Molière était aussi comédien."
+    },
+    {
+      "ref": "lit-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviie-siecle", "theatre", "portrait"],
+      "text": "Quel auteur de tragédies est représenté ?",
+      "image": {
+        "src": "litterature/portrait-racine.webp",
+        "alt": "Portrait d'un homme en grande perruque bouclée, au visage doux, vêtu d'un habit sombre",
+        "credit": {
+          "author": "François de Troy",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Racine_par_Fran%C3%A7ois_de_Troy.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Jean de La Fontaine", "isCorrect": false },
+        { "text": "Jean Racine", "isCorrect": true },
+        { "text": "Pierre Corneille", "isCorrect": false },
+        { "text": "Molière", "isCorrect": false }
+      ],
+      "explanation": "Racine devient historiographe du roi Louis XIV après avoir quitté le théâtre."
+    },
+    {
+      "ref": "lit-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xviie-siecle", "poesie", "portrait"],
+      "text": "Qui Hyacinthe Rigaud a-t-il peint vers 1690 ?",
+      "image": {
+        "src": "litterature/portrait-la-fontaine.webp",
+        "alt": "Portrait d'un homme âgé en grande perruque bouclée, vêtu d'un manteau sombre",
+        "credit": {
+          "author": "Hyacinthe Rigaud",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:La_Fontaine_par_Rigaud.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Molière", "isCorrect": false },
+        { "text": "Boileau", "isCorrect": false },
+        { "text": "Charles Perrault", "isCorrect": false },
+        { "text": "Jean de La Fontaine", "isCorrect": true }
+      ],
+      "explanation": "Rigaud, le portraitiste de Louis XIV, a peint de nombreux personnages célèbres de son époque."
+    },
+    {
+      "ref": "lit-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xviiie-siecle", "portrait"],
+      "text": "Quel philosophe des Lumières est représenté ?",
+      "image": {
+        "src": "litterature/portrait-voltaire.webp",
+        "alt": "Portrait d'un jeune homme souriant, en perruque, à l'air malicieux, vêtu d'un habit rouge",
+        "credit": {
+          "author": "Nicolas de Largillierre",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Atelier_de_Nicolas_de_Largilli%C3%A8re,_portrait_de_Voltaire,_d%C3%A9tail_(mus%C3%A9e_Carnavalet)_-001.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Denis Diderot", "isCorrect": false },
+        { "text": "Voltaire", "isCorrect": true },
+        { "text": "Jean-Jacques Rousseau", "isCorrect": false },
+        { "text": "Montesquieu", "isCorrect": false }
+      ],
+      "explanation": "Il a ici 24 ans. Il vient tout juste de choisir le nom de « Voltaire » ; il s'appelait François-Marie Arouet."
+    },
+    {
+      "ref": "lit-116",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quel romancier est représenté sur ce daguerréotype de 1842 ?",
+      "image": {
+        "src": "litterature/portrait-balzac.webp",
+        "alt": "Ancienne photographie d'un homme corpulent aux cheveux en bataille, la main posée sur la poitrine, la chemise ouverte",
+        "credit": {
+          "author": "Louis-Auguste Bisson",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Honor%C3%A9_de_Balzac_(1842).jpg"
+        }
+      },
+      "answers": [
+        { "text": "Stendhal", "isCorrect": false },
+        { "text": "Honoré de Balzac", "isCorrect": true },
+        { "text": "Alexandre Dumas", "isCorrect": false },
+        { "text": "Victor Hugo", "isCorrect": false }
+      ],
+      "explanation": "C'est l'une des rares photographies de Balzac, mort en 1850, aux débuts de la photographie."
+    },
+    {
+      "ref": "lit-117",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quel écrivain est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-victor-hugo.webp",
+        "alt": "Photographie en noir et blanc d'un vieil homme à la barbe blanche et aux cheveux courts, l'air grave",
+        "credit": {
+          "author": "Nadar",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Victor_Hugo_001.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Gustave Flaubert", "isCorrect": false },
+        { "text": "Émile Zola", "isCorrect": false },
+        { "text": "Jules Verne", "isCorrect": false },
+        { "text": "Victor Hugo", "isCorrect": true }
+      ],
+      "explanation": "Il a écrit Les Misérables et Notre-Dame de Paris. Ses funérailles, en 1885, réunissent des centaines de milliers de personnes."
+    },
+    {
+      "ref": "lit-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quelle romancière est représentée sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-george-sand.webp",
+        "alt": "Photographie en noir et blanc d'une femme aux cheveux bruns séparés par une raie au milieu, au regard sérieux",
+        "credit": {
+          "author": "Nadar",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:George_Sand_by_Nadar,_1864.jpg"
+        }
+      },
+      "answers": [
+        { "text": "George Sand", "isCorrect": true },
+        { "text": "Colette", "isCorrect": false },
+        { "text": "Madame de Staël", "isCorrect": false },
+        { "text": "Marceline Desbordes-Valmore", "isCorrect": false }
+      ],
+      "explanation": "Elle s'appelait en réalité Aurore Dupin. Elle a écrit La Mare au diable et La Petite Fadette."
+    },
+    {
+      "ref": "lit-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quel romancier est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-alexandre-dumas.webp",
+        "alt": "Photographie en noir et blanc d'un homme aux cheveux très frisés, l'air jovial",
+        "credit": {
+          "author": "Nadar",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Nadar_-_Alexander_Dumas_p%C3%A8re_(1802-1870)_-_Google_Art_Project_2.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Honoré de Balzac", "isCorrect": false },
+        { "text": "Alexandre Dumas", "isCorrect": true },
+        { "text": "Victor Hugo", "isCorrect": false },
+        { "text": "Jules Verne", "isCorrect": false }
+      ],
+      "explanation": "Petit-fils d'une esclave de Saint-Domingue, il est entré au Panthéon en 2002."
+    },
+    {
+      "ref": "lit-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie", "portrait"],
+      "text": "Quel poète est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-baudelaire.webp",
+        "alt": "Photographie en noir et blanc d'un homme au front dégarni et aux cheveux mi-longs, au regard intense, en habit sombre et nœud lavallière",
+        "credit": {
+          "author": "Étienne Carjat",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:%C3%89tienne_Carjat,_Portrait_of_Charles_Baudelaire,_circa_1862,_BW.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Charles Baudelaire", "isCorrect": true },
+        { "text": "Arthur Rimbaud", "isCorrect": false },
+        { "text": "Paul Verlaine", "isCorrect": false },
+        { "text": "Gérard de Nerval", "isCorrect": false }
+      ],
+      "explanation": "Étienne Carjat est aussi l'auteur du portrait le plus célèbre de Rimbaud."
+    },
+    {
+      "ref": "lit-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "poesie", "portrait"],
+      "text": "Quel jeune poète est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-rimbaud.webp",
+        "alt": "Photographie en noir et blanc d'un adolescent aux cheveux en désordre et au regard clair, perdu dans le vague",
+        "credit": {
+          "author": "Étienne Carjat",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Carjat_Arthur_Rimbaud_1872.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Charles Baudelaire", "isCorrect": false },
+        { "text": "Arthur Rimbaud", "isCorrect": true },
+        { "text": "Guillaume Apollinaire", "isCorrect": false },
+        { "text": "Paul Verlaine", "isCorrect": false }
+      ],
+      "explanation": "Il a 17 ans sur cette photo de 1871. Il cesse d'écrire quelques années plus tard."
+    },
+    {
+      "ref": "lit-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quel romancier est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-jules-verne.webp",
+        "alt": "Photographie en noir et blanc d'un homme à la barbe fournie, aux cheveux grisonnants, en costume sombre",
+        "credit": {
+          "author": "Nadar",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Émile Zola", "isCorrect": false },
+        { "text": "Jules Verne", "isCorrect": true },
+        { "text": "Victor Hugo", "isCorrect": false },
+        { "text": "Alexandre Dumas", "isCorrect": false }
+      ],
+      "explanation": "Ses romans d'aventures et d'anticipation sont parmi les livres français les plus traduits au monde."
+    },
+    {
+      "ref": "lit-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quel romancier est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-zola.webp",
+        "alt": "Photographie en noir et blanc d'un homme à la barbe courte, portant un pince-nez, le regard direct",
+        "credit": {
+          "author": "Nadar",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:%C3%89mile_Zola.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Guy de Maupassant", "isCorrect": false },
+        { "text": "Alphonse Daudet", "isCorrect": false },
+        { "text": "Gustave Flaubert", "isCorrect": false },
+        { "text": "Émile Zola", "isCorrect": true }
+      ],
+      "explanation": "Chef de file du naturalisme, il s'engage aussi pour défendre le capitaine Dreyfus."
+    },
+    {
+      "ref": "lit-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["xixe-siecle", "roman", "portrait"],
+      "text": "Quel écrivain est représenté sur cette photographie ?",
+      "image": {
+        "src": "litterature/portrait-maupassant.webp",
+        "alt": "Photographie en noir et blanc d'un homme à la moustache épaisse, aux cheveux courts, en costume et cravate",
+        "credit": {
+          "author": "Nadar",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Maupassant_par_Nadar.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Alphonse Daudet", "isCorrect": false },
+        { "text": "Gustave Flaubert", "isCorrect": false },
+        { "text": "Guy de Maupassant", "isCorrect": true },
+        { "text": "Émile Zola", "isCorrect": false }
+      ],
+      "explanation": "Disciple de Flaubert, il a écrit plus de 300 nouvelles en une dizaine d'années."
+    },
+    {
+      "ref": "lit-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xxe-siecle", "roman", "portrait"],
+      "text": "Quel écrivain est représenté sur ce portrait ?",
+      "image": {
+        "src": "litterature/portrait-proust.webp",
+        "alt": "Portrait d'un jeune homme élégant aux cheveux noirs et à la petite moustache, une orchidée blanche à la boutonnière",
+        "credit": {
+          "author": "Jacques-Émile Blanche",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:J_E_Blanche_Marcel_Proust_01-01-2013.jpg"
+        }
+      },
+      "answers": [
+        { "text": "André Gide", "isCorrect": false },
+        { "text": "Jean Cocteau", "isCorrect": false },
+        { "text": "Guillaume Apollinaire", "isCorrect": false },
+        { "text": "Marcel Proust", "isCorrect": true }
+      ],
+      "explanation": "Il a 21 ans sur ce tableau de Jacques-Émile Blanche, peint en 1892."
+    },
+    {
+      "ref": "lit-126",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman", "illustration"],
+      "text": "De quel roman provient cette illustration célèbre ?",
+      "image": {
+        "src": "litterature/illustration-cosette.webp",
+        "alt": "Gravure d'une petite fille maigre en haillons, tenant un balai bien trop grand pour elle",
+        "credit": {
+          "author": "Émile Bayard",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Cosette-sweeping-les-miserables-emile-bayard-1862.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Sans famille, d'Hector Malot", "isCorrect": false },
+        { "text": "Les Misérables, de Victor Hugo", "isCorrect": true },
+        { "text": "Oliver Twist, de Charles Dickens", "isCorrect": false },
+        { "text": "Les Malheurs de Sophie, de la comtesse de Ségur", "isCorrect": false }
+      ],
+      "explanation": "C'est Cosette, exploitée par les Thénardier. Ce dessin d'Émile Bayard, de 1862, est devenu l'image même du roman."
+    },
+    {
+      "ref": "lit-127",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xviie-siecle", "poesie", "illustration"],
+      "text": "Quelle fable de La Fontaine cette gravure de Gustave Doré illustre-t-elle ?",
+      "image": {
+        "src": "litterature/illustration-corbeau-renard.webp",
+        "alt": "Gravure d'un renard assis au pied d'un arbre, levant la tête vers un corbeau perché qui tient quelque chose dans son bec",
+        "credit": {
+          "author": "Gustave Doré",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:PL_Jean_de_La_Fontaine_Bajki_1876_page009.png"
+        }
+      },
+      "answers": [
+        { "text": "Le Lièvre et la Tortue", "isCorrect": false },
+        { "text": "Le Corbeau et le Renard", "isCorrect": true },
+        { "text": "La Cigale et la Fourmi", "isCorrect": false },
+        { "text": "Le Loup et l'Agneau", "isCorrect": false }
+      ],
+      "explanation": "Le renard flatte le corbeau pour qu'il lâche son fromage : « Apprenez que tout flatteur vit aux dépens de celui qui l'écoute »."
+    },
+    {
+      "ref": "lit-128",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "roman", "illustration"],
+      "text": "Quels personnages Gustave Doré illustre-t-il sur cette gravure ?",
+      "image": {
+        "src": "litterature/illustration-don-quichotte.webp",
+        "alt": "Gravure d'un chevalier maigre en armure, sur un cheval décharné, accompagné d'un petit homme rond monté sur un âne",
+        "credit": {
+          "author": "Gustave Doré",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Don_Quijote_and_Sancho_Panza.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Gargantua et Pantagruel", "isCorrect": false },
+        { "text": "Lancelot et Perceval", "isCorrect": false },
+        { "text": "Don Quichotte et Sancho Panza", "isCorrect": true },
+        { "text": "Robin des Bois et frère Tuck", "isCorrect": false }
+      ],
+      "explanation": "Doré a illustré le roman de Cervantès en 1863, avec plus de 300 gravures."
+    },
+    {
+      "ref": "lit-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["etranger", "moyen-age", "poesie", "illustration"],
+      "text": "Quelle œuvre Gustave Doré illustre-t-il avec cette vision de l'Enfer ?",
+      "image": {
+        "src": "litterature/illustration-divine-comedie.webp",
+        "alt": "Gravure sombre montrant deux hommes en toge contemplant une foule de corps tourmentés, dans un paysage infernal",
+        "credit": {
+          "author": "Gustave Doré",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_et_Virgile_dans_le_neuvi%C3%A8me_cercle_de_l%27Enfer.jpg"
+        }
+      },
+      "answers": [
+        { "text": "La Divine Comédie, de Dante", "isCorrect": true },
+        { "text": "L'Énéide, de Virgile", "isCorrect": false },
+        { "text": "Faust, de Goethe", "isCorrect": false },
+        { "text": "Les Fleurs du mal, de Baudelaire", "isCorrect": false }
+      ],
+      "explanation": "Les deux hommes sont Dante et le poète latin Virgile, qui le guide à travers l'Enfer."
+    },
+    {
+      "ref": "lit-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["xixe-siecle", "roman", "illustration"],
+      "text": "De quel roman provient cette illustration ?",
+      "image": {
+        "src": "litterature/illustration-calmar-nautilus.webp",
+        "alt": "Gravure montrant des hommes armés de haches combattant un calmar géant dont les tentacules s'enroulent autour d'eux, sur le pont d'un navire",
+        "credit": {
+          "author": "Alphonse de Neuville",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:20000_squid_Nautilus_viewbay.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Les Travailleurs de la mer", "isCorrect": false },
+        { "text": "Moby Dick", "isCorrect": false },
+        { "text": "L'Île mystérieuse", "isCorrect": false },
+        { "text": "Vingt Mille Lieues sous les mers", "isCorrect": true }
+      ],
+      "explanation": "Le capitaine Nemo et son équipage affrontent des calmars géants. Les Travailleurs de la mer, de Victor Hugo, contient aussi un célèbre combat… contre une pieuvre."
+    },
+    {
+      "ref": "lit-131",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etranger", "conte", "illustration"],
+      "text": "De quel livre provient cette illustration ?",
+      "image": {
+        "src": "litterature/illustration-alice.webp",
+        "alt": "Gravure montrant une fillette assise à une longue table, avec un homme au très grand chapeau, un lièvre et un loir endormi, autour d'une théière",
+        "aTrouver": "John Tenniel, « A Mad Tea-Party », illustration d'Alice au pays des merveilles (1865)",
+        "credit": {
+          "author": "John Tenniel",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Teaparty.svg"
+        }
+      },
+      "answers": [
+        { "text": "Alice au pays des merveilles", "isCorrect": true },
+        { "text": "Les Voyages de Gulliver", "isCorrect": false },
+        { "text": "Le Magicien d'Oz", "isCorrect": false },
+        { "text": "Peter Pan", "isCorrect": false }
+      ],
+      "explanation": "C'est le célèbre goûter du Chapelier fou. Les dessins de John Tenniel accompagnent le livre de Lewis Carroll depuis 1865."
+    },
+    {
+      "ref": "lit-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["etranger", "roman", "illustration"],
+      "text": "De quel roman est tiré ce frontispice de l'édition de 1831 ?",
+      "image": {
+        "src": "litterature/frontispice-frankenstein.webp",
+        "alt": "Gravure montrant une créature humaine immense, au corps nu et musclé, qui s'éveille sur le sol d'un laboratoire, devant un homme qui s'enfuit, épouvanté",
+        "credit": {
+          "author": "Theodor von Holst",
+          "license": "Domaine public",
+          "url": "https://fr.wikipedia.org/wiki/Fichier:Frontispiece_to_Frankenstein_1831.jpg"
+        }
+      },
+      "answers": [
+        { "text": "L'Étrange Cas du docteur Jekyll et de M. Hyde, de Robert Louis Stevenson", "isCorrect": false },
+        { "text": "Le Portrait de Dorian Gray, d'Oscar Wilde", "isCorrect": false },
+        { "text": "Dracula, de Bram Stoker", "isCorrect": false },
+        { "text": "Frankenstein, de Mary Shelley", "isCorrect": true }
+      ],
+      "explanation": "C'est la première illustration connue de la créature. Frankenstein est le nom du savant qui fuit sa création."
+    },
+    {
+      "ref": "lit-133",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["renaissance", "roman", "illustration"],
+      "text": "Quel géant de Rabelais Gustave Doré illustre-t-il ici ?",
+      "image": {
+        "src": "litterature/illustration-gargantua.webp",
+        "alt": "Gravure montrant un géant attablé, engloutissant une montagne de nourriture servie par de nombreux personnages minuscules",
+        "credit": {
+          "author": "Gustave Doré",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:224406~Education-of-Gargantua-Illustration-from-Gargantua-by-Francois-Rabelais-1494-1553-Posters.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Gargantua", "isCorrect": true },
+        { "text": "Gulliver", "isCorrect": false },
+        { "text": "Goliath", "isCorrect": false },
+        { "text": "Polyphème", "isCorrect": false }
+      ],
+      "explanation": "Ses repas démesurés ont donné naissance à l'adjectif « gargantuesque »."
+    },
+    {
+      "ref": "lit-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["xixe-siecle", "roman", "illustration", "personnage"],
+      "text": "Quel personnage de Victor Hugo est représenté sur cette illustration ?",
+      "image": {
+        "src": "litterature/illustration-quasimodo.webp",
+        "alt": "Gravure d'un homme bossu et difforme, accroché aux sculptures d'une cathédrale gothique",
+        "credit": {
+          "author": "Luc-Olivier Merson",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Luc-Olivier_Merson_-_Quasimodo.jpg"
+        }
+      },
+      "answers": [
+        { "text": "Gavroche", "isCorrect": false },
+        { "text": "Gwynplaine", "isCorrect": false },
+        { "text": "Jean Valjean", "isCorrect": false },
+        { "text": "Quasimodo", "isCorrect": true }
+      ],
+      "explanation": "Le sonneur de cloches de Notre-Dame de Paris (1831). Gwynplaine, défiguré, est le héros de L'Homme qui rit."
+    }
+  ]
+}

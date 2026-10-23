@@ -25,3 +25,9 @@ dist-ssr
 cookies.txt
 #Env
 .env
+
+# Temp sht
+.tmp
+
+# Continue
+.continue

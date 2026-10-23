@@ -36,15 +36,6 @@
 - block user [x]
 
 # QUIZ
-
-- voir les quiz
-- voir un quiz avec son id
-- creer un quiz
-- modifier un quiz
-- supprimer un quiz avec son id
-
-
-# Routes
 ## Catégories : /api/categories
     - GET /api/categories (public) : liste triée par nom, avec le nombre de questions de chacune.
     - GET /api/categories/:id (public) : une catégorie.
@@ -99,6 +90,158 @@ json
 ### 3. Reprendre : GET /api/attempts/:id
 
 - Pour un rechargement de page : renvoie la progression et la question en cours (question: null si la partie est terminée).
+
+## Statistiques : /api/statistics
+
+- Exige d’être connecté (cookie token, credentials: 'include'). Renvoie les stats de l’utilisateur connecté.
+
+### Deux modes de jeu, deux façons de compter
+
+| | Rush | Custom |
+|---|---|---|
+| Mesure | nombre de bonnes réponses (score) | score / totalQuestions en % |
+| Stat affichée | record (meilleur score) | moyenne des % |
+| Regroupement | catégorie + niveau | catégorie + niveau |
+| Abandon | score obtenu jusqu’à l’arrêt | les questions restantes comptent comme fausses |
+
+Seules les parties terminées (ou abandonnées) comptent, celles en cours sont ignorées. Les parties sur un quiz existant (quizId, sans catégorie) ne comptent pas.
+
+### GET /api/statistics []
+
+- Toutes catégories : GET /api/statistics
+- Une seule catégorie : GET /api/statistics?categoryId=1 (entier positif, sinon 400)
+
+Réponse 200 :
+
+json
+{
+  "categoryId": 1,
+  "rush": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 2, "record": 17, "played": 4 }
+  ],
+  "custom": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 1, "averagePercent": 72, "played": 6 }
+  ]
+}
+
+- categoryId vaut null sans filtre.
+- Une ligne par couple catégorie + niveau. difficulty peut être null si la partie a été lancée sans niveau.
+- played = nombre de parties comptées pour cette ligne.
+- Tableaux vides = aucune partie terminée : prévoir un état vide côté front.
+
+### GET /api/statistics/global []
+
+Pour comparer le joueur aux autres, par catégorie + niveau. Accepte aussi ?categoryId=1.
+
+- rush : moyenne des records des autres joueurs (le joueur connecté n’est pas compté).
+- custom : moyenne des % de toutes les parties de tous les joueurs (joueur connecté compris).
+
+Réponse 200 :
+
+json
+{
+  "categoryId": null,
+  "rush": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 2, "averageRecord": 14.5, "players": 8 }
+  ],
+  "custom": [
+    { "categoryId": 1, "category": "Géographie", "difficulty": 1, "averagePercent": 65, "played": 42 }
+  ]
+}
+
+- averageRecord est arrondi à 0,1 près, players = nombre de joueurs pris en compte.
+- Pour afficher la comparaison, associer chaque ligne de GET /api/statistics à la ligne de /global qui a le même categoryId + difficulty. S’il n’y en a pas, aucun autre joueur n’a encore joué ce couple.
+
+### GET /api/statistics/users/:id []
+
+Stats d’un autre joueur (profil, ami...). Même format que GET /api/statistics, accepte aussi ?categoryId=1.
+
+- 400 si l’id n’est pas un entier positif.
+- 404 si l’utilisateur n’existe pas, ou s’il y a un blocage entre les deux joueurs (dans un sens ou dans l’autre). Même réponse dans les deux cas, pour ne pas révéler un blocage.
+
+### Prévu, pas encore disponible
+
+- Mode rush : POST /api/attempts ne permet pas encore de choisir le mode, toutes les parties sont en custom. Le tableau rush restera vide en attendant.
+
+10/21
+## Badges (achievements) : /api/achievements
+
+- Exige d’être connecté (cookie token, credentials: 'include'). Les badges obtenus sont définitifs : ils ne sont jamais retirés.
+- Le catalogue (98 badges) est rempli par le seed (npx prisma db seed) : tant qu’il n’a pas tourné, les listes sont vides.
+
+### Comment on obtient un badge
+
+| Famille | Mode | Condition | Exemple |
+|---|---|---|---|
+| Rush | rush | X bonnes réponses ou plus en UNE partie (paliers 25, 50, 100, puis 200, 300... selon la catégorie) | Apprenti sorcier (25 en rush Harry Potter) |
+| Sans faute | custom | 100 % sur une partie terminée d’au moins 20 questions, à un niveau donné (1 badge par niveau et par catégorie) | Optimal aux ASPIC (100 % niveau 3 Harry Potter) |
+| Spécialiste | custom | 100 % sur une partie terminée d’au moins 20 questions d’une sous-catégorie (tag), tous niveaux | Chasseur d’Horcruxes (tag horcruxe) |
+| Habitué | custom | 10 / 20 / 50 parties terminées d’au moins 20 questions dans la catégorie (cumul) | Fantôme de Poudlard (50 parties Harry Potter) |
+
+Les parties sur un quiz existant (quizId) ne donnent pas de badge.
+
+### Nouveau badge en fin de partie : POST /api/attempts/:id/answers
+
+La réponse contient maintenant un champ newBadges :
+
+json
+{
+  "isCorrect": true, "correctAnswerId": 45, "explanation": "...",
+  "answered": 20, "score": 20, "total": 20,
+  "finished": true, "next": null,
+  "newBadges": [
+    { "slug": "hp-perfect-3", "name": "Optimal aux ASPIC", "description": "Sans faute sur une partie custom Harry Potter de niveau 3 d'au moins 20 questions", "icon": null }
+  ]
+}
+
+- newBadges vaut [] à chaque réponse, sauf à la dernière si des badges viennent d’être débloqués.
+- Plusieurs badges peuvent arriver d’un coup (ex : Sans faute + Spécialiste + Habitué sur la même partie) : prévoir l’affichage d’une liste.
+- Un badge déjà possédé n’est jamais renvoyé une deuxième fois.
+- À faire côté front : afficher une notification « Nouveau badge ! » quand newBadges n’est pas vide.
+
+### GET /api/achievements []
+
+Le catalogue : tous les badges possibles (pour afficher les badges verrouillés en grisé).
+
+json
+[
+  { "slug": "hp-rush-25", "name": "Apprenti sorcier", "description": "25 bonnes réponses ou plus en une partie rush Harry Potter", "icon": null, "categoryId": 4 }
+]
+
+Trié par catégorie puis par palier.
+
+### GET /api/achievements/me []
+
+Mes badges obtenus, du plus récent au plus ancien.
+
+json
+[
+  { "slug": "hp-rush-25", "name": "Apprenti sorcier", "description": "...", "icon": null, "unlockedAt": "2026-10-21T14:32:00.000Z" }
+]
+
+- [] si aucun badge : prévoir un état vide.
+- Pour afficher verrouillés / débloqués : comparer les slug de /me avec ceux du catalogue.
+
+### GET /api/achievements/users/:id []
+
+Badges d’un autre joueur (profil, ami...). Même format que /me.
+
+- 400 si l’id n’est pas un entier positif.
+- 404 si l’utilisateur n’existe pas, ou s’il y a un blocage entre les deux joueurs (même règle que les stats).
+
+### Icônes
+
+- icon vaut null pour l’instant (icônes pas encore choisies) : prévoir une icône par défaut.
+- Plus tard : nom de fichier dans assets/badges/ (la route pour servir les images sera ajoutée à ce moment-là).
+
+### Pas encore disponible
+
+- Badges rush : le mode rush n’existe pas encore (toutes les parties sont en custom), donc aucun badge rush ne peut être obtenu pour l’instant.
+
+## Questions « avant / après » (catégorie Histoire, tag avant-apres)
+
+- 50 nouvelles questions de type boolean dont les deux propositions sont « Avant » et « Après » au lieu de « Vrai » et « Faux ».
+- À vérifier côté front : toujours afficher le text de chaque proposition renvoyée par l’API, ne jamais écrire « Vrai / Faux » en dur pour les questions boolean.
 
 # Front 
 

@@ -1,6 +1,12 @@
 const prisma = require('../../lib/prisma');
 const { PUBLIC_SELECT } = require('./question.model');
 
+const STATUS = {
+  IN_PROGRESS: 'in_progress',
+  FINISHED: 'finished',
+  ABANDONED: 'abandoned',
+};
+
 function remainingQuestions(attemptId) {
   return {
     attemptId,
@@ -59,7 +65,7 @@ async function findAttempt(id) {
       userId: true,
       score: true,
       totalQuestions: true,
-      finishedAt: true,
+      status: true,
       _count: { select: { userAnswers: true } },
     },
   });
@@ -104,14 +110,28 @@ async function recordAnswer({ attemptId, questionId, answerId, isCorrect }) {
 }
 
 async function markFinished(attemptId) {
-  return prisma.quizAttempt.update({
-    where: { id: attemptId },
-    data: { finishedAt: new Date() },
-    select: { score: true, totalQuestions: true },
+  return prisma.quizAttempt.updateMany({
+    where: { id: attemptId, status: STATUS.IN_PROGRESS },
+    data: { status: STATUS.FINISHED, finishedAt: new Date() },
+  });
+}
+
+async function markAbandoned(attemptId) {
+  return prisma.quizAttempt.updateMany({
+    where: { id: attemptId, status: STATUS.IN_PROGRESS },
+    data: { status: STATUS.ABANDONED },
+  });
+}
+
+async function abandonInProgress(userId) {
+  return prisma.quizAttempt.updateMany({
+    where: { userId, status: STATUS.IN_PROGRESS },
+    data: { status: STATUS.ABANDONED },
   });
 }
 
 module.exports = {
+  STATUS,
   findTagBySlug,
   findActiveQuestionIds,
   findQuizQuestionIds,
@@ -121,4 +141,6 @@ module.exports = {
   findCurrentForVerdict,
   recordAnswer,
   markFinished,
+  markAbandoned,
+  abandonInProgress,
 };

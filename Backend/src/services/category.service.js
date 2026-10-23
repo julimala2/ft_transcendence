@@ -1,5 +1,7 @@
 const categoryModel = require('../models/category.model');
 
+const MIN_QUESTIONS_PER_TAG = 20;
+
 function httpError(statusCode, message) {
   const error = new Error(message);
   error.statusCode = statusCode;
@@ -28,7 +30,9 @@ async function getCategoryById(id) {
 async function getCategoryTags(id, search) {
   await getCategoryById(id);
   const tags = await categoryModel.findTags(id, search);
-  return tags.map((tag) => ({ slug: tag.slug, questionCount: tag._count.questions }));
+  return tags
+    .map((tag) => ({ slug: tag.slug, questionCount: tag._count.questions }))
+    .filter((tag) => tag.questionCount >= MIN_QUESTIONS_PER_TAG);
 }
 
 async function createCategory({ name }) {

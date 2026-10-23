@@ -1,25 +1,23 @@
 Routes 
-- Achievements
-- Stats
+- themes
 
 user 
     - a terme :
         - voir is_online quand websockets
 
 quiz
-refaire le seed pour etre compatible avec nouveau quiz
 
+musique
+cinema
+series
+42
+sport : basket, formule 1, motogp, JO
 
-🟠 À discuter avec Joris
+Possibilite de signaler une question
 
-5. La source de vérité, ce sont vos fichiers JSON. Les catégories viennent de prisma/data/<slug>.json, importés par le seed. Une catégorie créée par l'API n'aurait pas de fichier, et une catégorie renommée par l'API retrouverait son ancien nom au prochain seed (le seed met à jour name à partir du fichier). Pour la banque officielle, je ne garderais que les routes GET, et je ferais passer les modifications par les fichiers JSON.
+Classements / leaderboard
 
-6. Ce dont le front aura besoin.
-
-GET /api/categories/:slug en plus, ou à la place, de /:id : le front manipulera plutôt geographie que 3.
-Le _count actuel compte toutes les questions, y compris les questions perso et les questions désactivées. Pour l'écran « choisis un thème », il faudrait compter seulement authorId: null, isActive: true, et idéalement par difficulté. Ça sert à griser une combinaison qui n'a pas assez de questions.
-
-
+Rush mode Joris ? 
 
 
 Pourquoi mettre le timer dans le back : 
