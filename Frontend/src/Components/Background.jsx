@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from '../Styling/BackgroundSlider.module.css';
 
 import img1 from '../Assets/background-blue.png';
+import styles from '../Styling/BackgroundSlider.module.css';
+
 // import img2 from './src/assets/bg2.jpg';
 // import img3 from './src/assets/bg3.jpg';
 

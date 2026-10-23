@@ -1,44 +1,44 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-    /* Couleurs principales */
-    --bg: #1f1f1f;
-    --surface: #383838;
-    --surface-2: #202020;
-    --border: rgba(255, 255, 255, 0.08);
-    --text: #f2f0fa;
-    --muted: #b1b1b1;
-    --accent: #fc3c39;
-    --accent-hover: #927aff;
-    --ok: #3ddba4;
-    --danger: #ff5c7a;
-    --warning: #f57c00;
-    --info: #1976d2;
+  /* Couleurs principales */
+  --bg: #1f1f1f;
+  --surface: #383838;
+  --surface-2: #202020;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f2f0fa;
+  --muted: #b1b1b1;
+  --accent: #fc3c39;
+  --accent-hover: #927aff;
+  --ok: #3ddba4;
+  --danger: #ff5c7a;
+  --warning: #f57c00;
+  --info: #1976d2;
 
-    /* Rayons */
-    --radius-sm: 12px;
-    --radius-md: 14px;
-    --radius-lg: 20px;
-    
-    /* Ombres */
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.1);
-    
-    /* Typographie */
-    --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    
-    /* Tailles */
-    --header-h: 128px;
-    
-    /* Espacements */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
-    --spacing-2xl: 48px;
-    
-    color-scheme: dark;
+  /* Rayons */
+  --radius-sm: 12px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* Ombres */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Typographie */
+  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Tailles */
+  --header-h: 128px;
+
+  /* Espacements */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  color-scheme: dark;
 }
 
 /* Animation keyframes for background */
@@ -72,5 +72,3 @@
     background-position: 0 100%;
   }
 }
-
-/* 

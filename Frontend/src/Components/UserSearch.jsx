@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { searchUsers } from '../Api/friends';
+
 import { FriendCard } from '../Account/AccountFriends';
+import { searchUsers } from '../Api/friends';
 
 export function UserSearch({ onSelect, children }) {
   const [search, setSearch] = useState('');

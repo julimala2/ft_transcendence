@@ -1,7 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
+
+import { Avatar } from '../Components/Avatar';
 import { useAuth } from '../Hooks/useAuth';
 import styles from '../Styling/Header.module.css';
-import { Avatar } from '../Components/Avatar';
 
 export function Header() {
   const { user } = useAuth();

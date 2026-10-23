@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
+
 import { useParams, useNavigate } from 'react-router-dom';
+
 import { apiFetch } from '../Api/api';
+import { getBlockedUsers, blockUser, unblockUser } from '../Api/blocks';
 import {
   getFriends,
   getReceivedRequests,
@@ -10,7 +13,6 @@ import {
   acceptRequest,
   declineRequest,
 } from '../Api/friends';
-import { getBlockedUsers, blockUser, unblockUser } from '../Api/blocks';
 import { Avatar } from '../Components/Avatar';
 import { StyledButton } from '../Components/Buttons';
 import { MainContainer } from '../Components/Components';

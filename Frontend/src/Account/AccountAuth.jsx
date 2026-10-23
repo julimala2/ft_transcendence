@@ -2,12 +2,13 @@
 //only use that (not loginForm/register etc...)
 
 import { useState } from 'react';
+
 import { useAuth } from '../Hooks/useAuth';
 import styles from './Styling/Account.module.css';
 
 // Validation functions
 export function validatePassword(password) {
-  const specialCharsRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+  const specialCharsRegex = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
 
   if (password.length < 8) {
     throw { error: 'Password must be 8 characters or more.' };

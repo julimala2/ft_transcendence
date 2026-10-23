@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
+
 import { createPortal } from 'react-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
+
 import styles from './Styling/Modal.module.css';
 
 export function Modal({ children }) {

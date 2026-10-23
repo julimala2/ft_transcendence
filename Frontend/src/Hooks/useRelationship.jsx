@@ -6,12 +6,13 @@ import {
   useMemo,
   useState,
 } from 'react';
+
+import { getBlockedUsers } from '../Api/blocks';
 import {
   getFriends,
   getReceivedRequests,
   getSentRequests,
 } from '../Api/friends';
-import { getBlockedUsers } from '../Api/blocks';
 
 const RelationshipContext = createContext(null);
 

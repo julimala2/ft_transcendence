@@ -1,27 +1,27 @@
-const js = require('@eslint/js');
-const react = require('eslint-plugin-react');
-const reactHooks = require('eslint-plugin-react-hooks');
-const importPlugin = require('eslint-plugin-import');
-const jsxA11y = require('eslint-plugin-jsx-a11y');
-const tsEslint = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import importPlugin from 'eslint-plugin-import';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import tsEslint from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import prettier from 'eslint-config-prettier';
 
-module.exports = [
+export default [
+  { ignores: ['dist', 'node_modules'] },
   js.configs.recommended,
   {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
+      globals: globals.browser,
       parser: tsParser,
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
+      parserOptions: { ecmaFeatures: { jsx: true } },
     },
     plugins: {
-      react: react,
+      react,
       'react-hooks': reactHooks,
       import: importPlugin,
       'jsx-a11y': jsxA11y,
@@ -30,33 +30,23 @@ module.exports = [
     rules: {
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
       'import/order': [
         'error',
         {
           groups: ['builtin', 'external', 'internal'],
-          pathGroups: [
-            {
-              pattern: 'react',
-              group: 'external',
-              position: 'before',
-            },
-          ],
+          pathGroups: [{ pattern: 'react', group: 'external', position: 'before' }],
           pathGroupsExcludedImportTypes: ['react'],
           'newlines-between': 'always',
-          alphabetize: {
-            order: 'asc',
-            caseInsensitive: true,
-          },
+          alphabetize: { order: 'asc', caseInsensitive: true },
         },
       ],
     },
     settings: {
-      react: {
-        version: 'detect',
-      },
-      'import/resolver': {
-        typescript: {},
-      },
+      react: { version: 'detect' },
+      'import/resolver': { typescript: {} },
     },
   },
+  prettier, // toujours en dernier
 ];

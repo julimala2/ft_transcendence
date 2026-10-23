@@ -1,38 +1,38 @@
 .modalOverlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(1, 1, 1, 0.371);
-    display: grid;
-    place-items: center;
-    z-index: 1000;
+  position: fixed;
+  inset: 0;
+  background: rgba(1, 1, 1, 0.371);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
 }
 
 .modalContent {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    min-width: 800px;
-    min-height: 800px;
-    max-height: 800px;
-    /* overflow-y: auto; */
-    /* padding: 50px 0 0 0; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  min-width: 800px;
+  min-height: 800px;
+  max-height: 800px;
+  /* overflow-y: auto; */
+  /* padding: 50px 0 0 0; */
 }
 
 .modalClose {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    height: 40px;
-    width: 40px;
-    z-index: 1200;
-    background: rgb(34, 122, 209);
-    color: black;
-    border: 2px solid rgb(247, 246, 246);
-    border-radius: var(--radius-lg);
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--text);
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  height: 40px;
+  width: 40px;
+  z-index: 1200;
+  background: rgb(34, 122, 209);
+  color: black;
+  border: 2px solid rgb(247, 246, 246);
+  border-radius: var(--radius-lg);
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text);
 }

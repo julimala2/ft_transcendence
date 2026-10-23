@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { useAuth } from '../Hooks/useAuth';
+
 import { validatePassword } from './AccountAuth';
-import styles from './Styling/Account.module.css';
 import { StyledButton } from '../Components/Buttons';
+import { useAuth } from '../Hooks/useAuth';
+import styles from './Styling/Account.module.css';
 
 export function ChangePasswordForm({ onDone }) {
   const { changePassword } = useAuth();

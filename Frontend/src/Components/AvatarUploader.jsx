@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+
 import { Avatar } from '../Components/Avatar';
 
 const MAX_SIZE = 2 * 1024 * 1024; // 2 Mo

@@ -1,8 +1,8 @@
-import { AccountProfile } from './AccountProfile';
 import { AccountFriends } from './AccountFriends';
+import { AccountMyQuizs } from './AccountMyQuizs';
+import { AccountProfile } from './AccountProfile';
 import { AccountSettings } from './AccountSettings';
 import { AccountStats } from './AccountStats';
-import { AccountMyQuizs } from './AccountMyQuizs';
 
 export const accountTabs = [
   { path: 'profile', label: 'Profil', element: <AccountProfile /> },

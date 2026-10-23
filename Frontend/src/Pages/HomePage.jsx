@@ -1,7 +1,9 @@
 import { useState } from 'react';
+
 import { Link } from 'react-router-dom';
-import { useAuth } from '../Hooks/useAuth';
+
 import { MainContainer, PageContainer } from '../Components/Containers';
+import { useAuth } from '../Hooks/useAuth';
 
 export function HomePage() {
   const { user } = useAuth();

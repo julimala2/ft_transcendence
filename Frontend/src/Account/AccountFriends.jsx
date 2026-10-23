@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
+
 import {
   acceptRequest,
   declineRequest,
@@ -8,9 +10,9 @@ import {
   sendFriendNamedRequest,
 } from '../Api/friends';
 import styles from './Styling/Account.module.css';
-import { UserSearch } from '../Components/UserSearch';
 import { getBlockedUsers } from '../Api/blocks';
 import { Avatar } from '../Components/Avatar';
+import { UserSearch } from '../Components/UserSearch';
 
 export function AccountFriends() {
   const [friends, setFriends] = useState([]);
@@ -19,7 +21,7 @@ export function AccountFriends() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [inviteTarget, setInviteTarget] = useState('');
-  const [inviteMessage, setInviteMessage] = useState(null);
+  // const [inviteMessage, setInviteMessage] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -83,7 +85,7 @@ export function AccountFriends() {
     }
   }
 
-  // if (loading) return <><section className='card'>Loading...</section></>;
+  if (loading) return <><section className='card'>Loading...</section></>;
   if (error) return <p className={styles.error}>{error}</p>;
 
   return (

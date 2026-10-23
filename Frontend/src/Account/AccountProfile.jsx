@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { useAuth } from '../Hooks/useAuth';
+
 import { ChangePasswordForm } from './AccountPassword.jsx';
-import { EditableField } from '../Components/EditableField';
 import { Avatar } from '../Components/Avatar';
-import styles from './Styling/Account.module.css';
 import { AvatarUploader } from '../Components/AvatarUploader.jsx';
+import { EditableField } from '../Components/EditableField';
+import styles from './Styling/Account.module.css';
 import { StyledButton } from '../Components/Buttons.jsx';
+import { useAuth } from '../Hooks/useAuth';
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
