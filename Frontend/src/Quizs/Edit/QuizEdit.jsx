@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { deleteQuiz, getQuizById, updateQuiz } from '../../Api/quiz';
 import { deleteQuestion } from '../../Api/questions';
 import QuestionEdit from './QuestionEdit';
-import { StyledButton } from '../../Components/Buttons';
+import { StyledButton, MainContainer, PageContainer, BlockContainer} from '../../Components/Components';
 
 export function QuizEdit() {
     const { id } = useParams();
@@ -105,118 +105,122 @@ export function QuizEdit() {
     }
 
     return (
-        <div className="page w-200 flex flex-col gap-12 h-screen">
-            <h1 className="text-3xl font-bold mb-6">Édition du Quiz</h1>
-            
-            <form onSubmit={handleSubmit} className="max-w-1xl mx-auto">
-                <div className="mb-6">
-                    <label htmlFor="title" className="block text-lg font-medium mb-2">
-                        Titre du quiz
-                    </label>
-                    <input
-                        type="text"
-                        id="title"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="Entrez le titre de votre quiz"
-                    />
-                </div>
-
-                <div className="mb-6">
-                    <label htmlFor="description" className="block text-lg font-medium mb-2">
-                        Description
-                    </label>
-                    <textarea
-                        id="description"
-                        value={description}
-                        onChange={(e) => setDescription(e.target.value)}
-                        rows={4}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="Décrivez votre quiz (optionnel)"
-                    />
-                </div>
-
-                <div className="mb-6">
-                    <label htmlFor="visibility" className="block text-lg font-medium mb-2">
-                        Visibilité
-                    </label>
-                    <select
-                        id="visibility"
-                        value={visibility}
-                        onChange={(e) => setVisibility(e.target.value)}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                        <option value="private">Privé</option>
-                        <option value="friends">Amis</option>
-                        <option value="public">Public</option>
-                    </select>
-                </div>
-
-                {error && (
-                    <div className="mb-4 p-4 bg-red-100 text-red-700 rounded">
-                        {error}
+        <MainContainer>
+            <PageContainer>
+                <BlockContainer>
+                    <h1 className="text-3xl font-bold">Édition du Quiz: {title}</h1>
+                </BlockContainer>
+                <BlockContainer>
+                <form onSubmit={handleSubmit} className="w-full mx-auto bg-gray-850 rounded-md">
+                    <div className="mb-6">
+                        <label htmlFor="title" className="block text-lg font-medium mb-2">
+                            Titre du quiz
+                        </label>
+                        <input
+                            type="text"
+                            id="title"
+                            value={title}
+                            onChange={(e) => setTitle(e.target.value)}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Entrez le titre de votre quiz"
+                            />
                     </div>
-                )}
+
+                    <div className="mb-6">
+                        <label htmlFor="description" className="block text-lg font-medium mb-2">
+                            Description
+                        </label>
+                        <textarea
+                            id="description"
+                            value={description}
+                            onChange={(e) => setDescription(e.target.value)}
+                            rows={4}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Décrivez votre quiz (optionnel)"
+                            />
+                    </div>
+
+                    <div className="mb-6">
+                        <label htmlFor="visibility" className="block text-lg font-medium mb-2">
+                            Visibilité
+                        </label>
+                        <select
+                            id="visibility"
+                            value={visibility}
+                            onChange={(e) => setVisibility(e.target.value)}
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            >
+                            <option value="private">Privé</option>
+                            <option value="friends">Amis</option>
+                            <option value="public">Public</option>
+                        </select>
+                    </div>
+
+                    {error && (
+                        <div className="mb-4 p-4 bg-red-100 text-red-700 rounded">
+                            {error}
+                        </div>
+                    )}
 
 
-                <div className="flex justify-end">
-                    <StyledButton variant='primary' type='submit' disabled={isSubmitting}>
-                        Mettre a jour le quiz
+                    <div className="flex justify-end">
+                        <StyledButton variant='primary' type='submit' disabled={isSubmitting}>
+                            Mettre a jour le quiz
+                        </StyledButton>
+                    </div>
+                </form>
+                </BlockContainer>
+                <BlockContainer>
+                    {questions.length > 0 ? (
+                        <div className="mb-6">
+                            <h2 className="text-2xl font-bold">Questions</h2>
+                            <div className="space-y-4">
+                                {questions.map((question) => (
+                                    <div key={question.id} className="bg-gray-900 p-4 rounded-lg">
+                                        <div className="flex justify-between items-center mb-2">
+                                            <p className="font-medium">{question.text}</p>
+                                            <StyledButton
+                                                type="button"
+                                                variant="danger"
+                                                onClick={() => handleQuestionRemoved(question.id)}
+                                                >
+                                                Supprimer
+                                            </StyledButton>
+                                        </div>
+                                        <div className="mt-2">
+                                            {question.answers.map((answer, index) => (
+                                                <div key={index} className="flex items-center">
+                                                    <span className={`mr-2 mb-1 ${answer.isCorrect ? 'text-green-600 font-semibold' : 'text-gray-100'}`}>
+                                                        - {answer.text}
+                                                    </span>
+                                                    {answer.isCorrect && <span className="text-green-600">(bonne réponse)</span>}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ) : (
+                        <p className="text-gray-300">Aucune question pour ce quiz.</p>
+                    )}
+                </BlockContainer>
+                <BlockContainer>
+
+                    <QuestionEdit quizId={id} onQuestionAdded={handleQuestionAdded} />
+                </BlockContainer>
+                <BlockContainer>
+                <div className='flex justify-center'>
+                    <StyledButton 
+                        variant='danger'
+                        onClick={handleDelete}
+                        disabled={isDeleting}
+                        >
+                        Supprimer le quiz
                     </StyledButton>
                 </div>
-            </form>
-
-            <div className="mt-12">
-                <h2 className="text-2xl font-bold mb-4">Questions</h2>
-                
-                {questions.length > 0 ? (
-                    <div className="mb-6">
-                        <h3 className="text-xl font-semibold mb-3">Questions actuelles</h3>
-                        <div className="space-y-4">
-                            {questions.map((question) => (
-                                <div key={question.id} className="bg-gray-900 p-4 rounded-lg">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <p className="font-medium">{question.text}</p>
-                                        <button
-                                            type="button"
-                                            onClick={() => handleQuestionRemoved(question.id)}
-                                            className="text-red-500 hover:text-red-700 text-sm font-medium"
-                                        >
-                                            Supprimer
-                                        </button>
-                                    </div>
-                                    <div className="mt-2">
-                                        {question.answers.map((answer, index) => (
-                                            <div key={index} className="flex items-center">
-                                                <span className={`mr-2 ${answer.isCorrect ? 'text-green-600 font-semibold' : 'text-gray-100'}`}>
-                                                    - {answer.text}
-                                                </span>
-                                                {answer.isCorrect && <span className="text-green-600">(bonne réponse)</span>}
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ) : (
-                    <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-                        <p className="text-gray-600">Aucune question pour ce quiz.</p>
-                    </div>
-                )}
-
-                <QuestionEdit quizId={id} onQuestionAdded={handleQuestionAdded} />
-            </div>
-            <div className='flex justify-end'>
-                <StyledButton 
-                    variant='danger'
-                    onClick={handleDelete}
-                    disabled={isDeleting}
-                >
-                    Supprimer le quiz
-                </StyledButton>
-            </div>
-        </div>
+                </BlockContainer>
+            </PageContainer>
+        </MainContainer>
     );
 }

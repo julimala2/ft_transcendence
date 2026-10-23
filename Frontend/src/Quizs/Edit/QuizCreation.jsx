@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { createQuiz } from '../Api/quiz';
+import { createQuiz } from '../../Api/quiz';
+import { StyledButton } from '../../Components/Buttons';
+import { MainContainer, PageContainer } from '../../Components/Containers';
 
 export function QuizCreation() {
     const navigate = useNavigate();
@@ -36,7 +38,8 @@ export function QuizCreation() {
     };
 
     return (
-        <div className="page">
+        <MainContainer>
+            <PageContainer>
             <h1 className="text-3xl font-bold mb-6">Création de Quiz</h1>
             
             <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
@@ -51,7 +54,7 @@ export function QuizCreation() {
                         onChange={(e) => setTitle(e.target.value)}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                         placeholder="Entrez le titre de votre quiz"
-                    />
+                        />
                 </div>
 
                 <div className="mb-6">
@@ -65,7 +68,7 @@ export function QuizCreation() {
                         rows={4}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                         placeholder="Décrivez votre quiz (optionnel)"
-                    />
+                        />
                 </div>
 
                 <div className="mb-6">
@@ -77,7 +80,7 @@ export function QuizCreation() {
                         value={visibility}
                         onChange={(e) => setVisibility(e.target.value)}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    >
+                        >
                         <option value="private">Privé</option>
                         <option value="friends">Amis</option>
                         <option value="public">Public</option>
@@ -91,15 +94,15 @@ export function QuizCreation() {
                 )}
 
                 <div className="flex justify-end">
-                    <button
+                    <StyledButton
                         type="submit"
                         disabled={isSubmitting}
-                        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg disabled:opacity-50"
-                    >
+                        >
                         {isSubmitting ? 'Création en cours...' : 'Créer le quiz'}
-                    </button>
+                    </StyledButton>
                 </div>
             </form>
-        </div>
+        </PageContainer>
+    </MainContainer>
     );
 }

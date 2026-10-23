@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
 import styles from '../../Styling/QuizSelectionPage.module.css';
+import { MainContainer,PageContainer,BlockContainer } from '../../Components/Components.jsx';
+import { getAllThemes } from '../../Api/themes.jsx';
 
 export function QuickStart() {
     const [categories, setCategories] = useState([]);
+    const [themes, setThemes] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -33,7 +36,27 @@ export function QuickStart() {
                 }
             }
         }
+
+        async function loadThemes() {
+            try {
+                const data = await getAllThemes();
+                if (!cancelled ) {
+                    console.log(data);
+                    setThemes(data);
+                }
+            } catch (err) {
+                if (!cancelled) {
+                    setError(err.error);
+                }
+            } finally {
+                if (!cancelled) {
+                    setLoading(false);
+                }
+            }
+        }
+        loadThemes();
         loadCategories();
+        
 
         return () => {
             cancelled = true;
@@ -84,17 +107,16 @@ export function QuickStart() {
     }
 
     return (
-        <main className={`page`}>
-            <h1 className={styles.title}>Quiz rapide :</h1>
-            
-            <div className={styles.filters}>
-                <div className={styles.filterGroup}>
+        <MainContainer>        
+            <PageContainer>
+            <div className="justify-center flex flex-col gap-10 flex-wrap">
+                <div>
                     <div className={styles.categoryTiles}>
                         {categories.map((cat) => (
                             <div
-                                key={cat.id}
-                                className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
-                                onClick={() => setSelectedCategory(cat.id)}
+                            key={cat.id}
+                            className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
+                            onClick={() => setSelectedCategory(cat.id)}
                             >
                                 {cat.name}
                             </div>
@@ -104,8 +126,7 @@ export function QuickStart() {
 
                 {selectedCategory && (
                     <>
-                        <div className={styles.filterGroup}>
-                            <label>Difficulté :</label>
+                        <div>
                             <div className={styles.radioGroup}>
                                 <label className={styles.radioLabel}>
                                     <input
@@ -114,7 +135,7 @@ export function QuickStart() {
                                         value={0}
                                         checked={difficulty === 0}
                                         onChange={() => setDifficulty(0)}
-                                    />
+                                        />
                                     Aléatoire
                                 </label>
                                 <label className={styles.radioLabel}>
@@ -124,7 +145,7 @@ export function QuickStart() {
                                         value={1}
                                         checked={difficulty === 1}
                                         onChange={() => setDifficulty(1)}
-                                    />
+                                        />
                                     ⭐ Facile
                                 </label>
                                 <label className={styles.radioLabel}>
@@ -134,7 +155,7 @@ export function QuickStart() {
                                         value={2}
                                         checked={difficulty === 2}
                                         onChange={() => setDifficulty(2)}
-                                    />
+                                        />
                                     ⭐⭐ Moyenne
                                 </label>
                                 <label className={styles.radioLabel}>
@@ -144,7 +165,7 @@ export function QuickStart() {
                                         value={3}
                                         checked={difficulty === 3}
                                         onChange={() => setDifficulty(3)}
-                                    />
+                                        />
                                     ⭐⭐⭐ Difficile
                                 </label>
                             </div>
@@ -154,12 +175,13 @@ export function QuickStart() {
                             onClick={handleStartQuickQuiz}
                             disabled={isStarting}
                             className={styles.button}
-                        >
+                            >
                             {isStarting ? "Demarrage..." : "Démarrer le quiz (10 questions)"}
                         </button>
                     </>
                 )}
             </div>
-        </main>
+            </PageContainer> 
+        </MainContainer>
     );
 }

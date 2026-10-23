@@ -47,21 +47,17 @@ export default function QuestionEdit({ quizId, onQuestionAdded }) {
 
             const createdQuestion = await createQuestion(questionData);
             
-            // Then add it to the quiz
             await addQuestionToQuiz(quizId, createdQuestion.id);
             
-            // Reset form
             setQuestionText('');
             setOptions(['', '', '', '']);
             setCorrectOption(0);
             setSuccess('Question ajoutée avec succès!');
             
-            // Notify parent to refresh questions list
             if (onQuestionAdded) {
                 onQuestionAdded(createdQuestion);
             }
 
-            // Clear success message after 3 seconds
             setTimeout(() => setSuccess(''), 3000);
         } catch (err) {
             console.error('Erreur lors de l\'ajout de la question:', err);
@@ -72,17 +68,17 @@ export default function QuestionEdit({ quizId, onQuestionAdded }) {
     };
 
     return (
-        <div className="bg-gray-900 p-6 rounded-lg shadow-md">
+        <div>
             <h3 className="text-xl font-semibold mb-4">Ajouter une nouvelle question</h3>
             
             {error && (
-                <div className="mb-4 p-3 bg-red-100 text-red-700 rounded">
+                <div className="mb-4 p-3 text-red-700 rounded">
                     {error}
                 </div>
             )}
             
             {success && (
-                <div className="mb-4 p-3 bg-green-100 text-green-700 rounded">
+                <div className="mb-4 p-3 text-green-700 rounded">
                     {success}
                 </div>
             )}

@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
 import { getCategoryTags } from '../../Api/categories.jsx';
 import styles from '../../Styling/QuizSelectionPage.module.css';
+import { MainContainer, PageContainer } from '../../Components/Containers.jsx';
+import { StyledButton } from '../../Components/Buttons.jsx';
 
 export function CustomStart() {
     //Data
@@ -118,7 +120,7 @@ export function CustomStart() {
         } catch (err) {
             const errorMessage = err.error || err.message || "Erreur inconnue";
             if (errorMessage.includes("pas assez") || errorMessage.includes("questions") || errorMessage.includes("disponibles")) {
-                setError("Il n'y a pas assez de questions pour cette combinaison (thème/tag/difficulté). Essayez avec moins de questions ou un autre filtre.");
+                setError("Il n'y a pas assez de questions pour cette combinaison (thème/tag/difficulté). Essayez avec moins de questions ou une autre difficulte.");
             } else {
                 setError(errorMessage);
             }
@@ -144,36 +146,30 @@ export function CustomStart() {
     }
 
     return (
-        <main className={`page`}>
-            <h1 className={styles.title}>Commencer un quizz custom</h1>
-            
-            <div className={styles.filters}>
-                <div className={styles.filterGroup}>
+        <MainContainer>
+            <PageContainer>
+                <div className="justify-center flex flex-col gap-10 flex-wrap">
                     <div className={styles.categoryTiles}>
                         {categories.map((cat) => (
                             <div
-                                key={cat.id}
-                                className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
-                                onClick={() => {
-                                    setSelectedCategory(cat.id);
-                                    setSelectedTag(null);
-                                }}
+                            key={cat.id}
+                            className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
+                            onClick={() => {
+                                setSelectedCategory(cat.id);
+                                setSelectedTag(null);
+                            }}
                             >
                                 {cat.name}
                             </div>
                         ))}
                     </div>
-                </div>
-
-                <div className={styles.filterGroup}>
-                    <label>Tags :</label>
-                    {selectedCategory ? (
+                    {selectedCategory && (
                         <div className={styles.tagTiles}>
                             <div
                                 key="all"
                                 className={`${styles.tagTile} ${selectedTag === null ? styles.tileSelected : ''}`}
                                 onClick={() => setSelectedTag(null)}
-                            >
+                                >
                                 Tous
                             </div>
                             {categoryTags.map((tag, index) => {
@@ -182,17 +178,15 @@ export function CustomStart() {
                                 
                                 return (
                                     <div
-                                        key={tagId}
-                                        className={`${styles.tagTile} ${selectedTag === tagId ? styles.tileSelected : ''}`}
-                                        onClick={() => setSelectedTag(tagId)}
+                                    key={tagId}
+                                    className={`${styles.tagTile} ${selectedTag === tagId ? styles.tileSelected : ''}`}
+                                    onClick={() => setSelectedTag(tagId)}
                                     >
                                         {tagName}
                                     </div>
                                 );
                             })}
                         </div>
-                    ) : (
-                        <p className={styles.availableInfo}>Sélectionnez une catégorie pour voir les tags</p>
                     )}
                 </div>
 
@@ -204,7 +198,6 @@ export function CustomStart() {
                 </div>
                 
                 <div className={styles.filterGroup}>
-                    <label>Difficulté :</label>
                     <div className={styles.radioGroup}>
                         <label className={styles.radioLabel}>
                             <input
@@ -214,7 +207,7 @@ export function CustomStart() {
                                 checked={difficulty === 0}
                                 onChange={() => setDifficulty(0)}
                                 disabled={!selectedCategory}
-                            />
+                                />
                             Aléatoire
                         </label>
                         <label className={styles.radioLabel}>
@@ -225,7 +218,7 @@ export function CustomStart() {
                                 checked={difficulty === 1}
                                 onChange={() => setDifficulty(1)}
                                 disabled={!selectedCategory}
-                            />
+                                />
                             ⭐ Facile
                         </label>
                         <label className={styles.radioLabel}>
@@ -236,7 +229,7 @@ export function CustomStart() {
                                 checked={difficulty === 2}
                                 onChange={() => setDifficulty(2)}
                                 disabled={!selectedCategory}
-                            />
+                                />
                             ⭐⭐ Moyenne
                         </label>
                         <label className={styles.radioLabel}>
@@ -247,48 +240,60 @@ export function CustomStart() {
                                 checked={difficulty === 3}
                                 onChange={() => setDifficulty(3)}
                                 disabled={!selectedCategory}
-                            />
+                                />
                             ⭐⭐⭐ Difficile
                         </label>
                     </div>
                 </div>
-
                 <div className={styles.filterGroup}>
-                    <label>Nombre de questions: {questionCount}</label>
-                    <div className={styles.sliderContainer}>
-                        <div className={styles.sliderTicks}>
-                            <span>1</span>
-                            <span>25</span>
-                            <span>50</span>
-                        </div>
-                        <input
-                            type="range"
-                            min={1}
-                            max={50}
-                            value={questionCount}
-                            onChange={(e) => setQuestionCount(Number(e.target.value))}
-                            className={styles.slider}
-                            disabled={!selectedCategory}
-                        />
+                    <div className={styles.radioGroup}>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="length"
+                                value={0}
+                                checked={questionCount === 10}
+                                onChange={() => setQuestionCount(10)}
+                                disabled={!selectedCategory}
+                                />
+                            Court (10)
+                        </label>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="length"
+                                value={0}
+                                checked={questionCount === 25}
+                                onChange={() => setQuestionCount(25)}
+                                disabled={!selectedCategory}
+                                />
+                            Moyen (25)
+                        </label>
+                        <label className={styles.radioLabel}>
+                            <input
+                                type="radio"
+                                name="length"
+                                checked={questionCount === 50}
+                                onChange={() => setQuestionCount(50)}
+                                disabled={!selectedCategory}
+                                />
+                            Long (50)
+                        </label>
                     </div>
                 </div>
-
-                <button
-                    onClick={handleStartCustomQuiz}
-                    disabled={isStarting || !selectedCategory || questionCount > availableQuestions}
-                    className={styles.button}
-                    title={!selectedCategory ? "Sélectionnez une catégorie" : questionCount > availableQuestions ? `Seulement ${availableQuestions} questions disponibles` : ""}
-                >
-                    {isStarting ? "Demarrage..." : "Démarrer le quiz"}
-                </button>
-                
                 {questionCount > availableQuestions && selectedCategory && (
                     <p className={styles.warning}>
                         ⚠️ Seules {availableQuestions} questions sont disponibles. Réduisez le nombre de questions.
                     </p>
                 )}
-            </div>
-
-        </main>
+                <StyledButton
+                    onClick={handleStartCustomQuiz}
+                    disabled={isStarting || !selectedCategory || questionCount > availableQuestions}
+                    variant='success'
+                    >
+                    {isStarting ? "Demarrage..." : "Démarrer le quiz"}
+                </StyledButton>
+            </PageContainer>
+        </MainContainer>
     );
 }

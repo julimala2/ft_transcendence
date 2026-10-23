@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { apiFetch } from '../Api/api';
 import { useAuth } from '../Hooks/useAuth';
-import { StyledButton } from '../Components/Buttons'
+import { StyledButton, CardContainer, ListContainer } from '../Components/Components';
 
 export function AccountMyQuizs() {
     const { user } = useAuth();
@@ -16,7 +16,7 @@ export function AccountMyQuizs() {
         let cancelled = false;
         async function loadQuizzes() {
             try {
-                const data = await apiFetch('/api/quizzes');
+                const data = await apiFetch('/api/quizzes?mine=true');
                 if (!cancelled) setQuizzes(data || []);
             } catch (err) {
                 if (!cancelled) setError(err.error || 'Failed to load quizzes');
@@ -37,26 +37,27 @@ export function AccountMyQuizs() {
     }
 
     return (
-        <div>
-
+        <div className='w-full flex flex-col justify-between h-full'>
+            
             {!quizzes.length && <p>Vous n'avez pas encore créé de quiz.</p>}
-            <ul>
+            <ListContainer>
                 {quizzes.map((q, idx) => (
-                    <li key={q.id} className="flex items-center justify-between py-1">
-                        <span>{q.title ? `${q.title} (ID: ${q.id})` : `Quiz ${idx + 1} (ID: ${q.id})`}</span>
+                    <CardContainer key={q.id}>
 
-                        
-                        <Link
-                            to={`/quiz/edit/${q.id}`}
-                        >
-                            <StyledButton>
-                                Modifier
-                            </StyledButton>
-                        </Link>
+                    <li className="flex items-center justify-between py-1">
+                        <span>{q.title}</span>
                     </li>
+                    <Link
+                        to={`/quiz/edit/${q.id}`}
+                        >
+                        <StyledButton>
+                            Modifier
+                        </StyledButton>
+                    </Link>
+                    </CardContainer>
                 ))}
-            </ul>
-            <p>
+            </ListContainer>
+            <p className='flex w-full flex-row justify-end'>
                 <Link to="/quiz/create">
                     <StyledButton>Creer un nouveau quiz</StyledButton>
                 </Link>

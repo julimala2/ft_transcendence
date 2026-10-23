@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Pushes background behind content */
+}
+
+.track {
+  display: flex;
+  width: 200%; /* Two sets of images side-by-side */
+  height: 100%;
+  animation: slide 160s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused; /* Optional: pause on hover */
+}
+
+.slide {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
