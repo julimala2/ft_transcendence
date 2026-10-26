@@ -2,10 +2,11 @@
 //only use that (not loginForm/register etc...)
 
 import { useState } from 'react';
-
+import { motion } from "motion/react";
 import { useAuth } from '../Hooks/useAuth';
+import { StyledInput } from '../Components/Inputs'
+import { StyledButton } from '../Components/Buttons'
 import styles from './Styling/Account.module.css';
-
 // Validation functions
 export function validatePassword(password) {
   const specialCharsRegex = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
@@ -57,35 +58,24 @@ function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={styles.login}>
-      <h1>Compte</h1>
-      <div>
-        <label htmlFor="email">Email :</label>
-        <input
-          id="email"
-          type="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="password">Password :</label>
-        <input
-          id="password"
-          type="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-          required
-        />
-      </div>
+    <form onSubmit={handleSubmit} className="w-full gap-5 flex flex-col items-center">
+      <p className="text-2xl font-bold">Se connecter</p>
+      <StyledInput 
+        type="email"
+        value={email}
+        label="E-mail :"
+        onChange={e => setEmail(e.target.value)}/>
+      <StyledInput
+        type="password"
+        value={password}
+        label="Mot de passe :"
+        onChange={e => setPassword(e.target.value)}/>
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
-
-      <button type="submit" disabled={isSubmitting}>
+      <StyledButton type="submit" disabled={isSubmitting}> 
         {isSubmitting ? 'Chargement...' : 'Se connecter'}
-      </button>
-    </form>
+        </StyledButton>
+    </form> 
   );
 }
 
@@ -116,33 +106,33 @@ function RegisterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Sign up</label>
+    <form onSubmit={handleSubmit} className="w-full gap-5 flex flex-col items-center">
+      <p className="text-2xl font-bold">S'inscrire :</p>
       <div>
-        <label htmlFor="email">Email :</label>
-        <input
+        <StyledInput
           id="email"
           type="email"
+          label="E-mail :"
           value={email}
           onChange={e => setEmail(e.target.value)}
           required
         />
       </div>
       <div>
-        <label htmlFor="username">Username :</label>
-        <input
+        <StyledInput
           id="username"
           type="username"
           value={username}
           onChange={e => setUsername(e.target.value)}
+          label="Pseudo :"
           required
         />
       </div>
       <div>
-        <label htmlFor="password">Password :</label>
-        <input
+        <StyledInput
           id="password"
           type="password"
+          label="Mot de passe :"
           value={password}
           onChange={e => setPassword(e.target.value)}
           required
@@ -151,13 +141,14 @@ function RegisterForm() {
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
-      <button
+      <StyledButton
         type="submit"
         disabled={isSubmitting}
         className={isSubmitting ? styles.disabled : styles.button}
+        variant="success"
       >
-        {isSubmitting ? 'Signing up...' : 'Sign up'}
-      </button>
+        {isSubmitting ? 'En cours...' : `S'inscrire`}
+      </StyledButton>
     </form>
   );
 }
@@ -179,14 +170,16 @@ export function AccountAuth() {
   }
 
   return (
-    <div className={styles.loginContainer}>
+    <motion.div layout className="p-10 w-full gap-7 flex flex-col items-center">
       {renderForm()}
+    <div className="flex flex-row gap-5">
       {mode === 'login' ? (
-        <button onClick={() => setMode('register')}>S'inscrire</button>
+        <StyledButton variant="success" onClick={() => setMode('register')}>S'inscrire</StyledButton>
       ) : (
-        <button onClick={() => setMode('login')}>Se connecter</button>
+        <StyledButton onClick={() => setMode('login')}>Se connecter</StyledButton>
       )}
-      <button onClick={() => loginWithOAuth()}>Se connecter via 42</button>
-    </div>
+      <StyledButton variant="secondary" onClick={() => loginWithOAuth()}>Se connecter via 42</StyledButton>
+      </div>
+    </motion.div>
   );
 }

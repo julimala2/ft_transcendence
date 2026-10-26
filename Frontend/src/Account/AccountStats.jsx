@@ -16,6 +16,7 @@ export function AccountStats() {
     async function loadStats() {
       try {
         const data = await apiFetch('/api/statistics');
+        console.log(data);
         if (!cancelled) setStats(data);
       } catch (err) {
         if (!cancelled) setError(err.error || 'Failed to load stats');
@@ -24,6 +25,7 @@ export function AccountStats() {
       }
     }
     loadStats();
+    
     return () => {
       cancelled = true;
     };
@@ -103,7 +105,7 @@ export function AccountStats() {
   };
 
   return (
-    <div className='w-full flex gap-4 flex-col'>      
+    <div className='w-full flex h-full justify-between gap-4 flex-col'>      
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <CardContainer>
@@ -116,22 +118,21 @@ export function AccountStats() {
         </CardContainer>
       </div>
 
-      <CardContainer>
+      <div className='h-full bg-blue-950 p-2'>
         <ListContainer>
           {categoryStats.map((category, index) => (
-            <div key={index} className="w-full border-b border-gray-200 dark:border-gray-700 pb-4 last:border-0 last:pb-0">
-              <div className="flex justify-between mb-1">
-                <span className="font-medium text-gray-700 dark:text-gray-300">{category.category}</span>
-                <span className="text-gray-600 dark:text-gray-400">{category.played} quizs</span>
+            <div key={index} className="w-full border-b border-gray-200 dark:border-gray-700 pb-2 last:border-0 last:pb-0">
+              <div className="flex justify-between mb-1 " >
+                <span className="font-medium text-gray-300 dark:text-gray-300">{category.category}</span>
+                <span className="text-sm text-gray-300 dark:text-gray-300">Moyenne: {Math.round(category.averagePercent)}% ({category.played} quizs)</span>
               </div>
               <div className="flex items-center">
-                <span className="text-xl mr-2">{getStars(category.averagePercent)}</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Moyenne: {Math.round(category.averagePercent)}%</span>
+                {/* <span className="text-xl mr-2">{getStars(category.averagePercent)}</span> */}
               </div>
             </div>
           ))}
         </ListContainer>
-      </CardContainer>
+      </div>
 
       <CardContainer>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-2">

@@ -1,4 +1,4 @@
-import { StyledButton } from './Buttons';
+import { StyledButton, TileButton } from './Buttons';
 import {
   MainContainer,
   CardContainer,
@@ -14,4 +14,5 @@ export {
   ListContainer,
   PageContainer,
   BlockContainer,
+  TileButton
 };

@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
-
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
 import { getAllThemes } from '../../Api/themes.jsx';
 import {
   MainContainer,
   PageContainer,
   BlockContainer,
+  TileButton,
 } from '../../Components/Components.jsx';
+import { motion } from 'motion/react';
+
 import styles from '../../Styling/QuizSelectionPage.module.css';
 
 export function QuickStart() {
@@ -76,11 +77,10 @@ export function QuickStart() {
 
     const requestBody = {
       categoryId: selectedCategory,
-      count: questionCount,
     };
 
     if (difficulty !== 0) {
-      requestBody.difficulty = difficulty;
+      // requestBody.difficulty = difficulty;
     }
 
     setIsStarting(true);
@@ -114,19 +114,15 @@ export function QuickStart() {
   return (
     <MainContainer>
       <PageContainer>
-        <div className="justify-center flex flex-col gap-10 flex-wrap">
+        <motion.div className="justify-center flex flex-col gap-10 flex-wrap" layout>
           <div>
-            <div className={styles.categoryTiles}>
+            <motion.div className="flex flex-row flex-wrap justify-center gap-7" >
               {categories.map(cat => (
-                <div
-                  key={cat.id}
-                  className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  {cat.name}
-                </div>
+                <TileButton key={cat.id} variant='quiz' selected={(selectedCategory === cat.id)} onClick={() => setSelectedCategory(cat.id)}>
+                    {cat.name}
+                </TileButton>
               ))}
-            </div>
+            </motion.div>
           </div>
 
           {selectedCategory && (
@@ -187,7 +183,7 @@ export function QuickStart() {
               </button>
             </>
           )}
-        </div>
+        </motion.div>
       </PageContainer>
     </MainContainer>
   );

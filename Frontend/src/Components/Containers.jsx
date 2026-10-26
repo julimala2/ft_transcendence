@@ -12,7 +12,7 @@ export const MainContainer = ({ children }) => {
 //Page container
 export const PageContainer = ({ children }) => {
   return (
-    <div className="flex-col flex items-center w-2/3 p-4 rounded-md gap-4 mt-64 mb-32">
+    <div className="flex-col flex items-center w-min-2/3 p-4 rounded-md gap-4">
       {children}
     </div>
   );

@@ -9,8 +9,8 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className={styles.header}>
-      <Link to="/" className={styles.brand}>
+    <header className="fixed w-screen flex align-center justify-between p-15 pointer-none:">
+      <Link to="/" className="bg-gray-800 p-5 border-2 border-purple-600 rounded-2xl font-bold">
         LeQuizzDeLaMortQuiTue
       </Link>
       <nav className={styles.nav}>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { getCategoryTags } from '../../Api/categories.jsx';
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
-import { StyledButton } from '../../Components/Buttons.jsx';
+import { StyledButton, TileButton } from '../../Components/Buttons.jsx';
 import { MainContainer, PageContainer } from '../../Components/Containers.jsx';
 import styles from '../../Styling/QuizSelectionPage.module.css';
 
@@ -158,18 +158,29 @@ export function CustomStart() {
     <MainContainer>
       <PageContainer>
         <div className="justify-center flex flex-col gap-10 flex-wrap">
-          <div className={styles.categoryTiles}>
+          <div className="flex gap-7 flex-wrap justify-center">
             {categories.map(cat => (
-              <div
-                key={cat.id}
-                className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
+              <TileButton 
+                key={cat.id} 
+                variant='quiz' 
                 onClick={() => {
-                  setSelectedCategory(cat.id);
-                  setSelectedTag(null);
-                }}
-              >
-                {cat.name}
-              </div>
+                    setSelectedCategory(cat.id);
+                    setSelectedTag(null);
+                  }}
+                selected={(selectedCategory === cat.id)}
+                  >
+                    {cat.name}
+              </TileButton>
+              // <div
+              //   key={cat.id}
+              //   className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
+              //   onClick={() => {
+              //     setSelectedCategory(cat.id);
+              //     setSelectedTag(null);
+              //   }}
+              // >
+              //   {cat.name}
+              // </div>
             ))}
           </div>
           {selectedCategory && (
