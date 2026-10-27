@@ -1,6 +1,6 @@
 const categoryModel = require('../models/category.model');
 
-const MIN_QUESTIONS_PER_TAG = 20;
+const MIN_QUESTIONS_PER_TAG = 50;
 
 function httpError(statusCode, message) {
   const error = new Error(message);
