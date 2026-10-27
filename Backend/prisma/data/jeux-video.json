@@ -551,7 +551,7 @@
       "text": "Que signifie le sigle « RPG » ?",
       "answers": [
         { "text": "Jeu de cartes", "isCorrect": false },
-        { "text": "Jeu de rôle (Role-Playing Game)", "isCorrect": true },
+        { "text": "Jeu de rôle", "isCorrect": true },
         { "text": "Jeu de tir à la première personne", "isCorrect": false },
         { "text": "Jeu de plateformes", "isCorrect": false }
       ],
