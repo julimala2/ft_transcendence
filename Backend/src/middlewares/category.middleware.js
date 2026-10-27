@@ -26,4 +26,12 @@ function validateTagsQuery(req, res, next) {
   next();
 }
 
-module.exports = { validateCategoryId, validateCategoryBody, validateTagsQuery };
+function validateQuestionDifficulty(req, res, next) {
+  const difficulty = Number(req.params.difficulty);
+  if (!Number.isInteger(difficulty) || difficulty < 1 || difficulty > 3) {
+    return res.status(400).json({ error: 'Error : Question difficulty must be 1, 2 or 3' });
+  }
+  next();
+}
+
+module.exports = { validateCategoryId, validateCategoryBody, validateTagsQuery, validateQuestionDifficulty };

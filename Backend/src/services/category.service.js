@@ -35,6 +35,27 @@ async function getCategoryTags(id, search) {
     .filter((tag) => tag.questionCount >= MIN_QUESTIONS_PER_TAG);
 }
 
+async function getNbQuestionsByDifficulty(categorySlug, tagSlug, difficulty) {
+  const category = await categoryModel.findBySlug(categorySlug);
+
+  if (!category) {
+    throw new Error('Category not found');
+  }
+
+  const tag = await categoryModel.findTags(category.id, tagSlug);
+
+  if (!tag.some((item) => item.slug === tagSlug)) {
+    throw new Error('Tag not found in this category');
+  }
+
+  return categoryModel.nbQuestionByDiff(
+    categorySlug,
+    tagSlug,
+    difficulty
+  );
+}
+
+
 async function createCategory({ name }) {
   const cleanName = name.trim();
   if (cleanName.length === 0) {
@@ -93,4 +114,5 @@ module.exports = {
   createCategory,
   updateCategory,
   deleteCategory,
+  getNbQuestionsByDifficulty,
 };

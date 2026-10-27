@@ -37,6 +37,22 @@ async function findTags(categoryId, search) {
   });
 }
 
+async function nbQuestionByDiff(categorySlug, tagSlug, difficulty)
+{
+  return prisma.question.count({
+    where: {
+      category: {
+        is: { slug: categorySlug },
+      },
+      tags: {
+        some: { slug: tagSlug },
+      },
+      difficulty,
+      isActive: true,
+    },
+  });
+}
+
 async function create(data) {
   return prisma.category.create({ data });
 }
@@ -49,4 +65,4 @@ async function remove(id) {
   return prisma.category.delete({ where: { id } });
 }
 
-module.exports = { findAll, findById, findByName, findBySlug, findTags, create, update, remove };
+module.exports = { findAll, findById, findByName, findBySlug, findTags, nbQuestionByDiff, create, update, remove };
