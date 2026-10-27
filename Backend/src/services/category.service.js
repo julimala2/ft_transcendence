@@ -45,7 +45,7 @@ async function createCategory({ name }) {
   if (slug.length === 0) {
     throw httpError(400, 'Le nom doit contenir au moins une lettre ou un chiffre');
   }
-
+MIN_
   if (await categoryModel.findByName(cleanName)) {
     throw httpError(409, `La catégorie "${cleanName}" existe déjà`);
   }

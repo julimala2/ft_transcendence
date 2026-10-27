@@ -1,0 +1,1985 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 143,
+    "parDifficulte": { "1": 49, "2": 63, "3": 31 },
+    "parType": { "multiple": 120, "boolean": 23 },
+    "avecImage": 0,
+    "sansImage": 143,
+    "parTag": {
+      "franchise": 71,
+      "studio": 35,
+      "histoire": 32,
+      "personnage": 27,
+      "console": 16,
+      "vocabulaire": 10,
+      "france": 9,
+      "esport": 6,
+      "adaptation": 4,
+      "record": 2
+    }
+  },
+  "category": {
+    "slug": "jeux-video",
+    "name": "Jeux vidéo"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "jv-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le célèbre plombier moustachu mascotte de Nintendo ?",
+      "answers": [
+        { "text": "Wario", "isCorrect": false },
+        { "text": "Mario", "isCorrect": true },
+        { "text": "Luigi", "isCorrect": false },
+        { "text": "Sonic", "isCorrect": false }
+      ],
+      "explanation": "Créé par Shigeru Miyamoto, il apparaît pour la première fois en 1981 dans Donkey Kong, sous le nom de « Jumpman »."
+    },
+    {
+      "ref": "jv-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le frère de Mario ?",
+      "answers": [
+        { "text": "Toad", "isCorrect": false },
+        { "text": "Luigi", "isCorrect": true },
+        { "text": "Wario", "isCorrect": false },
+        { "text": "Yoshi", "isCorrect": false }
+      ],
+      "explanation": "Luigi est vêtu de vert et apparaît dès Mario Bros. en 1983."
+    },
+    {
+      "ref": "jv-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel dinosaure vert Mario peut-il chevaucher ?",
+      "answers": [
+        { "text": "Donkey Kong", "isCorrect": false },
+        { "text": "Bowser", "isCorrect": false },
+        { "text": "Toad", "isCorrect": false },
+        { "text": "Yoshi", "isCorrect": true }
+      ],
+      "explanation": "Yoshi apparaît pour la première fois dans Super Mario World, en 1990."
+    },
+    {
+      "ref": "jv-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle princesse Mario doit-il régulièrement sauver ?",
+      "answers": [
+        { "text": "Peach", "isCorrect": true },
+        { "text": "Daisy", "isCorrect": false },
+        { "text": "Samus", "isCorrect": false },
+        { "text": "Zelda", "isCorrect": false }
+      ],
+      "explanation": "La princesse Peach est souvent enlevée par Bowser. Zelda appartient à une autre série."
+    },
+    {
+      "ref": "jv-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le roi des Koopas, grand ennemi de Mario ?",
+      "answers": [
+        { "text": "King K. Rool", "isCorrect": false },
+        { "text": "Bowser", "isCorrect": true },
+        { "text": "Wario", "isCorrect": false },
+        { "text": "Ganondorf", "isCorrect": false }
+      ],
+      "explanation": "Bowser est apparu dès le premier Super Mario Bros., en 1985."
+    },
+    {
+      "ref": "jv-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel est le héros de la série The Legend of Zelda ?",
+      "answers": [
+        { "text": "Link", "isCorrect": true },
+        { "text": "Zelda", "isCorrect": false },
+        { "text": "Ganon", "isCorrect": false },
+        { "text": "Navi", "isCorrect": false }
+      ],
+      "explanation": "Zelda est la princesse qu'il doit protéger : c'est une confusion très courante."
+    },
+    {
+      "ref": "jv-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel hérisson bleu est la mascotte de SEGA ?",
+      "answers": [
+        { "text": "Shadow", "isCorrect": false },
+        { "text": "Sonic", "isCorrect": true },
+        { "text": "Tails", "isCorrect": false },
+        { "text": "Knuckles", "isCorrect": false }
+      ],
+      "explanation": "Sonic the Hedgehog est sorti en 1991 sur Mega Drive."
+    },
+    {
+      "ref": "jv-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le grand ennemi de Sonic ?",
+      "answers": [
+        { "text": "Dr Wily", "isCorrect": false },
+        { "text": "Bowser", "isCorrect": false },
+        { "text": "Ganon", "isCorrect": false },
+        { "text": "Dr Eggman", "isCorrect": true }
+      ],
+      "explanation": "Il est aussi connu sous le nom de Dr Robotnik."
+    },
+    {
+      "ref": "jv-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu consiste à faire pivoter et placer des blocs qui tombent pour former des lignes complètes ?",
+      "answers": [
+        { "text": "Tetris", "isCorrect": true },
+        { "text": "Snake", "isCorrect": false },
+        { "text": "Pac-Man", "isCorrect": false },
+        { "text": "Pong", "isCorrect": false }
+      ],
+      "explanation": "Les blocs sont appelés des « tétrominos »."
+    },
+    {
+      "ref": "jv-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quels ennemis poursuivent Pac-Man dans le labyrinthe ?",
+      "answers": [
+        { "text": "Des tortues", "isCorrect": false },
+        { "text": "Des fantômes", "isCorrect": true },
+        { "text": "Des monstres marins", "isCorrect": false },
+        { "text": "Des robots", "isCorrect": false }
+      ],
+      "explanation": "Chaque fantôme a sa propre couleur et sa propre manière de poursuivre le joueur."
+    },
+    {
+      "ref": "jv-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["studio", "console"],
+      "text": "Quelle entreprise a créé la console PlayStation ?",
+      "answers": [
+        { "text": "Microsoft", "isCorrect": false },
+        { "text": "Nintendo", "isCorrect": false },
+        { "text": "Sony", "isCorrect": true },
+        { "text": "Sega", "isCorrect": false }
+      ],
+      "explanation": "La première PlayStation est sortie en 1994 au Japon."
+    },
+    {
+      "ref": "jv-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["studio", "console"],
+      "text": "Quelle entreprise a créé la console Xbox ?",
+      "answers": [
+        { "text": "Sony", "isCorrect": false },
+        { "text": "Sega", "isCorrect": false },
+        { "text": "Microsoft", "isCorrect": true },
+        { "text": "Nintendo", "isCorrect": false }
+      ],
+      "explanation": "La première Xbox est sortie en 2001."
+    },
+    {
+      "ref": "jv-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["console"],
+      "text": "Comment s'appelle la console de Nintendo sortie en 2017, à la fois de salon et portable ?",
+      "answers": [
+        { "text": "La Wii U", "isCorrect": false },
+        { "text": "La 3DS", "isCorrect": false },
+        { "text": "La Switch", "isCorrect": true },
+        { "text": "La Game Boy", "isCorrect": false }
+      ],
+      "explanation": "On peut la brancher à la télévision ou la jouer en mode portable."
+    },
+    {
+      "ref": "jv-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["console"],
+      "text": "Quelle console Nintendo de 2006 se jouait avec une télécommande sensible aux mouvements ?",
+      "answers": [
+        { "text": "La Wii", "isCorrect": true },
+        { "text": "La Wii U", "isCorrect": false },
+        { "text": "La DS", "isCorrect": false },
+        { "text": "La GameCube", "isCorrect": false }
+      ],
+      "explanation": "Elle a séduit un public très large, notamment grâce à Wii Sports."
+    },
+    {
+      "ref": "jv-015",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu de blocs permet de construire et d'explorer un monde cubique à l'infini ?",
+      "answers": [
+        { "text": "Fortnite", "isCorrect": false },
+        { "text": "Roblox", "isCorrect": false },
+        { "text": "Minecraft", "isCorrect": true },
+        { "text": "Terraria", "isCorrect": false }
+      ],
+      "explanation": "Sorti en 2011, c'est l'un des jeux les plus vendus de l'histoire."
+    },
+    {
+      "ref": "jv-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel monstre vert explose quand il s'approche du joueur dans Minecraft ?",
+      "answers": [
+        { "text": "Le Zombie", "isCorrect": false },
+        { "text": "Le Creeper", "isCorrect": true },
+        { "text": "L'Enderman", "isCorrect": false },
+        { "text": "Le Squelette", "isCorrect": false }
+      ],
+      "explanation": "Son sifflement avant l'explosion est devenu culte."
+    },
+    {
+      "ref": "jv-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel Pokémon électrique jaune est la mascotte de la franchise ?",
+      "answers": [
+        { "text": "Salamèche", "isCorrect": false },
+        { "text": "Pikachu", "isCorrect": true },
+        { "text": "Évoli", "isCorrect": false },
+        { "text": "Miaouss", "isCorrect": false }
+      ],
+      "explanation": "Il accompagne Sacha dans la série animée."
+    },
+    {
+      "ref": "jv-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel Pokémon de type feu fait partie des trois starters de Pokémon Rouge et Bleu ?",
+      "answers": [
+        { "text": "Bulbizarre", "isCorrect": false },
+        { "text": "Carapuce", "isCorrect": false },
+        { "text": "Salamèche", "isCorrect": true },
+        { "text": "Pikachu", "isCorrect": false }
+      ],
+      "explanation": "Les deux autres starters sont Bulbizarre (plante) et Carapuce (eau)."
+    },
+    {
+      "ref": "jv-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Comment s'appelle l'objet utilisé pour capturer des Pokémon ?",
+      "answers": [
+        { "text": "Le Pokétch", "isCorrect": false },
+        { "text": "Le Pokédex", "isCorrect": false },
+        { "text": "Le Pokégear", "isCorrect": false },
+        { "text": "La Poké Ball", "isCorrect": true }
+      ],
+      "explanation": "Le Pokédex, lui, sert d'encyclopédie des Pokémon."
+    },
+    {
+      "ref": "jv-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu oppose 100 joueurs sur une île en mode Battle Royale, avec la possibilité de construire ?",
+      "answers": [
+        { "text": "Overwatch", "isCorrect": false },
+        { "text": "Minecraft", "isCorrect": false },
+        { "text": "Apex Legends", "isCorrect": false },
+        { "text": "Fortnite", "isCorrect": true }
+      ],
+      "explanation": "Fortnite est gratuit et est sorti en 2017."
+    },
+    {
+      "ref": "jv-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu de tir est célèbre pour sa série « Modern Warfare » ?",
+      "answers": [
+        { "text": "Battlefield", "isCorrect": false },
+        { "text": "Call of Duty", "isCorrect": true },
+        { "text": "Halo", "isCorrect": false },
+        { "text": "Doom", "isCorrect": false }
+      ],
+      "explanation": "Une nouvelle édition de la série sort presque chaque année."
+    },
+    {
+      "ref": "jv-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quel jeu les joueurs sont-ils soit membres d'équipage, soit imposteurs ?",
+      "answers": [
+        { "text": "Among Us", "isCorrect": true },
+        { "text": "Fall Guys", "isCorrect": false },
+        { "text": "Overcooked", "isCorrect": false },
+        { "text": "Phasmophobia", "isCorrect": false }
+      ],
+      "explanation": "Le jeu est devenu viral en 2020, pendant le confinement."
+    },
+    {
+      "ref": "jv-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu de simulation de football est publié par EA Sports depuis 2023 sous un nouveau nom ?",
+      "answers": [
+        { "text": "Pro Evolution Soccer", "isCorrect": false },
+        { "text": "Football Manager", "isCorrect": false },
+        { "text": "eFootball", "isCorrect": false },
+        { "text": "EA Sports FC", "isCorrect": true }
+      ],
+      "explanation": "La série s'appelait FIFA jusqu'en 2022, avant la fin de l'accord avec la FIFA."
+    },
+    {
+      "ref": "jv-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans quel jeu joue-t-on au football avec des voitures ?",
+      "answers": [
+        { "text": "Rocket League", "isCorrect": true },
+        { "text": "Mario Kart", "isCorrect": false },
+        { "text": "Gran Turismo", "isCorrect": false },
+        { "text": "Forza Horizon", "isCorrect": false }
+      ],
+      "explanation": "Le jeu est sorti en 2015 et est devenu gratuit en 2020."
+    },
+    {
+      "ref": "jv-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu de course met en scène des personnages Nintendo à bord de karts ?",
+      "answers": [
+        { "text": "Mario Kart", "isCorrect": true },
+        { "text": "Gran Turismo", "isCorrect": false },
+        { "text": "Need for Speed", "isCorrect": false },
+        { "text": "F-Zero", "isCorrect": false }
+      ],
+      "explanation": "On y lance des carapaces et des peaux de banane pour gêner ses adversaires."
+    },
+    {
+      "ref": "jv-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu de combat réunit Mario, Link, Pikachu et bien d'autres personnages dans une même arène ?",
+      "answers": [
+        { "text": "Mortal Kombat", "isCorrect": false },
+        { "text": "Super Smash Bros.", "isCorrect": true },
+        { "text": "Tekken", "isCorrect": false },
+        { "text": "Street Fighter", "isCorrect": false }
+      ],
+      "explanation": "La série compte plus de 80 personnages dans sa dernière édition."
+    },
+    {
+      "ref": "jv-027",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle boule rose avale ses ennemis pour copier leurs pouvoirs ?",
+      "answers": [
+        { "text": "Jigglypuff", "isCorrect": false },
+        { "text": "Kirby", "isCorrect": true },
+        { "text": "Yoshi", "isCorrect": false },
+        { "text": "Mr. Game & Watch", "isCorrect": false }
+      ],
+      "explanation": "Kirby est apparu en 1992 sur Game Boy."
+    },
+    {
+      "ref": "jv-028",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu mobile consiste à aligner des bonbons colorés ?",
+      "answers": [
+        { "text": "Candy Crush Saga", "isCorrect": true },
+        { "text": "Clash of Clans", "isCorrect": false },
+        { "text": "Flappy Bird", "isCorrect": false },
+        { "text": "Angry Birds", "isCorrect": false }
+      ],
+      "explanation": "Il a connu un énorme succès à partir de 2012."
+    },
+    {
+      "ref": "jv-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans Angry Birds, contre qui les oiseaux se battent-ils ?",
+      "answers": [
+        { "text": "Des cochons", "isCorrect": true },
+        { "text": "Des serpents", "isCorrect": false },
+        { "text": "Des renards", "isCorrect": false },
+        { "text": "Des chats", "isCorrect": false }
+      ],
+      "explanation": "Les cochons ont volé leurs œufs."
+    },
+    {
+      "ref": "jv-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu mobile de 2016 utilise la réalité augmentée pour capturer des Pokémon dans le monde réel ?",
+      "answers": [
+        { "text": "Minecraft Earth", "isCorrect": false },
+        { "text": "Pokémon GO", "isCorrect": true },
+        { "text": "Ingress Prime", "isCorrect": false },
+        { "text": "Harry Potter: Wizards Unite", "isCorrect": false }
+      ],
+      "explanation": "Il a été développé par Niantic en partenariat avec Nintendo."
+    },
+    {
+      "ref": "jv-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Quel jeu Nintendo sorti en mars 2020 consiste à aménager une île déserte avec des animaux ?",
+      "answers": [
+        { "text": "Splatoon 3", "isCorrect": false },
+        { "text": "Animal Crossing: New Horizons", "isCorrect": true },
+        { "text": "Stardew Valley", "isCorrect": false },
+        { "text": "Pikmin 4", "isCorrect": false }
+      ],
+      "explanation": "Il a connu un succès énorme pendant le premier confinement."
+    },
+    {
+      "ref": "jv-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle archéologue aventurière est l'héroïne de Tomb Raider ?",
+      "answers": [
+        { "text": "Chun-Li", "isCorrect": false },
+        { "text": "Aloy", "isCorrect": false },
+        { "text": "Samus Aran", "isCorrect": false },
+        { "text": "Lara Croft", "isCorrect": true }
+      ],
+      "explanation": "Elle est apparue pour la première fois en 1996."
+    },
+    {
+      "ref": "jv-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["studio"],
+      "text": "Quelle entreprise française a créé Assassin's Creed, Just Dance et Rayman ?",
+      "answers": [
+        { "text": "Activision", "isCorrect": false },
+        { "text": "Capcom", "isCorrect": false },
+        { "text": "Ubisoft", "isCorrect": true },
+        { "text": "Electronic Arts", "isCorrect": false }
+      ],
+      "explanation": "Ubisoft a été fondée en 1986 en Bretagne par les frères Guillemot."
+    },
+    {
+      "ref": "jv-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["studio", "franchise"],
+      "text": "Quel studio a créé World of Warcraft ?",
+      "answers": [
+        { "text": "Blizzard Entertainment", "isCorrect": true },
+        { "text": "Epic Games", "isCorrect": false },
+        { "text": "Riot Games", "isCorrect": false },
+        { "text": "Valve", "isCorrect": false }
+      ],
+      "explanation": "Blizzard est aussi à l'origine de Diablo, StarCraft et Overwatch."
+    },
+    {
+      "ref": "jv-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["studio"],
+      "text": "Comment s'appelle la plateforme de Valve qui permet d'acheter et de télécharger des jeux sur PC ?",
+      "answers": [
+        { "text": "Epic Games Store", "isCorrect": false },
+        { "text": "GOG", "isCorrect": false },
+        { "text": "Origin", "isCorrect": false },
+        { "text": "Steam", "isCorrect": true }
+      ],
+      "explanation": "Steam a été lancée en 2003."
+    },
+    {
+      "ref": "jv-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["studio"],
+      "text": "Quelle entreprise a créé Sonic the Hedgehog en 1991 ?",
+      "answers": [
+        { "text": "Atari", "isCorrect": false },
+        { "text": "Capcom", "isCorrect": false },
+        { "text": "Sega", "isCorrect": true },
+        { "text": "Nintendo", "isCorrect": false }
+      ],
+      "explanation": "Sega est aussi à l'origine de la Mega Drive et de la Dreamcast."
+    },
+    {
+      "ref": "jv-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que désigne le terme « FPS » pour un genre de jeu ?",
+      "answers": [
+        { "text": "Un jeu de stratégie", "isCorrect": false },
+        { "text": "Un jeu de tir à la première personne", "isCorrect": true },
+        { "text": "Un jeu de plateformes", "isCorrect": false },
+        { "text": "Un jeu de course", "isCorrect": false }
+      ],
+      "explanation": "FPS vient de l'anglais « First-Person Shooter ». Attention : le même sigle désigne aussi les images par seconde."
+    },
+    {
+      "ref": "jv-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie le sigle « RPG » ?",
+      "answers": [
+        { "text": "Jeu de cartes", "isCorrect": false },
+        { "text": "Jeu de rôle (Role-Playing Game)", "isCorrect": true },
+        { "text": "Jeu de tir à la première personne", "isCorrect": false },
+        { "text": "Jeu de plateformes", "isCorrect": false }
+      ],
+      "explanation": "Final Fantasy et Dragon Quest sont des exemples célèbres de RPG."
+    },
+    {
+      "ref": "jv-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que désigne l'acronyme « NPC » dans un jeu vidéo ?",
+      "answers": [
+        { "text": "Un objet rare", "isCorrect": false },
+        { "text": "Un niveau très difficile", "isCorrect": false },
+        { "text": "Un personnage non joueur", "isCorrect": true },
+        { "text": "Un joueur novice", "isCorrect": false }
+      ],
+      "explanation": "« Non-Playable Character » : un personnage contrôlé par le jeu."
+    },
+    {
+      "ref": "jv-040",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Qu'est-ce qu'un « speedrun » ?",
+      "answers": [
+        { "text": "Terminer un jeu à 100 %", "isCorrect": false },
+        { "text": "Jouer sans jamais mourir", "isCorrect": false },
+        { "text": "Terminer un jeu le plus vite possible", "isCorrect": true },
+        { "text": "Jouer toute la nuit", "isCorrect": false }
+      ],
+      "explanation": "Les speedrunners cherchent aussi des bugs et des raccourcis pour battre des records."
+    },
+    {
+      "ref": "jv-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un secret ou une blague cachée par les développeurs dans un jeu ?",
+      "answers": [
+        { "text": "Un spoiler", "isCorrect": false },
+        { "text": "Un Easter egg", "isCorrect": true },
+        { "text": "Un patch", "isCorrect": false },
+        { "text": "Un bug", "isCorrect": false }
+      ],
+      "explanation": "Le premier Easter egg connu date de 1979, dans Adventure sur Atari 2600."
+    },
+    {
+      "ref": "jv-042",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Sonic est la mascotte de Nintendo.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Sonic est la mascotte de Sega. Nintendo a notamment Mario et Link."
+    },
+    {
+      "ref": "jv-043",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Minecraft a été créé par Nintendo.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été créé par Markus Persson puis développé par Mojang, racheté par Microsoft en 2014."
+    },
+    {
+      "ref": "jv-044",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Fortnite est un jeu payant à l'achat.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le jeu de base est gratuit. Les joueurs peuvent acheter des objets cosmétiques."
+    },
+    {
+      "ref": "jv-045",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["console"],
+      "text": "La Game Boy est une console de salon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est une console portable, sortie en 1989."
+    },
+    {
+      "ref": "jv-046",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Un speedrunner cherche à finir un jeu le plus lentement possible.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Au contraire : il cherche à le finir le plus vite possible."
+    },
+    {
+      "ref": "jv-047",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Pac-Man est un jeu d'origine japonaise.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il a été créé par Namco en 1980."
+    },
+    {
+      "ref": "jv-048",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans Minecraft, on peut dormir dans un lit pour passer la nuit.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Dormir permet aussi de changer le point de réapparition."
+    },
+    {
+      "ref": "jv-049",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["franchise"],
+      "text": "Dans Mario, un champignon rouge fait grandir Mario.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le Super Champignon transforme le petit Mario en Super Mario."
+    },
+    {
+      "ref": "jv-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "personnage"],
+      "text": "Dans quel jeu Mario est-il apparu pour la première fois, en 1981 ?",
+      "answers": [
+        { "text": "Pac-Man", "isCorrect": false },
+        { "text": "Mario Bros.", "isCorrect": false },
+        { "text": "The Legend of Zelda", "isCorrect": false },
+        { "text": "Donkey Kong", "isCorrect": true }
+      ],
+      "explanation": "Il s'appelait alors « Jumpman » et devait sauver une demoiselle des griffes du gorille."
+    },
+    {
+      "ref": "jv-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "studio"],
+      "text": "Quel célèbre créateur de Nintendo est le père de Mario et de Zelda ?",
+      "answers": [
+        { "text": "Satoru Iwata", "isCorrect": false },
+        { "text": "Shigeru Miyamoto", "isCorrect": true },
+        { "text": "Masahiro Sakurai", "isCorrect": false },
+        { "text": "Hideo Kojima", "isCorrect": false }
+      ],
+      "explanation": "Il est considéré comme l'un des plus grands créateurs de l'histoire du jeu vidéo."
+    },
+    {
+      "ref": "jv-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["console", "histoire"],
+      "text": "Sur quelle console est sorti Super Mario Bros. à l'origine ?",
+      "answers": [
+        { "text": "La Master System", "isCorrect": false },
+        { "text": "L'Atari 2600", "isCorrect": false },
+        { "text": "La NES (Famicom au Japon)", "isCorrect": true },
+        { "text": "La Game Boy", "isCorrect": false }
+      ],
+      "explanation": "Le jeu est sorti en 1985 au Japon."
+    },
+    {
+      "ref": "jv-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["console"],
+      "text": "Quelle console portable de Nintendo, sortie en 2004, possède deux écrans ?",
+      "answers": [
+        { "text": "La Game Boy Advance", "isCorrect": false },
+        { "text": "La PSP", "isCorrect": false },
+        { "text": "La Switch Lite", "isCorrect": false },
+        { "text": "La Nintendo DS", "isCorrect": true }
+      ],
+      "explanation": "Elle a un écran tactile, ce qui était inédit pour une console Nintendo à l'époque."
+    },
+    {
+      "ref": "jv-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["console"],
+      "text": "Quelle est la dernière console de salon commercialisée par SEGA ?",
+      "answers": [
+        { "text": "La Dreamcast", "isCorrect": true },
+        { "text": "La Saturn", "isCorrect": false },
+        { "text": "La Mega Drive", "isCorrect": false },
+        { "text": "La Master System", "isCorrect": false }
+      ],
+      "explanation": "Sortie en 1998 au Japon, elle a été arrêtée en 2001."
+    },
+    {
+      "ref": "jv-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["console"],
+      "text": "Quelle console Nintendo est sortie en juin 2025 ?",
+      "answers": [
+        { "text": "La Nintendo Switch 2", "isCorrect": true },
+        { "text": "La Wii U 2", "isCorrect": false },
+        { "text": "La Switch Pro", "isCorrect": false },
+        { "text": "La Switch OLED", "isCorrect": false }
+      ],
+      "explanation": "Elle succède à la Switch, sortie en 2017."
+    },
+    {
+      "ref": "jv-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "franchise"],
+      "text": "Quel jeu de 1972, simulant du tennis de table, a lancé Atari ?",
+      "answers": [
+        { "text": "Pac-Man", "isCorrect": false },
+        { "text": "Space Invaders", "isCorrect": false },
+        { "text": "Pong", "isCorrect": true },
+        { "text": "Breakout", "isCorrect": false }
+      ],
+      "explanation": "Il est considéré comme l'un des premiers grands succès commerciaux du jeu vidéo."
+    },
+    {
+      "ref": "jv-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "franchise"],
+      "text": "En quelle année est sorti Pac-Man ?",
+      "answers": [
+        { "text": "1985", "isCorrect": false },
+        { "text": "1980", "isCorrect": true },
+        { "text": "1972", "isCorrect": false },
+        { "text": "1990", "isCorrect": false }
+      ],
+      "explanation": "Il a été créé par Toru Iwatani chez Namco."
+    },
+    {
+      "ref": "jv-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "studio"],
+      "text": "De quel pays vient Alekseï Pajitnov, le créateur de Tetris ?",
+      "answers": [
+        { "text": "L'URSS (Russie)", "isCorrect": true },
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "La Pologne", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": false }
+      ],
+      "explanation": "Il a créé le jeu en 1984, à Moscou."
+    },
+    {
+      "ref": "jv-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio"],
+      "text": "Quelle société américaine a lancé Pong et la console Atari 2600 ?",
+      "answers": [
+        { "text": "Commodore", "isCorrect": false },
+        { "text": "Magnavox", "isCorrect": false },
+        { "text": "Coleco", "isCorrect": false },
+        { "text": "Atari", "isCorrect": true }
+      ],
+      "explanation": "Fondée par Nolan Bushnell en 1972."
+    },
+    {
+      "ref": "jv-060",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise", "console"],
+      "text": "Quel jeu a fait découvrir le tennis, le bowling et le golf avec la Wii ?",
+      "answers": [
+        { "text": "Just Dance", "isCorrect": false },
+        { "text": "Mario Party", "isCorrect": false },
+        { "text": "Wii Fit", "isCorrect": false },
+        { "text": "Wii Sports", "isCorrect": true }
+      ],
+      "explanation": "Il était fourni avec la console dans de nombreux pays."
+    },
+    {
+      "ref": "jv-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quel jeu Zelda sorti en 2017 sur Switch se déroule dans un grand monde ouvert ?",
+      "answers": [
+        { "text": "Ocarina of Time", "isCorrect": false },
+        { "text": "Tears of the Kingdom", "isCorrect": false },
+        { "text": "Breath of the Wild", "isCorrect": true },
+        { "text": "Skyward Sword", "isCorrect": false }
+      ],
+      "explanation": "Tears of the Kingdom, sa suite, est sorti en 2023."
+    },
+    {
+      "ref": "jv-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quel royaume se déroule la plupart des aventures de Zelda ?",
+      "answers": [
+        { "text": "Termina", "isCorrect": false },
+        { "text": "Le Royaume Champignon", "isCorrect": false },
+        { "text": "Alola", "isCorrect": false },
+        { "text": "Hyrule", "isCorrect": true }
+      ],
+      "explanation": "Termina apparaît seulement dans Majora's Mask."
+    },
+    {
+      "ref": "jv-063",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Combien de Pokémon comptait la première génération ?",
+      "answers": [
+        { "text": "251", "isCorrect": false },
+        { "text": "151", "isCorrect": true },
+        { "text": "150", "isCorrect": false },
+        { "text": "100", "isCorrect": false }
+      ],
+      "explanation": "De Bulbizarre (n° 1) à Mew (n° 151)."
+    },
+    {
+      "ref": "jv-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quelle dimension est gouvernée par l'Ender Dragon dans Minecraft ?",
+      "answers": [
+        { "text": "Le Nether", "isCorrect": false },
+        { "text": "La Surface", "isCorrect": false },
+        { "text": "L'Overworld", "isCorrect": false },
+        { "text": "L'End", "isCorrect": true }
+      ],
+      "explanation": "Le dragon peut être vaincu pour accéder à la fin du jeu."
+    },
+    {
+      "ref": "jv-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel soldat en armure verte est le héros de la série Halo ?",
+      "answers": [
+        { "text": "Master Chief", "isCorrect": true },
+        { "text": "Marcus Fenix", "isCorrect": false },
+        { "text": "Gordon Freeman", "isCorrect": false },
+        { "text": "Doomguy", "isCorrect": false }
+      ],
+      "explanation": "Il est accompagné de l'IA Cortana."
+    },
+    {
+      "ref": "jv-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel héros muet est le protagoniste de Half-Life ?",
+      "answers": [
+        { "text": "Isaac Clarke", "isCorrect": false },
+        { "text": "Master Chief", "isCorrect": false },
+        { "text": "Duke Nukem", "isCorrect": false },
+        { "text": "Gordon Freeman", "isCorrect": true }
+      ],
+      "explanation": "Il se bat dans le laboratoire de Black Mesa avec un pied-de-biche."
+    },
+    {
+      "ref": "jv-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Dans quelle série trouve-t-on la chasseuse de primes Samus Aran ?",
+      "answers": [
+        { "text": "Zelda", "isCorrect": false },
+        { "text": "Metroid", "isCorrect": true },
+        { "text": "Halo", "isCorrect": false },
+        { "text": "Mass Effect", "isCorrect": false }
+      ],
+      "explanation": "Samus est l'une des premières héroïnes du jeu vidéo, apparue en 1986."
+    },
+    {
+      "ref": "jv-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel sorceleur est le héros de The Witcher ?",
+      "answers": [
+        { "text": "Ezio Auditore", "isCorrect": false },
+        { "text": "Kratos", "isCorrect": false },
+        { "text": "Dante", "isCorrect": false },
+        { "text": "Geralt de Riv", "isCorrect": true }
+      ],
+      "explanation": "Il est apparu dans les romans d'Andrzej Sapkowski avant les jeux de CD Projekt RED."
+    },
+    {
+      "ref": "jv-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel dieu de la guerre est le héros de la série God of War ?",
+      "answers": [
+        { "text": "Altaïr", "isCorrect": false },
+        { "text": "Marcus Fenix", "isCorrect": false },
+        { "text": "Kratos", "isCorrect": true },
+        { "text": "Joel", "isCorrect": false }
+      ],
+      "explanation": "À l'origine spartiate, il évolue ensuite dans la mythologie nordique."
+    },
+    {
+      "ref": "jv-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel chasseur de trésors est le héros d'Uncharted ?",
+      "answers": [
+        { "text": "Lara Croft", "isCorrect": false },
+        { "text": "Leon Kennedy", "isCorrect": false },
+        { "text": "Indiana Jones", "isCorrect": false },
+        { "text": "Nathan Drake", "isCorrect": true }
+      ],
+      "explanation": "La série a été créée par le studio Naughty Dog."
+    },
+    {
+      "ref": "jv-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quels sont les deux héros de The Last of Us ?",
+      "answers": [
+        { "text": "Leon et Ashley", "isCorrect": false },
+        { "text": "Aloy et Rost", "isCorrect": false },
+        { "text": "Nathan et Elena", "isCorrect": false },
+        { "text": "Joel et Ellie", "isCorrect": true }
+      ],
+      "explanation": "La série est adaptée en série télévisée par HBO."
+    },
+    {
+      "ref": "jv-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "franchise"],
+      "text": "Quelle chasseuse affronte des machines-animaux dans Horizon Zero Dawn ?",
+      "answers": [
+        { "text": "Ellie", "isCorrect": false },
+        { "text": "Jill Valentine", "isCorrect": false },
+        { "text": "Lara Croft", "isCorrect": false },
+        { "text": "Aloy", "isCorrect": true }
+      ],
+      "explanation": "Le jeu est développé par le studio néerlandais Guerrilla Games."
+    },
+    {
+      "ref": "jv-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quelle phrase s'affiche à l'écran lorsque le joueur meurt dans Dark Souls ?",
+      "answers": [
+        { "text": "GAME OVER", "isCorrect": false },
+        { "text": "WASTED", "isCorrect": false },
+        { "text": "TRY AGAIN", "isCorrect": false },
+        { "text": "YOU DIED", "isCorrect": true }
+      ],
+      "explanation": "Dans GTA, c'est « WASTED » qui s'affiche."
+    },
+    {
+      "ref": "jv-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio"],
+      "text": "Quel studio japonais est derrière Dark Souls et Elden Ring ?",
+      "answers": [
+        { "text": "Konami", "isCorrect": false },
+        { "text": "FromSoftware", "isCorrect": true },
+        { "text": "Capcom", "isCorrect": false },
+        { "text": "PlatinumGames", "isCorrect": false }
+      ],
+      "explanation": "Le directeur Hidetaka Miyazaki en est la figure emblématique."
+    },
+    {
+      "ref": "jv-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "franchise"],
+      "text": "Avec quel auteur de fantasy FromSoftware a-t-il collaboré pour Elden Ring ?",
+      "answers": [
+        { "text": "Andrzej Sapkowski", "isCorrect": false },
+        { "text": "George R. R. Martin", "isCorrect": true },
+        { "text": "J.R.R. Tolkien", "isCorrect": false },
+        { "text": "Brandon Sanderson", "isCorrect": false }
+      ],
+      "explanation": "L'auteur de Game of Thrones a écrit la mythologie du jeu."
+    },
+    {
+      "ref": "jv-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio"],
+      "text": "Quel créateur japonais est à l'origine de la série Metal Gear Solid ?",
+      "answers": [
+        { "text": "Shigeru Miyamoto", "isCorrect": false },
+        { "text": "Hideo Kojima", "isCorrect": true },
+        { "text": "Hidetaka Miyazaki", "isCorrect": false },
+        { "text": "Shinji Mikami", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi créé Death Stranding."
+    },
+    {
+      "ref": "jv-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "franchise"],
+      "text": "Quel éditeur japonais a créé Resident Evil et Monster Hunter ?",
+      "answers": [
+        { "text": "Square Enix", "isCorrect": false },
+        { "text": "Bandai Namco", "isCorrect": false },
+        { "text": "Capcom", "isCorrect": true },
+        { "text": "Konami", "isCorrect": false }
+      ],
+      "explanation": "Capcom est aussi à l'origine de Street Fighter."
+    },
+    {
+      "ref": "jv-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "franchise"],
+      "text": "Quel éditeur japonais a créé la série Final Fantasy ?",
+      "answers": [
+        { "text": "Square (Square Enix)", "isCorrect": true },
+        { "text": "Koei", "isCorrect": false },
+        { "text": "Sega", "isCorrect": false },
+        { "text": "Namco", "isCorrect": false }
+      ],
+      "explanation": "Selon la légende, le nom viendrait du fait que Square était alors au bord de la faillite."
+    },
+    {
+      "ref": "jv-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quel jeu de combat est célèbre pour ses « Fatalities » ?",
+      "answers": [
+        { "text": "Street Fighter", "isCorrect": false },
+        { "text": "Tekken", "isCorrect": false },
+        { "text": "Mortal Kombat", "isCorrect": true },
+        { "text": "Soulcalibur", "isCorrect": false }
+      ],
+      "explanation": "La série a fait scandale par sa violence dès 1992."
+    },
+    {
+      "ref": "jv-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quel jeu de Bethesda incarne-t-on le Dovahkiin, un guerrier capable de parler la langue des dragons ?",
+      "answers": [
+        { "text": "Morrowind", "isCorrect": false },
+        { "text": "Oblivion", "isCorrect": false },
+        { "text": "Fallout 4", "isCorrect": false },
+        { "text": "Skyrim", "isCorrect": true }
+      ],
+      "explanation": "The Elder Scrolls V: Skyrim est sorti en 2011."
+    },
+    {
+      "ref": "jv-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans quel jeu de stratégie guide-t-on une civilisation de la préhistoire jusqu'à l'ère spatiale ?",
+      "answers": [
+        { "text": "Civilization", "isCorrect": true },
+        { "text": "Age of Empires", "isCorrect": false },
+        { "text": "Anno", "isCorrect": false },
+        { "text": "Total War", "isCorrect": false }
+      ],
+      "explanation": "La série a été créée par Sid Meier en 1991."
+    },
+    {
+      "ref": "jv-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quel jeu de stratégie de Blizzard oppose Terrans, Zergs et Protoss ?",
+      "answers": [
+        { "text": "Warcraft", "isCorrect": false },
+        { "text": "Age of Empires", "isCorrect": false },
+        { "text": "StarCraft", "isCorrect": true },
+        { "text": "Command & Conquer", "isCorrect": false }
+      ],
+      "explanation": "Il est très populaire en Corée du Sud."
+    },
+    {
+      "ref": "jv-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "franchise"],
+      "text": "Quel studio a créé Fortnite et le moteur Unreal Engine ?",
+      "answers": [
+        { "text": "Epic Games", "isCorrect": true },
+        { "text": "Valve", "isCorrect": false },
+        { "text": "Riot Games", "isCorrect": false },
+        { "text": "Unity", "isCorrect": false }
+      ],
+      "explanation": "Le moteur Unreal Engine est utilisé dans de nombreux jeux."
+    },
+    {
+      "ref": "jv-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quel jeu de tir en équipe de Blizzard est sorti en 2016 ?",
+      "answers": [
+        { "text": "Valorant", "isCorrect": false },
+        { "text": "Apex Legends", "isCorrect": false },
+        { "text": "Overwatch", "isCorrect": true },
+        { "text": "Paladins", "isCorrect": false }
+      ],
+      "explanation": "Sa suite, Overwatch 2, est sortie en 2022."
+    },
+    {
+      "ref": "jv-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "esport"],
+      "text": "À quel genre appartient League of Legends ?",
+      "answers": [
+        { "text": "Jeu de cartes", "isCorrect": false },
+        { "text": "FPS", "isCorrect": false },
+        { "text": "MOBA", "isCorrect": true },
+        { "text": "Jeu de course", "isCorrect": false }
+      ],
+      "explanation": "MOBA signifie « Multiplayer Online Battle Arena »."
+    },
+    {
+      "ref": "jv-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "esport"],
+      "text": "Quel studio édite League of Legends ?",
+      "answers": [
+        { "text": "Valve", "isCorrect": false },
+        { "text": "Epic Games", "isCorrect": false },
+        { "text": "Riot Games", "isCorrect": true },
+        { "text": "Blizzard", "isCorrect": false }
+      ],
+      "explanation": "Riot a aussi créé Valorant."
+    },
+    {
+      "ref": "jv-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quelle ville fictive sert de décor à GTA V ?",
+      "answers": [
+        { "text": "Liberty City", "isCorrect": false },
+        { "text": "Los Santos", "isCorrect": true },
+        { "text": "San Fierro", "isCorrect": false },
+        { "text": "Vice City", "isCorrect": false }
+      ],
+      "explanation": "Los Santos est inspirée de Los Angeles."
+    },
+    {
+      "ref": "jv-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "franchise"],
+      "text": "Quel studio a créé GTA et Red Dead Redemption ?",
+      "answers": [
+        { "text": "Ubisoft", "isCorrect": false },
+        { "text": "Rockstar Games", "isCorrect": true },
+        { "text": "Naughty Dog", "isCorrect": false },
+        { "text": "Bethesda", "isCorrect": false }
+      ],
+      "explanation": "Rockstar a été fondé en 1998."
+    },
+    {
+      "ref": "jv-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage", "adaptation"],
+      "text": "Quel acteur incarne Johnny Silverhand dans Cyberpunk 2077 ?",
+      "answers": [
+        { "text": "Matt Damon", "isCorrect": false },
+        { "text": "Brad Pitt", "isCorrect": false },
+        { "text": "Hugh Jackman", "isCorrect": false },
+        { "text": "Keanu Reeves", "isCorrect": true }
+      ],
+      "explanation": "Le jeu est développé par CD Projekt RED."
+    },
+    {
+      "ref": "jv-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Quel jeu mobile viral de 2013, développé par Dong Nguyen, consiste à passer entre des tuyaux ?",
+      "answers": [
+        { "text": "Doodle Jump", "isCorrect": false },
+        { "text": "Temple Run", "isCorrect": false },
+        { "text": "Angry Birds", "isCorrect": false },
+        { "text": "Flappy Bird", "isCorrect": true }
+      ],
+      "explanation": "Son créateur l'a retiré de la vente en 2014, à cause du stress causé par son succès."
+    },
+    {
+      "ref": "jv-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio"],
+      "text": "Quel studio français a développé Clair Obscur: Expedition 33 ?",
+      "answers": [
+        { "text": "Dontnod", "isCorrect": false },
+        { "text": "Arkane", "isCorrect": false },
+        { "text": "Ubisoft Montpellier", "isCorrect": false },
+        { "text": "Sandfall Interactive", "isCorrect": true }
+      ],
+      "explanation": "Le jeu est sorti en avril 2025."
+    },
+    {
+      "ref": "jv-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["studio", "histoire"],
+      "text": "Quel jeu Mojang a-t-il créé avant d'être racheté par Microsoft pour 2,5 milliards de dollars en 2014 ?",
+      "answers": [
+        { "text": "Minecraft", "isCorrect": true },
+        { "text": "Terraria", "isCorrect": false },
+        { "text": "Fortnite", "isCorrect": false },
+        { "text": "Roblox", "isCorrect": false }
+      ],
+      "explanation": "Son créateur, Markus Persson, a quitté le studio après le rachat."
+    },
+    {
+      "ref": "jv-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Que désigne le terme « mod » dans le jeu vidéo ?",
+      "answers": [
+        { "text": "Une mise à jour officielle", "isCorrect": false },
+        { "text": "Un mode de difficulté", "isCorrect": false },
+        { "text": "Une modification créée par les joueurs", "isCorrect": true },
+        { "text": "Un personnage secret", "isCorrect": false }
+      ],
+      "explanation": "Counter-Strike est né comme un mod de Half-Life."
+    },
+    {
+      "ref": "jv-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « DLC » ?",
+      "answers": [
+        { "text": "Dernier Niveau Complété", "isCorrect": false },
+        { "text": "Contenu téléchargeable (Downloadable Content)", "isCorrect": true },
+        { "text": "Jeu en ligne coopératif", "isCorrect": false },
+        { "text": "Disque de Lancement de Console", "isCorrect": false }
+      ],
+      "explanation": "Il s'agit de contenus additionnels vendus après la sortie du jeu."
+    },
+    {
+      "ref": "jv-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « MMO » dans « MMORPG » ?",
+      "answers": [
+        { "text": "Multi-Mode Offline", "isCorrect": false },
+        { "text": "Massively Multiplayer Online", "isCorrect": true },
+        { "text": "Maximum Multi Objectives", "isCorrect": false },
+        { "text": "Mega Match Online", "isCorrect": false }
+      ],
+      "explanation": "World of Warcraft est l'un des MMORPG les plus célèbres."
+    },
+    {
+      "ref": "jv-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["esport"],
+      "text": "Comment s'appelle la plateforme de streaming rachetée par Amazon en 2014 et dédiée au jeu vidéo ?",
+      "answers": [
+        { "text": "Kick", "isCorrect": false },
+        { "text": "Mixer", "isCorrect": false },
+        { "text": "Twitch", "isCorrect": true },
+        { "text": "Discord", "isCorrect": false }
+      ],
+      "explanation": "Amazon l'a rachetée pour environ 970 millions de dollars."
+    },
+    {
+      "ref": "jv-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "esport"],
+      "text": "Comment s'appelle l'événement caritatif de streaming créé par ZeratoR ?",
+      "answers": [
+        { "text": "Paris Games Week", "isCorrect": false },
+        { "text": "Stream Aid", "isCorrect": false },
+        { "text": "Gamers Assembly", "isCorrect": false },
+        { "text": "ZEvent", "isCorrect": true }
+      ],
+      "explanation": "Il récolte chaque année des millions d'euros pour des associations."
+    },
+    {
+      "ref": "jv-098",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "studio"],
+      "text": "Quel créateur français est à l'origine de Rayman ?",
+      "answers": [
+        { "text": "David Cage", "isCorrect": false },
+        { "text": "Michel Ancel", "isCorrect": true },
+        { "text": "Éric Chahi", "isCorrect": false },
+        { "text": "Frédérick Raynal", "isCorrect": false }
+      ],
+      "explanation": "Il est aussi le père de Beyond Good & Evil."
+    },
+    {
+      "ref": "jv-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["adaptation", "franchise"],
+      "text": "Quelle série HBO de 2023, avec Pedro Pascal, adapte un jeu vidéo ?",
+      "answers": [
+        { "text": "Arcane", "isCorrect": false },
+        { "text": "The Witcher", "isCorrect": false },
+        { "text": "Fallout", "isCorrect": false },
+        { "text": "The Last of Us", "isCorrect": true }
+      ],
+      "explanation": "Arcane est une série Netflix, tirée de League of Legends."
+    },
+    {
+      "ref": "jv-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["adaptation", "franchise"],
+      "text": "Quel jeu est adapté par la série animée Arcane sur Netflix ?",
+      "answers": [
+        { "text": "Dota 2", "isCorrect": false },
+        { "text": "Fortnite", "isCorrect": false },
+        { "text": "League of Legends", "isCorrect": true },
+        { "text": "Overwatch", "isCorrect": false }
+      ],
+      "explanation": "La série est sortie en 2021."
+    },
+    {
+      "ref": "jv-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["adaptation", "record"],
+      "text": "Quel film d'animation de 2023, inspiré d'un jeu Nintendo, a dépassé le milliard de dollars de recettes ?",
+      "answers": [
+        { "text": "Super Mario Bros. Le Film", "isCorrect": true },
+        { "text": "Uncharted", "isCorrect": false },
+        { "text": "Détective Pikachu", "isCorrect": false },
+        { "text": "Sonic 3, le film", "isCorrect": false }
+      ],
+      "explanation": "Il a rapporté plus de 1,3 milliard de dollars dans le monde."
+    },
+    {
+      "ref": "jv-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "console"],
+      "text": "Sur quelle console est née la série Gran Turismo ?",
+      "answers": [
+        { "text": "La Dreamcast", "isCorrect": false },
+        { "text": "La Nintendo 64", "isCorrect": false },
+        { "text": "La PlayStation", "isCorrect": true },
+        { "text": "La Xbox", "isCorrect": false }
+      ],
+      "explanation": "Le premier Gran Turismo est sorti en 1997."
+    },
+    {
+      "ref": "jv-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["franchise", "france"],
+      "text": "Quel salon parisien est le grand rendez-vous français du jeu vidéo ?",
+      "answers": [
+        { "text": "Tokyo Game Show", "isCorrect": false },
+        { "text": "Gamescom", "isCorrect": false },
+        { "text": "Paris Games Week", "isCorrect": true },
+        { "text": "E3", "isCorrect": false }
+      ],
+      "explanation": "Il a lieu chaque année à l'automne."
+    },
+    {
+      "ref": "jv-104",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage", "histoire"],
+      "text": "À l'origine, Mario s'appelait « Jumpman ».",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il a ensuite été rebaptisé Mario, d'après le propriétaire de l'entrepôt de Nintendo America."
+    },
+    {
+      "ref": "jv-105",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Tetris a été créé aux États-Unis.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été créé en 1984 en URSS par Alekseï Pajitnov."
+    },
+    {
+      "ref": "jv-106",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["studio", "franchise"],
+      "text": "Fortnite a été développé par Valve.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a été développé par Epic Games. Valve a créé Half-Life et Counter-Strike."
+    },
+    {
+      "ref": "jv-107",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["console"],
+      "text": "La PlayStation 5 est sortie en 2020.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle est sortie en novembre 2020, quelques jours après la Xbox Series X."
+    },
+    {
+      "ref": "jv-108",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["console"],
+      "text": "La Nintendo Switch 2 est sortie en 2025.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle a été lancée en juin 2025."
+    },
+    {
+      "ref": "jv-109",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["studio", "histoire"],
+      "text": "Microsoft a racheté Activision Blizzard.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le rachat, d'environ 69 milliards de dollars, a été finalisé en octobre 2023."
+    },
+    {
+      "ref": "jv-110",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["franchise", "studio"],
+      "text": "The Witcher 3 est un jeu développé par un studio polonais.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "CD Projekt RED est basé à Varsovie. Le jeu est sorti en 2015."
+    },
+    {
+      "ref": "jv-111",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["france", "studio"],
+      "text": "Michel Ancel est le créateur de Rayman.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le premier Rayman est sorti en 1995 chez Ubisoft."
+    },
+    {
+      "ref": "jv-112",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["franchise"],
+      "text": "Dans Zelda, le joueur incarne la princesse Zelda.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Dans la grande majorité des jeux, on incarne Link. Zelda n'est jouable que dans quelques titres."
+    },
+    {
+      "ref": "jv-113",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "studio"],
+      "text": "Quelle activité Nintendo exerçait-il à sa fondation, en 1889 ?",
+      "answers": [
+        { "text": "Fabriquer des téléviseurs", "isCorrect": false },
+        { "text": "Produire du riz", "isCorrect": false },
+        { "text": "Vendre des consoles", "isCorrect": false },
+        { "text": "Fabriquer des cartes à jouer (hanafuda)", "isCorrect": true }
+      ],
+      "explanation": "Il n'a produit des jeux vidéo qu'à partir des années 1970."
+    },
+    {
+      "ref": "jv-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "franchise"],
+      "text": "Quel jeu Atari, dont des exemplaires auraient été enterrés dans le désert du Nouveau-Mexique, symbolise le krach de 1983 ?",
+      "answers": [
+        { "text": "Asteroids", "isCorrect": false },
+        { "text": "E.T. l'extra-terrestre", "isCorrect": true },
+        { "text": "Pong", "isCorrect": false },
+        { "text": "Space Invaders", "isCorrect": false }
+      ],
+      "explanation": "Le jeu a été développé en cinq semaines et a été un échec commercial retentissant."
+    },
+    {
+      "ref": "jv-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["console", "histoire"],
+      "text": "En quelle année est sortie la première PlayStation au Japon ?",
+      "answers": [
+        { "text": "1994", "isCorrect": true },
+        { "text": "1998", "isCorrect": false },
+        { "text": "1996", "isCorrect": false },
+        { "text": "1992", "isCorrect": false }
+      ],
+      "explanation": "Elle est sortie en décembre 1994."
+    },
+    {
+      "ref": "jv-116",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["console", "histoire"],
+      "text": "Sur quelle console est sorti The Legend of Zelda: Ocarina of Time, en 1998 ?",
+      "answers": [
+        { "text": "La Game Boy Color", "isCorrect": false },
+        { "text": "La Nintendo 64", "isCorrect": true },
+        { "text": "La Super Nintendo", "isCorrect": false },
+        { "text": "La GameCube", "isCorrect": false }
+      ],
+      "explanation": "Il est souvent cité comme l'un des meilleurs jeux de tous les temps."
+    },
+    {
+      "ref": "jv-117",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["console"],
+      "text": "Quelle console portable Nintendo, sortie en 1989, a accueilli Tetris et la première génération de Pokémon ?",
+      "answers": [
+        { "text": "La Game Gear", "isCorrect": false },
+        { "text": "La Game Boy", "isCorrect": true },
+        { "text": "La Wonderswan", "isCorrect": false },
+        { "text": "La Lynx", "isCorrect": false }
+      ],
+      "explanation": "Elle est réputée pour sa grande autonomie."
+    },
+    {
+      "ref": "jv-118",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "franchise"],
+      "text": "Quel jeu de Blizzard est sorti en 2004 et a rassemblé des millions de joueurs ?",
+      "answers": [
+        { "text": "Diablo II", "isCorrect": false },
+        { "text": "EverQuest", "isCorrect": false },
+        { "text": "Guild Wars", "isCorrect": false },
+        { "text": "World of Warcraft", "isCorrect": true }
+      ],
+      "explanation": "Il a atteint plus de 12 millions d'abonnés à son apogée, en 2010."
+    },
+    {
+      "ref": "jv-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "personnage"],
+      "text": "Qui est le créateur de Pokémon ?",
+      "answers": [
+        { "text": "Shigeru Miyamoto", "isCorrect": false },
+        { "text": "Satoshi Tajiri", "isCorrect": true },
+        { "text": "Masahiro Sakurai", "isCorrect": false },
+        { "text": "Hideo Kojima", "isCorrect": false }
+      ],
+      "explanation": "Il s'est inspiré de sa passion d'enfant pour la collection d'insectes."
+    },
+    {
+      "ref": "jv-120",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["studio", "histoire"],
+      "text": "Quel Suédois a créé Minecraft ?",
+      "answers": [
+        { "text": "Gabe Newell", "isCorrect": false },
+        { "text": "Markus Persson (Notch)", "isCorrect": true },
+        { "text": "Tim Sweeney", "isCorrect": false },
+        { "text": "John Carmack", "isCorrect": false }
+      ],
+      "explanation": "Il a développé le prototype seul, en 2009."
+    },
+    {
+      "ref": "jv-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["studio", "histoire"],
+      "text": "Quel studio a créé Doom en 1993 ?",
+      "answers": [
+        { "text": "Blizzard", "isCorrect": false },
+        { "text": "3D Realms", "isCorrect": false },
+        { "text": "Epic Games", "isCorrect": false },
+        { "text": "id Software", "isCorrect": true }
+      ],
+      "explanation": "John Carmack et John Romero en sont les figures emblématiques."
+    },
+    {
+      "ref": "jv-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "franchise"],
+      "text": "Counter-Strike est né comme modification de quel jeu ?",
+      "answers": [
+        { "text": "Half-Life", "isCorrect": true },
+        { "text": "Quake", "isCorrect": false },
+        { "text": "Doom", "isCorrect": false },
+        { "text": "Unreal Tournament", "isCorrect": false }
+      ],
+      "explanation": "Il est sorti en version bêta en 1999."
+    },
+    {
+      "ref": "jv-123",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise", "personnage"],
+      "text": "Quelle IA sarcastique guide et menace la joueuse dans Portal ?",
+      "answers": [
+        { "text": "GLaDOS", "isCorrect": true },
+        { "text": "Cortana", "isCorrect": false },
+        { "text": "SHODAN", "isCorrect": false },
+        { "text": "HAL 9000", "isCorrect": false }
+      ],
+      "explanation": "Le jeu est sorti en 2007 chez Valve."
+    },
+    {
+      "ref": "jv-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage", "franchise"],
+      "text": "Quel commandant est le héros de la trilogie Mass Effect ?",
+      "answers": [
+        { "text": "Isaac Clarke", "isCorrect": false },
+        { "text": "Marcus Fenix", "isCorrect": false },
+        { "text": "Shepard", "isCorrect": true },
+        { "text": "Nathan Drake", "isCorrect": false }
+      ],
+      "explanation": "Le joueur peut choisir son genre, son apparence et ses décisions."
+    },
+    {
+      "ref": "jv-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Comment s'appelle l'appareil porté au poignet dans la série Fallout ?",
+      "answers": [
+        { "text": "Pip-Boy", "isCorrect": true },
+        { "text": "Holo-Watch", "isCorrect": false },
+        { "text": "Pokétch", "isCorrect": false },
+        { "text": "Omnitool", "isCorrect": false }
+      ],
+      "explanation": "Il sert d'inventaire, de carte et de journal de quêtes."
+    },
+    {
+      "ref": "jv-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["studio", "histoire"],
+      "text": "Quel développeur indépendant a créé seul Stardew Valley ?",
+      "answers": [
+        { "text": "Markus Persson", "isCorrect": false },
+        { "text": "Toby Fox", "isCorrect": false },
+        { "text": "Edmund McMillen", "isCorrect": false },
+        { "text": "Eric Barone (ConcernedApe)", "isCorrect": true }
+      ],
+      "explanation": "Le jeu est sorti en 2016 et s'est vendu à des dizaines de millions d'exemplaires."
+    },
+    {
+      "ref": "jv-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["studio", "histoire"],
+      "text": "Quel créateur est à l'origine de SimCity et des Sims ?",
+      "answers": [
+        { "text": "Peter Molyneux", "isCorrect": false },
+        { "text": "Richard Garriott", "isCorrect": false },
+        { "text": "Sid Meier", "isCorrect": false },
+        { "text": "Will Wright", "isCorrect": true }
+      ],
+      "explanation": "Il a fondé le studio Maxis."
+    },
+    {
+      "ref": "jv-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["studio", "histoire"],
+      "text": "Quelle société finlandaise a créé Clash of Clans ?",
+      "answers": [
+        { "text": "Supercell", "isCorrect": true },
+        { "text": "King", "isCorrect": false },
+        { "text": "Zynga", "isCorrect": false },
+        { "text": "Rovio", "isCorrect": false }
+      ],
+      "explanation": "Rovio, autre société finlandaise, a créé Angry Birds."
+    },
+    {
+      "ref": "jv-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Dans quelle ville réelle Vice City, de GTA, trouve-t-elle son inspiration ?",
+      "answers": [
+        { "text": "Los Angeles", "isCorrect": false },
+        { "text": "Miami", "isCorrect": true },
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "New York", "isCorrect": false }
+      ],
+      "explanation": "Le jeu se déroule dans les années 1980."
+    },
+    {
+      "ref": "jv-130",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "histoire"],
+      "text": "Quel jeu, sorti en 2013, a généré un milliard de dollars de recettes en seulement trois jours ?",
+      "answers": [
+        { "text": "Minecraft", "isCorrect": false },
+        { "text": "Skyrim", "isCorrect": false },
+        { "text": "Call of Duty: Black Ops II", "isCorrect": false },
+        { "text": "GTA V", "isCorrect": true }
+      ],
+      "explanation": "Il est devenu le produit de divertissement ayant atteint le plus vite ce seuil."
+    },
+    {
+      "ref": "jv-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["esport"],
+      "text": "Quel jeu a organisé The International, tournoi d'esport avec des cagnottes de plusieurs dizaines de millions de dollars ?",
+      "answers": [
+        { "text": "Counter-Strike", "isCorrect": false },
+        { "text": "Overwatch", "isCorrect": false },
+        { "text": "Dota 2", "isCorrect": true },
+        { "text": "League of Legends", "isCorrect": false }
+      ],
+      "explanation": "La cagnotte était financée par les joueurs, via des contenus payants."
+    },
+    {
+      "ref": "jv-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "esport"],
+      "text": "Quel streamer français a fondé l'équipe d'esport Karmine Corp ?",
+      "answers": [
+        { "text": "Kameto", "isCorrect": true },
+        { "text": "Squeezie", "isCorrect": false },
+        { "text": "Ponce", "isCorrect": false },
+        { "text": "Gotaga", "isCorrect": false }
+      ],
+      "explanation": "Elle est née en 2020 et compte une communauté de fans très active."
+    },
+    {
+      "ref": "jv-133",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "studio", "histoire"],
+      "text": "Quel jeu français de 1992 est considéré comme le précurseur du survival horror ?",
+      "answers": [
+        { "text": "Silent Hill", "isCorrect": false },
+        { "text": "Alone in the Dark", "isCorrect": true },
+        { "text": "Project Zero", "isCorrect": false },
+        { "text": "Resident Evil", "isCorrect": false }
+      ],
+      "explanation": "Il a été conçu par Frédérick Raynal, chez Infogrames."
+    },
+    {
+      "ref": "jv-134",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "studio", "histoire"],
+      "text": "Quel jeu de 1991, conçu presque seul par Éric Chahi, est un grand classique français ?",
+      "answers": [
+        { "text": "Rayman", "isCorrect": false },
+        { "text": "Another World", "isCorrect": true },
+        { "text": "Prince of Persia", "isCorrect": false },
+        { "text": "Flashback", "isCorrect": false }
+      ],
+      "explanation": "Il est sorti sur Amiga, avec une animation cinématographique."
+    },
+    {
+      "ref": "jv-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "studio"],
+      "text": "Quel studio français, fondé par David Cage, a créé Heavy Rain et Detroit: Become Human ?",
+      "answers": [
+        { "text": "Cyanide", "isCorrect": false },
+        { "text": "Arkane Lyon", "isCorrect": false },
+        { "text": "Dontnod", "isCorrect": false },
+        { "text": "Quantic Dream", "isCorrect": true }
+      ],
+      "explanation": "Dontnod, un autre studio français, a créé Life is Strange."
+    },
+    {
+      "ref": "jv-136",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "studio"],
+      "text": "Quel studio de Roubaix a créé le MMORPG Dofus en 2004 ?",
+      "answers": [
+        { "text": "Ankama", "isCorrect": true },
+        { "text": "Don't Nod", "isCorrect": false },
+        { "text": "Focus Home Interactive", "isCorrect": false },
+        { "text": "Eden Games", "isCorrect": false }
+      ],
+      "explanation": "Ankama a aussi créé Wakfu et Krosmaga."
+    },
+    {
+      "ref": "jv-137",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["franchise", "histoire"],
+      "text": "Sur quelle console le jeu The Legend of Zelda: Breath of the Wild est-il sorti dès le lancement, en mars 2017 ?",
+      "answers": [
+        { "text": "La Nintendo Switch (et la Wii U)", "isCorrect": true },
+        { "text": "La Xbox One", "isCorrect": false },
+        { "text": "La Nintendo 3DS", "isCorrect": false },
+        { "text": "La PlayStation 4", "isCorrect": false }
+      ],
+      "explanation": "Il a accompagné le lancement de la Switch."
+    },
+    {
+      "ref": "jv-138",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["franchise"],
+      "text": "Dans Pac-Man, les fantômes s'appellent Blinky, Pinky, Inky et Clyde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Chacun a son propre comportement face à Pac-Man."
+    },
+    {
+      "ref": "jv-139",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["franchise", "histoire"],
+      "text": "Skyrim est sorti en 2011.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il est sorti le 11 novembre 2011, et a été réédité de nombreuses fois."
+    },
+    {
+      "ref": "jv-140",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "franchise"],
+      "text": "Pokémon s'est d'abord appelé « Capsule Monsters » pendant son développement.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le nom a ensuite été changé en « Pocket Monsters », abrégé en Pokémon."
+    },
+    {
+      "ref": "jv-141",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["franchise", "histoire"],
+      "text": "Le Pokémon n° 25 du Pokédex est Pikachu.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il se trouve entre Piafabec (n° 21) et Raichu (n° 26)."
+    },
+    {
+      "ref": "jv-142",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["studio", "histoire"],
+      "text": "Sony a racheté le studio Bungie, créateur de Halo et Destiny.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le rachat de 3,6 milliards de dollars a été annoncé en 2022."
+    },
+    {
+      "ref": "jv-143",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["franchise", "histoire"],
+      "text": "GTA V est sorti en 2013 sur PlayStation 3 et Xbox 360.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il est ensuite paru sur PS4, Xbox One et PC."
+    }
+  ]
+}
