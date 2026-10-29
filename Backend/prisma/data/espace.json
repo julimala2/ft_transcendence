@@ -1,0 +1,2754 @@
+{
+  "_stats": {
+    "note": "Statistiques informatives. À vérifier après assemblage des 260 questions.",
+    "total": 260,
+    "parDifficulte": {
+      "1": 80,
+      "2": 100,
+      "3": 80
+    },
+    "parType": {
+      "multiple": 220,
+      "boolean": 40
+    },
+    "avecImage": 0,
+    "sansImage": 260,
+    "parTag": {}
+  },
+  "category": {
+    "slug": "espace",
+    "name": "Espace et astronomie"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "espace-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle est la planète la plus proche du Soleil ?",
+      "answers": [
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": true },
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Terre", "isCorrect": false }
+      ],
+      "explanation": "Mercure est la première planète du Système solaire en partant du Soleil."
+    },
+    {
+      "ref": "espace-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle est la plus grande planète du Système solaire ?",
+      "answers": [
+        { "text": "Saturne", "isCorrect": false },
+        { "text": "Neptune", "isCorrect": false },
+        { "text": "Jupiter", "isCorrect": true },
+        { "text": "Terre", "isCorrect": false }
+      ],
+      "explanation": "Jupiter est une géante gazeuse dont le diamètre est environ onze fois celui de la Terre."
+    },
+    {
+      "ref": "espace-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["satellite", "terre"],
+      "text": "Comment s'appelle le satellite naturel de la Terre ?",
+      "answers": [
+        { "text": "Europe", "isCorrect": false },
+        { "text": "Titan", "isCorrect": false },
+        { "text": "La Lune", "isCorrect": true },
+        { "text": "Phobos", "isCorrect": false }
+      ],
+      "explanation": "La Lune est le seul satellite naturel permanent de la Terre."
+    },
+    {
+      "ref": "espace-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etoile", "soleil"],
+      "text": "Qu'est-ce que le Soleil ?",
+      "answers": [
+        { "text": "Une planète", "isCorrect": false },
+        { "text": "Une étoile", "isCorrect": true },
+        { "text": "Une comète", "isCorrect": false },
+        { "text": "Une galaxie", "isCorrect": false }
+      ],
+      "explanation": "Le Soleil est une étoile qui produit de l'énergie grâce à la fusion nucléaire dans son cœur."
+    },
+    {
+      "ref": "espace-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "terre"],
+      "text": "Quelle planète est surnommée la planète rouge ?",
+      "answers": [
+        { "text": "Mars", "isCorrect": true },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Uranus", "isCorrect": false }
+      ],
+      "explanation": "Le sol martien contient des oxydes de fer qui lui donnent sa couleur rougeâtre."
+    },
+    {
+      "ref": "espace-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète est célèbre pour ses grands anneaux visibles depuis la Terre avec un télescope ?",
+      "answers": [
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Saturne", "isCorrect": true },
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": false }
+      ],
+      "explanation": "Saturne possède un vaste système d'anneaux constitué principalement de glace et de débris rocheux."
+    },
+    {
+      "ref": "espace-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["terre", "astronomie"],
+      "text": "Combien de planètes compte actuellement le Système solaire ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "8", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "Le Système solaire compte huit planètes depuis que Pluton est classée parmi les planètes naines en 2006."
+    },
+    {
+      "ref": "espace-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète est la troisième en partant du Soleil ?",
+      "answers": [
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "La Terre", "isCorrect": true },
+        { "text": "Jupiter", "isCorrect": false }
+      ],
+      "explanation": "L'ordre des trois premières planètes est Mercure, Vénus, puis la Terre."
+    },
+    {
+      "ref": "espace-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "astronomie"],
+      "text": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
+      "answers": [
+        { "text": "Un météorologue", "isCorrect": false },
+        { "text": "Un astronaute", "isCorrect": true },
+        { "text": "Un géologue", "isCorrect": false },
+        { "text": "Un navigateur maritime", "isCorrect": false }
+      ],
+      "explanation": "Le mot astronaute désigne une personne entraînée pour effectuer des missions spatiales."
+    },
+    {
+      "ref": "espace-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lune", "astronomie"],
+      "text": "Quel phénomène explique principalement les phases de la Lune ?",
+      "answers": [
+        { "text": "L'ombre de la Terre en permanence", "isCorrect": false },
+        { "text": "Les changements de forme de la Lune", "isCorrect": false },
+        { "text": "La partie éclairée de la Lune que nous voyons depuis la Terre", "isCorrect": true },
+        { "text": "Les nuages qui cachent la Lune", "isCorrect": false }
+      ],
+      "explanation": "La Lune est éclairée par le Soleil et nous en voyons différentes portions selon sa position par rapport à la Terre et au Soleil."
+    },
+    {
+      "ref": "espace-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["systeme-solaire", "soleil"],
+      "text": "Quelle force maintient les planètes en orbite autour du Soleil ?",
+      "answers": [
+        { "text": "Le magnétisme terrestre", "isCorrect": false },
+        { "text": "La gravité", "isCorrect": true },
+        { "text": "Le vent solaire uniquement", "isCorrect": false },
+        { "text": "La lumière des étoiles", "isCorrect": false }
+      ],
+      "explanation": "La gravitation du Soleil maintient les planètes sur leurs orbites."
+    },
+    {
+      "ref": "espace-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète est connue pour être la plus chaude du Système solaire en moyenne à sa surface ?",
+      "answers": [
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": true },
+        { "text": "Jupiter", "isCorrect": false }
+      ],
+      "explanation": "L'épaisse atmosphère de Vénus retient énormément de chaleur grâce à un puissant effet de serre."
+    },
+    {
+      "ref": "espace-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["terre", "astronomie"],
+      "text": "Combien de temps la Terre met-elle approximativement pour faire un tour sur elle-même ?",
+      "answers": [
+        { "text": "24 heures", "isCorrect": true },
+        { "text": "7 jours", "isCorrect": false },
+        { "text": "30 jours", "isCorrect": false },
+        { "text": "365 jours", "isCorrect": false }
+      ],
+      "explanation": "La rotation terrestre explique l'alternance du jour et de la nuit. Un jour solaire dure environ 24 heures."
+    },
+    {
+      "ref": "espace-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["terre", "astronomie"],
+      "text": "Combien de temps la Terre met-elle environ pour faire le tour du Soleil ?",
+      "answers": [
+        { "text": "24 heures", "isCorrect": false },
+        { "text": "Un mois", "isCorrect": false },
+        { "text": "Un an", "isCorrect": true },
+        { "text": "Dix ans", "isCorrect": false }
+      ],
+      "explanation": "Une révolution de la Terre autour du Soleil dure environ 365,25 jours."
+    },
+    {
+      "ref": "espace-015",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["galaxie", "astronomie"],
+      "text": "Comment s'appelle la galaxie dans laquelle se trouve le Système solaire ?",
+      "answers": [
+        { "text": "Andromède", "isCorrect": false },
+        { "text": "La Voie lactée", "isCorrect": true },
+        { "text": "Le Grand Nuage de Magellan", "isCorrect": false },
+        { "text": "La galaxie du Sombrero", "isCorrect": false }
+      ],
+      "explanation": "Le Soleil se situe dans la Voie lactée, une galaxie spirale contenant des centaines de milliards d'étoiles."
+    },
+    {
+      "ref": "espace-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["etoile", "astronomie"],
+      "text": "Pourquoi les étoiles semblent-elles briller dans le ciel nocturne ?",
+      "answers": [
+        { "text": "Elles réfléchissent toutes la lumière de la Lune", "isCorrect": false },
+        { "text": "Elles produisent leur propre lumière", "isCorrect": true },
+        { "text": "Elles sont toutes éclairées par la Terre", "isCorrect": false },
+        { "text": "Elles sont faites de glace lumineuse", "isCorrect": false }
+      ],
+      "explanation": "Les étoiles produisent de la lumière et de l'énergie, principalement grâce à la fusion nucléaire."
+    },
+    {
+      "ref": "espace-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "astronomie"],
+      "text": "Quel instrument permet d'observer des objets célestes lointains ?",
+      "answers": [
+        { "text": "Un microscope", "isCorrect": false },
+        { "text": "Un télescope", "isCorrect": true },
+        { "text": "Un thermomètre", "isCorrect": false },
+        { "text": "Un baromètre", "isCorrect": false }
+      ],
+      "explanation": "Les télescopes recueillent la lumière ou d'autres rayonnements provenant des objets astronomiques."
+    },
+    {
+      "ref": "espace-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lune", "exploration-spatiale"],
+      "text": "En quelle année les premiers humains ont-ils marché sur la Lune ?",
+      "answers": [
+        { "text": "1959", "isCorrect": false },
+        { "text": "1969", "isCorrect": true },
+        { "text": "1979", "isCorrect": false },
+        { "text": "1989", "isCorrect": false }
+      ],
+      "explanation": "Neil Armstrong et Buzz Aldrin ont marché sur la Lune lors de la mission Apollo 11, en juillet 1969."
+    },
+    {
+      "ref": "espace-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "astronaute"],
+      "text": "Qui fut le premier être humain à voyager dans l'espace ?",
+      "answers": [
+        { "text": "Neil Armstrong", "isCorrect": false },
+        { "text": "Youri Gagarine", "isCorrect": true },
+        { "text": "Buzz Aldrin", "isCorrect": false },
+        { "text": "John Glenn", "isCorrect": false }
+      ],
+      "explanation": "Le cosmonaute soviétique Youri Gagarine a effectué son vol spatial historique le 12 avril 1961."
+    },
+    {
+      "ref": "espace-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "lune"],
+      "text": "Comment s'appelait la mission qui a permis aux premiers humains de marcher sur la Lune ?",
+      "answers": [
+        { "text": "Apollo 8", "isCorrect": false },
+        { "text": "Apollo 11", "isCorrect": true },
+        { "text": "Gemini 4", "isCorrect": false },
+        { "text": "Voyager 1", "isCorrect": false }
+      ],
+      "explanation": "Apollo 11 a aluni le 20 juillet 1969 selon l'heure universelle."
+    },
+    {
+      "ref": "espace-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["systeme-solaire", "planete"],
+      "text": "Quelle planète est la plus éloignée du Soleil parmi les huit planètes reconnues ?",
+      "answers": [
+        { "text": "Uranus", "isCorrect": false },
+        { "text": "Saturne", "isCorrect": false },
+        { "text": "Neptune", "isCorrect": true },
+        { "text": "Jupiter", "isCorrect": false }
+      ],
+      "explanation": "Neptune est la huitième planète du Système solaire."
+    },
+    {
+      "ref": "espace-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète est célèbre pour sa Grande Tache rouge ?",
+      "answers": [
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Jupiter", "isCorrect": true },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "Neptune", "isCorrect": false }
+      ],
+      "explanation": "La Grande Tache rouge est une gigantesque tempête observée dans l'atmosphère de Jupiter."
+    },
+    {
+      "ref": "espace-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "physique"],
+      "text": "Comment appelle-t-on la trajectoire suivie par une planète autour d'une étoile ?",
+      "answers": [
+        { "text": "Une orbite", "isCorrect": true },
+        { "text": "Un cratère", "isCorrect": false },
+        { "text": "Une éruption", "isCorrect": false },
+        { "text": "Une constellation", "isCorrect": false }
+      ],
+      "explanation": "Une orbite est la trajectoire d'un objet autour d'un autre sous l'effet de la gravitation."
+    },
+    {
+      "ref": "espace-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["satellite", "espace"],
+      "text": "Comment appelle-t-on un objet fabriqué par l'être humain et placé en orbite autour de la Terre ?",
+      "answers": [
+        { "text": "Une météorite", "isCorrect": false },
+        { "text": "Un satellite artificiel", "isCorrect": true },
+        { "text": "Une comète naturelle", "isCorrect": false },
+        { "text": "Une étoile naine", "isCorrect": false }
+      ],
+      "explanation": "Les satellites artificiels servent notamment aux télécommunications, à la navigation et à l'observation de la Terre."
+    },
+    {
+      "ref": "espace-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "physique"],
+      "text": "Comment appelle-t-on la zone de l'espace où la gravité d'un corps céleste attire fortement les objets vers lui, sans surface solide définie ?",
+      "answers": [
+        { "text": "Un océan spatial", "isCorrect": false },
+        { "text": "Une atmosphère", "isCorrect": false },
+        { "text": "Un champ gravitationnel", "isCorrect": true },
+        { "text": "Une constellation", "isCorrect": false }
+      ],
+      "explanation": "Un champ gravitationnel décrit l'influence gravitationnelle d'un objet massif sur son environnement."
+    },
+    {
+      "ref": "espace-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lune", "systeme-solaire"],
+      "text": "Quelle est la forme de la Lune ?",
+      "answers": [
+        { "text": "Un cube", "isCorrect": false },
+        { "text": "Une sphère presque ronde", "isCorrect": true },
+        { "text": "Un disque plat", "isCorrect": false },
+        { "text": "Un anneau", "isCorrect": false }
+      ],
+      "explanation": "La gravité donne à la Lune une forme globalement sphérique, légèrement irrégulière."
+    },
+    {
+      "ref": "espace-027",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["terre", "astronomie"],
+      "text": "Pourquoi fait-il jour sur une partie de la Terre pendant qu'il fait nuit sur l'autre ?",
+      "answers": [
+        { "text": "Parce que la Terre tourne sur elle-même", "isCorrect": true },
+        { "text": "Parce que le Soleil s'éteint chaque nuit", "isCorrect": false },
+        { "text": "Parce que la Lune cache le Soleil chaque soir", "isCorrect": false },
+        { "text": "Parce que les étoiles produisent la nuit", "isCorrect": false }
+      ],
+      "explanation": "La rotation de la Terre fait successivement passer chaque région de la lumière du Soleil à l'obscurité."
+    },
+    {
+      "ref": "espace-028",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["systeme-solaire", "planete"],
+      "text": "Quelle planète possède une atmosphère très dense principalement composée de dioxyde de carbone et des nuages d'acide sulfurique ?",
+      "answers": [
+        { "text": "Vénus", "isCorrect": true },
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "La Terre", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false }
+      ],
+      "explanation": "L'atmosphère de Vénus est extrêmement dense et sa surface connaît des températures très élevées."
+    },
+    {
+      "ref": "espace-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète est souvent appelée la planète bleue ?",
+      "answers": [
+        { "text": "Neptune", "isCorrect": false },
+        { "text": "La Terre", "isCorrect": true },
+        { "text": "Saturne", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": false }
+      ],
+      "explanation": "La Terre est surnommée la planète bleue parce que ses océans couvrent environ 71 % de sa surface."
+    },
+    {
+      "ref": "espace-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "physique"],
+      "text": "Comment appelle-t-on la lumière colorée qui peut apparaître dans le ciel près des régions polaires ?",
+      "answers": [
+        { "text": "Une éclipse", "isCorrect": false },
+        { "text": "Une aurore polaire", "isCorrect": true },
+        { "text": "Une comète", "isCorrect": false },
+        { "text": "Une supernova", "isCorrect": false }
+      ],
+      "explanation": "Les aurores polaires se produisent lorsque des particules chargées interagissent avec l'atmosphère terrestre."
+    },
+    {
+      "ref": "espace-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "astronomie"],
+      "text": "Quel phénomène se produit lorsqu'un astre en cache partiellement ou totalement un autre vu depuis un observateur ?",
+      "answers": [
+        { "text": "Une éclipse", "isCorrect": true },
+        { "text": "Une supernova", "isCorrect": false },
+        { "text": "Une orbite", "isCorrect": false },
+        { "text": "Une aurore", "isCorrect": false }
+      ],
+      "explanation": "Une éclipse solaire ou lunaire se produit lorsque le Soleil, la Terre et la Lune sont alignés de manière appropriée."
+    },
+    {
+      "ref": "espace-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "corps-celestes"],
+      "text": "Comment appelle-t-on un petit corps rocheux qui orbite autour du Soleil ?",
+      "answers": [
+        { "text": "Un astéroïde", "isCorrect": true },
+        { "text": "Une galaxie", "isCorrect": false },
+        { "text": "Une étoile", "isCorrect": false },
+        { "text": "Un satellite artificiel", "isCorrect": false }
+      ],
+      "explanation": "Les astéroïdes sont des corps rocheux ou métalliques de tailles variées qui orbitent autour du Soleil."
+    },
+    {
+      "ref": "espace-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "corps-celestes"],
+      "text": "Quel objet céleste possède généralement une queue de gaz et de poussière lorsqu'il s'approche du Soleil ?",
+      "answers": [
+        { "text": "Une comète", "isCorrect": true },
+        { "text": "Une planète rocheuse", "isCorrect": false },
+        { "text": "Une étoile à neutrons", "isCorrect": false },
+        { "text": "Une galaxie elliptique", "isCorrect": false }
+      ],
+      "explanation": "La chaleur du Soleil libère du gaz et de la poussière du noyau glacé d'une comète, formant une chevelure et souvent une ou plusieurs queues."
+    },
+    {
+      "ref": "espace-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "corps-celestes"],
+      "text": "Comment appelle-t-on le phénomène lumineux produit lorsqu'un petit objet spatial traverse l'atmosphère terrestre ?",
+      "answers": [
+        { "text": "Une constellation", "isCorrect": false },
+        { "text": "Un météore", "isCorrect": true },
+        { "text": "Une planète naine", "isCorrect": false },
+        { "text": "Un pulsar", "isCorrect": false }
+      ],
+      "explanation": "Le météore est la traînée lumineuse produite par l'entrée d'un petit corps dans l'atmosphère. On l'appelle couramment une étoile filante."
+    },
+    {
+      "ref": "espace-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "corps-celestes"],
+      "text": "Comment appelle-t-on un fragment rocheux venu de l'espace qui atteint le sol terrestre ?",
+      "answers": [
+        { "text": "Un météore", "isCorrect": false },
+        { "text": "Une météorite", "isCorrect": true },
+        { "text": "Une nébuleuse", "isCorrect": false },
+        { "text": "Une exoplanète", "isCorrect": false }
+      ],
+      "explanation": "Une météorite est un fragment d'origine spatiale qui survit à son passage dans l'atmosphère et atteint le sol."
+    },
+    {
+      "ref": "espace-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "station-spatiale"],
+      "text": "Comment s'appelle la station spatiale habitée qui orbite autour de la Terre depuis la fin des années 1990 ?",
+      "answers": [
+        { "text": "Hubble", "isCorrect": false },
+        { "text": "ISS", "isCorrect": true },
+        { "text": "Voyager 2", "isCorrect": false },
+        { "text": "Apollo 11", "isCorrect": false }
+      ],
+      "explanation": "L'ISS, ou Station spatiale internationale, est un laboratoire orbital utilisé par plusieurs agences spatiales."
+    },
+    {
+      "ref": "espace-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "astronomie"],
+      "text": "Quel télescope spatial célèbre a été lancé en 1990 et observe principalement dans le visible, l'ultraviolet et le proche infrarouge ?",
+      "answers": [
+        { "text": "James Webb", "isCorrect": false },
+        { "text": "Hubble", "isCorrect": true },
+        { "text": "Kepler", "isCorrect": false },
+        { "text": "Spoutnik", "isCorrect": false }
+      ],
+      "explanation": "Le télescope spatial Hubble a révolutionné de nombreux domaines de l'astronomie grâce à ses observations au-dessus de l'atmosphère."
+    },
+    {
+      "ref": "espace-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "planete"],
+      "text": "Quel rover de la NASA a atterri sur Mars en février 2021 pour rechercher des traces d'une ancienne vie microbienne et collecter des échantillons ?",
+      "answers": [
+        { "text": "Curiosity", "isCorrect": false },
+        { "text": "Perseverance", "isCorrect": true },
+        { "text": "Opportunity", "isCorrect": false },
+        { "text": "Lunokhod", "isCorrect": false }
+      ],
+      "explanation": "Perseverance explore le cratère Jezero et collecte des échantillons martiens en vue d'un éventuel retour sur Terre."
+    },
+    {
+      "ref": "espace-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "lune"],
+      "text": "Quel pays a envoyé la première sonde à se poser en douceur sur la Lune, en 1966 ?",
+      "answers": [
+        { "text": "Les États-Unis", "isCorrect": false },
+        { "text": "L'Union soviétique", "isCorrect": true },
+        { "text": "La France", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": false }
+      ],
+      "explanation": "La sonde soviétique Luna 9 a réussi le premier alunissage en douceur en février 1966."
+    },
+    {
+      "ref": "espace-040",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "histoire"],
+      "text": "Quel fut le premier satellite artificiel de la Terre ?",
+      "answers": [
+        { "text": "Explorer 1", "isCorrect": false },
+        { "text": "Spoutnik 1", "isCorrect": true },
+        { "text": "Hubble", "isCorrect": false },
+        { "text": "Luna 2", "isCorrect": false }
+      ],
+      "explanation": "L'Union soviétique a lancé Spoutnik 1 le 4 octobre 1957, ouvrant l'ère spatiale."
+    },
+    {
+      "ref": "espace-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "constellation"],
+      "text": "Comment appelle-t-on un groupe apparent d'étoiles formant une figure dans le ciel ?",
+      "answers": [
+        { "text": "Une constellation", "isCorrect": true },
+        { "text": "Une orbite", "isCorrect": false },
+        { "text": "Une météorite", "isCorrect": false },
+        { "text": "Une atmosphère", "isCorrect": false }
+      ],
+      "explanation": "Une constellation est une région du ciel associée à un motif apparent d'étoiles vu depuis la Terre."
+    },
+    {
+      "ref": "espace-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "constellation"],
+      "text": "Quelle constellation est facilement reconnaissable grâce à ses trois étoiles alignées formant la ceinture du personnage ?",
+      "answers": [
+        { "text": "Orion", "isCorrect": true },
+        { "text": "La Petite Ourse", "isCorrect": false },
+        { "text": "Le Cygne", "isCorrect": false },
+        { "text": "Le Scorpion", "isCorrect": false }
+      ],
+      "explanation": "La ceinture d'Orion est formée de trois étoiles brillantes presque alignées."
+    },
+    {
+      "ref": "espace-043",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quelle étoile est la plus proche de la Terre après le Soleil ?",
+      "answers": [
+        { "text": "Sirius", "isCorrect": false },
+        { "text": "Proxima du Centaure", "isCorrect": true },
+        { "text": "Bételgeuse", "isCorrect": false },
+        { "text": "Véga", "isCorrect": false }
+      ],
+      "explanation": "Proxima du Centaure est l'étoile la plus proche du Soleil, à environ 4,24 années-lumière."
+    },
+    {
+      "ref": "espace-044",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "distance"],
+      "text": "Que mesure principalement une année-lumière ?",
+      "answers": [
+        { "text": "Une durée d'un an", "isCorrect": false },
+        { "text": "Une distance", "isCorrect": true },
+        { "text": "La température d'une étoile", "isCorrect": false },
+        { "text": "La vitesse de rotation d'une planète", "isCorrect": false }
+      ],
+      "explanation": "Une année-lumière est la distance parcourue par la lumière dans le vide en une année, soit environ 9 460 milliards de kilomètres."
+    },
+    {
+      "ref": "espace-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "physique"],
+      "text": "Quelle est approximativement la vitesse de la lumière dans le vide ?",
+      "answers": [
+        { "text": "300 kilomètres par seconde", "isCorrect": false },
+        { "text": "3 000 kilomètres par seconde", "isCorrect": false },
+        { "text": "300 000 kilomètres par seconde", "isCorrect": true },
+        { "text": "3 millions de kilomètres par seconde", "isCorrect": false }
+      ],
+      "explanation": "La lumière se déplace dans le vide à environ 299 792 kilomètres par seconde."
+    },
+    {
+      "ref": "espace-046",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "soleil"],
+      "text": "Quelle est la principale source d'énergie du Soleil ?",
+      "answers": [
+        { "text": "La combustion de charbon", "isCorrect": false },
+        { "text": "La fusion nucléaire", "isCorrect": true },
+        { "text": "La réflexion de la lumière terrestre", "isCorrect": false },
+        { "text": "La combustion d'oxygène", "isCorrect": false }
+      ],
+      "explanation": "Au cœur du Soleil, des noyaux d'hydrogène fusionnent pour former de l'hélium et libérer de l'énergie."
+    },
+    {
+      "ref": "espace-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelles sont les deux planètes principalement composées de gaz et connues comme les géantes gazeuses classiques ?",
+      "answers": [
+        { "text": "Mercure et Vénus", "isCorrect": false },
+        { "text": "La Terre et Mars", "isCorrect": false },
+        { "text": "Jupiter et Saturne", "isCorrect": true },
+        { "text": "Uranus et Neptune", "isCorrect": false }
+      ],
+      "explanation": "Jupiter et Saturne sont les deux géantes gazeuses du Système solaire. Uranus et Neptune sont généralement classées comme géantes de glaces."
+    },
+    {
+      "ref": "espace-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète tourne sur elle-même presque couchée sur le côté ?",
+      "answers": [
+        { "text": "Uranus", "isCorrect": true },
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": false }
+      ],
+      "explanation": "L'axe de rotation d'Uranus est incliné d'environ 98 degrés par rapport à la verticale de son orbite."
+    },
+    {
+      "ref": "espace-049",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Quelle planète est la plus petite des huit planètes du Système solaire ?",
+      "answers": [
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": true },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "Neptune", "isCorrect": false }
+      ],
+      "explanation": "Mercure est la plus petite planète du Système solaire."
+    },
+    {
+      "ref": "espace-050",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "corps-celestes"],
+      "text": "Comment appelle-t-on une énorme région de gaz et de poussière dans l'espace, où des étoiles peuvent naître ?",
+      "answers": [
+        { "text": "Une nébuleuse", "isCorrect": true },
+        { "text": "Une météorite", "isCorrect": false },
+        { "text": "Une orbite", "isCorrect": false },
+        { "text": "Un satellite artificiel", "isCorrect": false }
+      ],
+      "explanation": "Certaines nébuleuses contiennent des régions denses où la gravité peut provoquer la formation de nouvelles étoiles."
+    },
+    {
+      "ref": "espace-051",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "univers"],
+      "text": "Comment appelle-t-on l'ensemble de l'espace, du temps, de la matière et de l'énergie ?",
+      "answers": [
+        { "text": "Le Système solaire", "isCorrect": false },
+        { "text": "L'Univers", "isCorrect": true },
+        { "text": "La Voie lactée", "isCorrect": false },
+        { "text": "L'atmosphère", "isCorrect": false }
+      ],
+      "explanation": "L'Univers comprend toutes les galaxies, les étoiles, les planètes, la matière, l'énergie et l'espace-temps."
+    },
+    {
+      "ref": "espace-052",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["cosmologie", "univers"],
+      "text": "Quel modèle scientifique décrit l'évolution de l'Univers à partir d'un état extrêmement chaud et dense ?",
+      "answers": [
+        { "text": "Le modèle du Big Bang", "isCorrect": true },
+        { "text": "La théorie de la Terre plate", "isCorrect": false },
+        { "text": "Le modèle des quatre soleils", "isCorrect": false },
+        { "text": "La théorie de l'Univers immobile", "isCorrect": false }
+      ],
+      "explanation": "Le modèle du Big Bang décrit l'évolution de l'Univers observable depuis son état primordial chaud et dense, il y a environ 13,8 milliards d'années."
+    },
+    {
+      "ref": "espace-053",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "espace"],
+      "text": "Pourquoi les étoiles semblent-elles scintiller lorsqu'on les observe depuis le sol ?",
+      "answers": [
+        { "text": "Parce qu'elles s'allument et s'éteignent sans arrêt", "isCorrect": false },
+        { "text": "À cause des turbulences de l'atmosphère terrestre", "isCorrect": true },
+        { "text": "Parce qu'elles changent toutes de couleur chaque seconde", "isCorrect": false },
+        { "text": "Parce que la Lune les éclaire", "isCorrect": false }
+      ],
+      "explanation": "Les mouvements de l'air dans l'atmosphère dévient légèrement la lumière des étoiles et font varier leur éclat apparent."
+    },
+    {
+      "ref": "espace-054",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète est la deuxième en partant du Soleil ?",
+      "answers": [
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": true },
+        { "text": "La Terre", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false }
+      ],
+      "explanation": "Vénus se situe entre Mercure et la Terre."
+    },
+    {
+      "ref": "espace-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "astronaute"],
+      "text": "Qui fut le premier humain à poser le pied sur la Lune ?",
+      "answers": [
+        { "text": "Buzz Aldrin", "isCorrect": false },
+        { "text": "Neil Armstrong", "isCorrect": true },
+        { "text": "Michael Collins", "isCorrect": false },
+        { "text": "Youri Gagarine", "isCorrect": false }
+      ],
+      "explanation": "Neil Armstrong est descendu du module lunaire Apollo 11 avant Buzz Aldrin, le 21 juillet 1969 en temps universel."
+    },
+    {
+      "ref": "espace-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "physique"],
+      "text": "Comment appelle-t-on l'absence apparente de poids ressentie par les astronautes en orbite ?",
+      "answers": [
+        { "text": "L'apesanteur apparente", "isCorrect": true },
+        { "text": "La combustion", "isCorrect": false },
+        { "text": "La fusion", "isCorrect": false },
+        { "text": "La réfraction", "isCorrect": false }
+      ],
+      "explanation": "Les astronautes en orbite sont en chute libre permanente autour de la Terre, ce qui produit une sensation de microgravité."
+    },
+    {
+      "ref": "espace-057",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "soleil"],
+      "text": "Quelle étoile se trouve au centre du Système solaire ?",
+      "answers": [
+        { "text": "Sirius", "isCorrect": false },
+        { "text": "Le Soleil", "isCorrect": true },
+        { "text": "Proxima du Centaure", "isCorrect": false },
+        { "text": "Bételgeuse", "isCorrect": false }
+      ],
+      "explanation": "Les huit planètes du Système solaire gravitent autour du Soleil."
+    },
+    {
+      "ref": "espace-058",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lune", "astronomie"],
+      "text": "Comment appelle-t-on la phase pendant laquelle la face visible de la Lune est presque entièrement éclairée ?",
+      "answers": [
+        { "text": "La nouvelle Lune", "isCorrect": false },
+        { "text": "La pleine Lune", "isCorrect": true },
+        { "text": "Le premier croissant", "isCorrect": false },
+        { "text": "Le dernier quartier", "isCorrect": false }
+      ],
+      "explanation": "À la pleine Lune, la face visible depuis la Terre est presque entièrement éclairée par le Soleil."
+    },
+    {
+      "ref": "espace-059",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "astronomie"],
+      "text": "Comment appelle-t-on une planète située en dehors de notre Système solaire ?",
+      "answers": [
+        { "text": "Une exoplanète", "isCorrect": true },
+        { "text": "Une météorite", "isCorrect": false },
+        { "text": "Une comète", "isCorrect": false },
+        { "text": "Une nébuleuse", "isCorrect": false }
+      ],
+      "explanation": "Une exoplanète est une planète qui orbite autour d'une étoile autre que le Soleil, ou parfois autour d'un système stellaire multiple."
+    },
+    {
+      "ref": "espace-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "corps-celestes"],
+      "text": "Comment appelle-t-on un objet céleste extrêmement compact dont la gravité est si intense qu'au-delà d'une certaine limite, même la lumière ne peut s'en échapper ?",
+      "answers": [
+        { "text": "Une naine blanche", "isCorrect": false },
+        { "text": "Un trou noir", "isCorrect": true },
+        { "text": "Un astéroïde", "isCorrect": false },
+        { "text": "Une comète", "isCorrect": false }
+      ],
+      "explanation": "La limite à partir de laquelle rien ne peut s'échapper d'un trou noir est appelée horizon des événements."
+    },
+    {
+      "ref": "espace-061",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "astronomie"],
+      "text": "Quel télescope spatial, lancé en décembre 2021, observe principalement dans l'infrarouge ?",
+      "answers": [
+        { "text": "Hubble", "isCorrect": false },
+        { "text": "James Webb", "isCorrect": true },
+        { "text": "Kepler", "isCorrect": false },
+        { "text": "Chandra", "isCorrect": false }
+      ],
+      "explanation": "Le télescope spatial James Webb étudie notamment les premières galaxies, la formation des étoiles et les atmosphères d'exoplanètes."
+    },
+    {
+      "ref": "espace-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "exploration-spatiale"],
+      "text": "Quelle agence spatiale américaine est connue sous le sigle NASA ?",
+      "answers": [
+        { "text": "L'Agence spatiale européenne", "isCorrect": false },
+        { "text": "L'Administration nationale de l'aéronautique et de l'espace", "isCorrect": true },
+        { "text": "L'Agence spatiale japonaise", "isCorrect": false },
+        { "text": "L'Agence spatiale russe", "isCorrect": false }
+      ],
+      "explanation": "NASA signifie National Aeronautics and Space Administration. L'agence américaine a été fondée en 1958."
+    },
+    {
+      "ref": "espace-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "europe"],
+      "text": "Comment s'appelle l'agence spatiale qui regroupe plusieurs pays européens ?",
+      "answers": [
+        { "text": "La NASA", "isCorrect": false },
+        { "text": "L'ESA", "isCorrect": true },
+        { "text": "La JAXA", "isCorrect": false },
+        { "text": "La CNSA", "isCorrect": false }
+      ],
+      "explanation": "L'ESA, ou Agence spatiale européenne, coordonne des programmes spatiaux menés par ses États membres."
+    },
+    {
+      "ref": "espace-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "espace"],
+      "text": "Quel véhicule est utilisé pour envoyer des satellites et des sondes dans l'espace ?",
+      "answers": [
+        { "text": "Un sous-marin", "isCorrect": false },
+        { "text": "Une fusée", "isCorrect": true },
+        { "text": "Un dirigeable", "isCorrect": false },
+        { "text": "Un train", "isCorrect": false }
+      ],
+      "explanation": "Une fusée fournit la poussée nécessaire pour accélérer une charge utile jusqu'à la vitesse requise pour atteindre l'espace ou une orbite."
+    },
+    {
+      "ref": "espace-065",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["espace", "physique"],
+      "text": "Pourquoi les astronautes portent-ils des combinaisons spatiales lors des sorties extravéhiculaires ?",
+      "answers": [
+        { "text": "Pour résister au vide et maintenir des conditions vitales", "isCorrect": true },
+        { "text": "Pour augmenter la gravité", "isCorrect": false },
+        { "text": "Pour respirer uniquement du dioxyde de carbone", "isCorrect": false },
+        { "text": "Pour se déplacer plus vite que la lumière", "isCorrect": false }
+      ],
+      "explanation": "La combinaison fournit notamment de l'oxygène, maintient une pression adaptée et protège contre plusieurs dangers de l'environnement spatial."
+    },
+    {
+      "ref": "espace-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "lune"],
+      "text": "Quelle est la principale raison pour laquelle nous voyons toujours presque la même face de la Lune depuis la Terre ?",
+      "answers": [
+        { "text": "La Lune ne tourne jamais sur elle-même", "isCorrect": false },
+        { "text": "Sa rotation est synchronisée avec sa révolution autour de la Terre", "isCorrect": true },
+        { "text": "La Terre bloque la lumière sur l'autre face", "isCorrect": false },
+        { "text": "La Lune est immobile dans l'espace", "isCorrect": false }
+      ],
+      "explanation": "La Lune met à peu près autant de temps à tourner sur elle-même qu'à effectuer une révolution autour de la Terre."
+    },
+    {
+      "ref": "espace-067",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["systeme-solaire", "planete"],
+      "text": "Entre quelles deux planètes se trouve la ceinture principale d'astéroïdes ?",
+      "answers": [
+        { "text": "Mercure et Vénus", "isCorrect": false },
+        { "text": "La Terre et Mars", "isCorrect": false },
+        { "text": "Mars et Jupiter", "isCorrect": true },
+        { "text": "Saturne et Uranus", "isCorrect": false }
+      ],
+      "explanation": "La ceinture principale d'astéroïdes se situe principalement entre les orbites de Mars et de Jupiter."
+    },
+    {
+      "ref": "espace-068",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["systeme-solaire", "corps-celestes"],
+      "text": "Comment s'appelle la région très lointaine du Système solaire qui contient de nombreux petits corps glacés au-delà de Neptune ?",
+      "answers": [
+        { "text": "La ceinture de Kuiper", "isCorrect": true },
+        { "text": "La ceinture de Van Allen", "isCorrect": false },
+        { "text": "La photosphère", "isCorrect": false },
+        { "text": "La couronne solaire", "isCorrect": false }
+      ],
+      "explanation": "La ceinture de Kuiper est une région située au-delà de Neptune qui abrite de nombreux objets glacés, dont Pluton."
+    },
+    {
+      "ref": "espace-069",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quelle étoile indique approximativement la direction du nord dans le ciel de l'hémisphère Nord ?",
+      "answers": [
+        { "text": "Sirius", "isCorrect": false },
+        { "text": "L'étoile Polaire", "isCorrect": true },
+        { "text": "Bételgeuse", "isCorrect": false },
+        { "text": "Antarès", "isCorrect": false }
+      ],
+      "explanation": "L'étoile Polaire est située près de la direction du pôle Nord céleste, ce qui la rend utile pour s'orienter."
+    },
+    {
+      "ref": "espace-070",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète est célèbre pour ses nombreuses lunes, dont Titan ?",
+      "answers": [
+        { "text": "Saturne", "isCorrect": true },
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "La Terre", "isCorrect": false }
+      ],
+      "explanation": "Saturne possède de nombreuses lunes. Titan est particulièrement remarquable grâce à son atmosphère dense et à ses lacs d'hydrocarbures."
+    },
+    {
+      "ref": "espace-071",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "La Terre est une planète du Système solaire.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La Terre est la troisième planète en partant du Soleil."
+    },
+    {
+      "ref": "espace-072",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["soleil", "astronomie"],
+      "text": "Le Soleil est une planète.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le Soleil est une étoile, car il produit sa propre énergie grâce à des réactions de fusion nucléaire."
+    },
+    {
+      "ref": "espace-073",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Jupiter est plus grande que la Terre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Jupiter est la plus grande planète du Système solaire et son diamètre dépasse largement celui de la Terre."
+    },
+    {
+      "ref": "espace-074",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["lune", "astronomie"],
+      "text": "La Lune produit elle-même la majeure partie de la lumière que nous voyons depuis la Terre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La Lune ne produit pas de lumière visible significative : elle réfléchit la lumière du Soleil."
+    },
+    {
+      "ref": "espace-075",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["espace", "astronomie"],
+      "text": "L'espace contient de nombreuses galaxies en dehors de la Voie lactée.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "L'Univers observable contient un très grand nombre de galaxies, chacune pouvant abriter des milliards d'étoiles."
+    },
+    {
+      "ref": "espace-076",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["astronomie", "etoile"],
+      "text": "Toutes les étoiles ont exactement la même taille et la même température.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Les étoiles présentent une grande diversité de masses, de tailles, de températures et de luminosités."
+    },
+    {
+      "ref": "espace-077",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["exploration-spatiale", "lune"],
+      "text": "Des êtres humains ont déjà marché sur la Lune.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les astronautes du programme Apollo ont marché sur la Lune entre 1969 et 1972."
+    },
+    {
+      "ref": "espace-078",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["planete", "systeme-solaire"],
+      "text": "Mars est surnommée la planète rouge.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les oxydes de fer présents à la surface de Mars lui donnent sa teinte rougeâtre."
+    },
+    {
+      "ref": "espace-079",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["physique", "espace"],
+      "text": "Le son se propage normalement dans le vide spatial comme il se propage dans l'air.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le son a besoin d'un milieu matériel pour se propager. Le vide spatial ne permet donc pas la propagation du son comme dans l'air."
+    },
+    {
+      "ref": "espace-080",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["astronomie", "distance"],
+      "text": "La lumière du Soleil met environ huit minutes pour atteindre la Terre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La lumière met environ 8 minutes et 20 secondes pour parcourir les quelque 150 millions de kilomètres qui séparent le Soleil de la Terre."
+    }
+  ]
+}
+    
+    {
+      "ref": "espace-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["systeme-solaire", "astronomie"],
+      "text": "Quelle est la principale différence entre une planète et une étoile ?",
+      "answers": [
+        { "text": "Une planète est toujours plus chaude", "isCorrect": false },
+        { "text": "Une étoile produit de l'énergie par fusion nucléaire dans son cœur", "isCorrect": true },
+        { "text": "Une planète ne possède jamais de gravité", "isCorrect": false },
+        { "text": "Une étoile tourne toujours autour d'une planète", "isCorrect": false }
+      ],
+      "explanation": "Les étoiles produisent leur propre énergie grâce à la fusion nucléaire, tandis que les planètes ne produisent pas leur lumière visible de cette manière."
+    },
+    {
+      "ref": "espace-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["planete", "astronomie"],
+      "text": "Quelle planète possède la journée la plus longue si l'on mesure sa rotation par rapport aux étoiles ?",
+      "answers": [
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": true },
+        { "text": "Jupiter", "isCorrect": false },
+        { "text": "Neptune", "isCorrect": false }
+      ],
+      "explanation": "Vénus effectue une rotation sur elle-même en environ 243 jours terrestres, ce qui est plus long que son année de 225 jours terrestres."
+    },
+    {
+      "ref": "espace-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quelle couleur indique généralement une température de surface plus élevée parmi les étoiles suivantes ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Orange", "isCorrect": false },
+        { "text": "Bleu", "isCorrect": true },
+        { "text": "Rouge sombre", "isCorrect": false }
+      ],
+      "explanation": "Les étoiles bleues sont généralement plus chaudes en surface que les étoiles jaunes, orange ou rouges."
+    },
+    {
+      "ref": "espace-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "galaxie"],
+      "text": "Quel type de galaxie est la Voie lactée ?",
+      "answers": [
+        { "text": "Une galaxie spirale barrée", "isCorrect": true },
+        { "text": "Une galaxie elliptique géante", "isCorrect": false },
+        { "text": "Une galaxie irrégulière sans structure", "isCorrect": false },
+        { "text": "Une galaxie parfaitement sphérique", "isCorrect": false }
+      ],
+      "explanation": "La Voie lactée est une galaxie spirale barrée, avec un bulbe central traversé par une barre d'étoiles et des bras spiraux."
+    },
+    {
+      "ref": "espace-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "distance"],
+      "text": "Quel phénomène permet de mesurer la distance de certaines étoiles proches en observant leur position à six mois d'intervalle ?",
+      "answers": [
+        { "text": "La parallaxe stellaire", "isCorrect": true },
+        { "text": "La fusion nucléaire", "isCorrect": false },
+        { "text": "La réfraction atmosphérique", "isCorrect": false },
+        { "text": "Le rayonnement fossile", "isCorrect": false }
+      ],
+      "explanation": "La parallaxe mesure le déplacement apparent d'une étoile par rapport aux étoiles lointaines lorsque la Terre change de position sur son orbite."
+    },
+    {
+      "ref": "espace-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["systeme-solaire", "corps-celestes"],
+      "text": "Quel est le principal composant de la plupart des comètes ?",
+      "answers": [
+        { "text": "Du fer liquide uniquement", "isCorrect": false },
+        { "text": "Des glaces mélangées à de la poussière et des roches", "isCorrect": true },
+        { "text": "Du plasma pur", "isCorrect": false },
+        { "text": "De l'oxygène gazeux uniquement", "isCorrect": false }
+      ],
+      "explanation": "Les noyaux cométaires contiennent des glaces, des poussières et des matériaux rocheux."
+    },
+    {
+      "ref": "espace-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "sonde"],
+      "text": "Quelle sonde, lancée en 1977, a été la première à explorer de près Jupiter, Saturne, Uranus et Neptune lors de sa mission principale et de son prolongement ?",
+      "answers": [
+        { "text": "Voyager 2", "isCorrect": true },
+        { "text": "Pioneer 10", "isCorrect": false },
+        { "text": "New Horizons", "isCorrect": false },
+        { "text": "Cassini", "isCorrect": false }
+      ],
+      "explanation": "Voyager 2 a survolé les quatre planètes géantes. Voyager 1 a également exploré Jupiter et Saturne."
+    },
+    {
+      "ref": "espace-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "pluton"],
+      "text": "Quelle sonde a survolé Pluton en juillet 2015 ?",
+      "answers": [
+        { "text": "Juno", "isCorrect": false },
+        { "text": "New Horizons", "isCorrect": true },
+        { "text": "Dawn", "isCorrect": false },
+        { "text": "Rosetta", "isCorrect": false }
+      ],
+      "explanation": "New Horizons a fourni les premières images détaillées de Pluton et de ses lunes lors de son survol historique."
+    },
+    {
+      "ref": "espace-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "jupiter"],
+      "text": "Quelle sonde étudie Jupiter depuis son arrivée en orbite en 2016 ?",
+      "answers": [
+        { "text": "Juno", "isCorrect": true },
+        { "text": "Cassini", "isCorrect": false },
+        { "text": "Magellan", "isCorrect": false },
+        { "text": "Rosetta", "isCorrect": false }
+      ],
+      "explanation": "La mission Juno étudie notamment la structure interne, le champ magnétique et l'atmosphère de Jupiter."
+    },
+    {
+      "ref": "espace-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "saturne"],
+      "text": "Quelle sonde a étudié Saturne et largué le module Huygens sur Titan ?",
+      "answers": [
+        { "text": "Galileo", "isCorrect": false },
+        { "text": "Cassini", "isCorrect": true },
+        { "text": "Parker Solar Probe", "isCorrect": false },
+        { "text": "BepiColombo", "isCorrect": false }
+      ],
+      "explanation": "La mission Cassini-Huygens a étudié Saturne et ses lunes. Huygens s'est posé sur Titan en janvier 2005."
+    },
+    {
+      "ref": "espace-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "comete"],
+      "text": "Quelle mission a réussi le premier atterrissage contrôlé sur le noyau d'une comète ?",
+      "answers": [
+        { "text": "Rosetta, avec son atterrisseur Philae", "isCorrect": true },
+        { "text": "Voyager 1", "isCorrect": false },
+        { "text": "Apollo 17", "isCorrect": false },
+        { "text": "Hubble", "isCorrect": false }
+      ],
+      "explanation": "Philae s'est posé sur la comète 67P/Tchourioumov-Guérassimenko en novembre 2014, lors de la mission Rosetta de l'ESA."
+    },
+    {
+      "ref": "espace-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "mars"],
+      "text": "Quel rover de la NASA a découvert des preuves de l'existence ancienne d'environnements habitables dans le cratère Gale sur Mars ?",
+      "answers": [
+        { "text": "Curiosity", "isCorrect": true },
+        { "text": "Viking 1", "isCorrect": false },
+        { "text": "Lunokhod 2", "isCorrect": false },
+        { "text": "Chandrayaan-3", "isCorrect": false }
+      ],
+      "explanation": "Curiosity explore le cratère Gale depuis 2012 et a identifié des indices d'anciens environnements favorables à la vie microbienne."
+    },
+    {
+      "ref": "espace-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "mars"],
+      "text": "Quelle sonde a fourni les premières images rapprochées des célèbres canaux de Mars et contribué à cartographier sa surface depuis l'orbite ?",
+      "answers": [
+        { "text": "Mariner 9", "isCorrect": true },
+        { "text": "Cassini", "isCorrect": false },
+        { "text": "Galileo", "isCorrect": false },
+        { "text": "Pioneer Venus", "isCorrect": false }
+      ],
+      "explanation": "Mariner 9 est devenue la première sonde à se placer en orbite autour de Mars en 1971 et a cartographié une grande partie de sa surface."
+    },
+    {
+      "ref": "espace-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "lune"],
+      "text": "Quel programme spatial américain a envoyé les missions habitées qui ont permis des alunissages entre 1969 et 1972 ?",
+      "answers": [
+        { "text": "Mercury", "isCorrect": false },
+        { "text": "Gemini", "isCorrect": false },
+        { "text": "Apollo", "isCorrect": true },
+        { "text": "Skylab", "isCorrect": false }
+      ],
+      "explanation": "Le programme Apollo a permis six alunissages habités entre Apollo 11 et Apollo 17, à l'exception d'Apollo 13 qui a dû interrompre son alunissage."
+    },
+    {
+      "ref": "espace-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "histoire"],
+      "text": "Quel fut le premier animal envoyé en orbite autour de la Terre ?",
+      "answers": [
+        { "text": "La chienne Laïka", "isCorrect": true },
+        { "text": "Le singe Ham", "isCorrect": false },
+        { "text": "Le chimpanzé Enos", "isCorrect": false },
+        { "text": "La chatte Félicette", "isCorrect": false }
+      ],
+      "explanation": "Laïka a été lancée par l'Union soviétique à bord de Spoutnik 2 en novembre 1957. Elle n'a pas survécu à la mission."
+    },
+    {
+      "ref": "espace-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "astronaute"],
+      "text": "Qui fut la première femme à voyager dans l'espace ?",
+      "answers": [
+        { "text": "Sally Ride", "isCorrect": false },
+        { "text": "Valentina Terechkova", "isCorrect": true },
+        { "text": "Mae Jemison", "isCorrect": false },
+        { "text": "Eileen Collins", "isCorrect": false }
+      ],
+      "explanation": "La cosmonaute soviétique Valentina Terechkova a effectué son vol spatial en juin 1963."
+    },
+    {
+      "ref": "espace-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "astronaute"],
+      "text": "Qui fut le premier astronaute américain à effectuer un vol orbital autour de la Terre ?",
+      "answers": [
+        { "text": "Alan Shepard", "isCorrect": false },
+        { "text": "John Glenn", "isCorrect": true },
+        { "text": "Neil Armstrong", "isCorrect": false },
+        { "text": "Buzz Aldrin", "isCorrect": false }
+      ],
+      "explanation": "John Glenn a effectué trois orbites autour de la Terre en février 1962 à bord de Friendship 7."
+    },
+    {
+      "ref": "espace-098",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "astronaute"],
+      "text": "Quelle astronaute américaine fut la première femme américaine à voyager dans l'espace ?",
+      "answers": [
+        { "text": "Sally Ride", "isCorrect": true },
+        { "text": "Peggy Whitson", "isCorrect": false },
+        { "text": "Christina Koch", "isCorrect": false },
+        { "text": "Katherine Johnson", "isCorrect": false }
+      ],
+      "explanation": "Sally Ride a participé à la mission STS-7 de la navette Challenger en juin 1983."
+    },
+    {
+      "ref": "espace-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "station-spatiale"],
+      "text": "Quelle station spatiale soviétique, lancée en 1986, a accueilli des équipages pendant plus de quinze ans ?",
+      "answers": [
+        { "text": "Skylab", "isCorrect": false },
+        { "text": "Mir", "isCorrect": true },
+        { "text": "Saliout 1", "isCorrect": false },
+        { "text": "Tiangong", "isCorrect": false }
+      ],
+      "explanation": "Mir a servi de laboratoire orbital habité de 1986 à 2001 et a contribué à préparer les missions de longue durée."
+    },
+    {
+      "ref": "espace-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "station-spatiale"],
+      "text": "À quelle altitude approximative l'ISS orbite-t-elle généralement autour de la Terre ?",
+      "answers": [
+        { "text": "40 kilomètres", "isCorrect": false },
+        { "text": "400 kilomètres", "isCorrect": true },
+        { "text": "4 000 kilomètres", "isCorrect": false },
+        { "text": "40 000 kilomètres", "isCorrect": false }
+      ],
+      "explanation": "L'ISS évolue en orbite terrestre basse, à une altitude généralement proche de 400 kilomètres, qui varie avec les manœuvres de rehaussement."
+    },
+    {
+      "ref": "espace-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "gravite"],
+      "text": "Pourquoi les astronautes flottent-ils dans l'ISS alors que la gravité terrestre y reste importante ?",
+      "answers": [
+        { "text": "Parce que la gravité y est totalement nulle", "isCorrect": false },
+        { "text": "Parce qu'ils sont en chute libre permanente avec la station", "isCorrect": true },
+        { "text": "Parce que l'air les pousse vers le plafond", "isCorrect": false },
+        { "text": "Parce que le champ magnétique annule toute gravité", "isCorrect": false }
+      ],
+      "explanation": "La station et les astronautes tombent continuellement autour de la Terre. Leur chute libre commune produit une sensation de microgravité."
+    },
+    {
+      "ref": "espace-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "orbite"],
+      "text": "Que doit principalement faire un satellite pour rester en orbite circulaire autour de la Terre à altitude constante ?",
+      "answers": [
+        { "text": "Annuler sa vitesse", "isCorrect": false },
+        { "text": "Se déplacer à la vitesse orbitale adaptée à son altitude", "isCorrect": true },
+        { "text": "Allumer constamment un moteur vers le bas", "isCorrect": false },
+        { "text": "Se déplacer plus vite que la lumière", "isCorrect": false }
+      ],
+      "explanation": "La gravité fournit l'accélération centripète nécessaire à l'orbite. La vitesse orbitale dépend de l'altitude."
+    },
+    {
+      "ref": "espace-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["satellite", "orbite"],
+      "text": "Quel type d'orbite permet à un satellite de rester approximativement au-dessus du même point de l'équateur terrestre ?",
+      "answers": [
+        { "text": "Une orbite géostationnaire", "isCorrect": true },
+        { "text": "Une orbite polaire basse", "isCorrect": false },
+        { "text": "Une trajectoire parabolique", "isCorrect": false },
+        { "text": "Une trajectoire suborbitale", "isCorrect": false }
+      ],
+      "explanation": "Une orbite géostationnaire est circulaire, située au-dessus de l'équateur et possède une période égale à la rotation sidérale de la Terre."
+    },
+    {
+      "ref": "espace-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["satellite", "navigation"],
+      "text": "À quoi sert principalement le système GPS ?",
+      "answers": [
+        { "text": "À mesurer directement la température des étoiles", "isCorrect": false },
+        { "text": "À déterminer une position et fournir une référence de temps grâce aux satellites", "isCorrect": true },
+        { "text": "À envoyer des astronautes sur Mars", "isCorrect": false },
+        { "text": "À empêcher les météorites de tomber sur Terre", "isCorrect": false }
+      ],
+      "explanation": "Le GPS utilise les signaux de satellites et des calculs de temps de propagation pour déterminer la position d'un récepteur."
+    },
+    {
+      "ref": "espace-105",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "spectroscopie"],
+      "text": "Quelle information peut-on obtenir en analysant le spectre lumineux d'une étoile ?",
+      "answers": [
+        { "text": "Uniquement sa forme géométrique exacte", "isCorrect": false },
+        { "text": "Sa composition chimique, sa température et son mouvement radial", "isCorrect": true },
+        { "text": "Le nombre exact de planètes habitées dans toute la galaxie", "isCorrect": false },
+        { "text": "La date précise de sa prochaine explosion dans tous les cas", "isCorrect": false }
+      ],
+      "explanation": "Les raies spectrales renseignent notamment sur les éléments présents, la température et, grâce à l'effet Doppler, le mouvement radial de l'étoile."
+    },
+    {
+      "ref": "espace-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Comment appelle-t-on la phase finale d'une étoile massive qui explose violemment ?",
+      "answers": [
+        { "text": "Une supernova", "isCorrect": true },
+        { "text": "Une éclipse", "isCorrect": false },
+        { "text": "Une aurore", "isCorrect": false },
+        { "text": "Une occultation", "isCorrect": false }
+      ],
+      "explanation": "Certaines étoiles massives terminent leur évolution par une explosion de supernova, qui disperse une partie de leurs éléments dans l'espace."
+    },
+    {
+      "ref": "espace-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quel objet peut rester après l'effondrement du cœur d'une étoile massive ayant explosé en supernova ?",
+      "answers": [
+        { "text": "Une étoile à neutrons ou un trou noir", "isCorrect": true },
+        { "text": "Toujours une planète rocheuse", "isCorrect": false },
+        { "text": "Une comète géante", "isCorrect": false },
+        { "text": "Une galaxie entière", "isCorrect": false }
+      ],
+      "explanation": "Selon la masse du cœur restant et son évolution, l'effondrement peut former une étoile à neutrons ou un trou noir."
+    },
+    {
+      "ref": "espace-108",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quel est le destin habituel d'une étoile de masse comparable à celle du Soleil après avoir épuisé son hydrogène central ?",
+      "answers": [
+        { "text": "Elle devient immédiatement un trou noir", "isCorrect": false },
+        { "text": "Elle devient une géante rouge puis laisse généralement une naine blanche", "isCorrect": true },
+        { "text": "Elle se transforme en planète géante", "isCorrect": false },
+        { "text": "Elle disparaît sans laisser de résidu", "isCorrect": false }
+      ],
+      "explanation": "Une étoile semblable au Soleil devrait devenir une géante rouge, éjecter ses couches externes puis laisser un résidu compact appelé naine blanche."
+    },
+    {
+      "ref": "espace-109",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "galaxie"],
+      "text": "Quelle galaxie majeure est la plus proche de la Voie lactée parmi les grandes galaxies du Groupe local ?",
+      "answers": [
+        { "text": "La galaxie d'Andromède", "isCorrect": true },
+        { "text": "La galaxie du Sombrero", "isCorrect": false },
+        { "text": "La galaxie du Tourbillon", "isCorrect": false },
+        { "text": "La galaxie du Moulinet austral", "isCorrect": false }
+      ],
+      "explanation": "Andromède est la grande galaxie spirale majeure la plus proche de la Voie lactée, à environ 2,5 millions d'années-lumière."
+    },
+    {
+      "ref": "espace-110",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["cosmologie", "univers"],
+      "text": "Que signifie le fait que l'Univers est en expansion ?",
+      "answers": [
+        { "text": "Toutes les galaxies grandissent forcément à la même vitesse", "isCorrect": false },
+        { "text": "Les distances entre les grandes structures cosmiques non liées gravitationnellement augmentent à grande échelle", "isCorrect": true },
+        { "text": "La Terre grossit chaque année", "isCorrect": false },
+        { "text": "Le Système solaire se dilate continuellement", "isCorrect": false }
+      ],
+      "explanation": "À grande échelle, l'espace se dilate et les galaxies lointaines non liées entre elles s'éloignent en moyenne les unes des autres."
+    },
+    {
+      "ref": "espace-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["cosmologie", "univers"],
+      "text": "Quel rayonnement est considéré comme un vestige de l'Univers jeune, émis environ 380 000 ans après le Big Bang ?",
+      "answers": [
+        { "text": "Le rayonnement cosmologique de fond", "isCorrect": true },
+        { "text": "La lumière directe de toutes les étoiles actuelles", "isCorrect": false },
+        { "text": "Le rayonnement des aurores terrestres", "isCorrect": false },
+        { "text": "Le vent solaire", "isCorrect": false }
+      ],
+      "explanation": "Le fond diffus cosmologique est le rayonnement libéré lorsque l'Univers est devenu suffisamment froid pour que la lumière se propage librement."
+    },
+    {
+      "ref": "espace-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "Quelle méthode détecte une exoplanète en mesurant la baisse périodique de luminosité de son étoile lorsqu'elle passe devant elle ?",
+      "answers": [
+        { "text": "La méthode des transits", "isCorrect": true },
+        { "text": "La datation au carbone 14", "isCorrect": false },
+        { "text": "La méthode des cratères", "isCorrect": false },
+        { "text": "La sismologie terrestre", "isCorrect": false }
+      ],
+      "explanation": "Lors d'un transit, la planète masque une petite partie du disque de son étoile, provoquant une baisse mesurable de luminosité."
+    },
+    {
+      "ref": "espace-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "Que mesure principalement la méthode des vitesses radiales pour détecter des exoplanètes ?",
+      "answers": [
+        { "text": "Le mouvement de l'étoile provoqué par l'attraction gravitationnelle de la planète", "isCorrect": true },
+        { "text": "La température exacte de la surface de toutes les planètes", "isCorrect": false },
+        { "text": "La quantité d'eau présente dans chaque océan", "isCorrect": false },
+        { "text": "Le diamètre des cratères de l'étoile", "isCorrect": false }
+      ],
+      "explanation": "Une planète fait légèrement osciller son étoile. Cette oscillation peut être détectée grâce au décalage Doppler de son spectre lumineux."
+    },
+    {
+      "ref": "espace-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "Que désigne la zone habitable autour d'une étoile ?",
+      "answers": [
+        { "text": "La région où toute planète possède forcément de la vie", "isCorrect": false },
+        { "text": "La région où l'eau liquide pourrait exister à la surface d'une planète dans des conditions adaptées", "isCorrect": true },
+        { "text": "La région où les étoiles ne produisent aucune lumière", "isCorrect": false },
+        { "text": "La zone occupée uniquement par les trous noirs", "isCorrect": false }
+      ],
+      "explanation": "La zone habitable dépend notamment de l'énergie reçue de l'étoile et des caractéristiques de la planète. Sa présence ne garantit pas l'existence de la vie."
+    },
+    {
+      "ref": "espace-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "lumiere"],
+      "text": "Quel phénomène explique qu'une galaxie lointaine puisse paraître rougeâtre parce que sa lumière a été étirée par l'expansion de l'Univers ?",
+      "answers": [
+        { "text": "Le décalage vers le rouge cosmologique", "isCorrect": true },
+        { "text": "La réflexion totale", "isCorrect": false },
+        { "text": "La fusion nucléaire", "isCorrect": false },
+        { "text": "La réfraction dans l'eau", "isCorrect": false }
+      ],
+      "explanation": "L'expansion de l'Univers étire la longueur d'onde de la lumière qui voyage sur de très grandes distances."
+    },
+    {
+      "ref": "espace-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Qu'est-ce qu'un pulsar ?",
+      "answers": [
+        { "text": "Une étoile à neutrons qui émet des faisceaux de rayonnement observés sous forme d'impulsions", "isCorrect": true },
+        { "text": "Une planète qui clignote à cause de ses océans", "isCorrect": false },
+        { "text": "Une comète qui tourne autour d'une étoile", "isCorrect": false },
+        { "text": "Une galaxie dépourvue d'étoiles", "isCorrect": false }
+      ],
+      "explanation": "Un pulsar est une étoile à neutrons en rotation rapide dont le rayonnement balaie l'espace comme un phare."
+    },
+    {
+      "ref": "espace-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "trou-noir"],
+      "text": "Comment appelle-t-on la limite d'un trou noir au-delà de laquelle aucun signal ne peut s'échapper vers l'extérieur ?",
+      "answers": [
+        { "text": "L'horizon des événements", "isCorrect": true },
+        { "text": "La photosphère", "isCorrect": false },
+        { "text": "La ceinture de Kuiper", "isCorrect": false },
+        { "text": "Le point de Lagrange", "isCorrect": false }
+      ],
+      "explanation": "L'horizon des événements délimite la région d'un trou noir dont aucun signal ne peut parvenir à un observateur extérieur."
+    },
+    {
+      "ref": "espace-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Quel est le nom de la théorie de la gravitation formulée par Albert Einstein ?",
+      "answers": [
+        { "text": "La relativité générale", "isCorrect": true },
+        { "text": "La théorie des cordes", "isCorrect": false },
+        { "text": "La mécanique des fluides", "isCorrect": false },
+        { "text": "La théorie de l'évolution", "isCorrect": false }
+      ],
+      "explanation": "La relativité générale décrit la gravitation comme un effet de la courbure de l'espace-temps par la matière et l'énergie."
+    },
+    {
+      "ref": "espace-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Qu'est-ce qu'une lentille gravitationnelle ?",
+      "answers": [
+        { "text": "Un instrument optique placé sur une fusée", "isCorrect": false },
+        { "text": "La déviation de la lumière par la gravité d'un objet massif", "isCorrect": true },
+        { "text": "Une couche de glace autour d'une planète", "isCorrect": false },
+        { "text": "Un type de miroir utilisé sur la Lune", "isCorrect": false }
+      ],
+      "explanation": "La gravité d'un objet massif courbe l'espace-temps et dévie la lumière, pouvant amplifier ou déformer l'image d'un objet situé derrière lui."
+    },
+    {
+      "ref": "espace-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["systeme-solaire", "pluton"],
+      "text": "Pourquoi Pluton est-elle classée comme planète naine plutôt que comme planète principale ?",
+      "answers": [
+        { "text": "Parce qu'elle ne possède aucune gravité", "isCorrect": false },
+        { "text": "Parce qu'elle n'a pas nettoyé son voisinage orbital des autres objets", "isCorrect": true },
+        { "text": "Parce qu'elle ne tourne pas autour du Soleil", "isCorrect": false },
+        { "text": "Parce qu'elle est composée uniquement de gaz", "isCorrect": false }
+      ],
+      "explanation": "Pluton orbite autour du Soleil et est presque sphérique, mais elle ne domine pas gravitationnellement son voisinage orbital."
+    },
+    {
+      "ref": "espace-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle lune de Jupiter est connue pour abriter un océan d'eau liquide sous sa croûte glacée ?",
+      "answers": [
+        { "text": "Io", "isCorrect": false },
+        { "text": "Europe", "isCorrect": true },
+        { "text": "Callisto", "isCorrect": false },
+        { "text": "Ganymède uniquement en surface", "isCorrect": false }
+      ],
+      "explanation": "Les données indiquent qu'Europe possède un océan global sous sa surface glacée, ce qui en fait une cible importante de l'astrobiologie."
+    },
+    {
+      "ref": "espace-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle lune de Saturne possède une atmosphère dense et des lacs de méthane et d'éthane liquides à sa surface ?",
+      "answers": [
+        { "text": "Titan", "isCorrect": true },
+        { "text": "Encelade", "isCorrect": false },
+        { "text": "Mimas", "isCorrect": false },
+        { "text": "Phobos", "isCorrect": false }
+      ],
+      "explanation": "Titan possède une atmosphère riche en azote et un cycle météorologique fondé sur le méthane et l'éthane."
+    },
+    {
+      "ref": "espace-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle lune de Saturne est célèbre pour ses geysers qui projettent des particules de glace et de vapeur d'eau dans l'espace ?",
+      "answers": [
+        { "text": "Encelade", "isCorrect": true },
+        { "text": "Titan", "isCorrect": false },
+        { "text": "Triton", "isCorrect": false },
+        { "text": "Io", "isCorrect": false }
+      ],
+      "explanation": "Les jets d'Encelade proviennent de fissures près de son pôle sud et révèlent la présence d'eau sous sa croûte glacée."
+    },
+    {
+      "ref": "espace-124",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle lune de Jupiter est le corps le plus volcanique connu du Système solaire ?",
+      "answers": [
+        { "text": "Europe", "isCorrect": false },
+        { "text": "Io", "isCorrect": true },
+        { "text": "Callisto", "isCorrect": false },
+        { "text": "Ganymède", "isCorrect": false }
+      ],
+      "explanation": "Les forces de marée exercées notamment par Jupiter et les autres lunes chauffent l'intérieur d'Io et alimentent son volcanisme intense."
+    },
+    {
+      "ref": "espace-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète possède la lune Triton, qui orbite dans le sens rétrograde ?",
+      "answers": [
+        { "text": "Neptune", "isCorrect": true },
+        { "text": "Saturne", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": false }
+      ],
+      "explanation": "Triton orbite autour de Neptune dans le sens opposé à sa rotation. Cela suggère qu'il a probablement été capturé."
+    },
+    {
+      "ref": "espace-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Comment appelle-t-on les deux petits satellites naturels de Mars ?",
+      "answers": [
+        { "text": "Titan et Europe", "isCorrect": false },
+        { "text": "Phobos et Déimos", "isCorrect": true },
+        { "text": "Io et Ganymède", "isCorrect": false },
+        { "text": "Triton et Charon", "isCorrect": false }
+      ],
+      "explanation": "Mars possède deux petits satellites naturels : Phobos et Déimos."
+    },
+    {
+      "ref": "espace-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "soleil"],
+      "text": "Comment appelle-t-on l'enveloppe externe extrêmement chaude du Soleil, visible notamment lors d'une éclipse solaire totale ?",
+      "answers": [
+        { "text": "La couronne solaire", "isCorrect": true },
+        { "text": "La photosphère", "isCorrect": false },
+        { "text": "Le noyau terrestre", "isCorrect": false },
+        { "text": "La magnétosphère de Jupiter", "isCorrect": false }
+      ],
+      "explanation": "La couronne est l'atmosphère externe du Soleil. Elle est beaucoup plus chaude que la photosphère située en dessous."
+    },
+    {
+      "ref": "espace-128",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "soleil"],
+      "text": "Qu'est-ce qu'une éruption solaire ?",
+      "answers": [
+        { "text": "Une libération soudaine d'énergie dans l'atmosphère du Soleil", "isCorrect": true },
+        { "text": "Une explosion de la Terre", "isCorrect": false },
+        { "text": "La naissance d'une nouvelle planète", "isCorrect": false },
+        { "text": "Une pluie de météorites sur Jupiter", "isCorrect": false }
+      ],
+      "explanation": "Une éruption solaire libère brutalement de l'énergie magnétique sous forme de rayonnement et de particules énergétiques."
+    },
+    {
+      "ref": "espace-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "soleil"],
+      "text": "Comment appelle-t-on une grande éjection de plasma et de champ magnétique depuis la couronne solaire ?",
+      "answers": [
+        { "text": "Une éjection de masse coronale", "isCorrect": true },
+        { "text": "Une éclipse lunaire", "isCorrect": false },
+        { "text": "Une pluie d'astéroïdes", "isCorrect": false },
+        { "text": "Une occultation stellaire", "isCorrect": false }
+      ],
+      "explanation": "Une éjection de masse coronale peut envoyer une grande quantité de plasma dans l'espace et perturber la magnétosphère terrestre si elle atteint notre planète."
+    },
+    {
+      "ref": "espace-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["espace", "physique"],
+      "text": "Quelle couche de l'atmosphère terrestre absorbe une grande partie des rayons ultraviolets nocifs grâce à l'ozone ?",
+      "answers": [
+        { "text": "La stratosphère", "isCorrect": true },
+        { "text": "La troposphère uniquement", "isCorrect": false },
+        { "text": "L'exosphère uniquement", "isCorrect": false },
+        { "text": "La surface terrestre", "isCorrect": false }
+      ],
+      "explanation": "La couche d'ozone se trouve principalement dans la stratosphère et absorbe une grande partie des ultraviolets solaires."
+    },
+    {
+      "ref": "espace-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "constellation"],
+      "text": "Dans quelle constellation se trouve l'étoile Bételgeuse ?",
+      "answers": [
+        { "text": "Orion", "isCorrect": true },
+        { "text": "La Lyre", "isCorrect": false },
+        { "text": "Le Cygne", "isCorrect": false },
+        { "text": "Le Lion", "isCorrect": false }
+      ],
+      "explanation": "Bételgeuse est une supergéante rouge située dans la constellation d'Orion."
+    },
+    {
+      "ref": "espace-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "constellation"],
+      "text": "Quelle étoile est la plus brillante du ciel nocturne vue depuis la Terre ?",
+      "answers": [
+        { "text": "Sirius", "isCorrect": true },
+        { "text": "Véga", "isCorrect": false },
+        { "text": "Polaris", "isCorrect": false },
+        { "text": "Bételgeuse", "isCorrect": false }
+      ],
+      "explanation": "Sirius, dans le Grand Chien, est l'étoile la plus brillante du ciel nocturne en lumière visible, hors Soleil."
+    },
+    {
+      "ref": "espace-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Comment appelle-t-on une étoile en fin d'évolution qui a épuisé son combustible nucléaire et dont la taille est comparable à celle de la Terre ?",
+      "answers": [
+        { "text": "Une naine blanche", "isCorrect": true },
+        { "text": "Une géante bleue", "isCorrect": false },
+        { "text": "Une planète géante", "isCorrect": false },
+        { "text": "Une comète", "isCorrect": false }
+      ],
+      "explanation": "Une naine blanche est le résidu très dense d'une étoile de faible ou moyenne masse, après l'expulsion de ses couches externes."
+    },
+    {
+      "ref": "espace-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Quel principe explique pourquoi une étoile reste relativement stable pendant une grande partie de sa vie ?",
+      "answers": [
+        { "text": "L'équilibre entre la gravité et la pression interne", "isCorrect": true },
+        { "text": "L'absence totale de gravité", "isCorrect": false },
+        { "text": "La pression des océans", "isCorrect": false },
+        { "text": "La rotation de la Terre", "isCorrect": false }
+      ],
+      "explanation": "Pendant une grande partie de sa vie, une étoile est en équilibre hydrostatique : la gravité tend à la contracter, tandis que la pression interne s'y oppose."
+    },
+    {
+      "ref": "espace-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Quel phénomène fait apparaître un décalage de longueur d'onde lorsqu'une source lumineuse s'éloigne ou se rapproche d'un observateur ?",
+      "answers": [
+        { "text": "L'effet Doppler", "isCorrect": true },
+        { "text": "L'effet de serre", "isCorrect": false },
+        { "text": "La fusion nucléaire", "isCorrect": false },
+        { "text": "La photosynthèse", "isCorrect": false }
+      ],
+      "explanation": "L'effet Doppler modifie la fréquence ou la longueur d'onde apparente d'un signal en raison du mouvement relatif de la source et de l'observateur."
+    },
+    {
+      "ref": "espace-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["cosmologie", "univers"],
+      "text": "Quel scientifique a formulé la loi reliant approximativement la vitesse d'éloignement des galaxies à leur distance ?",
+      "answers": [
+        { "text": "Edwin Hubble", "isCorrect": true },
+        { "text": "Isaac Newton uniquement", "isCorrect": false },
+        { "text": "Galilée", "isCorrect": false },
+        { "text": "Johannes Kepler", "isCorrect": false }
+      ],
+      "explanation": "La relation dite loi de Hubble-Lemaître indique qu'à grande échelle, les galaxies les plus éloignées présentent généralement un taux d'éloignement plus élevé."
+    },
+    {
+      "ref": "espace-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "galaxie"],
+      "text": "Comment appelle-t-on le trou noir supermassif situé au centre de la Voie lactée ?",
+      "answers": [
+        { "text": "Sagittarius A*", "isCorrect": true },
+        { "text": "Cygnus X-1", "isCorrect": false },
+        { "text": "M87*", "isCorrect": false },
+        { "text": "Kepler-22b", "isCorrect": false }
+      ],
+      "explanation": "Sagittarius A* est la source radio associée au trou noir supermassif situé au centre de notre galaxie."
+    },
+    {
+      "ref": "espace-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "trou-noir"],
+      "text": "Quelle collaboration scientifique a publié en 2019 la première image de l'ombre d'un trou noir ?",
+      "answers": [
+        { "text": "Event Horizon Telescope", "isCorrect": true },
+        { "text": "Voyager Collaboration", "isCorrect": false },
+        { "text": "Apollo Telescope Group", "isCorrect": false },
+        { "text": "Kepler Space Network", "isCorrect": false }
+      ],
+      "explanation": "L'Event Horizon Telescope a publié en 2019 l'image de l'ombre du trou noir supermassif au centre de la galaxie M87."
+    },
+    {
+      "ref": "espace-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "ondes-gravitationnelles"],
+      "text": "Que sont les ondes gravitationnelles ?",
+      "answers": [
+        { "text": "Des ondulations de l'espace-temps produites par des événements cosmiques accélérés", "isCorrect": true },
+        { "text": "Des vagues d'eau dans les océans de Jupiter", "isCorrect": false },
+        { "text": "Des ondes sonores traversant le vide", "isCorrect": false },
+        { "text": "Des faisceaux de lumière émis uniquement par la Lune", "isCorrect": false }
+      ],
+      "explanation": "Les ondes gravitationnelles sont des perturbations de l'espace-temps, notamment produites par des systèmes compacts accélérés comme des trous noirs en fusion."
+    },
+    {
+      "ref": "espace-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "cosmologie"],
+      "text": "Quel observatoire a réalisé la première détection directe confirmée d'ondes gravitationnelles en 2015 ?",
+      "answers": [
+        { "text": "LIGO", "isCorrect": true },
+        { "text": "Hubble", "isCorrect": false },
+        { "text": "Arecibo uniquement", "isCorrect": false },
+        { "text": "Kepler", "isCorrect": false }
+      ],
+      "explanation": "Les détecteurs LIGO ont mesuré en septembre 2015 le signal de la fusion de deux trous noirs, annoncé en février 2016."
+    },
+    {
+      "ref": "espace-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "radioastronomie"],
+      "text": "Quel type de rayonnement les radiotélescopes étudient-ils principalement ?",
+      "answers": [
+        { "text": "Les ondes radio provenant de l'espace", "isCorrect": true },
+        { "text": "Uniquement la lumière visible", "isCorrect": false },
+        { "text": "Uniquement les rayons gamma", "isCorrect": false },
+        { "text": "Les ondes sismiques terrestres", "isCorrect": false }
+      ],
+      "explanation": "Les radiotélescopes détectent les ondes radio émises par des objets et des phénomènes astronomiques."
+    },
+    {
+      "ref": "espace-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "observation"],
+      "text": "Pourquoi les télescopes spatiaux peuvent-ils produire certaines observations plus nettes que les télescopes au sol ?",
+      "answers": [
+        { "text": "Ils sont toujours plus grands que tous les télescopes terrestres", "isCorrect": false },
+        { "text": "Ils évitent les turbulences de l'atmosphère terrestre", "isCorrect": true },
+        { "text": "Ils sont plus proches de toutes les galaxies", "isCorrect": false },
+        { "text": "Ils suppriment la gravité", "isCorrect": false }
+      ],
+      "explanation": "En observant depuis l'espace, les télescopes évitent la distorsion causée par l'atmosphère et peuvent détecter des longueurs d'onde qu'elle absorbe."
+    },
+    {
+      "ref": "espace-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "observation"],
+      "text": "Quel satellite spatial a été conçu pour rechercher des exoplanètes par la méthode des transits et a découvert des milliers de candidates ?",
+      "answers": [
+        { "text": "Kepler", "isCorrect": true },
+        { "text": "Chandra", "isCorrect": false },
+        { "text": "Pioneer 11", "isCorrect": false },
+        { "text": "Maven", "isCorrect": false }
+      ],
+      "explanation": "Le télescope spatial Kepler a observé la luminosité de nombreuses étoiles afin de détecter les baisses périodiques causées par le passage de planètes."
+    },
+    {
+      "ref": "espace-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "observation"],
+      "text": "Quel observatoire spatial est spécialisé dans l'observation des rayons X cosmiques ?",
+      "answers": [
+        { "text": "Chandra", "isCorrect": true },
+        { "text": "James Webb uniquement dans le visible", "isCorrect": false },
+        { "text": "Gaia dans les ondes radio", "isCorrect": false },
+        { "text": "Spoutnik 1", "isCorrect": false }
+      ],
+      "explanation": "L'observatoire Chandra étudie les rayons X émis notamment par les gaz très chauds, les étoiles à neutrons et les régions autour des trous noirs."
+    },
+    {
+      "ref": "espace-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "cartographie"],
+      "text": "Quelle mission spatiale européenne a cartographié avec une grande précision les positions et les mouvements d'un très grand nombre d'étoiles ?",
+      "answers": [
+        { "text": "Gaia", "isCorrect": true },
+        { "text": "Rosetta", "isCorrect": false },
+        { "text": "BepiColombo", "isCorrect": false },
+        { "text": "Mars Express uniquement", "isCorrect": false }
+      ],
+      "explanation": "La mission Gaia a produit une carte tridimensionnelle très détaillée de la Voie lactée à partir des positions, distances et mouvements des étoiles."
+    },
+    {
+      "ref": "espace-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "relativite"],
+      "text": "Selon la relativité restreinte, que se passe-t-il pour le temps mesuré d'un objet se déplaçant à une vitesse proche de celle de la lumière par rapport à un observateur ?",
+      "answers": [
+        { "text": "Le temps propre de l'objet est mesuré comme s'écoulant plus lentement par cet observateur", "isCorrect": true },
+        { "text": "Le temps s'arrête toujours pour tous les observateurs", "isCorrect": false },
+        { "text": "Le temps s'écoule obligatoirement à une vitesse infinie", "isCorrect": false },
+        { "text": "La relativité affirme que le temps n'existe pas", "isCorrect": false }
+      ],
+      "explanation": "La dilatation du temps est un effet de la relativité restreinte : le taux d'écoulement du temps dépend du mouvement relatif des observateurs."
+    },
+    {
+      "ref": "espace-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "mecanique-orbitale"],
+      "text": "Que représente la vitesse de libération d'un corps céleste ?",
+      "answers": [
+        { "text": "La vitesse minimale théorique nécessaire pour s'échapper de son attraction gravitationnelle sans propulsion supplémentaire", "isCorrect": true },
+        { "text": "La vitesse maximale du vent sur une planète", "isCorrect": false },
+        { "text": "La vitesse de rotation d'une étoile", "isCorrect": false },
+        { "text": "La vitesse du son dans le vide", "isCorrect": false }
+      ],
+      "explanation": "La vitesse de libération est la vitesse initiale nécessaire pour atteindre une distance arbitrairement grande sans propulsion supplémentaire, dans le modèle gravitationnel considéré."
+    },
+    {
+      "ref": "espace-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "gravite"],
+      "text": "Pourquoi le poids d'un astronaute serait-il plus faible à la surface de la Lune que sur Terre ?",
+      "answers": [
+        { "text": "Parce que la Lune exerce une gravité de surface plus faible", "isCorrect": true },
+        { "text": "Parce que sa masse disparaît", "isCorrect": false },
+        { "text": "Parce que la Lune ne possède aucune gravité", "isCorrect": false },
+        { "text": "Parce que l'air lunaire le pousse vers le haut", "isCorrect": false }
+      ],
+      "explanation": "La gravité à la surface de la Lune est environ six fois plus faible que celle à la surface de la Terre. La masse de l'astronaute ne change pas."
+    },
+    {
+      "ref": "espace-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["physique", "orbite"],
+      "text": "Qu'est-ce qu'un point de Lagrange dans un système à deux corps massifs ?",
+      "answers": [
+        { "text": "Une position où les effets gravitationnels et le mouvement orbital permettent à un objet de conserver approximativement sa configuration relative", "isCorrect": true },
+        { "text": "Un cratère situé sur la Lune", "isCorrect": false },
+        { "text": "Une étoile qui ne tourne jamais", "isCorrect": false },
+        { "text": "Une région où la gravité est toujours absolument nulle", "isCorrect": false }
+      ],
+      "explanation": "Les cinq points de Lagrange sont des positions particulières du problème restreint à trois corps. Ils permettent notamment de placer certains observatoires spatiaux."
+    },
+    {
+      "ref": "espace-150",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Quelle loi de Kepler indique que les planètes parcourent des aires égales en des durées égales ?",
+      "answers": [
+        { "text": "La deuxième loi de Kepler", "isCorrect": true },
+        { "text": "La première loi de Newton", "isCorrect": false },
+        { "text": "La loi de Hubble", "isCorrect": false },
+        { "text": "La loi de Wien", "isCorrect": false }
+      ],
+      "explanation": "La deuxième loi de Kepler implique qu'une planète se déplace plus vite lorsqu'elle est proche du Soleil et plus lentement lorsqu'elle en est éloignée."
+    },
+    {
+      "ref": "espace-151",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "mecanique-orbitale"],
+      "text": "Quelle est la forme générale de l'orbite d'une planète autour du Soleil selon la première loi de Kepler ?",
+      "answers": [
+        { "text": "Une ellipse, avec le Soleil à l'un des foyers", "isCorrect": true },
+        { "text": "Un carré parfait", "isCorrect": false },
+        { "text": "Une ligne droite dans tous les cas", "isCorrect": false },
+        { "text": "Une spirale qui se referme chaque année", "isCorrect": false }
+      ],
+      "explanation": "La première loi de Kepler décrit les orbites planétaires comme des ellipses dont le Soleil occupe l'un des foyers."
+    },
+    {
+      "ref": "espace-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète possède la plus forte gravité à son sommet nuageux parmi les huit planètes du Système solaire ?",
+      "answers": [
+        { "text": "La Terre", "isCorrect": false },
+        { "text": "Jupiter", "isCorrect": true },
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": false }
+      ],
+      "explanation": "La gravité près du sommet des nuages de Jupiter est plus forte que celle à la surface de la Terre, même si Jupiter n'a pas de surface solide bien définie."
+    },
+    {
+      "ref": "espace-153",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète possède la période orbitale la plus courte autour du Soleil ?",
+      "answers": [
+        { "text": "Mercure", "isCorrect": true },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "La Terre", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false }
+      ],
+      "explanation": "Mercure est la planète la plus proche du Soleil et effectue une révolution en environ 88 jours terrestres."
+    },
+    {
+      "ref": "espace-154",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète a une période de rotation plus courte qu'une journée terrestre, soit environ dix heures ?",
+      "answers": [
+        { "text": "Jupiter", "isCorrect": true },
+        { "text": "Vénus", "isCorrect": false },
+        { "text": "Mercure", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false }
+      ],
+      "explanation": "Jupiter tourne très rapidement sur elle-même, en un peu moins de dix heures, ce qui contribue à son aplatissement aux pôles."
+    },
+    {
+      "ref": "espace-155",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "climat"],
+      "text": "Quel facteur explique principalement les saisons sur Terre ?",
+      "answers": [
+        { "text": "L'inclinaison de l'axe terrestre par rapport au plan de son orbite", "isCorrect": true },
+        { "text": "La Terre s'approche énormément du Soleil en été", "isCorrect": false },
+        { "text": "La Lune chauffe alternativement les hémisphères", "isCorrect": false },
+        { "text": "Le Soleil s'éteint pendant l'hiver", "isCorrect": false }
+      ],
+      "explanation": "L'inclinaison de l'axe terrestre fait varier l'angle d'arrivée des rayons solaires et la durée du jour au fil de l'année."
+    },
+    {
+      "ref": "espace-156",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "lune"],
+      "text": "Pourquoi une éclipse solaire ne se produit-elle pas à chaque nouvelle Lune ?",
+      "answers": [
+        { "text": "Parce que l'orbite de la Lune est inclinée par rapport au plan de l'orbite terrestre", "isCorrect": true },
+        { "text": "Parce que le Soleil disparaît certains mois", "isCorrect": false },
+        { "text": "Parce que la Lune ne passe jamais devant le Soleil", "isCorrect": false },
+        { "text": "Parce que la Terre cesse de tourner", "isCorrect": false }
+      ],
+      "explanation": "La Lune passe généralement au-dessus ou au-dessous de l'alignement exact. Une éclipse solaire exige une nouvelle Lune proche d'un nœud de son orbite."
+    },
+    {
+      "ref": "espace-157",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "lune"],
+      "text": "Pourquoi observe-t-on une éclipse lunaire uniquement à la pleine Lune ?",
+      "answers": [
+        { "text": "Parce que la Terre doit se trouver entre le Soleil et la Lune", "isCorrect": true },
+        { "text": "Parce que le Soleil doit se trouver entre la Terre et la Lune", "isCorrect": false },
+        { "text": "Parce que la Lune ne reçoit jamais de lumière", "isCorrect": false },
+        { "text": "Parce que la Lune doit être en nouvelle phase", "isCorrect": false }
+      ],
+      "explanation": "Une éclipse lunaire se produit lorsque la Lune traverse l'ombre de la Terre, ce qui nécessite un alignement proche de la pleine Lune."
+    },
+    {
+      "ref": "espace-158",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "lune"],
+      "text": "Quelle est la principale cause des marées océaniques terrestres ?",
+      "answers": [
+        { "text": "Les différences d'attraction gravitationnelle de la Lune et du Soleil sur la Terre", "isCorrect": true },
+        { "text": "Le vent solaire uniquement", "isCorrect": false },
+        { "text": "Les éruptions volcaniques sous-marines uniquement", "isCorrect": false },
+        { "text": "La lumière des étoiles", "isCorrect": false }
+      ],
+      "explanation": "Les marées résultent principalement des forces de marée exercées par la Lune, avec une contribution du Soleil."
+    },
+    {
+      "ref": "espace-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "corps-celestes"],
+      "text": "Qu'est-ce qu'une planète naine ?",
+      "answers": [
+        { "text": "Un corps qui orbite autour du Soleil, est presque sphérique, n'a pas nettoyé son voisinage orbital et n'est pas un satellite", "isCorrect": true },
+        { "text": "Une étoile trop petite pour briller", "isCorrect": false },
+        { "text": "Un astéroïde obligatoirement plus petit que la Lune", "isCorrect": false },
+        { "text": "Une planète qui ne possède aucune gravité", "isCorrect": false }
+      ],
+      "explanation": "La définition de l'Union astronomique internationale distingue les planètes naines des planètes principales notamment par le fait qu'elles n'ont pas nettoyé leur voisinage orbital."
+    },
+    {
+      "ref": "espace-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Quelle planète possède un champ magnétique très puissant et une magnétosphère particulièrement vaste ?",
+      "answers": [
+        { "text": "Jupiter", "isCorrect": true },
+        { "text": "Mercure uniquement", "isCorrect": false },
+        { "text": "Mars", "isCorrect": false },
+        { "text": "Vénus", "isCorrect": false }
+      ],
+      "explanation": "Jupiter possède le champ magnétique planétaire le plus puissant du Système solaire, généré par les mouvements de matériaux conducteurs dans son intérieur."
+    },
+    {
+      "ref": "espace-161",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "La lumière du Soleil met environ huit minutes pour atteindre la Terre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La distance moyenne Terre-Soleil correspond à un temps de trajet lumineux d'environ huit minutes et vingt secondes."
+    },
+    {
+      "ref": "espace-162",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Une étoile bleue est généralement plus chaude en surface qu'une étoile rouge.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La couleur d'une étoile est liée à sa température de surface. Les étoiles bleues sont généralement plus chaudes que les étoiles rouges."
+    },
+    {
+      "ref": "espace-163",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "lune"],
+      "text": "Une éclipse solaire totale peut être observée depuis tous les endroits de la Terre en même temps.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La totalité n'est visible que dans une bande étroite à la surface terrestre. D'autres régions peuvent observer une éclipse partielle ou aucune éclipse."
+    },
+    {
+      "ref": "espace-164",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "galaxie"],
+      "text": "La Voie lactée est une galaxie spirale barrée.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les observations indiquent que notre galaxie possède une barre centrale et des bras spiraux."
+    },
+    {
+      "ref": "espace-165",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "sonde"],
+      "text": "La sonde New Horizons a survolé Jupiter avant d'atteindre Pluton.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "New Horizons a survolé Jupiter en 2007 afin notamment d'utiliser son assistance gravitationnelle pour poursuivre sa route vers Pluton."
+    },
+    {
+      "ref": "espace-166",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "Toutes les exoplanètes connues ont été détectées directement grâce à des photographies.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La majorité des exoplanètes sont détectées indirectement, notamment par les transits et les vitesses radiales."
+    },
+    {
+      "ref": "espace-167",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "trou-noir"],
+      "text": "Un trou noir peut être détecté grâce aux effets qu'il exerce sur la matière et la lumière environnantes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les astronomes peuvent étudier le mouvement des étoiles, le rayonnement de la matière environnante et les effets de lentille gravitationnelle pour détecter des trous noirs."
+    },
+    {
+      "ref": "espace-168",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["physique", "espace"],
+      "text": "La gravité terrestre est totalement absente à l'altitude de la Station spatiale internationale.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La gravité terrestre reste importante à l'altitude de l'ISS. Les astronautes flottent parce qu'ils sont en chute libre orbitale."
+    },
+    {
+      "ref": "espace-169",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "Europe est une lune de Jupiter.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Europe est l'une des grandes lunes de Jupiter et possède probablement un océan d'eau liquide sous sa surface glacée."
+    },
+    {
+      "ref": "espace-170",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "La vitesse de libération à la surface d'un corps dépend notamment de sa masse et de son rayon.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Dans le modèle d'un corps sphérique non rotatif, la vitesse de libération dépend de la masse du corps et de la distance au centre."
+    },
+    {
+      "ref": "espace-171",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "cosmologie"],
+      "text": "L'expansion de l'Univers signifie que toutes les galaxies s'éloignent de nous à la même vitesse.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "À grande échelle, la vitesse d'éloignement liée à l'expansion augmente généralement avec la distance. Les mouvements locaux peuvent toutefois différer."
+    },
+    {
+      "ref": "espace-172",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "lune"],
+      "text": "La Lune tourne sur elle-même.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La Lune effectue une rotation synchronisée avec sa révolution autour de la Terre, ce qui explique que nous voyions presque toujours la même face."
+    },
+    {
+      "ref": "espace-173",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "soleil"],
+      "text": "Le Soleil est constitué principalement d'hydrogène et d'hélium.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "L'hydrogène et l'hélium constituent l'essentiel de la masse du Soleil."
+    },
+    {
+      "ref": "espace-174",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["exploration-spatiale", "astronomie"],
+      "text": "Le télescope spatial James Webb a été conçu principalement pour observer dans l'infrarouge.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le James Webb observe principalement dans l'infrarouge, ce qui permet notamment d'étudier des objets lointains et des régions poussiéreuses."
+    },
+    {
+      "ref": "espace-175",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Les ondes gravitationnelles sont des ondes sonores qui ont besoin d'air pour se propager.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Les ondes gravitationnelles sont des perturbations de l'espace-temps et peuvent se propager dans le vide."
+    },
+    {
+      "ref": "espace-176",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "systeme-solaire"],
+      "text": "La ceinture principale d'astéroïdes se situe principalement entre Mars et Jupiter.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "La majorité des astéroïdes de la ceinture principale orbitent entre les orbites de Mars et de Jupiter."
+    },
+    {
+      "ref": "espace-177",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "etoile"],
+      "text": "Une naine blanche est généralement plus petite qu'une étoile ordinaire de la séquence principale.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Une naine blanche est un résidu stellaire très dense, dont la taille est généralement comparable à celle de la Terre."
+    },
+    {
+      "ref": "espace-178",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "La présence d'une exoplanète dans la zone habitable de son étoile prouve qu'elle abrite la vie.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La zone habitable indique seulement que certaines conditions pourraient permettre l'existence d'eau liquide en surface. Elle ne prouve pas la présence de vie."
+    },
+    {
+      "ref": "espace-179",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "physique"],
+      "text": "Une planète se déplace généralement plus vite sur son orbite lorsqu'elle est plus proche du Soleil.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Selon la deuxième loi de Kepler, une planète se déplace plus rapidement près du Soleil et plus lentement lorsqu'elle en est éloignée."
+    },
+    {
+      "ref": "espace-180",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["astronomie", "cosmologie"],
+      "text": "Le fond diffus cosmologique est un rayonnement relique de l'Univers jeune.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Le fond diffus cosmologique est le rayonnement émis lorsque l'Univers est devenu transparent, environ 380 000 ans après le Big Bang."
+    },
+
+
+
+        {
+      "ref": "espace-181",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "univers"],
+      "text": "Quel âge estime-t-on actuellement pour l'Univers ?",
+      "answers": [
+        { "text": "Environ 4,6 milliards d'années", "isCorrect": false },
+        { "text": "Environ 13,8 milliards d'années", "isCorrect": true },
+        { "text": "Environ 100 milliards d'années", "isCorrect": false },
+        { "text": "Environ 1 million d'années", "isCorrect": false }
+      ],
+      "explanation": "Les mesures cosmologiques indiquent que l'Univers a environ 13,8 milliards d'années."
+    },
+    {
+      "ref": "espace-182",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "matiere-noire"],
+      "text": "Quelle observation fournit une preuve importante de l'existence de matière noire dans les galaxies ?",
+      "answers": [
+        { "text": "Les vitesses orbitales des étoiles et du gaz restent élevées loin du centre galactique", "isCorrect": true },
+        { "text": "Toutes les étoiles ont la même couleur", "isCorrect": false },
+        { "text": "La lumière du Soleil met huit minutes à atteindre la Terre", "isCorrect": false },
+        { "text": "Les planètes possèdent des saisons", "isCorrect": false }
+      ],
+      "explanation": "Les courbes de rotation galactiques ne correspondent pas à la quantité de matière visible seule. La matière noire est une explication majeure, soutenue par d'autres observations indépendantes."
+    },
+    {
+      "ref": "espace-183",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "energie-sombre"],
+      "text": "Quel phénomène est généralement associé à l'énergie sombre dans le modèle cosmologique standard ?",
+      "answers": [
+        { "text": "L'accélération de l'expansion de l'Univers", "isCorrect": true },
+        { "text": "La formation des anneaux de Saturne uniquement", "isCorrect": false },
+        { "text": "La rotation quotidienne de la Terre", "isCorrect": false },
+        { "text": "La production de lumière par les étoiles", "isCorrect": false }
+      ],
+      "explanation": "L'énergie sombre désigne le composant hypothétique associé à l'accélération de l'expansion cosmique observée."
+    },
+    {
+      "ref": "espace-184",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["relativite", "physique"],
+      "text": "Selon la relativité générale, comment la présence de masse et d'énergie influence-t-elle l'espace-temps ?",
+      "answers": [
+        { "text": "Elle courbe l'espace-temps", "isCorrect": true },
+        { "text": "Elle supprime toutes les dimensions spatiales", "isCorrect": false },
+        { "text": "Elle empêche la lumière de se déplacer dans le vide partout", "isCorrect": false },
+        { "text": "Elle transforme automatiquement toute matière en antimatière", "isCorrect": false }
+      ],
+      "explanation": "En relativité générale, la matière et l'énergie sont liées à la courbure de l'espace-temps, qui détermine notamment le mouvement des corps et de la lumière."
+    },
+    {
+      "ref": "espace-185",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["trou-noir", "relativite"],
+      "text": "Comment appelle-t-on le rayon de l'horizon des événements d'un trou noir non rotatif et non chargé ?",
+      "answers": [
+        { "text": "Le rayon de Schwarzschild", "isCorrect": true },
+        { "text": "Le rayon de Bohr", "isCorrect": false },
+        { "text": "Le rayon de Hill", "isCorrect": false },
+        { "text": "Le rayon de Fresnel", "isCorrect": false }
+      ],
+      "explanation": "Le rayon de Schwarzschild est le rayon caractéristique de l'horizon d'un trou noir décrit par la solution de Schwarzschild."
+    },
+    {
+      "ref": "espace-186",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["trou-noir", "physique"],
+      "text": "Qu'est-ce que le rayonnement de Hawking ?",
+      "answers": [
+        { "text": "Un rayonnement théorique associé aux effets quantiques près de l'horizon d'un trou noir", "isCorrect": true },
+        { "text": "La lumière réfléchie par tous les trous noirs", "isCorrect": false },
+        { "text": "Le rayonnement radio émis uniquement par le Soleil", "isCorrect": false },
+        { "text": "Une onde sonore produite par les étoiles à neutrons", "isCorrect": false }
+      ],
+      "explanation": "Stephen Hawking a montré théoriquement que les effets quantiques conduisent les trous noirs à émettre un rayonnement thermique. Ce phénomène n'a pas encore été détecté directement pour un trou noir astrophysique."
+    },
+    {
+      "ref": "espace-187",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["trou-noir", "physique"],
+      "text": "Qu'appelle-t-on une singularité gravitationnelle dans le cadre classique de la relativité générale ?",
+      "answers": [
+        { "text": "Une limite où la description classique de l'espace-temps devient incomplète ou présente des quantités divergentes", "isCorrect": true },
+        { "text": "Une étoile particulièrement brillante", "isCorrect": false },
+        { "text": "Un satellite en orbite géostationnaire", "isCorrect": false },
+        { "text": "Une planète dont l'atmosphère est très dense", "isCorrect": false }
+      ],
+      "explanation": "Dans les modèles classiques, une singularité indique une limite de la théorie. Une description complète de ces régions demanderait probablement une théorie de la gravitation quantique."
+    },
+    {
+      "ref": "espace-188",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["relativite", "physique"],
+      "text": "Quelle expérience a fourni une confirmation historique de la déviation de la lumière des étoiles par le Soleil en 1919 ?",
+      "answers": [
+        { "text": "Les observations d'une éclipse solaire totale dirigées notamment par Arthur Eddington", "isCorrect": true },
+        { "text": "La mission Apollo 11", "isCorrect": false },
+        { "text": "Le lancement de Spoutnik 1", "isCorrect": false },
+        { "text": "La découverte de Pluton", "isCorrect": false }
+      ],
+      "explanation": "Des observations réalisées pendant l'éclipse de 1919 ont mesuré la déviation apparente de la lumière stellaire près du Soleil, conformément aux prédictions de la relativité générale dans les limites des mesures de l'époque."
+    },
+    {
+      "ref": "espace-189",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["physique", "relativite"],
+      "text": "Quelle relation célèbre exprime l'équivalence entre masse et énergie au repos ?",
+      "answers": [
+        { "text": "E = mc²", "isCorrect": true },
+        { "text": "F = ma²", "isCorrect": false },
+        { "text": "P = IV", "isCorrect": false },
+        { "text": "V = IR²", "isCorrect": false }
+      ],
+      "explanation": "La relation E = mc² exprime l'énergie au repos associée à une masse m, où c est la vitesse de la lumière dans le vide."
+    },
+    {
+      "ref": "espace-190",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quelle limite de masse approximative est associée à la stabilité d'une naine blanche composée principalement de carbone et d'oxygène ?",
+      "answers": [
+        { "text": "La limite de Chandrasekhar, proche de 1,4 masse solaire", "isCorrect": true },
+        { "text": "Une limite de 100 masses solaires", "isCorrect": false },
+        { "text": "Une limite de 0,001 masse solaire", "isCorrect": false },
+        { "text": "Une limite de 50 masses terrestres", "isCorrect": false }
+      ],
+      "explanation": "La limite de Chandrasekhar est d'environ 1,4 masse solaire dans le modèle idéal d'une naine blanche non rotative. Au-delà, la pression de dégénérescence des électrons ne suffit plus à assurer sa stabilité."
+    },
+    {
+      "ref": "espace-191",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quelle interaction fondamentale contrebalance principalement la gravité en comprimant la matière au cœur d'une étoile pendant la fusion nucléaire ?",
+      "answers": [
+        { "text": "La pression thermique du plasma chauffé par les réactions nucléaires", "isCorrect": true },
+        { "text": "La force de frottement avec l'espace", "isCorrect": false },
+        { "text": "La pression des océans", "isCorrect": false },
+        { "text": "La répulsion magnétique de toutes les galaxies", "isCorrect": false }
+      ],
+      "explanation": "L'énergie libérée par les réactions nucléaires entretient une pression interne qui participe à l'équilibre hydrostatique de l'étoile."
+    },
+    {
+      "ref": "espace-192",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "nucleosynthese"],
+      "text": "Dans quelle région d'une étoile se produisent principalement les réactions de fusion nucléaire pendant sa phase stable de séquence principale ?",
+      "answers": [
+        { "text": "Dans son cœur", "isCorrect": true },
+        { "text": "Dans ses anneaux externes", "isCorrect": false },
+        { "text": "Dans le vide situé entre les étoiles", "isCorrect": false },
+        { "text": "Uniquement dans sa couronne", "isCorrect": false }
+      ],
+      "explanation": "La température et la pression extrêmement élevées du cœur permettent les réactions de fusion qui alimentent l'étoile."
+    },
+    {
+      "ref": "espace-193",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "nucleosynthese"],
+      "text": "Pourquoi les étoiles ne produisent-elles pas une quantité illimitée d'énergie par fusion du fer dans leur cœur ?",
+      "answers": [
+        { "text": "La fusion du fer ne libère pas d'énergie dans les conditions stellaires ordinaires ; elle en nécessite", "isCorrect": true },
+        { "text": "Le fer ne contient aucun noyau atomique", "isCorrect": false },
+        { "text": "Le fer empêche toujours la gravité d'exister", "isCorrect": false },
+        { "text": "Le fer se transforme spontanément en lumière sans interaction", "isCorrect": false }
+      ],
+      "explanation": "Le fer et les noyaux voisins se trouvent près du maximum d'énergie de liaison par nucléon. Leur fusion ne fournit donc pas l'énergie qui soutient le cœur d'une étoile massive."
+    },
+    {
+      "ref": "espace-194",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quel mécanisme explique principalement le refroidissement progressif d'une naine blanche après sa formation ?",
+      "answers": [
+        { "text": "Elle rayonne son énergie thermique résiduelle sans entretenir durablement une fusion nucléaire centrale", "isCorrect": true },
+        { "text": "Elle absorbe continuellement toute la lumière de la galaxie", "isCorrect": false },
+        { "text": "Elle se transforme immédiatement en planète", "isCorrect": false },
+        { "text": "Elle fabrique de l'énergie grâce à une combustion chimique permanente", "isCorrect": false }
+      ],
+      "explanation": "Une naine blanche se refroidit progressivement en rayonnant son énergie thermique. Ce processus s'étend sur des milliards d'années."
+    },
+    {
+      "ref": "espace-195",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quel processus peut déclencher une supernova de type Ia dans un système stellaire binaire ?",
+      "answers": [
+        { "text": "Une naine blanche subissant une explosion thermonucléaire après une évolution qui la déstabilise", "isCorrect": true },
+        { "text": "La collision de deux planètes gazeuses uniquement", "isCorrect": false },
+        { "text": "La rotation quotidienne de la Terre", "isCorrect": false },
+        { "text": "Une éclipse solaire totale", "isCorrect": false }
+      ],
+      "explanation": "Une supernova de type Ia est une explosion thermonucléaire impliquant une naine blanche. Plusieurs voies de formation existent, notamment dans des systèmes binaires."
+    },
+    {
+      "ref": "espace-196",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Pourquoi les étoiles à neutrons peuvent-elles tourner extrêmement rapidement ?",
+      "answers": [
+        { "text": "La conservation du moment cinétique lors de l'effondrement du cœur stellaire", "isCorrect": true },
+        { "text": "Parce qu'elles ne possèdent aucune masse", "isCorrect": false },
+        { "text": "Parce que la lumière les pousse comme un moteur ordinaire", "isCorrect": false },
+        { "text": "Parce que leur surface est constituée de glace", "isCorrect": false }
+      ],
+      "explanation": "Lorsqu'un cœur stellaire s'effondre, sa taille diminue énormément. La conservation du moment cinétique peut alors accélérer fortement sa rotation."
+    },
+    {
+      "ref": "espace-197",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quelle force quantique contribue à empêcher les électrons de se concentrer tous dans le même état et soutient les naines blanches ?",
+      "answers": [
+        { "text": "La pression de dégénérescence des électrons", "isCorrect": true },
+        { "text": "La force de marée lunaire", "isCorrect": false },
+        { "text": "La pression atmosphérique terrestre", "isCorrect": false },
+        { "text": "La pression des anneaux de Saturne", "isCorrect": false }
+      ],
+      "explanation": "Le principe d'exclusion de Pauli conduit à une pression quantique appelée pression de dégénérescence, qui contribue à soutenir les naines blanches contre l'effondrement gravitationnel."
+    },
+    {
+      "ref": "espace-198",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile"],
+      "text": "Quel phénomène peut produire une kilonova ?",
+      "answers": [
+        { "text": "La fusion de deux étoiles à neutrons, ou d'une étoile à neutrons avec un trou noir dans certaines conditions", "isCorrect": true },
+        { "text": "L'évaporation d'un océan terrestre", "isCorrect": false },
+        { "text": "La rotation de Mercure autour du Soleil", "isCorrect": false },
+        { "text": "La réflexion de la lumière sur les anneaux de Saturne", "isCorrect": false }
+      ],
+      "explanation": "Une kilonova est une émission lumineuse associée à certains événements de fusion d'objets compacts, accompagnée de la synthèse d'éléments lourds par capture rapide de neutrons."
+    },
+    {
+      "ref": "espace-199",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "nucleosynthese"],
+      "text": "Quel processus est responsable de la formation d'une grande partie des éléments légers comme l'hélium primordial dans l'Univers jeune ?",
+      "answers": [
+        { "text": "La nucléosynthèse primordiale", "isCorrect": true },
+        { "text": "La photosynthèse cosmique", "isCorrect": false },
+        { "text": "La fusion de toutes les galaxies", "isCorrect": false },
+        { "text": "La combustion chimique des planètes", "isCorrect": false }
+      ],
+      "explanation": "Dans les premières minutes de l'Univers

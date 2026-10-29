@@ -37,22 +37,17 @@ async function getCategoryTags(id, search) {
 
 async function getNbQuestionsByDifficulty(categorySlug, tagSlug, difficulty) {
   const category = await categoryModel.findBySlug(categorySlug);
-
   if (!category) {
-    throw new Error('Category not found');
+    throw httpError(404, `Catégorie "${categorySlug}" introuvable`);
   }
 
-  const tag = await categoryModel.findTags(category.id, tagSlug);
-
-  if (!tag.some((item) => item.slug === tagSlug)) {
-    throw new Error('Tag not found in this category');
+  const tags = await categoryModel.findTags(category.id, tagSlug);
+  if (!tags.some((item) => item.slug === tagSlug)) {
+    throw httpError(404, `Tag "${tagSlug}" introuvable dans cette catégorie`);
   }
 
-  return categoryModel.nbQuestionByDiff(
-    categorySlug,
-    tagSlug,
-    difficulty
-  );
+  const count = await categoryModel.nbQuestionByDiff(categorySlug, tagSlug, difficulty);
+  return { category: categorySlug, tag: tagSlug, difficulty, count };
 }
 
 
