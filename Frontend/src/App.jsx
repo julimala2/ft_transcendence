@@ -19,6 +19,8 @@ import CommuStart from './Quizs/Offline/CommuStart';
 import { CustomStart } from './Quizs/Offline/CustomStart';
 import { QuickStart } from './Quizs/Offline/QuickStart';
 import { GamePage } from './Quizs/Online/GamePage';
+import TestPage from './Pages/TestPage';
+import { OnlineMenu } from './Quizs/Online/OnlineMenu';
 
 export default function App() {
   const location = useLocation();
@@ -32,6 +34,7 @@ export default function App() {
       <div className="relative min-h-screen">
         <Header />
         <MainContainer>
+          
           <Routes location={background || location}>
             <Route path="/" element={<HomePage />} />
             <Route path="/account" element={<Navigate to="/" replace />} />
@@ -52,7 +55,10 @@ export default function App() {
             <Route path="/quiz/edit/:id?" element={<QuizEdit />} />
             <Route path="/play/offline/menu" element={<OfflineMenu />} />
             <Route path="/play/offline/commu" element={<CommuStart />} />
+            <Route path="/quiz/online" element={<OnlineMenu/>} />
             <Route path="*" element={<NotFoundPage />} />
+            {/* Test Page ! */}
+            <Route path ="/testpage" element={<TestPage />} />
           </Routes>
         </MainContainer>
 

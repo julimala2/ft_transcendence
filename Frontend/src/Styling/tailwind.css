@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+@layer components{
+    .MainContainer{
+        @aplly min-h-screen min-w-screen flex items-center justify-center;
+    }
+    .PageContainer{
+        @apply flex-col flex items-center w-2/3 p-4 rounded-md gap-4;
+    }
+
+}

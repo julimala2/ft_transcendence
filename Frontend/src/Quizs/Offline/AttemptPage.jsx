@@ -23,13 +23,28 @@ export function AttemptPage() {
   const [currentExplanation, setCurrentExplanation] = useState(null);
   const [timeLeft, setTimeLeft] = useState(15);
   const [isTimeout, setIsTimeout] = useState(false);
+  const [answers,setAnswers] = useState([]);
+
+  const shuffleArray = (array) => {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i --) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArray[i], newArray[j]] = [newArray[j],newArray[i]];
+    }
+    return (newArray);
+  }
 
   useEffect(() => {
     async function loadAttempt() {
       try {
         setLoading(true);
         const data = await getAttempt(Number(attemptId));
-        console.log('Attempt data:', data);
+        // console.log('Attempt data:', data);
+
+        //Shuffling
+        if (data.question && data.question.answers) {
+          data.question.answers = shuffleArray(data.question.answers);
+        }
         setAttempt(data);
         setFeedback(null);
         setSelectedAnswer(null);
@@ -116,6 +131,10 @@ export function AttemptPage() {
 
     try {
       const nextAttempt = await getAttempt(Number(attemptId));
+      //Shuffling the next attempt
+      if (nextAttempt.question && nextAttempt.question.answers) {
+        nextAttempt.question.answers = shuffleArray(nextAttempt.question.answers);
+      }
       setAttempt(nextAttempt);
     } catch (err) {
       setError(err.error || 'Erreur chargement question');
@@ -171,7 +190,6 @@ export function AttemptPage() {
   return (
     <MainContainer>
       <PageContainer>
-        {/* Progression */}
         <div className={styles.header}>
           <div className={styles.progress}>
             Question {attempt.answered + 1} / {attempt.total}
@@ -179,14 +197,11 @@ export function AttemptPage() {
           <div className={styles.score}>Score: {attempt.score}</div>
         </div>
 
-        {/* Question */}
         <div className={styles.questionContainer}>
           <h2 className={styles.question}>{attempt.question.text}</h2>
 
-          {/* Timer */}
           <div className={styles.timer}>Temps restant: {timeLeft}s</div>
 
-          {/* Image de la question */}
           {attempt.question.image && (
             <div className={styles.questionImage}>
               <img
@@ -196,7 +211,6 @@ export function AttemptPage() {
             </div>
           )}
 
-          {/* Reponses */}
           <div className={styles.answersContainer}>
             {attempt.question.answers.map(answer => {
               const isSelected = selectedAnswer === answer.id;
@@ -228,7 +242,6 @@ export function AttemptPage() {
             })}
           </div>
 
-          {/* Feedback */}
           {feedback && (
             <div
               className={`${styles.feedback}
@@ -248,7 +261,6 @@ export function AttemptPage() {
             </div>
           )}
 
-          {/* Bouton Question suivante */}
           {feedback && attempt.answered + 1 < attempt.total && (
             <StyledButton
               onClick={handleNextQuestion}
@@ -259,7 +271,6 @@ export function AttemptPage() {
             </StyledButton>
           )}
 
-          {/* Bouton Voir les résultats (dernière question) */}
           {feedback && attempt.answered + 1 === attempt.total && (
             <StyledButton
               onClick={handleViewResults}
