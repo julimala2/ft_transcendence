@@ -55,10 +55,6 @@
   border-color: rgba(250, 104, 31, 0.45);
 }
 
-.cardTitle {
-  padding: 12px;
-  font-weight: 600;
-}
 
 .info {
   display: flex;

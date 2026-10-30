@@ -4,6 +4,7 @@ export function StyledInput({
     value,
     onChange,
     label,
+    placeholder,
     ...props
 }) {
     return(
@@ -18,6 +19,7 @@ export function StyledInput({
              type={type}
              value={value}
              onChange={onChange}
+             placeholder={placeholder}
              required
              className="bg-gray-800 p-2 rounded-2xl border-2 border-gray-200"
              >

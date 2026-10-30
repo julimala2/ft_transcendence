@@ -7,6 +7,9 @@ import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
 import { StyledButton, TileButton } from '../../Components/Buttons.jsx';
 import { MainContainer, PageContainer } from '../../Components/Containers.jsx';
 import styles from '../../Styling/QuizSelectionPage.module.css';
+import { DifficultySelector } from '../../Components/DifficultySelector.jsx';
+import { TimeSelector } from '../../Components/TimeSelector.jsx';
+import { getQuestionsCount } from '../../Api/questions.jsx';
 
 export function CustomStart() {
   //Data
@@ -17,6 +20,7 @@ export function CustomStart() {
   //Filtres
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedTag, setSelectedTag] = useState(null);
+  const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const [difficulty, setDifficulty] = useState(0);
   const [questionCount, setQuestionCount] = useState(10);
   const [isStarting, setIsStarting] = useState(false);
@@ -93,7 +97,7 @@ export function CustomStart() {
       });
       setAvailableQuestions(selected?.questionCount || 0);
     }
-  }, [selectedTag, categoryTags, selectedCategory]);
+  }, [selectedTag, categoryTags, selectedCategory, selectedDifficulty]);
 
   async function handleStartCustomQuiz() {
     if (!selectedCategory) {
@@ -154,6 +158,18 @@ export function CustomStart() {
     );
   }
 
+  const handleDifficultyChange = async(newDifficulty) => {
+    setDifficulty(newDifficulty);
+    if(selectedCategory && selectedDifficulty){
+      try {
+        console.log(selectedCategory);
+        const data = await getQuestionsCount({categorySlug : selectedCategory.slug, tagId: null, difficulty : newDifficulty})
+        console.log('Count : ',JSON.stringify(data));
+        setAvailableQuestions(data.count);
+      } catch (error) { }
+    }
+  }
+
   return (
     <MainContainer>
       <PageContainer>
@@ -171,16 +187,6 @@ export function CustomStart() {
                   >
                     {cat.name}
               </TileButton>
-              // <div
-              //   key={cat.id}
-              //   className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
-              //   onClick={() => {
-              //     setSelectedCategory(cat.id);
-              //     setSelectedTag(null);
-              //   }}
-              // >
-              //   {cat.name}
-              // </div>
             ))}
           </div>
           {selectedCategory && (
@@ -221,90 +227,8 @@ export function CustomStart() {
           </p>
         </div>
 
-        <div className={styles.filterGroup}>
-          <div className={styles.radioGroup}>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="difficulty"
-                value={0}
-                checked={difficulty === 0}
-                onChange={() => setDifficulty(0)}
-                disabled={!selectedCategory}
-              />
-              Aléatoire
-            </label>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="difficulty"
-                value={1}
-                checked={difficulty === 1}
-                onChange={() => setDifficulty(1)}
-                disabled={!selectedCategory}
-              />
-              ⭐ Facile
-            </label>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="difficulty"
-                value={2}
-                checked={difficulty === 2}
-                onChange={() => setDifficulty(2)}
-                disabled={!selectedCategory}
-              />
-              ⭐⭐ Moyenne
-            </label>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="difficulty"
-                value={3}
-                checked={difficulty === 3}
-                onChange={() => setDifficulty(3)}
-                disabled={!selectedCategory}
-              />
-              ⭐⭐⭐ Difficile
-            </label>
-          </div>
-        </div>
-        <div className={styles.filterGroup}>
-          <div className={styles.radioGroup}>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="length"
-                value={0}
-                checked={questionCount === 10}
-                onChange={() => setQuestionCount(10)}
-                disabled={!selectedCategory}
-              />
-              Court ⏱️ (10)
-            </label>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="length"
-                value={0}
-                checked={questionCount === 25}
-                onChange={() => setQuestionCount(25)}
-                disabled={!selectedCategory}
-              />
-              Moyen ⏱️⏱️ (25)
-            </label>
-            <label className={styles.radioLabel}>
-              <input
-                type="radio"
-                name="length"
-                checked={questionCount === 50}
-                onChange={() => setQuestionCount(50)}
-                disabled={!selectedCategory}
-              />
-              Long ⏱️⏱️⏱️ (50)
-            </label>
-          </div>
-        </div>
+        <DifficultySelector onChange={handleDifficultyChange} value={difficulty}/>
+        <TimeSelector onChange={setQuestionCount} value={questionCount}/>
         {questionCount > availableQuestions && selectedCategory && (
           <p className={styles.warning}>
             ⚠️ Seules {availableQuestions} questions sont disponibles. Réduisez
@@ -319,6 +243,7 @@ export function CustomStart() {
             questionCount > availableQuestions
           }
           variant="success"
+          className='text-xl! p-5!'
         >
           {isStarting ? 'Demarrage...' : 'Démarrer le quiz'}
         </StyledButton>

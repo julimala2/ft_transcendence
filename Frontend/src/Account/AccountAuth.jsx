@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 import { useAuth } from '../Hooks/useAuth';
 import { StyledInput } from '../Components/Inputs'
 import { StyledButton } from '../Components/Buttons'
-import styles from './Styling/Account.module.css';
+
 // Validation functions
 export function validatePassword(password) {
   const specialCharsRegex = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/;
@@ -144,7 +144,6 @@ function RegisterForm() {
       <StyledButton
         type="submit"
         disabled={isSubmitting}
-        className={isSubmitting ? styles.disabled : styles.button}
         variant="success"
       >
         {isSubmitting ? 'En cours...' : `S'inscrire`}

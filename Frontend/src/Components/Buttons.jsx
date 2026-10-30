@@ -106,8 +106,8 @@ export function TileButton({
   // Define variant classes with pressed-down effect for selected state
   const variantClasses = {
     quiz: `${randomGradient} font-bold rounded-4xl text-2xl w-50 h-50 text-[#ffffff] border-3 border-black`,
-    quiz_selected: `bg-gradient-to-tl scale-90 text-amber-200`,
-    menu: ` font-bold rounded-4xl text-2xl w-150 h-40 text-[#ffffff] border-3 border-black`
+    quiz_selected: `bg-gradient-to-tl scale-100 text-amber-200`,
+    menu: ` font-bold rounded-4xl text-2xl w-160 h-40 text-[#ffffff] border-3 border-black`
   }
 
   // Apply selected effect when button is selected
@@ -133,5 +133,19 @@ export function TileButton({
     >
       {isLoading ? props.loadingText || 'Chargement...' : children}
     </motion.button>
+  );
+}
+
+export function AnswerButton({
+  text,
+  id,
+  onClick,
+  disabled,
+  isSelected,
+  isCorrectAnswer,
+  isWrongSelection
+}){
+  return(
+    <p></p>
   );
 }

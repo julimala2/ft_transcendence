@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { FriendCard } from '../Account/AccountFriends';
 import { searchUsers } from '../Api/friends';
+import { StyledInput } from './Inputs';
 
 export function UserSearch({ onSelect, children }) {
   const [search, setSearch] = useState('');
@@ -40,9 +41,9 @@ export function UserSearch({ onSelect, children }) {
 
   return (
     <>
-      <input
+      <StyledInput
         type="search"
-        placeholder="Search users"
+        placeholder="Chercher un utilisateur"
         aria-label="Search users"
         value={search}
         onChange={e => setSearch(e.target.value)}
@@ -51,11 +52,11 @@ export function UserSearch({ onSelect, children }) {
       {!query ? (
         <></>
       ) : searching ? (
-        <p className="empty">Searching...</p>
+        <p className="empty">Recherche...</p>
       ) : results.length === 0 ? (
-        <p className="empty">No user called « {search} »</p>
+        <p className="empty">Aucun utilisateur commencant par : « {search} »</p>
       ) : (
-        <ul className="list">
+        <ul className="list flex flex-col gap-2">
           {results.map(u => (
             <FriendCard key={u.id} friend={u} onClick={onSelect} />
           ))}

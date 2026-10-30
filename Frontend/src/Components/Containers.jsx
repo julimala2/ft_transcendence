@@ -3,7 +3,7 @@
 //Container that contains an entire page
 export const MainContainer = ({ children }) => {
   return (
-    <div className="min-h-screen min-w-screen flex items-center justify-center">
+    <div className="h-screen min-h-full w-full">
       {children}
     </div>
   );
@@ -12,7 +12,7 @@ export const MainContainer = ({ children }) => {
 //Page container
 export const PageContainer = ({ children }) => {
   return (
-    <div className="flex-col flex items-center w-min-2/3 p-4 rounded-md gap-4">
+    <div className=" flex-col flex items-center justify-center align-items-center p-4 rounded-md gap-4 pt-50 w-full pl-20 pr-20 pb-20">
       {children}
     </div>
   );
