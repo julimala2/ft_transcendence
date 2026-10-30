@@ -2,6 +2,7 @@ const { getProfile } = require('../../src/services/user.service');
 const { joinRoomHandler } = require('./joinRoomHandler');
 const { chatHandler } = require('./chatHandler');
 const { leaveRoom } = require('../rooms');
+const { createRoom } = require('../rooms');
 const { quizHandler } = require('./quizHandler');
 
 const handlers = {
@@ -23,16 +24,17 @@ async function handleConnection(ws, req)
   ws.on('message', (data) => {
     try {
       const message = JSON.parse(data);
+      console.log(message); 
       const handler = handlers[message.type];
-      console.log('[WEBSOCKET] Message reçu (', ws.username, '):', handler);
+      console.log('[WEBSOCKET] Message reçu (', ws.username, '):', handler, ws.currentRoom);
 
       if (handler) {
-        handler(ws, message);
+        handler(message.data, ws);
       } 
       else {
         console.error('[WEBSOCKET] Type de message inconnu:', message.type);
       } 
-
+      console.log('[WEBSOCKET] Message reçu (', ws.username, '):', handler, ws.currentRoom);
     }
     catch (error) {
       console.error('[WEBSOCKET] Message invalide (pas du JSON):', data.toString());

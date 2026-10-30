@@ -21,6 +21,7 @@ import { QuickStart } from './Quizs/Offline/QuickStart';
 import { GamePage } from './Quizs/Online/GamePage';
 import TestPage from './Pages/TestPage';
 import { OnlineMenu } from './Quizs/Online/OnlineMenu';
+import { Room } from './Quizs/Online/Room';
 
 export default function App() {
   const location = useLocation();
@@ -56,6 +57,7 @@ export default function App() {
             <Route path="/play/offline/menu" element={<OfflineMenu />} />
             <Route path="/play/offline/commu" element={<CommuStart />} />
             <Route path="/quiz/online" element={<OnlineMenu/>} />
+            <Route path="/room/:roomId" element={<Room />} />
             <Route path="*" element={<NotFoundPage />} />
             {/* Test Page ! */}
             <Route path ="/testpage" element={<TestPage />} />

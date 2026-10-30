@@ -1,9 +1,8 @@
 const rooms = require('../rooms');
 
-function joinRoomHandler(ws, message) {
+function joinRoomHandler(message, ws) {
     rooms.leaveRoom(ws);
-    rooms.joinRoom(message.roomId, ws);
-    message.gameType
+    rooms.joinRoom(message, ws);
 }
 
 module.exports = { joinRoomHandler };

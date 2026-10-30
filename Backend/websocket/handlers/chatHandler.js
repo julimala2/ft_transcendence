@@ -1,6 +1,7 @@
 const { broadcast } = require('../rooms');
 
-function chatHandler(ws, message) {
+function chatHandler(message, ws) {
+    console.log(ws.currentRoom);
     broadcast(ws.currentRoom, {
           type: 'chat',
           user: ws.username,
