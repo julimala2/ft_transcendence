@@ -1,15 +1,16 @@
 const rooms = {};
 
 function joinRoom(message, ws) {
+  console.log(`[WEBSOCKET] User ${ws.username} joined room ${message.roomId}`);
   if (!rooms[message.roomId]) {
     ws.send(JSON.stringify({ type: 'errorRoom', message: 'Room does not exist.' }));
     return;
   }
   rooms[message.roomId].members.push(ws);
   ws.currentRoom = message.roomId;
-  // broadcast(message.roomId, {type: 'joinedRoom', data: {
-  //   user: ws.username}},
-  //   ws);
+  broadcast(message.roomId, {type: 'joinedRoom', data: {
+    user: ws.username}},
+    ws);
   ws.send(JSON.stringify({ 
     type: 'joinedRoom', data: { user: ws.username, roomId : message.roomId, roomName: rooms[message.roomId].name } }));
 }
@@ -23,20 +24,26 @@ function createRoom(message, ws) {
   ws.send(JSON.stringify({ type: 'roomCreated', data: { roomId, roomName: message.roomName } })); 
 }
 
-function leaveRoom(ws) {
+
+function leaveRoom(message, ws) {
+  if(!ws)
+    return;
+  if(!ws.currentRoom)
+    return;
   const roomId = ws.currentRoom;
   if (roomId && rooms[roomId]) 
   {
     rooms[roomId].members = rooms[roomId].members.filter(w => w !== ws);
     ws.currentRoom = null;
-//    if (rooms[roomId].members.length === 0) {
-//      delete rooms[roomId];
-//    }
-//    else {
-//      broadcast(roomId, {type: 'player_left', data: {
-//        user: ws.username, userId: ws.userId }}, 
-//        ws);
-//    }
+
+   if (rooms[roomId].members.length === 0) {
+     delete rooms[roomId];
+   }
+   else {
+     broadcast(roomId, {type: 'player_left', data: {
+       user: ws.username, userId: ws.userId }}, 
+       ws);
+   }
   }
 }
 
@@ -44,7 +51,7 @@ function broadcast(roomId, data, except = null) {
   const room = rooms[roomId];
   if (!room) return;
 
-  room.forEach(ws => {
+  room.members.forEach(ws => {
     if (ws !== except && ws.readyState === 1) {
       ws.send(JSON.stringify(data));
     }

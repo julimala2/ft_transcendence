@@ -39,6 +39,13 @@ async function findPublicById(id) {
   });
 }
 
+async function findCompleteById(id) {
+  return prisma.question.findFirst({
+    where: { id, isActive: true },
+    select: FULL_INCLUDE,
+  });
+}
+
 async function findForOwnership(id) {
   return prisma.question.findUnique({
     where: { id },
@@ -89,4 +96,4 @@ async function remove(id) {
   return prisma.question.delete({ where: { id } });
 }
 
-module.exports = { PUBLIC_SELECT, findAll, findPublicById, findForOwnership, create, update, remove };
+module.exports = { PUBLIC_SELECT, findAll, findPublicById, findForOwnership, create, update, remove, findCompleteById };

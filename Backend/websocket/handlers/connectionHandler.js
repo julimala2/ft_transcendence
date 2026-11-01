@@ -3,14 +3,16 @@ const { joinRoomHandler } = require('./joinRoomHandler');
 const { chatHandler } = require('./chatHandler');
 const { leaveRoom } = require('../rooms');
 const { createRoom } = require('../rooms');
-const { quizHandler } = require('./quizHandler');
+const { quizHandler} = require('./quizHandler');
+const { wsProfile } = require('./profileHandler');
 
 const handlers = {
-  startGame: quizHandler,
+  quiz: quizHandler, //data : {type: category/custom, nquestions, difficulty,}
   createRoom: createRoom,
   joinRoom: joinRoomHandler,
   leaveRoom: leaveRoom,
   chat: chatHandler,
+  wsProfile: wsProfile
 };
 
 async function handleConnection(ws, req) 

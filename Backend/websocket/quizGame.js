@@ -1,6 +1,53 @@
+const { quizAttempt } = require('../lib/prisma');
 const quizService = require('../src/services/quiz.service');
+const questionService = require('../src/services/question.service');
 const { broadcast, getRoomMembers } = require('./rooms');
 const games = {};
+
+// setQuiz message : data: {type : setQuiz, quizId:'12312', categoryId: '1', count : '10'}
+ 
+// const category = await categoryModel.findById(params.categoryId);
+// if(!category) non
+
+function shuffle(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+async function setQuiz(data, ws){
+  let quiz;
+  let question;
+  
+  question = await questionService.getCompleteQuestionById(1);
+
+  if(data.quizId){
+    quiz = await quizService.getQuizById(data.quizId, ws.userId);
+  } 
+  else if (data.categoryId) {
+    const category = await categoryModel.findById(params.categoryId);
+    // if(!category)
+      // ws.send(error)
+    const available = await attemptModel.findActiveQuestionIds({
+        categoryId: category.id,
+      });
+    const count = data.count ?? available.length;
+    questionIds = shuffle(available).slice(0, count);
+
+    //GET CATEGORYID
+    //CHECK IF EXISTS
+    //IF EXISTS GET QUESTIONS (COUNT IN DATA PAYLOAD)
+    //IF ENOUGH QUESTIONS : SEND QUIZREADY TO THE FRONT
+    //FRONT SENDS ACKNO BACK TO THE BACK
+    //IF TOUT LE MONDE READY
+    //SEND FIRST QUESTION
+  }
+  ws.send(JSON.stringify({ type: 'question', data: { question } })); 
+}
+
 
 async function startGame(roomId, quizId) {
     const members = getRoomMembers(roomId);
@@ -24,6 +71,10 @@ async function startGame(roomId, quizId) {
     catch (error) {
         return;
     }
+}
+
+async function answer(roomId,answerId){
+  
 }
 
 function sendQuestion(roomId) {
@@ -82,4 +133,4 @@ function revealAnswer(roomId) {
   }, 3000);
 }
 
-module.exports = { startGame, revealAnswer, games };
+module.exports = { setQuiz, startGame, revealAnswer, games };
