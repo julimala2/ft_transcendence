@@ -87,9 +87,9 @@ export function QuickStart() {
       categoryId: selectedCategory.id,
     };
 
-    if (difficulty !== 0) {
-      requestBody.difficulty = difficulty;
-    }
+    // if (difficulty !== 0) {
+    //   requestBody.difficulty = difficulty;
+    // }
 
     setIsStarting(true);
     try {
@@ -136,7 +136,7 @@ export function QuickStart() {
 
           {selectedCategory && (
             <div className='flex flex-col gap-10 justify-center items-center'>
-              <DifficultySelector value={difficulty} onChange={setDifficulty} />
+              {/* <DifficultySelector value={difficulty} onChange={setDifficulty} /> */}
               <StyledButton
                 onClick={handleStartQuickQuiz}
                 disabled={isStarting}

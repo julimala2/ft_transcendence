@@ -10,7 +10,7 @@ export default function OfflineMenu() {
         <div className="flex gap-4">
           <Link to="/play/offline/quick">
           <TileButton>
-            Quick
+            Rush
           </TileButton>
           </Link>
           <Link to="/play/offline/custom">

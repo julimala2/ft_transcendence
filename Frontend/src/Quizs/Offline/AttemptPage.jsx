@@ -190,11 +190,8 @@ export function AttemptPage() {
   return (
     <MainContainer>
       <PageContainer>
-        <div className={styles.header}>
-          <div className={styles.progress}>
-            Question {attempt.answered + 1} / {attempt.total}
-          </div>
-          <div className={styles.score}>Score: {attempt.score}</div>
+        <div className="flex flex-row items-center pb-5">
+          <div className="text-3xl font-bold text-amber-300">Score: {attempt.score}</div>
         </div>
 
         <div className={styles.questionContainer}>
