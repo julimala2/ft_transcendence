@@ -3,6 +3,7 @@
     -Add "add friend" button on public profiles /DONE
     -Add request system (accept/refuse at the top of the friends list) /DONE
     -Add delete system (delete then confirm, in the friend profile) /DONE
+    -Redo public profile
 
 - Profile :
     -Add delete profile
