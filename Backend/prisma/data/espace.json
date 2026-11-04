@@ -1120,10 +1120,7 @@
         { "text": "Faux", "isCorrect": false }
       ],
       "explanation": "La lumière met environ 8 minutes et 20 secondes pour parcourir les quelque 150 millions de kilomètres qui séparent le Soleil de la Terre."
-    }
-  ]
-}
-    
+    },
     {
       "ref": "espace-081",
       "type": "multiple",
@@ -2484,10 +2481,7 @@
       ],
       "explanation": "Le fond diffus cosmologique est le rayonnement émis lorsque l'Univers est devenu transparent, environ 380 000 ans après le Big Bang."
     },
-
-
-
-        {
+    {
       "ref": "espace-181",
       "type": "multiple",
       "difficulty": 3,
@@ -2751,4 +2745,427 @@
         { "text": "La fusion de toutes les galaxies", "isCorrect": false },
         { "text": "La combustion chimique des planètes", "isCorrect": false }
       ],
-      "explanation": "Dans les premières minutes de l'Univers
+      "explanation": "Dans les premières minutes de l'Univers, les conditions de température et de densité ont permis la formation des premiers noyaux atomiques légers. Ce processus, appelé nucléosynthèse primordiale, a produit principalement des noyaux d'hydrogène et d'hélium, ainsi que de faibles quantités de deutérium, d'hélium-3 et de lithium-7."
+    },
+    {
+      "ref": "espace-200",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "nucleosynthese"],
+      "text": "Quel phénomène explique la formation d'une grande partie de l'hélium primordial dans l'Univers jeune ?",
+      "answers": [
+        { "text": "La nucléosynthèse primordiale, durant les premières minutes de l'Univers", "isCorrect": true },
+        { "text": "La fusion nucléaire au cœur des premières galaxies", "isCorrect": false },
+        { "text": "La désintégration des trous noirs supermassifs", "isCorrect": false },
+        { "text": "La collision des premières planètes rocheuses", "isCorrect": false }
+      ],
+      "explanation": "La nucléosynthèse primordiale s'est déroulée quelques minutes après le Big Bang et a produit notamment des noyaux d'hydrogène, d'hélium et de faibles quantités de lithium."
+    },
+    {
+      "ref": "espace-201",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "fond-diffus-cosmologique"],
+      "text": "À quelle époque le rayonnement fossile cosmologique a-t-il été principalement libéré ?",
+      "answers": [
+        { "text": "Environ 380 000 ans après le Big Bang", "isCorrect": true },
+        { "text": "Environ 13,8 milliards d'années avant le Big Bang", "isCorrect": false },
+        { "text": "Plusieurs milliards d'années après la formation de la Voie lactée", "isCorrect": false },
+        { "text": "Exactement une seconde après le Big Bang", "isCorrect": false }
+      ],
+      "explanation": "Environ 380 000 ans après le Big Bang, l'Univers s'était suffisamment refroidi pour permettre aux électrons et aux noyaux de former des atomes neutres. Les photons ont alors pu se propager librement : ils constituent aujourd'hui le fond diffus cosmologique."
+    },
+    {
+      "ref": "espace-202",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "expansion"],
+      "text": "Que signifie le décalage vers le rouge cosmologique observé dans le spectre de nombreuses galaxies lointaines ?",
+      "answers": [
+        { "text": "La longueur d'onde de leur lumière a été étirée par l'expansion de l'Univers", "isCorrect": true },
+        { "text": "Toutes ces galaxies se refroidissent jusqu'à devenir invisibles", "isCorrect": false },
+        { "text": "Leurs étoiles émettent uniquement de la lumière rouge", "isCorrect": false },
+        { "text": "Leur lumière perd progressivement toute son énergie au contact de la matière noire", "isCorrect": false }
+      ],
+      "explanation": "L'expansion de l'Univers étire la longueur d'onde de la lumière qui le traverse. Ce décalage cosmologique vers le rouge permet notamment d'étudier l'expansion et l'histoire de l'Univers."
+    },
+    {
+      "ref": "espace-203",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["cosmologie", "matiere-noire"],
+      "text": "Pourquoi les amas de galaxies peuvent-ils révéler la présence de matière noire grâce à l'effet de lentille gravitationnelle ?",
+      "answers": [
+        { "text": "La masse totale courbe la lumière des objets situés en arrière-plan, même si une partie de cette masse est invisible", "isCorrect": true },
+        { "text": "La matière noire absorbe toutes les ondes gravitationnelles des galaxies", "isCorrect": false },
+        { "text": "Les galaxies de premier plan produisent artificiellement des étoiles derrière elles", "isCorrect": false },
+        { "text": "La lumière est déviée uniquement par les champs magnétiques des amas", "isCorrect": false }
+      ],
+      "explanation": "La relativité générale prévoit que la gravité dévie la lumière. En mesurant cette déformation, les astronomes peuvent estimer la distribution de masse des amas et constater que la matière visible ne suffit pas à expliquer toutes les observations."
+    },
+    {
+      "ref": "espace-204",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["trou-noir", "relativite"],
+      "text": "Pourquoi un observateur lointain ne reçoit-il pas de signal classique émis depuis l'intérieur de l'horizon des événements d'un trou noir ?",
+      "answers": [
+        { "text": "À l'intérieur de l'horizon, aucun trajet causal dirigé vers l'extérieur ne permet à un signal d'atteindre un observateur lointain", "isCorrect": true },
+        { "text": "La lumière y est détruite instantanément par la matière noire", "isCorrect": false },
+        { "text": "Le temps s'arrête universellement pour tous les observateurs", "isCorrect": false },
+        { "text": "La gravité y disparaît complètement", "isCorrect": false }
+      ],
+      "explanation": "L'horizon des événements délimite une région dont aucun signal causal ne peut rejoindre l'extérieur. Cela ne signifie pas que le temps s'arrête pour un observateur qui franchit localement l'horizon."
+    },
+    {
+      "ref": "espace-205",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["trou-noir", "relativite"],
+      "text": "Comment varie la température de Hawking théorique d'un trou noir non chargé et non rotatif lorsque sa masse augmente ?",
+      "answers": [
+        { "text": "Elle diminue inversement avec sa masse", "isCorrect": true },
+        { "text": "Elle augmente proportionnellement au carré de sa masse", "isCorrect": false },
+        { "text": "Elle reste identique quelle que soit sa masse", "isCorrect": false },
+        { "text": "Elle devient nécessairement infinie au-delà d'une masse solaire", "isCorrect": false }
+      ],
+      "explanation": "Pour un trou noir de Schwarzschild, la température de Hawking est inversement proportionnelle à sa masse. Les trous noirs stellaires et supermassifs ont donc une température extrêmement faible."
+    },
+    {
+      "ref": "espace-206",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["trou-noir", "relativite"],
+      "text": "Qu'appelle-t-on le problème de l'information des trous noirs ?",
+      "answers": [
+        { "text": "La difficulté à concilier l'évaporation des trous noirs avec l'évolution quantique unitaire de l'information", "isCorrect": true },
+        { "text": "L'impossibilité de déterminer la position des étoiles dans une galaxie", "isCorrect": false },
+        { "text": "La disparition des ondes radio au voisinage de toutes les planètes", "isCorrect": false },
+        { "text": "La perte de mémoire des ordinateurs utilisés dans l'espace", "isCorrect": false }
+      ],
+      "explanation": "Le problème de l'information interroge la manière dont l'information quantique peut être préservée si un trou noir s'évapore par rayonnement de Hawking. Il constitue une question majeure à l'interface entre gravitation et mécanique quantique."
+    },
+    {
+      "ref": "espace-207",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ondes-gravitationnelles", "relativite"],
+      "text": "Que mesure principalement un détecteur interférométrique comme LIGO lorsqu'une onde gravitationnelle le traverse ?",
+      "answers": [
+        { "text": "De minuscules variations relatives de longueur entre ses bras perpendiculaires", "isCorrect": true },
+        { "text": "La température absolue de l'espace entre les miroirs", "isCorrect": false },
+        { "text": "La vitesse orbitale de la Terre autour du Soleil uniquement", "isCorrect": false },
+        { "text": "La quantité de lumière visible émise par les trous noirs", "isCorrect": false }
+      ],
+      "explanation": "Une onde gravitationnelle produit une déformation différentielle de l'espace-temps. Les interféromètres mesurent les variations extrêmement faibles de longueur de leurs bras grâce aux interférences de faisceaux laser."
+    },
+    {
+      "ref": "espace-208",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ondes-gravitationnelles", "etoile-a-neutrons"],
+      "text": "Pourquoi la fusion de deux étoiles à neutrons peut-elle être observée à la fois en ondes gravitationnelles et en rayonnement électromagnétique ?",
+      "answers": [
+        { "text": "La fusion produit des perturbations gravitationnelles et peut également libérer de la matière et de l'énergie sous forme de rayonnement", "isCorrect": true },
+        { "text": "Les ondes gravitationnelles se transforment systématiquement en rayons gamma dans le vide", "isCorrect": false },
+        { "text": "Les étoiles à neutrons émettent exclusivement de la lumière visible avant leur collision", "isCorrect": false },
+        { "text": "La gravité cesse d'agir pendant la collision, ce qui libère la lumière", "isCorrect": false }
+      ],
+      "explanation": "Une fusion d'étoiles à neutrons peut produire des ondes gravitationnelles, un jet relativiste, une émission de rayons gamma et une kilonova. L'observation de plusieurs messagers permet d'étudier des phénomènes physiques complémentaires."
+    },
+    {
+      "ref": "espace-209",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "etoile-a-neutrons"],
+      "text": "Quelle propriété distingue généralement un pulsar d'une étoile à neutrons qui n'est pas détectée comme pulsar ?",
+      "answers": [
+        { "text": "Des faisceaux de rayonnement balayent périodiquement notre ligne de visée en raison de la rotation de l'étoile", "isCorrect": true },
+        { "text": "Il est nécessairement plus massif que tous les trous noirs stellaires", "isCorrect": false },
+        { "text": "Il ne possède aucun champ magnétique", "isCorrect": false },
+        { "text": "Il produit sa lumière uniquement par fusion de l'hydrogène", "isCorrect": false }
+      ],
+      "explanation": "Un pulsar est une étoile à neutrons dont le rayonnement, souvent radio, est détecté sous forme d'impulsions périodiques. Ce phénomène dépend notamment de la géométrie du faisceau et de notre orientation par rapport à l'objet."
+    },
+    {
+      "ref": "espace-210",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "evolution-stellaire"],
+      "text": "Pourquoi les étoiles très massives ont-elles généralement une durée de vie sur la séquence principale plus courte que les étoiles de faible masse ?",
+      "answers": [
+        { "text": "Leur luminosité augmente fortement avec leur masse, ce qui entraîne une consommation plus rapide de leur combustible nucléaire", "isCorrect": true },
+        { "text": "Elles ne contiennent jamais d'hydrogène dans leur cœur", "isCorrect": false },
+        { "text": "Elles perdent toute leur masse au moment de leur formation", "isCorrect": false },
+        { "text": "Leur gravité empêche toutes les réactions nucléaires", "isCorrect": false }
+      ],
+      "explanation": "Les étoiles massives disposent de davantage de combustible, mais leur luminosité augmente encore plus fortement. Elles consomment donc leur combustible central plus rapidement et évoluent généralement plus vite."
+    },
+    {
+      "ref": "espace-211",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "nucleosynthese"],
+      "text": "Quel mécanisme est considéré comme une source majeure de nombreux éléments plus lourds que le fer lors de certains événements astrophysiques extrêmes ?",
+      "answers": [
+        { "text": "La capture rapide de neutrons, appelée processus r", "isCorrect": true },
+        { "text": "La fusion chimique des molécules d'eau dans les nébuleuses", "isCorrect": false },
+        { "text": "La réflexion de la lumière sur les poussières interstellaires", "isCorrect": false },
+        { "text": "La désintégration de tous les protons en électrons", "isCorrect": false }
+      ],
+      "explanation": "Le processus r permet à des noyaux atomiques de capturer rapidement des neutrons avant de subir des désintégrations radioactives. Il contribue à la formation de nombreux éléments lourds et se produit notamment dans les fusions d'étoiles à neutrons."
+    },
+    {
+      "ref": "espace-212",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "diagramme-hr"],
+      "text": "Dans un diagramme de Hertzsprung-Russell, comment se répartissent généralement les étoiles de la séquence principale ?",
+      "answers": [
+        { "text": "Elles forment une bande reliant les étoiles chaudes et lumineuses aux étoiles plus froides et moins lumineuses", "isCorrect": true },
+        { "text": "Elles occupent toutes un point unique correspondant à la température du Soleil", "isCorrect": false },
+        { "text": "Elles se trouvent exclusivement dans la région des étoiles froides et très lumineuses", "isCorrect": false },
+        { "text": "Elles sont classées uniquement selon leur distance à la Terre", "isCorrect": false }
+      ],
+      "explanation": "Le diagramme de Hertzsprung-Russell relie notamment la luminosité à la température de surface. La séquence principale correspond à une bande où se trouvent les étoiles qui fusionnent principalement l'hydrogène dans leur cœur."
+    },
+    {
+      "ref": "espace-213",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "Quelle est la principale limite de la méthode des transits pour détecter des exoplanètes ?",
+      "answers": [
+        { "text": "Elle exige généralement que l'orbite de la planète soit suffisamment alignée avec notre ligne de visée pour qu'elle passe devant son étoile", "isCorrect": true },
+        { "text": "Elle ne peut détecter que les planètes dépourvues d'atmosphère", "isCorrect": false },
+        { "text": "Elle fonctionne uniquement pour les planètes plus massives que leur étoile", "isCorrect": false },
+        { "text": "Elle nécessite que la planète émette davantage de lumière que son étoile", "isCorrect": false }
+      ],
+      "explanation": "Un transit produit une diminution périodique de la luminosité de l'étoile lorsque la planète passe devant elle. Cette méthode est géométriquement sélective et ne permet pas de détecter toutes les exoplanètes."
+    },
+    {
+      "ref": "espace-214",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "exoplanete"],
+      "text": "Que permet principalement de mesurer la méthode des vitesses radiales pour une étoile possédant une exoplanète ?",
+      "answers": [
+        { "text": "Les variations périodiques de sa vitesse le long de notre ligne de visée, causées par l'influence gravitationnelle de la planète", "isCorrect": true },
+        { "text": "Le diamètre exact de la planète sans aucune autre observation", "isCorrect": false },
+        { "text": "La composition complète de l'atmosphère de la planète dans tous les cas", "isCorrect": false },
+        { "text": "La distance de la planète à la Terre sans modèle orbital", "isCorrect": false }
+      ],
+      "explanation": "La planète et son étoile orbitent autour de leur centre de masse commun. Le mouvement de l'étoile entraîne des décalages Doppler périodiques dans son spectre et permet notamment d'estimer une masse minimale pour la planète."
+    },
+    {
+      "ref": "espace-215",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "spectroscopie"],
+      "text": "Comment les astronomes peuvent-ils identifier certains éléments chimiques présents dans l'atmosphère d'une étoile ?",
+      "answers": [
+        { "text": "En analysant les raies spectrales d'absorption ou d'émission caractéristiques des atomes et des ions", "isCorrect": true },
+        { "text": "En mesurant uniquement la taille apparente de l'étoile", "isCorrect": false },
+        { "text": "En comptant le nombre de planètes situées autour d'elle", "isCorrect": false },
+        { "text": "En déterminant uniquement sa vitesse de rotation autour du centre galactique", "isCorrect": false }
+      ],
+      "explanation": "Les atomes et les ions interagissent avec la lumière à des longueurs d'onde caractéristiques. L'étude de ces raies spectrales permet de déduire la composition chimique, la température et certaines propriétés physiques des étoiles."
+    },
+    {
+      "ref": "espace-216",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "distances-cosmiques"],
+      "text": "Pourquoi les astronomes utilisent-ils des céphéides comme indicateurs de distance extragalactique ?",
+      "answers": [
+        { "text": "Leur période de pulsation est reliée à leur luminosité intrinsèque, ce qui permet de comparer luminosité réelle et apparente", "isCorrect": true },
+        { "text": "Elles possèdent toutes exactement la même luminosité apparente depuis la Terre", "isCorrect": false },
+        { "text": "Elles émettent des impulsions radio qui indiquent directement leur distance en kilomètres", "isCorrect": false },
+        { "text": "Elles sont toutes situées à la même distance du centre de la Voie lactée", "isCorrect": false }
+      ],
+      "explanation": "La relation période-luminosité des céphéides permet d'estimer leur luminosité intrinsèque. En la comparant à la luminosité apparente observée, les astronomes peuvent calculer leur distance et contribuer à l'échelle des distances cosmiques."
+    },
+    {
+      "ref": "espace-217",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "parallaxe"],
+      "text": "Quel est le principe de la parallaxe annuelle utilisée pour mesurer la distance des étoiles proches ?",
+      "answers": [
+        { "text": "Mesurer le déplacement angulaire apparent d'une étoile par rapport aux objets lointains lorsque la Terre change de position sur son orbite", "isCorrect": true },
+        { "text": "Mesurer le temps que met une étoile à effectuer une rotation complète", "isCorrect": false },
+        { "text": "Calculer la masse de l'étoile à partir de sa seule couleur", "isCorrect": false },
+        { "text": "Mesurer la quantité de matière noire située entre l'étoile et la Terre", "isCorrect": false }
+      ],
+      "explanation": "La parallaxe annuelle repose sur l'observation d'un changement de position de la Terre au cours de son orbite. Une parallaxe d'une seconde d'arc correspond à une distance d'un parsec, soit environ 3,26 années-lumière."
+    },
+    {
+      "ref": "espace-218",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "mecanique-celeste"],
+      "text": "Pourquoi les planètes suivent-elles approximativement des orbites elliptiques autour du Soleil ?",
+      "answers": [
+        { "text": "Parce que leurs mouvements sont principalement gouvernés par la gravitation solaire, conformément aux lois de Kepler et à la mécanique newtonienne", "isCorrect": true },
+        { "text": "Parce que le vent solaire pousse constamment les planètes sur des trajectoires ovales", "isCorrect": false },
+        { "text": "Parce que les planètes sont attirées uniquement par la Lune", "isCorrect": false },
+        { "text": "Parce que le Soleil tourne autour de chaque planète indépendamment", "isCorrect": false }
+      ],
+      "explanation": "Dans le problème idéal à deux corps, une planète liée gravitationnellement au Soleil suit une orbite elliptique dont le Soleil occupe l'un des foyers. Les interactions entre planètes introduisent de petites perturbations supplémentaires."
+    },
+    {
+      "ref": "espace-219",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "mecanique-celeste"],
+      "text": "Que représente le point de Lagrange L1 dans le système Soleil-Terre ?",
+      "answers": [
+        { "text": "Une région située entre la Terre et le Soleil où un objet peut conserver une position relative approximativement constante dans le référentiel tournant", "isCorrect": true },
+        { "text": "Le point le plus éloigné de la Terre sur son orbite", "isCorrect": false },
+        { "text": "Le centre géométrique du Soleil", "isCorrect": false },
+        { "text": "Un point où la gravité du Soleil et de la Terre disparaît partout", "isCorrect": false }
+      ],
+      "explanation": "L1 est l'un des cinq points de Lagrange du problème restreint à trois corps. Dans le référentiel tournant, les contributions gravitationnelles et l'effet centrifuge permettent à un objet d'y conserver approximativement sa position relative. Ce point est instable et les satellites doivent effectuer des corrections orbitales."
+    },
+    {
+      "ref": "espace-220",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "resonance-orbitale"],
+      "text": "Quelle relation caractérise la résonance orbitale entre Io, Europe et Ganymède, trois lunes de Jupiter ?",
+      "answers": [
+        { "text": "Leurs périodes orbitales sont approximativement dans le rapport 1:2:4", "isCorrect": true },
+        { "text": "Leurs trois périodes orbitales sont rigoureusement identiques", "isCorrect": false },
+        { "text": "Leurs périodes sont dans le rapport 3:5:7", "isCorrect": false },
+        { "text": "Elles orbitent toutes autour du Soleil plutôt qu'autour de Jupiter", "isCorrect": false }
+      ],
+      "explanation": "Io effectue environ quatre révolutions pendant qu'Europe en effectue deux et Ganymède une. Cette résonance de Laplace contribue aux interactions gravitationnelles qui entretiennent notamment l'activité de marée d'Io."
+    },
+    {
+      "ref": "espace-221",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "planetes"],
+      "text": "Pourquoi Vénus présente-t-elle une température de surface supérieure à celle de Mercure malgré sa plus grande distance au Soleil ?",
+      "answers": [
+        { "text": "Son atmosphère très dense, riche en dioxyde de carbone, produit un effet de serre extrêmement puissant", "isCorrect": true },
+        { "text": "Vénus reçoit davantage d'énergie solaire que Mercure à cause de sa distance", "isCorrect": false },
+        { "text": "Mercure ne possède aucun noyau métallique", "isCorrect": false },
+        { "text": "Vénus produit en permanence plus d'énergie nucléaire que le Soleil", "isCorrect": false }
+      ],
+      "explanation": "L'atmosphère dense de Vénus piège efficacement le rayonnement infrarouge. Cet effet de serre intense élève sa température moyenne de surface à environ 465 °C, supérieure à celle de Mercure."
+    },
+    {
+      "ref": "espace-222",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "mars"],
+      "text": "Quel indice géologique soutient fortement l'idée que de l'eau liquide a existé à la surface de Mars dans le passé ?",
+      "answers": [
+        { "text": "La présence de vallées ramifiées, de deltas anciens et de minéraux formés en présence d'eau", "isCorrect": true },
+        { "text": "L'existence de vastes océans liquides permanents observés aujourd'hui sur toute la planète", "isCorrect": false },
+        { "text": "La présence de forêts contemporaines couvrant l'équateur martien", "isCorrect": false },
+        { "text": "La découverte de précipitations quotidiennes de lave sur toute la surface", "isCorrect": false }
+      ],
+      "explanation": "Plusieurs observations orbitales et mesures effectuées par des atterrisseurs et des rovers indiquent que de l'eau liquide a participé à l'évolution de Mars. Elles ne prouvent toutefois pas, à elles seules, qu'une vie y a existé."
+    },
+    {
+      "ref": "espace-223",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "geologie-planetaire"],
+      "text": "Pourquoi la surface de Mercure conserve-t-elle de nombreuses traces d'impacts anciens ?",
+      "answers": [
+        { "text": "Elle possède peu d'atmosphère et une activité géologique de surface aujourd'hui limitée, ce qui permet aux cratères de persister", "isCorrect": true },
+        { "text": "Son atmosphère détruit tous les cratères en quelques heures", "isCorrect": false },
+        { "text": "Les cratères y sont constamment effacés par des océans liquides", "isCorrect": false },
+        { "text": "La gravité y empêche les météorites de frapper le sol", "isCorrect": false }
+      ],
+      "explanation": "Mercure ne possède pas d'atmosphère dense capable d'éroder fortement sa surface. En l'absence d'une tectonique des plaques comparable à celle de la Terre et d'une érosion intense, de nombreux cratères restent visibles pendant des milliards d'années."
+    },
+    {
+      "ref": "espace-224",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "saturne"],
+      "text": "Quelle explication rend compte de la structure complexe des anneaux de Saturne ?",
+      "answers": [
+        { "text": "L'interaction entre les particules des anneaux, la gravité de Saturne et les perturbations gravitationnelles de certaines lunes", "isCorrect": true },
+        { "text": "La présence d'un unique anneau solide tournant comme une roue", "isCorrect": false },
+        { "text": "La production continue de glace par le noyau de Saturne uniquement", "isCorrect": false },
+        { "text": "L'action exclusive du champ magnétique terrestre", "isCorrect": false }
+      ],
+      "explanation": "Les anneaux sont composés d'innombrables particules, principalement de glace d'eau. Les résonances orbitales avec certaines lunes, les collisions et les interactions gravitationnelles contribuent à leurs divisions, ondes et structures."
+    },
+    {
+      "ref": "espace-225",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["systeme-solaire", "lunes-glacees"],
+      "text": "Pourquoi Europe, une lune de Jupiter, est-elle considérée comme un candidat important dans la recherche d'environnements potentiellement habitables ?",
+      "answers": [
+        { "text": "Elle semble abriter un océan d'eau liquide sous sa croûte de glace, entretenu en partie par le chauffage de marée", "isCorrect": true },
+        { "text": "Elle possède une atmosphère d'oxygène respirable confirmée à sa surface", "isCorrect": false },
+        { "text": "Elle est recouverte de forêts et de mers ouvertes observées directement", "isCorrect": false },
+        { "text": "Elle se trouve dans la zone habitable autour du Soleil comme la Terre", "isCorrect": false }
+      ],
+      "explanation": "Plusieurs indices suggèrent qu'Europe possède un océan salé sous sa surface glacée. Les forces de marée exercées principalement par Jupiter peuvent fournir une source de chaleur interne, mais l'existence d'une vie sur cette lune n'est pas établie."
+    },
+    {
+      "ref": "espace-226",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "galaxies"],
+      "text": "Quel est le rôle principal du trou noir supermassif Sagittarius A* dans les recherches sur le centre de la Voie lactée ?",
+      "answers": [
+        { "text": "Il constitue le trou noir supermassif central dont la masse est estimée grâce notamment aux orbites des étoiles proches", "isCorrect": true },
+        { "text": "Il est le trou noir situé au centre de toutes les galaxies de l'Univers", "isCorrect": false },
+        { "text": "Il produit à lui seul toute la lumière de la Voie lactée", "isCorrect": false },
+        { "text": "Il constitue une étoile à neutrons en orbite autour du Soleil", "isCorrect": false }
+      ],
+      "explanation": "Sagittarius A* est la source compacte associée au trou noir supermassif au centre de la Voie lactée. Les orbites d'étoiles proches permettent d'estimer sa masse à environ quatre millions de masses solaires."
+    },
+    {
+      "ref": "espace-227",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "galaxies"],
+      "text": "Que désigne le processus de fusion galactique dans l'évolution des galaxies ?",
+      "answers": [
+        { "text": "L'interaction gravitationnelle de galaxies qui peuvent finalement se combiner en un système plus grand", "isCorrect": true },
+        { "text": "La fusion nucléaire de toutes les étoiles d'une galaxie en une seule étoile", "isCorrect": false },
+        { "text": "La transformation instantanée de toute matière galactique en rayonnement", "isCorrect": false },
+        { "text": "La disparition de la gravité entre les étoiles d'une galaxie", "isCorrect": false }
+      ],
+      "explanation": "Les fusions galactiques sont des étapes importantes de l'évolution cosmique. Elles peuvent modifier la morphologie des galaxies, déclencher des épisodes de formation stellaire et alimenter, dans certaines circonstances, leurs trous noirs centraux."
+    },
+    {
+      "ref": "espace-228",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "formation-planetaire"],
+      "text": "Quel processus permet à des grains de poussière d'un disque protoplanétaire de contribuer à la formation de planétésimaux ?",
+      "answers": [
+        { "text": "Des collisions, des interactions physiques et des mécanismes d'agrégation qui permettent à une partie des solides de croître", "isCorrect": true },
+        { "text": "La transformation instantanée de tous les gaz du disque en planètes", "isCorrect": false },
+        { "text": "La fusion nucléaire spontanée des grains de poussière à température ambiante", "isCorrect": false },
+        { "text": "La disparition de l'étoile centrale avant toute interaction gravitationnelle", "isCorrect": false }
+      ],
+      "explanation": "Les planètes se forment dans des disques de gaz et de poussières entourant de jeunes étoiles. Les solides peuvent s'agréger et, selon plusieurs mécanismes encore étudiés, former des planétésimaux qui participent ensuite à la croissance des protoplanètes."
+    },
+    {
+      "ref": "espace-229",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["astronomie", "habitabilite"],
+      "text": "Pourquoi la présence d'une exoplanète dans la zone habitable de son étoile ne garantit-elle pas qu'elle abrite de la vie ?",
+      "answers": [
+        { "text": "La température de surface dépend aussi de l'atmosphère, de la pression, de l'albédo et d'autres caractéristiques planétaires", "isCorrect": true },
+        { "text": "Toutes les planètes de la zone habitable sont nécessairement composées de gaz", "isCorrect": false },
+        { "text": "La zone habitable correspond uniquement aux planètes dépourvues d'eau", "isCorrect": false },
+        { "text": "La gravité empêche systématiquement la chimie organique dans cette région", "isCorrect": false }
+      ],
+      "explanation": "La zone habitable désigne approximativement une région où les conditions pourraient permettre la présence d'eau liquide en surface, selon des hypothèses données sur l'atmosphère. Elle ne garantit ni une température favorable réelle, ni la présence d'eau, ni l'apparition de la vie."
+    }
+  ]
+}
