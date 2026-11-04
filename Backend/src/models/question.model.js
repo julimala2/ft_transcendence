@@ -13,6 +13,18 @@ const PUBLIC_SELECT = {
 
 const FULL_INCLUDE = { answers: true, tags: true, category: true, image: true };
 
+const FULLER_INCLUDE = {
+  id:true,
+  type:true,
+  difficulty:true,
+  text: true,
+  image: true,
+  category: true,
+  tags: true,
+  answers: true,
+  explanation: true,
+}
+
 function tagsConnectOrCreate(tags) {
   return tags.map((slug) => ({ where: { slug }, create: { slug } }));
 }
@@ -42,7 +54,7 @@ async function findPublicById(id) {
 async function findCompleteById(id) {
   return prisma.question.findFirst({
     where: { id, isActive: true },
-    select: FULL_INCLUDE,
+    select: FULLER_INCLUDE,
   });
 }
 
