@@ -5,7 +5,6 @@ const quizService = require('./quiz.service');
 const achievementsService = require('./achievements.service');
 
 const { STATUS } = attemptModel;
-const DEFAULT_QUESTION_COUNT = 20;
 
 function httpError(statusCode, message) {
   const error = new Error(message);
@@ -66,13 +65,13 @@ async function startAttempt(userId, params) {
       tagId = tag.id;
     }
 
-    const count = params.count ?? DEFAULT_QUESTION_COUNT;
+    const count = params.count ?? available.length;
     const available = await attemptModel.findActiveQuestionIds({
       categoryId: category.id,
       tagId,
       difficulty: params.difficulty,
     });
-    if (available.length < count) {
+    if (available.length < count || count <= 0) {
       throw httpError(
         400,
         `Pas assez de questions : ${available.length} disponible(s) pour ${count} demandée(s)`
