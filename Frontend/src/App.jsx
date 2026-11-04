@@ -22,6 +22,7 @@ import { GamePage } from './Quizs/Online/GamePage';
 import TestPage from './Pages/TestPage';
 import { OnlineMenu } from './Quizs/Online/OnlineMenu';
 import { OnlineRoom } from './Quizs/Online/OnlineRoom';
+import { Chat } from './Hooks/Chat';
 
 export default function App() {
   const location = useLocation();
@@ -35,7 +36,6 @@ export default function App() {
       <div className="relative min-h-screen">
         <Header />
         <MainContainer>
-          
           <Routes location={background || location}>
             <Route path="/" element={<HomePage />} />
             <Route path="/account" element={<Navigate to="/" replace />} />
@@ -61,6 +61,7 @@ export default function App() {
             <Route path="*" element={<NotFoundPage />} />
             {/* Test Page ! */}
             <Route path ="/testpage" element={<TestPage />} />
+            <Route path ="/chat" element={<Chat/>} />
           </Routes>
         </MainContainer>
 

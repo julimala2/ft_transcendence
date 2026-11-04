@@ -1,0 +1,74 @@
+/* Calque plein écran derrière le contenu, qui ne bloque aucun clic */
+.money-rain {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  perspective: 800px;
+background: #020024;
+background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(32, 32, 135) 35%, rgb(0, 27, 32) 100%);
+}
+
+/* Remplace .bill par une étoile dorée */
+.star {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  color: gold;
+  font-size: 50px;
+  text-shadow:
+    0 0 4px rgba(255, 215, 0, 0.8),
+    0 0 8px rgba(255, 180, 0, 0.6);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+/* 4 trajectoires (identiques aux billets) */
+.fall-1 { animation-name: fall-1; }
+.fall-2 { animation-name: fall-2; }
+.fall-3 { animation-name: fall-3; }
+.fall-4 { animation-name: fall-4; }
+
+@keyframes fall-1 {
+  from { transform: translateY(-160px) translateX(-10vh) rotate(-30deg) rotateX(0deg); }
+  to   { transform: translateY(110vh)  translateX(10vh) rotate(390deg) rotateX(720deg); }
+}
+@keyframes fall-2 {
+  from { transform: translateY(-160px) translateX(10vh) rotate(20deg)   rotateY(0deg); }
+  to   { transform: translateY(110vh)  translateX(-10vh) rotate(-340deg) rotateY(540deg); }
+}
+@keyframes fall-3 {
+  from { transform: translateY(-160px) translateX(-10vh) rotate(45deg)  rotateX(0deg); }
+  to   { transform: translateY(110vh)  translateX(10vh) rotate(500deg) rotateX(360deg); }
+}
+@keyframes fall-4 {
+  from { transform: translateY(-160px) translateX(10vh) rotate(-10deg)  rotateY(0deg); }
+  to   { transform: translateY(110vh)  translateX(-10vh) rotate(-450deg) rotateY(720deg); }
+}
+
+/* Option 1 : Étoile via unicode (★) */
+.star::before {
+  content: "★";
+  display: block;
+  line-height: 1;
+}
+
+/*
+  Option 2 : Étoile via CSS pur (clip-path)
+  .star {
+    background: gold;
+    clip-path: polygon(
+      50% 0%, 61% 35%, 98% 35%, 68% 57%,
+      79% 91%, 50% 70%, 21% 91%, 32% 57%,
+      2% 35%, 39% 35%
+    );
+  }
+*/
+
+/* Respecte le réglage "réduire les animations" */
+@media (prefers-reduced-motion: reduce) {
+  .star { animation-play-state: paused; }
+}

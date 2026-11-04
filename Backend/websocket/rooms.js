@@ -4,6 +4,8 @@ function joinRoom(roomId, ws) {
   if (!rooms[roomId]) {
     rooms[roomId] = [];
   }
+  if (rooms[roomId].members.filter(member => member.userId === ws.userId).length > 0) {
+    return; }
   rooms[roomId].push(ws);
   ws.currentRoom = roomId;
   broadcast(roomId, {type: 'joined_room', data: {
