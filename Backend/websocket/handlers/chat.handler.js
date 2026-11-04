@@ -1,4 +1,4 @@
-const { broadcast } = require('../rooms');
+const { broadcast } = require('../rooms/room.manager');
 
 function chatHandler(message, ws) {
     broadcast(ws.currentRoom, {

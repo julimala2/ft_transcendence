@@ -3,10 +3,9 @@ const PUBLIC = 'PUBLIC';
 rooms[PUBLIC] = { name: 'Public', messages:  [], members: [], owner: null };
 
 function joinRoom(message, ws) {
-  console.log(`[WEBSOCKET] User ${ws.username} joined room ${message.roomId}`);
   if (!rooms[message.roomId]) {
     ws.send(JSON.stringify({ type: 'errorRoom', message: 'Room does not exist.' }));
-    return;
+    throw new Error(`Room ${message.roomId} does not exist.`);
   }
   if (rooms[message.roomId].members.some(member => member.username === ws.username)) {
     rooms[message.roomId].members = rooms[message.roomId].members.filter(member => member.username !== ws.username);
@@ -27,14 +26,13 @@ function createRoom(message, ws) {
   //verifier que le rommId existe pas deja
   rooms[roomId] = { name: message.roomName, messages:[], members: [ws], owner: ws.userId };
   ws.currentRoom = roomId;
-  console.log(ws.currentRoom)
-  ws.send(JSON.stringify({ type: 'roomCreated', data: { roomId, roomName: message.roomName } })); 
+  ws.send(JSON.stringify({ type: 'roomCreated', data: rooms[roomId]})); 
 }
 
 
 function leaveRoom(message, ws) {
   if(!ws)
-    return;
+    throw new Error(`User not connected (ws not open).`);
   if(!ws.currentRoom)
     return;
   const roomId = ws.currentRoom;

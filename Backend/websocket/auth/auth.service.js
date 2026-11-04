@@ -1,4 +1,4 @@
-const { parseCookies, tokenFromURL, verifyToken } = require('./tokenVerify');
+const { parseCookies, tokenFromURL, verifyToken } = require('./token.utils');
 
 function authenticateUpgrade(req) {
     const cookies = parseCookies(req.headers.cookie);

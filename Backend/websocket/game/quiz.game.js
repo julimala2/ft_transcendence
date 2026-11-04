@@ -1,20 +1,20 @@
-const { broadcast, getRoomMembers } = require("./rooms");
-const { findActiveQuestionIds } = require("../src/models/attempt.model");
-const { shuffle } = require("../src/services/attempt.service");
-const { getCompleteQuestionById } = require("../src/services/question.service");
+const { broadcast, getRoomMembers } = require("../rooms/room.manager");
+const { findActiveQuestionIds } = require("../../src/models/attempt.model");
+const { shuffle } = require("../../src/services/attempt.service");
+const { getCompleteQuestionById } = require("../../src/services/question.service");
 
 const games = {};
 const votes = {};
 
 const QUESTION_DURATION = 10000;
 //endVote -> empecher de relancer un vote.
-
+//gameEnded -> envoyer les scores etc et supprimer games[roomId];
 function proposeQuiz(data, ws) {
     const roomId = ws.currentRoom;
     
     //Check here if game is in progress
-    if (!roomId) return;
-    if (games[roomId]) return;
+    if (!roomId) throw new Error(`roomId error.`);
+    if (games[roomId]) throw new Error(`game already started.`);
     
     //Recup data values
     const categoryId = data.categoryId;
@@ -59,6 +59,8 @@ function startVote(roomId){
 
 function endVote(roomId) {
   const vote = votes[roomId];
+  if (!vote) return;
+
   clearInterval(vote.interval);
   delete votes[roomId];
 
@@ -73,7 +75,7 @@ function endVote(roomId) {
 
 async function startGame(roomId, winner) {
   const categoryId = winner.categoryId;
-  const count = winner.count;
+  let count = winner.count;
   if(games[roomId]) return; //one game per room
 
   const game = {
@@ -89,13 +91,13 @@ async function startGame(roomId, winner) {
   try {
     const available = await findActiveQuestionIds({categoryId : categoryId });
     if(available.length < count)
-        return;
+        count = available.length;
     game.questionsId = shuffle(available).slice(0, count);
     getRoomMembers(roomId).forEach(player => { 
       game.scores[player.userId] = 0;
     });
     game.phase = 'playing';
-    sendQuestion(roomId);
+    await sendQuestion(roomId);
 
     } catch (error) {
         console.log("quiz start error", error);
