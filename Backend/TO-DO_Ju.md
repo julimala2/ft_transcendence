@@ -10,7 +10,8 @@ musique cinema series 42 sport : basket, formule 1, motogp, JO
 
 Possibilite de signaler une question
 
-Classements / leaderboard --> all statistics ? A verifier
+Classements / leaderboard --> route rush ok (vide tant que le mode rush n'existe pas), a terme : custom + front
+
 Progression ?
 
 Rush mode Joris ?

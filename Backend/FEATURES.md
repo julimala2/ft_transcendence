@@ -159,9 +159,34 @@ Stats d’un autre joueur (profil, ami...). Même format que GET /api/statistics
 - 400 si l’id n’est pas un entier positif.
 - 404 si l’utilisateur n’existe pas, ou s’il y a un blocage entre les deux joueurs (dans un sens ou dans l’autre). Même réponse dans les deux cas, pour ne pas révéler un blocage.
 
+### GET /api/statistics/leaderboard []
+
+Classement des joueurs selon leur record en mode rush, du meilleur au moins bon.
+
+- Tous les paramètres sont optionnels : ?categoryId=1&difficulty=2&limit=10
+- Sans categoryId, toutes les catégories sont classées ensemble. Sans difficulty (1, 2 ou 3), tous les niveaux sont classés ensemble.
+- limit : entre 1 et 100, 10 par défaut. 400 si un paramètre est invalide.
+
+Réponse 200 :
+
+json
+{
+  "categoryId": 1,
+  "difficulty": 2,
+  "leaderboard": [
+    { "rank": 1, "userId": 7, "username": "alice", "display_name": "Alice", "avatar_url": "/uploads/7.png", "score": 24 },
+    { "rank": 2, "userId": 2, "username": "bob", "display_name": "Bob", "avatar_url": null, "score": 19 },
+    { "rank": 2, "userId": 12, "username": "chloe", "display_name": "Chloé", "avatar_url": null, "score": 19 }
+  ]
+}
+
+- Même score = même rang, le rang suivant est sauté (1, 2, 2, 4).
+- Les joueurs bloqués restent visibles : tout le monde voit le même classement.
+- Tableau vide = aucune partie rush : prévoir un état vide côté front.
+
 ### Prévu, pas encore disponible
 
-- Mode rush : POST /api/attempts ne permet pas encore de choisir le mode, toutes les parties sont en custom. Le tableau rush restera vide en attendant.
+- Mode rush : POST /api/attempts ne permet pas encore de choisir le mode, toutes les parties sont en custom. Le tableau rush et le leaderboard resteront vides en attendant.
 
 10/21
 ## Badges (achievements) : /api/achievements

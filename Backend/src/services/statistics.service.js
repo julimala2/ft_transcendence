@@ -183,5 +183,64 @@ async function getGlobalStats(currentUserId, categoryId) {
   return buildResponse(categoryId, rush, custom);
 }
 
-module.exports = { getUserStats, getOtherUserStats, getGlobalStats };
+function formatLeaderboardRows(rushRows, users) {
+  const usersById = {};
+  for (const user of users) {
+    usersById[user.id] = user;
+  }
+
+  const result = [];
+  let rank = 0;
+  let previousScore = null;
+
+  for (let i = 0; i < rushRows.length; i++) {
+    const row = rushRows[i];
+    const user = usersById[row.userId];
+
+    if (row._max.score !== previousScore) {
+      rank = i + 1;
+      previousScore = row._max.score;
+    }
+
+    const line = {
+      rank: rank,
+      userId: row.userId,
+      username: user.username,
+      display_name: user.display_name,
+      avatar_url: user.avatar_url,
+      score: row._max.score,
+    };
+    result.push(line);
+  }
+
+  return result;
+}
+
+async function getLeaderboard(categoryId, difficulty, limit) {
+  const rushRows = await statsModel.findRushLeaderboard({ categoryId, difficulty, limit });
+
+  const userIds = [];
+  for (const row of rushRows) {
+    userIds.push(row.userId);
+  }
+  const users = await statsModel.findUsersByIds(userIds);
+
+  let selectedCategory = null;
+  if (categoryId !== undefined) {
+    selectedCategory = categoryId;
+  }
+
+  let selectedDifficulty = null;
+  if (difficulty !== undefined) {
+    selectedDifficulty = difficulty;
+  }
+
+  return {
+    categoryId: selectedCategory,
+    difficulty: selectedDifficulty,
+    leaderboard: formatLeaderboardRows(rushRows, users), //a terme, ajouter custom
+  };
+}
+
+module.exports = { getUserStats, getOtherUserStats, getGlobalStats, getLeaderboard };
 

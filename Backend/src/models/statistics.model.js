@@ -2,7 +2,7 @@ const prisma = require('../../lib/prisma');
 
 const COUNTED_STATUSES = ['finished', 'abandoned'];
 
-function statsWhere({ categoryId, tagId, mode, excludeUserId }) {
+function statsWhere({ categoryId, tagId, difficulty, mode, excludeUserId }) {
   const where = {
     mode: mode,
     status: { in: COUNTED_STATUSES },
@@ -16,6 +16,10 @@ function statsWhere({ categoryId, tagId, mode, excludeUserId }) {
 
   if (tagId !== undefined) {
     where.tagId = tagId;
+  }
+
+  if (difficulty !== undefined) {
+    where.difficulty = difficulty;
   }
 
   if (excludeUserId !== undefined) {
@@ -79,10 +83,29 @@ async function findCategoriesByIds(ids) {
   });
 }
 
+async function findRushLeaderboard({ categoryId, difficulty, limit }) {
+  return prisma.quizAttempt.groupBy({
+    by: ['userId'],
+    where: statsWhere({ categoryId, difficulty, mode: 'rush' }),
+    _max: { score: true },
+    orderBy: [{ _max: { score: 'desc' } }, { userId: 'asc' }],
+    take: limit,
+  });
+}
+
+async function findUsersByIds(ids) {
+  return prisma.user.findMany({
+    where: { id: { in: ids } },
+    select: { id: true, username: true, display_name: true, avatar_url: true },
+  });
+}
 
 module.exports = { 
   findRushBestScores, 
   findCustomAttempts,
   findUserCustomAttempts,
   findUserRushRecords,
-  findCategoriesByIds };
+  findCategoriesByIds,
+  findRushLeaderboard,
+  findUsersByIds
+};
