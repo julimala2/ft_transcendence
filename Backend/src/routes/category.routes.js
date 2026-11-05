@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const controller = require('../controllers/category.controller');
-const { validateCategoryId, validateCategoryBody, validateTagsQuery } = require('../middlewares/category.middleware');
+const { validateCategoryId, validateCategoryBody, validateTagsQuery, validateQuestionDifficulty } = require('../middlewares/category.middleware');
 
 const router = Router();
 
