@@ -51,10 +51,10 @@ async function createNotification(userId, type, message) {
 }
 
 module.exports = { 
-    get10Notifications,
-    getAllNotifications,
+    getMyNotifications,
     markAsReadById,
     markAllAsRead,
     deleteNotificationById, 
-    deleteAllNotifications
+    deleteAllNotifications,
+    createNotification
 }

@@ -28,12 +28,65 @@
 - friend request [x]
     * send [x]
     * accept [x]
-    * decline --> if declined, can never be friends again (to keep?) [x]
+    * decline [x]
 
 - delete friend [x]
 - user's friends list [x]
 - user's pending requests (sent?)
 - block user [x]
+
+# NOTIFICATIONS
+## Notifications : /api/notifications
+
+- Exige d’être connecté (cookie token, credentials: 'include'), sinon 401. Chaque joueur n’a accès qu’à ses propres notifications.
+- Pas encore de temps réel : le front récupère les notifications avec GET /api/notifications.
+
+### Quand une notification est créée
+
+| Événement | Destinataire | type |
+|---|---|---|
+| Demande d’ami envoyée | Le joueur qui reçoit la demande | friend_request |
+| Demande d’ami acceptée | Le joueur qui avait envoyé la demande | friend_accepted |
+
+Un refus ou la suppression d’un ami ne crée pas de notification. 
+Si la création d’une notification échoue, l’action sur la demande d’ami réussit quand même.
+
+### GET /api/notifications []
+
+Les notifications du joueur connecté, de la plus récente à la plus ancienne.
+
+- ?limit=20 : entre 1 et 100, 10 par défaut. 400 si la valeur est invalide.
+
+Réponse 200 :
+
+json
+[
+  { "id": 1, "user_id": 4, "type": "friend_request", "message": "alice t'a envoyé une demande d'ami", "is_read": false, "created_at": "2026-11-05T15:49:48.326Z" }
+]
+
+- Tableau vide = aucune notification : prévoir un état vide côté front.
+- Les notifications lues sont aussi renvoyées : utiliser is_read pour les distinguer.
+
+### PATCH /api/notifications/:id/read []
+
+Marque une notification comme lue. Réponse 200 : { "message": "Notification lue" }
+
+### PATCH /api/notifications/read-all []
+
+Marque toutes les notifications du joueur comme lues. Réponse 200 : { "message": "Notifications lues" }
+
+### DELETE /api/notifications/:id []
+
+Supprime une notification. Réponse 200 : { "message": "Notification supprimée" }
+
+### DELETE /api/notifications/delete-all []
+
+Supprime toutes les notifications du joueur. Réponse 200 : { "message": "Notifications supprimées" }
+
+### Erreurs des routes avec :id
+
+- 400 si l’id n’est pas un nombre valide.
+- 404 si la notification n’existe pas ou appartient à un autre joueur. Même réponse dans les deux cas.
 
 # QUIZ
 ## Catégories : /api/categories

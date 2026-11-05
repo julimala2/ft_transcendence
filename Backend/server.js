@@ -16,6 +16,7 @@ const attemptRoutes = require('./src/routes/attempt.routes');
 const statisticsRoutes = require('./src/routes/statistics.routes');
 const achievementsRoutes = require('./src/routes/achievements.routes');
 const themesRoutes = require('./src/routes/themes.routes');
+const notificationsRoutes = require('./src/routes/notifications.routes');
 
 const app = express();
 const { WebSocketServer } = require('ws');
@@ -39,6 +40,7 @@ app.use('/quiz-images', express.static('assets/quiz'));
 app.use('/api/statistics', statisticsRoutes);
 app.use('/api/achievements', achievementsRoutes);
 app.use('/api/themes', themesRoutes);
+app.use('/api/notifications', notificationsRoutes);
 
 
 app.get('/', (req, res) => {

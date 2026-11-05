@@ -16,6 +16,10 @@ Progression ?
 
 Rush mode Joris ?
 
+Notifications : prevoir l'envoi de notifications avec createNotif
+Fait : demande et acceptation d'ami
+A faire : badges / achievements 
+Verifier les blocages pour permettre un friendRequest
 
 
 Pourquoi mettre le timer dans le back :
