@@ -44,7 +44,7 @@ async function handleConnection(ws, req)
       } 
     }
     catch (error) {
-      console.error(error.message, error.stack);
+      console.error(error.message);
     }
   });
 

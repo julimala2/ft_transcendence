@@ -1,7 +1,9 @@
-const { proposeQuiz } = require('../game/quiz.game');
+const { proposeQuiz, onAnswer, requestGameState } = require('../game/quiz.game');
 
 const handlers = {
+  requestGameState,
   proposeQuiz, // data : {type: proposeQuiz, categoryId, count}
+  onAnswer,
 };
 
 async function quizHandler(data, ws) {
@@ -12,7 +14,7 @@ async function quizHandler(data, ws) {
       await handler(data, ws);
   } 
   catch (error) {
-      console.error('[QUIZ]', error);
+      console.error('[QUIZ]', error.message);
       ws.send(JSON.stringify({ type: 'ERROR', message: 'Erreur du quiz.' }));
   }
 }

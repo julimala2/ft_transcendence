@@ -54,11 +54,15 @@ function leaveRoom(message, ws) {
   }
 }
 
+//{type : "gameState", data : { phase : "vote", data : {question} , players, scores, timer }}
+//{type : "gameState", data : { phase : "question", questionText : "blabla ?" , answers, players, scores, timer }}
+
 function broadcast(roomId, data, except = null) {
   const room = rooms[roomId];
   if (!room) return;
 
-  rooms[roomId].messages.push(data.data);
+  if (data.type !== 'gameState')
+    rooms[roomId].messages.push(data.data);
   room.members.forEach(ws => {
     if (ws !== except && ws.readyState === 1) {
       ws.send(JSON.stringify(data));
