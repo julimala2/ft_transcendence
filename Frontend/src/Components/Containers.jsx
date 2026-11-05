@@ -40,3 +40,26 @@ export const BlockContainer = ({ children }) => {
     </div>
   );
 };
+
+export function StyledDiv({
+  children,
+  variant = 'primary',
+  className = '',
+  outerClassName = '',
+  ...props
+}) {
+
+  const variantClasses = {
+    primary: 'bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 shadow-[0px_0px_17px_4px_rgba(234,_179,_8,_0.5)] ',
+  };
+
+  return(
+    <div className={`p-1 rounded-lg ${variantClasses[variant]} ${outerClassName}`}>
+      <div className={`flex flex-col justify-center inset-shadow-3xl inset-shadow-black bg-gradient-to-br from-slate-800 to-slate-950 h-full w-full p-2 rounded-lg ${className}`}
+        {...props}
+      >
+       {children}
+      </div>
+    </div>
+  )
+}

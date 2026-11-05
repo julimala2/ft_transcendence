@@ -15,7 +15,7 @@ import styles from '../../Styling/QuizSelectionPage.module.css';
 import { DifficultySelector } from '../../Components/DifficultySelector.jsx';
 import { getQuestionsCount } from '../../Api/questions.jsx';
 
-export function CategorySelector() {
+export function CategorySelector({value, onChange}) {
     const [selectedCategory, setSelectedCategory] = useState(null);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -50,38 +50,13 @@ export function CategorySelector() {
     };
   }, []);
 
-
-  async function handleStartQuickQuiz() {
-  }
-
-  if (loading) {
-    return (
-      <main className={`page ${styles.page}`}>
-        <p className={styles.loading}>Chargement des quizs...</p>
-      </main>
-    );
-  }
-
-  if (error) {
-    return (
-      <main className={`page ${styles.page}`}>
-        <p className={styles.error}>{error}</p>
-      </main>
-    );
-  }
-
   return (
 
         <motion.div className="justify-center flex flex-col gap-10 flex-wrap" layout>
           <div>
             <motion.div className="flex flex-row flex-wrap justify-center gap-7" >
               {categories.map(cat => (
-                <StyledButton key={cat.id} selected={(selectedCategory?.id === cat.id)} onClick={() => setSelectedCategory(cat)}>
-                    {cat.name}
-                </StyledButton>
-              ))}
-                            {categories.map(cat => (
-                <StyledButton key={cat.id} selected={(selectedCategory?.id === cat.id)} onClick={() => setSelectedCategory(cat)}>
+                <StyledButton key={cat.id} selected={(selectedCategory?.id === cat.id)} onClick={() => onChange(cat)}>
                     {cat.name}
                 </StyledButton>
               ))}
