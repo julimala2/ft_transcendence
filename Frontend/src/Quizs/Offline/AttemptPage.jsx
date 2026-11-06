@@ -92,13 +92,15 @@ export function AttemptPage() {
       if (answerId !== null) {
         result = await submitAnswer(attempt.id, answerId);
       } else {
-        result = {
-          isCorrect: false,
-          finished: false,
-          correctAnswerId: attempt.question.answers.find(a => a.isCorrect)?.id,
-          explanation: attempt.question.explanation,
-        };
+        result = await submitAnswer(attempt.id, 0);
       }
+      //   result = {
+      //     isCorrect: false,
+      //     finished: false,
+      //     correctAnswerId: attempt.question.answers.find(a => a.isCorrect)?.id,
+      //     explanation: attempt.question.explanation,
+      //   };
+      // }
       setFeedback(result.isCorrect ? 'correct' : 'incorrect');
       setCorrectAnswerId(result.correctAnswerId);
       setCurrentExplanation(result.explanation);

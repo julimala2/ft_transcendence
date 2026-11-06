@@ -12,7 +12,7 @@ export const MainContainer = ({ children }) => {
 //Page container
 export const PageContainer = ({ children }) => {
   return (
-    <div className=" flex-col flex items-center justify-center align-items-center p-4 rounded-md gap-4 pt-50 w-full pl-20 pr-20 pb-20">
+    <div className="pt-40 flex-col flex items-center justify-center h-full align-items-center p-4 rounded-md gap-4 w-full pl-20 pr-20 pb-20">
       {children}
     </div>
   );
@@ -50,12 +50,13 @@ export function StyledDiv({
 }) {
 
   const variantClasses = {
-    primary: 'bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 shadow-[0px_0px_17px_4px_rgba(234,_179,_8,_0.5)] ',
+    primary: 'bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] ',
+    selected: 'bg-gradient-to-tl from-amber-400 via-amber-200 to-amber-500 shadow-[0px_0px_17px_4px_rgba(234,_179,_8,_0.5)] ',
   };
 
   return(
-    <div className={`p-1 rounded-lg ${variantClasses[variant]} ${outerClassName}`}>
-      <div className={`flex flex-col justify-center inset-shadow-3xl inset-shadow-black bg-gradient-to-br from-slate-800 to-slate-950 h-full w-full p-2 rounded-lg ${className}`}
+    <div className={`p-1 rounded-sm ${variantClasses[variant]} ${outerClassName}`}>
+      <div className={`flex flex-col justify-center inset-shadow-3xl inset-shadow-black bg-gradient-to-br from-slate-800 to-slate-950 h-full w-full p-2 rounded-sm ${className}`}
         {...props}
       >
        {children}

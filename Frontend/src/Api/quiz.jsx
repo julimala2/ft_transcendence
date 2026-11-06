@@ -145,3 +145,8 @@ export async function submitAnswer(attemptId, answerId) {
 export function getAllCategories() {
   return apiFetch('/api/categories', { method: 'GET' });
 }
+
+
+export function getCategoryById(categoryId) {
+  return apiFetch(`/api/categories/${categoryId}`, {method : 'GET'});
+}

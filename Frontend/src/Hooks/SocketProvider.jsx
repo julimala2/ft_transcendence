@@ -6,8 +6,6 @@ const SocketContext = createContext(null);
 export function SocketProvider({ children }) {
   // 2️⃣ On stocke la connexion WebSocket
   const wsRef = useRef(null);
-
-  // 3️⃣ On stocke les handlers (fonctions à appeler quand un message arrive)
   const handlersRef = useRef({});
 
   const [connected,setConnected] = useState(false);
@@ -30,7 +28,8 @@ export function SocketProvider({ children }) {
 
     ws.onmessage = (event) => {
       const msg = JSON.parse(event.data);
-      console.log('WS <-', msg);
+      if(msg.type !== "mousePosition")
+        console.log('WS <-', msg);
       // 🎯 SI ce message a un TYPE et qu'on a des handlers pour ce type,
       //    on les appelle TOUS avec les données du message
       if (msg.type && handlersRef.current[msg.type]) {

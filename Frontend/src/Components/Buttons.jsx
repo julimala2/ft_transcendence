@@ -11,6 +11,7 @@ export function StyledButton({
   disabled = false,
   loading = false,
   className = '',
+  selected = false,
   type = 'button',
   ...props
 }) {
@@ -31,25 +32,37 @@ export function StyledButton({
     'font-bold py-2 px-6 rounded-md disabled:opacity-50 transition-colors';
 
   const variantClasses = {
-    primary: 'bg-blue-700 hover:bg-blue-500 text-white',
+    primary: `text-blue-900 bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 
+      shadow-[0px_0px_8px_2px_rgba(234,_179,_8,_0.5)] 
+      hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] border-2 border-amber-300` ,
+    selected: `border-2 text-blue-900 bg-gradient-to-tl from-amber-800 via-amber-500 to-amber-700 text-white
+      shadow-[0px_0px_2px_1px_rgba(234,_179,_8,_0.5)] scale-95` ,
     secondary: 'bg-gray-700 hover:bg-gray-500 text-white',
     danger: 'bg-red-700 hover:bg-red-300 text-white',
     success: 'bg-green-700 hover:bg-green-300 text-white',
+    bling: 'h-10 rounded-md min-w-0 max-w-60 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
+    blingselected: 'h-10 rounded-md min-w-0 max-w-60 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
+    outerbling: `p-0.75 bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 rounded-md`,
   };
 
   const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;
 
-  return (
-    <button
+  const buttonElement = (    
+  <button
       type={type}
       onClick={handleClick}
       disabled={disabled || isLoading}
       className={buttonClasses}
       {...props}
-    >
+      >
       {isLoading ? props.loadingText || 'Loading...' : children}
-    </button>
-  );
+  </button> );
+
+return variant === 'bling' ? (
+  <div className={variantClasses['outerbling']}>{buttonElement}</div>
+) : (
+  buttonElement
+);
 }
 
 //Square tile button

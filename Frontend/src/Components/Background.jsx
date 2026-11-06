@@ -30,7 +30,7 @@ function rand(seed) {
   return x - Math.floor(x);
 }
 
-export default function MoneyRain({ count = 50, value = "100", symbol = "€" }) {
+export default function MoneyRain({ count = 30, value = "100", symbol = "€" }) {
   const stars = useMemo(
     () =>
       Array.from({ length: count }, (_, i) => {
