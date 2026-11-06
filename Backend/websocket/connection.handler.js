@@ -1,6 +1,6 @@
 const { getProfile } = require('../src/services/user.service');
 const { chatHandler } = require('./handlers/chat.handler');
-const { createRoom, joinRoom, leaveRoom, roomInfo } = require('./rooms/room.manager');
+const { createRoom, joinRoom, leaveRoom, roomInfo, sendMousePosition } = require('./rooms/room.manager');
 const { quizHandler } = require('./handlers/quiz.handler');
 const { wsProfile } = require('./handlers/profile.handler');
 
@@ -12,10 +12,11 @@ const handlers = {
   leaveRoom: leaveRoom,
   roomInfo: roomInfo,
   chat: chatHandler,
-  quiz: quizHandler
+  quiz: quizHandler,
+  mousePosition: sendMousePosition,
 };
 
-async function handleConnection(ws, req) 
+async function handleConnection(ws) 
 {
   try{
     const profile = await getProfile(ws.user.id);
@@ -33,7 +34,8 @@ async function handleConnection(ws, req)
     try {
       const message = JSON.parse(data);
       const handler = handlers[message.type];
-      console.log('[WEBSOCKET] Message reçu (', ws.username, ':', ws.currentRoom, '):',
+      if (message.type !== 'mousePosition')
+        console.log('[WEBSOCKET] Message reçu (', ws.username, ':', ws.currentRoom, '):',
          handler,' : ', message.data );
 
       if (handler) {

@@ -1,6 +1,6 @@
 const rooms = {};
 const PUBLIC = 'PUBLIC';
-rooms[PUBLIC] = { name: 'Public', messages:  [], members: [], owner: null };
+rooms[PUBLIC] = { messages:  [], members: [], owner: null };
 
 function joinRoom(message, ws) {
   if (!rooms[message.roomId]) {
@@ -17,16 +17,20 @@ function joinRoom(message, ws) {
       type: 'hasJoined',
       user: ws.username}},
     ws);
+  if(rooms[ws.currentRoom]?.deleteTimeout){
+    console.log("deleteTimeout cleared");
+    clearTimeout(rooms[ws.currentRoom].deleteTimeout);
+  }
   ws.send(JSON.stringify({ 
-    type: 'roomJoined', data: { user: ws.username, roomId : message.roomId, roomName: rooms[message.roomId].name } }));
+    type: 'roomJoined', data: { user: ws.username, roomId : message.roomId} }));
 }
 
 function createRoom(message, ws) {  
   const roomId = Math.random().toString(36).substr(2, 6).toUpperCase();
   //verifier que le rommId existe pas deja
-  rooms[roomId] = { name: message.roomName, messages:[], members: [ws], owner: ws.userId };
+  rooms[roomId] = { messages:[], members: [ws], owner: ws.userId };
   ws.currentRoom = roomId;
-  ws.send(JSON.stringify({ type: 'roomCreated', data: rooms[roomId]})); 
+  ws.send(JSON.stringify({ type: 'roomCreated', data: {roomId: roomId}})); 
 }
 
 
@@ -41,8 +45,11 @@ function leaveRoom(message, ws) {
     rooms[roomId].members = rooms[roomId].members.filter(w => w !== ws);
     ws.currentRoom = null;
 
-   if (rooms[roomId].members.length === 0 && rooms[roomId].name !== 'Public') {
-     delete rooms[roomId];
+    //If empty, wait 10 sec then delete room
+   if (rooms[roomId].members.length === 0 && roomId !== 'PUBLIC') {
+    rooms[roomId].deleteTimeout = setTimeout(() =>{
+      delete rooms[roomId];
+    }, 10000);
    }
    else {
      broadcast(roomId, {type: 'chat', 
@@ -54,6 +61,17 @@ function leaveRoom(message, ws) {
   }
 }
 
+
+function sendMousePosition(data, ws) {
+  broadcast(ws.currentRoom, {
+    type: 'mousePosition',
+    data: {
+      user: ws.username,
+      x: data.x,
+      y: data.y,
+    }
+  }, ws);
+}
 //{type : "gameState", data : { phase : "vote", data : {question} , players, scores, timer }}
 //{type : "gameState", data : { phase : "question", questionText : "blabla ?" , answers, players, scores, timer }}
 
@@ -68,7 +86,8 @@ function broadcast(roomId, data, except = null) {
       ws.send(JSON.stringify(data));
     }
   });
-  console.log(`[WEBSOCKET] Broadcasting to room ${roomId}:`, data);
+      if (data.type !== 'mousePosition')
+        console.log(`[WEBSOCKET] Broadcasting to room ${roomId}:`, data);
 }
 
 function getRoomMembers(roomId) {
@@ -85,4 +104,4 @@ function roomInfo(data, ws) {
   }));
 }
 
-module.exports = { joinRoom, createRoom, leaveRoom, broadcast, getRoomMembers, roomInfo };
+module.exports = { joinRoom, createRoom, leaveRoom, broadcast, getRoomMembers, sendMousePosition, roomInfo };

@@ -1,4 +1,5 @@
 const { broadcast, getRoomMembers } = require("../rooms/room.manager");
+const { getCategoryById } = require("../../src/services/category.service");
 const { findActiveQuestionIds } = require("../../src/models/attempt.model");
 const { shuffle } = require("../../src/services/attempt.service");
 const { getCompleteQuestionById } = require("../../src/services/question.service");
@@ -9,9 +10,10 @@ const votes = {};
 const TIME_TO_ANSWER = 15000;
 //endVote -> empecher de relancer un vote.
 //gameEnded -> envoyer les scores etc et supprimer games[roomId];
-function proposeQuiz(data, ws) {
+
+
+async function proposeQuiz(data, ws) {
   const roomId = ws.currentRoom;
-  
   //Check here if game is in progress
   if (!roomId) throw new Error(`roomId error.`);
   if(!games[roomId]){
@@ -31,8 +33,11 @@ function proposeQuiz(data, ws) {
 
   //Recup data values
   const categoryId = data.categoryId;
+  const category = await getCategoryById(data.categoryId);
+  const categoryName = category.name;
   const count = data.count;
-      
+  
+  console.log(categoryName);
   const vote = votes[roomId] ?? startVote(roomId);
   
   const PropositionExisting = vote.quizList.find(
@@ -41,21 +46,12 @@ function proposeQuiz(data, ws) {
   if (PropositionExisting) {
     PropositionExisting.nbVotes++;
   } else {
-      vote.quizList.push({categoryId,count,nbVotes:1});
+      vote.quizList.push({categoryId, categoryName, count, nbVotes: 1});
   }
 
   sendGameState(roomId);
 }
 
-function onAnswer(data, ws){
-  const roomId = ws.currentRoom;
-  games[roomId].answered.set(ws.userId, {id : data.answerId, time : data.answerTime});
-  if (games[roomId].answered.size === games[roomId].scores.size)
-  {
-    clearTimeout(games[roomId].timeout);
-    revealAnswers(roomId);
-  }
-}
 
 function startVote(roomId){
   const vote = {
@@ -134,6 +130,16 @@ async function sendQuestion(roomId) {
   }, TIME_TO_ANSWER)
   sendGameState(roomId);
   
+}
+
+function onAnswer(data, ws){
+  const roomId = ws.currentRoom;
+  games[roomId].answered.set(ws.userId, {id : data.answerId, time : data.answerTime});
+  if (games[roomId].answered.size === games[roomId].scores.size)
+  {
+    clearTimeout(games[roomId].timeout);
+    revealAnswers(roomId);
+  }
 }
 
 function revealAnswers(roomId){
