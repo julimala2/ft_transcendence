@@ -193,4 +193,4 @@ async function abandonAttempt(id, userId) {
   };
 }
 
-module.exports = { startAttempt, getAttempt, answerAttempt, abandonAttempt };
+module.exports = { startAttempt, getAttempt, answerAttempt, abandonAttempt, shuffle };
