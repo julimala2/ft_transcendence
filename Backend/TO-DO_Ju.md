@@ -10,16 +10,36 @@ musique cinema series 42 sport : basket, formule 1, motogp, JO
 
 Possibilite de signaler une question
 
+
+• Module game statistics : 
+◦ Track user game statistics (wins, losses, ranking, level, etc.). [ ]
+◦ Display match history (1v1 games, dates, results, opponents). [ ]
+◦ Show achievements and progression. [ ]
+◦ Leaderboard integration. [x]
 Classements / leaderboard --> route rush ok (vide tant que le mode rush n'existe pas), a terme : custom + front
-
 Progression ?
-
 Rush mode Joris ?
 
-Notifications : prevoir l'envoi de notifications avec createNotif
-Fait : demande et acceptation d'ami
-A faire : badges / achievements 
+
+• Module : A gamification system to reward users for their actions.
+◦ Implement at least 3 of the following: achievements, badges, leaderboards, XP/level system, daily challenges, rewards [ ]
+◦ System must be persistent (stored in database) [x]
+◦ Visual feedback for users (notifications, progress bars, etc.) [ ]
+◦ Clear rules and progression mechanics [ ]
+
+
+
+• Minor: A complete notification system for all creation, update, and deletion actions.
+
+NotifyUser
+Fait : demande et acceptation d'ami + badges / achievements + modification profil
+A faire : autres ? 
+Suggestions : quand un ami crée un quiz, quand on se fait dépasser au leaderboard (compliqué), si on bat son record en rush
+A terme : invitation a jouer
 Verifier les blocages pour permettre un friendRequest
+
+
+
 
 
 Pourquoi mettre le timer dans le back :

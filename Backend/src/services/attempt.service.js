@@ -181,6 +181,7 @@ async function abandonAttempt(id, userId) {
   }
   if (attempt.status === STATUS.IN_PROGRESS) {
     await attemptModel.markAbandoned(id);
+    newBadges = await achievementsService.checkAchievements(id);
   }
 
   return {
@@ -189,6 +190,7 @@ async function abandonAttempt(id, userId) {
     total: attempt.totalQuestions,
     answered: attempt._count.userAnswers,
     score: attempt.score,
+    newBadges,
   };
 }
 

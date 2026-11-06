@@ -1,6 +1,7 @@
 const achievementsModel = require('../models/achievements.model');
 const userModel = require('../models/user.model');
 const blocksModel = require('../models/blocks.model');
+const { notifyUser } = require('./notifications.service');
 
 async function getRushBadgesReached(attempt) {
     const potentialBadges = await achievementsModel.findPotentialBadges({
@@ -145,6 +146,7 @@ async function checkAchievements(attemptId) {
             description: badge.description,
             icon: badge.icon,
         });
+        await notifyUser(attempt.userId, 'achievement', `Tu as obtenu le badge ${badge.name}`)
     }
     return result;
 }
