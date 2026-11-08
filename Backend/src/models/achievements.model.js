@@ -1,21 +1,5 @@
 const prisma = require('../../lib/prisma');
 
-//creer un badge pour une categorie / sous-categorie
-// ajouter a la fin de attempt pour le creer ?
-
-// model UserAchievement {
-//   userId        Int
-//   user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-//   achievementId Int
-//   achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
-//   unlockedAt    DateTime    @default(now())
-
-//   attemptId Int?
-//   attempt   QuizAttempt? @relation(fields: [attemptId], references: [id], onDelete: SetNull)
-
-//   @@id([userId, achievementId])
-// }
-
 async function findPotentialBadges({ metric, categoryId }) {
     return prisma.achievement.findMany({
         where: {
@@ -86,7 +70,6 @@ async function getAllBadges() {
     });
 }
 
-// La partie complète et à jour, avec tout ce qu'il faut pour vérifier les badges
 async function findAttemptForBadges(attemptId) {
     return prisma.quizAttempt.findUnique({
         where: { id: attemptId },
