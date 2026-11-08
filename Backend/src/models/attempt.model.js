@@ -1,10 +1,16 @@
-const prisma = require('../../lib/prisma');
+const prisma = require('../config/prismaClient');
 const { PUBLIC_SELECT } = require('./question.model');
 
 const STATUS = {
   IN_PROGRESS: 'in_progress',
   FINISHED: 'finished',
   ABANDONED: 'abandoned',
+};
+
+const MODE = {
+  CUSTOM: 'custom',
+  CLASSIC: 'classic',
+  RUSH: 'rush',
 };
 
 function remainingQuestions(attemptId) {
@@ -40,10 +46,11 @@ async function findQuizQuestionIds(quizId) {
   return rows.map((r) => r.questionId);
 }
 
-async function createAttempt({ userId, quizId, categoryId, tagId, difficulty, questionIds }) {
+async function createAttempt({ userId, mode, quizId, categoryId, tagId, difficulty, questionIds }) {
   return prisma.quizAttempt.create({
     data: {
       userId,
+      mode,
       quizId,
       categoryId,
       tagId,
@@ -66,6 +73,7 @@ async function findAttempt(id) {
       score: true,
       totalQuestions: true,
       status: true,
+      mode: true,
       _count: { select: { userAnswers: true } },
     },
   });
@@ -132,6 +140,7 @@ async function abandonInProgress(userId) {
 
 module.exports = {
   STATUS,
+  MODE,
   findTagBySlug,
   findActiveQuestionIds,
   findQuizQuestionIds,

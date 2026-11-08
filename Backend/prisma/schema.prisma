@@ -176,7 +176,7 @@ model QuizAttempt {
   startedAt      DateTime  @default(now())
   finishedAt     DateTime?
 
-  mode   String @default("custom")
+  mode   String @default("classic")
   status String @default("in_progress")
 
   userId Int
@@ -198,7 +198,7 @@ model QuizAttempt {
   achievements UserAchievement[]
 
   @@index([userId])
-  @@index([categoryId, tagId, difficulty])
+  @@index([mode, categoryId, tagId, difficulty])
   @@index([categoryId, difficulty, mode, status])
 }
 

@@ -2,9 +2,9 @@ const attemptModel = require('../models/attempt.model');
 const quizModel = require('../models/quiz.model');
 const categoryModel = require('../models/category.model');
 const quizService = require('./quiz.service');
-const achievementsService = require('./achievements.service');
 
-const { STATUS } = attemptModel;
+const { STATUS, MODE } = attemptModel;
+const DEFAULT_QUESTION_COUNT = 20;
 
 function httpError(statusCode, message) {
   const error = new Error(message);
@@ -42,9 +42,12 @@ async function getOwnedAttempt(id, userId) {
 
 async function startAttempt(userId, params) {
   let questionIds;
+  let mode;
   let links = { quizId: null, categoryId: null, tagId: null, difficulty: null };
 
   if (params.quizId !== undefined) {
+    mode = MODE.CUSTOM;
+
     const quiz = await quizModel.findMeta(params.quizId);
     if (!quiz || !(await quizService.canView(quiz, userId))) {
       throw httpError(404, `Quiz ${params.quizId} introuvable`);
@@ -55,6 +58,8 @@ async function startAttempt(userId, params) {
     }
     links.quizId = quiz.id;
   } else {
+    mode = params.mode ?? MODE.CLASSIC;
+
     const category = await categoryModel.findById(params.categoryId);
     if (!category) throw httpError(404, `Catégorie ${params.categoryId} introuvable`);
 
@@ -65,34 +70,47 @@ async function startAttempt(userId, params) {
       tagId = tag.id;
     }
 
-    const count = params.count ?? available.length;
-    const available = await attemptModel.findActiveQuestionIds({
-      categoryId: category.id,
-      tagId,
-      difficulty: params.difficulty,
-    });
-    if (available.length < count || count <= 0) {
-      throw httpError(
-        400,
-        `Pas assez de questions : ${available.length} disponible(s) pour ${count} demandée(s)`
-      );
+    if (mode === MODE.RUSH) {
+      const available = await attemptModel.findActiveQuestionIds({
+        categoryId: category.id,
+        tagId,
+        difficulty: undefined,
+      });
+      if (available.length === 0) {
+        throw httpError(400, 'Cette sous-catégorie ne contient aucune question');
+      }
+      questionIds = shuffle(available);
+      links = { quizId: null, categoryId: category.id, tagId: tagId ?? null, difficulty: null };
+    } else {
+      const count = params.count ?? DEFAULT_QUESTION_COUNT;
+      const available = await attemptModel.findActiveQuestionIds({
+        categoryId: category.id,
+        tagId,
+        difficulty: params.difficulty,
+      });
+      if (available.length < count) {
+        throw httpError(
+          400,
+          `Pas assez de questions : ${available.length} disponible(s) pour ${count} demandée(s)`
+        );
+      }
+      questionIds = shuffle(available).slice(0, count);
+      links = {
+        quizId: null,
+        categoryId: category.id,
+        tagId: tagId ?? null,
+        difficulty: params.difficulty ?? null,
+      };
     }
-
-    questionIds = shuffle(available).slice(0, count);
-    links = {
-      quizId: null,
-      categoryId: category.id,
-      tagId: tagId ?? null,
-      difficulty: params.difficulty ?? null,
-    };
   }
 
   await attemptModel.abandonInProgress(userId);
-  const attempt = await attemptModel.createAttempt({ userId, ...links, questionIds });
+  const attempt = await attemptModel.createAttempt({ userId, mode, ...links, questionIds });
   const current = await attemptModel.findCurrentPublic(attempt.id);
 
   return {
     id: attempt.id,
+    mode,
     status: STATUS.IN_PROGRESS,
     total: attempt.totalQuestions,
     answered: 0,
@@ -109,6 +127,7 @@ async function getAttempt(id, userId) {
 
   return {
     id: attempt.id,
+    mode: attempt.mode,
     status: attempt.status,
     total: attempt.totalQuestions,
     answered: attempt._count.userAnswers,
@@ -154,11 +173,7 @@ async function answerAttempt(id, userId, answerId) {
 
   const score = recorded[1].score;
   const next = await attemptModel.findCurrentPublic(id);
-  let newBadges = [];
-  if (!next) {
-    await attemptModel.markFinished(id);
-    newBadges = await achievementsService.checkAchievements(id);
-  }
+  if (!next) await attemptModel.markFinished(id);
 
   return {
     isCorrect: chosen.isCorrect,
@@ -170,7 +185,6 @@ async function answerAttempt(id, userId, answerId) {
     total: attempt.totalQuestions,
     finished: !next,
     next: formatQuestion(next),
-    newBadges,
   };
 }
 
