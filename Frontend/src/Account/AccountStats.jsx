@@ -105,7 +105,7 @@ export function AccountStats() {
   };
 
   return (
-    <div className='w-full flex h-full justify-between gap-4 flex-col'>      
+    <div className='w-full flex flex-1 justify-between overflow-y-scroll gap-4 flex-col'>      
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <CardContainer>
@@ -118,7 +118,7 @@ export function AccountStats() {
         </CardContainer>
       </div>
 
-      <div className='h-full bg-blue-950 p-2'>
+      <div className='flex-1 bg-blue-950 p-2'>
         <ListContainer>
           {categoryStats.map((category, index) => (
             <div key={index} className="w-full border-b border-gray-200 dark:border-gray-700 pb-2 last:border-0 last:pb-0">
@@ -135,7 +135,7 @@ export function AccountStats() {
       </div>
 
       <CardContainer>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+        <div className="flex md:flex-row flex-wrap-auto w-min-0 gap-2">
           {Object.entries(difficultyStats).map(([difficulty, stats]) => (
             <div key={difficulty} className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
               <h3 className="font-semibold text-gray-800 dark:text-white mb-2">{getDifficultyText(parseInt(difficulty))}</h3>

@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 
 //Basic button used for almost everything
 //Onclick,variant,disabled,loading,props
+
 export function StyledButton({
   onClick,
   children,
@@ -40,7 +41,7 @@ export function StyledButton({
     secondary: 'bg-gray-700 hover:bg-gray-500 text-white',
     danger: 'bg-red-700 hover:bg-red-300 text-white',
     success: 'bg-green-700 hover:bg-green-300 text-white',
-    bling: 'h-10 rounded-md min-w-0 max-w-60 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
+    bling: 'w-full flex-1 h-10 rounded-md min-w-0 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
     blingselected: 'h-10 rounded-md min-w-0 max-w-60 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
     outerbling: `p-0.75 bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 rounded-md`,
   };
@@ -63,6 +64,33 @@ return variant === 'bling' ? (
 ) : (
   buttonElement
 );
+}
+
+
+export function BlingButton({onClick,children,selected,className = '',innerClassName = ''}){
+  
+  const textClass = `' text-xl md:text-2xl font-bold md:text-xl text-white '`
+  const bgClass = `' bg-gradient-to-tl from-blue-950 via-blue-900 to-blue-950 
+    hover:via-blue-700
+    shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] 
+    hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] '`
+  const bgClassSelected = `' bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 
+    shadow-[0px_0px_16px_10px_rgba(234,_179,_8,_0.5)] 
+    inset-shadow-[0px_0px_10px_4px_rgba(234,_179,_8,_0.5)] '`;
+
+
+  const baseClass = `' w-full flex-1 h-10 rounded-md min-w-0 flex flex-row items-center
+    justify-center pl-4 pr-4  ${textClass}`;
+  const normalClass = `' ${baseClass} ${innerClassName} ${selected ? bgClassSelected : bgClass} '`
+  const outerDiv = `' ${className} ${selected && 'scale-95'} p-0.75 bg-gradient-to-br from-amber-600 via-amber-200 to-amber-500 rounded-md '`;
+  
+  return(
+    <div className={outerDiv}>
+    <button onClick={onClick} className={normalClass}>
+      {children}
+    </button>
+    </div>
+  );
 }
 
 //Square tile button

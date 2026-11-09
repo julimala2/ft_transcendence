@@ -1,26 +1,22 @@
 //Component file for all the little containers !
 
 //Container that contains an entire page
-export const MainContainer = ({ children }) => {
-  return (
-    <div className="h-screen min-h-full w-full">
-      {children}
-    </div>
-  );
-};
+export const MainContainer = ({ children }) => (
+  <div className="h-dvh overflow-hidden flex flex-col">
+    {children}
+  </div>
+);
 
 //Page container
-export const PageContainer = ({ children }) => {
-  return (
-    <div className="pt-40 flex-col flex items-center justify-center h-full align-items-center p-4 rounded-md gap-4 w-full pl-20 pr-20 pb-20">
-      {children}
-    </div>
-  );
-};
+export const PageContainer = ({ children }) => (
+  <div className="flex-1 min-h-0 overflow-hidden flex flex-col items-center justify-center gap-4 p-4 md:px-20 md:pb-20 md:pt-[min(10rem,10dvh)]">
+    {children}
+  </div>
+);
 
 //Container for vertical lists
 export const ListContainer = ({ children }) => {
-  return <ul className="flex flex-col p-2 w-full items-center gap-2">{children}</ul>;
+  return <ul className="flex flex-col p-2 w-full items-center gap-2 overflow-y-auto min-h-0">{children}</ul>;
 };
 
 //Container for list entries, stuff like that (flex horizontal full width)

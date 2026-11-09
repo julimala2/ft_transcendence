@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-
 import { Link, Navigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-
-import { MainContainer, PageContainer } from '../Components/Containers';
+import { MainContainer, PageContainer, StyledDiv } from '../Components/Containers';
 import { useAuth } from '../Hooks/useAuth';
-import {StyledButton, TileButton} from '../Components/Buttons';
+import {StyledButton, TileButton, BlingButton} from '../Components/Buttons';
 import { Logo } from '../Components/Logo';
 import OfflineMenu from '../Quizs/Offline/OfflineMenu';
 
@@ -25,10 +23,14 @@ export function HomePage() {
     <MainContainer>
       <PageContainer>
         <div className="flex flex-col gap-5 w-full items-center">
-          <Logo />
+          <StyledDiv>
+            <Logo className="md:text-8xl! md:w-150!" />
+          </StyledDiv>
           {user ? ( 
           <>
-          <TileButton variant='menu' className='bg-linear-to-br from-red-500 to-red-800' 
+          <BlingButton
+          className='w-full md:w-150 p-2'
+          innerClassName='h-30'
           onClick={() => handleViewChange("offline")} 
           selected={view=="offline"}>
             <div
@@ -41,7 +43,7 @@ export function HomePage() {
               </svg>
               Solo
             </div>
-          </TileButton>
+          </BlingButton>
           
           <AnimatePresence initial={false}>
             {view === 'offline' && (
@@ -60,7 +62,10 @@ export function HomePage() {
             )}
           </AnimatePresence>
           
-          <TileButton variant='menu' className='bg-linear-to-br from-amber-400 to-amber-600'>
+          <BlingButton 
+            className='w-full md:w-150 p-2'
+            innerClassName='h-30'
+            >
           <Link
             to="/quiz/online"
             className= {`${buttonStyle}`} >
@@ -72,18 +77,7 @@ export function HomePage() {
             </svg>
             Online
           </Link>
-          </TileButton>
-
-          <TileButton variant='menu' className='bg-linear-to-br from-blue-400 to-amber-300'>
-          <Link
-            to="/testpage"
-            className= {`${buttonStyle}`} >
-            <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
-            </svg>
-            Page de test
-          </Link>
-          </TileButton>
-                    {/* Test Page TODO : a supp ! */}
+          </BlingButton>
           </>) : (
               <TileButton variant='menu' className='bg-linear-to-br  from-blue-400 to-green-600'>
                 <Link 

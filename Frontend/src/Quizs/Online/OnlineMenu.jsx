@@ -12,15 +12,12 @@ export function OnlineMenu() {
     const [error, setError] = useState(undefined);
     const [rooms, setRooms] = useState([]);
     const [newName, setNewName] = useState("");
-    const {send, on, off } = useSocket();
+    const {send, on, off, connected } = useSocket();
     const [selectedRoomId,setSelectedRoomId] = useState("");
     const [profile, setProfile] = useState(null);
 
     useEffect(() => {
-        send('wsProfile')
-
         const handleProfile = (data) => {
-            console.log("profile");
             setProfile(data);
             setLoading(false);
         }
@@ -46,7 +43,13 @@ export function OnlineMenu() {
             off('roomJoined',roomJoined);
             off('errorRoom',errorRoom);
         }
-    }, [on,off, loading]);
+    }, [on,off, navigate]);
+
+    useEffect(() => {
+        if(connected){
+            send('wsProfile');
+        }
+    }, [connected, send]);
 
     async function createRoom() {
         send("createRoom",{});
@@ -60,7 +63,9 @@ export function OnlineMenu() {
         <MainContainer>
             <PageContainer>
         {loading ? (
-            <p className="bg-red w-full">loading...</p>
+                    <StyledDiv>
+                        <p className="bg-red w-full">loading...</p>
+                    </StyledDiv>
             ) 
             : 
             (

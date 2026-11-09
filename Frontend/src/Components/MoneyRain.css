@@ -11,7 +11,7 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(32, 32, 135) 35%, 
 
 .star {
   position: absolute;
-  top: 0;
+  top: 1;
   width: 50px;
   height: 50px;
   color: gold;
@@ -31,19 +31,19 @@ background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(32, 32, 135) 35%, 
 
 @keyframes fall-1 {
   from { transform: translateY(-160px) translateX(-10vh) rotate(-30deg); }
-  to   { transform: translateY(110vh)  translateX(10vh) rotate(390deg) ; }
+  to   { transform: translateY(110dvh)  translateX(10vh) rotate(390deg) ; }
 }
 @keyframes fall-2 {
   from { transform: translateY(-160px) translateX(10vh) rotate(20deg); }
-  to   { transform: translateY(110vh)  translateX(-10vh) rotate(-340deg); }
+  to   { transform: translateY(110dvh)  translateX(-10vh) rotate(-340deg); }
 }
 @keyframes fall-3 {
   from { transform: translateY(-160px) translateX(-10vh) rotate(45deg); }
-  to   { transform: translateY(110vh)  translateX(10vh) rotate(900deg); }
+  to   { transform: translateY(110dvh)  translateX(10vh) rotate(900deg); }
 }
 @keyframes fall-4 {
   from { transform: translateY(-160px) translateX(10vh) rotate(-10deg)  ; }
-  to   { transform: translateY(110vh)  translateX(-10vh) rotate(-450deg); }
+  to   { transform: translateY(110dvh)  translateX(-10vh) rotate(-450deg); }
 }
 
 .star::before {

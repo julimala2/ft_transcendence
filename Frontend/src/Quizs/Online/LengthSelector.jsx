@@ -1,4 +1,4 @@
-import { StyledButton } from "../../Components/Buttons";
+import { BlingButton, StyledButton } from "../../Components/Buttons";
 
 const OPTIONS = [
   { value: 5, label: 'Court' , mojis : '⏱️'},
@@ -8,11 +8,11 @@ const OPTIONS = [
 
 export function LengthSelector({value,onChange}) {
     return (
-        <div className="flex flex-row flex-wrap justify-around w-full gap-5">
+        <div className="flex flex-row flex-wrap justify-around w-full md:gap-5">
             {OPTIONS.map (o => (
-                <StyledButton key={o.value} variant={value === o.value ? "selected":"primary"} onClick={()=> onChange(o.value)}>
+                <BlingButton key={o.value} selected={value === o.value} onClick={()=> onChange(o.value)}>
                     <label className="pointer-events-none">{o.label}</label>
-                </StyledButton>
+                </BlingButton>
             ))}
         </div>
     );

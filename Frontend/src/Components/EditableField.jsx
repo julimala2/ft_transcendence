@@ -74,11 +74,11 @@ export function EditableField({
   }
 
   return (
-    <div className="editable-field">
-      <span className="editable-label">{label}</span>
+    <div className="flex flex-col md:flex-row gap-3">
+      <span className='text-xl font-bold'>{label}</span>
 
       {editing ? (
-        <div className="editable-edit">
+        <div className="bg-blue-800 flex flex-row gap-3 p-2 rounded-xl">
           <input
             ref={inputRef}
             type={type}
@@ -106,7 +106,7 @@ export function EditableField({
           </button>
         </div>
       ) : (
-        <div className="editable-view">
+        <div className="bg-blue-800 p-2 rounded-xl">
           <span className="editable-value">{value || <em>Non défini</em>}</span>
           <button type="button" onClick={startEdit} title="Modifier">
             ✏️

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getAllCategories } from '../../Api/quiz.jsx';
 import {
-  StyledButton,
+  StyledButton,BlingButton
 } from '../../Components/Components.jsx';
 
 export function CategorySelector({value, onChange}) {
@@ -46,12 +46,11 @@ export function CategorySelector({value, onChange}) {
   }
 
   return (
-
-    <div className="p-5 flex flex-row flex-wrap justify-center justify-around gap-5" >
+    <div className="p-5 flex flex-col md:flex-row md:flex-wrap md:justify-center md:justify-around gap-5 overflow-y-scroll" >
       {categories.map(cat => (
-        <StyledButton key={cat.id} variant={cat === selectedCategory ? 'bling': 'bling'} onClick={() => changedCategory(cat)}>
+        <BlingButton key={cat.id} selected={selectedCategory === cat} onClick={() => changedCategory(cat)}>
             {cat.name}
-        </StyledButton>
+        </BlingButton>
       ))}
     </div>
   );

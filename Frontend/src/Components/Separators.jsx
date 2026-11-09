@@ -10,7 +10,7 @@ export function StyledSeparator(
                 `,
             };
     return (
-        <div className="w-full h-5 flex flex-col justify-center pl-10 pr-10">
+        <div className={`${className} w-full h-5 flex flex-col justify-center pl-10 pr-10`}>
         <div className={variantClasses[variant]}/>
         </div>
     )

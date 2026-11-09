@@ -9,7 +9,7 @@ export function StyledInput({
     ...props
 }) {
     return(
-        <div className="gap-2 flex items-center h-full justify-end w-full">
+        <div className="gap-2 flex items-center justify-end min-w-0 w-full">
             <div className="w-full flex flex-col gap-2">
 
             {label ? (

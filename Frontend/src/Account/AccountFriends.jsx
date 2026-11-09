@@ -89,14 +89,14 @@ export function AccountFriends() {
   if (error) return <p className={styles.error}>{error}</p>;
 
   return (
-    <div className='flex flex-col gap-7'>
+    <div className='flex flex-1 flex-col gap-2 justify-start'>
       <UserSearch onSelect={handleFriendClick} />
       {requests.length !== 0 && (
-        <div>
+        <div className='flex flex-1 flex-col justify-start'>
           <h2 className="font-bold text-xl">
             Demande d'amis : {requests.length}
           </h2>
-          <ListContainer className="list">
+          <div>
             {requests.map(r => (
               <CardContainer key={r.friendshipId}>
                 <Avatar username={r.username} />
@@ -121,7 +121,7 @@ export function AccountFriends() {
                 </div>
               </CardContainer>
             ))}
-          </ListContainer>
+          </div>
         </div>
       )}
 

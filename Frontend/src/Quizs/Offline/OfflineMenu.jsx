@@ -1,27 +1,27 @@
-import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
-
-import { MainContainer, PageContainer } from '../../Components/Containers';
+import { BlingButton } from '../../Components/Buttons';
 import { TileButton } from '../../Components/Buttons';
 
 export default function OfflineMenu() {
+  const inner = "md:w-40! md:h-40 text-3xl!"
+
   return (
-        <div className="flex gap-4">
+        <div className="flex gap-8 flex-row flex-1 flex-wrap md:w-full">
           <Link to="/play/offline/quick">
-          <TileButton>
+          <BlingButton innerClassName={inner}>
             Rush
-          </TileButton>
+          </BlingButton>
           </Link>
           <Link to="/play/offline/custom">
-          <TileButton>
+          <BlingButton innerClassName={inner}>
             Custom
-          </TileButton>
+          </BlingButton>
           </Link>
           <Link to="/play/offline/commu">
-          <TileButton>
-            Communaute
-          </TileButton>
+          <BlingButton innerClassName={inner}>
+            Public
+          </BlingButton>
           </Link>
         </div>
   );

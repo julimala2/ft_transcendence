@@ -3,7 +3,6 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { AccountAuth } from './AccountAuth';
 import { accountTabs } from './AccountTabs';
 import { useAuth } from '../Hooks/useAuth';
-import styles from './Styling/Account.module.css';
 
 export function AccountLayout() {
   const location = useLocation();
@@ -16,26 +15,25 @@ export function AccountLayout() {
   }
 
   return (
-    <div className={styles.account}>
-      <nav className={styles.tabs}>
+    <div className="p-2 flex-col md:flex-row flex flex-1 gap-4 size-full ">
+      <nav className="flex flex-row md:flex-col wrap flex-wrap">
         {accountTabs.map(tab => (
+          <>
           <NavLink
             key={tab.path}
             to={tab.path}
             replace
             state={location.state}
             className={({ isActive }) =>
-              isActive ? `${styles.tab} ${styles.active}` : styles.tab
-            }
+              isActive ? `bg-amber-400 text-black p-3 rounded-xl` : 'p-3 text-white border-b-1'
+          }
           >
             {tab.label}
           </NavLink>
+          </>
         ))}
       </nav>
-
-      <div className={styles.content}>
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 }

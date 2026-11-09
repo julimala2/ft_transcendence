@@ -6,6 +6,7 @@ import {
   CardContainer,
   MainContainer,
   PageContainer,
+  StyledDiv,
 } from '../../Components/Containers';
 
 export default function CommuStart() {
@@ -41,19 +42,19 @@ export default function CommuStart() {
   return (
     <MainContainer>
       <PageContainer>
-        {JSON.stringify(quizs)}
+        <StyledDiv>
         <h3 className="text-3xl">Quizs Publics:</h3>
+        </StyledDiv>
+        <div className='flex flex-1 flex-col gap-3 h-min-0 h-full overflow-y-scroll '>
+
         {quizs.map(quiz => (
           <CardContainer key={quiz.id}>
-            <div className="text-xl font-bold pl-2">
               "{quiz.title}" created by {quiz.owner.username} (
               {quiz._count.questions ? quiz._count.questions : '0'} questions)
-            </div>
-            <div>
-              <StyledButton variant="success">Jouer</StyledButton>
-            </div>
+              <StyledButton>Jouer</StyledButton>
           </CardContainer>
         ))}
+        </div>
       </PageContainer>
     </MainContainer>
   );

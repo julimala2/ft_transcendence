@@ -32,8 +32,10 @@ export function OnlineRoom(){
     const { send, on, off, connected} = useSocket();
     const [messages, setMessages] = useState([]);
     const [newMsg,setNewMsg] = useState('');
+    const [time,setTime] = useState(0);
     const [profile,setProfile] = useState(null);
     const { user } = useAuth();
+    const [tab, setTab] = useState('quiz'); //quiz | chat | members
     const [error,setError] = useState(false);
     const [members, setMembers] = useState([]);
     const [gameState,setGameState] = useState();
@@ -103,6 +105,10 @@ export function OnlineRoom(){
             }));
         };
 
+        const handleTime= (data) => {
+            setTime(data);
+        }
+
         on('chat',newMessage);
         on('profile',handleProfile);
         on('errorRoom',handleError);
@@ -111,6 +117,7 @@ export function OnlineRoom(){
         on('roomJoined',handleRoomJoined);
         on('gameState',handleGameState);
         on('mousePosition',handleMousePosition);
+        on('time',handleTime);
         return () => {
             off('chat', newMessage);
             off('mousePosition',handleMousePosition);
@@ -149,11 +156,13 @@ export function OnlineRoom(){
         send('roomInfo',{roomId: roomId});
     }
 
+    const panel = (name) => `${tab === name ? '' : 'hidden'} md:flex`;
+
     return (
         <MainContainer>
             <MouseTracker mouseChange={setMousePosition}/>
             {Object.entries(cursors).map(([username,pos]) => (
-                <Cursor key={username} username={pos.username} x={pos.x} y={pos.y} />
+                <Cursor key={username} username={pos.username} x={window.innerWidth * pos.x} y={window.innerHeight * pos.y} />
             ))}
             <PageContainer>
                 {error ? (
@@ -161,18 +170,38 @@ export function OnlineRoom(){
                         <p>Error: Room doesn't exist.</p>
                         <StyledButton onClick={() => navigate("/quiz/online/")}>Back to menu</StyledButton>
                     </>
-                    ) : ( 
+                    ) : (
                     <>
-                        <div className="flex flex-col h-full w-full justify-center items-center gap-3">
-                            <StyledDiv outerClassName='max-w-50' className='flex flex-row gap-3'>
-                                <p className="text-white text-xl font-bold">{roomId}</p>
-                                <button onClick={() => {navigator.clipboard.writeText(roomId)}}>📄</button>
-                            </StyledDiv>
-                            <div className="flex md:flex-row flex-col w-full h-full gap-3">
-                                <QuizPanel gameState={gameState} send={send}/>
-                                <ChatPanel messages={messages} sendMessage={sendMessage} roomId={roomId} members={members}/>
-                            </div>
+                    <div className="flex flex-col flex-1 min-h-0 w-full items-center gap-3">
+                        <StyledDiv outerClassName='max-w-50 shrink-0' className='flex flex-row gap-3'>
+                            <p className="text-white text-xl font-bold">{roomId}</p>
+                            <button onClick={() => {navigator.clipboard.writeText(roomId)}}>📄</button>
+                        </StyledDiv>
+
+                        <div className="flex flex-1 min-h-0 w-full flex-col md:gap-3 md:flex-row">
+                            <QuizPanel className={panel('quiz')} gameState={gameState} send={send} time={time}/>
+                            <ChatPanel className={panel('chat')} messages={messages} sendMessage={sendMessage} roomId={roomId} members={members}/>
                         </div>
+                        <nav className="md:hidden flex flex-row w-full gap-3">
+                            {[['quiz', 'Quiz'], ['chat', 'Chat']].map(([id, label]) => (
+                                <StyledButton
+                                    key={id}
+                                    onClick={() => setTab(id)}
+                                    className={`w-full`}
+                                    outerClassName="flex-1"
+                                    variant={`bling`}
+                                    selected={tab === id}
+                                >
+                                    {label}
+                                </StyledButton>
+                            ))}
+                            <StyledButton className={`w-full`}
+                                    outerClassName="flex-1"
+                                    variant={`bling`}
+                                    onClick={() => navigate("/")}
+                                    >Menu</StyledButton>
+                        </nav>
+                    </div>
                     </>
                     )
                 }
