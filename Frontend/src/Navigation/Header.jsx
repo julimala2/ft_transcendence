@@ -2,12 +2,14 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { Avatar } from '../Components/Avatar';
 import { useAuth } from '../Hooks/useAuth';
+import { useUnreadNotifications } from '../Hooks/useUnreadNotifications';
 import { Logo } from '../Components/Logo';
 import { StyledDiv } from '../Components/Containers';
 
 export function Header() {
   const { user } = useAuth();
   const location = useLocation();
+  const unreadCount = useUnreadNotifications();
 
   return (
     <header className="fixed w-screen flex align-center md:justify-between justify-end p-3 md:pl-20 md:pr-20 md:pt-12 pointer-events-none z-100">
@@ -21,11 +23,19 @@ export function Header() {
           state={{ backgroundLocation: location.pathname }}
         >
           {user ? (
-            <Avatar
-              src={user.avatar_url}
-              username={user.display_name}
-              size={60}
-            />
+            <div className="relative">
+              <Avatar
+                src={user.avatar_url}
+                username={user.display_name}
+                size={60}
+              />
+              {unreadCount > 0 && (
+                <span
+                  className="absolute -top-1 -right-1 h-3.5 w-3.5 rounded-full bg-red-500 ring-2 ring-slate-900"
+                  title={`${unreadCount} nouvelle${unreadCount > 1 ? 's' : ''} notification${unreadCount > 1 ? 's' : ''}`}
+                />
+              )}
+            </div>
           ) : (
             <Avatar size={60} />
           )}
