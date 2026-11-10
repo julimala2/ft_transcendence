@@ -12,7 +12,7 @@ const path = require("path");
 
 const prisma = new PrismaClient();
 
-const FILE = path.join(__dirname, "themes.json");
+const FILE = path.join(__dirname, "..", "themes.json");
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 // ---------- Vérification ----------

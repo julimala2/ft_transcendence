@@ -1,0 +1,4867 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 331,
+    "parDifficulte": {
+      "1": 53,
+      "2": 203,
+      "3": 75
+    },
+    "parType": {
+      "multiple": 317,
+      "boolean": 14
+    },
+    "avecImage": 25,
+    "sansImage": 306,
+    "parTag": {
+      "pilote": 125,
+      "circuit": 90,
+      "ecurie": 79,
+      "champion-du-monde": 63,
+      "regle": 57,
+      "record": 54,
+      "histoire": 52,
+      "france": 31,
+      "technique": 27,
+      "silhouette": 25
+    }
+  },
+  "category": {
+    "slug": "formule-1",
+    "name": "Formule 1"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "f1-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit de Spa-Francorchamps ?",
+      "answers": [
+        { "text": "France", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": true },
+        { "text": "Luxembourg", "isCorrect": false }
+      ],
+      "explanation": "Il est situé dans les Ardennes belges, dans la province de Liège."
+    },
+    {
+      "ref": "f1-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Quel Grand Prix se court dans les rues de Monte-Carlo ?",
+      "answers": [
+        { "text": "Le Grand Prix de France", "isCorrect": false },
+        { "text": "Le Grand Prix de Monaco", "isCorrect": true },
+        { "text": "Le Grand Prix d'Italie", "isCorrect": false },
+        { "text": "Le Grand Prix d'Espagne", "isCorrect": false }
+      ],
+      "explanation": "Organisé depuis 1929, il figure au championnat du monde dès sa première saison, en 1950."
+    },
+    {
+      "ref": "f1-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Quel circuit italien est surnommé « le Temple de la vitesse » ?",
+      "answers": [
+        { "text": "Monza", "isCorrect": true },
+        { "text": "Imola", "isCorrect": false },
+        { "text": "Mugello", "isCorrect": false },
+        { "text": "Misano", "isCorrect": false }
+      ],
+      "explanation": "Ses longues lignes droites en font le circuit où les vitesses moyennes sont les plus élevées de la saison."
+    },
+    {
+      "ref": "f1-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville se dispute le Grand Prix du Canada ?",
+      "answers": [
+        { "text": "Toronto", "isCorrect": false },
+        { "text": "Vancouver", "isCorrect": false },
+        { "text": "Québec", "isCorrect": false },
+        { "text": "Montréal", "isCorrect": true }
+      ],
+      "explanation": "Il se court sur le circuit Gilles-Villeneuve, tracé sur l'île Notre-Dame."
+    },
+    {
+      "ref": "f1-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "pilote"],
+      "text": "Quel pilote a donné son nom au circuit de Montréal ?",
+      "answers": [
+        { "text": "Jacques Villeneuve", "isCorrect": false },
+        { "text": "Lance Stroll", "isCorrect": false },
+        { "text": "Gilles Villeneuve", "isCorrect": true },
+        { "text": "Nicholas Latifi", "isCorrect": false }
+      ],
+      "explanation": "Pilote Ferrari mort en 1982 à Zolder, il est le père de Jacques Villeneuve, champion du monde 1997."
+    },
+    {
+      "ref": "f1-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Comment surnomme-t-on le mur à la sortie de la dernière chicane du circuit de Montréal ?",
+      "answers": [
+        { "text": "Le mur des lamentations", "isCorrect": false },
+        { "text": "Le mur des champions", "isCorrect": true },
+        { "text": "Le mur du son", "isCorrect": false },
+        { "text": "Le mur des légendes", "isCorrect": false }
+      ],
+      "explanation": "En 1999, Damon Hill, Michael Schumacher et Jacques Villeneuve, tous champions du monde, y ont fini leur course."
+    },
+    {
+      "ref": "f1-007",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Sur quel circuit trouve-t-on l'enchaînement Eau Rouge - Raidillon ?",
+      "answers": [
+        { "text": "Spa-Francorchamps", "isCorrect": true },
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Suzuka", "isCorrect": false },
+        { "text": "Interlagos", "isCorrect": false }
+      ],
+      "explanation": "Ce virage en montée, pris presque à fond, est l'un des plus célèbres du monde."
+    },
+    {
+      "ref": "f1-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit de Silverstone ?",
+      "answers": [
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Australie", "isCorrect": false },
+        { "text": "Canada", "isCorrect": false },
+        { "text": "Royaume-Uni", "isCorrect": true }
+      ],
+      "explanation": "Cet ancien aérodrome militaire a accueilli la toute première course du championnat du monde, en 1950."
+    },
+    {
+      "ref": "f1-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Quel circuit japonais a un tracé en forme de huit, avec un pont où la piste passe au-dessus d'elle-même ?",
+      "answers": [
+        { "text": "Fuji", "isCorrect": false },
+        { "text": "Motegi", "isCorrect": false },
+        { "text": "Suzuka", "isCorrect": true },
+        { "text": "Okayama", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul circuit du calendrier dont le tracé se croise."
+    },
+    {
+      "ref": "f1-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville se trouve le circuit d'Interlagos ?",
+      "answers": [
+        { "text": "Rio de Janeiro", "isCorrect": false },
+        { "text": "São Paulo", "isCorrect": true },
+        { "text": "Buenos Aires", "isCorrect": false },
+        { "text": "Brasilia", "isCorrect": false }
+      ],
+      "explanation": "Son nom officiel est Autódromo José Carlos Pace, en hommage à un pilote brésilien."
+    },
+    {
+      "ref": "f1-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Quel Grand Prix a été la première course de nuit de l'histoire de la F1, en 2008 ?",
+      "answers": [
+        { "text": "Singapour", "isCorrect": true },
+        { "text": "Bahreïn", "isCorrect": false },
+        { "text": "Abou Dhabi", "isCorrect": false },
+        { "text": "Las Vegas", "isCorrect": false }
+      ],
+      "explanation": "Le circuit urbain de Marina Bay est entièrement éclairé par des projecteurs."
+    },
+    {
+      "ref": "f1-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Sur quel circuit se dispute la dernière course de la saison chaque année depuis 2014 ?",
+      "answers": [
+        { "text": "Interlagos (São Paulo)", "isCorrect": false },
+        { "text": "Suzuka (Japon)", "isCorrect": false },
+        { "text": "Albert Park (Melbourne)", "isCorrect": false },
+        { "text": "Yas Marina (Abou Dhabi)", "isCorrect": true }
+      ],
+      "explanation": "Le circuit de Yas Marina sert de finale au championnat depuis 2014."
+    },
+    {
+      "ref": "f1-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit de Zandvoort ?",
+      "answers": [
+        { "text": "Belgique", "isCorrect": false },
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": true },
+        { "text": "Danemark", "isCorrect": false }
+      ],
+      "explanation": "Revenu au calendrier en 2021, il est célèbre pour ses virages relevés et la marée orange des supporters de Max Verstappen."
+    },
+    {
+      "ref": "f1-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Quelle est la particularité de deux virages du circuit de Zandvoort ?",
+      "answers": [
+        { "text": "Ils sont pavés", "isCorrect": false },
+        { "text": "Ils sont fortement relevés", "isCorrect": true },
+        { "text": "Ils passent dans un tunnel", "isCorrect": false },
+        { "text": "Ils sont en terre battue", "isCorrect": false }
+      ],
+      "explanation": "Leur inclinaison permet aux pilotes de les aborder bien plus vite que des virages plats."
+    },
+    {
+      "ref": "f1-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Dans quel pays se trouve le Hungaroring ?",
+      "answers": [
+        { "text": "Hongrie", "isCorrect": true },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "République tchèque", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false }
+      ],
+      "explanation": "Situé près de Budapest, il accueille la F1 depuis 1986 : c'était le premier Grand Prix derrière le rideau de fer."
+    },
+    {
+      "ref": "f1-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit d'Albert Park ?",
+      "answers": [
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Afrique du Sud", "isCorrect": false },
+        { "text": "Canada", "isCorrect": false },
+        { "text": "Australie", "isCorrect": true }
+      ],
+      "explanation": "Ce circuit tracé autour d'un lac, à Melbourne, accueille souvent la manche d'ouverture de la saison."
+    },
+    {
+      "ref": "f1-017",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "pilote", "histoire"],
+      "text": "Sur quel circuit Ayrton Senna a-t-il perdu la vie en 1994 ?",
+      "answers": [
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Imola", "isCorrect": true },
+        { "text": "Hockenheim", "isCorrect": false }
+      ],
+      "explanation": "Il s'est tué le 1er mai 1994 dans le virage de Tamburello, lors du Grand Prix de Saint-Marin."
+    },
+    {
+      "ref": "f1-018",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Quel circuit allemand de plus de 20 km est surnommé « l'Enfer vert » ?",
+      "answers": [
+        { "text": "Hockenheim", "isCorrect": false },
+        { "text": "La Nordschleife du Nürburgring", "isCorrect": true },
+        { "text": "Le Sachsenring", "isCorrect": false },
+        { "text": "L'AVUS", "isCorrect": false }
+      ],
+      "explanation": "C'est Jackie Stewart qui l'a baptisé ainsi. La F1 l'a abandonné après le grave accident de Niki Lauda en 1976."
+    },
+    {
+      "ref": "f1-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Quel est le circuit le plus court du calendrier ?",
+      "answers": [
+        { "text": "Monaco", "isCorrect": true },
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Spa-Francorchamps", "isCorrect": false },
+        { "text": "Silverstone", "isCorrect": false }
+      ],
+      "explanation": "Avec environ 3,3 km, le tracé monégasque est le plus court, alors que celui de Spa dépasse les 7 km."
+    },
+    {
+      "ref": "f1-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Quel est le circuit le plus long du calendrier ?",
+      "answers": [
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Le Hungaroring", "isCorrect": false },
+        { "text": "Spa-Francorchamps", "isCorrect": true }
+      ],
+      "explanation": "Avec environ 7 km, Spa-Francorchamps est le plus long tracé de la saison."
+    },
+    {
+      "ref": "f1-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Quel Grand Prix se court à plus de 2 000 m d'altitude ?",
+      "answers": [
+        { "text": "Le Grand Prix du Brésil", "isCorrect": false },
+        { "text": "Le Grand Prix d'Autriche", "isCorrect": false },
+        { "text": "Le Grand Prix de Mexico", "isCorrect": true },
+        { "text": "Le Grand Prix des États-Unis", "isCorrect": false }
+      ],
+      "explanation": "À environ 2 200 m, l'air raréfié réduit l'appui aérodynamique et le refroidissement des moteurs."
+    },
+    {
+      "ref": "f1-022",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville américaine se trouve le Circuit des Amériques ?",
+      "answers": [
+        { "text": "Miami", "isCorrect": false },
+        { "text": "Austin", "isCorrect": true },
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "Indianapolis", "isCorrect": false }
+      ],
+      "explanation": "Inauguré en 2012 au Texas, c'est le premier circuit construit spécialement pour la F1 aux États-Unis."
+    },
+    {
+      "ref": "f1-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Sur quelle célèbre avenue passe le circuit de Las Vegas ?",
+      "answers": [
+        { "text": "Le Strip", "isCorrect": true },
+        { "text": "Broadway", "isCorrect": false },
+        { "text": "Sunset Boulevard", "isCorrect": false },
+        { "text": "Hollywood Boulevard", "isCorrect": false }
+      ],
+      "explanation": "Couru de nuit depuis 2023, le tracé longe les grands casinos du boulevard de Las Vegas."
+    },
+    {
+      "ref": "f1-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit urbain de Bakou ?",
+      "answers": [
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Géorgie", "isCorrect": false },
+        { "text": "Azerbaïdjan", "isCorrect": true }
+      ],
+      "explanation": "Il longe la mer Caspienne et se faufile dans la vieille ville, par un passage très étroit le long des remparts."
+    },
+    {
+      "ref": "f1-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Quel circuit accueille le Grand Prix d'Autriche ?",
+      "answers": [
+        { "text": "Le Salzburgring", "isCorrect": false },
+        { "text": "Le Hungaroring", "isCorrect": false },
+        { "text": "Le Red Bull Ring", "isCorrect": true },
+        { "text": "Le Sachsenring", "isCorrect": false }
+      ],
+      "explanation": "Situé à Spielberg, il a été racheté et rénové par Red Bull."
+    },
+    {
+      "ref": "f1-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Sur quel circuit se dispute le Grand Prix d'Italie ?",
+      "answers": [
+        { "text": "Imola", "isCorrect": false },
+        { "text": "Monza", "isCorrect": true },
+        { "text": "Mugello", "isCorrect": false },
+        { "text": "Vallelunga", "isCorrect": false }
+      ],
+      "explanation": "Monza a accueilli le Grand Prix d'Italie chaque année depuis 1950, sauf en 1980, où il s'est couru à Imola."
+    },
+    {
+      "ref": "f1-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Quel virage de Monza a été rebaptisé « Curva Alboreto » en 2021 ?",
+      "answers": [
+        { "text": "La Parabolica", "isCorrect": true },
+        { "text": "Lesmo", "isCorrect": false },
+        { "text": "Ascari", "isCorrect": false },
+        { "text": "Variante del Rettifilo", "isCorrect": false }
+      ],
+      "explanation": "Ce célèbre dernier virage porte désormais le nom de Michele Alboreto, pilote Ferrari mort en 2001."
+    },
+    {
+      "ref": "f1-028",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Sur quel circuit trouve-t-on le célèbre virage « 130R » ?",
+      "answers": [
+        { "text": "Spa-Francorchamps", "isCorrect": false },
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Interlagos", "isCorrect": false },
+        { "text": "Suzuka", "isCorrect": true }
+      ],
+      "explanation": "Son nom vient de son rayon de 130 mètres : c'est une courbe prise à très haute vitesse."
+    },
+    {
+      "ref": "f1-029",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Quel célèbre enchaînement de virages rapides se trouve à Silverstone ?",
+      "answers": [
+        { "text": "Eau Rouge - Raidillon", "isCorrect": false },
+        { "text": "Le S de Senna", "isCorrect": false },
+        { "text": "Maggotts - Becketts - Chapel", "isCorrect": true },
+        { "text": "Lesmo 1 - Lesmo 2", "isCorrect": false }
+      ],
+      "explanation": "Cet enchaînement en S est l'un des passages les plus exigeants physiquement de la saison."
+    },
+    {
+      "ref": "f1-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville d'Arabie saoudite se trouve le circuit du Grand Prix ?",
+      "answers": [
+        { "text": "Riyad", "isCorrect": false },
+        { "text": "Djeddah", "isCorrect": true },
+        { "text": "La Mecque", "isCorrect": false },
+        { "text": "Dammam", "isCorrect": false }
+      ],
+      "explanation": "Le circuit de la Corniche, au bord de la mer Rouge, est l'un des circuits urbains les plus rapides au monde."
+    },
+    {
+      "ref": "f1-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit", "histoire"],
+      "text": "Dans quel pays se trouve le circuit de Sakhir ?",
+      "answers": [
+        { "text": "Bahreïn", "isCorrect": true },
+        { "text": "Qatar", "isCorrect": false },
+        { "text": "Émirats arabes unis", "isCorrect": false },
+        { "text": "Arabie saoudite", "isCorrect": false }
+      ],
+      "explanation": "En 2004, il a accueilli le premier Grand Prix de l'histoire au Moyen-Orient."
+    },
+    {
+      "ref": "f1-032",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Autour de quelle enceinte se court le Grand Prix de Miami ?",
+      "answers": [
+        { "text": "Le circuit d'Indianapolis", "isCorrect": false },
+        { "text": "Le port de Miami", "isCorrect": false },
+        { "text": "L'aéroport international de Miami", "isCorrect": false },
+        { "text": "Le stade des Miami Dolphins", "isCorrect": true }
+      ],
+      "explanation": "Le Hard Rock Stadium, domicile de l'équipe de football américain, est au centre du tracé depuis 2022."
+    },
+    {
+      "ref": "f1-033",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Sur quel circuit trouve-t-on l'épingle du Fairmont, le virage le plus lent du championnat ?",
+      "answers": [
+        { "text": "Singapour", "isCorrect": false },
+        { "text": "Bakou", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": true },
+        { "text": "Las Vegas", "isCorrect": false }
+      ],
+      "explanation": "Les pilotes la négocient à environ 50 km/h, en braquant au maximum."
+    },
+    {
+      "ref": "f1-034",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Quel passage emblématique les voitures empruntent-elles à Monaco ?",
+      "answers": [
+        { "text": "Un pont-levis", "isCorrect": false },
+        { "text": "Un tunnel", "isCorrect": true },
+        { "text": "Une gare", "isCorrect": false },
+        { "text": "Un parking souterrain", "isCorrect": false }
+      ],
+      "explanation": "Sous l'hôtel Fairmont, les pilotes passent de l'ombre à la lumière à plus de 250 km/h."
+    },
+    {
+      "ref": "f1-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "france"],
+      "text": "Dans quelle région française se trouve le circuit Paul-Ricard ?",
+      "answers": [
+        { "text": "Provence-Alpes-Côte d'Azur", "isCorrect": true },
+        { "text": "Occitanie", "isCorrect": false },
+        { "text": "Nouvelle-Aquitaine", "isCorrect": false },
+        { "text": "Auvergne-Rhône-Alpes", "isCorrect": false }
+      ],
+      "explanation": "Situé au Castellet, dans le Var, il a accueilli le dernier Grand Prix de France, en 2022."
+    },
+    {
+      "ref": "f1-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "france"],
+      "text": "Sur quel circuit de la Nièvre s'est disputé le Grand Prix de France de 1991 à 2008 ?",
+      "answers": [
+        { "text": "Dijon-Prenois", "isCorrect": false },
+        { "text": "Le Castellet", "isCorrect": false },
+        { "text": "Reims-Gueux", "isCorrect": false },
+        { "text": "Magny-Cours", "isCorrect": true }
+      ],
+      "explanation": "Le circuit de Nevers Magny-Cours a accueilli dix-huit éditions consécutives."
+    },
+    {
+      "ref": "f1-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit", "france", "histoire"],
+      "text": "Sur quel circuit, près de Clermont-Ferrand, la F1 a-t-elle couru à quatre reprises ?",
+      "answers": [
+        { "text": "Rouen-les-Essarts", "isCorrect": false },
+        { "text": "Dijon-Prenois", "isCorrect": false },
+        { "text": "Charade", "isCorrect": true },
+        { "text": "Montlhéry", "isCorrect": false }
+      ],
+      "explanation": "Ce tracé tortueux sur les flancs d'un ancien volcan a accueilli le Grand Prix de France en 1965, 1969, 1970 et 1972."
+    },
+    {
+      "ref": "f1-038",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit", "france", "histoire"],
+      "text": "Sur quel circuit s'est déroulé en 1979 le célèbre duel Villeneuve - Arnoux, le jour de la première victoire d'un moteur turbo ?",
+      "answers": [
+        { "text": "Magny-Cours", "isCorrect": false },
+        { "text": "Dijon-Prenois", "isCorrect": true },
+        { "text": "Le Castellet", "isCorrect": false },
+        { "text": "Reims-Gueux", "isCorrect": false }
+      ],
+      "explanation": "Jean-Pierre Jabouille y offre à Renault sa première victoire, pendant que Gilles Villeneuve et René Arnoux se battent roue contre roue pour la 2e place."
+    },
+    {
+      "ref": "f1-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Sur quel circuit américain, célèbre pour son ovale, la F1 a-t-elle couru de 2000 à 2007 ?",
+      "answers": [
+        { "text": "Indianapolis", "isCorrect": true },
+        { "text": "Daytona", "isCorrect": false },
+        { "text": "Laguna Seca", "isCorrect": false },
+        { "text": "Watkins Glen", "isCorrect": false }
+      ],
+      "explanation": "Le tracé utilisait une partie de l'anneau des 500 Miles d'Indianapolis."
+    },
+    {
+      "ref": "f1-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit de Losail ?",
+      "answers": [
+        { "text": "Bahreïn", "isCorrect": false },
+        { "text": "Oman", "isCorrect": false },
+        { "text": "Koweït", "isCorrect": false },
+        { "text": "Qatar", "isCorrect": true }
+      ],
+      "explanation": "Construit à l'origine pour la moto, il a accueilli son premier Grand Prix de F1 en 2021."
+    },
+    {
+      "ref": "f1-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville se dispute le Grand Prix de Chine ?",
+      "answers": [
+        { "text": "Pékin", "isCorrect": false },
+        { "text": "Hong Kong", "isCorrect": false },
+        { "text": "Shanghai", "isCorrect": true },
+        { "text": "Canton", "isCorrect": false }
+      ],
+      "explanation": "Depuis 2004, il se court sur un circuit dont le tracé dessine le caractère chinois « shang »."
+    },
+    {
+      "ref": "f1-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Où se trouve le circuit de Barcelone-Catalogne ?",
+      "answers": [
+        { "text": "À Valence", "isCorrect": false },
+        { "text": "À Montmeló", "isCorrect": true },
+        { "text": "À Jerez", "isCorrect": false },
+        { "text": "À Madrid", "isCorrect": false }
+      ],
+      "explanation": "Il a accueilli le Grand Prix d'Espagne sans interruption de 1991 à 2025."
+    },
+    {
+      "ref": "f1-043",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville-État se trouve le circuit de Marina Bay ?",
+      "answers": [
+        { "text": "Singapour", "isCorrect": true },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Hong Kong", "isCorrect": false },
+        { "text": "Bahreïn", "isCorrect": false }
+      ],
+      "explanation": "C'est un circuit urbain couru de nuit, réputé pour sa chaleur et son humidité étouffantes."
+    },
+    {
+      "ref": "f1-044",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Le Grand Prix de Monaco fait partie du championnat du monde depuis sa toute première saison, en 1950.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il s'est couru le 21 mai 1950, une semaine après la course inaugurale de Silverstone."
+    },
+    {
+      "ref": "f1-045",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Le circuit de Spa-Francorchamps se trouve en Suisse.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il se trouve en Belgique. La Suisse a même interdit les courses sur circuit après la catastrophe des 24 Heures du Mans en 1955."
+    },
+    {
+      "ref": "f1-046",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit", "histoire"],
+      "text": "Dans quel pays se trouvait le circuit de Kyalami ?",
+      "answers": [
+        { "text": "Kenya", "isCorrect": false },
+        { "text": "Afrique du Sud", "isCorrect": true },
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": false }
+      ],
+      "explanation": "Près de Johannesburg, il a accueilli le Grand Prix d'Afrique du Sud jusqu'en 1993."
+    },
+    {
+      "ref": "f1-047",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit", "histoire"],
+      "text": "Quel pays d'Afrique du Nord a accueilli un Grand Prix de F1 en 1958 ?",
+      "answers": [
+        { "text": "Maroc", "isCorrect": true },
+        { "text": "Algérie", "isCorrect": false },
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": false }
+      ],
+      "explanation": "Le circuit d'Aïn-Diab, près de Casablanca, n'a accueilli qu'une seule édition, qui a sacré Mike Hawthorn."
+    },
+    {
+      "ref": "f1-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["circuit"],
+      "text": "Dans quel pays se trouve le circuit d'Hockenheim ?",
+      "answers": [
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false },
+        { "text": "Allemagne", "isCorrect": true }
+      ],
+      "explanation": "Il a souvent accueilli le Grand Prix d'Allemagne, en alternance avec le Nürburgring."
+    },
+    {
+      "ref": "f1-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Quel est le nom complet du circuit d'Imola ?",
+      "answers": [
+        { "text": "Autodromo Nazionale di Monza", "isCorrect": false },
+        { "text": "Autodromo del Mugello", "isCorrect": false },
+        { "text": "Autodromo Enzo e Dino Ferrari", "isCorrect": true },
+        { "text": "Autodromo Ayrton Senna", "isCorrect": false }
+      ],
+      "explanation": "Il porte les noms d'Enzo Ferrari et de son fils Dino, mort jeune en 1956."
+    },
+    {
+      "ref": "f1-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Dans quel pays se courait en réalité le Grand Prix de Saint-Marin ?",
+      "answers": [
+        { "text": "Saint-Marin", "isCorrect": false },
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": false }
+      ],
+      "explanation": "Il se disputait sur le circuit d'Imola, en Italie : la petite république n'a pas de circuit."
+    },
+    {
+      "ref": "f1-051",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Le circuit de Suzuka appartient au constructeur automobile Honda.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Construit par Honda en 1962 comme piste d'essai, il accueille la F1 depuis 1987."
+    },
+    {
+      "ref": "f1-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Dans quelle ville se trouve l'Autódromo Hermanos Rodríguez ?",
+      "answers": [
+        { "text": "Monterrey", "isCorrect": false },
+        { "text": "Guadalajara", "isCorrect": false },
+        { "text": "Cancún", "isCorrect": false },
+        { "text": "Mexico", "isCorrect": true }
+      ],
+      "explanation": "Il rend hommage aux frères Ricardo et Pedro Rodríguez, deux pilotes mexicains de F1."
+    },
+    {
+      "ref": "f1-053",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Quelle est la particularité de la fin du tour au Grand Prix de Mexico ?",
+      "answers": [
+        { "text": "La piste passe sous une cascade", "isCorrect": false },
+        { "text": "La piste longe une plage", "isCorrect": false },
+        { "text": "La piste traverse un ancien stade de baseball", "isCorrect": true },
+        { "text": "La piste traverse un pont suspendu", "isCorrect": false }
+      ],
+      "explanation": "Dans le secteur du Foro Sol, les pilotes roulent au milieu des tribunes, où se tient aussi le podium."
+    },
+    {
+      "ref": "f1-054",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Lors de sa première édition en 2016, la course de Bakou s'appelait Grand Prix d'Europe.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle a pris le nom de Grand Prix d'Azerbaïdjan dès 2017."
+    },
+    {
+      "ref": "f1-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Combien de tours compte le Grand Prix de Monaco ?",
+      "answers": [
+        { "text": "78", "isCorrect": true },
+        { "text": "44", "isCorrect": false },
+        { "text": "53", "isCorrect": false },
+        { "text": "66", "isCorrect": false }
+      ],
+      "explanation": "Le circuit étant très court, il faut 78 tours pour couvrir environ 260 km."
+    },
+    {
+      "ref": "f1-056",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Combien de tours compte le Grand Prix de Belgique, à Spa ?",
+      "answers": [
+        { "text": "78", "isCorrect": false },
+        { "text": "57", "isCorrect": false },
+        { "text": "70", "isCorrect": false },
+        { "text": "44", "isCorrect": true }
+      ],
+      "explanation": "Comme le circuit est très long, il suffit de 44 tours pour dépasser les 305 km réglementaires."
+    },
+    {
+      "ref": "f1-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit"],
+      "text": "Sur quel circuit la piste passe-t-elle sous un hôtel dont la façade s'illumine de couleurs ?",
+      "answers": [
+        { "text": "Losail", "isCorrect": false },
+        { "text": "Sakhir", "isCorrect": false },
+        { "text": "Yas Marina", "isCorrect": true },
+        { "text": "Djeddah", "isCorrect": false }
+      ],
+      "explanation": "À Abou Dhabi, la piste passe sous le pont de l'hôtel W, au cœur de la marina."
+    },
+    {
+      "ref": "f1-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["circuit"],
+      "text": "Quel circuit, célèbre pour son « S de Senna », se trouve au Brésil ?",
+      "answers": [
+        { "text": "Jacarepaguá", "isCorrect": false },
+        { "text": "Interlagos", "isCorrect": true },
+        { "text": "Goiânia", "isCorrect": false },
+        { "text": "Curitiba", "isCorrect": false }
+      ],
+      "explanation": "Ce premier virage en descente porte le nom du triple champion du monde brésilien."
+    },
+    {
+      "ref": "f1-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["circuit", "histoire"],
+      "text": "Quel circuit a accueilli le plus de Grands Prix de l'histoire ?",
+      "answers": [
+        { "text": "Monza", "isCorrect": true },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Spa-Francorchamps", "isCorrect": false }
+      ],
+      "explanation": "Il n'a manqué qu'une seule saison depuis 1950, en 1980."
+    },
+    {
+      "ref": "f1-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Combien de points marque le vainqueur d'un Grand Prix ?",
+      "answers": [
+        { "text": "10", "isCorrect": false },
+        { "text": "20", "isCorrect": false },
+        { "text": "30", "isCorrect": false },
+        { "text": "25", "isCorrect": true }
+      ],
+      "explanation": "Depuis 2010, le barème attribue 25 points au vainqueur, puis 18, 15, 12, 10, 8, 6, 4, 2 et 1 point."
+    },
+    {
+      "ref": "f1-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de points marque le deuxième d'un Grand Prix ?",
+      "answers": [
+        { "text": "20", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "18", "isCorrect": true },
+        { "text": "22", "isCorrect": false }
+      ],
+      "explanation": "Le barème actuel donne 25 points au premier, 18 au deuxième et 15 au troisième."
+    },
+    {
+      "ref": "f1-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Jusqu'à quelle place les pilotes marquent-ils des points en Grand Prix ?",
+      "answers": [
+        { "text": "6e", "isCorrect": false },
+        { "text": "10e", "isCorrect": true },
+        { "text": "8e", "isCorrect": false },
+        { "text": "12e", "isCorrect": false }
+      ],
+      "explanation": "Les dix premiers marquent des points, de 25 pour le vainqueur à 1 pour le dixième."
+    },
+    {
+      "ref": "f1-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau à damier ?",
+      "answers": [
+        { "text": "La fin de la course", "isCorrect": true },
+        { "text": "Un danger sur la piste", "isCorrect": false },
+        { "text": "La course est interrompue", "isCorrect": false },
+        { "text": "Un pilote doit rentrer au stand", "isCorrect": false }
+      ],
+      "explanation": "Il est agité au passage du vainqueur, puis de tous les autres pilotes."
+    },
+    {
+      "ref": "f1-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau jaune ?",
+      "answers": [
+        { "text": "La fin de la course", "isCorrect": false },
+        { "text": "La piste est libre", "isCorrect": false },
+        { "text": "Un pilote plus rapide arrive derrière", "isCorrect": false },
+        { "text": "Danger, interdiction de dépasser", "isCorrect": true }
+      ],
+      "explanation": "Il signale un incident : les pilotes doivent ralentir et ne pas dépasser dans la zone."
+    },
+    {
+      "ref": "f1-065",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau rouge ?",
+      "answers": [
+        { "text": "Un pilote est disqualifié", "isCorrect": false },
+        { "text": "Il reste un tour", "isCorrect": false },
+        { "text": "La course ou la séance est interrompue", "isCorrect": true },
+        { "text": "La piste est glissante", "isCorrect": false }
+      ],
+      "explanation": "Tous les pilotes doivent ralentir et rejoindre la voie des stands."
+    },
+    {
+      "ref": "f1-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau bleu montré à un pilote ?",
+      "answers": [
+        { "text": "Il doit rentrer au stand", "isCorrect": false },
+        { "text": "Il doit laisser passer une voiture qui va lui prendre un tour", "isCorrect": true },
+        { "text": "Il a reçu une pénalité", "isCorrect": false },
+        { "text": "Il est en tête de la course", "isCorrect": false }
+      ],
+      "explanation": "Le pilote attardé doit céder le passage rapidement, sous peine de sanction."
+    },
+    {
+      "ref": "f1-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau noir montré avec le numéro d'un pilote ?",
+      "answers": [
+        { "text": "Il est disqualifié", "isCorrect": true },
+        { "text": "Il a gagné", "isCorrect": false },
+        { "text": "Il doit faire un arrêt obligatoire", "isCorrect": false },
+        { "text": "Il a battu le record du tour", "isCorrect": false }
+      ],
+      "explanation": "Le pilote doit rentrer immédiatement au stand : sa course est terminée."
+    },
+    {
+      "ref": "f1-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau partagé en diagonale en noir et blanc ?",
+      "answers": [
+        { "text": "La fin des essais", "isCorrect": false },
+        { "text": "Une voiture lente sur la piste", "isCorrect": false },
+        { "text": "Le dernier tour", "isCorrect": false },
+        { "text": "Un avertissement pour comportement antisportif", "isCorrect": true }
+      ],
+      "explanation": "C'est un dernier avertissement : en cas de récidive, le pilote risque une pénalité."
+    },
+    {
+      "ref": "f1-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau noir avec un disque orange ?",
+      "answers": [
+        { "text": "Le pilote est disqualifié", "isCorrect": false },
+        { "text": "Il pleut sur une partie du circuit", "isCorrect": false },
+        { "text": "La voiture a un problème mécanique et doit rentrer au stand", "isCorrect": true },
+        { "text": "La voiture de sécurité va entrer", "isCorrect": false }
+      ],
+      "explanation": "Il signale par exemple une pièce qui pend ou un risque d'incendie."
+    },
+    {
+      "ref": "f1-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que signifie le drapeau vert ?",
+      "answers": [
+        { "text": "Il reste cinq tours", "isCorrect": false },
+        { "text": "La piste est dégagée", "isCorrect": true },
+        { "text": "Un pilote doit s'arrêter", "isCorrect": false },
+        { "text": "La pluie arrive", "isCorrect": false }
+      ],
+      "explanation": "Il marque la fin d'une zone de danger : les pilotes peuvent de nouveau attaquer et dépasser."
+    },
+    {
+      "ref": "f1-071",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que signale le drapeau à bandes rouges et jaunes ?",
+      "answers": [
+        { "text": "Une piste glissante", "isCorrect": true },
+        { "text": "Un pilote disqualifié", "isCorrect": false },
+        { "text": "La fin de la course", "isCorrect": false },
+        { "text": "L'entrée de la voiture de sécurité", "isCorrect": false }
+      ],
+      "explanation": "Il avertit d'une surface glissante, à cause d'huile, d'eau ou de débris."
+    },
+    {
+      "ref": "f1-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle", "technique"],
+      "text": "Que signifie le sigle DRS ?",
+      "answers": [
+        { "text": "Driver Racing Speed", "isCorrect": false },
+        { "text": "Direct Rear Steering", "isCorrect": false },
+        { "text": "Dynamic Race Strategy", "isCorrect": false },
+        { "text": "Drag Reduction System", "isCorrect": true }
+      ],
+      "explanation": "Introduit en 2011, ce dispositif ouvre un volet de l'aileron arrière pour réduire la traînée et faciliter les dépassements."
+    },
+    {
+      "ref": "f1-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "À quel écart maximal du pilote qui le précède faut-il être pour utiliser le DRS ?",
+      "answers": [
+        { "text": "3 secondes", "isCorrect": false },
+        { "text": "0,5 seconde", "isCorrect": false },
+        { "text": "1 seconde", "isCorrect": true },
+        { "text": "2 secondes", "isCorrect": false }
+      ],
+      "explanation": "L'écart est mesuré à un point de détection, et le DRS ne s'ouvre que dans les zones prévues."
+    },
+    {
+      "ref": "f1-074",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que désigne la « pole position » ?",
+      "answers": [
+        { "text": "Le dernier tour de la course", "isCorrect": false },
+        { "text": "La première place sur la grille de départ", "isCorrect": true },
+        { "text": "Le meilleur tour en course", "isCorrect": false },
+        { "text": "La ligne d'arrivée", "isCorrect": false }
+      ],
+      "explanation": "Elle revient au pilote le plus rapide des qualifications."
+    },
+    {
+      "ref": "f1-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "En combien de séances se déroulent les qualifications ?",
+      "answers": [
+        { "text": "3", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "Les plus lents sont éliminés à la fin de Q1 et de Q2, et les dix meilleurs se disputent la pole en Q3."
+    },
+    {
+      "ref": "f1-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de pilotes participent à la Q3 ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "10", "isCorrect": true }
+      ],
+      "explanation": "Les dix pilotes restants se disputent la pole position."
+    },
+    {
+      "ref": "f1-077",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que dit la « règle des 107 % » ?",
+      "answers": [
+        { "text": "Un moteur ne peut pas dépasser 107 % de sa puissance", "isCorrect": false },
+        { "text": "Une course s'arrête à 107 % de la distance prévue", "isCorrect": false },
+        { "text": "Un pilote trop lent en qualifications peut être interdit de départ", "isCorrect": true },
+        { "text": "Un pilote doit avoir fait 107 % des tours d'essais", "isCorrect": false }
+      ],
+      "explanation": "Un pilote dont le temps en Q1 dépasse de plus de 7 % celui du meilleur peut ne pas être autorisé à prendre le départ."
+    },
+    {
+      "ref": "f1-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il lorsque la voiture de sécurité entre en piste ?",
+      "answers": [
+        { "text": "La course est terminée", "isCorrect": false },
+        { "text": "Les pilotes la suivent en file sans dépasser", "isCorrect": true },
+        { "text": "Les pilotes doivent tous changer de pneus", "isCorrect": false },
+        { "text": "Le classement est inversé", "isCorrect": false }
+      ],
+      "explanation": "Elle neutralise la course le temps de dégager un incident."
+    },
+    {
+      "ref": "f1-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que signifie le sigle VSC ?",
+      "answers": [
+        { "text": "Virtual Safety Car", "isCorrect": true },
+        { "text": "Very Slow Car", "isCorrect": false },
+        { "text": "Victory Safety Code", "isCorrect": false },
+        { "text": "Vehicle Speed Control", "isCorrect": false }
+      ],
+      "explanation": "Avec la voiture de sécurité virtuelle, les pilotes doivent respecter un temps minimal, sans voiture devant eux."
+    },
+    {
+      "ref": "f1-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "histoire", "france"],
+      "text": "Quel accident a conduit à créer la voiture de sécurité virtuelle ?",
+      "answers": [
+        { "text": "Celui d'Ayrton Senna à Imola en 1994", "isCorrect": false },
+        { "text": "Celui de Romain Grosjean à Bahreïn en 2020", "isCorrect": false },
+        { "text": "Celui de Niki Lauda au Nürburgring en 1976", "isCorrect": false },
+        { "text": "Celui de Jules Bianchi à Suzuka en 2014", "isCorrect": true }
+      ],
+      "explanation": "Bianchi avait percuté un engin de levage sous drapeau jaune. La VSC est utilisée depuis 2015 pour imposer un ralentissement."
+    },
+    {
+      "ref": "f1-081",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel fabricant fournit les pneus de tous les pilotes de F1 ?",
+      "answers": [
+        { "text": "Michelin", "isCorrect": false },
+        { "text": "Bridgestone", "isCorrect": false },
+        { "text": "Pirelli", "isCorrect": true },
+        { "text": "Goodyear", "isCorrect": false }
+      ],
+      "explanation": "Il est le fournisseur unique depuis 2011."
+    },
+    {
+      "ref": "f1-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "Quelle couleur indique les pneus tendres ?",
+      "answers": [
+        { "text": "Jaune", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": true },
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Bleu", "isCorrect": false }
+      ],
+      "explanation": "Tendres en rouge, médiums en jaune, durs en blanc."
+    },
+    {
+      "ref": "f1-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "Quelle couleur indique les pneus durs ?",
+      "answers": [
+        { "text": "Blanc", "isCorrect": true },
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Jaune", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false }
+      ],
+      "explanation": "Les pneus durs s'usent moins vite, mais offrent moins d'adhérence que les tendres (rouges) et les médiums (jaunes)."
+    },
+    {
+      "ref": "f1-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "Quelle couleur indique les pneus intermédiaires ?",
+      "answers": [
+        { "text": "Bleu", "isCorrect": false },
+        { "text": "Jaune", "isCorrect": false },
+        { "text": "Blanc", "isCorrect": false },
+        { "text": "Vert", "isCorrect": true }
+      ],
+      "explanation": "Ils servent sur piste humide. Les pneus pluie, pour les fortes averses, sont bleus."
+    },
+    {
+      "ref": "f1-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Sur piste sèche, que doit faire chaque pilote pendant la course ?",
+      "answers": [
+        { "text": "Faire au moins trois arrêts au stand", "isCorrect": false },
+        { "text": "Partir en pneus tendres", "isCorrect": false },
+        { "text": "Utiliser au moins deux types de pneus secs différents", "isCorrect": true },
+        { "text": "Changer de pneus tous les 20 tours", "isCorrect": false }
+      ],
+      "explanation": "Cette règle impose au moins un arrêt au stand."
+    },
+    {
+      "ref": "f1-086",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle", "histoire"],
+      "text": "Le ravitaillement en essence pendant la course est interdit en F1 depuis 2010.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les voitures partent avec tout le carburant nécessaire, et les arrêts ne servent qu'à changer les pneus."
+    },
+    {
+      "ref": "f1-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que signifie l'expression « parc fermé » ?",
+      "answers": [
+        { "text": "Les voitures ne peuvent presque plus être modifiées entre les qualifications et la course", "isCorrect": true },
+        { "text": "Le paddock est fermé au public", "isCorrect": false },
+        { "text": "Les pilotes ne peuvent plus parler à la presse", "isCorrect": false },
+        { "text": "Le circuit est fermé pour travaux", "isCorrect": false }
+      ],
+      "explanation": "Les réglages sont figés : seules quelques interventions sont autorisées, sous contrôle."
+    },
+    {
+      "ref": "f1-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Depuis quelle année les pilotes choisissent-ils un numéro permanent pour toute leur carrière ?",
+      "answers": [
+        { "text": "1950", "isCorrect": false },
+        { "text": "2000", "isCorrect": false },
+        { "text": "2021", "isCorrect": false },
+        { "text": "2014", "isCorrect": true }
+      ],
+      "explanation": "Le numéro 1 reste réservé au champion du monde en titre, s'il souhaite l'utiliser."
+    },
+    {
+      "ref": "f1-089",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel numéro le champion du monde en titre a-t-il le droit d'utiliser ?",
+      "answers": [
+        { "text": "0", "isCorrect": false },
+        { "text": "100", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "99", "isCorrect": false }
+      ],
+      "explanation": "Il peut aussi garder son numéro habituel, comme l'a fait Lewis Hamilton avec le 44."
+    },
+    {
+      "ref": "f1-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de points de pénalité sur la superlicence entraînent une suspension d'une course ?",
+      "answers": [
+        { "text": "6 points en 6 mois", "isCorrect": false },
+        { "text": "12 points en 12 mois", "isCorrect": true },
+        { "text": "20 points en un an", "isCorrect": false },
+        { "text": "3 points en un week-end", "isCorrect": false }
+      ],
+      "explanation": "Les points s'accumulent à chaque infraction et s'effacent au bout de 12 mois."
+    },
+    {
+      "ref": "f1-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "En quelle année les courses sprint ont-elles été introduites en F1 ?",
+      "answers": [
+        { "text": "2021", "isCorrect": true },
+        { "text": "2010", "isCorrect": false },
+        { "text": "2015", "isCorrect": false },
+        { "text": "2024", "isCorrect": false }
+      ],
+      "explanation": "La première a eu lieu à Silverstone, avec des points pour les premiers classés."
+    },
+    {
+      "ref": "f1-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Combien de points marque le vainqueur d'une course sprint ?",
+      "answers": [
+        { "text": "25", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "Le barème va de 8 points pour le vainqueur à 1 point pour le huitième."
+    },
+    {
+      "ref": "f1-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de pilotes prenaient le départ d'un Grand Prix en 2025 ?",
+      "answers": [
+        { "text": "22", "isCorrect": false },
+        { "text": "24", "isCorrect": false },
+        { "text": "20", "isCorrect": true },
+        { "text": "18", "isCorrect": false }
+      ],
+      "explanation": "Dix écuries engageaient chacune deux voitures."
+    },
+    {
+      "ref": "f1-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "Quel dispositif de protection au-dessus de la tête des pilotes est obligatoire depuis 2018 ?",
+      "answers": [
+        { "text": "Le HANS", "isCorrect": false },
+        { "text": "Le halo", "isCorrect": true },
+        { "text": "Le cockpit fermé", "isCorrect": false },
+        { "text": "La bulle", "isCorrect": false }
+      ],
+      "explanation": "Cet arceau en titane a sauvé plusieurs pilotes, dont Romain Grosjean à Bahreïn en 2020."
+    },
+    {
+      "ref": "f1-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "À quoi sert le système HANS ?",
+      "answers": [
+        { "text": "À protéger la tête et le cou en cas de choc", "isCorrect": true },
+        { "text": "À communiquer par radio", "isCorrect": false },
+        { "text": "À mesurer la vitesse", "isCorrect": false },
+        { "text": "À freiner en urgence", "isCorrect": false }
+      ],
+      "explanation": "Obligatoire depuis 2003, il relie le casque aux épaules pour limiter les mouvements violents de la tête."
+    },
+    {
+      "ref": "f1-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quelle limite s'applique aux dépenses des écuries depuis 2021 ?",
+      "answers": [
+        { "text": "La taxe moteur", "isCorrect": false },
+        { "text": "Le quota d'ingénieurs", "isCorrect": false },
+        { "text": "La limite de sponsors", "isCorrect": false },
+        { "text": "Le plafond budgétaire", "isCorrect": true }
+      ],
+      "explanation": "Il plafonne une grande partie des dépenses annuelles, pour réduire l'écart entre grandes et petites équipes."
+    },
+    {
+      "ref": "f1-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Quel organisme réglemente le championnat du monde de F1 ?",
+      "answers": [
+        { "text": "L'UEFA", "isCorrect": false },
+        { "text": "Le CIO", "isCorrect": false },
+        { "text": "La FIA", "isCorrect": true },
+        { "text": "L'ACO", "isCorrect": false }
+      ],
+      "explanation": "La Fédération internationale de l'automobile a son siège à Paris, place de la Concorde."
+    },
+    {
+      "ref": "f1-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que doit faire un pilote qui reçoit une pénalité « drive-through » ?",
+      "answers": [
+        { "text": "Repartir du fond de la grille", "isCorrect": false },
+        { "text": "Traverser la voie des stands sans s'arrêter", "isCorrect": true },
+        { "text": "Faire un tour supplémentaire", "isCorrect": false },
+        { "text": "S'arrêter 10 secondes dans son garage", "isCorrect": false }
+      ],
+      "explanation": "Il perd le temps de la traversée, car la vitesse est limitée dans la voie des stands."
+    },
+    {
+      "ref": "f1-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Quelle est la durée maximale d'un Grand Prix en conditions normales ?",
+      "answers": [
+        { "text": "2 heures", "isCorrect": true },
+        { "text": "1 heure", "isCorrect": false },
+        { "text": "3 heures", "isCorrect": false },
+        { "text": "4 heures", "isCorrect": false }
+      ],
+      "explanation": "Au-delà, la course s'arrête à la fin du tour en cours, même si la distance prévue n'est pas atteinte."
+    },
+    {
+      "ref": "f1-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelle distance minimale couvre un Grand Prix, sauf à Monaco ?",
+      "answers": [
+        { "text": "Environ 200 km", "isCorrect": false },
+        { "text": "Environ 400 km", "isCorrect": false },
+        { "text": "Environ 500 km", "isCorrect": false },
+        { "text": "Environ 305 km", "isCorrect": true }
+      ],
+      "explanation": "Le nombre de tours est calculé pour dépasser 305 km. Monaco fait exception, avec environ 260 km."
+    },
+    {
+      "ref": "f1-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Quelle est la vitesse maximale habituelle dans la voie des stands ?",
+      "answers": [
+        { "text": "50 km/h", "isCorrect": false },
+        { "text": "120 km/h", "isCorrect": false },
+        { "text": "80 km/h", "isCorrect": true },
+        { "text": "150 km/h", "isCorrect": false }
+      ],
+      "explanation": "Elle peut être abaissée à 60 km/h sur certains circuits étroits, comme Monaco."
+    },
+    {
+      "ref": "f1-102",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Depuis 2025, le meilleur tour en course ne rapporte plus de point bonus.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ce point, réintroduit en 2019, a été supprimé à partir de la saison 2025."
+    },
+    {
+      "ref": "f1-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "histoire"],
+      "text": "En 1950, combien de points recevait le vainqueur d'un Grand Prix ?",
+      "answers": [
+        { "text": "8", "isCorrect": true },
+        { "text": "25", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "9", "isCorrect": false }
+      ],
+      "explanation": "Le barème était de 8, 6, 4, 3 et 2 points, plus un point pour le meilleur tour."
+    },
+    {
+      "ref": "f1-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "histoire"],
+      "text": "Combien de points recevait le vainqueur d'un Grand Prix de 1991 à 2009 ?",
+      "answers": [
+        { "text": "9", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "25", "isCorrect": false },
+        { "text": "10", "isCorrect": true }
+      ],
+      "explanation": "Le barème à 25 points n'est apparu qu'en 2010."
+    },
+    {
+      "ref": "f1-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que signifie l'ordre radio « Box, box » ?",
+      "answers": [
+        { "text": "Le pilote doit attaquer", "isCorrect": false },
+        { "text": "Le pilote doit laisser passer son coéquipier", "isCorrect": false },
+        { "text": "Le pilote doit rentrer au stand", "isCorrect": true },
+        { "text": "La course est finie", "isCorrect": false }
+      ],
+      "explanation": "« Box » vient sans doute de l'allemand « Boxenstopp », l'arrêt au stand."
+    },
+    {
+      "ref": "f1-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Que veut dire « undercut » ?",
+      "answers": [
+        { "text": "Dépasser par l'intérieur d'un virage", "isCorrect": false },
+        { "text": "S'arrêter au stand avant un rival pour le doubler grâce aux pneus neufs", "isCorrect": true },
+        { "text": "Couper une chicane", "isCorrect": false },
+        { "text": "Partir avant le feu vert", "isCorrect": false }
+      ],
+      "explanation": "Avec des pneus neufs, le pilote gagne du temps pendant que son rival roule encore sur des pneus usés."
+    },
+    {
+      "ref": "f1-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de feux rouges s'allument avant le départ d'un Grand Prix ?",
+      "answers": [
+        { "text": "5", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "Le départ est donné quand les cinq feux s'éteignent."
+    },
+    {
+      "ref": "f1-108",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que risque un pilote qui part avant l'extinction des feux ?",
+      "answers": [
+        { "text": "Une disqualification à vie", "isCorrect": false },
+        { "text": "Rien, le départ est simplement redonné", "isCorrect": false },
+        { "text": "Un retrait de points au championnat constructeurs", "isCorrect": false },
+        { "text": "Une pénalité pour faux départ", "isCorrect": true }
+      ],
+      "explanation": "Des capteurs sous la grille détectent tout mouvement prématuré."
+    },
+    {
+      "ref": "f1-109",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["regle"],
+      "text": "Que font les pilotes pendant le tour de formation ?",
+      "answers": [
+        { "text": "Ils se qualifient", "isCorrect": false },
+        { "text": "Ils font un arrêt au stand obligatoire", "isCorrect": false },
+        { "text": "Ils chauffent pneus et freins avant de reprendre leur place sur la grille", "isCorrect": true },
+        { "text": "Ils suivent la voiture médicale", "isCorrect": false }
+      ],
+      "explanation": "Ils n'ont pas le droit de dépasser, et zigzaguent souvent pour faire monter les pneus en température."
+    },
+    {
+      "ref": "f1-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle"],
+      "text": "Que se passe-t-il depuis 2022 lorsqu'une course est arrêtée avant d'avoir couvert 75 % de sa distance ?",
+      "answers": [
+        { "text": "La course est annulée", "isCorrect": false },
+        { "text": "Seule une partie des points est attribuée", "isCorrect": true },
+        { "text": "Tous les points sont attribués", "isCorrect": false },
+        { "text": "La course est recourue le lendemain", "isCorrect": false }
+      ],
+      "explanation": "Le nombre de points dépend de la distance parcourue, pour éviter un nouveau « Spa 2021 »."
+    },
+    {
+      "ref": "f1-111",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["regle", "circuit", "histoire"],
+      "text": "Quel Grand Prix de 2021 s'est résumé à deux tours derrière la voiture de sécurité ?",
+      "answers": [
+        { "text": "Belgique", "isCorrect": true },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Brésil", "isCorrect": false }
+      ],
+      "explanation": "Sous une pluie battante à Spa, la course n'a jamais vraiment eu lieu, et la moitié des points a été attribuée."
+    },
+    {
+      "ref": "f1-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "Quel type de moteur équipe les F1 depuis 2014 ?",
+      "answers": [
+        { "text": "Un V10 de 3 litres", "isCorrect": false },
+        { "text": "Un V8 de 2,4 litres", "isCorrect": false },
+        { "text": "Un V12 de 3,5 litres", "isCorrect": false },
+        { "text": "Un V6 turbo hybride de 1,6 litre", "isCorrect": true }
+      ],
+      "explanation": "Il associe un moteur thermique à des systèmes de récupération d'énergie électrique."
+    },
+    {
+      "ref": "f1-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle", "technique"],
+      "text": "Quel système, interdit en 1994, réglait automatiquement la hauteur de la voiture ?",
+      "answers": [
+        { "text": "Le DRS", "isCorrect": false },
+        { "text": "L'ERS", "isCorrect": false },
+        { "text": "La suspension active", "isCorrect": true },
+        { "text": "Le turbo", "isCorrect": false }
+      ],
+      "explanation": "La Williams FW14B de Nigel Mansell en était équipée lors de son titre en 1992."
+    },
+    {
+      "ref": "f1-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de voitures chaque écurie engage-t-elle en course ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Chaque écurie aligne deux pilotes titulaires, et peut faire appel à un pilote de réserve."
+    },
+    {
+      "ref": "f1-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Qu'est-ce qu'une « pénalité de grille » ?",
+      "answers": [
+        { "text": "Un recul de places sur la grille de départ", "isCorrect": true },
+        { "text": "Une amende pour l'écurie", "isCorrect": false },
+        { "text": "Un départ depuis la voie des stands obligatoire", "isCorrect": false },
+        { "text": "Un tour en moins pour le pilote", "isCorrect": false }
+      ],
+      "explanation": "Elle sanctionne souvent un changement de pièces moteur au-delà du nombre autorisé dans la saison."
+    },
+    {
+      "ref": "f1-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["regle"],
+      "text": "Combien de séances d'essais libres compte un week-end de Grand Prix classique ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": true }
+      ],
+      "explanation": "Elles servent à régler la voiture avant les qualifications du samedi."
+    },
+    {
+      "ref": "f1-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique"],
+      "text": "Quel type de moteur utilisaient les F1 de 2006 à 2013 ?",
+      "answers": [
+        { "text": "Un V6 turbo de 1,6 litre", "isCorrect": false },
+        { "text": "Un V10 de 3 litres", "isCorrect": false },
+        { "text": "Un V8 de 2,4 litres", "isCorrect": true },
+        { "text": "Un V12 de 3,5 litres", "isCorrect": false }
+      ],
+      "explanation": "Ces moteurs dépassaient les 18 000 tours par minute."
+    },
+    {
+      "ref": "f1-118",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["technique", "histoire"],
+      "text": "Jusqu'en quelle année les moteurs V10 ont-ils été la norme ?",
+      "answers": [
+        { "text": "1995", "isCorrect": false },
+        { "text": "2005", "isCorrect": true },
+        { "text": "2013", "isCorrect": false },
+        { "text": "2000", "isCorrect": false }
+      ],
+      "explanation": "Ils ont été remplacés par des V8 en 2006 (Toro Rosso a pu garder un V10 bridé cette année-là)."
+    },
+    {
+      "ref": "f1-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique"],
+      "text": "Que signifie le sigle ERS ?",
+      "answers": [
+        { "text": "Energy Recovery System", "isCorrect": true },
+        { "text": "Engine Rev Speed", "isCorrect": false },
+        { "text": "Electric Racing Software", "isCorrect": false },
+        { "text": "Emergency Return System", "isCorrect": false }
+      ],
+      "explanation": "Ce système récupère l'énergie au freinage et dans les gaz d'échappement pour la restituer sous forme électrique."
+    },
+    {
+      "ref": "f1-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique", "histoire"],
+      "text": "Qu'est-ce que l'« effet de sol » ?",
+      "answers": [
+        { "text": "Une suspension active", "isCorrect": false },
+        { "text": "Un pneu sans rainure", "isCorrect": false },
+        { "text": "Un moteur placé au centre", "isCorrect": false },
+        { "text": "Un appui aérodynamique créé sous la voiture", "isCorrect": true }
+      ],
+      "explanation": "Introduit par Lotus à la fin des années 1970, il est revenu au cœur du règlement en 2022."
+    },
+    {
+      "ref": "f1-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["technique", "ecurie", "histoire"],
+      "text": "Quelle écurie a utilisé en 1976 une voiture à six roues ?",
+      "answers": [
+        { "text": "Lotus", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Tyrrell", "isCorrect": true },
+        { "text": "March", "isCorrect": false }
+      ],
+      "explanation": "La Tyrrell P34 avait quatre petites roues à l'avant. Elle a même remporté le Grand Prix de Suède 1976."
+    },
+    {
+      "ref": "f1-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["technique", "ecurie", "histoire"],
+      "text": "Quelle voiture équipée d'un énorme ventilateur a gagné en 1978 avant d'être retirée ?",
+      "answers": [
+        { "text": "La Lotus 79", "isCorrect": false },
+        { "text": "La Brabham BT46B", "isCorrect": true },
+        { "text": "La Ferrari 312T", "isCorrect": false },
+        { "text": "La Tyrrell P34", "isCorrect": false }
+      ],
+      "explanation": "Le ventilateur aspirait la voiture vers le sol. Elle a gagné en Suède avec Niki Lauda, lors de sa seule course."
+    },
+    {
+      "ref": "f1-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique", "ecurie", "france", "histoire"],
+      "text": "Quel constructeur a introduit le moteur turbo en F1, en 1977 ?",
+      "answers": [
+        { "text": "Renault", "isCorrect": true },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Honda", "isCorrect": false },
+        { "text": "BMW", "isCorrect": false }
+      ],
+      "explanation": "Surnommée « la théière jaune » à cause de ses fumées, la Renault ouvre l'ère turbo, avant sa première victoire en 1979."
+    },
+    {
+      "ref": "f1-124",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique", "histoire"],
+      "text": "En quelle année les moteurs turbo ont-ils été interdits une première fois ?",
+      "answers": [
+        { "text": "1979", "isCorrect": false },
+        { "text": "2000", "isCorrect": false },
+        { "text": "2014", "isCorrect": false },
+        { "text": "1989", "isCorrect": true }
+      ],
+      "explanation": "Les moteurs atmosphériques sont devenus obligatoires en 1989, avant le retour du turbo en 2014."
+    },
+    {
+      "ref": "f1-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique"],
+      "text": "En quel matériau est principalement fait le châssis d'une F1 moderne ?",
+      "answers": [
+        { "text": "L'aluminium", "isCorrect": false },
+        { "text": "L'acier", "isCorrect": false },
+        { "text": "La fibre de carbone", "isCorrect": true },
+        { "text": "Le titane", "isCorrect": false }
+      ],
+      "explanation": "McLaren a introduit la première monocoque en carbone en 1981, avec la MP4/1."
+    },
+    {
+      "ref": "f1-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique"],
+      "text": "À quoi servaient les couvertures chauffantes utilisées dans les stands ?",
+      "answers": [
+        { "text": "À réchauffer les pilotes", "isCorrect": false },
+        { "text": "À chauffer les pneus avant de les monter", "isCorrect": true },
+        { "text": "À protéger la voiture de la pluie", "isCorrect": false },
+        { "text": "À refroidir le moteur", "isCorrect": false }
+      ],
+      "explanation": "Des pneus déjà chauds offrent tout de suite une meilleure adhérence."
+    },
+    {
+      "ref": "f1-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["technique"],
+      "text": "Combien de rapports compte la boîte de vitesses d'une F1 actuelle ?",
+      "answers": [
+        { "text": "8", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "Les passages de rapports se font en quelques millisecondes, par des palettes derrière le volant."
+    },
+    {
+      "ref": "f1-128",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["technique"],
+      "text": "Une F1 génère assez d'appui aérodynamique pour, en théorie, rouler au plafond à haute vitesse.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "À haute vitesse, l'appui dépasse le poids de la voiture : c'est l'image souvent utilisée pour l'expliquer."
+    },
+    {
+      "ref": "f1-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique"],
+      "text": "À quoi sert l'aileron avant d'une F1 ?",
+      "answers": [
+        { "text": "À freiner la voiture", "isCorrect": false },
+        { "text": "À refroidir le pilote", "isCorrect": false },
+        { "text": "À créer de l'appui et diriger l'air autour de la voiture", "isCorrect": true },
+        { "text": "À protéger les pneus des débris", "isCorrect": false }
+      ],
+      "explanation": "C'est la première pièce à rencontrer l'air : il conditionne l'aérodynamique de toute la voiture."
+    },
+    {
+      "ref": "f1-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["technique", "histoire"],
+      "text": "Dans les années 1950, où était généralement placé le moteur des F1 ?",
+      "answers": [
+        { "text": "Derrière le pilote", "isCorrect": false },
+        { "text": "À l'avant", "isCorrect": true },
+        { "text": "Sous le pilote", "isCorrect": false },
+        { "text": "Sur le côté", "isCorrect": false }
+      ],
+      "explanation": "Cooper a imposé le moteur arrière à la fin des années 1950, avec les titres de Jack Brabham en 1959 et 1960."
+    },
+    {
+      "ref": "f1-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["technique", "record"],
+      "text": "À quelle vitesse les F1 roulent-elles au bout de la ligne droite principale de Monza ?",
+      "answers": [
+        { "text": "Plus de 340 km/h", "isCorrect": true },
+        { "text": "Environ 250 km/h", "isCorrect": false },
+        { "text": "Environ 200 km/h", "isCorrect": false },
+        { "text": "Plus de 450 km/h", "isCorrect": false }
+      ],
+      "explanation": "C'est sur ce circuit que les voitures atteignent les vitesses les plus élevées de la saison."
+    },
+    {
+      "ref": "f1-132",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote", "histoire"],
+      "text": "Qui a été le premier champion du monde de F1, en 1950 ?",
+      "answers": [
+        { "text": "Juan Manuel Fangio", "isCorrect": false },
+        { "text": "Alberto Ascari", "isCorrect": false },
+        { "text": "Stirling Moss", "isCorrect": false },
+        { "text": "Giuseppe Farina", "isCorrect": true }
+      ],
+      "explanation": "L'Italien pilotait une Alfa Romeo."
+    },
+    {
+      "ref": "f1-133",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Combien de titres de champion du monde Michael Schumacher a-t-il remportés ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Deux avec Benetton (1994 et 1995) et cinq d'affilée avec Ferrari (de 2000 à 2004)."
+    },
+    {
+      "ref": "f1-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Combien de titres de champion du monde Lewis Hamilton a-t-il remportés ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "Un avec McLaren en 2008, puis six avec Mercedes (2014, 2015, 2017, 2018, 2019 et 2020)."
+    },
+    {
+      "ref": "f1-135",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote", "france"],
+      "text": "Quel est le seul Français champion du monde de F1 ?",
+      "answers": [
+        { "text": "Alain Prost", "isCorrect": true },
+        { "text": "Jean Alesi", "isCorrect": false },
+        { "text": "Didier Pironi", "isCorrect": false },
+        { "text": "René Arnoux", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté quatre titres : 1985, 1986, 1989 et 1993."
+    },
+    {
+      "ref": "f1-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "france"],
+      "text": "Combien de titres Alain Prost a-t-il remportés ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "4", "isCorrect": true }
+      ],
+      "explanation": "Trois avec McLaren (1985, 1986 et 1989), puis un avec Williams (1993)."
+    },
+    {
+      "ref": "f1-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie", "france"],
+      "text": "Avec quelle écurie Alain Prost a-t-il remporté son dernier titre, en 1993 ?",
+      "answers": [
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Williams", "isCorrect": true },
+        { "text": "Renault", "isCorrect": false }
+      ],
+      "explanation": "Il a pris sa retraite juste après ce quatrième titre."
+    },
+    {
+      "ref": "f1-138",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Qui a été sacré champion du monde en 2025 ?",
+      "answers": [
+        { "text": "Max Verstappen", "isCorrect": false },
+        { "text": "Lando Norris", "isCorrect": true },
+        { "text": "Oscar Piastri", "isCorrect": false },
+        { "text": "Charles Leclerc", "isCorrect": false }
+      ],
+      "explanation": "Le Britannique de McLaren a devancé Max Verstappen de deux points lors de la dernière course, à Abou Dhabi."
+    },
+    {
+      "ref": "f1-139",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Combien de titres consécutifs Max Verstappen a-t-il remportés de 2021 à 2024 ?",
+      "answers": [
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Tous avec Red Bull, avant d'être battu de deux points par Lando Norris en 2025."
+    },
+    {
+      "ref": "f1-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "histoire"],
+      "text": "Sur quel circuit Max Verstappen a-t-il décroché son premier titre, en 2021, au terme d'un dernier tour très controversé ?",
+      "answers": [
+        { "text": "Interlagos", "isCorrect": false },
+        { "text": "Suzuka", "isCorrect": false },
+        { "text": "Djeddah", "isCorrect": false },
+        { "text": "Abou Dhabi", "isCorrect": true }
+      ],
+      "explanation": "Il a doublé Lewis Hamilton dans le dernier tour, après une relance contestée derrière la voiture de sécurité."
+    },
+    {
+      "ref": "f1-141",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel pilote argentin a remporté cinq titres dans les années 1950 ?",
+      "answers": [
+        { "text": "José Froilán González", "isCorrect": false },
+        { "text": "Carlos Reutemann", "isCorrect": false },
+        { "text": "Juan Manuel Fangio", "isCorrect": true },
+        { "text": "Juan Pablo Montoya", "isCorrect": false }
+      ],
+      "explanation": "Il a été sacré en 1951, puis de 1954 à 1957."
+    },
+    {
+      "ref": "f1-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Avec combien d'écuries différentes Fangio a-t-il remporté ses cinq titres ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Alfa Romeo, Maserati, Mercedes et Ferrari."
+    },
+    {
+      "ref": "f1-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Quel pilote est devenu en 2010 le plus jeune champion du monde de l'histoire ?",
+      "answers": [
+        { "text": "Sebastian Vettel", "isCorrect": true },
+        { "text": "Lewis Hamilton", "isCorrect": false },
+        { "text": "Max Verstappen", "isCorrect": false },
+        { "text": "Fernando Alonso", "isCorrect": false }
+      ],
+      "explanation": "Avec Red Bull, il avait 23 ans et 134 jours."
+    },
+    {
+      "ref": "f1-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Combien de titres consécutifs Sebastian Vettel a-t-il remportés avec Red Bull ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "4", "isCorrect": true }
+      ],
+      "explanation": "De 2010 à 2013."
+    },
+    {
+      "ref": "f1-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Espagnol a été champion du monde en 2005 et 2006 ?",
+      "answers": [
+        { "text": "Carlos Sainz", "isCorrect": false },
+        { "text": "Pedro de la Rosa", "isCorrect": false },
+        { "text": "Fernando Alonso", "isCorrect": true },
+        { "text": "Jaime Alguersuari", "isCorrect": false }
+      ],
+      "explanation": "Avec Renault, il a mis fin à la série de cinq titres de Michael Schumacher."
+    },
+    {
+      "ref": "f1-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Finlandais surnommé « Iceman » a été sacré en 2007 avec Ferrari ?",
+      "answers": [
+        { "text": "Mika Häkkinen", "isCorrect": false },
+        { "text": "Kimi Räikkönen", "isCorrect": true },
+        { "text": "Valtteri Bottas", "isCorrect": false },
+        { "text": "Keke Rosberg", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté le titre avec un seul point d'avance sur Lewis Hamilton et Fernando Alonso."
+    },
+    {
+      "ref": "f1-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Finlandais a été champion du monde en 1998 et 1999 avec McLaren ?",
+      "answers": [
+        { "text": "Mika Häkkinen", "isCorrect": true },
+        { "text": "Kimi Räikkönen", "isCorrect": false },
+        { "text": "Keke Rosberg", "isCorrect": false },
+        { "text": "Heikki Kovalainen", "isCorrect": false }
+      ],
+      "explanation": "Surnommé « le Finlandais volant », il était le grand rival de Michael Schumacher."
+    },
+    {
+      "ref": "f1-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Avec quelle écurie Jenson Button a-t-il été champion du monde en 2009 ?",
+      "answers": [
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Honda", "isCorrect": false },
+        { "text": "Williams", "isCorrect": false },
+        { "text": "Brawn GP", "isCorrect": true }
+      ],
+      "explanation": "Cette écurie, née sur les restes de Honda, n'a couru qu'une seule saison."
+    },
+    {
+      "ref": "f1-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel pilote a pris sa retraite cinq jours après avoir été sacré champion du monde en 2016 ?",
+      "answers": [
+        { "text": "Jenson Button", "isCorrect": false },
+        { "text": "Felipe Massa", "isCorrect": false },
+        { "text": "Nico Rosberg", "isCorrect": true },
+        { "text": "Mark Webber", "isCorrect": false }
+      ],
+      "explanation": "Il venait de battre son coéquipier Lewis Hamilton chez Mercedes."
+    },
+    {
+      "ref": "f1-150",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quels sont les deux duos père-fils champions du monde de F1 ?",
+      "answers": [
+        { "text": "Gilles et Jacques Villeneuve, Graham et Damon Hill", "isCorrect": false },
+        { "text": "Graham et Damon Hill, Keke et Nico Rosberg", "isCorrect": true },
+        { "text": "Keke et Nico Rosberg, Jos et Max Verstappen", "isCorrect": false },
+        { "text": "Michael et Mick Schumacher, Graham et Damon Hill", "isCorrect": false }
+      ],
+      "explanation": "Gilles Villeneuve, Jos Verstappen et Mick Schumacher n'ont jamais été champions du monde."
+    },
+    {
+      "ref": "f1-151",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Canadien a été champion du monde en 1997 ?",
+      "answers": [
+        { "text": "Jacques Villeneuve", "isCorrect": true },
+        { "text": "Gilles Villeneuve", "isCorrect": false },
+        { "text": "Lance Stroll", "isCorrect": false },
+        { "text": "Nicholas Latifi", "isCorrect": false }
+      ],
+      "explanation": "Avec Williams, il a battu Michael Schumacher lors d'une finale tendue à Jerez."
+    },
+    {
+      "ref": "f1-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Combien de titres Ayrton Senna a-t-il remportés ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "3", "isCorrect": true }
+      ],
+      "explanation": "En 1988, 1990 et 1991, tous avec McLaren."
+    },
+    {
+      "ref": "f1-153",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Combien de titres Niki Lauda a-t-il remportés ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "1", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "En 1975 et 1977 avec Ferrari, puis en 1984 avec McLaren."
+    },
+    {
+      "ref": "f1-154",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Avec combien de points d'avance Niki Lauda a-t-il battu Alain Prost pour le titre 1984 ?",
+      "answers": [
+        { "text": "Un point", "isCorrect": false },
+        { "text": "Un demi-point", "isCorrect": true },
+        { "text": "Cinq points", "isCorrect": false },
+        { "text": "Dix points", "isCorrect": false }
+      ],
+      "explanation": "C'est le plus petit écart de l'histoire : le Grand Prix de Monaco, interrompu, n'avait distribué que la moitié des points."
+    },
+    {
+      "ref": "f1-155",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "histoire"],
+      "text": "Quel Britannique a été sacré en 1976 après un duel célèbre avec Niki Lauda ?",
+      "answers": [
+        { "text": "James Hunt", "isCorrect": true },
+        { "text": "Jackie Stewart", "isCorrect": false },
+        { "text": "Nigel Mansell", "isCorrect": false },
+        { "text": "Graham Hill", "isCorrect": false }
+      ],
+      "explanation": "Il a pris le titre pour un point, lors de la dernière course, disputée sous le déluge au Japon."
+    },
+    {
+      "ref": "f1-156",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Brésilien a été champion du monde en 1981, 1983 et 1987 ?",
+      "answers": [
+        { "text": "Emerson Fittipaldi", "isCorrect": false },
+        { "text": "Ayrton Senna", "isCorrect": false },
+        { "text": "Rubens Barrichello", "isCorrect": false },
+        { "text": "Nelson Piquet", "isCorrect": true }
+      ],
+      "explanation": "Deux titres avec Brabham, puis un avec Williams."
+    },
+    {
+      "ref": "f1-157",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Brésilien a remporté les titres de 1972 et 1974 ?",
+      "answers": [
+        { "text": "Nelson Piquet", "isCorrect": false },
+        { "text": "Ayrton Senna", "isCorrect": false },
+        { "text": "Emerson Fittipaldi", "isCorrect": true },
+        { "text": "Carlos Pace", "isCorrect": false }
+      ],
+      "explanation": "En 1972, avec Lotus, il est devenu le plus jeune champion de l'époque."
+    },
+    {
+      "ref": "f1-158",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Écossais a remporté trois titres, en 1969, 1971 et 1973 ?",
+      "answers": [
+        { "text": "Jim Clark", "isCorrect": false },
+        { "text": "Jackie Stewart", "isCorrect": true },
+        { "text": "David Coulthard", "isCorrect": false },
+        { "text": "Paul di Resta", "isCorrect": false }
+      ],
+      "explanation": "Il s'est aussi beaucoup battu pour améliorer la sécurité des circuits."
+    },
+    {
+      "ref": "f1-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Écossais a été sacré en 1963 et 1965 avec Lotus ?",
+      "answers": [
+        { "text": "Jim Clark", "isCorrect": true },
+        { "text": "Jackie Stewart", "isCorrect": false },
+        { "text": "Innes Ireland", "isCorrect": false },
+        { "text": "David Coulthard", "isCorrect": false }
+      ],
+      "explanation": "En 1965, il a aussi remporté les 500 Miles d'Indianapolis."
+    },
+    {
+      "ref": "f1-160",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "histoire"],
+      "text": "Quel pilote est le seul à avoir été sacré champion du monde à titre posthume ?",
+      "answers": [
+        { "text": "Gilles Villeneuve", "isCorrect": false },
+        { "text": "Jim Clark", "isCorrect": false },
+        { "text": "Ronnie Peterson", "isCorrect": false },
+        { "text": "Jochen Rindt", "isCorrect": true }
+      ],
+      "explanation": "Il s'est tué à Monza en 1970, mais son avance au championnat est restée suffisante."
+    },
+    {
+      "ref": "f1-161",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Quel pilote est le seul champion du monde à la fois en moto (catégorie reine) et en F1 ?",
+      "answers": [
+        { "text": "Mike Hailwood", "isCorrect": false },
+        { "text": "Valentino Rossi", "isCorrect": false },
+        { "text": "John Surtees", "isCorrect": true },
+        { "text": "Graham Hill", "isCorrect": false }
+      ],
+      "explanation": "Sacré en F1 avec Ferrari en 1964, il avait déjà remporté sept titres mondiaux en moto."
+    },
+    {
+      "ref": "f1-162",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "ecurie", "record"],
+      "text": "Quel pilote a été champion du monde en 1966 au volant d'une voiture portant son propre nom ?",
+      "answers": [
+        { "text": "Bruce McLaren", "isCorrect": false },
+        { "text": "Jack Brabham", "isCorrect": true },
+        { "text": "John Surtees", "isCorrect": false },
+        { "text": "Graham Hill", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul à avoir réussi cet exploit."
+    },
+    {
+      "ref": "f1-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Britannique a été sacré en 1992 avec Williams ?",
+      "answers": [
+        { "text": "Nigel Mansell", "isCorrect": true },
+        { "text": "Damon Hill", "isCorrect": false },
+        { "text": "Johnny Herbert", "isCorrect": false },
+        { "text": "Martin Brundle", "isCorrect": false }
+      ],
+      "explanation": "Surnommé « Il Leone » par les tifosi, il a remporté neuf courses cette saison-là."
+    },
+    {
+      "ref": "f1-164",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel pilote a été sacré champion du monde en 1996 avec Williams ?",
+      "answers": [
+        { "text": "Nigel Mansell", "isCorrect": false },
+        { "text": "Jacques Villeneuve", "isCorrect": false },
+        { "text": "Heinz-Harald Frentzen", "isCorrect": false },
+        { "text": "Damon Hill", "isCorrect": true }
+      ],
+      "explanation": "Il a imité son père Graham, champion en 1962 et 1968."
+    },
+    {
+      "ref": "f1-165",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Américain a été champion du monde en 1978 avec Lotus ?",
+      "answers": [
+        { "text": "Phil Hill", "isCorrect": false },
+        { "text": "Dan Gurney", "isCorrect": false },
+        { "text": "Mario Andretti", "isCorrect": true },
+        { "text": "Eddie Cheever", "isCorrect": false }
+      ],
+      "explanation": "C'est le dernier Américain sacré à ce jour."
+    },
+    {
+      "ref": "f1-166",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Sud-Africain a été champion du monde en 1979 avec Ferrari ?",
+      "answers": [
+        { "text": "Alan Jones", "isCorrect": false },
+        { "text": "Jody Scheckter", "isCorrect": true },
+        { "text": "Carlos Reutemann", "isCorrect": false },
+        { "text": "Gilles Villeneuve", "isCorrect": false }
+      ],
+      "explanation": "Il a été le dernier champion Ferrari avant Michael Schumacher, en 2000."
+    },
+    {
+      "ref": "f1-167",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Quel Australien a offert à Williams son premier titre pilotes, en 1980 ?",
+      "answers": [
+        { "text": "Alan Jones", "isCorrect": true },
+        { "text": "Jack Brabham", "isCorrect": false },
+        { "text": "Mark Webber", "isCorrect": false },
+        { "text": "Daniel Ricciardo", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté cinq courses cette saison-là."
+    },
+    {
+      "ref": "f1-168",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Néo-Zélandais a été champion du monde en 1967 ?",
+      "answers": [
+        { "text": "Bruce McLaren", "isCorrect": false },
+        { "text": "Chris Amon", "isCorrect": false },
+        { "text": "Brendon Hartley", "isCorrect": false },
+        { "text": "Denny Hulme", "isCorrect": true }
+      ],
+      "explanation": "Il a battu son patron et coéquipier Jack Brabham."
+    },
+    {
+      "ref": "f1-169",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Finlandais a été champion du monde en 1982 avec Williams ?",
+      "answers": [
+        { "text": "Mika Häkkinen", "isCorrect": false },
+        { "text": "Kimi Räikkönen", "isCorrect": false },
+        { "text": "Keke Rosberg", "isCorrect": true },
+        { "text": "JJ Lehto", "isCorrect": false }
+      ],
+      "explanation": "Il n'a gagné qu'une seule course cette saison-là."
+    },
+    {
+      "ref": "f1-170",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel Italien a été champion du monde en 1952 et 1953 ?",
+      "answers": [
+        { "text": "Giuseppe Farina", "isCorrect": false },
+        { "text": "Alberto Ascari", "isCorrect": true },
+        { "text": "Michele Alboreto", "isCorrect": false },
+        { "text": "Riccardo Patrese", "isCorrect": false }
+      ],
+      "explanation": "Avec Ferrari, il reste à ce jour le dernier Italien sacré."
+    },
+    {
+      "ref": "f1-171",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "histoire"],
+      "text": "Quel pilote est devenu en 1958 le premier Britannique champion du monde ?",
+      "answers": [
+        { "text": "Mike Hawthorn", "isCorrect": true },
+        { "text": "Stirling Moss", "isCorrect": false },
+        { "text": "Graham Hill", "isCorrect": false },
+        { "text": "Jim Clark", "isCorrect": false }
+      ],
+      "explanation": "Il a battu Stirling Moss d'un point, puis a pris sa retraite."
+    },
+    {
+      "ref": "f1-172",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Stirling Moss a été champion du monde de F1.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Malgré 16 victoires, il a terminé quatre fois deuxième du championnat sans jamais être sacré."
+    },
+    {
+      "ref": "f1-173",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel pilote Ferrari a été champion du monde en 1961 ?",
+      "answers": [
+        { "text": "Wolfgang von Trips", "isCorrect": false },
+        { "text": "Richie Ginther", "isCorrect": false },
+        { "text": "Phil Hill", "isCorrect": true },
+        { "text": "Dan Gurney", "isCorrect": false }
+      ],
+      "explanation": "Premier Américain sacré, il a été titré à Monza le jour où son coéquipier et rival Wolfgang von Trips s'est tué."
+    },
+    {
+      "ref": "f1-174",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "record", "histoire"],
+      "text": "Combien de titres Juan Manuel Fangio a-t-il remportés ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "Ce record a tenu jusqu'en 2003, quand Michael Schumacher a remporté son sixième titre."
+    },
+    {
+      "ref": "f1-175",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Sebastian Vettel a remporté un titre de champion du monde avec Ferrari.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ses quatre titres ont tous été gagnés avec Red Bull. Chez Ferrari, de 2015 à 2020, il a terminé deux fois deuxième."
+    },
+    {
+      "ref": "f1-176",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Lewis Hamilton a remporté son premier titre avec McLaren, en 2008.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il a été sacré dans le dernier virage du dernier tour au Brésil, avec un point d'avance sur Felipe Massa."
+    },
+    {
+      "ref": "f1-177",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Fernando Alonso a remporté un titre de champion du monde avec Ferrari.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ses deux titres datent de 2005 et 2006, avec Renault. Chez Ferrari, il a fini trois fois vice-champion."
+    },
+    {
+      "ref": "f1-178",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel coéquipier de Lewis Hamilton a terminé deuxième du championnat en 2014 et 2015 ?",
+      "answers": [
+        { "text": "Valtteri Bottas", "isCorrect": false },
+        { "text": "Nico Rosberg", "isCorrect": true },
+        { "text": "George Russell", "isCorrect": false },
+        { "text": "Heikki Kovalainen", "isCorrect": false }
+      ],
+      "explanation": "Il a pris sa revanche en 2016, en remportant le titre."
+    },
+    {
+      "ref": "f1-179",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "De quelle nationalité est Max Verstappen ?",
+      "answers": [
+        { "text": "Néerlandaise", "isCorrect": true },
+        { "text": "Belge", "isCorrect": false },
+        { "text": "Allemande", "isCorrect": false },
+        { "text": "Autrichienne", "isCorrect": false }
+      ],
+      "explanation": "Né en Belgique, il court sous licence néerlandaise, comme son père Jos."
+    },
+    {
+      "ref": "f1-180",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "En quelle année Michael Schumacher a-t-il remporté son premier titre ?",
+      "answers": [
+        { "text": "1991", "isCorrect": false },
+        { "text": "1996", "isCorrect": false },
+        { "text": "2000", "isCorrect": false },
+        { "text": "1994", "isCorrect": true }
+      ],
+      "explanation": "Avec Benetton, après un accrochage décisif avec Damon Hill lors de la dernière course, en Australie."
+    },
+    {
+      "ref": "f1-181",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Combien de titres Lewis Hamilton a-t-il remportés avec Mercedes ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Son septième titre, le premier, avait été gagné avec McLaren en 2008."
+    },
+    {
+      "ref": "f1-182",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "histoire"],
+      "text": "Combien de pilotes différents ont été sacrés champions du monde de 1950 à 2025 ?",
+      "answers": [
+        { "text": "20", "isCorrect": false },
+        { "text": "35", "isCorrect": true },
+        { "text": "50", "isCorrect": false },
+        { "text": "28", "isCorrect": false }
+      ],
+      "explanation": "De Giuseppe Farina en 1950 à Lando Norris en 2025."
+    },
+    {
+      "ref": "f1-183",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Quel pays compte le plus de champions du monde différents ?",
+      "answers": [
+        { "text": "Royaume-Uni", "isCorrect": true },
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Brésil", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false }
+      ],
+      "explanation": "Onze Britanniques ont été sacrés, de Mike Hawthorn en 1958 à Lando Norris en 2025."
+    },
+    {
+      "ref": "f1-184",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote", "record"],
+      "text": "Quel est le plus âgé des champions du monde de l'histoire ?",
+      "answers": [
+        { "text": "Jack Brabham", "isCorrect": false },
+        { "text": "Nigel Mansell", "isCorrect": false },
+        { "text": "Giuseppe Farina", "isCorrect": false },
+        { "text": "Juan Manuel Fangio", "isCorrect": true }
+      ],
+      "explanation": "Il avait 46 ans lors de son cinquième titre, en 1957."
+    },
+    {
+      "ref": "f1-185",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Avec quelle écurie Lando Norris a-t-il remporté le titre 2025 ?",
+      "answers": [
+        { "text": "Red Bull", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": true },
+        { "text": "Mercedes", "isCorrect": false }
+      ],
+      "explanation": "Il offre à McLaren son premier titre pilotes depuis Lewis Hamilton en 2008."
+    },
+    {
+      "ref": "f1-186",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "histoire"],
+      "text": "Sur quel circuit Senna et Prost se sont-ils accrochés deux années de suite, en 1989 et 1990, décidant du titre ?",
+      "answers": [
+        { "text": "Interlagos", "isCorrect": false },
+        { "text": "Suzuka", "isCorrect": true },
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Adélaïde", "isCorrect": false }
+      ],
+      "explanation": "En 1989, l'accrochage a profité à Prost. En 1990, à Senna."
+    },
+    {
+      "ref": "f1-187",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote", "ecurie"],
+      "text": "Avec quelle écurie Michael Schumacher a-t-il remporté le plus de titres ?",
+      "answers": [
+        { "text": "Ferrari", "isCorrect": true },
+        { "text": "Benetton", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": false },
+        { "text": "Jordan", "isCorrect": false }
+      ],
+      "explanation": "Il a gagné cinq titres d'affilée avec la Scuderia, de 2000 à 2004."
+    },
+    {
+      "ref": "f1-188",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel pilote a été sacré en 2008 malgré la victoire de Felipe Massa à domicile lors de la dernière course ?",
+      "answers": [
+        { "text": "Kimi Räikkönen", "isCorrect": false },
+        { "text": "Fernando Alonso", "isCorrect": false },
+        { "text": "Robert Kubica", "isCorrect": false },
+        { "text": "Lewis Hamilton", "isCorrect": true }
+      ],
+      "explanation": "Pendant quelques secondes, Massa s'est cru champion, avant que Hamilton ne reprenne la 5e place dans le dernier virage."
+    },
+    {
+      "ref": "f1-189",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["champion-du-monde", "pilote"],
+      "text": "Quel pilote a été champion du monde en 1962 et en 1968 ?",
+      "answers": [
+        { "text": "Jim Clark", "isCorrect": false },
+        { "text": "Jackie Stewart", "isCorrect": false },
+        { "text": "Graham Hill", "isCorrect": true },
+        { "text": "John Surtees", "isCorrect": false }
+      ],
+      "explanation": "Son fils Damon a été sacré à son tour en 1996."
+    },
+    {
+      "ref": "f1-190",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pilote"],
+      "text": "Quel numéro Lewis Hamilton utilise-t-il en course ?",
+      "answers": [
+        { "text": "33", "isCorrect": false },
+        { "text": "44", "isCorrect": true },
+        { "text": "16", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "Il l'utilisait déjà en karting."
+    },
+    {
+      "ref": "f1-191",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Pour quelle écurie Lewis Hamilton court-il depuis 2025 ?",
+      "answers": [
+        { "text": "Ferrari", "isCorrect": true },
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Red Bull", "isCorrect": false },
+        { "text": "Aston Martin", "isCorrect": false }
+      ],
+      "explanation": "Il a quitté Mercedes après douze saisons et six titres."
+    },
+    {
+      "ref": "f1-192",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pilote"],
+      "text": "De quel pays est originaire Charles Leclerc ?",
+      "answers": [
+        { "text": "France", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": true }
+      ],
+      "explanation": "En 2024, il a remporté le Grand Prix de Monaco, une première pour un Monégasque depuis 1931."
+    },
+    {
+      "ref": "f1-193",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a remporté le Grand Prix d'Italie 2020 avec AlphaTauri ?",
+      "answers": [
+        { "text": "Esteban Ocon", "isCorrect": false },
+        { "text": "Romain Grosjean", "isCorrect": false },
+        { "text": "Pierre Gasly", "isCorrect": true },
+        { "text": "Jean-Éric Vergne", "isCorrect": false }
+      ],
+      "explanation": "C'était la première victoire d'un Français depuis Olivier Panis à Monaco en 1996."
+    },
+    {
+      "ref": "f1-194",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a remporté le Grand Prix de Hongrie 2021 avec Alpine ?",
+      "answers": [
+        { "text": "Pierre Gasly", "isCorrect": false },
+        { "text": "Esteban Ocon", "isCorrect": true },
+        { "text": "Romain Grosjean", "isCorrect": false },
+        { "text": "Jules Bianchi", "isCorrect": false }
+      ],
+      "explanation": "C'était sa première victoire en F1, au terme d'une course chaotique."
+    },
+    {
+      "ref": "f1-195",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a remporté le Grand Prix de Monaco 1996 sous la pluie, parti 14e ?",
+      "answers": [
+        { "text": "Olivier Panis", "isCorrect": true },
+        { "text": "Jean Alesi", "isCorrect": false },
+        { "text": "Alain Prost", "isCorrect": false },
+        { "text": "Érik Comas", "isCorrect": false }
+      ],
+      "explanation": "Seules trois voitures ont franchi la ligne d'arrivée de cette course chaotique."
+    },
+    {
+      "ref": "f1-196",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a remporté son unique Grand Prix au Canada en 1995, le jour de son anniversaire ?",
+      "answers": [
+        { "text": "Olivier Panis", "isCorrect": false },
+        { "text": "Didier Pironi", "isCorrect": false },
+        { "text": "Patrick Tambay", "isCorrect": false },
+        { "text": "Jean Alesi", "isCorrect": true }
+      ],
+      "explanation": "Au volant de la Ferrari numéro 27, il a gagné le jour de ses 31 ans."
+    },
+    {
+      "ref": "f1-197",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a survécu en 2020 à Bahreïn à un terrible accident où sa voiture a pris feu ?",
+      "answers": [
+        { "text": "Pierre Gasly", "isCorrect": false },
+        { "text": "Esteban Ocon", "isCorrect": false },
+        { "text": "Romain Grosjean", "isCorrect": true },
+        { "text": "Charles Pic", "isCorrect": false }
+      ],
+      "explanation": "Coupée en deux contre un rail, sa Haas s'est embrasée. Protégé par le halo, il est sorti des flammes après environ 28 secondes."
+    },
+    {
+      "ref": "f1-198",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "france", "histoire"],
+      "text": "Quel pilote français est mort des suites d'un accident au Grand Prix du Japon 2014 ?",
+      "answers": [
+        { "text": "Didier Pironi", "isCorrect": false },
+        { "text": "Jules Bianchi", "isCorrect": true },
+        { "text": "François Cevert", "isCorrect": false },
+        { "text": "Patrick Depailler", "isCorrect": false }
+      ],
+      "explanation": "Il est décédé en 2015. C'est le dernier pilote mort des suites d'un accident en Grand Prix."
+    },
+    {
+      "ref": "f1-199",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "france", "histoire"],
+      "text": "Quel Français, coéquipier de Jackie Stewart, s'est tué en 1973 à Watkins Glen ?",
+      "answers": [
+        { "text": "François Cevert", "isCorrect": true },
+        { "text": "Jean-Pierre Beltoise", "isCorrect": false },
+        { "text": "Patrick Depailler", "isCorrect": false },
+        { "text": "Jean-Pierre Jarier", "isCorrect": false }
+      ],
+      "explanation": "Il devait devenir le leader de l'écurie Tyrrell après la retraite de Stewart."
+    },
+    {
+      "ref": "f1-200",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a remporté sous la pluie le Grand Prix de Monaco 1972, sa seule victoire en F1 ?",
+      "answers": [
+        { "text": "François Cevert", "isCorrect": false },
+        { "text": "Henri Pescarolo", "isCorrect": false },
+        { "text": "Jacques Laffite", "isCorrect": false },
+        { "text": "Jean-Pierre Beltoise", "isCorrect": true }
+      ],
+      "explanation": "Il pilotait une BRM."
+    },
+    {
+      "ref": "f1-201",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "france", "ecurie"],
+      "text": "Quel Français a remporté six Grands Prix avec Ligier ?",
+      "answers": [
+        { "text": "René Arnoux", "isCorrect": false },
+        { "text": "Patrick Tambay", "isCorrect": false },
+        { "text": "Jacques Laffite", "isCorrect": true },
+        { "text": "Jean Alesi", "isCorrect": false }
+      ],
+      "explanation": "Il était le pilote emblématique de l'écurie bleue de Guy Ligier."
+    },
+    {
+      "ref": "f1-202",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français a terminé vice-champion du monde en 1982, malgré un grave accident qui a mis fin à sa carrière ?",
+      "answers": [
+        { "text": "René Arnoux", "isCorrect": false },
+        { "text": "Didier Pironi", "isCorrect": true },
+        { "text": "Patrick Tambay", "isCorrect": false },
+        { "text": "Alain Prost", "isCorrect": false }
+      ],
+      "explanation": "Gravement blessé aux jambes à Hockenheim, il a manqué les dernières courses et a été battu de cinq points."
+    },
+    {
+      "ref": "f1-203",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote"],
+      "text": "Quel pilote brésilien surnommé « Magic » est considéré comme l'un des plus grands de l'histoire ?",
+      "answers": [
+        { "text": "Ayrton Senna", "isCorrect": true },
+        { "text": "Nelson Piquet", "isCorrect": false },
+        { "text": "Rubens Barrichello", "isCorrect": false },
+        { "text": "Felipe Massa", "isCorrect": false }
+      ],
+      "explanation": "Triple champion du monde, il était réputé imbattable sous la pluie."
+    },
+    {
+      "ref": "f1-204",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pilote", "france"],
+      "text": "Quel surnom donnait-on à Alain Prost ?",
+      "answers": [
+        { "text": "Le Lion", "isCorrect": false },
+        { "text": "Iceman", "isCorrect": false },
+        { "text": "Le Baron rouge", "isCorrect": false },
+        { "text": "Le Professeur", "isCorrect": true }
+      ],
+      "explanation": "Son pilotage calculé et économe lui a valu ce surnom."
+    },
+    {
+      "ref": "f1-205",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Quel pilote mexicain a couru chez Red Bull de 2021 à 2024 ?",
+      "answers": [
+        { "text": "Esteban Gutiérrez", "isCorrect": false },
+        { "text": "Pedro Rodríguez", "isCorrect": false },
+        { "text": "Sergio Pérez", "isCorrect": true },
+        { "text": "Pato O'Ward", "isCorrect": false }
+      ],
+      "explanation": "Surnommé « Checo », il a remporté six Grands Prix dans sa carrière."
+    },
+    {
+      "ref": "f1-206",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote"],
+      "text": "Quel pilote australien buvait le champagne dans sa chaussure sur le podium ?",
+      "answers": [
+        { "text": "Mark Webber", "isCorrect": false },
+        { "text": "Daniel Ricciardo", "isCorrect": true },
+        { "text": "Oscar Piastri", "isCorrect": false },
+        { "text": "Jack Brabham", "isCorrect": false }
+      ],
+      "explanation": "Ce rituel s'appelle le « shoey »."
+    },
+    {
+      "ref": "f1-207",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "record"],
+      "text": "Quel pilote a remporté le plus de Grands Prix sans jamais être champion du monde ?",
+      "answers": [
+        { "text": "Stirling Moss", "isCorrect": true },
+        { "text": "Rubens Barrichello", "isCorrect": false },
+        { "text": "David Coulthard", "isCorrect": false },
+        { "text": "Valtteri Bottas", "isCorrect": false }
+      ],
+      "explanation": "Il compte 16 victoires dans les années 1950."
+    },
+    {
+      "ref": "f1-208",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Avec quelle écurie Michael Schumacher a-t-il fait ses débuts, en 1991 à Spa ?",
+      "answers": [
+        { "text": "Benetton", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": false },
+        { "text": "Jordan", "isCorrect": true }
+      ],
+      "explanation": "Après une seule course, Benetton l'a recruté."
+    },
+    {
+      "ref": "f1-209",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Avec quelle écurie Michael Schumacher a-t-il terminé sa carrière, en 2012 ?",
+      "answers": [
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Benetton", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": true },
+        { "text": "Sauber", "isCorrect": false }
+      ],
+      "explanation": "Il était revenu de 2010 à 2012, sans remporter de course."
+    },
+    {
+      "ref": "f1-210",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "histoire"],
+      "text": "Quel accident a mis Niki Lauda entre la vie et la mort en 1976 ?",
+      "answers": [
+        { "text": "Il a heurté un mur à Monaco", "isCorrect": false },
+        { "text": "Sa Ferrari a pris feu au Nürburgring", "isCorrect": true },
+        { "text": "Il est sorti de la piste à Monza", "isCorrect": false },
+        { "text": "Sa voiture s'est envolée à Spa", "isCorrect": false }
+      ],
+      "explanation": "Gravement brûlé, il est revenu en course six semaines plus tard, à Monza."
+    },
+    {
+      "ref": "f1-211",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "record"],
+      "text": "Quel pilote est le seul à avoir remporté la « Triple Couronne » : Grand Prix de Monaco, 500 Miles d'Indianapolis et 24 Heures du Mans ?",
+      "answers": [
+        { "text": "Graham Hill", "isCorrect": true },
+        { "text": "Fernando Alonso", "isCorrect": false },
+        { "text": "Juan Pablo Montoya", "isCorrect": false },
+        { "text": "Jacky Ickx", "isCorrect": false }
+      ],
+      "explanation": "Fernando Alonso court toujours après la dernière manche qui lui manque, les 500 Miles d'Indianapolis."
+    },
+    {
+      "ref": "f1-212",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "circuit", "histoire"],
+      "text": "Quel pilote surnommait-on « Mister Monaco » ?",
+      "answers": [
+        { "text": "Ayrton Senna", "isCorrect": false },
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Alain Prost", "isCorrect": false },
+        { "text": "Graham Hill", "isCorrect": true }
+      ],
+      "explanation": "Il a gagné cinq fois en principauté dans les années 1960."
+    },
+    {
+      "ref": "f1-213",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "record"],
+      "text": "Quel Allemand compte 53 victoires en Grand Prix et 4 titres ?",
+      "answers": [
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Nico Rosberg", "isCorrect": false },
+        { "text": "Sebastian Vettel", "isCorrect": true },
+        { "text": "Nick Heidfeld", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté la plupart de ses victoires avec Red Bull, puis 14 avec Ferrari."
+    },
+    {
+      "ref": "f1-214",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "histoire"],
+      "text": "Quelle femme a été la première à prendre le départ d'un Grand Prix, en 1958 ?",
+      "answers": [
+        { "text": "Lella Lombardi", "isCorrect": false },
+        { "text": "Maria Teresa de Filippis", "isCorrect": true },
+        { "text": "Desiré Wilson", "isCorrect": false },
+        { "text": "Giovanna Amati", "isCorrect": false }
+      ],
+      "explanation": "L'Italienne pilotait une Maserati."
+    },
+    {
+      "ref": "f1-215",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "record", "histoire"],
+      "text": "Quelle est la seule femme à avoir marqué des points en F1 ?",
+      "answers": [
+        { "text": "Lella Lombardi", "isCorrect": true },
+        { "text": "Maria Teresa de Filippis", "isCorrect": false },
+        { "text": "Susie Wolff", "isCorrect": false },
+        { "text": "Divina Galica", "isCorrect": false }
+      ],
+      "explanation": "Elle a marqué un demi-point au Grand Prix d'Espagne 1975, une course arrêtée avant la mi-distance."
+    },
+    {
+      "ref": "f1-216",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Quel Finlandais a remporté 10 Grands Prix avec Mercedes entre 2017 et 2021 ?",
+      "answers": [
+        { "text": "Kimi Räikkönen", "isCorrect": false },
+        { "text": "Heikki Kovalainen", "isCorrect": false },
+        { "text": "Mika Salo", "isCorrect": false },
+        { "text": "Valtteri Bottas", "isCorrect": true }
+      ],
+      "explanation": "Il était le coéquipier de Lewis Hamilton."
+    },
+    {
+      "ref": "f1-217",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Quel Australien est devenu le coéquipier de Lando Norris chez McLaren en 2023 ?",
+      "answers": [
+        { "text": "Daniel Ricciardo", "isCorrect": false },
+        { "text": "Mark Webber", "isCorrect": false },
+        { "text": "Oscar Piastri", "isCorrect": true },
+        { "text": "Jack Doohan", "isCorrect": false }
+      ],
+      "explanation": "Il a terminé troisième du championnat 2025."
+    },
+    {
+      "ref": "f1-218",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Quel Espagnol a remporté son premier Grand Prix à Silverstone en 2022, avec Ferrari ?",
+      "answers": [
+        { "text": "Fernando Alonso", "isCorrect": false },
+        { "text": "Carlos Sainz", "isCorrect": true },
+        { "text": "Pedro de la Rosa", "isCorrect": false },
+        { "text": "Jaime Alguersuari", "isCorrect": false }
+      ],
+      "explanation": "Il est le fils de Carlos Sainz senior, double champion du monde des rallyes."
+    },
+    {
+      "ref": "f1-219",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["pilote"],
+      "text": "Comment s'appelle le fils de Michael Schumacher, qui a lui aussi couru en F1 ?",
+      "answers": [
+        { "text": "Mick", "isCorrect": true },
+        { "text": "Ralf", "isCorrect": false },
+        { "text": "Max", "isCorrect": false },
+        { "text": "Nico", "isCorrect": false }
+      ],
+      "explanation": "Il a couru chez Haas en 2021 et 2022."
+    },
+    {
+      "ref": "f1-220",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote"],
+      "text": "Quel lien de parenté unit Michael et Ralf Schumacher ?",
+      "answers": [
+        { "text": "Père et fils", "isCorrect": false },
+        { "text": "Cousins", "isCorrect": false },
+        { "text": "Oncle et neveu", "isCorrect": false },
+        { "text": "Ils sont frères", "isCorrect": true }
+      ],
+      "explanation": "Ralf a remporté six Grands Prix, tous avec Williams."
+    },
+    {
+      "ref": "f1-221",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Quel Britannique a rejoint Mercedes en 2022 pour remplacer Valtteri Bottas ?",
+      "answers": [
+        { "text": "Lando Norris", "isCorrect": false },
+        { "text": "Alexander Albon", "isCorrect": false },
+        { "text": "George Russell", "isCorrect": true },
+        { "text": "Oliver Bearman", "isCorrect": false }
+      ],
+      "explanation": "Il avait auparavant couru trois saisons chez Williams."
+    },
+    {
+      "ref": "f1-222",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "record"],
+      "text": "Quel pilote détient le record de départs en Grand Prix ?",
+      "answers": [
+        { "text": "Kimi Räikkönen", "isCorrect": false },
+        { "text": "Fernando Alonso", "isCorrect": true },
+        { "text": "Lewis Hamilton", "isCorrect": false },
+        { "text": "Rubens Barrichello", "isCorrect": false }
+      ],
+      "explanation": "Il a passé le cap des 400 Grands Prix en 2024."
+    },
+    {
+      "ref": "f1-223",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "histoire", "circuit"],
+      "text": "Quel pilote a remporté la toute première course du championnat du monde, en 1950 ?",
+      "answers": [
+        { "text": "Giuseppe Farina", "isCorrect": true },
+        { "text": "Juan Manuel Fangio", "isCorrect": false },
+        { "text": "Luigi Fagioli", "isCorrect": false },
+        { "text": "Reg Parnell", "isCorrect": false }
+      ],
+      "explanation": "C'était le Grand Prix de Grande-Bretagne, à Silverstone, le 13 mai 1950."
+    },
+    {
+      "ref": "f1-224",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["pilote"],
+      "text": "Gilles Villeneuve a été champion du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il a gagné six Grands Prix avec Ferrari, mais n'a jamais été sacré. C'est son fils Jacques qui l'a été, en 1997."
+    },
+    {
+      "ref": "f1-225",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "record", "ecurie"],
+      "text": "Quel pilote a remporté le Grand Prix d'Italie 2008 sous la pluie, avec Toro Rosso ?",
+      "answers": [
+        { "text": "Sébastien Bourdais", "isCorrect": false },
+        { "text": "Max Verstappen", "isCorrect": false },
+        { "text": "Sebastian Vettel", "isCorrect": true },
+        { "text": "Pierre Gasly", "isCorrect": false }
+      ],
+      "explanation": "À 21 ans, il devenait alors le plus jeune vainqueur de l'histoire."
+    },
+    {
+      "ref": "f1-226",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "france"],
+      "text": "Quel Français, quadruple champion de Champ Car, était le coéquipier de Sebastian Vettel chez Toro Rosso en 2008 ?",
+      "answers": [
+        { "text": "Pierre Gasly", "isCorrect": false },
+        { "text": "Sébastien Bourdais", "isCorrect": true },
+        { "text": "Jean-Éric Vergne", "isCorrect": false },
+        { "text": "Romain Grosjean", "isCorrect": false }
+      ],
+      "explanation": "Il a couru en F1 en 2008 et 2009."
+    },
+    {
+      "ref": "f1-227",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "histoire", "champion-du-monde"],
+      "text": "Quel pilote a été exclu du championnat 1997 après avoir percuté Jacques Villeneuve à Jerez ?",
+      "answers": [
+        { "text": "Michael Schumacher", "isCorrect": true },
+        { "text": "Damon Hill", "isCorrect": false },
+        { "text": "Mika Häkkinen", "isCorrect": false },
+        { "text": "Eddie Irvine", "isCorrect": false }
+      ],
+      "explanation": "La FIA l'a retiré du classement final, une sanction unique dans l'histoire."
+    },
+    {
+      "ref": "f1-228",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Dans quelle écurie Senna et Prost ont-ils été coéquipiers ?",
+      "answers": [
+        { "text": "Williams", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Lotus", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": true }
+      ],
+      "explanation": "Leur rivalité a explosé lors des saisons 1988 et 1989."
+    },
+    {
+      "ref": "f1-229",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote"],
+      "text": "Sur quel circuit Lando Norris a-t-il remporté son premier Grand Prix, en 2024 ?",
+      "answers": [
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Miami", "isCorrect": true },
+        { "text": "Zandvoort", "isCorrect": false }
+      ],
+      "explanation": "Il lui avait fallu plus de cent départs pour décrocher ce premier succès."
+    },
+    {
+      "ref": "f1-230",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "ecurie"],
+      "text": "Quel pilote polonais a remporté le Grand Prix du Canada 2008 avec BMW Sauber ?",
+      "answers": [
+        { "text": "Nick Heidfeld", "isCorrect": false },
+        { "text": "Robert Kubica", "isCorrect": true },
+        { "text": "Timo Glock", "isCorrect": false },
+        { "text": "Heikki Kovalainen", "isCorrect": false }
+      ],
+      "explanation": "Un an plus tôt, il avait subi un violent accident sur ce même circuit."
+    },
+    {
+      "ref": "f1-231",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "ecurie"],
+      "text": "Avec quelle écurie Ayrton Senna a-t-il remporté sa première victoire, en 1985 ?",
+      "answers": [
+        { "text": "Lotus", "isCorrect": true },
+        { "text": "Toleman", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Williams", "isCorrect": false }
+      ],
+      "explanation": "Elle a eu lieu sous la pluie, à Estoril, au Portugal."
+    },
+    {
+      "ref": "f1-232",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "ecurie"],
+      "text": "Pour quelle écurie Ayrton Senna courait-il lors de son accident mortel, en 1994 ?",
+      "answers": [
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Lotus", "isCorrect": false },
+        { "text": "Toleman", "isCorrect": false },
+        { "text": "Williams", "isCorrect": true }
+      ],
+      "explanation": "Il venait de rejoindre l'écurie, après six saisons chez McLaren."
+    },
+    {
+      "ref": "f1-233",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "record"],
+      "text": "Quel Finlandais détenait le record de départs avant Fernando Alonso ?",
+      "answers": [
+        { "text": "Mika Häkkinen", "isCorrect": false },
+        { "text": "Valtteri Bottas", "isCorrect": false },
+        { "text": "Kimi Räikkönen", "isCorrect": true },
+        { "text": "Heikki Kovalainen", "isCorrect": false }
+      ],
+      "explanation": "Il a pris 349 départs entre 2001 et 2021."
+    },
+    {
+      "ref": "f1-234",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["pilote", "record"],
+      "text": "Combien de victoires Lewis Hamilton a-t-il remportées lors de sa première saison, en 2007 ?",
+      "answers": [
+        { "text": "0", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "9", "isCorrect": false }
+      ],
+      "explanation": "Il a terminé deuxième du championnat, à un point de Kimi Räikkönen."
+    },
+    {
+      "ref": "f1-235",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["pilote", "record", "circuit"],
+      "text": "Quel pilote a remporté le Grand Prix du Canada 2011, la course la plus longue de l'histoire ?",
+      "answers": [
+        { "text": "Jenson Button", "isCorrect": true },
+        { "text": "Sebastian Vettel", "isCorrect": false },
+        { "text": "Lewis Hamilton", "isCorrect": false },
+        { "text": "Fernando Alonso", "isCorrect": false }
+      ],
+      "explanation": "Interrompue par la pluie, elle a duré plus de quatre heures. Button a doublé Vettel dans le dernier tour."
+    },
+    {
+      "ref": "f1-236",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecurie"],
+      "text": "Dans quelle ville italienne se trouve l'usine Ferrari ?",
+      "answers": [
+        { "text": "Turin", "isCorrect": false },
+        { "text": "Milan", "isCorrect": false },
+        { "text": "Bologne", "isCorrect": false },
+        { "text": "Maranello", "isCorrect": true }
+      ],
+      "explanation": "La Scuderia y est installée depuis les années 1940."
+    },
+    {
+      "ref": "f1-237",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecurie"],
+      "text": "Quel animal figure sur le logo de Ferrari ?",
+      "answers": [
+        { "text": "Un taureau", "isCorrect": false },
+        { "text": "Un lion", "isCorrect": false },
+        { "text": "Un cheval cabré", "isCorrect": true },
+        { "text": "Un aigle", "isCorrect": false }
+      ],
+      "explanation": "Le « Cavallino rampante » était l'emblème de l'aviateur italien Francesco Baracca."
+    },
+    {
+      "ref": "f1-238",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecurie", "record"],
+      "text": "Quelle écurie a remporté le plus de titres constructeurs ?",
+      "answers": [
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": true },
+        { "text": "Williams", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": false }
+      ],
+      "explanation": "Elle en compte 16, le dernier en 2008."
+    },
+    {
+      "ref": "f1-239",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecurie", "histoire", "record"],
+      "text": "Quelle écurie a participé à toutes les saisons du championnat depuis 1950 ?",
+      "answers": [
+        { "text": "Ferrari", "isCorrect": true },
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Williams", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": false }
+      ],
+      "explanation": "C'est la seule écurie présente à chaque saison depuis la création du championnat."
+    },
+    {
+      "ref": "f1-240",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Qui a fondé l'écurie McLaren ?",
+      "answers": [
+        { "text": "Ron Dennis", "isCorrect": false },
+        { "text": "Zak Brown", "isCorrect": false },
+        { "text": "Colin Chapman", "isCorrect": false },
+        { "text": "Bruce McLaren", "isCorrect": true }
+      ],
+      "explanation": "Le pilote néo-zélandais l'a fondée en 1963, avant de se tuer en 1970 lors d'essais à Goodwood."
+    },
+    {
+      "ref": "f1-241",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecurie"],
+      "text": "Quelle est la couleur emblématique des McLaren ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false },
+        { "text": "Orange papaye", "isCorrect": true },
+        { "text": "Bleu", "isCorrect": false }
+      ],
+      "explanation": "C'était la couleur des premières voitures de Bruce McLaren, remise à l'honneur à partir de 2017."
+    },
+    {
+      "ref": "f1-242",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Comment surnomme-t-on les Mercedes ?",
+      "answers": [
+        { "text": "Les Bolides bleus", "isCorrect": false },
+        { "text": "Les Flèches d'argent", "isCorrect": true },
+        { "text": "Les Taureaux rouges", "isCorrect": false },
+        { "text": "Les Chevaux noirs", "isCorrect": false }
+      ],
+      "explanation": "Le surnom remonte aux années 1930, quand les voitures de course allemandes roulaient en métal nu."
+    },
+    {
+      "ref": "f1-243",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "record"],
+      "text": "Combien de titres constructeurs consécutifs Mercedes a-t-il remportés de 2014 à 2021 ?",
+      "answers": [
+        { "text": "8", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "C'est le record de titres constructeurs consécutifs."
+    },
+    {
+      "ref": "f1-244",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Dans quelle ville anglaise se trouve l'usine Red Bull Racing ?",
+      "answers": [
+        { "text": "Woking", "isCorrect": false },
+        { "text": "Brackley", "isCorrect": false },
+        { "text": "Maranello", "isCorrect": false },
+        { "text": "Milton Keynes", "isCorrect": true }
+      ],
+      "explanation": "L'écurie est autrichienne, mais son usine est en Angleterre, comme celles de la plupart des écuries."
+    },
+    {
+      "ref": "f1-245",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Dans quelle ville se trouve l'usine McLaren ?",
+      "answers": [
+        { "text": "Milton Keynes", "isCorrect": false },
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Woking", "isCorrect": true },
+        { "text": "Grove", "isCorrect": false }
+      ],
+      "explanation": "Le McLaren Technology Centre a été conçu par l'architecte Norman Foster."
+    },
+    {
+      "ref": "f1-246",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Qui a fondé l'écurie Williams ?",
+      "answers": [
+        { "text": "Ron Dennis", "isCorrect": false },
+        { "text": "Frank Williams", "isCorrect": true },
+        { "text": "Bruce McLaren", "isCorrect": false },
+        { "text": "Ken Tyrrell", "isCorrect": false }
+      ],
+      "explanation": "Avec l'ingénieur Patrick Head, il a créé Williams Grand Prix Engineering en 1977."
+    },
+    {
+      "ref": "f1-247",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "record"],
+      "text": "Combien de titres constructeurs Williams a-t-il remportés ?",
+      "answers": [
+        { "text": "9", "isCorrect": true },
+        { "text": "16", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Le dernier date de 1997, l'année du titre de Jacques Villeneuve."
+    },
+    {
+      "ref": "f1-248",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "france"],
+      "text": "Quelle écurie française a succédé à Renault sur la grille en 2021 ?",
+      "answers": [
+        { "text": "Ligier", "isCorrect": false },
+        { "text": "Matra", "isCorrect": false },
+        { "text": "Prost Grand Prix", "isCorrect": false },
+        { "text": "Alpine", "isCorrect": true }
+      ],
+      "explanation": "Elle porte le nom de la marque sportive du groupe Renault."
+    },
+    {
+      "ref": "f1-249",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "france"],
+      "text": "Quelle écurie Alain Prost a-t-il fondée en 1997 ?",
+      "answers": [
+        { "text": "Ligier", "isCorrect": false },
+        { "text": "Alpine", "isCorrect": false },
+        { "text": "Prost Grand Prix", "isCorrect": true },
+        { "text": "AGS", "isCorrect": false }
+      ],
+      "explanation": "Il a racheté Ligier et l'a rebaptisée. L'écurie a disparu après la saison 2001."
+    },
+    {
+      "ref": "f1-250",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "france"],
+      "text": "Quelle écurie française a été fondée par l'ancien rugbyman Guy Ligier ?",
+      "answers": [
+        { "text": "Matra", "isCorrect": false },
+        { "text": "Ligier", "isCorrect": true },
+        { "text": "AGS", "isCorrect": false },
+        { "text": "Alpine", "isCorrect": false }
+      ],
+      "explanation": "Ses voitures bleues ont remporté neuf Grands Prix entre 1977 et 1996."
+    },
+    {
+      "ref": "f1-251",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "france", "champion-du-monde"],
+      "text": "Avec quelle écurie française Jackie Stewart a-t-il été champion du monde en 1969 ?",
+      "answers": [
+        { "text": "Matra", "isCorrect": true },
+        { "text": "Ligier", "isCorrect": false },
+        { "text": "Renault", "isCorrect": false },
+        { "text": "Alpine", "isCorrect": false }
+      ],
+      "explanation": "La Matra MS80, engagée par Ken Tyrrell, a aussi offert à la France son premier titre constructeurs."
+    },
+    {
+      "ref": "f1-252",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "france", "champion-du-monde"],
+      "text": "Quelle écurie a remporté les titres pilotes et constructeurs en 2005 et 2006 ?",
+      "answers": [
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "BMW", "isCorrect": false },
+        { "text": "Renault", "isCorrect": true }
+      ],
+      "explanation": "Avec Fernando Alonso, l'écurie française a battu Ferrari et McLaren."
+    },
+    {
+      "ref": "f1-253",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "record"],
+      "text": "Quelle écurie a remporté les deux titres en 2009, pour sa seule saison en F1 ?",
+      "answers": [
+        { "text": "Honda", "isCorrect": false },
+        { "text": "Toyota", "isCorrect": false },
+        { "text": "Brawn GP", "isCorrect": true },
+        { "text": "BMW Sauber", "isCorrect": false }
+      ],
+      "explanation": "Dirigée par Ross Brawn, elle a été rachetée par Mercedes à la fin de la saison."
+    },
+    {
+      "ref": "f1-254",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "histoire"],
+      "text": "Quelle écurie est devenue Red Bull Racing en 2005 ?",
+      "answers": [
+        { "text": "Stewart", "isCorrect": false },
+        { "text": "Jaguar", "isCorrect": true },
+        { "text": "Minardi", "isCorrect": false },
+        { "text": "Arrows", "isCorrect": false }
+      ],
+      "explanation": "Jaguar était elle-même issue de l'écurie Stewart, fondée par Jackie Stewart."
+    },
+    {
+      "ref": "f1-255",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "histoire"],
+      "text": "Quelle petite écurie italienne est devenue Toro Rosso en 2006 ?",
+      "answers": [
+        { "text": "Minardi", "isCorrect": true },
+        { "text": "Scuderia Italia", "isCorrect": false },
+        { "text": "Osella", "isCorrect": false },
+        { "text": "Forti", "isCorrect": false }
+      ],
+      "explanation": "Basée à Faenza, elle s'est ensuite appelée AlphaTauri, puis Racing Bulls."
+    },
+    {
+      "ref": "f1-256",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "histoire"],
+      "text": "Quelle écurie est l'ancêtre d'Aston Martin, après être passée par Midland, Spyker, Force India et Racing Point ?",
+      "answers": [
+        { "text": "Arrows", "isCorrect": false },
+        { "text": "Tyrrell", "isCorrect": false },
+        { "text": "Stewart", "isCorrect": false },
+        { "text": "Jordan", "isCorrect": true }
+      ],
+      "explanation": "Fondée par Eddie Jordan, elle a débuté en F1 en 1991."
+    },
+    {
+      "ref": "f1-257",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecurie"],
+      "text": "Quelle est la couleur emblématique d'Aston Martin ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Orange", "isCorrect": false },
+        { "text": "Vert", "isCorrect": true },
+        { "text": "Blanc", "isCorrect": false }
+      ],
+      "explanation": "C'est le « British Racing Green », couleur historique des voitures de course britanniques."
+    },
+    {
+      "ref": "f1-258",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Quelle écurie américaine fait partie du plateau depuis 2016 ?",
+      "answers": [
+        { "text": "Penske", "isCorrect": false },
+        { "text": "Haas", "isCorrect": true },
+        { "text": "Andretti", "isCorrect": false },
+        { "text": "Shadow", "isCorrect": false }
+      ],
+      "explanation": "Fondée par Gene Haas, c'était la première écurie américaine engagée en F1 depuis 1986."
+    },
+    {
+      "ref": "f1-259",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Dans quel pays se trouve l'usine Sauber ?",
+      "answers": [
+        { "text": "Suisse", "isCorrect": true },
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false }
+      ],
+      "explanation": "Installée à Hinwil, près de Zurich, elle devient l'écurie officielle Audi en 2026."
+    },
+    {
+      "ref": "f1-260",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "technique"],
+      "text": "Quel motoriste fournit les moteurs de McLaren depuis 2021 ?",
+      "answers": [
+        { "text": "Honda", "isCorrect": false },
+        { "text": "Renault", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": true }
+      ],
+      "explanation": "McLaren avait déjà connu le succès avec Mercedes, de 1995 à 2014."
+    },
+    {
+      "ref": "f1-261",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "technique"],
+      "text": "Quel motoriste japonais a propulsé Max Verstappen vers ses titres ?",
+      "answers": [
+        { "text": "Toyota", "isCorrect": false },
+        { "text": "Nissan", "isCorrect": false },
+        { "text": "Honda", "isCorrect": true },
+        { "text": "Mazda", "isCorrect": false }
+      ],
+      "explanation": "Il motorise Red Bull depuis 2019, et rejoint Aston Martin en 2026."
+    },
+    {
+      "ref": "f1-262",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "histoire", "technique"],
+      "text": "Quel ingénieur a fondé Lotus et révolutionné la F1 par ses innovations ?",
+      "answers": [
+        { "text": "Adrian Newey", "isCorrect": false },
+        { "text": "Colin Chapman", "isCorrect": true },
+        { "text": "Ross Brawn", "isCorrect": false },
+        { "text": "Gordon Murray", "isCorrect": false }
+      ],
+      "explanation": "Il a notamment introduit la monocoque, puis l'effet de sol."
+    },
+    {
+      "ref": "f1-263",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "technique"],
+      "text": "Quel ingénieur, concepteur de voitures championnes chez Williams, McLaren et Red Bull, a rejoint Aston Martin en 2025 ?",
+      "answers": [
+        { "text": "Adrian Newey", "isCorrect": true },
+        { "text": "Ross Brawn", "isCorrect": false },
+        { "text": "Colin Chapman", "isCorrect": false },
+        { "text": "Patrick Head", "isCorrect": false }
+      ],
+      "explanation": "Il est considéré comme le plus grand concepteur de l'histoire de la F1."
+    },
+    {
+      "ref": "f1-264",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Qui dirige l'écurie Mercedes depuis 2013 ?",
+      "answers": [
+        { "text": "Christian Horner", "isCorrect": false },
+        { "text": "Frédéric Vasseur", "isCorrect": false },
+        { "text": "Andrea Stella", "isCorrect": false },
+        { "text": "Toto Wolff", "isCorrect": true }
+      ],
+      "explanation": "L'Autrichien est aussi actionnaire de l'écurie."
+    },
+    {
+      "ref": "f1-265",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "france"],
+      "text": "Quel Français a pris la tête de l'écurie Ferrari en 2023 ?",
+      "answers": [
+        { "text": "Jean Todt", "isCorrect": false },
+        { "text": "Cyril Abiteboul", "isCorrect": false },
+        { "text": "Frédéric Vasseur", "isCorrect": true },
+        { "text": "Gérard Ducarouge", "isCorrect": false }
+      ],
+      "explanation": "Il dirigeait auparavant l'écurie Sauber."
+    },
+    {
+      "ref": "f1-266",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "france"],
+      "text": "Quel Français a dirigé Ferrari pendant les années de domination de Michael Schumacher ?",
+      "answers": [
+        { "text": "Alain Prost", "isCorrect": false },
+        { "text": "Jean Todt", "isCorrect": true },
+        { "text": "Gérard Ducarouge", "isCorrect": false },
+        { "text": "Guy Ligier", "isCorrect": false }
+      ],
+      "explanation": "Il a ensuite présidé la FIA, de 2009 à 2021."
+    },
+    {
+      "ref": "f1-267",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "champion-du-monde"],
+      "text": "Quelle écurie a remporté les quatre titres constructeurs de 2010 à 2013 ?",
+      "answers": [
+        { "text": "Red Bull", "isCorrect": true },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": false }
+      ],
+      "explanation": "Sebastian Vettel a remporté le titre pilotes ces quatre mêmes années."
+    },
+    {
+      "ref": "f1-268",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "record"],
+      "text": "Quelle écurie a remporté 21 des 22 courses de la saison 2023 ?",
+      "answers": [
+        { "text": "Mercedes", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Red Bull", "isCorrect": true }
+      ],
+      "explanation": "Seul Carlos Sainz, avec Ferrari à Singapour, a interrompu la série."
+    },
+    {
+      "ref": "f1-269",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Combien d'écuries composaient le plateau en 2025 ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "11", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Chacune engageait deux voitures."
+    },
+    {
+      "ref": "f1-270",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "histoire"],
+      "text": "Quelle écurie a été rebaptisée Benetton en 1986 ?",
+      "answers": [
+        { "text": "Tyrrell", "isCorrect": false },
+        { "text": "Toleman", "isCorrect": true },
+        { "text": "Lotus", "isCorrect": false },
+        { "text": "Ligier", "isCorrect": false }
+      ],
+      "explanation": "Cette lignée, basée à Enstone, est devenue Renault, puis Lotus, de nouveau Renault, et enfin Alpine."
+    },
+    {
+      "ref": "f1-271",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie"],
+      "text": "Dans quelle ville se trouve l'usine de l'écurie Mercedes ?",
+      "answers": [
+        { "text": "Brackley", "isCorrect": true },
+        { "text": "Stuttgart", "isCorrect": false },
+        { "text": "Woking", "isCorrect": false },
+        { "text": "Milton Keynes", "isCorrect": false }
+      ],
+      "explanation": "Le châssis est conçu en Angleterre, et le moteur à Brixworth, non loin de là."
+    },
+    {
+      "ref": "f1-272",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Quel constructeur allemand a racheté Brawn GP fin 2009 ?",
+      "answers": [
+        { "text": "BMW", "isCorrect": false },
+        { "text": "Audi", "isCorrect": false },
+        { "text": "Porsche", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": true }
+      ],
+      "explanation": "L'écurie est devenue Mercedes en 2010, avec le retour de Michael Schumacher."
+    },
+    {
+      "ref": "f1-273",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Quelle marque de boisson énergisante possède deux écuries de F1 ?",
+      "answers": [
+        { "text": "Monster", "isCorrect": false },
+        { "text": "Rockstar", "isCorrect": false },
+        { "text": "Red Bull", "isCorrect": true },
+        { "text": "Burn", "isCorrect": false }
+      ],
+      "explanation": "Red Bull Racing et sa petite sœur Racing Bulls, basée à Faenza."
+    },
+    {
+      "ref": "f1-274",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "record"],
+      "text": "Quelle écurie a remporté en 2024 son premier titre constructeurs depuis 1998 ?",
+      "answers": [
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": true },
+        { "text": "Red Bull", "isCorrect": false },
+        { "text": "Mercedes", "isCorrect": false }
+      ],
+      "explanation": "Elle a conservé ce titre en 2025."
+    },
+    {
+      "ref": "f1-275",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "histoire", "france"],
+      "text": "Quelle couleur représentait traditionnellement la France sur les voitures de course ?",
+      "answers": [
+        { "text": "Le bleu", "isCorrect": true },
+        { "text": "Le rouge", "isCorrect": false },
+        { "text": "Le vert", "isCorrect": false },
+        { "text": "Le blanc", "isCorrect": false }
+      ],
+      "explanation": "Chaque pays avait sa couleur : rouge pour l'Italie, vert pour le Royaume-Uni, bleu pour la France, argent ou blanc pour l'Allemagne."
+    },
+    {
+      "ref": "f1-276",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "histoire"],
+      "text": "Quelle écurie a couru avec la célèbre livrée noir et or du cigarettier John Player Special ?",
+      "answers": [
+        { "text": "McLaren", "isCorrect": false },
+        { "text": "Williams", "isCorrect": false },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Lotus", "isCorrect": true }
+      ],
+      "explanation": "Ces Lotus noires ont marqué les années 1970 et 1980."
+    },
+    {
+      "ref": "f1-277",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie", "histoire"],
+      "text": "En quelle année a été créé le championnat du monde des constructeurs ?",
+      "answers": [
+        { "text": "1950", "isCorrect": false },
+        { "text": "1970", "isCorrect": false },
+        { "text": "1958", "isCorrect": true },
+        { "text": "1965", "isCorrect": false }
+      ],
+      "explanation": "Le premier titre est revenu à l'écurie britannique Vanwall."
+    },
+    {
+      "ref": "f1-278",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecurie", "record"],
+      "text": "Quelle écurie a remporté 15 des 16 courses de la saison 1988 ?",
+      "answers": [
+        { "text": "Williams", "isCorrect": false },
+        { "text": "McLaren", "isCorrect": true },
+        { "text": "Ferrari", "isCorrect": false },
+        { "text": "Lotus", "isCorrect": false }
+      ],
+      "explanation": "Seul Gerhard Berger, avec Ferrari à Monza, a privé Senna et Prost de la victoire."
+    },
+    {
+      "ref": "f1-279",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["ecurie", "record"],
+      "text": "Ferrari a remporté son dernier titre constructeurs en 2008.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Depuis, Brawn GP, Red Bull, Mercedes et McLaren se sont partagé les titres."
+    },
+    {
+      "ref": "f1-280",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Dans quelle ville italienne est basée l'écurie Racing Bulls ?",
+      "answers": [
+        { "text": "Maranello", "isCorrect": false },
+        { "text": "Imola", "isCorrect": false },
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Faenza", "isCorrect": true }
+      ],
+      "explanation": "C'est l'ancienne usine de Minardi, devenue Toro Rosso puis AlphaTauri."
+    },
+    {
+      "ref": "f1-281",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecurie"],
+      "text": "Quel constructeur allemand reprend l'écurie Sauber à partir de 2026 ?",
+      "answers": [
+        { "text": "BMW", "isCorrect": false },
+        { "text": "Porsche", "isCorrect": false },
+        { "text": "Audi", "isCorrect": true },
+        { "text": "Volkswagen", "isCorrect": false }
+      ],
+      "explanation": "Audi devient à la fois constructeur de châssis et motoriste."
+    },
+    {
+      "ref": "f1-282",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "pilote"],
+      "text": "Quel pilote détient le record de victoires en Grand Prix ?",
+      "answers": [
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Lewis Hamilton", "isCorrect": true },
+        { "text": "Max Verstappen", "isCorrect": false },
+        { "text": "Ayrton Senna", "isCorrect": false }
+      ],
+      "explanation": "Il compte 105 victoires, devant Michael Schumacher (91)."
+    },
+    {
+      "ref": "f1-283",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Combien de Grands Prix Michael Schumacher a-t-il remportés ?",
+      "answers": [
+        { "text": "91", "isCorrect": true },
+        { "text": "105", "isCorrect": false },
+        { "text": "65", "isCorrect": false },
+        { "text": "53", "isCorrect": false }
+      ],
+      "explanation": "Ce record a tenu jusqu'en 2020, quand Lewis Hamilton l'a battu."
+    },
+    {
+      "ref": "f1-284",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Quel pilote détient le record de pole positions ?",
+      "answers": [
+        { "text": "Ayrton Senna", "isCorrect": false },
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Sebastian Vettel", "isCorrect": false },
+        { "text": "Lewis Hamilton", "isCorrect": true }
+      ],
+      "explanation": "Il en compte 104. Ayrton Senna, avec 65, a détenu ce record jusqu'en 2006."
+    },
+    {
+      "ref": "f1-285",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Combien de courses Max Verstappen a-t-il gagnées pendant la saison 2023 ?",
+      "answers": [
+        { "text": "15", "isCorrect": false },
+        { "text": "13", "isCorrect": false },
+        { "text": "19", "isCorrect": true },
+        { "text": "21", "isCorrect": false }
+      ],
+      "explanation": "C'est le record de victoires en une saison, sur 22 courses."
+    },
+    {
+      "ref": "f1-286",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Quel est le record de victoires consécutives en Grand Prix ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Il appartient à Max Verstappen, de Miami à Monza en 2023."
+    },
+    {
+      "ref": "f1-287",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Quel pilote est devenu le plus jeune vainqueur d'un Grand Prix, en Espagne en 2016 ?",
+      "answers": [
+        { "text": "Max Verstappen", "isCorrect": true },
+        { "text": "Sebastian Vettel", "isCorrect": false },
+        { "text": "Charles Leclerc", "isCorrect": false },
+        { "text": "Lando Norris", "isCorrect": false }
+      ],
+      "explanation": "Il avait 18 ans et 228 jours, pour sa première course avec Red Bull."
+    },
+    {
+      "ref": "f1-288",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote", "circuit"],
+      "text": "Quel pilote détient le record de victoires au Grand Prix de Monaco ?",
+      "answers": [
+        { "text": "Graham Hill", "isCorrect": false },
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Alain Prost", "isCorrect": false },
+        { "text": "Ayrton Senna", "isCorrect": true }
+      ],
+      "explanation": "Il a gagné six fois en principauté, dont cinq fois d'affilée de 1989 à 1993."
+    },
+    {
+      "ref": "f1-289",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "pilote", "circuit"],
+      "text": "Combien de fois Lewis Hamilton a-t-il gagné le Grand Prix de Grande-Bretagne ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "9", "isCorrect": true },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "C'est le record de victoires dans un même Grand Prix."
+    },
+    {
+      "ref": "f1-290",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "pilote"],
+      "text": "Combien de pole positions Ayrton Senna a-t-il réalisées ?",
+      "answers": [
+        { "text": "41", "isCorrect": false },
+        { "text": "65", "isCorrect": true },
+        { "text": "104", "isCorrect": false },
+        { "text": "33", "isCorrect": false }
+      ],
+      "explanation": "Il a détenu ce record jusqu'en 2006."
+    },
+    {
+      "ref": "f1-291",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Combien de Grands Prix Ayrton Senna a-t-il gagnés ?",
+      "answers": [
+        { "text": "41", "isCorrect": true },
+        { "text": "65", "isCorrect": false },
+        { "text": "91", "isCorrect": false },
+        { "text": "25", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté 35 de ces victoires avec McLaren."
+    },
+    {
+      "ref": "f1-292",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote", "france"],
+      "text": "Combien de Grands Prix Alain Prost a-t-il gagnés ?",
+      "answers": [
+        { "text": "41", "isCorrect": false },
+        { "text": "33", "isCorrect": false },
+        { "text": "62", "isCorrect": false },
+        { "text": "51", "isCorrect": true }
+      ],
+      "explanation": "Il a détenu le record de victoires jusqu'en 2001, quand Michael Schumacher l'a dépassé."
+    },
+    {
+      "ref": "f1-293",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "ecurie"],
+      "text": "Combien de titres constructeurs Ferrari a-t-il remportés ?",
+      "answers": [
+        { "text": "10", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "16", "isCorrect": true },
+        { "text": "20", "isCorrect": false }
+      ],
+      "explanation": "C'est le record, devant McLaren et Williams."
+    },
+    {
+      "ref": "f1-294",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record"],
+      "text": "Combien de Grands Prix comptait la saison 2024, un record ?",
+      "answers": [
+        { "text": "20", "isCorrect": false },
+        { "text": "24", "isCorrect": true },
+        { "text": "22", "isCorrect": false },
+        { "text": "19", "isCorrect": false }
+      ],
+      "explanation": "La saison 2025 en comptait aussi 24."
+    },
+    {
+      "ref": "f1-295",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "histoire"],
+      "text": "Combien de courses comptait la première saison du championnat, en 1950 ?",
+      "answers": [
+        { "text": "7", "isCorrect": true },
+        { "text": "12", "isCorrect": false },
+        { "text": "16", "isCorrect": false },
+        { "text": "24", "isCorrect": false }
+      ],
+      "explanation": "Six Grands Prix européens et les 500 Miles d'Indianapolis."
+    },
+    {
+      "ref": "f1-296",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Quel pilote a remporté le plus de titres consécutifs ?",
+      "answers": [
+        { "text": "Lewis Hamilton", "isCorrect": false },
+        { "text": "Sebastian Vettel", "isCorrect": false },
+        { "text": "Juan Manuel Fangio", "isCorrect": false },
+        { "text": "Michael Schumacher", "isCorrect": true }
+      ],
+      "explanation": "Il a remporté cinq titres d'affilée avec Ferrari, de 2000 à 2004."
+    },
+    {
+      "ref": "f1-297",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "pilote"],
+      "text": "Quel est le plus jeune pilote à avoir pris le départ d'un Grand Prix ?",
+      "answers": [
+        { "text": "Lance Stroll", "isCorrect": false },
+        { "text": "Jaime Alguersuari", "isCorrect": false },
+        { "text": "Max Verstappen", "isCorrect": true },
+        { "text": "Fernando Alonso", "isCorrect": false }
+      ],
+      "explanation": "Il avait 17 ans et 166 jours en Australie, en 2015. La FIA a ensuite fixé l'âge minimal à 18 ans."
+    },
+    {
+      "ref": "f1-298",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Quel pilote a obtenu le plus de podiums en F1 ?",
+      "answers": [
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Lewis Hamilton", "isCorrect": true },
+        { "text": "Max Verstappen", "isCorrect": false },
+        { "text": "Fernando Alonso", "isCorrect": false }
+      ],
+      "explanation": "Il devance largement Michael Schumacher et ses 155 podiums."
+    },
+    {
+      "ref": "f1-299",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote", "ecurie"],
+      "text": "Quel pilote détient le record de victoires avec une seule écurie ?",
+      "answers": [
+        { "text": "Lewis Hamilton", "isCorrect": true },
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Max Verstappen", "isCorrect": false },
+        { "text": "Sebastian Vettel", "isCorrect": false }
+      ],
+      "explanation": "Il a gagné 84 courses avec Mercedes."
+    },
+    {
+      "ref": "f1-300",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "ecurie"],
+      "text": "Combien de temps dure environ un arrêt au stand record pour changer les quatre pneus ?",
+      "answers": [
+        { "text": "Environ 5 secondes", "isCorrect": false },
+        { "text": "Environ 10 secondes", "isCorrect": false },
+        { "text": "Environ 30 secondes", "isCorrect": false },
+        { "text": "Moins de 2 secondes", "isCorrect": true }
+      ],
+      "explanation": "Le record, 1,80 seconde, a été établi par McLaren au Qatar en 2023."
+    },
+    {
+      "ref": "f1-301",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote", "ecurie"],
+      "text": "Quel pilote a remporté le plus de titres avec Ferrari ?",
+      "answers": [
+        { "text": "Niki Lauda", "isCorrect": false },
+        { "text": "Alberto Ascari", "isCorrect": false },
+        { "text": "Michael Schumacher", "isCorrect": true },
+        { "text": "Kimi Räikkönen", "isCorrect": false }
+      ],
+      "explanation": "Il a gagné cinq titres avec la Scuderia."
+    },
+    {
+      "ref": "f1-302",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["record", "pilote", "champion-du-monde"],
+      "text": "Michael Schumacher est le seul pilote à avoir remporté sept titres de champion du monde.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il partage ce record avec Lewis Hamilton."
+    },
+    {
+      "ref": "f1-303",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "pilote"],
+      "text": "Combien de Grands Prix Sebastian Vettel a-t-il remportés en 2013, dont neuf d'affilée ?",
+      "answers": [
+        { "text": "13", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "19", "isCorrect": false },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "Ses neuf victoires consécutives, de Spa à Interlagos, ont été un record jusqu'en 2023."
+    },
+    {
+      "ref": "f1-304",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "ecurie"],
+      "text": "Combien de victoires consécutives Red Bull a-t-il enchaînées entre 2022 et 2023 ?",
+      "answers": [
+        { "text": "10", "isCorrect": false },
+        { "text": "21", "isCorrect": false },
+        { "text": "8", "isCorrect": false },
+        { "text": "15", "isCorrect": true }
+      ],
+      "explanation": "La série s'est arrêtée à Singapour en 2023, avec la victoire de Carlos Sainz."
+    },
+    {
+      "ref": "f1-305",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "pilote"],
+      "text": "Combien de Grands Prix Lewis Hamilton a-t-il gagnés ?",
+      "answers": [
+        { "text": "91", "isCorrect": false },
+        { "text": "84", "isCorrect": false },
+        { "text": "105", "isCorrect": true },
+        { "text": "120", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté 21 victoires avec McLaren, puis 84 avec Mercedes."
+    },
+    {
+      "ref": "f1-306",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "pilote"],
+      "text": "Quel pilote a remporté le plus de Grands Prix en partant de la pole position ?",
+      "answers": [
+        { "text": "Michael Schumacher", "isCorrect": false },
+        { "text": "Lewis Hamilton", "isCorrect": true },
+        { "text": "Ayrton Senna", "isCorrect": false },
+        { "text": "Max Verstappen", "isCorrect": false }
+      ],
+      "explanation": "Il a transformé plus de 60 pole positions en victoires."
+    },
+    {
+      "ref": "f1-307",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-monaco.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Juan2910 (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_de_Monaco_2023.png"
+        }
+      },
+      "answers": [
+        { "text": "Monaco", "isCorrect": true },
+        { "text": "Singapour", "isCorrect": false },
+        { "text": "Bakou", "isCorrect": false },
+        { "text": "Valence", "isCorrect": false }
+      ],
+      "explanation": "Le tracé sinueux épouse le port et la colline de Monte-Carlo, avec l'épingle très serrée du Fairmont."
+    },
+    {
+      "ref": "f1-308",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-spa-francorchamps.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "SimLola661 (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_de_Spa-Francorchamps_2004-2006.png"
+        }
+      },
+      "answers": [
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Suzuka", "isCorrect": false },
+        { "text": "Le Nürburgring", "isCorrect": false },
+        { "text": "Spa-Francorchamps", "isCorrect": true }
+      ],
+      "explanation": "On reconnaît son tracé long et tortueux, avec le Raidillon en montée et la longue ligne droite de Kemmel."
+    },
+    {
+      "ref": "f1-309",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-monza.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "ごひょううべこ (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:2022_F1_CourseLayout_Italia.svg?lang=fr?uselang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Imola", "isCorrect": false },
+        { "text": "Le Red Bull Ring", "isCorrect": false },
+        { "text": "Monza", "isCorrect": true },
+        { "text": "Hockenheim", "isCorrect": false }
+      ],
+      "explanation": "De longues lignes droites coupées de chicanes, puis la grande courbe de la Parabolica avant la ligne d'arrivée."
+    },
+    {
+      "ref": "f1-310",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-silverstone.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "AlexJ (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_Silverstone_2011.svg"
+        }
+      },
+      "answers": [
+        { "text": "Circuit des Amériques", "isCorrect": false },
+        { "text": "Silverstone", "isCorrect": true },
+        { "text": "Las Vegas Strip Circuit", "isCorrect": false },
+        { "text": "Miami International Autodrome", "isCorrect": false }
+      ],
+      "explanation": "Cet ancien aérodrome a gardé un tracé très rapide, avec l'enchaînement Maggotts - Becketts - Chapel."
+    },
+    {
+      "ref": "f1-311",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-suzuka.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Ocdp (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Suzuka_Circuit_2013_001.svg"
+        }
+      },
+      "answers": [
+        { "text": "Suzuka", "isCorrect": true },
+        { "text": "Fuji", "isCorrect": false },
+        { "text": "Shanghai", "isCorrect": false },
+        { "text": "Sepang", "isCorrect": false }
+      ],
+      "explanation": "Son tracé en forme de huit, unique au calendrier, se croise grâce à un pont."
+    },
+    {
+      "ref": "f1-312",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-interlagos.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Ch1902 (fond modifié)",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_Interlagos.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mexico", "isCorrect": false },
+        { "text": "Le circuit des Amériques", "isCorrect": false },
+        { "text": "Montréal", "isCorrect": false },
+        { "text": "Interlagos", "isCorrect": true }
+      ],
+      "explanation": "Court et vallonné, il se parcourt dans le sens inverse des aiguilles d'une montre, avec le S de Senna dès le départ."
+    },
+    {
+      "ref": "f1-313",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-montreal.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Will Pittenger (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_GillesVilleneuve_2002.svg"
+        }
+      },
+      "answers": [
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Interlagos", "isCorrect": false },
+        { "text": "Le circuit Gilles-Villeneuve (Montréal)", "isCorrect": true },
+        { "text": "Monaco", "isCorrect": false }
+      ],
+      "explanation": "Tout en longueur sur une île, il enchaîne lignes droites et chicanes jusqu'au mur des champions."
+    },
+    {
+      "ref": "f1-314",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-zandvoort.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Anthony Alessio Tralongo (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Zandvoort_Circuit.png"
+        }
+      },
+      "answers": [
+        { "text": "Le Hungaroring", "isCorrect": false },
+        { "text": "Zandvoort", "isCorrect": true },
+        { "text": "Hockenheim", "isCorrect": false },
+        { "text": "Le Red Bull Ring", "isCorrect": false }
+      ],
+      "explanation": "Serré entre les dunes de la mer du Nord, il est célèbre pour ses deux virages relevés."
+    },
+    {
+      "ref": "f1-315",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-hungaroring.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Will Pittenger (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Hungaroring.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Le Hungaroring", "isCorrect": true },
+        { "text": "Barcelone-Catalogne", "isCorrect": false },
+        { "text": "Zandvoort", "isCorrect": false },
+        { "text": "Sepang", "isCorrect": false }
+      ],
+      "explanation": "Sinueux et lent, il est souvent comparé à un circuit de karting géant, où il est très difficile de dépasser."
+    },
+    {
+      "ref": "f1-316",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-albert-park.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Juan2910 (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Albert_Park_Circuit.png"
+        }
+      },
+      "answers": [
+        { "text": "Montréal", "isCorrect": false },
+        { "text": "Sakhir", "isCorrect": false },
+        { "text": "Yas Marina", "isCorrect": false },
+        { "text": "Albert Park (Melbourne)", "isCorrect": true }
+      ],
+      "explanation": "Le tracé fait le tour d'un lac, au milieu d'un parc de Melbourne."
+    },
+    {
+      "ref": "f1-317",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-red-bull-ring.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "HumanBodyPiloter5 (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Spielberg_bare_map_numbers_contextless_2021_corner_names.svg"
+        }
+      },
+      "answers": [
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Zandvoort", "isCorrect": false },
+        { "text": "Le Red Bull Ring", "isCorrect": true },
+        { "text": "Interlagos", "isCorrect": false }
+      ],
+      "explanation": "Avec seulement une dizaine de virages sur les pentes de Styrie, c'est l'un des tours les plus courts en temps de la saison."
+    },
+    {
+      "ref": "f1-318",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-barcelone-catalogne.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Rumbin (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_Catalunya_2004-2007.svg"
+        }
+      },
+      "answers": [
+        { "text": "Le Hungaroring", "isCorrect": false },
+        { "text": "Barcelone-Catalogne", "isCorrect": true },
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Sepang", "isCorrect": false }
+      ],
+      "explanation": "Sa longue ligne droite de départ et ses virages de toutes vitesses en ont fait le circuit préféré des écuries pour les essais d'hiver."
+    },
+    {
+      "ref": "f1-319",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-bakou.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "HumanBodyPiloter5 (fond modifié)",
+          "license": "CC-Zero",
+          "url": "https://commons.wikimedia.org/wiki/File:Baku_Formula_One_circuit_map.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Bakou", "isCorrect": true },
+        { "text": "Singapour", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Las Vegas", "isCorrect": false }
+      ],
+      "explanation": "On reconnaît son immense ligne droite le long de la mer Caspienne et le passage très étroit de la vieille ville."
+    },
+    {
+      "ref": "f1-320",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-singapour.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Restu20 (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Singapore_Street_Circuit_2015.svg"
+        }
+      },
+      "answers": [
+        { "text": "Silverstone", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Albert Park (Melbourne)", "isCorrect": false },
+        { "text": "Marina Bay (Singapour)", "isCorrect": true }
+      ],
+      "explanation": "Un tracé urbain tout en angles droits, au pied des gratte-ciel de la baie."
+    },
+    {
+      "ref": "f1-321",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-yas-marina.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "ごひょううべこ (fond modifié)",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:2022_F1_CourseLayout_Abu_Dhabi.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Sakhir (Bahreïn)", "isCorrect": false },
+        { "text": "Losail (Doha)", "isCorrect": false },
+        { "text": "Yas Marina (Abou Dhabi)", "isCorrect": true },
+        { "text": "Djeddah", "isCorrect": false }
+      ],
+      "explanation": "Le tracé contourne la marina et passe sous l'hôtel W, après une longue ligne droite."
+    },
+    {
+      "ref": "f1-322",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-sakhir.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Rumbin (fond modifié)",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_Bahrain.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Yas Marina (Abou Dhabi)", "isCorrect": false },
+        { "text": "Sakhir (Bahreïn)", "isCorrect": true },
+        { "text": "Losail (Doha)", "isCorrect": false },
+        { "text": "Shanghai", "isCorrect": false }
+      ],
+      "explanation": "Tracé en plein désert, il alterne longues lignes droites et gros freinages."
+    },
+    {
+      "ref": "f1-323",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-djeddah.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "GabrielStella (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Jeddah_Street_Circuit_2021.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Djeddah", "isCorrect": true },
+        { "text": "Bakou", "isCorrect": false },
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "Yas Marina (Abou Dhabi)", "isCorrect": false }
+      ],
+      "explanation": "Long ruban en bord de mer fait de courbes rapides, c'est l'un des circuits urbains les plus rapides au monde."
+    },
+    {
+      "ref": "f1-324",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-losail.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Will Pittenger (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Lusail_International_Circuit_2023.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Sakhir (Bahreïn)", "isCorrect": false },
+        { "text": "Yas Marina (Abou Dhabi)", "isCorrect": false },
+        { "text": "Sepang", "isCorrect": false },
+        { "text": "Losail (Qatar)", "isCorrect": true }
+      ],
+      "explanation": "Pensé pour la moto, il enchaîne de longues courbes rapides autour d'une seule grande ligne droite."
+    },
+    {
+      "ref": "f1-325",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-circuit-des-ameriques.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Francesco Betti Sorbelli (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Austin_Formula_One_circuit.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Interlagos", "isCorrect": false },
+        { "text": "Mexico", "isCorrect": false },
+        { "text": "Le circuit des Amériques", "isCorrect": true },
+        { "text": "Miami", "isCorrect": false }
+      ],
+      "explanation": "Son premier virage, au sommet d'une forte montée, et ses enchaînements inspirés d'autres circuits célèbres le rendent reconnaissable."
+    },
+    {
+      "ref": "f1-326",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-mexico.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Pitlane02 (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez_2015.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Montréal", "isCorrect": false },
+        { "text": "Mexico", "isCorrect": true },
+        { "text": "Interlagos", "isCorrect": false },
+        { "text": "Le circuit des Amériques", "isCorrect": false }
+      ],
+      "explanation": "Une très longue ligne droite de départ, puis un passage au milieu des tribunes d'un ancien stade de baseball."
+    },
+    {
+      "ref": "f1-327",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-shanghai.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Will Pittenger (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Shanghai_International_Racing_Circuit_track_map.svg"
+        }
+      },
+      "answers": [
+        { "text": "Suzuka", "isCorrect": false },
+        { "text": "Sepang", "isCorrect": false },
+        { "text": "Shanghai", "isCorrect": true },
+        { "text": "Istanbul Park", "isCorrect": false }
+      ],
+      "explanation": "Son tracé dessine le caractère chinois « shang », avec un premier virage en colimaçon."
+    },
+    {
+      "ref": "f1-328",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-imola.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "PT8475 (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Imola_Fastest_Layout.png"
+        }
+      },
+      "answers": [
+        { "text": "Monza", "isCorrect": false },
+        { "text": "Imola", "isCorrect": true },
+        { "text": "Le Mugello", "isCorrect": false },
+        { "text": "Hockenheim", "isCorrect": false }
+      ],
+      "explanation": "Il se parcourt dans le sens inverse des aiguilles d'une montre, en épousant les collines d'Émilie-Romagne."
+    },
+    {
+      "ref": "f1-329",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["silhouette", "circuit", "france"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-paul-ricard.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "HumanBodyPiloter5 (fond modifié)",
+          "license": "CC-Zero",
+          "url": "https://commons.wikimedia.org/wiki/File:Le_Castellet_2019_all_layouts.svg"
+        }
+      },
+      "answers": [
+        { "text": "Le Paul-Ricard", "isCorrect": true },
+        { "text": "Magny-Cours", "isCorrect": false },
+        { "text": "Le Mans", "isCorrect": false },
+        { "text": "Sakhir (Bahreïn)", "isCorrect": false }
+      ],
+      "explanation": "On reconnaît sa très longue ligne droite du Mistral, coupée par une chicane."
+    },
+    {
+      "ref": "f1-330",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-hockenheim.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Sentoan (fond modifié)",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Hockenheim2012.svg"
+        }
+      },
+      "answers": [
+        { "text": "Sachsenring", "isCorrect": false },
+        { "text": "Hockenheim", "isCorrect": true },
+        { "text": "Le Nürburgring", "isCorrect": false },
+        { "text": "Le Red Bull Ring", "isCorrect": false }
+      ],
+      "explanation": "Le passage du « Stadium », entouré de tribunes, est le cœur de ce circuit allemand."
+    },
+    {
+      "ref": "f1-331",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["silhouette", "circuit", "histoire"],
+      "text": "À quel circuit correspond ce tracé ?",
+      "image": {
+        "src": "formule-1/circuit-sepang.webp",
+        "alt": "Tracé d'un circuit de Formule 1 à identifier",
+        "credit": {
+          "author": "Rumbin (fond modifié)",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Circuit_Sepang.svg?lang=fr"
+        }
+      },
+      "answers": [
+        { "text": "Shanghai", "isCorrect": false },
+        { "text": "Losail", "isCorrect": false },
+        { "text": "Sakhir", "isCorrect": false },
+        { "text": "Sepang (Malaisie)", "isCorrect": true }
+      ],
+      "explanation": "Ses deux longues lignes droites reliées par une épingle forment un dessin très reconnaissable."
+    }
+  ]
+}

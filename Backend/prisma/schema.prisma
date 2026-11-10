@@ -32,6 +32,7 @@ model User {
   quizzes                Quiz[]            @relation("QuizOwner")
   questions              Question[]        @relation("QuestionAuthor")
   achievements           UserAchievement[]
+  notifications          Notification[]
 }
 
 model OAuthAccount {
@@ -67,6 +68,18 @@ model BlockedUser {
   created_at DateTime @default(now())
 
   @@unique([blocker_id, blocked_id])
+}
+
+model Notification {
+  id         Int      @id @default(autoincrement())
+  user_id    Int // destinataire
+  user       User     @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  type       String // "friend_request" | "friend_accepted" | "achievement" | ...
+  message    String
+  is_read    Boolean  @default(false)
+  created_at DateTime @default(now())
+
+  @@index([user_id, is_read])
 }
 
 model Quiz {
@@ -163,7 +176,7 @@ model QuizAttempt {
   startedAt      DateTime  @default(now())
   finishedAt     DateTime?
 
-  mode   String @default("custom")
+  mode   String @default("classic")
   status String @default("in_progress")
 
   userId Int
@@ -185,7 +198,7 @@ model QuizAttempt {
   achievements UserAchievement[]
 
   @@index([userId])
-  @@index([categoryId, tagId, difficulty])
+  @@index([mode, categoryId, tagId, difficulty])
   @@index([categoryId, difficulty, mode, status])
 }
 

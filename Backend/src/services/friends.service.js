@@ -1,6 +1,7 @@
 const userModel = require('../models/user.model');
 const friendModel = require('../models/friends.model');
 const { serviceError } = require('../../lib/errorHandling');
+const { notifyUser } = require('./notifications.service');
 
 async function sendRequest(requesterId, { username, addresseeId }) {
     let addressee;
@@ -22,16 +23,20 @@ async function sendRequest(requesterId, { username, addresseeId }) {
 
     const existing = await friendModel.findBetween(requesterId, addressee.id);
 
-    if (existing && existing.status === 'declined') {
-        await friendModel.remove(existing.id);
-        return friendModel.create(requesterId, addressee.id);
-    }
 
-    if (existing) {
+    if (existing && existing.status !== 'declined') {
         throw serviceError('ALREADY_EXISTS');
     }
 
-    return friendModel.create(requesterId, addressee.id);
+    const requester = await userModel.findById(requesterId);
+
+    if (existing ) {
+        await friendModel.remove(existing.id);
+    }
+
+    const friendship = await friendModel.create(requesterId, addressee.id);
+    await notifyUser(addressee.id, 'friend_request', `${requester.username} t'a envoyé une demande d'ami`);
+    return friendship;
 }
 
 async function getFriendshipOrThrow(friendshipId) {
@@ -57,7 +62,10 @@ async function respondToRequest(friendshipId, userId, newStatus) {
 }
 
 async function acceptRequest(friendshipId, userId) {
-    return respondToRequest(friendshipId, userId, 'accepted');
+    const addressee = await userModel.findById(userId);
+    const friendship = await respondToRequest(friendshipId, userId, 'accepted');
+    await notifyUser(friendship.requester_id, 'friend_accepted', `${addressee.username} a accepté ta demande d'ami`);
+    return friendship;
 }
 
 async function declineRequest(friendshipId, userId) {

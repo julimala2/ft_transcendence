@@ -12,7 +12,7 @@ const path = require("path");
 
 const prisma = new PrismaClient();
 
-const FILE = path.join(__dirname, "achievements.json");
+const FILE = path.join(__dirname, "..", "achievements.json");
 
 const METRICS = ["rush_score", "perfect_game", "games_finished"];
 const DIFFICULTIES = [1, 2, 3];

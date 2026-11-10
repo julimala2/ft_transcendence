@@ -3,6 +3,7 @@ const userModel = require('../models/user.model');
 const fs = require('fs');
 const path = require('path');
 const { serviceError } = require('../../lib/errorHandling');
+const { notifyUser } = require('./notifications.service');
 
 async function getProfile(userId) {
     return userModel.findById(userId);
@@ -17,14 +18,28 @@ async function searchUsers(query) {
 }
 
 async function updateProfile(userId, data) {
-    if (data.email) {
+    const user = await userModel.findById(userId);
+    if (!user) {
+        throw serviceError('USER_NOT_FOUND');
+    }
+    if (data.email !== undefined) {
         const existing = await userModel.findByEmail(data.email);
         if (existing && existing.id !== userId) {
             throw serviceError('EMAIL_TAKEN');
         }
     }
 
-    return userModel.update(userId, data);
+    const updated = await userModel.update(userId, data);
+
+    if (data.display_name !== undefined && data.display_name !== user.display_name) {
+        await notifyUser(userId, 'updated_display_name', 'Ton nom d\'affichage a été modifié');
+    }
+
+    if (data.email !== user.email) {
+        await notifyUser(userId, 'updated_email', 'Ton email a été modifié');
+    }
+
+    return updated;
 }
 
 async function updateAvatar(userId, avatar_url) {
@@ -40,6 +55,7 @@ async function updateAvatar(userId, avatar_url) {
             }
         });
     }
+    await notifyUser(userId, 'updated_avatar', 'Ton avatar a été modifié');
 
     return updatedUser;
 }
@@ -55,6 +71,7 @@ async function changePassword(userId, currentPassword, newPassword) {
     }
 
     const password_hash = await bcrypt.hash(newPassword, 10);
+    await notifyUser(userId, 'updated_password', 'Ton mot de passe a été modifié');
     return userModel.update(userId, { password_hash });
 }
 

@@ -1,5 +1,5 @@
 const express = require('express');
-const { validateStatsQuery, validateStatsUserId } = require('../middlewares/statistics.middleware');
+const { validateStatsQuery, validateStatsUserId, validateLeaderboardQuery } = require('../middlewares/statistics.middleware');
 const statsController = require('../controllers/statistics.controller');
 const { verifyToken } = require('../middlewares/auth.middleware');
 
@@ -14,6 +14,7 @@ const router = express.Router();
 
 router.get('/', verifyToken, validateStatsQuery, statsController.getStatistics);
 router.get('/global', verifyToken, validateStatsQuery, statsController.getGlobalStatistics);
+router.get('/leaderboard', verifyToken, validateStatsQuery, validateLeaderboardQuery, statsController.getLeaderboard);
 router.get('/users/:id', verifyToken, validateStatsUserId, validateStatsQuery, statsController.getUserStatistics);
 
 module.exports = router;

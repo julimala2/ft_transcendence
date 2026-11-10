@@ -15,6 +15,7 @@ const ERRORS = {
     SELF_BLOCK: { status: 400, message: 'Impossible de se bloquer soi-meme' },
     ALREADY_BLOCKED: { status: 409, message: 'Utilisateur deja bloque' },
     NOT_BLOCKED: { status: 409, message: 'Utilisateur non bloque' },
+    NOTIFICATION_NOT_FOUND: { status: 404, message: 'Notification introuvable'},
 };
 
 function serviceError(code) {

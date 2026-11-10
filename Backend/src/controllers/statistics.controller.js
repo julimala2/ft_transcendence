@@ -42,4 +42,16 @@ async function getGlobalStatistics(req, res) {
     }
 }
 
-module.exports = { getStatistics, getUserStatistics, getGlobalStatistics };
+async function getLeaderboard(req, res) {
+
+    try {
+        const leaderboard = await statsService.getLeaderboard(req.user.id, req.statsCategoryId, req.statsDifficulty, req.statsLimit);
+        return res.status(200).json(leaderboard);
+    }
+    catch (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Erreur serveur' });
+    }
+}
+
+module.exports = { getStatistics, getUserStatistics, getGlobalStatistics, getLeaderboard };
