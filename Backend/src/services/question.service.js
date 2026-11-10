@@ -109,6 +109,12 @@ async function getQuestionById(id) {
   return question;
 }
 
+async function getCompleteQuestionById(id){
+  const question = await questionModel.findCompleteById(id);
+  if (!question) throw httpError(404, `Question ${id} introuvable`);
+  return question;  
+}
+
 async function createQuestion(data, userId) {
   const type = checkType(data.type ?? 'multiple');
 
@@ -153,6 +159,7 @@ async function deleteQuestion(id, userId) {
 module.exports = {
   getAllQuestions,
   getQuestionById,
+  getCompleteQuestionById,
   createQuestion,
   updateQuestion,
   deleteQuestion,

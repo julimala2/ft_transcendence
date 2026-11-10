@@ -25,7 +25,6 @@ async function findById(id) {
     return prisma.user.findUnique({ where: { id }});
 }
 
-// Ne récupère que l'id : on veut seulement savoir si le compte existe, sans charger email ni password_hash
 async function userExists(userId) {
     const user = await prisma.user.findUnique({
         where: { id: userId },

@@ -8,7 +8,7 @@
     { "slug": "musique",     "name": "Musique",     "position": 5, "categories": ["taylor-swift"] },
     { "slug": "cinema",      "name": "Cinéma",      "position": 6, "categories": [] },
     { "slug": "series-tv",   "name": "Séries TV",   "position": 7, "categories": [] },
-    { "slug": "jeux-video",  "name": "Jeux vidéo",  "position": 8, "categories": [] },
+    { "slug": "jeux-video",  "name": "Jeux vidéo",  "position": 8, "categories": ["jeux-video"] },
     { "slug": "sport",       "name": "Sport",       "position": 9, "categories": ["football", "tennis", "rugby", "basket"] }
   ]
 }

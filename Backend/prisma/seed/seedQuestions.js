@@ -11,8 +11,8 @@ const path = require("path");
 
 const prisma = new PrismaClient();
 
-const DATA_DIR = path.join(__dirname, "data");
-const IMAGES_DIR = path.join(__dirname, "..", "assets", "quiz");
+const DATA_DIR = path.join(__dirname, "..", "data");
+const IMAGES_DIR = path.join(__dirname, "..", "..", "assets", "quiz");
 
 const TYPES = { multiple: 4, boolean: 2 }; // type -> nombre de réponses attendu
 const DIFFICULTIES = [1, 2, 3];

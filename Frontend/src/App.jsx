@@ -36,6 +36,7 @@ export default function App() {
       <div className="relative min-h-screen">
         <Header />
         <MainContainer>
+          
           <Routes location={background || location}>
             <Route path="/" element={<HomePage />} />
             <Route path="/account" element={<Navigate to="/" replace />} />

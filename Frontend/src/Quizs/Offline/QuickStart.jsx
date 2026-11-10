@@ -73,6 +73,11 @@ export function QuickStart() {
     };
   }, []);
 
+  useEffect(() => {
+    // Remove this useless effect
+    // setAvailableQuestions(availableQuestions);
+  }, [difficulty])
+
   async function handleStartQuickQuiz() {
     if (!selectedCategory) {
       alert('Veuillez sélectionner un thème !');

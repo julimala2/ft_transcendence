@@ -1,6 +1,6 @@
 const categoryModel = require('../models/category.model');
 
-const MIN_QUESTIONS_PER_TAG = 20;
+const MIN_QUESTIONS_PER_TAG = 50;
 
 function httpError(statusCode, message) {
   const error = new Error(message);
@@ -35,6 +35,22 @@ async function getCategoryTags(id, search) {
     .filter((tag) => tag.questionCount >= MIN_QUESTIONS_PER_TAG);
 }
 
+async function getNbQuestionsByDifficulty(categorySlug, tagSlug, difficulty) {
+  const category = await categoryModel.findBySlug(categorySlug);
+  if (!category) {
+    throw httpError(404, `Catégorie "${categorySlug}" introuvable`);
+  }
+
+  const tags = await categoryModel.findTags(category.id, tagSlug);
+  if (!tags.some((item) => item.slug === tagSlug)) {
+    throw httpError(404, `Tag "${tagSlug}" introuvable dans cette catégorie`);
+  }
+
+  const count = await categoryModel.nbQuestionByDiff(categorySlug, tagSlug, difficulty);
+  return { category: categorySlug, tag: tagSlug, difficulty, count };
+}
+
+
 async function createCategory({ name }) {
   const cleanName = name.trim();
   if (cleanName.length === 0) {
@@ -45,7 +61,7 @@ async function createCategory({ name }) {
   if (slug.length === 0) {
     throw httpError(400, 'Le nom doit contenir au moins une lettre ou un chiffre');
   }
-
+MIN_
   if (await categoryModel.findByName(cleanName)) {
     throw httpError(409, `La catégorie "${cleanName}" existe déjà`);
   }
@@ -93,4 +109,5 @@ module.exports = {
   createCategory,
   updateCategory,
   deleteCategory,
+  getNbQuestionsByDifficulty,
 };

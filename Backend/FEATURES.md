@@ -28,12 +28,65 @@
 - friend request [x]
     * send [x]
     * accept [x]
-    * decline --> if declined, can never be friends again (to keep?) [x]
+    * decline [x]
 
 - delete friend [x]
 - user's friends list [x]
 - user's pending requests (sent?)
 - block user [x]
+
+# NOTIFICATIONS
+## Notifications : /api/notifications
+
+- Exige d’être connecté (cookie token, credentials: 'include'), sinon 401. Chaque joueur n’a accès qu’à ses propres notifications.
+- Pas encore de temps réel : le front récupère les notifications avec GET /api/notifications.
+
+### Quand une notification est créée
+
+| Événement | Destinataire | type |
+|---|---|---|
+| Demande d’ami envoyée | Le joueur qui reçoit la demande | friend_request |
+| Demande d’ami acceptée | Le joueur qui avait envoyé la demande | friend_accepted |
+
+Un refus ou la suppression d’un ami ne crée pas de notification. 
+Si la création d’une notification échoue, l’action sur la demande d’ami réussit quand même.
+
+### GET /api/notifications []
+
+Les notifications du joueur connecté, de la plus récente à la plus ancienne.
+
+- ?limit=20 : entre 1 et 100, 10 par défaut. 400 si la valeur est invalide.
+
+Réponse 200 :
+
+json
+[
+  { "id": 1, "user_id": 4, "type": "friend_request", "message": "alice t'a envoyé une demande d'ami", "is_read": false, "created_at": "2026-11-05T15:49:48.326Z" }
+]
+
+- Tableau vide = aucune notification : prévoir un état vide côté front.
+- Les notifications lues sont aussi renvoyées : utiliser is_read pour les distinguer.
+
+### PATCH /api/notifications/:id/read []
+
+Marque une notification comme lue. Réponse 200 : { "message": "Notification lue" }
+
+### PATCH /api/notifications/read-all []
+
+Marque toutes les notifications du joueur comme lues. Réponse 200 : { "message": "Notifications lues" }
+
+### DELETE /api/notifications/:id []
+
+Supprime une notification. Réponse 200 : { "message": "Notification supprimée" }
+
+### DELETE /api/notifications/delete-all []
+
+Supprime toutes les notifications du joueur. Réponse 200 : { "message": "Notifications supprimées" }
+
+### Erreurs des routes avec :id
+
+- 400 si l’id n’est pas un nombre valide.
+- 404 si la notification n’existe pas ou appartient à un autre joueur. Même réponse dans les deux cas.
 
 # QUIZ
 ## Catégories : /api/categories
@@ -159,9 +212,34 @@ Stats d’un autre joueur (profil, ami...). Même format que GET /api/statistics
 - 400 si l’id n’est pas un entier positif.
 - 404 si l’utilisateur n’existe pas, ou s’il y a un blocage entre les deux joueurs (dans un sens ou dans l’autre). Même réponse dans les deux cas, pour ne pas révéler un blocage.
 
+### GET /api/statistics/leaderboard []
+
+Classement des joueurs selon leur record en mode rush, du meilleur au moins bon.
+
+- Tous les paramètres sont optionnels : ?categoryId=1&difficulty=2&limit=10
+- Sans categoryId, toutes les catégories sont classées ensemble. Sans difficulty (1, 2 ou 3), tous les niveaux sont classés ensemble.
+- limit : entre 1 et 100, 10 par défaut. 400 si un paramètre est invalide.
+
+Réponse 200 :
+
+json
+{
+  "categoryId": 1,
+  "difficulty": 2,
+  "leaderboard": [
+    { "rank": 1, "userId": 7, "username": "alice", "display_name": "Alice", "avatar_url": "/uploads/7.png", "score": 24 },
+    { "rank": 2, "userId": 2, "username": "bob", "display_name": "Bob", "avatar_url": null, "score": 19 },
+    { "rank": 2, "userId": 12, "username": "chloe", "display_name": "Chloé", "avatar_url": null, "score": 19 }
+  ]
+}
+
+- Même score = même rang, le rang suivant est sauté (1, 2, 2, 4).
+- Les joueurs bloqués restent visibles : tout le monde voit le même classement.
+- Tableau vide = aucune partie rush : prévoir un état vide côté front.
+
 ### Prévu, pas encore disponible
 
-- Mode rush : POST /api/attempts ne permet pas encore de choisir le mode, toutes les parties sont en custom. Le tableau rush restera vide en attendant.
+- Mode rush : POST /api/attempts ne permet pas encore de choisir le mode, toutes les parties sont en custom. Le tableau rush et le leaderboard resteront vides en attendant.
 
 10/21
 ## Badges (achievements) : /api/achievements

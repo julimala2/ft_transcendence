@@ -33,6 +33,20 @@ async function getTags(req, res) {
   }
 }
 
+async function getNbQuestionsByDifficultyAndTag(req, res) {
+  try {
+    const nb = await categoryService.getNbQuestionsByDifficulty(
+      req.params.category,
+      req.params.tag,
+      Number(req.params.difficulty)
+    );
+
+    res.json(nb);
+  } catch (err) {
+    sendError(res, err);
+  }
+}
+
 async function create(req, res) {
   try {
     const category = await categoryService.createCategory(req.body);
@@ -60,4 +74,4 @@ async function remove(req, res) {
   }
 }
 
-module.exports = { getAll, getById, getTags, create, update, remove };
+module.exports = { getAll, getById, getTags, getNbQuestionsByDifficultyAndTag, create, update, remove };
