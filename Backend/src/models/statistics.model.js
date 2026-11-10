@@ -83,13 +83,12 @@ async function findCategoriesByIds(ids) {
   });
 }
 
-async function findRushLeaderboard({ categoryId, difficulty, limit }) {
+async function findRushLeaderboard({ categoryId, difficulty }) {
   return prisma.quizAttempt.groupBy({
     by: ['userId'],
     where: statsWhere({ categoryId, difficulty, mode: 'rush' }),
     _max: { score: true },
     orderBy: [{ _max: { score: 'desc' } }, { userId: 'asc' }],
-    take: limit,
   });
 }
 

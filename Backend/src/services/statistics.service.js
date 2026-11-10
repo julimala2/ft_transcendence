@@ -183,7 +183,7 @@ async function getGlobalStats(currentUserId, categoryId) {
   return buildResponse(categoryId, rush, custom);
 }
 
-function formatLeaderboardRows(rushRows, users) {
+function formatLeaderboardRows(rushRows, users, currentUserId) {
   const usersById = {};
   for (const user of users) {
     usersById[user.id] = user;
@@ -191,6 +191,7 @@ function formatLeaderboardRows(rushRows, users) {
 
   const result = [];
   let rank = 0;
+  let me = null;
   let previousScore = null;
 
   for (let i = 0; i < rushRows.length; i++) {
@@ -209,15 +210,19 @@ function formatLeaderboardRows(rushRows, users) {
       display_name: user.display_name,
       avatar_url: user.avatar_url,
       score: row._max.score,
+      isMe: row.userId === currentUserId,
     };
     result.push(line);
+    if (line.isMe === true) {
+      me = { rank: rank, score: row._max.score };
+    }
   }
 
-  return result;
+  return { lines: result, me: me };
 }
 
-async function getLeaderboard(categoryId, difficulty, limit) {
-  const rushRows = await statsModel.findRushLeaderboard({ categoryId, difficulty, limit });
+async function getLeaderboard(currentUserId, categoryId, difficulty, limit) {
+  const rushRows = await statsModel.findRushLeaderboard({ categoryId, difficulty });
 
   const userIds = [];
   for (const row of rushRows) {
@@ -235,10 +240,18 @@ async function getLeaderboard(categoryId, difficulty, limit) {
     selectedDifficulty = difficulty;
   }
 
+  const formattedRush = formatLeaderboardRows(rushRows, users, currentUserId);
+
+  let leaderboard = formattedRush.lines;
+  if (limit !== undefined) {
+    leaderboard = leaderboard.slice(0, limit);
+  }
+  
   return {
     categoryId: selectedCategory,
     difficulty: selectedDifficulty,
-    leaderboard: formatLeaderboardRows(rushRows, users), //a terme, ajouter custom
+    me: formattedRush.me,
+    leaderboard: leaderboard  //a terme, ajouter custom
   };
 }
 

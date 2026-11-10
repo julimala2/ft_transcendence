@@ -1,6 +1,3 @@
-const DEFAULT_LEADERBOARD_LIMIT = 10;
-const MAX_LEADERBOARD_LIMIT = 100;
-
 function validateStatsQuery(req, res, next) {
   const categoryId = req.query.categoryId;
 
@@ -43,13 +40,13 @@ function validateLeaderboardQuery(req, res, next) {
     req.statsDifficulty = number;
   }
 
-  req.statsLimit = DEFAULT_LEADERBOARD_LIMIT;
+  req.statsLimit = undefined;
 
   if (limit !== undefined) {
     const number = Number(limit);
 
-    if (!Number.isInteger(number) || number < 1 || number > MAX_LEADERBOARD_LIMIT) {
-      return res.status(400).json({ error: `"limit" doit être entre 1 et ${MAX_LEADERBOARD_LIMIT}` });
+    if (!Number.isInteger(number) || number < 1) {
+      return res.status(400).json({ error: '"limit" doit être supérieur ou égal à 1' });
     }
 
     req.statsLimit = number;
