@@ -1,5 +1,3 @@
-import styles from '../Styling/Avatar.module.css';
-
 export function Avatar({ src, username, size = 40 }) {
   const initial = username?.[0]?.toUpperCase() ?? '?';
 
@@ -8,7 +6,7 @@ export function Avatar({ src, username, size = 40 }) {
       <img
         src={src}
         alt={username}
-        className={styles.avatar}
+        className="rounded-full object-cover shrink-0"
         style={{ width: size, height: size }}
       />
     );
@@ -16,7 +14,7 @@ export function Avatar({ src, username, size = 40 }) {
 
   return (
     <div
-      className={styles.fallback}
+      className="rounded-full flex items-center justify-center bg-accent text-white font-semibold select-none"
       style={{ width: size, height: size, fontSize: size * 0.45 }}
     >
       {initial}

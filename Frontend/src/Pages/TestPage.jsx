@@ -2,9 +2,11 @@ import { MainContainer, PageContainer } from "../Components/Containers";
 import { motion } from "motion/react";
 import { useState } from "react";
 import  ToggleButton  from "../Components/ToggleButton";
+import { BlingButton } from "../Components/Buttons";
 
 export default function TestPage () {
     const [click,setClick] = useState(false);
+    const [selected,setSelected] = useState(false);
     
     async function handleClick () {
        setClick(!click);
@@ -13,8 +15,8 @@ export default function TestPage () {
     return (
         <MainContainer>
             <PageContainer>
-                <p> Bonjour c'est la test page !</p>
-                    <button 
+                {/* <p> Bonjour c'est la test page !</p> */}
+                    {/* <button 
                         onClick={() => handleClick()} 
                     >
                         {click ? "hello":"no"}
@@ -25,7 +27,13 @@ export default function TestPage () {
                         onClick={()=>handleClick()}
                         layout
                     >Push button</motion.ul>
-                    <ToggleButton />
+                    <ToggleButton /> */}
+                    <BlingButton 
+                        onClick={() => setSelected(!selected)} 
+                        selected={selected}>
+                            <p>Test</p>
+                        </BlingButton>
+                    <button>Bojour ?</button>
             </PageContainer>
         </MainContainer>
     )

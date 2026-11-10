@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { validatePassword } from './AccountAuth';
 import { StyledButton } from '../Components/Buttons';
 import { useAuth } from '../Hooks/useAuth';
-import styles from './Styling/Account.module.css';
 
 export function ChangePasswordForm({ onDone }) {
   const { changePassword } = useAuth();
@@ -84,10 +83,10 @@ export function ChangePasswordForm({ onDone }) {
         />
       </div>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      {success && <p style={{ color: 'lightgreen' }}>Mot de passe changé ✓</p>}
-      <div className={styles.spacer} />
-      <section className={styles.bottom_bar}>
+      {error && <p className="text-red-500">{error}</p>}
+      {success && <p className="text-green-400">Mot de passe changé ✓</p>}
+      <div className="h-full" />
+      <section className="flex justify-end gap-3">
         <StyledButton type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'Processing ...' : 'Confirm'}
         </StyledButton>

@@ -1,15 +1,27 @@
 import { useEffect, useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'motion/react';
 
 import { getCategoryTags } from '../../Api/categories.jsx';
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
-import { StyledButton, TileButton } from '../../Components/Buttons.jsx';
-import { MainContainer, PageContainer } from '../../Components/Containers.jsx';
-import styles from '../../Styling/QuizSelectionPage.module.css';
+import { BlingButton, StyledButton } from '../../Components/Buttons.jsx';
+import {
+  MainContainer,
+  PageContainer,
+  StyledDiv,
+} from '../../Components/Containers.jsx';
+import { StyledSeparator } from '../../Components/Separators.jsx';
 import { DifficultySelector } from '../../Components/DifficultySelector.jsx';
 import { TimeSelector } from '../../Components/TimeSelector.jsx';
 import { getQuestionsCount } from '../../Api/questions.jsx';
+
+const tagChipClass = selected =>
+  `px-3 py-2 rounded-2xl border-2 cursor-pointer select-none transition-colors ${
+    selected
+      ? 'bg-amber-400 text-black border-amber-300 font-bold'
+      : 'bg-gray-800 border-gray-200'
+  }`;
 
 export function CustomStart() {
   //Data
@@ -144,17 +156,21 @@ export function CustomStart() {
 
   if (loading) {
     return (
-      <main className={`page ${styles.page}`}>
-        <p className={styles.loading}>Chargement des quizs...</p>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <p className="text-muted text-center">Chargement des quizs...</p>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   if (error) {
     return (
-      <main className={`page ${styles.page}`}>
-        <p className={styles.error}>{error}</p>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <p className="text-danger text-center text-lg">{error}</p>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
@@ -173,80 +189,103 @@ export function CustomStart() {
   return (
     <MainContainer>
       <PageContainer>
-        <div className="justify-center flex flex-col gap-10 flex-wrap">
-          <div className="flex gap-7 flex-wrap justify-center">
+        <motion.div
+          className="flex flex-col items-center gap-10 w-full max-w-4xl min-h-0 max-h-full overflow-y-auto p-1"
+          layout
+        >
+          <div className="flex gap-7 flex-wrap justify-center md:max-w-500">
             {categories.map(cat => (
-              <TileButton 
-                key={cat.id} 
-                variant='quiz' 
+              <BlingButton
+                key={cat.id}
+                variant="quiz"
+                className="w-40"
+                innerClassName="h-40"
                 onClick={() => {
-                    setSelectedCategory(cat.id);
-                    setSelectedTag(null);
-                  }}
-                selected={(selectedCategory === cat.id)}
-                  >
-                    {cat.name}
-              </TileButton>
+                  setSelectedCategory(cat.id);
+                  setSelectedTag(null);
+                }}
+                selected={selectedCategory === cat.id}
+              >
+                {cat.name}
+              </BlingButton>
             ))}
           </div>
+
           {selectedCategory && (
-            <div className={styles.tagTiles}>
-              <div
-                key="all"
-                className={`${styles.tagTile} ${selectedTag === null ? styles.tileSelected : ''}`}
-                onClick={() => setSelectedTag(null)}
-              >
-                Tous
-              </div>
-              {categoryTags.map((tag, index) => {
-                const tagId = tag.id || tag.slug || index;
-                const tagName = tag.name || tag.slug || `Tag ${index + 1}`;
+            <StyledDiv outerClassName="w-full max-w-2xl" className="gap-5 p-6">
+              <h2 className="text-2xl font-bold text-center">
+                Personnalisez votre quiz
+              </h2>
+              <StyledSeparator />
 
-                return (
-                  <div
-                    key={tagId}
-                    className={`${styles.tagTile} ${selectedTag === tagId ? styles.tileSelected : ''}`}
-                    onClick={() => setSelectedTag(tagId)}
+              <div className="flex flex-col gap-2 items-center">
+                <p className="text-xl font-bold">Tag</p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  <button
+                    type="button"
+                    className={tagChipClass(selectedTag === null)}
+                    onClick={() => setSelectedTag(null)}
                   >
-                    {tagName}
-                  </div>
-                );
-              })}
-            </div>
+                    Tous
+                  </button>
+                  {categoryTags.map((tag, index) => {
+                    const tagId = tag.id || tag.slug || index;
+                    const tagName = tag.name || tag.slug || `Tag ${index + 1}`;
+
+                    return (
+                      <button
+                        type="button"
+                        key={tagId}
+                        className={tagChipClass(selectedTag === tagId)}
+                        onClick={() => setSelectedTag(tagId)}
+                      >
+                        {tagName}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <p className="text-center text-muted">
+                Questions disponibles :{' '}
+                <span className="text-text font-bold">{availableQuestions}</span>
+                {selectedTag === null
+                  ? ' (tous tags)'
+                  : ` (tag: ${categoryTags.find(t => t.id === selectedTag || t.slug === selectedTag)?.name || categoryTags.find(t => t.id === selectedTag || t.slug === selectedTag)?.slug || selectedTag})`}
+              </p>
+
+              <div className="flex flex-col gap-2 items-center">
+                <p className="text-xl font-bold">Difficulté</p>
+                <DifficultySelector
+                  onChange={handleDifficultyChange}
+                  value={difficulty}
+                />
+              </div>
+
+              <div className="flex flex-col gap-2 items-center">
+                <p className="text-xl font-bold">Nombre de questions</p>
+                <TimeSelector onChange={setQuestionCount} value={questionCount} />
+              </div>
+
+              {questionCount > availableQuestions && (
+                <p className="p-3 rounded-2xl bg-amber-500/12 text-amber-400 border border-amber-500/50 text-center">
+                  Seules {availableQuestions} questions sont disponibles.
+                  Réduisez le nombre de questions.
+                </p>
+              )}
+
+              <StyledButton
+                onClick={handleStartCustomQuiz}
+                disabled={
+                  isStarting || questionCount > availableQuestions
+                }
+                className="w-80 p-5! text-2xl! self-center"
+              >
+                {isStarting ? 'Démarrage...' : 'Démarrer le quiz'}
+              </StyledButton>
+            </StyledDiv>
           )}
-        </div>
-
-        <div className={styles.filterGroup}>
-          <p className={styles.availableInfo}>
-            Questions disponibles : {availableQuestions}
-            {selectedTag === null
-              ? selectedCategory
-                ? ' (tous tags)'
-                : ''
-              : ` (tag: ${categoryTags.find(t => t.id === selectedTag || t.slug === selectedTag)?.name || categoryTags.find(t => t.id === selectedTag || t.slug === selectedTag)?.slug || selectedTag})`}
-          </p>
-        </div>
-
-        <DifficultySelector onChange={handleDifficultyChange} value={difficulty}/>
-        <TimeSelector onChange={setQuestionCount} value={questionCount}/>
-        {questionCount > availableQuestions && selectedCategory && (
-          <p className={styles.warning}>
-            ⚠️ Seules {availableQuestions} questions sont disponibles. Réduisez
-            le nombre de questions.
-          </p>
-        )}
-        <StyledButton
-          onClick={handleStartCustomQuiz}
-          disabled={
-            isStarting ||
-            !selectedCategory ||
-            questionCount > availableQuestions
-          }
-          variant="success"
-          className='text-xl! p-5!'
-        >
-          {isStarting ? 'Demarrage...' : 'Démarrer le quiz'}
-        </StyledButton>
+        </motion.div>
       </PageContainer>
     </MainContainer>
   );

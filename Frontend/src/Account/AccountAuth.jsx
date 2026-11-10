@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { useAuth } from '../Hooks/useAuth';
 import { StyledInput } from '../Components/Inputs'
 import { StyledButton } from '../Components/Buttons'
+import { useNavigate } from 'react-router-dom';
 
 // Validation functions
 export function validatePassword(password) {
@@ -41,6 +42,7 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -54,6 +56,7 @@ function LoginForm() {
       setError(err.error || 'Error');
     } finally {
       setIsSubmitting(false);
+      navigate('/');
     }
   }
 
@@ -71,7 +74,7 @@ function LoginForm() {
         label="Mot de passe :"
         onChange={e => setPassword(e.target.value)}/>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className="text-red-500">{error}</p>}
       <StyledButton type="submit" disabled={isSubmitting}> 
         {isSubmitting ? 'Chargement...' : 'Se connecter'}
         </StyledButton>
@@ -139,7 +142,7 @@ function RegisterForm() {
         />
       </div>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className="text-red-500">{error}</p>}
 
       <StyledButton
         type="submit"

@@ -32,7 +32,7 @@ export function AvatarUploader({ user, uploadAvatar }) {
 
   return (
     <div>
-      <Avatar src={user.avatar_url} username={user.display_name} size={60} />
+      <Avatar src={user.avatar_url} username={user.display_name} size={100} />
       <input
         ref={inputRef}
         type="file"
@@ -40,7 +40,7 @@ export function AvatarUploader({ user, uploadAvatar }) {
         onChange={onChange}
         hidden
       />
-      <button onClick={() => inputRef.current.click()} disabled={busy}>
+      <button className='text-xl font-bold' onClick={() => inputRef.current.click()} disabled={busy}>
         {busy ? 'Envoi…' : 'Change avatar'}
       </button>
       {error && <p>{error}</p>}

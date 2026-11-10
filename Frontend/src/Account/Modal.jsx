@@ -2,8 +2,7 @@ import { useEffect } from 'react';
 
 import { createPortal } from 'react-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
-
-import styles from './Styling/Modal.module.css';
+import { StyledDiv } from "../Components/Containers";
 
 export function Modal({ children }) {
   const navigate = useNavigate();
@@ -27,27 +26,26 @@ export function Modal({ children }) {
     };
   }, [navigate, location]);
 
-  return createPortal(
-    <div
-      className="fixed inset-0 grid place-items-center z-1000  bg-gray-950/50"
-      onClick={close}
+return createPortal(
+  <div
+    className="fixed flex items-center justify-center inset-0 z-1000 p-6 bg-gray-950/50"
+    onClick={close}
+  >
+    <StyledDiv
+      outerClassName='max-w-200 max-h-200 relative flex flex-row flex-1 size-full min-w-0 min-h-0 '
+      role="dialog"
+      aria-modal="true"
+      onClick={e => e.stopPropagation()}
     >
-      <div
-        className={styles.modalContent}
-        role="dialog"
-        aria-modal="true"
-        onClick={e => e.stopPropagation()}
+      <button
+        className="absolute -top-5 -right-5 bg-slate-900 border-4 border-amber-400 rounded-full h-10 w-10 text-2xl font-bold "
+        onClick={close}
+        aria-label="Fermer"
       >
-        <button
-          className={styles.modalClose}
-          onClick={close}
-          aria-label="Fermer"
-        >
-          ×
-        </button>
-        {children}
-      </div>
-    </div>,
-    document.body
-  );
-}
+        ×
+      </button>
+      {children}
+    </StyledDiv>
+  </div>,
+  document.body
+)}

@@ -1,64 +1,93 @@
 import { StyledButton } from '../../Components/Buttons';
-import { MainContainer, PageContainer } from '../../Components/Containers';
-import { useGameSocket } from '../../Hooks/useGameSocket';
-import { useState, useEffect } from 'react';
+import { MainContainer, PageContainer, StyledDiv } from '../../Components/Containers';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { StyledInput } from '../../Components/Inputs';
+import { useSocket } from '../../Hooks/SocketProvider';
+import { StyledSeparator } from '../../Components/Separators';
 
 export function OnlineMenu() {
     const navigate = useNavigate();
-    const { connected, messages, sendChat, send } = useGameSocket();
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(undefined);
+    const [rooms, setRooms] = useState([]);
     const [newName, setNewName] = useState("");
-    const [roomId, setRoomId] = useState("");
-    
-    useEffect(()=> {
-        const last = messages[messages.length - 1];
-        if(!last)
-            return;
-        switch(last.type){
-            case 'roomCreated':
-                navigate(`/room/${last.data.roomId}`);
-        }
-    }, [messages]);
+    const {send, on, off, connected } = useSocket();
+    const [selectedRoomId,setSelectedRoomId] = useState("");
+    const [profile, setProfile] = useState(null);
 
-    async function createRoom(){
-        console.log("sent");
-        send({ type: "createRoom", data:{roomName: "LaRoom" }});
+    useEffect(() => {
+        const handleProfile = (data) => {
+            setProfile(data);
+            setLoading(false);
+        }
+
+        const roomCreated = (data) => {
+            navigate(`/room/${data.roomId}`);
+        }
+        const roomJoined = (data) => {
+            navigate(`/room/${data.roomId}`);
+        }
+
+        const errorRoom = (data) => {
+            setError("La room n'existe pas");
+        }
+
+        on('roomCreated',roomCreated);
+        on('profile',handleProfile);
+        on('roomJoined',roomJoined);
+        on('errorRoom',errorRoom);
+        return () => {
+            off('roomCreated',roomCreated);
+            off('profile',handleProfile);
+            off('roomJoined',roomJoined);
+            off('errorRoom',errorRoom);
+        }
+    }, [on,off, navigate]);
+
+    useEffect(() => {
+        if(connected){
+            send('wsProfile');
+        }
+    }, [connected, send]);
+
+    async function createRoom() {
+        send("createRoom",{});
     }
 
-
-
-
-    // async function joinRoom() {
-    //     console.log("join");
-    //     send({ type: "joinRoom", data:{roomId: "1", roomName: "LaRoom"}});
-    // }
-
-    // OnlineMenu -> Connect the websocket
-    // Bouton -> Create a room, Bouton -> Rejoindre une room (roomId)
-    // Join a chat by default (room = chat)
-    // Le host peut choisir un theme et lancer un quizz oui
-    // send({roomId :"current-room", type: "requestStartQuiz", category:"harry-potter", difficulty:"1"})
-    // await({type:"quizstarting"})
-    // send({userId :"moi", type: "quizReady", value: "true"})
-    // une fois que tt le monde est pret
-    // broadcast(quizstarting)
-    // frontend passe en mode quiz, et il attend les questions
-    // backend, via attempt, envoie la premiere question (et check loading de question termine)
-    // une fois que tt le monde 
-    
-    // RULES : 1 USER PEUT FAIRE PARTIE DUNE SEULE ROOM
-    // 30/10: Create a room, await message "room created", une fois recu j'ouvre la page room, display chat
-
-    // + tard : Bouton -> QuickGame (Rejoindre une room valide)
+    async function joinRoom() {
+        send("joinRoom",{roomId : selectedRoomId});
+    }
 
     return (
         <MainContainer>
             <PageContainer>
-                <p>{JSON.stringify({connected})}</p>
-                <p>{JSON.stringify({messages})}</p>
-                <StyledButton onClick={createRoom} className="border-2! bg-amber-500!">create</StyledButton>              
+        {loading ? (
+                    <StyledDiv>
+                        <p className="bg-red w-full">loading...</p>
+                    </StyledDiv>
+            ) 
+            : 
+            (
+                <StyledDiv className="gap-5 p-5">
+                    {/* <p>{JSON.stringify(profile)}</p> */}
+                    <StyledButton onClick={createRoom} className="border-2! bg-amber-500!">Creer une nouvelle room</StyledButton>
+                    <StyledSeparator/>
+                    <form className="flex flex-col gap-5" onSubmit={(e) => { e.preventDefault(); joinRoom();}}>
+                    <p className="font-bold">Rejoindre une room existante :</p>
+
+                    <StyledInput onChange={e => setSelectedRoomId(e.target.value)} value={selectedRoomId} placeholder="ID de la room a rejoindre" />
+                    
+                    <StyledButton type="submit" className="border-2! bg-amber-500!">Rejoindre</StyledButton>
+                   </form>
+                    {error && 
+                    <p className="text-red-500 w-full">Erreur : {error}</p>
+                    }
+
+                </StyledDiv>
+                )
+            }
             </PageContainer>
         </MainContainer>
-    );
+    )
 }

@@ -8,10 +8,10 @@ import {
   BlockContainer,
   TileButton,
   StyledButton,
+  BlingButton,
 } from '../../Components/Components.jsx';
 import { motion } from 'motion/react';
 
-import styles from '../../Styling/QuizSelectionPage.module.css';
 import { DifficultySelector } from '../../Components/DifficultySelector.jsx';
 import { getQuestionsCount } from '../../Api/questions.jsx';
 
@@ -51,6 +51,7 @@ export function QuickStart() {
     async function loadThemes() {
       try {
         const data = await getAllThemes();
+        console.log(data);
         if (!cancelled) {
           setThemes(data);
         }
@@ -87,10 +88,6 @@ export function QuickStart() {
       categoryId: selectedCategory.id,
     };
 
-    if (difficulty !== 0) {
-      requestBody.difficulty = difficulty;
-    }
-
     setIsStarting(true);
     try {
       const attempt = await startCustomQuiz(requestBody);
@@ -105,16 +102,16 @@ export function QuickStart() {
 
   if (loading) {
     return (
-      <main className={`page ${styles.page}`}>
-        <p className={styles.loading}>Chargement des quizs...</p>
+      <main className="page">
+        <p className="text-muted text-center">Chargement des quizs...</p>
       </main>
     );
   }
 
   if (error) {
     return (
-      <main className={`page ${styles.page}`}>
-        <p className={styles.error}>{error}</p>
+      <main className="page">
+        <p className="text-danger text-center">{error}</p>
       </main>
     );
   }
@@ -122,25 +119,32 @@ export function QuickStart() {
   return (
     <MainContainer>
       <PageContainer>
-        {availableQuestions}
         <motion.div className="justify-center flex flex-col gap-10 flex-wrap" layout>
+          {themes.length === 0 ? (
+            <p className='flex flex-row justify-center'>Aucun theme disponibles.</p>
+          ):(
+            <div className='flex flex-col'>
+              {themes.map(the => (
+                <p key={the.key}>{the.text}</p>
+              ))}
+            </div>
+          )}
           <div>
-            <motion.div className="flex flex-row flex-wrap justify-center gap-7" >
+            <motion.div className="md:max-w-500 flex flex-row flex-wrap justify-center gap-7" >
               {categories.map(cat => (
-                <TileButton key={cat.id} variant='quiz' selected={(selectedCategory?.id === cat.id)} onClick={() => setSelectedCategory(cat)}>
+                <BlingButton innerClassName='h-40' className='w-40' key={cat.id} variant='quiz' selected={(selectedCategory?.id === cat.id)} onClick={() => setSelectedCategory(cat)}>
                     {cat.name}
-                </TileButton>
+                </BlingButton>
               ))}
             </motion.div>
           </div>
-
+          
           {selectedCategory && (
             <div className='flex flex-col gap-10 justify-center items-center'>
-              <DifficultySelector value={difficulty} onChange={setDifficulty} />
+              {/* <DifficultySelector value={difficulty} onChange={setDifficulty} /> */}
               <StyledButton
                 onClick={handleStartQuickQuiz}
                 disabled={isStarting}
-                variant='danger'
                 className='w-80 p-5! text-2xl border-5'
               >
                 {isStarting

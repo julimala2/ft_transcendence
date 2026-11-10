@@ -40,7 +40,7 @@ export function UserSearch({ onSelect, children }) {
   }, [query]);
 
   return (
-    <>
+    <div className='flex flex-col h-min-0 p-2 bg-slate-800 gap-2 rounded-3xl'>
       <StyledInput
         type="search"
         placeholder="Chercher un utilisateur"
@@ -48,7 +48,7 @@ export function UserSearch({ onSelect, children }) {
         value={search}
         onChange={e => setSearch(e.target.value)}
       />
-
+      <div className='max-h-50 min-h-0 flex flex-col overflow-y-auto'>
       {!query ? (
         <></>
       ) : searching ? (
@@ -56,12 +56,13 @@ export function UserSearch({ onSelect, children }) {
       ) : results.length === 0 ? (
         <p className="empty">Aucun utilisateur commencant par : « {search} »</p>
       ) : (
-        <ul className="list flex flex-col gap-2">
+        <ul className="list flex flex-col justify-start gap-2">
           {results.map(u => (
             <FriendCard key={u.id} friend={u} onClick={onSelect} />
           ))}
         </ul>
       )}
-    </>
+      </div>
+    </div>
   );
 }

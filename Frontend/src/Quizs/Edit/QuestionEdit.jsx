@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import { createQuestion } from '../../Api/questions';
 import { addQuestionToQuiz } from '../../Api/quiz';
+import { StyledButton } from '../../Components/Buttons';
+import { StyledInput } from '../../Components/Inputs';
 
 export default function QuestionEdit({ quizId, onQuestionAdded }) {
   const [questionText, setQuestionText] = useState('');
@@ -72,65 +74,71 @@ export default function QuestionEdit({ quizId, onQuestionAdded }) {
   };
 
   return (
-    <div>
-      <h3 className="text-xl font-semibold mb-4">
-        Ajouter une nouvelle question
-      </h3>
+    <div className="flex flex-col gap-4 w-full">
+      <h2 className="text-2xl font-bold">Ajouter une question</h2>
 
-      {error && <div className="mb-4 p-3 text-red-700 rounded">{error}</div>}
-
-      {success && (
-        <div className="mb-4 p-3 text-green-700 rounded">{success}</div>
+      {error && (
+        <p className="p-3 rounded-2xl bg-red-500/12 text-danger border border-danger">
+          {error}
+        </p>
       )}
 
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-2">
-            Question
-          </label>
-          <input
-            type="text"
-            value={questionText}
-            onChange={e => setQuestionText(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Entrez votre question"
-          />
-        </div>
+      {success && (
+        <p className="p-3 rounded-2xl bg-green-500/12 text-ok border border-ok">
+          {success}
+        </p>
+      )}
 
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-2">
-            Options
-          </label>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
+        <StyledInput
+          id="question"
+          label="Question"
+          value={questionText}
+          onChange={e => setQuestionText(e.target.value)}
+          placeholder="Entrez votre question"
+        />
+
+        <div className="flex flex-col gap-2 w-full">
+          <p className="text-xl font-bold">
+            Options{' '}
+            <span className="text-sm font-normal text-muted">
+              (cochez la bonne réponse)
+            </span>
+          </p>
           {options.map((option, index) => (
-            <div key={index} className="mb-2 flex items-center">
+            <div key={index} className="flex items-center gap-3 w-full">
               <input
                 type="text"
                 value={option}
                 onChange={e => handleOptionChange(index, e.target.value)}
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 mr-2"
+                className="flex-1 min-w-0 bg-gray-800 p-2 rounded-2xl border-2 border-gray-200"
                 placeholder={`Option ${index + 1}`}
               />
-              <label className="flex items-center">
+              <label
+                className={`flex items-center gap-2 px-3 py-2 rounded-2xl border-2 cursor-pointer select-none transition-colors ${
+                  correctOption === index
+                    ? 'bg-amber-400 text-black border-amber-300 font-bold'
+                    : 'bg-gray-800 border-gray-200'
+                }`}
+              >
                 <input
                   type="radio"
                   name="correctOption"
                   checked={correctOption === index}
                   onChange={() => setCorrectOption(index)}
-                  className="mr-2"
+                  className="sr-only"
                 />
-                <span>Correcte</span>
+                Correcte
               </label>
             </div>
           ))}
         </div>
 
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg disabled:opacity-50"
-        >
-          {isSubmitting ? 'Ajout en cours...' : 'Ajouter la question'}
-        </button>
+        <div className="flex justify-end">
+          <StyledButton type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Ajout en cours...' : 'Ajouter la question'}
+          </StyledButton>
+        </div>
       </form>
     </div>
   );

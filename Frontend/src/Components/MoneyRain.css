@@ -1,0 +1,57 @@
+.money-rain {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  perspective: 800px;
+background: #020024;
+background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(32, 32, 135) 35%, rgb(0, 27, 32) 100%);
+}
+
+.star {
+  position: absolute;
+  top: 1;
+  width: 50px;
+  height: 50px;
+  color: gold;
+  font-size: 50px;
+  text-shadow:
+    0 0 30px rgba(255, 215, 0, 0.8),
+    0 0 8px rgba(255, 180, 0, 0.6);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.fall-1 { animation-name: fall-1; }
+.fall-2 { animation-name: fall-2; }
+.fall-3 { animation-name: fall-3; }
+.fall-4 { animation-name: fall-4; }
+
+@keyframes fall-1 {
+  from { transform: translateY(-160px) translateX(-10vh) rotate(-30deg); }
+  to   { transform: translateY(110dvh)  translateX(10vh) rotate(390deg) ; }
+}
+@keyframes fall-2 {
+  from { transform: translateY(-160px) translateX(10vh) rotate(20deg); }
+  to   { transform: translateY(110dvh)  translateX(-10vh) rotate(-340deg); }
+}
+@keyframes fall-3 {
+  from { transform: translateY(-160px) translateX(-10vh) rotate(45deg); }
+  to   { transform: translateY(110dvh)  translateX(10vh) rotate(900deg); }
+}
+@keyframes fall-4 {
+  from { transform: translateY(-160px) translateX(10vh) rotate(-10deg)  ; }
+  to   { transform: translateY(110dvh)  translateX(-10vh) rotate(-450deg); }
+}
+
+.star::before {
+  content: "⭐";
+  display: block;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star { animation-play-state: paused; }
+}

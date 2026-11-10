@@ -45,9 +45,9 @@ export function AccountMyQuizs() {
   }
 
   return (
-    <div className="w-full flex flex-col justify-between h-full">
+    <div className="w-full flex flex-col justify-between gap-2 flex-1 overflow-y-auto h-full min-h-0">
       {!quizzes.length && <p>Vous n'avez pas encore créé de quiz.</p>}
-      <ListContainer>
+        <div className='flex flex-1 flex-col gap-2 overflow-y-scroll'>
         {quizzes.map((q, idx) => (
           <CardContainer key={q.id}>
             <li className="flex items-center justify-between py-1">
@@ -58,7 +58,7 @@ export function AccountMyQuizs() {
             </Link>
           </CardContainer>
         ))}
-      </ListContainer>
+        </div>
       <p className="flex w-full flex-row justify-end">
         <Link to="/quiz/create">
           <StyledButton>Creer un nouveau quiz</StyledButton>

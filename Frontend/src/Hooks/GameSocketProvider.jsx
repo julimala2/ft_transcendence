@@ -9,20 +9,14 @@ export function GameSocketProvider({ children }) {
   const [connected, setConnected] = useState(false);
   const [messages, setMessages] = useState([]);
   const [users] = useState([]);
+  const messageHandlersRef = useRef({});
+  const [currentRoomId, setCurrentRoomId] = useState(null);
+  const [isInRoom,setIsInRoom] = useState(false);
 
   //TODO not use local stored token
   useEffect(() => {
-    const token = localStorage.getItem('token');
-
-    console.log('🔍 Debug WebSocket:');
-    console.log('  Token:', token ? '✅ Trouvé' : '❌ Pas de token!');
-
-    // Le backend est servi en HTTPS (server.js), donc toujours wss
-    const protocol = 'wss:';
-    const wsUrl = `${protocol}//localhost:3000/ws?token=${encodeURIComponent(token || '')}`;
-    console.log('  URL:', wsUrl);
-
-    const ws = new WebSocket(wsUrl);
+    const protocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const ws = new WebSocket(`${protocol}//${location.host}/ws`);
     wsRef.current = ws;
 
     ws.onopen = () => {
@@ -34,6 +28,27 @@ export function GameSocketProvider({ children }) {
       const message = JSON.parse(event.data);
       console.log('WS <-', message);
       setMessages(prev => [...prev, message]);
+
+      switch(message.type){
+        case "chat":
+          // afficher le message dans l'UI
+        case "roomCreated":
+          console.log('room?')
+          Navigate(`/room/${roomId}`);
+        case "joinedRoom":
+          // naviguer dans la room si c'est soit meme
+          // si un autre user rejoint la room, afficher un message dans l'UI
+        
+        
+      }
+
+
+      // // Call all registered handlers for this message type
+      // if (message.type && messageHandlersRef.current[message.type]) {
+      //   messageHandlersRef.current[message.type].forEach(handler => {
+      //     handler(message.data);
+      //   });
+      // }
     };
 
     ws.onerror = (error) => {
@@ -71,9 +86,55 @@ export function GameSocketProvider({ children }) {
     });
   };
 
+  const joinRoom = (roomId) => {
+    setCurrentRoomId(roomId);
+    setIsInRoom(true);
+    send({
+      type: 'joinRoom',
+      data: {roomId: roomId}
+    });
+  }
+
+  const createRoom = (roomName) => {
+    send({
+      type: 'createRoom',
+      data: {roomName: roomName}
+    });
+  }
+
+  // Register a handler for a specific message type
+  const on = (type, handler) => {
+    if (!messageHandlersRef.current[type]) {
+      messageHandlersRef.current[type] = [];
+    }
+    messageHandlersRef.current[type].push(handler);
+  };
+
+  // Unregister a handler for a specific message type
+  const off = (type, handler) => {
+    if (messageHandlersRef.current[type]) {
+      messageHandlersRef.current[type] = messageHandlersRef.current[type]
+        .filter(h => h !== handler);
+    }
+  };
+
+  // Clear all handlers (useful for cleanup)
+  const clearHandlers = () => {
+    messageHandlersRef.current = {};
+  };
+
+  const closeSocket = () => {
+    if(wsRef.current && wsRef.current.readyState ===
+        WebSocket.OPEN) {
+          wsRef.current.close();
+          setConnected(false);
+          console.log('Websocket ferme');
+        }
+  };
+
   return (
     <GameSocketContext.Provider
-      value={{ connected, messages, users, send, sendChat }}
+      value={{ connected, messages, users, send, sendChat, on, off, clearHandlers, closeSocket }}
     >
       {children}
     </GameSocketContext.Provider>

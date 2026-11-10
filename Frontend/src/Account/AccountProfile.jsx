@@ -4,7 +4,6 @@ import { ChangePasswordForm } from './AccountPassword.jsx';
 import { Avatar } from '../Components/Avatar';
 import { AvatarUploader } from '../Components/AvatarUploader.jsx';
 import { EditableField } from '../Components/EditableField';
-import styles from './Styling/Account.module.css';
 import { StyledButton } from '../Components/Buttons.jsx';
 import { useAuth } from '../Hooks/useAuth';
 
@@ -17,9 +16,10 @@ export function AccountProfile() {
   switch (mode) {
     case 'edit':
       return (
-        <>
+        <div className="flex flex-1 min-h-0 overflow-y-auto flex-col">
+          <div className='flex p-2 items-center flex-col gap-3'>
           <AvatarUploader user={user} uploadAvatar={uploadAvatar} />
-          <label>Username :{user.username}</label>
+          <label className='text-xl font-bold'>Username :{user.username}</label>
           <EditableField
             label="Email :"
             value={user.email}
@@ -34,11 +34,12 @@ export function AccountProfile() {
             validate={v => (v.length === 0 ? 'Invalid display name' : null)}
             onSave={v => updateProfile({ display_name: v })}
           ></EditableField>
-          <div className={styles.spacer} />
-          <section className={styles.bottom_bar}>
-            <button onClick={() => setMode('view')}>Cancel</button>
+          <div className="h-full" />
+          <section className="flex justify-end gap-3">
+            <StyledButton onClick={() => setMode('view')}>Retour</StyledButton>
           </section>
-        </>
+        </div>
+        </div>
       );
 
     case 'password':
@@ -46,18 +47,20 @@ export function AccountProfile() {
 
     default:
       return (
-        <>
+        <div className="flex flex-1 min-h-0 overflow-y-auto flex-col">
+          <div className='flex p-2 items-center flex-col gap-3'>
+
           <Avatar
             src={user.avatar_url}
             username={user.display_name}
-            size={60}
-          />
-          <label>Email : {user.email}</label>
-          <label>Username : {user.username}</label>
-          <label>DisplayName : {user.display_name}</label>
-          <div className={styles.spacer} />
-          {/* <label>Avatar url:{user.avatar_url}</label> */}
-          <section className={styles.bottom_bar}>
+            size={100}
+            />
+          <label className='text-xl font-bold'>Email : {user.email}</label>
+          <label className='text-xl font-bold'>Nom d'utilisateur : {user.username}</label>
+          <label className='text-xl font-bold'>Pseudo : {user.display_name}</label>
+          </div>
+          <div className='flex flex-1'/>
+          <section className="flex flex-row gap-3 justify-end">
             <StyledButton onClick={() => setMode('edit')}>
               Edit profile
             </StyledButton>
@@ -68,7 +71,7 @@ export function AccountProfile() {
               Log out
             </StyledButton>
           </section>
-        </>
+        </div>
       );
   }
 }

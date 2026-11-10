@@ -1,12 +1,14 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 import { apiFetch } from '../Api/api';
+import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   async function refreshUser() {
     try {
@@ -36,6 +38,7 @@ export function AuthProvider({ children }) {
   async function logout() {
     await apiFetch('/api/auth/logout', { method: 'POST' });
     setUser(null);
+    navigate('/');
   }
 
   function loginWithOAuth() {

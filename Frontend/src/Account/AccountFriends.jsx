@@ -7,7 +7,6 @@ import {
   getReceivedRequests,
   sendFriendNamedRequest,
 } from '../Api/friends';
-import styles from './Styling/Account.module.css';
 import { getBlockedUsers } from '../Api/blocks';
 import { Avatar } from '../Components/Avatar';
 import { UserSearch } from '../Components/UserSearch';
@@ -86,17 +85,17 @@ export function AccountFriends() {
   }
 
   if (loading) return <><section className='card'>Loading...</section></>;
-  if (error) return <p className={styles.error}>{error}</p>;
+  if (error) return <p className="text-danger">{error}</p>;
 
   return (
-    <div className='flex flex-col gap-7'>
+    <div className='flex flex-1 flex-col gap-2 justify-start'>
       <UserSearch onSelect={handleFriendClick} />
       {requests.length !== 0 && (
-        <div>
+        <div className='flex flex-1 flex-col justify-start'>
           <h2 className="font-bold text-xl">
             Demande d'amis : {requests.length}
           </h2>
-          <ListContainer className="list">
+          <div>
             {requests.map(r => (
               <CardContainer key={r.friendshipId}>
                 <Avatar username={r.username} />
@@ -121,7 +120,7 @@ export function AccountFriends() {
                 </div>
               </CardContainer>
             ))}
-          </ListContainer>
+          </div>
         </div>
       )}
 
@@ -145,7 +144,7 @@ export function AccountFriends() {
       <section>
         {blocked.length !== 0 && (
           <>
-            <h2 className={styles.cardTitle}>Bloques</h2>
+            <h2 className="font-bold text-xl">Bloques</h2>
             <ul className="list">
               {blocked.map(b => (
                 <FriendCard
