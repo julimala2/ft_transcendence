@@ -16,6 +16,7 @@ Possibilite de signaler une question
 ◦ Display match history (1v1 games, dates, results, opponents). [ ]
 ◦ Show achievements and progression. [ ]
 ◦ Leaderboard integration. [x]
+
 Classements / leaderboard --> route rush ok (vide tant que le mode rush n'existe pas), a terme : custom + front
 Leaderboard classic ? 
 Progression ?
@@ -36,8 +37,8 @@ Pour l'instant : ranking dans leaderboard et routes achievements mais pas progre
 NotifyUser
 Fait : demande et acceptation d'ami + badges / achievements + modification profil
 A faire : autres ? 
-Suggestions : quand un ami crée un quiz, quand on se fait dépasser au leaderboard (compliqué), si on bat son record en rush
-A terme : invitation a jouer
+Suggestions : si on bat son record en rush
+A terme : invitation a jouer 1v1
 Verifier les blocages pour permettre un friendRequest
 
 
