@@ -13,7 +13,7 @@ export function GameRoom({ roomId: roomIdProp }) {
   const [inputText, setInputText] = useState('');
   if (!user) {
     return (
-      <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <div className="text-center mt-[50px]">
         <h2>Vous devez être connecté pour accéder à cette page.</h2>
         <p>Veuillez vous connecter pour rejoindre le salon de jeu.</p>
       </div>
@@ -28,30 +28,30 @@ export function GameRoom({ roomId: roomIdProp }) {
   };
 
   return (
-    <div style={styles.container}>
+    <div className="w-full max-w-[600px] mx-auto border border-gray-200 rounded-lg flex flex-col h-[500px] bg-gray-50">
       {/* Status */}
-      <div style={styles.status}>
+      <div className="p-2.5 text-center text-sm font-semibold border-b border-gray-200">
         {connected ? (
-          <span style={{ color: '#10b981' }}>🟢 Connecté</span>
+          <span className="text-green-500">🟢 Connecté</span>
         ) : (
-          <span style={{ color: '#ef4444' }}>🔴 Déconnecté</span>
+          <span className="text-red-500">🔴 Déconnecté</span>
         )}
       </div>
 
       {/* Chat */}
-      <div style={styles.chatBox}>
-        <div style={styles.messagesList}>
+      <div className="flex-1 overflow-auto p-3.5 flex flex-col">
+        <div className="flex flex-col gap-2.5">
           {messages.map((msg, idx) => (
-            <div key={idx} style={styles.messageBubble}>
-              <strong style={styles.username}>{msg.user}</strong>
-              <p style={styles.text}>{msg.text}</p>
+            <div key={idx} className="bg-white p-2.5 rounded-lg border-l-4 border-blue-500 shadow-sm">
+              <strong className="text-blue-500 text-sm mr-1.5">{msg.user}</strong>
+              <p className="mt-1 text-gray-700 text-base">{msg.text}</p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Input */}
-      <div style={styles.inputContainer}>
+      <div className="flex gap-2.5 p-3.5 border-t border-gray-200 bg-white">
         <input
           type="text"
           value={inputText}
@@ -59,12 +59,12 @@ export function GameRoom({ roomId: roomIdProp }) {
           onKeyPress={e => e.key === 'Enter' && handleSendMessage()}
           placeholder="Envoie un message..."
           disabled={!connected}
-          style={styles.input}
+          className="flex-1 px-3 py-2.5 border border-gray-200 rounded-md text-sm"
         />
         <button
           onClick={handleSendMessage}
           disabled={!connected}
-          style={styles.button}
+          className="px-5 py-2.5 bg-blue-500 text-white border-none rounded-md cursor-pointer font-semibold text-sm"
         >
           Envoyer
         </button>
@@ -73,77 +73,3 @@ export function GameRoom({ roomId: roomIdProp }) {
   );
 }
 
-const styles = {
-  container: {
-    width: '100%',
-    maxWidth: '600px',
-    margin: '0 auto',
-    border: '1px solid #e5e7eb',
-    borderRadius: '8px',
-    display: 'flex',
-    flexDirection: 'column',
-    height: '500px',
-    background: '#f9fafb',
-  },
-  status: {
-    padding: '10px',
-    textAlign: 'center',
-    fontSize: '14px',
-    fontWeight: '600',
-    borderBottom: '1px solid #e5e7eb',
-  },
-  chatBox: {
-    flex: 1,
-    overflow: 'auto',
-    padding: '15px',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  messagesList: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '10px',
-  },
-  messageBubble: {
-    background: 'white',
-    padding: '10px 15px',
-    borderRadius: '8px',
-    borderLeft: '3px solid #3b82f6',
-    boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
-  },
-  username: {
-    color: '#3b82f6',
-    fontSize: '14px',
-    marginRight: '5px',
-  },
-  text: {
-    margin: '5px 0 0 0',
-    color: '#374151',
-    fontSize: '15px',
-  },
-  inputContainer: {
-    display: 'flex',
-    gap: '10px',
-    padding: '15px',
-    borderTop: '1px solid #e5e7eb',
-    background: 'white',
-  },
-  input: {
-    flex: 1,
-    padding: '10px 12px',
-    border: '1px solid #e5e7eb',
-    borderRadius: '6px',
-    fontSize: '14px',
-    fontFamily: 'inherit',
-  },
-  button: {
-    padding: '10px 20px',
-    background: '#3b82f6',
-    color: 'white',
-    border: 'none',
-    borderRadius: '6px',
-    cursor: 'pointer',
-    fontWeight: '600',
-    fontSize: '14px',
-  },
-};

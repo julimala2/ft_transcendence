@@ -4,8 +4,12 @@ import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 
 import { getAttempt, submitAnswer } from '../../Api/quiz';
 import { StyledButton } from '../../Components/Buttons';
-import { MainContainer, PageContainer } from '../../Components/Containers';
-import styles from '../../Styling/AttemptPage.module.css';
+import {
+  MainContainer,
+  PageContainer,
+  StyledDiv,
+} from '../../Components/Containers';
+import { StyledSeparator } from '../../Components/Separators';
 
 export function AttemptPage() {
   const { attemptId } = useParams();
@@ -94,13 +98,6 @@ export function AttemptPage() {
       } else {
         result = await submitAnswer(attempt.id, 0);
       }
-      //   result = {
-      //     isCorrect: false,
-      //     finished: false,
-      //     correctAnswerId: attempt.question.answers.find(a => a.isCorrect)?.id,
-      //     explanation: attempt.question.explanation,
-      //   };
-      // }
       setFeedback(result.isCorrect ? 'correct' : 'incorrect');
       setCorrectAnswerId(result.correctAnswerId);
       setCurrentExplanation(result.explanation);
@@ -133,7 +130,6 @@ export function AttemptPage() {
 
     try {
       const nextAttempt = await getAttempt(Number(attemptId));
-      //Shuffling the next attempt
       if (nextAttempt.question && nextAttempt.question.answers) {
         nextAttempt.question.answers = shuffleArray(nextAttempt.question.answers);
       }
@@ -147,70 +143,103 @@ export function AttemptPage() {
 
   if (loading) {
     return (
-      <main className={`page ${styles.main}`}>
-        <p className={styles.loading}>Chargement de la partie...</p>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <StyledDiv className="p-6">
+            <p className="text-muted text-center">Chargement de la partie...</p>
+          </StyledDiv>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   if (error) {
     return (
-      <main className={`page ${styles.main}`}>
-        <p className={styles.error}>{error}</p>
-        <StyledButton onClick={() => navigate('/')} className={styles.button}>
-          Retour à l'accueil
-        </StyledButton>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <StyledDiv outerClassName="w-full max-w-xl" className="gap-5 p-6">
+            <p className="text-danger text-center text-lg">{error}</p>
+            <div className="flex justify-center">
+              <StyledButton onClick={() => navigate('/')}>
+                Retour à l'accueil
+              </StyledButton>
+            </div>
+          </StyledDiv>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   if (!attempt || !attempt.question) {
     return (
-      <main className={`page ${styles.main}`}>
-        <p className={styles.error}>Partie ou question introuvable</p>
-        <StyledButton onClick={() => navigate('/')} className={styles.button}>
-          Retour à l'accueil
-        </StyledButton>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <StyledDiv outerClassName="w-full max-w-xl" className="gap-5 p-6">
+            <p className="text-danger text-center text-lg">
+              Partie ou question introuvable
+            </p>
+            <div className="flex justify-center">
+              <StyledButton onClick={() => navigate('/')}>
+                Retour à l'accueil
+              </StyledButton>
+            </div>
+          </StyledDiv>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   if (attempt.finished) {
     return (
-      <main className={`page ${styles.main}`}>
-        <h1 className={styles.title}>Quiz terminé !</h1>
-        <p className={styles.score}>
-          Score: {attempt.score} / {attempt.total}
-        </p>
-        <StyledButton onClick={() => navigate('/')} className={styles.button}>
-          Retour à l'accueil
-        </StyledButton>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <StyledDiv outerClassName="w-full max-w-xl" className="gap-6 p-6">
+            <h1 className="text-2xl font-extrabold tracking-tight text-center">
+              Quiz terminé !
+            </h1>
+            <StyledSeparator />
+            <p className="text-ok text-2xl font-extrabold text-center">
+              Score: {attempt.score} / {attempt.total}
+            </p>
+            <div className="flex justify-center">
+              <StyledButton onClick={() => navigate('/')}>
+                Retour à l'accueil
+              </StyledButton>
+            </div>
+          </StyledDiv>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   return (
     <MainContainer>
       <PageContainer>
-        <div className="flex flex-row items-center pb-5">
-          <div className="text-3xl font-bold text-amber-300">Score: {attempt.score}</div>
-        </div>
+        <StyledDiv outerClassName="w-full max-w-2xl" className="gap-5 p-6">
+          <div className="flex flex-row items-center justify-between w-full gap-3">
+            <div className="text-3xl font-bold text-amber-300">
+              Score: {attempt.score}
+            </div>
+            <div className="text-muted">Temps restant: {timeLeft}s</div>
+          </div>
 
-        <div className={styles.questionContainer}>
-          <h2 className={styles.question}>{attempt.question.text}</h2>
+          <StyledSeparator />
 
-          <div className={styles.timer}>Temps restant: {timeLeft}s</div>
+          <h2 className="text-xl font-bold text-center leading-tight">
+            {attempt.question.text}
+          </h2>
 
           {attempt.question.image && (
-            <div className={styles.questionImage}>
+            <div className="flex justify-center w-full">
               <img
                 src={`${import.meta.env.VITE_API_URL}/quiz-images/${attempt.question.image.src}`}
                 alt={attempt.question.image.alt || 'Image de la question'}
+                className="max-w-full max-h-[300px] rounded-2xl object-contain"
               />
             </div>
           )}
 
-          <div className={styles.answersContainer}>
+          <div className="flex flex-col gap-3 w-full">
             {attempt.question.answers.map(answer => {
               const isSelected = selectedAnswer === answer.id;
               const showFeedback = feedback !== null;
@@ -221,20 +250,25 @@ export function AttemptPage() {
               return (
                 <StyledButton
                   key={answer.id}
+                  variant="secondary"
                   onClick={() => handleAnswerClick(answer.id)}
                   disabled={isSubmitting || feedback !== null}
-                  className={`${styles.answerButton}
-																																	${isSelected ? styles.selected : ''}
-																																	${isCorrectAnswer ? styles.feedbackCorrect : ''}
-																																	${isWrongSelection ? styles.feedbackIncorrect : ''}
-																													`}
+                  className={`w-full p-3.5 text-left border-2! transition-all duration-200 ${
+                    isCorrectAnswer
+                      ? 'bg-green-500/12! text-ok! border-ok!'
+                      : isWrongSelection
+                        ? 'bg-red-500/12! text-danger! border-danger!'
+                        : isSelected
+                          ? 'bg-amber-400! text-black! border-amber-300! font-bold'
+                          : 'bg-gray-800! border-gray-200! hover:bg-gray-700!'
+                  }`}
                 >
                   {answer.text}
                   {isCorrectAnswer && (
-                    <span className={styles.feedbackIcon}>✓</span>
+                    <span className="font-bold ml-2">✓</span>
                   )}
                   {isWrongSelection && (
-                    <span className={styles.feedbackIcon}>✗</span>
+                    <span className="font-bold ml-2">✗</span>
                   )}
                 </StyledButton>
               );
@@ -243,11 +277,13 @@ export function AttemptPage() {
 
           {feedback && (
             <div
-              className={`${styles.feedback}
-																					${feedback === 'correct' ? styles.feedbackCorrect : styles.feedbackIncorrect}
-																	`}
+              className={`p-4 rounded-2xl text-center border ${
+                feedback === 'correct'
+                  ? 'bg-green-500/12 text-ok border-ok'
+                  : 'bg-red-500/12 text-danger border-danger'
+              }`}
             >
-              <p>
+              <p className="font-bold">
                 {isTimeout
                   ? 'Temps écoulé !'
                   : feedback === 'correct'
@@ -255,31 +291,33 @@ export function AttemptPage() {
                     : 'Mauvaise réponse ✗'}
               </p>
               {currentExplanation && (
-                <p className={styles.explanation}>{currentExplanation}</p>
+                <p className="text-sm italic opacity-80">{currentExplanation}</p>
               )}
             </div>
           )}
 
           {feedback && attempt.answered + 1 < attempt.total && (
-            <StyledButton
-              onClick={handleNextQuestion}
-              disabled={isSubmitting}
-              className={styles.button}
-            >
-              Question suivante
-            </StyledButton>
+            <div className="flex justify-center">
+              <StyledButton
+                onClick={handleNextQuestion}
+                disabled={isSubmitting}
+              >
+                Question suivante
+              </StyledButton>
+            </div>
           )}
 
           {feedback && attempt.answered + 1 === attempt.total && (
-            <StyledButton
-              onClick={handleViewResults}
-              disabled={isSubmitting}
-              className={styles.button}
-            >
-              Voir les résultats
-            </StyledButton>
+            <div className="flex justify-center">
+              <StyledButton
+                onClick={handleViewResults}
+                disabled={isSubmitting}
+              >
+                Voir les résultats
+              </StyledButton>
+            </div>
           )}
-        </div>
+        </StyledDiv>
       </PageContainer>
     </MainContainer>
   );

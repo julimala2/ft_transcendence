@@ -9,7 +9,7 @@ import { apiFetch } from './api';
  * @returns {Promise<Array>} Liste des thèmes
  */
 export function getAllThemes() {
-  return apiFetch('/api/themes', { method: 'GET' });
+  return apiFetch('/api/themes/', { method: 'GET' });
 }
 
 /**

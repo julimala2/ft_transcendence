@@ -58,6 +58,15 @@ export function QuizPanel({className = '',gameState,send,time}){
             <div className="w-full flex flex-col md:pl-10 md:pr-10 gap-3 justify-center items-center">
                 <p className="text-xl font-bold"> {Math.ceil(time/1000)} secondes restantes.</p>
                 <p className="text-xl font-bold rounded-xl md:p-10 bg-blue-900"> Question : {gameState?.question.text} </p>
+                {gameState.question.image && (
+                    <div>
+                    <img
+                        src={`${import.meta.env.VITE_API_URL}/quiz-images/${gameState.question.image.src}`}
+                        alt={gameState.question.image.alt || 'Image de la question'}
+                    />
+                    </div>
+                )}
+
                 <div className="flex flex-col w-full max-w-100 align-center justify-center gap-3">
 
                 {gameState.question.answers.map((answer, index) => {

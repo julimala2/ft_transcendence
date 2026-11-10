@@ -1,18 +1,13 @@
 export function Cursor({ username, x, y }) {
   return (
     <div
+      className="fixed -left-4 -top-[22px] pointer-events-none z-[9999] transition-transform duration-100 ease-linear"
       style={{
-        position: "fixed",
-        left: -16,
-        top: -22,
-        transform: `translate(${x}px, ${y}px)`,
-        pointerEvents: "none",
-        transition: "transform 0.1s linear",
-        zIndex: 9999
+        transform: `translate(${x}px, ${y}px)`
       }}
     >
-      <span style={{ fontSize: 24 }}>⭐</span>
-      {/* <span style={{ fontSize: 12 }}>{username}</span> */}
+      <span className="text-2xl">⭐</span>
+      {/* <span className="text-sm">{username}</span> */}
     </div>
   );
 }

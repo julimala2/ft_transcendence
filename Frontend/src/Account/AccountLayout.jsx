@@ -18,7 +18,6 @@ export function AccountLayout() {
     <div className="p-2 flex-col md:flex-row flex flex-1 gap-4 size-full ">
       <nav className="flex flex-row md:flex-col wrap flex-wrap">
         {accountTabs.map(tab => (
-          <>
           <NavLink
             key={tab.path}
             to={tab.path}
@@ -30,7 +29,6 @@ export function AccountLayout() {
           >
             {tab.label}
           </NavLink>
-          </>
         ))}
       </nav>
       <Outlet />

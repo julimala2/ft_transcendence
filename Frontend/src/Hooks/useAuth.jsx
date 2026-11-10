@@ -1,8 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-// import { useGameSocket } from './useGameSocket';
 
 import { apiFetch } from '../Api/api';
-import { useReducedMotionConfig } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 
 const AuthContext = createContext(null);
@@ -11,7 +9,6 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  // const { closeSocket } = useGameSocket();
 
   async function refreshUser() {
     try {
@@ -41,7 +38,6 @@ export function AuthProvider({ children }) {
   async function logout() {
     await apiFetch('/api/auth/logout', { method: 'POST' });
     setUser(null);
-    if(closeSocket) closeSocket();
     navigate('/');
   }
 

@@ -74,7 +74,7 @@ function LoginForm() {
         label="Mot de passe :"
         onChange={e => setPassword(e.target.value)}/>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className="text-red-500">{error}</p>}
       <StyledButton type="submit" disabled={isSubmitting}> 
         {isSubmitting ? 'Chargement...' : 'Se connecter'}
         </StyledButton>
@@ -142,7 +142,7 @@ function RegisterForm() {
         />
       </div>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className="text-red-500">{error}</p>}
 
       <StyledButton
         type="submit"

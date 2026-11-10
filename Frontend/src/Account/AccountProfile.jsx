@@ -4,7 +4,6 @@ import { ChangePasswordForm } from './AccountPassword.jsx';
 import { Avatar } from '../Components/Avatar';
 import { AvatarUploader } from '../Components/AvatarUploader.jsx';
 import { EditableField } from '../Components/EditableField';
-import styles from './Styling/Account.module.css';
 import { StyledButton } from '../Components/Buttons.jsx';
 import { useAuth } from '../Hooks/useAuth';
 
@@ -35,9 +34,9 @@ export function AccountProfile() {
             validate={v => (v.length === 0 ? 'Invalid display name' : null)}
             onSave={v => updateProfile({ display_name: v })}
           ></EditableField>
-          <div className={styles.spacer} />
-          <section className={styles.bottom_bar}>
-            <StyledButton onClick={() => setMode('view')}>Cancel</StyledButton>
+          <div className="h-full" />
+          <section className="flex justify-end gap-3">
+            <StyledButton onClick={() => setMode('view')}>Retour</StyledButton>
           </section>
         </div>
         </div>

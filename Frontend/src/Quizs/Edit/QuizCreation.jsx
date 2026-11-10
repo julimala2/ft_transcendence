@@ -4,7 +4,23 @@ import { useNavigate } from 'react-router-dom';
 
 import { createQuiz } from '../../Api/quiz';
 import { StyledButton } from '../../Components/Buttons';
-import { MainContainer, PageContainer } from '../../Components/Containers';
+import {
+  MainContainer,
+  PageContainer,
+  StyledDiv,
+} from '../../Components/Containers';
+import {
+  StyledInput,
+  StyledSelect,
+  StyledTextarea,
+} from '../../Components/Inputs';
+import { StyledSeparator } from '../../Components/Separators';
+
+const VISIBILITY_OPTIONS = [
+  { value: 'private', label: 'Privé' },
+  { value: 'friends', label: 'Amis' },
+  { value: 'public', label: 'Public' },
+];
 
 export function QuizCreation() {
   const navigate = useNavigate();
@@ -42,71 +58,51 @@ export function QuizCreation() {
   return (
 	<MainContainer>
 	  <PageContainer>
-		<h1 className="text-3xl font-bold mb-6">Création de Quiz</h1>
+		<StyledDiv outerClassName="w-full max-w-2xl" className="gap-6 p-6">
+		  <h1 className="text-3xl font-extrabold tracking-tight text-center">
+			Création de quiz
+		  </h1>
+		  <StyledSeparator />
 
-		<form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
-		  <div className="mb-6">
-			<label htmlFor="title" className="block text-lg font-medium mb-2">
-			  Titre du quiz
-			</label>
-			<input
-			  type="text"
+		  <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full">
+			<StyledInput
 			  id="title"
+			  label="Titre du quiz"
 			  value={title}
 			  onChange={e => setTitle(e.target.value)}
-			  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 			  placeholder="Entrez le titre de votre quiz"
 			/>
-		  </div>
 
-		  <div className="mb-6">
-			<label
-			  htmlFor="description"
-			  className="block text-lg font-medium mb-2"
-			>
-			  Description
-			</label>
-			<textarea
+			<StyledTextarea
 			  id="description"
+			  label="Description"
 			  value={description}
 			  onChange={e => setDescription(e.target.value)}
 			  rows={4}
-			  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
 			  placeholder="Décrivez votre quiz (optionnel)"
 			/>
-		  </div>
 
-		  <div className="mb-6">
-			<label
-			  htmlFor="visibility"
-			  className="block text-lg font-medium mb-2"
-			>
-			  Visibilité
-			</label>
-			<select
+			<StyledSelect
 			  id="visibility"
+			  label="Visibilité"
 			  value={visibility}
 			  onChange={e => setVisibility(e.target.value)}
-			  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-			>
-			  <option value="private">Privé</option>
-			  <option value="friends">Amis</option>
-			  <option value="public">Public</option>
-			</select>
-		  </div>
+			  options={VISIBILITY_OPTIONS}
+			/>
 
-		  {error && (
-			<div className="mb-4 p-4 bg-red-100 text-red-700 rounded">
-			  {error}
+			{error && (
+			  <p className="p-3 rounded-2xl bg-red-500/12 text-danger border border-danger">
+				{error}
+			  </p>
+			)}
+
+			<div className="flex justify-end">
+			  <StyledButton type="submit" disabled={isSubmitting}>
+				{isSubmitting ? 'Création en cours...' : 'Créer le quiz'}
+			  </StyledButton>
 			</div>
-		  )}
-
-		  <div className="flex justify-end">
-			<StyledButton type="submit" disabled={isSubmitting}>
-			  {isSubmitting ? 'Création en cours...' : 'Créer le quiz'}
-			</StyledButton>
-		  </div>
-		</form>
+		  </form>
+		</StyledDiv>
 	  </PageContainer>
 	</MainContainer>
   );

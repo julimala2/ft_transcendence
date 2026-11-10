@@ -272,7 +272,7 @@ export function AccountPublic() {
       <div>
         <h2>Actions</h2>
 
-        {actionError && <p style={{ color: 'red' }}>{actionError}</p>}
+        {actionError && <p className="text-red-500">{actionError}</p>}
 
         {isBlocked ? (
           <>

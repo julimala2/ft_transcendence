@@ -39,8 +39,12 @@ export function StyledButton({
     selected: `border-2 text-blue-900 bg-gradient-to-tl from-amber-800 via-amber-500 to-amber-700 text-white
       shadow-[0px_0px_2px_1px_rgba(234,_179,_8,_0.5)] scale-95` ,
     secondary: 'bg-gray-700 hover:bg-gray-500 text-white',
-    danger: 'bg-red-700 hover:bg-red-300 text-white',
-    success: 'bg-green-700 hover:bg-green-300 text-white',
+    danger: `text-white-900 bg-gradient-to-br from-red-800 via-red-500 to-red-800 
+      shadow-[0px_0px_8px_2px_rgba(234,_179,_8,_0.5)] 
+      hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] border-2 border-red-400`,
+    success: `text-white-900 bg-gradient-to-br from-green-800 via-green-500 to-green-800 
+      shadow-[0px_0px_8px_2px_rgba(234,_179,_8,_0.5)] 
+      hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] border-2 border-green-400`,
     bling: 'w-full flex-1 h-10 rounded-md min-w-0 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
     blingselected: 'h-10 rounded-md min-w-0 max-w-60 flex flex-row items-center justify-center text-white hover:bg-gradient-to-bl bg-gradient-to-br from-blue-900 via-blue-950 to-blue-800 shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] ',
     outerbling: `p-0.75 bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 rounded-md`,
@@ -56,7 +60,7 @@ export function StyledButton({
       className={buttonClasses}
       {...props}
       >
-      {isLoading ? props.loadingText || 'Loading...' : children}
+      {children}
   </button> );
 
 return variant === 'bling' ? (
@@ -172,7 +176,7 @@ export function TileButton({
       layout
       {...props}
     >
-      {isLoading ? props.loadingText || 'Chargement...' : children}
+      {children}
     </motion.button>
   );
 }

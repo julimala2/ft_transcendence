@@ -15,5 +15,5 @@ export {
   PageContainer,
   BlockContainer,
   TileButton,
-  BlingButton
+  BlingButton,
 };
