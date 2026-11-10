@@ -1,28 +1,22 @@
-import React from 'react';
+import { useState } from "react";
 
-import img1 from '../Assets/background-blue.png';
-import styles from '../Styling/BackgroundSlider.module.css';
-
-// import img2 from './src/assets/bg2.jpg';
-// import img3 from './src/assets/bg3.jpg';
-
-const images = [img1];
-
-export default function BackgroundSlider() {
-  // Double the array to create a seamless infinite loop
-  const duplicatedImages = [...images, ...images];
+export default function Component() {
+  const [count, setCount] = useState(0);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.track}>
-        {duplicatedImages.map((src, index) => (
-          <div
-            key={index}
-            className={styles.slide}
-            style={{ backgroundImage: `url(${src})` }}
-          />
-        ))}
-      </div>
-    </div>
+    <div className="min-h-screen w-full bg-white fixed top-0 left-0">
+  {/* Emerald Glow Background */}
+  <div
+    className="absolute inset-0 z-0"
+    style={{
+      backgroundImage: `
+        radial-gradient(125% 125% at 50% 90%, #3d1154 60%, #6b278f 100%)
+      `,
+      backgroundSize: "100% 100%",
+    }}
+  />
+  {/* Your Content/Components */}
+</div>
+
   );
-}
+};

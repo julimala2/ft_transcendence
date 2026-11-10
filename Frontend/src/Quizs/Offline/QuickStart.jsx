@@ -1,15 +1,19 @@
-import { useEffect, useState } from 'react';
-
+import { useEffect, useState, useSyncExternalStore } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
 import { getAllThemes } from '../../Api/themes.jsx';
 import {
   MainContainer,
   PageContainer,
   BlockContainer,
+  TileButton,
+  StyledButton,
 } from '../../Components/Components.jsx';
+import { motion } from 'motion/react';
+
 import styles from '../../Styling/QuizSelectionPage.module.css';
+import { DifficultySelector } from '../../Components/DifficultySelector.jsx';
+import { getQuestionsCount } from '../../Api/questions.jsx';
 
 export function QuickStart() {
   const [categories, setCategories] = useState([]);
@@ -19,6 +23,7 @@ export function QuickStart() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [difficulty, setDifficulty] = useState(0);
   const [isStarting, setIsStarting] = useState(false);
+  const [availableQuestions, setAvailableQuestions] = useState(0);
 
   const navigate = useNavigate();
   const questionCount = 10;
@@ -47,7 +52,6 @@ export function QuickStart() {
       try {
         const data = await getAllThemes();
         if (!cancelled) {
-          console.log(data);
           setThemes(data);
         }
       } catch (err) {
@@ -68,6 +72,11 @@ export function QuickStart() {
     };
   }, []);
 
+  useEffect(() => {
+    // Remove this useless effect
+    // setAvailableQuestions(availableQuestions);
+  }, [difficulty])
+
   async function handleStartQuickQuiz() {
     if (!selectedCategory) {
       alert('Veuillez sélectionner un thème !');
@@ -75,8 +84,7 @@ export function QuickStart() {
     }
 
     const requestBody = {
-      categoryId: selectedCategory,
-      count: questionCount,
+      categoryId: selectedCategory.id,
     };
 
     if (difficulty !== 0) {
@@ -114,81 +122,36 @@ export function QuickStart() {
   return (
     <MainContainer>
       <PageContainer>
-        <div className="justify-center flex flex-col gap-10 flex-wrap">
+        {availableQuestions}
+        <motion.div className="justify-center flex flex-col gap-10 flex-wrap" layout>
           <div>
-            <div className={styles.categoryTiles}>
+            <motion.div className="flex flex-row flex-wrap justify-center gap-7" >
               {categories.map(cat => (
-                <div
-                  key={cat.id}
-                  className={`${styles.categoryTile} ${selectedCategory === cat.id ? styles.tileSelected : ''}`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  {cat.name}
-                </div>
+                <TileButton key={cat.id} variant='quiz' selected={(selectedCategory?.id === cat.id)} onClick={() => setSelectedCategory(cat)}>
+                    {cat.name}
+                </TileButton>
               ))}
-            </div>
+            </motion.div>
           </div>
 
           {selectedCategory && (
-            <>
-              <div>
-                <div className={styles.radioGroup}>
-                  <label className={styles.radioLabel}>
-                    <input
-                      type="radio"
-                      name="difficulty"
-                      value={0}
-                      checked={difficulty === 0}
-                      onChange={() => setDifficulty(0)}
-                    />
-                    Aléatoire
-                  </label>
-                  <label className={styles.radioLabel}>
-                    <input
-                      type="radio"
-                      name="difficulty"
-                      value={1}
-                      checked={difficulty === 1}
-                      onChange={() => setDifficulty(1)}
-                    />
-                    ⭐ Facile
-                  </label>
-                  <label className={styles.radioLabel}>
-                    <input
-                      type="radio"
-                      name="difficulty"
-                      value={2}
-                      checked={difficulty === 2}
-                      onChange={() => setDifficulty(2)}
-                    />
-                    ⭐⭐ Moyenne
-                  </label>
-                  <label className={styles.radioLabel}>
-                    <input
-                      type="radio"
-                      name="difficulty"
-                      value={3}
-                      checked={difficulty === 3}
-                      onChange={() => setDifficulty(3)}
-                    />
-                    ⭐⭐⭐ Difficile
-                  </label>
-                </div>
-              </div>
-
-              <button
+            <div className='flex flex-col gap-10 justify-center items-center'>
+              <DifficultySelector value={difficulty} onChange={setDifficulty} />
+              <StyledButton
                 onClick={handleStartQuickQuiz}
                 disabled={isStarting}
-                className={styles.button}
+                variant='danger'
+                className='w-80 p-5! text-2xl border-5'
               >
                 {isStarting
                   ? 'Demarrage...'
-                  : 'Démarrer le quiz (10 questions)'}
-              </button>
-            </>
+                  : 'Démarrer le quiz'}
+              </StyledButton>
+            </div>
           )}
-        </div>
+        </motion.div>
       </PageContainer>
     </MainContainer>
   );
 }
+

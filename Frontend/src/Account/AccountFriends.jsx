@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
-
 import {
   acceptRequest,
   declineRequest,
@@ -13,6 +11,8 @@ import styles from './Styling/Account.module.css';
 import { getBlockedUsers } from '../Api/blocks';
 import { Avatar } from '../Components/Avatar';
 import { UserSearch } from '../Components/UserSearch';
+import { CardContainer, ListContainer } from '../Components/Containers';
+import { StyledButton } from '../Components/Buttons';
 
 export function AccountFriends() {
   const [friends, setFriends] = useState([]);
@@ -89,51 +89,46 @@ export function AccountFriends() {
   if (error) return <p className={styles.error}>{error}</p>;
 
   return (
-    <>
-      <section>
-        <UserSearch onSelect={handleFriendClick} />
-      </section>
-
+    <div className='flex flex-col gap-7'>
+      <UserSearch onSelect={handleFriendClick} />
       {requests.length !== 0 && (
-        <section className="card">
-          <h2 className={styles.cardTitle}>
-            Requests <span className={styles.badge}>{requests.length}</span>
+        <div>
+          <h2 className="font-bold text-xl">
+            Demande d'amis : {requests.length}
           </h2>
-          <ul className="list">
+          <ListContainer className="list">
             {requests.map(r => (
-              <li key={r.friendshipId} className={styles.request}>
-                <div className={styles.avatar}>{r.username?.[0]}</div>
-                <span className={styles.requestName}>{r.username}</span>
-                <div className={styles.actions}>
-                  <button
-                    className={`${styles.iconBtn} ${styles.accept}`}
-                    aria-label={`Accept ${r.username}`}
+              <CardContainer key={r.friendshipId}>
+                <Avatar username={r.username} />
+                <span>{r.username}</span>
+                <div className='flex flex-row gap-2'>
+                  <StyledButton
+                    variant="success"
                     onClick={() =>
                       handleRequestAction(r.friendshipId, 'accept')
                     }
                   >
                     ✓
-                  </button>
-                  <button
-                    className={`${styles.iconBtn} ${styles.decline}`}
-                    aria-label={`Decline ${r.username}`}
+                  </StyledButton>
+                  <StyledButton
+                    variant="danger"
                     onClick={() =>
                       handleRequestAction(r.friendshipId, 'decline')
                     }
                   >
                     ✕
-                  </button>
+                  </StyledButton>
                 </div>
-              </li>
+              </CardContainer>
             ))}
-          </ul>
-        </section>
+          </ListContainer>
+        </div>
       )}
 
       <section>
-        <h2 className={styles.cardTitle}>Mes amis</h2>
+        <h2 className="font-bold text-xl">Mes amis</h2>
         {friends.length === 0 ? (
-          <p className="empty">Pas d'amis (pour le moment !)</p>
+          <p className="text-gray-500">Pas d'amis (pour le moment !)</p>
         ) : (
           <ul className="list">
             {friends.map(f => (
@@ -163,14 +158,14 @@ export function AccountFriends() {
           </>
         )}
       </section>
-    </>
+    </div>
   );
 }
 
 export function FriendCard({ friend, onClick }) {
   return (
     <li
-      className={styles.card}
+      className="bg-blue-900 flex justify-between p-3 pl-5 pr-5 rounded-2xl align-middle items-center"
       onClick={() => onClick(friend)}
       role="button"
       tabIndex={0}
@@ -182,10 +177,10 @@ export function FriendCard({ friend, onClick }) {
       }}
     >
       <Avatar src={friend.avatar_url} username={friend.username} size={40} />
-      <div className={styles.info}>
-        <span className={styles.username}>{friend.username}</span>
+      <div>
+        <span className='font-bold'>{friend.username}</span>
         {friend.display_name && friend.display_name !== friend.username && (
-          <span className={styles.displayName}>{friend.display_name}</span>
+          <span className='font-bold'>{friend.display_name}</span>
         )}
       </div>
     </li>

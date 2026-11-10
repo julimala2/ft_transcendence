@@ -13,6 +13,18 @@ const PUBLIC_SELECT = {
 
 const FULL_INCLUDE = { answers: true, tags: true, category: true, image: true };
 
+const FULLER_INCLUDE = {
+  id:true,
+  type:true,
+  difficulty:true,
+  text: true,
+  image: true,
+  category: true,
+  tags: true,
+  answers: true,
+  explanation: true,
+}
+
 function tagsConnectOrCreate(tags) {
   return tags.map((slug) => ({ where: { slug }, create: { slug } }));
 }
@@ -36,6 +48,13 @@ async function findPublicById(id) {
   return prisma.question.findFirst({
     where: { id, isActive: true },
     select: PUBLIC_SELECT,
+  });
+}
+
+async function findCompleteById(id) {
+  return prisma.question.findFirst({
+    where: { id, isActive: true },
+    select: FULLER_INCLUDE,
   });
 }
 
@@ -89,4 +108,4 @@ async function remove(id) {
   return prisma.question.delete({ where: { id } });
 }
 
-module.exports = { PUBLIC_SELECT, findAll, findPublicById, findForOwnership, create, update, remove };
+module.exports = { PUBLIC_SELECT, findAll, findPublicById, findForOwnership, create, update, remove, findCompleteById };

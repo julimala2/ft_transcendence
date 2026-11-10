@@ -87,11 +87,18 @@ export function updateQuestion(id, updateData) {
   });
 }
 
-/**
- * Supprime une question
- * @param {number} id - ID de la question
- * @returns {Promise<void>}
- */
 export function deleteQuestion(id) {
   return apiFetch(`/api/questions/${id}`, { method: 'DELETE' });
 }
+
+export function getQuestionsCount(filters = {}) {
+  const categorySlug = filters.categorySlug;
+  const tagSlug = filters.tagSlug || 'all';
+  const difficulty = filters.difficulty;
+  const s = `/api/categories/${categorySlug}/${tagSlug}/${difficulty}`;
+  console.log('Sent :', s);
+  return apiFetch(s, {
+    method: 'GET',
+  });
+}
+

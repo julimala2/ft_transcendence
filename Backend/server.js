@@ -18,9 +18,7 @@ const achievementsRoutes = require('./src/routes/achievements.routes');
 const themesRoutes = require('./src/routes/themes.routes');
 
 const app = express();
-const { WebSocketServer } = require('ws');
-const { authenticateUpgrade } = require('./websocket/services/auth');
-const { handleConnection } = require('./websocket/connectionHandler');
+
 
 app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 app.use(express.json());
@@ -51,30 +49,8 @@ const options = {
 };
 const server = https.createServer(options, app);
 
-/**************************
- * WebSocket server setup *
- * ************************/
-const wss = new WebSocketServer({ noServer: true });
+require('./websocket/server')(server);
 
-server.on('upgrade', (req, socket, head) => {
-  if (!req.url.startsWith('/ws')) {
-    socket.destroy();
-    return;
-  }
-  
-  const user = authenticateUpgrade(req);
-  if (!user) {
-    socket.write('HTTP/1.1 401 Unauthorized\r\n\r\n');
-    socket.destroy();
-    return;
-  }
-  wss.handleUpgrade(req, socket, head, (ws) => {
-    ws.user = user; 
-    wss.emit('connection', ws, req);
-  });
-});
-
-wss.on('connection', handleConnection);
 
 server.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
