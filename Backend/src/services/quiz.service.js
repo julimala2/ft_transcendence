@@ -1,5 +1,7 @@
 const quizModel = require('../models/quiz.model');
 const questionModel = require('../models/question.model');
+const friendModel = require('../models/friends.model');
+const { notifyUser } = require('./notifications.service');
 
 const VISIBILITIES = ['public', 'friends', 'private'];
 
@@ -68,8 +70,25 @@ async function getQuizById(id, userId) {
   };
 }
 
+async function notifyFriendsOfNewQuiz(quiz, userId) {
+  if (quiz.visibility === 'private') {
+    return;
+  }
+
+  const friendships = await friendModel.findFriends(userId);
+
+  for (const friendship of friendships) {
+    let friendId = friendship.requester_id;
+    if (friendship.requester_id === userId) {
+      friendId = friendship.addressee_id;
+    }
+
+    await notifyUser(friendId, 'friend_quiz', `${quiz.owner.username} a publié le quiz « ${quiz.title} »`);
+  }
+}
+
 async function createQuiz(data, userId) {
-  return quizModel.create(
+  const quiz = await quizModel.create(
     {
       title: cleanTitle(data.title),
       description: data.description === undefined ? null : cleanDescription(data.description),
@@ -77,10 +96,14 @@ async function createQuiz(data, userId) {
     },
     userId
   );
+
+  await notifyFriendsOfNewQuiz(quiz, userId);
+
+  return quiz;
 }
 
 async function updateQuiz(id, data, userId) {
-  await getOwnedQuiz(id, userId);
+  const before = await getOwnedQuiz(id, userId);
 
   const changes = {};
   if (data.title !== undefined) changes.title = cleanTitle(data.title);
@@ -90,7 +113,14 @@ async function updateQuiz(id, data, userId) {
   if (Object.keys(changes).length === 0) {
     throw httpError(400, 'Aucun champ modifiable fourni (title, description, visibility)');
   }
-  return quizModel.update(id, changes);
+
+  const quiz = await quizModel.update(id, changes);
+
+  if (before.visibility === 'private' && quiz.visibility !== 'private') {
+    await notifyFriendsOfNewQuiz(quiz, userId);
+  }
+
+  return quiz;
 }
 
 async function deleteQuiz(id, userId) {

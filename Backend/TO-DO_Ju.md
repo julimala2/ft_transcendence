@@ -6,7 +6,7 @@ user
 
 quiz
 
-musique cinema series 42 sport : basket, formule 1, motogp, JO
+musique cinema series 42 sport : JO
 
 Possibilite de signaler une question
 
@@ -17,14 +17,16 @@ Possibilite de signaler une question
 ◦ Show achievements and progression. [ ]
 ◦ Leaderboard integration. [x]
 Classements / leaderboard --> route rush ok (vide tant que le mode rush n'existe pas), a terme : custom + front
+Leaderboard classic ? 
 Progression ?
 Rush mode Joris ?
+Pour l'instant : ranking dans leaderboard et routes achievements mais pas progression
 
 
 • Module : A gamification system to reward users for their actions.
 ◦ Implement at least 3 of the following: achievements, badges, leaderboards, XP/level system, daily challenges, rewards [ ]
 ◦ System must be persistent (stored in database) [x]
-◦ Visual feedback for users (notifications, progress bars, etc.) [ ]
+◦ Visual feedback for users (notifications, progress bars, etc.) [ ] Ce qui est fait : notifs quand achievement / badge
 ◦ Clear rules and progression mechanics [ ]
 
 
