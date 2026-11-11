@@ -4,8 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 
 import { getCategoryTags } from '../../Api/categories.jsx';
+import { getAllThemes } from '../../Api/themes.jsx';
 import { getAllCategories, startCustomQuiz } from '../../Api/quiz.jsx';
-import { BlingButton, StyledButton } from '../../Components/Buttons.jsx';
+import { StyledButton } from '../../Components/Buttons.jsx';
+import { CategorySelector } from '../../Components/CategorySelector.jsx';
 import {
   MainContainer,
   PageContainer,
@@ -26,10 +28,12 @@ const tagChipClass = selected =>
 export function CustomStart() {
   //Data
   const [categories, setCategories] = useState([]);
+  const [themes, setThemes] = useState([]);
   const [categoryTags, setCategoryTags] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   //Filtres
+  const [selectedThemeId, setSelectedThemeId] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedTag, setSelectedTag] = useState(null);
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
@@ -60,6 +64,17 @@ export function CustomStart() {
         }
       }
     }
+    async function loadThemes() {
+      try {
+        const data = await getAllThemes();
+        if (!cancelled) {
+          setThemes(data);
+        }
+      } catch (err) {
+        console.error('Erreur chargement themes:', err);
+      }
+    }
+    loadThemes();
     loadCategories();
 
     return () => {
@@ -190,29 +205,27 @@ export function CustomStart() {
     <MainContainer>
       <PageContainer>
         <motion.div
-          className="flex flex-col items-center gap-10 w-full max-w-4xl min-h-0 max-h-full overflow-y-auto p-1"
+          className="flex flex-col items-center gap-10 w-full min-h-0 max-h-full overflow-y-auto p-1"
           layout
         >
-          <div className="flex gap-7 flex-wrap justify-center md:max-w-500">
-            {categories.map(cat => (
-              <BlingButton
-                key={cat.id}
-                variant="quiz"
-                className="w-40"
-                innerClassName="h-40"
-                onClick={() => {
-                  setSelectedCategory(cat.id);
-                  setSelectedTag(null);
-                }}
-                selected={selectedCategory === cat.id}
-              >
-                {cat.name}
-              </BlingButton>
-            ))}
-          </div>
+          <CategorySelector
+            categories={categories}
+            selectedId={selectedCategory}
+            onSelect={cat => {
+              setSelectedCategory(cat.id);
+              setSelectedTag(null);
+            }}
+            themes={themes}
+            selectedThemeId={selectedThemeId}
+            onSelectTheme={id => {
+              setSelectedThemeId(id);
+              setSelectedCategory(null);
+              setSelectedTag(null);
+            }}
+          />
 
           {selectedCategory && (
-            <StyledDiv outerClassName="w-full max-w-2xl" className="gap-5 p-6">
+            <StyledDiv outerClassName="w-full" className="gap-5 p-6">
               <h2 className="text-2xl font-bold text-center">
                 Personnalisez votre quiz
               </h2>

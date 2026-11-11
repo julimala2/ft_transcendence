@@ -1,7 +1,15 @@
 const prisma = require('../../lib/prisma');
 
 async function findAllThemes() {
-    return prisma.theme.findMany({ orderBy: { position: 'asc' } });
+    return prisma.theme.findMany({
+        orderBy: { position: 'asc' },
+        include: {
+            categories: {
+                orderBy: { name: 'asc' },
+                select: { id: true, slug: true, name: true },
+            },
+        },
+    });
 }
 
 async function findById(id) {

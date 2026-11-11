@@ -27,6 +27,16 @@ export default defineConfig(({ mode }) => {
           ws: true,
           secure: false,
         },
+        '/quiz-images': {
+          target: 'https://127.0.0.1:3000',
+          changeOrigin: true,
+          secure: false,
+        },
+        '/uploads': {
+          target: 'https://127.0.0.1:3000',
+          changeOrigin: true,
+          secure: false,
+        },
       },
     },
   }

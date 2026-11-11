@@ -33,7 +33,7 @@ export default function App() {
   return (
     <>
       <Background color1="#667eea" color2="#ffffff" duration={10} />
-      <div className="relative min-h-screen">
+      <div className="relative h-full overflow-hidden">
         <Header />
         <MainContainer>
           

@@ -129,7 +129,7 @@ export function OnlineRoom(){
             off('gameState', handleGameState);
             send('leaveRoom');
         };
-    },[on,off, send]);
+    },[connected, on, off, send]);
 
     useEffect(() => {
        

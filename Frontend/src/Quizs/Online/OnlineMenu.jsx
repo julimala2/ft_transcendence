@@ -1,22 +1,32 @@
 import { StyledButton } from '../../Components/Buttons';
 import { MainContainer, PageContainer, StyledDiv } from '../../Components/Containers';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { StyledInput } from '../../Components/Inputs';
 import { useSocket } from '../../Hooks/SocketProvider';
+import { useAuth } from '../../Hooks/useAuth';
 import { StyledSeparator } from '../../Components/Separators';
 
 export function OnlineMenu() {
     const navigate = useNavigate();
+    const location = useLocation();
+    const { user, loading: authLoading } = useAuth();
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(undefined);
     const [rooms, setRooms] = useState([]);
     const [newName, setNewName] = useState("");
-    const {send, on, off, connected } = useSocket();
+    const {send, on, off, connected, connectionError } = useSocket();
     const [selectedRoomId,setSelectedRoomId] = useState("");
     const [profile, setProfile] = useState(null);
 
     useEffect(() => {
+        if (connectionError) {
+            setError(connectionError);
+            setLoading(false);
+            return;
+        }
+        if (!connected) return;
+
         const handleProfile = (data) => {
             setProfile(data);
             setLoading(false);
@@ -37,19 +47,16 @@ export function OnlineMenu() {
         on('profile',handleProfile);
         on('roomJoined',roomJoined);
         on('errorRoom',errorRoom);
+
+        send('wsProfile');
+
         return () => {
             off('roomCreated',roomCreated);
             off('profile',handleProfile);
             off('roomJoined',roomJoined);
             off('errorRoom',errorRoom);
         }
-    }, [on,off, navigate]);
-
-    useEffect(() => {
-        if(connected){
-            send('wsProfile');
-        }
-    }, [connected, send]);
+    }, [connected, connectionError, on, off, send, navigate]);
 
     async function createRoom() {
         send("createRoom",{});
@@ -62,12 +69,22 @@ export function OnlineMenu() {
     return (
         <MainContainer>
             <PageContainer>
-        {loading ? (
+        {authLoading || (user && loading) ? (
                     <StyledDiv>
                         <p className="bg-red w-full">loading...</p>
                     </StyledDiv>
             ) 
-            : 
+            : !user ?
+            (
+                <StyledDiv className="gap-5 p-5">
+                    <p className="font-bold w-full">Tu dois être connecté pour jouer en ligne.</p>
+                    <StyledButton
+                        onClick={() => navigate('/account', { state: { backgroundLocation: location.pathname } })}
+                        className="border-2! bg-amber-500!"
+                    >Se connecter</StyledButton>
+                </StyledDiv>
+            )
+            :
             (
                 <StyledDiv className="gap-5 p-5">
                     {/* <p>{JSON.stringify(profile)}</p> */}

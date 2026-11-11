@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState, useCallback, useMemo } from 'react';
 
 // 1️⃣ On crée un contexte
 const SocketContext = createContext(null);
@@ -9,6 +9,7 @@ export function SocketProvider({ children }) {
   const handlersRef = useRef({});
 
   const [connected,setConnected] = useState(false);
+  const [connectionError,setConnectionError] = useState(null);
 
   // 4️⃣ On initialise la connexion WebSocket
   useEffect(() => {
@@ -19,11 +20,17 @@ export function SocketProvider({ children }) {
     ws.onopen = () => {
         console.log('✅ Connecté au serveur');
         setConnected(true);
+        setConnectionError(null);
+    }
+
+    ws.onerror = () => {
+        setConnectionError('Impossible de se connecter au serveur WebSocket.');
     }
 
     ws.onclose = () => {
         console.log('deconnected');
         setConnected(false);
+        setConnectionError(prev => prev ?? 'Connexion au serveur impossible ou perdue (session requise ?).');
     }
 
     ws.onmessage = (event) => {
@@ -43,28 +50,34 @@ export function SocketProvider({ children }) {
   }, []);
 
   // 5️⃣ Fonction pour ENVoyer un message
-  const send = (type, data) => {
+  // (useCallback : identité stable, ne dépend que de refs)
+  const send = useCallback((type, data) => {
     if (wsRef.current?.readyState === 1) { // 1 = OPEN
       wsRef.current.send(JSON.stringify({ type, data }));
     }
-  };
+  }, []);
 
   // 6️⃣ Fonction pour ÉCOUTER un type de message
-  const on = (type, handler) => {
+  const on = useCallback((type, handler) => {
     if (!handlersRef.current[type]) handlersRef.current[type] = [];
     handlersRef.current[type].push(handler);
-  };
+  }, []);
 
   // 7️⃣ Fonction pour ARRÊTER d'écouter
-  const off = (type, handler) => {
+  const off = useCallback((type, handler) => {
     if (handlersRef.current[type]) {
       handlersRef.current[type] = handlersRef.current[type].filter(h => h !== handler);
     }
-  };
+  }, []);
 
-  // 8️⃣ On expose les fonctions au contexte
+  // 8️⃣ On expose les fonctions au contexte (mémoizé pour garder une identité stable)
+  const value = useMemo(
+    () => ({ send, on, off, connected, connectionError }),
+    [send, on, off, connected, connectionError]
+  );
+
   return (
-    <SocketContext.Provider value={{ send, on, off, connected }}>
+    <SocketContext.Provider value={value}>
       {children}
     </SocketContext.Provider>
   );

@@ -4,10 +4,10 @@ import { BlingButton } from '../../Components/Buttons';
 import { TileButton } from '../../Components/Buttons';
 
 export default function OfflineMenu() {
-  const inner = "md:w-40! md:h-40 text-3xl!"
+  const inner = "md:w-40! md:h-40 h-20 text-3xl!"
 
   return (
-        <div className="flex gap-8 flex-row flex-1 flex-wrap md:w-full">
+        <div className="flex gap-8 flex-col md:flex-row flex-1 flex-wrap w-full">
           <Link to="/play/offline/quick">
           <BlingButton innerClassName={inner}>
             Rush
