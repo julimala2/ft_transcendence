@@ -1,4 +1,4 @@
-const { proposeQuiz, onAnswer, requestGameState } = require('../game/quiz.game');
+const { proposeQuiz, onAnswer, requestGameState } = require('../game/room.game');
 
 const handlers = {
   requestGameState,

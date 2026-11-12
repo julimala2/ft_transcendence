@@ -1,95 +1,29 @@
-const { broadcast, getRoomMembers } = require("../rooms/room.manager");
-const { getCategoryById } = require("../../src/services/category.service");
-const { findActiveQuestionIds } = require("../../src/models/attempt.model");
-const { shuffle } = require("../../src/services/attempt.service");
-const { getCompleteQuestionById } = require("../../src/services/question.service");
+const { createRoom, joinRoom, broadcast, getRoomMembers } = require("../rooms/room.manager");
 
-const games = {};
-const votes = {};
 
-const TIME_ENDVOTE = 5000;
+const pool = {};
+const ranked = {};
+
 const TIME_TO_ANSWER = 15000;
 
+/******************
+ *  MATCHMAKING   *
+ ******************/ 
+function rankedGame(data, ws) {
 
-async function proposeQuiz(data, ws) {
-  const roomId = ws.currentRoom;
-  //Check here if game is in progress
-  if (!roomId) throw new Error(`roomId error.`);
-  if(!games[roomId]){
-    const game = {
-      questionsId: [],
-      currentQuestionIndex: 0,
-      scores: new Map(),
-      answered: new Map(),
-      phase: 'vote',
-      timer: null,
-    };
-    games[roomId] = game;
-  }
-  
-  if (games[roomId].phase !== 'vote') throw new Error(`game already started.`);
-  
-
-  //Recup data values
-  const categoryId = data.categoryId;
-  const category = await getCategoryById(data.categoryId);
-  const categoryName = category.name;
-  const count = data.count;
-  
-  const vote = votes[roomId] ?? startVote(roomId);
-  
-  const PropositionExisting = vote.quizList.find(
-      q => q.categoryId === categoryId && q.count === count
-  );
-  if (PropositionExisting) {
-    PropositionExisting.nbVotes++;
-  } else {
-      vote.quizList.push({categoryId, categoryName, count, nbVotes: 1});
-  }
+    // ajouter ws a la pool map(ws, category)
+    // check si 2 ws -> category == 2
+    // creer room, push les 2 ws dans cette room 
+    // 
 }
 
 
-function startVote(roomId){
-  const vote = {
-    quizList: [],
-    endsAt: Date.now() + 5000,
-    interval: null,
-  };
 
-  votes[roomId] = vote;
-  let remaining = (vote.endsAt - Date.now()); 
-  games[roomId].timer = remaining;
-  sendGameState(roomId);
-  
-  vote.interval = setInterval(() => {
-    remaining = (vote.endsAt - Date.now());
-    games[roomId].timer = remaining;
-    if(remaining <= 0){
-        endVote(roomId);
-        return;
-    }
-    sendGameState(roomId);
-  }, 1000);
-  return (vote);
-}
 
-function endVote(roomId) {
-  const vote = votes[roomId];
-  if (!vote) return;
-  clearInterval(vote.interval);
-  delete votes[roomId];
-
-  let winner = vote.quizList[0];
-  for (let i = 1; i < vote.quizList.length; i++){
-    if(vote.quizList[i].nbVotes > winner.nbVotes)
-        winner = vote.quizList[i];
-  }
-  games[roomId].phase = 'endVote';
-  games[roomId].winner = winner;
-  games[roomId].timer = TIME_ENDVOTE;
-  sendGameState(roomId);
-  quizTimer(roomId, TIME_ENDVOTE, startGame);
-}
+/******************
+ *      GAME      *
+ ******************/ 
+// temps de reponse = 20sec -> des que un joueur repond 5sec restante pour l'autre joueur 
 
 async function startGame(roomId) {
 
@@ -140,7 +74,7 @@ function revealAnswers(roomId){
   const game = games[roomId];
   game.phase = "revealAnswers";
   const correctAnswer = game.currentQuestion.answers.find(a => a.isCorrect === true);
-  game.correctAnswerId = correctAnswer.id;
+  game.correctAnswer = correctAnswer.text;
   
   game.answered.forEach((answer, userId) => {
     if (answer.id === correctAnswer.id) {
@@ -200,9 +134,9 @@ function sendGameState(roomId){
   if (games[roomId].phase != 'revealAnswers')
       gameState.correctAnswerId = null;
   else {
-    gameState.correctAnswerId = games[roomId].correctAnswerId;
+    gameState.correctAnswer = games[roomId].correctAnswer;
   }
   broadcast(roomId, {type: 'gameState', data : gameState});
 }
 
-module.exports = {games, votes, proposeQuiz, startVote, onAnswer, requestGameState };
+module.exports = {rankedGame };
