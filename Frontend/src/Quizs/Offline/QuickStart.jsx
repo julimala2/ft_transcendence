@@ -136,8 +136,6 @@ export function QuickStart() {
           />
 
           {selectedCategory && (
-            <StyledDiv outerClassName="w-full" className="gap-5 p-6">
-              {/* <DifficultySelector value={difficulty} onChange={setDifficulty} /> */}
               <StyledButton
                 onClick={handleStartQuickQuiz}
                 disabled={isStarting}
@@ -145,7 +143,6 @@ export function QuickStart() {
               >
                 {isStarting ? 'Demarrage...' : 'Démarrer le quiz'}
               </StyledButton>
-            </StyledDiv>
           )}
         </div>
       </PageContainer>

@@ -8,10 +8,24 @@ import { useState, useEffect, useRef } from 'react';
 export function QuizPanel({className = '',gameState,send,time}){
     const [category, setCategory] = useState("");
     const [length, setLength] = useState(5);
+    const [answeredId, setAnsweredId] = useState(null);
+
+    // Reset le lock visuel quand on quitte la phase question (chaque nouvelle question passe par une autre phase)
+    const phase = gameState?.phase;
+    useEffect(() => {
+        if (phase !== "question") setAnsweredId(null);
+    }, [phase]);
+
     const sendQuizProposition = () => {
         if(category.id != ''){
             send('quiz', {type : 'proposeQuiz', categoryId : category.id, count: length });
         }
+    }
+
+    const sendAnswer = (answerId) => {
+        if (answeredId != null) return;
+        setAnsweredId(answerId);
+        send("quiz", {type:"onAnswer", answerId: answerId, time: time});
     }
 
     //TODO : -envoyer le texte de la reponse gagnante (ou une route getAnswerById dans le back)
@@ -70,7 +84,13 @@ export function QuizPanel({className = '',gameState,send,time}){
                 <div className="flex flex-col w-full max-w-100 align-center justify-center gap-3">
 
                 {gameState.question.answers.map((answer, index) => {
-                    return <StyledButton className=" text-xl font-bold p-4! w-full" onClick={() => send("quiz", {type:"onAnswer", answerId: answer.id, time: time})} key={index}>{answer.text}</StyledButton>
+                    const isSelected = answeredId === answer.id;
+                    return <StyledButton
+                        className=" text-xl font-bold p-4! w-full"
+                        variant={isSelected ? 'selected' : (answeredId != null ? 'disabled' : 'primary')}
+                        disabled={answeredId != null}
+                        onClick={() => sendAnswer(answer.id)}
+                        key={index}>{answer.text}</StyledButton>
                 })}
                 </div>
             </div>

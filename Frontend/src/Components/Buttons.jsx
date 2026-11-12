@@ -38,6 +38,9 @@ export function StyledButton({
       hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] border-2 border-amber-300` ,
     selected: `border-2 text-blue-900 bg-gradient-to-tl from-amber-800 via-amber-500 to-amber-700 text-white
       shadow-[0px_0px_2px_1px_rgba(234,_179,_8,_0.5)] scale-95` ,
+    disabled: `text-white-900 bg-gradient-to-br from-blue-900 via-slate-950 to-slate-900 
+      shadow-[0px_0px_0px_0px_rgba(234,_179,_8,_0.5)] 
+      hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] border-2 border-slate-400`,
     secondary: 'bg-gray-700 hover:bg-gray-500 text-white',
     danger: `text-white-900 bg-gradient-to-br from-red-800 via-red-500 to-red-800 
       shadow-[0px_0px_8px_2px_rgba(234,_179,_8,_0.5)] 
