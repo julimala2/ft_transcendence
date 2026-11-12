@@ -1,4 +1,4 @@
-const { getProfile } = require('../src/services/user.service');
+const { getProfile } = require('../../src/services/user.service');
 
 async function createWsProfile(ws) {
     const profile = await getProfile(ws.user.id);

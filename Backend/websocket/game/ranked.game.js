@@ -52,6 +52,7 @@ function leavePool(data, ws) {
     pool.delete(ws.poolCategory);
   }
   ws.poolCategory = null;
+  ws.send(JSON.stringify({type:'leavedPool'}));
 }
 /******************
  *      GAME      *
