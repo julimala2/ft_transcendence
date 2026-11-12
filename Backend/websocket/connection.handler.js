@@ -23,6 +23,9 @@ async function handleConnection(ws)
     ws.username = profile.username;
     ws.userId = ws.user.id;
     ws.currentRoom = null;
+    ws.poolCategory = null;
+    ws.duelId = null;
+    
   }
   catch {
     console.log('DB get profile Error.')
@@ -52,6 +55,7 @@ async function handleConnection(ws)
 
   ws.on('close', () => {
     leaveRoom(null, ws);
+    leavePool(null, ws);
     console.log('WebSocket déconnecté :', ws.userId);
   });
 }

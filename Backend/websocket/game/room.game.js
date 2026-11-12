@@ -199,7 +199,7 @@ function sendGameState(roomId){
     question : games[roomId]?.publicQuestion || null,
   };
   if (games[roomId].phase != 'revealAnswers')
-      gameState.correctAnswerId = null;
+      gameState.correctAnswer = null;
   else {
     gameState.correctAnswer = games[roomId].correctAnswer;
   }

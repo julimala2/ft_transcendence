@@ -9,10 +9,10 @@ import { SocketProvider } from './Hooks/SocketProvider.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-      <SocketProvider>
         <AuthProvider>
+          <SocketProvider>
             <App />
+          </SocketProvider>
         </AuthProvider>
-      </SocketProvider>
   </BrowserRouter>
 );

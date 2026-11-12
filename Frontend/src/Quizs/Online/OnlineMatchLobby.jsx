@@ -68,7 +68,7 @@ export function OnlineMatchLobby() {
 
     function searchOpponent() {
         if (!category) return;
-        send('quiz', { type: 'ranked', category: category.id });
+        send('quiz', { type: 'rankedGame', category: category.id });
         setSearching(true);
     }
 

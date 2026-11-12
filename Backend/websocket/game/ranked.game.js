@@ -1,23 +1,51 @@
-const { createRoom, joinRoom, broadcast, getRoomMembers } = require("../rooms/room.manager");
+const { findActiveQuestionIds } = require("../../src/models/attempt.model");
+const { shuffle } = require("../../src/services/attempt.service");
+const { getCompleteQuestionById } = require("../../src/services/question.service");
+
+const pool = new Map();
+const duelRooms = {};
 
 
-const pool = {};
-const ranked = {};
+const TIME_TO_ANSWER = 20000;
+const NB_QUESTIONS = 5;
+const GOOD_ANSWER_POINTS = 3;
 
-const TIME_TO_ANSWER = 15000;
+    // tenvoie un msg "duelFound"
+    // front dans useSocket ca detecte duelFound et ca te propose de rejoindre
 
 /******************
  *  MATCHMAKING   *
  ******************/ 
 function rankedGame(data, ws) {
 
-    // ajouter ws a la pool map(ws, category)
-    // check si 2 ws -> category == 2
-    // creer room, push les 2 ws dans cette room 
-    // 
+    const opponent = pool.get(data.category);
+
+    if (opponent && opponent != ws) {     //adversaire trouvé -> creer duelroom
+        const duelId = Math.random().toString(36).substr(2, 6).toUpperCase();
+        ws.duelId = duelId;
+        opponent.duelId = duelId;
+        duelRooms[duelId] = {
+            phase: "starting",
+            members: [ws, opponent],
+            categoryId: data.category,
+            scores: new Map(),
+            questionsId: null,
+            currentQuestionIndex: 0,
+            publicQuestion: null,
+            answered: new Map(),
+            correctAnswer: null,
+            timer: null,
+            interval: null,
+          };
+          startDuel(duelId);
+          pool.delete(data.category);
+    }
+
+    else {     // ajouter ws a la pool
+        pool.set(data.category, ws);
+        ws.poolCategory = data.category;
+    }
 }
-
-
 
 
 /******************
@@ -25,27 +53,30 @@ function rankedGame(data, ws) {
  ******************/ 
 // temps de reponse = 20sec -> des que un joueur repond 5sec restante pour l'autre joueur 
 
-async function startGame(roomId) {
+async function startDuel(duelId) {
 
+  const duel = duelRooms[duelId];
+  if (!duel) { return; }
+
+  sendDuelState(duelId);
   try {
-    const available = await findActiveQuestionIds({categoryId : games[roomId].winner.categoryId });
-    if(available.length < games[roomId].winner.count)
-        games[roomId].winner.count = available.length;
-
-    games[roomId].questionsId = shuffle(available).slice(0, games[roomId].winner.count);
-    getRoomMembers(roomId).forEach(player => { 
-      games[roomId].scores.set(player.userId, 0);
+    const available = await findActiveQuestionIds({categoryId : duel.categoryId });
+    duel.questionsId = shuffle(available).slice(0, NB_QUESTIONS);
+    duel.members.forEach(player => { 
+      duel.scores.set(player.userId, 0);
     });
-    await sendQuestion(roomId);
+    await sendQuestion(duelId);
     } catch (error) {
         console.log("quiz start error", error);
     }
 }
 
-async function sendQuestion(roomId) {
-  clearTimeout(games[roomId].timeout);
-  games[roomId].phase = "question";
-  const questionId = games[roomId].questionsId[games[roomId].currentQuestionIndex];
+async function sendQuestion(duelId) {
+  const duel = duelRooms[duelId];
+  if (!duel) { return; }
+
+  duel.phase = "question";
+  const questionId = duel.questionsId[duel.currentQuestionIndex];
   const question = await getCompleteQuestionById(questionId);
   const publicQuestion = {
         text: question.text,
@@ -53,90 +84,107 @@ async function sendQuestion(roomId) {
         answers: question.answers.map(({isCorrect, ...rest}) => rest),
     };
   
-  games[roomId].publicQuestion = publicQuestion;
-  games[roomId].currentQuestion = question;
-  games[roomId].timer = TIME_TO_ANSWER;
-  sendGameState(roomId);
-  quizTimer(roomId, TIME_TO_ANSWER, revealAnswers);
+  duel.publicQuestion = publicQuestion;
+  duel.correctAnswer = question.answers.find(a => a.isCorrect === true);
+  duel.timer = TIME_TO_ANSWER;
+  sendDuelState(duelId);
+  duelTimer(duelId, TIME_TO_ANSWER, revealAnswers);
 }
 
-function onAnswer(data, ws){
-  const roomId = ws.currentRoom;
-  games[roomId].answered.set(ws.userId, {id : data.answerId, time : data.answerTime});
-  if (games[roomId].answered.size === games[roomId].scores.size)
+function rankedAnswer(data, ws){
+  const duelId = ws.duelId;
+  if (!duelRooms[duelId] || duelRooms[duelId].answered.get(ws.userId)) { return; }
+
+  duelRooms[duelId].answered.set(ws.userId, {id : data.answerId, time : data.answerTime});
+  if (duelRooms[duelId].answered.size === 1 && duelRooms[duelId].timer > 5000)
   {
-    clearInterval(games[roomId].interval);
-    revealAnswers(roomId);
+    clearInterval(duelRooms[duelId].interval);
+    duelTimer(duelId, 5000, revealAnswers);
+  }
+  else if (duelRooms[duelId].answered.size === 2)
+  {
+    clearInterval(duelRooms[duelId].interval);
+    revealAnswers(duelId);
   }
 }
 
-function revealAnswers(roomId){
-  const game = games[roomId];
-  game.phase = "revealAnswers";
-  const correctAnswer = game.currentQuestion.answers.find(a => a.isCorrect === true);
-  game.correctAnswer = correctAnswer.text;
-  
-  game.answered.forEach((answer, userId) => {
-    if (answer.id === correctAnswer.id) {
-      const points = 3;
-      game.scores.set(userId, game.scores.get(userId) + points);
+function revealAnswers(duelId){
+  const duel = duelRooms[duelId];
+  if (!duel) { return; }
+
+  duel.phase = "revealAnswers";
+
+  duel.answered.forEach((answer, userId) => {
+    if (answer.id === duel.correctAnswer.id) {
+      duel.scores.set(userId, duel.scores.get(userId) + GOOD_ANSWER_POINTS);
     }
    });
-  sendGameState(roomId);
-  game.answered.clear();
-  if ((game.currentQuestionIndex + 1) === game.winner.count) {
-    quizTimer(roomId, 5000, endGame); }
+  sendDuelState(duelId);
+  duel.answered.clear();
+  if ((duel.currentQuestionIndex + 1) === NB_QUESTIONS) {
+    duelTimer(duelId, 5000, endDuel); }
   else {
-    game.currentQuestionIndex++;
-    quizTimer(roomId, 5000, sendQuestion); }
+    duel.currentQuestionIndex++;
+    duelTimer(duelId, 5000, sendQuestion); }
 }
 
-function endGame(roomId){ 
-  const game = games[roomId];
-  game.phase = "endGame";
+function endDuel(duelId){ 
+  const duel = duelRooms[duelId];
+  duel.phase = "endDuel";
   //ENVOYER LES RESULTATS AUX STATS
-  sendGameState(roomId);
-  delete games[roomId];
-  sendGameState(roomId);
+  sendDuelState(duelId);
+  duel.members.forEach(player => {player.duelId = null; });
+  delete duelRooms[duelId];
 }
 
-function quizTimer(roomId, time, funct) {
+function duelTimer(duelId, time, funct) {
   const endsAt = Date.now() + time;
-  broadcast(roomId,  {type: 'time', data : time});
-  games[roomId].interval = setInterval(() => {
-    const remaining = (endsAt - Date.now());
-      if(remaining <= 0){
-          clearInterval(games[roomId].interval);
-          funct(roomId);
-          return;
-      }
-      broadcast(roomId,  {type: 'time', data : remaining});
+
+  duelcast(duelId,  {type: 'time', data : time});
+  duelRooms[duelId].interval = setInterval(() => {
+    duelRooms[duelId].timer = (endsAt - Date.now());
+    if(duelRooms[duelId].timer <= 0){
+        clearInterval(duelRooms[duelId].interval);
+        funct(duelId);
+        return;
+    }
+    duelcast(duelId,  {type: 'time', data : duelRooms[duelId].timer});
   }, 1000);
 }
 
-function requestGameState(message, ws) {
-  if(games[ws.currentRoom])
-    sendGameState(ws.currentRoom);
+function requestDuelState(message, ws) {
+  if(duelRooms[ws.duelId])
+    sendDuelState(ws.duelId);
   else
-    ws.send(JSON.stringify({type: "gameState", data :{type : "noGameState"}}));
+    ws.send(JSON.stringify({type: "duelState", data :{type : "noDuelState"}}));
 }
 
-function sendGameState(roomId){
-  if (!games[roomId]) return;
-  const gameState = {
-    phase : games[roomId]?.phase || null,
-    quizList : votes[roomId]?.quizList || null,
-    timer: games[roomId]?.timer || null,
-    winner : games[roomId]?.winner || null,
-    scores : games[roomId]?.scores || null,
-    question : games[roomId]?.publicQuestion || null,
+function sendDuelState(duelId){
+  if (!duelRooms[duelId]) return;
+  const duelState = {
+    phase : duelRooms[duelId]?.phase || null,
+    timer: duelRooms[duelId]?.timer || null,
+    scores : Object.fromEntries(duelRooms[duelId]?.scores || new Map()),
+    question : duelRooms[duelId]?.publicQuestion || null,
   };
-  if (games[roomId].phase != 'revealAnswers')
-      gameState.correctAnswerId = null;
+  if (duelRooms[duelId].phase != 'revealAnswers')
+      duelState.correctAnswer = null;
   else {
-    gameState.correctAnswer = games[roomId].correctAnswer;
+    duelState.correctAnswer = duelRooms[duelId].correctAnswer.text;
   }
-  broadcast(roomId, {type: 'gameState', data : gameState});
+  duelcast(duelId, {type: 'duelState', data : duelState});
 }
 
-module.exports = {rankedGame };
+
+function duelcast(duelId, data, except = null) {
+  const duel = duelRooms[duelId];
+  if (!duel) return;
+
+  duel.members.forEach(ws => {
+    if (ws !== except && ws.readyState === 1) {
+      ws.send(JSON.stringify(data));
+    }
+  });
+}
+
+module.exports = {rankedGame, rankedAnswer, requestDuelState };

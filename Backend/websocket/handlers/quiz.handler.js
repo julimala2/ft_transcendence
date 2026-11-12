@@ -1,9 +1,13 @@
 const { proposeQuiz, onAnswer, requestGameState } = require('../game/room.game');
+const { rankedGame, rankedAnswer, requestDuelState } = require('../game/ranked.game');
 
 const handlers = {
   requestGameState,
   proposeQuiz, // data : {type: proposeQuiz, categoryId, count}
   onAnswer,
+  requestDuelState,
+  rankedGame,
+  rankedAnswer
 };
 
 async function quizHandler(data, ws) {
