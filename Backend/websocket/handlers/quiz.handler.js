@@ -1,13 +1,14 @@
 const { proposeQuiz, onAnswer, requestGameState } = require('../game/room.game');
-const { rankedGame, rankedAnswer, requestDuelState } = require('../game/ranked.game');
+const { rankedGame, rankedAnswer, requestDuelState, leavePool } = require('../game/ranked.game');
 
 const handlers = {
   requestGameState,
-  proposeQuiz, // data : {type: proposeQuiz, categoryId, count}
+  proposeQuiz, 
   onAnswer,
   requestDuelState,
   rankedGame,
-  rankedAnswer
+  rankedAnswer,
+  leavePool
 };
 
 async function quizHandler(data, ws) {
@@ -23,4 +24,4 @@ async function quizHandler(data, ws) {
   }
 }
 
-module.exports = {quizHandler};
+module.exports = {quizHandler, leavePool};

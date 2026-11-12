@@ -24,6 +24,7 @@ function rankedGame(data, ws) {
         const duelId = Math.random().toString(36).substr(2, 6).toUpperCase();
         ws.duelId = duelId;
         opponent.duelId = duelId;
+        leavePool(opponent);
         duelRooms[duelId] = {
             phase: "starting",
             members: [ws, opponent],
@@ -38,7 +39,6 @@ function rankedGame(data, ws) {
             interval: null,
           };
           startDuel(duelId);
-          pool.delete(data.category);
     }
 
     else {     // ajouter ws a la pool
@@ -47,7 +47,12 @@ function rankedGame(data, ws) {
     }
 }
 
-
+function leavePool(data, ws) {
+  if (ws.poolCategory && pool.get(ws.poolCategory) === ws) {
+    pool.delete(ws.poolCategory);
+  }
+  ws.poolCategory = null;
+}
 /******************
  *      GAME      *
  ******************/ 
@@ -93,9 +98,14 @@ async function sendQuestion(duelId) {
 
 function rankedAnswer(data, ws){
   const duelId = ws.duelId;
-  if (!duelRooms[duelId] || duelRooms[duelId].answered.get(ws.userId)) { return; }
-
-  duelRooms[duelId].answered.set(ws.userId, {id : data.answerId, time : data.answerTime});
+  if (!duelRooms[duelId] || duelRooms[duelId].phase !== 'question' ) {
+     return; }
+  if (duelRooms[duelId].answered.get(ws.userId)) {
+    ws.send(JSON.stringify({type: 'duelAnswer', data: 'already answered'}));
+    return;
+  }
+  duelRooms[duelId].answered.set(ws.userId, data.answerId);
+  duelcast(duelId, {type: 'duelAnswer', data: { type:'hasAnswer', user: ws.username }});
   if (duelRooms[duelId].answered.size === 1 && duelRooms[duelId].timer > 5000)
   {
     clearInterval(duelRooms[duelId].interval);
@@ -187,4 +197,4 @@ function duelcast(duelId, data, except = null) {
   });
 }
 
-module.exports = {rankedGame, rankedAnswer, requestDuelState };
+module.exports = {rankedGame, rankedAnswer, requestDuelState, leavePool };

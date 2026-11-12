@@ -1,12 +1,11 @@
-const { getProfile } = require('../src/services/user.service');
 const { chatHandler } = require('./handlers/chat.handler');
 const { createRoom, joinRoom, leaveRoom, roomInfo, sendMousePosition } = require('./rooms/room.manager');
-const { quizHandler } = require('./handlers/quiz.handler');
-const { wsProfile } = require('./handlers/profile.handler');
+const { quizHandler, leavePool } = require('./handlers/quiz.handler');
+const { createWsProfile, getWsProfile } = require('./handlers/profile.handler');
 
  //data : {type: category/custom, nquestions, difficulty,}
 const handlers = {
-  wsProfile: wsProfile,
+  wsProfile: getWsProfile,
   createRoom: createRoom,
   joinRoom: joinRoom,
   leaveRoom: leaveRoom,
@@ -19,13 +18,7 @@ const handlers = {
 async function handleConnection(ws) 
 {
   try{
-    const profile = await getProfile(ws.user.id);
-    ws.username = profile.username;
-    ws.userId = ws.user.id;
-    ws.currentRoom = null;
-    ws.poolCategory = null;
-    ws.duelId = null;
-    
+    createWsProfile(ws);
   }
   catch {
     console.log('DB get profile Error.')
