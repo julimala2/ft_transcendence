@@ -20,6 +20,7 @@ import { CustomStart } from './Quizs/Offline/CustomStart';
 import { QuickStart } from './Quizs/Offline/QuickStart';
 import { GamePage } from './Quizs/Online/GamePage';
 import TestPage from './Pages/TestPage';
+import { OnlineMatchLobby } from './Quizs/Online/OnlineMatchLobby';
 import { OnlineMenu } from './Quizs/Online/OnlineMenu';
 import { OnlineRoom } from './Quizs/Online/OnlineRoom';
 import { Chat } from './Hooks/Chat';
@@ -33,7 +34,7 @@ export default function App() {
   return (
     <>
       <Background color1="#667eea" color2="#ffffff" duration={10} />
-      <div className="relative min-h-screen">
+      <div className="relative h-full overflow-hidden">
         <Header />
         <MainContainer>
           
@@ -58,6 +59,7 @@ export default function App() {
             <Route path="/play/offline/menu" element={<OfflineMenu />} />
             <Route path="/play/offline/commu" element={<CommuStart />} />
             <Route path="/quiz/online" element={<OnlineMenu/>} />
+            <Route path="/quiz/online/lobby" element={<OnlineMatchLobby />} />
             <Route path="/room/:roomId" element={<OnlineRoom />} />
             <Route path="*" element={<NotFoundPage />} />
             {/* Test Page ! */}

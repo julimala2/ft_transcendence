@@ -60,7 +60,7 @@ export function AccountProfile() {
           <label className='text-xl font-bold'>Pseudo : {user.display_name}</label>
           </div>
           <div className='flex flex-1'/>
-          <section className="flex flex-row gap-3 justify-end">
+          <section className="flex md:flex-row flex-col gap-3 justify-end">
             <StyledButton onClick={() => setMode('edit')}>
               Edit profile
             </StyledButton>

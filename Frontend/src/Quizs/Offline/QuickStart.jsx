@@ -8,8 +8,9 @@ import {
   BlockContainer,
   TileButton,
   StyledButton,
-  BlingButton,
 } from '../../Components/Components.jsx';
+import { StyledDiv } from '../../Components/Containers.jsx';
+import { CategorySelector } from '../../Components/CategorySelector.jsx';
 import { motion } from 'motion/react';
 
 import { DifficultySelector } from '../../Components/DifficultySelector.jsx';
@@ -21,6 +22,7 @@ export function QuickStart() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedThemeId, setSelectedThemeId] = useState(null);
   const [difficulty, setDifficulty] = useState(0);
   const [isStarting, setIsStarting] = useState(false);
   const [availableQuestions, setAvailableQuestions] = useState(0);
@@ -73,11 +75,6 @@ export function QuickStart() {
     };
   }, []);
 
-  useEffect(() => {
-    // Remove this useless effect
-    // setAvailableQuestions(availableQuestions);
-  }, [difficulty])
-
   async function handleStartQuickQuiz() {
     if (!selectedCategory) {
       alert('Veuillez sélectionner un thème !');
@@ -102,58 +99,52 @@ export function QuickStart() {
 
   if (loading) {
     return (
-      <main className="page">
-        <p className="text-muted text-center">Chargement des quizs...</p>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <p className="text-muted text-center">Chargement des quizs...</p>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   if (error) {
     return (
-      <main className="page">
-        <p className="text-danger text-center">{error}</p>
-      </main>
+      <MainContainer>
+        <PageContainer>
+          <p className="text-danger text-center text-lg">{error}</p>
+        </PageContainer>
+      </MainContainer>
     );
   }
 
   return (
     <MainContainer>
       <PageContainer>
-        <motion.div className="justify-center flex flex-col gap-10 flex-wrap" layout>
-          {themes.length === 0 ? (
-            <p className='flex flex-row justify-center'>Aucun theme disponibles.</p>
-          ):(
-            <div className='flex flex-col'>
-              {themes.map(the => (
-                <p key={the.key}>{the.text}</p>
-              ))}
-            </div>
-          )}
-          <div>
-            <motion.div className="md:max-w-500 flex flex-row flex-wrap justify-center gap-7" >
-              {categories.map(cat => (
-                <BlingButton innerClassName='h-40' className='w-40' key={cat.id} variant='quiz' selected={(selectedCategory?.id === cat.id)} onClick={() => setSelectedCategory(cat)}>
-                    {cat.name}
-                </BlingButton>
-              ))}
-            </motion.div>
-          </div>
-          
+        <div
+          className="flex flex-col items-center gap-10 w-full md:p-10 min-h-0 max-h-full overflow-y-auto p-1"
+        >
+          <CategorySelector
+            categories={categories}
+            selectedId={selectedCategory?.id}
+            onSelect={cat => setSelectedCategory(cat)}
+            themes={themes}
+            selectedThemeId={selectedThemeId}
+            onSelectTheme={id => {
+              setSelectedThemeId(id);
+              setSelectedCategory(null);
+            }}
+          />
+
           {selectedCategory && (
-            <div className='flex flex-col gap-10 justify-center items-center'>
-              {/* <DifficultySelector value={difficulty} onChange={setDifficulty} /> */}
               <StyledButton
                 onClick={handleStartQuickQuiz}
                 disabled={isStarting}
-                className='w-80 p-5! text-2xl border-5'
+                className="w-80 p-5! text-2xl! self-center"
               >
-                {isStarting
-                  ? 'Demarrage...'
-                  : 'Démarrer le quiz'}
+                {isStarting ? 'Demarrage...' : 'Démarrer le quiz'}
               </StyledButton>
-            </div>
           )}
-        </motion.div>
+        </div>
       </PageContainer>
     </MainContainer>
   );

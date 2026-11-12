@@ -198,9 +198,23 @@ export function AttemptPage() {
               Quiz terminé !
             </h1>
             <StyledSeparator />
-            <p className="text-ok text-2xl font-extrabold text-center">
-              Score: {attempt.score} / {attempt.total}
-            </p>
+            <div className="bg-gray-800 rounded-2xl p-6 flex flex-col items-center gap-1 w-full">
+              <p className="text-muted text-sm font-semibold uppercase tracking-wide">
+                Score final
+              </p>
+              <p className="text-5xl font-extrabold text-ok">
+                {attempt.score}
+                <span className="text-2xl font-bold text-muted">
+                  {' '}
+                  / {attempt.total}
+                </span>
+              </p>
+              <p className="text-muted text-sm">
+                {attempt.total > 0
+                  ? `${Math.round((attempt.score / attempt.total) * 100)}% de réussite`
+                  : '—'}
+              </p>
+            </div>
             <div className="flex justify-center">
               <StyledButton onClick={() => navigate('/')}>
                 Retour à l'accueil
@@ -216,11 +230,27 @@ export function AttemptPage() {
     <MainContainer>
       <PageContainer>
         <StyledDiv outerClassName="w-full max-w-2xl" className="gap-5 p-6">
-          <div className="flex flex-row items-center justify-between w-full gap-3">
-            <div className="text-3xl font-bold text-amber-300">
-              Score: {attempt.score}
+          <div className="flex flex-row w-full gap-3">
+            <div className="flex-1 bg-gray-800 rounded-2xl p-4 flex flex-col items-center gap-1">
+              <p className="text-muted text-xs font-semibold uppercase tracking-wide">
+                Score
+              </p>
+              <p className="text-3xl font-extrabold text-amber-300">
+                {attempt.score}
+              </p>
             </div>
-            <div className="text-muted">Temps restant: {timeLeft}s</div>
+            <div className="flex-1 bg-gray-800 rounded-2xl p-4 flex flex-col items-center gap-1">
+              <p className="text-muted text-xs font-semibold uppercase tracking-wide">
+                Temps restant
+              </p>
+              <p
+                className={`text-3xl font-extrabold ${
+                  timeLeft <= 5 ? 'text-danger' : 'text-white'
+                }`}
+              >
+                {timeLeft}s
+              </p>
+            </div>
           </div>
 
           <StyledSeparator />

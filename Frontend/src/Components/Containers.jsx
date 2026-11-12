@@ -2,7 +2,7 @@
 
 //Container that contains an entire page
 export const MainContainer = ({ children }) => (
-  <div className="h-dvh overflow-hidden flex flex-col">
+  <div className="h-full overflow-hidden flex flex-col">
     {children}
   </div>
 );
