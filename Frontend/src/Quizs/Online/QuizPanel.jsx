@@ -99,7 +99,7 @@ export function QuizPanel({className = '',gameState,send,time}){
             {/* Reveal answer phase */}
             {gameState?.phase === "revealAnswers" && (<>
             <div className="w-full flex flex-col md:pl-10 md:pl-10 gap-3 justify-center items-center">
-                <p className="text-xl font-bold">La bonne reponse etait : {}</p>
+                <p className="text-xl font-bold">La bonne reponse etait : {gameState.correctAnswer}</p>
                 <p className="text-xl font-bold"> {Math.ceil(time/1000)} secondes avant la prochaine question.</p>
             </div>
             </>)}
