@@ -1,0 +1,1943 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 137,
+    "parDifficulte": { "1": 49, "2": 51, "3": 37 },
+    "parType": { "multiple": 137 },
+    "avecImage": 0,
+    "sansImage": 137,
+    "parTag": {
+      "artiste": 89,
+      "france": 55,
+      "chanson": 29,
+      "histoire": 17,
+      "record": 7,
+      "album": 2
+    }
+  },
+  "category": {
+    "slug": "pop",
+    "name": "Pop"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "pop-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur est surnommé « le roi de la pop » ?",
+      "answers": [
+        { "text": "Elvis Presley", "isCorrect": false },
+        { "text": "Prince", "isCorrect": false },
+        { "text": "Michael Jackson", "isCorrect": true },
+        { "text": "Justin Timberlake", "isCorrect": false }
+      ],
+      "explanation": "Elvis Presley, lui, est surnommé « le King » du rock 'n' roll."
+    },
+    {
+      "ref": "pop-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["album", "record"],
+      "text": "Quel album de Michael Jackson, sorti en 1982, est l'album le plus vendu de l'histoire ?",
+      "answers": [
+        { "text": "Bad", "isCorrect": false },
+        { "text": "Thriller", "isCorrect": true },
+        { "text": "Off the Wall", "isCorrect": false },
+        { "text": "Dangerous", "isCorrect": false }
+      ],
+      "explanation": "« Thriller » s'est vendu à plusieurs dizaines de millions d'exemplaires."
+    },
+    {
+      "ref": "pop-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel pas de danse Michael Jackson a-t-il popularisé en 1983 sur « Billie Jean » ?",
+      "answers": [
+        { "text": "Le moonwalk", "isCorrect": true },
+        { "text": "Le robot", "isCorrect": false },
+        { "text": "Le smurf", "isCorrect": false },
+        { "text": "Le twist", "isCorrect": false }
+      ],
+      "explanation": "Il l'a présenté lors d'une émission célébrant les 25 ans de la Motown."
+    },
+    {
+      "ref": "pop-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Avec quel groupe familial Michael Jackson a-t-il débuté ?",
+      "answers": [
+        { "text": "The Osmonds", "isCorrect": false },
+        { "text": "The Temptations", "isCorrect": false },
+        { "text": "The Commodores", "isCorrect": false },
+        { "text": "The Jackson 5", "isCorrect": true }
+      ],
+      "explanation": "Michael Jackson y chantait dès l'âge de 6 ans."
+    },
+    {
+      "ref": "pop-005",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel réalisateur a tourné le clip de « Thriller » ?",
+      "answers": [
+        { "text": "Steven Spielberg", "isCorrect": false },
+        { "text": "Martin Scorsese", "isCorrect": false },
+        { "text": "John Landis", "isCorrect": true },
+        { "text": "David Fincher", "isCorrect": false }
+      ],
+      "explanation": "John Landis avait réalisé « Le Loup-garou de Londres »."
+    },
+    {
+      "ref": "pop-006",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel réalisateur a tourné le clip de « Bad » de Michael Jackson ?",
+      "answers": [
+        { "text": "John Landis", "isCorrect": false },
+        { "text": "Martin Scorsese", "isCorrect": true },
+        { "text": "Spike Lee", "isCorrect": false },
+        { "text": "Steven Spielberg", "isCorrect": false }
+      ],
+      "explanation": "Le clip dure près de 18 minutes dans sa version longue."
+    },
+    {
+      "ref": "pop-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse est surnommée « la reine de la pop » ?",
+      "answers": [
+        { "text": "Madonna", "isCorrect": true },
+        { "text": "Britney Spears", "isCorrect": false },
+        { "text": "Lady Gaga", "isCorrect": false },
+        { "text": "Kylie Minogue", "isCorrect": false }
+      ],
+      "explanation": "Madonna est l'artiste féminine qui a vendu le plus de disques au monde."
+    },
+    {
+      "ref": "pop-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel titre de Madonna, sorti en 1990, célèbre une danse née dans les clubs de New York ?",
+      "answers": [
+        { "text": "Like a Prayer", "isCorrect": false },
+        { "text": "Material Girl", "isCorrect": false },
+        { "text": "Holiday", "isCorrect": false },
+        { "text": "Vogue", "isCorrect": true }
+      ],
+      "explanation": "Le « voguing » imite les poses des mannequins de magazines."
+    },
+    {
+      "ref": "pop-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel titre de Madonna, sorti en 1989, a fait scandale avec son clip religieux ?",
+      "answers": [
+        { "text": "Vogue", "isCorrect": false },
+        { "text": "Papa Don't Preach", "isCorrect": false },
+        { "text": "Like a Prayer", "isCorrect": true },
+        { "text": "Frozen", "isCorrect": false }
+      ],
+      "explanation": "Le Vatican a condamné le clip."
+    },
+    {
+      "ref": "pop-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Dans quel film Madonna incarne-t-elle Eva Perón ?",
+      "answers": [
+        { "text": "Recherche Susan désespérément", "isCorrect": false },
+        { "text": "Evita", "isCorrect": true },
+        { "text": "Dick Tracy", "isCorrect": false },
+        { "text": "Une équipe hors du commun", "isCorrect": false }
+      ],
+      "explanation": "Le film est sorti en 1996."
+    },
+    {
+      "ref": "pop-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « ...Baby One More Time » en 1998 ?",
+      "answers": [
+        { "text": "Britney Spears", "isCorrect": true },
+        { "text": "Christina Aguilera", "isCorrect": false },
+        { "text": "Jessica Simpson", "isCorrect": false },
+        { "text": "Mandy Moore", "isCorrect": false }
+      ],
+      "explanation": "Britney Spears avait 16 ans lors de sa sortie."
+    },
+    {
+      "ref": "pop-012",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Dans quelle émission pour enfants Britney Spears, Justin Timberlake et Christina Aguilera ont-ils débuté ?",
+      "answers": [
+        { "text": "Sesame Street", "isCorrect": false },
+        { "text": "Kids Incorporated", "isCorrect": false },
+        { "text": "Barney", "isCorrect": false },
+        { "text": "The Mickey Mouse Club", "isCorrect": true }
+      ],
+      "explanation": "Ryan Gosling en faisait aussi partie."
+    },
+    {
+      "ref": "pop-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "De quel boys band Justin Timberlake faisait-il partie ?",
+      "answers": [
+        { "text": "Backstreet Boys", "isCorrect": false },
+        { "text": "Boyz II Men", "isCorrect": false },
+        { "text": "NSYNC", "isCorrect": true },
+        { "text": "Take That", "isCorrect": false }
+      ],
+      "explanation": "NSYNC a connu un énorme succès à la fin des années 1990."
+    },
+    {
+      "ref": "pop-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "De quel boys band britannique Robbie Williams est-il issu ?",
+      "answers": [
+        { "text": "Westlife", "isCorrect": false },
+        { "text": "Take That", "isCorrect": true },
+        { "text": "Boyzone", "isCorrect": false },
+        { "text": "Blue", "isCorrect": false }
+      ],
+      "explanation": "Il a quitté Take That en 1995 pour une carrière solo."
+    },
+    {
+      "ref": "pop-015",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel boys band a sorti « I Want It That Way » en 1999 ?",
+      "answers": [
+        { "text": "Backstreet Boys", "isCorrect": true },
+        { "text": "NSYNC", "isCorrect": false },
+        { "text": "Westlife", "isCorrect": false },
+        { "text": "Boyzone", "isCorrect": false }
+      ],
+      "explanation": "Les Backstreet Boys viennent d'Orlando, en Floride."
+    },
+    {
+      "ref": "pop-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel groupe féminin britannique réunissait Ginger, Posh, Baby, Scary et Sporty ?",
+      "answers": [
+        { "text": "All Saints", "isCorrect": false },
+        { "text": "Sugababes", "isCorrect": false },
+        { "text": "Girls Aloud", "isCorrect": false },
+        { "text": "Spice Girls", "isCorrect": true }
+      ],
+      "explanation": "Les Spice Girls ont popularisé le slogan « Girl Power »."
+    },
+    {
+      "ref": "pop-017",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel est le premier single des Spice Girls, sorti en 1996 ?",
+      "answers": [
+        { "text": "Spice Up Your Life", "isCorrect": false },
+        { "text": "Say You'll Be There", "isCorrect": false },
+        { "text": "Wannabe", "isCorrect": true },
+        { "text": "2 Become 1", "isCorrect": false }
+      ],
+      "explanation": "« Wannabe » a été numéro 1 dans plus de 30 pays."
+    },
+    {
+      "ref": "pop-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle Spice Girl a épousé le footballeur David Beckham ?",
+      "answers": [
+        { "text": "Geri (Ginger)", "isCorrect": false },
+        { "text": "Victoria (Posh)", "isCorrect": true },
+        { "text": "Emma (Baby)", "isCorrect": false },
+        { "text": "Mel C (Sporty)", "isCorrect": false }
+      ],
+      "explanation": "Victoria Beckham est devenue créatrice de mode."
+    },
+    {
+      "ref": "pop-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel groupe suédois a remporté l'Eurovision 1974 avec « Waterloo » ?",
+      "answers": [
+        { "text": "ABBA", "isCorrect": true },
+        { "text": "Roxette", "isCorrect": false },
+        { "text": "Ace of Base", "isCorrect": false },
+        { "text": "Europe", "isCorrect": false }
+      ],
+      "explanation": "Le nom du groupe reprend les initiales de ses quatre membres."
+    },
+    {
+      "ref": "pop-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle comédie musicale est construite sur les chansons d'ABBA ?",
+      "answers": [
+        { "text": "Grease", "isCorrect": false },
+        { "text": "Cats", "isCorrect": false },
+        { "text": "Hairspray", "isCorrect": false },
+        { "text": "Mamma Mia!", "isCorrect": true }
+      ],
+      "explanation": "Elle a été adaptée au cinéma en 2008 avec Meryl Streep."
+    },
+    {
+      "ref": "pop-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Poker Face » en 2008 ?",
+      "answers": [
+        { "text": "Katy Perry", "isCorrect": false },
+        { "text": "Rihanna", "isCorrect": false },
+        { "text": "Lady Gaga", "isCorrect": true },
+        { "text": "Kesha", "isCorrect": false }
+      ],
+      "explanation": "« Poker Face » est extrait de son premier album, « The Fame »."
+    },
+    {
+      "ref": "pop-022",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle tenue de Lady Gaga a fait scandale aux MTV Video Music Awards 2010 ?",
+      "answers": [
+        { "text": "Une robe en papier journal", "isCorrect": false },
+        { "text": "Une robe en viande crue", "isCorrect": true },
+        { "text": "Une robe en plastique transparent", "isCorrect": false },
+        { "text": "Une robe en ballons", "isCorrect": false }
+      ],
+      "explanation": "La robe a ensuite été conservée et exposée."
+    },
+    {
+      "ref": "pop-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Pour quel film Lady Gaga a-t-elle chanté « Shallow » avec Bradley Cooper ?",
+      "answers": [
+        { "text": "A Star Is Born", "isCorrect": true },
+        { "text": "La La Land", "isCorrect": false },
+        { "text": "Bohemian Rhapsody", "isCorrect": false },
+        { "text": "The Greatest Showman", "isCorrect": false }
+      ],
+      "explanation": "« Shallow » a remporté l'Oscar de la meilleure chanson originale en 2019."
+    },
+    {
+      "ref": "pop-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "De quelle île des Caraïbes est originaire Rihanna ?",
+      "answers": [
+        { "text": "La Jamaïque", "isCorrect": false },
+        { "text": "Trinité-et-Tobago", "isCorrect": false },
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "La Barbade", "isCorrect": true }
+      ],
+      "explanation": "Rihanna a été déclarée héroïne nationale de la Barbade en 2021."
+    },
+    {
+      "ref": "pop-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre de Rihanna, sorti en 2007 avec Jay-Z, parle d'un parapluie ?",
+      "answers": [
+        { "text": "Diamonds", "isCorrect": false },
+        { "text": "Work", "isCorrect": false },
+        { "text": "Umbrella", "isCorrect": true },
+        { "text": "Only Girl", "isCorrect": false }
+      ],
+      "explanation": "« Umbrella » est resté dix semaines numéro 1 au Royaume-Uni."
+    },
+    {
+      "ref": "pop-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Rolling in the Deep » et « Someone Like You » ?",
+      "answers": [
+        { "text": "Duffy", "isCorrect": false },
+        { "text": "Adele", "isCorrect": true },
+        { "text": "Amy Winehouse", "isCorrect": false },
+        { "text": "Lana Del Rey", "isCorrect": false }
+      ],
+      "explanation": "Les deux titres sont sur l'album « 21 »."
+    },
+    {
+      "ref": "pop-027",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel est le titre de l'album d'Adele sorti en 2011 ?",
+      "answers": [
+        { "text": "21", "isCorrect": true },
+        { "text": "19", "isCorrect": false },
+        { "text": "25", "isCorrect": false },
+        { "text": "30", "isCorrect": false }
+      ],
+      "explanation": "Adele donne à ses albums l'âge qu'elle avait pendant leur écriture."
+    },
+    {
+      "ref": "pop-028",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Pour quel film de James Bond Adele a-t-elle chanté le générique en 2012 ?",
+      "answers": [
+        { "text": "Spectre", "isCorrect": false },
+        { "text": "Casino Royale", "isCorrect": false },
+        { "text": "Mourir peut attendre", "isCorrect": false },
+        { "text": "Skyfall", "isCorrect": true }
+      ],
+      "explanation": "« Skyfall » a remporté l'Oscar de la meilleure chanson originale."
+    },
+    {
+      "ref": "pop-029",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quelle chanteuse a interprété le générique de « Mourir peut attendre » ?",
+      "answers": [
+        { "text": "Adele", "isCorrect": false },
+        { "text": "Sam Smith", "isCorrect": false },
+        { "text": "Billie Eilish", "isCorrect": true },
+        { "text": "Dua Lipa", "isCorrect": false }
+      ],
+      "explanation": "Billie Eilish avait 18 ans lors de l'enregistrement."
+    },
+    {
+      "ref": "pop-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel chanteur a interprété le générique de « Spectre » ?",
+      "answers": [
+        { "text": "Ed Sheeran", "isCorrect": false },
+        { "text": "Sam Smith", "isCorrect": true },
+        { "text": "Adele", "isCorrect": false },
+        { "text": "Harry Styles", "isCorrect": false }
+      ],
+      "explanation": "Le titre s'appelle « Writing's on the Wall »."
+    },
+    {
+      "ref": "pop-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur britannique a sorti « Shape of You » en 2017 ?",
+      "answers": [
+        { "text": "Ed Sheeran", "isCorrect": true },
+        { "text": "Sam Smith", "isCorrect": false },
+        { "text": "Harry Styles", "isCorrect": false },
+        { "text": "Lewis Capaldi", "isCorrect": false }
+      ],
+      "explanation": "« Shape of You » a longtemps été le titre le plus écouté de Spotify."
+    },
+    {
+      "ref": "pop-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "De quel boys band Harry Styles est-il issu ?",
+      "answers": [
+        { "text": "The Wanted", "isCorrect": false },
+        { "text": "Take That", "isCorrect": false },
+        { "text": "Westlife", "isCorrect": false },
+        { "text": "One Direction", "isCorrect": true }
+      ],
+      "explanation": "One Direction est en pause depuis 2016."
+    },
+    {
+      "ref": "pop-033",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Dans quelle émission britannique s'est formé One Direction ?",
+      "answers": [
+        { "text": "Britain's Got Talent", "isCorrect": false },
+        { "text": "Pop Idol", "isCorrect": false },
+        { "text": "The X Factor", "isCorrect": true },
+        { "text": "The Voice UK", "isCorrect": false }
+      ],
+      "explanation": "Les cinq garçons s'étaient présentés séparément avant d'être réunis par le jury."
+    },
+    {
+      "ref": "pop-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Bad Guy » en 2019 ?",
+      "answers": [
+        { "text": "Olivia Rodrigo", "isCorrect": false },
+        { "text": "Billie Eilish", "isCorrect": true },
+        { "text": "Lorde", "isCorrect": false },
+        { "text": "Dua Lipa", "isCorrect": false }
+      ],
+      "explanation": "Billie Eilish a remporté les quatre principaux Grammy Awards en 2020."
+    },
+    {
+      "ref": "pop-035",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Quel est le prénom du frère de Billie Eilish, qui coécrit et produit ses chansons ?",
+      "answers": [
+        { "text": "Finneas", "isCorrect": true },
+        { "text": "Jonas", "isCorrect": false },
+        { "text": "Noah", "isCorrect": false },
+        { "text": "Elliot", "isCorrect": false }
+      ],
+      "explanation": "Finneas enregistrait avec elle dans sa chambre, à Los Angeles."
+    },
+    {
+      "ref": "pop-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur canadien a été découvert sur YouTube et a sorti « Baby » en 2010 ?",
+      "answers": [
+        { "text": "Shawn Mendes", "isCorrect": false },
+        { "text": "The Weeknd", "isCorrect": false },
+        { "text": "Drake", "isCorrect": false },
+        { "text": "Justin Bieber", "isCorrect": true }
+      ],
+      "explanation": "Justin Bieber avait 15 ans à l'époque."
+    },
+    {
+      "ref": "pop-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson", "record"],
+      "text": "Quel titre de The Weeknd est devenu le plus écouté de l'histoire de Spotify en 2023 ?",
+      "answers": [
+        { "text": "Starboy", "isCorrect": false },
+        { "text": "Save Your Tears", "isCorrect": false },
+        { "text": "Blinding Lights", "isCorrect": true },
+        { "text": "Can't Feel My Face", "isCorrect": false }
+      ],
+      "explanation": "Il a dépassé « Shape of You » d'Ed Sheeran."
+    },
+    {
+      "ref": "pop-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson", "record"],
+      "text": "Quel titre a été le premier clip YouTube à dépasser le milliard de vues, en 2012 ?",
+      "answers": [
+        { "text": "Baby", "isCorrect": false },
+        { "text": "Gangnam Style", "isCorrect": true },
+        { "text": "Despacito", "isCorrect": false },
+        { "text": "Party Rock Anthem", "isCorrect": false }
+      ],
+      "explanation": "La vidéo de PSY a fait le tour du monde avec sa danse du cheval."
+    },
+    {
+      "ref": "pop-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "De quel pays vient PSY, interprète de « Gangnam Style » ?",
+      "answers": [
+        { "text": "Corée du Sud", "isCorrect": true },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Chine", "isCorrect": false },
+        { "text": "Thaïlande", "isCorrect": false }
+      ],
+      "explanation": "Gangnam est un quartier aisé de Séoul."
+    },
+    {
+      "ref": "pop-040",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson", "record"],
+      "text": "Quel titre de Luis Fonsi et Daddy Yankee a battu le record de vues sur YouTube en 2017 ?",
+      "answers": [
+        { "text": "Gangnam Style", "isCorrect": false },
+        { "text": "Bailando", "isCorrect": false },
+        { "text": "Mi Gente", "isCorrect": false },
+        { "text": "Despacito", "isCorrect": true }
+      ],
+      "explanation": "Un remix avec Justin Bieber a encore accru son succès."
+    },
+    {
+      "ref": "pop-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel groupe de K-pop compte sept membres, dont RM et Jungkook ?",
+      "answers": [
+        { "text": "EXO", "isCorrect": false },
+        { "text": "Big Bang", "isCorrect": false },
+        { "text": "BTS", "isCorrect": true },
+        { "text": "Stray Kids", "isCorrect": false }
+      ],
+      "explanation": "BTS a été le premier groupe de K-pop numéro 1 du Billboard Hot 100."
+    },
+    {
+      "ref": "pop-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel groupe féminin de K-pop réunit Jennie, Lisa, Jisoo et Rosé ?",
+      "answers": [
+        { "text": "Twice", "isCorrect": false },
+        { "text": "Blackpink", "isCorrect": true },
+        { "text": "Red Velvet", "isCorrect": false },
+        { "text": "Girls' Generation", "isCorrect": false }
+      ],
+      "explanation": "Blackpink a été la tête d'affiche du festival Coachella en 2023."
+    },
+    {
+      "ref": "pop-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel titre de Rosé et Bruno Mars a été un énorme succès à la fin de 2024 ?",
+      "answers": [
+        { "text": "APT.", "isCorrect": true },
+        { "text": "Die With a Smile", "isCorrect": false },
+        { "text": "Leave the Door Open", "isCorrect": false },
+        { "text": "Uptown Funk", "isCorrect": false }
+      ],
+      "explanation": "« APT. » s'inspire d'un jeu à boire coréen."
+    },
+    {
+      "ref": "pop-044",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur a sorti « Uptown Funk » avec Mark Ronson ?",
+      "answers": [
+        { "text": "Pharrell Williams", "isCorrect": false },
+        { "text": "Justin Timberlake", "isCorrect": false },
+        { "text": "Ne-Yo", "isCorrect": false },
+        { "text": "Bruno Mars", "isCorrect": true }
+      ],
+      "explanation": "« Uptown Funk » est resté 14 semaines numéro 1 aux États-Unis."
+    },
+    {
+      "ref": "pop-045",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel titre de Pharrell Williams vient de la bande originale de « Moi, moche et méchant 2 » ?",
+      "answers": [
+        { "text": "Get Lucky", "isCorrect": false },
+        { "text": "Blurred Lines", "isCorrect": false },
+        { "text": "Happy", "isCorrect": true },
+        { "text": "Freedom", "isCorrect": false }
+      ],
+      "explanation": "Son clip a été le premier clip de 24 heures."
+    },
+    {
+      "ref": "pop-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson", "france"],
+      "text": "Avec quel duo français Pharrell Williams a-t-il chanté « Get Lucky » en 2013 ?",
+      "answers": [
+        { "text": "Justice", "isCorrect": false },
+        { "text": "Daft Punk", "isCorrect": true },
+        { "text": "Air", "isCorrect": false },
+        { "text": "Phoenix", "isCorrect": false }
+      ],
+      "explanation": "« Get Lucky » est extrait de l'album « Random Access Memories »."
+    },
+    {
+      "ref": "pop-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « I Kissed a Girl » en 2008 ?",
+      "answers": [
+        { "text": "Katy Perry", "isCorrect": true },
+        { "text": "Lady Gaga", "isCorrect": false },
+        { "text": "Kesha", "isCorrect": false },
+        { "text": "Pink", "isCorrect": false }
+      ],
+      "explanation": "Katy Perry a d'abord chanté du gospel."
+    },
+    {
+      "ref": "pop-048",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Flowers » en 2023 ?",
+      "answers": [
+        { "text": "Selena Gomez", "isCorrect": false },
+        { "text": "Demi Lovato", "isCorrect": false },
+        { "text": "Ariana Grande", "isCorrect": false },
+        { "text": "Miley Cyrus", "isCorrect": true }
+      ],
+      "explanation": "« Flowers » a battu des records d'écoute en streaming dès sa sortie."
+    },
+    {
+      "ref": "pop-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Dans quelle série Disney Miley Cyrus a-t-elle joué une pop star à la double vie ?",
+      "answers": [
+        { "text": "Les Sorciers de Waverly Place", "isCorrect": false },
+        { "text": "Camp Rock", "isCorrect": false },
+        { "text": "Hannah Montana", "isCorrect": true },
+        { "text": "High School Musical", "isCorrect": false }
+      ],
+      "explanation": "La série a été diffusée de 2006 à 2011."
+    },
+    {
+      "ref": "pop-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Drivers License » en 2021 ?",
+      "answers": [
+        { "text": "Billie Eilish", "isCorrect": false },
+        { "text": "Olivia Rodrigo", "isCorrect": true },
+        { "text": "Sabrina Carpenter", "isCorrect": false },
+        { "text": "Conan Gray", "isCorrect": false }
+      ],
+      "explanation": "Olivia Rodrigo jouait auparavant dans une série Disney."
+    },
+    {
+      "ref": "pop-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Espresso » en 2024 ?",
+      "answers": [
+        { "text": "Sabrina Carpenter", "isCorrect": true },
+        { "text": "Olivia Rodrigo", "isCorrect": false },
+        { "text": "Dua Lipa", "isCorrect": false },
+        { "text": "Ariana Grande", "isCorrect": false }
+      ],
+      "explanation": "Sabrina Carpenter a fait la première partie de la tournée de Taylor Swift."
+    },
+    {
+      "ref": "pop-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Levitating » et « Don't Start Now » ?",
+      "answers": [
+        { "text": "Rita Ora", "isCorrect": false },
+        { "text": "Ava Max", "isCorrect": false },
+        { "text": "Doja Cat", "isCorrect": false },
+        { "text": "Dua Lipa", "isCorrect": true }
+      ],
+      "explanation": "Dua Lipa est née à Londres de parents kosovars."
+    },
+    {
+      "ref": "pop-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse australienne a sorti « Can't Get You Out of My Head » ?",
+      "answers": [
+        { "text": "Sia", "isCorrect": false },
+        { "text": "Natalie Imbruglia", "isCorrect": false },
+        { "text": "Kylie Minogue", "isCorrect": true },
+        { "text": "Delta Goodrem", "isCorrect": false }
+      ],
+      "explanation": "Kylie Minogue s'est d'abord fait connaître dans la série « Les Voisins »."
+    },
+    {
+      "ref": "pop-054",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "De quel pays vient Shakira ?",
+      "answers": [
+        { "text": "Mexique", "isCorrect": false },
+        { "text": "Colombie", "isCorrect": true },
+        { "text": "Espagne", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": false }
+      ],
+      "explanation": "Shakira est née à Barranquilla."
+    },
+    {
+      "ref": "pop-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre de Shakira était l'hymne de la Coupe du monde de football 2010 ?",
+      "answers": [
+        { "text": "Waka Waka", "isCorrect": true },
+        { "text": "Hips Don't Lie", "isCorrect": false },
+        { "text": "La La La", "isCorrect": false },
+        { "text": "Whenever, Wherever", "isCorrect": false }
+      ],
+      "explanation": "La Coupe du monde 2010 se déroulait en Afrique du Sud."
+    },
+    {
+      "ref": "pop-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse canadienne a chanté « My Heart Will Go On » pour « Titanic » ?",
+      "answers": [
+        { "text": "Shania Twain", "isCorrect": false },
+        { "text": "Alanis Morissette", "isCorrect": false },
+        { "text": "Avril Lavigne", "isCorrect": false },
+        { "text": "Céline Dion", "isCorrect": true }
+      ],
+      "explanation": "La chanson a remporté l'Oscar de la meilleure chanson originale en 1998."
+    },
+    {
+      "ref": "pop-057",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "De quelle province canadienne Céline Dion est-elle originaire ?",
+      "answers": [
+        { "text": "Ontario", "isCorrect": false },
+        { "text": "Nouveau-Brunswick", "isCorrect": false },
+        { "text": "Québec", "isCorrect": true },
+        { "text": "Manitoba", "isCorrect": false }
+      ],
+      "explanation": "Céline Dion est née à Charlemagne, au Québec, en 1968."
+    },
+    {
+      "ref": "pop-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Avec quel titre Céline Dion a-t-elle remporté l'Eurovision 1988 pour la Suisse ?",
+      "answers": [
+        { "text": "Pour que tu m'aimes encore", "isCorrect": false },
+        { "text": "Ne partez pas sans moi", "isCorrect": true },
+        { "text": "S'il suffisait d'aimer", "isCorrect": false },
+        { "text": "D'amour ou d'amitié", "isCorrect": false }
+      ],
+      "explanation": "Elle l'a emporté d'un seul point."
+    },
+    {
+      "ref": "pop-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Lors de quel événement Céline Dion a-t-elle chanté « L'Hymne à l'amour » sur la tour Eiffel ?",
+      "answers": [
+        { "text": "La cérémonie d'ouverture des JO de Paris 2024", "isCorrect": true },
+        { "text": "Le 14 Juillet 2019", "isCorrect": false },
+        { "text": "L'inauguration de Notre-Dame en 2024", "isCorrect": false },
+        { "text": "La Fête de la musique 2023", "isCorrect": false }
+      ],
+      "explanation": "C'était son retour sur scène après plusieurs années de maladie."
+    },
+    {
+      "ref": "pop-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « I Will Always Love You » pour le film « Bodyguard » ?",
+      "answers": [
+        { "text": "Mariah Carey", "isCorrect": false },
+        { "text": "Toni Braxton", "isCorrect": false },
+        { "text": "Céline Dion", "isCorrect": false },
+        { "text": "Whitney Houston", "isCorrect": true }
+      ],
+      "explanation": "Whitney Houston jouait aussi le rôle principal du film."
+    },
+    {
+      "ref": "pop-061",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Qui a écrit et chanté la version originale de « I Will Always Love You », en 1974 ?",
+      "answers": [
+        { "text": "Linda Ronstadt", "isCorrect": false },
+        { "text": "Tina Turner", "isCorrect": false },
+        { "text": "Dolly Parton", "isCorrect": true },
+        { "text": "Cher", "isCorrect": false }
+      ],
+      "explanation": "Dolly Parton l'avait écrite pour son mentor, Porter Wagoner."
+    },
+    {
+      "ref": "pop-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre de Mariah Carey revient chaque année en tête des classements à Noël ?",
+      "answers": [
+        { "text": "Last Christmas", "isCorrect": false },
+        { "text": "All I Want for Christmas Is You", "isCorrect": true },
+        { "text": "Santa Tell Me", "isCorrect": false },
+        { "text": "Mistletoe", "isCorrect": false }
+      ],
+      "explanation": "Le titre est sorti en 1994."
+    },
+    {
+      "ref": "pop-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel groupe a sorti le classique de Noël « Last Christmas » ?",
+      "answers": [
+        { "text": "Wham!", "isCorrect": true },
+        { "text": "Band Aid", "isCorrect": false },
+        { "text": "ABBA", "isCorrect": false },
+        { "text": "Take That", "isCorrect": false }
+      ],
+      "explanation": "« Last Christmas » est sorti en 1984."
+    },
+    {
+      "ref": "pop-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quel chanteur, membre de Wham!, a sorti « Careless Whisper » ?",
+      "answers": [
+        { "text": "Andrew Ridgeley", "isCorrect": false },
+        { "text": "Boy George", "isCorrect": false },
+        { "text": "Simon Le Bon", "isCorrect": false },
+        { "text": "George Michael", "isCorrect": true }
+      ],
+      "explanation": "George Michael est mort le jour de Noël 2016."
+    },
+    {
+      "ref": "pop-065",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur britannique est connu pour « Your Song » et « Rocket Man » ?",
+      "answers": [
+        { "text": "Rod Stewart", "isCorrect": false },
+        { "text": "Phil Collins", "isCorrect": false },
+        { "text": "Elton John", "isCorrect": true },
+        { "text": "Sting", "isCorrect": false }
+      ],
+      "explanation": "Elton John s'appelle en réalité Reginald Dwight."
+    },
+    {
+      "ref": "pop-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson", "record"],
+      "text": "Quel titre d'Elton John, réécrit pour les funérailles de Diana en 1997, est l'un des singles les plus vendus de l'histoire ?",
+      "answers": [
+        { "text": "Your Song", "isCorrect": false },
+        { "text": "Candle in the Wind", "isCorrect": true },
+        { "text": "Rocket Man", "isCorrect": false },
+        { "text": "Sacrifice", "isCorrect": false }
+      ],
+      "explanation": "La version originale de 1973 était un hommage à Marilyn Monroe."
+    },
+    {
+      "ref": "pop-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quel chanteur a sorti l'album et le film « Purple Rain » en 1984 ?",
+      "answers": [
+        { "text": "Prince", "isCorrect": true },
+        { "text": "Michael Jackson", "isCorrect": false },
+        { "text": "Stevie Wonder", "isCorrect": false },
+        { "text": "Lionel Richie", "isCorrect": false }
+      ],
+      "explanation": "Prince venait de Minneapolis."
+    },
+    {
+      "ref": "pop-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Quel duo britannique a sorti « Sweet Dreams (Are Made of This) » en 1983 ?",
+      "answers": [
+        { "text": "Pet Shop Boys", "isCorrect": false },
+        { "text": "Soft Cell", "isCorrect": false },
+        { "text": "Yazoo", "isCorrect": false },
+        { "text": "Eurythmics", "isCorrect": true }
+      ],
+      "explanation": "Le duo réunissait Annie Lennox et Dave Stewart."
+    },
+    {
+      "ref": "pop-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quel groupe norvégien a sorti « Take On Me » en 1985 ?",
+      "answers": [
+        { "text": "Europe", "isCorrect": false },
+        { "text": "Roxette", "isCorrect": false },
+        { "text": "A-ha", "isCorrect": true },
+        { "text": "Ace of Base", "isCorrect": false }
+      ],
+      "explanation": "Son clip mêle images réelles et dessins au crayon."
+    },
+    {
+      "ref": "pop-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quel chanteur britannique a sorti « Never Gonna Give You Up », devenu le mème du « Rickroll » ?",
+      "answers": [
+        { "text": "Simply Red", "isCorrect": false },
+        { "text": "Rick Astley", "isCorrect": true },
+        { "text": "Jason Donovan", "isCorrect": false },
+        { "text": "Kim Wilde", "isCorrect": false }
+      ],
+      "explanation": "Le « Rickroll » consiste à piéger quelqu'un avec un lien menant vers ce clip."
+    },
+    {
+      "ref": "pop-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Girls Just Want to Have Fun » ?",
+      "answers": [
+        { "text": "Cyndi Lauper", "isCorrect": true },
+        { "text": "Madonna", "isCorrect": false },
+        { "text": "Pat Benatar", "isCorrect": false },
+        { "text": "Debbie Harry", "isCorrect": false }
+      ],
+      "explanation": "Le titre est sorti en 1983."
+    },
+    {
+      "ref": "pop-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel concert caritatif a eu lieu en 1985 à Londres et à Philadelphie au profit de l'Éthiopie ?",
+      "answers": [
+        { "text": "Woodstock", "isCorrect": false },
+        { "text": "Band Aid", "isCorrect": false },
+        { "text": "Farm Aid", "isCorrect": false },
+        { "text": "Live Aid", "isCorrect": true }
+      ],
+      "explanation": "Près de 2 milliards de téléspectateurs l'auraient suivi."
+    },
+    {
+      "ref": "pop-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel titre collectif américain de 1985 a été écrit par Michael Jackson et Lionel Richie ?",
+      "answers": [
+        { "text": "Do They Know It's Christmas?", "isCorrect": false },
+        { "text": "Heal the World", "isCorrect": false },
+        { "text": "We Are the World", "isCorrect": true },
+        { "text": "Imagine", "isCorrect": false }
+      ],
+      "explanation": "Il a été enregistré par le collectif USA for Africa."
+    },
+    {
+      "ref": "pop-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel collectif a enregistré « Do They Know It's Christmas? » en 1984 ?",
+      "answers": [
+        { "text": "USA for Africa", "isCorrect": false },
+        { "text": "Band Aid", "isCorrect": true },
+        { "text": "Live Aid", "isCorrect": false },
+        { "text": "Les Enfoirés", "isCorrect": false }
+      ],
+      "explanation": "Le projet a été lancé par Bob Geldof et Midge Ure."
+    },
+    {
+      "ref": "pop-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quelle chaîne de télévision musicale a été lancée aux États-Unis en 1981 ?",
+      "answers": [
+        { "text": "MTV", "isCorrect": true },
+        { "text": "VH1", "isCorrect": false },
+        { "text": "BET", "isCorrect": false },
+        { "text": "M6", "isCorrect": false }
+      ],
+      "explanation": "MTV signifie « Music Television »."
+    },
+    {
+      "ref": "pop-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel clip a été le premier diffusé sur MTV en 1981 ?",
+      "answers": [
+        { "text": "Thriller", "isCorrect": false },
+        { "text": "Billie Jean", "isCorrect": false },
+        { "text": "Take On Me", "isCorrect": false },
+        { "text": "Video Killed the Radio Star", "isCorrect": true }
+      ],
+      "explanation": "Ce titre des Buggles était un choix symbolique."
+    },
+    {
+      "ref": "pop-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Depuis quelle année existe le concours Eurovision de la chanson ?",
+      "answers": [
+        { "text": "1945", "isCorrect": false },
+        { "text": "1970", "isCorrect": false },
+        { "text": "1956", "isCorrect": true },
+        { "text": "1985", "isCorrect": false }
+      ],
+      "explanation": "La première édition a eu lieu à Lugano, en Suisse."
+    },
+    {
+      "ref": "pop-078",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "record"],
+      "text": "Quels pays détiennent le record de victoires à l'Eurovision, avec sept victoires chacun ?",
+      "answers": [
+        { "text": "La France et le Royaume-Uni", "isCorrect": false },
+        { "text": "La Suède et l'Irlande", "isCorrect": true },
+        { "text": "L'Italie et l'Espagne", "isCorrect": false },
+        { "text": "La Norvège et le Danemark", "isCorrect": false }
+      ],
+      "explanation": "La Suède a obtenu sa septième victoire en 2023 avec Loreen."
+    },
+    {
+      "ref": "pop-079",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse suédoise a gagné l'Eurovision deux fois, en 2012 et en 2023 ?",
+      "answers": [
+        { "text": "Loreen", "isCorrect": true },
+        { "text": "Carola", "isCorrect": false },
+        { "text": "Zara Larsson", "isCorrect": false },
+        { "text": "Robyn", "isCorrect": false }
+      ],
+      "explanation": "Elle a gagné avec « Euphoria » puis « Tattoo »."
+    },
+    {
+      "ref": "pop-080",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "De quel pays vient le chanteur Stromae ?",
+      "answers": [
+        { "text": "France", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Canada", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": true }
+      ],
+      "explanation": "Stromae est né à Bruxelles en 1985."
+    },
+    {
+      "ref": "pop-081",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel chanteur belge a sorti « Alors on danse » en 2009 ?",
+      "answers": [
+        { "text": "Angèle", "isCorrect": false },
+        { "text": "Roméo Elvis", "isCorrect": false },
+        { "text": "Stromae", "isCorrect": true },
+        { "text": "Arno", "isCorrect": false }
+      ],
+      "explanation": "« Stromae » est le verlan de « maestro »."
+    },
+    {
+      "ref": "pop-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quelle chanteuse belge a sorti « Balance ton quoi » en 2019 ?",
+      "answers": [
+        { "text": "Lio", "isCorrect": false },
+        { "text": "Angèle", "isCorrect": true },
+        { "text": "Typh Barrow", "isCorrect": false },
+        { "text": "Axelle Red", "isCorrect": false }
+      ],
+      "explanation": "Angèle est la sœur du rappeur Roméo Elvis."
+    },
+    {
+      "ref": "pop-083",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel auteur-compositeur français a écrit l'album « D'eux » de Céline Dion en 1995 ?",
+      "answers": [
+        { "text": "Jean-Jacques Goldman", "isCorrect": true },
+        { "text": "Michel Berger", "isCorrect": false },
+        { "text": "Pascal Obispo", "isCorrect": false },
+        { "text": "Luc Plamondon", "isCorrect": false }
+      ],
+      "explanation": "C'est l'album en français le plus vendu de l'histoire."
+    },
+    {
+      "ref": "pop-084",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Djadja » en 2018 ?",
+      "answers": [
+        { "text": "Angèle", "isCorrect": false },
+        { "text": "Lous and the Yakuza", "isCorrect": false },
+        { "text": "Wejdene", "isCorrect": false },
+        { "text": "Aya Nakamura", "isCorrect": true }
+      ],
+      "explanation": "« Djadja » a été un succès dans toute l'Europe."
+    },
+    {
+      "ref": "pop-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a chanté avec la Garde républicaine lors de l'ouverture des JO de Paris 2024 ?",
+      "answers": [
+        { "text": "Zaz", "isCorrect": false },
+        { "text": "Mylène Farmer", "isCorrect": false },
+        { "text": "Aya Nakamura", "isCorrect": true },
+        { "text": "Céline Dion", "isCorrect": false }
+      ],
+      "explanation": "La performance a eu lieu devant l'Académie française."
+    },
+    {
+      "ref": "pop-086",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse française a sorti « Je veux » en 2010 ?",
+      "answers": [
+        { "text": "Nolwenn Leroy", "isCorrect": false },
+        { "text": "Zaz", "isCorrect": true },
+        { "text": "Indila", "isCorrect": false },
+        { "text": "Joyce Jonathan", "isCorrect": false }
+      ],
+      "explanation": "Zaz chantait auparavant dans la rue, à Montmartre."
+    },
+    {
+      "ref": "pop-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse française a sorti « Désenchantée » en 1991 ?",
+      "answers": [
+        { "text": "Mylène Farmer", "isCorrect": true },
+        { "text": "Patricia Kaas", "isCorrect": false },
+        { "text": "Vanessa Paradis", "isCorrect": false },
+        { "text": "Jeanne Mas", "isCorrect": false }
+      ],
+      "explanation": "« Désenchantée » est le plus grand succès de Mylène Farmer."
+    },
+    {
+      "ref": "pop-088",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel compositeur et réalisateur a écrit et produit la plupart des titres de Mylène Farmer ?",
+      "answers": [
+        { "text": "Jean-Jacques Goldman", "isCorrect": false },
+        { "text": "Michel Berger", "isCorrect": false },
+        { "text": "Pascal Obispo", "isCorrect": false },
+        { "text": "Laurent Boutonnat", "isCorrect": true }
+      ],
+      "explanation": "Il a aussi réalisé ses clips, de véritables courts-métrages."
+    },
+    {
+      "ref": "pop-089",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel duo électronique français portait des casques de robots ?",
+      "answers": [
+        { "text": "Justice", "isCorrect": false },
+        { "text": "Air", "isCorrect": false },
+        { "text": "Daft Punk", "isCorrect": true },
+        { "text": "Cassius", "isCorrect": false }
+      ],
+      "explanation": "Daft Punk réunissait Thomas Bangalter et Guy-Manuel de Homem-Christo."
+    },
+    {
+      "ref": "pop-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "En quelle année Daft Punk a-t-il annoncé sa séparation ?",
+      "answers": [
+        { "text": "2013", "isCorrect": false },
+        { "text": "2021", "isCorrect": true },
+        { "text": "2017", "isCorrect": false },
+        { "text": "2008", "isCorrect": false }
+      ],
+      "explanation": "Le duo l'a annoncé avec une vidéo tirée de son film « Electroma »."
+    },
+    {
+      "ref": "pop-091",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel DJ français a produit « When Love Takes Over » et « Titanium » ?",
+      "answers": [
+        { "text": "David Guetta", "isCorrect": true },
+        { "text": "Martin Solveig", "isCorrect": false },
+        { "text": "Bob Sinclar", "isCorrect": false },
+        { "text": "DJ Snake", "isCorrect": false }
+      ],
+      "explanation": "David Guetta est l'un des DJ les plus célèbres au monde."
+    },
+    {
+      "ref": "pop-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel DJ français a produit « Turn Down for What » et « Taki Taki » ?",
+      "answers": [
+        { "text": "David Guetta", "isCorrect": false },
+        { "text": "Martin Solveig", "isCorrect": false },
+        { "text": "Bob Sinclar", "isCorrect": false },
+        { "text": "DJ Snake", "isCorrect": true }
+      ],
+      "explanation": "DJ Snake a grandi à Ermont, dans le Val-d'Oise."
+    },
+    {
+      "ref": "pop-093",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Joe le taxi » à 14 ans ?",
+      "answers": [
+        { "text": "Alizée", "isCorrect": false },
+        { "text": "Elsa", "isCorrect": false },
+        { "text": "Vanessa Paradis", "isCorrect": true },
+        { "text": "Mylène Farmer", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été un succès jusqu'au Royaume-Uni en 1988."
+    },
+    {
+      "ref": "pop-094",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Moi... Lolita » en 2000 ?",
+      "answers": [
+        { "text": "Vanessa Paradis", "isCorrect": false },
+        { "text": "Alizée", "isCorrect": true },
+        { "text": "Lorie", "isCorrect": false },
+        { "text": "Jenifer", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été écrit par Mylène Farmer et Laurent Boutonnat."
+    },
+    {
+      "ref": "pop-095",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Les Lacs du Connemara » en 1981 ?",
+      "answers": [
+        { "text": "Michel Sardou", "isCorrect": true },
+        { "text": "Michel Delpech", "isCorrect": false },
+        { "text": "Julien Clerc", "isCorrect": false },
+        { "text": "Gérard Lenorman", "isCorrect": false }
+      ],
+      "explanation": "La chanson est devenue un classique des fins de soirées."
+    },
+    {
+      "ref": "pop-096",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Je l'aime à mourir » ?",
+      "answers": [
+        { "text": "Alain Souchon", "isCorrect": false },
+        { "text": "Laurent Voulzy", "isCorrect": false },
+        { "text": "Jean-Jacques Goldman", "isCorrect": false },
+        { "text": "Francis Cabrel", "isCorrect": true }
+      ],
+      "explanation": "Francis Cabrel est originaire d'Astaffort, dans le Lot-et-Garonne."
+    },
+    {
+      "ref": "pop-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Il suffira d'un signe » et « Envole-moi » ?",
+      "answers": [
+        { "text": "Patrick Bruel", "isCorrect": false },
+        { "text": "Daniel Balavoine", "isCorrect": false },
+        { "text": "Jean-Jacques Goldman", "isCorrect": true },
+        { "text": "Michel Berger", "isCorrect": false }
+      ],
+      "explanation": "Jean-Jacques Goldman est régulièrement élu personnalité préférée des Français."
+    },
+    {
+      "ref": "pop-098",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quel humoriste a fondé les Restos du Cœur et lancé les Enfoirés ?",
+      "answers": [
+        { "text": "Pierre Desproges", "isCorrect": false },
+        { "text": "Coluche", "isCorrect": true },
+        { "text": "Thierry Le Luron", "isCorrect": false },
+        { "text": "Guy Bedos", "isCorrect": false }
+      ],
+      "explanation": "Les Restos du Cœur ont été créés en 1985."
+    },
+    {
+      "ref": "pop-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur québécois a joué Quasimodo dans la comédie musicale « Notre-Dame de Paris » ?",
+      "answers": [
+        { "text": "Garou", "isCorrect": true },
+        { "text": "Bruno Pelletier", "isCorrect": false },
+        { "text": "Daniel Lavoie", "isCorrect": false },
+        { "text": "Roch Voisine", "isCorrect": false }
+      ],
+      "explanation": "« Notre-Dame de Paris » a été créée en 1998."
+    },
+    {
+      "ref": "pop-100",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson", "record"],
+      "text": "Quel titre de « Notre-Dame de Paris » a été l'un des singles les plus vendus de l'histoire en France ?",
+      "answers": [
+        { "text": "Le Temps des cathédrales", "isCorrect": false },
+        { "text": "Vivre", "isCorrect": false },
+        { "text": "Danse mon Esmeralda", "isCorrect": false },
+        { "text": "Belle", "isCorrect": true }
+      ],
+      "explanation": "« Belle » est chanté par Garou, Daniel Lavoie et Patrick Fiori."
+    },
+    {
+      "ref": "pop-101",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Alexandrie Alexandra » en 1978 ?",
+      "answers": [
+        { "text": "Joe Dassin", "isCorrect": false },
+        { "text": "Michel Sardou", "isCorrect": false },
+        { "text": "Claude François", "isCorrect": true },
+        { "text": "Johnny Hallyday", "isCorrect": false }
+      ],
+      "explanation": "Claude François est mort le jour même de la sortie du single."
+    },
+    {
+      "ref": "pop-102",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Claude François a été adapté en anglais sous le nom « My Way » ?",
+      "answers": [
+        { "text": "Belles ! Belles ! Belles !", "isCorrect": false },
+        { "text": "Comme d'habitude", "isCorrect": true },
+        { "text": "Cette année-là", "isCorrect": false },
+        { "text": "Le téléphone pleure", "isCorrect": false }
+      ],
+      "explanation": "« My Way » a été rendu célèbre par Frank Sinatra."
+    },
+    {
+      "ref": "pop-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Ella, elle l'a » en 1987 ?",
+      "answers": [
+        { "text": "France Gall", "isCorrect": true },
+        { "text": "Véronique Sanson", "isCorrect": false },
+        { "text": "Sheila", "isCorrect": false },
+        { "text": "Jeanne Mas", "isCorrect": false }
+      ],
+      "explanation": "Le titre est un hommage à Ella Fitzgerald, écrit par Michel Berger."
+    },
+    {
+      "ref": "pop-104",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Avec quel titre France Gall a-t-elle remporté l'Eurovision 1965, pour le Luxembourg ?",
+      "answers": [
+        { "text": "Laisse tomber les filles", "isCorrect": false },
+        { "text": "Les Sucettes", "isCorrect": false },
+        { "text": "Ella, elle l'a", "isCorrect": false },
+        { "text": "Poupée de cire, poupée de son", "isCorrect": true }
+      ],
+      "explanation": "Elle avait 17 ans."
+    },
+    {
+      "ref": "pop-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Qui a écrit « Poupée de cire, poupée de son » pour France Gall ?",
+      "answers": [
+        { "text": "Michel Berger", "isCorrect": false },
+        { "text": "Jacques Brel", "isCorrect": false },
+        { "text": "Serge Gainsbourg", "isCorrect": true },
+        { "text": "Claude François", "isCorrect": false }
+      ],
+      "explanation": "Gainsbourg a écrit de nombreux succès pour d'autres interprètes."
+    },
+    {
+      "ref": "pop-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Quelle est la dernière chanson française à avoir remporté l'Eurovision, en 1977 ?",
+      "answers": [
+        { "text": "Voilà", "isCorrect": false },
+        { "text": "L'oiseau et l'enfant", "isCorrect": true },
+        { "text": "Poupée de cire, poupée de son", "isCorrect": false },
+        { "text": "Un premier amour", "isCorrect": false }
+      ],
+      "explanation": "Elle était interprétée par Marie Myriam."
+    },
+    {
+      "ref": "pop-107",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Quelle chanteuse a représenté la France à l'Eurovision 2021 avec « Voilà », terminant deuxième ?",
+      "answers": [
+        { "text": "Barbara Pravi", "isCorrect": true },
+        { "text": "Amir", "isCorrect": false },
+        { "text": "Patricia Kaas", "isCorrect": false },
+        { "text": "Slimane", "isCorrect": false }
+      ],
+      "explanation": "C'était le meilleur résultat français depuis 1991."
+    },
+    {
+      "ref": "pop-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Ma philosophie » en 2004 ?",
+      "answers": [
+        { "text": "Jenifer", "isCorrect": false },
+        { "text": "Lorie", "isCorrect": false },
+        { "text": "Chimène Badi", "isCorrect": false },
+        { "text": "Amel Bent", "isCorrect": true }
+      ],
+      "explanation": "Amel Bent s'était fait connaître dans l'émission « Nouvelle Star »."
+    },
+    {
+      "ref": "pop-109",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Sous quel nom de scène Héloïse Letissier s'est-elle fait connaître ?",
+      "answers": [
+        { "text": "Clara Luciani", "isCorrect": false },
+        { "text": "Juliette Armanet", "isCorrect": false },
+        { "text": "Christine and the Queens", "isCorrect": true },
+        { "text": "Pomme", "isCorrect": false }
+      ],
+      "explanation": "Elle se fait aujourd'hui appeler Chris."
+    },
+    {
+      "ref": "pop-110",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Dernière danse » en 2013 ?",
+      "answers": [
+        { "text": "Zaz", "isCorrect": false },
+        { "text": "Indila", "isCorrect": true },
+        { "text": "Louane", "isCorrect": false },
+        { "text": "Tal", "isCorrect": false }
+      ],
+      "explanation": "« Dernière danse » a été un succès dans de nombreux pays."
+    },
+    {
+      "ref": "pop-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse, révélée par « The Voice », a sorti « Jour 1 » en 2015 ?",
+      "answers": [
+        { "text": "Louane", "isCorrect": true },
+        { "text": "Indila", "isCorrect": false },
+        { "text": "Vitaa", "isCorrect": false },
+        { "text": "Amel Bent", "isCorrect": false }
+      ],
+      "explanation": "Louane a aussi joué dans le film « La Famille Bélier »."
+    },
+    {
+      "ref": "pop-112",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Comment appelle-t-on la vague de pop française des années 1960 avec Sylvie Vartan et Françoise Hardy ?",
+      "answers": [
+        { "text": "La nouvelle vague", "isCorrect": false },
+        { "text": "Le disco", "isCorrect": false },
+        { "text": "La variété rétro", "isCorrect": false },
+        { "text": "Le yé-yé", "isCorrect": true }
+      ],
+      "explanation": "Le nom vient des « yeah, yeah » de la pop anglophone."
+    },
+    {
+      "ref": "pop-113",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Quelle émission de radio des années 1960 a donné son nom à un célèbre magazine de la jeunesse yé-yé ?",
+      "answers": [
+        { "text": "Âge tendre et tête de bois", "isCorrect": false },
+        { "text": "Les Enfants du rock", "isCorrect": false },
+        { "text": "Salut les copains", "isCorrect": true },
+        { "text": "Champs-Élysées", "isCorrect": false }
+      ],
+      "explanation": "L'émission était diffusée sur Europe 1."
+    },
+    {
+      "ref": "pop-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Tous les garçons et les filles » en 1962 ?",
+      "answers": [
+        { "text": "Sylvie Vartan", "isCorrect": false },
+        { "text": "Françoise Hardy", "isCorrect": true },
+        { "text": "Sheila", "isCorrect": false },
+        { "text": "France Gall", "isCorrect": false }
+      ],
+      "explanation": "Françoise Hardy l'a écrite elle-même."
+    },
+    {
+      "ref": "pop-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Gigi l'amoroso » et « Laissez-moi danser » ?",
+      "answers": [
+        { "text": "Dalida", "isCorrect": true },
+        { "text": "Sheila", "isCorrect": false },
+        { "text": "Nana Mouskouri", "isCorrect": false },
+        { "text": "Mireille Mathieu", "isCorrect": false }
+      ],
+      "explanation": "Dalida est née au Caire en 1933."
+    },
+    {
+      "ref": "pop-116",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe toulousain a sorti « Tomber la chemise » en 1999 ?",
+      "answers": [
+        { "text": "Les Wampas", "isCorrect": false },
+        { "text": "Louise Attaque", "isCorrect": false },
+        { "text": "Tryo", "isCorrect": false },
+        { "text": "Zebda", "isCorrect": true }
+      ],
+      "explanation": "Zebda signifie « beurre » en arabe."
+    },
+    {
+      "ref": "pop-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti l'album « Alors regarde » en 1989 ?",
+      "answers": [
+        { "text": "Jean-Jacques Goldman", "isCorrect": false },
+        { "text": "Marc Lavoine", "isCorrect": false },
+        { "text": "Patrick Bruel", "isCorrect": true },
+        { "text": "Étienne Daho", "isCorrect": false }
+      ],
+      "explanation": "L'album contient « Casser la voix »."
+    },
+    {
+      "ref": "pop-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Comment appelait-on l'engouement des adolescentes pour Patrick Bruel à la fin des années 1980 ?",
+      "answers": [
+        { "text": "La Bruelfolie", "isCorrect": false },
+        { "text": "La Bruelmania", "isCorrect": true },
+        { "text": "La Patrickmania", "isCorrect": false },
+        { "text": "La Bruelattitude", "isCorrect": false }
+      ],
+      "explanation": "Ses concerts provoquaient des scènes d'hystérie."
+    },
+    {
+      "ref": "pop-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur, vainqueur de la Star Academy en 2004, est mort de la mucoviscidose en 2007 ?",
+      "answers": [
+        { "text": "Grégory Lemarchal", "isCorrect": true },
+        { "text": "Jean-Pascal", "isCorrect": false },
+        { "text": "Mario Barravecchia", "isCorrect": false },
+        { "text": "Christophe Willem", "isCorrect": false }
+      ],
+      "explanation": "Sa disparition a permis de récolter des millions d'euros pour la recherche."
+    },
+    {
+      "ref": "pop-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Sur quelle chaîne la Star Academy a-t-elle été diffusée à partir de 2001 ?",
+      "answers": [
+        { "text": "M6", "isCorrect": false },
+        { "text": "France 2", "isCorrect": false },
+        { "text": "W9", "isCorrect": false },
+        { "text": "TF1", "isCorrect": true }
+      ],
+      "explanation": "L'émission est revenue sur TF1 en 2022."
+    },
+    {
+      "ref": "pop-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Le Sud » en 1975 ?",
+      "answers": [
+        { "text": "Michel Delpech", "isCorrect": false },
+        { "text": "Julien Clerc", "isCorrect": false },
+        { "text": "Nino Ferrer", "isCorrect": true },
+        { "text": "Joe Dassin", "isCorrect": false }
+      ],
+      "explanation": "Nino Ferrer est aussi l'auteur de « Mirza » et des « Cornichons »."
+    },
+    {
+      "ref": "pop-122",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Les Champs-Élysées » en 1969 ?",
+      "answers": [
+        { "text": "Claude François", "isCorrect": false },
+        { "text": "Joe Dassin", "isCorrect": true },
+        { "text": "Michel Fugain", "isCorrect": false },
+        { "text": "Hugues Aufray", "isCorrect": false }
+      ],
+      "explanation": "Joe Dassin est né à New York."
+    },
+    {
+      "ref": "pop-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Le Chanteur » et « SOS d'un terrien en détresse » ?",
+      "answers": [
+        { "text": "Daniel Balavoine", "isCorrect": true },
+        { "text": "Michel Berger", "isCorrect": false },
+        { "text": "Jean-Jacques Goldman", "isCorrect": false },
+        { "text": "Alain Souchon", "isCorrect": false }
+      ],
+      "explanation": "Daniel Balavoine est mort en 1986 lors du Paris-Dakar."
+    },
+    {
+      "ref": "pop-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel couple de chanteurs a enregistré « Je t'aime... moi non plus » en 1969 ?",
+      "answers": [
+        { "text": "Johnny Hallyday et Sylvie Vartan", "isCorrect": false },
+        { "text": "Jacques Dutronc et Françoise Hardy", "isCorrect": false },
+        { "text": "Michel Berger et France Gall", "isCorrect": false },
+        { "text": "Serge Gainsbourg et Jane Birkin", "isCorrect": true }
+      ],
+      "explanation": "La chanson a été interdite à la radio dans plusieurs pays."
+    },
+    {
+      "ref": "pop-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « J'te l'dis quand même » et « La Grenade » ?",
+      "answers": [
+        { "text": "Juliette Armanet", "isCorrect": false },
+        { "text": "Angèle", "isCorrect": false },
+        { "text": "Clara Luciani", "isCorrect": true },
+        { "text": "Pomme", "isCorrect": false }
+      ],
+      "explanation": "« La Grenade » est sortie en 2018."
+    },
+    {
+      "ref": "pop-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Les Mots bleus » en 1974 ?",
+      "answers": [
+        { "text": "Michel Delpech", "isCorrect": false },
+        { "text": "Christophe", "isCorrect": true },
+        { "text": "Alain Souchon", "isCorrect": false },
+        { "text": "Gérard Lenorman", "isCorrect": false }
+      ],
+      "explanation": "Christophe est aussi l'interprète d'« Aline »."
+    },
+    {
+      "ref": "pop-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Foule sentimentale » en 1993 ?",
+      "answers": [
+        { "text": "Alain Souchon", "isCorrect": true },
+        { "text": "Laurent Voulzy", "isCorrect": false },
+        { "text": "Francis Cabrel", "isCorrect": false },
+        { "text": "Julien Clerc", "isCorrect": false }
+      ],
+      "explanation": "« Foule sentimentale » a été élue chanson de la décennie."
+    },
+    {
+      "ref": "pop-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Rockollection » en 1977, un medley de tubes rock ?",
+      "answers": [
+        { "text": "Alain Souchon", "isCorrect": false },
+        { "text": "Michel Berger", "isCorrect": false },
+        { "text": "Daniel Balavoine", "isCorrect": false },
+        { "text": "Laurent Voulzy", "isCorrect": true }
+      ],
+      "explanation": "Laurent Voulzy est le complice de toujours d'Alain Souchon."
+    },
+    {
+      "ref": "pop-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse a sorti « Mon mec à moi » en 1988 ?",
+      "answers": [
+        { "text": "Mylène Farmer", "isCorrect": false },
+        { "text": "Vanessa Paradis", "isCorrect": false },
+        { "text": "Patricia Kaas", "isCorrect": true },
+        { "text": "Jeanne Mas", "isCorrect": false }
+      ],
+      "explanation": "Patricia Kaas est originaire de Moselle."
+    },
+    {
+      "ref": "pop-130",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Résiste » en 1981, écrit par Michel Berger ?",
+      "answers": [
+        { "text": "Véronique Sanson", "isCorrect": false },
+        { "text": "France Gall", "isCorrect": true },
+        { "text": "Sheila", "isCorrect": false },
+        { "text": "Diane Tell", "isCorrect": false }
+      ],
+      "explanation": "« Résiste » est devenue un hymne."
+    },
+    {
+      "ref": "pop-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur, membre des Enfoirés, a sorti « Lucie » et « Tu vas me détruire » ?",
+      "answers": [
+        { "text": "Pascal Obispo", "isCorrect": true },
+        { "text": "Patrick Bruel", "isCorrect": false },
+        { "text": "Garou", "isCorrect": false },
+        { "text": "Marc Lavoine", "isCorrect": false }
+      ],
+      "explanation": "Pascal Obispo a aussi écrit pour Johnny Hallyday et Florent Pagny."
+    },
+    {
+      "ref": "pop-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Ma liberté de penser » en 2003 ?",
+      "answers": [
+        { "text": "Pascal Obispo", "isCorrect": false },
+        { "text": "Patrick Fiori", "isCorrect": false },
+        { "text": "Calogero", "isCorrect": false },
+        { "text": "Florent Pagny", "isCorrect": true }
+      ],
+      "explanation": "La chanson répond aux ennuis de Florent Pagny avec le fisc."
+    },
+    {
+      "ref": "pop-133",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « En apesanteur » et « Si seulement je pouvais lui manquer » ?",
+      "answers": [
+        { "text": "Florent Pagny", "isCorrect": false },
+        { "text": "Pascal Obispo", "isCorrect": false },
+        { "text": "Calogero", "isCorrect": true },
+        { "text": "M. Pokora", "isCorrect": false }
+      ],
+      "explanation": "Calogero a débuté avec le groupe Les Charts."
+    },
+    {
+      "ref": "pop-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Les planètes » et « Juste une photo de toi » ?",
+      "answers": [
+        { "text": "Christophe Maé", "isCorrect": false },
+        { "text": "M. Pokora", "isCorrect": true },
+        { "text": "Kendji Girac", "isCorrect": false },
+        { "text": "Slimane", "isCorrect": false }
+      ],
+      "explanation": "M. Pokora a gagné l'émission « Popstars » avec le groupe Linkup."
+    },
+    {
+      "ref": "pop-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur, vainqueur de « The Voice » en 2014, a sorti « Color Gitano » ?",
+      "answers": [
+        { "text": "Kendji Girac", "isCorrect": true },
+        { "text": "Slimane", "isCorrect": false },
+        { "text": "Vianney", "isCorrect": false },
+        { "text": "Amir", "isCorrect": false }
+      ],
+      "explanation": "Kendji Girac a popularisé la pop teintée de rumba gitane."
+    },
+    {
+      "ref": "pop-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Je m'en vais » et « Pas là » ?",
+      "answers": [
+        { "text": "Kendji Girac", "isCorrect": false },
+        { "text": "Slimane", "isCorrect": false },
+        { "text": "Bénabar", "isCorrect": false },
+        { "text": "Vianney", "isCorrect": true }
+      ],
+      "explanation": "Vianney est aussi coach dans « The Voice »."
+    },
+    {
+      "ref": "pop-137",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a représenté la France à l'Eurovision 2016 avec « J'ai cherché » ?",
+      "answers": [
+        { "text": "Slimane", "isCorrect": false },
+        { "text": "Bilal Hassani", "isCorrect": false },
+        { "text": "Amir", "isCorrect": true },
+        { "text": "Kendji Girac", "isCorrect": false }
+      ],
+      "explanation": "Il a terminé sixième."
+    }
+  ]
+}

@@ -1,0 +1,1755 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 124,
+    "parDifficulte": { "1": 38, "2": 53, "3": 33 },
+    "parType": { "multiple": 120, "boolean": 4 },
+    "avecImage": 0,
+    "sansImage": 124,
+    "parTag": {
+      "opera": 73,
+      "compositeur": 41,
+      "voix": 22,
+      "france": 18,
+      "lieu": 17,
+      "vocabulaire": 13,
+      "personnage": 12,
+      "histoire": 3
+    }
+  },
+  "category": {
+    "slug": "lyrique",
+    "name": "Lyrique"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "lyr-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Carmen » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Georges Bizet", "isCorrect": true },
+        { "text": "Charles Gounod", "isCorrect": false }
+      ],
+      "explanation": "« Carmen » a été créée à l'Opéra-Comique de Paris en 1875."
+    },
+    {
+      "ref": "lyr-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera"],
+      "text": "Dans quelle ville espagnole se déroule « Carmen » ?",
+      "answers": [
+        { "text": "Madrid", "isCorrect": false },
+        { "text": "Séville", "isCorrect": true },
+        { "text": "Grenade", "isCorrect": false },
+        { "text": "Barcelone", "isCorrect": false }
+      ],
+      "explanation": "L'opéra s'inspire d'une nouvelle de Prosper Mérimée."
+    },
+    {
+      "ref": "lyr-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Où travaille Carmen au début de l'opéra ?",
+      "answers": [
+        { "text": "Dans une manufacture de tabac", "isCorrect": true },
+        { "text": "Dans une taverne", "isCorrect": false },
+        { "text": "Dans un atelier de couture", "isCorrect": false },
+        { "text": "Dans une arène", "isCorrect": false }
+      ],
+      "explanation": "La manufacture de tabac de Séville employait de nombreuses ouvrières."
+    },
+    {
+      "ref": "lyr-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera", "personnage"],
+      "text": "Quel personnage tue Carmen à la fin de l'opéra ?",
+      "answers": [
+        { "text": "Escamillo", "isCorrect": false },
+        { "text": "Zuniga", "isCorrect": false },
+        { "text": "Le Dancaïre", "isCorrect": false },
+        { "text": "Don José", "isCorrect": true }
+      ],
+      "explanation": "Le brigadier Don José, rendu fou de jalousie, la poignarde devant les arènes."
+    },
+    {
+      "ref": "lyr-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera", "personnage"],
+      "text": "Quel est le métier d'Escamillo dans « Carmen » ?",
+      "answers": [
+        { "text": "Soldat", "isCorrect": false },
+        { "text": "Contrebandier", "isCorrect": false },
+        { "text": "Toréador", "isCorrect": true },
+        { "text": "Aubergiste", "isCorrect": false }
+      ],
+      "explanation": "Escamillo chante le célèbre « Air du toréador »."
+    },
+    {
+      "ref": "lyr-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Comment s'appelle l'air de Carmen « L'amour est un oiseau rebelle » ?",
+      "answers": [
+        { "text": "La Séguedille", "isCorrect": false },
+        { "text": "La Habanera", "isCorrect": true },
+        { "text": "L'Air du toréador", "isCorrect": false },
+        { "text": "La Chanson bohème", "isCorrect": false }
+      ],
+      "explanation": "La habanera est une danse d'origine cubaine."
+    },
+    {
+      "ref": "lyr-007",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "« Carmen » a été un échec lors de sa création en 1875.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Bizet est mort trois mois plus tard, sans connaître le triomphe de son opéra."
+    },
+    {
+      "ref": "lyr-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « La Traviata » ?",
+      "answers": [
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Gaetano Donizetti", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": true }
+      ],
+      "explanation": "« La Traviata » a été créée à Venise en 1853."
+    },
+    {
+      "ref": "lyr-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Comment s'appelle l'héroïne de « La Traviata » ?",
+      "answers": [
+        { "text": "Mimi", "isCorrect": false },
+        { "text": "Tosca", "isCorrect": false },
+        { "text": "Violetta", "isCorrect": true },
+        { "text": "Gilda", "isCorrect": false }
+      ],
+      "explanation": "Violetta Valéry est une courtisane parisienne atteinte de tuberculose."
+    },
+    {
+      "ref": "lyr-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "De quel roman d'Alexandre Dumas fils « La Traviata » est-elle tirée ?",
+      "answers": [
+        { "text": "Les Trois Mousquetaires", "isCorrect": false },
+        { "text": "La Dame aux camélias", "isCorrect": true },
+        { "text": "Le Comte de Monte-Cristo", "isCorrect": false },
+        { "text": "La Reine Margot", "isCorrect": false }
+      ],
+      "explanation": "Les trois autres romans sont d'Alexandre Dumas père."
+    },
+    {
+      "ref": "lyr-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Aida » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": true },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Richard Wagner", "isCorrect": false },
+        { "text": "Vincenzo Bellini", "isCorrect": false }
+      ],
+      "explanation": "« Aida » contient une célèbre « Marche triomphale »."
+    },
+    {
+      "ref": "lyr-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera"],
+      "text": "Dans quel pays se déroule « Aida » ?",
+      "answers": [
+        { "text": "L'Éthiopie", "isCorrect": false },
+        { "text": "La Grèce", "isCorrect": false },
+        { "text": "La Perse", "isCorrect": false },
+        { "text": "L'Égypte", "isCorrect": true }
+      ],
+      "explanation": "Aida est une princesse éthiopienne réduite en esclavage en Égypte."
+    },
+    {
+      "ref": "lyr-013",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["opera"],
+      "text": "Dans quelle ville « Aida » a-t-elle été créée en 1871 ?",
+      "answers": [
+        { "text": "Milan", "isCorrect": false },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Le Caire", "isCorrect": true },
+        { "text": "Alexandrie", "isCorrect": false }
+      ],
+      "explanation": "L'opéra avait été commandé par le khédive d'Égypte."
+    },
+    {
+      "ref": "lyr-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Rigoletto » ?",
+      "answers": [
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": true },
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Gaetano Donizetti", "isCorrect": false }
+      ],
+      "explanation": "« Rigoletto » s'inspire de la pièce « Le roi s'amuse » de Victor Hugo."
+    },
+    {
+      "ref": "lyr-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Dans quel opéra de Verdi le Duc de Mantoue chante-t-il « La donna è mobile » ?",
+      "answers": [
+        { "text": "Rigoletto", "isCorrect": true },
+        { "text": "La Traviata", "isCorrect": false },
+        { "text": "Nabucco", "isCorrect": false },
+        { "text": "Otello", "isCorrect": false }
+      ],
+      "explanation": "Verdi aurait gardé l'air secret jusqu'à la dernière répétition, tant il était sûr de son succès."
+    },
+    {
+      "ref": "lyr-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["opera"],
+      "text": "Quel chœur de « Nabucco » de Verdi est devenu un symbole patriotique en Italie ?",
+      "answers": [
+        { "text": "Le « Chœur des enclumes »", "isCorrect": false },
+        { "text": "La « Marche triomphale »", "isCorrect": false },
+        { "text": "Le « Brindisi »", "isCorrect": false },
+        { "text": "« Va, pensiero », le chœur des esclaves hébreux", "isCorrect": true }
+      ],
+      "explanation": "Le chœur a été chanté par la foule aux funérailles de Verdi."
+    },
+    {
+      "ref": "lyr-017",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Otello » (1887), d'après Shakespeare ?",
+      "answers": [
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": true },
+        { "text": "Arrigo Boito", "isCorrect": false }
+      ],
+      "explanation": "Arrigo Boito en a écrit le livret."
+    },
+    {
+      "ref": "lyr-018",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Le Trouvère » (Il Trovatore) ?",
+      "answers": [
+        { "text": "Vincenzo Bellini", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": true },
+        { "text": "Gaetano Donizetti", "isCorrect": false },
+        { "text": "Pietro Mascagni", "isCorrect": false }
+      ],
+      "explanation": "Il contient le célèbre « Chœur des enclumes »."
+    },
+    {
+      "ref": "lyr-019",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur a écrit « Falstaff », son dernier opéra, à près de 80 ans ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": true },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Richard Wagner", "isCorrect": false }
+      ],
+      "explanation": "« Falstaff » a été créé à la Scala de Milan en 1893."
+    },
+    {
+      "ref": "lyr-020",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Verdi et Wagner sont nés la même année, en 1813.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les deux géants de l'opéra du XIXe siècle ne se sont jamais rencontrés."
+    },
+    {
+      "ref": "lyr-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « La Bohème » (1896) ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Pietro Mascagni", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": true },
+        { "text": "Gaetano Donizetti", "isCorrect": false }
+      ],
+      "explanation": "« La Bohème » a été créée à Turin sous la direction de Toscanini."
+    },
+    {
+      "ref": "lyr-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera"],
+      "text": "Dans quelle ville se déroule « La Bohème » ?",
+      "answers": [
+        { "text": "Rome", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true },
+        { "text": "Venise", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false }
+      ],
+      "explanation": "L'opéra suit de jeunes artistes pauvres du Quartier latin."
+    },
+    {
+      "ref": "lyr-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Comment s'appelle la brodeuse héroïne de « La Bohème » ?",
+      "answers": [
+        { "text": "Mimi", "isCorrect": true },
+        { "text": "Musetta", "isCorrect": false },
+        { "text": "Violetta", "isCorrect": false },
+        { "text": "Liù", "isCorrect": false }
+      ],
+      "explanation": "Mimi rencontre le poète Rodolfo en lui demandant du feu pour sa bougie."
+    },
+    {
+      "ref": "lyr-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Madame Butterfly » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Jules Massenet", "isCorrect": false },
+        { "text": "Pietro Mascagni", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": true }
+      ],
+      "explanation": "L'héroïne, Cio-Cio-San, attend en vain le retour d'un officier américain."
+    },
+    {
+      "ref": "lyr-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera"],
+      "text": "Dans quel pays se déroule « Madame Butterfly » ?",
+      "answers": [
+        { "text": "La Chine", "isCorrect": false },
+        { "text": "La Corée", "isCorrect": false },
+        { "text": "Le Japon", "isCorrect": true },
+        { "text": "Le Viêt Nam", "isCorrect": false }
+      ],
+      "explanation": "L'action se passe à Nagasaki."
+    },
+    {
+      "ref": "lyr-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Tosca » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": true },
+        { "text": "Ruggero Leoncavallo", "isCorrect": false },
+        { "text": "Gaetano Donizetti", "isCorrect": false }
+      ],
+      "explanation": "« Tosca » a été créée à Rome en 1900."
+    },
+    {
+      "ref": "lyr-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["opera"],
+      "text": "Dans quelle ville se déroule « Tosca » ?",
+      "answers": [
+        { "text": "Rome", "isCorrect": true },
+        { "text": "Florence", "isCorrect": false },
+        { "text": "Naples", "isCorrect": false },
+        { "text": "Milan", "isCorrect": false }
+      ],
+      "explanation": "Chacun des trois actes se déroule dans un lieu réel de Rome."
+    },
+    {
+      "ref": "lyr-028",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Comment se termine l'opéra « Tosca » ?",
+      "answers": [
+        { "text": "Tosca épouse le peintre Cavaradossi", "isCorrect": false },
+        { "text": "Tosca s'enfuit à Venise", "isCorrect": false },
+        { "text": "Tosca est emprisonnée", "isCorrect": false },
+        { "text": "Tosca se jette du haut du château Saint-Ange", "isCorrect": true }
+      ],
+      "explanation": "Elle se suicide après avoir découvert que son amant a été réellement fusillé."
+    },
+    {
+      "ref": "lyr-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Turandot » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Vincenzo Bellini", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": true },
+        { "text": "Gioachino Rossini", "isCorrect": false }
+      ],
+      "explanation": "L'opéra a été créé à la Scala en 1926."
+    },
+    {
+      "ref": "lyr-030",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera"],
+      "text": "Quel air de « Turandot » est devenu célèbre grâce à Luciano Pavarotti lors de la Coupe du monde 1990 ?",
+      "answers": [
+        { "text": "« La donna è mobile »", "isCorrect": false },
+        { "text": "« Nessun dorma »", "isCorrect": true },
+        { "text": "« Casta diva »", "isCorrect": false },
+        { "text": "« O mio babbino caro »", "isCorrect": false }
+      ],
+      "explanation": "« Nessun dorma » signifie « Que personne ne dorme »."
+    },
+    {
+      "ref": "lyr-031",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Quel opéra Puccini a-t-il laissé inachevé à sa mort ?",
+      "answers": [
+        { "text": "Turandot", "isCorrect": true },
+        { "text": "Tosca", "isCorrect": false },
+        { "text": "Madame Butterfly", "isCorrect": false },
+        { "text": "La Bohème", "isCorrect": false }
+      ],
+      "explanation": "Lors de la création, le chef Toscanini s'est arrêté à l'endroit où Puccini avait cessé d'écrire."
+    },
+    {
+      "ref": "lyr-032",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Dans quel pays se déroule « Turandot » ?",
+      "answers": [
+        { "text": "Le Japon", "isCorrect": false },
+        { "text": "La Perse", "isCorrect": false },
+        { "text": "L'Inde", "isCorrect": false },
+        { "text": "La Chine", "isCorrect": true }
+      ],
+      "explanation": "La princesse Turandot soumet ses prétendants à trois énigmes."
+    },
+    {
+      "ref": "lyr-033",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Gianni Schicchi », qui contient l'air « O mio babbino caro » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Gaetano Donizetti", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": true },
+        { "text": "Gioachino Rossini", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des trois opéras courts du « Triptyque » de Puccini."
+    },
+    {
+      "ref": "lyr-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Le Barbier de Séville » (1816) ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Gioachino Rossini", "isCorrect": true },
+        { "text": "Gaetano Donizetti", "isCorrect": false },
+        { "text": "Vincenzo Bellini", "isCorrect": false }
+      ],
+      "explanation": "Rossini l'aurait écrit en moins de trois semaines."
+    },
+    {
+      "ref": "lyr-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Quel personnage chante « Largo al factotum » dans « Le Barbier de Séville » ?",
+      "answers": [
+        { "text": "Figaro", "isCorrect": true },
+        { "text": "Le comte Almaviva", "isCorrect": false },
+        { "text": "Bartolo", "isCorrect": false },
+        { "text": "Basilio", "isCorrect": false }
+      ],
+      "explanation": "C'est le célèbre air « Figaro, Figaro, Figaro ! »."
+    },
+    {
+      "ref": "lyr-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera"],
+      "text": "Quel opéra de Rossini, inspiré d'un héros suisse, a une ouverture au galop final très célèbre ?",
+      "answers": [
+        { "text": "La Pie voleuse", "isCorrect": false },
+        { "text": "Le Barbier de Séville", "isCorrect": false },
+        { "text": "L'Italienne à Alger", "isCorrect": false },
+        { "text": "Guillaume Tell", "isCorrect": true }
+      ],
+      "explanation": "C'est le dernier opéra de Rossini, créé à Paris en 1829. Le galop est souvent repris au cinéma et dans les dessins animés."
+    },
+    {
+      "ref": "lyr-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « La Flûte enchantée » ?",
+      "answers": [
+        { "text": "Joseph Haydn", "isCorrect": false },
+        { "text": "Antonio Salieri", "isCorrect": false },
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": true },
+        { "text": "Ludwig van Beethoven", "isCorrect": false }
+      ],
+      "explanation": "L'opéra a été créé à Vienne en 1791, quelques semaines avant la mort de Mozart."
+    },
+    {
+      "ref": "lyr-038",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["opera", "personnage"],
+      "text": "Quel personnage de « La Flûte enchantée » chante l'air très aigu « Der Hölle Rache » ?",
+      "answers": [
+        { "text": "Pamina", "isCorrect": false },
+        { "text": "La Reine de la nuit", "isCorrect": true },
+        { "text": "Papagena", "isCorrect": false },
+        { "text": "La Première Dame", "isCorrect": false }
+      ],
+      "explanation": "L'air monte jusqu'au contre-fa, l'une des notes les plus aiguës du répertoire."
+    },
+    {
+      "ref": "lyr-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Quel est le métier de Papageno dans « La Flûte enchantée » ?",
+      "answers": [
+        { "text": "Oiseleur", "isCorrect": true },
+        { "text": "Prince", "isCorrect": false },
+        { "text": "Prêtre", "isCorrect": false },
+        { "text": "Jardinier", "isCorrect": false }
+      ],
+      "explanation": "Papageno est couvert de plumes et attrape les oiseaux pour la Reine de la nuit."
+    },
+    {
+      "ref": "lyr-040",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "« La Flûte enchantée » est chantée en italien.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle est chantée en allemand. C'est un « singspiel », mêlant chant et dialogues parlés."
+    },
+    {
+      "ref": "lyr-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Les Noces de Figaro » ?",
+      "answers": [
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Joseph Haydn", "isCorrect": false },
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": true },
+        { "text": "Antonio Salieri", "isCorrect": false }
+      ],
+      "explanation": "Le livret est de Lorenzo Da Ponte, d'après Beaumarchais."
+    },
+    {
+      "ref": "lyr-042",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "« Les Noces de Figaro » de Mozart est chantée en italien.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Comme « Don Giovanni » et « Così fan tutte », écrits avec le librettiste Da Ponte."
+    },
+    {
+      "ref": "lyr-043",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Don Giovanni » ?",
+      "answers": [
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": true },
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Christoph Willibald Gluck", "isCorrect": false },
+        { "text": "Giovanni Paisiello", "isCorrect": false }
+      ],
+      "explanation": "L'opéra a été créé à Prague en 1787."
+    },
+    {
+      "ref": "lyr-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Quel personnage entraîne Don Giovanni en enfer à la fin de l'opéra ?",
+      "answers": [
+        { "text": "Leporello", "isCorrect": false },
+        { "text": "Don Ottavio", "isCorrect": false },
+        { "text": "Masetto", "isCorrect": false },
+        { "text": "Le Commandeur", "isCorrect": true }
+      ],
+      "explanation": "La statue du Commandeur, que Don Giovanni avait tué, vient le chercher."
+    },
+    {
+      "ref": "lyr-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « La Chevauchée des Walkyries » ?",
+      "answers": [
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Richard Strauss", "isCorrect": false },
+        { "text": "Richard Wagner", "isCorrect": true },
+        { "text": "Gustav Mahler", "isCorrect": false }
+      ],
+      "explanation": "Elle ouvre le troisième acte de l'opéra « La Walkyrie »."
+    },
+    {
+      "ref": "lyr-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Combien d'opéras compte « L'Anneau du Nibelung » de Wagner, aussi appelé la « Tétralogie » ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "L'ensemble dure environ quinze heures."
+    },
+    {
+      "ref": "lyr-047",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Quel est le premier opéra de la « Tétralogie » de Wagner ?",
+      "answers": [
+        { "text": "L'Or du Rhin", "isCorrect": true },
+        { "text": "La Walkyrie", "isCorrect": false },
+        { "text": "Siegfried", "isCorrect": false },
+        { "text": "Le Crépuscule des dieux", "isCorrect": false }
+      ],
+      "explanation": "Wagner l'appelait le « prologue » du cycle."
+    },
+    {
+      "ref": "lyr-048",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "lieu"],
+      "text": "Dans quelle ville allemande se tient chaque été le festival consacré aux opéras de Wagner ?",
+      "answers": [
+        { "text": "Salzbourg", "isCorrect": false },
+        { "text": "Munich", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Bayreuth", "isCorrect": true }
+      ],
+      "explanation": "Wagner a fait construire son propre théâtre à Bayreuth, inauguré en 1876."
+    },
+    {
+      "ref": "lyr-049",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["opera"],
+      "text": "Quel film de Francis Ford Coppola utilise « La Chevauchée des Walkyries » dans une attaque en hélicoptères ?",
+      "answers": [
+        { "text": "Le Parrain", "isCorrect": false },
+        { "text": "Conversation secrète", "isCorrect": false },
+        { "text": "Apocalypse Now", "isCorrect": true },
+        { "text": "Dracula", "isCorrect": false }
+      ],
+      "explanation": "Le film est sorti en 1979."
+    },
+    {
+      "ref": "lyr-050",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Tristan et Isolde » ?",
+      "answers": [
+        { "text": "Richard Strauss", "isCorrect": false },
+        { "text": "Richard Wagner", "isCorrect": true },
+        { "text": "Carl Maria von Weber", "isCorrect": false },
+        { "text": "Engelbert Humperdinck", "isCorrect": false }
+      ],
+      "explanation": "Son premier accord, l'« accord de Tristan », est l'un des plus commentés de l'histoire."
+    },
+    {
+      "ref": "lyr-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera"],
+      "text": "Quel opéra de Wagner contient la célèbre « Marche nuptiale » ?",
+      "answers": [
+        { "text": "Lohengrin", "isCorrect": true },
+        { "text": "Tannhäuser", "isCorrect": false },
+        { "text": "Parsifal", "isCorrect": false },
+        { "text": "Tristan et Isolde", "isCorrect": false }
+      ],
+      "explanation": "Elle est jouée à l'entrée de la mariée dans de nombreux mariages."
+    },
+    {
+      "ref": "lyr-052",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Le Vaisseau fantôme » ?",
+      "answers": [
+        { "text": "Carl Maria von Weber", "isCorrect": false },
+        { "text": "Richard Strauss", "isCorrect": false },
+        { "text": "Ludwig van Beethoven", "isCorrect": false },
+        { "text": "Richard Wagner", "isCorrect": true }
+      ],
+      "explanation": "L'opéra s'inspire de la légende du Hollandais volant."
+    },
+    {
+      "ref": "lyr-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Fidelio », son unique opéra ?",
+      "answers": [
+        { "text": "Franz Schubert", "isCorrect": false },
+        { "text": "Joseph Haydn", "isCorrect": false },
+        { "text": "Ludwig van Beethoven", "isCorrect": true },
+        { "text": "Johannes Brahms", "isCorrect": false }
+      ],
+      "explanation": "Beethoven l'a remanié pendant près de dix ans."
+    },
+    {
+      "ref": "lyr-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé l'opéra « Faust » (1859) ?",
+      "answers": [
+        { "text": "Jules Massenet", "isCorrect": false },
+        { "text": "Charles Gounod", "isCorrect": true },
+        { "text": "Georges Bizet", "isCorrect": false },
+        { "text": "Jacques Offenbach", "isCorrect": false }
+      ],
+      "explanation": "Ce « Faust » s'inspire de la pièce de Goethe."
+    },
+    {
+      "ref": "lyr-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "personnage"],
+      "text": "Dans « Faust » de Gounod, quel air chante Marguerite en découvrant un coffret de bijoux ?",
+      "answers": [
+        { "text": "L'« Air des bijoux »", "isCorrect": true },
+        { "text": "La « Habanera »", "isCorrect": false },
+        { "text": "Le « Duo des fleurs »", "isCorrect": false },
+        { "text": "L'« Air de la Reine de la nuit »", "isCorrect": false }
+      ],
+      "explanation": "L'air commence par « Ah ! je ris de me voir si belle en ce miroir »."
+    },
+    {
+      "ref": "lyr-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage", "opera"],
+      "text": "Quel air chante sans cesse la Castafiore dans « Tintin » ?",
+      "answers": [
+        { "text": "La « Habanera » de « Carmen »", "isCorrect": false },
+        { "text": "« Nessun dorma » de « Turandot »", "isCorrect": false },
+        { "text": "« La donna è mobile » de « Rigoletto »", "isCorrect": false },
+        { "text": "L'« Air des bijoux » de « Faust »", "isCorrect": true }
+      ],
+      "explanation": "Le capitaine Haddock la surnomme « le rossignol milanais »."
+    },
+    {
+      "ref": "lyr-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé « Les Contes d'Hoffmann » ?",
+      "answers": [
+        { "text": "Charles Gounod", "isCorrect": false },
+        { "text": "Jules Massenet", "isCorrect": false },
+        { "text": "Jacques Offenbach", "isCorrect": true },
+        { "text": "Léo Delibes", "isCorrect": false }
+      ],
+      "explanation": "Offenbach est mort avant la création de l'opéra, en 1881."
+    },
+    {
+      "ref": "lyr-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["opera", "france"],
+      "text": "Quelle danse endiablée, tirée d'« Orphée aux Enfers » d'Offenbach, est associée au French cancan ?",
+      "answers": [
+        { "text": "La « valse des fleurs »", "isCorrect": false },
+        { "text": "Le « galop infernal »", "isCorrect": true },
+        { "text": "La « danse des heures »", "isCorrect": false },
+        { "text": "La « polka des enclumes »", "isCorrect": false }
+      ],
+      "explanation": "Le galop est devenu l'air emblématique du Moulin Rouge."
+    },
+    {
+      "ref": "lyr-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé « Les Pêcheurs de perles » ?",
+      "answers": [
+        { "text": "Georges Bizet", "isCorrect": true },
+        { "text": "Léo Delibes", "isCorrect": false },
+        { "text": "Jules Massenet", "isCorrect": false },
+        { "text": "Charles Gounod", "isCorrect": false }
+      ],
+      "explanation": "L'opéra contient un célèbre duo de ténor et de baryton."
+    },
+    {
+      "ref": "lyr-060",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé « Lakmé », célèbre pour son « Duo des fleurs » ?",
+      "answers": [
+        { "text": "Georges Bizet", "isCorrect": false },
+        { "text": "Jules Massenet", "isCorrect": false },
+        { "text": "Ambroise Thomas", "isCorrect": false },
+        { "text": "Léo Delibes", "isCorrect": true }
+      ],
+      "explanation": "Le « Duo des fleurs » est très utilisé dans les publicités et au cinéma."
+    },
+    {
+      "ref": "lyr-061",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé « Manon » (1884) et « Werther » (1892) ?",
+      "answers": [
+        { "text": "Charles Gounod", "isCorrect": false },
+        { "text": "Georges Bizet", "isCorrect": false },
+        { "text": "Jules Massenet", "isCorrect": true },
+        { "text": "Camille Saint-Saëns", "isCorrect": false }
+      ],
+      "explanation": "« Werther » s'inspire du roman de Goethe."
+    },
+    {
+      "ref": "lyr-062",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé « Pelléas et Mélisande » ?",
+      "answers": [
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Claude Debussy", "isCorrect": true },
+        { "text": "Paul Dukas", "isCorrect": false },
+        { "text": "Gabriel Fauré", "isCorrect": false }
+      ],
+      "explanation": "C'est l'unique opéra achevé de Debussy, créé en 1902."
+    },
+    {
+      "ref": "lyr-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé « Samson et Dalila » ?",
+      "answers": [
+        { "text": "Camille Saint-Saëns", "isCorrect": true },
+        { "text": "Jules Massenet", "isCorrect": false },
+        { "text": "Georges Bizet", "isCorrect": false },
+        { "text": "Ernest Reyer", "isCorrect": false }
+      ],
+      "explanation": "L'opéra a d'abord été créé à Weimar, en 1877."
+    },
+    {
+      "ref": "lyr-064",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera", "france"],
+      "text": "Qui a composé l'opéra-ballet « Les Indes galantes » (1735) ?",
+      "answers": [
+        { "text": "Jean-Baptiste Lully", "isCorrect": false },
+        { "text": "François Couperin", "isCorrect": false },
+        { "text": "André Campra", "isCorrect": false },
+        { "text": "Jean-Philippe Rameau", "isCorrect": true }
+      ],
+      "explanation": "Une mise en scène avec des danseurs de krump en a fait un succès en 2019 à l'Opéra Bastille."
+    },
+    {
+      "ref": "lyr-065",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « L'Orfeo » (1607), l'un des premiers grands opéras ?",
+      "answers": [
+        { "text": "Jacopo Peri", "isCorrect": false },
+        { "text": "Francesco Cavalli", "isCorrect": false },
+        { "text": "Claudio Monteverdi", "isCorrect": true },
+        { "text": "Alessandro Scarlatti", "isCorrect": false }
+      ],
+      "explanation": "« L'Orfeo » a été créé à Mantoue."
+    },
+    {
+      "ref": "lyr-066",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Didon et Énée » ?",
+      "answers": [
+        { "text": "Georg Friedrich Haendel", "isCorrect": false },
+        { "text": "Henry Purcell", "isCorrect": true },
+        { "text": "John Blow", "isCorrect": false },
+        { "text": "Benjamin Britten", "isCorrect": false }
+      ],
+      "explanation": "L'opéra contient la célèbre lamentation de Didon, « When I am laid in earth »."
+    },
+    {
+      "ref": "lyr-067",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Lucia di Lammermoor » ?",
+      "answers": [
+        { "text": "Gaetano Donizetti", "isCorrect": true },
+        { "text": "Vincenzo Bellini", "isCorrect": false },
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": false }
+      ],
+      "explanation": "L'opéra est célèbre pour la « scène de la folie » de Lucia."
+    },
+    {
+      "ref": "lyr-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « L'Élixir d'amour », qui contient l'air « Una furtiva lagrima » ?",
+      "answers": [
+        { "text": "Gioachino Rossini", "isCorrect": false },
+        { "text": "Vincenzo Bellini", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Gaetano Donizetti", "isCorrect": true }
+      ],
+      "explanation": "L'opéra a été créé à Milan en 1832."
+    },
+    {
+      "ref": "lyr-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Norma », célèbre pour l'air « Casta diva » ?",
+      "answers": [
+        { "text": "Gaetano Donizetti", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Vincenzo Bellini", "isCorrect": true },
+        { "text": "Gioachino Rossini", "isCorrect": false }
+      ],
+      "explanation": "Maria Callas a chanté le rôle de Norma près de 90 fois."
+    },
+    {
+      "ref": "lyr-070",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Cavalleria rusticana » ?",
+      "answers": [
+        { "text": "Ruggero Leoncavallo", "isCorrect": false },
+        { "text": "Pietro Mascagni", "isCorrect": true },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Umberto Giordano", "isCorrect": false }
+      ],
+      "explanation": "L'opéra est souvent joué le même soir que « Paillasse »."
+    },
+    {
+      "ref": "lyr-071",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Paillasse » (Pagliacci) ?",
+      "answers": [
+        { "text": "Ruggero Leoncavallo", "isCorrect": true },
+        { "text": "Pietro Mascagni", "isCorrect": false },
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Francesco Cilea", "isCorrect": false }
+      ],
+      "explanation": "L'air « Vesti la giubba » est l'un des plus célèbres du répertoire du ténor."
+    },
+    {
+      "ref": "lyr-072",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Eugène Onéguine », d'après Pouchkine ?",
+      "answers": [
+        { "text": "Modeste Moussorgski", "isCorrect": false },
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": false },
+        { "text": "Sergueï Rachmaninov", "isCorrect": false },
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": true }
+      ],
+      "explanation": "La scène de la lettre de Tatiana en est le moment le plus célèbre."
+    },
+    {
+      "ref": "lyr-073",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Boris Godounov » ?",
+      "answers": [
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": false },
+        { "text": "Alexandre Borodine", "isCorrect": false },
+        { "text": "Modeste Moussorgski", "isCorrect": true },
+        { "text": "Mikhaïl Glinka", "isCorrect": false }
+      ],
+      "explanation": "L'opéra raconte le règne d'un tsar rongé par la culpabilité."
+    },
+    {
+      "ref": "lyr-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Le Chevalier à la rose » ?",
+      "answers": [
+        { "text": "Richard Wagner", "isCorrect": false },
+        { "text": "Richard Strauss", "isCorrect": true },
+        { "text": "Gustav Mahler", "isCorrect": false },
+        { "text": "Alban Berg", "isCorrect": false }
+      ],
+      "explanation": "L'opéra a été créé à Dresde en 1911."
+    },
+    {
+      "ref": "lyr-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "opera"],
+      "text": "Qui a composé « Porgy and Bess », d'où vient « Summertime » ?",
+      "answers": [
+        { "text": "George Gershwin", "isCorrect": true },
+        { "text": "Leonard Bernstein", "isCorrect": false },
+        { "text": "Cole Porter", "isCorrect": false },
+        { "text": "Scott Joplin", "isCorrect": false }
+      ],
+      "explanation": "Gershwin l'a qualifié d'« opéra populaire américain »."
+    },
+    {
+      "ref": "lyr-076",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quelle est la voix de femme la plus aiguë ?",
+      "answers": [
+        { "text": "Mezzo-soprano", "isCorrect": false },
+        { "text": "Alto", "isCorrect": false },
+        { "text": "Contralto", "isCorrect": false },
+        { "text": "Soprano", "isCorrect": true }
+      ],
+      "explanation": "La soprano colorature est la plus aiguë et la plus agile."
+    },
+    {
+      "ref": "lyr-077",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quelle est la voix d'homme la plus aiguë, hors contre-ténor ?",
+      "answers": [
+        { "text": "Baryton", "isCorrect": false },
+        { "text": "Basse", "isCorrect": false },
+        { "text": "Ténor", "isCorrect": true },
+        { "text": "Baryton-basse", "isCorrect": false }
+      ],
+      "explanation": "Le ténor tient souvent le rôle du héros amoureux."
+    },
+    {
+      "ref": "lyr-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quelle est la voix d'homme la plus grave ?",
+      "answers": [
+        { "text": "Ténor", "isCorrect": false },
+        { "text": "Basse", "isCorrect": true },
+        { "text": "Baryton", "isCorrect": false },
+        { "text": "Contre-ténor", "isCorrect": false }
+      ],
+      "explanation": "Les basses jouent souvent les rois, les prêtres ou les pères."
+    },
+    {
+      "ref": "lyr-079",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quelle voix d'homme se situe entre le ténor et la basse ?",
+      "answers": [
+        { "text": "Baryton", "isCorrect": true },
+        { "text": "Contralto", "isCorrect": false },
+        { "text": "Alto", "isCorrect": false },
+        { "text": "Contre-ténor", "isCorrect": false }
+      ],
+      "explanation": "Figaro, dans « Le Barbier de Séville », est un rôle de baryton."
+    },
+    {
+      "ref": "lyr-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Quelle voix de femme se situe entre la soprano et la contralto ?",
+      "answers": [
+        { "text": "Alto masculin", "isCorrect": false },
+        { "text": "Baryton", "isCorrect": false },
+        { "text": "Colorature", "isCorrect": false },
+        { "text": "Mezzo-soprano", "isCorrect": true }
+      ],
+      "explanation": "Carmen est un grand rôle de mezzo-soprano."
+    },
+    {
+      "ref": "lyr-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Comment appelle-t-on un homme qui chante dans une tessiture de femme grâce à la voix de tête ?",
+      "answers": [
+        { "text": "Un baryton-basse", "isCorrect": false },
+        { "text": "Un ténor dramatique", "isCorrect": false },
+        { "text": "Un contre-ténor", "isCorrect": true },
+        { "text": "Une basse chantante", "isCorrect": false }
+      ],
+      "explanation": "Les contre-ténors reprennent souvent des rôles écrits autrefois pour les castrats."
+    },
+    {
+      "ref": "lyr-082",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["voix", "histoire"],
+      "text": "Quel célèbre castrat du XVIIIe siècle a donné son nom à un film de Gérard Corbiau en 1994 ?",
+      "answers": [
+        { "text": "Senesino", "isCorrect": false },
+        { "text": "Farinelli", "isCorrect": true },
+        { "text": "Caffarelli", "isCorrect": false },
+        { "text": "Carestini", "isCorrect": false }
+      ],
+      "explanation": "Farinelli était la plus grande star du chant de son époque."
+    },
+    {
+      "ref": "lyr-083",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quel ténor italien a formé « Les Trois Ténors » avec Plácido Domingo et José Carreras ?",
+      "answers": [
+        { "text": "Luciano Pavarotti", "isCorrect": true },
+        { "text": "Andrea Bocelli", "isCorrect": false },
+        { "text": "Roberto Alagna", "isCorrect": false },
+        { "text": "Enrico Caruso", "isCorrect": false }
+      ],
+      "explanation": "Pavarotti est mort en 2007."
+    },
+    {
+      "ref": "lyr-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix", "histoire"],
+      "text": "À quelle occasion Les Trois Ténors ont-ils chanté ensemble pour la première fois, en 1990 ?",
+      "answers": [
+        { "text": "Les Jeux olympiques de Barcelone", "isCorrect": false },
+        { "text": "L'inauguration de l'Opéra Bastille", "isCorrect": false },
+        { "text": "La chute du mur de Berlin", "isCorrect": false },
+        { "text": "La Coupe du monde de football en Italie", "isCorrect": true }
+      ],
+      "explanation": "Le concert a eu lieu à Rome, dans les thermes de Caracalla, la veille de la finale."
+    },
+    {
+      "ref": "lyr-085",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quelle soprano d'origine grecque était surnommée « la Divina » ?",
+      "answers": [
+        { "text": "Renata Tebaldi", "isCorrect": false },
+        { "text": "Joan Sutherland", "isCorrect": false },
+        { "text": "Maria Callas", "isCorrect": true },
+        { "text": "Montserrat Caballé", "isCorrect": false }
+      ],
+      "explanation": "Maria Callas est morte à Paris en 1977."
+    },
+    {
+      "ref": "lyr-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Quel ténor italien du début du XXe siècle a été l'une des premières stars du disque ?",
+      "answers": [
+        { "text": "Beniamino Gigli", "isCorrect": false },
+        { "text": "Enrico Caruso", "isCorrect": true },
+        { "text": "Luciano Pavarotti", "isCorrect": false },
+        { "text": "Mario Lanza", "isCorrect": false }
+      ],
+      "explanation": "Ses enregistrements se sont vendus par millions."
+    },
+    {
+      "ref": "lyr-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Quelle soprano espagnole a chanté « Barcelona » avec Freddie Mercury ?",
+      "answers": [
+        { "text": "Montserrat Caballé", "isCorrect": true },
+        { "text": "Teresa Berganza", "isCorrect": false },
+        { "text": "Victoria de los Ángeles", "isCorrect": false },
+        { "text": "Pilar Lorengar", "isCorrect": false }
+      ],
+      "explanation": "La chanson est devenue l'hymne des Jeux olympiques de Barcelone en 1992."
+    },
+    {
+      "ref": "lyr-088",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["voix", "france"],
+      "text": "Quel ténor français, né à Clichy-sous-Bois, est un grand interprète de Don José et de Roméo ?",
+      "answers": [
+        { "text": "Jonas Kaufmann", "isCorrect": false },
+        { "text": "Benjamin Bernheim", "isCorrect": false },
+        { "text": "Plácido Domingo", "isCorrect": false },
+        { "text": "Roberto Alagna", "isCorrect": true }
+      ],
+      "explanation": "Roberto Alagna a commencé par chanter dans des cabarets."
+    },
+    {
+      "ref": "lyr-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix", "france"],
+      "text": "Quelle mezzo-soprano a chanté « La Marseillaise » sur le toit du Grand Palais lors de l'ouverture des JO de Paris 2024 ?",
+      "answers": [
+        { "text": "Natalie Dessay", "isCorrect": false },
+        { "text": "Sabine Devieilhe", "isCorrect": false },
+        { "text": "Axelle Saint-Cirel", "isCorrect": true },
+        { "text": "Marina Viotti", "isCorrect": false }
+      ],
+      "explanation": "Elle portait une robe aux couleurs du drapeau français."
+    },
+    {
+      "ref": "lyr-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix", "france"],
+      "text": "Quelle soprano française, star de l'opéra, s'est ensuite tournée vers le théâtre et la chanson ?",
+      "answers": [
+        { "text": "Maria Callas", "isCorrect": false },
+        { "text": "Natalie Dessay", "isCorrect": true },
+        { "text": "Barbara Hendricks", "isCorrect": false },
+        { "text": "Cecilia Bartoli", "isCorrect": false }
+      ],
+      "explanation": "Natalie Dessay a fait ses adieux à l'opéra en 2013."
+    },
+    {
+      "ref": "lyr-091",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["voix"],
+      "text": "Quel ténor italien, aveugle, a chanté « Con te partirò » ?",
+      "answers": [
+        { "text": "Andrea Bocelli", "isCorrect": true },
+        { "text": "Luciano Pavarotti", "isCorrect": false },
+        { "text": "Vittorio Grigolo", "isCorrect": false },
+        { "text": "Jonas Kaufmann", "isCorrect": false }
+      ],
+      "explanation": "La version anglaise s'appelle « Time to Say Goodbye »."
+    },
+    {
+      "ref": "lyr-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["voix"],
+      "text": "Quelle soprano australienne était surnommée « La Stupenda » ?",
+      "answers": [
+        { "text": "Kiri Te Kanawa", "isCorrect": false },
+        { "text": "Nellie Melba", "isCorrect": false },
+        { "text": "Maria Callas", "isCorrect": false },
+        { "text": "Joan Sutherland", "isCorrect": true }
+      ],
+      "explanation": "Kiri Te Kanawa, elle, est néo-zélandaise."
+    },
+    {
+      "ref": "lyr-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Quel chanteur espagnol, aussi chef d'orchestre, a interprété plus de 150 rôles ?",
+      "answers": [
+        { "text": "José Carreras", "isCorrect": false },
+        { "text": "Alfredo Kraus", "isCorrect": false },
+        { "text": "Plácido Domingo", "isCorrect": true },
+        { "text": "Luciano Pavarotti", "isCorrect": false }
+      ],
+      "explanation": "C'est un record dans l'histoire de l'opéra."
+    },
+    {
+      "ref": "lyr-094",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["voix", "histoire"],
+      "text": "Quelle contralto afro-américaine a chanté au Metropolitan Opera en 1955, brisant une barrière raciale ?",
+      "answers": [
+        { "text": "Leontyne Price", "isCorrect": false },
+        { "text": "Marian Anderson", "isCorrect": true },
+        { "text": "Jessye Norman", "isCorrect": false },
+        { "text": "Barbara Hendricks", "isCorrect": false }
+      ],
+      "explanation": "Elle a été la première chanteuse noire à se produire au Met."
+    },
+    {
+      "ref": "lyr-095",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["voix"],
+      "text": "Quel ténor allemand, star des années 2010, est un grand interprète de Wagner ?",
+      "answers": [
+        { "text": "Jonas Kaufmann", "isCorrect": true },
+        { "text": "Roberto Alagna", "isCorrect": false },
+        { "text": "Rolando Villazón", "isCorrect": false },
+        { "text": "Juan Diego Flórez", "isCorrect": false }
+      ],
+      "explanation": "Jonas Kaufmann chante aussi le répertoire italien et français."
+    },
+    {
+      "ref": "lyr-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Quelle mezzo-soprano italienne est réputée pour ses vocalises dans Rossini et Vivaldi ?",
+      "answers": [
+        { "text": "Maria Callas", "isCorrect": false },
+        { "text": "Anna Netrebko", "isCorrect": false },
+        { "text": "Renata Tebaldi", "isCorrect": false },
+        { "text": "Cecilia Bartoli", "isCorrect": true }
+      ],
+      "explanation": "Cecilia Bartoli dirige aussi le festival de Pentecôte de Salzbourg."
+    },
+    {
+      "ref": "lyr-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["voix"],
+      "text": "Quelle soprano russe est l'une des plus grandes stars de l'opéra du XXIe siècle ?",
+      "answers": [
+        { "text": "Maria Callas", "isCorrect": false },
+        { "text": "Montserrat Caballé", "isCorrect": false },
+        { "text": "Anna Netrebko", "isCorrect": true },
+        { "text": "Kiri Te Kanawa", "isCorrect": false }
+      ],
+      "explanation": "Anna Netrebko s'est fait connaître en chantant Violetta et Mimi."
+    },
+    {
+      "ref": "lyr-098",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on le texte d'un opéra ?",
+      "answers": [
+        { "text": "La partition", "isCorrect": false },
+        { "text": "Le livret", "isCorrect": true },
+        { "text": "Le programme", "isCorrect": false },
+        { "text": "Le récitatif", "isCorrect": false }
+      ],
+      "explanation": "Le livret est écrit par un librettiste."
+    },
+    {
+      "ref": "lyr-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un morceau mélodique chanté en solo dans un opéra ?",
+      "answers": [
+        { "text": "Un air", "isCorrect": true },
+        { "text": "Un chœur", "isCorrect": false },
+        { "text": "Un ensemble", "isCorrect": false },
+        { "text": "Un interlude", "isCorrect": false }
+      ],
+      "explanation": "En italien, on parle d'« aria »."
+    },
+    {
+      "ref": "lyr-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment s'appelle la partie chantée presque parlée qui fait avancer l'action ?",
+      "answers": [
+        { "text": "L'air", "isCorrect": false },
+        { "text": "Le chœur", "isCorrect": false },
+        { "text": "L'ouverture", "isCorrect": false },
+        { "text": "Le récitatif", "isCorrect": true }
+      ],
+      "explanation": "Le récitatif est souvent accompagné par un clavecin dans les opéras baroques."
+    },
+    {
+      "ref": "lyr-101",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la pièce orchestrale qui ouvre un opéra ?",
+      "answers": [
+        { "text": "Le prélude vocal", "isCorrect": false },
+        { "text": "Le final", "isCorrect": false },
+        { "text": "L'ouverture", "isCorrect": true },
+        { "text": "L'entracte", "isCorrect": false }
+      ],
+      "explanation": "Certaines ouvertures sont devenues plus célèbres que l'opéra lui-même."
+    },
+    {
+      "ref": "lyr-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la chanteuse qui tient le premier rôle féminin d'un opéra ?",
+      "answers": [
+        { "text": "La soubrette", "isCorrect": false },
+        { "text": "La prima donna", "isCorrect": true },
+        { "text": "La choriste", "isCorrect": false },
+        { "text": "La coryphée", "isCorrect": false }
+      ],
+      "explanation": "« Prima donna » signifie « première dame » en italien."
+    },
+    {
+      "ref": "lyr-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un spectacle lyrique léger, avec des dialogues parlés, comme ceux d'Offenbach ?",
+      "answers": [
+        { "text": "Une opérette", "isCorrect": true },
+        { "text": "Un oratorio", "isCorrect": false },
+        { "text": "Une cantate", "isCorrect": false },
+        { "text": "Un requiem", "isCorrect": false }
+      ],
+      "explanation": "Offenbach est considéré comme le père de l'opérette."
+    },
+    {
+      "ref": "lyr-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on une œuvre lyrique religieuse chantée sans mise en scène, comme « Le Messie » ?",
+      "answers": [
+        { "text": "Un opéra", "isCorrect": false },
+        { "text": "Une opérette", "isCorrect": false },
+        { "text": "Une comédie musicale", "isCorrect": false },
+        { "text": "Un oratorio", "isCorrect": true }
+      ],
+      "explanation": "Haendel en a écrit plusieurs, en anglais."
+    },
+    {
+      "ref": "lyr-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « bel canto » ?",
+      "answers": [
+        { "text": "Chant collectif", "isCorrect": false },
+        { "text": "Chant d'église", "isCorrect": false },
+        { "text": "Beau chant", "isCorrect": true },
+        { "text": "Chant populaire", "isCorrect": false }
+      ],
+      "explanation": "Le bel canto privilégie la beauté du son et l'agilité vocale, comme chez Bellini ou Donizetti."
+    },
+    {
+      "ref": "lyr-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "lieu"],
+      "text": "Comment appelle-t-on l'espace sous l'avant-scène où joue l'orchestre ?",
+      "answers": [
+        { "text": "Les coulisses", "isCorrect": false },
+        { "text": "La fosse d'orchestre", "isCorrect": true },
+        { "text": "Le parterre", "isCorrect": false },
+        { "text": "Le poulailler", "isCorrect": false }
+      ],
+      "explanation": "Elle permet de voir la scène sans que l'orchestre ne cache les chanteurs."
+    },
+    {
+      "ref": "lyr-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "lieu"],
+      "text": "Comment appelle-t-on les places les plus hautes et les moins chères d'un théâtre ?",
+      "answers": [
+        { "text": "Le poulailler", "isCorrect": true },
+        { "text": "La corbeille", "isCorrect": false },
+        { "text": "Le parterre", "isCorrect": false },
+        { "text": "La baignoire", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle aussi « le paradis »."
+    },
+    {
+      "ref": "lyr-108",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Qu'est-ce qu'un « leitmotiv », technique chère à Wagner ?",
+      "answers": [
+        { "text": "Un air chanté par le chœur", "isCorrect": false },
+        { "text": "Une danse pendant l'entracte", "isCorrect": false },
+        { "text": "Un solo de violon", "isCorrect": false },
+        { "text": "Un thème musical associé à un personnage ou une idée", "isCorrect": true }
+      ],
+      "explanation": "Le mot allemand signifie « motif conducteur »."
+    },
+    {
+      "ref": "lyr-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on le surtitrage qui affiche la traduction du chant au-dessus de la scène ?",
+      "answers": [
+        { "text": "Le sous-titrage", "isCorrect": false },
+        { "text": "Le prompteur", "isCorrect": false },
+        { "text": "Le surtitrage", "isCorrect": true },
+        { "text": "La didascalie", "isCorrect": false }
+      ],
+      "explanation": "Le surtitrage s'est généralisé dans les opéras à partir des années 1980."
+    },
+    {
+      "ref": "lyr-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la personne qui souffle le texte aux chanteurs depuis un trou au bord de la scène ?",
+      "answers": [
+        { "text": "Le régisseur", "isCorrect": false },
+        { "text": "Le souffleur", "isCorrect": true },
+        { "text": "Le répétiteur", "isCorrect": false },
+        { "text": "Le machiniste", "isCorrect": false }
+      ],
+      "explanation": "Le souffleur se cache dans un petit abri appelé « trou du souffleur »."
+    },
+    {
+      "ref": "lyr-111",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville se trouve la Scala ?",
+      "answers": [
+        { "text": "Milan", "isCorrect": true },
+        { "text": "Rome", "isCorrect": false },
+        { "text": "Naples", "isCorrect": false },
+        { "text": "Venise", "isCorrect": false }
+      ],
+      "explanation": "La Scala a été inaugurée en 1778."
+    },
+    {
+      "ref": "lyr-112",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville se trouve l'opéra La Fenice ?",
+      "answers": [
+        { "text": "Milan", "isCorrect": false },
+        { "text": "Naples", "isCorrect": false },
+        { "text": "Turin", "isCorrect": false },
+        { "text": "Venise", "isCorrect": true }
+      ],
+      "explanation": "Son nom signifie « le phénix », car il a été reconstruit plusieurs fois après des incendies."
+    },
+    {
+      "ref": "lyr-113",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu", "france"],
+      "text": "Quel architecte a construit l'opéra du palais Garnier, à Paris ?",
+      "answers": [
+        { "text": "Gustave Eiffel", "isCorrect": false },
+        { "text": "Georges-Eugène Haussmann", "isCorrect": false },
+        { "text": "Charles Garnier", "isCorrect": true },
+        { "text": "Jean Nouvel", "isCorrect": false }
+      ],
+      "explanation": "Le palais Garnier a été inauguré en 1875."
+    },
+    {
+      "ref": "lyr-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu", "france"],
+      "text": "Quel peintre a réalisé le plafond actuel de l'opéra Garnier en 1964 ?",
+      "answers": [
+        { "text": "Pablo Picasso", "isCorrect": false },
+        { "text": "Marc Chagall", "isCorrect": true },
+        { "text": "Henri Matisse", "isCorrect": false },
+        { "text": "Salvador Dalí", "isCorrect": false }
+      ],
+      "explanation": "Le plafond rend hommage à quatorze compositeurs."
+    },
+    {
+      "ref": "lyr-115",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu", "france"],
+      "text": "Quel roman de Gaston Leroux se déroule à l'opéra Garnier ?",
+      "answers": [
+        { "text": "Le Fantôme de l'Opéra", "isCorrect": true },
+        { "text": "Notre-Dame de Paris", "isCorrect": false },
+        { "text": "Le Mystère de la chambre jaune", "isCorrect": false },
+        { "text": "Arsène Lupin", "isCorrect": false }
+      ],
+      "explanation": "Le roman s'inspire du lac souterrain réellement présent sous l'opéra."
+    },
+    {
+      "ref": "lyr-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu", "france"],
+      "text": "En quelle année l'Opéra Bastille a-t-il été inauguré ?",
+      "answers": [
+        { "text": "1975", "isCorrect": false },
+        { "text": "2000", "isCorrect": false },
+        { "text": "1968", "isCorrect": false },
+        { "text": "1989", "isCorrect": true }
+      ],
+      "explanation": "Il a été inauguré pour le bicentenaire de la Révolution française."
+    },
+    {
+      "ref": "lyr-117",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville se trouve le Metropolitan Opera ?",
+      "answers": [
+        { "text": "Chicago", "isCorrect": false },
+        { "text": "Boston", "isCorrect": false },
+        { "text": "New York", "isCorrect": true },
+        { "text": "San Francisco", "isCorrect": false }
+      ],
+      "explanation": "Le Met se trouve au Lincoln Center."
+    },
+    {
+      "ref": "lyr-118",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Quelle ville australienne possède un opéra en forme de voiles ?",
+      "answers": [
+        { "text": "Melbourne", "isCorrect": false },
+        { "text": "Sydney", "isCorrect": true },
+        { "text": "Brisbane", "isCorrect": false },
+        { "text": "Perth", "isCorrect": false }
+      ],
+      "explanation": "L'opéra de Sydney est inscrit au patrimoine mondial de l'UNESCO."
+    },
+    {
+      "ref": "lyr-119",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville se trouve le théâtre du Bolchoï ?",
+      "answers": [
+        { "text": "Moscou", "isCorrect": true },
+        { "text": "Saint-Pétersbourg", "isCorrect": false },
+        { "text": "Kiev", "isCorrect": false },
+        { "text": "Varsovie", "isCorrect": false }
+      ],
+      "explanation": "Le Mariinsky, lui, se trouve à Saint-Pétersbourg."
+    },
+    {
+      "ref": "lyr-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville se trouve le Royal Opera House de Covent Garden ?",
+      "answers": [
+        { "text": "Édimbourg", "isCorrect": false },
+        { "text": "Manchester", "isCorrect": false },
+        { "text": "Dublin", "isCorrect": false },
+        { "text": "Londres", "isCorrect": true }
+      ],
+      "explanation": "Il abrite aussi le Royal Ballet."
+    },
+    {
+      "ref": "lyr-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville autrichienne, ville natale de Mozart, se tient un grand festival d'été ?",
+      "answers": [
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Innsbruck", "isCorrect": false },
+        { "text": "Salzbourg", "isCorrect": true },
+        { "text": "Graz", "isCorrect": false }
+      ],
+      "explanation": "Le festival de Salzbourg existe depuis 1920."
+    },
+    {
+      "ref": "lyr-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu", "france"],
+      "text": "Dans quelle ville se tient chaque été un grand festival d'art lyrique, dans la cour de l'Archevêché ?",
+      "answers": [
+        { "text": "Avignon", "isCorrect": false },
+        { "text": "Aix-en-Provence", "isCorrect": true },
+        { "text": "Orange", "isCorrect": false },
+        { "text": "Arles", "isCorrect": false }
+      ],
+      "explanation": "Le festival d'Aix-en-Provence a été créé en 1948."
+    },
+    {
+      "ref": "lyr-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu", "france"],
+      "text": "Dans quel théâtre antique se tiennent les Chorégies, festival lyrique en plein air ?",
+      "answers": [
+        { "text": "Le théâtre antique d'Orange", "isCorrect": true },
+        { "text": "Les arènes de Nîmes", "isCorrect": false },
+        { "text": "Le théâtre de Vienne", "isCorrect": false },
+        { "text": "Les arènes d'Arles", "isCorrect": false }
+      ],
+      "explanation": "Le mur de scène du théâtre d'Orange est l'un des mieux conservés du monde romain."
+    },
+    {
+      "ref": "lyr-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Dans quelle ville se trouve le Staatsoper, l'un des opéras les plus prestigieux du monde ?",
+      "answers": [
+        { "text": "Munich", "isCorrect": false },
+        { "text": "Berlin", "isCorrect": false },
+        { "text": "Zurich", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": true }
+      ],
+      "explanation": "L'Opéra d'État de Vienne a été inauguré en 1869 avec « Don Giovanni »."
+    }
+  ]
+}

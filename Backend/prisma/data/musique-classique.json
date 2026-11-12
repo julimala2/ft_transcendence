@@ -1,0 +1,2145 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 152,
+    "parDifficulte": { "1": 48, "2": 55, "3": 49 },
+    "parType": { "multiple": 148, "boolean": 4 },
+    "avecImage": 0,
+    "sansImage": 152,
+    "parTag": {
+      "compositeur": 81,
+      "oeuvre": 64,
+      "instrument": 31,
+      "france": 20,
+      "vocabulaire": 18,
+      "histoire": 9
+    }
+  },
+  "category": {
+    "slug": "musique-classique",
+    "name": "Classique"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "cla-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Les Quatre Saisons » ?",
+      "answers": [
+        { "text": "Jean-Sébastien Bach", "isCorrect": false },
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": false },
+        { "text": "Antonio Vivaldi", "isCorrect": true },
+        { "text": "Joseph Haydn", "isCorrect": false }
+      ],
+      "explanation": "Ces quatre concertos pour violon ont été publiés en 1725."
+    },
+    {
+      "ref": "cla-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "De quel pays était originaire Antonio Vivaldi ?",
+      "answers": [
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "France", "isCorrect": false }
+      ],
+      "explanation": "Vivaldi est né à Venise en 1678."
+    },
+    {
+      "ref": "cla-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur était surnommé « le Prêtre roux » ?",
+      "answers": [
+        { "text": "Antonio Vivaldi", "isCorrect": true },
+        { "text": "Arcangelo Corelli", "isCorrect": false },
+        { "text": "Domenico Scarlatti", "isCorrect": false },
+        { "text": "Tomaso Albinoni", "isCorrect": false }
+      ],
+      "explanation": "Vivaldi avait été ordonné prêtre et avait les cheveux roux."
+    },
+    {
+      "ref": "cla-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé la « Symphonie n° 9 », qui contient l'« Ode à la joie » ?",
+      "answers": [
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": false },
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Franz Schubert", "isCorrect": false },
+        { "text": "Ludwig van Beethoven", "isCorrect": true }
+      ],
+      "explanation": "La 9e symphonie a été créée à Vienne en 1824."
+    },
+    {
+      "ref": "cla-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oeuvre"],
+      "text": "Quel passage de la 9e symphonie de Beethoven est devenu l'hymne européen ?",
+      "answers": [
+        { "text": "La « Lettre à Élise »", "isCorrect": false },
+        { "text": "La « Marche turque »", "isCorrect": false },
+        { "text": "L'« Ode à la joie »", "isCorrect": true },
+        { "text": "Le « Boléro »", "isCorrect": false }
+      ],
+      "explanation": "Le texte est un poème de Friedrich Schiller."
+    },
+    {
+      "ref": "cla-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel handicap Beethoven a-t-il subi dans la seconde partie de sa vie ?",
+      "answers": [
+        { "text": "La cécité", "isCorrect": false },
+        { "text": "La surdité", "isCorrect": true },
+        { "text": "La paralysie d'une main", "isCorrect": false },
+        { "text": "Le mutisme", "isCorrect": false }
+      ],
+      "explanation": "Il a composé sa 9e symphonie alors qu'il était presque entièrement sourd."
+    },
+    {
+      "ref": "cla-007",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Beethoven a composé neuf symphonies.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Sa 10e symphonie est restée à l'état d'esquisses."
+    },
+    {
+      "ref": "cla-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Une petite musique de nuit » ?",
+      "answers": [
+        { "text": "Joseph Haydn", "isCorrect": false },
+        { "text": "Ludwig van Beethoven", "isCorrect": false },
+        { "text": "Franz Schubert", "isCorrect": false },
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": true }
+      ],
+      "explanation": "Cette sérénade pour cordes a été écrite en 1787."
+    },
+    {
+      "ref": "cla-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Dans quelle ville est né Wolfgang Amadeus Mozart ?",
+      "answers": [
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Prague", "isCorrect": false },
+        { "text": "Salzbourg", "isCorrect": true },
+        { "text": "Munich", "isCorrect": false }
+      ],
+      "explanation": "Mozart est né à Salzbourg en 1756."
+    },
+    {
+      "ref": "cla-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "À quel âge Mozart est-il mort ?",
+      "answers": [
+        { "text": "52 ans", "isCorrect": false },
+        { "text": "35 ans", "isCorrect": true },
+        { "text": "28 ans", "isCorrect": false },
+        { "text": "66 ans", "isCorrect": false }
+      ],
+      "explanation": "Mozart est mort à Vienne en 1791."
+    },
+    {
+      "ref": "cla-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oeuvre"],
+      "text": "Quelle œuvre Mozart a-t-il laissée inachevée à sa mort ?",
+      "answers": [
+        { "text": "Le « Requiem »", "isCorrect": true },
+        { "text": "La « Symphonie Jupiter »", "isCorrect": false },
+        { "text": "« Don Giovanni »", "isCorrect": false },
+        { "text": "« Così fan tutte »", "isCorrect": false }
+      ],
+      "explanation": "Le « Requiem » a été achevé par son élève Franz Xaver Süssmayr."
+    },
+    {
+      "ref": "cla-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur, rival de Mozart selon la légende, est le personnage central du film « Amadeus » ?",
+      "answers": [
+        { "text": "Joseph Haydn", "isCorrect": false },
+        { "text": "Christoph Willibald Gluck", "isCorrect": false },
+        { "text": "Muzio Clementi", "isCorrect": false },
+        { "text": "Antonio Salieri", "isCorrect": true }
+      ],
+      "explanation": "Le film de Miloš Forman a remporté huit Oscars en 1985."
+    },
+    {
+      "ref": "cla-013",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Mozart a composé ses premières œuvres vers l'âge de cinq ans.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Enfant prodige, il donnait déjà des concerts dans toute l'Europe à six ans."
+    },
+    {
+      "ref": "cla-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Quelle célèbre pièce pour piano Beethoven a-t-il composée en 1810 ?",
+      "answers": [
+        { "text": "La « Marche turque »", "isCorrect": false },
+        { "text": "La « Lettre à Élise »", "isCorrect": true },
+        { "text": "La « Gymnopédie n° 1 »", "isCorrect": false },
+        { "text": "La « Valse minute »", "isCorrect": false }
+      ],
+      "explanation": "On ne sait toujours pas qui était cette Élise."
+    },
+    {
+      "ref": "cla-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre"],
+      "text": "Quelle sonate de Beethoven est surnommée « Clair de lune » ?",
+      "answers": [
+        { "text": "La Sonate n° 14", "isCorrect": true },
+        { "text": "La Sonate n° 8 « Pathétique »", "isCorrect": false },
+        { "text": "La Sonate n° 23 « Appassionata »", "isCorrect": false },
+        { "text": "La Sonate n° 29 « Hammerklavier »", "isCorrect": false }
+      ],
+      "explanation": "Le surnom vient d'un critique, après la mort de Beethoven."
+    },
+    {
+      "ref": "cla-016",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Clair de lune », extrait de la « Suite bergamasque » ?",
+      "answers": [
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Erik Satie", "isCorrect": false },
+        { "text": "Gabriel Fauré", "isCorrect": false },
+        { "text": "Claude Debussy", "isCorrect": true }
+      ],
+      "explanation": "Debussy a publié la « Suite bergamasque » en 1905."
+    },
+    {
+      "ref": "cla-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé le « Boléro » ?",
+      "answers": [
+        { "text": "Claude Debussy", "isCorrect": false },
+        { "text": "Camille Saint-Saëns", "isCorrect": false },
+        { "text": "Maurice Ravel", "isCorrect": true },
+        { "text": "Hector Berlioz", "isCorrect": false }
+      ],
+      "explanation": "Le « Boléro » répète la même mélodie en augmentant le volume jusqu'à la fin."
+    },
+    {
+      "ref": "cla-018",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre", "france"],
+      "text": "Pour quelle danseuse Ravel a-t-il composé le « Boléro » en 1928 ?",
+      "answers": [
+        { "text": "Anna Pavlova", "isCorrect": false },
+        { "text": "Ida Rubinstein", "isCorrect": true },
+        { "text": "Isadora Duncan", "isCorrect": false },
+        { "text": "Joséphine Baker", "isCorrect": false }
+      ],
+      "explanation": "Le « Boléro » était à l'origine une musique de ballet."
+    },
+    {
+      "ref": "cla-019",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["compositeur", "france"],
+      "text": "Maurice Ravel a remporté le prix de Rome.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ses échecs répétés, jusqu'en 1905, ont fait scandale et provoqué la démission du directeur du Conservatoire."
+    },
+    {
+      "ref": "cla-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé « Le Carnaval des animaux » ?",
+      "answers": [
+        { "text": "Georges Bizet", "isCorrect": false },
+        { "text": "Paul Dukas", "isCorrect": false },
+        { "text": "Francis Poulenc", "isCorrect": false },
+        { "text": "Camille Saint-Saëns", "isCorrect": true }
+      ],
+      "explanation": "Saint-Saëns a interdit qu'on le publie de son vivant, à part « Le Cygne »."
+    },
+    {
+      "ref": "cla-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre", "instrument"],
+      "text": "Quel animal est représenté par le violoncelle dans « Le Carnaval des animaux » ?",
+      "answers": [
+        { "text": "L'éléphant", "isCorrect": false },
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "Le cygne", "isCorrect": true },
+        { "text": "La tortue", "isCorrect": false }
+      ],
+      "explanation": "« Le Cygne » est l'une des pièces les plus jouées du répertoire du violoncelle."
+    },
+    {
+      "ref": "cla-022",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé la « Danse macabre » ?",
+      "answers": [
+        { "text": "Hector Berlioz", "isCorrect": false },
+        { "text": "Camille Saint-Saëns", "isCorrect": true },
+        { "text": "Paul Dukas", "isCorrect": false },
+        { "text": "Claude Debussy", "isCorrect": false }
+      ],
+      "explanation": "Le violon y imite la Mort qui accorde son instrument à minuit."
+    },
+    {
+      "ref": "cla-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé les « Gymnopédies » ?",
+      "answers": [
+        { "text": "Erik Satie", "isCorrect": true },
+        { "text": "Claude Debussy", "isCorrect": false },
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Gabriel Fauré", "isCorrect": false }
+      ],
+      "explanation": "Satie les a composées en 1888, pour piano."
+    },
+    {
+      "ref": "cla-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé « L'Apprenti sorcier », rendu célèbre par le film « Fantasia » ?",
+      "answers": [
+        { "text": "Camille Saint-Saëns", "isCorrect": false },
+        { "text": "Claude Debussy", "isCorrect": false },
+        { "text": "Hector Berlioz", "isCorrect": false },
+        { "text": "Paul Dukas", "isCorrect": true }
+      ],
+      "explanation": "Dans « Fantasia » (1940), Mickey joue l'apprenti sorcier."
+    },
+    {
+      "ref": "cla-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé la « Symphonie fantastique » ?",
+      "answers": [
+        { "text": "César Franck", "isCorrect": false },
+        { "text": "Charles Gounod", "isCorrect": false },
+        { "text": "Hector Berlioz", "isCorrect": true },
+        { "text": "Georges Bizet", "isCorrect": false }
+      ],
+      "explanation": "Berlioz l'a créée en 1830, à 26 ans."
+    },
+    {
+      "ref": "cla-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé « La Mer » (1905) ?",
+      "answers": [
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Claude Debussy", "isCorrect": true },
+        { "text": "Emmanuel Chabrier", "isCorrect": false },
+        { "text": "Gabriel Fauré", "isCorrect": false }
+      ],
+      "explanation": "« La Mer » est sous-titrée « trois esquisses symphoniques pour orchestre »."
+    },
+    {
+      "ref": "cla-027",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre", "france"],
+      "text": "Qui a composé « Prélude à l'après-midi d'un faune » ?",
+      "answers": [
+        { "text": "Claude Debussy", "isCorrect": true },
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Erik Satie", "isCorrect": false },
+        { "text": "Paul Dukas", "isCorrect": false }
+      ],
+      "explanation": "L'œuvre s'inspire d'un poème de Stéphane Mallarmé."
+    },
+    {
+      "ref": "cla-028",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Le Lac des cygnes » ?",
+      "answers": [
+        { "text": "Igor Stravinsky", "isCorrect": false },
+        { "text": "Sergueï Prokofiev", "isCorrect": false },
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": false },
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": true }
+      ],
+      "explanation": "Le ballet a été créé à Moscou en 1877."
+    },
+    {
+      "ref": "cla-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oeuvre"],
+      "text": "Quel ballet de Tchaïkovski se déroule la nuit de Noël ?",
+      "answers": [
+        { "text": "La Belle au bois dormant", "isCorrect": false },
+        { "text": "Le Lac des cygnes", "isCorrect": false },
+        { "text": "Casse-Noisette", "isCorrect": true },
+        { "text": "Giselle", "isCorrect": false }
+      ],
+      "explanation": "« Casse-Noisette » s'inspire d'un conte d'E. T. A. Hoffmann."
+    },
+    {
+      "ref": "cla-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre"],
+      "text": "Quelle œuvre de Tchaïkovski se termine par de vrais coups de canon ?",
+      "answers": [
+        { "text": "Le « Concerto pour piano n° 1 »", "isCorrect": false },
+        { "text": "L'« Ouverture 1812 »", "isCorrect": true },
+        { "text": "La « Symphonie pathétique »", "isCorrect": false },
+        { "text": "« Roméo et Juliette »", "isCorrect": false }
+      ],
+      "explanation": "Elle célèbre la résistance russe face à l'armée de Napoléon."
+    },
+    {
+      "ref": "cla-031",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Le Sacre du printemps », dont la création en 1913 a provoqué un scandale ?",
+      "answers": [
+        { "text": "Igor Stravinsky", "isCorrect": true },
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": false },
+        { "text": "Sergueï Prokofiev", "isCorrect": false },
+        { "text": "Sergueï Rachmaninov", "isCorrect": false }
+      ],
+      "explanation": "Le public a sifflé et crié dès les premières minutes du ballet."
+    },
+    {
+      "ref": "cla-032",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre"],
+      "text": "Dans quelle ville a eu lieu la création scandaleuse du « Sacre du printemps » en 1913 ?",
+      "answers": [
+        { "text": "Saint-Pétersbourg", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true }
+      ],
+      "explanation": "La création a eu lieu au théâtre des Champs-Élysées, par les Ballets russes."
+    },
+    {
+      "ref": "cla-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Pierre et le Loup » ?",
+      "answers": [
+        { "text": "Igor Stravinsky", "isCorrect": false },
+        { "text": "Dmitri Chostakovitch", "isCorrect": false },
+        { "text": "Sergueï Prokofiev", "isCorrect": true },
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": false }
+      ],
+      "explanation": "Prokofiev l'a composé en 1936 pour faire découvrir l'orchestre aux enfants."
+    },
+    {
+      "ref": "cla-034",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre", "instrument"],
+      "text": "Dans « Pierre et le Loup », quel instrument représente le canard ?",
+      "answers": [
+        { "text": "La flûte", "isCorrect": false },
+        { "text": "Le hautbois", "isCorrect": true },
+        { "text": "La clarinette", "isCorrect": false },
+        { "text": "Le basson", "isCorrect": false }
+      ],
+      "explanation": "La flûte joue l'oiseau, la clarinette le chat et le basson le grand-père."
+    },
+    {
+      "ref": "cla-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre", "instrument"],
+      "text": "Dans « Pierre et le Loup », quels instruments représentent le loup ?",
+      "answers": [
+        { "text": "Les cors", "isCorrect": true },
+        { "text": "Les timbales", "isCorrect": false },
+        { "text": "Les contrebasses", "isCorrect": false },
+        { "text": "Les trompettes", "isCorrect": false }
+      ],
+      "explanation": "Les timbales et la grosse caisse représentent les coups de fusil des chasseurs."
+    },
+    {
+      "ref": "cla-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre", "instrument"],
+      "text": "Dans « Pierre et le Loup », quel instrument représente le chat ?",
+      "answers": [
+        { "text": "Le hautbois", "isCorrect": false },
+        { "text": "La flûte", "isCorrect": false },
+        { "text": "Le violon", "isCorrect": false },
+        { "text": "La clarinette", "isCorrect": true }
+      ],
+      "explanation": "Pierre, lui, est joué par les cordes."
+    },
+    {
+      "ref": "cla-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Le Vol du bourdon » ?",
+      "answers": [
+        { "text": "Sergueï Prokofiev", "isCorrect": false },
+        { "text": "Modeste Moussorgski", "isCorrect": false },
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": true },
+        { "text": "Alexandre Borodine", "isCorrect": false }
+      ],
+      "explanation": "C'est à l'origine un interlude de son opéra « Le Conte du tsar Saltane »."
+    },
+    {
+      "ref": "cla-038",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Shéhérazade » (1888), inspiré des « Mille et Une Nuits » ?",
+      "answers": [
+        { "text": "Alexandre Borodine", "isCorrect": false },
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": true },
+        { "text": "Mili Balakirev", "isCorrect": false },
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": false }
+      ],
+      "explanation": "Un violon solo y incarne la conteuse Shéhérazade."
+    },
+    {
+      "ref": "cla-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Tableaux d'une exposition » ?",
+      "answers": [
+        { "text": "Modeste Moussorgski", "isCorrect": true },
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": false },
+        { "text": "Alexandre Borodine", "isCorrect": false },
+        { "text": "Mikhaïl Glinka", "isCorrect": false }
+      ],
+      "explanation": "Moussorgski l'a écrit pour piano en 1874, en hommage à son ami peintre Viktor Hartmann."
+    },
+    {
+      "ref": "cla-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre", "france"],
+      "text": "Quel compositeur français a orchestré les « Tableaux d'une exposition » en 1922 ?",
+      "answers": [
+        { "text": "Claude Debussy", "isCorrect": false },
+        { "text": "Paul Dukas", "isCorrect": false },
+        { "text": "Camille Saint-Saëns", "isCorrect": false },
+        { "text": "Maurice Ravel", "isCorrect": true }
+      ],
+      "explanation": "C'est la version de Ravel qui est la plus jouée aujourd'hui."
+    },
+    {
+      "ref": "cla-041",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Une nuit sur le mont Chauve » ?",
+      "answers": [
+        { "text": "Nikolaï Rimski-Korsakov", "isCorrect": false },
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": false },
+        { "text": "Modeste Moussorgski", "isCorrect": true },
+        { "text": "Igor Stravinsky", "isCorrect": false }
+      ],
+      "explanation": "L'œuvre décrit un sabbat de sorcières pendant la nuit de la Saint-Jean."
+    },
+    {
+      "ref": "cla-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur allemand a écrit la « Passion selon saint Matthieu » ?",
+      "answers": [
+        { "text": "Georg Friedrich Haendel", "isCorrect": false },
+        { "text": "Jean-Sébastien Bach", "isCorrect": true },
+        { "text": "Georg Philipp Telemann", "isCorrect": false },
+        { "text": "Joseph Haydn", "isCorrect": false }
+      ],
+      "explanation": "Bach l'a créée à Leipzig en 1727."
+    },
+    {
+      "ref": "cla-043",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre", "instrument"],
+      "text": "Pour quel type d'instrument Bach a-t-il écrit « Le Clavier bien tempéré » ?",
+      "answers": [
+        { "text": "Les instruments à clavier", "isCorrect": true },
+        { "text": "Le violon", "isCorrect": false },
+        { "text": "Le violoncelle", "isCorrect": false },
+        { "text": "La flûte", "isCorrect": false }
+      ],
+      "explanation": "L'œuvre parcourt les 24 tonalités majeures et mineures."
+    },
+    {
+      "ref": "cla-044",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé les « Concertos brandebourgeois » ?",
+      "answers": [
+        { "text": "Antonio Vivaldi", "isCorrect": false },
+        { "text": "Georg Friedrich Haendel", "isCorrect": false },
+        { "text": "Georg Philipp Telemann", "isCorrect": false },
+        { "text": "Jean-Sébastien Bach", "isCorrect": true }
+      ],
+      "explanation": "Bach les a dédiés au margrave de Brandebourg en 1721."
+    },
+    {
+      "ref": "cla-045",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé les « Variations Goldberg » ?",
+      "answers": [
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": false },
+        { "text": "Ludwig van Beethoven", "isCorrect": false },
+        { "text": "Jean-Sébastien Bach", "isCorrect": true },
+        { "text": "Georg Friedrich Haendel", "isCorrect": false }
+      ],
+      "explanation": "Selon la légende, elles devaient aider un comte à trouver le sommeil."
+    },
+    {
+      "ref": "cla-046",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Bach et Haendel sont nés la même année, en 1685.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Domenico Scarlatti est né la même année."
+    },
+    {
+      "ref": "cla-047",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Water Music » et « Le Messie » ?",
+      "answers": [
+        { "text": "Georg Friedrich Haendel", "isCorrect": true },
+        { "text": "Jean-Sébastien Bach", "isCorrect": false },
+        { "text": "Henry Purcell", "isCorrect": false },
+        { "text": "Antonio Vivaldi", "isCorrect": false }
+      ],
+      "explanation": "« Water Music » a été jouée sur une barge sur la Tamise pour le roi George Ier."
+    },
+    {
+      "ref": "cla-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oeuvre"],
+      "text": "Pendant quel chœur du « Messie » de Haendel le public se lève-t-il traditionnellement ?",
+      "answers": [
+        { "text": "Le « Gloria »", "isCorrect": false },
+        { "text": "L'« Ave Maria »", "isCorrect": false },
+        { "text": "Le « Dies irae »", "isCorrect": false },
+        { "text": "L'« Alléluia »", "isCorrect": true }
+      ],
+      "explanation": "La tradition dit que le roi George II s'était levé à ce moment."
+    },
+    {
+      "ref": "cla-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Dans quelle ville Haendel, né en Allemagne, a-t-il fait l'essentiel de sa carrière ?",
+      "answers": [
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Londres", "isCorrect": true },
+        { "text": "Rome", "isCorrect": false }
+      ],
+      "explanation": "Haendel est devenu sujet britannique en 1727."
+    },
+    {
+      "ref": "cla-050",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé le célèbre « Canon en ré » ?",
+      "answers": [
+        { "text": "Jean-Sébastien Bach", "isCorrect": false },
+        { "text": "Johann Pachelbel", "isCorrect": true },
+        { "text": "Antonio Vivaldi", "isCorrect": false },
+        { "text": "Georg Friedrich Haendel", "isCorrect": false }
+      ],
+      "explanation": "Le « Canon » de Pachelbel est très joué lors des mariages."
+    },
+    {
+      "ref": "cla-051",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « La Moldau », qui suit le cours d'une rivière ?",
+      "answers": [
+        { "text": "Bedřich Smetana", "isCorrect": true },
+        { "text": "Antonín Dvořák", "isCorrect": false },
+        { "text": "Leoš Janáček", "isCorrect": false },
+        { "text": "Franz Liszt", "isCorrect": false }
+      ],
+      "explanation": "« La Moldau » fait partie du cycle « Ma patrie »."
+    },
+    {
+      "ref": "cla-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé la « Symphonie du Nouveau Monde » ?",
+      "answers": [
+        { "text": "Bedřich Smetana", "isCorrect": false },
+        { "text": "Gustav Mahler", "isCorrect": false },
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Antonín Dvořák", "isCorrect": true }
+      ],
+      "explanation": "Dvořák l'a écrite en 1893 pendant son séjour aux États-Unis."
+    },
+    {
+      "ref": "cla-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé les « Danses hongroises » ?",
+      "answers": [
+        { "text": "Franz Liszt", "isCorrect": false },
+        { "text": "Béla Bartók", "isCorrect": false },
+        { "text": "Johannes Brahms", "isCorrect": true },
+        { "text": "Zoltán Kodály", "isCorrect": false }
+      ],
+      "explanation": "Brahms les a d'abord écrites pour piano à quatre mains."
+    },
+    {
+      "ref": "cla-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé les « Rhapsodies hongroises » ?",
+      "answers": [
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Franz Liszt", "isCorrect": true },
+        { "text": "Béla Bartók", "isCorrect": false },
+        { "text": "Antonín Dvořák", "isCorrect": false }
+      ],
+      "explanation": "Liszt en a écrit 19 pour piano."
+    },
+    {
+      "ref": "cla-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Le Beau Danube bleu » ?",
+      "answers": [
+        { "text": "Johann Strauss fils", "isCorrect": true },
+        { "text": "Richard Strauss", "isCorrect": false },
+        { "text": "Franz Lehár", "isCorrect": false },
+        { "text": "Joseph Lanner", "isCorrect": false }
+      ],
+      "explanation": "Cette valse est devenue un symbole de Vienne."
+    },
+    {
+      "ref": "cla-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Quelle famille de compositeurs est à l'honneur du concert du Nouvel An de Vienne ?",
+      "answers": [
+        { "text": "Les Bach", "isCorrect": false },
+        { "text": "Les Mozart", "isCorrect": false },
+        { "text": "Les Couperin", "isCorrect": false },
+        { "text": "Les Strauss", "isCorrect": true }
+      ],
+      "explanation": "Le concert se termine traditionnellement par « La Marche de Radetzky » de Johann Strauss père."
+    },
+    {
+      "ref": "cla-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre"],
+      "text": "Quel film de Stanley Kubrick utilise « Le Beau Danube bleu » dans une scène spatiale ?",
+      "answers": [
+        { "text": "Orange mécanique", "isCorrect": false },
+        { "text": "Shining", "isCorrect": false },
+        { "text": "2001, l'Odyssée de l'espace", "isCorrect": true },
+        { "text": "Barry Lyndon", "isCorrect": false }
+      ],
+      "explanation": "Une station spatiale y tourne au rythme de la valse."
+    },
+    {
+      "ref": "cla-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Ainsi parlait Zarathoustra », dont l'ouverture est utilisée dans « 2001, l'Odyssée de l'espace » ?",
+      "answers": [
+        { "text": "Johann Strauss fils", "isCorrect": false },
+        { "text": "Richard Strauss", "isCorrect": true },
+        { "text": "Richard Wagner", "isCorrect": false },
+        { "text": "Gustav Mahler", "isCorrect": false }
+      ],
+      "explanation": "Le poème symphonique s'inspire de l'œuvre de Nietzsche."
+    },
+    {
+      "ref": "cla-059",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Carmina Burana », célèbre pour son « O Fortuna » ?",
+      "answers": [
+        { "text": "Carl Orff", "isCorrect": true },
+        { "text": "Richard Wagner", "isCorrect": false },
+        { "text": "Giuseppe Verdi", "isCorrect": false },
+        { "text": "Gustav Holst", "isCorrect": false }
+      ],
+      "explanation": "L'œuvre met en musique des poèmes médiévaux."
+    },
+    {
+      "ref": "cla-060",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Les Planètes » ?",
+      "answers": [
+        { "text": "Edward Elgar", "isCorrect": false },
+        { "text": "Benjamin Britten", "isCorrect": false },
+        { "text": "Ralph Vaughan Williams", "isCorrect": false },
+        { "text": "Gustav Holst", "isCorrect": true }
+      ],
+      "explanation": "La suite compte sept mouvements, un par planète sauf la Terre."
+    },
+    {
+      "ref": "cla-061",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre"],
+      "text": "Quelle planète ouvre « Les Planètes » de Holst, avec le sous-titre « celui qui apporte la guerre » ?",
+      "answers": [
+        { "text": "Jupiter", "isCorrect": false },
+        { "text": "Saturne", "isCorrect": false },
+        { "text": "Mars", "isCorrect": true },
+        { "text": "Uranus", "isCorrect": false }
+      ],
+      "explanation": "Holst s'est inspiré de l'astrologie plutôt que de l'astronomie."
+    },
+    {
+      "ref": "cla-062",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Pomp and Circumstance », chanté en Angleterre sous le titre « Land of Hope and Glory » ?",
+      "answers": [
+        { "text": "Gustav Holst", "isCorrect": false },
+        { "text": "Edward Elgar", "isCorrect": true },
+        { "text": "Henry Purcell", "isCorrect": false },
+        { "text": "Benjamin Britten", "isCorrect": false }
+      ],
+      "explanation": "Elle est aussi jouée lors des remises de diplômes aux États-Unis."
+    },
+    {
+      "ref": "cla-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Quel compositeur américain a écrit l'« Adagio pour cordes » (1936) ?",
+      "answers": [
+        { "text": "Samuel Barber", "isCorrect": true },
+        { "text": "Aaron Copland", "isCorrect": false },
+        { "text": "Leonard Bernstein", "isCorrect": false },
+        { "text": "George Gershwin", "isCorrect": false }
+      ],
+      "explanation": "L'« Adagio » est souvent joué lors des cérémonies de deuil national."
+    },
+    {
+      "ref": "cla-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Rhapsody in Blue » ?",
+      "answers": [
+        { "text": "Leonard Bernstein", "isCorrect": false },
+        { "text": "Aaron Copland", "isCorrect": false },
+        { "text": "Samuel Barber", "isCorrect": false },
+        { "text": "George Gershwin", "isCorrect": true }
+      ],
+      "explanation": "L'œuvre mêle musique classique et jazz."
+    },
+    {
+      "ref": "cla-065",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre", "instrument"],
+      "text": "Quel instrument ouvre « Rhapsody in Blue » par un célèbre glissando ?",
+      "answers": [
+        { "text": "La trompette", "isCorrect": false },
+        { "text": "Le saxophone", "isCorrect": false },
+        { "text": "La clarinette", "isCorrect": true },
+        { "text": "Le piano", "isCorrect": false }
+      ],
+      "explanation": "Le glissando serait né d'une plaisanterie du clarinettiste pendant une répétition."
+    },
+    {
+      "ref": "cla-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur et chef d'orchestre américain a écrit la musique de « West Side Story » ?",
+      "answers": [
+        { "text": "George Gershwin", "isCorrect": false },
+        { "text": "Leonard Bernstein", "isCorrect": true },
+        { "text": "Aaron Copland", "isCorrect": false },
+        { "text": "Cole Porter", "isCorrect": false }
+      ],
+      "explanation": "« West Side Story » transpose « Roméo et Juliette » à New York."
+    },
+    {
+      "ref": "cla-067",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur polonais est célèbre pour ses nocturnes et ses polonaises pour piano ?",
+      "answers": [
+        { "text": "Frédéric Chopin", "isCorrect": true },
+        { "text": "Franz Liszt", "isCorrect": false },
+        { "text": "Robert Schumann", "isCorrect": false },
+        { "text": "Ignacy Paderewski", "isCorrect": false }
+      ],
+      "explanation": "Chopin a écrit presque exclusivement pour le piano."
+    },
+    {
+      "ref": "cla-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Dans quelle ville Chopin est-il mort en 1849 ?",
+      "answers": [
+        { "text": "Varsovie", "isCorrect": false },
+        { "text": "Vienne", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true }
+      ],
+      "explanation": "Il est enterré au Père-Lachaise, mais son cœur repose à Varsovie."
+    },
+    {
+      "ref": "cla-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre"],
+      "text": "Quelle pièce de Chopin est surnommée « la Valse minute » ?",
+      "answers": [
+        { "text": "La Polonaise héroïque", "isCorrect": false },
+        { "text": "L'Étude révolutionnaire", "isCorrect": false },
+        { "text": "La Valse op. 64 n° 1", "isCorrect": true },
+        { "text": "La Ballade n° 1", "isCorrect": false }
+      ],
+      "explanation": "Elle dure en réalité plutôt une minute et demie."
+    },
+    {
+      "ref": "cla-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur et pianiste hongrois est considéré comme la première « star » du piano ?",
+      "answers": [
+        { "text": "Frédéric Chopin", "isCorrect": false },
+        { "text": "Franz Liszt", "isCorrect": true },
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Niccolò Paganini", "isCorrect": false }
+      ],
+      "explanation": "Ses concerts provoquaient de tels évanouissements qu'on a parlé de « Lisztomanie »."
+    },
+    {
+      "ref": "cla-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "instrument"],
+      "text": "Quel violoniste virtuose italien a composé 24 caprices pour violon seul ?",
+      "answers": [
+        { "text": "Niccolò Paganini", "isCorrect": true },
+        { "text": "Antonio Vivaldi", "isCorrect": false },
+        { "text": "Arcangelo Corelli", "isCorrect": false },
+        { "text": "Giuseppe Tartini", "isCorrect": false }
+      ],
+      "explanation": "Sa virtuosité était telle qu'on le disait possédé par le diable."
+    },
+    {
+      "ref": "cla-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur autrichien a écrit plus de 600 lieder, dont « Le Roi des aulnes » ?",
+      "answers": [
+        { "text": "Robert Schumann", "isCorrect": false },
+        { "text": "Gustav Mahler", "isCorrect": false },
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Franz Schubert", "isCorrect": true }
+      ],
+      "explanation": "Schubert est mort à 31 ans, en 1828."
+    },
+    {
+      "ref": "cla-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre"],
+      "text": "Quelle symphonie de Schubert est célèbre pour ne compter que deux mouvements ?",
+      "answers": [
+        { "text": "La « Grande »", "isCorrect": false },
+        { "text": "La « Tragique »", "isCorrect": false },
+        { "text": "L'« Inachevée »", "isCorrect": true },
+        { "text": "La « Pathétique »", "isCorrect": false }
+      ],
+      "explanation": "On ignore pourquoi Schubert ne l'a jamais terminée."
+    },
+    {
+      "ref": "cla-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur est surnommé « le père de la symphonie » ?",
+      "answers": [
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": false },
+        { "text": "Joseph Haydn", "isCorrect": true },
+        { "text": "Ludwig van Beethoven", "isCorrect": false },
+        { "text": "Johann Stamitz", "isCorrect": false }
+      ],
+      "explanation": "Haydn a composé plus de cent symphonies."
+    },
+    {
+      "ref": "cla-075",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oeuvre"],
+      "text": "Dans quelle symphonie de Haydn les musiciens quittent-ils la scène un à un ?",
+      "answers": [
+        { "text": "La Symphonie des Adieux", "isCorrect": true },
+        { "text": "La Symphonie La Surprise", "isCorrect": false },
+        { "text": "La Symphonie L'Horloge", "isCorrect": false },
+        { "text": "La Symphonie militaire", "isCorrect": false }
+      ],
+      "explanation": "Haydn voulait faire comprendre au prince que ses musiciens voulaient rentrer chez eux."
+    },
+    {
+      "ref": "cla-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "france"],
+      "text": "Quel compositeur était le musicien officiel de la cour de Louis XIV ?",
+      "answers": [
+        { "text": "Jean-Philippe Rameau", "isCorrect": false },
+        { "text": "François Couperin", "isCorrect": false },
+        { "text": "Marc-Antoine Charpentier", "isCorrect": false },
+        { "text": "Jean-Baptiste Lully", "isCorrect": true }
+      ],
+      "explanation": "Lully, né à Florence, est devenu surintendant de la musique du roi."
+    },
+    {
+      "ref": "cla-077",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "france"],
+      "text": "Comment Lully est-il mort en 1687 ?",
+      "answers": [
+        { "text": "D'un duel", "isCorrect": false },
+        { "text": "D'une chute de cheval", "isCorrect": false },
+        { "text": "D'une gangrène, après s'être frappé le pied avec son bâton de direction", "isCorrect": true },
+        { "text": "De la peste", "isCorrect": false }
+      ],
+      "explanation": "À l'époque, on battait la mesure en frappant le sol avec un long bâton."
+    },
+    {
+      "ref": "cla-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oeuvre", "france"],
+      "text": "Quelle œuvre de Marc-Antoine Charpentier sert d'indicatif à l'Eurovision ?",
+      "answers": [
+        { "text": "Les « Leçons de Ténèbres »", "isCorrect": false },
+        { "text": "Le prélude du « Te Deum »", "isCorrect": true },
+        { "text": "« Médée »", "isCorrect": false },
+        { "text": "La « Messe de minuit »", "isCorrect": false }
+      ],
+      "explanation": "Le prélude est utilisé par l'Union européenne de radio-télévision depuis 1954."
+    },
+    {
+      "ref": "cla-079",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "france"],
+      "text": "Quel compositeur français est surnommé « le Grand » ?",
+      "answers": [
+        { "text": "François Couperin", "isCorrect": true },
+        { "text": "Jean-Baptiste Lully", "isCorrect": false },
+        { "text": "Jean-Philippe Rameau", "isCorrect": false },
+        { "text": "Marin Marais", "isCorrect": false }
+      ],
+      "explanation": "Le surnom le distingue des autres musiciens de la famille Couperin."
+    },
+    {
+      "ref": "cla-080",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "france"],
+      "text": "Quel compositeur français a publié un « Traité de l'harmonie » en 1722 ?",
+      "answers": [
+        { "text": "François Couperin", "isCorrect": false },
+        { "text": "Jean-Baptiste Lully", "isCorrect": false },
+        { "text": "Marc-Antoine Charpentier", "isCorrect": false },
+        { "text": "Jean-Philippe Rameau", "isCorrect": true }
+      ],
+      "explanation": "Ce traité a posé les bases de la théorie de l'harmonie moderne."
+    },
+    {
+      "ref": "cla-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé le « Concerto pour piano n° 2 », dédié au médecin qui l'avait sorti d'une dépression ?",
+      "answers": [
+        { "text": "Piotr Ilitch Tchaïkovski", "isCorrect": false },
+        { "text": "Sergueï Prokofiev", "isCorrect": false },
+        { "text": "Sergueï Rachmaninov", "isCorrect": true },
+        { "text": "Alexandre Scriabine", "isCorrect": false }
+      ],
+      "explanation": "Rachmaninov l'a dédié au docteur Nikolaï Dahl."
+    },
+    {
+      "ref": "cla-082",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Finlandia » ?",
+      "answers": [
+        { "text": "Edvard Grieg", "isCorrect": false },
+        { "text": "Jean Sibelius", "isCorrect": true },
+        { "text": "Carl Nielsen", "isCorrect": false },
+        { "text": "Johan Svendsen", "isCorrect": false }
+      ],
+      "explanation": "L'œuvre est devenue un symbole de l'indépendance finlandaise."
+    },
+    {
+      "ref": "cla-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Qui a composé « Peer Gynt », qui contient « Dans l'antre du roi de la montagne » ?",
+      "answers": [
+        { "text": "Edvard Grieg", "isCorrect": true },
+        { "text": "Jean Sibelius", "isCorrect": false },
+        { "text": "Carl Nielsen", "isCorrect": false },
+        { "text": "Johan Svendsen", "isCorrect": false }
+      ],
+      "explanation": "Grieg l'a écrit pour la pièce de théâtre d'Henrik Ibsen."
+    },
+    {
+      "ref": "cla-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "De quel pays était originaire Edvard Grieg ?",
+      "answers": [
+        { "text": "Suède", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": true }
+      ],
+      "explanation": "Grieg est né à Bergen en 1843."
+    },
+    {
+      "ref": "cla-085",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Quel compositeur a écrit la « Symphonie n° 5 » dont l'« Adagietto » accompagne le film « Mort à Venise » ?",
+      "answers": [
+        { "text": "Anton Bruckner", "isCorrect": false },
+        { "text": "Richard Strauss", "isCorrect": false },
+        { "text": "Gustav Mahler", "isCorrect": true },
+        { "text": "Johannes Brahms", "isCorrect": false }
+      ],
+      "explanation": "Le film de Luchino Visconti est sorti en 1971."
+    },
+    {
+      "ref": "cla-086",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Quel compositeur italien a écrit un « Stabat Mater » en 1736, juste avant sa mort à 26 ans ?",
+      "answers": [
+        { "text": "Antonio Vivaldi", "isCorrect": false },
+        { "text": "Giovanni Battista Pergolesi", "isCorrect": true },
+        { "text": "Alessandro Scarlatti", "isCorrect": false },
+        { "text": "Arcangelo Corelli", "isCorrect": false }
+      ],
+      "explanation": "Pergolèse est mort de la tuberculose."
+    },
+    {
+      "ref": "cla-087",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Quel compositeur allemand a écrit « Un requiem allemand » ?",
+      "answers": [
+        { "text": "Johannes Brahms", "isCorrect": true },
+        { "text": "Richard Wagner", "isCorrect": false },
+        { "text": "Felix Mendelssohn", "isCorrect": false },
+        { "text": "Robert Schumann", "isCorrect": false }
+      ],
+      "explanation": "Brahms a utilisé des textes de la Bible en allemand au lieu du latin."
+    },
+    {
+      "ref": "cla-088",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur allemand romantique était l'époux de la pianiste Clara Wieck ?",
+      "answers": [
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Felix Mendelssohn", "isCorrect": false },
+        { "text": "Franz Liszt", "isCorrect": false },
+        { "text": "Robert Schumann", "isCorrect": true }
+      ],
+      "explanation": "Clara Schumann était elle-même une grande compositrice."
+    },
+    {
+      "ref": "cla-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur", "oeuvre"],
+      "text": "Quel compositeur allemand a écrit la musique du « Songe d'une nuit d'été », qui contient une célèbre marche nuptiale ?",
+      "answers": [
+        { "text": "Richard Wagner", "isCorrect": false },
+        { "text": "Robert Schumann", "isCorrect": false },
+        { "text": "Felix Mendelssohn", "isCorrect": true },
+        { "text": "Carl Maria von Weber", "isCorrect": false }
+      ],
+      "explanation": "Mendelssohn a écrit l'ouverture à seulement 17 ans."
+    },
+    {
+      "ref": "cla-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur russe a écrit la « Symphonie Leningrad » pendant le siège de la ville ?",
+      "answers": [
+        { "text": "Sergueï Prokofiev", "isCorrect": false },
+        { "text": "Dmitri Chostakovitch", "isCorrect": true },
+        { "text": "Igor Stravinsky", "isCorrect": false },
+        { "text": "Aram Khatchatourian", "isCorrect": false }
+      ],
+      "explanation": "La symphonie a été jouée dans Leningrad assiégée en 1942."
+    },
+    {
+      "ref": "cla-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur italien est connu pour un « Adagio » en sol mineur, reconstitué en réalité au XXe siècle ?",
+      "answers": [
+        { "text": "Tomaso Albinoni", "isCorrect": true },
+        { "text": "Antonio Vivaldi", "isCorrect": false },
+        { "text": "Arcangelo Corelli", "isCorrect": false },
+        { "text": "Giuseppe Tartini", "isCorrect": false }
+      ],
+      "explanation": "L'« Adagio d'Albinoni » a été en grande partie composé par le musicologue Remo Giazotto."
+    },
+    {
+      "ref": "cla-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur italien a écrit « Les Pins de Rome » ?",
+      "answers": [
+        { "text": "Giacomo Puccini", "isCorrect": false },
+        { "text": "Ermanno Wolf-Ferrari", "isCorrect": false },
+        { "text": "Pietro Mascagni", "isCorrect": false },
+        { "text": "Ottorino Respighi", "isCorrect": true }
+      ],
+      "explanation": "Respighi a consacré trois poèmes symphoniques à Rome."
+    },
+    {
+      "ref": "cla-093",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur espagnol a écrit le « Concierto de Aranjuez » pour guitare ?",
+      "answers": [
+        { "text": "Manuel de Falla", "isCorrect": false },
+        { "text": "Isaac Albéniz", "isCorrect": false },
+        { "text": "Joaquín Rodrigo", "isCorrect": true },
+        { "text": "Enrique Granados", "isCorrect": false }
+      ],
+      "explanation": "Rodrigo, aveugle depuis l'enfance, l'a composé en 1939."
+    },
+    {
+      "ref": "cla-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur argentin a révolutionné le tango ?",
+      "answers": [
+        { "text": "Carlos Gardel", "isCorrect": false },
+        { "text": "Astor Piazzolla", "isCorrect": true },
+        { "text": "Alberto Ginastera", "isCorrect": false },
+        { "text": "Heitor Villa-Lobos", "isCorrect": false }
+      ],
+      "explanation": "Piazzolla a créé le « tango nuevo », mêlant tango, jazz et musique classique."
+    },
+    {
+      "ref": "cla-095",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur estonien est célèbre pour son style « tintinnabuli » ?",
+      "answers": [
+        { "text": "Arvo Pärt", "isCorrect": true },
+        { "text": "Philip Glass", "isCorrect": false },
+        { "text": "Henryk Górecki", "isCorrect": false },
+        { "text": "John Tavener", "isCorrect": false }
+      ],
+      "explanation": "Le style rappelle le son des cloches."
+    },
+    {
+      "ref": "cla-096",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur minimaliste américain a écrit « Music for 18 Musicians » ?",
+      "answers": [
+        { "text": "Philip Glass", "isCorrect": false },
+        { "text": "John Adams", "isCorrect": false },
+        { "text": "Terry Riley", "isCorrect": false },
+        { "text": "Steve Reich", "isCorrect": true }
+      ],
+      "explanation": "Le minimalisme répète de courts motifs qui évoluent lentement."
+    },
+    {
+      "ref": "cla-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur américain a écrit « 4′33″ », une œuvre où les musiciens ne jouent aucune note ?",
+      "answers": [
+        { "text": "Steve Reich", "isCorrect": false },
+        { "text": "Philip Glass", "isCorrect": false },
+        { "text": "John Cage", "isCorrect": true },
+        { "text": "Morton Feldman", "isCorrect": false }
+      ],
+      "explanation": "La « musique » est faite des bruits de la salle pendant 4 minutes et 33 secondes."
+    },
+    {
+      "ref": "cla-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur autrichien est le père du dodécaphonisme ?",
+      "answers": [
+        { "text": "Alban Berg", "isCorrect": false },
+        { "text": "Arnold Schoenberg", "isCorrect": true },
+        { "text": "Anton Webern", "isCorrect": false },
+        { "text": "Gustav Mahler", "isCorrect": false }
+      ],
+      "explanation": "Le dodécaphonisme utilise les douze notes de la gamme chromatique de façon égale."
+    },
+    {
+      "ref": "cla-099",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "france"],
+      "text": "Quel compositeur français a écrit le « Quatuor pour la fin du temps » alors qu'il était prisonnier ?",
+      "answers": [
+        { "text": "Olivier Messiaen", "isCorrect": true },
+        { "text": "Francis Poulenc", "isCorrect": false },
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Arthur Honegger", "isCorrect": false }
+      ],
+      "explanation": "Messiaen l'a créé en 1941 dans un camp de prisonniers en Silésie."
+    },
+    {
+      "ref": "cla-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["compositeur", "france"],
+      "text": "Lequel de ces compositeurs faisait partie du « Groupe des Six » ?",
+      "answers": [
+        { "text": "Claude Debussy", "isCorrect": false },
+        { "text": "Maurice Ravel", "isCorrect": false },
+        { "text": "Erik Satie", "isCorrect": false },
+        { "text": "Francis Poulenc", "isCorrect": true }
+      ],
+      "explanation": "Erik Satie était le mentor du groupe, sans en faire partie."
+    },
+    {
+      "ref": "cla-101",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur italien a écrit les musiques des westerns de Sergio Leone ?",
+      "answers": [
+        { "text": "Nino Rota", "isCorrect": false },
+        { "text": "Riz Ortolani", "isCorrect": false },
+        { "text": "Ennio Morricone", "isCorrect": true },
+        { "text": "Luis Bacalov", "isCorrect": false }
+      ],
+      "explanation": "Morricone a reçu un Oscar d'honneur en 2007, puis un Oscar pour « Les Huit Salopards »."
+    },
+    {
+      "ref": "cla-102",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["compositeur"],
+      "text": "Quel compositeur a écrit les musiques de « Star Wars » et de « Jurassic Park » ?",
+      "answers": [
+        { "text": "Hans Zimmer", "isCorrect": false },
+        { "text": "John Williams", "isCorrect": true },
+        { "text": "Howard Shore", "isCorrect": false },
+        { "text": "Danny Elfman", "isCorrect": false }
+      ],
+      "explanation": "John Williams est l'une des personnes les plus nommées de l'histoire des Oscars."
+    },
+    {
+      "ref": "cla-103",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Combien de cordes a un violon ?",
+      "answers": [
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "Le violon est accordé en sol, ré, la et mi."
+    },
+    {
+      "ref": "cla-104",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Quel est le plus grave des instruments à cordes frottées de l'orchestre ?",
+      "answers": [
+        { "text": "Le violoncelle", "isCorrect": false },
+        { "text": "L'alto", "isCorrect": false },
+        { "text": "Le violon", "isCorrect": false },
+        { "text": "La contrebasse", "isCorrect": true }
+      ],
+      "explanation": "La contrebasse joue souvent la ligne de basse de l'orchestre."
+    },
+    {
+      "ref": "cla-105",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Quel instrument à cordes est un peu plus grand et plus grave que le violon ?",
+      "answers": [
+        { "text": "Le violoncelle", "isCorrect": false },
+        { "text": "La viole de gambe", "isCorrect": false },
+        { "text": "L'alto", "isCorrect": true },
+        { "text": "La mandoline", "isCorrect": false }
+      ],
+      "explanation": "L'alto se joue aussi sous le menton."
+    },
+    {
+      "ref": "cla-106",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Combien de touches compte un piano moderne standard ?",
+      "answers": [
+        { "text": "76", "isCorrect": false },
+        { "text": "88", "isCorrect": true },
+        { "text": "64", "isCorrect": false },
+        { "text": "100", "isCorrect": false }
+      ],
+      "explanation": "52 touches blanches et 36 touches noires."
+    },
+    {
+      "ref": "cla-107",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Quel est le nom d'origine du piano ?",
+      "answers": [
+        { "text": "Le pianoforte", "isCorrect": true },
+        { "text": "Le pianissimo", "isCorrect": false },
+        { "text": "Le clavicorde", "isCorrect": false },
+        { "text": "L'épinette", "isCorrect": false }
+      ],
+      "explanation": "Son nom vient du fait qu'il peut jouer doux (« piano ») et fort (« forte »)."
+    },
+    {
+      "ref": "cla-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Quel facteur italien est considéré comme l'inventeur du piano vers 1700 ?",
+      "answers": [
+        { "text": "Antonio Stradivari", "isCorrect": false },
+        { "text": "Ignace Pleyel", "isCorrect": false },
+        { "text": "Sébastien Érard", "isCorrect": false },
+        { "text": "Bartolomeo Cristofori", "isCorrect": true }
+      ],
+      "explanation": "Cristofori travaillait pour la famille de Médicis à Florence."
+    },
+    {
+      "ref": "cla-109",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Quel luthier italien est célèbre pour ses violons d'exception ?",
+      "answers": [
+        { "text": "Bartolomeo Cristofori", "isCorrect": false },
+        { "text": "Ignace Pleyel", "isCorrect": false },
+        { "text": "Antonio Stradivari", "isCorrect": true },
+        { "text": "Henry Steinway", "isCorrect": false }
+      ],
+      "explanation": "Ses violons, appelés « Stradivarius », valent des millions d'euros."
+    },
+    {
+      "ref": "cla-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Dans quelle ville italienne travaillait Stradivarius ?",
+      "answers": [
+        { "text": "Venise", "isCorrect": false },
+        { "text": "Crémone", "isCorrect": true },
+        { "text": "Milan", "isCorrect": false },
+        { "text": "Florence", "isCorrect": false }
+      ],
+      "explanation": "Crémone est aussi la ville des luthiers Amati et Guarneri."
+    },
+    {
+      "ref": "cla-111",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "À quelle famille d'instruments appartient le hautbois ?",
+      "answers": [
+        { "text": "Les bois", "isCorrect": true },
+        { "text": "Les cuivres", "isCorrect": false },
+        { "text": "Les cordes", "isCorrect": false },
+        { "text": "Les percussions", "isCorrect": false }
+      ],
+      "explanation": "Le hautbois produit le son grâce à une anche double."
+    },
+    {
+      "ref": "cla-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "À quelle famille d'instruments appartient le saxophone, bien qu'il soit en métal ?",
+      "answers": [
+        { "text": "Les cuivres", "isCorrect": false },
+        { "text": "Les cordes", "isCorrect": false },
+        { "text": "Les percussions", "isCorrect": false },
+        { "text": "Les bois", "isCorrect": true }
+      ],
+      "explanation": "Il est classé dans les bois car le son est produit par une anche."
+    },
+    {
+      "ref": "cla-113",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Qui a inventé le saxophone ?",
+      "answers": [
+        { "text": "Theobald Boehm", "isCorrect": false },
+        { "text": "Charles Sax", "isCorrect": false },
+        { "text": "Adolphe Sax", "isCorrect": true },
+        { "text": "Ignace Pleyel", "isCorrect": false }
+      ],
+      "explanation": "Le Belge Adolphe Sax l'a breveté en 1846."
+    },
+    {
+      "ref": "cla-114",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Quel instrument donne le « la » pour accorder l'orchestre ?",
+      "answers": [
+        { "text": "Le violon", "isCorrect": false },
+        { "text": "Le hautbois", "isCorrect": true },
+        { "text": "La flûte", "isCorrect": false },
+        { "text": "Le piano", "isCorrect": false }
+      ],
+      "explanation": "Son son est stable et perce bien au milieu des autres instruments."
+    },
+    {
+      "ref": "cla-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Quelle fréquence correspond aujourd'hui au « la » de référence ?",
+      "answers": [
+        { "text": "440 Hz", "isCorrect": true },
+        { "text": "432 Hz", "isCorrect": false },
+        { "text": "415 Hz", "isCorrect": false },
+        { "text": "500 Hz", "isCorrect": false }
+      ],
+      "explanation": "Les orchestres baroques jouent souvent plus bas, autour de 415 Hz."
+    },
+    {
+      "ref": "cla-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Quel est le plus aigu des instruments à vent de l'orchestre ?",
+      "answers": [
+        { "text": "La flûte traversière", "isCorrect": false },
+        { "text": "Le hautbois", "isCorrect": false },
+        { "text": "La clarinette", "isCorrect": false },
+        { "text": "Le piccolo", "isCorrect": true }
+      ],
+      "explanation": "Le piccolo sonne une octave au-dessus de la flûte."
+    },
+    {
+      "ref": "cla-117",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Quels instruments à percussion accordables sont souvent joués par paires dans l'orchestre ?",
+      "answers": [
+        { "text": "La grosse caisse", "isCorrect": false },
+        { "text": "Le triangle", "isCorrect": false },
+        { "text": "Les timbales", "isCorrect": true },
+        { "text": "Les cymbales", "isCorrect": false }
+      ],
+      "explanation": "Le timbalier change l'accord de ses timbales grâce à des pédales."
+    },
+    {
+      "ref": "cla-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Quel instrument à clavier pince les cordes au lieu de les frapper ?",
+      "answers": [
+        { "text": "Le piano", "isCorrect": false },
+        { "text": "Le clavecin", "isCorrect": true },
+        { "text": "L'orgue", "isCorrect": false },
+        { "text": "Le célesta", "isCorrect": false }
+      ],
+      "explanation": "Le clavecin était l'instrument à clavier roi de l'époque baroque."
+    },
+    {
+      "ref": "cla-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument", "oeuvre"],
+      "text": "Quel instrument au son de clochettes joue la « Danse de la fée Dragée » de « Casse-Noisette » ?",
+      "answers": [
+        { "text": "Le célesta", "isCorrect": true },
+        { "text": "Le glockenspiel", "isCorrect": false },
+        { "text": "Le xylophone", "isCorrect": false },
+        { "text": "Le carillon", "isCorrect": false }
+      ],
+      "explanation": "Tchaïkovski l'avait découvert à Paris et l'a fait venir en secret."
+    },
+    {
+      "ref": "cla-120",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Combien de cordes compte environ une harpe de concert ?",
+      "answers": [
+        { "text": "22", "isCorrect": false },
+        { "text": "12", "isCorrect": false },
+        { "text": "88", "isCorrect": false },
+        { "text": "47", "isCorrect": true }
+      ],
+      "explanation": "Les cordes de do et de fa sont colorées pour se repérer."
+    },
+    {
+      "ref": "cla-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Combien de pédales compte une harpe de concert ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Chaque pédale modifie toutes les cordes d'une même note."
+    },
+    {
+      "ref": "cla-122",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Quel est le plus grave des cuivres de l'orchestre ?",
+      "answers": [
+        { "text": "Le trombone", "isCorrect": false },
+        { "text": "Le tuba", "isCorrect": true },
+        { "text": "Le cor", "isCorrect": false },
+        { "text": "La trompette", "isCorrect": false }
+      ],
+      "explanation": "Le tuba est entré dans l'orchestre au XIXe siècle."
+    },
+    {
+      "ref": "cla-123",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Quel cuivre utilise une coulisse pour changer de note ?",
+      "answers": [
+        { "text": "Le trombone", "isCorrect": true },
+        { "text": "Le tuba", "isCorrect": false },
+        { "text": "Le cor", "isCorrect": false },
+        { "text": "La trompette", "isCorrect": false }
+      ],
+      "explanation": "La coulisse fait varier la longueur du tube."
+    },
+    {
+      "ref": "cla-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Quel instrument est surnommé « le roi des instruments » ?",
+      "answers": [
+        { "text": "Le piano", "isCorrect": false },
+        { "text": "Le violon", "isCorrect": false },
+        { "text": "La harpe", "isCorrect": false },
+        { "text": "L'orgue", "isCorrect": true }
+      ],
+      "explanation": "Mozart l'appelait ainsi pour la richesse de ses sons."
+    },
+    {
+      "ref": "cla-125",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Combien de cordes a une guitare classique ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "6", "isCorrect": true },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Les cordes d'une guitare classique sont en nylon."
+    },
+    {
+      "ref": "cla-126",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « forte » sur une partition ?",
+      "answers": [
+        { "text": "Lentement", "isCorrect": false },
+        { "text": "Fort", "isCorrect": true },
+        { "text": "Doucement", "isCorrect": false },
+        { "text": "Rapidement", "isCorrect": false }
+      ],
+      "explanation": "Le contraire de « forte » est « piano », doucement."
+    },
+    {
+      "ref": "cla-127",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « piano » sur une partition ?",
+      "answers": [
+        { "text": "Doucement", "isCorrect": true },
+        { "text": "Fort", "isCorrect": false },
+        { "text": "Vite", "isCorrect": false },
+        { "text": "Lié", "isCorrect": false }
+      ],
+      "explanation": "« Pianissimo » veut dire très doucement."
+    },
+    {
+      "ref": "cla-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « allegro » ?",
+      "answers": [
+        { "text": "Lent", "isCorrect": false },
+        { "text": "Modéré", "isCorrect": false },
+        { "text": "Très lent", "isCorrect": false },
+        { "text": "Rapide et joyeux", "isCorrect": true }
+      ],
+      "explanation": "« Allegro » veut dire « joyeux » en italien."
+    },
+    {
+      "ref": "cla-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « adagio » ?",
+      "answers": [
+        { "text": "Rapidement", "isCorrect": false },
+        { "text": "Très fort", "isCorrect": false },
+        { "text": "Lentement", "isCorrect": true },
+        { "text": "Joyeusement", "isCorrect": false }
+      ],
+      "explanation": "« Adagio » veut dire « à l'aise » en italien."
+    },
+    {
+      "ref": "cla-130",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « crescendo » ?",
+      "answers": [
+        { "text": "En ralentissant", "isCorrect": false },
+        { "text": "En augmentant le volume", "isCorrect": true },
+        { "text": "En diminuant le volume", "isCorrect": false },
+        { "text": "En accélérant", "isCorrect": false }
+      ],
+      "explanation": "Le contraire est « decrescendo » ou « diminuendo »."
+    },
+    {
+      "ref": "cla-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "instrument"],
+      "text": "Que signifie « pizzicato » pour un instrument à cordes ?",
+      "answers": [
+        { "text": "Pincer les cordes avec les doigts", "isCorrect": true },
+        { "text": "Jouer avec l'archet", "isCorrect": false },
+        { "text": "Étouffer le son", "isCorrect": false },
+        { "text": "Jouer très vite", "isCorrect": false }
+      ],
+      "explanation": "On revient à l'archet avec l'indication « arco »."
+    },
+    {
+      "ref": "cla-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Quels instruments composent un quatuor à cordes ?",
+      "answers": [
+        { "text": "Quatre violons", "isCorrect": false },
+        { "text": "Un violon, un alto, un violoncelle et une contrebasse", "isCorrect": false },
+        { "text": "Un violon, un violoncelle, un piano et une harpe", "isCorrect": false },
+        { "text": "Deux violons, un alto et un violoncelle", "isCorrect": true }
+      ],
+      "explanation": "Haydn a fixé cette formation au XVIIIe siècle."
+    },
+    {
+      "ref": "cla-133",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Combien de mouvements compte généralement une symphonie classique ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Un mouvement rapide, un lent, un menuet ou scherzo, puis un final rapide."
+    },
+    {
+      "ref": "cla-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Combien de mouvements compte généralement un concerto classique ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Rapide, lent, rapide."
+    },
+    {
+      "ref": "cla-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on le passage où le soliste joue seul, souvent de façon virtuose, dans un concerto ?",
+      "answers": [
+        { "text": "La cadence", "isCorrect": true },
+        { "text": "La coda", "isCorrect": false },
+        { "text": "Le tutti", "isCorrect": false },
+        { "text": "Le refrain", "isCorrect": false }
+      ],
+      "explanation": "À l'origine, la cadence était improvisée."
+    },
+    {
+      "ref": "cla-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment s'appelle la partie qui conclut un morceau ?",
+      "answers": [
+        { "text": "Le prélude", "isCorrect": false },
+        { "text": "L'ouverture", "isCorrect": false },
+        { "text": "Le thème", "isCorrect": false },
+        { "text": "La coda", "isCorrect": true }
+      ],
+      "explanation": "« Coda » veut dire « queue » en italien."
+    },
+    {
+      "ref": "cla-137",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Combien de lignes compte une portée ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "Les notes se placent sur les lignes et dans les interlignes."
+    },
+    {
+      "ref": "cla-138",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Quelle clé est la plus utilisée pour la main droite au piano ?",
+      "answers": [
+        { "text": "La clé de fa", "isCorrect": false },
+        { "text": "La clé de sol", "isCorrect": true },
+        { "text": "La clé d'ut", "isCorrect": false },
+        { "text": "La clé de la", "isCorrect": false }
+      ],
+      "explanation": "La main gauche lit le plus souvent en clé de fa."
+    },
+    {
+      "ref": "cla-139",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Combien de notes différentes compte la gamme de do majeur ?",
+      "answers": [
+        { "text": "7", "isCorrect": true },
+        { "text": "8", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Do, ré, mi, fa, sol, la, si."
+    },
+    {
+      "ref": "cla-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Combien de demi-tons compte une octave ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "12", "isCorrect": true }
+      ],
+      "explanation": "Ce sont les 7 touches blanches et les 5 touches noires d'une octave de piano."
+    },
+    {
+      "ref": "cla-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Que signifie « tutti » sur une partition ?",
+      "answers": [
+        { "text": "Le soliste joue seul", "isCorrect": false },
+        { "text": "Les cordes se taisent", "isCorrect": false },
+        { "text": "Tout l'orchestre joue ensemble", "isCorrect": true },
+        { "text": "On répète le passage", "isCorrect": false }
+      ],
+      "explanation": "« Tutti » veut dire « tous » en italien."
+    },
+    {
+      "ref": "cla-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire"],
+      "text": "Que désigne le « rubato » ?",
+      "answers": [
+        { "text": "Un passage joué très fort", "isCorrect": false },
+        { "text": "Une liberté de tempo dans l'interprétation", "isCorrect": true },
+        { "text": "Une note répétée très vite", "isCorrect": false },
+        { "text": "Un accord joué note par note", "isCorrect": false }
+      ],
+      "explanation": "Chopin en faisait un usage célèbre."
+    },
+    {
+      "ref": "cla-143",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on le violoniste qui guide les cordes et accorde l'orchestre ?",
+      "answers": [
+        { "text": "Le violon solo", "isCorrect": true },
+        { "text": "Le chef de pupitre des altos", "isCorrect": false },
+        { "text": "Le répétiteur", "isCorrect": false },
+        { "text": "Le soliste invité", "isCorrect": false }
+      ],
+      "explanation": "Il entre en scène juste avant le chef d'orchestre."
+    },
+    {
+      "ref": "cla-144",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "À quelle période musicale appartiennent Bach et Vivaldi ?",
+      "answers": [
+        { "text": "La période classique", "isCorrect": false },
+        { "text": "La période romantique", "isCorrect": false },
+        { "text": "La Renaissance", "isCorrect": false },
+        { "text": "La période baroque", "isCorrect": true }
+      ],
+      "explanation": "La période baroque s'étend environ de 1600 à 1750."
+    },
+    {
+      "ref": "cla-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "À quelle période musicale appartiennent Haydn et Mozart ?",
+      "answers": [
+        { "text": "La période baroque", "isCorrect": false },
+        { "text": "La période romantique", "isCorrect": false },
+        { "text": "La période classique", "isCorrect": true },
+        { "text": "La période moderne", "isCorrect": false }
+      ],
+      "explanation": "La période classique s'étend environ de 1750 à 1820."
+    },
+    {
+      "ref": "cla-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "À quelle période musicale appartiennent Chopin, Liszt et Schumann ?",
+      "answers": [
+        { "text": "La période baroque", "isCorrect": false },
+        { "text": "La période romantique", "isCorrect": true },
+        { "text": "La période classique", "isCorrect": false },
+        { "text": "La Renaissance", "isCorrect": false }
+      ],
+      "explanation": "Le romantisme privilégie l'expression des sentiments."
+    },
+    {
+      "ref": "cla-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel compositeur fait la transition entre la période classique et le romantisme ?",
+      "answers": [
+        { "text": "Ludwig van Beethoven", "isCorrect": true },
+        { "text": "Jean-Sébastien Bach", "isCorrect": false },
+        { "text": "Claude Debussy", "isCorrect": false },
+        { "text": "Antonio Vivaldi", "isCorrect": false }
+      ],
+      "explanation": "Ses premières œuvres sont classiques, ses dernières déjà romantiques."
+    },
+    {
+      "ref": "cla-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "france"],
+      "text": "À quel courant artistique associe-t-on souvent Debussy et Ravel ?",
+      "answers": [
+        { "text": "Le baroque", "isCorrect": false },
+        { "text": "Le romantisme", "isCorrect": false },
+        { "text": "Le dodécaphonisme", "isCorrect": false },
+        { "text": "L'impressionnisme", "isCorrect": true }
+      ],
+      "explanation": "Debussy lui-même n'aimait pas ce terme emprunté à la peinture."
+    },
+    {
+      "ref": "cla-149",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "La mort de quel compositeur marque traditionnellement la fin de la période baroque, en 1750 ?",
+      "answers": [
+        { "text": "Antonio Vivaldi", "isCorrect": false },
+        { "text": "Georg Friedrich Haendel", "isCorrect": false },
+        { "text": "Jean-Sébastien Bach", "isCorrect": true },
+        { "text": "Jean-Philippe Rameau", "isCorrect": false }
+      ],
+      "explanation": "Vivaldi était mort en 1741 et Haendel est mort en 1759."
+    },
+    {
+      "ref": "cla-150",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "france"],
+      "text": "Quelle grande salle de concert a ouvert en 2015 dans le parc de la Villette, à Paris ?",
+      "answers": [
+        { "text": "La salle Pleyel", "isCorrect": false },
+        { "text": "La Philharmonie de Paris", "isCorrect": true },
+        { "text": "Le théâtre des Champs-Élysées", "isCorrect": false },
+        { "text": "La salle Gaveau", "isCorrect": false }
+      ],
+      "explanation": "Elle a été dessinée par l'architecte Jean Nouvel."
+    },
+    {
+      "ref": "cla-151",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Dans quelle ville se trouve le Musikverein, où se tient le concert du Nouvel An ?",
+      "answers": [
+        { "text": "Vienne", "isCorrect": true },
+        { "text": "Salzbourg", "isCorrect": false },
+        { "text": "Berlin", "isCorrect": false },
+        { "text": "Munich", "isCorrect": false }
+      ],
+      "explanation": "Sa « salle dorée » est réputée pour son acoustique."
+    },
+    {
+      "ref": "cla-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel compositeur a dirigé la création de sa 9e symphonie en étant presque sourd, et a dû être retourné pour voir le public applaudir ?",
+      "answers": [
+        { "text": "Wolfgang Amadeus Mozart", "isCorrect": false },
+        { "text": "Joseph Haydn", "isCorrect": false },
+        { "text": "Johannes Brahms", "isCorrect": false },
+        { "text": "Ludwig van Beethoven", "isCorrect": true }
+      ],
+      "explanation": "L'anecdote a eu lieu à Vienne, en 1824."
+    }
+  ]
+}

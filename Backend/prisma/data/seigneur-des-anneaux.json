@@ -1,0 +1,3092 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 221,
+    "parDifficulte": { "1": 66, "2": 99, "3": 56 },
+    "parType": { "multiple": 206, "boolean": 15 },
+    "avecImage": 0,
+    "sansImage": 221,
+    "parTag": {
+      "personnage": 90,
+      "film": 45,
+      "livre": 33,
+      "univers": 29,
+      "lieu": 27,
+      "citation": 10,
+      "hobbit": 6,
+      "avant-apres": 6,
+      "record": 3
+    }
+  },
+  "category": {
+    "slug": "seigneur-des-anneaux",
+    "name": "Le Seigneur des Anneaux"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "sda-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "Qui a écrit « Le Seigneur des Anneaux » ?",
+      "answers": [
+        { "text": "C. S. Lewis", "isCorrect": false },
+        { "text": "George R. R. Martin", "isCorrect": false },
+        { "text": "J. R. R. Tolkien", "isCorrect": true },
+        { "text": "J. K. Rowling", "isCorrect": false }
+      ],
+      "explanation": "Tolkien a mis plus de douze ans à l'écrire."
+    },
+    {
+      "ref": "sda-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "De quelle nationalité était J. R. R. Tolkien ?",
+      "answers": [
+        { "text": "Américaine", "isCorrect": false },
+        { "text": "Britannique", "isCorrect": true },
+        { "text": "Irlandaise", "isCorrect": false },
+        { "text": "Néo-zélandaise", "isCorrect": false }
+      ],
+      "explanation": "Il a vécu presque toute sa vie en Angleterre."
+    },
+    {
+      "ref": "sda-003",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre"],
+      "text": "Dans quel pays Tolkien est-il né, en 1892 ?",
+      "answers": [
+        { "text": "En Afrique du Sud", "isCorrect": true },
+        { "text": "En Angleterre", "isCorrect": false },
+        { "text": "En Irlande", "isCorrect": false },
+        { "text": "En Australie", "isCorrect": false }
+      ],
+      "explanation": "Il est né à Bloemfontein et est arrivé en Angleterre à l'âge de 3 ans."
+    },
+    {
+      "ref": "sda-004",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Dans quelle université Tolkien a-t-il enseigné ?",
+      "answers": [
+        { "text": "Cambridge", "isCorrect": false },
+        { "text": "Édimbourg", "isCorrect": false },
+        { "text": "Harvard", "isCorrect": false },
+        { "text": "Oxford", "isCorrect": true }
+      ],
+      "explanation": "Il y a enseigné pendant plus de trente ans."
+    },
+    {
+      "ref": "sda-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Quelle matière Tolkien enseignait-il ?",
+      "answers": [
+        { "text": "Les mathématiques", "isCorrect": false },
+        { "text": "L'histoire de l'art", "isCorrect": false },
+        { "text": "L'anglais ancien et la philologie", "isCorrect": true },
+        { "text": "La théologie", "isCorrect": false }
+      ],
+      "explanation": "Sa passion pour les langues anciennes a nourri toute son œuvre."
+    },
+    {
+      "ref": "sda-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Quel écrivain, auteur du « Monde de Narnia », était un ami proche de Tolkien ?",
+      "answers": [
+        { "text": "Lewis Carroll", "isCorrect": false },
+        { "text": "C. S. Lewis", "isCorrect": true },
+        { "text": "Roald Dahl", "isCorrect": false },
+        { "text": "J. M. Barrie", "isCorrect": false }
+      ],
+      "explanation": "Les deux hommes enseignaient à Oxford."
+    },
+    {
+      "ref": "sda-007",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre"],
+      "text": "Comment s'appelait le cercle littéraire d'Oxford dont faisaient partie Tolkien et C. S. Lewis ?",
+      "answers": [
+        { "text": "Les Inklings", "isCorrect": true },
+        { "text": "Les Hobbits", "isCorrect": false },
+        { "text": "La Communauté", "isCorrect": false },
+        { "text": "Les Oxfordiens", "isCorrect": false }
+      ],
+      "explanation": "Ils s'y lisaient leurs textes en cours d'écriture."
+    },
+    {
+      "ref": "sda-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "Quel livre de Tolkien, paru en 1937, raconte les aventures de Bilbon (Bilbo) avant « Le Seigneur des Anneaux » ?",
+      "answers": [
+        { "text": "Le Silmarillion (The Silmarillion)", "isCorrect": false },
+        { "text": "Les Enfants de Húrin (The Children of Húrin)", "isCorrect": false },
+        { "text": "Le Fermier Gilles de Ham (Farmer Giles of Ham)", "isCorrect": false },
+        { "text": "Bilbo le Hobbit (The Hobbit)", "isCorrect": true }
+      ],
+      "explanation": "Le succès du livre a poussé l'éditeur à demander une suite."
+    },
+    {
+      "ref": "sda-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "En quelles années « Le Seigneur des Anneaux » a-t-il été publié en anglais ?",
+      "answers": [
+        { "text": "1937 et 1938", "isCorrect": false },
+        { "text": "1965 et 1966", "isCorrect": false },
+        { "text": "1954 et 1955", "isCorrect": true },
+        { "text": "1945 et 1946", "isCorrect": false }
+      ],
+      "explanation": "Les trois tomes sont parus à quelques mois d'intervalle."
+    },
+    {
+      "ref": "sda-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "En combien de tomes « Le Seigneur des Anneaux » est-il généralement publié ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "C'est l'éditeur qui a choisi de le découper en trois volumes."
+    },
+    {
+      "ref": "sda-011",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Tolkien considérait « Le Seigneur des Anneaux » comme un seul roman, et non comme une trilogie.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il l'avait découpé en six « livres », regroupés deux par deux par l'éditeur."
+    },
+    {
+      "ref": "sda-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "Quel est le titre du premier tome ?",
+      "answers": [
+        { "text": "Les Deux Tours (The Two Towers)", "isCorrect": false },
+        { "text": "Le Retour du Roi (The Return of the King)", "isCorrect": false },
+        { "text": "Le Silmarillion (The Silmarillion)", "isCorrect": false },
+        { "text": "La Communauté de l'Anneau (The Fellowship of the Ring)", "isCorrect": true }
+      ],
+      "explanation": "Il raconte le départ de Frodon et la formation de la Communauté."
+    },
+    {
+      "ref": "sda-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "Quel est le titre du deuxième tome ?",
+      "answers": [
+        { "text": "La Communauté de l'Anneau (The Fellowship of the Ring)", "isCorrect": false },
+        { "text": "Le Retour du Roi (The Return of the King)", "isCorrect": false },
+        { "text": "Les Deux Tours (The Two Towers)", "isCorrect": true },
+        { "text": "La Guerre de l'Anneau (The War of the Ring)", "isCorrect": false }
+      ],
+      "explanation": "Il commence juste après la séparation de la Communauté."
+    },
+    {
+      "ref": "sda-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["livre"],
+      "text": "Quel est le titre du troisième tome ?",
+      "answers": [
+        { "text": "Les Deux Tours (The Two Towers)", "isCorrect": false },
+        { "text": "Le Retour du Roi (The Return of the King)", "isCorrect": true },
+        { "text": "La Communauté de l'Anneau (The Fellowship of the Ring)", "isCorrect": false },
+        { "text": "Le Seigneur des Ténèbres (The Dark Lord)", "isCorrect": false }
+      ],
+      "explanation": "Le titre annonce le couronnement d'Aragorn."
+    },
+    {
+      "ref": "sda-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Quel recueil, publié en 1977, raconte les premiers âges de la Terre du Milieu (Middle-earth) ?",
+      "answers": [
+        { "text": "Le Silmarillion", "isCorrect": true },
+        { "text": "Bilbo le Hobbit", "isCorrect": false },
+        { "text": "Les Contes perdus", "isCorrect": false },
+        { "text": "Le Livre rouge", "isCorrect": false }
+      ],
+      "explanation": "Il est paru quatre ans après la mort de Tolkien."
+    },
+    {
+      "ref": "sda-016",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Qui a publié « Le Silmarillion » après la mort de Tolkien ?",
+      "answers": [
+        { "text": "Son ami C. S. Lewis", "isCorrect": false },
+        { "text": "Peter Jackson", "isCorrect": false },
+        { "text": "Son éditeur Stanley Unwin", "isCorrect": false },
+        { "text": "Son fils, Christopher Tolkien", "isCorrect": true }
+      ],
+      "explanation": "Christopher Tolkien a consacré sa vie à l'œuvre de son père."
+    },
+    {
+      "ref": "sda-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre"],
+      "text": "Qui a signé la première traduction française du « Seigneur des Anneaux » ?",
+      "answers": [
+        { "text": "Daniel Lauzon", "isCorrect": false },
+        { "text": "Boris Vian", "isCorrect": false },
+        { "text": "Francis Ledoux", "isCorrect": true },
+        { "text": "Jacques Ferron", "isCorrect": false }
+      ],
+      "explanation": "Elle est parue en France entre 1972 et 1973."
+    },
+    {
+      "ref": "sda-018",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre"],
+      "text": "Quel traducteur a proposé une nouvelle traduction française du « Seigneur des Anneaux » entre 2014 et 2016 ?",
+      "answers": [
+        { "text": "Francis Ledoux", "isCorrect": false },
+        { "text": "Daniel Lauzon", "isCorrect": true },
+        { "text": "Vincent Ferré", "isCorrect": false },
+        { "text": "Tina Jolas", "isCorrect": false }
+      ],
+      "explanation": "Sa traduction modifie de nombreux noms connus des lecteurs."
+    },
+    {
+      "ref": "sda-019",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre", "personnage"],
+      "text": "Dans la traduction de Daniel Lauzon, quel nom remplace « Grands-Pas » ?",
+      "answers": [
+        { "text": "L'Arpenteur", "isCorrect": true },
+        { "text": "Le Rôdeur", "isCorrect": false },
+        { "text": "Longues-Jambes", "isCorrect": false },
+        { "text": "Le Voyageur", "isCorrect": false }
+      ],
+      "explanation": "Le nom anglais est « Strider »."
+    },
+    {
+      "ref": "sda-020",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre", "personnage"],
+      "text": "Dans la traduction de Daniel Lauzon, quel est le nom de famille de Frodon ?",
+      "answers": [
+        { "text": "Sacquet", "isCorrect": false },
+        { "text": "Touque", "isCorrect": false },
+        { "text": "Gamgie", "isCorrect": false },
+        { "text": "Bessac", "isCorrect": true }
+      ],
+      "explanation": "Dans la traduction de Francis Ledoux, c'est « Sacquet »."
+    },
+    {
+      "ref": "sda-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre"],
+      "text": "Comment s'appellent les deux principales langues elfiques inventées par Tolkien ?",
+      "answers": [
+        { "text": "Le klingon et le na'vi", "isCorrect": false },
+        { "text": "L'elfique et le nanique", "isCorrect": false },
+        { "text": "Le quenya et le sindarin", "isCorrect": true },
+        { "text": "Le latin et le gaélique", "isCorrect": false }
+      ],
+      "explanation": "Tolkien inventait des langues avant d'écrire ses histoires."
+    },
+    {
+      "ref": "sda-022",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre"],
+      "text": "Quelle langue réelle a fortement inspiré le quenya ?",
+      "answers": [
+        { "text": "Le grec ancien", "isCorrect": false },
+        { "text": "Le finnois", "isCorrect": true },
+        { "text": "Le gallois", "isCorrect": false },
+        { "text": "L'islandais", "isCorrect": false }
+      ],
+      "explanation": "Le sindarin, lui, s'inspire du gallois."
+    },
+    {
+      "ref": "sda-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Comment s'appelle le monde où se déroule l'histoire ?",
+      "answers": [
+        { "text": "La Terre du Milieu", "isCorrect": true },
+        { "text": "Narnia", "isCorrect": false },
+        { "text": "Westeros", "isCorrect": false },
+        { "text": "Azeroth", "isCorrect": false }
+      ],
+      "explanation": "Westeros est le monde de « Game of Thrones ». En version originale : Middle-earth."
+    },
+    {
+      "ref": "sda-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre", "personnage"],
+      "text": "Quel personnage du livre, absent des films, accueille les hobbits dans la Vieille Forêt (Old Forest) ?",
+      "answers": [
+        { "text": "Glorfindel", "isCorrect": false },
+        { "text": "Radagast", "isCorrect": false },
+        { "text": "Beorn", "isCorrect": false },
+        { "text": "Tom Bombadil", "isCorrect": true }
+      ],
+      "explanation": "L'Anneau n'a aucun pouvoir sur lui."
+    },
+    {
+      "ref": "sda-025",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre", "personnage"],
+      "text": "Comment s'appelle l'épouse de Tom Bombadil ?",
+      "answers": [
+        { "text": "Arwen", "isCorrect": false },
+        { "text": "Rose", "isCorrect": false },
+        { "text": "Baie d'Or", "isCorrect": true },
+        { "text": "Nimrodel", "isCorrect": false }
+      ],
+      "explanation": "Elle est appelée « la Fille de la Rivière ». En version originale : Goldberry."
+    },
+    {
+      "ref": "sda-026",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre"],
+      "text": "Quel chapitre du livre, absent des films, raconte la libération de la Comté (Shire) occupée par Saroumane (Saruman) ?",
+      "answers": [
+        { "text": "La Bataille de Hobbitebourg (Hobbiton)", "isCorrect": false },
+        { "text": "Le Nettoyage de la Comté (Shire)", "isCorrect": true },
+        { "text": "Le Retour de Frodon (Frodo)", "isCorrect": false },
+        { "text": "La Fin de Saroumane (Saruman)", "isCorrect": false }
+      ],
+      "explanation": "C'est l'avant-dernier chapitre du « Retour du Roi »."
+    },
+    {
+      "ref": "sda-027",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["livre", "personnage"],
+      "text": "Quel âge Bilbon (Bilbo) fête-t-il au début de l'histoire ?",
+      "answers": [
+        { "text": "111 ans", "isCorrect": true },
+        { "text": "100 ans", "isCorrect": false },
+        { "text": "99 ans", "isCorrect": false },
+        { "text": "131 ans", "isCorrect": false }
+      ],
+      "explanation": "Il disparaît au milieu de son discours, grâce à l'Anneau."
+    },
+    {
+      "ref": "sda-028",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre", "personnage"],
+      "text": "Quel âge a Frodon (Frodo) lors de la fête d'anniversaire de Bilbon (Bilbo) ?",
+      "answers": [
+        { "text": "21 ans", "isCorrect": false },
+        { "text": "50 ans", "isCorrect": false },
+        { "text": "17 ans", "isCorrect": false },
+        { "text": "33 ans", "isCorrect": true }
+      ],
+      "explanation": "33 ans est l'âge de la majorité chez les hobbits."
+    },
+    {
+      "ref": "sda-029",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["livre", "personnage"],
+      "text": "Frodon (Frodo) et Bilbon (Bilbo) sont nés le même jour de l'année.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ils fêtent tous les deux leur anniversaire le 22 septembre."
+    },
+    {
+      "ref": "sda-030",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["livre", "personnage"],
+      "text": "Combien d'années s'écoulent dans le livre entre la fête de Bilbon (Bilbo) et le départ de Frodon (Frodo) ?",
+      "answers": [
+        { "text": "1 an", "isCorrect": false },
+        { "text": "17 ans", "isCorrect": true },
+        { "text": "3 ans", "isCorrect": false },
+        { "text": "50 ans", "isCorrect": false }
+      ],
+      "explanation": "Dans les films, ce délai semble ne durer que quelques semaines."
+    },
+    {
+      "ref": "sda-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel hobbit est chargé de détruire l'Anneau unique ?",
+      "answers": [
+        { "text": "Frodon Sacquet (Frodo Baggins)", "isCorrect": true },
+        { "text": "Bilbon Sacquet (Bilbo Baggins)", "isCorrect": false },
+        { "text": "Sam Gamegie (Sam Gamgee)", "isCorrect": false },
+        { "text": "Peregrin Touque (Peregrin Took)", "isCorrect": false }
+      ],
+      "explanation": "Il hérite de l'Anneau quand Bilbon quitte la Comté."
+    },
+    {
+      "ref": "sda-032",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel lien unit Bilbon (Bilbo) et Frodon (Frodo) ?",
+      "answers": [
+        { "text": "Bilbon est son père", "isCorrect": false },
+        { "text": "Bilbon est son grand-père", "isCorrect": false },
+        { "text": "Ils sont frères", "isCorrect": false },
+        { "text": "Bilbon est un cousin plus âgé qui a adopté Frodon", "isCorrect": true }
+      ],
+      "explanation": "Frodon l'appelle pourtant « oncle Bilbon ». En version originale : Bilbo, Frodo."
+    },
+    {
+      "ref": "sda-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel magicien guide la Communauté de l'Anneau (Fellowship of the Ring) ?",
+      "answers": [
+        { "text": "Saroumane", "isCorrect": false },
+        { "text": "Radagast", "isCorrect": false },
+        { "text": "Gandalf", "isCorrect": true },
+        { "text": "Elrond", "isCorrect": false }
+      ],
+      "explanation": "Gandalf est l'un des cinq magiciens envoyés en Terre du Milieu."
+    },
+    {
+      "ref": "sda-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment est surnommé Gandalf avant sa chute dans la Moria ?",
+      "answers": [
+        { "text": "Gandalf le Blanc", "isCorrect": false },
+        { "text": "Gandalf le Gris", "isCorrect": true },
+        { "text": "Gandalf le Brun", "isCorrect": false },
+        { "text": "Gandalf le Bleu", "isCorrect": false }
+      ],
+      "explanation": "Il revient ensuite sous le nom de Gandalf le Blanc."
+    },
+    {
+      "ref": "sda-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Sous quel nom Gandalf revient-il après son combat contre le Balrog ?",
+      "answers": [
+        { "text": "Gandalf le Blanc", "isCorrect": true },
+        { "text": "Gandalf le Gris", "isCorrect": false },
+        { "text": "Gandalf le Sage", "isCorrect": false },
+        { "text": "Gandalf le Rouge", "isCorrect": false }
+      ],
+      "explanation": "Il remplace Saroumane à la tête de l'ordre des magiciens."
+    },
+    {
+      "ref": "sda-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment les Elfes appellent-ils Gandalf ?",
+      "answers": [
+        { "text": "Olórin", "isCorrect": false },
+        { "text": "Curunír", "isCorrect": false },
+        { "text": "Aiwendil", "isCorrect": false },
+        { "text": "Mithrandir", "isCorrect": true }
+      ],
+      "explanation": "Mithrandir signifie « le pèlerin gris »."
+    },
+    {
+      "ref": "sda-037",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel hobbit est le jardinier et le fidèle ami de Frodon (Frodo) ?",
+      "answers": [
+        { "text": "Merry Brandebouc", "isCorrect": false },
+        { "text": "Pippin Touque", "isCorrect": false },
+        { "text": "Sam Gamegie", "isCorrect": true },
+        { "text": "Fredegar Bolger", "isCorrect": false }
+      ],
+      "explanation": "Sam accompagne Frodon jusqu'à la Montagne du Destin. En version originale : Sam Gamgee."
+    },
+    {
+      "ref": "sda-038",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel est le prénom complet de Sam ?",
+      "answers": [
+        { "text": "Samuel", "isCorrect": false },
+        { "text": "Samsagace", "isCorrect": true },
+        { "text": "Samson", "isCorrect": false },
+        { "text": "Sambrun", "isCorrect": false }
+      ],
+      "explanation": "En version originale, il s'appelle Samwise."
+    },
+    {
+      "ref": "sda-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quels sont les prénoms complets de Merry et Pippin ?",
+      "answers": [
+        { "text": "Meriadoc et Peregrin", "isCorrect": true },
+        { "text": "Merrick et Pippo", "isCorrect": false },
+        { "text": "Marcus et Philippe", "isCorrect": false },
+        { "text": "Meridian et Pépin", "isCorrect": false }
+      ],
+      "explanation": "Ce sont deux cousins de Frodon."
+    },
+    {
+      "ref": "sda-040",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel personnage est surnommé « Grands-Pas (Strider) » ?",
+      "answers": [
+        { "text": "Boromir", "isCorrect": false },
+        { "text": "Faramir", "isCorrect": false },
+        { "text": "Legolas", "isCorrect": false },
+        { "text": "Aragorn", "isCorrect": true }
+      ],
+      "explanation": "C'est sous ce nom que les hobbits le rencontrent à Bree."
+    },
+    {
+      "ref": "sda-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "De quel royaume Aragorn est-il l'héritier ?",
+      "answers": [
+        { "text": "Le Rohan", "isCorrect": false },
+        { "text": "Le Mordor", "isCorrect": false },
+        { "text": "Le Gondor", "isCorrect": true },
+        { "text": "La Comté", "isCorrect": false }
+      ],
+      "explanation": "Il descend d'Isildur, l'ancien roi du Gondor."
+    },
+    {
+      "ref": "sda-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle l'épée d'Aragorn, reforgée à Fondcombe (Rivendell) ?",
+      "answers": [
+        { "text": "Narsil", "isCorrect": false },
+        { "text": "Andúril", "isCorrect": true },
+        { "text": "Dard", "isCorrect": false },
+        { "text": "Glamdring", "isCorrect": false }
+      ],
+      "explanation": "Son nom signifie « flamme de l'Ouest »."
+    },
+    {
+      "ref": "sda-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelait l'épée brisée d'Elendil, qui a coupé l'Anneau de la main de Sauron ?",
+      "answers": [
+        { "text": "Narsil", "isCorrect": true },
+        { "text": "Andúril", "isCorrect": false },
+        { "text": "Orcrist", "isCorrect": false },
+        { "text": "Dard", "isCorrect": false }
+      ],
+      "explanation": "Elle est reforgée pour Aragorn sous le nom d'Andúril."
+    },
+    {
+      "ref": "sda-044",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel elfe fait partie de la Communauté de l'Anneau (Fellowship of the Ring) ?",
+      "answers": [
+        { "text": "Elrond", "isCorrect": false },
+        { "text": "Haldir", "isCorrect": false },
+        { "text": "Glorfindel", "isCorrect": false },
+        { "text": "Legolas", "isCorrect": true }
+      ],
+      "explanation": "Legolas est un archer d'une adresse incroyable."
+    },
+    {
+      "ref": "sda-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel nain fait partie de la Communauté de l'Anneau (Fellowship of the Ring) ?",
+      "answers": [
+        { "text": "Thorin", "isCorrect": false },
+        { "text": "Balin", "isCorrect": false },
+        { "text": "Gimli", "isCorrect": true },
+        { "text": "Dáin", "isCorrect": false }
+      ],
+      "explanation": "Gimli manie la hache."
+    },
+    {
+      "ref": "sda-046",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Qui est le père de Gimli ?",
+      "answers": [
+        { "text": "Thorin", "isCorrect": false },
+        { "text": "Glóin", "isCorrect": true },
+        { "text": "Balin", "isCorrect": false },
+        { "text": "Thráin", "isCorrect": false }
+      ],
+      "explanation": "Glóin faisait partie des compagnons de Bilbon dans « Bilbo le Hobbit »."
+    },
+    {
+      "ref": "sda-047",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "De quel royaume elfique vient Legolas ?",
+      "answers": [
+        { "text": "La Forêt Noire", "isCorrect": true },
+        { "text": "La Lothlórien", "isCorrect": false },
+        { "text": "Fondcombe", "isCorrect": false },
+        { "text": "Les Havres Gris", "isCorrect": false }
+      ],
+      "explanation": "Son père, Thranduil, est le roi des Elfes de la Forêt Noire. En version originale : Mirkwood."
+    },
+    {
+      "ref": "sda-048",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Gimli et Legolas deviennent amis au cours de l'aventure.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Leur amitié est d'autant plus forte que Nains et Elfes se méfiaient les uns des autres."
+    },
+    {
+      "ref": "sda-049",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel homme du Gondor fait partie de la Communauté et meurt en défendant Merry et Pippin ?",
+      "answers": [
+        { "text": "Faramir", "isCorrect": false },
+        { "text": "Denethor", "isCorrect": false },
+        { "text": "Boromir", "isCorrect": true },
+        { "text": "Éomer", "isCorrect": false }
+      ],
+      "explanation": "Avant de mourir, il regrette d'avoir voulu prendre l'Anneau."
+    },
+    {
+      "ref": "sda-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui est le frère de Boromir ?",
+      "answers": [
+        { "text": "Éomer", "isCorrect": false },
+        { "text": "Faramir", "isCorrect": true },
+        { "text": "Aragorn", "isCorrect": false },
+        { "text": "Imrahil", "isCorrect": false }
+      ],
+      "explanation": "Faramir, lui, résiste à la tentation de l'Anneau."
+    },
+    {
+      "ref": "sda-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui est le père de Boromir et de Faramir ?",
+      "answers": [
+        { "text": "Denethor", "isCorrect": true },
+        { "text": "Théoden", "isCorrect": false },
+        { "text": "Isildur", "isCorrect": false },
+        { "text": "Elendil", "isCorrect": false }
+      ],
+      "explanation": "Denethor gouverne le Gondor en l'absence de roi."
+    },
+    {
+      "ref": "sda-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel titre porte Denethor ?",
+      "answers": [
+        { "text": "Roi du Gondor", "isCorrect": false },
+        { "text": "Prince d'Ithilien", "isCorrect": false },
+        { "text": "Seigneur de Minas Morgul", "isCorrect": false },
+        { "text": "Intendant du Gondor", "isCorrect": true }
+      ],
+      "explanation": "Les intendants gouvernent le Gondor depuis la disparition de la lignée royale."
+    },
+    {
+      "ref": "sda-053",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Combien de membres compte la Communauté de l'Anneau (Fellowship of the Ring) ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "12", "isCorrect": false },
+        { "text": "9", "isCorrect": true },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Quatre hobbits, deux hommes, un elfe, un nain et un magicien."
+    },
+    {
+      "ref": "sda-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Pourquoi Elrond fixe-t-il à neuf le nombre de membres de la Communauté ?",
+      "answers": [
+        { "text": "Parce que c'est un chiffre porte-bonheur", "isCorrect": false },
+        { "text": "Pour faire face aux neuf Cavaliers noirs", "isCorrect": true },
+        { "text": "Parce qu'il n'y avait que neuf volontaires", "isCorrect": false },
+        { "text": "Pour honorer neuf rois anciens", "isCorrect": false }
+      ],
+      "explanation": "Neuf marcheurs contre neuf Cavaliers. En version originale : Black Riders."
+    },
+    {
+      "ref": "sda-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel personnage appelle l'Anneau « mon précieux » ?",
+      "answers": [
+        { "text": "Gollum", "isCorrect": true },
+        { "text": "Bilbon", "isCorrect": false },
+        { "text": "Sauron", "isCorrect": false },
+        { "text": "Saroumane", "isCorrect": false }
+      ],
+      "explanation": "Il parle souvent de lui-même à la troisième personne."
+    },
+    {
+      "ref": "sda-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel était le nom de Gollum avant que l'Anneau ne le transforme ?",
+      "answers": [
+        { "text": "Déagol", "isCorrect": false },
+        { "text": "Gríma", "isCorrect": false },
+        { "text": "Bill", "isCorrect": false },
+        { "text": "Sméagol", "isCorrect": true }
+      ],
+      "explanation": "Gollum était autrefois un être proche des hobbits."
+    },
+    {
+      "ref": "sda-057",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Pendant combien de temps environ Gollum a-t-il possédé l'Anneau ?",
+      "answers": [
+        { "text": "10 ans", "isCorrect": false },
+        { "text": "50 ans", "isCorrect": false },
+        { "text": "Près de 500 ans", "isCorrect": true },
+        { "text": "2 000 ans", "isCorrect": false }
+      ],
+      "explanation": "L'Anneau a prolongé sa vie bien au-delà de la normale."
+    },
+    {
+      "ref": "sda-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Qui a trouvé l'Anneau au fond d'une rivière, avant d'être tué par Sméagol ?",
+      "answers": [
+        { "text": "Isildur", "isCorrect": false },
+        { "text": "Déagol", "isCorrect": true },
+        { "text": "Bilbon", "isCorrect": false },
+        { "text": "Gollum lui-même", "isCorrect": false }
+      ],
+      "explanation": "Sméagol l'a tué pour lui voler l'Anneau, le jour de son anniversaire."
+    },
+    {
+      "ref": "sda-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Où Bilbon (Bilbo) a-t-il trouvé l'Anneau ?",
+      "answers": [
+        { "text": "Dans une caverne des Monts Brumeux", "isCorrect": true },
+        { "text": "Dans la Comté", "isCorrect": false },
+        { "text": "Au fond d'une rivière", "isCorrect": false },
+        { "text": "Dans le trésor d'un dragon", "isCorrect": false }
+      ],
+      "explanation": "Il l'a trouvé dans les tunnels où vivait Gollum. En version originale : Misty Mountains."
+    },
+    {
+      "ref": "sda-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel seigneur des ténèbres a forgé l'Anneau unique ?",
+      "answers": [
+        { "text": "Saroumane", "isCorrect": false },
+        { "text": "Morgoth", "isCorrect": false },
+        { "text": "Le Roi-Sorcier", "isCorrect": false },
+        { "text": "Sauron", "isCorrect": true }
+      ],
+      "explanation": "Sauron a mis une grande partie de son pouvoir dans l'Anneau."
+    },
+    {
+      "ref": "sda-061",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage", "film"],
+      "text": "Sous quelle forme Sauron apparaît-il surtout dans les films ?",
+      "answers": [
+        { "text": "Un dragon noir", "isCorrect": false },
+        { "text": "Un cavalier sans visage", "isCorrect": false },
+        { "text": "Un grand œil enflammé", "isCorrect": true },
+        { "text": "Un géant de pierre", "isCorrect": false }
+      ],
+      "explanation": "L'Œil veille depuis le sommet de la tour de Barad-dûr."
+    },
+    {
+      "ref": "sda-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel magicien trahit les peuples libres pour s'allier à Sauron ?",
+      "answers": [
+        { "text": "Radagast", "isCorrect": false },
+        { "text": "Saroumane", "isCorrect": true },
+        { "text": "Gandalf", "isCorrect": false },
+        { "text": "Alatar", "isCorrect": false }
+      ],
+      "explanation": "Saroumane était pourtant le chef des magiciens. En version originale : Saruman."
+    },
+    {
+      "ref": "sda-063",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle couleur est associée à Saroumane (Saruman) avant sa trahison ?",
+      "answers": [
+        { "text": "Le blanc", "isCorrect": true },
+        { "text": "Le gris", "isCorrect": false },
+        { "text": "Le brun", "isCorrect": false },
+        { "text": "Le noir", "isCorrect": false }
+      ],
+      "explanation": "Il prend ensuite le titre de « Saroumane aux Multiples Couleurs »."
+    },
+    {
+      "ref": "sda-064",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Combien de magiciens ont été envoyés en Terre du Milieu (Middle-earth) ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "9", "isCorrect": false },
+        { "text": "5", "isCorrect": true }
+      ],
+      "explanation": "Deux d'entre eux, les Mages bleus, sont partis vers l'Est et n'apparaissent pas dans l'histoire."
+    },
+    {
+      "ref": "sda-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel magicien vit dans la forêt et parle aux animaux ?",
+      "answers": [
+        { "text": "Gandalf le Gris", "isCorrect": false },
+        { "text": "Saroumane le Blanc", "isCorrect": false },
+        { "text": "Radagast le Brun", "isCorrect": true },
+        { "text": "Alatar le Bleu", "isCorrect": false }
+      ],
+      "explanation": "Dans le film « Le Hobbit », il se déplace sur un traîneau tiré par des lapins."
+    },
+    {
+      "ref": "sda-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel seigneur elfe vit à Fondcombe (Rivendell) ?",
+      "answers": [
+        { "text": "Celeborn", "isCorrect": false },
+        { "text": "Elrond", "isCorrect": true },
+        { "text": "Thranduil", "isCorrect": false },
+        { "text": "Haldir", "isCorrect": false }
+      ],
+      "explanation": "C'est chez lui que se tient le conseil qui décide du sort de l'Anneau."
+    },
+    {
+      "ref": "sda-067",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle fille d'Elrond renonce à son immortalité par amour pour Aragorn ?",
+      "answers": [
+        { "text": "Arwen", "isCorrect": true },
+        { "text": "Galadriel", "isCorrect": false },
+        { "text": "Éowyn", "isCorrect": false },
+        { "text": "Rosie", "isCorrect": false }
+      ],
+      "explanation": "Elle devient reine du Gondor."
+    },
+    {
+      "ref": "sda-068",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle dame elfe règne sur la Lothlórien ?",
+      "answers": [
+        { "text": "Arwen", "isCorrect": false },
+        { "text": "Baie d'Or", "isCorrect": false },
+        { "text": "Lúthien", "isCorrect": false },
+        { "text": "Galadriel", "isCorrect": true }
+      ],
+      "explanation": "Elle repousse la tentation de l'Anneau quand Frodon le lui offre."
+    },
+    {
+      "ref": "sda-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle l'époux de Galadriel ?",
+      "answers": [
+        { "text": "Elrond", "isCorrect": false },
+        { "text": "Haldir", "isCorrect": false },
+        { "text": "Celeborn", "isCorrect": true },
+        { "text": "Thranduil", "isCorrect": false }
+      ],
+      "explanation": "Ils règnent ensemble sur la Lothlórien."
+    },
+    {
+      "ref": "sda-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel cadeau Galadriel offre-t-elle à Frodon (Frodo) ?",
+      "answers": [
+        { "text": "Une épée elfique", "isCorrect": false },
+        { "text": "Une fiole contenant de la lumière", "isCorrect": true },
+        { "text": "Une cape d'invisibilité", "isCorrect": false },
+        { "text": "Une boussole magique", "isCorrect": false }
+      ],
+      "explanation": "La fiole lui permet de repousser l'araignée Arachne."
+    },
+    {
+      "ref": "sda-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel présent Gimli demande-t-il à Galadriel ?",
+      "answers": [
+        { "text": "Un de ses cheveux", "isCorrect": true },
+        { "text": "Une épée", "isCorrect": false },
+        { "text": "Une pierre précieuse", "isCorrect": false },
+        { "text": "Une bénédiction", "isCorrect": false }
+      ],
+      "explanation": "Elle lui en offre trois, alors qu'elle avait refusé ce cadeau à tous les autres."
+    },
+    {
+      "ref": "sda-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel roi du Rohan est libéré de l'emprise de Saroumane (Saruman) par Gandalf ?",
+      "answers": [
+        { "text": "Éomer", "isCorrect": false },
+        { "text": "Denethor", "isCorrect": false },
+        { "text": "Elendil", "isCorrect": false },
+        { "text": "Théoden", "isCorrect": true }
+      ],
+      "explanation": "Il conduit ensuite ses cavaliers jusqu'à la bataille des champs du Pelennor."
+    },
+    {
+      "ref": "sda-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel conseiller du roi Théoden est au service de Saroumane (Saruman) ?",
+      "answers": [
+        { "text": "Éomer", "isCorrect": false },
+        { "text": "Háma", "isCorrect": false },
+        { "text": "Gríma Langue de Serpent", "isCorrect": true },
+        { "text": "Gamelin", "isCorrect": false }
+      ],
+      "explanation": "Il empoisonne l'esprit du roi par ses conseils. En version originale : Gríma Wormtongue."
+    },
+    {
+      "ref": "sda-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Qui tue Saroumane (Saruman) à la fin de l'histoire ?",
+      "answers": [
+        { "text": "Gandalf", "isCorrect": false },
+        { "text": "Gríma Langue de Serpent", "isCorrect": true },
+        { "text": "Sylvebarbe", "isCorrect": false },
+        { "text": "Aragorn", "isCorrect": false }
+      ],
+      "explanation": "Gríma se retourne contre son maître, qui l'avait trop longtemps humilié. En version originale : Gríma Wormtongue."
+    },
+    {
+      "ref": "sda-075",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle nièce du roi Théoden tue le Roi-Sorcier d'Angmar (Witch-king of Angmar) ?",
+      "answers": [
+        { "text": "Éowyn", "isCorrect": true },
+        { "text": "Arwen", "isCorrect": false },
+        { "text": "Galadriel", "isCorrect": false },
+        { "text": "Rosie", "isCorrect": false }
+      ],
+      "explanation": "Une prophétie disait qu'aucun homme ne pourrait le tuer."
+    },
+    {
+      "ref": "sda-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Que répond Éowyn au Roi-Sorcier (Witch-king), qui affirme qu'aucun homme ne peut le tuer ?",
+      "answers": [
+        { "text": "« Je suis la fille du roi ! »", "isCorrect": false },
+        { "text": "« Tu ne passeras pas ! »", "isCorrect": false },
+        { "text": "« Pour la Comté ! »", "isCorrect": false },
+        { "text": "« Je ne suis pas un homme ! »", "isCorrect": true }
+      ],
+      "explanation": "Elle retire alors son casque et le frappe."
+    },
+    {
+      "ref": "sda-077",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel hobbit aide Éowyn à vaincre le Roi-Sorcier (Witch-king) ?",
+      "answers": [
+        { "text": "Pippin", "isCorrect": false },
+        { "text": "Sam", "isCorrect": false },
+        { "text": "Merry", "isCorrect": true },
+        { "text": "Frodon", "isCorrect": false }
+      ],
+      "explanation": "Il le frappe derrière le genou avec une lame ancienne."
+    },
+    {
+      "ref": "sda-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui est le frère d'Éowyn ?",
+      "answers": [
+        { "text": "Faramir", "isCorrect": false },
+        { "text": "Éomer", "isCorrect": true },
+        { "text": "Théodred", "isCorrect": false },
+        { "text": "Boromir", "isCorrect": false }
+      ],
+      "explanation": "Éomer devient roi du Rohan après la mort de Théoden."
+    },
+    {
+      "ref": "sda-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui est le chef des Nazgûl ?",
+      "answers": [
+        { "text": "Le Roi-Sorcier d'Angmar", "isCorrect": true },
+        { "text": "Sauron", "isCorrect": false },
+        { "text": "Saroumane", "isCorrect": false },
+        { "text": "La Bouche de Sauron", "isCorrect": false }
+      ],
+      "explanation": "C'est lui qui blesse Frodon au Mont Venteux. En version originale : Witch-king of Angmar."
+    },
+    {
+      "ref": "sda-080",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Combien y a-t-il de Nazgûl ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "12", "isCorrect": false },
+        { "text": "9", "isCorrect": true }
+      ],
+      "explanation": "Ce sont neuf rois des Hommes, asservis par les anneaux reçus de Sauron."
+    },
+    {
+      "ref": "sda-081",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment appelle-t-on aussi les Nazgûl ?",
+      "answers": [
+        { "text": "Les Uruk-hai", "isCorrect": false },
+        { "text": "Les Ents", "isCorrect": false },
+        { "text": "Les Cavaliers noirs", "isCorrect": true },
+        { "text": "Les Rohirrim", "isCorrect": false }
+      ],
+      "explanation": "On les appelle aussi les Spectres de l'Anneau. En version originale : Black Riders."
+    },
+    {
+      "ref": "sda-082",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel démon de feu et d'ombre Gandalf affronte-t-il dans la Moria ?",
+      "answers": [
+        { "text": "Un dragon", "isCorrect": false },
+        { "text": "Un Balrog", "isCorrect": true },
+        { "text": "Un troll des cavernes", "isCorrect": false },
+        { "text": "Un Nazgûl", "isCorrect": false }
+      ],
+      "explanation": "Les nains l'avaient réveillé en creusant trop profond."
+    },
+    {
+      "ref": "sda-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle araignée géante attaque Frodon (Frodo) dans le col de Cirith Ungol ?",
+      "answers": [
+        { "text": "Arachne", "isCorrect": true },
+        { "text": "Ungoliant", "isCorrect": false },
+        { "text": "Mère-Araignée", "isCorrect": false },
+        { "text": "Aragog", "isCorrect": false }
+      ],
+      "explanation": "Aragog est l'araignée de « Harry Potter ». En version originale : Shelob."
+    },
+    {
+      "ref": "sda-084",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appellent les créatures géantes semblables à des arbres ?",
+      "answers": [
+        { "text": "Les Huorns", "isCorrect": false },
+        { "text": "Les Trolls", "isCorrect": false },
+        { "text": "Les Wargs", "isCorrect": false },
+        { "text": "Les Ents", "isCorrect": true }
+      ],
+      "explanation": "Les Ents sont les bergers des arbres."
+    },
+    {
+      "ref": "sda-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel Ent recueille Merry et Pippin dans la forêt de Fangorn ?",
+      "answers": [
+        { "text": "Vif-Sorbier", "isCorrect": false },
+        { "text": "Fangorn le Jeune", "isCorrect": false },
+        { "text": "Sylvebarbe", "isCorrect": true },
+        { "text": "Racine-Noire", "isCorrect": false }
+      ],
+      "explanation": "Il dit lui-même ne jamais rien faire « avec précipitation ». En version originale : Treebeard."
+    },
+    {
+      "ref": "sda-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appellent les orques géants créés par Saroumane (Saruman) ?",
+      "answers": [
+        { "text": "Les Gobelins", "isCorrect": false },
+        { "text": "Les Uruk-hai", "isCorrect": true },
+        { "text": "Les Wargs", "isCorrect": false },
+        { "text": "Les Haradrim", "isCorrect": false }
+      ],
+      "explanation": "Ils supportent la lumière du soleil, contrairement aux autres orques."
+    },
+    {
+      "ref": "sda-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel hobbit regarde dans le palantír d'Orthanc et se trouve face à Sauron ?",
+      "answers": [
+        { "text": "Pippin", "isCorrect": true },
+        { "text": "Merry", "isCorrect": false },
+        { "text": "Sam", "isCorrect": false },
+        { "text": "Frodon", "isCorrect": false }
+      ],
+      "explanation": "Sa curiosité aurait pu coûter très cher à tous."
+    },
+    {
+      "ref": "sda-088",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel roi a coupé l'Anneau du doigt de Sauron ?",
+      "answers": [
+        { "text": "Elendil", "isCorrect": false },
+        { "text": "Aragorn", "isCorrect": false },
+        { "text": "Gil-galad", "isCorrect": false },
+        { "text": "Isildur", "isCorrect": true }
+      ],
+      "explanation": "C'était à la fin du Deuxième Âge."
+    },
+    {
+      "ref": "sda-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Pourquoi Isildur n'a-t-il pas détruit l'Anneau ?",
+      "answers": [
+        { "text": "Il ne savait pas comment le détruire", "isCorrect": false },
+        { "text": "Les Elfes le lui ont interdit", "isCorrect": false },
+        { "text": "Il l'a gardé, séduit par son pouvoir", "isCorrect": true },
+        { "text": "Il l'a perdu pendant la bataille", "isCorrect": false }
+      ],
+      "explanation": "Elrond l'avait pourtant supplié de le jeter dans le feu."
+    },
+    {
+      "ref": "sda-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Dans quel fleuve Isildur a-t-il perdu l'Anneau ?",
+      "answers": [
+        { "text": "L'Isen", "isCorrect": false },
+        { "text": "L'Anduin", "isCorrect": true },
+        { "text": "L'Entalluve", "isCorrect": false },
+        { "text": "La Brandevin", "isCorrect": false }
+      ],
+      "explanation": "L'Anneau a glissé de son doigt pendant qu'il fuyait des orques."
+    },
+    {
+      "ref": "sda-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le poney de Sam ?",
+      "answers": [
+        { "text": "Bill", "isCorrect": true },
+        { "text": "Gripoil", "isCorrect": false },
+        { "text": "Grand-Galop", "isCorrect": false },
+        { "text": "Brego", "isCorrect": false }
+      ],
+      "explanation": "Sam est très triste de devoir le laisser devant les portes de la Moria."
+    },
+    {
+      "ref": "sda-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le cheval de Gandalf ?",
+      "answers": [
+        { "text": "Bill", "isCorrect": false },
+        { "text": "Brego", "isCorrect": false },
+        { "text": "Felaróf", "isCorrect": false },
+        { "text": "Gripoil", "isCorrect": true }
+      ],
+      "explanation": "C'est le seigneur des chevaux du Rohan. En version originale : Shadowfax."
+    },
+    {
+      "ref": "sda-093",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel aigle vient chercher Frodon (Frodo) et Sam sur la Montagne du Destin (Mount Doom) ?",
+      "answers": [
+        { "text": "Smaug", "isCorrect": false },
+        { "text": "Thorondor", "isCorrect": false },
+        { "text": "Gwaihir", "isCorrect": true },
+        { "text": "Gripoil", "isCorrect": false }
+      ],
+      "explanation": "Gwaihir avait déjà sauvé Gandalf, prisonnier en haut d'Orthanc."
+    },
+    {
+      "ref": "sda-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel hobbit épouse Rose Chaumine (Rosie Cotton) à la fin de l'histoire ?",
+      "answers": [
+        { "text": "Frodon", "isCorrect": false },
+        { "text": "Sam", "isCorrect": true },
+        { "text": "Merry", "isCorrect": false },
+        { "text": "Pippin", "isCorrect": false }
+      ],
+      "explanation": "Ils auront treize enfants."
+    },
+    {
+      "ref": "sda-095",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Qui tient l'auberge du Poney Fringant (Prancing Pony), à Bree ?",
+      "answers": [
+        { "text": "Prosper Poiredebeurré", "isCorrect": true },
+        { "text": "Bill Fougeron", "isCorrect": false },
+        { "text": "Lotho Sacquet-de-Besace", "isCorrect": false },
+        { "text": "Fredegar Bolger", "isCorrect": false }
+      ],
+      "explanation": "Il oublie de transmettre à Frodon une lettre de Gandalf. En version originale : Barliman Butterbur."
+    },
+    {
+      "ref": "sda-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle armée Aragorn appelle-t-il à combattre en passant par les Chemins des Morts (Paths of the Dead) ?",
+      "answers": [
+        { "text": "Les Elfes de la Lothlórien", "isCorrect": false },
+        { "text": "Les cavaliers du Rohan", "isCorrect": false },
+        { "text": "Les Aigles", "isCorrect": false },
+        { "text": "L'armée des Morts, des guerriers maudits", "isCorrect": true }
+      ],
+      "explanation": "Ces guerriers avaient trahi Isildur et ne peuvent reposer en paix."
+    },
+    {
+      "ref": "sda-097",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Sam porte lui aussi l'Anneau pendant un moment.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il le prend quand il croit Frodon mort, près de Cirith Ungol."
+    },
+    {
+      "ref": "sda-098",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Aragorn devient roi du Gondor à la fin de l'histoire.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il est couronné sous le nom d'Elessar."
+    },
+    {
+      "ref": "sda-099",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Frodon (Frodo) reste vivre dans la Comté (Shire) à la fin de l'histoire.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Blessé à jamais, il part avec Bilbon, Gandalf et les Elfes vers les Terres immortelles."
+    },
+    {
+      "ref": "sda-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Depuis quel port Frodon (Frodo) quitte-t-il la Terre du Milieu (Middle-earth) ?",
+      "answers": [
+        { "text": "Le port de Pelargir", "isCorrect": false },
+        { "text": "Les Havres d'Umbar", "isCorrect": false },
+        { "text": "Le port de Dol Amroth", "isCorrect": false },
+        { "text": "Les Havres Gris", "isCorrect": true }
+      ],
+      "explanation": "Les Elfes y prennent la mer vers l'Ouest. En version originale : Grey Havens."
+    },
+    {
+      "ref": "sda-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui fait finalement tomber l'Anneau dans la lave de la Montagne du Destin (Mount Doom) ?",
+      "answers": [
+        { "text": "Frodon", "isCorrect": false },
+        { "text": "Sam", "isCorrect": false },
+        { "text": "Gollum", "isCorrect": true },
+        { "text": "Gandalf", "isCorrect": false }
+      ],
+      "explanation": "Après avoir arraché l'Anneau à Frodon, il tombe dans le feu avec lui."
+    },
+    {
+      "ref": "sda-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment Frodon (Frodo) perd-il un doigt ?",
+      "answers": [
+        { "text": "Le Roi-Sorcier le lui tranche", "isCorrect": false },
+        { "text": "Gollum le lui arrache d'un coup de dents", "isCorrect": true },
+        { "text": "Il le perd dans le feu", "isCorrect": false },
+        { "text": "Arachne le lui mord", "isCorrect": false }
+      ],
+      "explanation": "Gollum veut à tout prix récupérer l'Anneau."
+    },
+    {
+      "ref": "sda-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Combien d'anneaux de pouvoir ont été donnés aux Elfes ?",
+      "answers": [
+        { "text": "3", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "9", "isCorrect": false },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "Sauron n'a jamais touché ces trois anneaux."
+    },
+    {
+      "ref": "sda-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Combien d'anneaux de pouvoir ont été donnés aux Nains ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "9", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": true }
+      ],
+      "explanation": "Ils ont surtout attisé leur goût pour l'or."
+    },
+    {
+      "ref": "sda-105",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Combien d'anneaux de pouvoir ont été donnés aux Hommes ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "9", "isCorrect": true },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Leurs porteurs sont devenus les Nazgûl."
+    },
+    {
+      "ref": "sda-106",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Comment s'appelle l'anneau qui gouverne tous les autres ?",
+      "answers": [
+        { "text": "L'Anneau de feu", "isCorrect": false },
+        { "text": "L'Anneau unique", "isCorrect": true },
+        { "text": "L'Anneau des rois", "isCorrect": false },
+        { "text": "L'Anneau noir", "isCorrect": false }
+      ],
+      "explanation": "Sauron l'a forgé en secret dans la Montagne du Destin."
+    },
+    {
+      "ref": "sda-107",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Comment commence l'inscription de l'Anneau unique ?",
+      "answers": [
+        { "text": "« Un Anneau pour les gouverner tous »", "isCorrect": true },
+        { "text": "« Mon précieux, mon trésor »", "isCorrect": false },
+        { "text": "« Celui qui me porte sera roi »", "isCorrect": false },
+        { "text": "« Ni mort ni vivant »", "isCorrect": false }
+      ],
+      "explanation": "Elle continue avec « un Anneau pour les trouver »."
+    },
+    {
+      "ref": "sda-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Dans quelle langue est écrite l'inscription de l'Anneau ?",
+      "answers": [
+        { "text": "Le quenya", "isCorrect": false },
+        { "text": "Le sindarin", "isCorrect": false },
+        { "text": "Le khuzdul", "isCorrect": false },
+        { "text": "Le noir parler du Mordor", "isCorrect": true }
+      ],
+      "explanation": "Les lettres utilisées sont des lettres elfiques."
+    },
+    {
+      "ref": "sda-109",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Comment fait-on apparaître l'inscription de l'Anneau ?",
+      "answers": [
+        { "text": "En le plongeant dans l'eau", "isCorrect": false },
+        { "text": "En le mettant au doigt", "isCorrect": false },
+        { "text": "En le chauffant dans le feu", "isCorrect": true },
+        { "text": "En prononçant un mot magique", "isCorrect": false }
+      ],
+      "explanation": "Gandalf le jette dans la cheminée de Frodon pour le vérifier."
+    },
+    {
+      "ref": "sda-110",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Que se passe-t-il quand on passe l'Anneau unique au doigt ?",
+      "answers": [
+        { "text": "On devient immortel", "isCorrect": false },
+        { "text": "On devient invisible", "isCorrect": true },
+        { "text": "On peut voler", "isCorrect": false },
+        { "text": "On se transforme en dragon", "isCorrect": false }
+      ],
+      "explanation": "Mais on attire aussi le regard de Sauron."
+    },
+    {
+      "ref": "sda-111",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Où l'Anneau unique a-t-il été forgé, et où doit-il être détruit ?",
+      "answers": [
+        { "text": "Dans la Montagne du Destin", "isCorrect": true },
+        { "text": "À Fondcombe", "isCorrect": false },
+        { "text": "À Minas Tirith", "isCorrect": false },
+        { "text": "Dans la Moria", "isCorrect": false }
+      ],
+      "explanation": "Seul le feu où il a été forgé peut le détruire. En version originale : Mount Doom."
+    },
+    {
+      "ref": "sda-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "De quel métal est faite la cotte de mailles que Bilbon (Bilbo) offre à Frodon (Frodo) ?",
+      "answers": [
+        { "text": "De l'or", "isCorrect": false },
+        { "text": "De l'argent", "isCorrect": false },
+        { "text": "Du fer noir", "isCorrect": false },
+        { "text": "Du mithril", "isCorrect": true }
+      ],
+      "explanation": "Elle sauve la vie de Frodon dans la Moria."
+    },
+    {
+      "ref": "sda-113",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Quel métal précieux, léger et très solide, les Nains extrayaient-ils dans la Moria ?",
+      "answers": [
+        { "text": "L'adamantium", "isCorrect": false },
+        { "text": "Le vibranium", "isCorrect": false },
+        { "text": "Le mithril", "isCorrect": true },
+        { "text": "L'or noir", "isCorrect": false }
+      ],
+      "explanation": "L'adamantium et le vibranium viennent des univers Marvel."
+    },
+    {
+      "ref": "sda-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Comment s'appelle l'épée de Bilbon (Bilbo), puis de Frodon (Frodo), qui brille en présence d'orques ?",
+      "answers": [
+        { "text": "Andúril", "isCorrect": false },
+        { "text": "Dard", "isCorrect": true },
+        { "text": "Glamdring", "isCorrect": false },
+        { "text": "Narsil", "isCorrect": false }
+      ],
+      "explanation": "Bilbon l'avait trouvée dans une grotte de trolls. En version originale : Sting."
+    },
+    {
+      "ref": "sda-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Comment s'appelle l'épée de Gandalf ?",
+      "answers": [
+        { "text": "Glamdring", "isCorrect": true },
+        { "text": "Orcrist", "isCorrect": false },
+        { "text": "Dard", "isCorrect": false },
+        { "text": "Andúril", "isCorrect": false }
+      ],
+      "explanation": "Elle a été forgée par les Elfes de Gondolin."
+    },
+    {
+      "ref": "sda-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Que sont les palantíri ?",
+      "answers": [
+        { "text": "Des anneaux elfiques", "isCorrect": false },
+        { "text": "Des épées magiques", "isCorrect": false },
+        { "text": "Des tours de guet", "isCorrect": false },
+        { "text": "Des pierres de vision", "isCorrect": true }
+      ],
+      "explanation": "Ils permettent de voir et de communiquer à distance."
+    },
+    {
+      "ref": "sda-117",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Combien de palantíri ont été apportés en Terre du Milieu (Middle-earth) ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "9", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "1", "isCorrect": false }
+      ],
+      "explanation": "Saroumane et Denethor en possèdent un chacun."
+    },
+    {
+      "ref": "sda-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Quelle nourriture elfique permet à la Communauté de tenir en voyage ?",
+      "answers": [
+        { "text": "Le pain de miel", "isCorrect": false },
+        { "text": "Le lembas", "isCorrect": true },
+        { "text": "La galette de Bree", "isCorrect": false },
+        { "text": "Le miruvor", "isCorrect": false }
+      ],
+      "explanation": "Une seule bouchée suffit pour toute une journée de marche."
+    },
+    {
+      "ref": "sda-119",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Quelle plante les hobbits aiment-ils fumer ?",
+      "answers": [
+        { "text": "L'herbe à pipe", "isCorrect": true },
+        { "text": "Le thé des bois", "isCorrect": false },
+        { "text": "La feuille d'Athelas", "isCorrect": false },
+        { "text": "Le houblon", "isCorrect": false }
+      ],
+      "explanation": "Merry et Pippin en trouvent même dans les ruines d'Isengard."
+    },
+    {
+      "ref": "sda-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Combien de repas les hobbits aiment-ils prendre par jour, selon Pippin dans le film ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "7", "isCorrect": true }
+      ],
+      "explanation": "Pippin cite notamment le « second petit-déjeuner »."
+    },
+    {
+      "ref": "sda-121",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Quelle particularité ont les pieds des hobbits ?",
+      "answers": [
+        { "text": "Ils sont palmés", "isCorrect": false },
+        { "text": "Ils ont six orteils", "isCorrect": false },
+        { "text": "Ils sont velus et ils ne portent pas de chaussures", "isCorrect": true },
+        { "text": "Ils sont très petits", "isCorrect": false }
+      ],
+      "explanation": "La plante de leurs pieds est aussi dure que du cuir."
+    },
+    {
+      "ref": "sda-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Que deviennent les trolls exposés à la lumière du jour ?",
+      "answers": [
+        { "text": "Ils prennent feu", "isCorrect": false },
+        { "text": "Ils se changent en pierre", "isCorrect": true },
+        { "text": "Ils deviennent invisibles", "isCorrect": false },
+        { "text": "Ils s'endorment", "isCorrect": false }
+      ],
+      "explanation": "Les hobbits croisent les trolls pétrifiés de « Bilbo le Hobbit »."
+    },
+    {
+      "ref": "sda-123",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Quels oiseaux géants viennent plusieurs fois au secours des héros ?",
+      "answers": [
+        { "text": "Les Aigles", "isCorrect": true },
+        { "text": "Les Corbeaux", "isCorrect": false },
+        { "text": "Les Hiboux", "isCorrect": false },
+        { "text": "Les Faucons", "isCorrect": false }
+      ],
+      "explanation": "Ils sauvent notamment Frodon et Sam à la fin de l'histoire."
+    },
+    {
+      "ref": "sda-124",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Que voit-on dans le miroir de Galadriel ?",
+      "answers": [
+        { "text": "Son propre reflet en elfe", "isCorrect": false },
+        { "text": "Uniquement l'avenir", "isCorrect": false },
+        { "text": "Le chemin vers le Mordor", "isCorrect": false },
+        { "text": "Des visions du passé, du présent et de l'avenir", "isCorrect": true }
+      ],
+      "explanation": "Galadriel prévient que ce qu'on y voit n'arrivera pas forcément."
+    },
+    {
+      "ref": "sda-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Dans quel âge de la Terre du Milieu (Middle-earth) se déroule « Le Seigneur des Anneaux » ?",
+      "answers": [
+        { "text": "Le Premier Âge", "isCorrect": false },
+        { "text": "Le Deuxième Âge", "isCorrect": false },
+        { "text": "Le Troisième Âge", "isCorrect": true },
+        { "text": "Le Quatrième Âge", "isCorrect": false }
+      ],
+      "explanation": "La destruction de l'Anneau marque la fin de cet âge."
+    },
+    {
+      "ref": "sda-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["univers"],
+      "text": "Quelle alliance a vaincu Sauron à la fin du Deuxième Âge ?",
+      "answers": [
+        { "text": "La Communauté de l'Anneau", "isCorrect": false },
+        { "text": "La Dernière Alliance des Elfes et des Hommes", "isCorrect": true },
+        { "text": "L'Alliance des Nains et des Aigles", "isCorrect": false },
+        { "text": "Le Conseil blanc", "isCorrect": false }
+      ],
+      "explanation": "C'est pendant cette guerre qu'Isildur s'empare de l'Anneau. En version originale : Last Alliance."
+    },
+    {
+      "ref": "sda-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Quel était le maître de Sauron, premier Seigneur des Ténèbres ?",
+      "answers": [
+        { "text": "Morgoth", "isCorrect": true },
+        { "text": "Saroumane", "isCorrect": false },
+        { "text": "Le Roi-Sorcier", "isCorrect": false },
+        { "text": "Smaug", "isCorrect": false }
+      ],
+      "explanation": "Son histoire est racontée dans « Le Silmarillion »."
+    },
+    {
+      "ref": "sda-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Quelle île engloutie était le royaume des ancêtres d'Aragorn ?",
+      "answers": [
+        { "text": "Valinor", "isCorrect": false },
+        { "text": "Atlantis", "isCorrect": false },
+        { "text": "Tol Eressëa", "isCorrect": false },
+        { "text": "Númenor", "isCorrect": true }
+      ],
+      "explanation": "Tolkien s'est inspiré du mythe de l'Atlantide."
+    },
+    {
+      "ref": "sda-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["univers"],
+      "text": "Comment s'appelle le peuple d'Aragorn, descendant des hommes de Númenor ?",
+      "answers": [
+        { "text": "Les Rohirrim", "isCorrect": false },
+        { "text": "Les Haradrim", "isCorrect": false },
+        { "text": "Les Dúnedain", "isCorrect": true },
+        { "text": "Les Drúedain", "isCorrect": false }
+      ],
+      "explanation": "Ils vivent plus longtemps que les autres Hommes."
+    },
+    {
+      "ref": "sda-130",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["univers"],
+      "text": "Les hobbits portent des chaussures.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils marchent pieds nus, même sur les chemins les plus difficiles."
+    },
+    {
+      "ref": "sda-131",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Dans quelle région vivent les hobbits ?",
+      "answers": [
+        { "text": "La Comté", "isCorrect": true },
+        { "text": "Le Rohan", "isCorrect": false },
+        { "text": "Le Gondor", "isCorrect": false },
+        { "text": "La Lothlórien", "isCorrect": false }
+      ],
+      "explanation": "C'est une campagne paisible, inspirée de l'Angleterre rurale. En version originale : Shire."
+    },
+    {
+      "ref": "sda-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle la maison de Bilbon (Bilbo) et de Frodon (Frodo) ?",
+      "answers": [
+        { "text": "Le Terrier", "isCorrect": false },
+        { "text": "La Colline", "isCorrect": false },
+        { "text": "Brandeburgh", "isCorrect": false },
+        { "text": "Cul-de-Sac", "isCorrect": true }
+      ],
+      "explanation": "Elle est creusée dans une colline et possède une porte ronde. En version originale : Bag End."
+    },
+    {
+      "ref": "sda-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Dans quel village de la Comté (Shire) se trouve Cul-de-Sac (Bag End) ?",
+      "answers": [
+        { "text": "Bree", "isCorrect": false },
+        { "text": "Lézeau", "isCorrect": false },
+        { "text": "Hobbitebourg", "isCorrect": true },
+        { "text": "Fondcombe", "isCorrect": false }
+      ],
+      "explanation": "Le décor de Hobbitebourg construit pour les films se visite en Nouvelle-Zélande. En version originale : Hobbiton."
+    },
+    {
+      "ref": "sda-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle le refuge elfique d'Elrond ?",
+      "answers": [
+        { "text": "La Lothlórien", "isCorrect": false },
+        { "text": "Fondcombe", "isCorrect": true },
+        { "text": "Les Havres Gris", "isCorrect": false },
+        { "text": "Minas Tirith", "isCorrect": false }
+      ],
+      "explanation": "Le conseil d'Elrond s'y réunit pour décider du sort de l'Anneau. En version originale : Rivendell."
+    },
+    {
+      "ref": "sda-135",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Quelle ancienne cité naine la Communauté traverse-t-elle sous les montagnes ?",
+      "answers": [
+        { "text": "La Moria", "isCorrect": true },
+        { "text": "Erebor", "isCorrect": false },
+        { "text": "Isengard", "isCorrect": false },
+        { "text": "Minas Morgul", "isCorrect": false }
+      ],
+      "explanation": "Elle est infestée d'orques et abrite un Balrog."
+    },
+    {
+      "ref": "sda-136",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Quel est le nom nain de la Moria ?",
+      "answers": [
+        { "text": "Erebor", "isCorrect": false },
+        { "text": "Barad-dûr", "isCorrect": false },
+        { "text": "Orthanc", "isCorrect": false },
+        { "text": "Khazad-dûm", "isCorrect": true }
+      ],
+      "explanation": "Le pont de Khazad-dûm est le lieu du combat entre Gandalf et le Balrog."
+    },
+    {
+      "ref": "sda-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Quel nain la Communauté découvre-t-elle enterré dans la Moria ?",
+      "answers": [
+        { "text": "Thorin", "isCorrect": false },
+        { "text": "Glóin", "isCorrect": false },
+        { "text": "Balin", "isCorrect": true },
+        { "text": "Dwalin", "isCorrect": false }
+      ],
+      "explanation": "Balin avait tenté de reprendre la Moria aux orques."
+    },
+    {
+      "ref": "sda-138",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Quelle est la capitale du Gondor ?",
+      "answers": [
+        { "text": "Edoras", "isCorrect": false },
+        { "text": "Minas Tirith", "isCorrect": true },
+        { "text": "Osgiliath", "isCorrect": false },
+        { "text": "Minas Morgul", "isCorrect": false }
+      ],
+      "explanation": "Son nom signifie « tour de garde »."
+    },
+    {
+      "ref": "sda-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Combien de niveaux compte la cité de Minas Tirith ?",
+      "answers": [
+        { "text": "7", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Chaque niveau est entouré d'une muraille."
+    },
+    {
+      "ref": "sda-140",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Quelle cité, devenue repaire des Nazgûl, fait face à Minas Tirith ?",
+      "answers": [
+        { "text": "Osgiliath", "isCorrect": false },
+        { "text": "Barad-dûr", "isCorrect": false },
+        { "text": "Dol Guldur", "isCorrect": false },
+        { "text": "Minas Morgul", "isCorrect": true }
+      ],
+      "explanation": "Elle s'appelait autrefois Minas Ithil, la tour de la Lune."
+    },
+    {
+      "ref": "sda-141",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Quel pays de cavaliers est gouverné par le roi Théoden ?",
+      "answers": [
+        { "text": "Le Gondor", "isCorrect": false },
+        { "text": "La Comté", "isCorrect": false },
+        { "text": "Le Rohan", "isCorrect": true },
+        { "text": "Le Mordor", "isCorrect": false }
+      ],
+      "explanation": "Ses habitants s'appellent les Rohirrim."
+    },
+    {
+      "ref": "sda-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Quelle est la capitale du Rohan ?",
+      "answers": [
+        { "text": "Minas Tirith", "isCorrect": false },
+        { "text": "Edoras", "isCorrect": true },
+        { "text": "Isengard", "isCorrect": false },
+        { "text": "Bree", "isCorrect": false }
+      ],
+      "explanation": "Le palais du roi s'appelle Meduseld."
+    },
+    {
+      "ref": "sda-143",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Quelle forteresse du Rohan est assiégée par l'armée de Saroumane (Saruman) ?",
+      "answers": [
+        { "text": "Le Gouffre de Helm", "isCorrect": true },
+        { "text": "Minas Tirith", "isCorrect": false },
+        { "text": "Isengard", "isCorrect": false },
+        { "text": "La Porte Noire", "isCorrect": false }
+      ],
+      "explanation": "La bataille se déroule de nuit, sous une pluie battante. En version originale : Helm's Deep."
+    },
+    {
+      "ref": "sda-144",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle le royaume de Sauron ?",
+      "answers": [
+        { "text": "Le Rohan", "isCorrect": false },
+        { "text": "L'Isengard", "isCorrect": false },
+        { "text": "L'Angmar", "isCorrect": false },
+        { "text": "Le Mordor", "isCorrect": true }
+      ],
+      "explanation": "Il est entouré de montagnes."
+    },
+    {
+      "ref": "sda-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle la tour de Sauron ?",
+      "answers": [
+        { "text": "Orthanc", "isCorrect": false },
+        { "text": "Minas Morgul", "isCorrect": false },
+        { "text": "Barad-dûr", "isCorrect": true },
+        { "text": "Cirith Ungol", "isCorrect": false }
+      ],
+      "explanation": "Elle s'effondre quand l'Anneau est détruit."
+    },
+    {
+      "ref": "sda-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle la tour de Saroumane (Saruman), à Isengard ?",
+      "answers": [
+        { "text": "Barad-dûr", "isCorrect": false },
+        { "text": "Orthanc", "isCorrect": true },
+        { "text": "Minas Tirith", "isCorrect": false },
+        { "text": "Amon Hen", "isCorrect": false }
+      ],
+      "explanation": "Elle est faite d'une roche noire indestructible."
+    },
+    {
+      "ref": "sda-147",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Quel est l'autre nom de la Montagne du Destin (Mount Doom) ?",
+      "answers": [
+        { "text": "L'Orodruin", "isCorrect": true },
+        { "text": "Le Caradhras", "isCorrect": false },
+        { "text": "L'Erebor", "isCorrect": false },
+        { "text": "Le Taniquetil", "isCorrect": false }
+      ],
+      "explanation": "Le Caradhras est la montagne enneigée que la Communauté ne parvient pas à franchir."
+    },
+    {
+      "ref": "sda-148",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle la Porte Noire (Black Gate) qui garde l'entrée du Mordor ?",
+      "answers": [
+        { "text": "Le Gouffre de Helm", "isCorrect": false },
+        { "text": "L'Argonath", "isCorrect": false },
+        { "text": "Le Caradhras", "isCorrect": false },
+        { "text": "Le Morannon", "isCorrect": true }
+      ],
+      "explanation": "Aragorn y mène l'ultime bataille pour attirer l'attention de Sauron."
+    },
+    {
+      "ref": "sda-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Par quel col, gardé par une araignée, Frodon (Frodo) et Sam entrent-ils dans le Mordor ?",
+      "answers": [
+        { "text": "Le Morannon", "isCorrect": false },
+        { "text": "Le Caradhras", "isCorrect": false },
+        { "text": "Cirith Ungol", "isCorrect": true },
+        { "text": "La Moria", "isCorrect": false }
+      ],
+      "explanation": "Gollum les y conduit en espérant récupérer l'Anneau."
+    },
+    {
+      "ref": "sda-150",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Quel royaume elfique de forêt la Communauté traverse-t-elle après la Moria ?",
+      "answers": [
+        { "text": "La Forêt Noire", "isCorrect": false },
+        { "text": "La Lothlórien", "isCorrect": true },
+        { "text": "Fondcombe", "isCorrect": false },
+        { "text": "Fangorn", "isCorrect": false }
+      ],
+      "explanation": "Les arbres y sont des mallornes aux feuilles dorées."
+    },
+    {
+      "ref": "sda-151",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Dans quelle forêt vivent les Ents ?",
+      "answers": [
+        { "text": "Fangorn", "isCorrect": true },
+        { "text": "La Vieille Forêt", "isCorrect": false },
+        { "text": "La Forêt Noire", "isCorrect": false },
+        { "text": "La Lothlórien", "isCorrect": false }
+      ],
+      "explanation": "La forêt porte le nom du plus ancien des Ents, aussi appelé Sylvebarbe."
+    },
+    {
+      "ref": "sda-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle l'auberge de Bree où les hobbits rencontrent Aragorn ?",
+      "answers": [
+        { "text": "Le Dragon Vert", "isCorrect": false },
+        { "text": "Le Cochon Doré", "isCorrect": false },
+        { "text": "L'Étoile du Soir", "isCorrect": false },
+        { "text": "Le Poney Fringant", "isCorrect": true }
+      ],
+      "explanation": "Le Dragon Vert est l'auberge de Lézeau, dans la Comté. En version originale : Prancing Pony."
+    },
+    {
+      "ref": "sda-153",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Quels marais Frodon (Frodo) et Sam traversent-ils avec Gollum, où flottent des visages de morts ?",
+      "answers": [
+        { "text": "Les Marais du Mordor", "isCorrect": false },
+        { "text": "Les Marais de la Comté", "isCorrect": false },
+        { "text": "Les Marais des Morts", "isCorrect": true },
+        { "text": "Les Marais d'Isengard", "isCorrect": false }
+      ],
+      "explanation": "Gollum leur interdit de suivre les lumières. En version originale : Dead Marshes."
+    },
+    {
+      "ref": "sda-154",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Sur quelle colline Frodon (Frodo) est-il blessé par le Roi-Sorcier (Witch-king) ?",
+      "answers": [
+        { "text": "La Colline de Hobbitebourg", "isCorrect": false },
+        { "text": "Le Mont Venteux", "isCorrect": true },
+        { "text": "Amon Hen", "isCorrect": false },
+        { "text": "Le Caradhras", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle aussi Amon Sûl. En version originale : Weathertop."
+    },
+    {
+      "ref": "sda-155",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Devant quelles chutes la Communauté se sépare-t-elle ?",
+      "answers": [
+        { "text": "Les chutes de Rauros", "isCorrect": true },
+        { "text": "Les chutes de l'Isen", "isCorrect": false },
+        { "text": "Les chutes de Nimrodel", "isCorrect": false },
+        { "text": "Les chutes de Fondcombe", "isCorrect": false }
+      ],
+      "explanation": "Boromir meurt près de là, à Amon Hen."
+    },
+    {
+      "ref": "sda-156",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Quelles statues géantes de rois la Communauté croise-t-elle sur le fleuve Anduin ?",
+      "answers": [
+        { "text": "Les Rois de Pierre", "isCorrect": false },
+        { "text": "Les Gardiens du Rohan", "isCorrect": false },
+        { "text": "Les Sentinelles noires", "isCorrect": false },
+        { "text": "Les Argonath", "isCorrect": true }
+      ],
+      "explanation": "Elles représentent Isildur et son frère Anárion."
+    },
+    {
+      "ref": "sda-157",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle la grande bataille livrée devant Minas Tirith ?",
+      "answers": [
+        { "text": "La bataille du Gouffre de Helm", "isCorrect": false },
+        { "text": "La bataille d'Isengard", "isCorrect": false },
+        { "text": "La bataille des champs du Pelennor", "isCorrect": true },
+        { "text": "La bataille des Cinq Armées", "isCorrect": false }
+      ],
+      "explanation": "La bataille des Cinq Armées se déroule dans « Bilbo le Hobbit ». En version originale : Pelennor Fields."
+    },
+    {
+      "ref": "sda-158",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Qui a réalisé la trilogie du « Seigneur des Anneaux » au cinéma ?",
+      "answers": [
+        { "text": "Steven Spielberg", "isCorrect": false },
+        { "text": "Peter Jackson", "isCorrect": true },
+        { "text": "James Cameron", "isCorrect": false },
+        { "text": "Guillermo del Toro", "isCorrect": false }
+      ],
+      "explanation": "Les trois films ont été tournés en même temps, sur plus d'un an."
+    },
+    {
+      "ref": "sda-159",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Dans quel pays la trilogie a-t-elle été tournée ?",
+      "answers": [
+        { "text": "La Nouvelle-Zélande", "isCorrect": true },
+        { "text": "L'Islande", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": false }
+      ],
+      "explanation": "Peter Jackson est néo-zélandais."
+    },
+    {
+      "ref": "sda-160",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "En quelle année est sorti au cinéma « La Communauté de l'Anneau » (The Fellowship of the Ring) ?",
+      "answers": [
+        { "text": "1999", "isCorrect": false },
+        { "text": "2003", "isCorrect": false },
+        { "text": "2005", "isCorrect": false },
+        { "text": "2001", "isCorrect": true }
+      ],
+      "explanation": "Il est sorti en France en décembre 2001."
+    },
+    {
+      "ref": "sda-161",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "En quelle année est sorti au cinéma « Le Retour du Roi » (The Return of the King) ?",
+      "answers": [
+        { "text": "2001", "isCorrect": false },
+        { "text": "2005", "isCorrect": false },
+        { "text": "2003", "isCorrect": true },
+        { "text": "2007", "isCorrect": false }
+      ],
+      "explanation": "Il a été le deuxième film à dépasser le milliard de dollars de recettes, après « Titanic »."
+    },
+    {
+      "ref": "sda-162",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film", "record"],
+      "text": "Combien d'Oscars « Le Retour du Roi » (The Return of the King) a-t-il remportés ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "11", "isCorrect": true },
+        { "text": "7", "isCorrect": false },
+        { "text": "14", "isCorrect": false }
+      ],
+      "explanation": "C'est le record, partagé avec deux autres films."
+    },
+    {
+      "ref": "sda-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film", "record"],
+      "text": "Avec quels films « Le Retour du Roi » (The Return of the King) partage-t-il le record de 11 Oscars ?",
+      "answers": [
+        { "text": "« Ben-Hur » et « Titanic »", "isCorrect": true },
+        { "text": "« Avatar » et « Titanic »", "isCorrect": false },
+        { "text": "« Ben-Hur » et « Autant en emporte le vent »", "isCorrect": false },
+        { "text": "« Star Wars » et « Titanic »", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté toutes les catégories pour lesquelles il était nommé."
+    },
+    {
+      "ref": "sda-164",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["film", "record"],
+      "text": "« Le Retour du Roi » (The Return of the King) a remporté l'Oscar dans toutes les catégories où il était nommé.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Onze nominations, onze Oscars, dont celui du meilleur film."
+    },
+    {
+      "ref": "sda-165",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur joue Frodon (Frodo) ?",
+      "answers": [
+        { "text": "Daniel Radcliffe", "isCorrect": false },
+        { "text": "Sean Astin", "isCorrect": false },
+        { "text": "Elijah Wood", "isCorrect": true },
+        { "text": "Dominic Monaghan", "isCorrect": false }
+      ],
+      "explanation": "Elijah Wood avait 18 ans au début du tournage."
+    },
+    {
+      "ref": "sda-166",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur joue Gandalf ?",
+      "answers": [
+        { "text": "Christopher Lee", "isCorrect": false },
+        { "text": "Ian McKellen", "isCorrect": true },
+        { "text": "Michael Gambon", "isCorrect": false },
+        { "text": "Anthony Hopkins", "isCorrect": false }
+      ],
+      "explanation": "Ian McKellen joue aussi Magneto dans « X-Men »."
+    },
+    {
+      "ref": "sda-167",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur joue Aragorn ?",
+      "answers": [
+        { "text": "Viggo Mortensen", "isCorrect": true },
+        { "text": "Orlando Bloom", "isCorrect": false },
+        { "text": "Sean Bean", "isCorrect": false },
+        { "text": "Karl Urban", "isCorrect": false }
+      ],
+      "explanation": "Il a accepté le rôle au dernier moment, après le départ d'un autre acteur."
+    },
+    {
+      "ref": "sda-168",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur joue Legolas ?",
+      "answers": [
+        { "text": "Viggo Mortensen", "isCorrect": false },
+        { "text": "Elijah Wood", "isCorrect": false },
+        { "text": "Lee Pace", "isCorrect": false },
+        { "text": "Orlando Bloom", "isCorrect": true }
+      ],
+      "explanation": "Orlando Bloom joue aussi dans « Pirates des Caraïbes »."
+    },
+    {
+      "ref": "sda-169",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur joue Gimli ?",
+      "answers": [
+        { "text": "Ian Holm", "isCorrect": false },
+        { "text": "Billy Boyd", "isCorrect": false },
+        { "text": "John Rhys-Davies", "isCorrect": true },
+        { "text": "Bernard Hill", "isCorrect": false }
+      ],
+      "explanation": "Il prête aussi sa voix à l'Ent Sylvebarbe."
+    },
+    {
+      "ref": "sda-170",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur joue Sam ?",
+      "answers": [
+        { "text": "Sean Bean", "isCorrect": false },
+        { "text": "Sean Astin", "isCorrect": true },
+        { "text": "Billy Boyd", "isCorrect": false },
+        { "text": "Dominic Monaghan", "isCorrect": false }
+      ],
+      "explanation": "Sean Astin jouait déjà, enfant, dans « Les Goonies »."
+    },
+    {
+      "ref": "sda-171",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur joue Boromir ?",
+      "answers": [
+        { "text": "Sean Bean", "isCorrect": true },
+        { "text": "Sean Astin", "isCorrect": false },
+        { "text": "Karl Urban", "isCorrect": false },
+        { "text": "Hugo Weaving", "isCorrect": false }
+      ],
+      "explanation": "Sean Bean est célèbre pour mourir dans beaucoup de ses rôles."
+    },
+    {
+      "ref": "sda-172",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice joue Galadriel ?",
+      "answers": [
+        { "text": "Liv Tyler", "isCorrect": false },
+        { "text": "Miranda Otto", "isCorrect": false },
+        { "text": "Nicole Kidman", "isCorrect": false },
+        { "text": "Cate Blanchett", "isCorrect": true }
+      ],
+      "explanation": "Elle reprend le rôle dans la trilogie « Le Hobbit »."
+    },
+    {
+      "ref": "sda-173",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice joue Arwen ?",
+      "answers": [
+        { "text": "Cate Blanchett", "isCorrect": false },
+        { "text": "Miranda Otto", "isCorrect": false },
+        { "text": "Liv Tyler", "isCorrect": true },
+        { "text": "Keira Knightley", "isCorrect": false }
+      ],
+      "explanation": "Elle est la fille de Steven Tyler, le chanteur d'Aerosmith."
+    },
+    {
+      "ref": "sda-174",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur joue Saroumane (Saruman) ?",
+      "answers": [
+        { "text": "Ian McKellen", "isCorrect": false },
+        { "text": "Christopher Lee", "isCorrect": true },
+        { "text": "Hugo Weaving", "isCorrect": false },
+        { "text": "Ian Holm", "isCorrect": false }
+      ],
+      "explanation": "Grand lecteur de Tolkien, il l'avait même rencontré."
+    },
+    {
+      "ref": "sda-175",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur joue Bilbon (Bilbo) dans la trilogie du « Seigneur des Anneaux » ?",
+      "answers": [
+        { "text": "Ian Holm", "isCorrect": true },
+        { "text": "Martin Freeman", "isCorrect": false },
+        { "text": "Ian McKellen", "isCorrect": false },
+        { "text": "Christopher Lee", "isCorrect": false }
+      ],
+      "explanation": "Martin Freeman joue Bilbon jeune dans « Le Hobbit »."
+    },
+    {
+      "ref": "sda-176",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur joue Bilbon (Bilbo) dans la trilogie « Le Hobbit » ?",
+      "answers": [
+        { "text": "Ian Holm", "isCorrect": false },
+        { "text": "Benedict Cumberbatch", "isCorrect": false },
+        { "text": "Richard Armitage", "isCorrect": false },
+        { "text": "Martin Freeman", "isCorrect": true }
+      ],
+      "explanation": "Benedict Cumberbatch prête sa voix au dragon Smaug."
+    },
+    {
+      "ref": "sda-177",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Gollum, avec sa voix et ses mouvements ?",
+      "answers": [
+        { "text": "Elijah Wood", "isCorrect": false },
+        { "text": "Billy Boyd", "isCorrect": false },
+        { "text": "Andy Serkis", "isCorrect": true },
+        { "text": "Hugo Weaving", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi incarné César dans « La Planète des singes »."
+    },
+    {
+      "ref": "sda-178",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle technique a permis de créer Gollum à partir du jeu d'Andy Serkis ?",
+      "answers": [
+        { "text": "Le dessin animé à la main", "isCorrect": false },
+        { "text": "La capture de mouvement", "isCorrect": true },
+        { "text": "La marionnette", "isCorrect": false },
+        { "text": "La pâte à modeler", "isCorrect": false }
+      ],
+      "explanation": "Les mouvements de l'acteur sont enregistrés puis appliqués au personnage numérique."
+    },
+    {
+      "ref": "sda-179",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quelle actrice joue Éowyn ?",
+      "answers": [
+        { "text": "Miranda Otto", "isCorrect": true },
+        { "text": "Liv Tyler", "isCorrect": false },
+        { "text": "Cate Blanchett", "isCorrect": false },
+        { "text": "Naomi Watts", "isCorrect": false }
+      ],
+      "explanation": "Elle est australienne."
+    },
+    {
+      "ref": "sda-180",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur joue le roi Théoden ?",
+      "answers": [
+        { "text": "Ian Holm", "isCorrect": false },
+        { "text": "John Noble", "isCorrect": false },
+        { "text": "Brad Dourif", "isCorrect": false },
+        { "text": "Bernard Hill", "isCorrect": true }
+      ],
+      "explanation": "Il jouait aussi le capitaine du « Titanic »."
+    },
+    {
+      "ref": "sda-181",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur joue Faramir ?",
+      "answers": [
+        { "text": "Karl Urban", "isCorrect": false },
+        { "text": "Sean Bean", "isCorrect": false },
+        { "text": "David Wenham", "isCorrect": true },
+        { "text": "Hugo Weaving", "isCorrect": false }
+      ],
+      "explanation": "David Wenham est australien."
+    },
+    {
+      "ref": "sda-182",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur, célèbre agent Smith de « Matrix », joue Elrond ?",
+      "answers": [
+        { "text": "Keanu Reeves", "isCorrect": false },
+        { "text": "Hugo Weaving", "isCorrect": true },
+        { "text": "Laurence Fishburne", "isCorrect": false },
+        { "text": "Christopher Lee", "isCorrect": false }
+      ],
+      "explanation": "Il a joué les deux rôles presque en même temps."
+    },
+    {
+      "ref": "sda-183",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur joue Pippin ?",
+      "answers": [
+        { "text": "Billy Boyd", "isCorrect": true },
+        { "text": "Dominic Monaghan", "isCorrect": false },
+        { "text": "Sean Astin", "isCorrect": false },
+        { "text": "Elijah Wood", "isCorrect": false }
+      ],
+      "explanation": "Il chante aussi la chanson « Edge of Night » dans « Le Retour du Roi »."
+    },
+    {
+      "ref": "sda-184",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur joue Merry ?",
+      "answers": [
+        { "text": "Billy Boyd", "isCorrect": false },
+        { "text": "Sean Astin", "isCorrect": false },
+        { "text": "Andy Serkis", "isCorrect": false },
+        { "text": "Dominic Monaghan", "isCorrect": true }
+      ],
+      "explanation": "On l'a ensuite vu dans la série « Lost »."
+    },
+    {
+      "ref": "sda-185",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel compositeur a écrit la musique des films ?",
+      "answers": [
+        { "text": "John Williams", "isCorrect": false },
+        { "text": "Hans Zimmer", "isCorrect": false },
+        { "text": "Howard Shore", "isCorrect": true },
+        { "text": "Danny Elfman", "isCorrect": false }
+      ],
+      "explanation": "Il a remporté trois Oscars pour la trilogie."
+    },
+    {
+      "ref": "sda-186",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quelle chanteuse interprète « May It Be » au générique de « La Communauté de l'Anneau » (The Fellowship of the Ring) ?",
+      "answers": [
+        { "text": "Annie Lennox", "isCorrect": false },
+        { "text": "Enya", "isCorrect": true },
+        { "text": "Sinéad O'Connor", "isCorrect": false },
+        { "text": "Loreena McKennitt", "isCorrect": false }
+      ],
+      "explanation": "La chanson contient des paroles en quenya."
+    },
+    {
+      "ref": "sda-187",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quelle chanson d'Annie Lennox, au générique du « Retour du Roi », a remporté l'Oscar ?",
+      "answers": [
+        { "text": "Into the West", "isCorrect": true },
+        { "text": "May It Be", "isCorrect": false },
+        { "text": "Gollum's Song", "isCorrect": false },
+        { "text": "The Last Goodbye", "isCorrect": false }
+      ],
+      "explanation": "« The Last Goodbye » est chantée par Billy Boyd à la fin du « Hobbit »."
+    },
+    {
+      "ref": "sda-188",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel studio néo-zélandais a créé les effets spéciaux, les costumes et les armes des films ?",
+      "answers": [
+        { "text": "Pixar", "isCorrect": false },
+        { "text": "Industrial Light & Magic", "isCorrect": false },
+        { "text": "Framestore", "isCorrect": false },
+        { "text": "Weta", "isCorrect": true }
+      ],
+      "explanation": "Il a été cofondé par Richard Taylor et Peter Jackson."
+    },
+    {
+      "ref": "sda-189",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur s'est cassé deux orteils en donnant un coup de pied dans un casque d'orque, gardé dans le film ?",
+      "answers": [
+        { "text": "Orlando Bloom", "isCorrect": false },
+        { "text": "John Rhys-Davies", "isCorrect": false },
+        { "text": "Viggo Mortensen", "isCorrect": true },
+        { "text": "Sean Bean", "isCorrect": false }
+      ],
+      "explanation": "Son cri de douleur est réel."
+    },
+    {
+      "ref": "sda-190",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur devait d'abord jouer Aragorn, avant d'être remplacé par Viggo Mortensen ?",
+      "answers": [
+        { "text": "Russell Crowe", "isCorrect": false },
+        { "text": "Stuart Townsend", "isCorrect": true },
+        { "text": "Hugh Jackman", "isCorrect": false },
+        { "text": "Daniel Day-Lewis", "isCorrect": false }
+      ],
+      "explanation": "Peter Jackson l'a jugé trop jeune après le début du tournage."
+    },
+    {
+      "ref": "sda-191",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "La plupart des acteurs de la Communauté se sont fait tatouer le chiffre 9 en elfique.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "John Rhys-Davies a refusé et a envoyé sa doublure à sa place."
+    },
+    {
+      "ref": "sda-192",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quelle trilogie Peter Jackson a-t-il réalisée ensuite, adaptée d'un autre livre de Tolkien ?",
+      "answers": [
+        { "text": "Le Silmarillion", "isCorrect": false },
+        { "text": "Les Anneaux de pouvoir", "isCorrect": false },
+        { "text": "Narnia", "isCorrect": false },
+        { "text": "Le Hobbit", "isCorrect": true }
+      ],
+      "explanation": "Elle est sortie entre 2012 et 2014."
+    },
+    {
+      "ref": "sda-193",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "En combien de films « Bilbo le Hobbit » (The Hobbit) a-t-il été adapté au cinéma ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Le livre, assez court, a été enrichi d'éléments des annexes de Tolkien."
+    },
+    {
+      "ref": "sda-194",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel réalisateur mexicain devait d'abord réaliser « Le Hobbit » ?",
+      "answers": [
+        { "text": "Alfonso Cuarón", "isCorrect": false },
+        { "text": "Guillermo del Toro", "isCorrect": true },
+        { "text": "Alejandro González Iñárritu", "isCorrect": false },
+        { "text": "Robert Rodriguez", "isCorrect": false }
+      ],
+      "explanation": "Il a quitté le projet en 2010 mais reste crédité comme scénariste."
+    },
+    {
+      "ref": "sda-195",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle série d'Amazon se déroule au Deuxième Âge de la Terre du Milieu (Middle-earth) ?",
+      "answers": [
+        { "text": "Les Anneaux de pouvoir", "isCorrect": true },
+        { "text": "La Roue du temps", "isCorrect": false },
+        { "text": "The Witcher", "isCorrect": false },
+        { "text": "Game of Thrones", "isCorrect": false }
+      ],
+      "explanation": "Elle raconte notamment la forge des anneaux de pouvoir."
+    },
+    {
+      "ref": "sda-196",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "En quelle année la série « Les Anneaux de pouvoir » (The Rings of Power) est-elle sortie ?",
+      "answers": [
+        { "text": "2018", "isCorrect": false },
+        { "text": "2020", "isCorrect": false },
+        { "text": "2024", "isCorrect": false },
+        { "text": "2022", "isCorrect": true }
+      ],
+      "explanation": "C'est l'une des séries les plus chères de l'histoire."
+    },
+    {
+      "ref": "sda-197",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel film d'animation, sorti fin 2024, raconte une guerre du Rohan deux siècles avant Frodon (Frodo) ?",
+      "answers": [
+        { "text": "Le Roi Helm", "isCorrect": false },
+        { "text": "La Chute du Rohan", "isCorrect": false },
+        { "text": "La Guerre des Rohirrim", "isCorrect": true },
+        { "text": "Les Cavaliers du Rohan", "isCorrect": false }
+      ],
+      "explanation": "Le héros en est Helm Poing-de-Marteau, qui a donné son nom au Gouffre de Helm."
+    },
+    {
+      "ref": "sda-198",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel réalisateur a tourné une adaptation en dessin animé du « Seigneur des Anneaux » en 1978 ?",
+      "answers": [
+        { "text": "Walt Disney", "isCorrect": false },
+        { "text": "Ralph Bakshi", "isCorrect": true },
+        { "text": "Hayao Miyazaki", "isCorrect": false },
+        { "text": "Don Bluth", "isCorrect": false }
+      ],
+      "explanation": "Le film s'arrête au milieu de l'histoire."
+    },
+    {
+      "ref": "sda-199",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Dans quelle ville de Nouvelle-Zélande se trouve le décor de Hobbitebourg (Hobbiton), ouvert au public ?",
+      "answers": [
+        { "text": "Matamata", "isCorrect": true },
+        { "text": "Auckland", "isCorrect": false },
+        { "text": "Wellington", "isCorrect": false },
+        { "text": "Queenstown", "isCorrect": false }
+      ],
+      "explanation": "Le décor a été reconstruit en dur pour « Le Hobbit »."
+    },
+    {
+      "ref": "sda-200",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation", "personnage"],
+      "text": "Qui crie « Vous ne passerez pas ! » face au Balrog ?",
+      "answers": [
+        { "text": "Aragorn", "isCorrect": false },
+        { "text": "Gimli", "isCorrect": false },
+        { "text": "Boromir", "isCorrect": false },
+        { "text": "Gandalf", "isCorrect": true }
+      ],
+      "explanation": "Il se tient sur le pont de Khazad-dûm, dans la Moria."
+    },
+    {
+      "ref": "sda-201",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation", "personnage"],
+      "text": "Qui dit « Un magicien n'est jamais en retard, ni en avance d'ailleurs. Il arrive précisément à l'heure prévue » ?",
+      "answers": [
+        { "text": "Saroumane", "isCorrect": false },
+        { "text": "Radagast", "isCorrect": false },
+        { "text": "Gandalf", "isCorrect": true },
+        { "text": "Elrond", "isCorrect": false }
+      ],
+      "explanation": "Gandalf répond ainsi à Frodon au début du premier film."
+    },
+    {
+      "ref": "sda-202",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["citation", "personnage"],
+      "text": "Qui lance « Fuyez, pauvres fous ! » avant de tomber dans l'abîme ?",
+      "answers": [
+        { "text": "Boromir", "isCorrect": false },
+        { "text": "Gandalf", "isCorrect": true },
+        { "text": "Aragorn", "isCorrect": false },
+        { "text": "Théoden", "isCorrect": false }
+      ],
+      "explanation": "C'est son dernier conseil à la Communauté, dans la Moria."
+    },
+    {
+      "ref": "sda-203",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation", "personnage"],
+      "text": "Dans le film, qui dit qu'on n'entre pas en Mordor si facilement ?",
+      "answers": [
+        { "text": "Boromir", "isCorrect": true },
+        { "text": "Gimli", "isCorrect": false },
+        { "text": "Elrond", "isCorrect": false },
+        { "text": "Aragorn", "isCorrect": false }
+      ],
+      "explanation": "La réplique est devenue l'un des mèmes les plus célèbres d'Internet."
+    },
+    {
+      "ref": "sda-204",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation", "personnage"],
+      "text": "Qui s'écrie « Ils emmènent les hobbits à Isengard ! » ?",
+      "answers": [
+        { "text": "Aragorn", "isCorrect": false },
+        { "text": "Gimli", "isCorrect": false },
+        { "text": "Gandalf", "isCorrect": false },
+        { "text": "Legolas", "isCorrect": true }
+      ],
+      "explanation": "La réplique a été reprise dans un remix musical devenu culte sur Internet."
+    },
+    {
+      "ref": "sda-205",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation", "personnage"],
+      "text": "Qui dit, dans le film, « Personne ne lance un nain ! » ?",
+      "answers": [
+        { "text": "Thorin", "isCorrect": false },
+        { "text": "Balin", "isCorrect": false },
+        { "text": "Gimli", "isCorrect": true },
+        { "text": "Glóin", "isCorrect": false }
+      ],
+      "explanation": "Il le dit au Gouffre de Helm, puis demande à Aragorn de le lancer."
+    },
+    {
+      "ref": "sda-206",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation", "personnage"],
+      "text": "Qui dit à Frodon (Frodo) « Je ne peux pas le porter pour vous, mais je peux vous porter » ?",
+      "answers": [
+        { "text": "Gandalf", "isCorrect": false },
+        { "text": "Sam", "isCorrect": true },
+        { "text": "Aragorn", "isCorrect": false },
+        { "text": "Merry", "isCorrect": false }
+      ],
+      "explanation": "Il porte Frodon sur son dos dans les pentes de la Montagne du Destin."
+    },
+    {
+      "ref": "sda-207",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["citation", "personnage"],
+      "text": "Qui dit « Tout ce que nous avons à décider, c'est ce que nous devons faire du temps qui nous est imparti » ?",
+      "answers": [
+        { "text": "Gandalf", "isCorrect": true },
+        { "text": "Elrond", "isCorrect": false },
+        { "text": "Galadriel", "isCorrect": false },
+        { "text": "Bilbon", "isCorrect": false }
+      ],
+      "explanation": "Il répond à Frodon, qui regrette que l'Anneau soit arrivé jusqu'à lui."
+    },
+    {
+      "ref": "sda-208",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation", "personnage"],
+      "text": "Qui dit « Mes amis, vous ne vous inclinez devant personne » ?",
+      "answers": [
+        { "text": "Théoden", "isCorrect": false },
+        { "text": "Gandalf", "isCorrect": false },
+        { "text": "Éomer", "isCorrect": false },
+        { "text": "Aragorn", "isCorrect": true }
+      ],
+      "explanation": "Le jour de son couronnement, il s'incline lui-même devant les quatre hobbits."
+    },
+    {
+      "ref": "sda-209",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["citation", "personnage"],
+      "text": "Devant quelle armée Aragorn lance-t-il « Mais ce n'est pas ce jour ! » ?",
+      "answers": [
+        { "text": "Au Gouffre de Helm", "isCorrect": false },
+        { "text": "À Minas Tirith", "isCorrect": false },
+        { "text": "Devant la Porte Noire du Mordor", "isCorrect": true },
+        { "text": "À Isengard", "isCorrect": false }
+      ],
+      "explanation": "Il encourage ses soldats juste avant l'ultime bataille. En version originale : Black Gate."
+    },
+    {
+      "ref": "sda-210",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["hobbit"],
+      "text": "Quel dragon garde le trésor de la Montagne Solitaire (Lonely Mountain) dans « Bilbo le Hobbit » (The Hobbit) ?",
+      "answers": [
+        { "text": "Glaurung", "isCorrect": false },
+        { "text": "Smaug", "isCorrect": true },
+        { "text": "Ancalagon", "isCorrect": false },
+        { "text": "Balrog", "isCorrect": false }
+      ],
+      "explanation": "Smaug a chassé les Nains de leur royaume d'Erebor."
+    },
+    {
+      "ref": "sda-211",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["hobbit"],
+      "text": "Quel nain mène la compagnie de Bilbon (Bilbo) ?",
+      "answers": [
+        { "text": "Thorin Écu-de-Chêne", "isCorrect": true },
+        { "text": "Gimli", "isCorrect": false },
+        { "text": "Balin", "isCorrect": false },
+        { "text": "Dáin Pied-d'Acier", "isCorrect": false }
+      ],
+      "explanation": "Thorin veut reprendre le royaume de ses ancêtres. En version originale : Thorin Oakenshield."
+    },
+    {
+      "ref": "sda-212",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["hobbit"],
+      "text": "Combien de nains accompagnent Bilbon (Bilbo) dans son aventure ?",
+      "answers": [
+        { "text": "9", "isCorrect": false },
+        { "text": "7", "isCorrect": false },
+        { "text": "12", "isCorrect": false },
+        { "text": "13", "isCorrect": true }
+      ],
+      "explanation": "Avec Bilbon, la compagnie compte quatorze membres, sans compter Gandalf."
+    },
+    {
+      "ref": "sda-213",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["hobbit"],
+      "text": "Quel archer tue le dragon Smaug ?",
+      "answers": [
+        { "text": "Legolas", "isCorrect": false },
+        { "text": "Thorin", "isCorrect": false },
+        { "text": "Bard", "isCorrect": true },
+        { "text": "Thranduil", "isCorrect": false }
+      ],
+      "explanation": "Il le touche au seul endroit où le dragon n'a pas d'écailles."
+    },
+    {
+      "ref": "sda-214",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["hobbit"],
+      "text": "À quel jeu Bilbon (Bilbo) et Gollum s'affrontent-ils sous la montagne ?",
+      "answers": [
+        { "text": "Une partie d'échecs", "isCorrect": false },
+        { "text": "Un concours d'énigmes", "isCorrect": true },
+        { "text": "Un duel à l'épée", "isCorrect": false },
+        { "text": "Une course", "isCorrect": false }
+      ],
+      "explanation": "Si Bilbon perd, Gollum le dévore."
+    },
+    {
+      "ref": "sda-215",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["hobbit"],
+      "text": "Quelle question permet à Bilbon (Bilbo) de gagner le concours d'énigmes contre Gollum ?",
+      "answers": [
+        { "text": "« Qu'ai-je dans ma poche ? »", "isCorrect": true },
+        { "text": "« Qui suis-je ? »", "isCorrect": false },
+        { "text": "« Quelle est la couleur du ciel ? »", "isCorrect": false },
+        { "text": "« Combien de doigts ai-je ? »", "isCorrect": false }
+      ],
+      "explanation": "Ce n'est pas vraiment une énigme, mais Gollum accepte de jouer."
+    },
+    {
+      "ref": "sda-216",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["livre", "avant-apres"],
+      "text": "« Le Seigneur des Anneaux » a-t-il été publié avant ou après la fin de la Seconde Guerre mondiale ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La guerre se termine en 1945, le livre paraît en 1954 et 1955."
+    },
+    {
+      "ref": "sda-217",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["livre", "avant-apres"],
+      "text": "« Bilbo le Hobbit » (The Hobbit) est-il paru avant ou après le début de la Seconde Guerre mondiale ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Le livre paraît en 1937, la guerre éclate en 1939."
+    },
+    {
+      "ref": "sda-218",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["livre", "avant-apres"],
+      "text": "Tolkien est-il mort avant ou après la publication du « Silmarillion » ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Tolkien meurt en 1973, « Le Silmarillion » paraît en 1977."
+    },
+    {
+      "ref": "sda-219",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["film", "avant-apres"],
+      "text": "Le film « La Communauté de l'Anneau » (The Fellowship of the Ring) est-il sorti avant ou après « Harry Potter à l'école des sorciers » ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Les deux films sortent fin 2001 : Harry Potter en novembre, la Communauté en décembre."
+    },
+    {
+      "ref": "sda-220",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["film", "avant-apres"],
+      "text": "Le premier film « Le Hobbit » est-il sorti avant ou après le début de la série « Game of Thrones » ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "« Game of Thrones » commence en 2011, « Le Hobbit » sort fin 2012."
+    },
+    {
+      "ref": "sda-221",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["livre", "avant-apres"],
+      "text": "Tolkien est-il né avant ou après la construction de la tour Eiffel ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La tour Eiffel est inaugurée en 1889, Tolkien naît en 1892."
+    }
+  ]
+}

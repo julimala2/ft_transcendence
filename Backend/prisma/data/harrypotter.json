@@ -1,18 +1,21 @@
 {
   "_stats": {
     "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
-    "total": 207,
-    "parDifficulte": { "1": 56, "2": 97, "3": 54 },
-    "parType": { "multiple": 187, "boolean": 20 },
+    "total": 268,
+    "parDifficulte": { "1": 66, "2": 127, "3": 75 },
+    "parType": { "multiple": 242, "boolean": 26 },
     "avecImage": 0,
-    "sansImage": 207,
+    "sansImage": 268,
     "parTag": {
       "recit": 63,
+      "film": 61,
       "personnage": 52,
       "maison": 31,
       "sort": 31,
       "citation": 27,
-      "horcruxe": 23
+      "horcruxe": 23,
+      "avant-apres": 3,
+      "france": 2
     }
   },
   "category": {
@@ -2878,6 +2881,848 @@
         { "text": "Kreattur (Kreacher)", "isCorrect": false }
       ],
       "explanation": "Mondingus l'avait volé au square Grimmaurd (Grimmauld Place) et le lui avait cédé pour éviter une amende. Ombrage prétend que c'est un bijou de famille."
+    },
+    {
+      "ref": "hp-208",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Combien de films compte la saga Harry Potter ?",
+      "answers": [
+        { "text": "7", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "8", "isCorrect": true },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "Le dernier livre, « Les Reliques de la Mort », a été adapté en deux films."
+    },
+    {
+      "ref": "hp-209",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "En quelle année est sorti le premier film, « Harry Potter à l'école des sorciers » ?",
+      "answers": [
+        { "text": "1999", "isCorrect": false },
+        { "text": "2001", "isCorrect": true },
+        { "text": "2003", "isCorrect": false },
+        { "text": "1997", "isCorrect": false }
+      ],
+      "explanation": "Il est sorti en France le 5 décembre 2001."
+    },
+    {
+      "ref": "hp-210",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "En quelle année est sorti le dernier film de la saga ?",
+      "answers": [
+        { "text": "2011", "isCorrect": true },
+        { "text": "2009", "isCorrect": false },
+        { "text": "2013", "isCorrect": false },
+        { "text": "2007", "isCorrect": false }
+      ],
+      "explanation": "« Les Reliques de la Mort, 2e partie » est sorti en juillet 2011."
+    },
+    {
+      "ref": "hp-211",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Harry Potter ?",
+      "answers": [
+        { "text": "Rupert Grint", "isCorrect": false },
+        { "text": "Tom Felton", "isCorrect": false },
+        { "text": "Elijah Wood", "isCorrect": false },
+        { "text": "Daniel Radcliffe", "isCorrect": true }
+      ],
+      "explanation": "Il avait 11 ans au début du tournage du premier film."
+    },
+    {
+      "ref": "hp-212",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne Hermione Granger ?",
+      "answers": [
+        { "text": "Bonnie Wright", "isCorrect": false },
+        { "text": "Evanna Lynch", "isCorrect": false },
+        { "text": "Emma Watson", "isCorrect": true },
+        { "text": "Emma Stone", "isCorrect": false }
+      ],
+      "explanation": "Elle est née à Paris en 1990."
+    },
+    {
+      "ref": "hp-213",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Ron Weasley ?",
+      "answers": [
+        { "text": "Daniel Radcliffe", "isCorrect": false },
+        { "text": "Rupert Grint", "isCorrect": true },
+        { "text": "Matthew Lewis", "isCorrect": false },
+        { "text": "James Phelps", "isCorrect": false }
+      ],
+      "explanation": "Il a décroché le rôle en envoyant une vidéo où il rappait."
+    },
+    {
+      "ref": "hp-214",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Severus Rogue (Snape) ?",
+      "answers": [
+        { "text": "Alan Rickman", "isCorrect": true },
+        { "text": "Gary Oldman", "isCorrect": false },
+        { "text": "Ralph Fiennes", "isCorrect": false },
+        { "text": "Jason Isaacs", "isCorrect": false }
+      ],
+      "explanation": "J. K. Rowling lui avait confié des secrets du personnage bien avant la fin de la saga."
+    },
+    {
+      "ref": "hp-215",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Voldemort ?",
+      "answers": [
+        { "text": "Alan Rickman", "isCorrect": false },
+        { "text": "Gary Oldman", "isCorrect": false },
+        { "text": "Jason Isaacs", "isCorrect": false },
+        { "text": "Ralph Fiennes", "isCorrect": true }
+      ],
+      "explanation": "Son nez a été effacé numériquement à chaque plan."
+    },
+    {
+      "ref": "hp-216",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne le professeur Minerva McGonagall ?",
+      "answers": [
+        { "text": "Emma Thompson", "isCorrect": false },
+        { "text": "Helena Bonham Carter", "isCorrect": false },
+        { "text": "Maggie Smith", "isCorrect": true },
+        { "text": "Imelda Staunton", "isCorrect": false }
+      ],
+      "explanation": "Elle est morte en 2024, à 89 ans."
+    },
+    {
+      "ref": "hp-217",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Hagrid ?",
+      "answers": [
+        { "text": "Brendan Gleeson", "isCorrect": false },
+        { "text": "Robbie Coltrane", "isCorrect": true },
+        { "text": "Michael Gambon", "isCorrect": false },
+        { "text": "Timothy Spall", "isCorrect": false }
+      ],
+      "explanation": "Il était aussi célèbre au Royaume-Uni pour la série policière « Cracker »."
+    },
+    {
+      "ref": "hp-218",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Albus Dumbledore dans les deux premiers films ?",
+      "answers": [
+        { "text": "Richard Harris", "isCorrect": true },
+        { "text": "Michael Gambon", "isCorrect": false },
+        { "text": "Ian McKellen", "isCorrect": false },
+        { "text": "Christopher Lee", "isCorrect": false }
+      ],
+      "explanation": "Il est mort en 2002, peu après la sortie du deuxième film."
+    },
+    {
+      "ref": "hp-219",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur reprend le rôle d'Albus Dumbledore à partir du troisième film ?",
+      "answers": [
+        { "text": "Richard Harris", "isCorrect": false },
+        { "text": "Jude Law", "isCorrect": false },
+        { "text": "John Hurt", "isCorrect": false },
+        { "text": "Michael Gambon", "isCorrect": true }
+      ],
+      "explanation": "Jude Law joue Dumbledore jeune dans « Les Animaux fantastiques »."
+    },
+    {
+      "ref": "hp-220",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne Bellatrix Lestrange ?",
+      "answers": [
+        { "text": "Emma Thompson", "isCorrect": false },
+        { "text": "Imelda Staunton", "isCorrect": false },
+        { "text": "Helena Bonham Carter", "isCorrect": true },
+        { "text": "Julie Walters", "isCorrect": false }
+      ],
+      "explanation": "Elle est connue pour ses nombreux rôles dans les films de Tim Burton."
+    },
+    {
+      "ref": "hp-221",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Sirius Black ?",
+      "answers": [
+        { "text": "David Thewlis", "isCorrect": false },
+        { "text": "Gary Oldman", "isCorrect": true },
+        { "text": "Jason Isaacs", "isCorrect": false },
+        { "text": "Timothy Spall", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi joué le commissaire Gordon dans les « Batman » de Christopher Nolan."
+    },
+    {
+      "ref": "hp-222",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Drago Malefoy (Draco Malfoy) ?",
+      "answers": [
+        { "text": "Tom Felton", "isCorrect": true },
+        { "text": "Robert Pattinson", "isCorrect": false },
+        { "text": "Matthew Lewis", "isCorrect": false },
+        { "text": "Alfred Enoch", "isCorrect": false }
+      ],
+      "explanation": "Il a passé dix ans à jouer le rival de Harry."
+    },
+    {
+      "ref": "hp-223",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne Dolores Ombrage (Umbridge) ?",
+      "answers": [
+        { "text": "Maggie Smith", "isCorrect": false },
+        { "text": "Emma Thompson", "isCorrect": false },
+        { "text": "Miranda Richardson", "isCorrect": false },
+        { "text": "Imelda Staunton", "isCorrect": true }
+      ],
+      "explanation": "Le rose de ses tenues devient de plus en plus foncé au fil du film."
+    },
+    {
+      "ref": "hp-224",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Gilderoy Lockhart dans « La Chambre des secrets » ?",
+      "answers": [
+        { "text": "Hugh Grant", "isCorrect": false },
+        { "text": "Jude Law", "isCorrect": false },
+        { "text": "Kenneth Branagh", "isCorrect": true },
+        { "text": "Ewan McGregor", "isCorrect": false }
+      ],
+      "explanation": "Hugh Grant avait d'abord été envisagé pour le rôle."
+    },
+    {
+      "ref": "hp-225",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne la professeure Sibylle Trelawney (Sybill) ?",
+      "answers": [
+        { "text": "Helena Bonham Carter", "isCorrect": false },
+        { "text": "Emma Thompson", "isCorrect": true },
+        { "text": "Maggie Smith", "isCorrect": false },
+        { "text": "Julie Walters", "isCorrect": false }
+      ],
+      "explanation": "Elle porte d'énormes lunettes qui grossissent ses yeux."
+    },
+    {
+      "ref": "hp-226",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Remus Lupin ?",
+      "answers": [
+        { "text": "David Thewlis", "isCorrect": true },
+        { "text": "Gary Oldman", "isCorrect": false },
+        { "text": "Jason Isaacs", "isCorrect": false },
+        { "text": "Brendan Gleeson", "isCorrect": false }
+      ],
+      "explanation": "Il apparaît pour la première fois dans « Le Prisonnier d'Azkaban »."
+    },
+    {
+      "ref": "hp-227",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur, futur Batman et vampire de « Twilight », incarne Cedric Diggory ?",
+      "answers": [
+        { "text": "Tom Felton", "isCorrect": false },
+        { "text": "Eddie Redmayne", "isCorrect": false },
+        { "text": "Daniel Radcliffe", "isCorrect": false },
+        { "text": "Robert Pattinson", "isCorrect": true }
+      ],
+      "explanation": "Cedric apparaît dans « La Coupe de feu »."
+    },
+    {
+      "ref": "hp-228",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne Luna Lovegood ?",
+      "answers": [
+        { "text": "Bonnie Wright", "isCorrect": false },
+        { "text": "Katie Leung", "isCorrect": false },
+        { "text": "Evanna Lynch", "isCorrect": true },
+        { "text": "Emma Watson", "isCorrect": false }
+      ],
+      "explanation": "Fan des livres, elle avait écrit à J. K. Rowling avant le casting."
+    },
+    {
+      "ref": "hp-229",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle actrice incarne Ginny Weasley ?",
+      "answers": [
+        { "text": "Evanna Lynch", "isCorrect": false },
+        { "text": "Bonnie Wright", "isCorrect": true },
+        { "text": "Emma Watson", "isCorrect": false },
+        { "text": "Katie Leung", "isCorrect": false }
+      ],
+      "explanation": "Ginny devient l'épouse de Harry dans l'épilogue."
+    },
+    {
+      "ref": "hp-230",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Neville Londubat (Longbottom) ?",
+      "answers": [
+        { "text": "Matthew Lewis", "isCorrect": true },
+        { "text": "Tom Felton", "isCorrect": false },
+        { "text": "Rupert Grint", "isCorrect": false },
+        { "text": "Alfred Enoch", "isCorrect": false }
+      ],
+      "explanation": "Il porte une fausse dentition et des oreilles décollées dans les premiers films."
+    },
+    {
+      "ref": "hp-231",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Qui incarne les jumeaux Fred et George Weasley ?",
+      "answers": [
+        { "text": "Les frères Rupert et James Grint", "isCorrect": false },
+        { "text": "Les jumeaux Mary-Kate et Ashley Olsen", "isCorrect": false },
+        { "text": "Un seul acteur grâce aux effets spéciaux", "isCorrect": false },
+        { "text": "Les jumeaux James et Oliver Phelps", "isCorrect": true }
+      ],
+      "explanation": "Ce sont de vrais jumeaux."
+    },
+    {
+      "ref": "hp-232",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Alastor Maugrey, dit Fol Œil (Mad-Eye Moody) ?",
+      "answers": [
+        { "text": "Robbie Coltrane", "isCorrect": false },
+        { "text": "Michael Gambon", "isCorrect": false },
+        { "text": "Brendan Gleeson", "isCorrect": true },
+        { "text": "David Thewlis", "isCorrect": false }
+      ],
+      "explanation": "Son fils Domhnall Gleeson joue Bill Weasley."
+    },
+    {
+      "ref": "hp-233",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Horace Slughorn dans « Le Prince de sang-mêlé » ?",
+      "answers": [
+        { "text": "Timothy Spall", "isCorrect": false },
+        { "text": "Jim Broadbent", "isCorrect": true },
+        { "text": "Michael Gambon", "isCorrect": false },
+        { "text": "Brendan Gleeson", "isCorrect": false }
+      ],
+      "explanation": "Il venait de recevoir un Oscar pour le film « Iris »."
+    },
+    {
+      "ref": "hp-234",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Lucius Malefoy (Malfoy) ?",
+      "answers": [
+        { "text": "Jason Isaacs", "isCorrect": true },
+        { "text": "Gary Oldman", "isCorrect": false },
+        { "text": "Ralph Fiennes", "isCorrect": false },
+        { "text": "David Thewlis", "isCorrect": false }
+      ],
+      "explanation": "Il a d'abord passé l'audition pour le rôle de Gilderoy Lockhart."
+    },
+    {
+      "ref": "hp-235",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur incarne à la fois le professeur Flitwick et le gobelin Gripsec (Griphook) ?",
+      "answers": [
+        { "text": "Peter Dinklage", "isCorrect": false },
+        { "text": "Toby Jones", "isCorrect": false },
+        { "text": "Timothy Spall", "isCorrect": false },
+        { "text": "Warwick Davis", "isCorrect": true }
+      ],
+      "explanation": "Il jouait aussi Wicket l'Ewok dans « Star Wars »."
+    },
+    {
+      "ref": "hp-236",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur prête sa voix à l'elfe de maison Dobby ?",
+      "answers": [
+        { "text": "Warwick Davis", "isCorrect": false },
+        { "text": "Andy Serkis", "isCorrect": false },
+        { "text": "Toby Jones", "isCorrect": true },
+        { "text": "Timothy Spall", "isCorrect": false }
+      ],
+      "explanation": "Dobby est entièrement créé en images de synthèse."
+    },
+    {
+      "ref": "hp-237",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur, neveu de Ralph Fiennes, incarne Tom Jedusor (Riddle) enfant dans « Le Prince de sang-mêlé » ?",
+      "answers": [
+        { "text": "Joseph Fiennes", "isCorrect": false },
+        { "text": "Hero Fiennes-Tiffin", "isCorrect": true },
+        { "text": "Christian Coulson", "isCorrect": false },
+        { "text": "Frank Dillane", "isCorrect": false }
+      ],
+      "explanation": "Il a ensuite joué dans la série de films « After »."
+    },
+    {
+      "ref": "hp-238",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["film"],
+      "text": "Quel réalisateur a tourné les deux premiers films ?",
+      "answers": [
+        { "text": "Chris Columbus", "isCorrect": true },
+        { "text": "Steven Spielberg", "isCorrect": false },
+        { "text": "David Yates", "isCorrect": false },
+        { "text": "Alfonso Cuarón", "isCorrect": false }
+      ],
+      "explanation": "Chris Columbus avait aussi réalisé « Maman, j'ai raté l'avion ! »."
+    },
+    {
+      "ref": "hp-239",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel réalisateur mexicain a tourné « Le Prisonnier d'Azkaban » ?",
+      "answers": [
+        { "text": "Guillermo del Toro", "isCorrect": false },
+        { "text": "Alejandro González Iñárritu", "isCorrect": false },
+        { "text": "Robert Rodriguez", "isCorrect": false },
+        { "text": "Alfonso Cuarón", "isCorrect": true }
+      ],
+      "explanation": "Son film, plus sombre, change le style visuel de la saga."
+    },
+    {
+      "ref": "hp-240",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel réalisateur britannique a tourné « La Coupe de feu » ?",
+      "answers": [
+        { "text": "David Yates", "isCorrect": false },
+        { "text": "Chris Columbus", "isCorrect": false },
+        { "text": "Mike Newell", "isCorrect": true },
+        { "text": "Danny Boyle", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi réalisé « Quatre mariages et un enterrement »."
+    },
+    {
+      "ref": "hp-241",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel réalisateur a tourné les quatre derniers films de la saga ?",
+      "answers": [
+        { "text": "Chris Columbus", "isCorrect": false },
+        { "text": "David Yates", "isCorrect": true },
+        { "text": "Mike Newell", "isCorrect": false },
+        { "text": "Alfonso Cuarón", "isCorrect": false }
+      ],
+      "explanation": "Il a ensuite réalisé les trois films « Les Animaux fantastiques »."
+    },
+    {
+      "ref": "hp-242",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel compositeur a créé le célèbre thème musical de Harry Potter ?",
+      "answers": [
+        { "text": "John Williams", "isCorrect": true },
+        { "text": "Hans Zimmer", "isCorrect": false },
+        { "text": "Howard Shore", "isCorrect": false },
+        { "text": "Alexandre Desplat", "isCorrect": false }
+      ],
+      "explanation": "Le thème, « Hedwig's Theme », revient dans tous les films."
+    },
+    {
+      "ref": "hp-243",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film", "france"],
+      "text": "Quel compositeur français a écrit la musique des deux films « Les Reliques de la Mort » ?",
+      "answers": [
+        { "text": "Michel Legrand", "isCorrect": false },
+        { "text": "Éric Serra", "isCorrect": false },
+        { "text": "Philippe Sarde", "isCorrect": false },
+        { "text": "Alexandre Desplat", "isCorrect": true }
+      ],
+      "explanation": "Il a ensuite remporté deux Oscars, pour « The Grand Budapest Hotel » et « La Forme de l'eau »."
+    },
+    {
+      "ref": "hp-244",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel est le titre américain du premier film, qui change le nom de la pierre ?",
+      "answers": [
+        { "text": "Harry Potter and the Magic Stone", "isCorrect": false },
+        { "text": "Harry Potter and the Wizard's Stone", "isCorrect": false },
+        { "text": "Harry Potter and the Sorcerer's Stone", "isCorrect": true },
+        { "text": "Harry Potter and the Golden Stone", "isCorrect": false }
+      ],
+      "explanation": "Au Royaume-Uni, il s'appelle « Philosopher's Stone », comme le livre."
+    },
+    {
+      "ref": "hp-245",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Dans quelle gare londonienne se trouve un chariot à moitié enfoncé dans le mur de la voie 9 ¾ ?",
+      "answers": [
+        { "text": "Paddington", "isCorrect": false },
+        { "text": "King's Cross", "isCorrect": true },
+        { "text": "Victoria", "isCorrect": false },
+        { "text": "Waterloo", "isCorrect": false }
+      ],
+      "explanation": "C'est devenu l'un des lieux les plus photographiés par les fans."
+    },
+    {
+      "ref": "hp-246",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Dans quel pays se trouve le viaduc de Glenfinnan, emprunté par le Poudlard Express (Hogwarts Express) ?",
+      "answers": [
+        { "text": "L'Écosse", "isCorrect": true },
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "Le pays de Galles", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": false }
+      ],
+      "explanation": "Un vrai train à vapeur y circule encore l'été."
+    },
+    {
+      "ref": "hp-247",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Dans quel château anglais a été tournée la première leçon de vol sur balai ?",
+      "answers": [
+        { "text": "Le château de Windsor", "isCorrect": false },
+        { "text": "Le château d'Édimbourg", "isCorrect": false },
+        { "text": "Le château de Warwick", "isCorrect": false },
+        { "text": "Le château d'Alnwick", "isCorrect": true }
+      ],
+      "explanation": "Il sert aussi de décor à la série « Downton Abbey »."
+    },
+    {
+      "ref": "hp-248",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel collège d'Oxford a inspiré la Grande Salle et accueilli le tournage de l'escalier de Poudlard (Hogwarts) ?",
+      "answers": [
+        { "text": "Magdalen College", "isCorrect": false },
+        { "text": "Trinity College", "isCorrect": false },
+        { "text": "Christ Church", "isCorrect": true },
+        { "text": "Merton College", "isCorrect": false }
+      ],
+      "explanation": "La Grande Salle des films a été reconstruite en studio sur son modèle."
+    },
+    {
+      "ref": "hp-249",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Près de quelle ville se trouvent les studios où ont été tournés les films, aujourd'hui ouverts à la visite ?",
+      "answers": [
+        { "text": "Édimbourg", "isCorrect": false },
+        { "text": "Londres", "isCorrect": true },
+        { "text": "Manchester", "isCorrect": false },
+        { "text": "Oxford", "isCorrect": false }
+      ],
+      "explanation": "Les studios de Leavesden se visitent sous le nom « The Making of Harry Potter »."
+    },
+    {
+      "ref": "hp-250",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quelle couleur ont les yeux de Daniel Radcliffe à l'écran, alors que ceux de Harry sont verts dans les livres ?",
+      "answers": [
+        { "text": "Bleus", "isCorrect": true },
+        { "text": "Marron", "isCorrect": false },
+        { "text": "Gris", "isCorrect": false },
+        { "text": "Noirs", "isCorrect": false }
+      ],
+      "explanation": "Les lentilles de contact vertes lui irritaient trop les yeux."
+    },
+    {
+      "ref": "hp-251",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "De quelle couleur est la robe d'Hermione au bal de Noël dans le film, alors qu'elle est bleue dans le livre ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Verte", "isCorrect": false },
+        { "text": "Blanche", "isCorrect": false },
+        { "text": "Rose", "isCorrect": true }
+      ],
+      "explanation": "La scène se passe dans « La Coupe de feu »."
+    },
+    {
+      "ref": "hp-252",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel personnage des livres, l'esprit frappeur de Poudlard (Hogwarts), a été coupé au montage des films ?",
+      "answers": [
+        { "text": "Nick Quasi-Sans-Tête (Nearly Headless Nick)", "isCorrect": false },
+        { "text": "Mimi Geignarde (Moaning Myrtle)", "isCorrect": false },
+        { "text": "Peeves", "isCorrect": true },
+        { "text": "Le Baron Sanglant (Bloody Baron)", "isCorrect": false }
+      ],
+      "explanation": "Ses scènes, jouées par Rik Mayall, n'ont jamais été montrées."
+    },
+    {
+      "ref": "hp-253",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel ancien joueur de rugby servait de doublure à Robbie Coltrane pour les plans larges de Hagrid ?",
+      "answers": [
+        { "text": "Jonny Wilkinson", "isCorrect": false },
+        { "text": "Martin Bayfield", "isCorrect": true },
+        { "text": "Lawrence Dallaglio", "isCorrect": false },
+        { "text": "Martin Johnson", "isCorrect": false }
+      ],
+      "explanation": "Il mesure plus de 2 mètres."
+    },
+    {
+      "ref": "hp-254",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Le dernier livre a été adapté en deux films.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "« Les Reliques de la Mort » est sorti en deux parties, en 2010 et en 2011."
+    },
+    {
+      "ref": "hp-255",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Daniel Radcliffe portait des lentilles de contact vertes dans tous les films.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il les a abandonnées dès le premier film car elles lui irritaient les yeux."
+    },
+    {
+      "ref": "hp-256",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Alan Rickman connaissait certains secrets de Rogue (Snape) avant la publication du dernier livre.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "J. K. Rowling lui avait révélé que Rogue aimait Lily."
+    },
+    {
+      "ref": "hp-257",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel film de la saga a rapporté le plus d'argent au cinéma ?",
+      "answers": [
+        { "text": "Harry Potter à l'école des sorciers", "isCorrect": false },
+        { "text": "Les Reliques de la Mort, 2e partie", "isCorrect": true },
+        { "text": "La Coupe de feu", "isCorrect": false },
+        { "text": "Le Prince de sang-mêlé", "isCorrect": false }
+      ],
+      "explanation": "Il a dépassé 1,3 milliard de dollars de recettes dans le monde."
+    },
+    {
+      "ref": "hp-258",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle émission spéciale a réuni les acteurs pour les 20 ans du premier film, en 2022 ?",
+      "answers": [
+        { "text": "Retour à Poudlard (Return to Hogwarts)", "isCorrect": true },
+        { "text": "La Grande Réunion", "isCorrect": false },
+        { "text": "Harry Potter Live", "isCorrect": false },
+        { "text": "Les Retrouvailles de Poudlard", "isCorrect": false }
+      ],
+      "explanation": "Elle a été diffusée le 1er janvier 2022."
+    },
+    {
+      "ref": "hp-259",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quel acteur incarne Norbert Dragonneau (Newt Scamander) dans « Les Animaux fantastiques » ?",
+      "answers": [
+        { "text": "Robert Pattinson", "isCorrect": false },
+        { "text": "Dan Fogler", "isCorrect": false },
+        { "text": "Ezra Miller", "isCorrect": false },
+        { "text": "Eddie Redmayne", "isCorrect": true }
+      ],
+      "explanation": "Il avait reçu l'Oscar du meilleur acteur pour « Une merveilleuse histoire du temps »."
+    },
+    {
+      "ref": "hp-260",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Combien de films compte la saga « Les Animaux fantastiques » ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Ils sont sortis en 2016, 2018 et 2022."
+    },
+    {
+      "ref": "hp-261",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur a remplacé Johnny Depp dans le rôle de Gellert Grindelwald, dans le troisième film « Les Animaux fantastiques » ?",
+      "answers": [
+        { "text": "Colin Farrell", "isCorrect": false },
+        { "text": "Mads Mikkelsen", "isCorrect": true },
+        { "text": "Jude Law", "isCorrect": false },
+        { "text": "Christoph Waltz", "isCorrect": false }
+      ],
+      "explanation": "Colin Farrell jouait Graves, l'apparence que Grindelwald prend dans le premier film."
+    },
+    {
+      "ref": "hp-262",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["film"],
+      "text": "Quelle pièce de théâtre, jouée à Londres depuis 2016, raconte la suite de l'histoire, dix-neuf ans plus tard ?",
+      "answers": [
+        { "text": "Harry Potter et l'Enfant maudit (Cursed Child)", "isCorrect": true },
+        { "text": "Harry Potter et la Pierre de lune", "isCorrect": false },
+        { "text": "Harry Potter et l'Héritier de Serpentard", "isCorrect": false },
+        { "text": "Le Retour de Voldemort", "isCorrect": false }
+      ],
+      "explanation": "On y suit surtout Albus, le fils de Harry."
+    },
+    {
+      "ref": "hp-263",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Quel acteur a été choisi pour incarner Dumbledore dans la série Harry Potter de HBO ?",
+      "answers": [
+        { "text": "Ian McKellen", "isCorrect": false },
+        { "text": "Anthony Hopkins", "isCorrect": false },
+        { "text": "Jim Broadbent", "isCorrect": false },
+        { "text": "John Lithgow", "isCorrect": true }
+      ],
+      "explanation": "La série doit adapter chaque livre en une saison."
+    },
+    {
+      "ref": "hp-264",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film", "france"],
+      "text": "Quel comédien prête sa voix française à Harry dans tous les films ?",
+      "answers": [
+        { "text": "Thomas Sagols", "isCorrect": false },
+        { "text": "Adrien Antoine", "isCorrect": false },
+        { "text": "Kelyan Blanc", "isCorrect": true },
+        { "text": "Donald Reignoux", "isCorrect": false }
+      ],
+      "explanation": "Il avait environ 12 ans lors du doublage du premier film."
+    },
+    {
+      "ref": "hp-265",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["film"],
+      "text": "Où a ouvert en 2010 le premier parc d'attractions consacré à Harry Potter ?",
+      "answers": [
+        { "text": "À Londres", "isCorrect": false },
+        { "text": "À Orlando", "isCorrect": true },
+        { "text": "À Tokyo", "isCorrect": false },
+        { "text": "À Paris", "isCorrect": false }
+      ],
+      "explanation": "« The Wizarding World of Harry Potter » se trouve dans le parc Universal."
+    },
+    {
+      "ref": "hp-266",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["film", "avant-apres"],
+      "text": "Le premier film Harry Potter est-il sorti avant ou après la parution du quatrième livre, « La Coupe de feu » ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Le quatrième livre paraît en 2000, le premier film sort fin 2001."
+    },
+    {
+      "ref": "hp-267",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["film", "avant-apres"],
+      "text": "Le dernier film de la saga est-il sorti avant ou après le premier iPhone ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Le premier iPhone date de 2007, le dernier film de 2011."
+    },
+    {
+      "ref": "hp-268",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["film", "avant-apres"],
+      "text": "« Le Prisonnier d'Azkaban » est-il sorti au cinéma avant ou après la parution du livre « L'Ordre du Phénix » ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "« L'Ordre du Phénix » paraît en 2003, le film « Le Prisonnier d'Azkaban » sort en 2004."
     }
   ]
 }

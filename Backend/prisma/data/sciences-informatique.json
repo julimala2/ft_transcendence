@@ -1,0 +1,2739 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 196,
+    "parDifficulte": { "1": 65, "2": 75, "3": 56 },
+    "parType": { "multiple": 180, "boolean": 16 },
+    "avecImage": 0,
+    "sansImage": 196,
+    "parTag": {
+      "histoire": 63,
+      "programmation": 60,
+      "internet": 46,
+      "ecole-42": 25,
+      "entreprise": 18,
+      "materiel": 17,
+      "avant-apres": 11,
+      "france": 9
+    }
+  },
+  "category": {
+    "slug": "informatique",
+    "name": "Informatique"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "info-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Qui a cofondé Microsoft avec Paul Allen en 1975 ?",
+      "answers": [
+        { "text": "Steve Jobs", "isCorrect": false },
+        { "text": "Steve Wozniak", "isCorrect": false },
+        { "text": "Bill Gates", "isCorrect": true },
+        { "text": "Mark Zuckerberg", "isCorrect": false }
+      ],
+      "explanation": "Microsoft a d'abord vendu un langage BASIC pour micro-ordinateurs."
+    },
+    {
+      "ref": "info-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Qui a cofondé Apple avec Steve Wozniak en 1976 ?",
+      "answers": [
+        { "text": "Bill Gates", "isCorrect": false },
+        { "text": "Steve Jobs", "isCorrect": true },
+        { "text": "Tim Cook", "isCorrect": false },
+        { "text": "Larry Page", "isCorrect": false }
+      ],
+      "explanation": "Ronald Wayne était le troisième cofondateur, mais il est parti au bout de quelques jours."
+    },
+    {
+      "ref": "info-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Dans quel lieu Apple aurait-il été créé, selon la légende ?",
+      "answers": [
+        { "text": "Un garage", "isCorrect": true },
+        { "text": "Une chambre d'étudiant", "isCorrect": false },
+        { "text": "Un café", "isCorrect": false },
+        { "text": "Une bibliothèque", "isCorrect": false }
+      ],
+      "explanation": "Le garage de la maison familiale de Steve Jobs, à Los Altos, en Californie."
+    },
+    {
+      "ref": "info-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Qui a fondé Facebook en 2004 ?",
+      "answers": [
+        { "text": "Jeff Bezos", "isCorrect": false },
+        { "text": "Elon Musk", "isCorrect": false },
+        { "text": "Jack Dorsey", "isCorrect": false },
+        { "text": "Mark Zuckerberg", "isCorrect": true }
+      ],
+      "explanation": "Il l'a lancé depuis sa chambre d'étudiant à Harvard."
+    },
+    {
+      "ref": "info-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Qui a fondé Amazon en 1994 ?",
+      "answers": [
+        { "text": "Bill Gates", "isCorrect": false },
+        { "text": "Larry Ellison", "isCorrect": false },
+        { "text": "Jeff Bezos", "isCorrect": true },
+        { "text": "Elon Musk", "isCorrect": false }
+      ],
+      "explanation": "Le nom fait référence au plus grand fleuve du monde."
+    },
+    {
+      "ref": "info-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "Que vendait Amazon à ses débuts ?",
+      "answers": [
+        { "text": "Des vêtements", "isCorrect": false },
+        { "text": "Des livres", "isCorrect": true },
+        { "text": "Des ordinateurs", "isCorrect": false },
+        { "text": "Des disques vinyles", "isCorrect": false }
+      ],
+      "explanation": "Amazon était à l'origine une librairie en ligne."
+    },
+    {
+      "ref": "info-007",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "Qui a fondé Google en 1998 ?",
+      "answers": [
+        { "text": "Larry Page et Sergey Brin", "isCorrect": true },
+        { "text": "Bill Gates et Paul Allen", "isCorrect": false },
+        { "text": "Steve Jobs et Steve Wozniak", "isCorrect": false },
+        { "text": "Jerry Yang et David Filo", "isCorrect": false }
+      ],
+      "explanation": "Jerry Yang et David Filo sont les fondateurs de Yahoo!."
+    },
+    {
+      "ref": "info-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "Dans quelle université est né le projet Google ?",
+      "answers": [
+        { "text": "Harvard", "isCorrect": false },
+        { "text": "Le MIT", "isCorrect": false },
+        { "text": "Berkeley", "isCorrect": false },
+        { "text": "Stanford", "isCorrect": true }
+      ],
+      "explanation": "Larry Page et Sergey Brin y étaient doctorants."
+    },
+    {
+      "ref": "info-009",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "entreprise"],
+      "text": "Quel était le premier nom du moteur de recherche Google ?",
+      "answers": [
+        { "text": "Googol", "isCorrect": false },
+        { "text": "PageRank", "isCorrect": false },
+        { "text": "BackRub", "isCorrect": true },
+        { "text": "Search!", "isCorrect": false }
+      ],
+      "explanation": "Le nom « Google » vient de « googol », le nombre 1 suivi de 100 zéros."
+    },
+    {
+      "ref": "info-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "Comment s'appelle la société mère de Google depuis 2015 ?",
+      "answers": [
+        { "text": "Meta", "isCorrect": false },
+        { "text": "Alphabet", "isCorrect": true },
+        { "text": "Gemini", "isCorrect": false },
+        { "text": "Calico", "isCorrect": false }
+      ],
+      "explanation": "Meta est la société mère de Facebook."
+    },
+    {
+      "ref": "info-011",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Quel réseau social a été renommé X en 2023 ?",
+      "answers": [
+        { "text": "Twitter", "isCorrect": true },
+        { "text": "Instagram", "isCorrect": false },
+        { "text": "Snapchat", "isCorrect": false },
+        { "text": "Reddit", "isCorrect": false }
+      ],
+      "explanation": "Le changement a suivi son rachat par Elon Musk, en 2022."
+    },
+    {
+      "ref": "info-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Quelle entreprise a créé ChatGPT ?",
+      "answers": [
+        { "text": "Google", "isCorrect": false },
+        { "text": "Meta", "isCorrect": false },
+        { "text": "Microsoft", "isCorrect": false },
+        { "text": "OpenAI", "isCorrect": true }
+      ],
+      "explanation": "Microsoft est l'un des principaux investisseurs d'OpenAI."
+    },
+    {
+      "ref": "info-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "En quelle année ChatGPT a-t-il été rendu accessible au public ?",
+      "answers": [
+        { "text": "2018", "isCorrect": false },
+        { "text": "2020", "isCorrect": false },
+        { "text": "2022", "isCorrect": true },
+        { "text": "2024", "isCorrect": false }
+      ],
+      "explanation": "Il a atteint 100 millions d'utilisateurs en deux mois."
+    },
+    {
+      "ref": "info-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise", "france"],
+      "text": "Quelle entreprise française a créé l'assistant d'IA « Le Chat » ?",
+      "answers": [
+        { "text": "Dassault Systèmes", "isCorrect": false },
+        { "text": "Mistral AI", "isCorrect": true },
+        { "text": "Ubisoft", "isCorrect": false },
+        { "text": "OVHcloud", "isCorrect": false }
+      ],
+      "explanation": "Mistral AI a été fondée à Paris en 2023."
+    },
+    {
+      "ref": "info-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise", "france"],
+      "text": "Quelle entreprise française, basée à Roubaix, est l'un des principaux hébergeurs de serveurs en Europe ?",
+      "answers": [
+        { "text": "OVHcloud", "isCorrect": true },
+        { "text": "Mistral AI", "isCorrect": false },
+        { "text": "Dassault Systèmes", "isCorrect": false },
+        { "text": "Atos", "isCorrect": false }
+      ],
+      "explanation": "Elle a été fondée par Octave Klaba en 1999."
+    },
+    {
+      "ref": "info-016",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "Quelle entreprise fabrique les cartes graphiques GeForce ?",
+      "answers": [
+        { "text": "AMD", "isCorrect": false },
+        { "text": "Intel", "isCorrect": false },
+        { "text": "Apple", "isCorrect": false },
+        { "text": "NVIDIA", "isCorrect": true }
+      ],
+      "explanation": "NVIDIA est devenue l'une des entreprises les plus chères du monde grâce à l'IA."
+    },
+    {
+      "ref": "info-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "entreprise"],
+      "text": "Quelle entreprise développe le système Android ?",
+      "answers": [
+        { "text": "Apple", "isCorrect": false },
+        { "text": "Microsoft", "isCorrect": false },
+        { "text": "Google", "isCorrect": true },
+        { "text": "Samsung", "isCorrect": false }
+      ],
+      "explanation": "Google a racheté la start-up Android en 2005."
+    },
+    {
+      "ref": "info-018",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "entreprise"],
+      "text": "Quelle entreprise finlandaise dominait le marché des téléphones portables avant l'iPhone ?",
+      "answers": [
+        { "text": "Ericsson", "isCorrect": false },
+        { "text": "Nokia", "isCorrect": true },
+        { "text": "Motorola", "isCorrect": false },
+        { "text": "Alcatel", "isCorrect": false }
+      ],
+      "explanation": "Ses téléphones étaient réputés quasiment incassables."
+    },
+    {
+      "ref": "info-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Quel jeu de serpent était préinstallé sur les téléphones Nokia ?",
+      "answers": [
+        { "text": "Snake", "isCorrect": true },
+        { "text": "Tetris", "isCorrect": false },
+        { "text": "Pac-Man", "isCorrect": false },
+        { "text": "Pong", "isCorrect": false }
+      ],
+      "explanation": "Snake a été installé sur des centaines de millions de téléphones."
+    },
+    {
+      "ref": "info-020",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "En quelle année le premier iPhone a-t-il été présenté ?",
+      "answers": [
+        { "text": "2001", "isCorrect": false },
+        { "text": "2010", "isCorrect": false },
+        { "text": "2004", "isCorrect": false },
+        { "text": "2007", "isCorrect": true }
+      ],
+      "explanation": "Steve Jobs l'a présenté comme un iPod, un téléphone et un navigateur internet réunis."
+    },
+    {
+      "ref": "info-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Qui est considérée comme la première programmeuse de l'histoire ?",
+      "answers": [
+        { "text": "Grace Hopper", "isCorrect": false },
+        { "text": "Marie Curie", "isCorrect": false },
+        { "text": "Ada Lovelace", "isCorrect": true },
+        { "text": "Hedy Lamarr", "isCorrect": false }
+      ],
+      "explanation": "Au XIXe siècle, elle a écrit un algorithme pour la machine analytique de Charles Babbage."
+    },
+    {
+      "ref": "info-022",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel mathématicien britannique a décrit en 1936 une machine théorique fondatrice de l'informatique ?",
+      "answers": [
+        { "text": "Charles Babbage", "isCorrect": false },
+        { "text": "Alan Turing", "isCorrect": true },
+        { "text": "John von Neumann", "isCorrect": false },
+        { "text": "George Boole", "isCorrect": false }
+      ],
+      "explanation": "La « machine de Turing » définit ce qu'un ordinateur peut calculer."
+    },
+    {
+      "ref": "info-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Quel test, imaginé par Alan Turing, vérifie si une machine peut se faire passer pour un humain ?",
+      "answers": [
+        { "text": "Le test de Turing", "isCorrect": true },
+        { "text": "Le test de Babbage", "isCorrect": false },
+        { "text": "Le captcha de Turing", "isCorrect": false },
+        { "text": "Le test de Lovelace", "isCorrect": false }
+      ],
+      "explanation": "Un captcha est d'ailleurs un « test de Turing inversé »."
+    },
+    {
+      "ref": "info-024",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quelle machine de chiffrement allemande Alan Turing a-t-il aidé à casser pendant la Seconde Guerre mondiale ?",
+      "answers": [
+        { "text": "Lorenz", "isCorrect": false },
+        { "text": "Colossus", "isCorrect": false },
+        { "text": "Purple", "isCorrect": false },
+        { "text": "Enigma", "isCorrect": true }
+      ],
+      "explanation": "Colossus est le calculateur britannique construit pour casser le code Lorenz."
+    },
+    {
+      "ref": "info-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel film de 2014 raconte le travail d'Alan Turing pendant la guerre ?",
+      "answers": [
+        { "text": "The Social Network", "isCorrect": false },
+        { "text": "Steve Jobs", "isCorrect": false },
+        { "text": "Imitation Game", "isCorrect": true },
+        { "text": "Les Figures de l'ombre", "isCorrect": false }
+      ],
+      "explanation": "Le rôle de Turing est joué par Benedict Cumberbatch."
+    },
+    {
+      "ref": "info-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel prix est considéré comme le « prix Nobel de l'informatique » ?",
+      "answers": [
+        { "text": "La médaille Fields", "isCorrect": false },
+        { "text": "Le prix Turing", "isCorrect": true },
+        { "text": "Le prix Abel", "isCorrect": false },
+        { "text": "Le prix Lovelace", "isCorrect": false }
+      ],
+      "explanation": "La médaille Fields récompense les mathématiciens."
+    },
+    {
+      "ref": "info-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel ordinateur américain de 1945, pesant 30 tonnes, est l'un des premiers ordinateurs électroniques ?",
+      "answers": [
+        { "text": "L'ENIAC", "isCorrect": true },
+        { "text": "L'IBM PC", "isCorrect": false },
+        { "text": "Le Colossus II", "isCorrect": false },
+        { "text": "L'Apple I", "isCorrect": false }
+      ],
+      "explanation": "Il occupait une pièce entière et comptait près de 18 000 tubes électroniques."
+    },
+    {
+      "ref": "info-028",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quelle informaticienne a popularisé le mot « bug » après qu'un insecte a été trouvé dans un ordinateur en 1947 ?",
+      "answers": [
+        { "text": "Ada Lovelace", "isCorrect": false },
+        { "text": "Margaret Hamilton", "isCorrect": false },
+        { "text": "Hedy Lamarr", "isCorrect": false },
+        { "text": "Grace Hopper", "isCorrect": true }
+      ],
+      "explanation": "Son équipe a collé le papillon de nuit dans le cahier de bord, avec la mention « first actual case of bug being found »."
+    },
+    {
+      "ref": "info-029",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quelle informaticienne a dirigé l'écriture du logiciel de bord des missions Apollo ?",
+      "answers": [
+        { "text": "Grace Hopper", "isCorrect": false },
+        { "text": "Ada Lovelace", "isCorrect": false },
+        { "text": "Margaret Hamilton", "isCorrect": true },
+        { "text": "Katherine Johnson", "isCorrect": false }
+      ],
+      "explanation": "Une photo célèbre la montre à côté de la pile de listings de son code."
+    },
+    {
+      "ref": "info-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "internet"],
+      "text": "Quel réseau militaire et universitaire américain est l'ancêtre d'Internet ?",
+      "answers": [
+        { "text": "Minitel", "isCorrect": false },
+        { "text": "ARPANET", "isCorrect": true },
+        { "text": "Usenet", "isCorrect": false },
+        { "text": "Ethernet", "isCorrect": false }
+      ],
+      "explanation": "Il a été lancé en 1969."
+    },
+    {
+      "ref": "info-031",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "internet"],
+      "text": "Qui a inventé le World Wide Web ?",
+      "answers": [
+        { "text": "Tim Berners-Lee", "isCorrect": true },
+        { "text": "Vint Cerf", "isCorrect": false },
+        { "text": "Bill Gates", "isCorrect": false },
+        { "text": "Linus Torvalds", "isCorrect": false }
+      ],
+      "explanation": "Vint Cerf est l'un des inventeurs du protocole TCP/IP."
+    },
+    {
+      "ref": "info-032",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "internet"],
+      "text": "Dans quel centre de recherche le Web a-t-il été inventé, en 1989 ?",
+      "answers": [
+        { "text": "La NASA", "isCorrect": false },
+        { "text": "Le MIT", "isCorrect": false },
+        { "text": "Les laboratoires Bell", "isCorrect": false },
+        { "text": "Le CERN", "isCorrect": true }
+      ],
+      "explanation": "Le CERN se trouve à la frontière franco-suisse, près de Genève."
+    },
+    {
+      "ref": "info-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire", "internet", "france"],
+      "text": "Quel service télématique français a précédé Internet dans les foyers dans les années 1980 ?",
+      "answers": [
+        { "text": "Le Bi-Bop", "isCorrect": false },
+        { "text": "Le Télétel+", "isCorrect": false },
+        { "text": "Le Minitel", "isCorrect": true },
+        { "text": "Le Tam-Tam", "isCorrect": false }
+      ],
+      "explanation": "Il permettait de consulter l'annuaire, réserver un train ou discuter."
+    },
+    {
+      "ref": "info-034",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "internet", "france"],
+      "text": "En quelle année le Minitel a-t-il été définitivement arrêté ?",
+      "answers": [
+        { "text": "1999", "isCorrect": false },
+        { "text": "2012", "isCorrect": true },
+        { "text": "2005", "isCorrect": false },
+        { "text": "2018", "isCorrect": false }
+      ],
+      "explanation": "Il a fonctionné pendant trente ans."
+    },
+    {
+      "ref": "info-035",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Quel système d'exploitation libre a été créé par Linus Torvalds en 1991 ?",
+      "answers": [
+        { "text": "Linux", "isCorrect": true },
+        { "text": "Windows", "isCorrect": false },
+        { "text": "macOS", "isCorrect": false },
+        { "text": "Unix", "isCorrect": false }
+      ],
+      "explanation": "Linux fait tourner la grande majorité des serveurs du monde."
+    },
+    {
+      "ref": "info-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel animal est la mascotte de Linux ?",
+      "answers": [
+        { "text": "Un renard", "isCorrect": false },
+        { "text": "Un gnou", "isCorrect": false },
+        { "text": "Une baleine", "isCorrect": false },
+        { "text": "Un manchot", "isCorrect": true }
+      ],
+      "explanation": "Le manchot s'appelle Tux."
+    },
+    {
+      "ref": "info-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel système d'exploitation, créé aux laboratoires Bell en 1969, a inspiré Linux et macOS ?",
+      "answers": [
+        { "text": "MS-DOS", "isCorrect": false },
+        { "text": "Multics", "isCorrect": false },
+        { "text": "Unix", "isCorrect": true },
+        { "text": "Windows NT", "isCorrect": false }
+      ],
+      "explanation": "Il a été développé notamment par Ken Thompson et Dennis Ritchie."
+    },
+    {
+      "ref": "info-038",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Qui a lancé le projet GNU et le mouvement du logiciel libre ?",
+      "answers": [
+        { "text": "Linus Torvalds", "isCorrect": false },
+        { "text": "Richard Stallman", "isCorrect": true },
+        { "text": "Steve Wozniak", "isCorrect": false },
+        { "text": "Tim Berners-Lee", "isCorrect": false }
+      ],
+      "explanation": "GNU signifie « GNU's Not Unix »."
+    },
+    {
+      "ref": "info-039",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quelle loi prédit le doublement du nombre de transistors des puces environ tous les deux ans ?",
+      "answers": [
+        { "text": "La loi de Moore", "isCorrect": true },
+        { "text": "La loi de Murphy", "isCorrect": false },
+        { "text": "La loi d'Ohm", "isCorrect": false },
+        { "text": "La loi de Turing", "isCorrect": false }
+      ],
+      "explanation": "Gordon Moore était l'un des fondateurs d'Intel."
+    },
+    {
+      "ref": "info-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel processeur Intel de 1971 est considéré comme le premier microprocesseur commercial ?",
+      "answers": [
+        { "text": "L'Intel 8086", "isCorrect": false },
+        { "text": "Le Pentium", "isCorrect": false },
+        { "text": "Le Core i7", "isCorrect": false },
+        { "text": "L'Intel 4004", "isCorrect": true }
+      ],
+      "explanation": "Il comptait environ 2 300 transistors."
+    },
+    {
+      "ref": "info-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel ordinateur d'Apple, sorti en 1984, a popularisé la souris et l'interface graphique ?",
+      "answers": [
+        { "text": "L'Apple II", "isCorrect": false },
+        { "text": "L'iMac", "isCorrect": false },
+        { "text": "Le Macintosh", "isCorrect": true },
+        { "text": "Le Lisa", "isCorrect": false }
+      ],
+      "explanation": "Sa publicité, inspirée du roman « 1984 », a été diffusée pendant le Super Bowl."
+    },
+    {
+      "ref": "info-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quelle version de Windows a introduit le bouton « Démarrer » en 1995 ?",
+      "answers": [
+        { "text": "Windows 3.1", "isCorrect": false },
+        { "text": "Windows 95", "isCorrect": true },
+        { "text": "Windows XP", "isCorrect": false },
+        { "text": "Windows 98", "isCorrect": false }
+      ],
+      "explanation": "Sa publicité utilisait la chanson « Start Me Up » des Rolling Stones."
+    },
+    {
+      "ref": "info-043",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "france"],
+      "text": "Quel ordinateur français équipait les écoles lors du plan « Informatique pour tous » de 1985 ?",
+      "answers": [
+        { "text": "Le Thomson MO5", "isCorrect": true },
+        { "text": "L'Amstrad CPC", "isCorrect": false },
+        { "text": "Le Commodore 64", "isCorrect": false },
+        { "text": "L'Apple II", "isCorrect": false }
+      ],
+      "explanation": "Le plan prévoyait d'équiper des dizaines de milliers d'écoles."
+    },
+    {
+      "ref": "info-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "internet"],
+      "text": "Quel logiciel de discussion de Microsoft, très populaire dans les années 2000, a fermé en 2013 ?",
+      "answers": [
+        { "text": "ICQ", "isCorrect": false },
+        { "text": "Skype", "isCorrect": false },
+        { "text": "AIM", "isCorrect": false },
+        { "text": "MSN Messenger", "isCorrect": true }
+      ],
+      "explanation": "Ses « wizz » faisaient trembler la fenêtre de discussion."
+    },
+    {
+      "ref": "info-045",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "internet", "france"],
+      "text": "Quelle plateforme de blogs, associée à une radio française, était très populaire chez les adolescents des années 2000 ?",
+      "answers": [
+        { "text": "MySpace", "isCorrect": false },
+        { "text": "Tumblr", "isCorrect": false },
+        { "text": "Skyblog", "isCorrect": true },
+        { "text": "Overblog", "isCorrect": false }
+      ],
+      "explanation": "Elle était liée à la radio Skyrock."
+    },
+    {
+      "ref": "info-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "internet"],
+      "text": "Quel site de vidéos a été lancé en 2005 par trois anciens employés de PayPal ?",
+      "answers": [
+        { "text": "Dailymotion", "isCorrect": false },
+        { "text": "YouTube", "isCorrect": true },
+        { "text": "Vimeo", "isCorrect": false },
+        { "text": "Twitch", "isCorrect": false }
+      ],
+      "explanation": "Google l'a racheté dès 2006."
+    },
+    {
+      "ref": "info-047",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "internet"],
+      "text": "Comment s'appelle la toute première vidéo publiée sur YouTube ?",
+      "answers": [
+        { "text": "Me at the zoo", "isCorrect": true },
+        { "text": "Hello World", "isCorrect": false },
+        { "text": "Charlie Bit My Finger", "isCorrect": false },
+        { "text": "Gangnam Style", "isCorrect": false }
+      ],
+      "explanation": "Elle dure 19 secondes et montre l'un des fondateurs devant des éléphants."
+    },
+    {
+      "ref": "info-048",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "internet"],
+      "text": "Qui a proposé d'utiliser le smiley :-) pour signaler une plaisanterie, en 1982 ?",
+      "answers": [
+        { "text": "Tim Berners-Lee", "isCorrect": false },
+        { "text": "Ray Tomlinson", "isCorrect": false },
+        { "text": "Steve Jobs", "isCorrect": false },
+        { "text": "Scott Fahlman", "isCorrect": true }
+      ],
+      "explanation": "Il l'a proposé sur un forum de l'université Carnegie-Mellon."
+    },
+    {
+      "ref": "info-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "internet"],
+      "text": "Quel symbole Ray Tomlinson a-t-il choisi pour les adresses e-mail, en 1971 ?",
+      "answers": [
+        { "text": "#", "isCorrect": false },
+        { "text": "&", "isCorrect": false },
+        { "text": "@", "isCorrect": true },
+        { "text": "%", "isCorrect": false }
+      ],
+      "explanation": "Il l'a choisi car ce caractère n'apparaissait dans aucun nom."
+    },
+    {
+      "ref": "info-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "internet"],
+      "text": "D'où viennent à l'origine les emojis ?",
+      "answers": [
+        { "text": "Des États-Unis", "isCorrect": false },
+        { "text": "Du Japon", "isCorrect": true },
+        { "text": "De Corée du Sud", "isCorrect": false },
+        { "text": "De France", "isCorrect": false }
+      ],
+      "explanation": "Le mot vient du japonais « e » (image) et « moji » (caractère)."
+    },
+    {
+      "ref": "info-051",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Le premier « bug » informatique documenté était un véritable insecte.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "En 1947, un papillon de nuit coincé dans un relais a été retrouvé dans l'ordinateur Harvard Mark II."
+    },
+    {
+      "ref": "info-052",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation", "ecole-42"],
+      "text": "Quel langage est au cœur de la Piscine et du début du tronc commun à 42 ?",
+      "answers": [
+        { "text": "Le Python", "isCorrect": false },
+        { "text": "Le JavaScript", "isCorrect": false },
+        { "text": "Le Java", "isCorrect": false },
+        { "text": "Le C", "isCorrect": true }
+      ],
+      "explanation": "Le C oblige à comprendre la gestion de la mémoire."
+    },
+    {
+      "ref": "info-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Qui a créé le langage C ?",
+      "answers": [
+        { "text": "Bjarne Stroustrup", "isCorrect": false },
+        { "text": "Guido van Rossum", "isCorrect": false },
+        { "text": "Dennis Ritchie", "isCorrect": true },
+        { "text": "James Gosling", "isCorrect": false }
+      ],
+      "explanation": "Il l'a créé au début des années 1970 pour écrire Unix."
+    },
+    {
+      "ref": "info-054",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Dans quels laboratoires le langage C a-t-il été créé ?",
+      "answers": [
+        { "text": "Le MIT", "isCorrect": false },
+        { "text": "Les laboratoires Bell", "isCorrect": true },
+        { "text": "Xerox PARC", "isCorrect": false },
+        { "text": "IBM Research", "isCorrect": false }
+      ],
+      "explanation": "Unix et le transistor y ont aussi été inventés."
+    },
+    {
+      "ref": "info-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel langage, créé par Bjarne Stroustrup, ajoute notamment les classes au C ?",
+      "answers": [
+        { "text": "Le C++", "isCorrect": true },
+        { "text": "Le C#", "isCorrect": false },
+        { "text": "L'Objective-C", "isCorrect": false },
+        { "text": "Le Java", "isCorrect": false }
+      ],
+      "explanation": "Son premier nom était « C with Classes »."
+    },
+    {
+      "ref": "info-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "D'où vient le nom du langage Python ?",
+      "answers": [
+        { "text": "D'un serpent mythologique", "isCorrect": false },
+        { "text": "D'un jeu vidéo", "isCorrect": false },
+        { "text": "D'un acronyme technique", "isCorrect": false },
+        { "text": "D'une troupe d'humoristes britanniques", "isCorrect": true }
+      ],
+      "explanation": "Guido van Rossum était fan des Monty Python."
+    },
+    {
+      "ref": "info-057",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Qui a créé le langage Python ?",
+      "answers": [
+        { "text": "Dennis Ritchie", "isCorrect": false },
+        { "text": "James Gosling", "isCorrect": false },
+        { "text": "Guido van Rossum", "isCorrect": true },
+        { "text": "Brendan Eich", "isCorrect": false }
+      ],
+      "explanation": "Il a publié la première version en 1991."
+    },
+    {
+      "ref": "info-058",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel langage rend les pages web interactives dans le navigateur ?",
+      "answers": [
+        { "text": "HTML", "isCorrect": false },
+        { "text": "JavaScript", "isCorrect": true },
+        { "text": "CSS", "isCorrect": false },
+        { "text": "SQL", "isCorrect": false }
+      ],
+      "explanation": "Il est exécuté directement par le navigateur."
+    },
+    {
+      "ref": "info-059",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "En combien de jours environ Brendan Eich a-t-il conçu la première version de JavaScript, en 1995 ?",
+      "answers": [
+        { "text": "10", "isCorrect": true },
+        { "text": "100", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "365", "isCorrect": false }
+      ],
+      "explanation": "Il l'a développé chez Netscape."
+    },
+    {
+      "ref": "info-060",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Java et JavaScript sont le même langage.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils n'ont presque rien en commun : le nom JavaScript était surtout un choix marketing."
+    },
+    {
+      "ref": "info-061",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel langage structure le contenu des pages web ?",
+      "answers": [
+        { "text": "CSS", "isCorrect": false },
+        { "text": "JavaScript", "isCorrect": false },
+        { "text": "HTML", "isCorrect": true },
+        { "text": "PHP", "isCorrect": false }
+      ],
+      "explanation": "HTML est un langage de balisage, pas un langage de programmation."
+    },
+    {
+      "ref": "info-062",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Que signifie HTML ?",
+      "answers": [
+        { "text": "High Technology Modern Language", "isCorrect": false },
+        { "text": "HyperText Markup Language", "isCorrect": true },
+        { "text": "Home Tool Markup Language", "isCorrect": false },
+        { "text": "Hyper Transfer Media Link", "isCorrect": false }
+      ],
+      "explanation": "Il a été créé par Tim Berners-Lee avec le Web."
+    },
+    {
+      "ref": "info-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel langage sert à mettre en forme les pages web ?",
+      "answers": [
+        { "text": "CSS", "isCorrect": true },
+        { "text": "HTML", "isCorrect": false },
+        { "text": "SQL", "isCorrect": false },
+        { "text": "C", "isCorrect": false }
+      ],
+      "explanation": "CSS signifie Cascading Style Sheets."
+    },
+    {
+      "ref": "info-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel langage sert à interroger les bases de données relationnelles ?",
+      "answers": [
+        { "text": "HTML", "isCorrect": false },
+        { "text": "CSS", "isCorrect": false },
+        { "text": "Python", "isCorrect": false },
+        { "text": "SQL", "isCorrect": true }
+      ],
+      "explanation": "On l'utilise par exemple avec PostgreSQL, MySQL ou SQLite."
+    },
+    {
+      "ref": "info-065",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Que signifie SQL ?",
+      "answers": [
+        { "text": "Simple Question Language", "isCorrect": false },
+        { "text": "Standard Quick Logic", "isCorrect": false },
+        { "text": "Structured Query Language", "isCorrect": true },
+        { "text": "System Query Link", "isCorrect": false }
+      ],
+      "explanation": "Il a été créé chez IBM dans les années 1970."
+    },
+    {
+      "ref": "info-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel langage Apple a-t-il créé pour remplacer l'Objective-C ?",
+      "answers": [
+        { "text": "Kotlin", "isCorrect": false },
+        { "text": "Swift", "isCorrect": true },
+        { "text": "Rust", "isCorrect": false },
+        { "text": "Go", "isCorrect": false }
+      ],
+      "explanation": "Swift a été présenté en 2014."
+    },
+    {
+      "ref": "info-067",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quel langage, né chez Mozilla, est réputé pour sa sécurité dans la gestion de la mémoire ?",
+      "answers": [
+        { "text": "Rust", "isCorrect": true },
+        { "text": "Go", "isCorrect": false },
+        { "text": "C", "isCorrect": false },
+        { "text": "Swift", "isCorrect": false }
+      ],
+      "explanation": "Sa mascotte non officielle est un crabe, Ferris."
+    },
+    {
+      "ref": "info-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quel langage a été créé chez Google en 2009 ?",
+      "answers": [
+        { "text": "Rust", "isCorrect": false },
+        { "text": "Kotlin", "isCorrect": false },
+        { "text": "Dart", "isCorrect": false },
+        { "text": "Go", "isCorrect": true }
+      ],
+      "explanation": "Ken Thompson, l'un des créateurs d'Unix, a participé à sa conception."
+    },
+    {
+      "ref": "info-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quel langage, créé par Microsoft, ajoute des types à JavaScript ?",
+      "answers": [
+        { "text": "CoffeeScript", "isCorrect": false },
+        { "text": "C#", "isCorrect": false },
+        { "text": "TypeScript", "isCorrect": true },
+        { "text": "Dart", "isCorrect": false }
+      ],
+      "explanation": "Le code TypeScript est converti en JavaScript avant d'être exécuté."
+    },
+    {
+      "ref": "info-070",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel environnement permet d'exécuter du JavaScript côté serveur ?",
+      "answers": [
+        { "text": "React", "isCorrect": false },
+        { "text": "Node.js", "isCorrect": true },
+        { "text": "Django", "isCorrect": false },
+        { "text": "Laravel", "isCorrect": false }
+      ],
+      "explanation": "Le back-end de ft_transcendence peut tourner sur Node.js."
+    },
+    {
+      "ref": "info-071",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quelle bibliothèque JavaScript, créée chez Facebook, sert à construire des interfaces ?",
+      "answers": [
+        { "text": "React", "isCorrect": true },
+        { "text": "Express", "isCorrect": false },
+        { "text": "jQuery", "isCorrect": false },
+        { "text": "Node.js", "isCorrect": false }
+      ],
+      "explanation": "Elle découpe l'interface en « composants » réutilisables."
+    },
+    {
+      "ref": "info-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel framework Node.js minimaliste sert à créer des API web ?",
+      "answers": [
+        { "text": "React", "isCorrect": false },
+        { "text": "Angular", "isCorrect": false },
+        { "text": "Django", "isCorrect": false },
+        { "text": "Express", "isCorrect": true }
+      ],
+      "explanation": "Il organise le code en routes et en middlewares."
+    },
+    {
+      "ref": "info-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel outil Node.js utilise un fichier « schema.prisma » pour décrire la base de données ?",
+      "answers": [
+        { "text": "Express", "isCorrect": false },
+        { "text": "Sequelize", "isCorrect": false },
+        { "text": "Prisma", "isCorrect": true },
+        { "text": "Mongoose", "isCorrect": false }
+      ],
+      "explanation": "Prisma génère le client qui permet d'interroger la base."
+    },
+    {
+      "ref": "info-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Que signifie JWT, utilisé pour l'authentification ?",
+      "answers": [
+        { "text": "Java Web Tool", "isCorrect": false },
+        { "text": "JSON Web Token", "isCorrect": true },
+        { "text": "JavaScript Web Transfer", "isCorrect": false },
+        { "text": "Joint Web Ticket", "isCorrect": false }
+      ],
+      "explanation": "Le jeton contient des informations signées par le serveur."
+    },
+    {
+      "ref": "info-075",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quelle fonction affiche du texte formaté en C ?",
+      "answers": [
+        { "text": "printf", "isCorrect": true },
+        { "text": "print", "isCorrect": false },
+        { "text": "echo", "isCorrect": false },
+        { "text": "cout", "isCorrect": false }
+      ],
+      "explanation": "À 42, on la recode dans le projet ft_printf."
+    },
+    {
+      "ref": "info-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quelle fonction de la bibliothèque standard du C alloue de la mémoire dynamiquement ?",
+      "answers": [
+        { "text": "alloc", "isCorrect": false },
+        { "text": "new", "isCorrect": false },
+        { "text": "calloc_free", "isCorrect": false },
+        { "text": "malloc", "isCorrect": true }
+      ],
+      "explanation": "Elle renvoie NULL si l'allocation échoue."
+    },
+    {
+      "ref": "info-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quelle fonction libère la mémoire allouée par malloc ?",
+      "answers": [
+        { "text": "delete", "isCorrect": false },
+        { "text": "release", "isCorrect": false },
+        { "text": "free", "isCorrect": true },
+        { "text": "clear", "isCorrect": false }
+      ],
+      "explanation": "Oublier un free provoque une fuite de mémoire."
+    },
+    {
+      "ref": "info-078",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Comment appelle-t-on de la mémoire allouée qui n'est jamais libérée ?",
+      "answers": [
+        { "text": "Un dépassement de tampon", "isCorrect": false },
+        { "text": "Une fuite de mémoire", "isCorrect": true },
+        { "text": "Un pointeur nul", "isCorrect": false },
+        { "text": "Une segmentation fault", "isCorrect": false }
+      ],
+      "explanation": "Des outils comme Valgrind permettent de les détecter."
+    },
+    {
+      "ref": "info-079",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quelle erreur obtient-on en C en accédant à une zone mémoire interdite ?",
+      "answers": [
+        { "text": "Une segmentation fault", "isCorrect": true },
+        { "text": "Une fuite de mémoire", "isCorrect": false },
+        { "text": "Un warning", "isCorrect": false },
+        { "text": "Une exception Java", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle souvent « segfault »."
+    },
+    {
+      "ref": "info-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Par quel caractère se termine une chaîne de caractères en C ?",
+      "answers": [
+        { "text": "Un espace", "isCorrect": false },
+        { "text": "Un point", "isCorrect": false },
+        { "text": "Un retour à la ligne", "isCorrect": false },
+        { "text": "Le caractère nul", "isCorrect": true }
+      ],
+      "explanation": "Il s'écrit '\\0' et vaut zéro."
+    },
+    {
+      "ref": "info-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Combien d'octets occupe un char en C ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "C'est la seule taille garantie par la norme du C."
+    },
+    {
+      "ref": "info-082",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quelle fonction est le point d'entrée d'un programme en C ?",
+      "answers": [
+        { "text": "start", "isCorrect": false },
+        { "text": "main", "isCorrect": true },
+        { "text": "init", "isCorrect": false },
+        { "text": "run", "isCorrect": false }
+      ],
+      "explanation": "Le programme commence toujours son exécution par main."
+    },
+    {
+      "ref": "info-083",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Que renvoie traditionnellement main quand le programme s'est bien déroulé ?",
+      "answers": [
+        { "text": "0", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "-1", "isCorrect": false },
+        { "text": "NULL", "isCorrect": false }
+      ],
+      "explanation": "Une autre valeur signale généralement une erreur."
+    },
+    {
+      "ref": "info-084",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Comment appelle-t-on une fonction qui s'appelle elle-même ?",
+      "answers": [
+        { "text": "Une fonction itérative", "isCorrect": false },
+        { "text": "Une fonction anonyme", "isCorrect": false },
+        { "text": "Une fonction statique", "isCorrect": false },
+        { "text": "Une fonction récursive", "isCorrect": true }
+      ],
+      "explanation": "Il faut prévoir une condition d'arrêt pour éviter une boucle infinie."
+    },
+    {
+      "ref": "info-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel outil compile un projet en suivant les règles d'un fichier Makefile ?",
+      "answers": [
+        { "text": "git", "isCorrect": false },
+        { "text": "gcc seul", "isCorrect": false },
+        { "text": "make", "isCorrect": true },
+        { "text": "npm", "isCorrect": false }
+      ],
+      "explanation": "Les règles « all », « clean », « fclean » et « re » sont exigées à 42."
+    },
+    {
+      "ref": "info-086",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel logiciel de gestion de versions a été créé par Linus Torvalds en 2005 ?",
+      "answers": [
+        { "text": "SVN", "isCorrect": false },
+        { "text": "Git", "isCorrect": true },
+        { "text": "Mercurial", "isCorrect": false },
+        { "text": "GitHub", "isCorrect": false }
+      ],
+      "explanation": "GitHub est un site d'hébergement de dépôts Git, pas Git lui-même."
+    },
+    {
+      "ref": "info-087",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quelle commande Git envoie les commits vers le dépôt distant ?",
+      "answers": [
+        { "text": "git push", "isCorrect": true },
+        { "text": "git pull", "isCorrect": false },
+        { "text": "git commit", "isCorrect": false },
+        { "text": "git add", "isCorrect": false }
+      ],
+      "explanation": "git pull fait l'inverse : il récupère les commits distants."
+    },
+    {
+      "ref": "info-088",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quelle commande Git enregistre un instantané des modifications dans l'historique ?",
+      "answers": [
+        { "text": "git push", "isCorrect": false },
+        { "text": "git clone", "isCorrect": false },
+        { "text": "git status", "isCorrect": false },
+        { "text": "git commit", "isCorrect": true }
+      ],
+      "explanation": "On prépare d'abord les fichiers avec git add."
+    },
+    {
+      "ref": "info-089",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quelle commande Git récupère les modifications distantes sans les fusionner ?",
+      "answers": [
+        { "text": "git pull", "isCorrect": false },
+        { "text": "git push", "isCorrect": false },
+        { "text": "git fetch", "isCorrect": true },
+        { "text": "git merge", "isCorrect": false }
+      ],
+      "explanation": "git pull revient à faire git fetch puis git merge."
+    },
+    {
+      "ref": "info-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quelle plateforme d'hébergement de code a été rachetée par Microsoft en 2018 ?",
+      "answers": [
+        { "text": "GitLab", "isCorrect": false },
+        { "text": "GitHub", "isCorrect": true },
+        { "text": "Bitbucket", "isCorrect": false },
+        { "text": "SourceForge", "isCorrect": false }
+      ],
+      "explanation": "Le rachat a coûté 7,5 milliards de dollars."
+    },
+    {
+      "ref": "info-091",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel outil fait tourner des applications dans des « conteneurs » à partir d'« images » ?",
+      "answers": [
+        { "text": "Docker", "isCorrect": true },
+        { "text": "Git", "isCorrect": false },
+        { "text": "Valgrind", "isCorrect": false },
+        { "text": "Make", "isCorrect": false }
+      ],
+      "explanation": "ft_transcendence doit pouvoir se lancer avec une seule commande Docker."
+    },
+    {
+      "ref": "info-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quel animal est la mascotte de Docker ?",
+      "answers": [
+        { "text": "Un manchot", "isCorrect": false },
+        { "text": "Un éléphant", "isCorrect": false },
+        { "text": "Un crabe", "isCorrect": false },
+        { "text": "Une baleine", "isCorrect": true }
+      ],
+      "explanation": "La baleine transporte des conteneurs sur son dos."
+    },
+    {
+      "ref": "info-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Comment appelle-t-on le fait d'améliorer le code sans changer son comportement ?",
+      "answers": [
+        { "text": "La compilation", "isCorrect": false },
+        { "text": "Le débogage", "isCorrect": false },
+        { "text": "La refactorisation", "isCorrect": true },
+        { "text": "Le déploiement", "isCorrect": false }
+      ],
+      "explanation": "On rend le code plus lisible ou plus simple à faire évoluer."
+    },
+    {
+      "ref": "info-094",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Que signifie l'abréviation API ?",
+      "answers": [
+        { "text": "Advanced Program Integration", "isCorrect": false },
+        { "text": "Application Programming Interface", "isCorrect": true },
+        { "text": "Automatic Process Interface", "isCorrect": false },
+        { "text": "Application Protocol Internet", "isCorrect": false }
+      ],
+      "explanation": "Une API permet à deux programmes de communiquer."
+    },
+    {
+      "ref": "info-095",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel format de données, très utilisé par les API web, ressemble aux objets JavaScript ?",
+      "answers": [
+        { "text": "JSON", "isCorrect": true },
+        { "text": "XML", "isCorrect": false },
+        { "text": "CSV", "isCorrect": false },
+        { "text": "YAML", "isCorrect": false }
+      ],
+      "explanation": "JSON signifie JavaScript Object Notation."
+    },
+    {
+      "ref": "info-096",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel code HTTP signifie « page introuvable » ?",
+      "answers": [
+        { "text": "200", "isCorrect": false },
+        { "text": "500", "isCorrect": false },
+        { "text": "301", "isCorrect": false },
+        { "text": "404", "isCorrect": true }
+      ],
+      "explanation": "C'est sans doute le code d'erreur le plus célèbre du Web."
+    },
+    {
+      "ref": "info-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel code HTTP signifie que la requête a réussi ?",
+      "answers": [
+        { "text": "404", "isCorrect": false },
+        { "text": "500", "isCorrect": false },
+        { "text": "200", "isCorrect": true },
+        { "text": "302", "isCorrect": false }
+      ],
+      "explanation": "Les codes en 2xx indiquent un succès."
+    },
+    {
+      "ref": "info-098",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quel code HTTP signale une erreur interne du serveur ?",
+      "answers": [
+        { "text": "404", "isCorrect": false },
+        { "text": "500", "isCorrect": true },
+        { "text": "200", "isCorrect": false },
+        { "text": "403", "isCorrect": false }
+      ],
+      "explanation": "Les codes en 5xx indiquent une erreur côté serveur."
+    },
+    {
+      "ref": "info-099",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quel code HTTP signale qu'une authentification est nécessaire ?",
+      "answers": [
+        { "text": "401", "isCorrect": true },
+        { "text": "403", "isCorrect": false },
+        { "text": "404", "isCorrect": false },
+        { "text": "418", "isCorrect": false }
+      ],
+      "explanation": "Le 403 signifie qu'on est identifié mais pas autorisé."
+    },
+    {
+      "ref": "info-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Quel code HTTP, prévu comme une blague, signifie « Je suis une théière » ?",
+      "answers": [
+        { "text": "404", "isCorrect": false },
+        { "text": "451", "isCorrect": false },
+        { "text": "999", "isCorrect": false },
+        { "text": "418", "isCorrect": true }
+      ],
+      "explanation": "Il vient d'un poisson d'avril de 1998."
+    },
+    {
+      "ref": "info-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quelle méthode HTTP sert à envoyer des données pour créer une ressource ?",
+      "answers": [
+        { "text": "GET", "isCorrect": false },
+        { "text": "DELETE", "isCorrect": false },
+        { "text": "POST", "isCorrect": true },
+        { "text": "HEAD", "isCorrect": false }
+      ],
+      "explanation": "GET sert à lire une ressource, DELETE à la supprimer."
+    },
+    {
+      "ref": "info-102",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Combien de valeurs différentes peut prendre un bit ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "2", "isCorrect": true },
+        { "text": "10", "isCorrect": false },
+        { "text": "16", "isCorrect": false }
+      ],
+      "explanation": "Un bit vaut 0 ou 1."
+    },
+    {
+      "ref": "info-103",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Combien de bits compte un octet ?",
+      "answers": [
+        { "text": "8", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "16", "isCorrect": false }
+      ],
+      "explanation": "En anglais, on dit « byte »."
+    },
+    {
+      "ref": "info-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Combien vaut le nombre binaire 1010 en décimal ?",
+      "answers": [
+        { "text": "1010", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "12", "isCorrect": false },
+        { "text": "10", "isCorrect": true }
+      ],
+      "explanation": "1×8 + 0×4 + 1×2 + 0×1 = 10."
+    },
+    {
+      "ref": "info-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Combien vaut FF en hexadécimal, écrit en décimal ?",
+      "answers": [
+        { "text": "256", "isCorrect": false },
+        { "text": "100", "isCorrect": false },
+        { "text": "255", "isCorrect": true },
+        { "text": "15", "isCorrect": false }
+      ],
+      "explanation": "C'est la valeur maximale d'un octet."
+    },
+    {
+      "ref": "info-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Sur combien de chiffres repose le système hexadécimal ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "16", "isCorrect": true },
+        { "text": "10", "isCorrect": false },
+        { "text": "2", "isCorrect": false }
+      ],
+      "explanation": "Après 9, on utilise les lettres A à F."
+    },
+    {
+      "ref": "info-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation", "histoire"],
+      "text": "Quel problème de date, lié aux années écrites sur deux chiffres, a inquiété le monde fin 1999 ?",
+      "answers": [
+        { "text": "Le bug de l'an 2000", "isCorrect": true },
+        { "text": "Le bug de 2038", "isCorrect": false },
+        { "text": "Le virus ILOVEYOU", "isCorrect": false },
+        { "text": "La faille Heartbleed", "isCorrect": false }
+      ],
+      "explanation": "Le passage de « 99 » à « 00 » risquait d'être compris comme 1900."
+    },
+    {
+      "ref": "info-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "À quelle date les systèmes qui comptent le temps sur 32 bits atteindront-ils leur limite ?",
+      "answers": [
+        { "text": "Le 1er janvier 2100", "isCorrect": false },
+        { "text": "Le 31 décembre 2999", "isCorrect": false },
+        { "text": "Le 1er janvier 2050", "isCorrect": false },
+        { "text": "Le 19 janvier 2038", "isCorrect": true }
+      ],
+      "explanation": "Le compteur de secondes depuis 1970 débordera ce jour-là."
+    },
+    {
+      "ref": "info-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["programmation"],
+      "text": "Depuis quelle date les systèmes Unix comptent-ils le temps ?",
+      "answers": [
+        { "text": "Le 1er janvier 1900", "isCorrect": false },
+        { "text": "Le 1er janvier 2000", "isCorrect": false },
+        { "text": "Le 1er janvier 1970", "isCorrect": true },
+        { "text": "Le 1er janvier 1980", "isCorrect": false }
+      ],
+      "explanation": "On appelle cette date l'« epoch » Unix."
+    },
+    {
+      "ref": "info-110",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["programmation"],
+      "text": "Quel est le premier programme qu'on écrit traditionnellement en apprenant un langage ?",
+      "answers": [
+        { "text": "Bonjour le monde en Morse", "isCorrect": false },
+        { "text": "Hello, World!", "isCorrect": true },
+        { "text": "Le jeu du pendu", "isCorrect": false },
+        { "text": "Une calculatrice", "isCorrect": false }
+      ],
+      "explanation": "La tradition remonte à un livre sur le langage C de 1978."
+    },
+    {
+      "ref": "info-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["programmation"],
+      "text": "Quelle technique de débogage consiste à expliquer son code à un canard en plastique ?",
+      "answers": [
+        { "text": "Le rubber duck debugging", "isCorrect": true },
+        { "text": "Le pair programming", "isCorrect": false },
+        { "text": "Le unit testing", "isCorrect": false },
+        { "text": "Le code review", "isCorrect": false }
+      ],
+      "explanation": "En expliquant son code à voix haute, on trouve souvent l'erreur soi-même."
+    },
+    {
+      "ref": "info-112",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["materiel"],
+      "text": "Quel composant est le « cerveau » de l'ordinateur ?",
+      "answers": [
+        { "text": "La carte graphique", "isCorrect": false },
+        { "text": "Le disque dur", "isCorrect": false },
+        { "text": "L'alimentation", "isCorrect": false },
+        { "text": "Le processeur", "isCorrect": true }
+      ],
+      "explanation": "On l'appelle aussi CPU."
+    },
+    {
+      "ref": "info-113",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Que signifie l'abréviation RAM ?",
+      "answers": [
+        { "text": "Rapid Action Memory", "isCorrect": false },
+        { "text": "Read And Modify", "isCorrect": false },
+        { "text": "Random Access Memory", "isCorrect": true },
+        { "text": "Remote Access Module", "isCorrect": false }
+      ],
+      "explanation": "C'est la mémoire vive de l'ordinateur."
+    },
+    {
+      "ref": "info-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["materiel"],
+      "text": "Quelle mémoire s'efface quand on éteint l'ordinateur ?",
+      "answers": [
+        { "text": "Le SSD", "isCorrect": false },
+        { "text": "La RAM", "isCorrect": true },
+        { "text": "Le disque dur", "isCorrect": false },
+        { "text": "La clé USB", "isCorrect": false }
+      ],
+      "explanation": "C'est pour cela qu'il faut enregistrer son travail."
+    },
+    {
+      "ref": "info-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Que signifie l'abréviation GPU ?",
+      "answers": [
+        { "text": "Graphics Processing Unit", "isCorrect": true },
+        { "text": "General Power Unit", "isCorrect": false },
+        { "text": "Global Processing Utility", "isCorrect": false },
+        { "text": "Graphic Program Upload", "isCorrect": false }
+      ],
+      "explanation": "Les GPU servent aussi beaucoup à entraîner les intelligences artificielles."
+    },
+    {
+      "ref": "info-116",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["materiel"],
+      "text": "Sur quel composant tous les autres éléments de l'ordinateur sont-ils branchés ?",
+      "answers": [
+        { "text": "Le processeur", "isCorrect": false },
+        { "text": "La carte graphique", "isCorrect": false },
+        { "text": "Le boîtier", "isCorrect": false },
+        { "text": "La carte mère", "isCorrect": true }
+      ],
+      "explanation": "Elle relie le processeur, la mémoire et les périphériques."
+    },
+    {
+      "ref": "info-117",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Que signifie l'abréviation SSD ?",
+      "answers": [
+        { "text": "Super Speed Disk", "isCorrect": false },
+        { "text": "System Storage Device", "isCorrect": false },
+        { "text": "Solid State Drive", "isCorrect": true },
+        { "text": "Secure Data Store", "isCorrect": false }
+      ],
+      "explanation": "Un SSD n'a aucune pièce mécanique en mouvement."
+    },
+    {
+      "ref": "info-118",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["materiel"],
+      "text": "Quel est le principal avantage d'un SSD sur un disque dur classique ?",
+      "answers": [
+        { "text": "Il est toujours moins cher", "isCorrect": false },
+        { "text": "Il est beaucoup plus rapide", "isCorrect": true },
+        { "text": "Il est plus lourd", "isCorrect": false },
+        { "text": "Il fait plus de bruit", "isCorrect": false }
+      ],
+      "explanation": "L'ordinateur démarre en quelques secondes."
+    },
+    {
+      "ref": "info-119",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["materiel"],
+      "text": "Quelle unité vient juste après le gigaoctet ?",
+      "answers": [
+        { "text": "Le téraoctet", "isCorrect": true },
+        { "text": "Le mégaoctet", "isCorrect": false },
+        { "text": "Le pétaoctet", "isCorrect": false },
+        { "text": "Le kilooctet", "isCorrect": false }
+      ],
+      "explanation": "Un téraoctet vaut 1 000 gigaoctets."
+    },
+    {
+      "ref": "info-120",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Quelle unité vient juste après le téraoctet ?",
+      "answers": [
+        { "text": "L'exaoctet", "isCorrect": false },
+        { "text": "Le gigaoctet", "isCorrect": false },
+        { "text": "Le zettaoctet", "isCorrect": false },
+        { "text": "Le pétaoctet", "isCorrect": true }
+      ],
+      "explanation": "Un pétaoctet vaut 1 000 téraoctets."
+    },
+    {
+      "ref": "info-121",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["materiel"],
+      "text": "Quel port sert à brancher la plupart des périphériques, comme une clé ou une souris ?",
+      "answers": [
+        { "text": "Le VGA", "isCorrect": false },
+        { "text": "Le HDMI", "isCorrect": false },
+        { "text": "L'USB", "isCorrect": true },
+        { "text": "L'Ethernet", "isCorrect": false }
+      ],
+      "explanation": "USB signifie Universal Serial Bus."
+    },
+    {
+      "ref": "info-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Quel connecteur a remplacé le port Lightning sur l'iPhone 15, en 2023 ?",
+      "answers": [
+        { "text": "Le micro-USB", "isCorrect": false },
+        { "text": "L'USB-C", "isCorrect": true },
+        { "text": "Le HDMI", "isCorrect": false },
+        { "text": "Le Thunderbolt 1", "isCorrect": false }
+      ],
+      "explanation": "L'Union européenne a imposé un chargeur universel."
+    },
+    {
+      "ref": "info-123",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Qui a inventé la souris d'ordinateur dans les années 1960 ?",
+      "answers": [
+        { "text": "Douglas Engelbart", "isCorrect": true },
+        { "text": "Steve Jobs", "isCorrect": false },
+        { "text": "Bill Gates", "isCorrect": false },
+        { "text": "Alan Turing", "isCorrect": false }
+      ],
+      "explanation": "Le premier prototype était en bois."
+    },
+    {
+      "ref": "info-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["materiel"],
+      "text": "Pourquoi le clavier français est-il appelé « AZERTY » ?",
+      "answers": [
+        { "text": "C'est le nom de son inventeur", "isCorrect": false },
+        { "text": "C'est un acronyme technique", "isCorrect": false },
+        { "text": "C'est le nom d'une marque", "isCorrect": false },
+        { "text": "Ce sont les premières lettres de sa rangée du haut", "isCorrect": true }
+      ],
+      "explanation": "Les claviers anglophones sont, eux, en QWERTY."
+    },
+    {
+      "ref": "info-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Dans quelle unité mesure-t-on la fréquence d'un processeur ?",
+      "answers": [
+        { "text": "L'octet", "isCorrect": false },
+        { "text": "Le watt", "isCorrect": false },
+        { "text": "Le hertz", "isCorrect": true },
+        { "text": "Le volt", "isCorrect": false }
+      ],
+      "explanation": "Un processeur moderne tourne à plusieurs gigahertz."
+    },
+    {
+      "ref": "info-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Quelle entreprise britannique conçoit l'architecture des processeurs de la plupart des smartphones ?",
+      "answers": [
+        { "text": "Intel", "isCorrect": false },
+        { "text": "ARM", "isCorrect": true },
+        { "text": "AMD", "isCorrect": false },
+        { "text": "NVIDIA", "isCorrect": false }
+      ],
+      "explanation": "Les puces des Mac récents utilisent aussi l'architecture ARM."
+    },
+    {
+      "ref": "info-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Quelle entreprise taïwanaise fabrique la majorité des puces électroniques les plus avancées ?",
+      "answers": [
+        { "text": "TSMC", "isCorrect": true },
+        { "text": "Samsung", "isCorrect": false },
+        { "text": "Intel", "isCorrect": false },
+        { "text": "Foxconn", "isCorrect": false }
+      ],
+      "explanation": "Elle fabrique notamment les processeurs d'Apple et de NVIDIA."
+    },
+    {
+      "ref": "info-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["materiel"],
+      "text": "Quel petit ordinateur britannique, de la taille d'une carte de crédit, sert à apprendre l'informatique ?",
+      "answers": [
+        { "text": "L'Arduino", "isCorrect": false },
+        { "text": "Le Chromebook", "isCorrect": false },
+        { "text": "Le Commodore 64", "isCorrect": false },
+        { "text": "Le Raspberry Pi", "isCorrect": true }
+      ],
+      "explanation": "Il a été lancé en 2012 et coûte quelques dizaines d'euros."
+    },
+    {
+      "ref": "info-129",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Que signifie « www » dans une adresse web ?",
+      "answers": [
+        { "text": "World Web Wide", "isCorrect": false },
+        { "text": "Wide World Web", "isCorrect": false },
+        { "text": "World Wide Web", "isCorrect": true },
+        { "text": "Web World Wide", "isCorrect": false }
+      ],
+      "explanation": "On le traduit parfois par « toile d'araignée mondiale »."
+    },
+    {
+      "ref": "info-130",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Que signifie le « s » de « https » ?",
+      "answers": [
+        { "text": "Server", "isCorrect": false },
+        { "text": "Secure, c'est-à-dire sécurisé", "isCorrect": true },
+        { "text": "Speed", "isCorrect": false },
+        { "text": "Standard", "isCorrect": false }
+      ],
+      "explanation": "Les échanges entre le navigateur et le site sont chiffrés."
+    },
+    {
+      "ref": "info-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Quel protocole attribue une adresse à chaque appareil connecté à Internet ?",
+      "answers": [
+        { "text": "IP", "isCorrect": true },
+        { "text": "HTTP", "isCorrect": false },
+        { "text": "FTP", "isCorrect": false },
+        { "text": "USB", "isCorrect": false }
+      ],
+      "explanation": "IP signifie Internet Protocol."
+    },
+    {
+      "ref": "info-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet"],
+      "text": "Que signifie l'abréviation DNS ?",
+      "answers": [
+        { "text": "Data Network Service", "isCorrect": false },
+        { "text": "Digital Name Server", "isCorrect": false },
+        { "text": "Direct Network Switch", "isCorrect": false },
+        { "text": "Domain Name System", "isCorrect": true }
+      ],
+      "explanation": "C'est l'« annuaire » d'Internet."
+    },
+    {
+      "ref": "info-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "À quoi sert le DNS ?",
+      "answers": [
+        { "text": "À chiffrer les mots de passe", "isCorrect": false },
+        { "text": "À accélérer la connexion Wi-Fi", "isCorrect": false },
+        { "text": "À traduire un nom de domaine en adresse IP", "isCorrect": true },
+        { "text": "À bloquer les virus", "isCorrect": false }
+      ],
+      "explanation": "Sans lui, il faudrait retenir les adresses IP des sites."
+    },
+    {
+      "ref": "info-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet", "france"],
+      "text": "Quelle est l'extension des noms de domaine de la France ?",
+      "answers": [
+        { "text": ".fra", "isCorrect": false },
+        { "text": ".fr", "isCorrect": true },
+        { "text": ".eu", "isCorrect": false },
+        { "text": ".com", "isCorrect": false }
+      ],
+      "explanation": "L'extension .eu est celle de l'Union européenne."
+    },
+    {
+      "ref": "info-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet", "france"],
+      "text": "Quel organisme gère les noms de domaine en .fr ?",
+      "answers": [
+        { "text": "L'Afnic", "isCorrect": true },
+        { "text": "La CNIL", "isCorrect": false },
+        { "text": "L'Arcep", "isCorrect": false },
+        { "text": "L'ANSSI", "isCorrect": false }
+      ],
+      "explanation": "L'Arcep régule les télécoms et l'ANSSI la cybersécurité."
+    },
+    {
+      "ref": "info-136",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Comment appelle-t-on un faux message qui imite une banque pour voler des identifiants ?",
+      "answers": [
+        { "text": "Le spam légitime", "isCorrect": false },
+        { "text": "Le cookie", "isCorrect": false },
+        { "text": "Le pare-feu", "isCorrect": false },
+        { "text": "L'hameçonnage", "isCorrect": true }
+      ],
+      "explanation": "En anglais, on dit « phishing »."
+    },
+    {
+      "ref": "info-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Comment appelle-t-on un logiciel qui chiffre les fichiers et réclame de l'argent ?",
+      "answers": [
+        { "text": "Un antivirus", "isCorrect": false },
+        { "text": "Un pare-feu", "isCorrect": false },
+        { "text": "Un rançongiciel", "isCorrect": true },
+        { "text": "Un tableur", "isCorrect": false }
+      ],
+      "explanation": "En anglais, on dit « ransomware »."
+    },
+    {
+      "ref": "info-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Qu'est-ce qu'un « cheval de Troie » en informatique ?",
+      "answers": [
+        { "text": "Un antivirus gratuit", "isCorrect": false },
+        { "text": "Un programme malveillant déguisé en logiciel utile", "isCorrect": true },
+        { "text": "Un câble réseau", "isCorrect": false },
+        { "text": "Un jeu vidéo historique", "isCorrect": false }
+      ],
+      "explanation": "Le nom vient de la ruse des Grecs pendant la guerre de Troie."
+    },
+    {
+      "ref": "info-139",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "En quoi consiste la double authentification ?",
+      "answers": [
+        { "text": "Utiliser deux preuves d'identité, comme un mot de passe et un code", "isCorrect": true },
+        { "text": "Se connecter deux fois de suite", "isCorrect": false },
+        { "text": "Avoir deux comptes", "isCorrect": false },
+        { "text": "Utiliser deux mots de passe identiques", "isCorrect": false }
+      ],
+      "explanation": "Elle protège même si le mot de passe a été volé."
+    },
+    {
+      "ref": "info-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Quel mot de passe arrive très souvent en tête des mots de passe les plus utilisés ?",
+      "answers": [
+        { "text": "azerty", "isCorrect": false },
+        { "text": "motdepasse", "isCorrect": false },
+        { "text": "000000", "isCorrect": false },
+        { "text": "123456", "isCorrect": true }
+      ],
+      "explanation": "Il peut être deviné en moins d'une seconde."
+    },
+    {
+      "ref": "info-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Pourquoi enregistre-t-on les mots de passe « hachés » plutôt qu'en clair ?",
+      "answers": [
+        { "text": "Pour qu'ils prennent moins de place", "isCorrect": false },
+        { "text": "Pour accélérer la connexion", "isCorrect": false },
+        { "text": "Pour qu'ils restent illisibles en cas de vol de la base", "isCorrect": true },
+        { "text": "Pour pouvoir les afficher à l'utilisateur", "isCorrect": false }
+      ],
+      "explanation": "Le hachage ne peut pas être inversé."
+    },
+    {
+      "ref": "info-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet"],
+      "text": "Comment appelle-t-on les données aléatoires ajoutées à un mot de passe avant de le hacher ?",
+      "answers": [
+        { "text": "Le poivre", "isCorrect": false },
+        { "text": "Le sel", "isCorrect": true },
+        { "text": "La clé publique", "isCorrect": false },
+        { "text": "Le jeton", "isCorrect": false }
+      ],
+      "explanation": "Le sel empêche deux mots de passe identiques d'avoir le même hachage."
+    },
+    {
+      "ref": "info-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Quelle attaque consiste à glisser du code SQL dans un champ de formulaire ?",
+      "answers": [
+        { "text": "L'injection SQL", "isCorrect": true },
+        { "text": "Le phishing", "isCorrect": false },
+        { "text": "Le déni de service", "isCorrect": false },
+        { "text": "Le cross-site scripting", "isCorrect": false }
+      ],
+      "explanation": "On s'en protège avec des requêtes préparées."
+    },
+    {
+      "ref": "info-144",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet"],
+      "text": "Quelle attaque injecte du JavaScript malveillant dans une page web ?",
+      "answers": [
+        { "text": "L'injection SQL", "isCorrect": false },
+        { "text": "Le DDoS", "isCorrect": false },
+        { "text": "Le brute force", "isCorrect": false },
+        { "text": "Le XSS", "isCorrect": true }
+      ],
+      "explanation": "XSS signifie « cross-site scripting »."
+    },
+    {
+      "ref": "info-145",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Qu'est-ce qu'un cookie sur un site web ?",
+      "answers": [
+        { "text": "Un virus", "isCorrect": false },
+        { "text": "Une publicité", "isCorrect": false },
+        { "text": "Un petit fichier enregistré par le navigateur", "isCorrect": true },
+        { "text": "Un mot de passe", "isCorrect": false }
+      ],
+      "explanation": "Il permet par exemple de rester connecté."
+    },
+    {
+      "ref": "info-146",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Quel règlement européen protège les données personnelles depuis 2018 ?",
+      "answers": [
+        { "text": "Le DSA", "isCorrect": false },
+        { "text": "Le RGPD", "isCorrect": true },
+        { "text": "La loi Hadopi", "isCorrect": false },
+        { "text": "Le RGAA", "isCorrect": false }
+      ],
+      "explanation": "Il impose notamment de demander le consentement pour les cookies."
+    },
+    {
+      "ref": "info-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet", "france"],
+      "text": "Quelle autorité française veille à la protection des données personnelles ?",
+      "answers": [
+        { "text": "La CNIL", "isCorrect": true },
+        { "text": "L'Arcom", "isCorrect": false },
+        { "text": "L'Hadopi", "isCorrect": false },
+        { "text": "L'Arcep", "isCorrect": false }
+      ],
+      "explanation": "Elle a été créée en 1978."
+    },
+    {
+      "ref": "info-148",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet"],
+      "text": "Que signifie l'abréviation VPN ?",
+      "answers": [
+        { "text": "Very Private Navigation", "isCorrect": false },
+        { "text": "Virtual Public Node", "isCorrect": false },
+        { "text": "Verified Protocol Network", "isCorrect": false },
+        { "text": "Virtual Private Network", "isCorrect": true }
+      ],
+      "explanation": "Un VPN fait passer la connexion par un tunnel chiffré."
+    },
+    {
+      "ref": "info-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Quel protocole permet une communication en temps réel dans les deux sens entre navigateur et serveur ?",
+      "answers": [
+        { "text": "FTP", "isCorrect": false },
+        { "text": "SMTP", "isCorrect": false },
+        { "text": "WebSocket", "isCorrect": true },
+        { "text": "DNS", "isCorrect": false }
+      ],
+      "explanation": "Il est idéal pour les jeux en ligne et les messageries."
+    },
+    {
+      "ref": "info-150",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet"],
+      "text": "Combien d'octets compte une adresse IPv4 ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "8", "isCorrect": false },
+        { "text": "16", "isCorrect": false }
+      ],
+      "explanation": "Par exemple 192.168.1.1, soit quatre nombres de 0 à 255."
+    },
+    {
+      "ref": "info-151",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Pourquoi a-t-on créé le protocole IPv6 ?",
+      "answers": [
+        { "text": "Parce qu'il n'y avait plus assez d'adresses IPv4", "isCorrect": true },
+        { "text": "Pour accélérer le Wi-Fi", "isCorrect": false },
+        { "text": "Pour remplacer le DNS", "isCorrect": false },
+        { "text": "Pour chiffrer les e-mails", "isCorrect": false }
+      ],
+      "explanation": "IPv6 offre un nombre d'adresses quasiment illimité."
+    },
+    {
+      "ref": "info-152",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Quel navigateur est développé par la fondation Mozilla ?",
+      "answers": [
+        { "text": "Chrome", "isCorrect": false },
+        { "text": "Safari", "isCorrect": false },
+        { "text": "Edge", "isCorrect": false },
+        { "text": "Firefox", "isCorrect": true }
+      ],
+      "explanation": "Son logo représente un renard roux."
+    },
+    {
+      "ref": "info-153",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Quel navigateur a longtemps été fourni avec Windows avant Edge ?",
+      "answers": [
+        { "text": "Netscape", "isCorrect": false },
+        { "text": "Opera", "isCorrect": false },
+        { "text": "Internet Explorer", "isCorrect": true },
+        { "text": "Firefox", "isCorrect": false }
+      ],
+      "explanation": "Microsoft l'a officiellement retiré en 2022."
+    },
+    {
+      "ref": "info-154",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Que désigne le « cloud » ?",
+      "answers": [
+        { "text": "Un réseau Wi-Fi public", "isCorrect": false },
+        { "text": "Des serveurs distants accessibles par Internet", "isCorrect": true },
+        { "text": "Un antivirus", "isCorrect": false },
+        { "text": "Un type d'écran", "isCorrect": false }
+      ],
+      "explanation": "Les fichiers sont stockés dans des centres de données."
+    },
+    {
+      "ref": "info-155",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Qu'est-ce qu'un logiciel « open source » ?",
+      "answers": [
+        { "text": "Un logiciel dont le code source est public", "isCorrect": true },
+        { "text": "Un logiciel payant", "isCorrect": false },
+        { "text": "Un logiciel sans bug", "isCorrect": false },
+        { "text": "Un logiciel réservé aux entreprises", "isCorrect": false }
+      ],
+      "explanation": "Linux, Firefox et VLC sont des logiciels open source."
+    },
+    {
+      "ref": "info-156",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Comment appelle-t-on les réponses fausses mais affirmées avec assurance par une IA ?",
+      "answers": [
+        { "text": "Des bugs", "isCorrect": false },
+        { "text": "Des captchas", "isCorrect": false },
+        { "text": "Des cookies", "isCorrect": false },
+        { "text": "Des hallucinations", "isCorrect": true }
+      ],
+      "explanation": "Il faut toujours vérifier ce que répond une IA générative."
+    },
+    {
+      "ref": "info-157",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "À quoi sert un captcha ?",
+      "answers": [
+        { "text": "À accélérer un site", "isCorrect": false },
+        { "text": "À protéger un mot de passe", "isCorrect": false },
+        { "text": "À vérifier qu'on est un humain", "isCorrect": true },
+        { "text": "À bloquer les publicités", "isCorrect": false }
+      ],
+      "explanation": "Le mot est l'acronyme d'une phrase anglaise contenant « Turing »."
+    },
+    {
+      "ref": "info-158",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["internet"],
+      "text": "Que signifie le « T » de GPT ?",
+      "answers": [
+        { "text": "Text", "isCorrect": false },
+        { "text": "Transformer", "isCorrect": true },
+        { "text": "Turing", "isCorrect": false },
+        { "text": "Technology", "isCorrect": false }
+      ],
+      "explanation": "GPT signifie Generative Pre-trained Transformer."
+    },
+    {
+      "ref": "info-159",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["internet"],
+      "text": "Comment appelle-t-on la partie d'un site visible par l'utilisateur ?",
+      "answers": [
+        { "text": "Le front-end", "isCorrect": true },
+        { "text": "Le back-end", "isCorrect": false },
+        { "text": "La base de données", "isCorrect": false },
+        { "text": "Le serveur", "isCorrect": false }
+      ],
+      "explanation": "Le back-end gère la logique et les données côté serveur."
+    },
+    {
+      "ref": "info-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Comment appelle-t-on un développeur qui travaille à la fois sur le front-end et le back-end ?",
+      "answers": [
+        { "text": "Un développeur back-end", "isCorrect": false },
+        { "text": "Un intégrateur", "isCorrect": false },
+        { "text": "Un administrateur système", "isCorrect": false },
+        { "text": "Un développeur full-stack", "isCorrect": true }
+      ],
+      "explanation": "ft_transcendence est un projet full-stack."
+    },
+    {
+      "ref": "info-161",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Le Web et Internet sont la même chose.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Internet est le réseau mondial. Le Web n'est qu'un des services qui l'utilisent, comme l'e-mail."
+    },
+    {
+      "ref": "info-162",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["internet"],
+      "text": "Le mode navigation privée empêche les sites de connaître votre identité.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Il évite seulement d'enregistrer l'historique sur votre appareil."
+    },
+    {
+      "ref": "info-163",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Qui a fondé l'école 42 ?",
+      "answers": [
+        { "text": "Xavier Niel", "isCorrect": true },
+        { "text": "Bill Gates", "isCorrect": false },
+        { "text": "Octave Klaba", "isCorrect": false },
+        { "text": "Steve Jobs", "isCorrect": false }
+      ],
+      "explanation": "Le fondateur de Free l'a créée avec plusieurs cofondateurs, dont Nicolas Sadirac."
+    },
+    {
+      "ref": "info-164",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "En quelle année l'école 42 a-t-elle ouvert à Paris ?",
+      "answers": [
+        { "text": "2008", "isCorrect": false },
+        { "text": "2017", "isCorrect": false },
+        { "text": "2020", "isCorrect": false },
+        { "text": "2013", "isCorrect": true }
+      ],
+      "explanation": "Le campus parisien se trouve dans le 17e arrondissement."
+    },
+    {
+      "ref": "info-165",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "D'où vient le nom de l'école 42 ?",
+      "answers": [
+        { "text": "Du nombre d'étudiants de la première promotion", "isCorrect": false },
+        { "text": "Du numéro de la rue", "isCorrect": false },
+        { "text": "Du « Guide du voyageur galactique »", "isCorrect": true },
+        { "text": "Du département de la Loire", "isCorrect": false }
+      ],
+      "explanation": "42 y est la réponse à la grande question sur la vie, l'univers et le reste."
+    },
+    {
+      "ref": "info-166",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Qui a écrit « Le Guide du voyageur galactique » ?",
+      "answers": [
+        { "text": "Isaac Asimov", "isCorrect": false },
+        { "text": "Douglas Adams", "isCorrect": true },
+        { "text": "Philip K. Dick", "isCorrect": false },
+        { "text": "Arthur C. Clarke", "isCorrect": false }
+      ],
+      "explanation": "Le livre est paru en 1979."
+    },
+    {
+      "ref": "info-167",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Comment s'appelle la période d'immersion intensive qui sert de sélection à 42 ?",
+      "answers": [
+        { "text": "La Piscine", "isCorrect": true },
+        { "text": "Le Bain", "isCorrect": false },
+        { "text": "La Plongée", "isCorrect": false },
+        { "text": "Le Marathon", "isCorrect": false }
+      ],
+      "explanation": "Les candidats enchaînent les exercices pendant près d'un mois."
+    },
+    {
+      "ref": "info-168",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Combien de temps dure la Piscine de 42 ?",
+      "answers": [
+        { "text": "Deux jours", "isCorrect": false },
+        { "text": "Une semaine", "isCorrect": false },
+        { "text": "Un an", "isCorrect": false },
+        { "text": "Un mois", "isCorrect": true }
+      ],
+      "explanation": "Elle se déroule du lundi au dimanche, à plein temps."
+    },
+    {
+      "ref": "info-169",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Combien coûte la formation à 42 ?",
+      "answers": [
+        { "text": "500 € par an", "isCorrect": false },
+        { "text": "5 000 € par an", "isCorrect": false },
+        { "text": "Elle est gratuite", "isCorrect": true },
+        { "text": "Elle dépend des revenus", "isCorrect": false }
+      ],
+      "explanation": "L'école est financée par des fonds privés et des partenaires."
+    },
+    {
+      "ref": "info-170",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Il faut avoir le baccalauréat pour entrer à 42.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Aucun diplôme n'est demandé : la sélection se fait sur les tests en ligne et la Piscine."
+    },
+    {
+      "ref": "info-171",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Comment apprend-on à 42 ?",
+      "answers": [
+        { "text": "Sans professeurs, par projets et entre étudiants", "isCorrect": true },
+        { "text": "Avec des cours magistraux", "isCorrect": false },
+        { "text": "Avec un professeur par groupe", "isCorrect": false },
+        { "text": "Par correspondance", "isCorrect": false }
+      ],
+      "explanation": "C'est la pédagogie du « peer learning »."
+    },
+    {
+      "ref": "info-172",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Comment s'appelle l'outil qui vérifie automatiquement le respect des règles d'écriture du code à 42 ?",
+      "answers": [
+        { "text": "La Moulinette", "isCorrect": false },
+        { "text": "Le Linter 42", "isCorrect": false },
+        { "text": "La Vérifieuse", "isCorrect": false },
+        { "text": "La Norminette", "isCorrect": true }
+      ],
+      "explanation": "Une erreur de norme peut suffire à faire échouer un projet."
+    },
+    {
+      "ref": "info-173",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Comment s'appelle le programme qui corrige automatiquement certains exercices à 42 ?",
+      "answers": [
+        { "text": "La Norminette", "isCorrect": false },
+        { "text": "Le Correcteur", "isCorrect": false },
+        { "text": "La Moulinette", "isCorrect": true },
+        { "text": "Le Robot 42", "isCorrect": false }
+      ],
+      "explanation": "La Moulinette est réputée pour ne laisser passer aucune erreur."
+    },
+    {
+      "ref": "info-174",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Qui corrige la plupart des projets à 42 ?",
+      "answers": [
+        { "text": "Des professeurs", "isCorrect": false },
+        { "text": "D'autres étudiants", "isCorrect": true },
+        { "text": "Des entreprises partenaires", "isCorrect": false },
+        { "text": "Personne", "isCorrect": false }
+      ],
+      "explanation": "Chaque correction rapporte des points pour se faire corriger à son tour."
+    },
+    {
+      "ref": "info-175",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Combien de lignes au maximum la Norme de 42 autorise-t-elle par fonction ?",
+      "answers": [
+        { "text": "25", "isCorrect": true },
+        { "text": "10", "isCorrect": false },
+        { "text": "50", "isCorrect": false },
+        { "text": "100", "isCorrect": false }
+      ],
+      "explanation": "Cela oblige à découper son code en petites fonctions."
+    },
+    {
+      "ref": "info-176",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecole-42"],
+      "text": "Combien de fonctions au maximum la Norme de 42 autorise-t-elle par fichier ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "25", "isCorrect": false },
+        { "text": "5", "isCorrect": true }
+      ],
+      "explanation": "C'est une autre règle qui pousse à bien organiser son code."
+    },
+    {
+      "ref": "info-177",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Quelle boucle est interdite par la Norme de 42 ?",
+      "answers": [
+        { "text": "La boucle while", "isCorrect": false },
+        { "text": "La boucle do-while", "isCorrect": false },
+        { "text": "La boucle for", "isCorrect": true },
+        { "text": "Aucune", "isCorrect": false }
+      ],
+      "explanation": "La boucle do-while est aussi interdite : les étudiants écrivent donc leurs boucles avec while."
+    },
+    {
+      "ref": "info-178",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ecole-42"],
+      "text": "Comment s'appelle le dernier projet du tronc commun de 42, un site web avec un jeu en ligne ?",
+      "answers": [
+        { "text": "minishell", "isCorrect": false },
+        { "text": "ft_transcendence", "isCorrect": true },
+        { "text": "webserv", "isCorrect": false },
+        { "text": "cub3D", "isCorrect": false }
+      ],
+      "explanation": "Le jeu historiquement demandé est un Pong."
+    },
+    {
+      "ref": "info-180",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Comment s'appelle le premier projet du tronc commun, qui consiste à recoder des fonctions de la bibliothèque standard du C ?",
+      "answers": [
+        { "text": "ft_printf", "isCorrect": false },
+        { "text": "get_next_line", "isCorrect": false },
+        { "text": "Born2beroot", "isCorrect": false },
+        { "text": "Libft", "isCorrect": true }
+      ],
+      "explanation": "Les étudiants réutilisent ensuite leur libft dans de nombreux projets."
+    },
+    {
+      "ref": "info-182",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Quel projet de 42 consiste à écrire une fonction qui lit un fichier ligne par ligne ?",
+      "answers": [
+        { "text": "ft_printf", "isCorrect": false },
+        { "text": "get_next_line", "isCorrect": true },
+        { "text": "pipex", "isCorrect": false },
+        { "text": "so_long", "isCorrect": false }
+      ],
+      "explanation": "Il introduit les variables statiques."
+    },
+    {
+      "ref": "info-183",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Quel projet de 42 consiste à recoder un petit shell, inspiré de bash ?",
+      "answers": [
+        { "text": "minishell", "isCorrect": true },
+        { "text": "pipex", "isCorrect": false },
+        { "text": "webserv", "isCorrect": false },
+        { "text": "microshell", "isCorrect": false }
+      ],
+      "explanation": "C'est souvent le premier gros projet en binôme."
+    },
+    {
+      "ref": "info-185",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Quel projet de 42 consiste à créer un jeu façon Wolfenstein, avec du raycasting ?",
+      "answers": [
+        { "text": "so_long", "isCorrect": false },
+        { "text": "fdf", "isCorrect": false },
+        { "text": "cub3D", "isCorrect": true },
+        { "text": "miniRT", "isCorrect": false }
+      ],
+      "explanation": "Le raycasting simule la 3D à partir d'une carte en 2D."
+    },
+    {
+      "ref": "info-186",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Quel projet de 42 consiste à trier des nombres avec deux piles et un nombre limité d'opérations ?",
+      "answers": [
+        { "text": "Philosophers", "isCorrect": false },
+        { "text": "push_swap", "isCorrect": true },
+        { "text": "pipex", "isCorrect": false },
+        { "text": "Libft", "isCorrect": false }
+      ],
+      "explanation": "Les opérations s'appellent sa, pb, ra, rrr…"
+    },
+    {
+      "ref": "info-187",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ecole-42"],
+      "text": "Que se passe-t-il quand un étudiant de 42 atteint la fin de son « Blackhole » ?",
+      "answers": [
+        { "text": "Il perd l'accès au cursus", "isCorrect": true },
+        { "text": "Il gagne des points bonus", "isCorrect": false },
+        { "text": "Il passe à l'année suivante", "isCorrect": false },
+        { "text": "Il doit refaire la Piscine", "isCorrect": false }
+      ],
+      "explanation": "Valider des projets permet de repousser cette échéance."
+    },
+    {
+      "ref": "info-188",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ecole-42"],
+      "text": "Comment appelle-t-on les salles remplies d'ordinateurs dans lesquelles travaillent les étudiants de 42 ?",
+      "answers": [
+        { "text": "Les amphis", "isCorrect": false },
+        { "text": "Les labos", "isCorrect": false },
+        { "text": "Les open spaces", "isCorrect": false },
+        { "text": "Les clusters", "isCorrect": true }
+      ],
+      "explanation": "Les étudiants peuvent y venir à toute heure."
+    },
+    {
+      "ref": "info-190",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le premier iPhone est-il sorti avant ou après la création de Facebook ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Facebook est créé en 2004, le premier iPhone est présenté en 2007."
+    },
+    {
+      "ref": "info-191",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le World Wide Web a-t-il été inventé avant ou après la chute du mur de Berlin ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Tim Berners-Lee propose le Web en mars 1989, le mur tombe en novembre 1989."
+    },
+    {
+      "ref": "info-192",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Google a-t-il été fondé avant ou après la Coupe du monde 1998 en France ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La Coupe du monde se termine le 12 juillet 1998, Google est fondé en septembre 1998."
+    },
+    {
+      "ref": "info-193",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le premier message envoyé sur ARPANET date-t-il d'avant ou d'après les premiers pas sur la Lune ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Neil Armstrong marche sur la Lune en juillet 1969, le premier message ARPANET part en octobre 1969."
+    },
+    {
+      "ref": "info-194",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Linux a-t-il été créé avant ou après Windows 95 ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Linux date de 1991, Windows 95 de 1995."
+    },
+    {
+      "ref": "info-195",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le langage Python est-il apparu avant ou après le langage Java ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Python est publié en 1991, Java en 1995."
+    },
+    {
+      "ref": "info-196",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "YouTube a-t-il été créé avant ou après Facebook ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Facebook date de 2004, YouTube de 2005."
+    },
+    {
+      "ref": "info-197",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le Minitel a-t-il été lancé avant ou après le premier ordinateur Macintosh ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Le Minitel est lancé en 1980 en test, puis généralisé à partir de 1982. Le Macintosh sort en 1984."
+    },
+    {
+      "ref": "info-198",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire", "avant-apres", "ecole-42"],
+      "text": "L'école 42 a-t-elle ouvert avant ou après la sortie du premier iPhone ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Le premier iPhone date de 2007, 42 ouvre ses portes en 2013."
+    },
+    {
+      "ref": "info-199",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "ChatGPT a-t-il été rendu public avant ou après le rachat de Twitter par Elon Musk ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Le rachat de Twitter est finalisé fin octobre 2022, ChatGPT est lancé le 30 novembre 2022."
+    },
+    {
+      "ref": "info-200",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le langage C a-t-il été créé avant ou après le premier microprocesseur Intel ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "L'Intel 4004 sort en 1971, le langage C apparaît en 1972."
+    }
+  ]
+}

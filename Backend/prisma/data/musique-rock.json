@@ -1,0 +1,2140 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 151,
+    "parDifficulte": { "1": 49, "2": 46, "3": 56 },
+    "parType": { "multiple": 151 },
+    "avecImage": 0,
+    "sansImage": 151,
+    "parTag": {
+      "groupe": 77,
+      "france": 48,
+      "histoire": 21,
+      "artiste": 21,
+      "chanson": 16,
+      "album": 9,
+      "instrument": 7
+    }
+  },
+  "category": {
+    "slug": "rock",
+    "name": "Rock"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "rock-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "De quelle ville sont originaires les Beatles ?",
+      "answers": [
+        { "text": "Manchester", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Liverpool", "isCorrect": true },
+        { "text": "Birmingham", "isCorrect": false }
+      ],
+      "explanation": "Les Beatles ont débuté au Cavern Club de Liverpool."
+    },
+    {
+      "ref": "rock-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Lequel de ces musiciens n'a jamais fait partie des Beatles ?",
+      "answers": [
+        { "text": "Ringo Starr", "isCorrect": false },
+        { "text": "Mick Jagger", "isCorrect": true },
+        { "text": "George Harrison", "isCorrect": false },
+        { "text": "Paul McCartney", "isCorrect": false }
+      ],
+      "explanation": "Mick Jagger est le chanteur des Rolling Stones."
+    },
+    {
+      "ref": "rock-003",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel batteur a remplacé Pete Best dans les Beatles en 1962 ?",
+      "answers": [
+        { "text": "Ringo Starr", "isCorrect": true },
+        { "text": "Charlie Watts", "isCorrect": false },
+        { "text": "Keith Moon", "isCorrect": false },
+        { "text": "Phil Collins", "isCorrect": false }
+      ],
+      "explanation": "Ringo Starr jouait auparavant dans Rory Storm and the Hurricanes."
+    },
+    {
+      "ref": "rock-004",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Sur la pochette de quel album les Beatles traversent-ils un passage piéton ?",
+      "answers": [
+        { "text": "Let It Be", "isCorrect": false },
+        { "text": "Revolver", "isCorrect": false },
+        { "text": "Help!", "isCorrect": false },
+        { "text": "Abbey Road", "isCorrect": true }
+      ],
+      "explanation": "Le passage piéton d'Abbey Road, à Londres, est devenu un lieu de pèlerinage."
+    },
+    {
+      "ref": "rock-005",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quel album des Beatles de 1967 a une pochette remplie de personnalités ?",
+      "answers": [
+        { "text": "Rubber Soul", "isCorrect": false },
+        { "text": "The White Album", "isCorrect": false },
+        { "text": "Sgt. Pepper's Lonely Hearts Club Band", "isCorrect": true },
+        { "text": "Abbey Road", "isCorrect": false }
+      ],
+      "explanation": "La pochette compte plus de 50 visages célèbres."
+    },
+    {
+      "ref": "rock-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Sur le toit de quel bâtiment les Beatles ont-ils donné leur dernier concert public en 1969 ?",
+      "answers": [
+        { "text": "Le Cavern Club de Liverpool", "isCorrect": false },
+        { "text": "Le siège de leur société, Apple, à Londres", "isCorrect": true },
+        { "text": "L'Empire State Building", "isCorrect": false },
+        { "text": "Le Royal Albert Hall", "isCorrect": false }
+      ],
+      "explanation": "Le concert a été interrompu par la police au bout de 42 minutes."
+    },
+    {
+      "ref": "rock-007",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel titre des Beatles, achevé en 2023 grâce à l'intelligence artificielle, est présenté comme leur dernière chanson ?",
+      "answers": [
+        { "text": "Now and Then", "isCorrect": true },
+        { "text": "Free as a Bird", "isCorrect": false },
+        { "text": "Real Love", "isCorrect": false },
+        { "text": "The Long and Winding Road", "isCorrect": false }
+      ],
+      "explanation": "L'IA a permis d'isoler la voix de John Lennon d'une vieille cassette."
+    },
+    {
+      "ref": "rock-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre de John Lennon, sorti en 1971, invite à imaginer un monde en paix ?",
+      "answers": [
+        { "text": "Let It Be", "isCorrect": false },
+        { "text": "Hey Jude", "isCorrect": false },
+        { "text": "Give Peace a Chance", "isCorrect": false },
+        { "text": "Imagine", "isCorrect": true }
+      ],
+      "explanation": "« Imagine » est l'une des chansons les plus reprises au monde."
+    },
+    {
+      "ref": "rock-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "De quel groupe Mick Jagger est-il le chanteur ?",
+      "answers": [
+        { "text": "The Who", "isCorrect": false },
+        { "text": "The Kinks", "isCorrect": false },
+        { "text": "The Rolling Stones", "isCorrect": true },
+        { "text": "Led Zeppelin", "isCorrect": false }
+      ],
+      "explanation": "Les Rolling Stones ont été fondés à Londres en 1962."
+    },
+    {
+      "ref": "rock-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre des Rolling Stones, sorti en 1965, est célèbre pour son riff et son « I can't get no » ?",
+      "answers": [
+        { "text": "Paint It Black", "isCorrect": false },
+        { "text": "(I Can't Get No) Satisfaction", "isCorrect": true },
+        { "text": "Angie", "isCorrect": false },
+        { "text": "Start Me Up", "isCorrect": false }
+      ],
+      "explanation": "Keith Richards aurait trouvé le riff en pleine nuit."
+    },
+    {
+      "ref": "rock-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel guitariste forme avec Mick Jagger le duo de compositeurs des Rolling Stones ?",
+      "answers": [
+        { "text": "Keith Richards", "isCorrect": true },
+        { "text": "Ron Wood", "isCorrect": false },
+        { "text": "Brian Jones", "isCorrect": false },
+        { "text": "Charlie Watts", "isCorrect": false }
+      ],
+      "explanation": "Le duo se surnomme « The Glimmer Twins »."
+    },
+    {
+      "ref": "rock-012",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel logo est associé aux Rolling Stones ?",
+      "answers": [
+        { "text": "Une pomme verte", "isCorrect": false },
+        { "text": "Un éclair rouge", "isCorrect": false },
+        { "text": "Un prisme", "isCorrect": false },
+        { "text": "Une bouche qui tire la langue", "isCorrect": true }
+      ],
+      "explanation": "Le logo a été dessiné en 1970 par John Pasche."
+    },
+    {
+      "ref": "rock-013",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur est surnommé « le King » ?",
+      "answers": [
+        { "text": "Chuck Berry", "isCorrect": false },
+        { "text": "Johnny Cash", "isCorrect": false },
+        { "text": "Elvis Presley", "isCorrect": true },
+        { "text": "Jerry Lee Lewis", "isCorrect": false }
+      ],
+      "explanation": "Elvis Presley a popularisé le rock 'n' roll dans les années 1950."
+    },
+    {
+      "ref": "rock-014",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Dans quelle ville se trouve Graceland, la maison d'Elvis Presley ?",
+      "answers": [
+        { "text": "Nashville", "isCorrect": false },
+        { "text": "Memphis", "isCorrect": true },
+        { "text": "Tupelo", "isCorrect": false },
+        { "text": "La Nouvelle-Orléans", "isCorrect": false }
+      ],
+      "explanation": "Graceland est l'une des maisons les plus visitées des États-Unis."
+    },
+    {
+      "ref": "rock-015",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Quel pionnier du rock 'n' roll a créé le « duckwalk », la marche du canard sur scène ?",
+      "answers": [
+        { "text": "Chuck Berry", "isCorrect": true },
+        { "text": "Little Richard", "isCorrect": false },
+        { "text": "Bo Diddley", "isCorrect": false },
+        { "text": "Buddy Holly", "isCorrect": false }
+      ],
+      "explanation": "Chuck Berry est l'auteur de « Johnny B. Goode »."
+    },
+    {
+      "ref": "rock-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel titre de Chuck Berry raconte l'histoire d'un jeune guitariste de la campagne ?",
+      "answers": [
+        { "text": "Roll Over Beethoven", "isCorrect": false },
+        { "text": "Maybellene", "isCorrect": false },
+        { "text": "Sweet Little Sixteen", "isCorrect": false },
+        { "text": "Johnny B. Goode", "isCorrect": true }
+      ],
+      "explanation": "Le titre figure sur le disque envoyé dans l'espace avec les sondes Voyager."
+    },
+    {
+      "ref": "rock-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel titre de Bill Haley, sorti en 1954, est l'un des premiers grands succès du rock 'n' roll ?",
+      "answers": [
+        { "text": "Tutti Frutti", "isCorrect": false },
+        { "text": "Hound Dog", "isCorrect": false },
+        { "text": "Rock Around the Clock", "isCorrect": true },
+        { "text": "Great Balls of Fire", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été popularisé par le film « Graine de violence »."
+    },
+    {
+      "ref": "rock-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique avait pour chanteur Freddie Mercury ?",
+      "answers": [
+        { "text": "Genesis", "isCorrect": false },
+        { "text": "Queen", "isCorrect": true },
+        { "text": "The Who", "isCorrect": false },
+        { "text": "Deep Purple", "isCorrect": false }
+      ],
+      "explanation": "Freddie Mercury est né à Zanzibar en 1946."
+    },
+    {
+      "ref": "rock-019",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre de Queen de 1975 dure près de six minutes et mêle opéra et hard rock ?",
+      "answers": [
+        { "text": "Bohemian Rhapsody", "isCorrect": true },
+        { "text": "We Are the Champions", "isCorrect": false },
+        { "text": "Don't Stop Me Now", "isCorrect": false },
+        { "text": "Somebody to Love", "isCorrect": false }
+      ],
+      "explanation": "Le film « Bohemian Rhapsody » (2018) a raconté l'histoire du groupe."
+    },
+    {
+      "ref": "rock-020",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Lors de quel concert de 1985 la prestation de Queen est-elle restée légendaire ?",
+      "answers": [
+        { "text": "Woodstock", "isCorrect": false },
+        { "text": "Le concert pour Bangladesh", "isCorrect": false },
+        { "text": "Rock in Rio", "isCorrect": false },
+        { "text": "Live Aid", "isCorrect": true }
+      ],
+      "explanation": "Queen a joué 21 minutes au stade de Wembley."
+    },
+    {
+      "ref": "rock-021",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel guitariste de Queen est aussi docteur en astrophysique ?",
+      "answers": [
+        { "text": "Roger Taylor", "isCorrect": false },
+        { "text": "John Deacon", "isCorrect": false },
+        { "text": "Brian May", "isCorrect": true },
+        { "text": "Jimmy Page", "isCorrect": false }
+      ],
+      "explanation": "Brian May a terminé sa thèse en 2007, plus de trente ans après l'avoir commencée."
+    },
+    {
+      "ref": "rock-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["chanson"],
+      "text": "Quel titre de Queen est repris dans les stades avec ses « boum boum clap » ?",
+      "answers": [
+        { "text": "Another One Bites the Dust", "isCorrect": false },
+        { "text": "We Will Rock You", "isCorrect": true },
+        { "text": "Radio Ga Ga", "isCorrect": false },
+        { "text": "Under Pressure", "isCorrect": false }
+      ],
+      "explanation": "Le rythme a été pensé pour que le public puisse le reproduire."
+    },
+    {
+      "ref": "rock-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Stairway to Heaven » ?",
+      "answers": [
+        { "text": "Led Zeppelin", "isCorrect": true },
+        { "text": "Deep Purple", "isCorrect": false },
+        { "text": "Black Sabbath", "isCorrect": false },
+        { "text": "Pink Floyd", "isCorrect": false }
+      ],
+      "explanation": "Le titre figure sur le quatrième album du groupe, sorti en 1971."
+    },
+    {
+      "ref": "rock-024",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Qui était le guitariste de Led Zeppelin ?",
+      "answers": [
+        { "text": "Jimi Hendrix", "isCorrect": false },
+        { "text": "Eric Clapton", "isCorrect": false },
+        { "text": "Ritchie Blackmore", "isCorrect": false },
+        { "text": "Jimmy Page", "isCorrect": true }
+      ],
+      "explanation": "Robert Plant en était le chanteur."
+    },
+    {
+      "ref": "rock-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti l'album « The Dark Side of the Moon » en 1973 ?",
+      "answers": [
+        { "text": "Genesis", "isCorrect": false },
+        { "text": "Yes", "isCorrect": false },
+        { "text": "Pink Floyd", "isCorrect": true },
+        { "text": "King Crimson", "isCorrect": false }
+      ],
+      "explanation": "L'album est resté plus de 900 semaines dans le classement américain."
+    },
+    {
+      "ref": "rock-026",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quelle image figure sur la pochette de « The Dark Side of the Moon » ?",
+      "answers": [
+        { "text": "Une vache dans un pré", "isCorrect": false },
+        { "text": "Un prisme qui décompose la lumière", "isCorrect": true },
+        { "text": "Un cochon volant", "isCorrect": false },
+        { "text": "Un mur de briques", "isCorrect": false }
+      ],
+      "explanation": "La vache est sur « Atom Heart Mother » et le cochon sur « Animals »."
+    },
+    {
+      "ref": "rock-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quel album de Pink Floyd, sorti en 1979, contient « Another Brick in the Wall » ?",
+      "answers": [
+        { "text": "The Wall", "isCorrect": true },
+        { "text": "Wish You Were Here", "isCorrect": false },
+        { "text": "Animals", "isCorrect": false },
+        { "text": "Meddle", "isCorrect": false }
+      ],
+      "explanation": "Un film d'Alan Parker en a été tiré en 1982."
+    },
+    {
+      "ref": "rock-028",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel membre fondateur de Pink Floyd a quitté le groupe en 1968 ?",
+      "answers": [
+        { "text": "Roger Waters", "isCorrect": false },
+        { "text": "David Gilmour", "isCorrect": false },
+        { "text": "Nick Mason", "isCorrect": false },
+        { "text": "Syd Barrett", "isCorrect": true }
+      ],
+      "explanation": "« Shine On You Crazy Diamond » lui rend hommage."
+    },
+    {
+      "ref": "rock-029",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Quel guitariste a joué l'hymne américain à la guitare électrique à Woodstock en 1969 ?",
+      "answers": [
+        { "text": "Carlos Santana", "isCorrect": false },
+        { "text": "Eric Clapton", "isCorrect": false },
+        { "text": "Jimi Hendrix", "isCorrect": true },
+        { "text": "Jimmy Page", "isCorrect": false }
+      ],
+      "explanation": "Sa version imitait le bruit des bombes, en pleine guerre du Viêt Nam."
+    },
+    {
+      "ref": "rock-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "En quelle année s'est tenu le festival de Woodstock ?",
+      "answers": [
+        { "text": "1965", "isCorrect": false },
+        { "text": "1969", "isCorrect": true },
+        { "text": "1972", "isCorrect": false },
+        { "text": "1977", "isCorrect": false }
+      ],
+      "explanation": "Près de 400 000 personnes s'y sont rassemblées."
+    },
+    {
+      "ref": "rock-031",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Qu'appelle-t-on le « club des 27 » ?",
+      "answers": [
+        { "text": "Des musiciens morts à 27 ans", "isCorrect": true },
+        { "text": "Les 27 meilleurs guitaristes de l'histoire", "isCorrect": false },
+        { "text": "Un club de Londres où ont joué les Beatles", "isCorrect": false },
+        { "text": "Les artistes ayant vendu 27 millions de disques", "isCorrect": false }
+      ],
+      "explanation": "Il réunit notamment Jimi Hendrix, Janis Joplin, Jim Morrison, Kurt Cobain et Amy Winehouse."
+    },
+    {
+      "ref": "rock-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Lequel de ces musiciens n'est pas mort à 27 ans ?",
+      "answers": [
+        { "text": "Kurt Cobain", "isCorrect": false },
+        { "text": "Jimi Hendrix", "isCorrect": false },
+        { "text": "Jim Morrison", "isCorrect": false },
+        { "text": "Freddie Mercury", "isCorrect": true }
+      ],
+      "explanation": "Freddie Mercury est mort à 45 ans, en 1991."
+    },
+    {
+      "ref": "rock-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe avait pour chanteur Jim Morrison ?",
+      "answers": [
+        { "text": "The Velvet Underground", "isCorrect": false },
+        { "text": "Jefferson Airplane", "isCorrect": false },
+        { "text": "The Doors", "isCorrect": true },
+        { "text": "The Byrds", "isCorrect": false }
+      ],
+      "explanation": "Le groupe tire son nom d'un livre d'Aldous Huxley."
+    },
+    {
+      "ref": "rock-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe de Seattle avait pour chanteur Kurt Cobain ?",
+      "answers": [
+        { "text": "Pearl Jam", "isCorrect": false },
+        { "text": "Nirvana", "isCorrect": true },
+        { "text": "Soundgarden", "isCorrect": false },
+        { "text": "Alice in Chains", "isCorrect": false }
+      ],
+      "explanation": "Kurt Cobain est mort en 1994, à 27 ans."
+    },
+    {
+      "ref": "rock-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["album"],
+      "text": "Quel album de Nirvana montre un bébé qui nage vers un billet de dollar ?",
+      "answers": [
+        { "text": "Nevermind", "isCorrect": true },
+        { "text": "In Utero", "isCorrect": false },
+        { "text": "Bleach", "isCorrect": false },
+        { "text": "MTV Unplugged in New York", "isCorrect": false }
+      ],
+      "explanation": "« Nevermind » contient « Smells Like Teen Spirit »."
+    },
+    {
+      "ref": "rock-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["histoire"],
+      "text": "Quel courant rock des années 1990 est associé à Seattle ?",
+      "answers": [
+        { "text": "La britpop", "isCorrect": false },
+        { "text": "Le punk", "isCorrect": false },
+        { "text": "Le glam rock", "isCorrect": false },
+        { "text": "Le grunge", "isCorrect": true }
+      ],
+      "explanation": "Nirvana, Pearl Jam et Soundgarden en sont les figures majeures."
+    },
+    {
+      "ref": "rock-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel batteur de Nirvana a fondé les Foo Fighters ?",
+      "answers": [
+        { "text": "Krist Novoselic", "isCorrect": false },
+        { "text": "Chad Smith", "isCorrect": false },
+        { "text": "Dave Grohl", "isCorrect": true },
+        { "text": "Taylor Hawkins", "isCorrect": false }
+      ],
+      "explanation": "Dave Grohl chante et joue de la guitare dans les Foo Fighters."
+    },
+    {
+      "ref": "rock-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe irlandais a pour chanteur Bono ?",
+      "answers": [
+        { "text": "The Cranberries", "isCorrect": false },
+        { "text": "U2", "isCorrect": true },
+        { "text": "Thin Lizzy", "isCorrect": false },
+        { "text": "The Pogues", "isCorrect": false }
+      ],
+      "explanation": "U2 a été fondé à Dublin en 1976."
+    },
+    {
+      "ref": "rock-039",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel est le surnom du guitariste de U2 ?",
+      "answers": [
+        { "text": "The Edge", "isCorrect": true },
+        { "text": "Slash", "isCorrect": false },
+        { "text": "The Boss", "isCorrect": false },
+        { "text": "Ace", "isCorrect": false }
+      ],
+      "explanation": "Il s'appelle David Evans."
+    },
+    {
+      "ref": "rock-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel album de U2 a été ajouté automatiquement dans la bibliothèque de tous les utilisateurs d'iTunes en 2014 ?",
+      "answers": [
+        { "text": "The Joshua Tree", "isCorrect": false },
+        { "text": "Achtung Baby", "isCorrect": false },
+        { "text": "All That You Can't Leave Behind", "isCorrect": false },
+        { "text": "Songs of Innocence", "isCorrect": true }
+      ],
+      "explanation": "L'opération a provoqué de nombreuses protestations."
+    },
+    {
+      "ref": "rock-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe australien de hard rock a pour guitariste Angus Young ?",
+      "answers": [
+        { "text": "Iron Maiden", "isCorrect": false },
+        { "text": "Metallica", "isCorrect": false },
+        { "text": "AC/DC", "isCorrect": true },
+        { "text": "Def Leppard", "isCorrect": false }
+      ],
+      "explanation": "AC/DC a été fondé à Sydney en 1973."
+    },
+    {
+      "ref": "rock-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quelle tenue porte Angus Young sur scène ?",
+      "answers": [
+        { "text": "Un costume de cow-boy", "isCorrect": false },
+        { "text": "Un uniforme d'écolier", "isCorrect": true },
+        { "text": "Une combinaison argentée", "isCorrect": false },
+        { "text": "Un kilt", "isCorrect": false }
+      ],
+      "explanation": "Il la porte depuis les débuts du groupe."
+    },
+    {
+      "ref": "rock-043",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quel album d'AC/DC de 1980, hommage au chanteur Bon Scott, a une pochette entièrement noire ?",
+      "answers": [
+        { "text": "Back in Black", "isCorrect": true },
+        { "text": "Highway to Hell", "isCorrect": false },
+        { "text": "Powerage", "isCorrect": false },
+        { "text": "For Those About to Rock", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des albums les plus vendus de l'histoire."
+    },
+    {
+      "ref": "rock-044",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe de heavy metal a pour mascotte un mort-vivant nommé Eddie ?",
+      "answers": [
+        { "text": "Metallica", "isCorrect": false },
+        { "text": "Motörhead", "isCorrect": false },
+        { "text": "Judas Priest", "isCorrect": false },
+        { "text": "Iron Maiden", "isCorrect": true }
+      ],
+      "explanation": "Eddie apparaît sur presque toutes les pochettes du groupe."
+    },
+    {
+      "ref": "rock-045",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel chanteur de Black Sabbath était surnommé « le Prince des ténèbres » ?",
+      "answers": [
+        { "text": "Ronnie James Dio", "isCorrect": false },
+        { "text": "Lemmy Kilmister", "isCorrect": false },
+        { "text": "Ozzy Osbourne", "isCorrect": true },
+        { "text": "Bruce Dickinson", "isCorrect": false }
+      ],
+      "explanation": "Ozzy Osbourne est mort en juillet 2025, peu après un dernier concert à Birmingham."
+    },
+    {
+      "ref": "rock-046",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe est considéré comme fondateur du heavy metal, avec l'album « Paranoid » ?",
+      "answers": [
+        { "text": "Deep Purple", "isCorrect": false },
+        { "text": "Black Sabbath", "isCorrect": true },
+        { "text": "Led Zeppelin", "isCorrect": false },
+        { "text": "Judas Priest", "isCorrect": false }
+      ],
+      "explanation": "Le groupe vient de Birmingham."
+    },
+    {
+      "ref": "rock-047",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe de metal américain a sorti « Enter Sandman » ?",
+      "answers": [
+        { "text": "Metallica", "isCorrect": true },
+        { "text": "Megadeth", "isCorrect": false },
+        { "text": "Slayer", "isCorrect": false },
+        { "text": "Anthrax", "isCorrect": false }
+      ],
+      "explanation": "Le titre ouvre l'album « Metallica » de 1991."
+    },
+    {
+      "ref": "rock-048",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Comment est surnommé l'album « Metallica » de 1991, à la pochette entièrement noire ?",
+      "answers": [
+        { "text": "The Dark Album", "isCorrect": false },
+        { "text": "Back in Black", "isCorrect": false },
+        { "text": "The Night Album", "isCorrect": false },
+        { "text": "The Black Album", "isCorrect": true }
+      ],
+      "explanation": "Il contient « Nothing Else Matters »."
+    },
+    {
+      "ref": "rock-049",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Sweet Child o' Mine » ?",
+      "answers": [
+        { "text": "Bon Jovi", "isCorrect": false },
+        { "text": "Aerosmith", "isCorrect": false },
+        { "text": "Guns N' Roses", "isCorrect": true },
+        { "text": "Mötley Crüe", "isCorrect": false }
+      ],
+      "explanation": "Le titre est extrait de l'album « Appetite for Destruction » (1987)."
+    },
+    {
+      "ref": "rock-050",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel guitariste de Guns N' Roses porte un haut-de-forme ?",
+      "answers": [
+        { "text": "Axl Rose", "isCorrect": false },
+        { "text": "Slash", "isCorrect": true },
+        { "text": "Izzy Stradlin", "isCorrect": false },
+        { "text": "Duff McKagan", "isCorrect": false }
+      ],
+      "explanation": "Slash est aussi célèbre pour sa crinière bouclée."
+    },
+    {
+      "ref": "rock-051",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « Wonderwall » ?",
+      "answers": [
+        { "text": "Oasis", "isCorrect": true },
+        { "text": "Blur", "isCorrect": false },
+        { "text": "Pulp", "isCorrect": false },
+        { "text": "The Verve", "isCorrect": false }
+      ],
+      "explanation": "« Wonderwall » est sorti en 1995."
+    },
+    {
+      "ref": "rock-052",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quels frères ont fondé Oasis ?",
+      "answers": [
+        { "text": "Ray et Dave Davies", "isCorrect": false },
+        { "text": "Angus et Malcolm Young", "isCorrect": false },
+        { "text": "Chris et Rich Robinson", "isCorrect": false },
+        { "text": "Liam et Noel Gallagher", "isCorrect": true }
+      ],
+      "explanation": "Les deux frères sont célèbres pour leurs disputes."
+    },
+    {
+      "ref": "rock-053",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Avec quel groupe Oasis a-t-il vécu une rivalité célèbre en 1995, au cœur de la britpop ?",
+      "answers": [
+        { "text": "Radiohead", "isCorrect": false },
+        { "text": "Pulp", "isCorrect": false },
+        { "text": "Blur", "isCorrect": true },
+        { "text": "Suede", "isCorrect": false }
+      ],
+      "explanation": "Les deux groupes avaient sorti un single le même jour."
+    },
+    {
+      "ref": "rock-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "En quelle année Oasis s'est-il reformé pour une grande tournée ?",
+      "answers": [
+        { "text": "2019", "isCorrect": false },
+        { "text": "2025", "isCorrect": true },
+        { "text": "2022", "isCorrect": false },
+        { "text": "2014", "isCorrect": false }
+      ],
+      "explanation": "Le groupe était séparé depuis 2009."
+    },
+    {
+      "ref": "rock-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « Creep » en 1992 ?",
+      "answers": [
+        { "text": "Radiohead", "isCorrect": true },
+        { "text": "Coldplay", "isCorrect": false },
+        { "text": "Muse", "isCorrect": false },
+        { "text": "Placebo", "isCorrect": false }
+      ],
+      "explanation": "Radiohead est originaire d'Oxford."
+    },
+    {
+      "ref": "rock-056",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quel album de Radiohead, sorti en 1997, est souvent cité parmi les meilleurs des années 1990 ?",
+      "answers": [
+        { "text": "The Bends", "isCorrect": false },
+        { "text": "Kid A", "isCorrect": false },
+        { "text": "In Rainbows", "isCorrect": false },
+        { "text": "OK Computer", "isCorrect": true }
+      ],
+      "explanation": "Il contient « Paranoid Android » et « Karma Police »."
+    },
+    {
+      "ref": "rock-057",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « Yellow » et « Viva la Vida » ?",
+      "answers": [
+        { "text": "Muse", "isCorrect": false },
+        { "text": "Keane", "isCorrect": false },
+        { "text": "Coldplay", "isCorrect": true },
+        { "text": "Snow Patrol", "isCorrect": false }
+      ],
+      "explanation": "Le groupe est mené par Chris Martin."
+    },
+    {
+      "ref": "rock-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique, mené par Matthew Bellamy, a sorti « Supermassive Black Hole » ?",
+      "answers": [
+        { "text": "Placebo", "isCorrect": false },
+        { "text": "Muse", "isCorrect": true },
+        { "text": "Radiohead", "isCorrect": false },
+        { "text": "Arctic Monkeys", "isCorrect": false }
+      ],
+      "explanation": "Muse est originaire du Devon."
+    },
+    {
+      "ref": "rock-059",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Mr. Brightside » en 2003 ?",
+      "answers": [
+        { "text": "The Killers", "isCorrect": true },
+        { "text": "The Strokes", "isCorrect": false },
+        { "text": "Franz Ferdinand", "isCorrect": false },
+        { "text": "Kings of Leon", "isCorrect": false }
+      ],
+      "explanation": "The Killers viennent de Las Vegas."
+    },
+    {
+      "ref": "rock-060",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe de Sheffield a sorti « Do I Wanna Know? » ?",
+      "answers": [
+        { "text": "Kasabian", "isCorrect": false },
+        { "text": "The Libertines", "isCorrect": false },
+        { "text": "Franz Ferdinand", "isCorrect": false },
+        { "text": "Arctic Monkeys", "isCorrect": true }
+      ],
+      "explanation": "Arctic Monkeys s'est fait connaître grâce à internet au milieu des années 2000."
+    },
+    {
+      "ref": "rock-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe américain a sorti « Californication » ?",
+      "answers": [
+        { "text": "Foo Fighters", "isCorrect": false },
+        { "text": "Green Day", "isCorrect": false },
+        { "text": "Red Hot Chili Peppers", "isCorrect": true },
+        { "text": "Pearl Jam", "isCorrect": false }
+      ],
+      "explanation": "Le groupe est originaire de Los Angeles."
+    },
+    {
+      "ref": "rock-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Seven Nation Army », repris par les supporters dans les stades ?",
+      "answers": [
+        { "text": "The Black Keys", "isCorrect": false },
+        { "text": "The White Stripes", "isCorrect": true },
+        { "text": "The Strokes", "isCorrect": false },
+        { "text": "The Hives", "isCorrect": false }
+      ],
+      "explanation": "Le riff est chanté dans les stades depuis la Coupe du monde 2006."
+    },
+    {
+      "ref": "rock-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe punk britannique avait pour chanteur Johnny Rotten ?",
+      "answers": [
+        { "text": "Sex Pistols", "isCorrect": true },
+        { "text": "The Clash", "isCorrect": false },
+        { "text": "The Damned", "isCorrect": false },
+        { "text": "Buzzcocks", "isCorrect": false }
+      ],
+      "explanation": "Leur unique album studio est sorti en 1977."
+    },
+    {
+      "ref": "rock-064",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe punk britannique a sorti « London Calling » ?",
+      "answers": [
+        { "text": "Sex Pistols", "isCorrect": false },
+        { "text": "The Jam", "isCorrect": false },
+        { "text": "The Damned", "isCorrect": false },
+        { "text": "The Clash", "isCorrect": true }
+      ],
+      "explanation": "L'album est sorti en 1979."
+    },
+    {
+      "ref": "rock-065",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe punk new-yorkais scandait « Hey! Ho! Let's Go! » ?",
+      "answers": [
+        { "text": "Blondie", "isCorrect": false },
+        { "text": "Television", "isCorrect": false },
+        { "text": "Ramones", "isCorrect": true },
+        { "text": "Talking Heads", "isCorrect": false }
+      ],
+      "explanation": "Le cri ouvre leur titre « Blitzkrieg Bop »."
+    },
+    {
+      "ref": "rock-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Hotel California » en 1976 ?",
+      "answers": [
+        { "text": "Fleetwood Mac", "isCorrect": false },
+        { "text": "Eagles", "isCorrect": true },
+        { "text": "The Doors", "isCorrect": false },
+        { "text": "Lynyrd Skynyrd", "isCorrect": false }
+      ],
+      "explanation": "Le solo final à deux guitares est l'un des plus célèbres du rock."
+    },
+    {
+      "ref": "rock-067",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti l'album « Rumours » en 1977 ?",
+      "answers": [
+        { "text": "Fleetwood Mac", "isCorrect": true },
+        { "text": "Eagles", "isCorrect": false },
+        { "text": "Supertramp", "isCorrect": false },
+        { "text": "The Police", "isCorrect": false }
+      ],
+      "explanation": "L'album a été enregistré alors que les couples du groupe se séparaient."
+    },
+    {
+      "ref": "rock-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « Breakfast in America » et « The Logical Song » ?",
+      "answers": [
+        { "text": "Genesis", "isCorrect": false },
+        { "text": "Dire Straits", "isCorrect": false },
+        { "text": "The Police", "isCorrect": false },
+        { "text": "Supertramp", "isCorrect": true }
+      ],
+      "explanation": "Supertramp a été extrêmement populaire en France."
+    },
+    {
+      "ref": "rock-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique mené par Mark Knopfler a sorti « Sultans of Swing » ?",
+      "answers": [
+        { "text": "The Police", "isCorrect": false },
+        { "text": "Supertramp", "isCorrect": false },
+        { "text": "Dire Straits", "isCorrect": true },
+        { "text": "Genesis", "isCorrect": false }
+      ],
+      "explanation": "Mark Knopfler est réputé pour jouer de la guitare sans médiator."
+    },
+    {
+      "ref": "rock-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe avait pour chanteur et bassiste Sting ?",
+      "answers": [
+        { "text": "Genesis", "isCorrect": false },
+        { "text": "The Police", "isCorrect": true },
+        { "text": "Duran Duran", "isCorrect": false },
+        { "text": "Dire Straits", "isCorrect": false }
+      ],
+      "explanation": "The Police a sorti « Every Breath You Take » en 1983."
+    },
+    {
+      "ref": "rock-071",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["artiste"],
+      "text": "Quel chanteur américain est surnommé « The Boss » ?",
+      "answers": [
+        { "text": "Bruce Springsteen", "isCorrect": true },
+        { "text": "Bob Dylan", "isCorrect": false },
+        { "text": "Tom Petty", "isCorrect": false },
+        { "text": "Jon Bon Jovi", "isCorrect": false }
+      ],
+      "explanation": "Bruce Springsteen est originaire du New Jersey."
+    },
+    {
+      "ref": "rock-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["chanson"],
+      "text": "Quel titre de Bruce Springsteen de 1984 est souvent pris, à tort, pour un hymne patriotique ?",
+      "answers": [
+        { "text": "Born to Run", "isCorrect": false },
+        { "text": "Dancing in the Dark", "isCorrect": false },
+        { "text": "The River", "isCorrect": false },
+        { "text": "Born in the U.S.A.", "isCorrect": true }
+      ],
+      "explanation": "La chanson dénonce le sort des vétérans du Viêt Nam."
+    },
+    {
+      "ref": "rock-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quel chanteur britannique a incarné le personnage de Ziggy Stardust ?",
+      "answers": [
+        { "text": "Mick Jagger", "isCorrect": false },
+        { "text": "Elton John", "isCorrect": false },
+        { "text": "David Bowie", "isCorrect": true },
+        { "text": "Marc Bolan", "isCorrect": false }
+      ],
+      "explanation": "Ziggy Stardust est un extraterrestre devenu rock star."
+    },
+    {
+      "ref": "rock-074",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["album"],
+      "text": "Quel album de David Bowie est sorti deux jours avant sa mort, en 2016 ?",
+      "answers": [
+        { "text": "Heroes", "isCorrect": false },
+        { "text": "Blackstar", "isCorrect": true },
+        { "text": "Low", "isCorrect": false },
+        { "text": "The Next Day", "isCorrect": false }
+      ],
+      "explanation": "Bowie l'avait conçu comme un adieu."
+    },
+    {
+      "ref": "rock-075",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Smoke on the Water » ?",
+      "answers": [
+        { "text": "Deep Purple", "isCorrect": true },
+        { "text": "Led Zeppelin", "isCorrect": false },
+        { "text": "Black Sabbath", "isCorrect": false },
+        { "text": "Uriah Heep", "isCorrect": false }
+      ],
+      "explanation": "Son riff est l'un des premiers que l'on apprend à la guitare."
+    },
+    {
+      "ref": "rock-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel événement raconte « Smoke on the Water » de Deep Purple ?",
+      "answers": [
+        { "text": "Un incendie dans un studio de Londres", "isCorrect": false },
+        { "text": "Une explosion lors d'un concert à Tokyo", "isCorrect": false },
+        { "text": "Un feu de forêt en Californie", "isCorrect": false },
+        { "text": "L'incendie du casino de Montreux, en Suisse", "isCorrect": true }
+      ],
+      "explanation": "Le casino a brûlé pendant un concert de Frank Zappa, en 1971."
+    },
+    {
+      "ref": "rock-077",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Livin' on a Prayer » ?",
+      "answers": [
+        { "text": "Def Leppard", "isCorrect": false },
+        { "text": "Europe", "isCorrect": false },
+        { "text": "Bon Jovi", "isCorrect": true },
+        { "text": "Aerosmith", "isCorrect": false }
+      ],
+      "explanation": "Le titre est sorti en 1986."
+    },
+    {
+      "ref": "rock-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe suédois a sorti « The Final Countdown » en 1986 ?",
+      "answers": [
+        { "text": "Roxette", "isCorrect": false },
+        { "text": "Europe", "isCorrect": true },
+        { "text": "Scorpions", "isCorrect": false },
+        { "text": "ABBA", "isCorrect": false }
+      ],
+      "explanation": "Son riff au synthétiseur est devenu un hymne des stades."
+    },
+    {
+      "ref": "rock-079",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe allemand a sorti « Wind of Change » et « Still Loving You » ?",
+      "answers": [
+        { "text": "Scorpions", "isCorrect": true },
+        { "text": "Rammstein", "isCorrect": false },
+        { "text": "Kraftwerk", "isCorrect": false },
+        { "text": "Accept", "isCorrect": false }
+      ],
+      "explanation": "« Wind of Change » est associé à la chute du mur de Berlin."
+    },
+    {
+      "ref": "rock-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe allemand de metal chante en allemand et utilise des effets pyrotechniques sur scène ?",
+      "answers": [
+        { "text": "Scorpions", "isCorrect": false },
+        { "text": "Helloween", "isCorrect": false },
+        { "text": "Accept", "isCorrect": false },
+        { "text": "Rammstein", "isCorrect": true }
+      ],
+      "explanation": "Le groupe a été fondé à Berlin en 1994."
+    },
+    {
+      "ref": "rock-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti « Losing My Religion » en 1991 ?",
+      "answers": [
+        { "text": "The Cure", "isCorrect": false },
+        { "text": "U2", "isCorrect": false },
+        { "text": "R.E.M.", "isCorrect": true },
+        { "text": "The Smiths", "isCorrect": false }
+      ],
+      "explanation": "R.E.M. vient d'Athens, en Géorgie."
+    },
+    {
+      "ref": "rock-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique mené par Robert Smith a sorti « Boys Don't Cry » ?",
+      "answers": [
+        { "text": "The Smiths", "isCorrect": false },
+        { "text": "The Cure", "isCorrect": true },
+        { "text": "Joy Division", "isCorrect": false },
+        { "text": "Depeche Mode", "isCorrect": false }
+      ],
+      "explanation": "Robert Smith est reconnaissable à son maquillage et à ses cheveux en bataille."
+    },
+    {
+      "ref": "rock-083",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe irlandais a sorti « Zombie » en 1994 ?",
+      "answers": [
+        { "text": "The Cranberries", "isCorrect": true },
+        { "text": "U2", "isCorrect": false },
+        { "text": "The Corrs", "isCorrect": false },
+        { "text": "Sinéad O'Connor", "isCorrect": false }
+      ],
+      "explanation": "La chanson rend hommage aux enfants tués dans un attentat en Angleterre."
+    },
+    {
+      "ref": "rock-084",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « My Generation » en 1965 ?",
+      "answers": [
+        { "text": "The Kinks", "isCorrect": false },
+        { "text": "The Rolling Stones", "isCorrect": false },
+        { "text": "The Animals", "isCorrect": false },
+        { "text": "The Who", "isCorrect": true }
+      ],
+      "explanation": "La chanson contient la phrase « J'espère mourir avant d'être vieux »."
+    },
+    {
+      "ref": "rock-085",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel guitariste des Who avait l'habitude de casser sa guitare sur scène ?",
+      "answers": [
+        { "text": "Roger Daltrey", "isCorrect": false },
+        { "text": "Keith Moon", "isCorrect": false },
+        { "text": "Pete Townshend", "isCorrect": true },
+        { "text": "John Entwistle", "isCorrect": false }
+      ],
+      "explanation": "Il faisait aussi tourner son bras comme un moulin."
+    },
+    {
+      "ref": "rock-086",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe italien a remporté l'Eurovision 2021 avec un titre rock ?",
+      "answers": [
+        { "text": "Il Volo", "isCorrect": false },
+        { "text": "Måneskin", "isCorrect": true },
+        { "text": "Negramaro", "isCorrect": false },
+        { "text": "Litfiba", "isCorrect": false }
+      ],
+      "explanation": "Leur titre « Zitti e buoni » a lancé une carrière internationale."
+    },
+    {
+      "ref": "rock-087",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["groupe"],
+      "text": "Quel groupe américain a sorti « In the End » et « Numb » ?",
+      "answers": [
+        { "text": "Linkin Park", "isCorrect": true },
+        { "text": "Limp Bizkit", "isCorrect": false },
+        { "text": "Korn", "isCorrect": false },
+        { "text": "System of a Down", "isCorrect": false }
+      ],
+      "explanation": "Linkin Park a popularisé le nu metal."
+    },
+    {
+      "ref": "rock-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe a sorti l'album « American Idiot » en 2004 ?",
+      "answers": [
+        { "text": "The Offspring", "isCorrect": false },
+        { "text": "Blink-182", "isCorrect": false },
+        { "text": "Sum 41", "isCorrect": false },
+        { "text": "Green Day", "isCorrect": true }
+      ],
+      "explanation": "Une comédie musicale en a été tirée."
+    },
+    {
+      "ref": "rock-089",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « Bitter Sweet Symphony » en 1997 ?",
+      "answers": [
+        { "text": "Oasis", "isCorrect": false },
+        { "text": "Blur", "isCorrect": false },
+        { "text": "The Verve", "isCorrect": true },
+        { "text": "Pulp", "isCorrect": false }
+      ],
+      "explanation": "Le titre reprend un arrangement orchestral d'un morceau des Rolling Stones."
+    },
+    {
+      "ref": "rock-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["groupe"],
+      "text": "Quel groupe britannique a sorti « Song 2 », avec son célèbre « Woo-hoo » ?",
+      "answers": [
+        { "text": "Oasis", "isCorrect": false },
+        { "text": "Blur", "isCorrect": true },
+        { "text": "Supergrass", "isCorrect": false },
+        { "text": "Kaiser Chiefs", "isCorrect": false }
+      ],
+      "explanation": "Le titre dure à peine deux minutes."
+    },
+    {
+      "ref": "rock-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["artiste"],
+      "text": "Quel guitariste britannique a été surnommé « God » par des graffitis à Londres ?",
+      "answers": [
+        { "text": "Eric Clapton", "isCorrect": true },
+        { "text": "Jimmy Page", "isCorrect": false },
+        { "text": "Jeff Beck", "isCorrect": false },
+        { "text": "Keith Richards", "isCorrect": false }
+      ],
+      "explanation": "L'inscription « Clapton is God » est apparue dans les années 1960."
+    },
+    {
+      "ref": "rock-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["chanson"],
+      "text": "Quel titre d'Eric Clapton est dédié à son fils mort accidentellement ?",
+      "answers": [
+        { "text": "Layla", "isCorrect": false },
+        { "text": "Wonderful Tonight", "isCorrect": false },
+        { "text": "Cocaine", "isCorrect": false },
+        { "text": "Tears in Heaven", "isCorrect": true }
+      ],
+      "explanation": "Son fils Conor avait 4 ans."
+    },
+    {
+      "ref": "rock-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quel chanteur canadien a sorti « Summer of '69 » ?",
+      "answers": [
+        { "text": "Neil Young", "isCorrect": false },
+        { "text": "Avril Lavigne", "isCorrect": false },
+        { "text": "Bryan Adams", "isCorrect": true },
+        { "text": "Alanis Morissette", "isCorrect": false }
+      ],
+      "explanation": "Bryan Adams avait 9 ans en 1969."
+    },
+    {
+      "ref": "rock-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse, surnommée « la reine du rock 'n' roll », a sorti « The Best » ?",
+      "answers": [
+        { "text": "Janis Joplin", "isCorrect": false },
+        { "text": "Tina Turner", "isCorrect": true },
+        { "text": "Joan Jett", "isCorrect": false },
+        { "text": "Pat Benatar", "isCorrect": false }
+      ],
+      "explanation": "Tina Turner a vécu en Suisse jusqu'à sa mort, en 2023."
+    },
+    {
+      "ref": "rock-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["artiste"],
+      "text": "Quelle chanteuse a sorti « Piece of My Heart » et est morte à 27 ans, en 1970 ?",
+      "answers": [
+        { "text": "Janis Joplin", "isCorrect": true },
+        { "text": "Grace Slick", "isCorrect": false },
+        { "text": "Patti Smith", "isCorrect": false },
+        { "text": "Tina Turner", "isCorrect": false }
+      ],
+      "explanation": "Janis Joplin avait marqué le festival de Woodstock."
+    },
+    {
+      "ref": "rock-096",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Quel guitariste a mis le feu à sa guitare au festival de Monterey en 1967 ?",
+      "answers": [
+        { "text": "Pete Townshend", "isCorrect": false },
+        { "text": "Jimmy Page", "isCorrect": false },
+        { "text": "Eric Clapton", "isCorrect": false },
+        { "text": "Jimi Hendrix", "isCorrect": true }
+      ],
+      "explanation": "La guitare brûlée a été vendue aux enchères en 2022."
+    },
+    {
+      "ref": "rock-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["instrument"],
+      "text": "Combien de cordes compte une guitare basse standard ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false }
+      ],
+      "explanation": "Les cordes sont accordées comme les quatre plus graves de la guitare, une octave en dessous."
+    },
+    {
+      "ref": "rock-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "Quelle marque de guitares fabrique la Les Paul ?",
+      "answers": [
+        { "text": "Fender", "isCorrect": false },
+        { "text": "Gibson", "isCorrect": true },
+        { "text": "Gretsch", "isCorrect": false },
+        { "text": "Ibanez", "isCorrect": false }
+      ],
+      "explanation": "La Les Paul porte le nom du guitariste qui a contribué à sa conception."
+    },
+    {
+      "ref": "rock-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Quelle marque fabrique la Stratocaster et la Telecaster ?",
+      "answers": [
+        { "text": "Fender", "isCorrect": true },
+        { "text": "Gibson", "isCorrect": false },
+        { "text": "Rickenbacker", "isCorrect": false },
+        { "text": "Epiphone", "isCorrect": false }
+      ],
+      "explanation": "La Stratocaster était la guitare préférée de Jimi Hendrix."
+    },
+    {
+      "ref": "rock-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Quel effet de guitare produit un son saturé et grinçant ?",
+      "answers": [
+        { "text": "La réverbération", "isCorrect": false },
+        { "text": "Le chorus", "isCorrect": false },
+        { "text": "Le délai", "isCorrect": false },
+        { "text": "La distorsion", "isCorrect": true }
+      ],
+      "explanation": "La distorsion est l'effet emblématique du hard rock et du metal."
+    },
+    {
+      "ref": "rock-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Comment s'appelle la pédale d'effet qui fait « pleurer » la guitare ?",
+      "answers": [
+        { "text": "La fuzz", "isCorrect": false },
+        { "text": "La loop", "isCorrect": false },
+        { "text": "La wah-wah", "isCorrect": true },
+        { "text": "La whammy", "isCorrect": false }
+      ],
+      "explanation": "Jimi Hendrix en a fait un usage célèbre."
+    },
+    {
+      "ref": "rock-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["instrument"],
+      "text": "Comment appelle-t-on la petite pièce plate avec laquelle on gratte les cordes de la guitare ?",
+      "answers": [
+        { "text": "Le capodastre", "isCorrect": false },
+        { "text": "Le médiator", "isCorrect": true },
+        { "text": "Le chevalet", "isCorrect": false },
+        { "text": "Le sillet", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle aussi « plectre »."
+    },
+    {
+      "ref": "rock-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["instrument"],
+      "text": "À quoi sert un capodastre ?",
+      "answers": [
+        { "text": "À raccourcir la longueur des cordes pour jouer plus aigu", "isCorrect": true },
+        { "text": "À accorder la guitare", "isCorrect": false },
+        { "text": "À amplifier le son", "isCorrect": false },
+        { "text": "À changer les cordes", "isCorrect": false }
+      ],
+      "explanation": "On le fixe sur le manche, comme une pince."
+    },
+    {
+      "ref": "rock-104",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur français est surnommé « le Taulier » ?",
+      "answers": [
+        { "text": "Eddy Mitchell", "isCorrect": false },
+        { "text": "Michel Sardou", "isCorrect": false },
+        { "text": "Jacques Dutronc", "isCorrect": false },
+        { "text": "Johnny Hallyday", "isCorrect": true }
+      ],
+      "explanation": "Johnny Hallyday a vendu plus de 100 millions de disques."
+    },
+    {
+      "ref": "rock-105",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel est le vrai nom de Johnny Hallyday ?",
+      "answers": [
+        { "text": "Claude Moine", "isCorrect": false },
+        { "text": "Hervé Forneri", "isCorrect": false },
+        { "text": "Jean-Philippe Smet", "isCorrect": true },
+        { "text": "Jacques Dutronc", "isCorrect": false }
+      ],
+      "explanation": "Claude Moine est le vrai nom d'Eddy Mitchell, Hervé Forneri celui de Dick Rivers."
+    },
+    {
+      "ref": "rock-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "En quelle année un hommage populaire a-t-il été rendu à Johnny Hallyday sur les Champs-Élysées ?",
+      "answers": [
+        { "text": "2015", "isCorrect": false },
+        { "text": "2017", "isCorrect": true },
+        { "text": "2019", "isCorrect": false },
+        { "text": "2012", "isCorrect": false }
+      ],
+      "explanation": "Des centaines de milliers de personnes ont assisté au cortège en décembre 2017."
+    },
+    {
+      "ref": "rock-107",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Johnny Hallyday, sorti en 1998, est devenu un hymne de ses concerts au Stade de France ?",
+      "answers": [
+        { "text": "Allumer le feu", "isCorrect": true },
+        { "text": "Que je t'aime", "isCorrect": false },
+        { "text": "Gabrielle", "isCorrect": false },
+        { "text": "L'Envie", "isCorrect": false }
+      ],
+      "explanation": "Il a donné trois concerts au Stade de France cette année-là."
+    },
+    {
+      "ref": "rock-108",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quelle chanson de Johnny Hallyday commence par « Quand tes cheveux s'étalent comme un soleil d'été » ?",
+      "answers": [
+        { "text": "Gabrielle", "isCorrect": false },
+        { "text": "Requiem pour un fou", "isCorrect": false },
+        { "text": "L'Envie", "isCorrect": false },
+        { "text": "Que je t'aime", "isCorrect": true }
+      ],
+      "explanation": "« Que je t'aime » est sorti en 1969."
+    },
+    {
+      "ref": "rock-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Avec quel groupe Eddy Mitchell a-t-il débuté au début des années 1960 ?",
+      "answers": [
+        { "text": "Les Chats sauvages", "isCorrect": false },
+        { "text": "Les Forbans", "isCorrect": false },
+        { "text": "Les Chaussettes noires", "isCorrect": true },
+        { "text": "Les Variations", "isCorrect": false }
+      ],
+      "explanation": "Les Chats sauvages étaient le groupe de Dick Rivers."
+    },
+    {
+      "ref": "rock-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Quelle émission de télévision consacrée aux vieux films américains Eddy Mitchell a-t-il présentée ?",
+      "answers": [
+        { "text": "Cinéma de minuit", "isCorrect": false },
+        { "text": "La Dernière Séance", "isCorrect": true },
+        { "text": "Ciné-Club", "isCorrect": false },
+        { "text": "Le Cercle de minuit", "isCorrect": false }
+      ],
+      "explanation": "Elle a été diffusée de 1982 à 1998."
+    },
+    {
+      "ref": "rock-111",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Et moi, et moi, et moi » en 1966 ?",
+      "answers": [
+        { "text": "Jacques Dutronc", "isCorrect": true },
+        { "text": "Johnny Hallyday", "isCorrect": false },
+        { "text": "Eddy Mitchell", "isCorrect": false },
+        { "text": "Antoine", "isCorrect": false }
+      ],
+      "explanation": "Dutronc a ensuite sorti « Il est cinq heures, Paris s'éveille »."
+    },
+    {
+      "ref": "rock-112",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe français a sorti « Un autre monde » en 1984 ?",
+      "answers": [
+        { "text": "Indochine", "isCorrect": false },
+        { "text": "Noir Désir", "isCorrect": false },
+        { "text": "Trust", "isCorrect": false },
+        { "text": "Téléphone", "isCorrect": true }
+      ],
+      "explanation": "C'est le dernier album studio de Téléphone avant leur séparation."
+    },
+    {
+      "ref": "rock-113",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Qui était le chanteur de Téléphone ?",
+      "answers": [
+        { "text": "Nicola Sirkis", "isCorrect": false },
+        { "text": "Bertrand Cantat", "isCorrect": false },
+        { "text": "Jean-Louis Aubert", "isCorrect": true },
+        { "text": "Bernie Bonvoisin", "isCorrect": false }
+      ],
+      "explanation": "Jean-Louis Aubert a ensuite fait une longue carrière solo."
+    },
+    {
+      "ref": "rock-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe a sorti « Cendrillon » en 1982 ?",
+      "answers": [
+        { "text": "Indochine", "isCorrect": false },
+        { "text": "Téléphone", "isCorrect": true },
+        { "text": "Les Rita Mitsouko", "isCorrect": false },
+        { "text": "Trust", "isCorrect": false }
+      ],
+      "explanation": "La chanson raconte une Cendrillon dont le conte finit mal."
+    },
+    {
+      "ref": "rock-115",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Sous quel nom les membres de Téléphone se sont-ils reformés en 2015 ?",
+      "answers": [
+        { "text": "Les Insus", "isCorrect": true },
+        { "text": "Les Retrouvés", "isCorrect": false },
+        { "text": "Téléphone 2.0", "isCorrect": false },
+        { "text": "Les Enfants du rock", "isCorrect": false }
+      ],
+      "explanation": "Le jeu de mots sous-entend « les insurgés » et un nom tenu secret."
+    },
+    {
+      "ref": "rock-116",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe français a sorti « L'Aventurier » en 1982 ?",
+      "answers": [
+        { "text": "Téléphone", "isCorrect": false },
+        { "text": "Taxi Girl", "isCorrect": false },
+        { "text": "Les Rita Mitsouko", "isCorrect": false },
+        { "text": "Indochine", "isCorrect": true }
+      ],
+      "explanation": "Le titre s'inspire des aventures de Bob Morane."
+    },
+    {
+      "ref": "rock-117",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Qui est le chanteur d'Indochine ?",
+      "answers": [
+        { "text": "Jean-Louis Aubert", "isCorrect": false },
+        { "text": "Bertrand Cantat", "isCorrect": false },
+        { "text": "Nicola Sirkis", "isCorrect": true },
+        { "text": "Daniel Darc", "isCorrect": false }
+      ],
+      "explanation": "Nicola Sirkis a fondé le groupe en 1981."
+    },
+    {
+      "ref": "rock-118",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre d'Indochine, sorti en 2002, a marqué le grand retour du groupe ?",
+      "answers": [
+        { "text": "L'Aventurier", "isCorrect": false },
+        { "text": "J'ai demandé à la lune", "isCorrect": true },
+        { "text": "Trois nuits par semaine", "isCorrect": false },
+        { "text": "Canary Bay", "isCorrect": false }
+      ],
+      "explanation": "La chanson a été écrite par Mickaël Furnon, de Mickey 3D."
+    },
+    {
+      "ref": "rock-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre d'Indochine, sorti en 1985, aborde l'ambiguïté des genres ?",
+      "answers": [
+        { "text": "3e sexe", "isCorrect": true },
+        { "text": "Canary Bay", "isCorrect": false },
+        { "text": "Tes yeux noirs", "isCorrect": false },
+        { "text": "Kao Bang", "isCorrect": false }
+      ],
+      "explanation": "Le titre a fait parler de lui à sa sortie."
+    },
+    {
+      "ref": "rock-120",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe de rock français avait pour chanteur Bertrand Cantat ?",
+      "answers": [
+        { "text": "Téléphone", "isCorrect": false },
+        { "text": "Indochine", "isCorrect": false },
+        { "text": "Louise Attaque", "isCorrect": false },
+        { "text": "Noir Désir", "isCorrect": true }
+      ],
+      "explanation": "Noir Désir vient de Bordeaux."
+    },
+    {
+      "ref": "rock-121",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Noir Désir, sorti en 2001, est l'un de leurs plus grands succès ?",
+      "answers": [
+        { "text": "Tostaky", "isCorrect": false },
+        { "text": "Un homme pressé", "isCorrect": false },
+        { "text": "Le vent nous portera", "isCorrect": true },
+        { "text": "Aux sombres héros de l'amer", "isCorrect": false }
+      ],
+      "explanation": "Manu Chao joue de la guitare sur ce titre."
+    },
+    {
+      "ref": "rock-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Noir Désir, sorti en 1997, critique la course à l'argent ?",
+      "answers": [
+        { "text": "Le vent nous portera", "isCorrect": false },
+        { "text": "L'Homme pressé", "isCorrect": true },
+        { "text": "Tostaky", "isCorrect": false },
+        { "text": "Comme elle vient", "isCorrect": false }
+      ],
+      "explanation": "Le titre est extrait de l'album « 666.667 Club »."
+    },
+    {
+      "ref": "rock-123",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe français a sorti « Antisocial » en 1980 ?",
+      "answers": [
+        { "text": "Trust", "isCorrect": true },
+        { "text": "Téléphone", "isCorrect": false },
+        { "text": "Noir Désir", "isCorrect": false },
+        { "text": "Starshooter", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été repris par le groupe américain Anthrax."
+    },
+    {
+      "ref": "rock-124",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "groupe"],
+      "text": "Quel duo a sorti « Marcia Baïla » en 1984 ?",
+      "answers": [
+        { "text": "Niagara", "isCorrect": false },
+        { "text": "Indochine", "isCorrect": false },
+        { "text": "Taxi Girl", "isCorrect": false },
+        { "text": "Les Rita Mitsouko", "isCorrect": true }
+      ],
+      "explanation": "Le duo réunissait Catherine Ringer et Fred Chichin."
+    },
+    {
+      "ref": "rock-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Quel duo rennais, formé par Muriel Moreno et Daniel Chenevez, a sorti « Pendant que les champs brûlent » ?",
+      "answers": [
+        { "text": "Les Rita Mitsouko", "isCorrect": false },
+        { "text": "Elli et Jacno", "isCorrect": false },
+        { "text": "Niagara", "isCorrect": true },
+        { "text": "Indochine", "isCorrect": false }
+      ],
+      "explanation": "Niagara a connu le succès à la fin des années 1980."
+    },
+    {
+      "ref": "rock-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe de Versailles a sorti « Lisztomania » et « 1901 » ?",
+      "answers": [
+        { "text": "Air", "isCorrect": false },
+        { "text": "Phoenix", "isCorrect": true },
+        { "text": "Justice", "isCorrect": false },
+        { "text": "Daft Punk", "isCorrect": false }
+      ],
+      "explanation": "Phoenix a remporté un Grammy Award en 2010."
+    },
+    {
+      "ref": "rock-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe français de metal, originaire des Landes, s'est fait connaître dans le monde entier ?",
+      "answers": [
+        { "text": "Gojira", "isCorrect": true },
+        { "text": "Mass Hysteria", "isCorrect": false },
+        { "text": "Lofofora", "isCorrect": false },
+        { "text": "Trust", "isCorrect": false }
+      ],
+      "explanation": "Gojira est mené par les frères Joe et Mario Duplantier."
+    },
+    {
+      "ref": "rock-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quel groupe de metal a joué à la Conciergerie lors de la cérémonie d'ouverture des JO de Paris 2024 ?",
+      "answers": [
+        { "text": "Rammstein", "isCorrect": false },
+        { "text": "Metallica", "isCorrect": false },
+        { "text": "Iron Maiden", "isCorrect": false },
+        { "text": "Gojira", "isCorrect": true }
+      ],
+      "explanation": "Il était accompagné par la mezzo-soprano Marina Viotti."
+    },
+    {
+      "ref": "rock-129",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quel grand festival de metal se tient chaque année à Clisson, en Loire-Atlantique ?",
+      "answers": [
+        { "text": "Les Eurockéennes", "isCorrect": false },
+        { "text": "Rock en Seine", "isCorrect": false },
+        { "text": "Le Hellfest", "isCorrect": true },
+        { "text": "Les Vieilles Charrues", "isCorrect": false }
+      ],
+      "explanation": "Le Hellfest accueille plus de 200 000 festivaliers."
+    },
+    {
+      "ref": "rock-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Dans quelle ville bretonne se tient le festival des Vieilles Charrues ?",
+      "answers": [
+        { "text": "Brest", "isCorrect": false },
+        { "text": "Carhaix", "isCorrect": true },
+        { "text": "Rennes", "isCorrect": false },
+        { "text": "Quimper", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des plus grands festivals de France."
+    },
+    {
+      "ref": "rock-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Dans quelle ville se tiennent les Eurockéennes ?",
+      "answers": [
+        { "text": "Belfort", "isCorrect": true },
+        { "text": "Strasbourg", "isCorrect": false },
+        { "text": "Lyon", "isCorrect": false },
+        { "text": "Nancy", "isCorrect": false }
+      ],
+      "explanation": "Le festival se déroule au bord du lac de Malsaucy."
+    },
+    {
+      "ref": "rock-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Dans quel parc se déroule le festival Rock en Seine ?",
+      "answers": [
+        { "text": "Le bois de Vincennes", "isCorrect": false },
+        { "text": "Le parc de la Villette", "isCorrect": false },
+        { "text": "Le jardin du Luxembourg", "isCorrect": false },
+        { "text": "Le domaine national de Saint-Cloud", "isCorrect": true }
+      ],
+      "explanation": "Le festival existe depuis 2003."
+    },
+    {
+      "ref": "rock-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Dans quelle ville se tiennent les Francofolies ?",
+      "answers": [
+        { "text": "Bordeaux", "isCorrect": false },
+        { "text": "Nantes", "isCorrect": false },
+        { "text": "La Rochelle", "isCorrect": true },
+        { "text": "Montpellier", "isCorrect": false }
+      ],
+      "explanation": "Le festival a été créé par Jean-Louis Foulquier en 1985."
+    },
+    {
+      "ref": "rock-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Osez Joséphine » et « La nuit je mens » ?",
+      "answers": [
+        { "text": "Hubert-Félix Thiéfaine", "isCorrect": false },
+        { "text": "Alain Bashung", "isCorrect": true },
+        { "text": "Jacques Higelin", "isCorrect": false },
+        { "text": "Christophe", "isCorrect": false }
+      ],
+      "explanation": "Alain Bashung est le chanteur le plus récompensé aux Victoires de la musique."
+    },
+    {
+      "ref": "rock-135",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « La Fille du coupeur de joints » ?",
+      "answers": [
+        { "text": "Hubert-Félix Thiéfaine", "isCorrect": true },
+        { "text": "Alain Bashung", "isCorrect": false },
+        { "text": "Jacques Higelin", "isCorrect": false },
+        { "text": "Renaud", "isCorrect": false }
+      ],
+      "explanation": "Le titre est sorti en 1978."
+    },
+    {
+      "ref": "rock-136",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Mistral gagnant » et « Laisse béton » ?",
+      "answers": [
+        { "text": "Alain Souchon", "isCorrect": false },
+        { "text": "Jacques Higelin", "isCorrect": false },
+        { "text": "Bernard Lavilliers", "isCorrect": false },
+        { "text": "Renaud", "isCorrect": true }
+      ],
+      "explanation": "Renaud a longtemps porté un blouson de cuir et un bandana."
+    },
+    {
+      "ref": "rock-137",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe a sorti « Je t'emmène au vent » en 1997 ?",
+      "answers": [
+        { "text": "Noir Désir", "isCorrect": false },
+        { "text": "Tryo", "isCorrect": false },
+        { "text": "Louise Attaque", "isCorrect": true },
+        { "text": "Les Ogres de Barback", "isCorrect": false }
+      ],
+      "explanation": "Le premier album de Louise Attaque s'est vendu à plus de 2 millions d'exemplaires."
+    },
+    {
+      "ref": "rock-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe brestois a sorti « Lambé an dro » en 1998 ?",
+      "answers": [
+        { "text": "Louise Attaque", "isCorrect": false },
+        { "text": "Matmatah", "isCorrect": true },
+        { "text": "Tryo", "isCorrect": false },
+        { "text": "Dionysos", "isCorrect": false }
+      ],
+      "explanation": "Le titre reprend une danse traditionnelle bretonne."
+    },
+    {
+      "ref": "rock-139",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe de Manu Chao a sorti « Mala Vida » à la fin des années 1980 ?",
+      "answers": [
+        { "text": "Mano Negra", "isCorrect": true },
+        { "text": "Les Négresses Vertes", "isCorrect": false },
+        { "text": "Les Wampas", "isCorrect": false },
+        { "text": "Noir Désir", "isCorrect": false }
+      ],
+      "explanation": "Mano Negra mélangeait rock, punk et musiques latines."
+    },
+    {
+      "ref": "rock-140",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Jeune et con » en 2000 ?",
+      "answers": [
+        { "text": "Benjamin Biolay", "isCorrect": false },
+        { "text": "Raphaël", "isCorrect": false },
+        { "text": "Cali", "isCorrect": false },
+        { "text": "Damien Saez", "isCorrect": true }
+      ],
+      "explanation": "Damien Saez avait 23 ans à la sortie du titre."
+    },
+    {
+      "ref": "rock-141",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe stéphanois a sorti « Respire » en 2003 ?",
+      "answers": [
+        { "text": "Dionysos", "isCorrect": false },
+        { "text": "Louise Attaque", "isCorrect": false },
+        { "text": "Mickey 3D", "isCorrect": true },
+        { "text": "Superbus", "isCorrect": false }
+      ],
+      "explanation": "Le titre alerte sur la pollution et la destruction de la planète."
+    },
+    {
+      "ref": "rock-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe punk a sorti « Manu Chao » en 2003 ?",
+      "answers": [
+        { "text": "Bérurier Noir", "isCorrect": false },
+        { "text": "Les Wampas", "isCorrect": true },
+        { "text": "Les Sheriff", "isCorrect": false },
+        { "text": "Les Ramoneurs de menhirs", "isCorrect": false }
+      ],
+      "explanation": "Le titre se moque gentiment du succès de Manu Chao."
+    },
+    {
+      "ref": "rock-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe parisien de rock adolescent a sorti « Dis-moi » en 2007 ?",
+      "answers": [
+        { "text": "BB Brunes", "isCorrect": true },
+        { "text": "Superbus", "isCorrect": false },
+        { "text": "Shaka Ponk", "isCorrect": false },
+        { "text": "Dionysos", "isCorrect": false }
+      ],
+      "explanation": "BB Brunes a été le fer de lance de la vague « bébés rockeurs »."
+    },
+    {
+      "ref": "rock-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe français a pour mascotte un singe virtuel nommé Goz ?",
+      "answers": [
+        { "text": "Skip the Use", "isCorrect": false },
+        { "text": "Superbus", "isCorrect": false },
+        { "text": "Pleymo", "isCorrect": false },
+        { "text": "Shaka Ponk", "isCorrect": true }
+      ],
+      "explanation": "Le singe apparaît sur des écrans pendant leurs concerts."
+    },
+    {
+      "ref": "rock-145",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "groupe"],
+      "text": "Quel groupe mené par Jennifer Ayache a sorti « Lola » et « Butterfly » ?",
+      "answers": [
+        { "text": "BB Brunes", "isCorrect": false },
+        { "text": "Les Plasticines", "isCorrect": false },
+        { "text": "Superbus", "isCorrect": true },
+        { "text": "Pravda", "isCorrect": false }
+      ],
+      "explanation": "Superbus a connu le succès au milieu des années 2000."
+    },
+    {
+      "ref": "rock-146",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur a sorti « Champagne » et « Tombé du ciel » ?",
+      "answers": [
+        { "text": "Alain Bashung", "isCorrect": false },
+        { "text": "Jacques Higelin", "isCorrect": true },
+        { "text": "Renaud", "isCorrect": false },
+        { "text": "Bernard Lavilliers", "isCorrect": false }
+      ],
+      "explanation": "Jacques Higelin est le père d'Arthur H et d'Izïa."
+    },
+    {
+      "ref": "rock-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Dans quel cimetière parisien est enterré Jim Morrison, le chanteur des Doors ?",
+      "answers": [
+        { "text": "Le Père-Lachaise", "isCorrect": true },
+        { "text": "Montmartre", "isCorrect": false },
+        { "text": "Montparnasse", "isCorrect": false },
+        { "text": "Passy", "isCorrect": false }
+      ],
+      "explanation": "Jim Morrison est mort à Paris en 1971."
+    },
+    {
+      "ref": "rock-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Quelle salle parisienne, ouverte en 1954, a accueilli les plus grands concerts de rock français ?",
+      "answers": [
+        { "text": "Le Zénith", "isCorrect": false },
+        { "text": "Bercy", "isCorrect": false },
+        { "text": "La Cigale", "isCorrect": false },
+        { "text": "L'Olympia", "isCorrect": true }
+      ],
+      "explanation": "Johnny Hallyday et les Beatles y ont notamment joué."
+    },
+    {
+      "ref": "rock-149",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Quel groupe britannique a joué à l'Olympia en 1964, en partageant l'affiche avec Sylvie Vartan et Trini Lopez ?",
+      "answers": [
+        { "text": "Les Rolling Stones", "isCorrect": false },
+        { "text": "The Who", "isCorrect": false },
+        { "text": "Les Beatles", "isCorrect": true },
+        { "text": "The Kinks", "isCorrect": false }
+      ],
+      "explanation": "Ils y ont donné près de vingt concerts en trois semaines."
+    },
+    {
+      "ref": "rock-150",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel chanteur belge a sorti « Ça plane pour moi » en 1977 ?",
+      "answers": [
+        { "text": "Arno", "isCorrect": false },
+        { "text": "Plastic Bertrand", "isCorrect": true },
+        { "text": "Jacques Dutronc", "isCorrect": false },
+        { "text": "Antoine", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été un succès jusqu'aux États-Unis."
+    },
+    {
+      "ref": "rock-151",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quelle chanteuse, fille de Jacques Higelin, a remporté plusieurs Victoires de la musique avec un rock énergique ?",
+      "answers": [
+        { "text": "Izïa", "isCorrect": true },
+        { "text": "Clara Luciani", "isCorrect": false },
+        { "text": "Juliette Armanet", "isCorrect": false },
+        { "text": "Christine and the Queens", "isCorrect": false }
+      ],
+      "explanation": "Izïa a sorti son premier album à 18 ans."
+    }
+  ]
+}

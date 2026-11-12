@@ -1,0 +1,2284 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 164,
+    "parDifficulte": { "1": 48, "2": 75, "3": 41 },
+    "parType": { "multiple": 145, "boolean": 19 },
+    "avecImage": 0,
+    "sansImage": 164,
+    "parTag": {
+      "anatomie": 53,
+      "sante": 50,
+      "organe": 30,
+      "histoire": 23,
+      "sens": 21,
+      "france": 8,
+      "avant-apres": 8
+    }
+  },
+  "category": {
+    "slug": "corps-humain",
+    "name": "Corps humain"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "corps-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Combien d'os compte le squelette d'un adulte ?",
+      "answers": [
+        { "text": "186", "isCorrect": false },
+        { "text": "226", "isCorrect": false },
+        { "text": "206", "isCorrect": true },
+        { "text": "300", "isCorrect": false }
+      ],
+      "explanation": "Un nouveau-né en compte environ 300, mais certains se soudent en grandissant."
+    },
+    {
+      "ref": "corps-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Quel est l'os le plus long du corps humain ?",
+      "answers": [
+        { "text": "Le tibia", "isCorrect": false },
+        { "text": "Le fémur", "isCorrect": true },
+        { "text": "L'humérus", "isCorrect": false },
+        { "text": "Le péroné", "isCorrect": false }
+      ],
+      "explanation": "Le fémur est l'os de la cuisse."
+    },
+    {
+      "ref": "corps-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quel est le plus petit os du corps humain ?",
+      "answers": [
+        { "text": "L'étrier", "isCorrect": true },
+        { "text": "L'enclume", "isCorrect": false },
+        { "text": "Le marteau", "isCorrect": false },
+        { "text": "Le coccyx", "isCorrect": false }
+      ],
+      "explanation": "L'étrier mesure environ 3 millimètres et se trouve dans l'oreille moyenne."
+    },
+    {
+      "ref": "corps-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Dans quelle partie du corps se trouvent le marteau, l'enclume et l'étrier ?",
+      "answers": [
+        { "text": "Le nez", "isCorrect": false },
+        { "text": "La main", "isCorrect": false },
+        { "text": "Le pied", "isCorrect": false },
+        { "text": "L'oreille", "isCorrect": true }
+      ],
+      "explanation": "Ces trois osselets transmettent les vibrations du tympan à l'oreille interne."
+    },
+    {
+      "ref": "corps-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Comment s'appellent les os qui forment la colonne vertébrale ?",
+      "answers": [
+        { "text": "Les côtes", "isCorrect": false },
+        { "text": "Les phalanges", "isCorrect": false },
+        { "text": "Les vertèbres", "isCorrect": true },
+        { "text": "Les carpes", "isCorrect": false }
+      ],
+      "explanation": "La colonne protège la moelle épinière."
+    },
+    {
+      "ref": "corps-006",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de vertèbres compte le cou humain ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": true },
+        { "text": "12", "isCorrect": false },
+        { "text": "9", "isCorrect": false }
+      ],
+      "explanation": "La girafe en a aussi sept, mais beaucoup plus longues."
+    },
+    {
+      "ref": "corps-007",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de paires de côtes compte un être humain ?",
+      "answers": [
+        { "text": "12", "isCorrect": true },
+        { "text": "10", "isCorrect": false },
+        { "text": "14", "isCorrect": false },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "Les deux dernières paires sont dites « flottantes » car elles ne rejoignent pas le sternum."
+    },
+    {
+      "ref": "corps-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Comment s'appelle l'os plat et triangulaire situé en haut du dos ?",
+      "answers": [
+        { "text": "La clavicule", "isCorrect": false },
+        { "text": "Le sternum", "isCorrect": false },
+        { "text": "Le sacrum", "isCorrect": false },
+        { "text": "L'omoplate", "isCorrect": true }
+      ],
+      "explanation": "On l'appelle aussi scapula."
+    },
+    {
+      "ref": "corps-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quel os relie l'épaule au sternum ?",
+      "answers": [
+        { "text": "L'omoplate", "isCorrect": false },
+        { "text": "L'humérus", "isCorrect": false },
+        { "text": "La clavicule", "isCorrect": true },
+        { "text": "Le radius", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des os les plus souvent fracturés."
+    },
+    {
+      "ref": "corps-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Comment s'appellent les os des doigts ?",
+      "answers": [
+        { "text": "Les métacarpes", "isCorrect": false },
+        { "text": "Les phalanges", "isCorrect": true },
+        { "text": "Les carpes", "isCorrect": false },
+        { "text": "Les tarses", "isCorrect": false }
+      ],
+      "explanation": "Chaque doigt en compte trois, sauf le pouce qui n'en a que deux."
+    },
+    {
+      "ref": "corps-011",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Combien d'os compte une main ?",
+      "answers": [
+        { "text": "27", "isCorrect": true },
+        { "text": "12", "isCorrect": false },
+        { "text": "54", "isCorrect": false },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "Les deux mains réunissent donc plus d'un quart des os du corps."
+    },
+    {
+      "ref": "corps-012",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Comment s'appelle l'os qui forme la mâchoire inférieure ?",
+      "answers": [
+        { "text": "Le maxillaire", "isCorrect": false },
+        { "text": "L'occipital", "isCorrect": false },
+        { "text": "Le temporal", "isCorrect": false },
+        { "text": "La mandibule", "isCorrect": true }
+      ],
+      "explanation": "C'est le seul os mobile du crâne."
+    },
+    {
+      "ref": "corps-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Comment s'appelle la zone molle du crâne des nouveau-nés ?",
+      "answers": [
+        { "text": "La suture", "isCorrect": false },
+        { "text": "La tempe", "isCorrect": false },
+        { "text": "La fontanelle", "isCorrect": true },
+        { "text": "L'occiput", "isCorrect": false }
+      ],
+      "explanation": "Elle se referme pendant les deux premières années."
+    },
+    {
+      "ref": "corps-014",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Quel os protège le cerveau ?",
+      "answers": [
+        { "text": "Le sternum", "isCorrect": false },
+        { "text": "Le crâne", "isCorrect": true },
+        { "text": "Le bassin", "isCorrect": false },
+        { "text": "La colonne vertébrale", "isCorrect": false }
+      ],
+      "explanation": "Le crâne est formé de plusieurs os soudés."
+    },
+    {
+      "ref": "corps-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quel est le plus gros muscle du corps humain ?",
+      "answers": [
+        { "text": "Le grand fessier", "isCorrect": true },
+        { "text": "Le biceps", "isCorrect": false },
+        { "text": "Le deltoïde", "isCorrect": false },
+        { "text": "Le grand dorsal", "isCorrect": false }
+      ],
+      "explanation": "Il permet notamment de se tenir debout et de monter les escaliers."
+    },
+    {
+      "ref": "corps-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Quel muscle de la mâchoire est souvent cité comme le plus puissant par rapport à sa taille ?",
+      "answers": [
+        { "text": "Le biceps", "isCorrect": false },
+        { "text": "Le quadriceps", "isCorrect": false },
+        { "text": "Le deltoïde", "isCorrect": false },
+        { "text": "Le masséter", "isCorrect": true }
+      ],
+      "explanation": "Il permet de serrer les dents avec une grande force."
+    },
+    {
+      "ref": "corps-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Quel muscle fait plier le bras ?",
+      "answers": [
+        { "text": "Le triceps", "isCorrect": false },
+        { "text": "Le deltoïde", "isCorrect": false },
+        { "text": "Le biceps", "isCorrect": true },
+        { "text": "Le pectoral", "isCorrect": false }
+      ],
+      "explanation": "Le triceps, à l'arrière du bras, sert au contraire à l'étendre."
+    },
+    {
+      "ref": "corps-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Quel tendon relie le mollet au talon ?",
+      "answers": [
+        { "text": "Le ménisque", "isCorrect": false },
+        { "text": "Le tendon d'Achille", "isCorrect": true },
+        { "text": "Le ligament croisé", "isCorrect": false },
+        { "text": "La rotule", "isCorrect": false }
+      ],
+      "explanation": "Il doit son nom au héros grec, vulnérable seulement au talon."
+    },
+    {
+      "ref": "corps-019",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de muscles compte environ le corps humain ?",
+      "answers": [
+        { "text": "Plus de 600", "isCorrect": true },
+        { "text": "Environ 100", "isCorrect": false },
+        { "text": "Environ 206", "isCorrect": false },
+        { "text": "Plus de 5 000", "isCorrect": false }
+      ],
+      "explanation": "Les muscles représentent environ 40 % du poids du corps."
+    },
+    {
+      "ref": "corps-020",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Où se trouve le plus petit muscle du corps humain ?",
+      "answers": [
+        { "text": "Dans l'œil", "isCorrect": false },
+        { "text": "Dans le doigt", "isCorrect": false },
+        { "text": "Dans le nez", "isCorrect": false },
+        { "text": "Dans l'oreille", "isCorrect": true }
+      ],
+      "explanation": "Le muscle stapédien, relié à l'étrier, mesure environ un millimètre."
+    },
+    {
+      "ref": "corps-021",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quel muscle en forme de dôme permet de respirer ?",
+      "answers": [
+        { "text": "Le pectoral", "isCorrect": false },
+        { "text": "L'abdominal", "isCorrect": false },
+        { "text": "Le diaphragme", "isCorrect": true },
+        { "text": "L'intercostal", "isCorrect": false }
+      ],
+      "explanation": "Il sépare la cage thoracique de l'abdomen."
+    },
+    {
+      "ref": "corps-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Quel organe pompe le sang dans tout le corps ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "Le cœur", "isCorrect": true },
+        { "text": "Les poumons", "isCorrect": false },
+        { "text": "Les reins", "isCorrect": false }
+      ],
+      "explanation": "Le cœur bat environ 100 000 fois par jour."
+    },
+    {
+      "ref": "corps-023",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Combien de cavités compte le cœur humain ?",
+      "answers": [
+        { "text": "4", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Deux oreillettes et deux ventricules."
+    },
+    {
+      "ref": "corps-024",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Comment s'appellent les deux cavités supérieures du cœur ?",
+      "answers": [
+        { "text": "Les ventricules", "isCorrect": false },
+        { "text": "Les alvéoles", "isCorrect": false },
+        { "text": "Les valves", "isCorrect": false },
+        { "text": "Les oreillettes", "isCorrect": true }
+      ],
+      "explanation": "Elles reçoivent le sang avant de l'envoyer aux ventricules."
+    },
+    {
+      "ref": "corps-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Quel est le plus grand organe du corps humain ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "Les poumons", "isCorrect": false },
+        { "text": "La peau", "isCorrect": true },
+        { "text": "L'intestin", "isCorrect": false }
+      ],
+      "explanation": "La peau couvre environ 2 mètres carrés chez un adulte."
+    },
+    {
+      "ref": "corps-026",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quel est le plus gros organe interne du corps ?",
+      "answers": [
+        { "text": "Le cerveau", "isCorrect": false },
+        { "text": "Le foie", "isCorrect": true },
+        { "text": "Les poumons", "isCorrect": false },
+        { "text": "L'estomac", "isCorrect": false }
+      ],
+      "explanation": "Le foie pèse environ 1,5 kilogramme."
+    },
+    {
+      "ref": "corps-027",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quel organe peut repousser en partie après une ablation ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": true },
+        { "text": "Le cœur", "isCorrect": false },
+        { "text": "Le cerveau", "isCorrect": false },
+        { "text": "Le pancréas", "isCorrect": false }
+      ],
+      "explanation": "C'est ce qui permet de donner une partie de son foie de son vivant."
+    },
+    {
+      "ref": "corps-028",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Combien de reins compte un être humain ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "2", "isCorrect": true }
+      ],
+      "explanation": "On peut vivre normalement avec un seul rein."
+    },
+    {
+      "ref": "corps-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Quel organe filtre le sang pour produire l'urine ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "La rate", "isCorrect": false },
+        { "text": "Les reins", "isCorrect": true },
+        { "text": "La vessie", "isCorrect": false }
+      ],
+      "explanation": "Les reins filtrent environ 180 litres de sang par jour."
+    },
+    {
+      "ref": "corps-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quel organe produit l'insuline ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "Le pancréas", "isCorrect": true },
+        { "text": "La rate", "isCorrect": false },
+        { "text": "La thyroïde", "isCorrect": false }
+      ],
+      "explanation": "L'insuline fait baisser le taux de sucre dans le sang."
+    },
+    {
+      "ref": "corps-031",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quel organe produit la bile ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": true },
+        { "text": "Le pancréas", "isCorrect": false },
+        { "text": "L'estomac", "isCorrect": false },
+        { "text": "La rate", "isCorrect": false }
+      ],
+      "explanation": "La bile aide à digérer les graisses."
+    },
+    {
+      "ref": "corps-032",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Où est stockée la bile entre les repas ?",
+      "answers": [
+        { "text": "Dans l'estomac", "isCorrect": false },
+        { "text": "Dans la rate", "isCorrect": false },
+        { "text": "Dans le pancréas", "isCorrect": false },
+        { "text": "Dans la vésicule biliaire", "isCorrect": true }
+      ],
+      "explanation": "La vésicule la libère au moment de la digestion."
+    },
+    {
+      "ref": "corps-033",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quelle glande en forme de papillon se trouve à la base du cou ?",
+      "answers": [
+        { "text": "Le thymus", "isCorrect": false },
+        { "text": "L'hypophyse", "isCorrect": false },
+        { "text": "La thyroïde", "isCorrect": true },
+        { "text": "La parathyroïde", "isCorrect": false }
+      ],
+      "explanation": "Ses hormones règlent notamment le métabolisme."
+    },
+    {
+      "ref": "corps-034",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Quel organe, situé sous les côtes à gauche, filtre le sang et participe à l'immunité ?",
+      "answers": [
+        { "text": "Le pancréas", "isCorrect": false },
+        { "text": "La rate", "isCorrect": true },
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "La vésicule biliaire", "isCorrect": false }
+      ],
+      "explanation": "On peut vivre sans rate, mais on est alors plus sensible aux infections."
+    },
+    {
+      "ref": "corps-035",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Quelle est la longueur approximative de l'intestin grêle d'un adulte ?",
+      "answers": [
+        { "text": "Environ 6 mètres", "isCorrect": true },
+        { "text": "Environ 1 mètre", "isCorrect": false },
+        { "text": "Environ 20 mètres", "isCorrect": false },
+        { "text": "Environ 50 centimètres", "isCorrect": false }
+      ],
+      "explanation": "Il est replié de nombreuses fois dans l'abdomen."
+    },
+    {
+      "ref": "corps-036",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Dans quels organes l'oxygène de l'air passe-t-il dans le sang ?",
+      "answers": [
+        { "text": "Le cœur", "isCorrect": false },
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "L'estomac", "isCorrect": false },
+        { "text": "Les poumons", "isCorrect": true }
+      ],
+      "explanation": "Les échanges ont lieu dans de minuscules sacs appelés alvéoles."
+    },
+    {
+      "ref": "corps-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Lequel des deux poumons est le plus petit ?",
+      "answers": [
+        { "text": "Le droit", "isCorrect": false },
+        { "text": "Ils sont identiques", "isCorrect": false },
+        { "text": "Le gauche", "isCorrect": true },
+        { "text": "Cela dépend des personnes", "isCorrect": false }
+      ],
+      "explanation": "Il laisse de la place au cœur."
+    },
+    {
+      "ref": "corps-038",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Combien de lobes compte le poumon droit ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "4", "isCorrect": false },
+        { "text": "5", "isCorrect": false }
+      ],
+      "explanation": "Le poumon gauche n'en compte que deux."
+    },
+    {
+      "ref": "corps-039",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Quel organe commande le corps et la pensée ?",
+      "answers": [
+        { "text": "Le cerveau", "isCorrect": true },
+        { "text": "Le cœur", "isCorrect": false },
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "La moelle épinière", "isCorrect": false }
+      ],
+      "explanation": "Le cerveau consomme environ 20 % de l'énergie du corps."
+    },
+    {
+      "ref": "corps-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Quelle part du poids du corps représente environ le cerveau ?",
+      "answers": [
+        { "text": "10 %", "isCorrect": false },
+        { "text": "20 %", "isCorrect": false },
+        { "text": "0,5 %", "isCorrect": false },
+        { "text": "2 %", "isCorrect": true }
+      ],
+      "explanation": "Il pèse environ 1,4 kilogramme chez l'adulte."
+    },
+    {
+      "ref": "corps-041",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Combien de neurones compte environ le cerveau humain ?",
+      "answers": [
+        { "text": "1 million", "isCorrect": false },
+        { "text": "1 milliard", "isCorrect": false },
+        { "text": "86 milliards", "isCorrect": true },
+        { "text": "10 000 milliards", "isCorrect": false }
+      ],
+      "explanation": "Chaque neurone peut être relié à des milliers d'autres."
+    },
+    {
+      "ref": "corps-042",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quelle partie du cerveau gère l'équilibre et la coordination des mouvements ?",
+      "answers": [
+        { "text": "L'hippocampe", "isCorrect": false },
+        { "text": "Le cervelet", "isCorrect": true },
+        { "text": "Le lobe frontal", "isCorrect": false },
+        { "text": "L'hypothalamus", "isCorrect": false }
+      ],
+      "explanation": "Le cervelet se trouve à l'arrière du crâne, sous le cerveau."
+    },
+    {
+      "ref": "corps-043",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Quelle structure du cerveau, au nom d'animal marin, joue un rôle clé dans la mémoire ?",
+      "answers": [
+        { "text": "L'hippocampe", "isCorrect": true },
+        { "text": "L'amygdale", "isCorrect": false },
+        { "text": "Le cortex", "isCorrect": false },
+        { "text": "Le thalamus", "isCorrect": false }
+      ],
+      "explanation": "Sa forme rappelle celle de l'hippocampe."
+    },
+    {
+      "ref": "corps-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Quel hémisphère du cerveau commande la partie droite du corps ?",
+      "answers": [
+        { "text": "L'hémisphère droit", "isCorrect": false },
+        { "text": "Les deux à parts égales", "isCorrect": false },
+        { "text": "Le cervelet", "isCorrect": false },
+        { "text": "L'hémisphère gauche", "isCorrect": true }
+      ],
+      "explanation": "Les nerfs se croisent entre le cerveau et le corps."
+    },
+    {
+      "ref": "corps-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Dans quel organe les aliments sont-ils attaqués par un acide puissant ?",
+      "answers": [
+        { "text": "L'intestin", "isCorrect": false },
+        { "text": "L'œsophage", "isCorrect": false },
+        { "text": "L'estomac", "isCorrect": true },
+        { "text": "Le foie", "isCorrect": false }
+      ],
+      "explanation": "L'estomac se protège de son propre acide grâce à une couche de mucus."
+    },
+    {
+      "ref": "corps-046",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "Quel acide est présent dans l'estomac ?",
+      "answers": [
+        { "text": "L'acide sulfurique", "isCorrect": false },
+        { "text": "L'acide chlorhydrique", "isCorrect": true },
+        { "text": "L'acide citrique", "isCorrect": false },
+        { "text": "L'acide acétique", "isCorrect": false }
+      ],
+      "explanation": "Il permet de digérer les protéines et de tuer les microbes."
+    },
+    {
+      "ref": "corps-047",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Comment s'appelle le tube qui relie la bouche à l'estomac ?",
+      "answers": [
+        { "text": "L'œsophage", "isCorrect": true },
+        { "text": "La trachée", "isCorrect": false },
+        { "text": "Le larynx", "isCorrect": false },
+        { "text": "Le duodénum", "isCorrect": false }
+      ],
+      "explanation": "Les aliments y descendent grâce à des contractions musculaires."
+    },
+    {
+      "ref": "corps-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["organe"],
+      "text": "Quel organe sert de réservoir à l'urine ?",
+      "answers": [
+        { "text": "Les reins", "isCorrect": false },
+        { "text": "L'urètre", "isCorrect": false },
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "La vessie", "isCorrect": true }
+      ],
+      "explanation": "La vessie peut contenir environ un demi-litre."
+    },
+    {
+      "ref": "corps-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Comment s'appelle le tube qui conduit l'air jusqu'aux poumons ?",
+      "answers": [
+        { "text": "L'œsophage", "isCorrect": false },
+        { "text": "Le pharynx", "isCorrect": false },
+        { "text": "La trachée", "isCorrect": true },
+        { "text": "L'aorte", "isCorrect": false }
+      ],
+      "explanation": "La trachée est renforcée par des anneaux de cartilage."
+    },
+    {
+      "ref": "corps-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["organe"],
+      "text": "Dans quel organe se trouvent les cordes vocales ?",
+      "answers": [
+        { "text": "La trachée", "isCorrect": false },
+        { "text": "Le larynx", "isCorrect": true },
+        { "text": "Le pharynx", "isCorrect": false },
+        { "text": "L'œsophage", "isCorrect": false }
+      ],
+      "explanation": "Elles vibrent au passage de l'air pour produire la voix."
+    },
+    {
+      "ref": "corps-051",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["organe"],
+      "text": "La « pomme d'Adam » est une saillie de quel organe ?",
+      "answers": [
+        { "text": "Le larynx", "isCorrect": true },
+        { "text": "La thyroïde", "isCorrect": false },
+        { "text": "L'œsophage", "isCorrect": false },
+        { "text": "La trachée", "isCorrect": false }
+      ],
+      "explanation": "Elle est généralement plus visible chez les hommes."
+    },
+    {
+      "ref": "corps-052",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "De quelle couleur est le sang dans les veines ?",
+      "answers": [
+        { "text": "Bleu", "isCorrect": false },
+        { "text": "Violet", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false },
+        { "text": "Rouge", "isCorrect": true }
+      ],
+      "explanation": "Il est rouge foncé. Les veines paraissent bleues à travers la peau à cause de la lumière."
+    },
+    {
+      "ref": "corps-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de litres de sang contient environ le corps d'un adulte ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "15", "isCorrect": false }
+      ],
+      "explanation": "Cela représente environ 7 % du poids du corps."
+    },
+    {
+      "ref": "corps-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quelles cellules du sang transportent l'oxygène ?",
+      "answers": [
+        { "text": "Les globules blancs", "isCorrect": false },
+        { "text": "Les globules rouges", "isCorrect": true },
+        { "text": "Les plaquettes", "isCorrect": false },
+        { "text": "Les neurones", "isCorrect": false }
+      ],
+      "explanation": "On les appelle aussi hématies."
+    },
+    {
+      "ref": "corps-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "À quoi servent les plaquettes du sang ?",
+      "answers": [
+        { "text": "À faire coaguler le sang", "isCorrect": true },
+        { "text": "À transporter l'oxygène", "isCorrect": false },
+        { "text": "À combattre les virus", "isCorrect": false },
+        { "text": "À produire des hormones", "isCorrect": false }
+      ],
+      "explanation": "Elles forment un bouchon pour arrêter les saignements."
+    },
+    {
+      "ref": "corps-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quelles cellules du sang défendent le corps contre les infections ?",
+      "answers": [
+        { "text": "Les globules rouges", "isCorrect": false },
+        { "text": "Les plaquettes", "isCorrect": false },
+        { "text": "Les neurones", "isCorrect": false },
+        { "text": "Les globules blancs", "isCorrect": true }
+      ],
+      "explanation": "On les appelle aussi leucocytes."
+    },
+    {
+      "ref": "corps-057",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quelle protéine donne sa couleur rouge au sang ?",
+      "answers": [
+        { "text": "La kératine", "isCorrect": false },
+        { "text": "La mélanine", "isCorrect": false },
+        { "text": "L'hémoglobine", "isCorrect": true },
+        { "text": "L'insuline", "isCorrect": false }
+      ],
+      "explanation": "Elle contient du fer, qui fixe l'oxygène."
+    },
+    {
+      "ref": "corps-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Où sont fabriquées les cellules du sang ?",
+      "answers": [
+        { "text": "Dans le cœur", "isCorrect": false },
+        { "text": "Dans la moelle osseuse", "isCorrect": true },
+        { "text": "Dans le foie", "isCorrect": false },
+        { "text": "Dans les reins", "isCorrect": false }
+      ],
+      "explanation": "La moelle osseuse se trouve à l'intérieur de certains os."
+    },
+    {
+      "ref": "corps-059",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sante"],
+      "text": "Quel groupe sanguin est appelé « donneur universel » ?",
+      "answers": [
+        { "text": "O négatif", "isCorrect": true },
+        { "text": "AB positif", "isCorrect": false },
+        { "text": "A positif", "isCorrect": false },
+        { "text": "B négatif", "isCorrect": false }
+      ],
+      "explanation": "Son sang peut être transfusé à presque tout le monde."
+    },
+    {
+      "ref": "corps-060",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sante"],
+      "text": "Quel groupe sanguin est appelé « receveur universel » ?",
+      "answers": [
+        { "text": "O négatif", "isCorrect": false },
+        { "text": "A négatif", "isCorrect": false },
+        { "text": "B positif", "isCorrect": false },
+        { "text": "AB positif", "isCorrect": true }
+      ],
+      "explanation": "Il peut recevoir du sang de tous les groupes."
+    },
+    {
+      "ref": "corps-061",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sante"],
+      "text": "Quel est le groupe sanguin le plus répandu en France ?",
+      "answers": [
+        { "text": "O négatif", "isCorrect": false },
+        { "text": "B positif", "isCorrect": false },
+        { "text": "A positif", "isCorrect": true },
+        { "text": "AB négatif", "isCorrect": false }
+      ],
+      "explanation": "Il concerne environ 38 % des Français, juste devant O positif."
+    },
+    {
+      "ref": "corps-062",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Qui a découvert les groupes sanguins en 1901 ?",
+      "answers": [
+        { "text": "Louis Pasteur", "isCorrect": false },
+        { "text": "Karl Landsteiner", "isCorrect": true },
+        { "text": "Alexander Fleming", "isCorrect": false },
+        { "text": "Robert Koch", "isCorrect": false }
+      ],
+      "explanation": "Cette découverte a rendu les transfusions beaucoup plus sûres."
+    },
+    {
+      "ref": "corps-063",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Comment s'appellent les vaisseaux qui conduisent le sang du cœur vers les organes ?",
+      "answers": [
+        { "text": "Les artères", "isCorrect": true },
+        { "text": "Les veines", "isCorrect": false },
+        { "text": "Les capillaires", "isCorrect": false },
+        { "text": "Les vaisseaux lymphatiques", "isCorrect": false }
+      ],
+      "explanation": "Les veines, elles, ramènent le sang vers le cœur."
+    },
+    {
+      "ref": "corps-064",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Combien de fois environ le cœur bat-il par minute au repos ?",
+      "answers": [
+        { "text": "Entre 20 et 30 fois", "isCorrect": false },
+        { "text": "Entre 150 et 200 fois", "isCorrect": false },
+        { "text": "Entre 5 et 10 fois", "isCorrect": false },
+        { "text": "Entre 60 et 80 fois", "isCorrect": true }
+      ],
+      "explanation": "Chez les sportifs entraînés, il peut descendre en dessous de 50."
+    },
+    {
+      "ref": "corps-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quelle est la plus grosse artère du corps ?",
+      "answers": [
+        { "text": "La carotide", "isCorrect": false },
+        { "text": "L'artère fémorale", "isCorrect": false },
+        { "text": "L'aorte", "isCorrect": true },
+        { "text": "L'artère pulmonaire", "isCorrect": false }
+      ],
+      "explanation": "Elle part directement du ventricule gauche."
+    },
+    {
+      "ref": "corps-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Combien de dents compte un adulte, dents de sagesse comprises ?",
+      "answers": [
+        { "text": "28", "isCorrect": false },
+        { "text": "32", "isCorrect": true },
+        { "text": "20", "isCorrect": false },
+        { "text": "36", "isCorrect": false }
+      ],
+      "explanation": "Beaucoup de personnes se font retirer leurs quatre dents de sagesse."
+    },
+    {
+      "ref": "corps-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de dents de lait compte un enfant ?",
+      "answers": [
+        { "text": "20", "isCorrect": true },
+        { "text": "32", "isCorrect": false },
+        { "text": "16", "isCorrect": false },
+        { "text": "24", "isCorrect": false }
+      ],
+      "explanation": "Elles tombent généralement entre 6 et 12 ans."
+    },
+    {
+      "ref": "corps-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quelle est la substance la plus dure du corps humain ?",
+      "answers": [
+        { "text": "L'os du fémur", "isCorrect": false },
+        { "text": "L'ongle", "isCorrect": false },
+        { "text": "Le cartilage", "isCorrect": false },
+        { "text": "L'émail des dents", "isCorrect": true }
+      ],
+      "explanation": "L'émail ne se régénère pas."
+    },
+    {
+      "ref": "corps-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quel pigment donne sa couleur à la peau ?",
+      "answers": [
+        { "text": "L'hémoglobine", "isCorrect": false },
+        { "text": "La kératine", "isCorrect": false },
+        { "text": "La mélanine", "isCorrect": true },
+        { "text": "La chlorophylle", "isCorrect": false }
+      ],
+      "explanation": "Le soleil stimule sa production, d'où le bronzage."
+    },
+    {
+      "ref": "corps-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "De quelle protéine sont faits les cheveux et les ongles ?",
+      "answers": [
+        { "text": "Le collagène", "isCorrect": false },
+        { "text": "La kératine", "isCorrect": true },
+        { "text": "La mélanine", "isCorrect": false },
+        { "text": "L'hémoglobine", "isCorrect": false }
+      ],
+      "explanation": "On la retrouve aussi dans les plumes, les cornes et les sabots des animaux."
+    },
+    {
+      "ref": "corps-071",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Combien de cheveux compte environ une tête humaine ?",
+      "answers": [
+        { "text": "Environ 100 000", "isCorrect": true },
+        { "text": "Environ 10 000", "isCorrect": false },
+        { "text": "Environ 1 million", "isCorrect": false },
+        { "text": "Environ 5 000", "isCorrect": false }
+      ],
+      "explanation": "On en perd normalement entre 50 et 100 par jour."
+    },
+    {
+      "ref": "corps-072",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Comment s'appelle la couche superficielle de la peau ?",
+      "answers": [
+        { "text": "Le derme", "isCorrect": false },
+        { "text": "L'hypoderme", "isCorrect": false },
+        { "text": "L'endoderme", "isCorrect": false },
+        { "text": "L'épiderme", "isCorrect": true }
+      ],
+      "explanation": "L'épiderme se renouvelle entièrement en un mois environ."
+    },
+    {
+      "ref": "corps-073",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Que contient l'ADN ?",
+      "answers": [
+        { "text": "De l'oxygène", "isCorrect": false },
+        { "text": "Du sucre de réserve", "isCorrect": false },
+        { "text": "L'information génétique", "isCorrect": true },
+        { "text": "Des anticorps", "isCorrect": false }
+      ],
+      "explanation": "L'ADN est présent dans presque toutes nos cellules."
+    },
+    {
+      "ref": "corps-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de chromosomes compte une cellule humaine ?",
+      "answers": [
+        { "text": "23", "isCorrect": false },
+        { "text": "46", "isCorrect": true },
+        { "text": "48", "isCorrect": false },
+        { "text": "64", "isCorrect": false }
+      ],
+      "explanation": "Ils sont rangés en 23 paires."
+    },
+    {
+      "ref": "corps-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Quelle forme a la molécule d'ADN ?",
+      "answers": [
+        { "text": "Une double hélice", "isCorrect": true },
+        { "text": "Un cercle", "isCorrect": false },
+        { "text": "Une étoile", "isCorrect": false },
+        { "text": "Une pyramide", "isCorrect": false }
+      ],
+      "explanation": "Elle ressemble à une échelle tordue sur elle-même."
+    },
+    {
+      "ref": "corps-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire"],
+      "text": "Qui a décrit la structure en double hélice de l'ADN en 1953 ?",
+      "answers": [
+        { "text": "Pierre et Marie Curie", "isCorrect": false },
+        { "text": "Louis Pasteur et Claude Bernard", "isCorrect": false },
+        { "text": "Gregor Mendel et Charles Darwin", "isCorrect": false },
+        { "text": "James Watson et Francis Crick", "isCorrect": true }
+      ],
+      "explanation": "Leurs travaux s'appuyaient sur les images de Rosalind Franklin."
+    },
+    {
+      "ref": "corps-077",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Quelle est la plus grande cellule du corps humain ?",
+      "answers": [
+        { "text": "Le neurone", "isCorrect": false },
+        { "text": "Le globule rouge", "isCorrect": false },
+        { "text": "L'ovule", "isCorrect": true },
+        { "text": "Le spermatozoïde", "isCorrect": false }
+      ],
+      "explanation": "Il est tout juste visible à l'œil nu."
+    },
+    {
+      "ref": "corps-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Quelles cellules transmettent les messages nerveux ?",
+      "answers": [
+        { "text": "Les globules rouges", "isCorrect": false },
+        { "text": "Les neurones", "isCorrect": true },
+        { "text": "Les plaquettes", "isCorrect": false },
+        { "text": "Les cellules de la peau", "isCorrect": false }
+      ],
+      "explanation": "Les messages circulent sous forme de signaux électriques et chimiques."
+    },
+    {
+      "ref": "corps-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Combien de fois environ respire-t-on par minute au repos ?",
+      "answers": [
+        { "text": "Entre 12 et 20 fois", "isCorrect": true },
+        { "text": "Entre 2 et 5 fois", "isCorrect": false },
+        { "text": "Entre 40 et 60 fois", "isCorrect": false },
+        { "text": "Plus de 100 fois", "isCorrect": false }
+      ],
+      "explanation": "Le rythme augmente fortement pendant l'effort."
+    },
+    {
+      "ref": "corps-080",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Quel est le nom savant du nombril ?",
+      "answers": [
+        { "text": "Le plexus", "isCorrect": false },
+        { "text": "Le sternum", "isCorrect": false },
+        { "text": "L'épigastre", "isCorrect": false },
+        { "text": "L'ombilic", "isCorrect": true }
+      ],
+      "explanation": "C'est la cicatrice du cordon ombilical."
+    },
+    {
+      "ref": "corps-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Quelle quantité de salive produit-on environ par jour ?",
+      "answers": [
+        { "text": "Un verre", "isCorrect": false },
+        { "text": "5 litres", "isCorrect": false },
+        { "text": "Entre 1 et 1,5 litre", "isCorrect": true },
+        { "text": "Quelques gouttes", "isCorrect": false }
+      ],
+      "explanation": "La salive commence la digestion des aliments."
+    },
+    {
+      "ref": "corps-082",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Quelles glandes produisent les larmes ?",
+      "answers": [
+        { "text": "Les glandes salivaires", "isCorrect": false },
+        { "text": "Les glandes lacrymales", "isCorrect": true },
+        { "text": "Les glandes sudoripares", "isCorrect": false },
+        { "text": "La thyroïde", "isCorrect": false }
+      ],
+      "explanation": "Les larmes protègent et nettoient l'œil en permanence."
+    },
+    {
+      "ref": "corps-083",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Que se passe-t-il quand on a la « chair de poule » ?",
+      "answers": [
+        { "text": "Les poils se dressent", "isCorrect": true },
+        { "text": "La peau devient jaune", "isCorrect": false },
+        { "text": "Le cœur s'arrête un instant", "isCorrect": false },
+        { "text": "On transpire", "isCorrect": false }
+      ],
+      "explanation": "C'est un réflexe hérité de nos ancêtres plus poilus, qui gonflaient ainsi leur pelage."
+    },
+    {
+      "ref": "corps-084",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Les ongles et les cheveux continuent de pousser après la mort.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est une illusion : la peau se rétracte en séchant, ce qui les fait paraître plus longs."
+    },
+    {
+      "ref": "corps-085",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sens"],
+      "text": "Combien de sens l'être humain a-t-il traditionnellement ?",
+      "answers": [
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "5", "isCorrect": true },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "La vue, l'ouïe, l'odorat, le goût et le toucher."
+    },
+    {
+      "ref": "corps-086",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sens"],
+      "text": "Quel organe permet de sentir les odeurs ?",
+      "answers": [
+        { "text": "La langue", "isCorrect": false },
+        { "text": "Le nez", "isCorrect": true },
+        { "text": "L'oreille", "isCorrect": false },
+        { "text": "La peau", "isCorrect": false }
+      ],
+      "explanation": "L'odorat joue aussi un grand rôle dans le goût des aliments."
+    },
+    {
+      "ref": "corps-087",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sens"],
+      "text": "Comment s'appelle la partie colorée de l'œil ?",
+      "answers": [
+        { "text": "L'iris", "isCorrect": true },
+        { "text": "La pupille", "isCorrect": false },
+        { "text": "La rétine", "isCorrect": false },
+        { "text": "La cornée", "isCorrect": false }
+      ],
+      "explanation": "Le motif de l'iris est unique pour chaque personne."
+    },
+    {
+      "ref": "corps-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Comment s'appelle l'ouverture noire au centre de l'œil, qui laisse entrer la lumière ?",
+      "answers": [
+        { "text": "L'iris", "isCorrect": false },
+        { "text": "La rétine", "isCorrect": false },
+        { "text": "Le cristallin", "isCorrect": false },
+        { "text": "La pupille", "isCorrect": true }
+      ],
+      "explanation": "Elle se dilate dans l'obscurité."
+    },
+    {
+      "ref": "corps-089",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Sur quelle partie de l'œil se forment les images ?",
+      "answers": [
+        { "text": "La cornée", "isCorrect": false },
+        { "text": "L'iris", "isCorrect": false },
+        { "text": "La rétine", "isCorrect": true },
+        { "text": "Le cristallin", "isCorrect": false }
+      ],
+      "explanation": "L'image y est inversée, puis le cerveau la remet à l'endroit."
+    },
+    {
+      "ref": "corps-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sens"],
+      "text": "Comment s'appellent les cellules de la rétine qui permettent de voir les couleurs ?",
+      "answers": [
+        { "text": "Les bâtonnets", "isCorrect": false },
+        { "text": "Les cônes", "isCorrect": true },
+        { "text": "Les neurones moteurs", "isCorrect": false },
+        { "text": "Les cils", "isCorrect": false }
+      ],
+      "explanation": "Il en existe trois types, sensibles au rouge, au vert et au bleu."
+    },
+    {
+      "ref": "corps-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sens"],
+      "text": "Comment s'appellent les cellules de la rétine qui permettent de voir dans la pénombre ?",
+      "answers": [
+        { "text": "Les bâtonnets", "isCorrect": true },
+        { "text": "Les cônes", "isCorrect": false },
+        { "text": "Les photons", "isCorrect": false },
+        { "text": "Les cils", "isCorrect": false }
+      ],
+      "explanation": "Ils ne perçoivent pas les couleurs, d'où une vision en gris la nuit."
+    },
+    {
+      "ref": "corps-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Comment s'appelle l'anomalie qui empêche de distinguer certaines couleurs ?",
+      "answers": [
+        { "text": "La myopie", "isCorrect": false },
+        { "text": "L'astigmatisme", "isCorrect": false },
+        { "text": "La presbytie", "isCorrect": false },
+        { "text": "Le daltonisme", "isCorrect": true }
+      ],
+      "explanation": "Elle touche environ 8 % des hommes et moins de 1 % des femmes."
+    },
+    {
+      "ref": "corps-093",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sens", "histoire"],
+      "text": "D'après quel scientifique le daltonisme a-t-il été nommé ?",
+      "answers": [
+        { "text": "Isaac Newton", "isCorrect": false },
+        { "text": "Thomas Young", "isCorrect": false },
+        { "text": "John Dalton", "isCorrect": true },
+        { "text": "Charles Darwin", "isCorrect": false }
+      ],
+      "explanation": "Ce chimiste anglais en était lui-même atteint."
+    },
+    {
+      "ref": "corps-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Quel trouble de la vue rend floue la vision de loin ?",
+      "answers": [
+        { "text": "L'hypermétropie", "isCorrect": false },
+        { "text": "La myopie", "isCorrect": true },
+        { "text": "La presbytie", "isCorrect": false },
+        { "text": "Le daltonisme", "isCorrect": false }
+      ],
+      "explanation": "Le myope voit bien de près."
+    },
+    {
+      "ref": "corps-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Quel trouble de la vue apparaît avec l'âge et gêne la lecture de près ?",
+      "answers": [
+        { "text": "La presbytie", "isCorrect": true },
+        { "text": "La myopie", "isCorrect": false },
+        { "text": "Le daltonisme", "isCorrect": false },
+        { "text": "L'astigmatisme", "isCorrect": false }
+      ],
+      "explanation": "Elle apparaît généralement vers 45 ans."
+    },
+    {
+      "ref": "corps-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Quelle cinquième saveur, identifiée au Japon, s'ajoute au sucré, au salé, à l'acide et à l'amer ?",
+      "answers": [
+        { "text": "Le piquant", "isCorrect": false },
+        { "text": "Le gras", "isCorrect": false },
+        { "text": "Le métallique", "isCorrect": false },
+        { "text": "L'umami", "isCorrect": true }
+      ],
+      "explanation": "L'umami est la saveur du glutamate, présent dans le parmesan ou la sauce soja."
+    },
+    {
+      "ref": "corps-097",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sens"],
+      "text": "Avec quel organe goûte-t-on principalement les aliments ?",
+      "answers": [
+        { "text": "Le nez", "isCorrect": false },
+        { "text": "Le palais", "isCorrect": false },
+        { "text": "La langue", "isCorrect": true },
+        { "text": "Les dents", "isCorrect": false }
+      ],
+      "explanation": "La langue est couverte de papilles gustatives."
+    },
+    {
+      "ref": "corps-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sens"],
+      "text": "Quelle partie de l'oreille interne permet de garder l'équilibre ?",
+      "answers": [
+        { "text": "Le tympan", "isCorrect": false },
+        { "text": "Le vestibule", "isCorrect": true },
+        { "text": "L'étrier", "isCorrect": false },
+        { "text": "La trompe d'Eustache", "isCorrect": false }
+      ],
+      "explanation": "C'est pour cela qu'une otite peut donner des vertiges."
+    },
+    {
+      "ref": "corps-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "Quelle fine membrane vibre au contact des sons dans l'oreille ?",
+      "answers": [
+        { "text": "Le tympan", "isCorrect": true },
+        { "text": "La cochlée", "isCorrect": false },
+        { "text": "Le vestibule", "isCorrect": false },
+        { "text": "La rétine", "isCorrect": false }
+      ],
+      "explanation": "Le tympan sépare l'oreille externe de l'oreille moyenne."
+    },
+    {
+      "ref": "corps-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sens"],
+      "text": "Quel organe de l'oreille interne, en forme de coquille d'escargot, transforme les sons en signaux nerveux ?",
+      "answers": [
+        { "text": "Le vestibule", "isCorrect": false },
+        { "text": "Le tympan", "isCorrect": false },
+        { "text": "L'enclume", "isCorrect": false },
+        { "text": "La cochlée", "isCorrect": true }
+      ],
+      "explanation": "La cochlée est remplie de liquide et de cellules ciliées."
+    },
+    {
+      "ref": "corps-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sens"],
+      "text": "Comment s'appelle le sens qui permet de connaître la position de son corps sans regarder ?",
+      "answers": [
+        { "text": "L'ouïe interne", "isCorrect": false },
+        { "text": "La synesthésie", "isCorrect": false },
+        { "text": "La proprioception", "isCorrect": true },
+        { "text": "L'intuition", "isCorrect": false }
+      ],
+      "explanation": "C'est grâce à elle qu'on peut toucher son nez les yeux fermés."
+    },
+    {
+      "ref": "corps-102",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sens"],
+      "text": "Quel sens est atteint chez une personne sourde ?",
+      "answers": [
+        { "text": "La vue", "isCorrect": false },
+        { "text": "L'ouïe", "isCorrect": true },
+        { "text": "L'odorat", "isCorrect": false },
+        { "text": "Le toucher", "isCorrect": false }
+      ],
+      "explanation": "La langue des signes permet aux personnes sourdes de communiquer."
+    },
+    {
+      "ref": "corps-103",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sens"],
+      "text": "Quelle écriture en relief permet aux personnes aveugles de lire ?",
+      "answers": [
+        { "text": "Le braille", "isCorrect": true },
+        { "text": "Le morse", "isCorrect": false },
+        { "text": "Le sténo", "isCorrect": false },
+        { "text": "L'écriture cunéiforme", "isCorrect": false }
+      ],
+      "explanation": "Chaque lettre est formée par des points en relief."
+    },
+    {
+      "ref": "corps-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sens", "histoire", "france"],
+      "text": "Quel Français a inventé une écriture pour les personnes aveugles au XIXe siècle ?",
+      "answers": [
+        { "text": "Valentin Haüy", "isCorrect": false },
+        { "text": "Louis Pasteur", "isCorrect": false },
+        { "text": "Charles Barbier", "isCorrect": false },
+        { "text": "Louis Braille", "isCorrect": true }
+      ],
+      "explanation": "Louis Braille était lui-même devenu aveugle à 3 ans."
+    },
+    {
+      "ref": "corps-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quelle est la température normale du corps humain ?",
+      "answers": [
+        { "text": "Environ 35 °C", "isCorrect": false },
+        { "text": "Environ 39 °C", "isCorrect": false },
+        { "text": "Environ 37 °C", "isCorrect": true },
+        { "text": "Environ 40 °C", "isCorrect": false }
+      ],
+      "explanation": "Elle varie un peu au cours de la journée."
+    },
+    {
+      "ref": "corps-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "À partir de quelle température parle-t-on de fièvre chez l'adulte ?",
+      "answers": [
+        { "text": "37 °C", "isCorrect": false },
+        { "text": "38 °C", "isCorrect": true },
+        { "text": "39,5 °C", "isCorrect": false },
+        { "text": "36 °C", "isCorrect": false }
+      ],
+      "explanation": "La fièvre aide le corps à lutter contre les infections."
+    },
+    {
+      "ref": "corps-107",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quelle vitamine le corps fabrique-t-il grâce au soleil ?",
+      "answers": [
+        { "text": "La vitamine D", "isCorrect": true },
+        { "text": "La vitamine C", "isCorrect": false },
+        { "text": "La vitamine A", "isCorrect": false },
+        { "text": "La vitamine B12", "isCorrect": false }
+      ],
+      "explanation": "Elle est indispensable à la solidité des os."
+    },
+    {
+      "ref": "corps-108",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quelle maladie touchait autrefois les marins privés de fruits frais ?",
+      "answers": [
+        { "text": "La rage", "isCorrect": false },
+        { "text": "La peste", "isCorrect": false },
+        { "text": "La lèpre", "isCorrect": false },
+        { "text": "Le scorbut", "isCorrect": true }
+      ],
+      "explanation": "Le scorbut est dû à un manque de vitamine C."
+    },
+    {
+      "ref": "corps-109",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quelle vitamine trouve-t-on en grande quantité dans les agrumes ?",
+      "answers": [
+        { "text": "La vitamine D", "isCorrect": false },
+        { "text": "La vitamine K", "isCorrect": false },
+        { "text": "La vitamine C", "isCorrect": true },
+        { "text": "La vitamine B12", "isCorrect": false }
+      ],
+      "explanation": "Le kiwi et le poivron en contiennent encore plus que l'orange."
+    },
+    {
+      "ref": "corps-110",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quel minéral est essentiel à la solidité des os ?",
+      "answers": [
+        { "text": "Le fer", "isCorrect": false },
+        { "text": "Le calcium", "isCorrect": true },
+        { "text": "Le sodium", "isCorrect": false },
+        { "text": "Le potassium", "isCorrect": false }
+      ],
+      "explanation": "On en trouve beaucoup dans les produits laitiers."
+    },
+    {
+      "ref": "corps-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Le manque de quel minéral provoque la forme d'anémie la plus fréquente ?",
+      "answers": [
+        { "text": "Le fer", "isCorrect": true },
+        { "text": "Le calcium", "isCorrect": false },
+        { "text": "Le magnésium", "isCorrect": false },
+        { "text": "Le zinc", "isCorrect": false }
+      ],
+      "explanation": "Le fer est indispensable à la fabrication de l'hémoglobine."
+    },
+    {
+      "ref": "corps-112",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quelle maladie se caractérise par un excès de sucre dans le sang ?",
+      "answers": [
+        { "text": "L'anémie", "isCorrect": false },
+        { "text": "L'asthme", "isCorrect": false },
+        { "text": "L'hypertension", "isCorrect": false },
+        { "text": "Le diabète", "isCorrect": true }
+      ],
+      "explanation": "Le diabète est lié à un manque ou à une mauvaise action de l'insuline."
+    },
+    {
+      "ref": "corps-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quel organe est principalement touché par la tuberculose ?",
+      "answers": [
+        { "text": "Le foie", "isCorrect": false },
+        { "text": "Le cerveau", "isCorrect": false },
+        { "text": "Les poumons", "isCorrect": true },
+        { "text": "La peau", "isCorrect": false }
+      ],
+      "explanation": "Le vaccin BCG protège contre ses formes graves."
+    },
+    {
+      "ref": "corps-114",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quel type de microbe provoque la grippe ?",
+      "answers": [
+        { "text": "Une bactérie", "isCorrect": false },
+        { "text": "Un virus", "isCorrect": true },
+        { "text": "Un champignon", "isCorrect": false },
+        { "text": "Un parasite", "isCorrect": false }
+      ],
+      "explanation": "Le vaccin contre la grippe doit être refait chaque année car le virus évolue."
+    },
+    {
+      "ref": "corps-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Contre quels microbes les antibiotiques sont-ils efficaces ?",
+      "answers": [
+        { "text": "Les bactéries", "isCorrect": true },
+        { "text": "Les virus", "isCorrect": false },
+        { "text": "Les champignons", "isCorrect": false },
+        { "text": "Tous les microbes", "isCorrect": false }
+      ],
+      "explanation": "« Les antibiotiques, c'est pas automatique » : ils sont inutiles contre un rhume."
+    },
+    {
+      "ref": "corps-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "sante"],
+      "text": "Qui a découvert la pénicilline, le premier antibiotique, en 1928 ?",
+      "answers": [
+        { "text": "Louis Pasteur", "isCorrect": false },
+        { "text": "Robert Koch", "isCorrect": false },
+        { "text": "Edward Jenner", "isCorrect": false },
+        { "text": "Alexander Fleming", "isCorrect": true }
+      ],
+      "explanation": "Il l'a découverte par hasard, grâce à une moisissure dans une boîte de culture."
+    },
+    {
+      "ref": "corps-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "sante", "france"],
+      "text": "Contre quelle maladie Louis Pasteur a-t-il mis au point un vaccin en 1885 ?",
+      "answers": [
+        { "text": "La variole", "isCorrect": false },
+        { "text": "La poliomyélite", "isCorrect": false },
+        { "text": "La rage", "isCorrect": true },
+        { "text": "La tuberculose", "isCorrect": false }
+      ],
+      "explanation": "Il l'a testé sur un jeune garçon mordu par un chien, Joseph Meister."
+    },
+    {
+      "ref": "corps-118",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "sante"],
+      "text": "Quel médecin anglais a mis au point le premier vaccin, contre la variole ?",
+      "answers": [
+        { "text": "Alexander Fleming", "isCorrect": false },
+        { "text": "Edward Jenner", "isCorrect": true },
+        { "text": "Joseph Lister", "isCorrect": false },
+        { "text": "William Harvey", "isCorrect": false }
+      ],
+      "explanation": "Le mot « vaccin » vient de « vache », car il utilisait la variole de la vache."
+    },
+    {
+      "ref": "corps-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "sante"],
+      "text": "Quelle maladie a été officiellement déclarée éradiquée dans le monde en 1980 ?",
+      "answers": [
+        { "text": "La variole", "isCorrect": true },
+        { "text": "La rage", "isCorrect": false },
+        { "text": "Le paludisme", "isCorrect": false },
+        { "text": "La rougeole", "isCorrect": false }
+      ],
+      "explanation": "C'est la seule maladie humaine éradiquée à ce jour."
+    },
+    {
+      "ref": "corps-120",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "sante", "france"],
+      "text": "En quelle année l'Institut Pasteur a-t-il été inauguré à Paris ?",
+      "answers": [
+        { "text": "1850", "isCorrect": false },
+        { "text": "1910", "isCorrect": false },
+        { "text": "1945", "isCorrect": false },
+        { "text": "1888", "isCorrect": true }
+      ],
+      "explanation": "Il a été financé en grande partie par une souscription publique."
+    },
+    {
+      "ref": "corps-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "sante", "france"],
+      "text": "Quel virus a été identifié en 1983 par une équipe de l'Institut Pasteur ?",
+      "answers": [
+        { "text": "Le virus Ebola", "isCorrect": false },
+        { "text": "Le virus de la grippe", "isCorrect": false },
+        { "text": "Le VIH", "isCorrect": true },
+        { "text": "Le coronavirus", "isCorrect": false }
+      ],
+      "explanation": "Françoise Barré-Sinoussi et Luc Montagnier ont reçu le prix Nobel en 2008 pour cette découverte."
+    },
+    {
+      "ref": "corps-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "sante"],
+      "text": "Qui est considéré comme le père de la médecine dans l'Antiquité grecque ?",
+      "answers": [
+        { "text": "Galien", "isCorrect": false },
+        { "text": "Hippocrate", "isCorrect": true },
+        { "text": "Aristote", "isCorrect": false },
+        { "text": "Socrate", "isCorrect": false }
+      ],
+      "explanation": "Les médecins prêtent encore le « serment d'Hippocrate »."
+    },
+    {
+      "ref": "corps-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire", "sante"],
+      "text": "Quel physicien a découvert les rayons X en 1895 ?",
+      "answers": [
+        { "text": "Wilhelm Röntgen", "isCorrect": true },
+        { "text": "Marie Curie", "isCorrect": false },
+        { "text": "Albert Einstein", "isCorrect": false },
+        { "text": "Niels Bohr", "isCorrect": false }
+      ],
+      "explanation": "Il a reçu le premier prix Nobel de physique en 1901."
+    },
+    {
+      "ref": "corps-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "sante", "france"],
+      "text": "Quel médecin français a inventé le stéthoscope en 1816 ?",
+      "answers": [
+        { "text": "Claude Bernard", "isCorrect": false },
+        { "text": "Louis Pasteur", "isCorrect": false },
+        { "text": "Ambroise Paré", "isCorrect": false },
+        { "text": "René Laennec", "isCorrect": true }
+      ],
+      "explanation": "Il aurait eu l'idée en roulant une feuille de papier pour écouter le cœur d'une patiente."
+    },
+    {
+      "ref": "corps-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "sante"],
+      "text": "En quelle année a eu lieu la première greffe de cœur ?",
+      "answers": [
+        { "text": "1945", "isCorrect": false },
+        { "text": "1985", "isCorrect": false },
+        { "text": "1967", "isCorrect": true },
+        { "text": "1999", "isCorrect": false }
+      ],
+      "explanation": "Elle a été réalisée en Afrique du Sud par le chirurgien Christiaan Barnard."
+    },
+    {
+      "ref": "corps-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "sante", "france"],
+      "text": "Dans quelle ville a été réalisée la première greffe partielle du visage au monde, en 2005 ?",
+      "answers": [
+        { "text": "Lyon", "isCorrect": false },
+        { "text": "Amiens", "isCorrect": true },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Lille", "isCorrect": false }
+      ],
+      "explanation": "La patiente avait été défigurée par son chien."
+    },
+    {
+      "ref": "corps-127",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante", "france"],
+      "text": "Quel numéro faut-il composer pour joindre le SAMU en France ?",
+      "answers": [
+        { "text": "15", "isCorrect": true },
+        { "text": "17", "isCorrect": false },
+        { "text": "18", "isCorrect": false },
+        { "text": "3615", "isCorrect": false }
+      ],
+      "explanation": "Le 17 est la police et le 18 les pompiers."
+    },
+    {
+      "ref": "corps-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quel est le numéro d'urgence européen ?",
+      "answers": [
+        { "text": "911", "isCorrect": false },
+        { "text": "999", "isCorrect": false },
+        { "text": "15", "isCorrect": false },
+        { "text": "112", "isCorrect": true }
+      ],
+      "explanation": "Il fonctionne dans toute l'Union européenne, même sans carte SIM."
+    },
+    {
+      "ref": "corps-129",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quelle maladie est causée par le virus SARS-CoV-2 ?",
+      "answers": [
+        { "text": "La grippe A", "isCorrect": false },
+        { "text": "La rougeole", "isCorrect": false },
+        { "text": "Le Covid-19", "isCorrect": true },
+        { "text": "La varicelle", "isCorrect": false }
+      ],
+      "explanation": "La pandémie a commencé fin 2019."
+    },
+    {
+      "ref": "corps-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Pendant combien de temps est-il recommandé de se laver les mains au savon ?",
+      "answers": [
+        { "text": "5 secondes", "isCorrect": false },
+        { "text": "Au moins 30 secondes", "isCorrect": true },
+        { "text": "3 minutes", "isCorrect": false },
+        { "text": "10 minutes", "isCorrect": false }
+      ],
+      "explanation": "Il faut frotter aussi entre les doigts et sous les ongles."
+    },
+    {
+      "ref": "corps-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Combien d'heures de sommeil sont recommandées pour un adulte ?",
+      "answers": [
+        { "text": "Entre 7 et 9 heures", "isCorrect": true },
+        { "text": "Entre 4 et 5 heures", "isCorrect": false },
+        { "text": "Entre 10 et 12 heures", "isCorrect": false },
+        { "text": "Exactement 6 heures", "isCorrect": false }
+      ],
+      "explanation": "Les adolescents ont besoin de dormir un peu plus."
+    },
+    {
+      "ref": "corps-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quelle part du corps humain est composée d'eau, environ ?",
+      "answers": [
+        { "text": "10 %", "isCorrect": false },
+        { "text": "30 %", "isCorrect": false },
+        { "text": "90 %", "isCorrect": false },
+        { "text": "60 %", "isCorrect": true }
+      ],
+      "explanation": "La proportion est plus élevée chez les bébés."
+    },
+    {
+      "ref": "corps-133",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quel gaz rejette-t-on en expirant ?",
+      "answers": [
+        { "text": "L'oxygène", "isCorrect": false },
+        { "text": "L'hélium", "isCorrect": false },
+        { "text": "Le dioxyde de carbone", "isCorrect": true },
+        { "text": "L'azote pur", "isCorrect": false }
+      ],
+      "explanation": "Le CO2 est un déchet produit par nos cellules."
+    },
+    {
+      "ref": "corps-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quel organe est touché par une hépatite ?",
+      "answers": [
+        { "text": "Le cœur", "isCorrect": false },
+        { "text": "Le foie", "isCorrect": true },
+        { "text": "Les poumons", "isCorrect": false },
+        { "text": "Les reins", "isCorrect": false }
+      ],
+      "explanation": "Elle est souvent due à un virus."
+    },
+    {
+      "ref": "corps-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quelle partie du corps est touchée par la cataracte ?",
+      "answers": [
+        { "text": "L'œil", "isCorrect": true },
+        { "text": "L'oreille", "isCorrect": false },
+        { "text": "Le cœur", "isCorrect": false },
+        { "text": "La peau", "isCorrect": false }
+      ],
+      "explanation": "Le cristallin de l'œil devient opaque."
+    },
+    {
+      "ref": "corps-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Comment s'appelle la maladie qui rend les os fragiles avec l'âge ?",
+      "answers": [
+        { "text": "L'arthrose", "isCorrect": false },
+        { "text": "L'arthrite", "isCorrect": false },
+        { "text": "La scoliose", "isCorrect": false },
+        { "text": "L'ostéoporose", "isCorrect": true }
+      ],
+      "explanation": "Elle touche surtout les femmes après la ménopause."
+    },
+    {
+      "ref": "corps-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Comment s'appelle la déviation de la colonne vertébrale en forme de S ?",
+      "answers": [
+        { "text": "L'ostéoporose", "isCorrect": false },
+        { "text": "L'arthrose", "isCorrect": false },
+        { "text": "La scoliose", "isCorrect": true },
+        { "text": "La lordose", "isCorrect": false }
+      ],
+      "explanation": "Elle est souvent dépistée pendant l'adolescence."
+    },
+    {
+      "ref": "corps-138",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Comment s'appelle le médecin spécialiste du cœur ?",
+      "answers": [
+        { "text": "Le pneumologue", "isCorrect": false },
+        { "text": "Le cardiologue", "isCorrect": true },
+        { "text": "Le neurologue", "isCorrect": false },
+        { "text": "Le néphrologue", "isCorrect": false }
+      ],
+      "explanation": "Le mot vient du grec « kardia », le cœur."
+    },
+    {
+      "ref": "corps-139",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Comment s'appelle le médecin spécialiste de la peau ?",
+      "answers": [
+        { "text": "Le dermatologue", "isCorrect": true },
+        { "text": "Le cardiologue", "isCorrect": false },
+        { "text": "L'ophtalmologue", "isCorrect": false },
+        { "text": "Le rhumatologue", "isCorrect": false }
+      ],
+      "explanation": "Le mot vient du grec « derma », la peau."
+    },
+    {
+      "ref": "corps-140",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Comment s'appelle le médecin spécialiste des enfants ?",
+      "answers": [
+        { "text": "Le gériatre", "isCorrect": false },
+        { "text": "Le podologue", "isCorrect": false },
+        { "text": "Le neurologue", "isCorrect": false },
+        { "text": "Le pédiatre", "isCorrect": true }
+      ],
+      "explanation": "Le gériatre, lui, soigne les personnes âgées."
+    },
+    {
+      "ref": "corps-141",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Quel médecin soigne les yeux ?",
+      "answers": [
+        { "text": "L'orthophoniste", "isCorrect": false },
+        { "text": "L'ORL", "isCorrect": false },
+        { "text": "L'ophtalmologue", "isCorrect": true },
+        { "text": "Le dermatologue", "isCorrect": false }
+      ],
+      "explanation": "L'opticien, lui, fabrique et vend les lunettes."
+    },
+    {
+      "ref": "corps-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Que soigne un médecin ORL ?",
+      "answers": [
+        { "text": "Les os et les articulations", "isCorrect": false },
+        { "text": "Les oreilles, le nez et la gorge", "isCorrect": true },
+        { "text": "Les reins", "isCorrect": false },
+        { "text": "Le cœur et les poumons", "isCorrect": false }
+      ],
+      "explanation": "ORL signifie oto-rhino-laryngologiste."
+    },
+    {
+      "ref": "corps-143",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quelle hormone est surnommée « hormone du stress » ?",
+      "answers": [
+        { "text": "Le cortisol", "isCorrect": true },
+        { "text": "L'insuline", "isCorrect": false },
+        { "text": "La mélatonine", "isCorrect": false },
+        { "text": "L'œstrogène", "isCorrect": false }
+      ],
+      "explanation": "Elle est produite par les glandes surrénales."
+    },
+    {
+      "ref": "corps-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quelle hormone favorise l'endormissement le soir ?",
+      "answers": [
+        { "text": "L'adrénaline", "isCorrect": false },
+        { "text": "Le cortisol", "isCorrect": false },
+        { "text": "L'insuline", "isCorrect": false },
+        { "text": "La mélatonine", "isCorrect": true }
+      ],
+      "explanation": "La lumière des écrans freine sa production."
+    },
+    {
+      "ref": "corps-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Quelle hormone accélère le cœur en cas de peur ?",
+      "answers": [
+        { "text": "La mélatonine", "isCorrect": false },
+        { "text": "L'insuline", "isCorrect": false },
+        { "text": "L'adrénaline", "isCorrect": true },
+        { "text": "La thyroxine", "isCorrect": false }
+      ],
+      "explanation": "Elle prépare le corps à fuir ou à combattre."
+    },
+    {
+      "ref": "corps-146",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["sante"],
+      "text": "Quelles glandes produisent l'adrénaline ?",
+      "answers": [
+        { "text": "La thyroïde", "isCorrect": false },
+        { "text": "Les glandes surrénales", "isCorrect": true },
+        { "text": "Le pancréas", "isCorrect": false },
+        { "text": "L'hypophyse", "isCorrect": false }
+      ],
+      "explanation": "Elles se trouvent au-dessus des reins."
+    },
+    {
+      "ref": "corps-147",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Le cœur est situé légèrement à gauche dans la poitrine.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il est presque au centre, mais sa pointe est orientée vers la gauche."
+    },
+    {
+      "ref": "corps-148",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "On n'utilise que 10 % de son cerveau.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est une idée reçue : l'imagerie montre que toutes les zones du cerveau sont actives."
+    },
+    {
+      "ref": "corps-149",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["anatomie"],
+      "text": "Un adulte a plus d'os qu'un nouveau-né.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est l'inverse : le nouveau-né en a environ 300, qui se soudent pour arriver à 206."
+    },
+    {
+      "ref": "corps-150",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["sens"],
+      "text": "La langue est divisée en zones qui perçoivent chacune une seule saveur.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Cette « carte de la langue » est un mythe : toutes les zones perçoivent toutes les saveurs."
+    },
+    {
+      "ref": "corps-151",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["anatomie"],
+      "text": "Les vrais jumeaux ont les mêmes empreintes digitales.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils ont le même ADN, mais leurs empreintes se forment différemment dans l'utérus."
+    },
+    {
+      "ref": "corps-152",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["anatomie"],
+      "text": "Les osselets de l'oreille ont presque leur taille adulte dès la naissance.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ce sont parmi les seuls os du corps qui ne grandissent presque plus."
+    },
+    {
+      "ref": "corps-153",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Il faut attendre deux heures après un repas avant de se baigner.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Aucune étude n'a montré de danger particulier. Il vaut surtout mieux éviter l'effort intense juste après un gros repas."
+    },
+    {
+      "ref": "corps-154",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Les antibiotiques soignent la grippe.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La grippe est due à un virus, et les antibiotiques n'agissent que sur les bactéries."
+    },
+    {
+      "ref": "corps-155",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["sante"],
+      "text": "Le rhume est causé par un virus.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Plus de 200 virus différents peuvent provoquer un rhume."
+    },
+    {
+      "ref": "corps-156",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["sante"],
+      "text": "Faire craquer ses doigts provoque de l'arthrose.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Les études n'ont pas trouvé de lien. Le bruit vient de bulles de gaz qui éclatent dans l'articulation."
+    },
+    {
+      "ref": "corps-157",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["histoire", "avant-apres"],
+      "text": "La découverte de la pénicilline a-t-elle eu lieu avant ou après la Première Guerre mondiale ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La Première Guerre mondiale se termine en 1918, Fleming découvre la pénicilline en 1928."
+    },
+    {
+      "ref": "corps-158",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le vaccin de Pasteur contre la rage a-t-il été mis au point avant ou après l'invention du stéthoscope ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Laennec invente le stéthoscope en 1816, Pasteur vaccine contre la rage en 1885."
+    },
+    {
+      "ref": "corps-159",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "La première greffe de cœur a-t-elle eu lieu avant ou après les premiers pas de l'homme sur la Lune ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "La greffe date de décembre 1967, les premiers pas sur la Lune de juillet 1969."
+    },
+    {
+      "ref": "corps-160",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres"],
+      "text": "La découverte des rayons X a-t-elle eu lieu avant ou après celle des groupes sanguins ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Röntgen découvre les rayons X en 1895, Landsteiner les groupes sanguins en 1901."
+    },
+    {
+      "ref": "corps-161",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "La structure de l'ADN a-t-elle été décrite avant ou après la fin de la Seconde Guerre mondiale ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La guerre se termine en 1945, Watson et Crick décrivent la double hélice en 1953."
+    },
+    {
+      "ref": "corps-162",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres"],
+      "text": "L'éradication de la variole a-t-elle été déclarée avant ou après la découverte du VIH ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "La variole est déclarée éradiquée en 1980, le VIH est identifié en 1983."
+    },
+    {
+      "ref": "corps-163",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le premier vaccin, celui d'Edward Jenner, date-t-il d'avant ou d'après la Révolution française ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La Révolution commence en 1789, Jenner réalise sa première vaccination en 1796."
+    },
+    {
+      "ref": "corps-164",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres", "france"],
+      "text": "L'écriture braille a-t-elle été publiée avant ou après la mort de Napoléon Ier ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Napoléon meurt en 1821, Louis Braille publie sa méthode en 1829."
+    }
+  ]
+}

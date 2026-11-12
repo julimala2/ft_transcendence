@@ -1,0 +1,4462 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 193,
+    "parDifficulte": { "1": 28, "2": 95, "3": 70 },
+    "parType": { "multiple": 193 },
+    "avecImage": 193,
+    "sansImage": 0,
+    "parTag": {
+      "afrique": 54,
+      "asie": 46,
+      "europe": 44,
+      "amerique": 35,
+      "oceanie": 14,
+      "france": 1
+    }
+  },
+  "category": {
+    "slug": "drapeaux",
+    "name": "Drapeaux"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "geo-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bhoutan.webp",
+        "alt": "Drapeau avec un dragon blanc sur fond jaune et orange",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bhutan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bhoutan", "isCorrect": true },
+        { "text": "Népal", "isCorrect": false },
+        { "text": "Sri Lanka", "isCorrect": false },
+        { "text": "Tibet", "isCorrect": false }
+      ]
+    },
+    {
+      "ref": "geo-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bresil.webp",
+        "alt": "Drapeau vert avec un losange jaune et un globe bleu étoilé portant une banderole",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Brazil.svg"
+        }
+      },
+      "answers": [
+        { "text": "Portugal", "isCorrect": false },
+        { "text": "Brésil", "isCorrect": true },
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Colombie", "isCorrect": false }
+      ],
+      "explanation": "Le globe porte la devise « Ordem e Progresso » et 27 étoiles, une par État fédéré et pour le district fédéral."
+    },
+    {
+      "ref": "geo-025",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nepal.webp",
+        "alt": "Drapeau formé de deux triangles superposés rouges bordés de bleu, avec une lune et un soleil blancs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Nepal.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bhoutan", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Népal", "isCorrect": true },
+        { "text": "Sri Lanka", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul drapeau national au monde qui n'est pas rectangulaire."
+    },
+    {
+      "ref": "geo-058",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-inde.webp",
+        "alt": "Drapeau tricolore horizontal orange, blanc et vert, avec une roue bleue à 24 rayons au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_India.svg"
+        }
+      },
+      "answers": [
+        { "text": "Niger", "isCorrect": false },
+        { "text": "Inde", "isCorrect": true },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Côte d'Ivoire", "isCorrect": false }
+      ],
+      "explanation": "La roue bleue, appelée Ashoka Chakra, symbolise le mouvement perpétuel."
+    },
+    {
+      "ref": "geo-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-afrique-du-sud.webp",
+        "alt": "Drapeau aux six couleurs (noir, vert, jaune, blanc, rouge, bleu) agencées en forme de Y",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Africa.svg"
+        }
+      },
+      "answers": [
+        { "text": "Kenya", "isCorrect": false },
+        { "text": "Eswatini", "isCorrect": false },
+        { "text": "Afrique du Sud", "isCorrect": true },
+        { "text": "Lesotho", "isCorrect": false }
+      ],
+      "explanation": "Adopté en 1994, ce drapeau symbolise l'unité après la fin de l'apartheid."
+    },
+    {
+      "ref": "geo-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-mexique.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et rouge, avec un aigle dévorant un serpent au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mexico.svg"
+        }
+      },
+      "answers": [
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Mexique", "isCorrect": true },
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Bulgarie", "isCorrect": false }
+      ],
+      "explanation": "L'aigle sur un nopal, dévorant un serpent, illustre un mythe fondateur aztèque."
+    },
+    {
+      "ref": "geo-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-norvege.webp",
+        "alt": "Drapeau rouge avec une croix bleue bordée de blanc, décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Norway.svg"
+        }
+      },
+      "answers": [
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Islande", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": true },
+        { "text": "Royaume-Uni", "isCorrect": false }
+      ],
+      "explanation": "Les pays nordiques partagent ce motif de croix décalée, hérité du drapeau danois."
+    },
+    {
+      "ref": "geo-100",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-fidji.webp",
+        "alt": "Drapeau bleu clair orné du drapeau du Royaume-Uni en haut à gauche et d'un bouclier aux couleurs locales à droite",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Fiji.svg"
+        }
+      },
+      "answers": [
+        { "text": "Îles Salomon", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": true },
+        { "text": "Tuvalu", "isCorrect": false }
+      ],
+      "explanation": "Le drapeau britannique en canton rappelle le passé colonial, le bouclier reprend des symboles locaux comme la canne à sucre et la colombe de paix."
+    },
+    {
+      "ref": "geo-101",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tonga.webp",
+        "alt": "Drapeau rouge avec un rectangle blanc en haut à gauche, orné d'une croix rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tonga.svg"
+        }
+      },
+      "answers": [
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Géorgie", "isCorrect": false },
+        { "text": "Tonga", "isCorrect": true },
+        { "text": "Suisse", "isCorrect": false }
+      ],
+      "explanation": "Adopté en 1875, ce drapeau est protégé par la constitution tongienne, qui interdit officiellement de le modifier."
+    },
+    {
+      "ref": "geo-102",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-samoa.webp",
+        "alt": "Drapeau rouge avec un rectangle bleu en haut à gauche portant cinq étoiles blanches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Samoa.svg"
+        }
+      },
+      "answers": [
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Samoa", "isCorrect": true },
+        { "text": "Australie", "isCorrect": false }
+      ],
+      "explanation": "Les cinq étoiles représentent la constellation de la Croix du Sud, visible dans l'hémisphère austral."
+    },
+    {
+      "ref": "geo-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-vanuatu.webp",
+        "alt": "Drapeau divisé en diagonale noir et vert, bordé de bandes jaunes, avec un emblème de défense de sanglier et de fougères",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Vanuatu.svg"
+        }
+      },
+      "answers": [
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Îles Salomon", "isCorrect": false },
+        { "text": "Vanuatu", "isCorrect": true }
+      ],
+      "explanation": "Le sanglier et les feuilles de fougère sont des symboles traditionnels mélanésiens de prospérité."
+    },
+    {
+      "ref": "geo-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-palaos.webp",
+        "alt": "Drapeau bleu uni avec un grand disque jaune légèrement décalé vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Palau.svg"
+        }
+      },
+      "answers": [
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Palaos", "isCorrect": true },
+        { "text": "Kazakhstan", "isCorrect": false }
+      ],
+      "explanation": "Le disque jaune représente la pleine lune, traditionnellement associée aux moments propices à la pêche et aux récoltes."
+    },
+    {
+      "ref": "geo-105",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tuvalu.webp",
+        "alt": "Drapeau bleu clair avec le drapeau du Royaume-Uni en haut à gauche et neuf étoiles jaunes dispersées",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tuvalu.svg"
+        }
+      },
+      "answers": [
+        { "text": "Niue", "isCorrect": false },
+        { "text": "Tuvalu", "isCorrect": true },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Îles Cook", "isCorrect": false }
+      ],
+      "explanation": "Les neuf étoiles représentent les neuf îles principales de l'archipel."
+    },
+    {
+      "ref": "geo-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nauru.webp",
+        "alt": "Drapeau bleu traversé d'une fine bande horizontale jaune, avec une étoile blanche à douze branches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Nauru.svg"
+        }
+      },
+      "answers": [
+        { "text": "Nauru", "isCorrect": true },
+        { "text": "Îles Marshall", "isCorrect": false },
+        { "text": "Kiribati", "isCorrect": false },
+        { "text": "Palaos", "isCorrect": false }
+      ],
+      "explanation": "L'étoile symbolise les douze tribus originelles de l'île, et la bande jaune représente l'équateur, que Nauru chevauche presque."
+    },
+    {
+      "ref": "geo-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-papouasie-nouvelle-guinee.webp",
+        "alt": "Drapeau divisé en diagonale, rouge avec un oiseau de paradis jaune, et noir avec les étoiles de la Croix du Sud",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Papua_New_Guinea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Vanuatu", "isCorrect": false },
+        { "text": "Îles Salomon", "isCorrect": false },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": true }
+      ],
+      "explanation": "L'oiseau de paradis est une espèce emblématique du pays, et les cinq étoiles représentent la Croix du Sud."
+    },
+    {
+      "ref": "geo-108",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-iles-salomon.webp",
+        "alt": "Drapeau coupé en diagonale par une bande jaune, bleu avec cinq étoiles blanches en haut, vert en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Solomon_Islands.svg"
+        }
+      },
+      "answers": [
+        { "text": "Kiribati", "isCorrect": false },
+        { "text": "Îles Salomon", "isCorrect": true },
+        { "text": "Vanuatu", "isCorrect": false },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false }
+      ],
+      "explanation": "Les cinq étoiles représentent les cinq principales provinces historiques de l'archipel."
+    },
+    {
+      "ref": "geo-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-iles-marshall.webp",
+        "alt": "Drapeau bleu avec deux bandes diagonales orange et blanche et une étoile blanche à vingt-quatre branches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Marshall_Islands.svg"
+        }
+      },
+      "answers": [
+        { "text": "Nauru", "isCorrect": false },
+        { "text": "Îles Marshall", "isCorrect": true },
+        { "text": "Kiribati", "isCorrect": false },
+        { "text": "Palaos", "isCorrect": false }
+      ],
+      "explanation": "Les 24 rayons de l'étoile représentent les 24 municipalités de l'archipel."
+    },
+    {
+      "ref": "geo-110",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-micronesie.webp",
+        "alt": "Drapeau bleu uni avec quatre étoiles blanches disposées en losange au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Federated_States_of_Micronesia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Vanuatu", "isCorrect": false },
+        { "text": "Samoa", "isCorrect": false },
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Micronésie", "isCorrect": true }
+      ],
+      "explanation": "Les quatre étoiles représentent les quatre États de la fédération : Chuuk, Kosrae, Pohnpei et Yap."
+    },
+    {
+      "ref": "geo-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-kiribati.webp",
+        "alt": "Drapeau avec un soleil levant rouge et jaune surmontant une frégate en vol, au-dessus de bandes ondulées bleues et blanches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kiribati.svg"
+        }
+      },
+      "answers": [
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Tuvalu", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Kiribati", "isCorrect": true }
+      ],
+      "explanation": "Le soleil levant symbolise la position du pays, à cheval sur l'équateur et la ligne de changement de date."
+    },
+    {
+      "ref": "geo-112",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-australie.webp",
+        "alt": "Drapeau bleu avec le drapeau du Royaume-Uni en haut à gauche, une grande étoile blanche à sept branches et la Croix du Sud",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Australia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tuvalu", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Australie", "isCorrect": true },
+        { "text": "Fidji", "isCorrect": false }
+      ],
+      "explanation": "L'étoile à sept branches sous le drapeau britannique représente les six États et les territoires fédéraux."
+    },
+    {
+      "ref": "geo-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-kenya.webp",
+        "alt": "Drapeau à bandes noire, rouge et verte séparées de fines lignes blanches, avec un bouclier maasaï et deux lances croisées au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kenya.svg"
+        }
+      },
+      "answers": [
+        { "text": "Kenya", "isCorrect": true },
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Soudan du Sud", "isCorrect": false }
+      ],
+      "explanation": "Le bouclier et les lances maasaï symbolisent la défense de la liberté retrouvée à l'indépendance, en 1963."
+    },
+    {
+      "ref": "geo-114",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-ghana.webp",
+        "alt": "Drapeau tricolore horizontal rouge, jaune et vert, avec une étoile noire à cinq branches au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ghana.svg"
+        }
+      },
+      "answers": [
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Sénégal", "isCorrect": false },
+        { "text": "Mali", "isCorrect": false },
+        { "text": "Ghana", "isCorrect": true }
+      ],
+      "explanation": "Première colonie africaine à obtenir son indépendance en 1957, le Ghana a inspiré l'étoile noire adoptée depuis par plusieurs autres drapeaux africains."
+    },
+    {
+      "ref": "geo-115",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-chine.webp",
+        "alt": "Drapeau rouge avec une grande étoile jaune et quatre petites étoiles disposées en arc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_People%27s_Republic_of_China.svg"
+        }
+      },
+      "answers": [
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Angola", "isCorrect": false },
+        { "text": "Corée du Nord", "isCorrect": false },
+        { "text": "Viêt Nam", "isCorrect": false }
+      ],
+      "explanation": "L'étoile principale représente le Parti communiste chinois, et les quatre petites étoiles les classes sociales unies autour de lui."
+    },
+    {
+      "ref": "geo-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-coree-du-sud.webp",
+        "alt": "Drapeau blanc avec un symbole rouge et bleu en spirale au centre, entouré de quatre trigrammes noirs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Korea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Corée du Sud", "isCorrect": true },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Taïwan", "isCorrect": false },
+        { "text": "Mongolie", "isCorrect": false }
+      ],
+      "explanation": "Le symbole central, le taegeuk, illustre l'équilibre des forces opposées (yin et yang)."
+    },
+    {
+      "ref": "geo-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-thailande.webp",
+        "alt": "Drapeau à cinq bandes horizontales : rouge, blanche, bleue (large), blanche et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Thailand.svg"
+        }
+      },
+      "answers": [
+        { "text": "Thaïlande", "isCorrect": true },
+        { "text": "Luxembourg", "isCorrect": false },
+        { "text": "Costa Rica", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "La bande bleue centrale, ajoutée en 1917, représente la monarchie."
+    },
+    {
+      "ref": "geo-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-vietnam.webp",
+        "alt": "Drapeau rouge avec une grande étoile jaune à cinq branches au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Vietnam.svg"
+        }
+      },
+      "answers": [
+        { "text": "Viêt Nam", "isCorrect": true },
+        { "text": "Corée du Nord", "isCorrect": false },
+        { "text": "Chine", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": false }
+      ],
+      "explanation": "L'étoile symbolise les cinq classes sociales unies dans la lutte pour l'indépendance : ouvriers, paysans, soldats, intellectuels et commerçants."
+    },
+    {
+      "ref": "geo-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-indonesie.webp",
+        "alt": "Drapeau à deux bandes horizontales égales, rouge en haut et blanche en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Indonesia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Singapour", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Indonésie", "isCorrect": true }
+      ],
+      "explanation": "Ce drapeau est quasiment identique à celui de Monaco, à ses proportions près."
+    },
+    {
+      "ref": "geo-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-liban.webp",
+        "alt": "Drapeau à deux bandes rouges horizontales encadrant une large bande blanche, où figure un cèdre vert au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Lebanon.svg"
+        }
+      },
+      "answers": [
+        { "text": "Liban", "isCorrect": true },
+        { "text": "Syrie", "isCorrect": false },
+        { "text": "Maroc", "isCorrect": false },
+        { "text": "Chypre", "isCorrect": false }
+      ],
+      "explanation": "Le cèdre vert au centre est l'arbre national, mentionné dans l'Ancien Testament."
+    },
+    {
+      "ref": "geo-121",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-israel.webp",
+        "alt": "Drapeau blanc avec deux bandes bleues horizontales et une étoile de David bleue au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Israel.svg"
+        }
+      },
+      "answers": [
+        { "text": "Israël", "isCorrect": true },
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false }
+      ],
+      "explanation": "L'étoile et les bandes bleues s'inspirent du châle de prière juif traditionnel (talith)."
+    },
+    {
+      "ref": "geo-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-arabie-saoudite.webp",
+        "alt": "Drapeau vert avec une inscription blanche en calligraphie arabe au-dessus d'un sabre horizontal",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Saudi_Arabia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Arabie saoudite", "isCorrect": true },
+        { "text": "Libye", "isCorrect": false },
+        { "text": "Émirats arabes unis", "isCorrect": false },
+        { "text": "Qatar", "isCorrect": false }
+      ],
+      "explanation": "L'inscription est la chahada, la profession de foi musulmane, ce qui empêche de mettre ce drapeau en berne."
+    },
+    {
+      "ref": "geo-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-pakistan.webp",
+        "alt": "Drapeau majoritairement vert avec une bande blanche verticale côté hampe, un croissant et une étoile blancs au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Pakistan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Pakistan", "isCorrect": true },
+        { "text": "Mauritanie", "isCorrect": false },
+        { "text": "Algérie", "isCorrect": false }
+      ],
+      "explanation": "Le croissant et l'étoile symbolisent le progrès et la lumière ; la bande blanche représente les minorités religieuses."
+    },
+    {
+      "ref": "geo-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-singapour.webp",
+        "alt": "Drapeau à deux bandes horizontales rouge et blanche, avec un croissant blanc et cinq petites étoiles en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Singapore.svg"
+        }
+      },
+      "answers": [
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Singapour", "isCorrect": true }
+      ],
+      "explanation": "Le croissant et les cinq étoiles symbolisent une nation en progrès, animée par la démocratie, la paix, le progrès, la justice et l'égalité."
+    },
+    {
+      "ref": "geo-125",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-italie.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Italy.svg"
+        }
+      },
+      "answers": [
+        { "text": "Italie", "isCorrect": true },
+        { "text": "Mexique", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Hongrie", "isCorrect": false }
+      ],
+      "explanation": "Inspiré du drapeau français, ce tricolore fut adopté par les légions napoléoniennes avant de devenir celui de l'Italie unifiée."
+    },
+    {
+      "ref": "geo-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-espagne.webp",
+        "alt": "Drapeau à trois bandes horizontales rouge, jaune (large) et rouge, avec un blason sur la partie jaune",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Spain.svg"
+        }
+      },
+      "answers": [
+        { "text": "Espagne", "isCorrect": true },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": false }
+      ],
+      "explanation": "Le blason, présent uniquement sur la bande jaune, représente les anciens royaumes ayant formé l'Espagne."
+    },
+    {
+      "ref": "geo-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-allemagne.webp",
+        "alt": "Drapeau à trois bandes horizontales noire, rouge et or",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Germany.svg"
+        }
+      },
+      "answers": [
+        { "text": "Allemagne", "isCorrect": true },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false }
+      ],
+      "explanation": "Ces couleurs, popularisées lors des guerres napoléoniennes, sont devenues celles de la République de Weimar puis de l'Allemagne actuelle."
+    },
+    {
+      "ref": "geo-128",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-suisse.webp",
+        "alt": "Drapeau carré rouge avec une croix blanche au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Switzerland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Tonga", "isCorrect": false },
+        { "text": "Géorgie", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": true }
+      ],
+      "explanation": "C'est, avec celui du Vatican, l'un des deux seuls drapeaux nationaux carrés au monde."
+    },
+    {
+      "ref": "geo-129",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-grece.webp",
+        "alt": "Drapeau à neuf bandes horizontales bleues et blanches alternées, avec une croix blanche sur fond bleu en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Greece.svg"
+        }
+      },
+      "answers": [
+        { "text": "Uruguay", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Israël", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": true }
+      ],
+      "explanation": "Les neuf bandes représenteraient les neuf syllabes de la devise grecque « Eleftheria i thanatos » (la liberté ou la mort)."
+    },
+    {
+      "ref": "geo-130",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-irlande.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et orange",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ireland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": true },
+        { "text": "Côte d'Ivoire", "isCorrect": false },
+        { "text": "Inde", "isCorrect": false }
+      ],
+      "explanation": "Le blanc central symbolise la paix entre les catholiques (vert) et les protestants (orange) d'Irlande."
+    },
+    {
+      "ref": "geo-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-islande.webp",
+        "alt": "Drapeau bleu avec une croix rouge bordée de blanc, décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Royaume-Uni", "isCorrect": false },
+        { "text": "Islande", "isCorrect": true },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": false }
+      ],
+      "explanation": "Les couleurs rappellent le paysage islandais : le rouge du feu volcanique, le blanc des glaciers et le bleu de l'océan."
+    },
+    {
+      "ref": "geo-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-pologne.webp",
+        "alt": "Drapeau à deux bandes horizontales égales, blanche en haut et rouge en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Poland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pologne", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Singapour", "isCorrect": false }
+      ],
+      "explanation": "Le blanc représenterait l'aigle blanc, emblème historique du pays, et le rouge le champ sur lequel il figure dans les armoiries."
+    },
+    {
+      "ref": "geo-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-portugal.webp",
+        "alt": "Drapeau divisé verticalement en vert et rouge, avec un blason armorié et une sphère armillaire dorée au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Portugal.svg"
+        }
+      },
+      "answers": [
+        { "text": "Angola", "isCorrect": false },
+        { "text": "Portugal", "isCorrect": true },
+        { "text": "Cap-Vert", "isCorrect": false },
+        { "text": "Mozambique", "isCorrect": false }
+      ],
+      "explanation": "La sphère armillaire rappelle l'âge des grandes découvertes maritimes portugaises."
+    },
+    {
+      "ref": "geo-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-canada.webp",
+        "alt": "Drapeau blanc avec deux bandes rouges verticales et une feuille d'érable rouge stylisée au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Canada.svg"
+        }
+      },
+      "answers": [
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Canada", "isCorrect": true },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": false }
+      ],
+      "explanation": "La feuille d'érable est un symbole canadien depuis le XVIIIe siècle, officialisé sur le drapeau en 1965."
+    },
+    {
+      "ref": "geo-135",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-etats-unis.webp",
+        "alt": "Drapeau à treize bandes horizontales rouges et blanches alternées, avec un rectangle bleu étoilé en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_States.svg"
+        }
+      },
+      "answers": [
+        { "text": "Libéria", "isCorrect": false },
+        { "text": "Malaisie", "isCorrect": false },
+        { "text": "États-Unis", "isCorrect": true },
+        { "text": "Cuba", "isCorrect": false }
+      ],
+      "explanation": "Les treize bandes représentent les treize colonies fondatrices, et les étoiles les 50 États actuels."
+    },
+    {
+      "ref": "geo-136",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-cuba.webp",
+        "alt": "Drapeau à cinq bandes horizontales bleues et blanches alternées, avec un triangle rouge et une étoile blanche côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Cuba.svg"
+        }
+      },
+      "answers": [
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "Chili", "isCorrect": false },
+        { "text": "Panama", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": true }
+      ],
+      "explanation": "Ce drapeau a servi de modèle à celui de Porto Rico, qui en inverse simplement les couleurs du triangle et des bandes."
+    },
+    {
+      "ref": "geo-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-jamaique.webp",
+        "alt": "Drapeau traversé de bandes diagonales dorées en croix de Saint-André, séparant des triangles verts et noirs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Jamaica.svg"
+        }
+      },
+      "answers": [
+        { "text": "Afrique du Sud", "isCorrect": false },
+        { "text": "Eswatini", "isCorrect": false },
+        { "text": "Jamaïque", "isCorrect": true },
+        { "text": "Tanzanie", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul drapeau national au monde ne comportant ni rouge, ni blanc, ni bleu."
+    },
+    {
+      "ref": "geo-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-perou.webp",
+        "alt": "Drapeau tricolore vertical rouge, blanc et rouge, avec un blason armorié au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Peru.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pérou", "isCorrect": true },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Panama", "isCorrect": false },
+        { "text": "Canada", "isCorrect": false }
+      ],
+      "explanation": "Selon la légende, les couleurs auraient été inspirées par un vol de flamants roses observé par le général San Martín."
+    },
+    {
+      "ref": "geo-139",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-chili.webp",
+        "alt": "Drapeau à deux bandes horizontales, blanche en haut et rouge en bas, avec un carré bleu et une étoile blanche en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Chile.svg"
+        }
+      },
+      "answers": [
+        { "text": "Panama", "isCorrect": false },
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Chili", "isCorrect": true }
+      ],
+      "explanation": "Surnommé « la Estrella Solitaria » (l'étoile solitaire), ce drapeau est très proche de celui du Texas, adopté plus tard."
+    },
+    {
+      "ref": "geo-140",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-colombie.webp",
+        "alt": "Drapeau à trois bandes horizontales jaune, bleue et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Colombia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Équateur", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": false },
+        { "text": "Colombie", "isCorrect": true },
+        { "text": "Venezuela", "isCorrect": false }
+      ],
+      "explanation": "Le Venezuela et l'Équateur partagent les mêmes couleurs, les trois pays étant issus de la Grande Colombie du XIXe siècle."
+    },
+    {
+      "ref": "geo-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-equateur.webp",
+        "alt": "Drapeau à trois bandes horizontales jaune, bleue et rouge, avec un blason orné d'un condor au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ecuador.svg"
+        }
+      },
+      "answers": [
+        { "text": "Colombie", "isCorrect": false },
+        { "text": "Venezuela", "isCorrect": false },
+        { "text": "Bolivie", "isCorrect": false },
+        { "text": "Équateur", "isCorrect": true }
+      ],
+      "explanation": "Le condor andin au centre du blason symbolise la puissance et la grandeur du pays."
+    },
+    {
+      "ref": "geo-142",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-panama.webp",
+        "alt": "Drapeau divisé en quatre quartiers blancs, bleu et rouge, avec une étoile bleue et une étoile rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Panama.svg"
+        }
+      },
+      "answers": [
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "République dominicaine", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Panama", "isCorrect": true }
+      ],
+      "explanation": "Les étoiles bleue et rouge représenteraient la pureté et l'autorité de la loi, selon la symbolique officielle."
+    },
+    {
+      "ref": "geo-207",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-algerie.webp",
+        "alt": "Drapeau divisé verticalement en vert et blanc, avec un croissant et une étoile rouges au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Algeria.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mauritanie", "isCorrect": false },
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Algérie", "isCorrect": true }
+      ],
+      "explanation": "Il a été adopté à l'indépendance du pays, en 1962."
+    },
+    {
+      "ref": "geo-208",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-angola.webp",
+        "alt": "Drapeau à deux bandes horizontales rouge et noire, avec au centre une demi-roue dentée jaune, une machette et une étoile",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Angola.svg"
+        }
+      },
+      "answers": [
+        { "text": "Zimbabwe", "isCorrect": false },
+        { "text": "Angola", "isCorrect": true },
+        { "text": "Mozambique", "isCorrect": false },
+        { "text": "Ouganda", "isCorrect": false }
+      ],
+      "explanation": "La roue dentée et la machette symbolisent les ouvriers et les paysans."
+    },
+    {
+      "ref": "geo-209",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-benin.webp",
+        "alt": "Drapeau avec une bande verticale verte côté hampe et deux bandes horizontales jaune et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Benin.svg"
+        }
+      },
+      "answers": [
+        { "text": "Sénégal", "isCorrect": false },
+        { "text": "Cameroun", "isCorrect": false },
+        { "text": "Guinée-Bissau", "isCorrect": false },
+        { "text": "Bénin", "isCorrect": true }
+      ],
+      "explanation": "Il reprend les couleurs panafricaines : vert, jaune et rouge."
+    },
+    {
+      "ref": "geo-210",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-botswana.webp",
+        "alt": "Drapeau bleu clair traversé au centre d'une bande horizontale noire bordée de blanc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Botswana.svg"
+        }
+      },
+      "answers": [
+        { "text": "Zambie", "isCorrect": false },
+        { "text": "Botswana", "isCorrect": true },
+        { "text": "Somalie", "isCorrect": false },
+        { "text": "Namibie", "isCorrect": false }
+      ],
+      "explanation": "Le bleu évoque l'eau et la pluie, précieuses dans ce pays en grande partie couvert par le désert du Kalahari."
+    },
+    {
+      "ref": "geo-211",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-burkina-faso.webp",
+        "alt": "Drapeau à deux bandes horizontales rouge et verte, avec une étoile jaune au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Burkina_Faso.svg"
+        }
+      },
+      "answers": [
+        { "text": "Burkina Faso", "isCorrect": true },
+        { "text": "Viêt Nam", "isCorrect": false },
+        { "text": "Ghana", "isCorrect": false },
+        { "text": "Cameroun", "isCorrect": false }
+      ],
+      "explanation": "Il a été adopté en 1984, quand la Haute-Volta a pris le nom de Burkina Faso, « pays des hommes intègres »."
+    },
+    {
+      "ref": "geo-212",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-burundi.webp",
+        "alt": "Drapeau divisé par une croix de Saint-André blanche en triangles rouges et verts, avec un disque blanc central portant trois étoiles rouges",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Burundi.svg"
+        }
+      },
+      "answers": [
+        { "text": "Burundi", "isCorrect": true },
+        { "text": "Rwanda", "isCorrect": false },
+        { "text": "Comores", "isCorrect": false },
+        { "text": "Jamaïque", "isCorrect": false }
+      ],
+      "explanation": "Les trois étoiles représentent les trois principaux groupes ethniques du pays : Hutus, Tutsis et Twas."
+    },
+    {
+      "ref": "geo-213",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-cameroun.webp",
+        "alt": "Drapeau tricolore vertical vert, rouge et jaune, avec une étoile jaune au centre de la bande rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Cameroon.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mali", "isCorrect": false },
+        { "text": "Sénégal", "isCorrect": false },
+        { "text": "Cameroun", "isCorrect": true },
+        { "text": "Guinée", "isCorrect": false }
+      ],
+      "explanation": "Il ressemble beaucoup à celui du Sénégal, qui est vert, jaune et rouge avec une étoile verte."
+    },
+    {
+      "ref": "geo-214",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-cap-vert.webp",
+        "alt": "Drapeau bleu traversé d'une bande horizontale blanche et rouge, avec un cercle de dix étoiles jaunes",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Cape_Verde.svg"
+        }
+      },
+      "answers": [
+        { "text": "Seychelles", "isCorrect": false },
+        { "text": "Cap-Vert", "isCorrect": true },
+        { "text": "Sao Tomé-et-Principe", "isCorrect": false },
+        { "text": "Comores", "isCorrect": false }
+      ],
+      "explanation": "Les dix étoiles représentent les dix îles principales de l'archipel."
+    },
+    {
+      "ref": "geo-215",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-centrafrique.webp",
+        "alt": "Drapeau à quatre bandes horizontales bleue, blanche, verte et jaune, traversées par une bande verticale rouge, avec une étoile jaune en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Central_African_Republic.svg"
+        }
+      },
+      "answers": [
+        { "text": "Centrafrique", "isCorrect": true },
+        { "text": "Tchad", "isCorrect": false },
+        { "text": "Gabon", "isCorrect": false },
+        { "text": "Congo", "isCorrect": false }
+      ],
+      "explanation": "Il associe les couleurs françaises (bleu, blanc, rouge) et les couleurs panafricaines (vert, jaune, rouge)."
+    },
+    {
+      "ref": "geo-216",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-comores.webp",
+        "alt": "Drapeau à quatre bandes horizontales jaune, blanche, rouge et bleue, avec un triangle vert côté hampe portant un croissant et quatre étoiles blancs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Comoros.svg"
+        }
+      },
+      "answers": [
+        { "text": "Comores", "isCorrect": true },
+        { "text": "Maurice", "isCorrect": false },
+        { "text": "Mauritanie", "isCorrect": false },
+        { "text": "Maldives", "isCorrect": false }
+      ],
+      "explanation": "Les quatre étoiles et les quatre bandes représentent les quatre îles de l'archipel, dont Mayotte, revendiquée par les Comores mais restée française."
+    },
+    {
+      "ref": "geo-217",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-congo.webp",
+        "alt": "Drapeau coupé en diagonale, avec un triangle vert, une bande jaune et un triangle rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Republic_of_the_Congo.svg"
+        }
+      },
+      "answers": [
+        { "text": "Gabon", "isCorrect": false },
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "République du Congo", "isCorrect": true },
+        { "text": "République démocratique du Congo", "isCorrect": false }
+      ],
+      "explanation": "À ne pas confondre avec son voisin, la République démocratique du Congo, de l'autre côté du fleuve Congo."
+    },
+    {
+      "ref": "geo-218",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-rd-congo.webp",
+        "alt": "Drapeau bleu ciel traversé d'une bande diagonale rouge bordée de jaune, avec une étoile jaune en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Democratic_Republic_of_the_Congo.svg"
+        }
+      },
+      "answers": [
+        { "text": "Somalie", "isCorrect": false },
+        { "text": "République démocratique du Congo", "isCorrect": true },
+        { "text": "République du Congo", "isCorrect": false },
+        { "text": "Tanzanie", "isCorrect": false }
+      ],
+      "explanation": "Sa capitale, Kinshasa, fait face à Brazzaville, capitale de la République du Congo, de part et d'autre du fleuve Congo."
+    },
+    {
+      "ref": "geo-219",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-cote-d-ivoire.webp",
+        "alt": "Drapeau tricolore vertical orange, blanc et vert",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_C%C3%B4te_d%27Ivoire.svg"
+        }
+      },
+      "answers": [
+        { "text": "Inde", "isCorrect": false },
+        { "text": "Niger", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Côte d'Ivoire", "isCorrect": true }
+      ],
+      "explanation": "C'est l'inverse exact du drapeau irlandais, qui est vert, blanc et orange."
+    },
+    {
+      "ref": "geo-220",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-djibouti.webp",
+        "alt": "Drapeau à deux bandes horizontales bleu clair et verte, avec un triangle blanc côté hampe portant une étoile rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Djibouti.svg"
+        }
+      },
+      "answers": [
+        { "text": "Comores", "isCorrect": false },
+        { "text": "Djibouti", "isCorrect": true },
+        { "text": "Érythrée", "isCorrect": false },
+        { "text": "Somalie", "isCorrect": false }
+      ],
+      "explanation": "Le bleu représente la mer et le ciel, le vert la terre."
+    },
+    {
+      "ref": "geo-221",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-egypte.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et noir, avec un aigle doré au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Egypt.svg"
+        }
+      },
+      "answers": [
+        { "text": "Syrie", "isCorrect": false },
+        { "text": "Yémen", "isCorrect": false },
+        { "text": "Irak", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": true }
+      ],
+      "explanation": "L'aigle doré est l'aigle de Saladin. Le Yémen a les mêmes bandes, mais sans emblème."
+    },
+    {
+      "ref": "geo-222",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-erythree.webp",
+        "alt": "Drapeau divisé par un triangle rouge pointant vers la droite, entre un triangle vert en haut et un bleu en bas, avec une couronne d'olivier dorée",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Eritrea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Djibouti", "isCorrect": false },
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Soudan du Sud", "isCorrect": false },
+        { "text": "Érythrée", "isCorrect": true }
+      ],
+      "explanation": "Indépendante de l'Éthiopie depuis 1993, l'Érythrée a adopté ce drapeau en 1995."
+    },
+    {
+      "ref": "geo-223",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-eswatini.webp",
+        "alt": "Drapeau à bandes horizontales bleues, jaunes et une large bande rouge, avec un bouclier noir et blanc et deux lances au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Eswatini.svg"
+        }
+      },
+      "answers": [
+        { "text": "Lesotho", "isCorrect": false },
+        { "text": "Eswatini", "isCorrect": true },
+        { "text": "Botswana", "isCorrect": false },
+        { "text": "Kenya", "isCorrect": false }
+      ],
+      "explanation": "Le pays s'appelait le Swaziland jusqu'en 2018."
+    },
+    {
+      "ref": "geo-224",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-ethiopie.webp",
+        "alt": "Drapeau tricolore horizontal vert, jaune et rouge, avec un disque bleu et une étoile jaune au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ethiopia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bolivie", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false },
+        { "text": "Éthiopie", "isCorrect": true },
+        { "text": "Ghana", "isCorrect": false }
+      ],
+      "explanation": "Ses couleurs vert, jaune et rouge ont inspiré de nombreux drapeaux africains, d'où leur nom de couleurs panafricaines."
+    },
+    {
+      "ref": "geo-225",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-gabon.webp",
+        "alt": "Drapeau tricolore horizontal vert, jaune et bleu",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Gabon.svg"
+        }
+      },
+      "answers": [
+        { "text": "Gambie", "isCorrect": false },
+        { "text": "Gabon", "isCorrect": true },
+        { "text": "Rwanda", "isCorrect": false },
+        { "text": "Sierra Leone", "isCorrect": false }
+      ],
+      "explanation": "Le vert représente la forêt équatoriale, le jaune l'équateur et le soleil, le bleu la mer."
+    },
+    {
+      "ref": "geo-226",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-gambie.webp",
+        "alt": "Drapeau à bandes horizontales rouge, bleue et verte, séparées par de fines lignes blanches",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_The_Gambia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Gambie", "isCorrect": true },
+        { "text": "Gabon", "isCorrect": false },
+        { "text": "Kenya", "isCorrect": false },
+        { "text": "Sierra Leone", "isCorrect": false }
+      ],
+      "explanation": "La bande bleue représente le fleuve Gambie, qui traverse tout le pays."
+    },
+    {
+      "ref": "geo-227",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-guinee.webp",
+        "alt": "Drapeau tricolore vertical rouge, jaune et vert",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Guinea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Sénégal", "isCorrect": false },
+        { "text": "Cameroun", "isCorrect": false },
+        { "text": "Mali", "isCorrect": false },
+        { "text": "Guinée", "isCorrect": true }
+      ],
+      "explanation": "C'est le drapeau du Mali inversé, qui est vert, jaune et rouge."
+    },
+    {
+      "ref": "geo-228",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-guinee-bissau.webp",
+        "alt": "Drapeau avec une bande verticale rouge portant une étoile noire côté hampe, et deux bandes horizontales jaune et verte",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Guinea-Bissau.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ghana", "isCorrect": false },
+        { "text": "Guinée-Bissau", "isCorrect": true },
+        { "text": "Bénin", "isCorrect": false },
+        { "text": "Cap-Vert", "isCorrect": false }
+      ],
+      "explanation": "L'étoile noire est un symbole de l'unité africaine, comme sur le drapeau du Ghana."
+    },
+    {
+      "ref": "geo-229",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-guinee-equatoriale.webp",
+        "alt": "Drapeau tricolore horizontal vert, blanc et rouge, avec un triangle bleu côté hampe et des armoiries au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Equatorial_Guinea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Guinée équatoriale", "isCorrect": true },
+        { "text": "Cameroun", "isCorrect": false },
+        { "text": "Sao Tomé-et-Principe", "isCorrect": false },
+        { "text": "Gabon", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul pays d'Afrique dont l'espagnol est une langue officielle."
+    },
+    {
+      "ref": "geo-230",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-lesotho.webp",
+        "alt": "Drapeau à trois bandes horizontales bleue, blanche et verte, avec un chapeau traditionnel noir au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Lesotho.svg"
+        }
+      },
+      "answers": [
+        { "text": "Eswatini", "isCorrect": false },
+        { "text": "Lesotho", "isCorrect": true },
+        { "text": "Sierra Leone", "isCorrect": false },
+        { "text": "Botswana", "isCorrect": false }
+      ],
+      "explanation": "Le chapeau noir est le mokorotlo, couvre-chef traditionnel du peuple basotho."
+    },
+    {
+      "ref": "geo-231",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-liberia.webp",
+        "alt": "Drapeau à onze bandes horizontales rouges et blanches, avec un carré bleu portant une étoile blanche en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Liberia.svg"
+        }
+      },
+      "answers": [
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "Togo", "isCorrect": false },
+        { "text": "Liberia", "isCorrect": true },
+        { "text": "Cuba", "isCorrect": false }
+      ],
+      "explanation": "Fondé par d'anciens esclaves venus des États-Unis, le pays s'est inspiré du drapeau américain."
+    },
+    {
+      "ref": "geo-232",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-libye.webp",
+        "alt": "Drapeau à trois bandes horizontales rouge, noire (large) et verte, avec un croissant et une étoile blancs au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Libya.svg"
+        }
+      },
+      "answers": [
+        { "text": "Égypte", "isCorrect": false },
+        { "text": "Libye", "isCorrect": true },
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Soudan", "isCorrect": false }
+      ],
+      "explanation": "Ce drapeau de l'indépendance (1951) a été rétabli en 2011, après la chute de Kadhafi, dont le drapeau était entièrement vert."
+    },
+    {
+      "ref": "geo-233",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-madagascar.webp",
+        "alt": "Drapeau avec une bande verticale blanche côté hampe et deux bandes horizontales rouge et verte",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Madagascar.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bénin", "isCorrect": false },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Madagascar", "isCorrect": true },
+        { "text": "Guinée-Bissau", "isCorrect": false }
+      ],
+      "explanation": "Le rouge et le blanc rappellent l'ancien royaume merina, le vert représente les populations côtières."
+    },
+    {
+      "ref": "geo-234",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-malawi.webp",
+        "alt": "Drapeau tricolore horizontal noir, rouge et vert, avec un soleil levant rouge en haut",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Malawi.svg"
+        }
+      },
+      "answers": [
+        { "text": "Malawi", "isCorrect": true },
+        { "text": "Libye", "isCorrect": false },
+        { "text": "Soudan du Sud", "isCorrect": false },
+        { "text": "Kenya", "isCorrect": false }
+      ],
+      "explanation": "Le soleil levant symbolise l'aube de l'espoir et de la liberté pour l'Afrique."
+    },
+    {
+      "ref": "geo-235",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-mali.webp",
+        "alt": "Drapeau tricolore vertical vert, jaune et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mali.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mali", "isCorrect": true },
+        { "text": "Cameroun", "isCorrect": false },
+        { "text": "Guinée", "isCorrect": false },
+        { "text": "Sénégal", "isCorrect": false }
+      ],
+      "explanation": "Le Sénégal a les mêmes bandes, avec en plus une étoile verte au centre."
+    },
+    {
+      "ref": "geo-236",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-maroc.webp",
+        "alt": "Drapeau rouge avec une étoile verte à cinq branches, dessinée par un simple contour, au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Morocco.svg"
+        }
+      },
+      "answers": [
+        { "text": "Maroc", "isCorrect": true },
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Viêt Nam", "isCorrect": false },
+        { "text": "Turquie", "isCorrect": false }
+      ],
+      "explanation": "L'étoile verte à cinq branches est appelée le sceau de Salomon."
+    },
+    {
+      "ref": "geo-237",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-maurice.webp",
+        "alt": "Drapeau à quatre bandes horizontales rouge, bleue, jaune et verte",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritius.svg"
+        }
+      },
+      "answers": [
+        { "text": "Comores", "isCorrect": false },
+        { "text": "Seychelles", "isCorrect": false },
+        { "text": "Maurice", "isCorrect": true },
+        { "text": "Gabon", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des rares drapeaux à quatre bandes horizontales de même taille."
+    },
+    {
+      "ref": "geo-238",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-mauritanie.webp",
+        "alt": "Drapeau vert avec un croissant et une étoile jaunes, encadré en haut et en bas par une bande rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mauritania.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Mauritanie", "isCorrect": true },
+        { "text": "Algérie", "isCorrect": false },
+        { "text": "Comores", "isCorrect": false }
+      ],
+      "explanation": "Les bandes rouges ont été ajoutées en 2017, en hommage à ceux qui ont versé leur sang pour l'indépendance."
+    },
+    {
+      "ref": "geo-239",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-mozambique.webp",
+        "alt": "Drapeau à bandes horizontales verte, noire et jaune, avec un triangle rouge portant une étoile, un livre, un fusil et une houe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mozambique.svg"
+        }
+      },
+      "answers": [
+        { "text": "Zambie", "isCorrect": false },
+        { "text": "Angola", "isCorrect": false },
+        { "text": "Mozambique", "isCorrect": true },
+        { "text": "Zimbabwe", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul drapeau national au monde qui représente un fusil moderne, une kalachnikov."
+    },
+    {
+      "ref": "geo-240",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-namibie.webp",
+        "alt": "Drapeau coupé par une bande diagonale rouge bordée de blanc, avec un triangle bleu portant un soleil jaune et un triangle vert",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Namibia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Botswana", "isCorrect": false },
+        { "text": "Namibie", "isCorrect": true },
+        { "text": "République du Congo", "isCorrect": false }
+      ],
+      "explanation": "Le soleil à douze rayons représente la vie et l'énergie."
+    },
+    {
+      "ref": "geo-241",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-niger.webp",
+        "alt": "Drapeau tricolore horizontal orange, blanc et vert, avec un disque orange au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Niger.svg"
+        }
+      },
+      "answers": [
+        { "text": "Niger", "isCorrect": true },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Côte d'Ivoire", "isCorrect": false },
+        { "text": "Inde", "isCorrect": false }
+      ],
+      "explanation": "Le disque orange représente le soleil. Le drapeau indien a les mêmes couleurs, avec une roue bleue."
+    },
+    {
+      "ref": "geo-242",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nigeria.webp",
+        "alt": "Drapeau tricolore vertical vert, blanc et vert",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Nigeria.svg"
+        }
+      },
+      "answers": [
+        { "text": "Sierra Leone", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Nigeria", "isCorrect": true },
+        { "text": "Pakistan", "isCorrect": false }
+      ],
+      "explanation": "Le vert représente l'agriculture et les forêts, le blanc la paix."
+    },
+    {
+      "ref": "geo-243",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-ouganda.webp",
+        "alt": "Drapeau à six bandes horizontales noires, jaunes et rouges, avec un disque blanc portant une grue royale au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Uganda.svg"
+        }
+      },
+      "answers": [
+        { "text": "Malawi", "isCorrect": false },
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Ouganda", "isCorrect": true },
+        { "text": "Kenya", "isCorrect": false }
+      ],
+      "explanation": "La grue royale est l'oiseau national du pays."
+    },
+    {
+      "ref": "geo-244",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-rwanda.webp",
+        "alt": "Drapeau bleu clair, avec des bandes horizontales jaune et verte en bas et un soleil jaune en haut à droite",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Rwanda.svg"
+        }
+      },
+      "answers": [
+        { "text": "Gabon", "isCorrect": false },
+        { "text": "Rwanda", "isCorrect": true },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Burundi", "isCorrect": false }
+      ],
+      "explanation": "Ce drapeau a été adopté en 2001, pour tourner la page du génocide de 1994."
+    },
+    {
+      "ref": "geo-245",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-sao-tome-et-principe.webp",
+        "alt": "Drapeau à trois bandes horizontales verte, jaune et verte, avec un triangle rouge côté hampe et deux étoiles noires",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sao_Tome_and_Principe.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ghana", "isCorrect": false },
+        { "text": "Cap-Vert", "isCorrect": false },
+        { "text": "Sao Tomé-et-Principe", "isCorrect": true },
+        { "text": "Guinée équatoriale", "isCorrect": false }
+      ],
+      "explanation": "Les deux étoiles représentent les deux îles principales du pays : São Tomé et Príncipe."
+    },
+    {
+      "ref": "geo-246",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-senegal.webp",
+        "alt": "Drapeau tricolore vertical vert, jaune et rouge, avec une étoile verte au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Senegal.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mali", "isCorrect": false },
+        { "text": "Cameroun", "isCorrect": false },
+        { "text": "Guinée", "isCorrect": false },
+        { "text": "Sénégal", "isCorrect": true }
+      ],
+      "explanation": "Sans l'étoile, ce serait le drapeau du Mali."
+    },
+    {
+      "ref": "geo-247",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-seychelles.webp",
+        "alt": "Drapeau formé de cinq rayons obliques bleu, jaune, rouge, blanc et vert partant du coin inférieur gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Seychelles.svg"
+        }
+      },
+      "answers": [
+        { "text": "Comores", "isCorrect": false },
+        { "text": "Maurice", "isCorrect": false },
+        { "text": "Seychelles", "isCorrect": true },
+        { "text": "Bahamas", "isCorrect": false }
+      ],
+      "explanation": "Les rayons symbolisent un pays dynamique tourné vers l'avenir."
+    },
+    {
+      "ref": "geo-248",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-sierra-leone.webp",
+        "alt": "Drapeau tricolore horizontal vert, blanc et bleu",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sierra_Leone.svg"
+        }
+      },
+      "answers": [
+        { "text": "Lesotho", "isCorrect": false },
+        { "text": "Gambie", "isCorrect": false },
+        { "text": "Gabon", "isCorrect": false },
+        { "text": "Sierra Leone", "isCorrect": true }
+      ],
+      "explanation": "Le bleu représente le port naturel de Freetown, la capitale."
+    },
+    {
+      "ref": "geo-249",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-somalie.webp",
+        "alt": "Drapeau bleu ciel avec une grande étoile blanche à cinq branches au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Somalia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Somalie", "isCorrect": true },
+        { "text": "Micronésie", "isCorrect": false },
+        { "text": "Djibouti", "isCorrect": false },
+        { "text": "Viêt Nam", "isCorrect": false }
+      ],
+      "explanation": "Les cinq branches de l'étoile représentent les cinq régions où vivent les Somalis, réparties entre plusieurs pays."
+    },
+    {
+      "ref": "geo-250",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-soudan.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et noir, avec un triangle vert côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sudan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Palestine", "isCorrect": false },
+        { "text": "Jordanie", "isCorrect": false },
+        { "text": "Soudan", "isCorrect": true },
+        { "text": "Égypte", "isCorrect": false }
+      ],
+      "explanation": "Il reprend les couleurs panarabes, comme ceux de l'Égypte, de la Jordanie ou de la Palestine."
+    },
+    {
+      "ref": "geo-251",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-soudan-du-sud.webp",
+        "alt": "Drapeau à bandes horizontales noire, rouge et verte bordées de blanc, avec un triangle bleu côté hampe portant une étoile jaune",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Sudan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Soudan", "isCorrect": false },
+        { "text": "Soudan du Sud", "isCorrect": true },
+        { "text": "Kenya", "isCorrect": false },
+        { "text": "Érythrée", "isCorrect": false }
+      ],
+      "explanation": "Indépendant depuis 2011, c'est le plus jeune pays du monde."
+    },
+    {
+      "ref": "geo-252",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tanzanie.webp",
+        "alt": "Drapeau coupé par une bande diagonale noire bordée de jaune, entre un triangle vert et un triangle bleu",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tanzania.svg"
+        }
+      },
+      "answers": [
+        { "text": "Namibie", "isCorrect": false },
+        { "text": "République du Congo", "isCorrect": false },
+        { "text": "Tanzanie", "isCorrect": true },
+        { "text": "Jamaïque", "isCorrect": false }
+      ],
+      "explanation": "Le vert et le bleu rappellent les drapeaux du Tanganyika et de Zanzibar, unis en 1964 pour former la Tanzanie."
+    },
+    {
+      "ref": "geo-253",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tchad.webp",
+        "alt": "Drapeau tricolore vertical bleu, jaune et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Chad.svg"
+        }
+      },
+      "answers": [
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": true },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Moldavie", "isCorrect": false }
+      ],
+      "explanation": "Il est presque identique à celui de la Roumanie, dont le bleu est un peu plus clair."
+    },
+    {
+      "ref": "geo-254",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-togo.webp",
+        "alt": "Drapeau à cinq bandes horizontales vertes et jaunes, avec un carré rouge portant une étoile blanche en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Togo.svg"
+        }
+      },
+      "answers": [
+        { "text": "Liberia", "isCorrect": false },
+        { "text": "Bénin", "isCorrect": false },
+        { "text": "Togo", "isCorrect": true },
+        { "text": "Ghana", "isCorrect": false }
+      ],
+      "explanation": "Les cinq bandes représentent les cinq régions du pays."
+    },
+    {
+      "ref": "geo-255",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tunisie.webp",
+        "alt": "Drapeau rouge avec un disque blanc au centre portant un croissant et une étoile rouges",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tunisia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Algérie", "isCorrect": false },
+        { "text": "Tunisie", "isCorrect": true },
+        { "text": "Maroc", "isCorrect": false }
+      ],
+      "explanation": "Il ressemble à celui de la Turquie, qui n'a pas de disque blanc."
+    },
+    {
+      "ref": "geo-256",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-zambie.webp",
+        "alt": "Drapeau vert avec un aigle orange en vol en haut à droite, au-dessus de trois bandes verticales rouge, noire et orange",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Zambia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Angola", "isCorrect": false },
+        { "text": "Zambie", "isCorrect": true },
+        { "text": "Ouganda", "isCorrect": false },
+        { "text": "Zimbabwe", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des rares drapeaux dont les éléments principaux sont placés du côté opposé à la hampe."
+    },
+    {
+      "ref": "geo-257",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-zimbabwe.webp",
+        "alt": "Drapeau à sept bandes horizontales vertes, jaunes, rouges et noire, avec un triangle blanc portant un oiseau doré et une étoile rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Zimbabwe.svg"
+        }
+      },
+      "answers": [
+        { "text": "Zambie", "isCorrect": false },
+        { "text": "Ouganda", "isCorrect": false },
+        { "text": "Mozambique", "isCorrect": false },
+        { "text": "Zimbabwe", "isCorrect": true }
+      ],
+      "explanation": "L'oiseau doré représente les oiseaux sculptés retrouvés dans les ruines du Grand Zimbabwe."
+    },
+    {
+      "ref": "geo-259",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-armenie.webp",
+        "alt": "Drapeau tricolore horizontal rouge, bleu et orange",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Armenia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bolivie", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Arménie", "isCorrect": true }
+      ],
+      "explanation": "Le rouge rappelle le sang versé, le bleu le ciel et l'orange le travail du peuple arménien."
+    },
+    {
+      "ref": "geo-260",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-azerbaidjan.webp",
+        "alt": "Drapeau tricolore horizontal bleu, rouge et vert, avec un croissant et une étoile à huit branches blancs au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Azerbaijan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Turkménistan", "isCorrect": false },
+        { "text": "Ouzbékistan", "isCorrect": false },
+        { "text": "Azerbaïdjan", "isCorrect": true }
+      ],
+      "explanation": "Le bleu évoque les origines turques, le rouge la modernité et le vert l'islam."
+    },
+    {
+      "ref": "geo-261",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bahrein.webp",
+        "alt": "Drapeau rouge avec une bande blanche côté hampe, séparée par une ligne en dents de scie à cinq pointes",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bahrain.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Bahreïn", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Qatar", "isCorrect": false }
+      ],
+      "explanation": "Les cinq pointes représentent les cinq piliers de l'islam. Le drapeau du Qatar est proche, mais bordeaux et à neuf pointes."
+    },
+    {
+      "ref": "geo-262",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bangladesh.webp",
+        "alt": "Drapeau vert avec un disque rouge légèrement décalé vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bangladesh.svg"
+        }
+      },
+      "answers": [
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": true },
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Japon", "isCorrect": false }
+      ],
+      "explanation": "Le disque rouge représente le soleil levant sur le Bengale et le sang versé pendant la guerre d'indépendance de 1971."
+    },
+    {
+      "ref": "geo-263",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-birmanie.webp",
+        "alt": "Drapeau tricolore horizontal jaune, vert et rouge, avec une grande étoile blanche au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Myanmar.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ghana", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false },
+        { "text": "Birmanie", "isCorrect": true },
+        { "text": "Viêt Nam", "isCorrect": false }
+      ],
+      "explanation": "Ce drapeau a été adopté en 2010. Le pays est aussi appelé Myanmar."
+    },
+    {
+      "ref": "geo-264",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-brunei.webp",
+        "alt": "Drapeau jaune traversé par deux bandes diagonales blanche et noire, avec un emblème rouge au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Brunei.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bhoutan", "isCorrect": false },
+        { "text": "Ouganda", "isCorrect": false },
+        { "text": "Brunei", "isCorrect": true },
+        { "text": "Malaisie", "isCorrect": false }
+      ],
+      "explanation": "Le jaune est la couleur du sultan, qui règne sur ce petit pays de l'île de Bornéo."
+    },
+    {
+      "ref": "geo-265",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-cambodge.webp",
+        "alt": "Drapeau à bandes horizontales bleue, rouge (large) et bleue, avec un temple blanc au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Cambodia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Cambodge", "isCorrect": true },
+        { "text": "Thaïlande", "isCorrect": false },
+        { "text": "Laos", "isCorrect": false },
+        { "text": "Costa Rica", "isCorrect": false }
+      ],
+      "explanation": "Le temple représenté est Angkor Wat. C'est l'un des rares drapeaux à montrer un monument."
+    },
+    {
+      "ref": "geo-266",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-coree-du-nord.webp",
+        "alt": "Drapeau bleu et rouge séparé par de fines bandes blanches, avec un disque blanc portant une étoile rouge côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Korea.svg"
+        }
+      },
+      "answers": [
+        { "text": "Corée du Nord", "isCorrect": true },
+        { "text": "Corée du Sud", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Chine", "isCorrect": false }
+      ],
+      "explanation": "Il a été adopté en 1948, au moment de la division de la péninsule coréenne."
+    },
+    {
+      "ref": "geo-267",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-emirats-arabes-unis.webp",
+        "alt": "Drapeau avec une bande verticale rouge côté hampe et trois bandes horizontales verte, blanche et noire",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Arab_Emirates.svg"
+        }
+      },
+      "answers": [
+        { "text": "Jordanie", "isCorrect": false },
+        { "text": "Émirats arabes unis", "isCorrect": true },
+        { "text": "Koweït", "isCorrect": false },
+        { "text": "Soudan", "isCorrect": false }
+      ],
+      "explanation": "Il reprend les couleurs panarabes, comme le drapeau du Koweït, qui a un trapèze noir côté hampe."
+    },
+    {
+      "ref": "geo-268",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-georgie.webp",
+        "alt": "Drapeau blanc avec une grande croix rouge et quatre petites croix rouges dans les angles",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Georgia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tonga", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Géorgie", "isCorrect": true }
+      ],
+      "explanation": "Surnommé le « drapeau aux cinq croix », son motif remonte au Moyen Âge."
+    },
+    {
+      "ref": "geo-269",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-irak.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et noir, avec une inscription verte en arabe au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Iraq.svg"
+        }
+      },
+      "answers": [
+        { "text": "Irak", "isCorrect": true },
+        { "text": "Égypte", "isCorrect": false },
+        { "text": "Yémen", "isCorrect": false },
+        { "text": "Syrie", "isCorrect": false }
+      ],
+      "explanation": "L'inscription signifie « Dieu est le plus grand » (Allahu akbar)."
+    },
+    {
+      "ref": "geo-270",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-iran.webp",
+        "alt": "Drapeau tricolore horizontal vert, blanc et rouge, avec un emblème rouge au centre et des inscriptions le long des bandes",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Iran.svg"
+        }
+      },
+      "answers": [
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Bulgarie", "isCorrect": false },
+        { "text": "Iran", "isCorrect": true },
+        { "text": "Tadjikistan", "isCorrect": false }
+      ],
+      "explanation": "La phrase « Dieu est le plus grand » est répétée 22 fois le long des bandes verte et rouge."
+    },
+    {
+      "ref": "geo-271",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-japon.webp",
+        "alt": "Drapeau blanc avec un disque rouge au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Japan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Corée du Sud", "isCorrect": false },
+        { "text": "Japon", "isCorrect": true },
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false }
+      ],
+      "explanation": "Ce drapeau, appelé Hinomaru (« cercle du soleil »), représente le soleil levant."
+    },
+    {
+      "ref": "geo-272",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-jordanie.webp",
+        "alt": "Drapeau tricolore horizontal noir, blanc et vert, avec un triangle rouge côté hampe portant une étoile blanche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Jordan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Soudan", "isCorrect": false },
+        { "text": "Jordanie", "isCorrect": true },
+        { "text": "Koweït", "isCorrect": false },
+        { "text": "Palestine", "isCorrect": false }
+      ],
+      "explanation": "Il est quasiment identique à celui de la Palestine, qui n'a pas d'étoile."
+    },
+    {
+      "ref": "geo-273",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-kazakhstan.webp",
+        "alt": "Drapeau bleu ciel avec un soleil et un aigle dorés au centre, et un motif ornemental doré côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kazakhstan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Palaos", "isCorrect": false },
+        { "text": "Kazakhstan", "isCorrect": true },
+        { "text": "Ouzbékistan", "isCorrect": false },
+        { "text": "Kirghizistan", "isCorrect": false }
+      ],
+      "explanation": "L'aigle des steppes est un symbole de liberté pour les peuples nomades."
+    },
+    {
+      "ref": "geo-274",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-kirghizistan.webp",
+        "alt": "Drapeau rouge avec un soleil jaune au centre, autour d'un motif représentant le toit d'une yourte",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kyrgyzstan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Viêt Nam", "isCorrect": false },
+        { "text": "Kirghizistan", "isCorrect": true }
+      ],
+      "explanation": "Le motif central est le toit d'une yourte, la tente traditionnelle des nomades. Le dessin des rayons a été modifié en 2023."
+    },
+    {
+      "ref": "geo-275",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-koweit.webp",
+        "alt": "Drapeau à trois bandes horizontales verte, blanche et rouge, avec un trapèze noir côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kuwait.svg"
+        }
+      },
+      "answers": [
+        { "text": "Jordanie", "isCorrect": false },
+        { "text": "Émirats arabes unis", "isCorrect": false },
+        { "text": "Koweït", "isCorrect": true },
+        { "text": "Palestine", "isCorrect": false }
+      ],
+      "explanation": "Il reprend les couleurs panarabes : vert, blanc, rouge et noir."
+    },
+    {
+      "ref": "geo-276",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-laos.webp",
+        "alt": "Drapeau à bandes horizontales rouge, bleue (large) et rouge, avec un disque blanc au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Laos.svg"
+        }
+      },
+      "answers": [
+        { "text": "Cambodge", "isCorrect": false },
+        { "text": "Laos", "isCorrect": true },
+        { "text": "Thaïlande", "isCorrect": false },
+        { "text": "Corée du Nord", "isCorrect": false }
+      ],
+      "explanation": "Le disque blanc représenterait la pleine lune au-dessus du Mékong."
+    },
+    {
+      "ref": "geo-277",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-malaisie.webp",
+        "alt": "Drapeau à quatorze bandes horizontales rouges et blanches, avec un rectangle bleu portant un croissant et une étoile jaunes en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Malaysia.svg"
+        }
+      },
+      "answers": [
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "Liberia", "isCorrect": false },
+        { "text": "Singapour", "isCorrect": false },
+        { "text": "Malaisie", "isCorrect": true }
+      ],
+      "explanation": "Les quatorze bandes et les quatorze branches de l'étoile représentent les treize États et le gouvernement fédéral."
+    },
+    {
+      "ref": "geo-278",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-maldives.webp",
+        "alt": "Drapeau rouge avec un rectangle vert au centre portant un croissant blanc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Maldives.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Maldives", "isCorrect": true }
+      ],
+      "explanation": "Le croissant blanc symbolise l'islam, religion d'État."
+    },
+    {
+      "ref": "geo-279",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-mongolie.webp",
+        "alt": "Drapeau tricolore vertical rouge, bleu et rouge, avec un symbole jaune sur la bande rouge côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Mongolia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mongolie", "isCorrect": true },
+        { "text": "Laos", "isCorrect": false },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Népal", "isCorrect": false }
+      ],
+      "explanation": "Le symbole jaune, le soyombo, combine le feu, le soleil, la lune et le yin et le yang."
+    },
+    {
+      "ref": "geo-280",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-oman.webp",
+        "alt": "Drapeau à bandes horizontales blanche, rouge et verte, avec une bande verticale rouge côté hampe portant un emblème blanc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Oman.svg"
+        }
+      },
+      "answers": [
+        { "text": "Koweït", "isCorrect": false },
+        { "text": "Oman", "isCorrect": true },
+        { "text": "Yémen", "isCorrect": false },
+        { "text": "Émirats arabes unis", "isCorrect": false }
+      ],
+      "explanation": "L'emblème représente deux sabres croisés et un poignard traditionnel, le khanjar."
+    },
+    {
+      "ref": "geo-281",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-ouzbekistan.webp",
+        "alt": "Drapeau tricolore horizontal bleu, blanc et vert séparé par de fines lignes rouges, avec un croissant et douze étoiles blancs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Uzbekistan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ouzbékistan", "isCorrect": true },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Azerbaïdjan", "isCorrect": false },
+        { "text": "Turkménistan", "isCorrect": false }
+      ],
+      "explanation": "Les douze étoiles représentent les douze mois de l'année."
+    },
+    {
+      "ref": "geo-282",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-palestine.webp",
+        "alt": "Drapeau tricolore horizontal noir, blanc et vert, avec un triangle rouge côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Palestine.svg"
+        }
+      },
+      "answers": [
+        { "text": "Soudan", "isCorrect": false },
+        { "text": "Jordanie", "isCorrect": false },
+        { "text": "Koweït", "isCorrect": false },
+        { "text": "Palestine", "isCorrect": true }
+      ],
+      "explanation": "Il est identique à celui de la Jordanie, à l'étoile blanche près."
+    },
+    {
+      "ref": "geo-283",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-philippines.webp",
+        "alt": "Drapeau à deux bandes horizontales bleue et rouge, avec un triangle blanc côté hampe portant un soleil doré et trois étoiles",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Philippines.svg"
+        }
+      },
+      "answers": [
+        { "text": "Philippines", "isCorrect": true },
+        { "text": "Tchéquie", "isCorrect": false },
+        { "text": "Porto Rico", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false }
+      ],
+      "explanation": "En temps de guerre, le drapeau est hissé à l'envers, avec la bande rouge en haut."
+    },
+    {
+      "ref": "geo-284",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-qatar.webp",
+        "alt": "Drapeau bordeaux avec une bande blanche côté hampe, séparée par une ligne en dents de scie à neuf pointes",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Qatar.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Lettonie", "isCorrect": false },
+        { "text": "Bahreïn", "isCorrect": false },
+        { "text": "Qatar", "isCorrect": true }
+      ],
+      "explanation": "Le drapeau de Bahreïn, son voisin, est proche mais rouge et à cinq pointes seulement."
+    },
+    {
+      "ref": "geo-285",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-sri-lanka.webp",
+        "alt": "Drapeau avec un lion doré tenant un sabre sur fond bordeaux bordé de jaune, et deux bandes verticales verte et orange côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sri_Lanka.svg"
+        }
+      },
+      "answers": [
+        { "text": "Népal", "isCorrect": false },
+        { "text": "Sri Lanka", "isCorrect": true },
+        { "text": "Inde", "isCorrect": false },
+        { "text": "Bhoutan", "isCorrect": false }
+      ],
+      "explanation": "Le lion symbolise le peuple cingalais ; les bandes verte et orange représentent les minorités musulmane et tamoule."
+    },
+    {
+      "ref": "geo-287",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tadjikistan.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc (large) et vert, avec une couronne et sept étoiles dorées au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Tajikistan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Tadjikistan", "isCorrect": true },
+        { "text": "Bulgarie", "isCorrect": false },
+        { "text": "Iran", "isCorrect": false }
+      ]
+    },
+    {
+      "ref": "geo-288",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-timor-oriental.webp",
+        "alt": "Drapeau rouge avec un triangle jaune et un triangle noir superposés côté hampe, portant une étoile blanche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_East_Timor.svg"
+        }
+      },
+      "answers": [
+        { "text": "Mozambique", "isCorrect": false },
+        { "text": "Timor oriental", "isCorrect": true },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Érythrée", "isCorrect": false }
+      ],
+      "explanation": "Indépendant en 2002, le Timor oriental est l'un des plus jeunes États d'Asie."
+    },
+    {
+      "ref": "geo-289",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-turkmenistan.webp",
+        "alt": "Drapeau vert avec une bande verticale rouge côté hampe ornée de motifs de tapis, un croissant et cinq étoiles blancs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkmenistan.svg"
+        }
+      },
+      "answers": [
+        { "text": "Azerbaïdjan", "isCorrect": false },
+        { "text": "Turkménistan", "isCorrect": true },
+        { "text": "Ouzbékistan", "isCorrect": false },
+        { "text": "Pakistan", "isCorrect": false }
+      ],
+      "explanation": "La bande représente cinq motifs de tapis traditionnels, un par grande tribu turkmène."
+    },
+    {
+      "ref": "geo-290",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-turquie.webp",
+        "alt": "Drapeau rouge avec un croissant et une étoile blancs",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg"
+        }
+      },
+      "answers": [
+        { "text": "Azerbaïdjan", "isCorrect": false },
+        { "text": "Maldives", "isCorrect": false },
+        { "text": "Turquie", "isCorrect": true },
+        { "text": "Tunisie", "isCorrect": false }
+      ],
+      "explanation": "Le croissant et l'étoile figuraient déjà sur les drapeaux de l'Empire ottoman."
+    },
+    {
+      "ref": "geo-291",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-yemen.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et noir, sans aucun emblème",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Yemen.svg"
+        }
+      },
+      "answers": [
+        { "text": "Yémen", "isCorrect": true },
+        { "text": "Irak", "isCorrect": false },
+        { "text": "Syrie", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": false }
+      ],
+      "explanation": "Il a été adopté en 1990, lors de la réunification du Yémen du Nord et du Yémen du Sud."
+    },
+    {
+      "ref": "geo-292",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-albanie.webp",
+        "alt": "Drapeau rouge avec un aigle noir à deux têtes au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Albania.svg"
+        }
+      },
+      "answers": [
+        { "text": "Monténégro", "isCorrect": false },
+        { "text": "Macédoine du Nord", "isCorrect": false },
+        { "text": "Albanie", "isCorrect": true },
+        { "text": "Serbie", "isCorrect": false }
+      ],
+      "explanation": "L'aigle bicéphale est l'emblème de Skanderbeg, héros national du XVe siècle."
+    },
+    {
+      "ref": "geo-293",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-andorre.webp",
+        "alt": "Drapeau tricolore vertical bleu, jaune et rouge, avec des armoiries au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Andorra.svg"
+        }
+      },
+      "answers": [
+        { "text": "Moldavie", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Andorre", "isCorrect": true }
+      ],
+      "explanation": "Ses deux coprinces sont l'évêque d'Urgell, en Espagne, et le président de la République française."
+    },
+    {
+      "ref": "geo-294",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-autriche.webp",
+        "alt": "Drapeau à trois bandes horizontales rouge, blanche et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Austria.svg"
+        }
+      },
+      "answers": [
+        { "text": "Canada", "isCorrect": false },
+        { "text": "Lettonie", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": true },
+        { "text": "Pérou", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des plus anciens drapeaux nationaux, dont les couleurs remontent au XIIIe siècle."
+    },
+    {
+      "ref": "geo-295",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-belgique.webp",
+        "alt": "Drapeau tricolore vertical noir, jaune et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Belgium.svg"
+        }
+      },
+      "answers": [
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": true },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": false }
+      ],
+      "explanation": "Ses couleurs viennent des armoiries de l'ancien duché de Brabant."
+    },
+    {
+      "ref": "geo-296",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bielorussie.webp",
+        "alt": "Drapeau à bandes horizontales rouge (large) et verte, avec une bande verticale de motifs rouges et blancs côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Belarus.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ukraine", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Biélorussie", "isCorrect": true }
+      ],
+      "explanation": "Le motif côté hampe reprend une broderie traditionnelle."
+    },
+    {
+      "ref": "geo-297",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bosnie-herzegovine.webp",
+        "alt": "Drapeau bleu avec un triangle jaune et une rangée d'étoiles blanches le long de sa diagonale",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bosnia_and_Herzegovina.svg"
+        }
+      },
+      "answers": [
+        { "text": "Slovénie", "isCorrect": false },
+        { "text": "Bosnie-Herzégovine", "isCorrect": true },
+        { "text": "Serbie", "isCorrect": false },
+        { "text": "Croatie", "isCorrect": false }
+      ],
+      "explanation": "Le triangle évoque la forme du pays, et les étoiles l'Europe."
+    },
+    {
+      "ref": "geo-298",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bulgarie.webp",
+        "alt": "Drapeau tricolore horizontal blanc, vert et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bulgaria.svg"
+        }
+      },
+      "answers": [
+        { "text": "Hongrie", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Iran", "isCorrect": false },
+        { "text": "Bulgarie", "isCorrect": true }
+      ],
+      "explanation": "Il a été adopté en 1879, après la libération du pays de la domination ottomane."
+    },
+    {
+      "ref": "geo-299",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-chypre.webp",
+        "alt": "Drapeau blanc avec la silhouette cuivrée d'une île au centre et deux rameaux d'olivier verts",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Cyprus.svg"
+        }
+      },
+      "answers": [
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Chypre", "isCorrect": true },
+        { "text": "Malte", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false }
+      ],
+      "explanation": "La couleur cuivrée fait référence au cuivre, dont le nom viendrait de celui de l'île."
+    },
+    {
+      "ref": "geo-300",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-croatie.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et bleu, avec un blason à damier rouge et blanc au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Croatia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Serbie", "isCorrect": false },
+        { "text": "Croatie", "isCorrect": true },
+        { "text": "Slovaquie", "isCorrect": false },
+        { "text": "Slovénie", "isCorrect": false }
+      ],
+      "explanation": "Le damier rouge et blanc, appelé šahovnica, est le symbole de la Croatie depuis le Moyen Âge."
+    },
+    {
+      "ref": "geo-301",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-danemark.webp",
+        "alt": "Drapeau rouge avec une croix blanche décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Denmark.svg"
+        }
+      },
+      "answers": [
+        { "text": "Suède", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": true },
+        { "text": "Norvège", "isCorrect": false }
+      ],
+      "explanation": "Le Dannebrog serait le plus ancien drapeau national encore utilisé ; il a inspiré tous les drapeaux nordiques."
+    },
+    {
+      "ref": "geo-302",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-estonie.webp",
+        "alt": "Drapeau tricolore horizontal bleu, noir et blanc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Estonia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false },
+        { "text": "Estonie", "isCorrect": true },
+        { "text": "Lettonie", "isCorrect": false }
+      ],
+      "explanation": "Le bleu évoquerait le ciel, le noir la terre et le blanc l'aspiration au bonheur."
+    },
+    {
+      "ref": "geo-303",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-finlande.webp",
+        "alt": "Drapeau blanc avec une croix bleue décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Finland.svg"
+        }
+      },
+      "answers": [
+        { "text": "Finlande", "isCorrect": true },
+        { "text": "Islande", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Suède", "isCorrect": false }
+      ],
+      "explanation": "Le bleu évoque les milliers de lacs du pays, et le blanc la neige."
+    },
+    {
+      "ref": "geo-304",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe", "france"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-france.webp",
+        "alt": "Drapeau tricolore vertical bleu, blanc et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_France.svg"
+        }
+      },
+      "answers": [
+        { "text": "France", "isCorrect": true },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "Le bleu et le rouge sont les couleurs de Paris, le blanc celle de la monarchie ; le drapeau est né pendant la Révolution française."
+    },
+    {
+      "ref": "geo-305",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-hongrie.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et vert",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Hungary.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bulgarie", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Hongrie", "isCorrect": true },
+        { "text": "Iran", "isCorrect": false }
+      ],
+      "explanation": "Ses couleurs sont celles du drapeau italien, mais disposées en bandes horizontales."
+    },
+    {
+      "ref": "geo-306",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-lettonie.webp",
+        "alt": "Drapeau bordeaux avec une fine bande horizontale blanche au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Latvia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Estonie", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Lettonie", "isCorrect": true }
+      ],
+      "explanation": "Sa teinte de rouge foncé, dite « rouge letton », est propre à ce drapeau, dont l'origine remonte au XIIIe siècle."
+    },
+    {
+      "ref": "geo-307",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-liechtenstein.webp",
+        "alt": "Drapeau à deux bandes horizontales bleue et rouge, avec une couronne dorée en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Liechtenstein.svg"
+        }
+      },
+      "answers": [
+        { "text": "Luxembourg", "isCorrect": false },
+        { "text": "Haïti", "isCorrect": false },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Liechtenstein", "isCorrect": true }
+      ],
+      "explanation": "La couronne a été ajoutée en 1937, après les Jeux olympiques de 1936 où le drapeau s'est révélé identique à celui d'Haïti."
+    },
+    {
+      "ref": "geo-308",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-lituanie.webp",
+        "alt": "Drapeau tricolore horizontal jaune, vert et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Lithuania.svg"
+        }
+      },
+      "answers": [
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": true },
+        { "text": "Birmanie", "isCorrect": false },
+        { "text": "Bolivie", "isCorrect": false }
+      ],
+      "explanation": "Le jaune représente le soleil, le vert les forêts et le rouge le sang versé pour le pays."
+    },
+    {
+      "ref": "geo-309",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-luxembourg.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et bleu clair",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Luxembourg.svg"
+        }
+      },
+      "answers": [
+        { "text": "Luxembourg", "isCorrect": true },
+        { "text": "Croatie", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "Il est presque identique à celui des Pays-Bas, dont le bleu est plus foncé."
+    },
+    {
+      "ref": "geo-310",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-macedoine-du-nord.webp",
+        "alt": "Drapeau rouge avec un soleil jaune au centre dont huit rayons s'élargissent jusqu'aux bords",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Macedonia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Kirghizistan", "isCorrect": false },
+        { "text": "Monténégro", "isCorrect": false },
+        { "text": "Macédoine du Nord", "isCorrect": true },
+        { "text": "Albanie", "isCorrect": false }
+      ],
+      "explanation": "Le pays s'appelait simplement Macédoine jusqu'en 2019."
+    },
+    {
+      "ref": "geo-311",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-malte.webp",
+        "alt": "Drapeau divisé verticalement en blanc et rouge, avec une croix grise bordée de rouge en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Malta.svg"
+        }
+      },
+      "answers": [
+        { "text": "Saint-Marin", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false },
+        { "text": "Malte", "isCorrect": true },
+        { "text": "Pologne", "isCorrect": false }
+      ],
+      "explanation": "La croix de Saint-Georges a été décernée par le roi George VI pour saluer le courage des Maltais pendant la Seconde Guerre mondiale."
+    },
+    {
+      "ref": "geo-312",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-moldavie.webp",
+        "alt": "Drapeau tricolore vertical bleu, jaune et rouge, avec un aigle brun portant un écu au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Moldova.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tchad", "isCorrect": false },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Moldavie", "isCorrect": true }
+      ],
+      "explanation": "Il est proche de celui de la Roumanie, avec laquelle le pays partage langue et histoire."
+    },
+    {
+      "ref": "geo-313",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-monaco.webp",
+        "alt": "Drapeau à deux bandes horizontales égales, rouge en haut et blanche en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Monaco.svg"
+        }
+      },
+      "answers": [
+        { "text": "Singapour", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": true },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Indonésie", "isCorrect": false }
+      ],
+      "explanation": "Il est quasiment identique à celui de l'Indonésie ; seules les proportions diffèrent."
+    },
+    {
+      "ref": "geo-314",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-montenegro.webp",
+        "alt": "Drapeau rouge bordé d'or, avec un aigle doré à deux têtes au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Montenegro.svg"
+        }
+      },
+      "answers": [
+        { "text": "Albanie", "isCorrect": false },
+        { "text": "Monténégro", "isCorrect": true },
+        { "text": "Serbie", "isCorrect": false },
+        { "text": "Macédoine du Nord", "isCorrect": false }
+      ],
+      "explanation": "Le Monténégro est indépendant depuis 2006, après s'être séparé de la Serbie par référendum."
+    },
+    {
+      "ref": "geo-315",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-pays-bas.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et bleu",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Netherlands.svg"
+        }
+      },
+      "answers": [
+        { "text": "Pays-Bas", "isCorrect": true },
+        { "text": "France", "isCorrect": false },
+        { "text": "Luxembourg", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des plus anciens drapeaux tricolores ; à l'origine, la bande du haut était orange."
+    },
+    {
+      "ref": "geo-316",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-roumanie.webp",
+        "alt": "Drapeau tricolore vertical bleu, jaune et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Romania.svg"
+        }
+      },
+      "answers": [
+        { "text": "Moldavie", "isCorrect": false },
+        { "text": "Andorre", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": true }
+      ],
+      "explanation": "Il est presque identique à celui du Tchad, dont le bleu est légèrement plus foncé."
+    },
+    {
+      "ref": "geo-317",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-royaume-uni.webp",
+        "alt": "Drapeau bleu avec des croix rouges et blanches superposées, droites et en diagonale",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom.svg"
+        }
+      },
+      "answers": [
+        { "text": "Australie", "isCorrect": false },
+        { "text": "Islande", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Royaume-Uni", "isCorrect": true }
+      ],
+      "explanation": "L'Union Jack superpose les croix de l'Angleterre, de l'Écosse et de l'Irlande."
+    },
+    {
+      "ref": "geo-318",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-russie.webp",
+        "alt": "Drapeau tricolore horizontal blanc, bleu et rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Russia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Slovaquie", "isCorrect": false },
+        { "text": "Slovénie", "isCorrect": false },
+        { "text": "Serbie", "isCorrect": false },
+        { "text": "Russie", "isCorrect": true }
+      ],
+      "explanation": "La Slovaquie, la Slovénie et la Serbie utilisent les mêmes couleurs, mais avec un blason."
+    },
+    {
+      "ref": "geo-319",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-saint-marin.webp",
+        "alt": "Drapeau à deux bandes horizontales blanche et bleu clair, avec des armoiries au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_San_Marino.svg"
+        }
+      },
+      "answers": [
+        { "text": "Malte", "isCorrect": false },
+        { "text": "Saint-Marin", "isCorrect": true },
+        { "text": "Vatican", "isCorrect": false },
+        { "text": "Monaco", "isCorrect": false }
+      ],
+      "explanation": "Les armoiries représentent trois tours sur les sommets du mont Titano."
+    },
+    {
+      "ref": "geo-320",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-serbie.webp",
+        "alt": "Drapeau tricolore horizontal rouge, bleu et blanc, avec des armoiries portant un aigle blanc à deux têtes",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Serbia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Serbie", "isCorrect": true },
+        { "text": "Slovaquie", "isCorrect": false },
+        { "text": "Croatie", "isCorrect": false }
+      ],
+      "explanation": "Ses couleurs sont celles du drapeau russe, dans l'ordre inverse."
+    },
+    {
+      "ref": "geo-321",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-slovaquie.webp",
+        "alt": "Drapeau tricolore horizontal blanc, bleu et rouge, avec un blason rouge portant une double croix blanche sur trois collines bleues",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Slovakia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Serbie", "isCorrect": false },
+        { "text": "Slovénie", "isCorrect": false },
+        { "text": "Slovaquie", "isCorrect": true },
+        { "text": "Russie", "isCorrect": false }
+      ],
+      "explanation": "La double croix sur trois collines est un symbole chrétien très ancien de la région."
+    },
+    {
+      "ref": "geo-322",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-slovenie.webp",
+        "alt": "Drapeau tricolore horizontal blanc, bleu et rouge, avec en haut à gauche un blason représentant une montagne et trois étoiles",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Slovenia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Slovénie", "isCorrect": true },
+        { "text": "Slovaquie", "isCorrect": false },
+        { "text": "Croatie", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false }
+      ],
+      "explanation": "Le blason représente le Triglav, le plus haut sommet du pays."
+    },
+    {
+      "ref": "geo-323",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-suede.webp",
+        "alt": "Drapeau bleu avec une croix jaune décalée vers la hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sweden.svg"
+        }
+      },
+      "answers": [
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Suède", "isCorrect": true },
+        { "text": "Ukraine", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": false }
+      ],
+      "explanation": "Ses couleurs viennent des armoiries du royaume : trois couronnes d'or sur fond bleu."
+    },
+    {
+      "ref": "geo-324",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-tchequie.webp",
+        "alt": "Drapeau à deux bandes horizontales blanche et rouge, avec un triangle bleu côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Czech_Republic.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tchéquie", "isCorrect": true },
+        { "text": "Philippines", "isCorrect": false },
+        { "text": "Slovaquie", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false }
+      ],
+      "explanation": "Après la séparation de 1993, la Tchéquie a conservé le drapeau de l'ancienne Tchécoslovaquie."
+    },
+    {
+      "ref": "geo-325",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-ukraine.webp",
+        "alt": "Drapeau à deux bandes horizontales égales, bleue en haut et jaune en bas",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg"
+        }
+      },
+      "answers": [
+        { "text": "Ukraine", "isCorrect": true },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Suède", "isCorrect": false }
+      ],
+      "explanation": "Le bleu représenterait le ciel et le jaune les champs de blé."
+    },
+    {
+      "ref": "geo-326",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-vatican.webp",
+        "alt": "Drapeau carré divisé verticalement en jaune et blanc, avec deux clés croisées sous une tiare sur la partie blanche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Vatican_City.svg"
+        }
+      },
+      "answers": [
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Malte", "isCorrect": false },
+        { "text": "Saint-Marin", "isCorrect": false },
+        { "text": "Vatican", "isCorrect": true }
+      ],
+      "explanation": "Les clés de saint Pierre symbolisent le pouvoir du pape. C'est l'un des deux seuls drapeaux carrés, avec celui de la Suisse."
+    },
+    {
+      "ref": "geo-327",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-antigua-et-barbuda.webp",
+        "alt": "Drapeau rouge avec un triangle inversé noir, bleu et blanc au centre, portant un soleil levant jaune",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Antigua_and_Barbuda.svg"
+        }
+      },
+      "answers": [
+        { "text": "Grenade", "isCorrect": false },
+        { "text": "Sainte-Lucie", "isCorrect": false },
+        { "text": "Antigua-et-Barbuda", "isCorrect": true },
+        { "text": "Barbade", "isCorrect": false }
+      ],
+      "explanation": "Le soleil levant symbolise l'aube d'une nouvelle ère, à l'indépendance en 1981."
+    },
+    {
+      "ref": "geo-328",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-argentine.webp",
+        "alt": "Drapeau à trois bandes horizontales bleu ciel, blanche et bleu ciel, avec un soleil doré au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Argentina.svg"
+        }
+      },
+      "answers": [
+        { "text": "Honduras", "isCorrect": false },
+        { "text": "Uruguay", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": true },
+        { "text": "Nicaragua", "isCorrect": false }
+      ],
+      "explanation": "Le soleil au visage humain, le « soleil de Mai », rappelle la révolution de mai 1810."
+    },
+    {
+      "ref": "geo-329",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bahamas.webp",
+        "alt": "Drapeau à bandes horizontales aigue-marine, jaune et aigue-marine, avec un triangle noir côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Bahamas.svg"
+        }
+      },
+      "answers": [
+        { "text": "Barbade", "isCorrect": false },
+        { "text": "Bahamas", "isCorrect": true },
+        { "text": "Jamaïque", "isCorrect": false },
+        { "text": "Saint-Vincent-et-les-Grenadines", "isCorrect": false }
+      ],
+      "explanation": "L'aigue-marine évoque la mer et le jaune les plages de sable de l'archipel."
+    },
+    {
+      "ref": "geo-330",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-barbade.webp",
+        "alt": "Drapeau tricolore vertical bleu, jaune et bleu, avec un trident noir au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Barbados.svg"
+        }
+      },
+      "answers": [
+        { "text": "Barbade", "isCorrect": true },
+        { "text": "Antigua-et-Barbuda", "isCorrect": false },
+        { "text": "Bahamas", "isCorrect": false },
+        { "text": "Grenade", "isCorrect": false }
+      ],
+      "explanation": "Le trident brisé symbolise la rupture avec le passé colonial."
+    },
+    {
+      "ref": "geo-331",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-belize.webp",
+        "alt": "Drapeau bleu bordé de rouge en haut et en bas, avec un grand disque blanc portant des armoiries",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Belize.svg"
+        }
+      },
+      "answers": [
+        { "text": "Honduras", "isCorrect": false },
+        { "text": "Guatemala", "isCorrect": false },
+        { "text": "Nicaragua", "isCorrect": false },
+        { "text": "Belize", "isCorrect": true }
+      ],
+      "explanation": "Avec ses douze couleurs, c'est l'un des drapeaux nationaux les plus colorés."
+    },
+    {
+      "ref": "geo-332",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-bolivie.webp",
+        "alt": "Drapeau tricolore horizontal rouge, jaune et vert",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Bolivia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bolivie", "isCorrect": true },
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Ghana", "isCorrect": false },
+        { "text": "Lituanie", "isCorrect": false }
+      ],
+      "explanation": "Le rouge rappelle le sang des héros, le jaune les richesses minérales et le vert la nature."
+    },
+    {
+      "ref": "geo-333",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-costa-rica.webp",
+        "alt": "Drapeau à cinq bandes horizontales bleue, blanche, rouge (large), blanche et bleue",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Costa_Rica.svg"
+        }
+      },
+      "answers": [
+        { "text": "Corée du Nord", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Thaïlande", "isCorrect": false },
+        { "text": "Costa Rica", "isCorrect": true }
+      ],
+      "explanation": "Il ressemble à celui de la Thaïlande, avec le bleu et le rouge inversés."
+    },
+    {
+      "ref": "geo-334",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-dominique.webp",
+        "alt": "Drapeau vert avec une croix jaune, noire et blanche, et un disque rouge central portant un perroquet entouré d'étoiles vertes",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Dominica.svg"
+        }
+      },
+      "answers": [
+        { "text": "Sainte-Lucie", "isCorrect": false },
+        { "text": "Grenade", "isCorrect": false },
+        { "text": "Jamaïque", "isCorrect": false },
+        { "text": "Dominique", "isCorrect": true }
+      ],
+      "explanation": "C'est l'un des seuls drapeaux nationaux comportant du violet, la couleur du perroquet sisserou."
+    },
+    {
+      "ref": "geo-335",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-republique-dominicaine.webp",
+        "alt": "Drapeau divisé par une croix blanche en quatre rectangles bleus et rouges, avec des armoiries au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Dominican_Republic.svg"
+        }
+      },
+      "answers": [
+        { "text": "Haïti", "isCorrect": false },
+        { "text": "Panama", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "République dominicaine", "isCorrect": true }
+      ],
+      "explanation": "C'est le seul drapeau national qui représente une Bible, au centre des armoiries."
+    },
+    {
+      "ref": "geo-336",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-grenade.webp",
+        "alt": "Drapeau bordé de rouge avec six étoiles jaunes, deux triangles jaunes et deux verts au centre, et une noix de muscade côté hampe",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Grenada.svg"
+        }
+      },
+      "answers": [
+        { "text": "Sainte-Lucie", "isCorrect": false },
+        { "text": "Grenade", "isCorrect": true },
+        { "text": "Antigua-et-Barbuda", "isCorrect": false },
+        { "text": "Dominique", "isCorrect": false }
+      ],
+      "explanation": "La noix de muscade rappelle que l'île est l'un des premiers producteurs mondiaux de cette épice."
+    },
+    {
+      "ref": "geo-337",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-guatemala.webp",
+        "alt": "Drapeau tricolore vertical bleu clair, blanc et bleu clair, avec des armoiries portant un oiseau vert au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Guatemala.svg"
+        }
+      },
+      "answers": [
+        { "text": "Salvador", "isCorrect": false },
+        { "text": "Guatemala", "isCorrect": true },
+        { "text": "Nicaragua", "isCorrect": false },
+        { "text": "Honduras", "isCorrect": false }
+      ],
+      "explanation": "L'oiseau est le quetzal, l'oiseau national, qui a aussi donné son nom à la monnaie."
+    },
+    {
+      "ref": "geo-338",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-guyana.webp",
+        "alt": "Drapeau vert avec un triangle jaune bordé de blanc, et un triangle rouge bordé de noir",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Guyana.svg"
+        }
+      },
+      "answers": [
+        { "text": "Guyana", "isCorrect": true },
+        { "text": "Suriname", "isCorrect": false },
+        { "text": "Érythrée", "isCorrect": false },
+        { "text": "Jamaïque", "isCorrect": false }
+      ],
+      "explanation": "Surnommé « la flèche dorée », c'est le drapeau du seul pays d'Amérique du Sud dont l'anglais est la langue officielle."
+    },
+    {
+      "ref": "geo-339",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-haiti.webp",
+        "alt": "Drapeau à deux bandes horizontales bleue et rouge, avec des armoiries sur un rectangle blanc au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Haiti.svg"
+        }
+      },
+      "answers": [
+        { "text": "Cuba", "isCorrect": false },
+        { "text": "Haïti", "isCorrect": true },
+        { "text": "République dominicaine", "isCorrect": false },
+        { "text": "Liechtenstein", "isCorrect": false }
+      ],
+      "explanation": "Le bleu et le rouge viennent du drapeau français, dont le blanc a été retiré pendant la révolution haïtienne."
+    },
+    {
+      "ref": "geo-340",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-honduras.webp",
+        "alt": "Drapeau tricolore horizontal bleu, blanc et bleu, avec cinq étoiles bleues au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Honduras.svg"
+        }
+      },
+      "answers": [
+        { "text": "Salvador", "isCorrect": false },
+        { "text": "Honduras", "isCorrect": true },
+        { "text": "Nicaragua", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": false }
+      ],
+      "explanation": "Les cinq étoiles représentent les cinq pays de l'ancienne République fédérale d'Amérique centrale."
+    },
+    {
+      "ref": "geo-341",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nicaragua.webp",
+        "alt": "Drapeau tricolore horizontal bleu, blanc et bleu, avec au centre un triangle portant un arc-en-ciel",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Nicaragua.svg"
+        }
+      },
+      "answers": [
+        { "text": "Salvador", "isCorrect": false },
+        { "text": "Nicaragua", "isCorrect": true },
+        { "text": "Honduras", "isCorrect": false },
+        { "text": "Guatemala", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des rares drapeaux nationaux à comporter du violet, dans l'arc-en-ciel."
+    },
+    {
+      "ref": "geo-342",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-paraguay.webp",
+        "alt": "Drapeau tricolore horizontal rouge, blanc et bleu, avec un emblème rond au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Paraguay.svg"
+        }
+      },
+      "answers": [
+        { "text": "Luxembourg", "isCorrect": false },
+        { "text": "Costa Rica", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false },
+        { "text": "Paraguay", "isCorrect": true }
+      ],
+      "explanation": "C'est le seul drapeau national dont les deux faces sont différentes : l'emblème change d'un côté à l'autre."
+    },
+    {
+      "ref": "geo-343",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-saint-christophe-et-nieves.webp",
+        "alt": "Drapeau coupé par une bande diagonale noire bordée de jaune portant deux étoiles blanches, entre un triangle vert et un triangle rouge",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Kitts_and_Nevis.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Saint-Christophe-et-Niévès", "isCorrect": true },
+        { "text": "Trinité-et-Tobago", "isCorrect": false },
+        { "text": "Namibie", "isCorrect": false }
+      ],
+      "explanation": "Les deux étoiles symbolisent l'espoir et la liberté."
+    },
+    {
+      "ref": "geo-344",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-sainte-lucie.webp",
+        "alt": "Drapeau bleu ciel avec au centre un triangle noir bordé de blanc, devant lequel se dresse un triangle jaune",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Lucia.svg"
+        }
+      },
+      "answers": [
+        { "text": "Grenade", "isCorrect": false },
+        { "text": "Dominique", "isCorrect": false },
+        { "text": "Bahamas", "isCorrect": false },
+        { "text": "Sainte-Lucie", "isCorrect": true }
+      ],
+      "explanation": "Les triangles représentent les Pitons, deux pics volcaniques emblématiques de l'île."
+    },
+    {
+      "ref": "geo-345",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-saint-vincent-et-les-grenadines.webp",
+        "alt": "Drapeau tricolore vertical bleu, jaune (large) et vert, avec trois losanges verts formant un V au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Saint_Vincent_and_the_Grenadines.svg"
+        }
+      },
+      "answers": [
+        { "text": "Saint-Vincent-et-les-Grenadines", "isCorrect": true },
+        { "text": "Barbade", "isCorrect": false },
+        { "text": "Grenade", "isCorrect": false },
+        { "text": "Gabon", "isCorrect": false }
+      ],
+      "explanation": "Les trois losanges forment un V, pour Vincent."
+    },
+    {
+      "ref": "geo-346",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-salvador.webp",
+        "alt": "Drapeau tricolore horizontal bleu, blanc et bleu, avec des armoiries triangulaires au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_El_Salvador.svg"
+        }
+      },
+      "answers": [
+        { "text": "Nicaragua", "isCorrect": false },
+        { "text": "Guatemala", "isCorrect": false },
+        { "text": "Salvador", "isCorrect": true },
+        { "text": "Honduras", "isCorrect": false }
+      ],
+      "explanation": "Le Nicaragua a un drapeau très proche, lui aussi hérité de l'ancienne fédération d'Amérique centrale."
+    },
+    {
+      "ref": "geo-347",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-suriname.webp",
+        "alt": "Drapeau à bandes horizontales verte, blanche, rouge (large), blanche et verte, avec une étoile jaune au centre",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Suriname.svg"
+        }
+      },
+      "answers": [
+        { "text": "Guyana", "isCorrect": false },
+        { "text": "Birmanie", "isCorrect": false },
+        { "text": "Suriname", "isCorrect": true },
+        { "text": "Viêt Nam", "isCorrect": false }
+      ],
+      "explanation": "L'étoile jaune symbolise l'unité des différents groupes ethniques du pays."
+    },
+    {
+      "ref": "geo-348",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-trinite-et-tobago.webp",
+        "alt": "Drapeau rouge traversé d'une bande diagonale noire bordée de blanc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Trinidad_and_Tobago.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Saint-Christophe-et-Niévès", "isCorrect": false },
+        { "text": "Trinité-et-Tobago", "isCorrect": true },
+        { "text": "Namibie", "isCorrect": false }
+      ],
+      "explanation": "Le rouge symbolise l'énergie du peuple, le noir la richesse du pays et le blanc la mer."
+    },
+    {
+      "ref": "geo-349",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-uruguay.webp",
+        "alt": "Drapeau à neuf bandes horizontales blanches et bleues, avec un soleil doré sur un carré blanc en haut à gauche",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Uruguay.svg"
+        }
+      },
+      "answers": [
+        { "text": "Uruguay", "isCorrect": true },
+        { "text": "Honduras", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": false }
+      ],
+      "explanation": "Les neuf bandes représentent les neuf départements d'origine du pays."
+    },
+    {
+      "ref": "geo-350",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-venezuela.webp",
+        "alt": "Drapeau tricolore horizontal jaune, bleu et rouge, avec un arc de huit étoiles blanches sur la bande bleue",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Venezuela.svg"
+        }
+      },
+      "answers": [
+        { "text": "Bolivie", "isCorrect": false },
+        { "text": "Équateur", "isCorrect": false },
+        { "text": "Colombie", "isCorrect": false },
+        { "text": "Venezuela", "isCorrect": true }
+      ],
+      "explanation": "La huitième étoile a été ajoutée en 2006, en hommage à Simón Bolívar."
+    },
+    {
+      "ref": "geo-351",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oceanie"],
+      "text": "À quel pays appartient ce drapeau ?",
+      "image": {
+        "src": "geographie/drapeau-nouvelle-zelande.webp",
+        "alt": "Drapeau bleu avec le drapeau du Royaume-Uni en haut à gauche et quatre étoiles rouges bordées de blanc",
+        "credit": {
+          "author": "Wikimedia Commons",
+          "license": "Domaine public",
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Zealand.svg"
+        }
+      },
+      "answers": [
+        { "text": "Tuvalu", "isCorrect": false },
+        { "text": "Australie", "isCorrect": false },
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": true }
+      ],
+      "explanation": "Les étoiles rouges représentent la Croix du Sud. Sur le drapeau australien, elles sont blanches."
+    }
+  ]
+}

@@ -2,13 +2,14 @@
   "_note": "Thèmes d'affichage, lus par seedThemes.js. 'categories' contient des slugs de catégories (elles doivent exister, donc seedQuestions.js tourne avant). Une catégorie peut apparaître dans plusieurs thèmes. Un thème sans catégorie est enregistré mais ne doit pas être affiché par le front.",
   "themes": [
     { "slug": "histoire",    "name": "Histoire",    "position": 1, "categories": ["histoire"] },
-    { "slug": "geographie",  "name": "Géographie",  "position": 2, "categories": ["geographie"] },
-    { "slug": "litterature", "name": "Littérature", "position": 3, "categories": ["litterature", "harry-potter"] },
+    { "slug": "geographie",  "name": "Géographie",  "position": 2, "categories": ["geographie", "drapeaux", "capitales", "departements", "silhouettes"] },
+    { "slug": "litterature", "name": "Littérature", "position": 3, "categories": ["litterature", "harry-potter", "seigneur-des-anneaux"] },
     { "slug": "arts",        "name": "Arts",        "position": 4, "categories": [] },
-    { "slug": "musique",     "name": "Musique",     "position": 5, "categories": ["taylor-swift"] },
-    { "slug": "cinema",      "name": "Cinéma",      "position": 6, "categories": [] },
-    { "slug": "series-tv",   "name": "Séries TV",   "position": 7, "categories": [] },
+    { "slug": "musique",     "name": "Musique",     "position": 5, "categories": ["musique-classique", "lyrique", "pop", "rock", "rap", "taylor-swift"] },
+    { "slug": "cinema",      "name": "Cinéma",      "position": 6, "categories": ["harry-potter", "seigneur-des-anneaux"] },
+    { "slug": "series-tv",   "name": "Séries TV",   "position": 7, "categories": ["friends"] },
     { "slug": "jeux-video",  "name": "Jeux vidéo",  "position": 8, "categories": ["jeux-video"] },
-    { "slug": "sport",       "name": "Sport",       "position": 9, "categories": ["football", "tennis", "rugby", "basket"] }
+    { "slug": "sport",       "name": "Sport",       "position": 9, "categories": ["football", "tennis", "rugby", "basket", "formule-1", "motogp"] },
+    { "slug": "sciences",    "name": "Sciences",    "position": 10, "categories": ["espace", "corps-humain", "animaux", "informatique"] }
   ]
 }

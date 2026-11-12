@@ -16,8 +16,8 @@
     { "slug": "geo-perfect-3", "category": "geographie", "metric": "perfect_game", "difficulty": 3, "minQuestions": 20, "name": "Rose des vents",    "description": "Sans faute sur une partie custom Géographie de niveau 3 d'au moins 20 questions", "icon": null },
 
     { "slug": "geo-tag-france",      "category": "geographie", "tag": "france",      "metric": "perfect_game", "minQuestions": 20, "name": "Cocorico",                "description": "Sans faute sur une partie custom Géographie « France » d'au moins 20 questions",       "icon": null },
-    { "slug": "geo-tag-drapeau",     "category": "geographie", "tag": "drapeau",     "metric": "perfect_game", "minQuestions": 20, "name": "Porte-drapeau",           "description": "Sans faute sur une partie custom Géographie « Drapeaux » d'au moins 20 questions",     "icon": null },
-    { "slug": "geo-tag-departement", "category": "geographie", "tag": "departement", "metric": "perfect_game", "minQuestions": 20, "name": "Plus fort que le facteur", "description": "Sans faute sur une partie custom Géographie « Départements » d'au moins 20 questions", "icon": null },
+    { "slug": "geo-tag-drapeau",     "category": "drapeaux",     "metric": "perfect_game", "minQuestions": 20, "name": "Porte-drapeau",           "description": "Sans faute sur une partie custom Drapeaux d'au moins 20 questions",     "icon": null },
+    { "slug": "geo-tag-departement", "category": "departements", "metric": "perfect_game", "minQuestions": 20, "name": "Plus fort que le facteur", "description": "Sans faute sur une partie custom Départements d'au moins 20 questions", "icon": null },
 
     { "slug": "geo-games-10",  "category": "geographie", "metric": "games_finished", "threshold": 10,  "minQuestions": 20, "name": "Voyageur fréquent",    "description": "10 parties custom Géographie d'au moins 20 questions terminées",  "icon": null },
     { "slug": "geo-games-20",  "category": "geographie", "metric": "games_finished", "threshold": 20,  "minQuestions": 20, "name": "Carte Grand Voyageur", "description": "20 parties custom Géographie d'au moins 20 questions terminées",  "icon": null },

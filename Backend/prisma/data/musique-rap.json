@@ -1,0 +1,3581 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 254,
+    "parDifficulte": { "1": 81, "2": 92, "3": 81 },
+    "parType": { "multiple": 252, "boolean": 2 },
+    "avecImage": 0,
+    "sansImage": 254,
+    "parTag": {
+      "artiste": 131,
+      "us": 122,
+      "france": 114,
+      "chanson": 51,
+      "album": 31,
+      "histoire": 30,
+      "vrai-nom": 27,
+      "vocabulaire": 12,
+      "record": 6,
+      "monde": 6
+    }
+  },
+  "category": {
+    "slug": "rap",
+    "name": "Rap"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "rap-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur est surnommé « Slim Shady » ?",
+      "answers": [
+        { "text": "50 Cent", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "Eminem", "isCorrect": true },
+        { "text": "Snoop Dogg", "isCorrect": false }
+      ],
+      "explanation": "Slim Shady est l'alter ego provocateur d'Eminem, de son vrai nom Marshall Mathers."
+    },
+    {
+      "ref": "rap-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel est le vrai prénom d'Eminem ?",
+      "answers": [
+        { "text": "Curtis", "isCorrect": false },
+        { "text": "Marshall", "isCorrect": true },
+        { "text": "Shawn", "isCorrect": false },
+        { "text": "Calvin", "isCorrect": false }
+      ],
+      "explanation": "Eminem s'appelle Marshall Mathers. Son nom de scène vient de ses initiales, M&M."
+    },
+    {
+      "ref": "rap-003",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Dans quel film Eminem interprète-t-il « Lose Yourself » ?",
+      "answers": [
+        { "text": "8 Mile", "isCorrect": true },
+        { "text": "Get Rich or Die Tryin'", "isCorrect": false },
+        { "text": "Straight Outta Compton", "isCorrect": false },
+        { "text": "Hustle & Flow", "isCorrect": false }
+      ],
+      "explanation": "« Lose Yourself » a remporté l'Oscar de la meilleure chanson originale en 2003."
+    },
+    {
+      "ref": "rap-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "De quelle ville est originaire Eminem ?",
+      "answers": [
+        { "text": "Chicago", "isCorrect": false },
+        { "text": "Atlanta", "isCorrect": false },
+        { "text": "Los Angeles", "isCorrect": false },
+        { "text": "Détroit", "isCorrect": true }
+      ],
+      "explanation": "Eminem a grandi à Détroit, dans le Michigan, ville qui sert de décor au film « 8 Mile »."
+    },
+    {
+      "ref": "rap-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Shawn Carter ?",
+      "answers": [
+        { "text": "Kanye West", "isCorrect": false },
+        { "text": "Nas", "isCorrect": false },
+        { "text": "Jay-Z", "isCorrect": true },
+        { "text": "Diddy", "isCorrect": false }
+      ],
+      "explanation": "Jay-Z a grandi dans les Marcy Projects, à Brooklyn."
+    },
+    {
+      "ref": "rap-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quelle chanteuse est mariée à Jay-Z ?",
+      "answers": [
+        { "text": "Rihanna", "isCorrect": false },
+        { "text": "Beyoncé", "isCorrect": true },
+        { "text": "Alicia Keys", "isCorrect": false },
+        { "text": "Nicki Minaj", "isCorrect": false }
+      ],
+      "explanation": "Jay-Z et Beyoncé se sont mariés en 2008."
+    },
+    {
+      "ref": "rap-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Calvin Broadus ?",
+      "answers": [
+        { "text": "Snoop Dogg", "isCorrect": true },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "Ice Cube", "isCorrect": false },
+        { "text": "Warren G", "isCorrect": false }
+      ],
+      "explanation": "Snoop Dogg, originaire de Long Beach, a été révélé par Dr. Dre."
+    },
+    {
+      "ref": "rap-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Curtis Jackson ?",
+      "answers": [
+        { "text": "Lil Wayne", "isCorrect": false },
+        { "text": "Eminem", "isCorrect": false },
+        { "text": "The Game", "isCorrect": false },
+        { "text": "50 Cent", "isCorrect": true }
+      ],
+      "explanation": "50 Cent a été signé par Eminem et Dr. Dre au début des années 2000."
+    },
+    {
+      "ref": "rap-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a sorti « In da Club » en 2003 ?",
+      "answers": [
+        { "text": "Eminem", "isCorrect": false },
+        { "text": "Nelly", "isCorrect": false },
+        { "text": "50 Cent", "isCorrect": true },
+        { "text": "Ludacris", "isCorrect": false }
+      ],
+      "explanation": "« In da Club » est extrait de l'album « Get Rich or Die Tryin' »."
+    },
+    {
+      "ref": "rap-010",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "histoire"],
+      "text": "Dans quel quartier de New York le hip-hop est-il né dans les années 1970 ?",
+      "answers": [
+        { "text": "Brooklyn", "isCorrect": false },
+        { "text": "Le Bronx", "isCorrect": true },
+        { "text": "Harlem", "isCorrect": false },
+        { "text": "Queens", "isCorrect": false }
+      ],
+      "explanation": "Le hip-hop est né dans les fêtes de quartier du Bronx, au début des années 1970."
+    },
+    {
+      "ref": "rap-011",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "histoire"],
+      "text": "Quel DJ d'origine jamaïcaine est considéré comme le père fondateur du hip-hop ?",
+      "answers": [
+        { "text": "DJ Kool Herc", "isCorrect": true },
+        { "text": "Grandmaster Flash", "isCorrect": false },
+        { "text": "Afrika Bambaataa", "isCorrect": false },
+        { "text": "DJ Premier", "isCorrect": false }
+      ],
+      "explanation": "DJ Kool Herc isolait les passages instrumentaux des disques, les « breaks », pour faire danser le public."
+    },
+    {
+      "ref": "rap-012",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "histoire"],
+      "text": "Quelle date est souvent retenue comme la naissance du hip-hop, lors d'une fête de DJ Kool Herc ?",
+      "answers": [
+        { "text": "4 juillet 1976", "isCorrect": false },
+        { "text": "1er janvier 1980", "isCorrect": false },
+        { "text": "14 juillet 1969", "isCorrect": false },
+        { "text": "11 août 1973", "isCorrect": true }
+      ],
+      "explanation": "La fête a eu lieu au 1520 Sedgwick Avenue, dans le Bronx."
+    },
+    {
+      "ref": "rap-013",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson", "histoire"],
+      "text": "Quel titre de 1979 est considéré comme le premier grand succès commercial du rap ?",
+      "answers": [
+        { "text": "The Message", "isCorrect": false },
+        { "text": "Walk This Way", "isCorrect": false },
+        { "text": "Rapper's Delight", "isCorrect": true },
+        { "text": "Planet Rock", "isCorrect": false }
+      ],
+      "explanation": "« Rapper's Delight » du Sugarhill Gang a fait découvrir le rap au grand public."
+    },
+    {
+      "ref": "rap-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel groupe a sorti « Rapper's Delight » en 1979 ?",
+      "answers": [
+        { "text": "Run-DMC", "isCorrect": false },
+        { "text": "The Sugarhill Gang", "isCorrect": true },
+        { "text": "Grandmaster Flash and the Furious Five", "isCorrect": false },
+        { "text": "Public Enemy", "isCorrect": false }
+      ],
+      "explanation": "Le Sugarhill Gang était un trio du New Jersey."
+    },
+    {
+      "ref": "rap-015",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Quel groupe a interprété « The Message » en 1982 ?",
+      "answers": [
+        { "text": "Grandmaster Flash and the Furious Five", "isCorrect": true },
+        { "text": "The Sugarhill Gang", "isCorrect": false },
+        { "text": "Run-DMC", "isCorrect": false },
+        { "text": "Beastie Boys", "isCorrect": false }
+      ],
+      "explanation": "« The Message » est l'un des premiers titres de rap à décrire la dureté de la vie dans le ghetto."
+    },
+    {
+      "ref": "rap-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Avec quel groupe de rock Run-DMC a-t-il repris « Walk This Way » en 1986 ?",
+      "answers": [
+        { "text": "Led Zeppelin", "isCorrect": false },
+        { "text": "The Rolling Stones", "isCorrect": false },
+        { "text": "Queen", "isCorrect": false },
+        { "text": "Aerosmith", "isCorrect": true }
+      ],
+      "explanation": "Cette collaboration a rapproché le rap et le rock et relancé la carrière d'Aerosmith."
+    },
+    {
+      "ref": "rap-017",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel groupe était composé de Run, DMC et Jam Master Jay ?",
+      "answers": [
+        { "text": "Public Enemy", "isCorrect": false },
+        { "text": "N.W.A", "isCorrect": false },
+        { "text": "Run-DMC", "isCorrect": true },
+        { "text": "Wu-Tang Clan", "isCorrect": false }
+      ],
+      "explanation": "Run-DMC, originaire du Queens, a été le premier groupe de rap à obtenir un disque de platine."
+    },
+    {
+      "ref": "rap-018",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel groupe de Compton a sorti « Straight Outta Compton » en 1988 ?",
+      "answers": [
+        { "text": "Public Enemy", "isCorrect": false },
+        { "text": "N.W.A", "isCorrect": true },
+        { "text": "Cypress Hill", "isCorrect": false },
+        { "text": "Wu-Tang Clan", "isCorrect": false }
+      ],
+      "explanation": "N.W.A a popularisé le gangsta rap de la côte Ouest."
+    },
+    {
+      "ref": "rap-019",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Lequel de ces rappeurs ne faisait pas partie de N.W.A ?",
+      "answers": [
+        { "text": "Snoop Dogg", "isCorrect": true },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "Ice Cube", "isCorrect": false },
+        { "text": "Eazy-E", "isCorrect": false }
+      ],
+      "explanation": "N.W.A réunissait Eazy-E, Dr. Dre, Ice Cube, MC Ren et DJ Yella. Snoop Dogg a été révélé plus tard par Dr. Dre."
+    },
+    {
+      "ref": "rap-020",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur de N.W.A est devenu acteur et scénariste, notamment du film « Friday » ?",
+      "answers": [
+        { "text": "Eazy-E", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "MC Ren", "isCorrect": false },
+        { "text": "Ice Cube", "isCorrect": true }
+      ],
+      "explanation": "Ice Cube a coécrit et joué dans « Friday » en 1995."
+    },
+    {
+      "ref": "rap-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "histoire"],
+      "text": "Quels rappeurs incarnaient la rivalité entre côte Est et côte Ouest dans les années 1990 ?",
+      "answers": [
+        { "text": "Eminem et Machine Gun Kelly", "isCorrect": false },
+        { "text": "Drake et Kendrick Lamar", "isCorrect": false },
+        { "text": "Tupac et The Notorious B.I.G.", "isCorrect": true },
+        { "text": "Jay-Z et Nas", "isCorrect": false }
+      ],
+      "explanation": "Tupac représentait Los Angeles et Death Row, Biggie New York et Bad Boy."
+    },
+    {
+      "ref": "rap-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a été tué par balles à Las Vegas en 1996 ?",
+      "answers": [
+        { "text": "The Notorious B.I.G.", "isCorrect": false },
+        { "text": "Tupac Shakur", "isCorrect": true },
+        { "text": "Eazy-E", "isCorrect": false },
+        { "text": "Big Pun", "isCorrect": false }
+      ],
+      "explanation": "Tupac est mort à 25 ans, quelques jours après avoir été blessé par balles."
+    },
+    {
+      "ref": "rap-023",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Dans quelle ville The Notorious B.I.G. a-t-il été tué en 1997 ?",
+      "answers": [
+        { "text": "Los Angeles", "isCorrect": true },
+        { "text": "New York", "isCorrect": false },
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "Atlanta", "isCorrect": false }
+      ],
+      "explanation": "Biggie a été tué en mars 1997, six mois après Tupac."
+    },
+    {
+      "ref": "rap-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel autre surnom portait The Notorious B.I.G. ?",
+      "answers": [
+        { "text": "Big Daddy Kane", "isCorrect": false },
+        { "text": "Big Boi", "isCorrect": false },
+        { "text": "Big L", "isCorrect": false },
+        { "text": "Biggie Smalls", "isCorrect": true }
+      ],
+      "explanation": "Christopher Wallace était surnommé Biggie Smalls, ou simplement Biggie."
+    },
+    {
+      "ref": "rap-025",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel est le premier album de The Notorious B.I.G., sorti en 1994 ?",
+      "answers": [
+        { "text": "Life After Death", "isCorrect": false },
+        { "text": "Illmatic", "isCorrect": false },
+        { "text": "Ready to Die", "isCorrect": true },
+        { "text": "Reasonable Doubt", "isCorrect": false }
+      ],
+      "explanation": "« Life After Death » est sorti juste après sa mort, en 1997."
+    },
+    {
+      "ref": "rap-026",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel album de Nas, sorti en 1994, est souvent cité comme l'un des meilleurs de l'histoire du rap ?",
+      "answers": [
+        { "text": "It Was Written", "isCorrect": false },
+        { "text": "Illmatic", "isCorrect": true },
+        { "text": "Ready to Die", "isCorrect": false },
+        { "text": "The Chronic", "isCorrect": false }
+      ],
+      "explanation": "« Illmatic » est un classique du rap new-yorkais."
+    },
+    {
+      "ref": "rap-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel album de Dr. Dre, sorti en 1992, a popularisé le G-funk ?",
+      "answers": [
+        { "text": "The Chronic", "isCorrect": true },
+        { "text": "2001", "isCorrect": false },
+        { "text": "Doggystyle", "isCorrect": false },
+        { "text": "Straight Outta Compton", "isCorrect": false }
+      ],
+      "explanation": "« The Chronic » a lancé la carrière de Snoop Dogg."
+    },
+    {
+      "ref": "rap-028",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel est le premier album de Snoop Dogg, sorti en 1993 ?",
+      "answers": [
+        { "text": "The Chronic", "isCorrect": false },
+        { "text": "Tha Doggfather", "isCorrect": false },
+        { "text": "Regulate", "isCorrect": false },
+        { "text": "Doggystyle", "isCorrect": true }
+      ],
+      "explanation": "« Doggystyle » a été produit par Dr. Dre."
+    },
+    {
+      "ref": "rap-029",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel label a été fondé par Dr. Dre et Suge Knight ?",
+      "answers": [
+        { "text": "Bad Boy Records", "isCorrect": false },
+        { "text": "Roc-A-Fella Records", "isCorrect": false },
+        { "text": "Death Row Records", "isCorrect": true },
+        { "text": "Def Jam", "isCorrect": false }
+      ],
+      "explanation": "Death Row a été le label de Snoop Dogg et de Tupac dans les années 1990."
+    },
+    {
+      "ref": "rap-030",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel label Sean Combs, alias Puff Daddy, a-t-il fondé ?",
+      "answers": [
+        { "text": "Death Row Records", "isCorrect": false },
+        { "text": "Bad Boy Records", "isCorrect": true },
+        { "text": "Aftermath", "isCorrect": false },
+        { "text": "Cash Money", "isCorrect": false }
+      ],
+      "explanation": "Bad Boy Records était le label de The Notorious B.I.G."
+    },
+    {
+      "ref": "rap-031",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel label a été cofondé par Russell Simmons et Rick Rubin ?",
+      "answers": [
+        { "text": "Def Jam", "isCorrect": true },
+        { "text": "Bad Boy Records", "isCorrect": false },
+        { "text": "Death Row Records", "isCorrect": false },
+        { "text": "Interscope", "isCorrect": false }
+      ],
+      "explanation": "Def Jam, créé en 1984, a signé LL Cool J, les Beastie Boys et Public Enemy."
+    },
+    {
+      "ref": "rap-032",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel label Dr. Dre a-t-il fondé après avoir quitté Death Row ?",
+      "answers": [
+        { "text": "Shady Records", "isCorrect": false },
+        { "text": "G-Unit Records", "isCorrect": false },
+        { "text": "Top Dawg Entertainment", "isCorrect": false },
+        { "text": "Aftermath Entertainment", "isCorrect": true }
+      ],
+      "explanation": "Aftermath a signé Eminem, 50 Cent puis Kendrick Lamar."
+    },
+    {
+      "ref": "rap-033",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel collectif new-yorkais a sorti « Enter the Wu-Tang (36 Chambers) » en 1993 ?",
+      "answers": [
+        { "text": "Mobb Deep", "isCorrect": false },
+        { "text": "A Tribe Called Quest", "isCorrect": false },
+        { "text": "Wu-Tang Clan", "isCorrect": true },
+        { "text": "De La Soul", "isCorrect": false }
+      ],
+      "explanation": "Le Wu-Tang Clan s'inspire des films de kung-fu."
+    },
+    {
+      "ref": "rap-034",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "De quel arrondissement de New York est majoritairement issu le Wu-Tang Clan ?",
+      "answers": [
+        { "text": "Le Bronx", "isCorrect": false },
+        { "text": "Staten Island", "isCorrect": true },
+        { "text": "Harlem", "isCorrect": false },
+        { "text": "Brooklyn", "isCorrect": false }
+      ],
+      "explanation": "Le groupe surnomme Staten Island « Shaolin »."
+    },
+    {
+      "ref": "rap-035",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel album du Wu-Tang Clan n'a été pressé qu'en un seul exemplaire et vendu à un collectionneur ?",
+      "answers": [
+        { "text": "Once Upon a Time in Shaolin", "isCorrect": true },
+        { "text": "Wu-Tang Forever", "isCorrect": false },
+        { "text": "36 Chambers", "isCorrect": false },
+        { "text": "The W", "isCorrect": false }
+      ],
+      "explanation": "L'unique exemplaire a été vendu aux enchères en 2015 pour environ 2 millions de dollars."
+    },
+    {
+      "ref": "rap-036",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a fondé le label Roc-A-Fella Records avec Damon Dash et Kareem Burke ?",
+      "answers": [
+        { "text": "Nas", "isCorrect": false },
+        { "text": "Kanye West", "isCorrect": false },
+        { "text": "DMX", "isCorrect": false },
+        { "text": "Jay-Z", "isCorrect": true }
+      ],
+      "explanation": "Roc-A-Fella a aussi lancé la carrière de Kanye West."
+    },
+    {
+      "ref": "rap-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel est le premier album de Jay-Z, sorti en 1996 ?",
+      "answers": [
+        { "text": "The Blueprint", "isCorrect": false },
+        { "text": "Vol. 2... Hard Knock Life", "isCorrect": false },
+        { "text": "Reasonable Doubt", "isCorrect": true },
+        { "text": "The Black Album", "isCorrect": false }
+      ],
+      "explanation": "« Reasonable Doubt » est sorti sur Roc-A-Fella."
+    },
+    {
+      "ref": "rap-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Jay-Z et Alicia Keys est un hymne à New York ?",
+      "answers": [
+        { "text": "New York, New York", "isCorrect": false },
+        { "text": "Empire State of Mind", "isCorrect": true },
+        { "text": "Run This Town", "isCorrect": false },
+        { "text": "N.Y. State of Mind", "isCorrect": false }
+      ],
+      "explanation": "« N.Y. State of Mind » est un titre de Nas, sur « Illmatic »."
+    },
+    {
+      "ref": "rap-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a d'abord été producteur chez Roc-A-Fella avant de sortir « The College Dropout » ?",
+      "answers": [
+        { "text": "Kanye West", "isCorrect": true },
+        { "text": "Pharrell Williams", "isCorrect": false },
+        { "text": "Swizz Beatz", "isCorrect": false },
+        { "text": "Timbaland", "isCorrect": false }
+      ],
+      "explanation": "Kanye West a produit plusieurs titres de « The Blueprint » de Jay-Z."
+    },
+    {
+      "ref": "rap-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "album"],
+      "text": "Quel est le premier album de Kanye West, sorti en 2004 ?",
+      "answers": [
+        { "text": "Late Registration", "isCorrect": false },
+        { "text": "Graduation", "isCorrect": false },
+        { "text": "808s & Heartbreak", "isCorrect": false },
+        { "text": "The College Dropout", "isCorrect": true }
+      ],
+      "explanation": "Il a été suivi par « Late Registration » (2005) et « Graduation » (2007)."
+    },
+    {
+      "ref": "rap-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Sous quel nom Kanye West se fait-il appeler depuis 2021 ?",
+      "answers": [
+        { "text": "Yeezus", "isCorrect": false },
+        { "text": "West", "isCorrect": false },
+        { "text": "Ye", "isCorrect": true },
+        { "text": "K.W.", "isCorrect": false }
+      ],
+      "explanation": "Kanye West a officiellement changé de nom pour Ye."
+    },
+    {
+      "ref": "rap-042",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "De quelle ville californienne est originaire Kendrick Lamar ?",
+      "answers": [
+        { "text": "Oakland", "isCorrect": false },
+        { "text": "Compton", "isCorrect": true },
+        { "text": "San Diego", "isCorrect": false },
+        { "text": "Long Beach", "isCorrect": false }
+      ],
+      "explanation": "Compton est aussi la ville de N.W.A et de Dr. Dre."
+    },
+    {
+      "ref": "rap-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "album", "record"],
+      "text": "Quel album de Kendrick Lamar a remporté le prix Pulitzer de musique en 2018 ?",
+      "answers": [
+        { "text": "DAMN.", "isCorrect": true },
+        { "text": "To Pimp a Butterfly", "isCorrect": false },
+        { "text": "good kid, m.A.A.d city", "isCorrect": false },
+        { "text": "Mr. Morale & the Big Steppers", "isCorrect": false }
+      ],
+      "explanation": "C'était la première fois que ce prix récompensait une œuvre hors musique classique et jazz."
+    },
+    {
+      "ref": "rap-044",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Kendrick Lamar, dirigé contre Drake, a triomphé aux Grammy Awards 2025 ?",
+      "answers": [
+        { "text": "HUMBLE.", "isCorrect": false },
+        { "text": "Alright", "isCorrect": false },
+        { "text": "Euphoria", "isCorrect": false },
+        { "text": "Not Like Us", "isCorrect": true }
+      ],
+      "explanation": "« Not Like Us » a remporté notamment l'enregistrement et la chanson de l'année."
+    },
+    {
+      "ref": "rap-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "histoire"],
+      "text": "Lors de quel événement Kendrick Lamar s'est-il produit en février 2025 ?",
+      "answers": [
+        { "text": "La cérémonie des Oscars", "isCorrect": false },
+        { "text": "La finale de la NBA", "isCorrect": false },
+        { "text": "Le show de la mi-temps du Super Bowl", "isCorrect": true },
+        { "text": "L'investiture présidentielle", "isCorrect": false }
+      ],
+      "explanation": "Il a été le premier rappeur en solo à mener ce spectacle, à La Nouvelle-Orléans."
+    },
+    {
+      "ref": "rap-046",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Quels rappeurs ont mené le show de la mi-temps du Super Bowl 2022 ?",
+      "answers": [
+        { "text": "Jay-Z et Kanye West", "isCorrect": false },
+        { "text": "Dr. Dre, Snoop Dogg, Eminem et Kendrick Lamar", "isCorrect": true },
+        { "text": "Drake et Lil Wayne", "isCorrect": false },
+        { "text": "Travis Scott et Future", "isCorrect": false }
+      ],
+      "explanation": "Mary J. Blige et 50 Cent les ont aussi rejoints sur scène, à Los Angeles."
+    },
+    {
+      "ref": "rap-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel duo d'Atlanta a sorti « Hey Ya! » ?",
+      "answers": [
+        { "text": "OutKast", "isCorrect": true },
+        { "text": "Run the Jewels", "isCorrect": false },
+        { "text": "Mobb Deep", "isCorrect": false },
+        { "text": "Eric B. & Rakim", "isCorrect": false }
+      ],
+      "explanation": "OutKast réunissait André 3000 et Big Boi."
+    },
+    {
+      "ref": "rap-048",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quels rappeurs composaient OutKast ?",
+      "answers": [
+        { "text": "Method Man et Redman", "isCorrect": false },
+        { "text": "Mos Def et Talib Kweli", "isCorrect": false },
+        { "text": "Eric B. et Rakim", "isCorrect": false },
+        { "text": "André 3000 et Big Boi", "isCorrect": true }
+      ],
+      "explanation": "OutKast a remporté le Grammy de l'album de l'année en 2004."
+    },
+    {
+      "ref": "rap-049",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel album d'OutKast contient « Hey Ya! » ?",
+      "answers": [
+        { "text": "Stankonia", "isCorrect": false },
+        { "text": "Aquemini", "isCorrect": false },
+        { "text": "Speakerboxxx/The Love Below", "isCorrect": true },
+        { "text": "ATLiens", "isCorrect": false }
+      ],
+      "explanation": "Ce double album réunit un disque de chaque membre du duo."
+    },
+    {
+      "ref": "rap-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur de La Nouvelle-Orléans a sorti la série d'albums « Tha Carter » ?",
+      "answers": [
+        { "text": "Juvenile", "isCorrect": false },
+        { "text": "Lil Wayne", "isCorrect": true },
+        { "text": "Master P", "isCorrect": false },
+        { "text": "Birdman", "isCorrect": false }
+      ],
+      "explanation": "Lil Wayne s'appelle Dwayne Carter, d'où le titre de ses albums."
+    },
+    {
+      "ref": "rap-051",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Dwayne Carter ?",
+      "answers": [
+        { "text": "Lil Wayne", "isCorrect": true },
+        { "text": "Birdman", "isCorrect": false },
+        { "text": "Juvenile", "isCorrect": false },
+        { "text": "Lil Jon", "isCorrect": false }
+      ],
+      "explanation": "Lil Wayne a débuté adolescent chez Cash Money Records."
+    },
+    {
+      "ref": "rap-052",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quelle rappeuse a sorti « Super Bass » en 2011 ?",
+      "answers": [
+        { "text": "Cardi B", "isCorrect": false },
+        { "text": "Missy Elliott", "isCorrect": false },
+        { "text": "Lil' Kim", "isCorrect": false },
+        { "text": "Nicki Minaj", "isCorrect": true }
+      ],
+      "explanation": "Nicki Minaj est née à Trinité-et-Tobago et a grandi dans le Queens."
+    },
+    {
+      "ref": "rap-053",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quelle rappeuse a sorti « Bodak Yellow » en 2017 ?",
+      "answers": [
+        { "text": "Nicki Minaj", "isCorrect": false },
+        { "text": "Megan Thee Stallion", "isCorrect": false },
+        { "text": "Cardi B", "isCorrect": true },
+        { "text": "Doja Cat", "isCorrect": false }
+      ],
+      "explanation": "Cardi B, originaire du Bronx, a été révélée par la téléréalité."
+    },
+    {
+      "ref": "rap-054",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quelle rappeuse et productrice a sorti « Get Ur Freak On » ?",
+      "answers": [
+        { "text": "Lauryn Hill", "isCorrect": false },
+        { "text": "Missy Elliott", "isCorrect": true },
+        { "text": "Queen Latifah", "isCorrect": false },
+        { "text": "Eve", "isCorrect": false }
+      ],
+      "explanation": "Missy Elliott travaillait souvent avec le producteur Timbaland."
+    },
+    {
+      "ref": "rap-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Avec quel groupe Lauryn Hill a-t-elle débuté, aux côtés de Wyclef Jean et Pras ?",
+      "answers": [
+        { "text": "The Fugees", "isCorrect": true },
+        { "text": "The Roots", "isCorrect": false },
+        { "text": "Black Eyed Peas", "isCorrect": false },
+        { "text": "De La Soul", "isCorrect": false }
+      ],
+      "explanation": "Les Fugees ont triomphé avec l'album « The Score » en 1996."
+    },
+    {
+      "ref": "rap-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre des Fugees reprend une chanson de Roberta Flack en 1996 ?",
+      "answers": [
+        { "text": "Ready or Not", "isCorrect": false },
+        { "text": "Fu-Gee-La", "isCorrect": false },
+        { "text": "Doo Wop (That Thing)", "isCorrect": false },
+        { "text": "Killing Me Softly", "isCorrect": true }
+      ],
+      "explanation": "« Doo Wop (That Thing) » est un titre solo de Lauryn Hill."
+    },
+    {
+      "ref": "rap-057",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel album de Lauryn Hill a remporté le Grammy de l'album de l'année en 1999 ?",
+      "answers": [
+        { "text": "The Score", "isCorrect": false },
+        { "text": "MTV Unplugged No. 2.0", "isCorrect": false },
+        { "text": "The Miseducation of Lauryn Hill", "isCorrect": true },
+        { "text": "Ready to Die", "isCorrect": false }
+      ],
+      "explanation": "C'est son seul album studio solo."
+    },
+    {
+      "ref": "rap-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel groupe new-yorkais a sorti « Can I Kick It? » ?",
+      "answers": [
+        { "text": "De La Soul", "isCorrect": false },
+        { "text": "A Tribe Called Quest", "isCorrect": true },
+        { "text": "Gang Starr", "isCorrect": false },
+        { "text": "Mobb Deep", "isCorrect": false }
+      ],
+      "explanation": "A Tribe Called Quest est une figure du rap jazzy et conscient."
+    },
+    {
+      "ref": "rap-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel groupe mené par Chuck D a sorti « Fight the Power » ?",
+      "answers": [
+        { "text": "Public Enemy", "isCorrect": true },
+        { "text": "Run-DMC", "isCorrect": false },
+        { "text": "N.W.A", "isCorrect": false },
+        { "text": "Boogie Down Productions", "isCorrect": false }
+      ],
+      "explanation": "Public Enemy est connu pour ses textes politiques et son acolyte Flavor Flav."
+    },
+    {
+      "ref": "rap-060",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Pour quel film de Spike Lee Public Enemy a-t-il enregistré « Fight the Power » ?",
+      "answers": [
+        { "text": "Malcolm X", "isCorrect": false },
+        { "text": "Boyz n the Hood", "isCorrect": false },
+        { "text": "Menace II Society", "isCorrect": false },
+        { "text": "Do the Right Thing", "isCorrect": true }
+      ],
+      "explanation": "« Do the Right Thing » est sorti en 1989."
+    },
+    {
+      "ref": "rap-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel trio new-yorkais, d'abord punk, a sorti « (You Gotta) Fight for Your Right (To Party!) » ?",
+      "answers": [
+        { "text": "House of Pain", "isCorrect": false },
+        { "text": "Cypress Hill", "isCorrect": false },
+        { "text": "Beastie Boys", "isCorrect": true },
+        { "text": "Limp Bizkit", "isCorrect": false }
+      ],
+      "explanation": "Les Beastie Boys ont sorti l'album « Licensed to Ill » sur Def Jam en 1986."
+    },
+    {
+      "ref": "rap-062",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a sorti « Gangsta's Paradise » en 1995 ?",
+      "answers": [
+        { "text": "Warren G", "isCorrect": false },
+        { "text": "Coolio", "isCorrect": true },
+        { "text": "Ice-T", "isCorrect": false },
+        { "text": "Tupac Shakur", "isCorrect": false }
+      ],
+      "explanation": "Le titre figure dans la bande originale du film « Esprits rebelles »."
+    },
+    {
+      "ref": "rap-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Quelle chanson de Stevie Wonder est reprise dans « Gangsta's Paradise » ?",
+      "answers": [
+        { "text": "Pastime Paradise", "isCorrect": true },
+        { "text": "Superstition", "isCorrect": false },
+        { "text": "Sir Duke", "isCorrect": false },
+        { "text": "Isn't She Lovely", "isCorrect": false }
+      ],
+      "explanation": "« Pastime Paradise » est extrait de l'album « Songs in the Key of Life » (1976)."
+    },
+    {
+      "ref": "rap-064",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a sorti « Regulate » avec Nate Dogg en 1994 ?",
+      "answers": [
+        { "text": "Snoop Dogg", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "Coolio", "isCorrect": false },
+        { "text": "Warren G", "isCorrect": true }
+      ],
+      "explanation": "Warren G est le demi-frère de Dr. Dre."
+    },
+    {
+      "ref": "rap-065",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a chanté « Ice Ice Baby » en 1990 ?",
+      "answers": [
+        { "text": "MC Hammer", "isCorrect": false },
+        { "text": "Will Smith", "isCorrect": false },
+        { "text": "Vanilla Ice", "isCorrect": true },
+        { "text": "Coolio", "isCorrect": false }
+      ],
+      "explanation": "C'est le premier single de rap à atteindre la première place du Billboard Hot 100."
+    },
+    {
+      "ref": "rap-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a sorti « U Can't Touch This » en 1990 ?",
+      "answers": [
+        { "text": "Vanilla Ice", "isCorrect": false },
+        { "text": "MC Hammer", "isCorrect": true },
+        { "text": "Coolio", "isCorrect": false },
+        { "text": "LL Cool J", "isCorrect": false }
+      ],
+      "explanation": "MC Hammer était aussi célèbre pour ses pantalons bouffants."
+    },
+    {
+      "ref": "rap-067",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Quel morceau de Queen et David Bowie est repris dans « Ice Ice Baby » ?",
+      "answers": [
+        { "text": "Under Pressure", "isCorrect": true },
+        { "text": "Another One Bites the Dust", "isCorrect": false },
+        { "text": "Bohemian Rhapsody", "isCorrect": false },
+        { "text": "Heroes", "isCorrect": false }
+      ],
+      "explanation": "La ligne de basse d'« Under Pressure » a été reprise sans autorisation au départ."
+    },
+    {
+      "ref": "rap-068",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur et acteur jouait le rôle principal du « Prince de Bel-Air » ?",
+      "answers": [
+        { "text": "LL Cool J", "isCorrect": false },
+        { "text": "Ice-T", "isCorrect": false },
+        { "text": "Ice Cube", "isCorrect": false },
+        { "text": "Will Smith", "isCorrect": true }
+      ],
+      "explanation": "La série a été diffusée de 1990 à 1996."
+    },
+    {
+      "ref": "rap-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Sous quel nom de scène Will Smith a-t-il débuté dans le rap ?",
+      "answers": [
+        { "text": "Big Willie", "isCorrect": false },
+        { "text": "Mr. Smith", "isCorrect": false },
+        { "text": "The Fresh Prince", "isCorrect": true },
+        { "text": "Lil Will", "isCorrect": false }
+      ],
+      "explanation": "Il formait le duo DJ Jazzy Jeff & The Fresh Prince."
+    },
+    {
+      "ref": "rap-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a fondé le label Shady Records ?",
+      "answers": [
+        { "text": "50 Cent", "isCorrect": false },
+        { "text": "Eminem", "isCorrect": true },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "Royce da 5'9\"", "isCorrect": false }
+      ],
+      "explanation": "Shady Records a signé 50 Cent en partenariat avec Aftermath."
+    },
+    {
+      "ref": "rap-071",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "album", "record"],
+      "text": "Quel album d'Eminem, sorti en 2000, a battu le record de ventes en première semaine pour un album de rap ?",
+      "answers": [
+        { "text": "The Marshall Mathers LP", "isCorrect": true },
+        { "text": "The Slim Shady LP", "isCorrect": false },
+        { "text": "The Eminem Show", "isCorrect": false },
+        { "text": "Encore", "isCorrect": false }
+      ],
+      "explanation": "Il s'est vendu à plus de 1,7 million d'exemplaires en une semaine aux États-Unis."
+    },
+    {
+      "ref": "rap-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre d'Eminem raconte l'histoire d'un fan obsessionnel qui lui écrit des lettres ?",
+      "answers": [
+        { "text": "Without Me", "isCorrect": false },
+        { "text": "The Real Slim Shady", "isCorrect": false },
+        { "text": "Mockingbird", "isCorrect": false },
+        { "text": "Stan", "isCorrect": true }
+      ],
+      "explanation": "Le fan, de plus en plus désespéré, finit par se tuer."
+    },
+    {
+      "ref": "rap-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quelle chanteuse figure sur le refrain de « Stan » d'Eminem ?",
+      "answers": [
+        { "text": "Rihanna", "isCorrect": false },
+        { "text": "Sia", "isCorrect": false },
+        { "text": "Dido", "isCorrect": true },
+        { "text": "Beyoncé", "isCorrect": false }
+      ],
+      "explanation": "Le refrain reprend « Thank You » de Dido."
+    },
+    {
+      "ref": "rap-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Quel mot, tiré d'une chanson d'Eminem, désigne aujourd'hui un fan obsessionnel ?",
+      "answers": [
+        { "text": "Groupie", "isCorrect": false },
+        { "text": "Stan", "isCorrect": true },
+        { "text": "Fanboy", "isCorrect": false },
+        { "text": "Slim", "isCorrect": false }
+      ],
+      "explanation": "Le dictionnaire Merriam-Webster a ajouté le mot en 2019."
+    },
+    {
+      "ref": "rap-075",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Avec quelle chanteuse Eminem a-t-il sorti « Love the Way You Lie » ?",
+      "answers": [
+        { "text": "Rihanna", "isCorrect": true },
+        { "text": "Beyoncé", "isCorrect": false },
+        { "text": "Dido", "isCorrect": false },
+        { "text": "Pink", "isCorrect": false }
+      ],
+      "explanation": "Le titre est sorti en 2010 sur l'album « Recovery »."
+    },
+    {
+      "ref": "rap-076",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a lancé la carrière d'Eminem en le signant sur son label ?",
+      "answers": [
+        { "text": "Snoop Dogg", "isCorrect": false },
+        { "text": "Jay-Z", "isCorrect": false },
+        { "text": "50 Cent", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": true }
+      ],
+      "explanation": "Dr. Dre l'a signé sur Aftermath en 1998."
+    },
+    {
+      "ref": "rap-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur d'Atlanta a sorti « Mask Off » en 2017 ?",
+      "answers": [
+        { "text": "Young Thug", "isCorrect": false },
+        { "text": "Gunna", "isCorrect": false },
+        { "text": "Future", "isCorrect": true },
+        { "text": "2 Chainz", "isCorrect": false }
+      ],
+      "explanation": "Future est l'une des figures majeures de la trap."
+    },
+    {
+      "ref": "rap-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel trio d'Atlanta était composé de Quavo, Offset et Takeoff ?",
+      "answers": [
+        { "text": "Run the Jewels", "isCorrect": false },
+        { "text": "Migos", "isCorrect": true },
+        { "text": "Three 6 Mafia", "isCorrect": false },
+        { "text": "Goodie Mob", "isCorrect": false }
+      ],
+      "explanation": "Migos a connu un immense succès avec « Bad and Boujee » en 2016."
+    },
+    {
+      "ref": "rap-079",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "histoire"],
+      "text": "Quel style de rap, né à Atlanta, se caractérise par des charleys rapides et des basses 808 ?",
+      "answers": [
+        { "text": "La trap", "isCorrect": true },
+        { "text": "La drill", "isCorrect": false },
+        { "text": "Le G-funk", "isCorrect": false },
+        { "text": "Le boom bap", "isCorrect": false }
+      ],
+      "explanation": "Le mot « trap » désigne à l'origine les lieux de deal."
+    },
+    {
+      "ref": "rap-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Dans quelle ville est née la drill, avec des rappeurs comme Chief Keef ?",
+      "answers": [
+        { "text": "Atlanta", "isCorrect": false },
+        { "text": "Londres", "isCorrect": false },
+        { "text": "Houston", "isCorrect": false },
+        { "text": "Chicago", "isCorrect": true }
+      ],
+      "explanation": "La drill est née à Chicago au début des années 2010, avant de se développer à Londres."
+    },
+    {
+      "ref": "rap-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Quel courant de rap des années 1990 est associé à la côte Ouest et aux sonorités funk ?",
+      "answers": [
+        { "text": "Le boom bap", "isCorrect": false },
+        { "text": "La trap", "isCorrect": false },
+        { "text": "Le G-funk", "isCorrect": true },
+        { "text": "Le crunk", "isCorrect": false }
+      ],
+      "explanation": "Le G-funk s'inspire du funk de George Clinton et de Parliament."
+    },
+    {
+      "ref": "rap-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Quel style de production new-yorkais des années 1990 repose sur des samples de jazz et des batteries lourdes ?",
+      "answers": [
+        { "text": "Le G-funk", "isCorrect": false },
+        { "text": "Le boom bap", "isCorrect": true },
+        { "text": "La trap", "isCorrect": false },
+        { "text": "La drill", "isCorrect": false }
+      ],
+      "explanation": "Le nom imite le son de la grosse caisse (« boom ») et de la caisse claire (« bap »)."
+    },
+    {
+      "ref": "rap-083",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "De quelle ville est originaire Travis Scott ?",
+      "answers": [
+        { "text": "Houston", "isCorrect": true },
+        { "text": "Atlanta", "isCorrect": false },
+        { "text": "Miami", "isCorrect": false },
+        { "text": "Chicago", "isCorrect": false }
+      ],
+      "explanation": "Travis Scott est né à Houston, au Texas."
+    },
+    {
+      "ref": "rap-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "album"],
+      "text": "Quel album de Travis Scott, sorti en 2018, porte le nom d'un ancien parc d'attractions de Houston ?",
+      "answers": [
+        { "text": "Rodeo", "isCorrect": false },
+        { "text": "Utopia", "isCorrect": false },
+        { "text": "Birds in the Trap Sing McKnight", "isCorrect": false },
+        { "text": "Astroworld", "isCorrect": true }
+      ],
+      "explanation": "Le parc Six Flags AstroWorld a fermé en 2005."
+    },
+    {
+      "ref": "rap-085",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a donné un concert virtuel dans le jeu Fortnite en 2020 ?",
+      "answers": [
+        { "text": "Eminem", "isCorrect": false },
+        { "text": "Post Malone", "isCorrect": false },
+        { "text": "Travis Scott", "isCorrect": true },
+        { "text": "Lil Nas X", "isCorrect": false }
+      ],
+      "explanation": "Le concert « Astronomical » a réuni plus de 12 millions de joueurs en direct."
+    },
+    {
+      "ref": "rap-086",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson", "record"],
+      "text": "Quel titre de Lil Nas X, mêlant rap et country, a battu en 2019 le record de semaines en tête du Billboard Hot 100 ?",
+      "answers": [
+        { "text": "Montero", "isCorrect": false },
+        { "text": "Old Town Road", "isCorrect": true },
+        { "text": "Industry Baby", "isCorrect": false },
+        { "text": "Panini", "isCorrect": false }
+      ],
+      "explanation": "« Old Town Road » est resté 19 semaines numéro 1."
+    },
+    {
+      "ref": "rap-087",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel chanteur de country figure sur le remix d'« Old Town Road » ?",
+      "answers": [
+        { "text": "Billy Ray Cyrus", "isCorrect": true },
+        { "text": "Garth Brooks", "isCorrect": false },
+        { "text": "Johnny Cash", "isCorrect": false },
+        { "text": "Willie Nelson", "isCorrect": false }
+      ],
+      "explanation": "Billy Ray Cyrus est le père de Miley Cyrus."
+    },
+    {
+      "ref": "rap-088",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur se surnomme « Hova » ?",
+      "answers": [
+        { "text": "Nas", "isCorrect": false },
+        { "text": "Diddy", "isCorrect": false },
+        { "text": "Kanye West", "isCorrect": false },
+        { "text": "Jay-Z", "isCorrect": true }
+      ],
+      "explanation": "« Hova » est un jeu de mots sur « Jéhovah »."
+    },
+    {
+      "ref": "rap-089",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Nasir Jones ?",
+      "answers": [
+        { "text": "Jay-Z", "isCorrect": false },
+        { "text": "Big L", "isCorrect": false },
+        { "text": "Nas", "isCorrect": true },
+        { "text": "Mos Def", "isCorrect": false }
+      ],
+      "explanation": "Nas a grandi dans les Queensbridge Houses, dans le Queens."
+    },
+    {
+      "ref": "rap-090",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Andre Young ?",
+      "answers": [
+        { "text": "Ice Cube", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": true },
+        { "text": "Eazy-E", "isCorrect": false },
+        { "text": "DJ Quik", "isCorrect": false }
+      ],
+      "explanation": "Dr. Dre a débuté dans le groupe World Class Wreckin' Cru avant N.W.A."
+    },
+    {
+      "ref": "rap-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom O'Shea Jackson ?",
+      "answers": [
+        { "text": "Ice Cube", "isCorrect": true },
+        { "text": "Ice-T", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": false },
+        { "text": "MC Ren", "isCorrect": false }
+      ],
+      "explanation": "Son fils, O'Shea Jackson Jr., l'a incarné dans le film « Straight Outta Compton »."
+    },
+    {
+      "ref": "rap-092",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Christopher Wallace ?",
+      "answers": [
+        { "text": "Tupac Shakur", "isCorrect": false },
+        { "text": "Big Pun", "isCorrect": false },
+        { "text": "Nas", "isCorrect": false },
+        { "text": "The Notorious B.I.G.", "isCorrect": true }
+      ],
+      "explanation": "Christopher Wallace a grandi à Brooklyn."
+    },
+    {
+      "ref": "rap-093",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Earl Simmons ?",
+      "answers": [
+        { "text": "Method Man", "isCorrect": false },
+        { "text": "Busta Rhymes", "isCorrect": false },
+        { "text": "DMX", "isCorrect": true },
+        { "text": "Ja Rule", "isCorrect": false }
+      ],
+      "explanation": "DMX était connu pour sa voix rauque et ses aboiements."
+    },
+    {
+      "ref": "rap-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Avec quel acteur et chanteur Kanye West a-t-il sorti « Gold Digger » ?",
+      "answers": [
+        { "text": "Will Smith", "isCorrect": false },
+        { "text": "Jamie Foxx", "isCorrect": true },
+        { "text": "Usher", "isCorrect": false },
+        { "text": "John Legend", "isCorrect": false }
+      ],
+      "explanation": "Le refrain reprend « I Got a Woman » de Ray Charles, que Jamie Foxx venait d'incarner au cinéma."
+    },
+    {
+      "ref": "rap-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Kanye West reprend « Harder, Better, Faster, Stronger » de Daft Punk ?",
+      "answers": [
+        { "text": "Stronger", "isCorrect": true },
+        { "text": "Power", "isCorrect": false },
+        { "text": "Gold Digger", "isCorrect": false },
+        { "text": "Heartless", "isCorrect": false }
+      ],
+      "explanation": "« Stronger » est extrait de l'album « Graduation » (2007)."
+    },
+    {
+      "ref": "rap-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a chanté « Hot in Herre » en 2002 ?",
+      "answers": [
+        { "text": "Ludacris", "isCorrect": false },
+        { "text": "Chingy", "isCorrect": false },
+        { "text": "Usher", "isCorrect": false },
+        { "text": "Nelly", "isCorrect": true }
+      ],
+      "explanation": "Nelly, originaire de Saint-Louis, a dominé le début des années 2000."
+    },
+    {
+      "ref": "rap-097",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur formait avec Eric B. un duo considéré comme une révolution technique du rap ?",
+      "answers": [
+        { "text": "KRS-One", "isCorrect": false },
+        { "text": "Big Daddy Kane", "isCorrect": false },
+        { "text": "Rakim", "isCorrect": true },
+        { "text": "Kool Moe Dee", "isCorrect": false }
+      ],
+      "explanation": "Rakim a introduit des rimes internes complexes et un débit plus posé."
+    },
+    {
+      "ref": "rap-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a fondé le groupe Boogie Down Productions ?",
+      "answers": [
+        { "text": "Rakim", "isCorrect": false },
+        { "text": "KRS-One", "isCorrect": true },
+        { "text": "Chuck D", "isCorrect": false },
+        { "text": "Slick Rick", "isCorrect": false }
+      ],
+      "explanation": "KRS-One est surnommé « The Teacha »."
+    },
+    {
+      "ref": "rap-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Quel DJ new-yorkais est un pionnier des techniques de mixage et de scratch ?",
+      "answers": [
+        { "text": "Grandmaster Flash", "isCorrect": true },
+        { "text": "DJ Kool Herc", "isCorrect": false },
+        { "text": "Afrika Bambaataa", "isCorrect": false },
+        { "text": "Jam Master Jay", "isCorrect": false }
+      ],
+      "explanation": "Grandmaster Flash a mis au point des techniques pour enchaîner les breaks sans interruption."
+    },
+    {
+      "ref": "rap-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "histoire"],
+      "text": "Quel DJ a fondé la Zulu Nation ?",
+      "answers": [
+        { "text": "DJ Kool Herc", "isCorrect": false },
+        { "text": "Grandmaster Flash", "isCorrect": false },
+        { "text": "Grand Wizzard Theodore", "isCorrect": false },
+        { "text": "Afrika Bambaataa", "isCorrect": true }
+      ],
+      "explanation": "La Zulu Nation voulait canaliser la violence des gangs vers la culture hip-hop."
+    },
+    {
+      "ref": "rap-101",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre d'Afrika Bambaataa (1982) reprend un morceau du groupe allemand Kraftwerk ?",
+      "answers": [
+        { "text": "The Message", "isCorrect": false },
+        { "text": "Rapper's Delight", "isCorrect": false },
+        { "text": "Planet Rock", "isCorrect": true },
+        { "text": "Rockit", "isCorrect": false }
+      ],
+      "explanation": "« Planet Rock » reprend « Trans-Europe Express » et a influencé l'électro."
+    },
+    {
+      "ref": "rap-102",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "histoire"],
+      "text": "Combien de disciplines compte traditionnellement la culture hip-hop ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "Le rap (MCing), le DJing, la danse (breakdance) et le graffiti."
+    },
+    {
+      "ref": "rap-103",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "histoire"],
+      "text": "Que signifie l'abréviation « MC » dans le rap ?",
+      "answers": [
+        { "text": "Master of Ceremonies", "isCorrect": true },
+        { "text": "Music Creator", "isCorrect": false },
+        { "text": "Mic Controller", "isCorrect": false },
+        { "text": "Main Composer", "isCorrect": false }
+      ],
+      "explanation": "Le MC animait d'abord les soirées des DJ avant de devenir le rappeur."
+    },
+    {
+      "ref": "rap-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a cofondé la marque de casques Beats, rachetée par Apple en 2014 ?",
+      "answers": [
+        { "text": "Jay-Z", "isCorrect": false },
+        { "text": "Diddy", "isCorrect": false },
+        { "text": "Kanye West", "isCorrect": false },
+        { "text": "Dr. Dre", "isCorrect": true }
+      ],
+      "explanation": "Dr. Dre a fondé Beats avec le producteur Jimmy Iovine."
+    },
+    {
+      "ref": "rap-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur a fondé le label G-Unit ?",
+      "answers": [
+        { "text": "Eminem", "isCorrect": false },
+        { "text": "The Game", "isCorrect": false },
+        { "text": "50 Cent", "isCorrect": true },
+        { "text": "Lloyd Banks", "isCorrect": false }
+      ],
+      "explanation": "G-Unit était aussi le nom de son groupe, avec Lloyd Banks et Tony Yayo."
+    },
+    {
+      "ref": "rap-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Tupac est un hommage à sa mère ?",
+      "answers": [
+        { "text": "Changes", "isCorrect": false },
+        { "text": "Dear Mama", "isCorrect": true },
+        { "text": "California Love", "isCorrect": false },
+        { "text": "Hit 'Em Up", "isCorrect": false }
+      ],
+      "explanation": "« Dear Mama » est entré à la Bibliothèque du Congrès américain en 2010."
+    },
+    {
+      "ref": "rap-107",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Tupac et Dr. Dre célèbre la Californie ?",
+      "answers": [
+        { "text": "California Love", "isCorrect": true },
+        { "text": "Dear Mama", "isCorrect": false },
+        { "text": "Still D.R.E.", "isCorrect": false },
+        { "text": "Regulate", "isCorrect": false }
+      ],
+      "explanation": "Le clip s'inspire du film « Mad Max »."
+    },
+    {
+      "ref": "rap-108",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Tupac est un violent « diss » dirigé contre The Notorious B.I.G. ?",
+      "answers": [
+        { "text": "Changes", "isCorrect": false },
+        { "text": "Ambitionz Az a Ridah", "isCorrect": false },
+        { "text": "Dear Mama", "isCorrect": false },
+        { "text": "Hit 'Em Up", "isCorrect": true }
+      ],
+      "explanation": "« Hit 'Em Up » est sorti en 1996, quelques mois avant sa mort."
+    },
+    {
+      "ref": "rap-109",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de The Notorious B.I.G. commence par « It was all a dream » ?",
+      "answers": [
+        { "text": "Hypnotize", "isCorrect": false },
+        { "text": "Big Poppa", "isCorrect": false },
+        { "text": "Juicy", "isCorrect": true },
+        { "text": "Mo Money Mo Problems", "isCorrect": false }
+      ],
+      "explanation": "« Juicy » raconte son ascension depuis la pauvreté."
+    },
+    {
+      "ref": "rap-110",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Puff Daddy, hommage à The Notorious B.I.G., reprend « Every Breath You Take » de The Police ?",
+      "answers": [
+        { "text": "Mo Money Mo Problems", "isCorrect": false },
+        { "text": "I'll Be Missing You", "isCorrect": true },
+        { "text": "Can't Nobody Hold Me Down", "isCorrect": false },
+        { "text": "Been Around the World", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été chanté avec Faith Evans, la veuve de Biggie."
+    },
+    {
+      "ref": "rap-111",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur et producteur d'Atlanta a popularisé le crunk avec ses « Yeah! » et « Okay! » ?",
+      "answers": [
+        { "text": "Lil Jon", "isCorrect": true },
+        { "text": "Ludacris", "isCorrect": false },
+        { "text": "T.I.", "isCorrect": false },
+        { "text": "Gucci Mane", "isCorrect": false }
+      ],
+      "explanation": "Le crunk est un rap festif et énergique né dans le sud des États-Unis."
+    },
+    {
+      "ref": "rap-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Avec quel chanteur Lil Jon et Ludacris ont-ils sorti « Yeah! » en 2004 ?",
+      "answers": [
+        { "text": "Akon", "isCorrect": false },
+        { "text": "Ne-Yo", "isCorrect": false },
+        { "text": "Chris Brown", "isCorrect": false },
+        { "text": "Usher", "isCorrect": true }
+      ],
+      "explanation": "« Yeah! » est resté 12 semaines en tête du Billboard Hot 100."
+    },
+    {
+      "ref": "rap-113",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel rappeur a sorti « Thrift Shop » avec le producteur Ryan Lewis ?",
+      "answers": [
+        { "text": "Mac Miller", "isCorrect": false },
+        { "text": "Logic", "isCorrect": false },
+        { "text": "Macklemore", "isCorrect": true },
+        { "text": "G-Eazy", "isCorrect": false }
+      ],
+      "explanation": "« Thrift Shop » célèbre les vêtements achetés en friperie."
+    },
+    {
+      "ref": "rap-114",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["us", "album"],
+      "text": "Quel album de Kendrick Lamar, sorti en 2015, contient le titre « Alright » ?",
+      "answers": [
+        { "text": "DAMN.", "isCorrect": false },
+        { "text": "To Pimp a Butterfly", "isCorrect": true },
+        { "text": "good kid, m.A.A.d city", "isCorrect": false },
+        { "text": "Section.80", "isCorrect": false }
+      ],
+      "explanation": "« Alright » est devenu un hymne du mouvement Black Lives Matter."
+    },
+    {
+      "ref": "rap-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel duo a sorti « Ms. Jackson » en 2000 ?",
+      "answers": [
+        { "text": "OutKast", "isCorrect": true },
+        { "text": "Mobb Deep", "isCorrect": false },
+        { "text": "Clipse", "isCorrect": false },
+        { "text": "Run the Jewels", "isCorrect": false }
+      ],
+      "explanation": "Le titre s'adresse à la mère d'une ex-compagne d'André 3000."
+    },
+    {
+      "ref": "rap-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur de Chicago a sorti « Jesus Walks » en 2004 ?",
+      "answers": [
+        { "text": "Common", "isCorrect": false },
+        { "text": "Lupe Fiasco", "isCorrect": false },
+        { "text": "Chance the Rapper", "isCorrect": false },
+        { "text": "Kanye West", "isCorrect": true }
+      ],
+      "explanation": "Kanye West a grandi à Chicago."
+    },
+    {
+      "ref": "rap-117",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur et acteur a créé la série « Atlanta » ?",
+      "answers": [
+        { "text": "Kid Cudi", "isCorrect": false },
+        { "text": "Tyler, the Creator", "isCorrect": false },
+        { "text": "Donald Glover", "isCorrect": true },
+        { "text": "Common", "isCorrect": false }
+      ],
+      "explanation": "Donald Glover rappe sous le nom de Childish Gambino."
+    },
+    {
+      "ref": "rap-118",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "chanson"],
+      "text": "Quel titre de Childish Gambino, sorti en 2018, dénonce la violence par les armes à feu ?",
+      "answers": [
+        { "text": "Redbone", "isCorrect": false },
+        { "text": "This Is America", "isCorrect": true },
+        { "text": "Feels Like Summer", "isCorrect": false },
+        { "text": "3005", "isCorrect": false }
+      ],
+      "explanation": "Le clip a dépassé les 100 millions de vues en quelques jours."
+    },
+    {
+      "ref": "rap-119",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur et producteur dirige le collectif Odd Future ?",
+      "answers": [
+        { "text": "Tyler, the Creator", "isCorrect": true },
+        { "text": "Earl Sweatshirt", "isCorrect": false },
+        { "text": "Frank Ocean", "isCorrect": false },
+        { "text": "Kid Cudi", "isCorrect": false }
+      ],
+      "explanation": "Odd Future a révélé Frank Ocean et Earl Sweatshirt."
+    },
+    {
+      "ref": "rap-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur et chanteur a sorti « Rockstar » avec 21 Savage en 2017 ?",
+      "answers": [
+        { "text": "Travis Scott", "isCorrect": false },
+        { "text": "Lil Uzi Vert", "isCorrect": false },
+        { "text": "Juice WRLD", "isCorrect": false },
+        { "text": "Post Malone", "isCorrect": true }
+      ],
+      "explanation": "« Rockstar » a été un énorme succès en streaming."
+    },
+    {
+      "ref": "rap-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "artiste"],
+      "text": "Quel rappeur du Queens, surnommé « Ladies Love Cool James », a sorti « Mama Said Knock You Out » ?",
+      "answers": [
+        { "text": "Rakim", "isCorrect": false },
+        { "text": "Big Daddy Kane", "isCorrect": false },
+        { "text": "LL Cool J", "isCorrect": true },
+        { "text": "Slick Rick", "isCorrect": false }
+      ],
+      "explanation": "LL Cool J a été l'un des premiers artistes signés chez Def Jam."
+    },
+    {
+      "ref": "rap-122",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["us", "histoire"],
+      "text": "Quel film de 2015 retrace l'histoire du groupe N.W.A ?",
+      "answers": [
+        { "text": "8 Mile", "isCorrect": false },
+        { "text": "Straight Outta Compton", "isCorrect": true },
+        { "text": "Notorious", "isCorrect": false },
+        { "text": "All Eyez on Me", "isCorrect": false }
+      ],
+      "explanation": "Le film a été réalisé par F. Gary Gray."
+    },
+    {
+      "ref": "rap-123",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe marseillais a sorti l'album « L'École du micro d'argent » en 1997 ?",
+      "answers": [
+        { "text": "IAM", "isCorrect": true },
+        { "text": "Suprême NTM", "isCorrect": false },
+        { "text": "Fonky Family", "isCorrect": false },
+        { "text": "Psy 4 de la rime", "isCorrect": false }
+      ],
+      "explanation": "Cet album est souvent cité comme le plus grand classique du rap français."
+    },
+    {
+      "ref": "rap-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville est originaire le groupe IAM ?",
+      "answers": [
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Lyon", "isCorrect": false },
+        { "text": "Toulouse", "isCorrect": false },
+        { "text": "Marseille", "isCorrect": true }
+      ],
+      "explanation": "IAM a été formé à Marseille à la fin des années 1980."
+    },
+    {
+      "ref": "rap-125",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur est le leader du groupe IAM ?",
+      "answers": [
+        { "text": "Shurik'n", "isCorrect": false },
+        { "text": "Kool Shen", "isCorrect": false },
+        { "text": "Akhenaton", "isCorrect": true },
+        { "text": "Jul", "isCorrect": false }
+      ],
+      "explanation": "Akhenaton et Shurik'n sont les deux rappeurs d'IAM, avec Imhotep et Kheops à la musique."
+    },
+    {
+      "ref": "rap-126",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quels sont les deux rappeurs de Suprême NTM ?",
+      "answers": [
+        { "text": "Akhenaton et Shurik'n", "isCorrect": false },
+        { "text": "JoeyStarr et Kool Shen", "isCorrect": true },
+        { "text": "Oxmo Puccino et Booba", "isCorrect": false },
+        { "text": "Ali et Booba", "isCorrect": false }
+      ],
+      "explanation": "NTM est l'un des groupes fondateurs du rap français."
+    },
+    {
+      "ref": "rap-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville de Seine-Saint-Denis est issu Suprême NTM ?",
+      "answers": [
+        { "text": "Saint-Denis", "isCorrect": true },
+        { "text": "Sarcelles", "isCorrect": false },
+        { "text": "Bobigny", "isCorrect": false },
+        { "text": "Aubervilliers", "isCorrect": false }
+      ],
+      "explanation": "Le groupe a rendu hommage à son département avec « Seine-Saint-Denis Style »."
+    },
+    {
+      "ref": "rap-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Suprême NTM pose la question « Qu'est-ce qu'on attend pour foutre le feu ? » ?",
+      "answers": [
+        { "text": "Laisse pas traîner ton fils", "isCorrect": false },
+        { "text": "Seine-Saint-Denis Style", "isCorrect": false },
+        { "text": "Ma Benz", "isCorrect": false },
+        { "text": "Qu'est-ce qu'on attend", "isCorrect": true }
+      ],
+      "explanation": "Le titre est sorti en 1995 sur l'album « Paris sous les bombes »."
+    },
+    {
+      "ref": "rap-129",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur est surnommé « le Duc de Boulogne » ?",
+      "answers": [
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "La Fouine", "isCorrect": false },
+        { "text": "Booba", "isCorrect": true },
+        { "text": "Kaaris", "isCorrect": false }
+      ],
+      "explanation": "Booba a grandi à Boulogne-Billancourt, dans les Hauts-de-Seine."
+    },
+    {
+      "ref": "rap-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Avec quel rappeur Booba formait-il le duo Lunatic ?",
+      "answers": [
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "Ali", "isCorrect": true },
+        { "text": "Kaaris", "isCorrect": false },
+        { "text": "Oxmo Puccino", "isCorrect": false }
+      ],
+      "explanation": "Lunatic a sorti un seul album, devenu culte."
+    },
+    {
+      "ref": "rap-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quel est l'unique album de Lunatic, sorti en 2000 ?",
+      "answers": [
+        { "text": "Mauvais Œil", "isCorrect": true },
+        { "text": "Temps mort", "isCorrect": false },
+        { "text": "Ouest Side", "isCorrect": false },
+        { "text": "Panthéon", "isCorrect": false }
+      ],
+      "explanation": "« Mauvais Œil » a été disque d'or en indépendant, une première pour le rap français."
+    },
+    {
+      "ref": "rap-132",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quel est le premier album solo de Booba, sorti en 2002 ?",
+      "answers": [
+        { "text": "Panthéon", "isCorrect": false },
+        { "text": "Ouest Side", "isCorrect": false },
+        { "text": "0.9", "isCorrect": false },
+        { "text": "Temps mort", "isCorrect": true }
+      ],
+      "explanation": "« Temps mort » a été suivi de « Panthéon » en 2004."
+    },
+    {
+      "ref": "rap-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album"],
+      "text": "Quel album de Booba, sorti en 2004, porte le nom d'un monument parisien ?",
+      "answers": [
+        { "text": "Ouest Side", "isCorrect": false },
+        { "text": "Lunatic", "isCorrect": false },
+        { "text": "Panthéon", "isCorrect": true },
+        { "text": "Trône", "isCorrect": false }
+      ],
+      "explanation": "« Panthéon » contient notamment « Le Duc de Boulogne »."
+    },
+    {
+      "ref": "rap-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur a fondé le label 92i ?",
+      "answers": [
+        { "text": "Kaaris", "isCorrect": false },
+        { "text": "Booba", "isCorrect": true },
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "Damso", "isCorrect": false }
+      ],
+      "explanation": "Le nom fait référence au département des Hauts-de-Seine."
+    },
+    {
+      "ref": "rap-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur, alors proche de Booba, a sorti le titre « Zoo » en 2013 ?",
+      "answers": [
+        { "text": "Kaaris", "isCorrect": true },
+        { "text": "Gradur", "isCorrect": false },
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "La Fouine", "isCorrect": false }
+      ],
+      "explanation": "« Zoo » est extrait de l'album « Or Noir »."
+    },
+    {
+      "ref": "rap-136",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Dans quel aéroport Booba et Kaaris se sont-ils battus en août 2018 ?",
+      "answers": [
+        { "text": "Roissy-Charles-de-Gaulle", "isCorrect": false },
+        { "text": "Marseille-Provence", "isCorrect": false },
+        { "text": "Nice-Côte d'Azur", "isCorrect": false },
+        { "text": "Orly", "isCorrect": true }
+      ],
+      "explanation": "La bagarre a eu lieu dans une zone d'embarquement et a valu aux deux rappeurs une condamnation."
+    },
+    {
+      "ref": "rap-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville de Seine-Saint-Denis est originaire Kaaris ?",
+      "answers": [
+        { "text": "Saint-Denis", "isCorrect": false },
+        { "text": "Montreuil", "isCorrect": false },
+        { "text": "Sevran", "isCorrect": true },
+        { "text": "Bobigny", "isCorrect": false }
+      ],
+      "explanation": "Kaaris a grandi dans la cité des Beaudottes, à Sevran."
+    },
+    {
+      "ref": "rap-138",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste", "record"],
+      "text": "Quel rappeur marseillais sort plusieurs albums par an et compte parmi les plus gros vendeurs de l'histoire du rap français ?",
+      "answers": [
+        { "text": "SCH", "isCorrect": false },
+        { "text": "Jul", "isCorrect": true },
+        { "text": "Soprano", "isCorrect": false },
+        { "text": "Alonzo", "isCorrect": false }
+      ],
+      "explanation": "Jul a sorti plus de vingt albums depuis 2014."
+    },
+    {
+      "ref": "rap-139",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel tube de l'été 2020 a réuni de nombreux rappeurs marseillais à l'initiative de Jul ?",
+      "answers": [
+        { "text": "Bande organisée", "isCorrect": true },
+        { "text": "Tchikita", "isCorrect": false },
+        { "text": "La Kiffance", "isCorrect": false },
+        { "text": "Le Classico organisé", "isCorrect": false }
+      ],
+      "explanation": "« Bande organisée » réunit notamment SCH, Naps, Alonzo et Soso Maness."
+    },
+    {
+      "ref": "rap-140",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel rappeur a sorti « Tchikita » en 2016 ?",
+      "answers": [
+        { "text": "Soprano", "isCorrect": false },
+        { "text": "Naps", "isCorrect": false },
+        { "text": "SCH", "isCorrect": false },
+        { "text": "Jul", "isCorrect": true }
+      ],
+      "explanation": "« Tchikita » est l'un des premiers grands succès de Jul."
+    },
+    {
+      "ref": "rap-141",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Comment s'appelle le label indépendant fondé par Jul ?",
+      "answers": [
+        { "text": "92i", "isCorrect": false },
+        { "text": "Rec. 118", "isCorrect": false },
+        { "text": "D'or et de platine", "isCorrect": true },
+        { "text": "Liga One Industry", "isCorrect": false }
+      ],
+      "explanation": "Jul a choisi l'indépendance pour sortir ses albums à son rythme."
+    },
+    {
+      "ref": "rap-142",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel rappeur des Bouches-du-Rhône a sorti « La Kiffance » en 2019 ?",
+      "answers": [
+        { "text": "Jul", "isCorrect": false },
+        { "text": "Naps", "isCorrect": true },
+        { "text": "Alonzo", "isCorrect": false },
+        { "text": "Soso Maness", "isCorrect": false }
+      ],
+      "explanation": "Naps vient des quartiers nord de Marseille."
+    },
+    {
+      "ref": "rap-143",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur marseillais a fait partie des Psy 4 de la rime avant une carrière solo très populaire ?",
+      "answers": [
+        { "text": "Soprano", "isCorrect": true },
+        { "text": "Jul", "isCorrect": false },
+        { "text": "SCH", "isCorrect": false },
+        { "text": "Naps", "isCorrect": false }
+      ],
+      "explanation": "Les Psy 4 de la rime réunissaient Soprano, Alonzo, Vincenzo et DJ Sya Styles."
+    },
+    {
+      "ref": "rap-144",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville des Bouches-du-Rhône est originaire SCH ?",
+      "answers": [
+        { "text": "Marseille", "isCorrect": false },
+        { "text": "Aix-en-Provence", "isCorrect": false },
+        { "text": "Vitrolles", "isCorrect": false },
+        { "text": "Aubagne", "isCorrect": true }
+      ],
+      "explanation": "SCH est connu pour sa voix grave et son univers sombre."
+    },
+    {
+      "ref": "rap-145",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quelle série d'albums SCH a-t-il consacrée à une fiction de mafia ?",
+      "answers": [
+        { "text": "A7", "isCorrect": false },
+        { "text": "Rooftop", "isCorrect": false },
+        { "text": "JVLIVS", "isCorrect": true },
+        { "text": "Anarchie", "isCorrect": false }
+      ],
+      "explanation": "Le premier volet de « JVLIVS » est sorti en 2018."
+    },
+    {
+      "ref": "rap-146",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel duo de rappeurs est composé des frères Ademo et N.O.S ?",
+      "answers": [
+        { "text": "Bigflo et Oli", "isCorrect": false },
+        { "text": "PNL", "isCorrect": true },
+        { "text": "Casseurs Flowters", "isCorrect": false },
+        { "text": "Columbine", "isCorrect": false }
+      ],
+      "explanation": "PNL signifie « Peace N' Lovés »."
+    },
+    {
+      "ref": "rap-147",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "De quelle cité de Corbeil-Essonnes est issu le duo PNL ?",
+      "answers": [
+        { "text": "Les Tarterêts", "isCorrect": true },
+        { "text": "Les Ulis", "isCorrect": false },
+        { "text": "La Grande Borne", "isCorrect": false },
+        { "text": "Les Pyramides", "isCorrect": false }
+      ],
+      "explanation": "Les frères y tournent plusieurs de leurs clips."
+    },
+    {
+      "ref": "rap-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel clip de PNL a été tourné au sommet de la tour Eiffel ?",
+      "answers": [
+        { "text": "À l'ammoniaque", "isCorrect": false },
+        { "text": "Le Monde ou rien", "isCorrect": false },
+        { "text": "Onizuka", "isCorrect": false },
+        { "text": "Au DD", "isCorrect": true }
+      ],
+      "explanation": "« Au DD » est sorti en 2019 sur l'album « Deux frères »."
+    },
+    {
+      "ref": "rap-149",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album", "record"],
+      "text": "Quel album de PNL, sorti en 2016, est devenu l'un des plus vendus du rap français ?",
+      "answers": [
+        { "text": "Le Monde Chico", "isCorrect": false },
+        { "text": "Deux frères", "isCorrect": false },
+        { "text": "Dans la légende", "isCorrect": true },
+        { "text": "Que la famille", "isCorrect": false }
+      ],
+      "explanation": "PNL a fait le choix de ne donner presque aucune interview."
+    },
+    {
+      "ref": "rap-150",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Les deux membres de PNL sont frères.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ademo et N.O.S sont deux frères de Corbeil-Essonnes."
+    },
+    {
+      "ref": "rap-151",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville est originaire le duo Bigflo et Oli ?",
+      "answers": [
+        { "text": "Toulouse", "isCorrect": true },
+        { "text": "Bordeaux", "isCorrect": false },
+        { "text": "Montpellier", "isCorrect": false },
+        { "text": "Lyon", "isCorrect": false }
+      ],
+      "explanation": "Les deux frères ont grandi dans le quartier des Minimes, à Toulouse."
+    },
+    {
+      "ref": "rap-152",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel lien unit Bigflo et Oli ?",
+      "answers": [
+        { "text": "Ils sont cousins", "isCorrect": false },
+        { "text": "Ils sont père et fils", "isCorrect": false },
+        { "text": "Ils sont voisins", "isCorrect": false },
+        { "text": "Ils sont frères", "isCorrect": true }
+      ],
+      "explanation": "Florian et Olivio Ordonez sont deux frères d'origine argentine et algérienne."
+    },
+    {
+      "ref": "rap-153",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel duo de rappeurs toulousains a sorti « Dommage » en 2017 ?",
+      "answers": [
+        { "text": "PNL", "isCorrect": false },
+        { "text": "Casseurs Flowters", "isCorrect": false },
+        { "text": "Bigflo et Oli", "isCorrect": true },
+        { "text": "Columbine", "isCorrect": false }
+      ],
+      "explanation": "« Dommage » parle des regrets de ceux qui n'ont pas osé."
+    },
+    {
+      "ref": "rap-154",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe réunit Nekfeu, Framal, Mekra et 2zer ?",
+      "answers": [
+        { "text": "1995", "isCorrect": false },
+        { "text": "S-Crew", "isCorrect": true },
+        { "text": "L'Entourage", "isCorrect": false },
+        { "text": "Casseurs Flowters", "isCorrect": false }
+      ],
+      "explanation": "Nekfeu est aussi membre de 1995 et du collectif L'Entourage."
+    },
+    {
+      "ref": "rap-155",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album"],
+      "text": "Quel est le premier album solo de Nekfeu, sorti en 2015 ?",
+      "answers": [
+        { "text": "Feu", "isCorrect": true },
+        { "text": "Cyborg", "isCorrect": false },
+        { "text": "Les Étoiles vagabondes", "isCorrect": false },
+        { "text": "Expansion", "isCorrect": false }
+      ],
+      "explanation": "« Feu » a été suivi de « Cyborg » en 2016."
+    },
+    {
+      "ref": "rap-156",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quel album de Nekfeu est sorti par surprise en décembre 2016 ?",
+      "answers": [
+        { "text": "Feu", "isCorrect": false },
+        { "text": "Les Étoiles vagabondes", "isCorrect": false },
+        { "text": "Expansion", "isCorrect": false },
+        { "text": "Cyborg", "isCorrect": true }
+      ],
+      "explanation": "Nekfeu l'a annoncé quelques heures seulement avant sa sortie."
+    },
+    {
+      "ref": "rap-157",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Dans quelle ville normande Orelsan a-t-il grandi ?",
+      "answers": [
+        { "text": "Rouen", "isCorrect": false },
+        { "text": "Le Havre", "isCorrect": false },
+        { "text": "Caen", "isCorrect": true },
+        { "text": "Cherbourg", "isCorrect": false }
+      ],
+      "explanation": "Orelsan est né à Alençon et a grandi à Caen, qu'il évoque souvent."
+    },
+    {
+      "ref": "rap-158",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Avec quel rappeur Orelsan forme-t-il le duo Casseurs Flowters ?",
+      "answers": [
+        { "text": "Nekfeu", "isCorrect": false },
+        { "text": "Gringe", "isCorrect": true },
+        { "text": "Vald", "isCorrect": false },
+        { "text": "Lomepal", "isCorrect": false }
+      ],
+      "explanation": "Les deux amis de Caen ont sorti leur premier album en 2013."
+    },
+    {
+      "ref": "rap-159",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "album"],
+      "text": "Quel album d'Orelsan, sorti en 2017, contient « Basique » ?",
+      "answers": [
+        { "text": "La fête est finie", "isCorrect": true },
+        { "text": "Le chant des sirènes", "isCorrect": false },
+        { "text": "Civilisation", "isCorrect": false },
+        { "text": "Perdu d'avance", "isCorrect": false }
+      ],
+      "explanation": "« La fête est finie » a remporté la Victoire de la musique de l'album de musiques urbaines."
+    },
+    {
+      "ref": "rap-160",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album"],
+      "text": "Quel est le premier album d'Orelsan, sorti en 2009 ?",
+      "answers": [
+        { "text": "Le chant des sirènes", "isCorrect": false },
+        { "text": "La fête est finie", "isCorrect": false },
+        { "text": "Civilisation", "isCorrect": false },
+        { "text": "Perdu d'avance", "isCorrect": true }
+      ],
+      "explanation": "« Le chant des sirènes » est sorti en 2011."
+    },
+    {
+      "ref": "rap-161",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Quel film Orelsan a-t-il coréalisé en 2015, avec Gringe dans un des rôles principaux ?",
+      "answers": [
+        { "text": "Bref", "isCorrect": false },
+        { "text": "La Haine", "isCorrect": false },
+        { "text": "Comment c'est loin", "isCorrect": true },
+        { "text": "Les Kaïra", "isCorrect": false }
+      ],
+      "explanation": "Le film raconte deux trentenaires de Caen qui doivent écrire une chanson en une journée."
+    },
+    {
+      "ref": "rap-162",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album"],
+      "text": "Quel album d'Orelsan, sorti en 2021, est accompagné d'une série documentaire sur sa vie ?",
+      "answers": [
+        { "text": "La fête est finie", "isCorrect": false },
+        { "text": "Civilisation", "isCorrect": true },
+        { "text": "Perdu d'avance", "isCorrect": false },
+        { "text": "Le chant des sirènes", "isCorrect": false }
+      ],
+      "explanation": "La série « Montre jamais ça à personne » est sortie la même année."
+    },
+    {
+      "ref": "rap-163",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Qui a réalisé la série documentaire « Montre jamais ça à personne » sur Orelsan ?",
+      "answers": [
+        { "text": "Son frère, Clément Cotentin", "isCorrect": true },
+        { "text": "Gringe", "isCorrect": false },
+        { "text": "Kyan Khojandi", "isCorrect": false },
+        { "text": "Mathieu Kassovitz", "isCorrect": false }
+      ],
+      "explanation": "Clément Cotentin a filmé son frère pendant près de vingt ans."
+    },
+    {
+      "ref": "rap-164",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Aurélien Cotentin ?",
+      "answers": [
+        { "text": "Gringe", "isCorrect": false },
+        { "text": "Vald", "isCorrect": false },
+        { "text": "Nekfeu", "isCorrect": false },
+        { "text": "Orelsan", "isCorrect": true }
+      ],
+      "explanation": "« Orelsan » vient du surnom « Orel », tiré de son prénom."
+    },
+    {
+      "ref": "rap-165",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur, de son vrai nom Claude M'Barali, a sorti « Bouge de là » en 1990 ?",
+      "answers": [
+        { "text": "Oxmo Puccino", "isCorrect": false },
+        { "text": "Doc Gynéco", "isCorrect": false },
+        { "text": "MC Solaar", "isCorrect": true },
+        { "text": "Passi", "isCorrect": false }
+      ],
+      "explanation": "« Bouge de là » est l'un des premiers grands succès du rap français."
+    },
+    {
+      "ref": "rap-166",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "MC Solaar est né à Dakar, au Sénégal.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Il est né à Dakar en 1969 et a grandi en région parisienne."
+    },
+    {
+      "ref": "rap-167",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Sur quel album de MC Solaar figure « Caroline » ?",
+      "answers": [
+        { "text": "Qui sème le vent récolte le tempo", "isCorrect": true },
+        { "text": "Prose Combat", "isCorrect": false },
+        { "text": "Paradisiaque", "isCorrect": false },
+        { "text": "Cinquième As", "isCorrect": false }
+      ],
+      "explanation": "C'est son premier album, sorti en 1991."
+    },
+    {
+      "ref": "rap-168",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de MC Solaar, sorti en 1994, reprend l'univers des westerns ?",
+      "answers": [
+        { "text": "Caroline", "isCorrect": false },
+        { "text": "Bouge de là", "isCorrect": false },
+        { "text": "Victime de la mode", "isCorrect": false },
+        { "text": "Nouveau western", "isCorrect": true }
+      ],
+      "explanation": "« Nouveau western » reprend un air de Serge Gainsbourg."
+    },
+    {
+      "ref": "rap-169",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur est surnommé « le Black Jacques Brel » ?",
+      "answers": [
+        { "text": "MC Solaar", "isCorrect": false },
+        { "text": "Abd al Malik", "isCorrect": false },
+        { "text": "Oxmo Puccino", "isCorrect": true },
+        { "text": "Youssoupha", "isCorrect": false }
+      ],
+      "explanation": "Oxmo Puccino est réputé pour ses textes très écrits."
+    },
+    {
+      "ref": "rap-170",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quel est le premier album d'Oxmo Puccino, sorti en 1998 ?",
+      "answers": [
+        { "text": "L'amour est mort", "isCorrect": false },
+        { "text": "Opéra Puccino", "isCorrect": true },
+        { "text": "Lipopette Bar", "isCorrect": false },
+        { "text": "La Voix lactée", "isCorrect": false }
+      ],
+      "explanation": "« Opéra Puccino » est un classique du rap français des années 1990."
+    },
+    {
+      "ref": "rap-171",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Abdoulaye Diarra ?",
+      "answers": [
+        { "text": "Oxmo Puccino", "isCorrect": true },
+        { "text": "MC Solaar", "isCorrect": false },
+        { "text": "Passi", "isCorrect": false },
+        { "text": "Kery James", "isCorrect": false }
+      ],
+      "explanation": "Oxmo Puccino est né au Mali en 1974."
+    },
+    {
+      "ref": "rap-172",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel collectif des années 1990 réunissait notamment Lunatic, les X-Men et Oxmo Puccino ?",
+      "answers": [
+        { "text": "Secteur Ä", "isCorrect": false },
+        { "text": "Mafia K'1 Fry", "isCorrect": false },
+        { "text": "Sexion d'Assaut", "isCorrect": false },
+        { "text": "Time Bomb", "isCorrect": true }
+      ],
+      "explanation": "Time Bomb était un collectif parisien fondé en 1994."
+    },
+    {
+      "ref": "rap-173",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe de Sarcelles réunissait Passi et Stomy Bugsy ?",
+      "answers": [
+        { "text": "Ideal J", "isCorrect": false },
+        { "text": "Sniper", "isCorrect": false },
+        { "text": "Ministère A.M.E.R.", "isCorrect": true },
+        { "text": "La Rumeur", "isCorrect": false }
+      ],
+      "explanation": "Ministère A.M.E.R. faisait partie du collectif Secteur Ä."
+    },
+    {
+      "ref": "rap-174",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel collectif réunissait Ministère A.M.E.R., Ärsenik et Doc Gynéco ?",
+      "answers": [
+        { "text": "Mafia K'1 Fry", "isCorrect": false },
+        { "text": "Secteur Ä", "isCorrect": true },
+        { "text": "Time Bomb", "isCorrect": false },
+        { "text": "Sexion d'Assaut", "isCorrect": false }
+      ],
+      "explanation": "Secteur Ä venait de Sarcelles et Villiers-le-Bel, dans le Val-d'Oise."
+    },
+    {
+      "ref": "rap-175",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel duo est formé des frères Lino et Calbo ?",
+      "answers": [
+        { "text": "Ärsenik", "isCorrect": true },
+        { "text": "Lunatic", "isCorrect": false },
+        { "text": "PNL", "isCorrect": false },
+        { "text": "Bigflo et Oli", "isCorrect": false }
+      ],
+      "explanation": "Ärsenik a sorti « Quelques gouttes suffisent... » en 1998."
+    },
+    {
+      "ref": "rap-176",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quel album de Doc Gynéco, sorti en 1996, contient « Nirvana » ?",
+      "answers": [
+        { "text": "Liaisons dangereuses", "isCorrect": false },
+        { "text": "Quality Street", "isCorrect": false },
+        { "text": "Solitaire", "isCorrect": false },
+        { "text": "Première consultation", "isCorrect": true }
+      ],
+      "explanation": "« Première consultation » a été un énorme succès populaire."
+    },
+    {
+      "ref": "rap-177",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel collectif du Val-de-Marne réunissait notamment Kery James et Rohff ?",
+      "answers": [
+        { "text": "Secteur Ä", "isCorrect": false },
+        { "text": "Sexion d'Assaut", "isCorrect": false },
+        { "text": "Mafia K'1 Fry", "isCorrect": true },
+        { "text": "L'Entourage", "isCorrect": false }
+      ],
+      "explanation": "La Mafia K'1 Fry venait d'Orly, Choisy-le-Roi et Vitry-sur-Seine."
+    },
+    {
+      "ref": "rap-178",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Housni M'Kouboi ?",
+      "answers": [
+        { "text": "Booba", "isCorrect": false },
+        { "text": "Rohff", "isCorrect": true },
+        { "text": "La Fouine", "isCorrect": false },
+        { "text": "Sefyu", "isCorrect": false }
+      ],
+      "explanation": "Rohff a grandi à Vitry-sur-Seine."
+    },
+    {
+      "ref": "rap-179",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Élie Yaffa ?",
+      "answers": [
+        { "text": "Booba", "isCorrect": true },
+        { "text": "Kaaris", "isCorrect": false },
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "Ali", "isCorrect": false }
+      ],
+      "explanation": "Booba est né en 1976 à Sèvres."
+    },
+    {
+      "ref": "rap-180",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Avec quel groupe Kery James a-t-il débuté dans les années 1990 ?",
+      "answers": [
+        { "text": "113", "isCorrect": false },
+        { "text": "Sniper", "isCorrect": false },
+        { "text": "Lunatic", "isCorrect": false },
+        { "text": "Ideal J", "isCorrect": true }
+      ],
+      "explanation": "Ideal J faisait partie de la Mafia K'1 Fry."
+    },
+    {
+      "ref": "rap-181",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Kery James, sorti en 2008, affirme « On n'est pas condamnés à l'échec » ?",
+      "answers": [
+        { "text": "Lettre à la République", "isCorrect": false },
+        { "text": "Le combat continue", "isCorrect": false },
+        { "text": "Banlieusards", "isCorrect": true },
+        { "text": "Racailles", "isCorrect": false }
+      ],
+      "explanation": "« Banlieusards » est devenu un hymne de la banlieue."
+    },
+    {
+      "ref": "rap-182",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre de Kery James, sorti en 2012, s'adresse directement à la République française ?",
+      "answers": [
+        { "text": "Banlieusards", "isCorrect": false },
+        { "text": "Lettre à la République", "isCorrect": true },
+        { "text": "Le combat continue", "isCorrect": false },
+        { "text": "À l'ombre du show business", "isCorrect": false }
+      ],
+      "explanation": "Kery James y dénonce les discriminations et l'histoire coloniale."
+    },
+    {
+      "ref": "rap-183",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville du Val-de-Marne est issu le groupe 113 ?",
+      "answers": [
+        { "text": "Vitry-sur-Seine", "isCorrect": true },
+        { "text": "Créteil", "isCorrect": false },
+        { "text": "Ivry-sur-Seine", "isCorrect": false },
+        { "text": "Champigny-sur-Marne", "isCorrect": false }
+      ],
+      "explanation": "Le 113 doit son nom au numéro d'un bâtiment de sa cité."
+    },
+    {
+      "ref": "rap-184",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre du groupe 113, sorti en 1999, raconte un voyage en Algérie ?",
+      "answers": [
+        { "text": "Les Princes de la ville", "isCorrect": false },
+        { "text": "Jackpotes 2000", "isCorrect": false },
+        { "text": "Ouais gros", "isCorrect": false },
+        { "text": "Tonton du bled", "isCorrect": true }
+      ],
+      "explanation": "« Tonton du bled » a été un énorme succès populaire."
+    },
+    {
+      "ref": "rap-185",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quel album du groupe 113 a remporté une Victoire de la musique en 2000 ?",
+      "answers": [
+        { "text": "Dans l'urgence", "isCorrect": false },
+        { "text": "113 degrés", "isCorrect": false },
+        { "text": "Les Princes de la ville", "isCorrect": true },
+        { "text": "Universel", "isCorrect": false }
+      ],
+      "explanation": "C'est le premier album du groupe, sorti en 1999."
+    },
+    {
+      "ref": "rap-186",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe a sorti « Laisse pas traîner ton fils » en 1998 ?",
+      "answers": [
+        { "text": "IAM", "isCorrect": false },
+        { "text": "Suprême NTM", "isCorrect": true },
+        { "text": "113", "isCorrect": false },
+        { "text": "Sniper", "isCorrect": false }
+      ],
+      "explanation": "Le titre est extrait du dernier album studio de NTM, « Suprême NTM »."
+    },
+    {
+      "ref": "rap-187",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel groupe a sorti « Ma Benz » en 1998 ?",
+      "answers": [
+        { "text": "Suprême NTM", "isCorrect": true },
+        { "text": "IAM", "isCorrect": false },
+        { "text": "Lunatic", "isCorrect": false },
+        { "text": "Ministère A.M.E.R.", "isCorrect": false }
+      ],
+      "explanation": "Le titre réunit JoeyStarr, Lord Kossity et Kool Shen."
+    },
+    {
+      "ref": "rap-188",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre d'IAM, sorti en 1993, évoque les soirées dansantes des années 1980 ?",
+      "answers": [
+        { "text": "Demain c'est loin", "isCorrect": false },
+        { "text": "Petit frère", "isCorrect": false },
+        { "text": "L'Empire du côté obscur", "isCorrect": false },
+        { "text": "Je danse le Mia", "isCorrect": true }
+      ],
+      "explanation": "Le « Mia » est une danse à la mode dans les boîtes de nuit marseillaises de l'époque."
+    },
+    {
+      "ref": "rap-189",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre d'IAM de près de dix minutes raconte le quotidien des quartiers nord de Marseille ?",
+      "answers": [
+        { "text": "Je danse le Mia", "isCorrect": false },
+        { "text": "Petit frère", "isCorrect": false },
+        { "text": "Demain c'est loin", "isCorrect": true },
+        { "text": "Nés sous la même étoile", "isCorrect": false }
+      ],
+      "explanation": "Le titre conclut l'album « L'École du micro d'argent »."
+    },
+    {
+      "ref": "rap-190",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel titre d'IAM parle d'un enfant qui grandit trop vite dans la rue ?",
+      "answers": [
+        { "text": "Demain c'est loin", "isCorrect": false },
+        { "text": "Petit frère", "isCorrect": true },
+        { "text": "Je danse le Mia", "isCorrect": false },
+        { "text": "L'Empire du côté obscur", "isCorrect": false }
+      ],
+      "explanation": "« Petit frère » est sorti en 1997."
+    },
+    {
+      "ref": "rap-191",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel membre d'IAM a coréalisé le film « Comme un aimant » en 2000 ?",
+      "answers": [
+        { "text": "Akhenaton", "isCorrect": true },
+        { "text": "Shurik'n", "isCorrect": false },
+        { "text": "Imhotep", "isCorrect": false },
+        { "text": "Kheops", "isCorrect": false }
+      ],
+      "explanation": "Akhenaton l'a coréalisé avec Kamel Saleh."
+    },
+    {
+      "ref": "rap-192",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Philippe Fragione ?",
+      "answers": [
+        { "text": "Shurik'n", "isCorrect": false },
+        { "text": "Soprano", "isCorrect": false },
+        { "text": "Jul", "isCorrect": false },
+        { "text": "Akhenaton", "isCorrect": true }
+      ],
+      "explanation": "Akhenaton est né à Marseille en 1968."
+    },
+    {
+      "ref": "rap-193",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe marseillais comptait notamment Le Rat Luciano et Sat ?",
+      "answers": [
+        { "text": "IAM", "isCorrect": false },
+        { "text": "Psy 4 de la rime", "isCorrect": false },
+        { "text": "Fonky Family", "isCorrect": true },
+        { "text": "3e Œil", "isCorrect": false }
+      ],
+      "explanation": "La Fonky Family a sorti « Si Dieu veut... » en 1998."
+    },
+    {
+      "ref": "rap-194",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel groupe de rap réunissait Maître Gims, Lefa et Black M ?",
+      "answers": [
+        { "text": "Mafia K'1 Fry", "isCorrect": false },
+        { "text": "Sexion d'Assaut", "isCorrect": true },
+        { "text": "L'Entourage", "isCorrect": false },
+        { "text": "Time Bomb", "isCorrect": false }
+      ],
+      "explanation": "Sexion d'Assaut a connu un grand succès au début des années 2010."
+    },
+    {
+      "ref": "rap-195",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album"],
+      "text": "Quel album de Sexion d'Assaut, sorti en 2010, a été un énorme succès ?",
+      "answers": [
+        { "text": "L'École des points vitaux", "isCorrect": true },
+        { "text": "L'Apogée", "isCorrect": false },
+        { "text": "Le Retour des rois", "isCorrect": false },
+        { "text": "Subliminal", "isCorrect": false }
+      ],
+      "explanation": "Il contient « Désolé » et « Wati by Night »."
+    },
+    {
+      "ref": "rap-196",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album"],
+      "text": "Quel est le premier album solo de Maître Gims, sorti en 2013 ?",
+      "answers": [
+        { "text": "Mon cœur avait raison", "isCorrect": false },
+        { "text": "Ceinture noire", "isCorrect": false },
+        { "text": "Le Fléau", "isCorrect": false },
+        { "text": "Subliminal", "isCorrect": true }
+      ],
+      "explanation": "« Subliminal » contient « J'me tire » et « Bella »."
+    },
+    {
+      "ref": "rap-197",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Avec quel rappeur Maître Gims a-t-il sorti « Sapés comme jamais » en 2015 ?",
+      "answers": [
+        { "text": "Booba", "isCorrect": false },
+        { "text": "Black M", "isCorrect": false },
+        { "text": "Niska", "isCorrect": true },
+        { "text": "Dadju", "isCorrect": false }
+      ],
+      "explanation": "Dadju est le frère de Gims."
+    },
+    {
+      "ref": "rap-198",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Gandhi Djuna ?",
+      "answers": [
+        { "text": "Dadju", "isCorrect": false },
+        { "text": "Gims", "isCorrect": true },
+        { "text": "Black M", "isCorrect": false },
+        { "text": "Lefa", "isCorrect": false }
+      ],
+      "explanation": "Gims est né à Kinshasa en 1986."
+    },
+    {
+      "ref": "rap-199",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel ancien membre de Sexion d'Assaut a sorti « Sur ma route » en 2014 ?",
+      "answers": [
+        { "text": "Black M", "isCorrect": true },
+        { "text": "Lefa", "isCorrect": false },
+        { "text": "Maître Gims", "isCorrect": false },
+        { "text": "Barack Adama", "isCorrect": false }
+      ],
+      "explanation": "« Sur ma route » est extrait de l'album « Les Yeux plus gros que le monde »."
+    },
+    {
+      "ref": "rap-200",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quelle rappeuse française a sorti « La Boulette » en 2006 ?",
+      "answers": [
+        { "text": "Keny Arkana", "isCorrect": false },
+        { "text": "Shay", "isCorrect": false },
+        { "text": "Casey", "isCorrect": false },
+        { "text": "Diam's", "isCorrect": true }
+      ],
+      "explanation": "« La Boulette » a fait de Diam's une star du rap français."
+    },
+    {
+      "ref": "rap-201",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "album", "record"],
+      "text": "Quel album de Diam's, sorti en 2006, s'est vendu à plus d'un million d'exemplaires ?",
+      "answers": [
+        { "text": "Brut de femme", "isCorrect": false },
+        { "text": "S.O.S.", "isCorrect": false },
+        { "text": "Dans ma bulle", "isCorrect": true },
+        { "text": "Premier mandat", "isCorrect": false }
+      ],
+      "explanation": "C'est l'un des albums de rap les plus vendus en France."
+    },
+    {
+      "ref": "rap-202",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quelle rappeuse s'appelle de son vrai nom Mélanie Georgiades ?",
+      "answers": [
+        { "text": "Keny Arkana", "isCorrect": false },
+        { "text": "Diam's", "isCorrect": true },
+        { "text": "Shay", "isCorrect": false },
+        { "text": "Lady Laistee", "isCorrect": false }
+      ],
+      "explanation": "Diam's a mis fin à sa carrière au début des années 2010."
+    },
+    {
+      "ref": "rap-203",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quelle rappeuse marseillaise est connue pour son engagement altermondialiste ?",
+      "answers": [
+        { "text": "Keny Arkana", "isCorrect": true },
+        { "text": "Diam's", "isCorrect": false },
+        { "text": "Chilla", "isCorrect": false },
+        { "text": "Lady Laistee", "isCorrect": false }
+      ],
+      "explanation": "Keny Arkana a sorti « La Rage » en 2006."
+    },
+    {
+      "ref": "rap-204",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur d'Aulnay-sous-Bois a sorti l'album « Agartha » en 2017 ?",
+      "answers": [
+        { "text": "Lomepal", "isCorrect": false },
+        { "text": "Nekfeu", "isCorrect": false },
+        { "text": "Alpha Wann", "isCorrect": false },
+        { "text": "Vald", "isCorrect": true }
+      ],
+      "explanation": "Vald est connu pour son humour absurde et provocateur."
+    },
+    {
+      "ref": "rap-205",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Valentin Le Du ?",
+      "answers": [
+        { "text": "Lomepal", "isCorrect": false },
+        { "text": "Nekfeu", "isCorrect": false },
+        { "text": "Vald", "isCorrect": true },
+        { "text": "Orelsan", "isCorrect": false }
+      ],
+      "explanation": "Son nom de scène vient de son prénom."
+    },
+    {
+      "ref": "rap-206",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur a sorti les albums « Flip » et « Jeannine » ?",
+      "answers": [
+        { "text": "Vald", "isCorrect": false },
+        { "text": "Lomepal", "isCorrect": true },
+        { "text": "Roméo Elvis", "isCorrect": false },
+        { "text": "Disiz", "isCorrect": false }
+      ],
+      "explanation": "« Jeannine » porte le prénom de sa grand-mère."
+    },
+    {
+      "ref": "rap-207",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Antoine Valentinelli ?",
+      "answers": [
+        { "text": "Lomepal", "isCorrect": true },
+        { "text": "Vald", "isCorrect": false },
+        { "text": "Nekfeu", "isCorrect": false },
+        { "text": "Disiz", "isCorrect": false }
+      ],
+      "explanation": "Lomepal est aussi skateur."
+    },
+    {
+      "ref": "rap-208",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Quel rappeur a sorti « J'pète les plombs » en 2000 ?",
+      "answers": [
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "Doc Gynéco", "isCorrect": false },
+        { "text": "Oxmo Puccino", "isCorrect": false },
+        { "text": "Disiz la Peste", "isCorrect": true }
+      ],
+      "explanation": "Disiz, d'Évry, est l'un des rappeurs les plus durables de sa génération."
+    },
+    {
+      "ref": "rap-209",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur d'Évry a lancé la danse « Matuidi Charo » en 2015 ?",
+      "answers": [
+        { "text": "Ninho", "isCorrect": false },
+        { "text": "Koba LaD", "isCorrect": false },
+        { "text": "Niska", "isCorrect": true },
+        { "text": "Gradur", "isCorrect": false }
+      ],
+      "explanation": "Le titre rend hommage au footballeur Blaise Matuidi."
+    },
+    {
+      "ref": "rap-210",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur a sorti l'album « Destin » en 2019 ?",
+      "answers": [
+        { "text": "Nekfeu", "isCorrect": false },
+        { "text": "Ninho", "isCorrect": true },
+        { "text": "Niska", "isCorrect": false },
+        { "text": "Naps", "isCorrect": false }
+      ],
+      "explanation": "Ninho est l'un des rappeurs les plus certifiés en France."
+    },
+    {
+      "ref": "rap-211",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom William Nzobazola ?",
+      "answers": [
+        { "text": "Ninho", "isCorrect": true },
+        { "text": "Niska", "isCorrect": false },
+        { "text": "Gims", "isCorrect": false },
+        { "text": "MHD", "isCorrect": false }
+      ],
+      "explanation": "Ninho a grandi à Saint-Denis."
+    },
+    {
+      "ref": "rap-212",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur porte une cagoule blanche et vient de Sevran ?",
+      "answers": [
+        { "text": "Koba LaD", "isCorrect": false },
+        { "text": "Freeze Corleone", "isCorrect": false },
+        { "text": "Gradur", "isCorrect": false },
+        { "text": "Kalash Criminel", "isCorrect": true }
+      ],
+      "explanation": "Kalash Criminel cache son visage depuis ses débuts."
+    },
+    {
+      "ref": "rap-213",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "chanson"],
+      "text": "Quel rappeur martiniquais a sorti « Mwaka Moon » avec Damso en 2017 ?",
+      "answers": [
+        { "text": "Admiral T", "isCorrect": false },
+        { "text": "Booba", "isCorrect": false },
+        { "text": "Kalash", "isCorrect": true },
+        { "text": "Kalash Criminel", "isCorrect": false }
+      ],
+      "explanation": "« Mwaka Moon » a été un très grand succès."
+    },
+    {
+      "ref": "rap-214",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville du Nord est originaire le rappeur Gradur ?",
+      "answers": [
+        { "text": "Lille", "isCorrect": false },
+        { "text": "Roubaix", "isCorrect": true },
+        { "text": "Tourcoing", "isCorrect": false },
+        { "text": "Dunkerque", "isCorrect": false }
+      ],
+      "explanation": "Gradur a connu le succès avec « Sheguey Vara »."
+    },
+    {
+      "ref": "rap-215",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Mohamed Sylla ?",
+      "answers": [
+        { "text": "MHD", "isCorrect": true },
+        { "text": "Ninho", "isCorrect": false },
+        { "text": "Niska", "isCorrect": false },
+        { "text": "Gradur", "isCorrect": false }
+      ],
+      "explanation": "MHD a grandi dans le 19e arrondissement de Paris."
+    },
+    {
+      "ref": "rap-216",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Quel style a été popularisé par MHD en 2015, en mêlant rap et rythmes africains ?",
+      "answers": [
+        { "text": "La drill", "isCorrect": false },
+        { "text": "Le zouk", "isCorrect": false },
+        { "text": "Le G-funk", "isCorrect": false },
+        { "text": "L'afro trap", "isCorrect": true }
+      ],
+      "explanation": "MHD s'est fait connaître avec des vidéos tournées dans sa cité."
+    },
+    {
+      "ref": "rap-217",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "artiste"],
+      "text": "De quelle ville des Yvelines est originaire La Fouine ?",
+      "answers": [
+        { "text": "Mantes-la-Jolie", "isCorrect": false },
+        { "text": "Les Mureaux", "isCorrect": false },
+        { "text": "Trappes", "isCorrect": true },
+        { "text": "Poissy", "isCorrect": false }
+      ],
+      "explanation": "La Fouine évoque souvent Trappes dans ses textes."
+    },
+    {
+      "ref": "rap-218",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "chanson"],
+      "text": "Avec quelle chanteuse La Fouine a-t-il sorti « Ma meilleure » en 2011 ?",
+      "answers": [
+        { "text": "Amel Bent", "isCorrect": false },
+        { "text": "Zaho", "isCorrect": true },
+        { "text": "Kenza Farah", "isCorrect": false },
+        { "text": "Shy'm", "isCorrect": false }
+      ],
+      "explanation": "Le titre a été un grand succès en radio."
+    },
+    {
+      "ref": "rap-219",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Laouni Mouhid ?",
+      "answers": [
+        { "text": "La Fouine", "isCorrect": true },
+        { "text": "Rohff", "isCorrect": false },
+        { "text": "Sinik", "isCorrect": false },
+        { "text": "Mister You", "isCorrect": false }
+      ],
+      "explanation": "La Fouine est né en 1981."
+    },
+    {
+      "ref": "rap-220",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Ken Samaras ?",
+      "answers": [
+        { "text": "Alpha Wann", "isCorrect": false },
+        { "text": "Lomepal", "isCorrect": false },
+        { "text": "Vald", "isCorrect": false },
+        { "text": "Nekfeu", "isCorrect": true }
+      ],
+      "explanation": "Son nom de scène est un verlan de « fennec »."
+    },
+    {
+      "ref": "rap-221",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Julien Mari ?",
+      "answers": [
+        { "text": "SCH", "isCorrect": false },
+        { "text": "Naps", "isCorrect": false },
+        { "text": "Jul", "isCorrect": true },
+        { "text": "Soprano", "isCorrect": false }
+      ],
+      "explanation": "Jul a grandi dans le quartier de Saint-Jean-du-Désert, à Marseille."
+    },
+    {
+      "ref": "rap-222",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Saïd M'Roumbaba ?",
+      "answers": [
+        { "text": "Alonzo", "isCorrect": false },
+        { "text": "Soprano", "isCorrect": true },
+        { "text": "Jul", "isCorrect": false },
+        { "text": "Naps", "isCorrect": false }
+      ],
+      "explanation": "Soprano est d'origine comorienne."
+    },
+    {
+      "ref": "rap-223",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Didier Morville ?",
+      "answers": [
+        { "text": "JoeyStarr", "isCorrect": true },
+        { "text": "Kool Shen", "isCorrect": false },
+        { "text": "Doc Gynéco", "isCorrect": false },
+        { "text": "Stomy Bugsy", "isCorrect": false }
+      ],
+      "explanation": "JoeyStarr est aussi acteur, notamment dans « Polisse »."
+    },
+    {
+      "ref": "rap-224",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste", "vrai-nom"],
+      "text": "Quel rappeur s'appelle de son vrai nom Julien Schwarzer ?",
+      "answers": [
+        { "text": "Jul", "isCorrect": false },
+        { "text": "Alonzo", "isCorrect": false },
+        { "text": "Naps", "isCorrect": false },
+        { "text": "SCH", "isCorrect": true }
+      ],
+      "explanation": "SCH vient d'Aubagne."
+    },
+    {
+      "ref": "rap-225",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel slameur a sorti « Saint-Denis » en 2006 ?",
+      "answers": [
+        { "text": "Abd al Malik", "isCorrect": false },
+        { "text": "Oxmo Puccino", "isCorrect": false },
+        { "text": "Grand Corps Malade", "isCorrect": true },
+        { "text": "MC Solaar", "isCorrect": false }
+      ],
+      "explanation": "Grand Corps Malade a popularisé le slam en France."
+    },
+    {
+      "ref": "rap-226",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur strasbourgeois a sorti « Gibraltar » en 2006 ?",
+      "answers": [
+        { "text": "Grand Corps Malade", "isCorrect": false },
+        { "text": "Abd al Malik", "isCorrect": true },
+        { "text": "Disiz", "isCorrect": false },
+        { "text": "Kery James", "isCorrect": false }
+      ],
+      "explanation": "« Gibraltar » a remporté la Victoire de la musique des musiques urbaines."
+    },
+    {
+      "ref": "rap-227",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quelle radio française est historiquement associée au rap depuis les années 1990 ?",
+      "answers": [
+        { "text": "Skyrock", "isCorrect": true },
+        { "text": "RTL", "isCorrect": false },
+        { "text": "France Inter", "isCorrect": false },
+        { "text": "Nostalgie", "isCorrect": false }
+      ],
+      "explanation": "Skyrock a fait du rap le cœur de sa programmation."
+    },
+    {
+      "ref": "rap-228",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quel slogan Skyrock utilise-t-elle depuis les années 1990 ?",
+      "answers": [
+        { "text": "La radio du hip-hop", "isCorrect": false },
+        { "text": "Toujours plus de rap", "isCorrect": false },
+        { "text": "Le son de la rue", "isCorrect": false },
+        { "text": "Premier sur le rap", "isCorrect": true }
+      ],
+      "explanation": "Le slogan a marqué toute une génération d'auditeurs."
+    },
+    {
+      "ref": "rap-229",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quelle émission de Skyrock invite chaque semaine un rappeur en studio ?",
+      "answers": [
+        { "text": "Rap Contenders", "isCorrect": false },
+        { "text": "Couvre-feu", "isCorrect": false },
+        { "text": "Planète Rap", "isCorrect": true },
+        { "text": "Nouvelle École", "isCorrect": false }
+      ],
+      "explanation": "Planète Rap existe depuis le milieu des années 1990."
+    },
+    {
+      "ref": "rap-230",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "histoire"],
+      "text": "Quelle émission de télévision présentée par Sidney a fait découvrir le hip-hop en France en 1984 ?",
+      "answers": [
+        { "text": "Rapattitude", "isCorrect": false },
+        { "text": "H.I.P. H.O.P.", "isCorrect": true },
+        { "text": "Planète Rap", "isCorrect": false },
+        { "text": "Les Enfants du rock", "isCorrect": false }
+      ],
+      "explanation": "C'était la première émission au monde entièrement consacrée au hip-hop."
+    },
+    {
+      "ref": "rap-231",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "histoire"],
+      "text": "Sur quelle chaîne était diffusée l'émission H.I.P. H.O.P. en 1984 ?",
+      "answers": [
+        { "text": "TF1", "isCorrect": true },
+        { "text": "Antenne 2", "isCorrect": false },
+        { "text": "FR3", "isCorrect": false },
+        { "text": "Canal+", "isCorrect": false }
+      ],
+      "explanation": "L'émission était diffusée le dimanche après-midi."
+    },
+    {
+      "ref": "rap-232",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "album"],
+      "text": "Quelle compilation de 1990 est considérée comme fondatrice du rap français ?",
+      "answers": [
+        { "text": "Ma 6-T va crack-er", "isCorrect": false },
+        { "text": "La Haine, musiques inspirées du film", "isCorrect": false },
+        { "text": "Hostile Hip Hop", "isCorrect": false },
+        { "text": "Rapattitude", "isCorrect": true }
+      ],
+      "explanation": "« Rapattitude » réunissait notamment NTM et Assassin."
+    },
+    {
+      "ref": "rap-233",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Sur quelle plateforme est diffusée l'émission de concours de rap « Nouvelle École » ?",
+      "answers": [
+        { "text": "Amazon Prime Video", "isCorrect": false },
+        { "text": "Disney+", "isCorrect": false },
+        { "text": "Netflix", "isCorrect": true },
+        { "text": "Canal+", "isCorrect": false }
+      ],
+      "explanation": "La première saison est sortie en 2022."
+    },
+    {
+      "ref": "rap-234",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "artiste"],
+      "text": "Quel rappeur faisait partie du jury de la première saison de « Nouvelle École » ?",
+      "answers": [
+        { "text": "Booba", "isCorrect": false },
+        { "text": "SCH", "isCorrect": true },
+        { "text": "Jul", "isCorrect": false },
+        { "text": "Orelsan", "isCorrect": false }
+      ],
+      "explanation": "Le jury réunissait SCH, Shay et Niska."
+    },
+    {
+      "ref": "rap-235",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quel département est surnommé « le 9-3 » dans le rap ?",
+      "answers": [
+        { "text": "La Seine-Saint-Denis", "isCorrect": true },
+        { "text": "Le Val-de-Marne", "isCorrect": false },
+        { "text": "Les Hauts-de-Seine", "isCorrect": false },
+        { "text": "L'Essonne", "isCorrect": false }
+      ],
+      "explanation": "Le 93 est le numéro du département."
+    },
+    {
+      "ref": "rap-236",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "histoire"],
+      "text": "Quel numéro désigne les Hauts-de-Seine, souvent cité par Booba ?",
+      "answers": [
+        { "text": "93", "isCorrect": false },
+        { "text": "94", "isCorrect": false },
+        { "text": "91", "isCorrect": false },
+        { "text": "92", "isCorrect": true }
+      ],
+      "explanation": "Booba a même nommé son label 92i."
+    },
+    {
+      "ref": "rap-237",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["monde", "artiste"],
+      "text": "De quelle ville canadienne est originaire Drake ?",
+      "answers": [
+        { "text": "Montréal", "isCorrect": false },
+        { "text": "Vancouver", "isCorrect": false },
+        { "text": "Toronto", "isCorrect": true },
+        { "text": "Ottawa", "isCorrect": false }
+      ],
+      "explanation": "Drake surnomme sa ville « The 6 »."
+    },
+    {
+      "ref": "rap-238",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monde", "artiste"],
+      "text": "Dans quelle série canadienne Drake a-t-il joué avant sa carrière musicale ?",
+      "answers": [
+        { "text": "Riverdale", "isCorrect": false },
+        { "text": "Degrassi : La Nouvelle Génération", "isCorrect": true },
+        { "text": "Smallville", "isCorrect": false },
+        { "text": "Les Frères Scott", "isCorrect": false }
+      ],
+      "explanation": "Il y incarnait Jimmy Brooks, un basketteur."
+    },
+    {
+      "ref": "rap-239",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monde", "artiste"],
+      "text": "Quel rappeur belge a sorti l'album « Ipséité » en 2017 ?",
+      "answers": [
+        { "text": "Damso", "isCorrect": true },
+        { "text": "Hamza", "isCorrect": false },
+        { "text": "Roméo Elvis", "isCorrect": false },
+        { "text": "Stromae", "isCorrect": false }
+      ],
+      "explanation": "Damso, né à Kinshasa, a grandi à Bruxelles."
+    },
+    {
+      "ref": "rap-240",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monde", "artiste"],
+      "text": "De quel pays vient le rappeur Roméo Elvis ?",
+      "answers": [
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Canada", "isCorrect": false },
+        { "text": "France", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": true }
+      ],
+      "explanation": "Roméo Elvis est le frère de la chanteuse Angèle."
+    },
+    {
+      "ref": "rap-241",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monde", "artiste"],
+      "text": "Quel rappeur britannique a été la tête d'affiche du festival de Glastonbury en 2019 ?",
+      "answers": [
+        { "text": "Skepta", "isCorrect": false },
+        { "text": "Dave", "isCorrect": false },
+        { "text": "Stormzy", "isCorrect": true },
+        { "text": "Little Simz", "isCorrect": false }
+      ],
+      "explanation": "Il a été le premier rappeur britannique noir à mener ce festival."
+    },
+    {
+      "ref": "rap-242",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["monde", "histoire"],
+      "text": "Quel style de rap électronique très rapide est né à Londres au début des années 2000 ?",
+      "answers": [
+        { "text": "La drill", "isCorrect": false },
+        { "text": "Le grime", "isCorrect": true },
+        { "text": "La trap", "isCorrect": false },
+        { "text": "Le crunk", "isCorrect": false }
+      ],
+      "explanation": "Wiley et Dizzee Rascal sont des pionniers du grime."
+    },
+    {
+      "ref": "rap-243",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on une phrase marquante, souvent drôle ou percutante, dans un texte de rap ?",
+      "answers": [
+        { "text": "Une punchline", "isCorrect": true },
+        { "text": "Un gimmick", "isCorrect": false },
+        { "text": "Un couplet", "isCorrect": false },
+        { "text": "Un refrain", "isCorrect": false }
+      ],
+      "explanation": "La punchline est souvent placée à la fin d'une rime."
+    },
+    {
+      "ref": "rap-244",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un morceau rappé de façon improvisée ou sans structure de chanson ?",
+      "answers": [
+        { "text": "Un featuring", "isCorrect": false },
+        { "text": "Un remix", "isCorrect": false },
+        { "text": "Un interlude", "isCorrect": false },
+        { "text": "Un freestyle", "isCorrect": true }
+      ],
+      "explanation": "Les freestyles sont souvent enregistrés en radio ou en vidéo."
+    },
+    {
+      "ref": "rap-245",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la participation d'un artiste invité sur le morceau d'un autre ?",
+      "answers": [
+        { "text": "Un sample", "isCorrect": false },
+        { "text": "Un clash", "isCorrect": false },
+        { "text": "Un featuring", "isCorrect": true },
+        { "text": "Un beat", "isCorrect": false }
+      ],
+      "explanation": "On l'abrège souvent en « feat. »."
+    },
+    {
+      "ref": "rap-246",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la personne qui compose la musique instrumentale d'un morceau de rap ?",
+      "answers": [
+        { "text": "Un ghostwriter", "isCorrect": false },
+        { "text": "Un beatmaker", "isCorrect": true },
+        { "text": "Un MC", "isCorrect": false },
+        { "text": "Un backeur", "isCorrect": false }
+      ],
+      "explanation": "Le beatmaker compose l'instrumental, aussi appelé « beat » ou « prod »."
+    },
+    {
+      "ref": "rap-247",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un extrait d'un autre morceau réutilisé dans une production ?",
+      "answers": [
+        { "text": "Un sample", "isCorrect": true },
+        { "text": "Un gimmick", "isCorrect": false },
+        { "text": "Un featuring", "isCorrect": false },
+        { "text": "Un couplet", "isCorrect": false }
+      ],
+      "explanation": "Le sampling est au cœur du hip-hop depuis ses débuts."
+    },
+    {
+      "ref": "rap-248",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la manière de placer sa voix et son rythme sur une musique ?",
+      "answers": [
+        { "text": "Le beat", "isCorrect": false },
+        { "text": "Le gimmick", "isCorrect": false },
+        { "text": "Le scratch", "isCorrect": false },
+        { "text": "Le flow", "isCorrect": true }
+      ],
+      "explanation": "Chaque rappeur a un flow qui lui est propre."
+    },
+    {
+      "ref": "rap-249",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un morceau qui attaque directement un autre rappeur ?",
+      "answers": [
+        { "text": "Un ego trip", "isCorrect": false },
+        { "text": "Un storytelling", "isCorrect": false },
+        { "text": "Un diss", "isCorrect": true },
+        { "text": "Un freestyle", "isCorrect": false }
+      ],
+      "explanation": "Les « diss tracks » alimentent les clashs entre rappeurs."
+    },
+    {
+      "ref": "rap-250",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un texte rap qui raconte une histoire avec des personnages ?",
+      "answers": [
+        { "text": "Un ego trip", "isCorrect": false },
+        { "text": "Un storytelling", "isCorrect": true },
+        { "text": "Un diss", "isCorrect": false },
+        { "text": "Un freestyle", "isCorrect": false }
+      ],
+      "explanation": "« Stan » d'Eminem ou « Demain c'est loin » d'IAM sont des storytellings célèbres."
+    },
+    {
+      "ref": "rap-251",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un morceau où le rappeur vante surtout ses propres qualités ?",
+      "answers": [
+        { "text": "Un ego trip", "isCorrect": true },
+        { "text": "Un storytelling", "isCorrect": false },
+        { "text": "Un diss", "isCorrect": false },
+        { "text": "Un remix", "isCorrect": false }
+      ],
+      "explanation": "L'ego trip est l'un des thèmes les plus anciens du rap."
+    },
+    {
+      "ref": "rap-252",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on la personne qui écrit des textes pour un autre rappeur sans être créditée ?",
+      "answers": [
+        { "text": "Un beatmaker", "isCorrect": false },
+        { "text": "Un backeur", "isCorrect": false },
+        { "text": "Un parolier officiel", "isCorrect": false },
+        { "text": "Un ghostwriter", "isCorrect": true }
+      ],
+      "explanation": "Le recours aux ghostwriters est souvent source de polémiques dans le rap."
+    },
+    {
+      "ref": "rap-253",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on le chanteur ou rappeur qui accompagne le rappeur principal sur scène ?",
+      "answers": [
+        { "text": "Un beatmaker", "isCorrect": false },
+        { "text": "Un ghostwriter", "isCorrect": false },
+        { "text": "Un backeur", "isCorrect": true },
+        { "text": "Un DJ", "isCorrect": false }
+      ],
+      "explanation": "Le backeur double certaines phrases pour donner plus d'énergie."
+    },
+    {
+      "ref": "rap-254",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Quel logiciel de correction de la voix est très utilisé dans le rap depuis les années 2000 ?",
+      "answers": [
+        { "text": "La réverbération", "isCorrect": false },
+        { "text": "L'Auto-Tune", "isCorrect": true },
+        { "text": "Le delay", "isCorrect": false },
+        { "text": "La distorsion", "isCorrect": false }
+      ],
+      "explanation": "T-Pain, puis de nombreux rappeurs, en ont fait un effet artistique."
+    }
+  ]
+}

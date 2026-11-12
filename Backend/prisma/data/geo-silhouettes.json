@@ -1,0 +1,1174 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 50,
+    "parDifficulte": { "1": 11, "2": 29, "3": 10 },
+    "parType": { "multiple": 50 },
+    "avecImage": 50,
+    "sansImage": 0,
+    "parTag": {
+      "europe": 15,
+      "asie": 12,
+      "afrique": 10,
+      "amerique": 10,
+      "oceanie": 3
+    }
+  },
+  "category": {
+    "slug": "silhouettes",
+    "name": "Silhouettes de pays"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "geo-529",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-espagne.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "France", "isCorrect": false },
+        { "text": "Italie", "isCorrect": false },
+        { "text": "Espagne", "isCorrect": true },
+        { "text": "Portugal", "isCorrect": false }
+      ],
+      "explanation": "La péninsule Ibérique, que l'Espagne partage avec le Portugal, a une forme presque carrée. On aperçoit aussi les îles Baléares."
+    },
+    {
+      "ref": "geo-530",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-portugal.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Albanie", "isCorrect": false },
+        { "text": "Portugal", "isCorrect": true },
+        { "text": "Espagne", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false }
+      ],
+      "explanation": "Étroit et allongé du nord au sud, le Portugal occupe la façade atlantique de la péninsule Ibérique."
+    },
+    {
+      "ref": "geo-531",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-irlande.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Royaume-Uni", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": true },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Islande", "isCorrect": false }
+      ],
+      "explanation": "L'île est partagée entre l'Irlande et l'Irlande du Nord, qui appartient au Royaume-Uni : le nord-est de l'île manque donc à la silhouette."
+    },
+    {
+      "ref": "geo-532",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-islande.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Irlande", "isCorrect": false },
+        { "text": "Islande", "isCorrect": true },
+        { "text": "Norvège", "isCorrect": false }
+      ],
+      "explanation": "Ses côtes très découpées par les fjords, surtout au nord-ouest, sont typiques des terres façonnées par les glaciers."
+    },
+    {
+      "ref": "geo-533",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-norvege.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Suède", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": true },
+        { "text": "Chili", "isCorrect": false }
+      ],
+      "explanation": "Sa côte ouest est déchiquetée par des centaines de fjords."
+    },
+    {
+      "ref": "geo-534",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-suede.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Suède", "isCorrect": true },
+        { "text": "Finlande", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": false }
+      ],
+      "explanation": "La Suède occupe le versant est de la péninsule scandinave, avec une côte bien plus régulière que celle de la Norvège."
+    },
+    {
+      "ref": "geo-535",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-finlande.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Norvège", "isCorrect": false },
+        { "text": "Finlande", "isCorrect": true },
+        { "text": "Suède", "isCorrect": false },
+        { "text": "Estonie", "isCorrect": false }
+      ],
+      "explanation": "Sa forme évoque une silhouette humaine levant un bras : le nord-ouest du pays, coincé entre la Suède et la Norvège."
+    },
+    {
+      "ref": "geo-536",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-allemagne.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "France", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Allemagne", "isCorrect": true }
+      ],
+      "explanation": "L'Allemagne a neuf pays voisins, plus que tout autre pays d'Europe à l'exception de la Russie."
+    },
+    {
+      "ref": "geo-537",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-croatie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Slovénie", "isCorrect": false },
+        { "text": "Serbie", "isCorrect": false },
+        { "text": "Bosnie-Herzégovine", "isCorrect": false },
+        { "text": "Croatie", "isCorrect": true }
+      ],
+      "explanation": "Sa forme en croissant entoure la Bosnie-Herzégovine, avec une longue côte adriatique bordée de plus d'un millier d'îles."
+    },
+    {
+      "ref": "geo-538",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-ukraine.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Pologne", "isCorrect": false },
+        { "text": "Ukraine", "isCorrect": true },
+        { "text": "Biélorussie", "isCorrect": false }
+      ],
+      "explanation": "C'est le plus grand pays entièrement situé en Europe. La péninsule de Crimée se détache au sud."
+    },
+    {
+      "ref": "geo-539",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-autriche.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Suisse", "isCorrect": false },
+        { "text": "Autriche", "isCorrect": true },
+        { "text": "Slovaquie", "isCorrect": false },
+        { "text": "Hongrie", "isCorrect": false }
+      ],
+      "explanation": "Sa forme rappelle une raquette ou un marteau, avec un long « manche » à l'ouest, vers la Suisse."
+    },
+    {
+      "ref": "geo-540",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-danemark.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Estonie", "isCorrect": false },
+        { "text": "Danemark", "isCorrect": true },
+        { "text": "Norvège", "isCorrect": false },
+        { "text": "Pays-Bas", "isCorrect": false }
+      ],
+      "explanation": "La péninsule du Jutland, rattachée à l'Allemagne, et un archipel de plusieurs centaines d'îles. L'île de Bornholm est isolée à l'est."
+    },
+    {
+      "ref": "geo-541",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-pays-bas.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Pays-Bas", "isCorrect": true },
+        { "text": "Danemark", "isCorrect": false },
+        { "text": "Allemagne", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": false }
+      ],
+      "explanation": "Les îles de la Frise s'alignent au nord, et les estuaires de la Zélande découpent le sud-ouest."
+    },
+    {
+      "ref": "geo-542",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-moldavie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Roumanie", "isCorrect": false },
+        { "text": "Moldavie", "isCorrect": true },
+        { "text": "Ukraine", "isCorrect": false },
+        { "text": "Biélorussie", "isCorrect": false }
+      ],
+      "explanation": "Petit pays enclavé entre la Roumanie et l'Ukraine, la Moldavie a une forme de grappe de raisin."
+    },
+    {
+      "ref": "geo-543",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["europe"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-suisse.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Autriche", "isCorrect": false },
+        { "text": "Belgique", "isCorrect": false },
+        { "text": "Slovénie", "isCorrect": false },
+        { "text": "Suisse", "isCorrect": true }
+      ],
+      "explanation": "Ses frontières suivent en grande partie les Alpes et le Jura. Le lac Léman forme une encoche au sud-ouest."
+    },
+    {
+      "ref": "geo-544",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-japon.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Royaume-Uni", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Japon", "isCorrect": true },
+        { "text": "Philippines", "isCorrect": false }
+      ],
+      "explanation": "Un long archipel en arc, avec Hokkaido au nord et l'archipel d'Okinawa qui s'égrène au sud-ouest."
+    },
+    {
+      "ref": "geo-545",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-inde.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Birmanie", "isCorrect": false },
+        { "text": "Bangladesh", "isCorrect": false },
+        { "text": "Pakistan", "isCorrect": false },
+        { "text": "Inde", "isCorrect": true }
+      ],
+      "explanation": "La pointe sud de la péninsule plonge dans l'océan Indien, et une partie du territoire s'étend à l'est, au-delà du Bangladesh."
+    },
+    {
+      "ref": "geo-546",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-chine.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Inde", "isCorrect": false },
+        { "text": "Chine", "isCorrect": true },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Mongolie", "isCorrect": false }
+      ],
+      "explanation": "On reconnaît souvent sa forme de coq, avec l'île de Hainan au sud."
+    },
+    {
+      "ref": "geo-547",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-vietnam.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Laos", "isCorrect": false },
+        { "text": "Viêt Nam", "isCorrect": true },
+        { "text": "Cambodge", "isCorrect": false },
+        { "text": "Malaisie", "isCorrect": false }
+      ],
+      "explanation": "Sa forme en S, très étroite au centre, s'étire sur plus de 1 600 km du nord au sud."
+    },
+    {
+      "ref": "geo-548",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-thailande.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Thaïlande", "isCorrect": true },
+        { "text": "Viêt Nam", "isCorrect": false },
+        { "text": "Birmanie", "isCorrect": false },
+        { "text": "Laos", "isCorrect": false }
+      ],
+      "explanation": "Sa forme est souvent comparée à une tête d'éléphant, dont la trompe serait la péninsule du sud."
+    },
+    {
+      "ref": "geo-549",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-sri-lanka.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Sri Lanka", "isCorrect": true },
+        { "text": "Madagascar", "isCorrect": false },
+        { "text": "Taïwan", "isCorrect": false },
+        { "text": "Chypre", "isCorrect": false }
+      ],
+      "explanation": "Cette île en forme de goutte d'eau est surnommée « la larme de l'Inde »."
+    },
+    {
+      "ref": "geo-550",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-turquie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Turquie", "isCorrect": true },
+        { "text": "Iran", "isCorrect": false },
+        { "text": "Syrie", "isCorrect": false },
+        { "text": "Grèce", "isCorrect": false }
+      ],
+      "explanation": "La Turquie s'étire d'est en ouest. Une petite partie, autour d'Istanbul, se trouve en Europe, de l'autre côté du Bosphore."
+    },
+    {
+      "ref": "geo-551",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-arabie-saoudite.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Arabie saoudite", "isCorrect": true },
+        { "text": "Yémen", "isCorrect": false },
+        { "text": "Iran", "isCorrect": false },
+        { "text": "Irak", "isCorrect": false }
+      ],
+      "explanation": "Le pays occupe la majeure partie de la péninsule Arabique, entre la mer Rouge et le golfe Persique."
+    },
+    {
+      "ref": "geo-552",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-iran.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Iran", "isCorrect": true },
+        { "text": "Turquie", "isCorrect": false },
+        { "text": "Afghanistan", "isCorrect": false },
+        { "text": "Irak", "isCorrect": false }
+      ],
+      "explanation": "L'Iran est bordé au nord par la mer Caspienne et au sud par le golfe Persique."
+    },
+    {
+      "ref": "geo-553",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-mongolie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Chine", "isCorrect": false },
+        { "text": "Kirghizistan", "isCorrect": false },
+        { "text": "Kazakhstan", "isCorrect": false },
+        { "text": "Mongolie", "isCorrect": true }
+      ],
+      "explanation": "Enclavée entre la Russie et la Chine, la Mongolie a une forme ovale très régulière."
+    },
+    {
+      "ref": "geo-554",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-philippines.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Philippines", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Malaisie", "isCorrect": false }
+      ],
+      "explanation": "L'archipel compte plus de 7 000 îles, avec Luçon au nord et Mindanao au sud."
+    },
+    {
+      "ref": "geo-555",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["asie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-indonesie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Indonésie", "isCorrect": true },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Philippines", "isCorrect": false },
+        { "text": "Malaisie", "isCorrect": false }
+      ],
+      "explanation": "Ses îles s'étirent sur plus de 5 000 km, de Sumatra à l'ouest à la Nouvelle-Guinée à l'est. Plusieurs sont partagées avec d'autres pays."
+    },
+    {
+      "ref": "geo-556",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-egypte.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Soudan", "isCorrect": false },
+        { "text": "Tchad", "isCorrect": false },
+        { "text": "Égypte", "isCorrect": true },
+        { "text": "Libye", "isCorrect": false }
+      ],
+      "explanation": "Ses frontières ouest et sud sont des lignes droites tracées à travers le désert. La péninsule du Sinaï se détache au nord-est."
+    },
+    {
+      "ref": "geo-557",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-madagascar.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Mozambique", "isCorrect": false },
+        { "text": "Taïwan", "isCorrect": false },
+        { "text": "Madagascar", "isCorrect": true },
+        { "text": "Sri Lanka", "isCorrect": false }
+      ],
+      "explanation": "C'est la quatrième plus grande île du monde, au large du Mozambique."
+    },
+    {
+      "ref": "geo-558",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-afrique-du-sud.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Afrique du Sud", "isCorrect": true },
+        { "text": "Namibie", "isCorrect": false },
+        { "text": "Botswana", "isCorrect": false },
+        { "text": "Zimbabwe", "isCorrect": false }
+      ],
+      "explanation": "Le trou à l'intérieur du pays est le Lesotho, entièrement enclavé dans l'Afrique du Sud."
+    },
+    {
+      "ref": "geo-559",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-somalie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Kenya", "isCorrect": false },
+        { "text": "Somalie", "isCorrect": true },
+        { "text": "Érythrée", "isCorrect": false }
+      ],
+      "explanation": "Sa forme en « 7 » dessine la pointe de la Corne de l'Afrique."
+    },
+    {
+      "ref": "geo-560",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-algerie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Maroc", "isCorrect": false },
+        { "text": "Libye", "isCorrect": false },
+        { "text": "Mali", "isCorrect": false },
+        { "text": "Algérie", "isCorrect": true }
+      ],
+      "explanation": "C'est le plus grand pays d'Afrique. Ses frontières du sud, tracées dans le Sahara, sont presque rectilignes."
+    },
+    {
+      "ref": "geo-561",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-nigeria.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Cameroun", "isCorrect": false },
+        { "text": "Ghana", "isCorrect": false },
+        { "text": "Nigeria", "isCorrect": true },
+        { "text": "Niger", "isCorrect": false }
+      ],
+      "explanation": "Au sud, on distingue le delta du Niger, sur le golfe de Guinée."
+    },
+    {
+      "ref": "geo-562",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-ethiopie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Soudan", "isCorrect": false },
+        { "text": "Somalie", "isCorrect": false },
+        { "text": "Éthiopie", "isCorrect": true },
+        { "text": "Kenya", "isCorrect": false }
+      ],
+      "explanation": "L'Éthiopie n'a plus d'accès à la mer depuis l'indépendance de l'Érythrée, en 1993."
+    },
+    {
+      "ref": "geo-563",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-kenya.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Kenya", "isCorrect": true },
+        { "text": "Éthiopie", "isCorrect": false },
+        { "text": "Tanzanie", "isCorrect": false },
+        { "text": "Ouganda", "isCorrect": false }
+      ],
+      "explanation": "Le Kenya touche l'océan Indien au sud-est, et le lac Turkana entaille sa frontière nord."
+    },
+    {
+      "ref": "geo-564",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-gambie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Sierra Leone", "isCorrect": false },
+        { "text": "Gambie", "isCorrect": true },
+        { "text": "Guinée-Bissau", "isCorrect": false },
+        { "text": "Sénégal", "isCorrect": false }
+      ],
+      "explanation": "Ce pays très étroit suit le cours du fleuve Gambie et est presque entièrement entouré par le Sénégal."
+    },
+    {
+      "ref": "geo-565",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["afrique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-maroc.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Maroc", "isCorrect": true },
+        { "text": "Tunisie", "isCorrect": false },
+        { "text": "Mauritanie", "isCorrect": false },
+        { "text": "Algérie", "isCorrect": false }
+      ],
+      "explanation": "La silhouette inclut le Sahara occidental, selon la représentation adoptée par la France dans les données utilisées. Le statut de ce territoire reste disputé."
+    },
+    {
+      "ref": "geo-566",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-etats-unis.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "États-Unis", "isCorrect": true },
+        { "text": "Brésil", "isCorrect": false },
+        { "text": "Mexique", "isCorrect": false },
+        { "text": "Canada", "isCorrect": false }
+      ],
+      "explanation": "Seuls les 48 États contigus sont représentés : l'Alaska et Hawaï, trop éloignés, n'apparaissent pas."
+    },
+    {
+      "ref": "geo-567",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-canada.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Canada", "isCorrect": true },
+        { "text": "États-Unis", "isCorrect": false },
+        { "text": "Russie", "isCorrect": false },
+        { "text": "Norvège", "isCorrect": false }
+      ],
+      "explanation": "Au nord, l'archipel arctique canadien compte des dizaines de milliers d'îles. La baie d'Hudson creuse le centre du pays."
+    },
+    {
+      "ref": "geo-568",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-mexique.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Colombie", "isCorrect": false },
+        { "text": "Guatemala", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": false },
+        { "text": "Mexique", "isCorrect": true }
+      ],
+      "explanation": "On reconnaît la longue péninsule de Basse-Californie à l'ouest et celle du Yucatán au sud-est."
+    },
+    {
+      "ref": "geo-569",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-cuba.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Haïti", "isCorrect": false },
+        { "text": "Jamaïque", "isCorrect": false },
+        { "text": "République dominicaine", "isCorrect": false },
+        { "text": "Cuba", "isCorrect": true }
+      ],
+      "explanation": "C'est la plus grande île des Caraïbes, longue et étroite, surnommée « le crocodile vert »."
+    },
+    {
+      "ref": "geo-570",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-panama.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Honduras", "isCorrect": false },
+        { "text": "Costa Rica", "isCorrect": false },
+        { "text": "Nicaragua", "isCorrect": false },
+        { "text": "Panama", "isCorrect": true }
+      ],
+      "explanation": "Cet isthme en forme de S relie l'Amérique centrale à l'Amérique du Sud. Le canal de Panama le traverse."
+    },
+    {
+      "ref": "geo-571",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-bresil.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Pérou", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Brésil", "isCorrect": true },
+        { "text": "Colombie", "isCorrect": false }
+      ],
+      "explanation": "Le Brésil couvre près de la moitié de l'Amérique du Sud et touche tous les pays du continent, sauf le Chili et l'Équateur."
+    },
+    {
+      "ref": "geo-572",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-argentine.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Paraguay", "isCorrect": false },
+        { "text": "Uruguay", "isCorrect": false },
+        { "text": "Chili", "isCorrect": false },
+        { "text": "Argentine", "isCorrect": true }
+      ],
+      "explanation": "L'Argentine s'effile vers le sud jusqu'à la Terre de Feu, qu'elle partage avec le Chili."
+    },
+    {
+      "ref": "geo-573",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-chili.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Argentine", "isCorrect": false },
+        { "text": "Chili", "isCorrect": true },
+        { "text": "Norvège", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": false }
+      ],
+      "explanation": "Le Chili s'étire sur environ 4 300 km pour une largeur moyenne d'à peine 180 km."
+    },
+    {
+      "ref": "geo-574",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-perou.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Colombie", "isCorrect": false },
+        { "text": "Bolivie", "isCorrect": false },
+        { "text": "Équateur", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": true }
+      ],
+      "explanation": "Sa longue côte pacifique est bordée par la cordillère des Andes, et l'Amazonie occupe l'est du pays."
+    },
+    {
+      "ref": "geo-575",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["amerique"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-colombie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Colombie", "isCorrect": true },
+        { "text": "Venezuela", "isCorrect": false },
+        { "text": "Pérou", "isCorrect": false },
+        { "text": "Équateur", "isCorrect": false }
+      ],
+      "explanation": "C'est le seul pays d'Amérique du Sud qui a une côte à la fois sur l'océan Pacifique et sur la mer des Caraïbes."
+    },
+    {
+      "ref": "geo-576",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oceanie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-australie.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Nouvelle-Zélande", "isCorrect": false },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": false },
+        { "text": "Australie", "isCorrect": true },
+        { "text": "Indonésie", "isCorrect": false }
+      ],
+      "explanation": "On reconnaît le golfe de Carpentarie au nord et l'île de Tasmanie au sud-est."
+    },
+    {
+      "ref": "geo-577",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oceanie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-nouvelle-zelande.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Fidji", "isCorrect": false },
+        { "text": "Japon", "isCorrect": false },
+        { "text": "Nouvelle-Zélande", "isCorrect": true },
+        { "text": "Philippines", "isCorrect": false }
+      ],
+      "explanation": "Le pays est formé de deux grandes îles, l'île du Nord et l'île du Sud, séparées par le détroit de Cook."
+    },
+    {
+      "ref": "geo-578",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oceanie"],
+      "text": "À quel pays correspond cette silhouette ?",
+      "image": {
+        "src": "geographie/silhouette-papouasie-nouvelle-guinee.webp",
+        "alt": "Silhouette d'un pays à identifier",
+        "credit": {
+          "author": "Natural Earth",
+          "license": "Domaine public",
+          "url": "https://www.naturalearthdata.com"
+        }
+      },
+      "answers": [
+        { "text": "Îles Salomon", "isCorrect": false },
+        { "text": "Indonésie", "isCorrect": false },
+        { "text": "Papouasie-Nouvelle-Guinée", "isCorrect": true },
+        { "text": "Vanuatu", "isCorrect": false }
+      ],
+      "explanation": "La frontière ouest est une ligne droite qui coupe l'île de Nouvelle-Guinée en deux, avec l'Indonésie."
+    }
+  ]
+}

@@ -1,0 +1,2120 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 152,
+    "parDifficulte": { "1": 38, "2": 74, "3": 40 },
+    "parType": { "multiple": 135, "boolean": 17 },
+    "avecImage": 0,
+    "sansImage": 152,
+    "parTag": {
+      "personnage": 65,
+      "episode": 29,
+      "coulisses": 27,
+      "acteur": 27,
+      "avant-apres": 8,
+      "lieu": 4,
+      "record": 2
+    }
+  },
+  "category": {
+    "slug": "friends",
+    "name": "Friends"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "fri-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "Combien de saisons compte la série Friends ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "12", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "7", "isCorrect": false }
+      ],
+      "explanation": "La série a été diffusée de 1994 à 2004."
+    },
+    {
+      "ref": "fri-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "En quelle année a commencé la diffusion de Friends ?",
+      "answers": [
+        { "text": "1990", "isCorrect": false },
+        { "text": "1994", "isCorrect": true },
+        { "text": "1998", "isCorrect": false },
+        { "text": "2000", "isCorrect": false }
+      ],
+      "explanation": "Le premier épisode a été diffusé le 22 septembre 1994 aux États-Unis."
+    },
+    {
+      "ref": "fri-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "En quelle année le dernier épisode de Friends a-t-il été diffusé ?",
+      "answers": [
+        { "text": "2004", "isCorrect": true },
+        { "text": "2002", "isCorrect": false },
+        { "text": "2006", "isCorrect": false },
+        { "text": "2001", "isCorrect": false }
+      ],
+      "explanation": "Le dernier épisode a été diffusé le 6 mai 2004."
+    },
+    {
+      "ref": "fri-004",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coulisses"],
+      "text": "Combien d'épisodes compte la série Friends ?",
+      "answers": [
+        { "text": "150", "isCorrect": false },
+        { "text": "300", "isCorrect": false },
+        { "text": "189", "isCorrect": false },
+        { "text": "236", "isCorrect": true }
+      ],
+      "explanation": "Les épisodes durent environ 22 minutes, sans les publicités."
+    },
+    {
+      "ref": "fri-005",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Sur quelle chaîne américaine Friends a-t-il été diffusé ?",
+      "answers": [
+        { "text": "CBS", "isCorrect": false },
+        { "text": "ABC", "isCorrect": false },
+        { "text": "NBC", "isCorrect": true },
+        { "text": "HBO", "isCorrect": false }
+      ],
+      "explanation": "NBC diffusait aussi « Seinfeld » à la même époque."
+    },
+    {
+      "ref": "fri-006",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coulisses"],
+      "text": "Qui a créé la série Friends ?",
+      "answers": [
+        { "text": "Jerry Seinfeld et Larry David", "isCorrect": false },
+        { "text": "David Crane et Marta Kauffman", "isCorrect": true },
+        { "text": "Chuck Lorre et Bill Prady", "isCorrect": false },
+        { "text": "Matt Groening et James L. Brooks", "isCorrect": false }
+      ],
+      "explanation": "Ils avaient travaillé avec le producteur Kevin S. Bright."
+    },
+    {
+      "ref": "fri-007",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "Dans quelle ville se déroule Friends ?",
+      "answers": [
+        { "text": "New York", "isCorrect": true },
+        { "text": "Los Angeles", "isCorrect": false },
+        { "text": "Chicago", "isCorrect": false },
+        { "text": "Boston", "isCorrect": false }
+      ],
+      "explanation": "Les épisodes étaient pourtant tournés en studio à Los Angeles."
+    },
+    {
+      "ref": "fri-008",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["lieu"],
+      "text": "Comment s'appelle le café où se retrouvent les six amis ?",
+      "answers": [
+        { "text": "Le Starbucks", "isCorrect": false },
+        { "text": "Le Monk's Café", "isCorrect": false },
+        { "text": "Le Café Joey", "isCorrect": false },
+        { "text": "Le Central Perk", "isCorrect": true }
+      ],
+      "explanation": "Le Monk's Café est celui de la série « Seinfeld »."
+    },
+    {
+      "ref": "fri-009",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "Quel groupe interprète le générique « I'll Be There for You » ?",
+      "answers": [
+        { "text": "Bon Jovi", "isCorrect": false },
+        { "text": "R.E.M.", "isCorrect": false },
+        { "text": "The Rembrandts", "isCorrect": true },
+        { "text": "Hootie & the Blowfish", "isCorrect": false }
+      ],
+      "explanation": "La chanson est sortie en single en 1995 et a été un succès."
+    },
+    {
+      "ref": "fri-010",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Dans quoi les six acteurs dansent-ils pendant le générique ?",
+      "answers": [
+        { "text": "Une piscine", "isCorrect": false },
+        { "text": "Une fontaine", "isCorrect": true },
+        { "text": "Une rivière", "isCorrect": false },
+        { "text": "Sous une cascade", "isCorrect": false }
+      ],
+      "explanation": "La fontaine se trouve dans les studios Warner Bros, à Burbank."
+    },
+    {
+      "ref": "fri-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["lieu"],
+      "text": "Dans quel quartier de New York vivent les personnages ?",
+      "answers": [
+        { "text": "Greenwich Village", "isCorrect": true },
+        { "text": "Brooklyn", "isCorrect": false },
+        { "text": "Harlem", "isCorrect": false },
+        { "text": "Upper East Side", "isCorrect": false }
+      ],
+      "explanation": "L'immeuble filmé de l'extérieur se trouve à l'angle de Bedford Street et Grove Street."
+    },
+    {
+      "ref": "fri-012",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Quel est le numéro de l'appartement de Monica, dans la majorité des épisodes ?",
+      "answers": [
+        { "text": "5", "isCorrect": false },
+        { "text": "19", "isCorrect": false },
+        { "text": "42", "isCorrect": false },
+        { "text": "20", "isCorrect": true }
+      ],
+      "explanation": "Il portait le numéro 5 dans les premiers épisodes, avant d'être changé."
+    },
+    {
+      "ref": "fri-013",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["lieu"],
+      "text": "Quel est le numéro de l'appartement de Chandler et Joey ?",
+      "answers": [
+        { "text": "20", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "19", "isCorrect": true },
+        { "text": "11", "isCorrect": false }
+      ],
+      "explanation": "Il se trouve juste en face de celui de Monica."
+    },
+    {
+      "ref": "fri-014",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "Friends était tourné devant un vrai public.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les rires que l'on entend sont pour la plupart ceux du public présent dans le studio."
+    },
+    {
+      "ref": "fri-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses", "record"],
+      "text": "Combien chaque acteur principal touchait-il par épisode lors des deux dernières saisons ?",
+      "answers": [
+        { "text": "1 million de dollars", "isCorrect": true },
+        { "text": "100 000 dollars", "isCorrect": false },
+        { "text": "10 000 dollars", "isCorrect": false },
+        { "text": "5 millions de dollars", "isCorrect": false }
+      ],
+      "explanation": "Les six acteurs avaient négocié ensemble pour être payés la même somme."
+    },
+    {
+      "ref": "fri-016",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coulisses", "record"],
+      "text": "Combien de téléspectateurs américains ont regardé le dernier épisode en 2004 ?",
+      "answers": [
+        { "text": "Environ 5 millions", "isCorrect": false },
+        { "text": "Environ 20 millions", "isCorrect": false },
+        { "text": "Environ 100 millions", "isCorrect": false },
+        { "text": "Environ 52 millions", "isCorrect": true }
+      ],
+      "explanation": "C'est l'une des plus fortes audiences de l'histoire de la télévision américaine."
+    },
+    {
+      "ref": "fri-017",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Comment s'appelle l'émission spéciale qui a réuni les six acteurs en 2021 ?",
+      "answers": [
+        { "text": "Friends Forever", "isCorrect": false },
+        { "text": "Retour au Central Perk", "isCorrect": false },
+        { "text": "Friends: The Reunion", "isCorrect": true },
+        { "text": "The One with Everyone", "isCorrect": false }
+      ],
+      "explanation": "Elle a été diffusée en mai 2021."
+    },
+    {
+      "ref": "fri-018",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Quelle série dérivée a suivi l'un des personnages à Los Angeles, de 2004 à 2006 ?",
+      "answers": [
+        { "text": "Chandler & Monica", "isCorrect": false },
+        { "text": "Joey", "isCorrect": true },
+        { "text": "Phoebe", "isCorrect": false },
+        { "text": "Central Perk", "isCorrect": false }
+      ],
+      "explanation": "La série n'a duré que deux saisons."
+    },
+    {
+      "ref": "fri-019",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Par quels mots commencent presque tous les titres d'épisodes de Friends en version française ?",
+      "answers": [
+        { "text": "« Celui qui… »", "isCorrect": true },
+        { "text": "« L'épisode où… »", "isCorrect": false },
+        { "text": "« Le jour où… »", "isCorrect": false },
+        { "text": "« Quand… »", "isCorrect": false }
+      ],
+      "explanation": "En VO, ils commencent par « The One with… » ou « The One Where… »."
+    },
+    {
+      "ref": "fri-020",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Le dernier épisode de Friends se termine dans l'appartement vide de Monica.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Les six amis laissent leurs clés sur le comptoir avant d'aller boire un dernier café."
+    },
+    {
+      "ref": "fri-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quelle actrice joue Rachel Green ?",
+      "answers": [
+        { "text": "Courteney Cox", "isCorrect": false },
+        { "text": "Lisa Kudrow", "isCorrect": false },
+        { "text": "Jennifer Aniston", "isCorrect": true },
+        { "text": "Julia Roberts", "isCorrect": false }
+      ],
+      "explanation": "Sa coupe de cheveux, « The Rachel », a été copiée dans le monde entier."
+    },
+    {
+      "ref": "fri-022",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quelle actrice joue Monica Geller ?",
+      "answers": [
+        { "text": "Jennifer Aniston", "isCorrect": false },
+        { "text": "Courteney Cox", "isCorrect": true },
+        { "text": "Lisa Kudrow", "isCorrect": false },
+        { "text": "Helen Hunt", "isCorrect": false }
+      ],
+      "explanation": "Elle avait d'abord passé l'audition pour le rôle de Rachel."
+    },
+    {
+      "ref": "fri-023",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quelle actrice joue Phoebe Buffay ?",
+      "answers": [
+        { "text": "Lisa Kudrow", "isCorrect": true },
+        { "text": "Courteney Cox", "isCorrect": false },
+        { "text": "Jennifer Aniston", "isCorrect": false },
+        { "text": "Christina Applegate", "isCorrect": false }
+      ],
+      "explanation": "Elle a remporté un Emmy Award pour ce rôle en 1998."
+    },
+    {
+      "ref": "fri-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Joey Tribbiani ?",
+      "answers": [
+        { "text": "Matthew Perry", "isCorrect": false },
+        { "text": "David Schwimmer", "isCorrect": false },
+        { "text": "Hank Azaria", "isCorrect": false },
+        { "text": "Matt LeBlanc", "isCorrect": true }
+      ],
+      "explanation": "Il a ensuite joué le même personnage dans la série « Joey »."
+    },
+    {
+      "ref": "fri-025",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Chandler Bing ?",
+      "answers": [
+        { "text": "Matt LeBlanc", "isCorrect": false },
+        { "text": "David Schwimmer", "isCorrect": false },
+        { "text": "Matthew Perry", "isCorrect": true },
+        { "text": "Paul Rudd", "isCorrect": false }
+      ],
+      "explanation": "Matthew Perry est mort en octobre 2023."
+    },
+    {
+      "ref": "fri-026",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Ross Geller ?",
+      "answers": [
+        { "text": "Matthew Perry", "isCorrect": false },
+        { "text": "David Schwimmer", "isCorrect": true },
+        { "text": "Matt LeBlanc", "isCorrect": false },
+        { "text": "Tom Selleck", "isCorrect": false }
+      ],
+      "explanation": "Il a aussi réalisé plusieurs épisodes de la série."
+    },
+    {
+      "ref": "fri-027",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quelle actrice a remporté un Emmy Award en 2002 pour son rôle dans Friends ?",
+      "answers": [
+        { "text": "Jennifer Aniston", "isCorrect": true },
+        { "text": "Courteney Cox", "isCorrect": false },
+        { "text": "Lisa Kudrow", "isCorrect": false },
+        { "text": "Maggie Wheeler", "isCorrect": false }
+      ],
+      "explanation": "Courteney Cox est la seule des six acteurs à n'avoir jamais été nommée aux Emmy Awards pour Friends."
+    },
+    {
+      "ref": "fri-028",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Dans quelle autre série Lisa Kudrow jouait-elle déjà Ursula, la jumelle de Phoebe ?",
+      "answers": [
+        { "text": "Seinfeld", "isCorrect": false },
+        { "text": "Urgences", "isCorrect": false },
+        { "text": "Cheers", "isCorrect": false },
+        { "text": "Dingue de toi", "isCorrect": true }
+      ],
+      "explanation": "C'est pour cela que le personnage d'Ursula a été intégré à Friends."
+    },
+    {
+      "ref": "fri-029",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Dans quelle série de films d'horreur Courteney Cox joue-t-elle la journaliste Gale Weathers ?",
+      "answers": [
+        { "text": "Halloween", "isCorrect": false },
+        { "text": "Saw", "isCorrect": false },
+        { "text": "Scream", "isCorrect": true },
+        { "text": "Destination finale", "isCorrect": false }
+      ],
+      "explanation": "Elle a joué dans presque tous les films de la saga."
+    },
+    {
+      "ref": "fri-030",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Quel livre Matthew Perry a-t-il publié en 2022 sur sa carrière et son addiction ?",
+      "answers": [
+        { "text": "Could I Be Any More", "isCorrect": false },
+        { "text": "Friends, Lovers, and the Big Terrible Thing", "isCorrect": true },
+        { "text": "The One with Me", "isCorrect": false },
+        { "text": "Chandler & Me", "isCorrect": false }
+      ],
+      "explanation": "Il y raconte sa lutte contre l'alcool et les médicaments pendant le tournage."
+    },
+    {
+      "ref": "fri-031",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Pour quelle série Matt LeBlanc a-t-il obtenu un Golden Globe en 2012, en jouant son propre rôle ?",
+      "answers": [
+        { "text": "Episodes", "isCorrect": true },
+        { "text": "Top Gear", "isCorrect": false },
+        { "text": "Man with a Plan", "isCorrect": false },
+        { "text": "Joey", "isCorrect": false }
+      ],
+      "explanation": "Dans « Episodes », il incarne une version caricaturale de lui-même."
+    },
+    {
+      "ref": "fri-032",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Gunther, le serveur du Central Perk ?",
+      "answers": [
+        { "text": "Hank Azaria", "isCorrect": false },
+        { "text": "Paul Rudd", "isCorrect": false },
+        { "text": "Elliott Gould", "isCorrect": false },
+        { "text": "James Michael Tyler", "isCorrect": true }
+      ],
+      "explanation": "Il était à l'origine figurant, car il savait se servir d'une machine à expresso."
+    },
+    {
+      "ref": "fri-033",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Mike Hannigan, le mari de Phoebe ?",
+      "answers": [
+        { "text": "Bruce Willis", "isCorrect": false },
+        { "text": "Hank Azaria", "isCorrect": false },
+        { "text": "Paul Rudd", "isCorrect": true },
+        { "text": "Tom Selleck", "isCorrect": false }
+      ],
+      "explanation": "Il a ensuite incarné Ant-Man chez Marvel."
+    },
+    {
+      "ref": "fri-034",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Richard Burke, l'ophtalmologue plus âgé que Monica fréquente ?",
+      "answers": [
+        { "text": "Bruce Willis", "isCorrect": false },
+        { "text": "Tom Selleck", "isCorrect": true },
+        { "text": "Elliott Gould", "isCorrect": false },
+        { "text": "Paul Rudd", "isCorrect": false }
+      ],
+      "explanation": "Il était célèbre pour la série « Magnum »."
+    },
+    {
+      "ref": "fri-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Paul Stevens, le père d'une petite amie de Ross ?",
+      "answers": [
+        { "text": "Bruce Willis", "isCorrect": true },
+        { "text": "Tom Selleck", "isCorrect": false },
+        { "text": "Brad Pitt", "isCorrect": false },
+        { "text": "Ben Stiller", "isCorrect": false }
+      ],
+      "explanation": "Il a obtenu un Emmy Award pour ce rôle invité."
+    },
+    {
+      "ref": "fri-036",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue Will, un ancien camarade de lycée qui déteste Rachel, lors d'un Thanksgiving ?",
+      "answers": [
+        { "text": "Ben Stiller", "isCorrect": false },
+        { "text": "Paul Rudd", "isCorrect": false },
+        { "text": "George Clooney", "isCorrect": false },
+        { "text": "Brad Pitt", "isCorrect": true }
+      ],
+      "explanation": "Il était alors marié à Jennifer Aniston."
+    },
+    {
+      "ref": "fri-037",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Quelle actrice joue Susie Moss, une ancienne camarade d'école que Chandler a humiliée ?",
+      "answers": [
+        { "text": "Reese Witherspoon", "isCorrect": false },
+        { "text": "Christina Applegate", "isCorrect": false },
+        { "text": "Julia Roberts", "isCorrect": true },
+        { "text": "Winona Ryder", "isCorrect": false }
+      ],
+      "explanation": "Pour se venger, elle lui fait enfiler une culotte et l'enferme dans les toilettes d'un restaurant."
+    },
+    {
+      "ref": "fri-038",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Quelles actrices jouent les deux sœurs de Rachel, Jill et Amy ?",
+      "answers": [
+        { "text": "Julia Roberts et Winona Ryder", "isCorrect": false },
+        { "text": "Reese Witherspoon et Christina Applegate", "isCorrect": true },
+        { "text": "Sarah Jessica Parker et Kim Cattrall", "isCorrect": false },
+        { "text": "Helen Hunt et Brooke Shields", "isCorrect": false }
+      ],
+      "explanation": "Christina Applegate a reçu un Emmy Award pour son rôle d'Amy."
+    },
+    {
+      "ref": "fri-039",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Quelle actrice joue Janice, l'ex-petite amie au rire inimitable de Chandler ?",
+      "answers": [
+        { "text": "Maggie Wheeler", "isCorrect": true },
+        { "text": "Jane Sibbett", "isCorrect": false },
+        { "text": "Helen Baxendale", "isCorrect": false },
+        { "text": "Christina Pickles", "isCorrect": false }
+      ],
+      "explanation": "Elle revient régulièrement tout au long de la série."
+    },
+    {
+      "ref": "fri-040",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Quelle actrice joue le père de Chandler, Charles Bing, qui se produit dans un spectacle de cabaret à Las Vegas ?",
+      "answers": [
+        { "text": "Morgan Fairchild", "isCorrect": false },
+        { "text": "Christina Pickles", "isCorrect": false },
+        { "text": "Marlo Thomas", "isCorrect": false },
+        { "text": "Kathleen Turner", "isCorrect": true }
+      ],
+      "explanation": "Morgan Fairchild joue sa mère, une romancière."
+    },
+    {
+      "ref": "fri-041",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur joue le père de Ross et Monica, Jack Geller ?",
+      "answers": [
+        { "text": "Tom Selleck", "isCorrect": false },
+        { "text": "Ron Leibman", "isCorrect": false },
+        { "text": "Elliott Gould", "isCorrect": true },
+        { "text": "James Michael Tyler", "isCorrect": false }
+      ],
+      "explanation": "Il est célèbre pour le film « M*A*S*H »."
+    },
+    {
+      "ref": "fri-042",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Courteney Cox avait d'abord été envisagée pour le rôle de Rachel.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle a préféré jouer Monica, qu'elle trouvait plus forte."
+    },
+    {
+      "ref": "fri-043",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel lien unit Ross et Monica ?",
+      "answers": [
+        { "text": "Ils sont frère et sœur", "isCorrect": true },
+        { "text": "Ils sont cousins", "isCorrect": false },
+        { "text": "Ils sont mari et femme", "isCorrect": false },
+        { "text": "Ils sont voisins", "isCorrect": false }
+      ],
+      "explanation": "Leurs parents s'appellent Jack et Judy Geller."
+    },
+    {
+      "ref": "fri-044",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le métier de Monica ?",
+      "answers": [
+        { "text": "Serveuse", "isCorrect": false },
+        { "text": "Infirmière", "isCorrect": false },
+        { "text": "Décoratrice", "isCorrect": false },
+        { "text": "Cuisinière", "isCorrect": true }
+      ],
+      "explanation": "Elle devient chef de cuisine dans plusieurs restaurants."
+    },
+    {
+      "ref": "fri-045",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le métier de Ross ?",
+      "answers": [
+        { "text": "Dentiste", "isCorrect": false },
+        { "text": "Avocat", "isCorrect": false },
+        { "text": "Paléontologue", "isCorrect": true },
+        { "text": "Professeur de musique", "isCorrect": false }
+      ],
+      "explanation": "Il travaille d'abord dans un musée, puis enseigne à l'université."
+    },
+    {
+      "ref": "fri-046",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le métier de Joey ?",
+      "answers": [
+        { "text": "Cuisinier", "isCorrect": false },
+        { "text": "Acteur", "isCorrect": true },
+        { "text": "Pompier", "isCorrect": false },
+        { "text": "Mannequin", "isCorrect": false }
+      ],
+      "explanation": "Il enchaîne surtout les petits rôles et les publicités."
+    },
+    {
+      "ref": "fri-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel métier exerce Phoebe ?",
+      "answers": [
+        { "text": "Masseuse", "isCorrect": true },
+        { "text": "Coiffeuse", "isCorrect": false },
+        { "text": "Serveuse", "isCorrect": false },
+        { "text": "Infirmière", "isCorrect": false }
+      ],
+      "explanation": "Elle chante aussi ses propres chansons au Central Perk."
+    },
+    {
+      "ref": "fri-048",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Où Rachel travaille-t-elle au début de la série ?",
+      "answers": [
+        { "text": "Dans un magasin de vêtements", "isCorrect": false },
+        { "text": "Dans un restaurant chic", "isCorrect": false },
+        { "text": "Dans un musée", "isCorrect": false },
+        { "text": "Au Central Perk, comme serveuse", "isCorrect": true }
+      ],
+      "explanation": "Elle n'avait jamais travaillé avant de fuir son mariage."
+    },
+    {
+      "ref": "fri-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Dans quel domaine Rachel fait-elle ensuite carrière ?",
+      "answers": [
+        { "text": "La cuisine", "isCorrect": false },
+        { "text": "L'immobilier", "isCorrect": false },
+        { "text": "La mode", "isCorrect": true },
+        { "text": "La publicité", "isCorrect": false }
+      ],
+      "explanation": "Elle travaille notamment chez Bloomingdale's puis chez Ralph Lauren."
+    },
+    {
+      "ref": "fri-050",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Pour quelle grande maison de mode Rachel doit-elle partir travailler à Paris à la fin de la série ?",
+      "answers": [
+        { "text": "Chanel", "isCorrect": false },
+        { "text": "Louis Vuitton", "isCorrect": true },
+        { "text": "Dior", "isCorrect": false },
+        { "text": "Hermès", "isCorrect": false }
+      ],
+      "explanation": "Elle descend finalement de l'avion pour rester avec Ross."
+    },
+    {
+      "ref": "fri-051",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Dans quelle tenue Rachel arrive-t-elle au Central Perk dans le premier épisode ?",
+      "answers": [
+        { "text": "En robe de mariée", "isCorrect": true },
+        { "text": "En pyjama", "isCorrect": false },
+        { "text": "En uniforme de serveuse", "isCorrect": false },
+        { "text": "En maillot de bain", "isCorrect": false }
+      ],
+      "explanation": "Elle vient de fuir son mariage avec Barry."
+    },
+    {
+      "ref": "fri-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel est le métier de Barry, que Rachel abandonne devant l'autel ?",
+      "answers": [
+        { "text": "Avocat", "isCorrect": false },
+        { "text": "Paléontologue", "isCorrect": false },
+        { "text": "Chef cuisinier", "isCorrect": false },
+        { "text": "Orthodontiste", "isCorrect": true }
+      ],
+      "explanation": "Il épouse ensuite Mindy, la meilleure amie de Rachel."
+    },
+    {
+      "ref": "fri-053",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Personne ne sait vraiment quel est le métier de Chandler au début de la série. Dans quel domaine travaille-t-il ?",
+      "answers": [
+        { "text": "La publicité", "isCorrect": false },
+        { "text": "La finance", "isCorrect": false },
+        { "text": "Les statistiques et le traitement de données", "isCorrect": true },
+        { "text": "L'informatique", "isCorrect": false }
+      ],
+      "explanation": "Il change de vie et devient rédacteur publicitaire dans les dernières saisons."
+    },
+    {
+      "ref": "fri-054",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel est le deuxième prénom de Chandler ?",
+      "answers": [
+        { "text": "Marcel", "isCorrect": false },
+        { "text": "Muriel", "isCorrect": true },
+        { "text": "Michael", "isCorrect": false },
+        { "text": "Matthew", "isCorrect": false }
+      ],
+      "explanation": "Il en a toujours eu un peu honte."
+    },
+    {
+      "ref": "fri-055",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Dans quel feuilleton Joey joue-t-il le docteur Drake Ramoray ?",
+      "answers": [
+        { "text": "Des jours et des vies", "isCorrect": true },
+        { "text": "Les Feux de l'amour", "isCorrect": false },
+        { "text": "Amour, Gloire et Beauté", "isCorrect": false },
+        { "text": "Santa Barbara", "isCorrect": false }
+      ],
+      "explanation": "Son personnage est tué puis ressuscité grâce à une greffe de cerveau."
+    },
+    {
+      "ref": "fri-056",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Combien de sœurs a Joey ?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "5", "isCorrect": false },
+        { "text": "7", "isCorrect": true }
+      ],
+      "explanation": "Il est le seul garçon d'une famille italo-américaine."
+    },
+    {
+      "ref": "fri-057",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel aliment Joey refuse-t-il catégoriquement de partager ?",
+      "answers": [
+        { "text": "Uniquement son chocolat", "isCorrect": false },
+        { "text": "Uniquement son café", "isCorrect": false },
+        { "text": "Sa nourriture, quelle qu'elle soit", "isCorrect": true },
+        { "text": "Uniquement ses frites", "isCorrect": false }
+      ],
+      "explanation": "« Joey ne partage pas la nourriture ! » (« Joey doesn't share food! »)"
+    },
+    {
+      "ref": "fri-058",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le pingouin en peluche de Joey ?",
+      "answers": [
+        { "text": "Pingu", "isCorrect": false },
+        { "text": "Hugsy", "isCorrect": true },
+        { "text": "Waddles", "isCorrect": false },
+        { "text": "Frosty", "isCorrect": false }
+      ],
+      "explanation": "Il refuse de le laisser dormir avec qui que ce soit."
+    },
+    {
+      "ref": "fri-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quels animaux vivent un temps dans l'appartement de Chandler et Joey ?",
+      "answers": [
+        { "text": "Un poussin et un canard", "isCorrect": true },
+        { "text": "Un chat et un chien", "isCorrect": false },
+        { "text": "Deux tortues", "isCorrect": false },
+        { "text": "Un lapin et un hamster", "isCorrect": false }
+      ],
+      "explanation": "Le poussin devient même un coq."
+    },
+    {
+      "ref": "fri-060",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le singe de Ross ?",
+      "answers": [
+        { "text": "Bubbles", "isCorrect": false },
+        { "text": "Charlie", "isCorrect": false },
+        { "text": "Albert", "isCorrect": false },
+        { "text": "Marcel", "isCorrect": true }
+      ],
+      "explanation": "Il finit par jouer dans un film."
+    },
+    {
+      "ref": "fri-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle est l'espèce de Marcel, le singe de Ross ?",
+      "answers": [
+        { "text": "Un chimpanzé", "isCorrect": false },
+        { "text": "Un orang-outan", "isCorrect": false },
+        { "text": "Un capucin", "isCorrect": true },
+        { "text": "Un babouin", "isCorrect": false }
+      ],
+      "explanation": "Les capucins sont de petits singes d'Amérique du Sud."
+    },
+    {
+      "ref": "fri-062",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Combien de fois Ross se marie-t-il au cours de la série ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "3", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false }
+      ],
+      "explanation": "Il épouse Carol, Emily puis Rachel, à Las Vegas."
+    },
+    {
+      "ref": "fri-063",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la première femme de Ross, qui le quitte pour une femme ?",
+      "answers": [
+        { "text": "Carol", "isCorrect": true },
+        { "text": "Emily", "isCorrect": false },
+        { "text": "Julie", "isCorrect": false },
+        { "text": "Janice", "isCorrect": false }
+      ],
+      "explanation": "Elle vit avec Susan et élève leur fils Ben avec Ross."
+    },
+    {
+      "ref": "fri-064",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le fils de Ross et Carol ?",
+      "answers": [
+        { "text": "Jack", "isCorrect": false },
+        { "text": "Frank", "isCorrect": false },
+        { "text": "Joey", "isCorrect": false },
+        { "text": "Ben", "isCorrect": true }
+      ],
+      "explanation": "Ben naît dans la première saison."
+    },
+    {
+      "ref": "fri-065",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel prénom Ross prononce-t-il par erreur devant l'autel en épousant Emily ?",
+      "answers": [
+        { "text": "Monica", "isCorrect": false },
+        { "text": "Carol", "isCorrect": false },
+        { "text": "Rachel", "isCorrect": true },
+        { "text": "Phoebe", "isCorrect": false }
+      ],
+      "explanation": "Le mariage a lieu à Londres, à la fin de la quatrième saison."
+    },
+    {
+      "ref": "fri-066",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la fille de Ross et Rachel ?",
+      "answers": [
+        { "text": "Ben", "isCorrect": false },
+        { "text": "Emma", "isCorrect": true },
+        { "text": "Erica", "isCorrect": false },
+        { "text": "Rose", "isCorrect": false }
+      ],
+      "explanation": "Elle naît à la fin de la huitième saison."
+    },
+    {
+      "ref": "fri-067",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la sœur jumelle de Phoebe ?",
+      "answers": [
+        { "text": "Ursula", "isCorrect": true },
+        { "text": "Amy", "isCorrect": false },
+        { "text": "Jill", "isCorrect": false },
+        { "text": "Janice", "isCorrect": false }
+      ],
+      "explanation": "Les deux sœurs ne s'entendent pas du tout."
+    },
+    {
+      "ref": "fri-068",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Combien de bébés Phoebe porte-t-elle pour son demi-frère ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "3", "isCorrect": true }
+      ],
+      "explanation": "Elle donne naissance à des triplés pour Frank Jr. et sa femme."
+    },
+    {
+      "ref": "fri-069",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Qui Phoebe épouse-t-elle dans la dixième saison ?",
+      "answers": [
+        { "text": "David, le scientifique", "isCorrect": false },
+        { "text": "Joey", "isCorrect": false },
+        { "text": "Mike Hannigan", "isCorrect": true },
+        { "text": "Gary, le policier", "isCorrect": false }
+      ],
+      "explanation": "Le mariage a lieu dans la neige, devant le Central Perk."
+    },
+    {
+      "ref": "fri-070",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel faux nom Phoebe utilise-t-elle quand elle se fait passer pour quelqu'un d'autre ?",
+      "answers": [
+        { "text": "Ken Adams", "isCorrect": false },
+        { "text": "Regina Phalange", "isCorrect": true },
+        { "text": "Ursula Buffay", "isCorrect": false },
+        { "text": "Princesse Consuela", "isCorrect": false }
+      ],
+      "explanation": "Joey, lui, utilise le nom de Ken Adams."
+    },
+    {
+      "ref": "fri-071",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quelle célèbre chanson Phoebe chante-t-elle sur un chat ?",
+      "answers": [
+        { "text": "Smelly Cat", "isCorrect": true },
+        { "text": "Stray Cat", "isCorrect": false },
+        { "text": "Black Cat", "isCorrect": false },
+        { "text": "Fat Cat", "isCorrect": false }
+      ],
+      "explanation": "La chanson parle d'un chat qui sent mauvais."
+    },
+    {
+      "ref": "fri-072",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel couple de la bande se marie à la fin de la septième saison ?",
+      "answers": [
+        { "text": "Ross et Rachel", "isCorrect": false },
+        { "text": "Phoebe et Joey", "isCorrect": false },
+        { "text": "Rachel et Joey", "isCorrect": false },
+        { "text": "Monica et Chandler", "isCorrect": true }
+      ],
+      "explanation": "Leur relation a commencé en secret à Londres, pendant le mariage de Ross."
+    },
+    {
+      "ref": "fri-073",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Dans quelle ville Monica et Chandler commencent-ils leur relation ?",
+      "answers": [
+        { "text": "Las Vegas", "isCorrect": false },
+        { "text": "Paris", "isCorrect": false },
+        { "text": "Londres", "isCorrect": true },
+        { "text": "New York", "isCorrect": false }
+      ],
+      "explanation": "Ils passent la nuit ensemble pendant le mariage de Ross et Emily."
+    },
+    {
+      "ref": "fri-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment Monica et Chandler deviennent-ils parents ?",
+      "answers": [
+        { "text": "Grâce à une mère porteuse", "isCorrect": false },
+        { "text": "En adoptant des jumeaux", "isCorrect": true },
+        { "text": "Monica tombe enceinte", "isCorrect": false },
+        { "text": "Ils adoptent un adolescent", "isCorrect": false }
+      ],
+      "explanation": "Ils découvrent à la naissance qu'il y a deux bébés : Jack et Erica."
+    },
+    {
+      "ref": "fri-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel trait de caractère de Monica est le plus moqué par ses amis ?",
+      "answers": [
+        { "text": "Sa manie de l'ordre et du ménage", "isCorrect": true },
+        { "text": "Sa jalousie", "isCorrect": false },
+        { "text": "Sa radinerie", "isCorrect": false },
+        { "text": "Son retard permanent", "isCorrect": false }
+      ],
+      "explanation": "Elle range même les serviettes en onze catégories."
+    },
+    {
+      "ref": "fri-076",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "À quoi ressemblait Monica dans les flash-back de son adolescence ?",
+      "answers": [
+        { "text": "Elle avait les cheveux rouges", "isCorrect": false },
+        { "text": "Elle portait un appareil dentaire et un casque", "isCorrect": false },
+        { "text": "Elle était gothique", "isCorrect": false },
+        { "text": "Elle était en surpoids", "isCorrect": true }
+      ],
+      "explanation": "Courteney Cox portait une combinaison spéciale pour ces scènes."
+    },
+    {
+      "ref": "fri-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle ex de Chandler revient sans cesse, avec son rire si particulier ?",
+      "answers": [
+        { "text": "Kathy", "isCorrect": false },
+        { "text": "Joanna", "isCorrect": false },
+        { "text": "Janice", "isCorrect": true },
+        { "text": "Aurora", "isCorrect": false }
+      ],
+      "explanation": "Elle revient régulièrement tout au long de la série."
+    },
+    {
+      "ref": "fri-078",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Qui est amoureux de Rachel en secret derrière le comptoir du Central Perk ?",
+      "answers": [
+        { "text": "Joey", "isCorrect": false },
+        { "text": "Gunther", "isCorrect": true },
+        { "text": "Mike", "isCorrect": false },
+        { "text": "Paolo", "isCorrect": false }
+      ],
+      "explanation": "Il ne lui avoue ses sentiments que dans le dernier épisode."
+    },
+    {
+      "ref": "fri-079",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le voisin du dessous, toujours en train de se plaindre du bruit ?",
+      "answers": [
+        { "text": "M. Heckles", "isCorrect": true },
+        { "text": "M. Treeger", "isCorrect": false },
+        { "text": "Gunther", "isCorrect": false },
+        { "text": "Le Type Tout Nu", "isCorrect": false }
+      ],
+      "explanation": "Il meurt dans la deuxième saison et laisse ses affaires à Monica et Rachel."
+    },
+    {
+      "ref": "fri-080",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment les amis surnomment-ils le voisin d'en face qu'ils observent depuis la fenêtre ?",
+      "answers": [
+        { "text": "M. Heckles", "isCorrect": false },
+        { "text": "L'Homme invisible", "isCorrect": false },
+        { "text": "Le Voisin Mystère", "isCorrect": false },
+        { "text": "Le Type Tout Nu", "isCorrect": true }
+      ],
+      "explanation": "Ross finit par récupérer son appartement."
+    },
+    {
+      "ref": "fri-081",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Pourquoi Monica et Rachel perdent-elles leur appartement au profit de Chandler et Joey ?",
+      "answers": [
+        { "text": "Elles ne paient plus le loyer", "isCorrect": false },
+        { "text": "Le propriétaire les expulse", "isCorrect": false },
+        { "text": "Elles perdent un quiz sur leurs amis", "isCorrect": true },
+        { "text": "Elles le leur échangent contre un canapé", "isCorrect": false }
+      ],
+      "explanation": "Elles ne savaient pas répondre à la question : « Quel est le métier de Chandler ? »."
+    },
+    {
+      "ref": "fri-082",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Avec qui Rachel a-t-elle une brève histoire dans les dernières saisons ?",
+      "answers": [
+        { "text": "Chandler", "isCorrect": false },
+        { "text": "Joey", "isCorrect": true },
+        { "text": "Gunther", "isCorrect": false },
+        { "text": "Mike", "isCorrect": false }
+      ],
+      "explanation": "Leur relation tourne court, car Joey ne se sent pas à l'aise."
+    },
+    {
+      "ref": "fri-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appellent les parents de Ross et Monica ?",
+      "answers": [
+        { "text": "Jack et Judy Geller", "isCorrect": true },
+        { "text": "Frank et Lily Geller", "isCorrect": false },
+        { "text": "Leonard et Sandra Geller", "isCorrect": false },
+        { "text": "Charles et Nora Geller", "isCorrect": false }
+      ],
+      "explanation": "Ils semblent toujours préférer Ross à Monica."
+    },
+    {
+      "ref": "fri-084",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la mère de Chandler, auteure de romans érotiques ?",
+      "answers": [
+        { "text": "Judy Geller", "isCorrect": false },
+        { "text": "Sandra Green", "isCorrect": false },
+        { "text": "Gloria Tribbiani", "isCorrect": false },
+        { "text": "Nora Tyler Bing", "isCorrect": true }
+      ],
+      "explanation": "Elle choque son fils en parlant ouvertement de sa vie privée."
+    },
+    {
+      "ref": "fri-085",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Ross et Rachel finissent ensemble à la fin de la série.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Rachel descend de l'avion qui devait l'emmener à Paris."
+    },
+    {
+      "ref": "fri-086",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Phoebe a vécu dans la rue pendant une partie de son adolescence.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle en parle souvent avec un détachement qui sidère ses amis."
+    },
+    {
+      "ref": "fri-087",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Chandler est incapable de pleurer, selon ses amis.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Un épisode entier est consacré à cette particularité."
+    },
+    {
+      "ref": "fri-088",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["episode"],
+      "text": "Que crie Ross en déménageant un canapé dans l'escalier ?",
+      "answers": [
+        { "text": "« Tourne ! »", "isCorrect": false },
+        { "text": "« Lève ! »", "isCorrect": false },
+        { "text": "« Attention ! »", "isCorrect": false },
+        { "text": "« Pivot ! »", "isCorrect": true }
+      ],
+      "explanation": "La scène, dans la cinquième saison, est l'une des plus célèbres de la série."
+    },
+    {
+      "ref": "fri-089",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["episode"],
+      "text": "Que se met Monica sur la tête pour faire peur à Chandler, un Thanksgiving ?",
+      "answers": [
+        { "text": "Une citrouille", "isCorrect": false },
+        { "text": "Un seau", "isCorrect": false },
+        { "text": "Une dinde", "isCorrect": true },
+        { "text": "Un saladier", "isCorrect": false }
+      ],
+      "explanation": "Elle porte aussi un chapeau et des lunettes de soleil."
+    },
+    {
+      "ref": "fri-090",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Dans quoi Chandler passe-t-il tout un Thanksgiving pour se faire pardonner par Joey ?",
+      "answers": [
+        { "text": "Dans un placard", "isCorrect": false },
+        { "text": "Dans une boîte", "isCorrect": true },
+        { "text": "Dans la baignoire", "isCorrect": false },
+        { "text": "Sous une table", "isCorrect": false }
+      ],
+      "explanation": "Il avait embrassé la petite amie de Joey, Kathy."
+    },
+    {
+      "ref": "fri-091",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quel vêtement trop chaud pose problème à Ross pendant un rendez-vous ?",
+      "answers": [
+        { "text": "Un pantalon en cuir", "isCorrect": true },
+        { "text": "Un pull en laine", "isCorrect": false },
+        { "text": "Un costume en velours", "isCorrect": false },
+        { "text": "Un manteau de fourrure", "isCorrect": false }
+      ],
+      "explanation": "Il ne parvient plus à le remettre après être allé aux toilettes."
+    },
+    {
+      "ref": "fri-092",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quel principe de karaté, qu'il appelle « unagi », Ross croit-il maîtriser ?",
+      "answers": [
+        { "text": "Une technique de coup de pied", "isCorrect": false },
+        { "text": "Une méthode de respiration", "isCorrect": false },
+        { "text": "Un code d'honneur", "isCorrect": false },
+        { "text": "Un état de vigilance permanente", "isCorrect": true }
+      ],
+      "explanation": "En réalité, l'unagi est une anguille en cuisine japonaise."
+    },
+    {
+      "ref": "fri-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quelle phrase Ross répète-t-il sans cesse pour justifier ce qui s'est passé pendant sa rupture avec Rachel ?",
+      "answers": [
+        { "text": "« Ce n'est pas ma faute ! »", "isCorrect": false },
+        { "text": "« Je ne savais pas ! »", "isCorrect": false },
+        { "text": "« On faisait une pause ! » (« We were on a break! »)", "isCorrect": true },
+        { "text": "« C'était un accident ! »", "isCorrect": false }
+      ],
+      "explanation": "Ross a passé la nuit avec Chloé, la fille de la photocopieuse."
+    },
+    {
+      "ref": "fri-094",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Avec qui Ross passe-t-il la nuit pendant sa « pause » avec Rachel ?",
+      "answers": [
+        { "text": "Janice", "isCorrect": false },
+        { "text": "Chloé, la fille de la photocopieuse", "isCorrect": true },
+        { "text": "Emily", "isCorrect": false },
+        { "text": "Julie", "isCorrect": false }
+      ],
+      "explanation": "L'épisode est l'un des plus célèbres de la série."
+    },
+    {
+      "ref": "fri-095",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quel défaut Ross reproche-t-il à Rachel dans sa liste des « pour et contre » ?",
+      "answers": [
+        { "text": "Elle n'est « qu'une serveuse »", "isCorrect": true },
+        { "text": "Elle est trop bavarde", "isCorrect": false },
+        { "text": "Elle ne sait pas cuisiner", "isCorrect": false },
+        { "text": "Elle est toujours en retard", "isCorrect": false }
+      ],
+      "explanation": "Rachel est vexée par la liste des défauts qu'il lui trouve."
+    },
+    {
+      "ref": "fri-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Pourquoi Ross et Rachel se marient-ils à Las Vegas ?",
+      "answers": [
+        { "text": "Ils veulent faire une surprise", "isCorrect": false },
+        { "text": "Pour gagner un pari", "isCorrect": false },
+        { "text": "Monica l'a organisé", "isCorrect": false },
+        { "text": "Ils sont ivres", "isCorrect": true }
+      ],
+      "explanation": "Ils se réveillent mariés sans s'en souvenir."
+    },
+    {
+      "ref": "fri-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quel animal Phoebe compare-t-elle à Ross et Rachel, pour expliquer qu'ils sont faits l'un pour l'autre ?",
+      "answers": [
+        { "text": "Le cygne", "isCorrect": false },
+        { "text": "Le pingouin", "isCorrect": false },
+        { "text": "Le homard", "isCorrect": true },
+        { "text": "Le dauphin", "isCorrect": false }
+      ],
+      "explanation": "Selon Phoebe, les homards restent en couple toute leur vie."
+    },
+    {
+      "ref": "fri-098",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Dans quel spectacle le père de Chandler se produit-il à Las Vegas ?",
+      "answers": [
+        { "text": "Un spectacle de magie", "isCorrect": false },
+        { "text": "Un spectacle de cabaret travesti", "isCorrect": true },
+        { "text": "Un concert de jazz", "isCorrect": false },
+        { "text": "Une comédie musicale", "isCorrect": false }
+      ],
+      "explanation": "Chandler ne lui avait pas parlé depuis des années."
+    },
+    {
+      "ref": "fri-099",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quel dessert Rachel rate-t-elle à Thanksgiving en y ajoutant de la viande ?",
+      "answers": [
+        { "text": "Un trifle anglais", "isCorrect": true },
+        { "text": "Une tarte aux pommes", "isCorrect": false },
+        { "text": "Un gâteau au chocolat", "isCorrect": false },
+        { "text": "Un cheesecake", "isCorrect": false }
+      ],
+      "explanation": "Les pages de son livre de recettes étaient collées. Seul Joey l'apprécie."
+    },
+    {
+      "ref": "fri-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Que dit Joey à chaque fois qu'il drague quelqu'un ?",
+      "answers": [
+        { "text": "« Salut, beauté ! »", "isCorrect": false },
+        { "text": "« Tu viens souvent ici ? »", "isCorrect": false },
+        { "text": "« On se connaît ? »", "isCorrect": false },
+        { "text": "« Comment tu vas ? » (« How you doin'? »)", "isCorrect": true }
+      ],
+      "explanation": "Il apprend même cette phrase à Rachel pour qu'elle rencontre quelqu'un."
+    },
+    {
+      "ref": "fri-101",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["episode"],
+      "text": "Quelle phrase culte Janice prononce-t-elle de sa voix nasillarde ?",
+      "answers": [
+        { "text": "« Bonjour, chéri ! »", "isCorrect": false },
+        { "text": "« Comment tu vas ? »", "isCorrect": false },
+        { "text": "« Oh. Mon. Dieu. » (« Oh. My. God. »)", "isCorrect": true },
+        { "text": "« Je le savais ! »", "isCorrect": false }
+      ],
+      "explanation": "Ses amis imitent souvent son rire et sa phrase."
+    },
+    {
+      "ref": "fri-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Pourquoi Ross se fait-il blanchir les dents à l'excès ?",
+      "answers": [
+        { "text": "Pour une photo de mariage", "isCorrect": false },
+        { "text": "Pour un rendez-vous galant", "isCorrect": true },
+        { "text": "Pour un spot publicitaire", "isCorrect": false },
+        { "text": "Pour un entretien d'embauche", "isCorrect": false }
+      ],
+      "explanation": "Ses dents brillent alors dans le noir."
+    },
+    {
+      "ref": "fri-103",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Quel rôle Joey obtient-il dans une publicité qui l'embarrasse ?",
+      "answers": [
+        { "text": "Le rôle d'un malade atteint d'une maladie vénérienne", "isCorrect": true },
+        { "text": "Le rôle d'un clown", "isCorrect": false },
+        { "text": "Le rôle d'un chef", "isCorrect": false },
+        { "text": "Le rôle d'un bébé", "isCorrect": false }
+      ],
+      "explanation": "L'affiche est placardée partout dans le métro."
+    },
+    {
+      "ref": "fri-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Dans quel pays se déroule le mariage de Ross et Emily ?",
+      "answers": [
+        { "text": "L'Irlande", "isCorrect": false },
+        { "text": "L'Écosse", "isCorrect": false },
+        { "text": "La France", "isCorrect": false },
+        { "text": "L'Angleterre", "isCorrect": true }
+      ],
+      "explanation": "Le mariage est célébré à Londres, à la fin de la quatrième saison."
+    },
+    {
+      "ref": "fri-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["episode"],
+      "text": "Pendant quelle fête la série propose-t-elle un épisode spécial presque chaque saison ?",
+      "answers": [
+        { "text": "Halloween", "isCorrect": false },
+        { "text": "Pâques", "isCorrect": false },
+        { "text": "Thanksgiving", "isCorrect": true },
+        { "text": "La Saint-Valentin", "isCorrect": false }
+      ],
+      "explanation": "Ces épisodes sont parmi les préférés des fans."
+    },
+    {
+      "ref": "fri-106",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "En quoi Ross se déguise-t-il pour une fête de Noël, faute de costume de Père Noël ?",
+      "answers": [
+        { "text": "En lapin", "isCorrect": false },
+        { "text": "En tatou", "isCorrect": true },
+        { "text": "En dinde", "isCorrect": false },
+        { "text": "En renne", "isCorrect": false }
+      ],
+      "explanation": "Il appelle ce personnage le « tatou de Noël », pour faire découvrir Hanoukka à son fils Ben."
+    },
+    {
+      "ref": "fri-107",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Comment Ross s'appelle-t-il dans son costume d'Halloween de la huitième saison, mélange de patate et de satellite ?",
+      "answers": [
+        { "text": "Spud-nik", "isCorrect": true },
+        { "text": "Captain Potato", "isCorrect": false },
+        { "text": "Patate-man", "isCorrect": false },
+        { "text": "Le Satellite", "isCorrect": false }
+      ],
+      "explanation": "Personne ne comprend son déguisement."
+    },
+    {
+      "ref": "fri-108",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Dans le dernier épisode, Rachel prend finalement l'avion pour Paris.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elle descend de l'avion et revient chez Ross."
+    },
+    {
+      "ref": "fri-109",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Le canapé du « Pivot ! » finit coupé en deux.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ross le rapporte au magasin en deux morceaux pour être remboursé."
+    },
+    {
+      "ref": "fri-110",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coulisses", "avant-apres"],
+      "text": "La série Friends a-t-elle commencé avant ou après la Coupe du monde de football 1998 ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Friends commence en 1994, quatre ans avant la victoire des Bleus."
+    },
+    {
+      "ref": "fri-111",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coulisses", "avant-apres"],
+      "text": "Le dernier épisode de Friends a-t-il été diffusé avant ou après la sortie du premier iPhone ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Le dernier épisode date de 2004, le premier iPhone de 2007."
+    },
+    {
+      "ref": "fri-112",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["coulisses", "avant-apres"],
+      "text": "Friends a-t-il commencé avant ou après la sortie du « Roi Lion » de Disney ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "« Le Roi Lion » sort en juin 1994, Friends commence en septembre 1994."
+    },
+    {
+      "ref": "fri-113",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["personnage", "avant-apres"],
+      "text": "Le mariage de Monica et Chandler a-t-il été diffusé avant ou après le passage à l'an 2000 ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Il a été diffusé en mai 2001, à la fin de la septième saison."
+    },
+    {
+      "ref": "fri-114",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["coulisses", "avant-apres"],
+      "text": "La série « Joey » a-t-elle commencé avant ou après la création de Facebook ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Facebook est créé en février 2004, « Joey » commence en septembre 2004."
+    },
+    {
+      "ref": "fri-115",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["coulisses", "avant-apres"],
+      "text": "L'émission « Friends: The Reunion » a-t-elle été diffusée avant ou après la mort de Matthew Perry ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Les retrouvailles datent de mai 2021, Matthew Perry est mort en octobre 2023."
+    },
+    {
+      "ref": "fri-116",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le nom de famille de Chandler ?",
+      "answers": [
+        { "text": "Geller", "isCorrect": false },
+        { "text": "Green", "isCorrect": false },
+        { "text": "Tribbiani", "isCorrect": false },
+        { "text": "Bing", "isCorrect": true }
+      ],
+      "explanation": "Ses amis se moquent souvent de ce nom."
+    },
+    {
+      "ref": "fri-117",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le nom de famille de Rachel ?",
+      "answers": [
+        { "text": "Geller", "isCorrect": false },
+        { "text": "Buffay", "isCorrect": false },
+        { "text": "Green", "isCorrect": true },
+        { "text": "Bing", "isCorrect": false }
+      ],
+      "explanation": "Son père est un riche médecin."
+    },
+    {
+      "ref": "fri-118",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le nom de famille de Joey ?",
+      "answers": [
+        { "text": "Bing", "isCorrect": false },
+        { "text": "Tribbiani", "isCorrect": true },
+        { "text": "Geller", "isCorrect": false },
+        { "text": "Buffay", "isCorrect": false }
+      ],
+      "explanation": "Sa famille est d'origine italienne."
+    },
+    {
+      "ref": "fri-119",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["personnage"],
+      "text": "Quel est le nom de famille de Phoebe ?",
+      "answers": [
+        { "text": "Buffay", "isCorrect": true },
+        { "text": "Green", "isCorrect": false },
+        { "text": "Bing", "isCorrect": false },
+        { "text": "Hannigan", "isCorrect": false }
+      ],
+      "explanation": "Sa jumelle Ursula porte le même nom."
+    },
+    {
+      "ref": "fri-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle le petit ami italien de Rachel dans la première saison ?",
+      "answers": [
+        { "text": "Marco", "isCorrect": false },
+        { "text": "Luigi", "isCorrect": false },
+        { "text": "Gianni", "isCorrect": false },
+        { "text": "Paolo", "isCorrect": true }
+      ],
+      "explanation": "Ses amis, et surtout Ross, ne le supportent pas."
+    },
+    {
+      "ref": "fri-121",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Pour quelle petite amie de Joey Chandler craque-t-il, au point de l'embrasser ?",
+      "answers": [
+        { "text": "Janice", "isCorrect": false },
+        { "text": "Janine", "isCorrect": false },
+        { "text": "Kathy", "isCorrect": true },
+        { "text": "Emily", "isCorrect": false }
+      ],
+      "explanation": "Il passe ensuite un Thanksgiving dans une boîte pour se faire pardonner."
+    },
+    {
+      "ref": "fri-122",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la danseuse qui devient la colocataire de Joey dans la sixième saison ?",
+      "answers": [
+        { "text": "Kathy", "isCorrect": false },
+        { "text": "Janine", "isCorrect": true },
+        { "text": "Ursula", "isCorrect": false },
+        { "text": "Erin", "isCorrect": false }
+      ],
+      "explanation": "Joey en tombe amoureux, mais elle ne supporte pas Monica et Chandler."
+    },
+    {
+      "ref": "fri-123",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Chez qui Rachel s'installe-t-elle après l'incendie de l'appartement qu'elle partage avec Phoebe ?",
+      "answers": [
+        { "text": "Chez Joey", "isCorrect": true },
+        { "text": "Chez Ross", "isCorrect": false },
+        { "text": "Chez Monica", "isCorrect": false },
+        { "text": "Chez ses parents", "isCorrect": false }
+      ],
+      "explanation": "L'incendie a été provoqué par le fer à lisser de Rachel."
+    },
+    {
+      "ref": "fri-124",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Dans quelle ville part David, le scientifique dont Phoebe est amoureuse ?",
+      "answers": [
+        { "text": "Moscou", "isCorrect": false },
+        { "text": "Varsovie", "isCorrect": false },
+        { "text": "Kiev", "isCorrect": false },
+        { "text": "Minsk", "isCorrect": true }
+      ],
+      "explanation": "Il revient plusieurs années plus tard, juste avant que Phoebe épouse Mike."
+    },
+    {
+      "ref": "fri-125",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "De quel instrument joue Mike Hannigan, le mari de Phoebe ?",
+      "answers": [
+        { "text": "La guitare", "isCorrect": false },
+        { "text": "La batterie", "isCorrect": false },
+        { "text": "Le piano", "isCorrect": true },
+        { "text": "Le saxophone", "isCorrect": false }
+      ],
+      "explanation": "Il a quitté son métier d'avocat."
+    },
+    {
+      "ref": "fri-126",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Quel nom farfelu Phoebe veut-elle prendre après son mariage ?",
+      "answers": [
+        { "text": "Regina Phalange", "isCorrect": false },
+        { "text": "Princesse Consuela Banana-Hammock", "isCorrect": true },
+        { "text": "Ursula Hannigan", "isCorrect": false },
+        { "text": "Phoebe Smelly Cat", "isCorrect": false }
+      ],
+      "explanation": "Mike décide alors de s'appeler Crap Bag."
+    },
+    {
+      "ref": "fri-127",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle l'assistant que Rachel embauche surtout parce qu'il est séduisant ?",
+      "answers": [
+        { "text": "Tag", "isCorrect": true },
+        { "text": "Paolo", "isCorrect": false },
+        { "text": "Joshua", "isCorrect": false },
+        { "text": "Mark", "isCorrect": false }
+      ],
+      "explanation": "Ils finissent par sortir ensemble en secret."
+    },
+    {
+      "ref": "fri-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment s'appelle la mère biologique de Phoebe ?",
+      "answers": [
+        { "text": "Lily Buffay", "isCorrect": false },
+        { "text": "Ursula Abbott", "isCorrect": false },
+        { "text": "Judy Geller", "isCorrect": false },
+        { "text": "Phoebe Abbott", "isCorrect": true }
+      ],
+      "explanation": "Phoebe la découvre dans la deuxième saison."
+    },
+    {
+      "ref": "fri-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment Joey a-t-il baptisé son fauteuil inclinable préféré ?",
+      "answers": [
+        { "text": "Bella", "isCorrect": false },
+        { "text": "Rita", "isCorrect": false },
+        { "text": "Rosita", "isCorrect": true },
+        { "text": "Lola", "isCorrect": false }
+      ],
+      "explanation": "Chandler casse le fauteuil, au grand désespoir de Joey."
+    },
+    {
+      "ref": "fri-130",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quel jeu trône au milieu de l'appartement de Chandler et Joey ?",
+      "answers": [
+        { "text": "Un billard", "isCorrect": false },
+        { "text": "Un baby-foot", "isCorrect": true },
+        { "text": "Un flipper", "isCorrect": false },
+        { "text": "Une table de ping-pong", "isCorrect": false }
+      ],
+      "explanation": "Il sert même à cacher un poussin et un canard."
+    },
+    {
+      "ref": "fri-131",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["personnage"],
+      "text": "Comment Joey appelle-t-il le grand chien blanc en céramique de son appartement ?",
+      "answers": [
+        { "text": "Pat", "isCorrect": true },
+        { "text": "Rex", "isCorrect": false },
+        { "text": "Snoopy", "isCorrect": false },
+        { "text": "Max", "isCorrect": false }
+      ],
+      "explanation": "Chandler le trouve affreux."
+    },
+    {
+      "ref": "fri-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "De quel instrument Ross joue-t-il fièrement, à l'horreur de ses amis ?",
+      "answers": [
+        { "text": "Du violon", "isCorrect": false },
+        { "text": "De la batterie", "isCorrect": false },
+        { "text": "De l'accordéon", "isCorrect": false },
+        { "text": "Du synthétiseur", "isCorrect": true }
+      ],
+      "explanation": "Il joue « le son » qu'il a inventé, lors d'un épisode mémorable."
+    },
+    {
+      "ref": "fri-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["personnage"],
+      "text": "Quelle est l'origine de la famille de Joey ?",
+      "answers": [
+        { "text": "Irlandaise", "isCorrect": false },
+        { "text": "Grecque", "isCorrect": false },
+        { "text": "Italienne", "isCorrect": true },
+        { "text": "Polonaise", "isCorrect": false }
+      ],
+      "explanation": "Joey parle souvent de sa grand-mère et de ses sept sœurs."
+    },
+    {
+      "ref": "fri-134",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Où Chandler et Joey oublient-ils le petit Ben ?",
+      "answers": [
+        { "text": "Au Central Perk", "isCorrect": false },
+        { "text": "Dans un bus", "isCorrect": true },
+        { "text": "Dans un taxi", "isCorrect": false },
+        { "text": "Au musée", "isCorrect": false }
+      ],
+      "explanation": "Ils le retrouvent juste à temps, avant le retour de Ross."
+    },
+    {
+      "ref": "fri-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["episode"],
+      "text": "Qui se retrouve la tête coincée dans une dinde, un Thanksgiving ?",
+      "answers": [
+        { "text": "Joey", "isCorrect": true },
+        { "text": "Ross", "isCorrect": false },
+        { "text": "Chandler", "isCorrect": false },
+        { "text": "Monica", "isCorrect": false }
+      ],
+      "explanation": "C'est le même Thanksgiving où Monica met une dinde sur sa tête pour Chandler."
+    },
+    {
+      "ref": "fri-136",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Quelle partie du corps Chandler perd-il dans un flash-back de Thanksgiving, à cause de Monica ?",
+      "answers": [
+        { "text": "Un doigt", "isCorrect": false },
+        { "text": "Une dent", "isCorrect": false },
+        { "text": "Un bout d'oreille", "isCorrect": false },
+        { "text": "Le bout d'un orteil", "isCorrect": true }
+      ],
+      "explanation": "Monica avait fait tomber un couteau sur son pied."
+    },
+    {
+      "ref": "fri-137",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Comment Ross appelle-t-il la tranche de pain imbibée de sauce au milieu de son sandwich de Thanksgiving ?",
+      "answers": [
+        { "text": "Le « Juicy Bread »", "isCorrect": false },
+        { "text": "Le « Gravy Slice »", "isCorrect": false },
+        { "text": "Le « Moist Maker »", "isCorrect": true },
+        { "text": "Le « Turkey Heart »", "isCorrect": false }
+      ],
+      "explanation": "Son patron mange son sandwich, ce qui le met hors de lui."
+    },
+    {
+      "ref": "fri-138",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "À quel jeu inventé Chandler fait-il « gagner » de l'argent à Joey, pour l'aider sans le vexer ?",
+      "answers": [
+        { "text": "Le poker", "isCorrect": false },
+        { "text": "Les gobelets (Cups)", "isCorrect": true },
+        { "text": "Le Monopoly", "isCorrect": false },
+        { "text": "Les dés", "isCorrect": false }
+      ],
+      "explanation": "Les règles changent à chaque partie pour que Joey gagne."
+    },
+    {
+      "ref": "fri-139",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Dans quelle chaîne de magasins Rachel achète-t-elle des meubles en prétendant qu'ils viennent d'une brocante ?",
+      "answers": [
+        { "text": "Pottery Barn", "isCorrect": true },
+        { "text": "IKEA", "isCorrect": false },
+        { "text": "Walmart", "isCorrect": false },
+        { "text": "Bloomingdale's", "isCorrect": false }
+      ],
+      "explanation": "Phoebe déteste ces magasins, qu'elle trouve sans âme."
+    },
+    {
+      "ref": "fri-140",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["episode"],
+      "text": "Qui tente en premier de faire une demande en mariage, à la fin de la sixième saison ?",
+      "answers": [
+        { "text": "Chandler", "isCorrect": false },
+        { "text": "Ross", "isCorrect": false },
+        { "text": "Rachel", "isCorrect": false },
+        { "text": "Monica", "isCorrect": true }
+      ],
+      "explanation": "Chandler fait finalement sa demande le même soir, entouré de bougies."
+    },
+    {
+      "ref": "fri-141",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "Comment s'appelle la célèbre coupe de cheveux de Rachel ?",
+      "answers": [
+        { "text": "The Jennifer", "isCorrect": false },
+        { "text": "The Friends", "isCorrect": false },
+        { "text": "The Rachel", "isCorrect": true },
+        { "text": "The Green", "isCorrect": false }
+      ],
+      "explanation": "Jennifer Aniston a pourtant dit ne pas l'aimer."
+    },
+    {
+      "ref": "fri-142",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coulisses"],
+      "text": "Quel était l'un des titres provisoires de la série avant « Friends » ?",
+      "answers": [
+        { "text": "New York Friends", "isCorrect": false },
+        { "text": "Insomnia Café", "isCorrect": true },
+        { "text": "Six Coffees", "isCorrect": false },
+        { "text": "Central Park", "isCorrect": false }
+      ],
+      "explanation": "D'autres titres avaient été envisagés, comme « Friends Like Us »."
+    },
+    {
+      "ref": "fri-143",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["coulisses"],
+      "text": "Combien Netflix a-t-il payé pour garder Friends en 2019 aux États-Unis ?",
+      "answers": [
+        { "text": "100 millions de dollars", "isCorrect": true },
+        { "text": "1 million de dollars", "isCorrect": false },
+        { "text": "10 millions de dollars", "isCorrect": false },
+        { "text": "1 milliard de dollars", "isCorrect": false }
+      ],
+      "explanation": "La série a ensuite quitté Netflix pour HBO Max aux États-Unis."
+    },
+    {
+      "ref": "fri-144",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["coulisses"],
+      "text": "Le Central Perk est un vrai café de New York.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'était un décor de studio, mais des copies du café ont depuis ouvert dans plusieurs villes."
+    },
+    {
+      "ref": "fri-145",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["coulisses"],
+      "text": "Dans quels studios de Burbank, près de Los Angeles, se visite le décor du Central Perk ?",
+      "answers": [
+        { "text": "Universal", "isCorrect": false },
+        { "text": "Paramount", "isCorrect": false },
+        { "text": "Warner Bros", "isCorrect": true },
+        { "text": "Disney", "isCorrect": false }
+      ],
+      "explanation": "Les visiteurs peuvent s'asseoir sur le célèbre canapé orange."
+    },
+    {
+      "ref": "fri-146",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["acteur"],
+      "text": "Quelle actrice de Friends a été mariée à Brad Pitt de 2000 à 2005 ?",
+      "answers": [
+        { "text": "Courteney Cox", "isCorrect": false },
+        { "text": "Jennifer Aniston", "isCorrect": true },
+        { "text": "Lisa Kudrow", "isCorrect": false },
+        { "text": "Julia Roberts", "isCorrect": false }
+      ],
+      "explanation": "Brad Pitt est même apparu dans la série."
+    },
+    {
+      "ref": "fri-147",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quel acteur de Friends prête sa voix à la girafe Melman dans « Madagascar » ?",
+      "answers": [
+        { "text": "David Schwimmer", "isCorrect": true },
+        { "text": "Matthew Perry", "isCorrect": false },
+        { "text": "Matt LeBlanc", "isCorrect": false },
+        { "text": "Paul Rudd", "isCorrect": false }
+      ],
+      "explanation": "Le premier film est sorti en 2005."
+    },
+    {
+      "ref": "fri-148",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["acteur"],
+      "text": "Quelle actrice de Friends joue une présentatrice de télévision dans la série « The Morning Show » ?",
+      "answers": [
+        { "text": "Courteney Cox", "isCorrect": false },
+        { "text": "Lisa Kudrow", "isCorrect": false },
+        { "text": "Christina Applegate", "isCorrect": false },
+        { "text": "Jennifer Aniston", "isCorrect": true }
+      ],
+      "explanation": "Elle y joue aux côtés de Reese Witherspoon, qui jouait sa sœur dans Friends."
+    },
+    {
+      "ref": "fri-149",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Quelle émission automobile Matt LeBlanc a-t-il présentée sur la BBC ?",
+      "answers": [
+        { "text": "Fifth Gear", "isCorrect": false },
+        { "text": "Wheeler Dealers", "isCorrect": false },
+        { "text": "Top Gear", "isCorrect": true },
+        { "text": "Grand Tour", "isCorrect": false }
+      ],
+      "explanation": "Il l'a coprésentée de 2016 à 2019."
+    },
+    {
+      "ref": "fri-150",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["acteur"],
+      "text": "Dans quel pays Matthew Perry a-t-il passé une grande partie de son enfance ?",
+      "answers": [
+        { "text": "L'Australie", "isCorrect": false },
+        { "text": "Le Canada", "isCorrect": true },
+        { "text": "L'Angleterre", "isCorrect": false },
+        { "text": "L'Irlande", "isCorrect": false }
+      ],
+      "explanation": "Il a grandi à Ottawa, où il a même été camarade de classe de Justin Trudeau."
+    },
+    {
+      "ref": "fri-151",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["coulisses", "avant-apres"],
+      "text": "Friends a-t-il commencé avant ou après la sortie du film « Toy Story » ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Friends commence en septembre 1994, « Toy Story » sort fin 1995."
+    },
+    {
+      "ref": "fri-152",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["personnage", "avant-apres"],
+      "text": "Le mariage de Ross et Emily a-t-il été diffusé avant ou après la victoire de la France en Coupe du monde 1998 ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "L'épisode est diffusé en mai 1998, la finale a lieu le 12 juillet 1998."
+    }
+  ]
+}

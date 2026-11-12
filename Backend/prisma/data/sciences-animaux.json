@@ -1,0 +1,2423 @@
+{
+  "_stats": {
+    "note": "Champ purement informatif, ignoré par seedQuestions.js (il ne lit que category/questions). À mettre à jour à la main si on ajoute/retire des questions.",
+    "total": 173,
+    "parDifficulte": { "1": 54, "2": 67, "3": 52 },
+    "parType": { "multiple": 159, "boolean": 14 },
+    "avecImage": 0,
+    "sansImage": 173,
+    "parTag": {
+      "mammifere": 65,
+      "vocabulaire": 32,
+      "oiseau": 31,
+      "ocean": 29,
+      "insecte": 23,
+      "france": 22,
+      "record": 18,
+      "reptile": 17,
+      "histoire": 6,
+      "avant-apres": 4
+    }
+  },
+  "category": {
+    "slug": "animaux",
+    "name": "Animaux"
+  },
+  "lang": "fr",
+  "questions": [
+    {
+      "ref": "ani-001",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "mammifere", "ocean"],
+      "text": "Quel est le plus grand animal du monde ?",
+      "answers": [
+        { "text": "L'éléphant d'Afrique", "isCorrect": false },
+        { "text": "Le requin-baleine", "isCorrect": false },
+        { "text": "La baleine bleue", "isCorrect": true },
+        { "text": "La girafe", "isCorrect": false }
+      ],
+      "explanation": "Elle peut dépasser 30 mètres et 150 tonnes. C'est le plus gros animal ayant jamais existé."
+    },
+    {
+      "ref": "ani-002",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "mammifere"],
+      "text": "Quel est l'animal terrestre le plus rapide ?",
+      "answers": [
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "Le guépard", "isCorrect": true },
+        { "text": "L'antilope", "isCorrect": false },
+        { "text": "Le lévrier", "isCorrect": false }
+      ],
+      "explanation": "Le guépard dépasse les 100 km/h en pointe, mais seulement sur quelques centaines de mètres."
+    },
+    {
+      "ref": "ani-003",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "oiseau"],
+      "text": "Quel oiseau est l'animal le plus rapide du monde en piqué ?",
+      "answers": [
+        { "text": "Le faucon pèlerin", "isCorrect": true },
+        { "text": "L'aigle royal", "isCorrect": false },
+        { "text": "Le martinet noir", "isCorrect": false },
+        { "text": "L'hirondelle", "isCorrect": false }
+      ],
+      "explanation": "En piqué, il dépasse les 300 km/h."
+    },
+    {
+      "ref": "ani-004",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "mammifere"],
+      "text": "Quel est l'animal le plus haut du monde ?",
+      "answers": [
+        { "text": "L'éléphant d'Afrique", "isCorrect": false },
+        { "text": "Le chameau", "isCorrect": false },
+        { "text": "L'élan", "isCorrect": false },
+        { "text": "La girafe", "isCorrect": true }
+      ],
+      "explanation": "Une girafe mâle peut mesurer plus de 5 mètres."
+    },
+    {
+      "ref": "ani-005",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "mammifere"],
+      "text": "Quel est le plus grand animal terrestre ?",
+      "answers": [
+        { "text": "L'hippopotame", "isCorrect": false },
+        { "text": "Le rhinocéros blanc", "isCorrect": false },
+        { "text": "L'éléphant d'Afrique", "isCorrect": true },
+        { "text": "La girafe", "isCorrect": false }
+      ],
+      "explanation": "Un mâle peut peser plus de 6 tonnes."
+    },
+    {
+      "ref": "ani-006",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["record", "oiseau"],
+      "text": "Quel est le plus grand oiseau du monde ?",
+      "answers": [
+        { "text": "L'émeu", "isCorrect": false },
+        { "text": "L'autruche", "isCorrect": true },
+        { "text": "Le condor des Andes", "isCorrect": false },
+        { "text": "L'albatros", "isCorrect": false }
+      ],
+      "explanation": "L'autruche peut mesurer 2,7 mètres. Elle ne vole pas, mais court à plus de 60 km/h."
+    },
+    {
+      "ref": "ani-007",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "oiseau"],
+      "text": "Quel oiseau possède la plus grande envergure ?",
+      "answers": [
+        { "text": "L'albatros hurleur", "isCorrect": true },
+        { "text": "Le condor des Andes", "isCorrect": false },
+        { "text": "L'aigle royal", "isCorrect": false },
+        { "text": "Le pélican blanc", "isCorrect": false }
+      ],
+      "explanation": "Ses ailes déployées peuvent dépasser 3,5 mètres."
+    },
+    {
+      "ref": "ani-008",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "oiseau"],
+      "text": "À quelle famille appartient le plus petit oiseau du monde ?",
+      "answers": [
+        { "text": "Les roitelets", "isCorrect": false },
+        { "text": "Les mésanges", "isCorrect": false },
+        { "text": "Les moineaux", "isCorrect": false },
+        { "text": "Les colibris", "isCorrect": true }
+      ],
+      "explanation": "Le colibri d'Elena, à Cuba, mesure environ 5 centimètres."
+    },
+    {
+      "ref": "ani-009",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "ocean"],
+      "text": "Quel est le plus grand poisson du monde ?",
+      "answers": [
+        { "text": "Le grand requin blanc", "isCorrect": false },
+        { "text": "La raie manta", "isCorrect": false },
+        { "text": "Le requin-baleine", "isCorrect": true },
+        { "text": "Le thon rouge", "isCorrect": false }
+      ],
+      "explanation": "Malgré sa taille, il se nourrit de plancton et est inoffensif pour l'homme."
+    },
+    {
+      "ref": "ani-010",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "ocean"],
+      "text": "Quel vertébré détient le record de longévité, avec plusieurs siècles de vie ?",
+      "answers": [
+        { "text": "La tortue géante", "isCorrect": false },
+        { "text": "Le requin du Groenland", "isCorrect": true },
+        { "text": "L'éléphant", "isCorrect": false },
+        { "text": "La baleine boréale", "isCorrect": false }
+      ],
+      "explanation": "Certains individus auraient plus de 250 ans."
+    },
+    {
+      "ref": "ani-011",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "reptile"],
+      "text": "Quel est le plus grand reptile du monde ?",
+      "answers": [
+        { "text": "Le crocodile marin", "isCorrect": true },
+        { "text": "Le dragon de Komodo", "isCorrect": false },
+        { "text": "L'anaconda", "isCorrect": false },
+        { "text": "La tortue luth", "isCorrect": false }
+      ],
+      "explanation": "Les grands mâles dépassent 6 mètres."
+    },
+    {
+      "ref": "ani-012",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "reptile"],
+      "text": "Quel est le plus grand lézard du monde ?",
+      "answers": [
+        { "text": "L'iguane vert", "isCorrect": false },
+        { "text": "Le varan du Nil", "isCorrect": false },
+        { "text": "Le caméléon de Parson", "isCorrect": false },
+        { "text": "Le dragon de Komodo", "isCorrect": true }
+      ],
+      "explanation": "Il vit sur quelques îles d'Indonésie et peut dépasser 3 mètres."
+    },
+    {
+      "ref": "ani-013",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["record", "ocean"],
+      "text": "Quel animal possède les plus grands yeux du règne animal ?",
+      "answers": [
+        { "text": "La baleine bleue", "isCorrect": false },
+        { "text": "Le hibou grand-duc", "isCorrect": false },
+        { "text": "Le calmar colossal", "isCorrect": true },
+        { "text": "Le requin-baleine", "isCorrect": false }
+      ],
+      "explanation": "Ses yeux peuvent atteindre la taille d'un ballon de football."
+    },
+    {
+      "ref": "ani-014",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "mammifere"],
+      "text": "Quel mammifère d'Australie dort jusqu'à 20 heures par jour ?",
+      "answers": [
+        { "text": "Le kangourou", "isCorrect": false },
+        { "text": "Le koala", "isCorrect": true },
+        { "text": "Le wombat", "isCorrect": false },
+        { "text": "L'ornithorynque", "isCorrect": false }
+      ],
+      "explanation": "Les feuilles d'eucalyptus qu'il mange lui apportent très peu d'énergie."
+    },
+    {
+      "ref": "ani-015",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "mammifere"],
+      "text": "Quel animal a la gestation la plus longue des mammifères terrestres, près de 22 mois ?",
+      "answers": [
+        { "text": "L'éléphant", "isCorrect": true },
+        { "text": "La girafe", "isCorrect": false },
+        { "text": "Le rhinocéros", "isCorrect": false },
+        { "text": "La baleine bleue", "isCorrect": false }
+      ],
+      "explanation": "L'éléphanteau pèse environ 100 kilogrammes à la naissance."
+    },
+    {
+      "ref": "ani-016",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["record", "insecte"],
+      "text": "Quel insecte est réputé capable de porter plusieurs dizaines de fois son propre poids ?",
+      "answers": [
+        { "text": "La mouche", "isCorrect": false },
+        { "text": "Le moustique", "isCorrect": false },
+        { "text": "La libellule", "isCorrect": false },
+        { "text": "La fourmi", "isCorrect": true }
+      ],
+      "explanation": "Rapporté à notre taille, c'est comme si un humain soulevait une voiture."
+    },
+    {
+      "ref": "ani-017",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Quel est le seul mammifère capable de voler ?",
+      "answers": [
+        { "text": "L'écureuil volant", "isCorrect": false },
+        { "text": "Le colugo", "isCorrect": false },
+        { "text": "La chauve-souris", "isCorrect": true },
+        { "text": "Le phalanger volant", "isCorrect": false }
+      ],
+      "explanation": "L'écureuil volant ne vole pas : il plane d'arbre en arbre."
+    },
+    {
+      "ref": "ani-018",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "Quels mammifères pondent des œufs ?",
+      "answers": [
+        { "text": "Le kangourou et le koala", "isCorrect": false },
+        { "text": "L'ornithorynque et l'échidné", "isCorrect": true },
+        { "text": "La chauve-souris et le hérisson", "isCorrect": false },
+        { "text": "Le dauphin et la baleine", "isCorrect": false }
+      ],
+      "explanation": "On les appelle les monotrèmes. Ils allaitent pourtant leurs petits."
+    },
+    {
+      "ref": "ani-019",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["mammifere", "ocean"],
+      "text": "La baleine est un mammifère.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Elle respire de l'air et allaite ses petits."
+    },
+    {
+      "ref": "ani-020",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Comment appelle-t-on les mammifères qui portent leur petit dans une poche ?",
+      "answers": [
+        { "text": "Les rongeurs", "isCorrect": false },
+        { "text": "Les primates", "isCorrect": false },
+        { "text": "Les monotrèmes", "isCorrect": false },
+        { "text": "Les marsupiaux", "isCorrect": true }
+      ],
+      "explanation": "Le kangourou et le koala sont des marsupiaux."
+    },
+    {
+      "ref": "ani-021",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "De quoi se nourrit presque uniquement le panda géant ?",
+      "answers": [
+        { "text": "De poisson", "isCorrect": false },
+        { "text": "De miel", "isCorrect": false },
+        { "text": "De bambou", "isCorrect": true },
+        { "text": "De fruits", "isCorrect": false }
+      ],
+      "explanation": "Il en mange jusqu'à 15 kilogrammes par jour."
+    },
+    {
+      "ref": "ani-022",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Quel animal est, avec le bonobo, le plus proche cousin de l'être humain ?",
+      "answers": [
+        { "text": "Le gorille", "isCorrect": false },
+        { "text": "Le chimpanzé", "isCorrect": true },
+        { "text": "L'orang-outan", "isCorrect": false },
+        { "text": "Le gibbon", "isCorrect": false }
+      ],
+      "explanation": "Nous partageons environ 98 % de notre ADN avec lui."
+    },
+    {
+      "ref": "ani-023",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "Quel grand singe roux ne vit que sur les îles de Bornéo et de Sumatra ?",
+      "answers": [
+        { "text": "L'orang-outan", "isCorrect": true },
+        { "text": "Le gorille", "isCorrect": false },
+        { "text": "Le chimpanzé", "isCorrect": false },
+        { "text": "Le bonobo", "isCorrect": false }
+      ],
+      "explanation": "Son nom signifie « homme de la forêt » en malais."
+    },
+    {
+      "ref": "ani-024",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Quel animal d'Afrique est rayé de noir et de blanc ?",
+      "answers": [
+        { "text": "L'okapi", "isCorrect": false },
+        { "text": "La girafe", "isCorrect": false },
+        { "text": "Le tapir", "isCorrect": false },
+        { "text": "Le zèbre", "isCorrect": true }
+      ],
+      "explanation": "Les rayures de chaque zèbre sont uniques, comme une empreinte digitale."
+    },
+    {
+      "ref": "ani-025",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "De quelle couleur est la peau de l'ours polaire, sous sa fourrure ?",
+      "answers": [
+        { "text": "Blanche", "isCorrect": false },
+        { "text": "Rose", "isCorrect": false },
+        { "text": "Noire", "isCorrect": true },
+        { "text": "Grise", "isCorrect": false }
+      ],
+      "explanation": "La peau noire absorbe la chaleur du soleil, et ses poils sont en réalité transparents."
+    },
+    {
+      "ref": "ani-026",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "Combien de compartiments compte l'estomac d'une vache ?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "2", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "explanation": "La vache rumine : elle fait remonter l'herbe pour la mâcher une seconde fois."
+    },
+    {
+      "ref": "ani-027",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "De quoi est faite la corne du rhinocéros ?",
+      "answers": [
+        { "text": "De kératine", "isCorrect": true },
+        { "text": "D'os", "isCorrect": false },
+        { "text": "D'ivoire", "isCorrect": false },
+        { "text": "De cartilage", "isCorrect": false }
+      ],
+      "explanation": "C'est la même matière que nos ongles et nos cheveux."
+    },
+    {
+      "ref": "ani-028",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "Les défenses de l'éléphant sont des dents.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Ce sont des incisives qui poussent toute la vie."
+    },
+    {
+      "ref": "ani-029",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Combien de bosses a un dromadaire ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "3", "isCorrect": false },
+        { "text": "1", "isCorrect": true },
+        { "text": "0", "isCorrect": false }
+      ],
+      "explanation": "Le chameau, lui, en a deux."
+    },
+    {
+      "ref": "ani-030",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Que contient la bosse du dromadaire ?",
+      "answers": [
+        { "text": "De l'eau", "isCorrect": false },
+        { "text": "De la graisse", "isCorrect": true },
+        { "text": "Du sang", "isCorrect": false },
+        { "text": "Du lait", "isCorrect": false }
+      ],
+      "explanation": "Cette réserve de graisse lui permet de tenir longtemps sans manger."
+    },
+    {
+      "ref": "ani-031",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere", "ocean"],
+      "text": "Quel mammifère marin est surnommé « la licorne des mers » ?",
+      "answers": [
+        { "text": "Le narval", "isCorrect": true },
+        { "text": "Le béluga", "isCorrect": false },
+        { "text": "Le dugong", "isCorrect": false },
+        { "text": "Le morse", "isCorrect": false }
+      ],
+      "explanation": "Sa longue « corne » est en fait une dent qui peut dépasser 2 mètres."
+    },
+    {
+      "ref": "ani-032",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Quel animal construit des barrages sur les rivières ?",
+      "answers": [
+        { "text": "La loutre", "isCorrect": false },
+        { "text": "Le ragondin", "isCorrect": false },
+        { "text": "Le rat musqué", "isCorrect": false },
+        { "text": "Le castor", "isCorrect": true }
+      ],
+      "explanation": "Le castor est le plus grand rongeur d'Europe."
+    },
+    {
+      "ref": "ani-033",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Quel petit mammifère couvert de piquants se roule en boule pour se protéger ?",
+      "answers": [
+        { "text": "Le porc-épic", "isCorrect": false },
+        { "text": "La taupe", "isCorrect": false },
+        { "text": "Le hérisson", "isCorrect": true },
+        { "text": "Le blaireau", "isCorrect": false }
+      ],
+      "explanation": "Un hérisson adulte porte environ 6 000 piquants."
+    },
+    {
+      "ref": "ani-034",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Comment s'appelle le long sommeil d'hiver de certains animaux ?",
+      "answers": [
+        { "text": "La migration", "isCorrect": false },
+        { "text": "L'hibernation", "isCorrect": true },
+        { "text": "L'estivation", "isCorrect": false },
+        { "text": "La mue", "isCorrect": false }
+      ],
+      "explanation": "La marmotte et le loir hibernent plusieurs mois par an."
+    },
+    {
+      "ref": "ani-035",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "De quel arbre le koala mange-t-il presque exclusivement les feuilles ?",
+      "answers": [
+        { "text": "L'eucalyptus", "isCorrect": true },
+        { "text": "Le bambou", "isCorrect": false },
+        { "text": "Le chêne", "isCorrect": false },
+        { "text": "L'acacia", "isCorrect": false }
+      ],
+      "explanation": "Ces feuilles sont toxiques pour la plupart des autres animaux."
+    },
+    {
+      "ref": "ani-036",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "Quel animal a des empreintes digitales si proches des nôtres qu'on peut les confondre ?",
+      "answers": [
+        { "text": "Le chimpanzé", "isCorrect": false },
+        { "text": "Le raton laveur", "isCorrect": false },
+        { "text": "Le singe capucin", "isCorrect": false },
+        { "text": "Le koala", "isCorrect": true }
+      ],
+      "explanation": "Même au microscope, elles sont très difficiles à distinguer."
+    },
+    {
+      "ref": "ani-037",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Combien de temps vit environ un chat domestique ?",
+      "answers": [
+        { "text": "Entre 3 et 5 ans", "isCorrect": false },
+        { "text": "Entre 25 et 30 ans", "isCorrect": false },
+        { "text": "Entre 12 et 18 ans", "isCorrect": true },
+        { "text": "Environ 50 ans", "isCorrect": false }
+      ],
+      "explanation": "Les chats d'intérieur vivent généralement plus longtemps."
+    },
+    {
+      "ref": "ani-038",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "De quel animal sauvage descend le chien ?",
+      "answers": [
+        { "text": "Du renard", "isCorrect": false },
+        { "text": "Du loup", "isCorrect": true },
+        { "text": "Du chacal", "isCorrect": false },
+        { "text": "De la hyène", "isCorrect": false }
+      ],
+      "explanation": "La domestication du chien a commencé il y a plus de 15 000 ans."
+    },
+    {
+      "ref": "ani-039",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Quel est le plus grand félin du monde ?",
+      "answers": [
+        { "text": "Le tigre", "isCorrect": true },
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "Le jaguar", "isCorrect": false },
+        { "text": "Le léopard", "isCorrect": false }
+      ],
+      "explanation": "Le tigre de Sibérie peut dépasser 300 kilogrammes."
+    },
+    {
+      "ref": "ani-040",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Quel félin ne peut pas rentrer complètement ses griffes ?",
+      "answers": [
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "Le lynx", "isCorrect": false },
+        { "text": "Le chat domestique", "isCorrect": false },
+        { "text": "Le guépard", "isCorrect": true }
+      ],
+      "explanation": "Elles lui servent de crampons pendant ses sprints."
+    },
+    {
+      "ref": "ani-041",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["mammifere"],
+      "text": "Quel animal est le symbole du WWF ?",
+      "answers": [
+        { "text": "Le tigre", "isCorrect": false },
+        { "text": "L'ours polaire", "isCorrect": false },
+        { "text": "Le panda géant", "isCorrect": true },
+        { "text": "L'éléphant", "isCorrect": false }
+      ],
+      "explanation": "Le logo a été créé en 1961."
+    },
+    {
+      "ref": "ani-042",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["mammifere"],
+      "text": "En quelle année le panda géant n'a-t-il plus été classé « en danger » mais « vulnérable » ?",
+      "answers": [
+        { "text": "1990", "isCorrect": false },
+        { "text": "2016", "isCorrect": true },
+        { "text": "2005", "isCorrect": false },
+        { "text": "2022", "isCorrect": false }
+      ],
+      "explanation": "Les efforts de protection de ses forêts de bambous ont porté leurs fruits."
+    },
+    {
+      "ref": "ani-043",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Combien de temps dure environ la gestation d'une vache ?",
+      "answers": [
+        { "text": "9 mois", "isCorrect": true },
+        { "text": "3 mois", "isCorrect": false },
+        { "text": "6 mois", "isCorrect": false },
+        { "text": "14 mois", "isCorrect": false }
+      ],
+      "explanation": "C'est à peu près la même durée que chez l'être humain."
+    },
+    {
+      "ref": "ani-044",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Les chauves-souris sont aveugles.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Elles voient, mais elles s'orientent surtout grâce à l'écholocalisation."
+    },
+    {
+      "ref": "ani-045",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Le lion est le roi de la jungle parce qu'il vit dans la jungle.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Le lion vit dans la savane, pas dans la jungle."
+    },
+    {
+      "ref": "ani-046",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["mammifere"],
+      "text": "Les dauphins dorment avec une moitié du cerveau éveillée.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": true },
+        { "text": "Faux", "isCorrect": false }
+      ],
+      "explanation": "Cela leur permet de continuer à respirer et à surveiller les dangers."
+    },
+    {
+      "ref": "ani-047",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau qui ne vole pas vit en Antarctique ?",
+      "answers": [
+        { "text": "Le manchot empereur", "isCorrect": true },
+        { "text": "Le pingouin", "isCorrect": false },
+        { "text": "L'autruche", "isCorrect": false },
+        { "text": "Le kiwi", "isCorrect": false }
+      ],
+      "explanation": "C'est le plus grand des manchots."
+    },
+    {
+      "ref": "ani-048",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau"],
+      "text": "Quelle est la différence entre un pingouin et un manchot ?",
+      "answers": [
+        { "text": "Le manchot vole, le pingouin non", "isCorrect": false },
+        { "text": "Aucun des deux ne vole", "isCorrect": false },
+        { "text": "C'est le même animal", "isCorrect": false },
+        { "text": "Le pingouin vole, le manchot non", "isCorrect": true }
+      ],
+      "explanation": "Le petit pingouin vit dans l'hémisphère nord. Les manchots vivent dans l'hémisphère sud."
+    },
+    {
+      "ref": "ani-049",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau est capable de voler en marche arrière ?",
+      "answers": [
+        { "text": "L'hirondelle", "isCorrect": false },
+        { "text": "Le moineau", "isCorrect": false },
+        { "text": "Le colibri", "isCorrect": true },
+        { "text": "Le pigeon", "isCorrect": false }
+      ],
+      "explanation": "Ses ailes battent jusqu'à 80 fois par seconde."
+    },
+    {
+      "ref": "ani-050",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau est réputé pour imiter la voix humaine ?",
+      "answers": [
+        { "text": "Le corbeau", "isCorrect": false },
+        { "text": "Le perroquet", "isCorrect": true },
+        { "text": "La pie", "isCorrect": false },
+        { "text": "Le pigeon", "isCorrect": false }
+      ],
+      "explanation": "Certains perroquets connaissent des centaines de mots."
+    },
+    {
+      "ref": "ani-051",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau pond ses œufs dans le nid d'autres oiseaux ?",
+      "answers": [
+        { "text": "Le coucou", "isCorrect": true },
+        { "text": "Le pic-vert", "isCorrect": false },
+        { "text": "La pie", "isCorrect": false },
+        { "text": "Le rouge-gorge", "isCorrect": false }
+      ],
+      "explanation": "Les parents adoptifs élèvent le petit coucou à la place des leurs."
+    },
+    {
+      "ref": "ani-052",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Quels oiseaux peuvent tourner la tête à près de 270 degrés ?",
+      "answers": [
+        { "text": "Les canards", "isCorrect": false },
+        { "text": "Les pigeons", "isCorrect": false },
+        { "text": "Les aigles", "isCorrect": false },
+        { "text": "Les chouettes et les hiboux", "isCorrect": true }
+      ],
+      "explanation": "Leurs yeux sont fixes dans leurs orbites, ils doivent donc tourner la tête."
+    },
+    {
+      "ref": "ani-053",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau"],
+      "text": "Qu'est-ce qui distingue un hibou d'une chouette ?",
+      "answers": [
+        { "text": "Le hibou est plus petit", "isCorrect": false },
+        { "text": "La chouette chasse le jour", "isCorrect": false },
+        { "text": "Le hibou a des aigrettes, comme des oreilles", "isCorrect": true },
+        { "text": "La chouette n'a pas de plumes sur les pattes", "isCorrect": false }
+      ],
+      "explanation": "Les aigrettes sont de simples touffes de plumes."
+    },
+    {
+      "ref": "ani-054",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oiseau", "france"],
+      "text": "Quel oiseau est un symbole de la France ?",
+      "answers": [
+        { "text": "L'aigle", "isCorrect": false },
+        { "text": "Le coq", "isCorrect": true },
+        { "text": "Le pigeon", "isCorrect": false },
+        { "text": "La colombe", "isCorrect": false }
+      ],
+      "explanation": "Le mot latin « gallus » veut dire à la fois « coq » et « Gaulois »."
+    },
+    {
+      "ref": "ani-055",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Pourquoi les flamants roses sont-ils roses ?",
+      "answers": [
+        { "text": "À cause de leur alimentation", "isCorrect": true },
+        { "text": "À cause du soleil", "isCorrect": false },
+        { "text": "À cause de leur sang", "isCorrect": false },
+        { "text": "Ils naissent roses", "isCorrect": false }
+      ],
+      "explanation": "Les crevettes et les algues qu'ils mangent contiennent des pigments roses."
+    },
+    {
+      "ref": "ani-056",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["oiseau", "france"],
+      "text": "Quel grand oiseau migrateur niche sur les toits en Alsace ?",
+      "answers": [
+        { "text": "Le héron cendré", "isCorrect": false },
+        { "text": "La grue cendrée", "isCorrect": false },
+        { "text": "Le cygne", "isCorrect": false },
+        { "text": "La cigogne blanche", "isCorrect": true }
+      ],
+      "explanation": "La cigogne est l'emblème de l'Alsace."
+    },
+    {
+      "ref": "ani-057",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau", "record"],
+      "text": "Quel oiseau réalise la plus longue migration, entre l'Arctique et l'Antarctique ?",
+      "answers": [
+        { "text": "L'hirondelle rustique", "isCorrect": false },
+        { "text": "La cigogne blanche", "isCorrect": false },
+        { "text": "La sterne arctique", "isCorrect": true },
+        { "text": "L'oie cendrée", "isCorrect": false }
+      ],
+      "explanation": "Elle parcourt plus de 70 000 kilomètres par an."
+    },
+    {
+      "ref": "ani-058",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau", "record"],
+      "text": "Quel oiseau peut rester en vol pendant près de dix mois sans se poser ?",
+      "answers": [
+        { "text": "L'albatros", "isCorrect": false },
+        { "text": "Le martinet noir", "isCorrect": true },
+        { "text": "La sterne arctique", "isCorrect": false },
+        { "text": "Le faucon pèlerin", "isCorrect": false }
+      ],
+      "explanation": "Il mange, boit et dort même en vol."
+    },
+    {
+      "ref": "ani-059",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Quel rapace est l'emblème des États-Unis ?",
+      "answers": [
+        { "text": "Le pygargue à tête blanche", "isCorrect": true },
+        { "text": "L'aigle royal", "isCorrect": false },
+        { "text": "Le faucon pèlerin", "isCorrect": false },
+        { "text": "Le condor de Californie", "isCorrect": false }
+      ],
+      "explanation": "Il figure sur le grand sceau des États-Unis."
+    },
+    {
+      "ref": "ani-060",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau marin au bec multicolore est surnommé « perroquet de mer » ?",
+      "answers": [
+        { "text": "Le fou de Bassan", "isCorrect": false },
+        { "text": "Le cormoran", "isCorrect": false },
+        { "text": "La mouette rieuse", "isCorrect": false },
+        { "text": "Le macareux moine", "isCorrect": true }
+      ],
+      "explanation": "On peut l'observer en Bretagne, notamment aux Sept-Îles."
+    },
+    {
+      "ref": "ani-061",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau est célèbre pour son chant la nuit ?",
+      "answers": [
+        { "text": "Le merle", "isCorrect": false },
+        { "text": "Le corbeau", "isCorrect": false },
+        { "text": "Le rossignol", "isCorrect": true },
+        { "text": "La mésange", "isCorrect": false }
+      ],
+      "explanation": "C'est surtout le mâle qui chante, pour attirer une femelle."
+    },
+    {
+      "ref": "ani-062",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau d'Australie est le deuxième plus grand oiseau du monde ?",
+      "answers": [
+        { "text": "Le casoar", "isCorrect": false },
+        { "text": "L'émeu", "isCorrect": true },
+        { "text": "Le nandou", "isCorrect": false },
+        { "text": "Le kiwi", "isCorrect": false }
+      ],
+      "explanation": "Comme l'autruche, il ne vole pas."
+    },
+    {
+      "ref": "ani-063",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau de Nouvelle-Zélande, qui ne vole pas, pond un œuf énorme par rapport à sa taille ?",
+      "answers": [
+        { "text": "Le kiwi", "isCorrect": true },
+        { "text": "Le kakapo", "isCorrect": false },
+        { "text": "Le dodo", "isCorrect": false },
+        { "text": "Le pingouin", "isCorrect": false }
+      ],
+      "explanation": "L'œuf représente environ 20 % du poids de la femelle."
+    },
+    {
+      "ref": "ani-064",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["oiseau"],
+      "text": "Quel oiseau disparu de l'île Maurice est devenu un symbole des espèces éteintes ?",
+      "answers": [
+        { "text": "Le kiwi", "isCorrect": false },
+        { "text": "Le moa", "isCorrect": false },
+        { "text": "Le grand pingouin", "isCorrect": false },
+        { "text": "Le dodo", "isCorrect": true }
+      ],
+      "explanation": "Il a disparu à la fin du XVIIe siècle, moins d'un siècle après l'arrivée des Européens."
+    },
+    {
+      "ref": "ani-065",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["oiseau"],
+      "text": "L'autruche cache sa tête dans le sable quand elle a peur.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est une légende : elle se couche au sol ou s'enfuit en courant."
+    },
+    {
+      "ref": "ani-066",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean"],
+      "text": "Combien de bras a une pieuvre ?",
+      "answers": [
+        { "text": "10", "isCorrect": false },
+        { "text": "8", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Chaque bras peut goûter et toucher grâce à ses ventouses."
+    },
+    {
+      "ref": "ani-067",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "Combien de cœurs a une pieuvre ?",
+      "answers": [
+        { "text": "3", "isCorrect": true },
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": false },
+        { "text": "8", "isCorrect": false }
+      ],
+      "explanation": "Deux cœurs envoient le sang aux branchies, le troisième au reste du corps."
+    },
+    {
+      "ref": "ani-068",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "De quelle couleur est le sang d'une pieuvre ?",
+      "answers": [
+        { "text": "Rouge", "isCorrect": false },
+        { "text": "Vert", "isCorrect": false },
+        { "text": "Transparent", "isCorrect": false },
+        { "text": "Bleu", "isCorrect": true }
+      ],
+      "explanation": "Il contient de l'hémocyanine, à base de cuivre au lieu du fer."
+    },
+    {
+      "ref": "ani-069",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "Combien de bras et de tentacules a un calmar, au total ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Il a huit bras et deux longs tentacules pour attraper ses proies."
+    },
+    {
+      "ref": "ani-070",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean"],
+      "text": "Avec quel organe respirent les poissons ?",
+      "answers": [
+        { "text": "Les poumons", "isCorrect": false },
+        { "text": "Les branchies", "isCorrect": true },
+        { "text": "La peau", "isCorrect": false },
+        { "text": "Les nageoires", "isCorrect": false }
+      ],
+      "explanation": "Les branchies captent l'oxygène dissous dans l'eau."
+    },
+    {
+      "ref": "ani-071",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean"],
+      "text": "À quelle classe d'animaux appartient le dauphin ?",
+      "answers": [
+        { "text": "Les mammifères", "isCorrect": true },
+        { "text": "Les poissons", "isCorrect": false },
+        { "text": "Les reptiles", "isCorrect": false },
+        { "text": "Les amphibiens", "isCorrect": false }
+      ],
+      "explanation": "Il respire de l'air grâce à un évent sur le dessus de la tête."
+    },
+    {
+      "ref": "ani-072",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Quel animal marin peut faire repousser un bras perdu ?",
+      "answers": [
+        { "text": "La méduse", "isCorrect": false },
+        { "text": "Le crabe", "isCorrect": false },
+        { "text": "L'oursin", "isCorrect": false },
+        { "text": "L'étoile de mer", "isCorrect": true }
+      ],
+      "explanation": "Certaines espèces peuvent même reformer un individu entier à partir d'un bras."
+    },
+    {
+      "ref": "ani-073",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean"],
+      "text": "Quel requin est le « héros » du film « Les Dents de la mer » ?",
+      "answers": [
+        { "text": "Le requin-tigre", "isCorrect": false },
+        { "text": "Le requin-marteau", "isCorrect": false },
+        { "text": "Le grand requin blanc", "isCorrect": true },
+        { "text": "Le requin-baleine", "isCorrect": false }
+      ],
+      "explanation": "Le film de Steven Spielberg est sorti en 1975."
+    },
+    {
+      "ref": "ani-074",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Quel poisson peut se gonfler comme un ballon ?",
+      "answers": [
+        { "text": "Le poisson-clown", "isCorrect": false },
+        { "text": "Le poisson-globe", "isCorrect": true },
+        { "text": "Le poisson-lune", "isCorrect": false },
+        { "text": "Le poisson-chat", "isCorrect": false }
+      ],
+      "explanation": "Il est aussi l'un des poissons les plus toxiques au monde."
+    },
+    {
+      "ref": "ani-075",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Chez quel animal marin est-ce le mâle qui porte les petits ?",
+      "answers": [
+        { "text": "L'hippocampe", "isCorrect": true },
+        { "text": "Le dauphin", "isCorrect": false },
+        { "text": "La tortue de mer", "isCorrect": false },
+        { "text": "Le poisson-clown", "isCorrect": false }
+      ],
+      "explanation": "La femelle dépose ses œufs dans une poche du ventre du mâle."
+    },
+    {
+      "ref": "ani-076",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "Quelle petite méduse est surnommée « méduse immortelle » ?",
+      "answers": [
+        { "text": "La méduse-lune", "isCorrect": false },
+        { "text": "La physalie", "isCorrect": false },
+        { "text": "La guêpe de mer", "isCorrect": false },
+        { "text": "Turritopsis dohrnii", "isCorrect": true }
+      ],
+      "explanation": "Elle peut revenir à un stade jeune de sa vie au lieu de mourir."
+    },
+    {
+      "ref": "ani-077",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Quelle baleine est célèbre pour ses chants et ses sauts spectaculaires ?",
+      "answers": [
+        { "text": "La baleine bleue", "isCorrect": false },
+        { "text": "Le cachalot", "isCorrect": false },
+        { "text": "La baleine à bosse", "isCorrect": true },
+        { "text": "L'orque", "isCorrect": false }
+      ],
+      "explanation": "Les chants des mâles peuvent durer des heures."
+    },
+    {
+      "ref": "ani-078",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "Quel est le plus grand prédateur à dents du monde ?",
+      "answers": [
+        { "text": "L'orque", "isCorrect": false },
+        { "text": "Le cachalot", "isCorrect": true },
+        { "text": "Le grand requin blanc", "isCorrect": false },
+        { "text": "Le crocodile marin", "isCorrect": false }
+      ],
+      "explanation": "C'est le héros du roman « Moby Dick »."
+    },
+    {
+      "ref": "ani-079",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "Quel mammifère marin herbivore est surnommé « vache de mer » ?",
+      "answers": [
+        { "text": "Le lamantin", "isCorrect": true },
+        { "text": "Le phoque", "isCorrect": false },
+        { "text": "Le morse", "isCorrect": false },
+        { "text": "L'otarie", "isCorrect": false }
+      ],
+      "explanation": "Les marins l'auraient pris pour une sirène."
+    },
+    {
+      "ref": "ani-080",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["ocean"],
+      "text": "Où se trouve la Grande Barrière de corail ?",
+      "answers": [
+        { "text": "Au Brésil", "isCorrect": false },
+        { "text": "En Indonésie", "isCorrect": false },
+        { "text": "À Madagascar", "isCorrect": false },
+        { "text": "En Australie", "isCorrect": true }
+      ],
+      "explanation": "C'est la plus grande structure construite par des êtres vivants."
+    },
+    {
+      "ref": "ani-081",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Quel crustacé se loge dans des coquilles vides qu'il change en grandissant ?",
+      "answers": [
+        { "text": "Le homard", "isCorrect": false },
+        { "text": "La crevette", "isCorrect": false },
+        { "text": "Le bernard-l'hermite", "isCorrect": true },
+        { "text": "L'écrevisse", "isCorrect": false }
+      ],
+      "explanation": "Il cherche une coquille plus grande à chaque fois qu'il grandit."
+    },
+    {
+      "ref": "ani-082",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["ocean"],
+      "text": "Combien de pattes a un crabe, pinces comprises ?",
+      "answers": [
+        { "text": "8", "isCorrect": false },
+        { "text": "10", "isCorrect": true },
+        { "text": "6", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ],
+      "explanation": "Les crabes font partie des décapodes, ce qui veut dire « dix pieds »."
+    },
+    {
+      "ref": "ani-083",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "De quoi se nourrit principalement la baleine bleue ?",
+      "answers": [
+        { "text": "Du krill", "isCorrect": true },
+        { "text": "De phoques", "isCorrect": false },
+        { "text": "De thons", "isCorrect": false },
+        { "text": "D'algues", "isCorrect": false }
+      ],
+      "explanation": "Elle peut avaler près de 4 tonnes de krill par jour."
+    },
+    {
+      "ref": "ani-084",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean", "mammifere"],
+      "text": "Quel cétacé noir et blanc est surnommé « baleine tueuse » ?",
+      "answers": [
+        { "text": "Le cachalot", "isCorrect": false },
+        { "text": "Le béluga", "isCorrect": false },
+        { "text": "Le globicéphale", "isCorrect": false },
+        { "text": "L'orque", "isCorrect": true }
+      ],
+      "explanation": "L'orque est en réalité le plus grand membre de la famille des dauphins."
+    },
+    {
+      "ref": "ani-085",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Quel poisson orange et blanc vit dans les anémones de mer ?",
+      "answers": [
+        { "text": "Le poisson-lune", "isCorrect": false },
+        { "text": "Le poisson-ange", "isCorrect": false },
+        { "text": "Le poisson-clown", "isCorrect": true },
+        { "text": "Le poisson-chirurgien", "isCorrect": false }
+      ],
+      "explanation": "Il est le héros du film « Le Monde de Nemo »."
+    },
+    {
+      "ref": "ani-086",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["ocean"],
+      "text": "Les requins doivent nager en permanence pour respirer.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "C'est vrai pour certaines espèces seulement. D'autres peuvent rester immobiles au fond."
+    },
+    {
+      "ref": "ani-087",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Combien de pattes a un insecte ?",
+      "answers": [
+        { "text": "6", "isCorrect": true },
+        { "text": "8", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "10", "isCorrect": false }
+      ],
+      "explanation": "Le corps d'un insecte est divisé en trois parties : tête, thorax et abdomen."
+    },
+    {
+      "ref": "ani-088",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Combien de pattes a une araignée ?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "10", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "L'araignée n'est pas un insecte mais un arachnide."
+    },
+    {
+      "ref": "ani-089",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Les araignées sont des insectes.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ce sont des arachnides, comme les scorpions."
+    },
+    {
+      "ref": "ani-090",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Comment s'appelle la transformation d'une chenille en papillon ?",
+      "answers": [
+        { "text": "La mue", "isCorrect": false },
+        { "text": "La métamorphose", "isCorrect": true },
+        { "text": "La germination", "isCorrect": false },
+        { "text": "La pollinisation", "isCorrect": false }
+      ],
+      "explanation": "La grenouille aussi connaît une métamorphose."
+    },
+    {
+      "ref": "ani-091",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["insecte"],
+      "text": "Comment s'appelle l'enveloppe dans laquelle la chenille se transforme en papillon ?",
+      "answers": [
+        { "text": "La chrysalide", "isCorrect": true },
+        { "text": "Le cocon de soie", "isCorrect": false },
+        { "text": "La larve", "isCorrect": false },
+        { "text": "La nymphe aquatique", "isCorrect": false }
+      ],
+      "explanation": "La transformation peut durer de quelques jours à plusieurs mois."
+    },
+    {
+      "ref": "ani-092",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Quelle abeille pond les œufs de la ruche ?",
+      "answers": [
+        { "text": "L'ouvrière", "isCorrect": false },
+        { "text": "Le faux-bourdon", "isCorrect": false },
+        { "text": "La butineuse", "isCorrect": false },
+        { "text": "La reine", "isCorrect": true }
+      ],
+      "explanation": "Une reine peut pondre plus de 2 000 œufs par jour."
+    },
+    {
+      "ref": "ani-093",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["insecte"],
+      "text": "Comment les abeilles indiquent-elles aux autres où trouver des fleurs ?",
+      "answers": [
+        { "text": "Par des cris", "isCorrect": false },
+        { "text": "Par des couleurs", "isCorrect": false },
+        { "text": "Par une danse", "isCorrect": true },
+        { "text": "Elles ne communiquent pas", "isCorrect": false }
+      ],
+      "explanation": "La « danse frétillante » indique la direction et la distance."
+    },
+    {
+      "ref": "ani-094",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Que fabriquent les abeilles à partir du nectar des fleurs ?",
+      "answers": [
+        { "text": "De la cire seulement", "isCorrect": false },
+        { "text": "Du miel", "isCorrect": true },
+        { "text": "Du pollen", "isCorrect": false },
+        { "text": "De la gelée de fruits", "isCorrect": false }
+      ],
+      "explanation": "Pour un kilogramme de miel, les abeilles visitent des millions de fleurs."
+    },
+    {
+      "ref": "ani-095",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte", "france"],
+      "text": "Quel insecte est surnommé « bête à bon Dieu » ?",
+      "answers": [
+        { "text": "La coccinelle", "isCorrect": true },
+        { "text": "La libellule", "isCorrect": false },
+        { "text": "Le papillon", "isCorrect": false },
+        { "text": "La sauterelle", "isCorrect": false }
+      ],
+      "explanation": "Elle est l'alliée des jardiniers car elle mange les pucerons."
+    },
+    {
+      "ref": "ani-096",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["insecte"],
+      "text": "Quels moustiques piquent pour se nourrir de sang ?",
+      "answers": [
+        { "text": "Les mâles", "isCorrect": false },
+        { "text": "Les deux", "isCorrect": false },
+        { "text": "Aucun, ils mangent du nectar", "isCorrect": false },
+        { "text": "Les femelles", "isCorrect": true }
+      ],
+      "explanation": "Les femelles ont besoin de sang pour produire leurs œufs."
+    },
+    {
+      "ref": "ani-097",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["insecte"],
+      "text": "Quel insecte produit de la lumière la nuit ?",
+      "answers": [
+        { "text": "Le grillon", "isCorrect": false },
+        { "text": "La cigale", "isCorrect": false },
+        { "text": "Le ver luisant", "isCorrect": true },
+        { "text": "La mante religieuse", "isCorrect": false }
+      ],
+      "explanation": "Le ver luisant est en fait un coléoptère."
+    },
+    {
+      "ref": "ani-098",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["insecte"],
+      "text": "Quelle femelle insecte dévore parfois le mâle après l'accouplement ?",
+      "answers": [
+        { "text": "L'abeille", "isCorrect": false },
+        { "text": "La mante religieuse", "isCorrect": true },
+        { "text": "La fourmi", "isCorrect": false },
+        { "text": "La libellule", "isCorrect": false }
+      ],
+      "explanation": "Elle doit son nom à la position de ses pattes, comme en prière."
+    },
+    {
+      "ref": "ani-099",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Quel arachnide porte un dard venimeux au bout de la queue ?",
+      "answers": [
+        { "text": "Le scorpion", "isCorrect": true },
+        { "text": "La tarentule", "isCorrect": false },
+        { "text": "La tique", "isCorrect": false },
+        { "text": "L'acarien", "isCorrect": false }
+      ],
+      "explanation": "Il est fluorescent sous la lumière ultraviolette."
+    },
+    {
+      "ref": "ani-100",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["insecte"],
+      "text": "Combien d'yeux ont la plupart des araignées ?",
+      "answers": [
+        { "text": "2", "isCorrect": false },
+        { "text": "4", "isCorrect": false },
+        { "text": "6", "isCorrect": false },
+        { "text": "8", "isCorrect": true }
+      ],
+      "explanation": "Malgré cela, beaucoup d'araignées voient mal."
+    },
+    {
+      "ref": "ani-101",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte"],
+      "text": "Quels insectes construisent d'immenses monticules de terre en Afrique ?",
+      "answers": [
+        { "text": "Les fourmis rouges", "isCorrect": false },
+        { "text": "Les guêpes", "isCorrect": false },
+        { "text": "Les termites", "isCorrect": true },
+        { "text": "Les scarabées", "isCorrect": false }
+      ],
+      "explanation": "Certaines termitières dépassent 5 mètres de haut."
+    },
+    {
+      "ref": "ani-102",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["insecte"],
+      "text": "Quel papillon migre chaque année entre le Canada et le Mexique ?",
+      "answers": [
+        { "text": "Le machaon", "isCorrect": false },
+        { "text": "Le monarque", "isCorrect": true },
+        { "text": "Le paon-du-jour", "isCorrect": false },
+        { "text": "La piéride du chou", "isCorrect": false }
+      ],
+      "explanation": "Le voyage s'étale sur plusieurs générations de papillons."
+    },
+    {
+      "ref": "ani-103",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["insecte"],
+      "text": "Combien de temps vit environ un éphémère adulte ?",
+      "answers": [
+        { "text": "De quelques heures à un jour", "isCorrect": true },
+        { "text": "Une semaine", "isCorrect": false },
+        { "text": "Un mois", "isCorrect": false },
+        { "text": "Un an", "isCorrect": false }
+      ],
+      "explanation": "Sa larve, elle, peut vivre plusieurs années dans l'eau."
+    },
+    {
+      "ref": "ani-104",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["insecte"],
+      "text": "Quel insecte transmet le paludisme ?",
+      "answers": [
+        { "text": "La mouche tsé-tsé", "isCorrect": false },
+        { "text": "La puce", "isCorrect": false },
+        { "text": "La punaise de lit", "isCorrect": false },
+        { "text": "Le moustique anophèle", "isCorrect": true }
+      ],
+      "explanation": "Le paludisme tue encore des centaines de milliers de personnes par an."
+    },
+    {
+      "ref": "ani-105",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["insecte", "france"],
+      "text": "Quel insecte « chante » l'été dans le sud de la France ?",
+      "answers": [
+        { "text": "Le criquet", "isCorrect": false },
+        { "text": "L'abeille", "isCorrect": false },
+        { "text": "La cigale", "isCorrect": true },
+        { "text": "La sauterelle", "isCorrect": false }
+      ],
+      "explanation": "La cigale est un symbole de la Provence."
+    },
+    {
+      "ref": "ani-106",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["insecte"],
+      "text": "Comment la cigale produit-elle son chant ?",
+      "answers": [
+        { "text": "En frottant ses ailes", "isCorrect": false },
+        { "text": "En faisant vibrer des membranes sur son abdomen", "isCorrect": true },
+        { "text": "En frottant ses pattes", "isCorrect": false },
+        { "text": "En soufflant de l'air", "isCorrect": false }
+      ],
+      "explanation": "Seul le mâle chante, grâce à des organes appelés cymbales."
+    },
+    {
+      "ref": "ani-107",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["insecte", "france"],
+      "text": "Quel insecte asiatique, arrivé en France en 2004, menace les abeilles ?",
+      "answers": [
+        { "text": "Le frelon asiatique", "isCorrect": true },
+        { "text": "La guêpe germanique", "isCorrect": false },
+        { "text": "Le bourdon terrestre", "isCorrect": false },
+        { "text": "Le moustique tigre", "isCorrect": false }
+      ],
+      "explanation": "Il serait arrivé dans le Lot-et-Garonne, caché dans des poteries venues de Chine."
+    },
+    {
+      "ref": "ani-108",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["reptile"],
+      "text": "Quel reptile peut changer de couleur ?",
+      "answers": [
+        { "text": "L'iguane", "isCorrect": false },
+        { "text": "Le gecko", "isCorrect": false },
+        { "text": "L'orvet", "isCorrect": false },
+        { "text": "Le caméléon", "isCorrect": true }
+      ],
+      "explanation": "Il change de couleur grâce à des cellules spéciales de sa peau."
+    },
+    {
+      "ref": "ani-109",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["reptile"],
+      "text": "Pourquoi le caméléon change-t-il surtout de couleur ?",
+      "answers": [
+        { "text": "Uniquement pour se camoufler", "isCorrect": false },
+        { "text": "Parce qu'il est malade", "isCorrect": false },
+        { "text": "Pour communiquer et régler sa température", "isCorrect": true },
+        { "text": "Pour attirer la lumière", "isCorrect": false }
+      ],
+      "explanation": "Le camouflage n'est pas sa principale raison, contrairement à l'idée reçue."
+    },
+    {
+      "ref": "ani-110",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["reptile"],
+      "text": "Les serpents peuvent fermer les yeux.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "Ils n'ont pas de paupières, mais une écaille transparente qui protège l'œil."
+    },
+    {
+      "ref": "ani-111",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["reptile"],
+      "text": "À quoi sert la langue que le serpent sort sans arrêt ?",
+      "answers": [
+        { "text": "À capter les odeurs", "isCorrect": true },
+        { "text": "À boire", "isCorrect": false },
+        { "text": "À entendre", "isCorrect": false },
+        { "text": "À attraper les insectes", "isCorrect": false }
+      ],
+      "explanation": "Il amène les particules jusqu'à un organe spécial dans son palais."
+    },
+    {
+      "ref": "ani-112",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["reptile"],
+      "text": "Quel est le serpent le plus long du monde ?",
+      "answers": [
+        { "text": "L'anaconda vert", "isCorrect": false },
+        { "text": "Le cobra royal", "isCorrect": false },
+        { "text": "Le boa constricteur", "isCorrect": false },
+        { "text": "Le python réticulé", "isCorrect": true }
+      ],
+      "explanation": "Il peut dépasser 7 mètres. L'anaconda, lui, est le plus lourd."
+    },
+    {
+      "ref": "ani-113",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["reptile"],
+      "text": "Quel serpent venimeux déploie une « coiffe » autour de sa tête ?",
+      "answers": [
+        { "text": "La vipère", "isCorrect": false },
+        { "text": "Le python", "isCorrect": false },
+        { "text": "Le cobra", "isCorrect": true },
+        { "text": "La couleuvre", "isCorrect": false }
+      ],
+      "explanation": "Le cobra royal est le plus long serpent venimeux du monde."
+    },
+    {
+      "ref": "ani-114",
+      "type": "boolean",
+      "difficulty": 1,
+      "tags": ["reptile"],
+      "text": "Une tortue peut sortir de sa carapace.",
+      "answers": [
+        { "text": "Vrai", "isCorrect": false },
+        { "text": "Faux", "isCorrect": true }
+      ],
+      "explanation": "La carapace fait partie de son squelette : elle y est soudée."
+    },
+    {
+      "ref": "ani-115",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["reptile"],
+      "text": "Jusqu'à quel âge peut vivre une tortue géante ?",
+      "answers": [
+        { "text": "Plus de 150 ans", "isCorrect": true },
+        { "text": "Environ 20 ans", "isCorrect": false },
+        { "text": "Environ 50 ans", "isCorrect": false },
+        { "text": "Environ 10 ans", "isCorrect": false }
+      ],
+      "explanation": "La tortue Jonathan, sur l'île de Sainte-Hélène, aurait plus de 190 ans."
+    },
+    {
+      "ref": "ani-116",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["reptile", "france"],
+      "text": "Quels serpents venimeux vivent en France métropolitaine ?",
+      "answers": [
+        { "text": "Les cobras", "isCorrect": false },
+        { "text": "Les mambas", "isCorrect": false },
+        { "text": "Les crotales", "isCorrect": false },
+        { "text": "Les vipères", "isCorrect": true }
+      ],
+      "explanation": "Leurs morsures sont rares et rarement mortelles."
+    },
+    {
+      "ref": "ani-117",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["reptile"],
+      "text": "Comment s'appelle la capacité du lézard à abandonner sa queue pour s'échapper ?",
+      "answers": [
+        { "text": "La mue", "isCorrect": false },
+        { "text": "La régénération totale", "isCorrect": false },
+        { "text": "L'autotomie", "isCorrect": true },
+        { "text": "L'hibernation", "isCorrect": false }
+      ],
+      "explanation": "La queue repousse, mais plus courte et sans os."
+    },
+    {
+      "ref": "ani-118",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["reptile"],
+      "text": "Comment s'appelle la larve de la grenouille ?",
+      "answers": [
+        { "text": "La chenille", "isCorrect": false },
+        { "text": "Le têtard", "isCorrect": true },
+        { "text": "L'asticot", "isCorrect": false },
+        { "text": "L'alevin", "isCorrect": false }
+      ],
+      "explanation": "Le têtard vit dans l'eau et respire par des branchies."
+    },
+    {
+      "ref": "ani-119",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["reptile"],
+      "text": "Quel amphibien mexicain peut faire repousser ses membres et même une partie de son cerveau ?",
+      "answers": [
+        { "text": "L'axolotl", "isCorrect": true },
+        { "text": "La salamandre tachetée", "isCorrect": false },
+        { "text": "Le crapaud buffle", "isCorrect": false },
+        { "text": "Le triton alpestre", "isCorrect": false }
+      ],
+      "explanation": "Il garde toute sa vie son apparence de larve."
+    },
+    {
+      "ref": "ani-120",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["reptile"],
+      "text": "Par où la grenouille respire-t-elle en partie ?",
+      "answers": [
+        { "text": "Par les yeux", "isCorrect": false },
+        { "text": "Par la langue", "isCorrect": false },
+        { "text": "Par les pattes", "isCorrect": false },
+        { "text": "Par la peau", "isCorrect": true }
+      ],
+      "explanation": "C'est pour cela que sa peau doit rester humide."
+    },
+    {
+      "ref": "ani-121",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["reptile"],
+      "text": "Quelle petite grenouille d'Amérique du Sud est l'un des animaux les plus venimeux du monde ?",
+      "answers": [
+        { "text": "La rainette verte", "isCorrect": false },
+        { "text": "Le crapaud commun", "isCorrect": false },
+        { "text": "La grenouille dorée", "isCorrect": true },
+        { "text": "La grenouille-taureau", "isCorrect": false }
+      ],
+      "explanation": "Les Amérindiens enduisaient leurs flèches de son poison."
+    },
+    {
+      "ref": "ani-122",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit de la vache ?",
+      "answers": [
+        { "text": "Le poulain", "isCorrect": false },
+        { "text": "Le veau", "isCorrect": true },
+        { "text": "L'agneau", "isCorrect": false },
+        { "text": "Le cabri", "isCorrect": false }
+      ],
+      "explanation": "La femelle du taureau donne généralement naissance à un seul veau."
+    },
+    {
+      "ref": "ani-123",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit du cheval ?",
+      "answers": [
+        { "text": "Le poulain", "isCorrect": true },
+        { "text": "Le veau", "isCorrect": false },
+        { "text": "L'ânon", "isCorrect": false },
+        { "text": "Le chevreau", "isCorrect": false }
+      ],
+      "explanation": "On parle de pouliche pour une jeune femelle."
+    },
+    {
+      "ref": "ani-124",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit du mouton ?",
+      "answers": [
+        { "text": "Le chevreau", "isCorrect": false },
+        { "text": "Le veau", "isCorrect": false },
+        { "text": "Le porcelet", "isCorrect": false },
+        { "text": "L'agneau", "isCorrect": true }
+      ],
+      "explanation": "La mère est la brebis et le père le bélier."
+    },
+    {
+      "ref": "ani-125",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit de la chèvre ?",
+      "answers": [
+        { "text": "Le faon", "isCorrect": false },
+        { "text": "Le marcassin", "isCorrect": false },
+        { "text": "Le chevreau", "isCorrect": true },
+        { "text": "Le lapereau", "isCorrect": false }
+      ],
+      "explanation": "On l'appelle aussi cabri."
+    },
+    {
+      "ref": "ani-126",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit du sanglier ?",
+      "answers": [
+        { "text": "Le faon", "isCorrect": false },
+        { "text": "Le marcassin", "isCorrect": true },
+        { "text": "Le louveteau", "isCorrect": false },
+        { "text": "Le porcelet", "isCorrect": false }
+      ],
+      "explanation": "Les marcassins ont un pelage rayé, qui disparaît en grandissant."
+    },
+    {
+      "ref": "ani-127",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit du cerf ?",
+      "answers": [
+        { "text": "Le faon", "isCorrect": true },
+        { "text": "Le marcassin", "isCorrect": false },
+        { "text": "Le chevreau", "isCorrect": false },
+        { "text": "Le levraut", "isCorrect": false }
+      ],
+      "explanation": "Le faon a des taches blanches sur le dos pendant ses premiers mois."
+    },
+    {
+      "ref": "ani-128",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit du lièvre ?",
+      "answers": [
+        { "text": "Le lapereau", "isCorrect": false },
+        { "text": "Le faon", "isCorrect": false },
+        { "text": "Le marcassin", "isCorrect": false },
+        { "text": "Le levraut", "isCorrect": true }
+      ],
+      "explanation": "Le lapereau est le petit du lapin."
+    },
+    {
+      "ref": "ani-129",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit de l'âne ?",
+      "answers": [
+        { "text": "Le poulain", "isCorrect": false },
+        { "text": "Le mulet", "isCorrect": false },
+        { "text": "L'ânon", "isCorrect": true },
+        { "text": "Le baudet", "isCorrect": false }
+      ],
+      "explanation": "Le mulet est le croisement d'un âne et d'une jument."
+    },
+    {
+      "ref": "ani-130",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "oiseau"],
+      "text": "Comment s'appelle le petit de l'oie ?",
+      "answers": [
+        { "text": "Le caneton", "isCorrect": false },
+        { "text": "L'oison", "isCorrect": true },
+        { "text": "L'aiglon", "isCorrect": false },
+        { "text": "Le poussin", "isCorrect": false }
+      ],
+      "explanation": "Le petit du canard, lui, s'appelle le caneton."
+    },
+    {
+      "ref": "ani-131",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "oiseau"],
+      "text": "Comment s'appelle le petit du canard ?",
+      "answers": [
+        { "text": "Le caneton", "isCorrect": true },
+        { "text": "L'oison", "isCorrect": false },
+        { "text": "Le poussin", "isCorrect": false },
+        { "text": "Le cygneau", "isCorrect": false }
+      ],
+      "explanation": "Le petit du cygne s'appelle le cygneau."
+    },
+    {
+      "ref": "ani-132",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "oiseau"],
+      "text": "Comment s'appelle le petit de l'aigle ?",
+      "answers": [
+        { "text": "L'aiglet", "isCorrect": false },
+        { "text": "Le faucon", "isCorrect": false },
+        { "text": "L'oison", "isCorrect": false },
+        { "text": "L'aiglon", "isCorrect": true }
+      ],
+      "explanation": "« L'Aiglon » était aussi le surnom du fils de Napoléon."
+    },
+    {
+      "ref": "ani-133",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit du loup ?",
+      "answers": [
+        { "text": "Le louvard", "isCorrect": false },
+        { "text": "Le renardeau", "isCorrect": false },
+        { "text": "Le louveteau", "isCorrect": true },
+        { "text": "Le chiot sauvage", "isCorrect": false }
+      ],
+      "explanation": "Les louveteaux naissent aveugles."
+    },
+    {
+      "ref": "ani-134",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle le petit de l'ours ?",
+      "answers": [
+        { "text": "L'oursin", "isCorrect": false },
+        { "text": "L'ourson", "isCorrect": true },
+        { "text": "Le louveteau", "isCorrect": false },
+        { "text": "Le marcassin", "isCorrect": false }
+      ],
+      "explanation": "L'oursin est un animal marin couvert de piquants."
+    },
+    {
+      "ref": "ani-135",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere", "ocean"],
+      "text": "Comment s'appelle le petit de la baleine ?",
+      "answers": [
+        { "text": "Le baleineau", "isCorrect": true },
+        { "text": "Le dauphineau", "isCorrect": false },
+        { "text": "Le cétaceau", "isCorrect": false },
+        { "text": "Le phoqueau", "isCorrect": false }
+      ],
+      "explanation": "Il boit jusqu'à plusieurs centaines de litres de lait par jour."
+    },
+    {
+      "ref": "ani-136",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Quel animal hennit ?",
+      "answers": [
+        { "text": "L'âne", "isCorrect": false },
+        { "text": "Le cerf", "isCorrect": false },
+        { "text": "Le loup", "isCorrect": false },
+        { "text": "Le cheval", "isCorrect": true }
+      ],
+      "explanation": "L'âne, lui, brait."
+    },
+    {
+      "ref": "ani-137",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Quel animal barrit ?",
+      "answers": [
+        { "text": "Le lion", "isCorrect": false },
+        { "text": "L'ours", "isCorrect": false },
+        { "text": "L'éléphant", "isCorrect": true },
+        { "text": "Le rhinocéros", "isCorrect": false }
+      ],
+      "explanation": "Le barrissement s'entend à plusieurs kilomètres."
+    },
+    {
+      "ref": "ani-138",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Quel animal brame en automne ?",
+      "answers": [
+        { "text": "Le sanglier", "isCorrect": false },
+        { "text": "Le cerf", "isCorrect": true },
+        { "text": "Le loup", "isCorrect": false },
+        { "text": "Le chevreuil", "isCorrect": false }
+      ],
+      "explanation": "Le brame est le cri des mâles pendant la saison des amours."
+    },
+    {
+      "ref": "ani-139",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "oiseau"],
+      "text": "Quel oiseau glatit ?",
+      "answers": [
+        { "text": "L'aigle", "isCorrect": true },
+        { "text": "Le corbeau", "isCorrect": false },
+        { "text": "Le hibou", "isCorrect": false },
+        { "text": "Le pigeon", "isCorrect": false }
+      ],
+      "explanation": "Le hibou, lui, hulule."
+    },
+    {
+      "ref": "ani-140",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "reptile"],
+      "text": "Quel animal coasse ?",
+      "answers": [
+        { "text": "Le corbeau", "isCorrect": false },
+        { "text": "Le canard", "isCorrect": false },
+        { "text": "Le serpent", "isCorrect": false },
+        { "text": "La grenouille", "isCorrect": true }
+      ],
+      "explanation": "Le corbeau, lui, croasse."
+    },
+    {
+      "ref": "ani-141",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire", "oiseau"],
+      "text": "Quel oiseau croasse ?",
+      "answers": [
+        { "text": "La grenouille", "isCorrect": false },
+        { "text": "Le pigeon", "isCorrect": false },
+        { "text": "Le corbeau", "isCorrect": true },
+        { "text": "Le coq", "isCorrect": false }
+      ],
+      "explanation": "Attention à ne pas confondre avec la grenouille, qui coasse."
+    },
+    {
+      "ref": "ani-142",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Quel animal rugit ?",
+      "answers": [
+        { "text": "Le cheval", "isCorrect": false },
+        { "text": "Le lion", "isCorrect": true },
+        { "text": "Le loup", "isCorrect": false },
+        { "text": "L'éléphant", "isCorrect": false }
+      ],
+      "explanation": "Le rugissement du lion s'entend à 8 kilomètres."
+    },
+    {
+      "ref": "ani-143",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Quel animal blatère ?",
+      "answers": [
+        { "text": "Le chameau", "isCorrect": true },
+        { "text": "Le cheval", "isCorrect": false },
+        { "text": "L'âne", "isCorrect": false },
+        { "text": "Le cochon", "isCorrect": false }
+      ],
+      "explanation": "Le bélier blatère aussi."
+    },
+    {
+      "ref": "ani-144",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "insecte"],
+      "text": "Quel insecte stridule ?",
+      "answers": [
+        { "text": "La fourmi", "isCorrect": false },
+        { "text": "La mouche", "isCorrect": false },
+        { "text": "Le papillon", "isCorrect": false },
+        { "text": "Le grillon", "isCorrect": true }
+      ],
+      "explanation": "Il produit son chant en frottant ses ailes l'une contre l'autre."
+    },
+    {
+      "ref": "ani-145",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle la femelle du cheval ?",
+      "answers": [
+        { "text": "La pouliche", "isCorrect": false },
+        { "text": "La mule", "isCorrect": false },
+        { "text": "La jument", "isCorrect": true },
+        { "text": "L'ânesse", "isCorrect": false }
+      ],
+      "explanation": "La pouliche est une jeune jument."
+    },
+    {
+      "ref": "ani-146",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle la femelle du sanglier ?",
+      "answers": [
+        { "text": "La truie", "isCorrect": false },
+        { "text": "La laie", "isCorrect": true },
+        { "text": "La biche", "isCorrect": false },
+        { "text": "La hase", "isCorrect": false }
+      ],
+      "explanation": "La truie est la femelle du cochon."
+    },
+    {
+      "ref": "ani-147",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle la femelle du cerf ?",
+      "answers": [
+        { "text": "La biche", "isCorrect": true },
+        { "text": "La laie", "isCorrect": false },
+        { "text": "La chevrette", "isCorrect": false },
+        { "text": "La hase", "isCorrect": false }
+      ],
+      "explanation": "La chevrette est la femelle du chevreuil."
+    },
+    {
+      "ref": "ani-148",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["vocabulaire", "mammifere"],
+      "text": "Comment s'appelle la femelle du lièvre ?",
+      "answers": [
+        { "text": "La lapine", "isCorrect": false },
+        { "text": "La biche", "isCorrect": false },
+        { "text": "La laie", "isCorrect": false },
+        { "text": "La hase", "isCorrect": true }
+      ],
+      "explanation": "La lapine, elle, est la femelle du lapin."
+    },
+    {
+      "ref": "ani-149",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un animal qui mange de la viande ?",
+      "answers": [
+        { "text": "Un herbivore", "isCorrect": false },
+        { "text": "Un omnivore", "isCorrect": false },
+        { "text": "Un carnivore", "isCorrect": true },
+        { "text": "Un insectivore", "isCorrect": false }
+      ],
+      "explanation": "Le lion, le loup et le requin sont carnivores."
+    },
+    {
+      "ref": "ani-150",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un animal qui mange de tout ?",
+      "answers": [
+        { "text": "Un carnivore", "isCorrect": false },
+        { "text": "Un omnivore", "isCorrect": true },
+        { "text": "Un herbivore", "isCorrect": false },
+        { "text": "Un frugivore", "isCorrect": false }
+      ],
+      "explanation": "L'ours, le cochon et l'être humain sont omnivores."
+    },
+    {
+      "ref": "ani-151",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on un animal actif la nuit ?",
+      "answers": [
+        { "text": "Nocturne", "isCorrect": true },
+        { "text": "Diurne", "isCorrect": false },
+        { "text": "Migrateur", "isCorrect": false },
+        { "text": "Sédentaire", "isCorrect": false }
+      ],
+      "explanation": "La chouette, le hérisson et la chauve-souris sont nocturnes."
+    },
+    {
+      "ref": "ani-152",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment s'appelle la science qui étudie les animaux ?",
+      "answers": [
+        { "text": "La botanique", "isCorrect": false },
+        { "text": "L'entomologie", "isCorrect": false },
+        { "text": "L'ornithologie", "isCorrect": false },
+        { "text": "La zoologie", "isCorrect": true }
+      ],
+      "explanation": "L'entomologie étudie les insectes et l'ornithologie les oiseaux."
+    },
+    {
+      "ref": "ani-153",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["vocabulaire"],
+      "text": "Comment appelle-t-on les animaux sans colonne vertébrale ?",
+      "answers": [
+        { "text": "Les vertébrés", "isCorrect": false },
+        { "text": "Les mammifères", "isCorrect": false },
+        { "text": "Les invertébrés", "isCorrect": true },
+        { "text": "Les reptiles", "isCorrect": false }
+      ],
+      "explanation": "Les insectes, les mollusques et les méduses sont des invertébrés."
+    },
+    {
+      "ref": "ani-154",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel naturaliste anglais a publié « De l'origine des espèces » en 1859 ?",
+      "answers": [
+        { "text": "Isaac Newton", "isCorrect": false },
+        { "text": "Charles Darwin", "isCorrect": true },
+        { "text": "Gregor Mendel", "isCorrect": false },
+        { "text": "Alfred Russel Wallace", "isCorrect": false }
+      ],
+      "explanation": "Il y expose la théorie de l'évolution par la sélection naturelle."
+    },
+    {
+      "ref": "ani-155",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["histoire"],
+      "text": "Quel archipel a inspiré à Darwin sa théorie de l'évolution ?",
+      "answers": [
+        { "text": "Les Galápagos", "isCorrect": true },
+        { "text": "Les Canaries", "isCorrect": false },
+        { "text": "Hawaï", "isCorrect": false },
+        { "text": "Les Maldives", "isCorrect": false }
+      ],
+      "explanation": "Il y a observé des pinsons aux becs différents selon les îles."
+    },
+    {
+      "ref": "ani-156",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "france"],
+      "text": "Quel naturaliste français a écrit une immense « Histoire naturelle » au XVIIIe siècle ?",
+      "answers": [
+        { "text": "Lamarck", "isCorrect": false },
+        { "text": "Cuvier", "isCorrect": false },
+        { "text": "Lavoisier", "isCorrect": false },
+        { "text": "Buffon", "isCorrect": true }
+      ],
+      "explanation": "Il a aussi dirigé le Jardin du roi, devenu le Jardin des plantes."
+    },
+    {
+      "ref": "ani-157",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["histoire", "france"],
+      "text": "Quel naturaliste français a proposé une théorie de l'évolution avant Darwin ?",
+      "answers": [
+        { "text": "Buffon", "isCorrect": false },
+        { "text": "Cuvier", "isCorrect": false },
+        { "text": "Lamarck", "isCorrect": true },
+        { "text": "Pasteur", "isCorrect": false }
+      ],
+      "explanation": "Lamarck pensait que les caractères acquis se transmettaient."
+    },
+    {
+      "ref": "ani-158",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "mammifere"],
+      "text": "Quel grand prédateur a été réintroduit dans les Pyrénées à partir des années 1990 ?",
+      "answers": [
+        { "text": "Le loup", "isCorrect": false },
+        { "text": "L'ours brun", "isCorrect": true },
+        { "text": "Le lynx", "isCorrect": false },
+        { "text": "Le vautour fauve", "isCorrect": false }
+      ],
+      "explanation": "Des ours venus de Slovénie y ont été relâchés."
+    },
+    {
+      "ref": "ani-159",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "mammifere"],
+      "text": "Quel prédateur est revenu naturellement en France par l'Italie dans les années 1990 ?",
+      "answers": [
+        { "text": "Le loup", "isCorrect": true },
+        { "text": "L'ours brun", "isCorrect": false },
+        { "text": "Le lynx", "isCorrect": false },
+        { "text": "Le chacal doré", "isCorrect": false }
+      ],
+      "explanation": "Il a été observé pour la première fois dans le Mercantour en 1992."
+    },
+    {
+      "ref": "ani-160",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "mammifere"],
+      "text": "Quel animal est l'emblème du parc national de la Vanoise ?",
+      "answers": [
+        { "text": "Le chamois", "isCorrect": false },
+        { "text": "La marmotte", "isCorrect": false },
+        { "text": "L'aigle royal", "isCorrect": false },
+        { "text": "Le bouquetin", "isCorrect": true }
+      ],
+      "explanation": "Le parc a été créé en 1963, en partie pour sauver le bouquetin."
+    },
+    {
+      "ref": "ani-161",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "oiseau"],
+      "text": "Quel grand vautour a été réintroduit dans les gorges des Grands Causses ?",
+      "answers": [
+        { "text": "Le gypaète barbu", "isCorrect": false },
+        { "text": "Le condor", "isCorrect": false },
+        { "text": "Le vautour fauve", "isCorrect": true },
+        { "text": "Le percnoptère d'Égypte", "isCorrect": false }
+      ],
+      "explanation": "Les premiers lâchers ont eu lieu dans les années 1980."
+    },
+    {
+      "ref": "ani-162",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "oiseau"],
+      "text": "Dans quelle région de France peut-on observer des flamants roses en liberté ?",
+      "answers": [
+        { "text": "La Bretagne", "isCorrect": false },
+        { "text": "La Camargue", "isCorrect": true },
+        { "text": "L'Alsace", "isCorrect": false },
+        { "text": "Le Jura", "isCorrect": false }
+      ],
+      "explanation": "La Camargue accueille des milliers de flamants roses chaque année."
+    },
+    {
+      "ref": "ani-163",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "mammifere"],
+      "text": "De quelle couleur sont les chevaux de Camargue adultes ?",
+      "answers": [
+        { "text": "Blancs", "isCorrect": true },
+        { "text": "Noirs", "isCorrect": false },
+        { "text": "Bruns", "isCorrect": false },
+        { "text": "Roux", "isCorrect": false }
+      ],
+      "explanation": "Ils naissent foncés et blanchissent en grandissant."
+    },
+    {
+      "ref": "ani-164",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france", "mammifere"],
+      "text": "Quel rongeur des montagnes siffle pour prévenir d'un danger ?",
+      "answers": [
+        { "text": "L'écureuil", "isCorrect": false },
+        { "text": "Le lérot", "isCorrect": false },
+        { "text": "Le campagnol", "isCorrect": false },
+        { "text": "La marmotte", "isCorrect": true }
+      ],
+      "explanation": "Elle passe environ six mois par an à hiberner."
+    },
+    {
+      "ref": "ani-165",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "mammifere"],
+      "text": "Comment appelle-t-on le chamois dans les Pyrénées ?",
+      "answers": [
+        { "text": "Le bouquetin", "isCorrect": false },
+        { "text": "Le mouflon", "isCorrect": false },
+        { "text": "L'isard", "isCorrect": true },
+        { "text": "Le daim", "isCorrect": false }
+      ],
+      "explanation": "C'est la même espèce de famille, adaptée aux Pyrénées."
+    },
+    {
+      "ref": "ani-166",
+      "type": "multiple",
+      "difficulty": 2,
+      "tags": ["france", "mammifere", "ocean"],
+      "text": "Quel mammifère marin peut-on observer en baie de Somme ?",
+      "answers": [
+        { "text": "Le dauphin", "isCorrect": false },
+        { "text": "Le phoque", "isCorrect": true },
+        { "text": "La loutre de mer", "isCorrect": false },
+        { "text": "Le morse", "isCorrect": false }
+      ],
+      "explanation": "C'est la plus grande colonie de phoques veaux-marins de France."
+    },
+    {
+      "ref": "ani-167",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "oiseau"],
+      "text": "Quel oiseau est l'emblème de la Ligue pour la protection des oiseaux (LPO) ?",
+      "answers": [
+        { "text": "Le macareux moine", "isCorrect": true },
+        { "text": "La cigogne blanche", "isCorrect": false },
+        { "text": "Le rouge-gorge", "isCorrect": false },
+        { "text": "La chouette effraie", "isCorrect": false }
+      ],
+      "explanation": "La LPO a été créée en 1912 pour protéger les macareux des Sept-Îles."
+    },
+    {
+      "ref": "ani-168",
+      "type": "multiple",
+      "difficulty": 1,
+      "tags": ["france"],
+      "text": "Quel zoo du Loir-et-Cher est l'un des plus visités de France ?",
+      "answers": [
+        { "text": "Le zoo de Vincennes", "isCorrect": false },
+        { "text": "Le Puy du Fou", "isCorrect": false },
+        { "text": "Le zoo de la Flèche", "isCorrect": false },
+        { "text": "Le ZooParc de Beauval", "isCorrect": true }
+      ],
+      "explanation": "Beauval est célèbre pour ses pandas géants."
+    },
+    {
+      "ref": "ani-169",
+      "type": "multiple",
+      "difficulty": 3,
+      "tags": ["france", "mammifere"],
+      "text": "Comment s'appellent les pandas géants prêtés par la Chine au zoo de Beauval en 2012 ?",
+      "answers": [
+        { "text": "Yuan Meng et Fu Wa", "isCorrect": false },
+        { "text": "Bao Bao et Tian Tian", "isCorrect": false },
+        { "text": "Huan Huan et Yuan Zi", "isCorrect": true },
+        { "text": "Mei Xiang et Lun Lun", "isCorrect": false }
+      ],
+      "explanation": "Leur petit Yuan Meng, né en 2017, a été le premier panda né en France."
+    },
+    {
+      "ref": "ani-170",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Darwin a-t-il publié « De l'origine des espèces » avant ou après la Révolution française ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "La Révolution commence en 1789, le livre de Darwin paraît en 1859."
+    },
+    {
+      "ref": "ani-171",
+      "type": "boolean",
+      "difficulty": 3,
+      "tags": ["histoire", "avant-apres"],
+      "text": "Le dodo a-t-il disparu avant ou après la naissance de Louis XIV ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Louis XIV naît en 1638, le dodo disparaît vers la fin du XVIIe siècle."
+    },
+    {
+      "ref": "ani-172",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["avant-apres", "france"],
+      "text": "Le loup est-il revenu en France avant ou après la Coupe du monde de football 1998 ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": true },
+        { "text": "Après", "isCorrect": false }
+      ],
+      "explanation": "Le loup est observé dans le Mercantour en 1992, six ans avant la victoire des Bleus."
+    },
+    {
+      "ref": "ani-173",
+      "type": "boolean",
+      "difficulty": 2,
+      "tags": ["avant-apres", "france"],
+      "text": "Le premier panda né en France a-t-il vu le jour avant ou après les attentats du 11 septembre 2001 ?",
+      "answers": [
+        { "text": "Avant", "isCorrect": false },
+        { "text": "Après", "isCorrect": true }
+      ],
+      "explanation": "Yuan Meng est né en 2017 au ZooParc de Beauval."
+    }
+  ]
+}
