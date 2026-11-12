@@ -28,17 +28,7 @@ function validateStatsUserId(req, res, next) {
 }
 
 function validateLeaderboardQuery(req, res, next) {
-  const { difficulty, limit } = req.query;
-
-  if (difficulty !== undefined) {
-    const number = Number(difficulty);
-
-    if (!Number.isInteger(number) || number < 1 || number > 3) {
-      return res.status(400).json({ error: '"difficulty" doit être 1, 2 ou 3' });
-    }
-
-    req.statsDifficulty = number;
-  }
+  const limit = req.query.limit;
 
   req.statsLimit = undefined;
 

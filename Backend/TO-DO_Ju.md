@@ -20,7 +20,7 @@ Possibilite de signaler une question
 Classements / leaderboard --> route rush ok (vide tant que le mode rush n'existe pas), a terme : custom + front
 Leaderboard classic ? 
 Progression ?
-Rush mode Joris ?
+Rush mode Joris ? Un tag obligatoirement ? 
 Pour l'instant : ranking dans leaderboard et routes achievements mais pas progression
 
 

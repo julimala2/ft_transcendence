@@ -33,7 +33,7 @@ async function getGlobalStatistics(req, res) {
 
     const categoryId = req.statsCategoryId;
     try {
-        const stats = await statsService.getGlobalStats(req.user.id, categoryId);
+        const stats = await statsService.getGlobalStats(categoryId);
         return res.status(200).json(stats);
     }
     catch (err) {
@@ -45,7 +45,7 @@ async function getGlobalStatistics(req, res) {
 async function getLeaderboard(req, res) {
 
     try {
-        const leaderboard = await statsService.getLeaderboard(req.user.id, req.statsCategoryId, req.statsDifficulty, req.statsLimit);
+        const leaderboard = await statsService.getLeaderboard(req.user.id, req.statsCategoryId, req.statsLimit);
         return res.status(200).json(leaderboard);
     }
     catch (err) {

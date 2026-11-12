@@ -9,7 +9,6 @@ function formatRushRows(rushRows) {
   for (const row of rushRows) {
     const line = {
       categoryId: row.categoryId,
-      difficulty: row.difficulty,
       record: row._max.score,
       played: row._count._all,
     };
@@ -93,12 +92,11 @@ function computeRushAverages(rushRows) {
   const groups = {};
 
   for (const row of rushRows) {
-    const key = row.categoryId + '-' + row.difficulty;
+    const key = row.categoryId;
 
     if (groups[key] === undefined) {
       groups[key] = {
         categoryId: row.categoryId,
-        difficulty: row.difficulty,
         totalRecords: 0,
         players: 0,
       };
@@ -116,7 +114,6 @@ function computeRushAverages(rushRows) {
 
     const line = {
       categoryId: group.categoryId,
-      difficulty: group.difficulty,
       averageRecord: Math.round(average * 10) / 10,
       players: group.players,
     };
@@ -173,8 +170,8 @@ async function getOtherUserStats(currentUserId, userId, categoryId) {
   return getUserStats(userId, categoryId);
 }
 
-async function getGlobalStats(currentUserId, categoryId) {
-  const rushRows = await statsModel.findRushBestScores({ categoryId: categoryId, excludeUserId: currentUserId });
+async function getGlobalStats(categoryId) {
+  const rushRows = await statsModel.findRushBestScores({ categoryId: categoryId });
   const customRows = await statsModel.findCustomAttempts({ categoryId: categoryId });
 
   const rush = computeRushAverages(rushRows);
@@ -221,8 +218,8 @@ function formatLeaderboardRows(rushRows, users, currentUserId) {
   return { lines: result, me: me };
 }
 
-async function getLeaderboard(currentUserId, categoryId, difficulty, limit) {
-  const rushRows = await statsModel.findRushLeaderboard({ categoryId, difficulty });
+async function getLeaderboard(currentUserId, categoryId, limit) {
+  const rushRows = await statsModel.findRushLeaderboard({ categoryId: categoryId });
 
   const userIds = [];
   for (const row of rushRows) {
@@ -235,21 +232,15 @@ async function getLeaderboard(currentUserId, categoryId, difficulty, limit) {
     selectedCategory = categoryId;
   }
 
-  let selectedDifficulty = null;
-  if (difficulty !== undefined) {
-    selectedDifficulty = difficulty;
-  }
-
   const formattedRush = formatLeaderboardRows(rushRows, users, currentUserId);
 
   let leaderboard = formattedRush.lines;
   if (limit !== undefined) {
     leaderboard = leaderboard.slice(0, limit);
   }
-  
+
   return {
     categoryId: selectedCategory,
-    difficulty: selectedDifficulty,
     me: formattedRush.me,
     leaderboard: leaderboard  //a terme, ajouter custom
   };

@@ -29,10 +29,10 @@ function statsWhere({ categoryId, tagId, difficulty, mode, excludeUserId }) {
   return where;
 }
 
-async function findRushBestScores({ categoryId, tagId, excludeUserId }) {
+async function findRushBestScores({ categoryId, tagId }) {
   return prisma.quizAttempt.groupBy({
-    by: ['userId', 'categoryId', 'difficulty'],
-    where: statsWhere({ categoryId, tagId, mode: 'rush', excludeUserId }),
+    by: ['userId', 'categoryId'],
+    where: statsWhere({ categoryId, tagId, mode: 'rush' }),
     _max: { score: true },
   });
 }
@@ -83,10 +83,10 @@ async function findCategoriesByIds(ids) {
   });
 }
 
-async function findRushLeaderboard({ categoryId, difficulty }) {
+async function findRushLeaderboard({ categoryId }) {
   return prisma.quizAttempt.groupBy({
     by: ['userId'],
-    where: statsWhere({ categoryId, difficulty, mode: 'rush' }),
+    where: statsWhere({ categoryId: categoryId, mode: 'rush' }),
     _max: { score: true },
     orderBy: [{ _max: { score: 'desc' } }, { userId: 'asc' }],
   });
