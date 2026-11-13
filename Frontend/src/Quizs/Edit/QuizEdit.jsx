@@ -186,6 +186,10 @@ export function QuizEdit() {
             </form>
           </StyledDiv>
 
+
+          <StyledDiv outerClassName="w-full" className="gap-4 p-6">
+            <QuestionEdit quizId={id} onQuestionAdded={handleQuestionAdded} />
+          </StyledDiv>
           <StyledDiv outerClassName="w-full" className="gap-4 p-6">
             <h2 className="text-2xl font-bold">
               Questions ({questions.length})
@@ -240,12 +244,14 @@ export function QuizEdit() {
             )}
           </StyledDiv>
 
-          <StyledDiv outerClassName="w-full" className="gap-4 p-6">
-            <QuestionEdit quizId={id} onQuestionAdded={handleQuestionAdded} />
-          </StyledDiv>
-
           <StyledDiv outerClassName="w-full" className="p-4">
-            <div className="flex justify-center">
+            <div className="flex justify-between gap-4">
+              <StyledButton
+                variant="success"
+                onClick={() => navigate('/quiz/create')}
+              >
+                Valider le quiz
+              </StyledButton>
               <StyledButton
                 variant="danger"
                 onClick={handleDelete}
@@ -253,6 +259,7 @@ export function QuizEdit() {
               >
                 {isDeleting ? 'Suppression...' : 'Supprimer le quiz'}
               </StyledButton>
+
             </div>
           </StyledDiv>
         </div>

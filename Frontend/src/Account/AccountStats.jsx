@@ -120,6 +120,7 @@ export function AccountStats() {
           apiFetch('/api/statistics'),
           getAllCategories(),
         ]);
+        console.log(data);
         if (!cancelled) {
           setStats(data);
           setCategories(cats || []);
@@ -161,7 +162,7 @@ export function AccountStats() {
     }
     const best = Object.entries(byCategory).sort((a, b) => b[1] - a[1])[0];
     const bestCategory = best
-      ? categories.find(c => c.id === best[0])?.name || `Catégorie #${best[0]}`
+      ? categories.find(c => c.id == best[0])?.name || null
       : null;
 
     return { played, success, bestCategory, bestCategoryPlayed: best ? best[1] : 0 };

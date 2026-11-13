@@ -52,12 +52,12 @@ function LoginForm() {
 
     try {
       await login(email, password);
+      navigate('/');
+      navigate(0);
     } catch (err) {
       setError(err.error || 'Error');
     } finally {
       setIsSubmitting(false);
-      navigate('/');
-      navigate(0);
     }
   }
 

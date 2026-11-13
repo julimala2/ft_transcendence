@@ -72,6 +72,11 @@ export function OnlineMatchLobby() {
         setSearching(true);
     }
 
+    function cancelSearch() {
+        send('quiz', { type: 'leavePool' });
+        setSearching(false);
+    }
+
     return (
         <MainContainer>
             <PageContainer>
@@ -133,6 +138,7 @@ export function OnlineMatchLobby() {
                                 setSelectedThemeId(id);
                                 setCategory(null);
                             }}
+                            disabled={searching}
                         />
                         <StyledButton
                             variant="primary"
@@ -155,6 +161,20 @@ export function OnlineMatchLobby() {
                                 {searching ? 'Recherche en cours...' : 'Chercher un adversaire'}
                             </span>
                         </StyledButton>
+                        {searching &&
+                            <StyledButton
+                                variant="danger"
+                                className="flex flex-row items-center align-center justify-center max-w-100"
+                                onClick={cancelSearch}
+                            >
+                                <span className="flex items-center gap-2">
+                                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+                                        <path d="M18 6 6 18M6 6l12 12" />
+                                    </svg>
+                                    Annuler la recherche
+                                </span>
+                            </StyledButton>
+                        }
                         {error &&
                             <p className="w-full text-center font-bold text-red-400 bg-red-950/60 border-2 border-red-500 rounded-md p-2 shadow-[0px_0px_10px_2px_rgba(239,68,68,0.35)]">
                                 Erreur : {error}

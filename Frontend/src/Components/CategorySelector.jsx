@@ -7,6 +7,7 @@ export function CategorySelector({
   themes = null,
   selectedThemeId = null,
   onSelectTheme = null,
+  disabled = false,
 }) {
   // Un thème avec un tableau de catégories vide n'est pas affiché (cf. prisma/themes.json).
   // Si l'API ne renvoie pas le champ categories, on affiche le thème sans filtrer.
@@ -31,6 +32,7 @@ export function CategorySelector({
           <BlingButton
             onClick={() => onSelectTheme(null)}
             selected={selectedThemeId === null}
+            disabled={disabled}
           >
             Tous
           </BlingButton>
@@ -39,6 +41,7 @@ export function CategorySelector({
               key={theme.id}
               onClick={() => onSelectTheme(theme.id)}
               selected={selectedThemeId === theme.id}
+              disabled={disabled}
             >
               {theme.name}
             </BlingButton>
@@ -55,6 +58,7 @@ export function CategorySelector({
             innerClassName="h-40"
             onClick={() => onSelect(cat)}
             selected={selectedId === cat.id}
+            disabled={disabled}
           >
             {cat.name}
           </BlingButton>

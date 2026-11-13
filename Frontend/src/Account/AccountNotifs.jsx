@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   getNotifications,
   readAllNotifications,
@@ -36,6 +37,7 @@ function formatDate(dateStr) {
 
 export function AccountNotifs() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -121,6 +123,16 @@ export function AccountNotifs() {
 
   const unreadCount = notifications.filter(n => !n.is_read).length;
 
+  const handleSpecialNotifClick = async (notif) => {
+    await handleReadOne(notif);
+    const userId = notif.senderId || notif.userId || notif.fromUserId;
+    if (userId) {
+      navigate(`/profile/${userId}`);
+    }
+  };
+
+  const isSpecialType = (type) => ['friend_request', 'friend_accepted', 'achievement'].includes(type);
+
   return (
     <div className="w-full h-full min-h-0 flex flex-1 flex-col gap-2">
       <h2 className="font-bold text-xl">
@@ -145,6 +157,7 @@ export function AccountNotifs() {
                 notif={n}
                 onRead={handleReadOne}
                 onDelete={handleDeleteOne}
+                onSpecialClick={isSpecialType(n.type) ? handleSpecialNotifClick : null}
               />
             ))}
           </ListContainer>
@@ -170,8 +183,16 @@ export function AccountNotifs() {
   );
 }
 
-function NotifCard({ notif, onRead, onDelete }) {
+function NotifCard({ notif, onRead, onDelete, onSpecialClick }) {
   const unread = !notif.is_read;
+  const handleClick = () => {
+    if (onSpecialClick) {
+      onSpecialClick(notif);
+    } else {
+      onRead(notif);
+    }
+  };
+
   return (
     <li
       className={`flex w-full items-center justify-between gap-2 p-2 pl-3 pr-2 rounded-md border ${
@@ -179,13 +200,13 @@ function NotifCard({ notif, onRead, onDelete }) {
           ? 'bg-blue-900 border-amber-400 cursor-pointer'
           : 'bg-blue-950 border-gray-500 opacity-75 cursor-pointer'
       }`}
-      onClick={() => onRead(notif)}
+      onClick={handleClick}
       role="button"
       tabIndex={0}
       onKeyDown={e => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          onRead(notif);
+          handleClick();
         }
       }}
     >

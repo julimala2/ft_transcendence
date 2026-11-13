@@ -74,13 +74,15 @@ return variant === 'bling' ? (
 }
 
 
-export function BlingButton({onClick,children,selected,className = '',innerClassName = ''}){
+export function BlingButton({onClick,children,selected,className = '',innerClassName = '',disabled = false}){
   
-  const textClass = `' text-xl md:text-2xl font-bold md:text-xl text-white '`
+  const textClass = `' text-xl md:text-2xl font-bold md:text-xl text-white disabled:text-gray-500 disabled:opacity-90 disabled:cursor-not-allowed disabled:select-none '`
   const bgClass = `' bg-gradient-to-tl from-blue-950 via-blue-900 to-blue-950 
     hover:via-blue-700
+    disabled:hover:via-blue-900
     shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] 
-    hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)] '`
+    hover:shadow-[0px_0px_18px_6px_rgba(234,_179,_8,_0.5)]
+    disabled:hover:shadow-[0px_0px_10px_2px_rgba(234,_179,_8,_0.5)] '`
   const bgClassSelected = `' bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 
     shadow-[0px_0px_16px_10px_rgba(234,_179,_8,_0.5)] 
     inset-shadow-[0px_0px_10px_4px_rgba(234,_179,_8,_0.5)] '`;
@@ -89,11 +91,11 @@ export function BlingButton({onClick,children,selected,className = '',innerClass
   const baseClass = `' w-full flex-1 h-10 rounded-md min-w-0 flex flex-row items-center
     justify-center pl-4 pr-4  ${textClass}`;
   const normalClass = `' ${baseClass} ${innerClassName} ${selected ? bgClassSelected : bgClass} '`
-  const outerDiv = `' ${className} ${selected && 'scale-95'} p-0.75 bg-gradient-to-br from-amber-600 via-amber-200 to-amber-500 rounded-md '`;
+  const outerDiv = `' ${className} ${selected && 'scale-95'} p-0.75 bg-gradient-to-br from-amber-600 via-amber-200 to-amber-500 rounded-md disabled:opacity-50 disabled:cursor-not-allowed '`;
   
   return(
     <div className={outerDiv}>
-    <button onClick={onClick} className={normalClass}>
+    <button onClick={disabled ? undefined : onClick} className={normalClass} disabled={disabled}>
       {children}
     </button>
     </div>
