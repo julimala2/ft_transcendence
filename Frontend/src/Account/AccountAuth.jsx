@@ -57,7 +57,7 @@ function LoginForm() {
     } finally {
       setIsSubmitting(false);
       navigate('/');
-      navigate(0);
+      // navigate(0);
     }
   }
 

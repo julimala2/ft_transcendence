@@ -35,6 +35,7 @@ export function OnlineMenu() {
         }
 
         const roomCreated = (data) => {
+            console.log("roomcreated");
             navigate(`/room/${data.roomId}`);
         }
         const roomJoined = (data) => {
@@ -46,6 +47,9 @@ export function OnlineMenu() {
         }
 
         on('profile',handleProfile);
+        on('roomCreated',roomCreated);
+        on('roomJoined',roomJoined);
+        on('errorRoom',errorRoom);
 
         send('wsProfile');
 
