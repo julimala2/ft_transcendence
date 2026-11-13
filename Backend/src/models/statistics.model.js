@@ -62,7 +62,7 @@ function userStatsWhere({ userId, categoryId, mode }) {
 
 async function findUserRushRecords({ userId, categoryId }) {
   return prisma.quizAttempt.groupBy({
-    by: ['categoryId', 'difficulty'],
+    by: ['categoryId'],
     where: userStatsWhere({ userId, categoryId, mode: 'rush' }),
     _max: { score: true },
     _count: { _all: true },
