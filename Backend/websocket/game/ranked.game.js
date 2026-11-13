@@ -24,7 +24,7 @@ function rankedGame(data, ws) {
         const duelId = Math.random().toString(36).substr(2, 6).toUpperCase();
         ws.duelId = duelId;
         opponent.duelId = duelId;
-        leavePool(opponent);
+        leavePool(null, opponent);
         duelRooms[duelId] = {
             phase: "starting",
             members: [ws, opponent],
@@ -69,7 +69,7 @@ async function startDuel(duelId) {
     const available = await findActiveQuestionIds({categoryId : duel.categoryId });
     duel.questionsId = shuffle(available).slice(0, NB_QUESTIONS);
     duel.members.forEach(player => { 
-      duel.scores.set(player.userId, 0);
+      duel.scores.set(player.username, 0);
     });
     await sendQuestion(duelId);
     } catch (error) {
