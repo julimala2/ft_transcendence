@@ -35,6 +35,7 @@ export function QuizPanel({className = '',gameState,send,time}){
     return(
         <>
         <StyledDiv outerClassName={`${className} w-full min-h-0 flex-1`} className="flex flex-col gap-2 pt-4 pb-4 w-1/2 justify-center-safe">                    
+            
             {/* Voting phase TODO: Visual Time  */}
             {(!gameState || (gameState.phase === "vote")) && ( <>
             {(gameState && gameState.quizList) ? (
@@ -60,25 +61,27 @@ export function QuizPanel({className = '',gameState,send,time}){
             </>)}
 
             {/* End vote phase */}
-            {(gameState && (gameState.phase === "endVote") && (<>
+            {(gameState && (gameState.phase === "endVote") && (
+            <div className="w-full h-full overflow-y-scroll flex flex-col md:pl-10 md:pr-10 gap-3 justify-center items-center">
                 <p> Resultat des votes </p>
                 <StyledButton>{gameState.winner.categoryName}</StyledButton>
                 <p> a gagne avec {gameState.winner.nbVotes} votes !</p>
                 <p> Le quizz commence dans {Math.ceil(time/1000)} secondes</p>
-            </>))}
+            </div>))}
 
             {/* Question phase */}
             {gameState?.phase === "question" && ( <>
-            <div className="w-full flex flex-col md:pl-10 md:pr-10 gap-3 justify-center items-center">
+            <div className="w-full h-full overflow-y-scroll flex flex-col md:pl-10 md:pr-10 gap-3 justify-center items-center">
                 <p className="text-xl font-bold"> {Math.ceil(time/1000)} secondes restantes.</p>
                 <p className="text-xl font-bold rounded-xl md:p-10 bg-blue-900"> Question : {gameState?.question.text} </p>
                 {gameState.question.image && (
-                    <div>
+                <div className="w-full flex-1 min-h-0 flex items-center justify-center">
                     <img
-                        src={`${import.meta.env.VITE_API_URL}/quiz-images/${gameState.question.image.src}`}
-                        alt={gameState.question.image.alt || 'Image de la question'}
+                    className="max-w-full max-h-full object-contain"
+                    src={`${import.meta.env.VITE_API_URL}/quiz-images/${gameState.question.image.src}`}
+                    alt={gameState.question.image.alt || 'Image de la question'}
                     />
-                    </div>
+                </div>
                 )}
 
                 <div className="flex flex-col w-full max-w-100 align-center justify-center gap-3">

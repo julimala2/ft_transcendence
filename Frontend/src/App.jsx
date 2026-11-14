@@ -24,6 +24,7 @@ import { OnlineMatchLobby } from './Quizs/Online/OnlineMatchLobby';
 import { OnlineMenu } from './Quizs/Online/OnlineMenu';
 import { OnlineRoom } from './Quizs/Online/OnlineRoom';
 import { Chat } from './Hooks/Chat';
+import { OnlineMatch } from './Quizs/Online/OnlineMatch';
 
 export default function App() {
   const location = useLocation();
@@ -65,6 +66,7 @@ export default function App() {
             {/* Test Page ! */}
             <Route path ="/testpage" element={<TestPage />} />
             <Route path ="/chat" element={<Chat/>} />
+            <Route path ="/quiz/match" element={<OnlineMatch/>}/>
           </Routes>
         </MainContainer>
 

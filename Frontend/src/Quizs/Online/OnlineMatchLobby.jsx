@@ -23,8 +23,20 @@ export function OnlineMatchLobby() {
     const [category, setCategory] = useState(null);
     const [selectedThemeId, setSelectedThemeId] = useState(null);
     const [searching, setSearching] = useState(false);
+    const [duelState, setDuelState] = useState(null);
 
     useEffect(() => {
+
+        const duelState = (data) => {
+            if(data){
+                setDuelState(data);
+                if(data.phase && data.phase == "starting"){
+                    navigate('/quiz/match');
+                }
+            }
+        }
+
+
         let cancelled = false;
 
         async function load() {
@@ -50,7 +62,9 @@ export function OnlineMatchLobby() {
 
         load();
 
+        on('duelState',duelState);
         return () => {
+            off('duelState',duelState);
             cancelled = true;
         };
     }, []);
