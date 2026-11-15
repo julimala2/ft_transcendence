@@ -120,7 +120,6 @@ export function AccountStats() {
           apiFetch('/api/statistics'),
           getAllCategories(),
         ]);
-        console.log(data);
         if (!cancelled) {
           setStats(data);
           setCategories(cats || []);

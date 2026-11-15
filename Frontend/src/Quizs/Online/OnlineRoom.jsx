@@ -9,6 +9,8 @@ import MouseTracker from '../../Components/MouseTracker';
 import { Cursor } from '../../Components/Cursor';
 import { QuizPanel } from './QuizPanel';
 import { ChatPanel } from './ChatPanel';
+import { getAllCategories } from '../../Api/quiz.jsx';
+import { getAllThemes } from '../../Api/themes.jsx';
 
 //TODO : -Empecher l'envoi d'un message vide DONE
 // -Recuperer les messages avec roomInfo et les afficher DONE
@@ -41,10 +43,33 @@ export function OnlineRoom(){
     const [gameState,setGameState] = useState();
     const [mousePosition,setMousePosition] = useState({});
     const [cursors, setCursors] = useState({});
+    const [categories, setCategories] = useState([]);
+    const [themes, setThemes] = useState([]);
 
     // Quit too fast before user has time to load
     // if(!user)
     //     navigate("/");
+
+    useEffect(() => {
+        let cancelled = false;
+        async function loadData() {
+            try {
+                const [cats, ths] = await Promise.all([
+                    getAllCategories(),
+                    getAllThemes(),
+                ]);
+                if (!cancelled) {
+                    setCategories(cats);
+                    setThemes(ths);
+                    setLoading(false);
+                }
+            } catch (err) {
+                console.error('Erreur chargement données:', err);
+            }
+        }
+        loadData();
+        return () => { cancelled = true; };
+    }, []);
 
     useEffect(() => {
         if(!connected) return;
@@ -179,7 +204,7 @@ export function OnlineRoom(){
                         </StyledDiv>
 
                         <div className="flex flex-1 min-h-0 w-full flex-col md:gap-3 md:flex-row">
-                            <QuizPanel className={panel('quiz')} gameState={gameState} send={send} time={time}/>
+                            <QuizPanel className={panel('quiz')} gameState={gameState} send={send} time={time} categories={categories} themes={themes}/>
                             <ChatPanel className={panel('chat')} messages={messages} sendMessage={sendMessage} roomId={roomId} members={members}/>
                         </div>
                         <nav className="md:hidden flex flex-row w-full gap-3">

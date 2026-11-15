@@ -26,7 +26,7 @@ export function GameSocketProvider({ children }) {
 
     ws.onmessage = (event) => {
       const message = JSON.parse(event.data);
-      console.log('WS <-', message);
+      // console.log('WS <-', message);
       setMessages(prev => [...prev, message]);
 
       switch(message.type){

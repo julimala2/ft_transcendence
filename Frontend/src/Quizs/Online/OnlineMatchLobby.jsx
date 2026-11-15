@@ -6,11 +6,11 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { getAllCategories, getAllQuizs } from '../../Api/quiz.jsx';
 import { getAllThemes } from '../../Api/themes.jsx';
 import { StyledButton } from '../../Components/Buttons';
-import { CategorySelector } from '../../Components/CategorySelector.jsx';
 import { MainContainer, PageContainer, StyledDiv } from '../../Components/Containers';
 import { StyledSeparator } from '../../Components/Separators';
 import { useSocket } from '../../Hooks/SocketProvider';
 import { useAuth } from '../../Hooks/useAuth';
+import { QuizSelector } from './QuizSelector';
 
 function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean }) {
     return (
@@ -372,7 +372,7 @@ export function OnlineMatchLobby() {
             )
             :
             (
-                <div className="flex flex-col items-center gap-6 w-full max-w-4xl min-h-0 max-h-full overflow-y-auto p-1">
+                <div className="flex flex-col items-center gap-6 w-full min-h-0 max-h-full overflow-y-auto p-1">
                     {duelState ? (
                         <DuelDisplay
                             duelState={duelState}
@@ -399,89 +399,22 @@ export function OnlineMatchLobby() {
                         transition={{ duration: 0.4, delay: 0.1 }}
                         className="w-full"
                     >
-                    <StyledDiv className="flex flex-col gap-5 p-6 w-full items-center justify-center ">
-                        <div className="flex items-center gap-2 w-full max-w-sm">
-                            <StyledButton
-                                variant={mode === 'categories' ? 'primary' : 'secondary'}
-                                onClick={() => {
-                                    setMode('categories');
-                                    setSelectedQuiz(null);
-                                    setCategory(null);
-                                    setSelectedThemeId(null);
-                                }}
-                                className="flex-1"
-                            >
-                                Catégories
-                            </StyledButton>
-                            <StyledButton
-                                variant={mode === 'quizs' ? 'primary' : 'secondary'}
-                                onClick={() => {
-                                    setMode('quizs');
-                                    setCategory(null);
-                                    setSelectedQuiz(null);
-                                    setSelectedThemeId(null);
-                                }}
-                                className="flex-1"
-                            >
-                                Communauté
-                            </StyledButton>
-                        </div>
-                        
-                        {mode === 'categories' && (
-                            <>
-                                <div className="flex items-center justify-center gap-3">
-                                    <svg className="w-6 h-6 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                        <path d="M4 6h16M4 12h16M4 18h16" />
-                                    </svg>
-                                    <p className="font-bold text-xl bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">Choisis une catégorie</p>
-                                </div>
-                                <CategorySelector
-                                    categories={categories}
-                                    selectedId={category?.id ?? null}
-                                    onSelect={cat => setCategory(cat)}
-                                    themes={themes}
-                                    selectedThemeId={selectedThemeId}
-                                    onSelectTheme={id => {
-                                        setSelectedThemeId(id);
-                                        setCategory(null);
-                                    }}
-                                    disabled={searching}
-                                />
-                            </>
-                        )}
-                        
-                        {mode === 'quizs' && (
-                            <>
-                                <div className="flex items-center justify-center gap-3">
-                                    <svg className="w-6 h-6 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                        <path d="M4 6h16M4 12h16M4 18h16" />
-                                    </svg>
-                                    <p className="font-bold text-xl bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">Choisis un quiz public</p>
-                                </div>
-                                {quizsLoading ? (
-                                    <p className="text-muted text-center">Chargement des quizs...</p>
-                                ) : quizs.length === 0 ? (
-                                    <p className="text-muted text-center">Aucun quiz public disponible</p>
-                                ) : (
-                                    <ul className="flex flex-col gap-3 w-full max-h-64 overflow-y-auto">
-                                        {quizs.map(quiz => (
-                                            <li
-                                                key={quiz.id}
-                                                className={`flex items-center justify-between gap-3 bg-gray-800 rounded-2xl p-4 cursor-pointer ${selectedQuiz?.id === quiz.id ? 'border-2 border-amber-400' : ''}`}
-                                                onClick={() => setSelectedQuiz(quiz)}
-                                            >
-                                                <div className="flex flex-col gap-1 min-w-0">
-                                                    <p className="font-bold truncate">{quiz.title}</p>
-                                                    <p className="text-sm text-muted">
-                                                        par {quiz.owner?.username || 'inconnu'} · {quiz._count?.questions ?? 0} question(s)
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </>
-                        )}
+                    <StyledDiv className="flex flex-col gap-5 p-6 w-full items-center justify-center">
+                        <QuizSelector
+                            categories={categories}
+                            themes={themes}
+                            quizs={quizs}
+                            quizsLoading={quizsLoading}
+                            mode={mode}
+                            selectedCategory={category}
+                            selectedThemeId={selectedThemeId}
+                            selectedQuiz={selectedQuiz}
+                            disabled={searching}
+                            onModeChange={setMode}
+                            onCategorySelect={setCategory}
+                            onThemeSelect={setSelectedThemeId}
+                            onQuizSelect={setSelectedQuiz}
+                        />
                         <StyledButton
                             variant="primary"
                             className="flex flex-row items-center align-center justify-center max-w-100"

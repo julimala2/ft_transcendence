@@ -44,6 +44,7 @@ export default function App() {
             <Route path="/account" element={<Navigate to="/" replace />} />
             <Route path="/game/:roomId" element={<GamePage />} />
             <Route path="/play/attempt/:attemptId?" element={<AttemptPage />} />
+            <Route path="/play/offline" element={<OfflineMenu />} />
             <Route path="/play/offline/quick" element={<QuickStart />} />
             <Route path="/play/offline/custom" element={<CustomStart />} />
             <Route

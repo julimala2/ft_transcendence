@@ -1,12 +1,13 @@
 import { StyledSeparator } from "../../Components/Separators";
 import { StyledButton } from "../../Components/Buttons";
-import { CategorySelector } from "./CategorySelector";
 import { LengthSelector } from "./LengthSelector";
 import { StyledDiv } from "../../Components/Containers"
 import { useState, useEffect, useRef } from 'react';
+import { QuizSelector } from './QuizSelector';
 
-export function QuizPanel({className = '',gameState,send,time}){
-    const [category, setCategory] = useState("");
+export function QuizPanel({className = '', gameState, send, time, categories = [], themes = []}){
+    const [category, setCategory] = useState(null);
+    const [selectedThemeId, setSelectedThemeId] = useState(null);
     const [length, setLength] = useState(5);
     const [answeredId, setAnsweredId] = useState(null);
 
@@ -17,7 +18,7 @@ export function QuizPanel({className = '',gameState,send,time}){
     }, [phase]);
 
     const sendQuizProposition = () => {
-        if(category.id != ''){
+        if(category && category.id){
             send('quiz', {type : 'proposeQuiz', categoryId : category.id, count: length });
         }
     }
@@ -51,7 +52,15 @@ export function QuizPanel({className = '',gameState,send,time}){
             {((gameState && gameState.phase === "vote") && (
                 <p className="font-bold">Le vote se termine dans {Math.ceil(gameState.timer/1000)} secondes !</p>
             ))}
-            <CategorySelector onChange={setCategory} value={category} />
+            <QuizSelector
+                categories={categories}
+                themes={themes}
+                mode="categories"
+                selectedCategory={category}
+                selectedThemeId={selectedThemeId}
+                onCategorySelect={setCategory}
+                onThemeSelect={setSelectedThemeId}
+            />
             <div className="flex flex-col items-center gap-3">
                 <StyledSeparator/>
                 <LengthSelector value={length} onChange={setLength}/>
