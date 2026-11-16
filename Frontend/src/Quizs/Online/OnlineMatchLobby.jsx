@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 import { motion } from 'motion/react';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -44,13 +44,9 @@ function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onA
                                     <p className="text-muted text-xs font-semibold uppercase tracking-wide">
                                         Temps restant
                                     </p>
-                                    {opponentAnswered ? (
-                                        <p className="text-3xl font-extrabold text-danger">5s</p>
-                                    ) : (
                                         <p className={`text-3xl font-extrabold ${time && time <= 5000 ? 'text-danger' : 'text-white'}`}>
                                             {time ? Math.ceil(time / 1000) : 20}s
                                         </p>
-                                    )}
                                 </div>
                                 <div className="flex-1 bg-gray-800 rounded-2xl p-4 flex flex-col items-center gap-1">
                                     <p className="text-muted text-xs font-semibold uppercase tracking-wide">
@@ -183,6 +179,35 @@ function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onA
     );
 }
 
+function MatchFoundDisplay({ timeLeft }) {
+    return (
+        <StyledDiv outerClassName="w-full max-w-2xl" className="gap-3 p-6">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-full flex flex-col items-center gap-5"
+            >
+                <p className="font-[Slackey] text-3xl md:text-4xl text-center bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent drop-shadow-[0px_0px_14px_rgba(234,179,8,0.45)]">
+                    Adversaire trouvé !
+                </p>
+                <div className="bg-gray-800 rounded-2xl p-4 flex flex-col items-center gap-1 w-full max-w-xs">
+                    <p className="text-muted text-xs font-semibold uppercase tracking-wide">
+                        Début du duel dans
+                    </p>
+                    <p className={`text-4xl font-extrabold ${timeLeft !== null && timeLeft <= 1000 ? 'text-danger' : 'text-white'}`}>
+                        {timeLeft !== null ? Math.ceil(timeLeft / 1000) : 3}s
+                    </p>
+                </div>
+                <svg className="w-8 h-8 animate-spin text-amber-400" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-90" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.4 0 0 5.4 0 12h4z" />
+                </svg>
+            </motion.div>
+        </StyledDiv>
+    );
+}
+
 export function OnlineMatchLobby() {
     const navigate = useNavigate();
     const location = useLocation();
@@ -203,10 +228,23 @@ export function OnlineMatchLobby() {
     const [quizs, setQuizs] = useState([]);
     const [selectedQuiz, setSelectedQuiz] = useState(null);
     const [quizsLoading, setQuizsLoading] = useState(false);
+    const [matchFound, setMatchFound] = useState(null);
+    const [matchFoundTimeLeft, setMatchFoundTimeLeft] = useState(null);
+    const matchFoundIntervalRef = useRef(null);
+
+    function clearMatchFound() {
+        if (matchFoundIntervalRef.current) {
+            clearInterval(matchFoundIntervalRef.current);
+            matchFoundIntervalRef.current = null;
+        }
+        setMatchFound(null);
+        setMatchFoundTimeLeft(null);
+    }
 
     useEffect(() => {
         const duelStateHandler = (data) => {
             if(data){
+                clearMatchFound();
                 setDuelState(data);
                 if(data.phase && data.phase == "starting"){
                     setHasAnswered(false);
@@ -214,6 +252,26 @@ export function OnlineMatchLobby() {
                     setOpponentAnswered(false);
                 }
             }
+        }
+
+        const matchFoundedHandler = (data) => {
+            if (!data || typeof data.time !== 'number') return;
+            setSearching(false);
+            setMatchFound(data);
+            setMatchFoundTimeLeft(data.time);
+            if (matchFoundIntervalRef.current) {
+                clearInterval(matchFoundIntervalRef.current);
+            }
+            const startedAt = Date.now();
+            const total = data.time;
+            matchFoundIntervalRef.current = setInterval(() => {
+                const left = total - (Date.now() - startedAt);
+                if (left <= 0) {
+                    clearMatchFound();
+                } else {
+                    setMatchFoundTimeLeft(left);
+                }
+            }, 100);
         }
 
         const timeHandler = (data) => {
@@ -252,12 +310,18 @@ export function OnlineMatchLobby() {
         load();
 
         on('duelState', duelStateHandler);
+        on('matchFounded', matchFoundedHandler);
         on('time', timeHandler);
         on('duelAnswer', duelAnswerHandler);
         return () => {
             off('duelState', duelStateHandler);
+            off('matchFounded', matchFoundedHandler);
             off('time', timeHandler);
             off('duelAnswer', duelAnswerHandler);
+            if (matchFoundIntervalRef.current) {
+                clearInterval(matchFoundIntervalRef.current);
+                matchFoundIntervalRef.current = null;
+            }
             cancelled = true;
         };
     }, []);
@@ -318,6 +382,7 @@ export function OnlineMatchLobby() {
     }
 
     function cleanDuelState() {
+        clearMatchFound();
         setDuelState(null);
         setHasAnswered(false);
         setTime(null);
@@ -383,6 +448,8 @@ export function OnlineMatchLobby() {
                             onAnswer={handleAnswer}
                             onClean={cleanDuelState}
                         />
+                    ) : matchFound ? (
+                        <MatchFoundDisplay timeLeft={matchFoundTimeLeft} />
                     ) : (
                         <>
                         <motion.h1
