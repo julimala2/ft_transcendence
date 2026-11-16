@@ -58,10 +58,10 @@ export function QuizSelector({
     const sortedCategories = [...themeCategories, ...otherCategories];
 
     return (
-        <div className="w-full flex-col flex gap-3 overflow-y-scroll">
+        <div className="w-full flex-col items-center flex gap-3 overflow-y-scroll">
             {/* Mode selection buttons - only show if community mode is available */}
             {showCommunityMode && (
-                <div className="flex items-center flex-row gap-2 w-full">
+                <div className="flex items-center flex-row gap-2 w-full max-w-4xl">
                     <StyledButton
                         variant={mode === 'categories' ? 'primary' : 'secondary'}
                         onClick={() => {
