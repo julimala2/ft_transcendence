@@ -20,6 +20,7 @@ function rankedGame(data, ws) {
 
     const opponent = pool.get(data.category);
 
+    console.log("Category Id:", data.category);
     if (opponent && opponent != ws) {     //adversaire trouvé -> creer duelroom
         const duelId = Math.random().toString(36).substr(2, 6).toUpperCase();
         ws.duelId = duelId;
@@ -37,6 +38,7 @@ function rankedGame(data, ws) {
             correctAnswer: null,
             timer: null,
             interval: null,
+            rematch: [],
           };
           duelcast(duelId, {type: 'matchFounded', data: { time: 3000 }});
           setTimeout(() => {
@@ -151,16 +153,16 @@ function endDuel(duelId)
   duel.phase = "endDuel";
   sendDuelState(duelId);
   //ENVOYER LES RESULTATS AUX STATS
-  duel.members.forEach(player => {player.duelId = null; });
-  delete duelRooms[duelId];
 }
 
 function leaveDuel(message, ws) 
 {
   const duel = duelRooms[ws.duelId];
+  console.log("leaveDuel start",duel, ws.duelId, duel?.members?.length);
   if (!duel) { return; }
   duel.members = duel.members.filter(player => player !== ws);
   ws.send(JSON.stringify({ type:'leavedDuel'}));
+  console.log("leavedDuel sent",duel.members.length);
   if (duel.members.length === 0)
     delete duelRooms[ws.duelId];
   else {
@@ -168,6 +170,29 @@ function leaveDuel(message, ws)
   }
   ws.duelId = null;
 }
+
+//front -> rematchRequest
+//if room pas vide, duelcast rematchRequest
+//front -> rematchAccepted
+//back -> relancer quiz sur la pool
+
+function rematchRequest(data, ws)
+{
+  const duel = duelRooms[ws.duelId];
+  if (!duel) return ;
+  if (duel.rematch.length === 1 && !duel.rematch.includes(ws))
+  {
+    //reset le duelRoom (score, question index etc)
+    startDuel(ws.duelId);
+    return;
+  }
+  else
+  {
+    duel.rematch.push(ws);
+    duelcast(ws.duelId, {type: 'rematchRequest'}, ws);
+  }
+}
+
 /**********
 *  UTILS  *
 ***********/
@@ -225,4 +250,4 @@ function duelcast(duelId, data, except = null)
   });
 }
 
-module.exports = {rankedGame, rankedAnswer, requestDuelState, leavePool };
+module.exports = {rankedGame, rankedAnswer, requestDuelState, rematchRequest, leavePool, leaveDuel };

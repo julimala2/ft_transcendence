@@ -12,7 +12,7 @@ import { useSocket } from '../../Hooks/SocketProvider';
 import { useAuth } from '../../Hooks/useAuth';
 import { QuizSelector } from './QuizSelector';
 
-function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean, onRematch }) {
+function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean, handleRematchRequest, playerLeft, rematchRequested }) {
     return (
         <StyledDiv outerClassName="w-full max-w-2xl" className="gap-3 p-6">
                     {duelState.phase === "starting" && (
@@ -154,7 +154,7 @@ function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onA
                             className="w-full flex flex-col items-center gap-5"
                         >
                             <div className="bg-gray-800 rounded-2xl p-6 flex flex-col items-center gap-4 w-full">
-                                <p className="text-muted text-sm font-semibold uppercase tracking-wide">
+                                <p className="font-[Slackey] text-4xl md:text-5xl text-center bg-gradient-to-br from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent drop-shadow-[0px_0px_14px_rgba(234,179,8,0.45)]">
                                     Score final
                                 </p>
                                 <div className="flex flex-row w-full gap-3">
@@ -168,12 +168,13 @@ function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onA
                                     ))}
                                 </div>
                             </div>
-                            <div className="flex justify-center">
+                            <div className="flex gap-3 justify-center">
                                 <StyledButton onClick={onClean}>
                                     Retour au lobby
                                 </StyledButton>
-                                <StyledButton variant="danger" onClick={onRematch}>
-                                    Revanche
+                                
+                                <StyledButton variant="danger" onClick={handleRematchRequest} disabled={playerLeft}>
+                                    {rematchRequested ? "Accepter la revanche" : "Demander une revanche"}
                                 </StyledButton>
                             </div>
                         </motion.div>
@@ -234,6 +235,8 @@ export function OnlineMatchLobby() {
     const [matchFound, setMatchFound] = useState(null);
     const [matchFoundTimeLeft, setMatchFoundTimeLeft] = useState(null);
     const matchFoundIntervalRef = useRef(null);
+    const [playerLeft,setPlayerLeft] = useState(false);
+    const [rematchRequested,setRematchRequested] = useState(false);
 
     function clearMatchFound() {
         if (matchFoundIntervalRef.current) {
@@ -250,6 +253,7 @@ export function OnlineMatchLobby() {
                 clearMatchFound();
                 setDuelState(data);
                 if(data.phase && data.phase == "starting"){
+                    setRematchRequested(false);
                     setHasAnswered(false);
                     setSearching(false);
                     setOpponentAnswered(false);
@@ -277,8 +281,12 @@ export function OnlineMatchLobby() {
             }, 100);
         }
 
-        const rematchHandler = (data) => {
+        const playerLeavedHandler = () =>{
+            setPlayerLeft(true);
+        }
 
+        const rematchRequestHandler = () => {
+            setRematchRequested(true);
         }
 
         const timeHandler = (data) => {
@@ -320,17 +328,20 @@ export function OnlineMatchLobby() {
         on('matchFounded', matchFoundedHandler);
         on('time', timeHandler);
         on('duelAnswer', duelAnswerHandler);
-        on('rematchRequest',rematchHandler);
+        on('rematchRequest',rematchRequestHandler);
+        on('playerLeaved',playerLeavedHandler);
+        on('rematchRequest',rematchRequestHandler);
         return () => {
             off('duelState', duelStateHandler);
             off('matchFounded', matchFoundedHandler);
             off('time', timeHandler);
             off('duelAnswer', duelAnswerHandler);
-            off('rematchRequest',rematchHandler);
+            off('rematchRequest',rematchRequestHandler);
             if (matchFoundIntervalRef.current) {
                 clearInterval(matchFoundIntervalRef.current);
                 matchFoundIntervalRef.current = null;
             }
+            cleanDuelState;
             cancelled = true;
         };
     }, []);
@@ -396,7 +407,9 @@ export function OnlineMatchLobby() {
         setDuelState(null);
         setHasAnswered(false);
         setTime(null);
-        send('quiz', {type :'leavePool'});
+        setPlayerLeft(false);
+        setRematchRequested(false);
+        send('quiz', {type :'leaveDuel', data :'' });
     }
 
     function searchOpponent() {
@@ -417,6 +430,10 @@ export function OnlineMatchLobby() {
         setSearching(false);
         setSelectedQuiz(null);
         setCategory(null);
+    }
+
+    function handleRematchRequest() {
+        send('quiz', {type : 'rematchRequest', data:''});
     }
 
     return (
@@ -458,6 +475,9 @@ export function OnlineMatchLobby() {
                             user={user}
                             onAnswer={handleAnswer}
                             onClean={cleanDuelState}
+                            playerLeft={playerLeft}
+                            handleRematchRequest={handleRematchRequest}
+                            rematchRequested={rematchRequested}
                         />
                     ) : matchFound ? (
                         <MatchFoundDisplay timeLeft={matchFoundTimeLeft} />
