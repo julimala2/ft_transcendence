@@ -12,7 +12,7 @@ import { useSocket } from '../../Hooks/SocketProvider';
 import { useAuth } from '../../Hooks/useAuth';
 import { QuizSelector } from './QuizSelector';
 
-function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean }) {
+function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean, onRematch }) {
     return (
         <StyledDiv outerClassName="w-full max-w-2xl" className="gap-3 p-6">
                     {duelState.phase === "starting" && (
@@ -172,6 +172,9 @@ function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onA
                                 <StyledButton onClick={onClean}>
                                     Retour au lobby
                                 </StyledButton>
+                                <StyledButton variant="danger" onClick={onRematch}>
+                                    Revanche
+                                </StyledButton>
                             </div>
                         </motion.div>
                     )}
@@ -274,6 +277,10 @@ export function OnlineMatchLobby() {
             }, 100);
         }
 
+        const rematchHandler = (data) => {
+
+        }
+
         const timeHandler = (data) => {
             setTime(data);
         }
@@ -313,11 +320,13 @@ export function OnlineMatchLobby() {
         on('matchFounded', matchFoundedHandler);
         on('time', timeHandler);
         on('duelAnswer', duelAnswerHandler);
+        on('rematchRequest',rematchHandler);
         return () => {
             off('duelState', duelStateHandler);
             off('matchFounded', matchFoundedHandler);
             off('time', timeHandler);
             off('duelAnswer', duelAnswerHandler);
+            off('rematchRequest',rematchHandler);
             if (matchFoundIntervalRef.current) {
                 clearInterval(matchFoundIntervalRef.current);
                 matchFoundIntervalRef.current = null;
@@ -381,11 +390,13 @@ export function OnlineMatchLobby() {
         send('quiz', { type: 'rankedAnswer', answerId: answerId });
     }
 
+
     function cleanDuelState() {
         clearMatchFound();
         setDuelState(null);
         setHasAnswered(false);
         setTime(null);
+        send('quiz', {type :'leavePool'});
     }
 
     function searchOpponent() {
