@@ -43,13 +43,14 @@ function rankedGame(data, ws) {
             startDuel(duelId);
           }, 3000);
     }
-    else {     // ajouter ws a la pool
+    else { 
         pool.set(data.category, ws);
         ws.poolCategory = data.category;
     }
 }
 
-function leavePool(data, ws) {
+function leavePool(data, ws)
+{
   if (ws.poolCategory && pool.get(ws.poolCategory) === ws) {
     pool.delete(ws.poolCategory);
   }
@@ -59,9 +60,9 @@ function leavePool(data, ws) {
 /******************
  *      GAME      *
  ******************/ 
-// temps de reponse = 20sec -> des que un joueur repond 5sec restante pour l'autre joueur 
 
-async function startDuel(duelId) {
+async function startDuel(duelId)
+{
 
   const duel = duelRooms[duelId];
   if (!duel) { return; }
@@ -79,7 +80,8 @@ async function startDuel(duelId) {
     }
 }
 
-async function sendQuestion(duelId) {
+async function sendQuestion(duelId)
+{
   const duel = duelRooms[duelId];
   if (!duel) { return; }
 
@@ -99,7 +101,8 @@ async function sendQuestion(duelId) {
   duelTimer(duelId, TIME_TO_ANSWER, revealAnswers);
 }
 
-function rankedAnswer(data, ws){
+function rankedAnswer(data, ws)
+{
   const duelId = ws.duelId;
   if (!duelRooms[duelId] || duelRooms[duelId].phase !== 'question' ) {
      return; }
@@ -111,7 +114,6 @@ function rankedAnswer(data, ws){
   duelcast(duelId, {type: 'duelAnswer', data: { type:'hasAnswer', user: ws.username }});
   if (duelRooms[duelId].answered.size === 1 && duelRooms[duelId].timer > 5000)
   {
-    console.log("CHEEEEEH");
     clearInterval(duelRooms[duelId].interval);
     duelTimer(duelId, 5000, revealAnswers);
   }
@@ -122,7 +124,8 @@ function rankedAnswer(data, ws){
   }
 }
 
-function revealAnswers(duelId){
+function revealAnswers(duelId)
+{
   const duel = duelRooms[duelId];
   if (!duel) { return; }
 
@@ -142,18 +145,35 @@ function revealAnswers(duelId){
     duelTimer(duelId, 5000, sendQuestion); }
 }
 
-function endDuel(duelId){ 
+function endDuel(duelId)
+{ 
   const duel = duelRooms[duelId];
   duel.phase = "endDuel";
-  // retourLobby => leaveDuel
-  //re
-  //ENVOYER LES RESULTATS AUX STATS
   sendDuelState(duelId);
+  //ENVOYER LES RESULTATS AUX STATS
   duel.members.forEach(player => {player.duelId = null; });
   delete duelRooms[duelId];
 }
 
-function duelTimer(duelId, time, funct) {
+function leaveDuel(message, ws) 
+{
+  const duel = duelRooms[ws.duelId];
+  if (!duel) { return; }
+  duel.members = duel.members.filter(player => player !== ws);
+  ws.send(JSON.stringify({ type:'leavedDuel'}));
+  if (duel.members.length === 0)
+    delete duelRooms[ws.duelId];
+  else {
+    duelcast(ws.duelId, {type: 'playerLeaved' })
+  }
+  ws.duelId = null;
+}
+/**********
+*  UTILS  *
+***********/
+
+function duelTimer(duelId, time, funct)
+{
   const endsAt = Date.now() + time;
 
   duelcast(duelId,  {type: 'time', data : time});
@@ -168,14 +188,16 @@ function duelTimer(duelId, time, funct) {
   }, 1000);
 }
 
-function requestDuelState(message, ws) {
+function requestDuelState(message, ws)
+{
   if(duelRooms[ws.duelId])
     sendDuelState(ws.duelId);
   else
     ws.send(JSON.stringify({type: "duelState", data :{type : "noDuelState"}}));
 }
 
-function sendDuelState(duelId){
+function sendDuelState(duelId)
+{
   if (!duelRooms[duelId]) return;
   const duelState = {
     phase : duelRooms[duelId]?.phase || null,
@@ -192,10 +214,10 @@ function sendDuelState(duelId){
 }
 
 
-function duelcast(duelId, data, except = null) {
+function duelcast(duelId, data, except = null)
+{
   const duel = duelRooms[duelId];
   if (!duel) return;
-
   duel.members.forEach(ws => {
     if (ws !== except && ws.readyState === 1) {
       ws.send(JSON.stringify(data));
