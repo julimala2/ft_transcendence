@@ -195,7 +195,7 @@ function sendGameState(roomId){
     quizList : votes[roomId]?.quizList || null,
     timer: games[roomId]?.timer || null,
     winner : games[roomId]?.winner || null,
-    scores : games[roomId]?.scores || null,
+    scores : Object.fromEntries(games[roomId]?.scores) || null,
     question : games[roomId]?.publicQuestion || null,
   };
   if (games[roomId].phase != 'revealAnswers')

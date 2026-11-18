@@ -1,4 +1,4 @@
-const { findActiveQuestionIds } = require("../../src/models/attempt.model");
+const { findActiveQuestionIds, findQuizQuestionIds } = require("../../src/models/attempt.model");
 const { shuffle } = require("../../src/services/attempt.service");
 const { getCompleteQuestionById } = require("../../src/services/question.service");
 
@@ -8,7 +8,7 @@ const duelRooms = {};
 
 const TIME_TO_ANSWER = 20000;
 const NB_QUESTIONS = 5;
-const GOOD_ANSWER_POINTS = 3;
+const GOOD_ANSWER_POINTS = 1;
 
     // tenvoie un msg "duelFound"
     // front dans useSocket ca detecte duelFound et ca te propose de rejoindre
@@ -18,36 +18,29 @@ const GOOD_ANSWER_POINTS = 3;
  ******************/ 
 function rankedGame(data, ws) {
 
-    const opponent = pool.get(data.category);
+    const quiz = {type: data.category ? "cat" : "com", id : data.category ? data.category : data.quizId };
 
-    console.log("Category Id:", data.category);
+    let opponent;
+    pool.forEach((w, q) => {
+        if (q.type === quiz.type && q.id === quiz.id) {
+          opponent = w;
+        }
+    })
+
     if (opponent && opponent != ws) {     //adversaire trouvé -> creer duelroom
         const duelId = Math.random().toString(36).substr(2, 6).toUpperCase();
         ws.duelId = duelId;
         opponent.duelId = duelId;
         leavePool(null, opponent);
-        duelRooms[duelId] = {
-            phase: "starting",
-            members: [ws, opponent],
-            categoryId: data.category,
-            scores: new Map(),
-            questionsId: null,
-            currentQuestionIndex: 0,
-            publicQuestion: null,
-            answered: new Map(),
-            correctAnswer: null,
-            timer: null,
-            interval: null,
-            rematch: [],
-          };
-          duelcast(duelId, {type: 'matchFounded', data: { time: 3000 }});
-          setTimeout(() => {
-            startDuel(duelId);
-          }, 3000);
+        duelRooms[duelId] = createDuel(ws, opponent, quiz);
+        duelcast(duelId, {type: 'matchFounded', data: { time: 3000 }});
+        setTimeout(() => {
+          startDuel(duelId);
+        }, 3000);
     }
     else { 
-        pool.set(data.category, ws);
-        ws.poolCategory = data.category;
+        pool.set(quiz, ws);
+        ws.poolCategory = quiz;
     }
 }
 
@@ -65,14 +58,18 @@ function leavePool(data, ws)
 
 async function startDuel(duelId)
 {
-
   const duel = duelRooms[duelId];
   if (!duel) { return; }
 
   sendDuelState(duelId);
   try {
-    const available = await findActiveQuestionIds({categoryId : duel.categoryId });
-    duel.questionsId = shuffle(available).slice(0, NB_QUESTIONS);
+    let available;
+    if (duel.type === "cat")
+      available = await findActiveQuestionIds({categoryId : duel.categoryId });
+    else
+      available = await findQuizQuestionIds(duel.categoryId);
+    const nQuestions = NB_QUESTIONS > available.length ? available.length : NB_QUESTIONS;
+    duel.questionsId = shuffle(available).slice(0, nQuestions);
     duel.members.forEach(player => { 
       duel.scores.set(player.username, 0);
     });
@@ -140,7 +137,7 @@ function revealAnswers(duelId)
    });
   sendDuelState(duelId);
   duel.answered.clear();
-  if ((duel.currentQuestionIndex + 1) === NB_QUESTIONS) {
+  if ((duel.currentQuestionIndex + 1) === duel.questionsId.length) {
     duelTimer(duelId, 5000, endDuel); }
   else {
     duel.currentQuestionIndex++;
@@ -158,11 +155,9 @@ function endDuel(duelId)
 function leaveDuel(message, ws) 
 {
   const duel = duelRooms[ws.duelId];
-  console.log("leaveDuel start",duel, ws.duelId, duel?.members?.length);
   if (!duel) { return; }
   duel.members = duel.members.filter(player => player !== ws);
   ws.send(JSON.stringify({ type:'leavedDuel'}));
-  console.log("leavedDuel sent",duel.members.length);
   if (duel.members.length === 0)
     delete duelRooms[ws.duelId];
   else {
@@ -176,6 +171,7 @@ function leaveDuel(message, ws)
 //front -> rematchAccepted
 //back -> relancer quiz sur la pool
 
+
 function rematchRequest(data, ws)
 {
   const duel = duelRooms[ws.duelId];
@@ -183,6 +179,8 @@ function rematchRequest(data, ws)
   if (duel.rematch.length === 1 && !duel.rematch.includes(ws))
   {
     //reset le duelRoom (score, question index etc)
+    const newDuel = createDuel(ws, duel.rematch[0], {type: duel.type, id: duel.categoryId});
+    duelRooms[ws.duelId] = newDuel;
     startDuel(ws.duelId);
     return;
   }
@@ -199,10 +197,14 @@ function rematchRequest(data, ws)
 
 function duelTimer(duelId, time, funct)
 {
+  if (!duelRooms[duelId])
+    return;
   const endsAt = Date.now() + time;
 
   duelcast(duelId,  {type: 'time', data : time});
   duelRooms[duelId].interval = setInterval(() => {
+    if (!duelRooms[duelId])
+      return;
     duelRooms[duelId].timer = (endsAt - Date.now());
     if(duelRooms[duelId].timer <= 0){
         clearInterval(duelRooms[duelId].interval);
@@ -248,6 +250,26 @@ function duelcast(duelId, data, except = null)
       ws.send(JSON.stringify(data));
     }
   });
+}
+
+function createDuel(player1, player2, quiz) 
+{
+  const duel = {
+            type: quiz.type,
+            phase: "starting",
+            members: [player1, player2],
+            categoryId: quiz.id,
+            scores: new Map(),
+            questionsId: null,
+            currentQuestionIndex: 0,
+            publicQuestion: null,
+            answered: new Map(),
+            correctAnswer: null,
+            timer: null,
+            interval: null,
+            rematch: [],
+  }
+  return(duel);
 }
 
 module.exports = {rankedGame, rankedAnswer, requestDuelState, rematchRequest, leavePool, leaveDuel };
