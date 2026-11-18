@@ -40,6 +40,7 @@ A faire : autres ?
 Suggestions : si on bat son record en rush
 A terme : invitation a jouer 1v1
 Verifier les blocages pour permettre un friendRequest
+Route notif pour rediriger depuis la notif
 
 
 

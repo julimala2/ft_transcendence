@@ -33,6 +33,7 @@ model User {
   questions              Question[]        @relation("QuestionAuthor")
   achievements           UserAchievement[]
   notifications          Notification[]
+  onlineGames            OnlineGamePlayer[]
 }
 
 model OAuthAccount {
@@ -92,8 +93,9 @@ model Quiz {
   owner      User?  @relation("QuizOwner", fields: [ownerId], references: [id], onDelete: Cascade)
   visibility String @default("public") // "public" | "friends" | "private"
 
-  questions QuizQuestion[]
-  attempts  QuizAttempt[]
+  questions   QuizQuestion[]
+  attempts    QuizAttempt[]
+  onlineGames OnlineGame[]
 }
 
 model Category {
@@ -105,6 +107,7 @@ model Category {
   attempts     QuizAttempt[]
   achievements Achievement[]
   themes       Theme[]
+  onlineGames  OnlineGame[]
 }
 
 model Theme {
@@ -200,6 +203,43 @@ model QuizAttempt {
   @@index([userId])
   @@index([mode, categoryId, tagId, difficulty])
   @@index([categoryId, difficulty, mode, status])
+}
+
+// Partie multijoueur (websocket) : les infos communes à tous les joueurs
+model OnlineGame {
+  id             Int       @id @default(autoincrement())
+  startedAt      DateTime  @default(now())
+  finishedAt     DateTime?
+  status         String    @default("in_progress") // "in_progress" | "finished" | "abandoned"
+  mode           String // "room" | "ranked", pas de défaut pour qu'un oubli lève une erreur
+  totalQuestions Int       @default(0)
+
+  // Comme QuizAttempt : soit un quiz existant, soit une catégorie
+  quizId     Int?
+  quiz       Quiz?     @relation(fields: [quizId], references: [id], onDelete: SetNull)
+  categoryId Int?
+  category   Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  players OnlineGamePlayer[]
+
+  @@index([categoryId])
+  @@index([mode, categoryId])
+}
+
+// Une ligne par joueur dans une partie online
+model OnlineGamePlayer {
+  gameId Int
+  game   OnlineGame @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  userId Int
+  user   User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  score    Int     @default(0)
+  rank     Int? // 1 = premier, égalité possible ; null si abandon
+  isWinner Boolean @default(false)
+  status   String  @default("playing") // "playing" | "finished" | "abandoned"
+
+  @@id([gameId, userId])
+  @@index([userId])
 }
 
 model AttemptQuestion {
