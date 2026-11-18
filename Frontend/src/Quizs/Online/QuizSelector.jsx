@@ -61,7 +61,7 @@ export function QuizSelector({
         <div className="w-full flex-col items-center flex gap-3 overflow-y-scroll">
             {/* Mode selection buttons - only show if community mode is available */}
             {showCommunityMode && (
-                <div className="flex items-center flex-row gap-2 w-full max-w-4xl">
+                <div className="flex items-center flex-row gap-2 w-full">
                     <StyledButton
                         variant={mode === 'categories' ? 'primary' : 'secondary'}
                         onClick={() => {
@@ -126,7 +126,7 @@ export function QuizSelector({
                     )}
                     
                     {/* Categories grid - all shown, theme ones first, others disabled */}
-                    <div className="flex gap-7 flex-wrap justify-center w-full">
+                    <div className="flex gap-4 flex-wrap justify-center w-full">
                         {sortedCategories.map(cat => {
                             const isInTheme = selectedThemeId ? themeCategories.some(c => c.id === cat.id) : true;
                             const isDisabled = disabled || !isInTheme;
@@ -135,8 +135,8 @@ export function QuizSelector({
                                 <BlingButton
                                     key={cat.id}
                                     variant="quiz"
-                                    className="w-40"
-                                    innerClassName="h-40"
+                                    className="w-32 md:w-40"
+                                    innerClassName="h-20 md:h-40"
                                     onClick={() => !isDisabled && onCategorySelect(cat)}
                                     selected={selectedCategory?.id === cat.id}
                                     disabled={isDisabled}

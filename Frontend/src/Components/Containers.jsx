@@ -2,14 +2,14 @@
 
 //Container that contains an entire page
 export const MainContainer = ({ children }) => (
-  <div className="h-full overflow-hidden flex flex-col">
+  <div className="h-dvh overflow-hidden flex flex-col">
     {children}
   </div>
 );
 
 //Page container
 export const PageContainer = ({ children }) => (
-  <div className="flex-1 min-h-0 overflow-hidden flex flex-col items-center justify-center gap-4 p-4 md:px-20 md:pb-20 md:pt-[min(10rem,10dvh)]">
+  <div className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center gap-4 md:p-4 md:px-20 md:pb-20 md:pt-[min(10rem,10dvh)]">
     {children}
   </div>
 );

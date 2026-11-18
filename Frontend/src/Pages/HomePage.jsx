@@ -29,7 +29,7 @@ export function HomePage() {
           </StyledDiv>
           {user ? ( 
           <>
-          <BlingButton className='w-full md:w-150 p-2' innerClassName='h-30'>
+          <BlingButton className='w-full md:w-160 p-2' innerClassName='h-30'>
             <Link
               to="/play/offline"
               className={`${buttonStyle}`}
@@ -45,7 +45,7 @@ export function HomePage() {
           </BlingButton>
           
           <BlingButton 
-            className='w-full md:w-150 p-2'
+            className='w-full md:w-160 p-2'
             innerClassName='h-30'
             >
           <Link
@@ -61,14 +61,14 @@ export function HomePage() {
           </Link>
           </BlingButton>
           </>) : (
-              <TileButton variant='menu' className='bg-linear-to-br  from-blue-400 to-green-600'>
+          <BlingButton className='w-full md:w-160 p-2' innerClassName='h-30'>
                 <Link 
                 className={`${buttonStyle}`}
                 state={{ backgroundLocation: location.pathname }}
                 to="/account">
                 Se connecter
                 </Link>
-              </TileButton>
+            </BlingButton>
           )}
 
 

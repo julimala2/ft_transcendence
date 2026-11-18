@@ -12,7 +12,7 @@ import { useSocket } from '../../Hooks/SocketProvider';
 import { useAuth } from '../../Hooks/useAuth';
 import { QuizSelector } from './QuizSelector';
 
-function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean, handleRematchRequest, playerLeft, rematchRequested }) {
+function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onAnswer, onClean, handleRematchRequest, playerLeft, rematchRequested, searchingRematch }) {    
     return (
         <StyledDiv outerClassName="w-full max-w-2xl" className="gap-3 p-6">
                     {duelState.phase === "starting" && (
@@ -172,10 +172,23 @@ function DuelDisplay({ duelState, time, hasAnswered, opponentAnswered, user, onA
                                 <StyledButton onClick={onClean}>
                                     Retour au lobby
                                 </StyledButton>
-                                
-                                <StyledButton variant="danger" onClick={handleRematchRequest} disabled={playerLeft}>
-                                    {rematchRequested ? "Accepter la revanche" : "Demander une revanche"}
-                                </StyledButton>
+                                {playerLeft ? (
+                                    <StyledButton disabled variant="danger">L'adversaire est parti</StyledButton>
+                                ) : (
+                                    searchingRematch ? (
+                                        <StyledButton className='flex flex-row gap-2 items-center align-center' variant="danger" disabled>
+                                            <svg className="w-5 h-5 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                                                <path className="opacity-90" fill="currentColor" d="M4 12a8 8 0 0 1 8-8V0C5.4 0 0 5.4 0 12h4z" />
+                                            </svg>
+                                            Attente de la reponse ...
+                                        </StyledButton>
+                                    ) : (
+                                        <StyledButton variant="danger" onClick={handleRematchRequest}>
+                                            {rematchRequested ? "Accepter la revanche" : "Demander une revanche"}
+                                        </StyledButton>
+                                    )
+                                )}
                             </div>
                         </motion.div>
                     )}
@@ -237,6 +250,7 @@ export function OnlineMatchLobby() {
     const matchFoundIntervalRef = useRef(null);
     const [playerLeft,setPlayerLeft] = useState(false);
     const [rematchRequested,setRematchRequested] = useState(false);
+    const [searchingRematch, setSearchingRematch] = useState(false);
 
     function clearMatchFound() {
         if (matchFoundIntervalRef.current) {
@@ -247,17 +261,34 @@ export function OnlineMatchLobby() {
         setMatchFoundTimeLeft(null);
     }
 
+    const shuffleArray = (array) => {
+        const newArray = [...array];
+        for (let i = newArray.length - 1; i > 0; i --) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j],newArray[i]];
+        }
+        return (newArray);
+    }
+
+
     useEffect(() => {
         const duelStateHandler = (data) => {
             if(data){
                 clearMatchFound();
-                setDuelState(data);
+               
                 if(data.phase && data.phase == "starting"){
                     setRematchRequested(false);
                     setHasAnswered(false);
                     setSearching(false);
                     setOpponentAnswered(false);
                 }
+                if(data.phase && data.phase == "endDuel"){
+                    setSearchingRematch(false);
+                }
+                if(data && data?.question?.answers){
+                    data.question.answers = shuffleArray(data.question.answers);
+                }
+                setDuelState(data);
             }
         }
 
@@ -341,7 +372,7 @@ export function OnlineMatchLobby() {
                 clearInterval(matchFoundIntervalRef.current);
                 matchFoundIntervalRef.current = null;
             }
-            cleanDuelState;
+            send('quiz', {type :'leaveDuel', data :'' });
             cancelled = true;
         };
     }, []);
@@ -409,6 +440,7 @@ export function OnlineMatchLobby() {
         setTime(null);
         setPlayerLeft(false);
         setRematchRequested(false);
+        setSearchingRematch(false);
         send('quiz', {type :'leaveDuel', data :'' });
     }
 
@@ -433,6 +465,7 @@ export function OnlineMatchLobby() {
     }
 
     function handleRematchRequest() {
+        setSearchingRematch(true);
         send('quiz', {type : 'rematchRequest', data:''});
     }
 
@@ -465,7 +498,7 @@ export function OnlineMatchLobby() {
             )
             :
             (
-                <div className="flex flex-col items-center gap-6 w-full min-h-0 max-h-full overflow-y-auto p-1">
+                <div className="flex flex-col items-center gap-6 w-full min-h-0 max-h-full overflow-y-auto">
                     {duelState ? (
                         <DuelDisplay
                             duelState={duelState}
@@ -478,6 +511,7 @@ export function OnlineMatchLobby() {
                             playerLeft={playerLeft}
                             handleRematchRequest={handleRematchRequest}
                             rematchRequested={rematchRequested}
+                            searchingRematch={searchingRematch}
                         />
                     ) : matchFound ? (
                         <MatchFoundDisplay timeLeft={matchFoundTimeLeft} />
@@ -497,7 +531,7 @@ export function OnlineMatchLobby() {
                         transition={{ duration: 0.4, delay: 0.1 }}
                         className="w-full"
                     >
-                    <StyledDiv className="flex flex-col gap-5 p-6 w-full items-center justify-center">
+                    <StyledDiv className="flex flex-col gap-5 md:p-6 w-full items-center justify-center">
                         <QuizSelector
                             categories={categories}
                             themes={themes}
